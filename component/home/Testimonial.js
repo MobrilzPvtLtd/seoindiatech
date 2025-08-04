@@ -1,136 +1,90 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Star } from 'lucide-react';
 
-const testimonials = [
-  {
-    name: "John Doe",
-    role: "CEO",
-    company: "Tech Corp",
-    quote: "This service transformed our business operations. Highly recommended!",
-    image: "https://i.pravatar.cc/150?img=2",
-  },
-  {
-    name: "Jane Smith",
-    role: "Marketing Director",
-    company: "Grow Easy",
-    quote: "The team was professional and delivered beyond our expectations.",
-    image: "https://i.pravatar.cc/150?img=3",
-  },
-  {
-    name: "Mike Johnson",
-    role: "Product Manager",
-    company: "Innovate Inc",
-    quote: "Outstanding support and incredible results. We're thrilled!",
-    image: "https://i.pravatar.cc/150?img=4",
-  },
-  {
-    name: "Sarah Williams",
-    role: "CTO",
-    company: "Future Tech",
-    quote: "The solutions provided were innovative and highly effective.",
-    image: "https://i.pravatar.cc/150?img=5",
-  },
-];
+const Testimonial = () => {
+  const testimonials = [
+    {
+      id: 1,
+      name: "Sarah K.",
+      role: "UX Designer",
+      company: "@Brello",
+      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face&auto=format&q=80",
+      rating: 5,
+      testimonial: "I was looking for a way to streamline my design process and the Anima's Landing Page UI Kit was a lifesaver! The intuitive design and ease of customisation have saved me hours of time and effort. Highly recommend!"
+    },
+    {
+      id: 2,
+      name: "Michael L.",
+      role: "Creative Director",
+      company: "@Yo",
+      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face&auto=format&q=80",
+      rating: 4,
+      testimonial: "The Landing Page UI Kit has been a game changer for my agency. The pre-designed components and templates have helped us deliver projects faster and with more consistency. Great job!"
+    },
+    {
+      id: 3,
+      name: "Lauren M.",
+      role: "UI Designer",
+      company: "@Boo",
+      avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face&auto=format&q=80",
+      rating: 5,
+      testimonial: "Anima's Landing Page UI Kit has become a staple in my design toolkit. Whether I'm working on a new project or need to make updates to an existing one, this kit has everything I need to get the job done quickly and efficiently."
+    }
+  ];
 
-const TestimonialCard = ({ name, role, company, quote, image, cardClass }) => {
-  return (
-    <div className={`bg-white rounded-lg shadow-md overflow-hidden mx-2 flex flex-col h-[320px] border border-gray-200 ${cardClass}`}>
-      <div className="h-16 bg-indigo-600"></div>
-      <div className="p-6 flex flex-col flex-grow">
-        <div className="flex items-center mb-4">
-          <img
-            className="w-14 h-14 rounded-full object-cover mr-4 border-2 border-gray-200"
-            src={image}
-            alt={`${name}'s profile`}
-          />
-          <div>
-            <h3 className="text-lg font-semibold text-gray-900">{name}</h3>
-            <p className="text-sm text-gray-500">{role} at {company}</p>
-          </div>
-        </div>
-        <p className="text-gray-600 text-sm italic flex-grow">"{quote}"</p>
-        <div className="flex items-center mt-4">
-          {[...Array(5)].map((_, i) => (
-            <svg
-              key={i}
-              className="w-4 h-4 text-yellow-400 fill-current"
-              viewBox="0 0 20 20"
-            >
-              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.97a1 1 0 00.95.69h4.15c.969 0 1.371 1.24.588 1.81l-3.357 2.44a1 1 0 00-.364 1.118l1.287 3.97c.3.921-.755 1.688-1.54 1.118l-3.357-2.44a1 1 0 00-1.175 0l-3.357 2.44c-.784.57-1.838-.197-1.54-1.118l1.287-3.97a1 1 0 00-.364-1.118L2.27 9.397c-.784-.57-.38-1.81.588-1.81h4.15a1 1 0 00.95-.69l1.286-3.97z" />
-            </svg>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-};
-
-const TestimonialCarousel = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const nextSlide = () => {
-    setCurrentIndex((prev) => (prev + 1) % (testimonials.length - 2));
-  };
-
-  const prevSlide = () => {
-    setCurrentIndex((prev) => (prev - 1 + (testimonials.length - 2)) % (testimonials.length - 2));
+  const renderStars = (rating) => {
+    return Array.from({ length: 5 }, (_, index) => (
+      <Star
+        key={index}
+        className={`w-5 h-5 ${
+          index < rating 
+            ? 'fill-yellow-400 text-yellow-400' 
+            : 'text-gray-300'
+        }`}
+      />
+    ));
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 py-12">
-      <div className="container mx-auto px-4">
-        <h1 className="text-3xl font-bold text-center mb-12 text-gray-800">Testimonials</h1>
-        <div className="relative">
-          {Array.from({ length: Math.ceil(testimonials.length / 3) }).map((_, frameIndex) => (
-            <div
-              key={frameIndex}
-              className={`flex transition-transform duration-500 ease-in-out ${
-                frameIndex === currentIndex ? 'block' : 'hidden'
-              }`}
-            >
-              {testimonials.slice(frameIndex * 3, frameIndex * 3 + 3).map((testimonial, index) => (
-                <div key={index} className="w-full md:w-1/3 flex-shrink-0 px-2">
-                  <TestimonialCard
-                    {...testimonial}
-                    cardClass={`card card-${index + 1}`}
+    <div className="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
+          {testimonials.map((testimonial) => (
+            <div key={testimonial.id} className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300">
+              {/* Profile Section */}
+              <div className="flex flex-col items-center text-center mb-6">
+                <div className="w-20 h-20 rounded-full overflow-hidden mb-4 ring-4 ring-gray-100">
+                  <img
+                    src={testimonial.avatar}
+                    alt={testimonial.name}
+                    className="w-full h-full object-cover"
                   />
                 </div>
-              ))}
+                <h3 className="text-xl font-bold text-gray-900 mb-1">
+                  {testimonial.name}
+                </h3>
+                <p className="text-gray-600 text-sm">
+                  {testimonial.role} {testimonial.company}
+                </p>
+              </div>
+
+              {/* Testimonial Text */}
+              <div className="mb-6">
+                <p className="text-gray-700 leading-relaxed text-center">
+                  "{testimonial.testimonial}"
+                </p>
+              </div>
+
+              {/* Star Rating */}
+              <div className="flex justify-center space-x-1">
+                {renderStars(testimonial.rating)}
+              </div>
             </div>
           ))}
-          <button
-            onClick={prevSlide}
-            className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-indigo-600 text-white p-3 rounded-full hover:bg-indigo-700 focus:outline-none shadow-md"
-            aria-label="Previous testimonial"
-          >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
-            </svg>
-          </button>
-          <button
-            onClick={nextSlide}
-            className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-indigo-600 text-white p-3 rounded-full hover:bg-indigo-700 focus:outline-none shadow-md"
-            aria-label="Next testimonial"
-          >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-            </svg>
-          </button>
-          <div className="flex justify-center mt-6 space-x-2">
-            {Array.from({ length: Math.ceil(testimonials.length / 3) }).map((_, index) => (
-              <button
-                key={index}
-                className={`w-3 h-3 rounded-full ${
-                  index === currentIndex ? 'bg-indigo-600' : 'bg-gray-300'
-                } transition-colors duration-300`}
-                onClick={() => setCurrentIndex(index)}
-                aria-label={`Go to slide ${index + 1}`}
-              />
-            ))}
-          </div>
         </div>
       </div>
     </div>
   );
 };
 
-export default TestimonialCarousel;
+export default Testimonial;

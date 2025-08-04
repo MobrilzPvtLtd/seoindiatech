@@ -34,7 +34,7 @@ const Footer = () => {
                 Start Your Business & <span className="font-bold">GROW WITH US</span>
               </p>
               <p className="text-sm text-gray-600 mt-1">
-                ©DIGITALYZE IT – All rights reserved
+                ©SEO India Tech – All rights reserved
               </p>
             </div>
           </div>
