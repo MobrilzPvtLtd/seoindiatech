@@ -5,6 +5,7 @@ import Teams from './Teams'
 import Socialmediastrategies from './Socialmediastrategies'
 import TestimonialCarousel from './Testimonial'
 import SEO_Today from './SEO_Today'
+import SEOSolution from './SEO_Solution'
 
 function HomePage() {
   return (
@@ -13,6 +14,7 @@ function HomePage() {
       <Teams/>
       <Services/>
       <Socialmediastrategies/>
+      <SEOSolution/>
       <SEO_Today/>
       <TestimonialCarousel/>
     </>
