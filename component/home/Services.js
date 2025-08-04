@@ -48,7 +48,7 @@ measurable success. Our services are tailored to meet your unique business needs
 industry best practices to ensure optimal results. Explore how our expertise can transform your digital presence and
 achieve your strategic goals.
 </p>
-<button className="bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition">Ready to call</button>
+<button className="bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-400 hover:border-none hover:text-black transition duration-200 border border-white">Ready to call</button>
 </div>
 </div>
 )

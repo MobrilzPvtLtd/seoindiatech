@@ -2,7 +2,8 @@ import React from 'react';
 
 const Hero = () => {
 return (
-<div className='bg-cyan-100 border border-gray-300 rounded-2xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-between shadow-lg max-w-7xl'>
+<div className='bg-cyan-100 border border-gray-300 rounded-2xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-between shadow-lg max-w-7xl mx-auto my-10'>
+
 {/* Left Content */}
 <div className="max-w-xl space-y-4 w-full md:w-1/2">
 <span className="inline-block bg-white shadow-md border rounded-full px-4 py-1 text-sm font-medium">
