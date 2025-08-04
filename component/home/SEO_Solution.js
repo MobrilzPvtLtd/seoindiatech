@@ -1,5 +1,6 @@
 import React from 'react';
 import { Star } from 'lucide-react';
+import Image from 'next/image';
 
 // Optimized circular progress component
 const CircularProgress = ({ percentage, color, size = 80 }) => {
@@ -116,8 +117,12 @@ const SEOSolution = () => {
                 and reach of your communications.
               </p>
             </header>
-
-            <div className="bg-gray-50 rounded-lg p-4">
+             <Image 
+              src={"/SEO-agency.jpg"}
+              width={500}
+              height={300}
+             />
+            {/* <div className="bg-gray-50 rounded-lg p-4">
               <div className="bg-white rounded border p-3 mb-3">
                 <div className="w-full h-12 bg-gray-100 rounded"></div>
               </div>
@@ -127,7 +132,7 @@ const SEOSolution = () => {
                   <StatusItem key={index} {...item} />
                 ))}
               </div>
-            </div>
+            </div> */}
           </article>
 
           {/* Competitor Analysis Card */}
@@ -140,14 +145,11 @@ const SEOSolution = () => {
               </p>
             </header>
 
-            <div>
-              <h3 className="text-lg font-semibold text-gray-800 mb-3">Organic Traffic</h3>
-              <div className="flex items-end gap-1 mb-4">
-                <span className="text-3xl font-bold text-gray-900">104</span>
-                <span className="text-lg text-gray-500">.03K</span>
-              </div>
-              <TrafficChart />
-            </div>
+            <Image 
+              src={"/SEO-agency1.jpg"}
+              width={500}
+              height={300}
+             />
           </article>
 
           {/* Revenue Monitoring Card */}
@@ -160,23 +162,11 @@ const SEOSolution = () => {
               </p>
             </header>
 
-            <div className="grid grid-cols-2 gap-6">
-              {metrics.map((metric, index) => (
-                <div key={index} className="text-center">
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="text-xs font-medium text-gray-600">{metric.label}</span>
-                    <span className="text-xs font-bold text-gray-900">{metric.displayValue}</span>
-                  </div>
-                  <div className="flex justify-center">
-                    <CircularProgress 
-                      percentage={metric.value} 
-                      color={metric.color}
-                      size={64}
-                    />
-                  </div>
-                </div>
-              ))}
-            </div>
+             <Image 
+              src={"/SEO-agency2.jpg"}
+              width={500}
+              height={300}
+             />
           </article>
         </div>
 
