@@ -18,31 +18,43 @@ const ServiceCard = ({ title, description, icon }) => {
 
 export default function ServiceDropdown() {
   const services = [
-    { title: 'Automation', description: 'Automation streamlines tasks, boosting efficiency and reducing errors, so your team can focus on strategic goals.', icon: '⚙️' },
-    { title: 'Workflow', description: 'Workflow streamlines and automates tasks, ensuring a smooth, efficient, and organized process from start to finish.', icon: '📋' },
-    { title: 'Promotion & Ads', description: 'Drive brand visibility and attract your target audience through strategic messaging and impactful campaigns.', icon: '📣' },
-    { title: 'CRM & Tools', description: 'CRM and management tools optimize customer relationships and streamline operations for better efficiency and growth.', icon: '👥' },
-    { title: 'Market Research', description: 'Market research provides valuable insights into consumer behavior and emerging trends, guiding smart business decisions.', icon: '🔍' },
-    { title: 'Website Creation', description: 'Website creation involves designing and developing an engaging, functional online presence tailored to your brand\'s needs.', icon: '🌐' },
-  ];
+    {
+        title: 'Social Media Marketing',
+        description: 'Drive brand visibility and engage your target audience through strategic social media campaigns and content.',
+        icon: '📣'
+    },
+    {
+        title: 'Innovative UI/UX Solutions',
+        description: 'Design and develop intuitive, user-friendly interfaces to enhance user experience and engagement.',
+        icon: '🎨'
+    },
+    {
+        title: 'Digital Branding',
+        description: 'Build a strong, cohesive brand identity across digital platforms to attract and retain your audience.',
+        icon: '🌟'
+    },
+    {
+        title: 'Content Marketing',
+        description: 'Create and distribute valuable, relevant content to attract and engage your target audience effectively.',
+        icon: '✍️'
+    },
+    {
+        title: 'Search Engine Optimization',
+        description: 'Optimize your website to rank higher on search engines, increasing visibility and organic traffic.',
+        icon: '🔍'
+    },
+    {
+        title: '(PPC) Advertising',
+        description: 'Run targeted pay-per-click campaigns to drive traffic and conversions with measurable results.',
+        icon: '📈'
+    },
+];
 
   return (
-    <div className="container mx-auto p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
       {services.map((service, index) => (
         <ServiceCard key={index} title={service.title} description={service.description} icon={service.icon} />
       ))}
-      <div className="col-span-full flex justify-center items-center">
-        <div className="relative">
-          <svg className="w-48 h-48" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="50" cy="50" r="40" fill="blue" />
-            <path d="M 30 70 A 20 20 0 0 1 70 70" fill="yellow" />
-            <circle cx="35" cy="65" r="2" fill="red" />
-            <circle cx="45" cy="55" r="2" fill="red" />
-            <circle cx="55" cy="65" r="2" fill="red" />
-            <path d="M 30 70 A 20 20 0 0 0 70 70" fill="none" stroke="green" strokeWidth="4" />
-          </svg>
-        </div>
-      </div>
     </div>
   );
 }

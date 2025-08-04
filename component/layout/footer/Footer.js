@@ -21,7 +21,13 @@ const Footer = () => {
           {/* Left Section - Logo and Tagline */}
           <div className="flex flex-col items-center lg:items-start space-y-2">
             <div className="flex items-center space-x-2">
-              <h1 className="text-4xl font-bold text-blue-600">DI.</h1>
+              <img
+                src="/SIT-logo2.png"
+                alt="Logo"
+                className="w-20 h-12"
+              
+              />
+              
             </div>
             <div className="text-center lg:text-left">
               <p className="text-lg font-semibold text-gray-800">
