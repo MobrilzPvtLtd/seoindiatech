@@ -70,7 +70,7 @@ const Header = () => {
             >
               <button
                 onClick={() => setIsServicesOpen(!isServicesOpen)}
-                className="block text-gray-600 hover:text-blue-700 font-bold hover:border-b-2 hover:border-blue-500 py-2 md:py-0 flex items-center hover:cursor-pointer"
+                className=" text-gray-600 hover:text-blue-700 font-bold hover:border-b-2 hover:border-blue-500 py-2 md:py-0 flex items-center hover:cursor-pointer"
                 aria-expanded={isServicesOpen}
                 aria-controls="services-dropdown"
               >
@@ -99,7 +99,7 @@ const Header = () => {
             >
               <button
                 onClick={() => setIsSolutionsOpen(!isSolutionsOpen)}
-                className="block text-gray-600 hover:text-blue-700 font-bold hover:border-b-2 hover:border-blue-500 py-2 md:py-0 flex items-center hover:cursor-pointer"
+                className=" text-gray-600 hover:text-blue-700 font-bold hover:border-b-2 hover:border-blue-500 py-2 md:py-0 flex items-center hover:cursor-pointer"
                 aria-expanded={isSolutionsOpen}
                 aria-controls="solutions-dropdown"
               >
