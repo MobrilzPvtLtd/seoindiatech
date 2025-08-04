@@ -1,10 +1,17 @@
 import React from 'react'
+import Hero from './Hero'
+import Services from './Services'
+import Teams from './Teams'
+import Socialmediastrategies from './Socialmediastrategies'
 
 function HomePage() {
   return (
-    <div>
-      <h1 className="text-white">Welcome to Digitalyze IT!</h1>
-    </div>
+    <>
+      <Hero/>
+      <Teams/>
+      <Services/>
+      <Socialmediastrategies/>
+    </>
   )
 }
 
