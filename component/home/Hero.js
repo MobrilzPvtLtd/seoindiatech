@@ -6,7 +6,7 @@ return (
 
 {/* Left Content */}
 <div className="max-w-xl space-y-4 w-full md:w-1/2">
-<span className="inline-block bg-white shadow-md border rounded-full px-4 py-1 text-sm font-medium">
+<span className="inline-block bg-white shadow-md border rounded-full px-4 py-1 text-sm font-medium text-black">
 ⭐ Digital Marketing
 </span>
 <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
