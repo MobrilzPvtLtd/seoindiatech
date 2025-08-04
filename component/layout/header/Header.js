@@ -1,5 +1,6 @@
 import { ChevronDown, ChevronUp } from 'lucide-react';
 import React, { useState, useEffect, useRef } from 'react';
+import ServiceDropdown from './ServiceDropdown';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -43,11 +44,11 @@ const Header = () => {
         {/* Logo */}
         <div className="flex items-center">
           <img
-            src="/seologo2.png"
+            src="/SIT_logo.png"
             alt="Logo"
-            className={`rounded-full mr-2 transition-all duration-300 ${scrolled ? 'w-8 h-8' : 'w-12 h-12'}`}
+            className={` mr-2 transition-all duration-300 ${scrolled ? 'w-20 h-20' : 'w-12 h-12'}`}
           />
-          {/* <span className={`font-bold text-blue-700 transition-all duration-300 ${scrolled ? 'text-xl' : 'text-3xl'}`}>DI.</span> */}
+       
         </div>
 
         {/* Menu */}
@@ -65,48 +66,62 @@ const Header = () => {
           } md:flex md:space-x-6 absolute md:static bg-white md:bg-transparent top-full left-0 w-full md:w-auto p-4 md:p-0 shadow-md md:shadow-none z-20`}>
             <li><a href="#" className="block text-gray-600 hover:text-blue-700 font-bold hover:border-b-2 hover:border-blue-500 py-2 md:py-0">Home</a></li>
             <li><a href="#" className="block text-gray-600 hover:text-blue-700 font-bold hover:border-b-2 hover:border-blue-500 py-2 md:py-0">Who We Are</a></li>
-            <li className="relative" ref={servicesRef}>
-              <button 
-                onClick={() => setIsServicesOpen(!isServicesOpen)}
-                className="block text-gray-600 hover:text-blue-700  font-bold hover:border-b-2 hover:border-blue-500 py-2 md:py-0 flex items-center"
-              >
-                Services {isServicesOpen ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
-              </button>
-              {isServicesOpen && (
-                <ul className="absolute left-0 mt-2 w-64 bg-white shadow-lg rounded-md p-2 z-30">
-                  {[ 'Consulting', 'Development', 'Design', 'Support' ].map((service, idx) => (
-                    <li key={service} className="p-2 hover:bg-gray-100 rounded-md flex items-center space-x-4">
-                      <img src={`https://via.placeholder.com/48?text=${service[0]}`} alt={service} className="w-12 h-12 rounded" />
-                      <div>
-                        <h3 className="font-bold">{service}</h3>
-                        <button className="mt-1 text-blue-700 text-sm">Learn</button>
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </li>
-            <li className="relative" ref={solutionsRef}>
-              <button 
-                onClick={() => setIsSolutionsOpen(!isSolutionsOpen)}
-                className="block text-gray-600 hover:text-blue-700 font-bold hover:border-b-2 hover:border-blue-500 py-2 md:py-0 flex items-center"
-              >
-                Solutions {isSolutionsOpen ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
-              </button>
-              {isSolutionsOpen && (
-                <ul className="absolute left-0 mt-2 w-64 bg-white shadow-lg rounded-md p-2 z-30">
-                  {[ 'Enterprise', 'SME', 'Startup', 'Custom' ].map((solution, idx) => (
-                    <li key={solution} className="p-2 hover:bg-gray-100 rounded-md flex items-center space-x-4">
-                      <img src={`https://via.placeholder.com/48?text=${solution[0]}`} alt={solution} className="w-12 h-12 rounded" />
-                      <div>
-                        <h3 className="font-bold">{solution}</h3>
-                        <button className="mt-1 text-blue-700 text-sm">Learn</button>
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </li>
+            <li
+  className="relative"
+  ref={servicesRef}
+  onMouseEnter={() => {
+    setIsServicesOpen(true);
+    setIsSolutionsOpen(false);
+  }}
+  onMouseLeave={() => setIsServicesOpen(false)}
+>
+  <button
+    onClick={() => setIsServicesOpen(!isServicesOpen)}
+    className="block text-gray-600 hover:text-blue-700 font-bold hover:border-b-2 hover:border-blue-500 py-2 md:py-0 flex items-center"
+    aria-expanded={isServicesOpen}
+    aria-controls="services-dropdown"
+  >
+    Services {isServicesOpen ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
+  </button>
+  {isServicesOpen && (
+    <div
+      id="services-dropdown"
+      className="absolute left-0 top-full mt-2 w-full bg-white shadow-lg rounded-lg z-30"
+      onMouseEnter={() => setIsServicesOpen(true)}
+      onMouseLeave={() => setIsServicesOpen(false)}
+    >
+      <ServiceDropdown />
+    </div>
+  )}
+</li>
+<li
+  className="relative"
+  ref={solutionsRef}
+  onMouseEnter={() => {
+    setIsSolutionsOpen(true);
+    setIsServicesOpen(false);
+  }}
+  onMouseLeave={() => setIsSolutionsOpen(false)}
+>
+  <button
+    onClick={() => setIsSolutionsOpen(!isSolutionsOpen)}
+    className="block text-gray-600 hover:text-blue-700 font-bold hover:border-b-2 hover:border-blue-500 py-2 md:py-0 flex items-center"
+    aria-expanded={isSolutionsOpen}
+    aria-controls="solutions-dropdown"
+  >
+    Solutions {isSolutionsOpen ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
+  </button>
+  {isSolutionsOpen && (
+    <div
+      id="solutions-dropdown"
+      className="absolute left-0 top-full mt-2 w-full bg-white shadow-lg rounded-lg z-30"
+      onMouseEnter={() => setIsSolutionsOpen(true)}
+      onMouseLeave={() => setIsSolutionsOpen(false)}
+    >
+      <ServiceDropdown />
+    </div>
+  )}
+</li>
             <li><a href="#" className="block text-gray-600 font-bold hover:border-b-2 hover:border-blue-500 hover:text-blue-700 py-2 md:py-0">Blog</a></li>
           </ul>
         </nav>
