@@ -1,15 +1,15 @@
 import Layout from "@/component/layout/Layout";
-import { ThemeProvider } from "@/context/ThemeContext";
 import "@/styles/globals.css";
+import { ThemeProvider } from "next-themes"; 
 
 export default function App({ Component, pageProps }) {
   return (
-
-
-    <ThemeProvider> 
+    <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
       <Layout>
         <Component {...pageProps} />
       </Layout>
     </ThemeProvider>
   );
 }
+
+

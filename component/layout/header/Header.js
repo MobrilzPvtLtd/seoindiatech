@@ -1,34 +1,20 @@
-import { ChevronDown, ChevronUp, Sun, Moon } from 'lucide-react';
-import React, { useState, useRef, useEffect, useContext } from 'react';
+import { ChevronDown, ChevronUp } from 'lucide-react';
+import React, { useState, useRef, useEffect } from 'react';
 import ServiceDropdown from './ServiceDropdown';
 import SolutionDropdown from './SolutionDropdown';
-import { ThemeContext } from '@/context/ThemeContext';
- 
+import ThemeToggle from '@/component/common/ThemeToggle'; 
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isSolutionsOpen, setIsSolutionsOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
-
-  // Use ThemeContext
-  const themeContext = useContext(ThemeContext);
-  
-  // Handle potential context issues
-  const theme = themeContext?.theme || 'light';
-  const toggleTheme = themeContext?.toggleTheme || (() => console.error('Theme context not available'));
-  
-  const isDark = theme === 'dark';
+ 
 
   const servicesRef = useRef();
   const solutionsRef = useRef();
-  
-  // Debug the theme state
-  useEffect(() => {
-    console.log('Current theme:', theme);
-    console.log('Dark mode classes on HTML:', document.documentElement.classList.contains('dark'));
-  }, [theme]);
 
-  // Set mounted state when component mounts
+  // Set mounted state when component mounts to avoid hydration issues
   useEffect(() => {
     setMounted(true);
   }, []);
@@ -52,38 +38,40 @@ const Header = () => {
   }, []);
 
   return (
-    <header className={`${isDark ? 'bg-gray-900 text-white' : 'bg-white text-gray-800'} shadow-md fixed top-0 left-0 w-full z-50 transition-colors duration-300`}>
-      <div className="container mx-auto px-4 flex items-center justify-between md:justify-center md:space-x-64 h-20">
+    <header class="bg-white dark:bg-gray-900 shadow-md dark:shadow-gray-800 fixed top-0 left-0 w-full z-50 transition-colors duration-300">
+      <div className="container mx-auto px-4 flex items-center justify-center space-x-64 h-20">
         {/* Logo */}
         <div className="flex items-center">
           {mounted ? (
             <img
               src="/SIT-logo2.png"
               alt="Logo"
-              className={`w-20 h-12 mr-2 ${isDark ? 'filter invert' : ''}`}
+              className="w-20 h-12 mr-2 dark:invert"
               style={{ minWidth: 48, minHeight: 48 }}
             />
           ) : (
-            <div className="w-20 h-12 mr-2 bg-gray-100 dark:bg-gray-800 animate-pulse" 
-              style={{ minWidth: 48, minHeight: 48 }}></div>
+            <div
+              className="w-20 h-12 mr-2 bg-gray-100 dark:bg-gray-800 animate-pulse"
+              style={{ minWidth: 48, minHeight: 48 }}
+            ></div>
           )}
         </div>
 
         {/* Menu */}
-        <nav className="relative flex-grow md:flex-grow-0">
-          <button 
-            className={`md:hidden ${isDark ? 'text-gray-300' : 'text-gray-600'} focus:outline-none`}
+        <nav className="relative">
+          <button
+            className="md:hidden text-gray-600 dark:text-gray-300 focus:outline-none"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="Toggle menu"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
             </svg>
           </button>
-          <ul className={`${
-            isMenuOpen ? 'block' : 'hidden'
-          } md:flex md:space-x-6 absolute md:static ${isDark ? 'bg-gray-900' : 'bg-white'} md:bg-transparent top-full left-0 w-full md:w-auto p-4 md:p-0 shadow-md md:shadow-none z-20`}>
-            <li><a href="#" className={`block ${isDark ? 'text-gray-300 hover:text-blue-400' : 'text-gray-600 hover:text-blue-700'} font-bold hover:border-b-2 hover:border-blue-500 py-2 md:py-0`}>Home</a></li>
-            <li><a href="#" className={`block ${isDark ? 'text-gray-300 hover:text-blue-400' : 'text-gray-600 hover:text-blue-700'} font-bold hover:border-b-2 hover:border-blue-500 py-2 md:py-0`}>Who We Are</a></li>
+          <ul className={`${isMenuOpen ? 'block' : 'hidden'
+            } md:flex md:space-x-6 absolute md:static bg-white dark:bg-gray-900 md:bg-transparent top-full left-0 w-full md:w-auto p-4 md:p-0 shadow-md dark:shadow-gray-800 md:shadow-none z-20 transition-colors duration-300`}>
+            <li><a href="#" className="block text-gray-600 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-bold hover:border-b-2 hover:border-blue-500 py-2 md:py-0 transition-colors duration-300">Home</a></li>
+            <li><a href="#" className="block text-gray-600 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-bold hover:border-b-2 hover:border-blue-500 py-2 md:py-0 transition-colors duration-300">Who We Are</a></li>
             {/* Services Dropdown */}
             <li
               className="relative"
@@ -102,7 +90,7 @@ const Header = () => {
             >
               <button
                 onClick={() => setIsServicesOpen(!isServicesOpen)}
-                className={`${isDark ? 'text-gray-300 hover:text-blue-400' : 'text-gray-600 hover:text-blue-700'} font-bold hover:border-b-2 hover:border-blue-500 py-2 md:py-0 flex items-center hover:cursor-pointer`}
+                className="text-gray-600 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-bold hover:border-b-2 hover:border-blue-500 py-2 md:py-0 flex items-center hover:cursor-pointer transition-colors duration-300"
                 aria-expanded={isServicesOpen}
                 aria-controls="services-dropdown"
               >
@@ -111,7 +99,7 @@ const Header = () => {
               {isServicesOpen && (
                 <div
                   id="services-dropdown"
-                  className={`absolute left-1/2 top-full mt-2 transform -translate-x-1/2 w-full max-w-[80vw] md:w-[600px] lg:w-[900px] ${isDark ? 'bg-gray-800' : 'bg-white'} shadow-lg rounded-lg z-30`}
+                  className="absolute left-1/2 top-full mt-2 transform -translate-x-1/2 w-full max-w-[80vw] md:w-[600px] lg:w-[900px] bg-white dark:bg-gray-800 shadow-lg dark:shadow-gray-700 rounded-lg z-30 transition-colors duration-300"
                   onMouseEnter={() => {
                     if (typeof window !== 'undefined' && window.innerWidth >= 768) {
                       setIsServicesOpen(true);
@@ -123,7 +111,7 @@ const Header = () => {
                     }
                   }}
                 >
-                  <ServiceDropdown isDark={isDark} />
+                  <ServiceDropdown />
                 </div>
               )}
             </li>
@@ -145,7 +133,7 @@ const Header = () => {
             >
               <button
                 onClick={() => setIsSolutionsOpen(!isSolutionsOpen)}
-                className={`${isDark ? 'text-gray-300 hover:text-blue-400' : 'text-gray-600 hover:text-blue-700'} font-bold hover:border-b-2 hover:border-blue-500 py-2 md:py-0 flex items-center hover:cursor-pointer`}
+                className="text-gray-600 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-bold hover:border-b-2 hover:border-blue-500 py-2 md:py-0 flex items-center hover:cursor-pointer transition-colors duration-300"
                 aria-expanded={isSolutionsOpen}
                 aria-controls="solutions-dropdown"
               >
@@ -154,7 +142,7 @@ const Header = () => {
               {isSolutionsOpen && (
                 <div
                   id="solutions-dropdown"
-                  className={`absolute left-1/2 top-full mt-2 transform -translate-x-1/2 w-full max-w-[80vw] md:w-[600px] lg:w-[900px] ${isDark ? 'bg-gray-800' : 'bg-white'} shadow-lg rounded-lg z-30`}
+                  className="absolute left-1/2 top-full mt-2 transform -translate-x-1/2 w-full max-w-[80vw] md:w-[600px] lg:w-[900px] bg-white dark:bg-gray-800 shadow-lg dark:shadow-gray-700 rounded-lg z-30 transition-colors duration-300"
                   onMouseEnter={() => {
                     if (typeof window !== 'undefined' && window.innerWidth >= 768) {
                       setIsSolutionsOpen(true);
@@ -166,34 +154,23 @@ const Header = () => {
                     }
                   }}
                 >
-                  <SolutionDropdown isDark={isDark} />
+                  <SolutionDropdown />
                 </div>
               )}
             </li>
-            <li><a href="#" className={`block ${isDark ? 'text-gray-300 hover:text-blue-400' : 'text-gray-600 hover:text-blue-700'} font-bold hover:border-b-2 hover:border-blue-500 py-2 md:py-0`}>Blog</a></li>
+            <li><a href="#" className="block text-gray-600 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-bold hover:border-b-2 hover:border-blue-500 py-2 md:py-0 transition-colors duration-300">Blog</a></li>
           </ul>
         </nav>
 
-        {/* Right side - Contact Button and Theme Toggle */}
-        <div className="flex items-center space-x-4">
-          {/* Theme toggle with improved accessibility */}
-          <button
-            onClick={toggleTheme}
-            className={`p-2 rounded-full ${isDark ? 'text-gray-300 hover:bg-gray-700' : 'text-gray-600 hover:bg-gray-100'} focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 ${isDark ? 'focus:ring-offset-gray-900' : ''} transition-colors duration-300`}
-            aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
-          >
-            {mounted && (
-              isDark ? (
-                <Sun size={20} className="text-yellow-400" />
-              ) : (
-                <Moon size={20} className="text-gray-600" />
-              )
-            )}
-          </button>
+        {/* Theme Toggle */}
+        <div className="flex items-center gap-6 ">
+          <ThemeToggle />
+        
 
-          <a href="#" className={`${isDark ? 'bg-blue-600 hover:bg-blue-700' : 'bg-blue-700 hover:bg-blue-800'} text-white px-4 py-2 rounded-md hidden md:block transition-colors duration-300`}>
-            Contact Us
-          </a>
+        {/* Contact Button */}
+        <a href="#" className="bg-blue-700 dark:bg-blue-600 text-white px-4 py-2 rounded-md hidden md:block hover:bg-blue-800 dark:hover:bg-blue-500 transition-colors duration-300">
+          Contact Us
+        </a>
         </div>
       </div>
     </header>
