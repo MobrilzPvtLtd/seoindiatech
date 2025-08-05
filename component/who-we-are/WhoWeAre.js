@@ -5,6 +5,8 @@ import Journey from './Journey'
 import TrustUs from '../common/TrustUs'
 import Features from './Features'
 import Solutionswho from './Solutionswho'
+import Tools from './Tools'
+import Audience from './Audience'
 
 function WhoWeAre() {
   return (
@@ -21,13 +23,14 @@ function WhoWeAre() {
         // buttonGradient="bg-gradient-to-r from-purple-600 to-pink-600"
       />
       <Features />
-
+      <Tools/>
       <TrustUs
         title="Ready to get started?"
         buttonText="Contact Us Now!"
         bgGradient="bg-gradient-to-br from-slate-50 to-blue-200"
         // buttonGradient="bg-gradient-to-r from-purple-600 to-pink-600"
       />
+      <Audience/>
     </div>
   )
 }
