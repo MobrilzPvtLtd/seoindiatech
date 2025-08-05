@@ -3,6 +3,8 @@ import Hero from './Hero'
 import Navigate from './Navigate'
 import Journey from './Journey'
 import TrustUs from '../common/TrustUs'
+import Features from './Features'
+import Solutionswho from './Solutionswho'
 
 function WhoWeAre() {
   return (
@@ -10,6 +12,7 @@ function WhoWeAre() {
       <Hero />
       <Navigate />
       <Journey />
+      <Solutionswho />
       <TrustUs
         title="Trust Us"
         subtitle="We Know Our Stuff!"
@@ -17,7 +20,7 @@ function WhoWeAre() {
         bgGradient="bg-gradient-to-br from-slate-50 to-blue-200"
         // buttonGradient="bg-gradient-to-r from-purple-600 to-pink-600"
       />
-
+      <Features />
 
       <TrustUs
         title="Ready to get started?"
@@ -25,7 +28,6 @@ function WhoWeAre() {
         bgGradient="bg-gradient-to-br from-slate-50 to-blue-200"
         // buttonGradient="bg-gradient-to-r from-purple-600 to-pink-600"
       />
-
     </div>
   )
 }

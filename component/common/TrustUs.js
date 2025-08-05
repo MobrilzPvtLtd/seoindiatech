@@ -7,9 +7,9 @@ const TrustUs = ({
   subtitle = '',
   buttonText = 'Contact Us Now!',
   buttonUrl = '/contact',
-  bgGradient = 'bg-gradient-to-r from-gray-100 to-gray-200',
+  bgGradient = 'bg-gradient-to-r from-gray-50 to-gray-100',
   textColor = 'text-black',
-  buttonGradient = 'bg-gradient-to-r from-blue-500 to-blue-700',
+  buttonGradient = 'bg-gradient-to-r from-blue-400 to-blue-600',
   buttonTextColor = 'text-white',
 }) => {
   return (
