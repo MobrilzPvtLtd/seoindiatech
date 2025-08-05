@@ -23,7 +23,7 @@ const SolutionCard = ({ title, description, icon, slug }) => {
       </div>
       <p className={`${descriptionClass} mb-4`}>{description}</p>
       <Link 
-        href={`/solutions/${slug}`} 
+        href={`/solution/${slug}`} 
         className={`inline-block px-4 py-2 ${buttonBgClass} text-white rounded transition-colors duration-300`}
       >
         Learn more

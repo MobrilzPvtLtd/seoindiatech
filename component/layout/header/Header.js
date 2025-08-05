@@ -9,36 +9,91 @@ const Header = () => {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isSolutionsOpen, setIsSolutionsOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
+
+  // Refs for timeout management
+  const servicesTimeoutRef = useRef(null);
+  const solutionsTimeoutRef = useRef(null);
+  const servicesRef = useRef(null);
+  const solutionsRef = useRef(null);
  
-
-  const servicesRef = useRef();
-  const solutionsRef = useRef();
-
   // Set mounted state when component mounts to avoid hydration issues
   useEffect(() => {
     setMounted(true);
+    
+    // Clear any timeouts on unmount
+    return () => {
+      if (servicesTimeoutRef.current) clearTimeout(servicesTimeoutRef.current);
+      if (solutionsTimeoutRef.current) clearTimeout(solutionsTimeoutRef.current);
+    };
   }, []);
 
-  // Close dropdowns when clicking outside
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (
-        servicesRef.current && !servicesRef.current.contains(event.target)
-      ) {
+  // Handle mobile menu toggle
+  const toggleMobileMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  // Functions to handle dropdown hover behavior for desktop with delay
+  const handleServicesMouseEnter = () => {
+    if (typeof window !== 'undefined' && window.innerWidth >= 768) {
+      // Clear any existing timeout to prevent the dropdown from closing
+      if (servicesTimeoutRef.current) {
+        clearTimeout(servicesTimeoutRef.current);
+        servicesTimeoutRef.current = null;
+      }
+      
+      setIsServicesOpen(true);
+      setIsSolutionsOpen(false);
+    }
+  };
+
+  const handleServicesMouseLeave = () => {
+    if (typeof window !== 'undefined' && window.innerWidth >= 768) {
+      // Set a timeout to close the dropdown after 300ms
+      servicesTimeoutRef.current = setTimeout(() => {
         setIsServicesOpen(false);
+      }, 100); // 300ms delay
+    }
+  };
+
+  const handleSolutionsMouseEnter = () => {
+    if (typeof window !== 'undefined' && window.innerWidth >= 768) {
+      // Clear any existing timeout to prevent the dropdown from closing
+      if (solutionsTimeoutRef.current) {
+        clearTimeout(solutionsTimeoutRef.current);
+        solutionsTimeoutRef.current = null;
       }
-      if (
-        solutionsRef.current && !solutionsRef.current.contains(event.target)
-      ) {
+      
+      setIsSolutionsOpen(true);
+      setIsServicesOpen(false);
+    }
+  };
+
+  const handleSolutionsMouseLeave = () => {
+    if (typeof window !== 'undefined' && window.innerWidth >= 768) {
+      // Set a timeout to close the dropdown after 300ms
+      solutionsTimeoutRef.current = setTimeout(() => {
         setIsSolutionsOpen(false);
-      }
-    };
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
-  }, []);
+      }, 300); // 300ms delay
+    }
+  };
+
+  // Functions for mobile dropdown toggle (click behavior)
+  const handleServicesClick = () => {
+    if (typeof window !== 'undefined' && window.innerWidth < 768) {
+      setIsServicesOpen(!isServicesOpen);
+      setIsSolutionsOpen(false);
+    }
+  };
+
+  const handleSolutionsClick = () => {
+    if (typeof window !== 'undefined' && window.innerWidth < 768) {
+      setIsSolutionsOpen(!isSolutionsOpen);
+      setIsServicesOpen(false);
+    }
+  };
 
   return (
-    <header class="bg-white dark:bg-gray-900 shadow-md dark:shadow-gray-800 fixed top-0 left-0 w-full z-50 transition-colors duration-300">
+    <header className="bg-white dark:bg-gray-900 shadow-md dark:shadow-gray-800 fixed top-0 left-0 w-full z-50 transition-colors duration-300">
       <div className="container mx-auto px-4 flex items-center justify-center space-x-64 h-20">
         {/* Logo */}
         <div className="flex items-center">
@@ -61,7 +116,7 @@ const Header = () => {
         <nav className="relative">
           <button
             className="md:hidden text-gray-600 dark:text-gray-300 focus:outline-none"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            onClick={toggleMobileMenu}
             aria-label="Toggle menu"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -76,20 +131,11 @@ const Header = () => {
             <li
               className="relative"
               ref={servicesRef}
-              onMouseEnter={() => {
-                if (typeof window !== 'undefined' && window.innerWidth >= 768) {
-                  setIsServicesOpen(true);
-                  setIsSolutionsOpen(false);
-                }
-              }}
-              onMouseLeave={() => {
-                if (typeof window !== 'undefined' && window.innerWidth >= 768) {
-                  setIsServicesOpen(false);
-                }
-              }}
+              onMouseEnter={handleServicesMouseEnter}
+              onMouseLeave={handleServicesMouseLeave}
             >
               <button
-                onClick={() => setIsServicesOpen(!isServicesOpen)}
+                onClick={handleServicesClick}
                 className="text-gray-600 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-bold hover:border-b-2 hover:border-blue-500 py-2 md:py-0 flex items-center hover:cursor-pointer transition-colors duration-300"
                 aria-expanded={isServicesOpen}
                 aria-controls="services-dropdown"
@@ -100,16 +146,8 @@ const Header = () => {
                 <div
                   id="services-dropdown"
                   className="absolute left-1/2 top-full mt-2 transform -translate-x-1/2 w-full max-w-[80vw] md:w-[600px] lg:w-[900px] bg-white dark:bg-gray-800 shadow-lg dark:shadow-gray-700 rounded-lg z-30 transition-colors duration-300"
-                  onMouseEnter={() => {
-                    if (typeof window !== 'undefined' && window.innerWidth >= 768) {
-                      setIsServicesOpen(true);
-                    }
-                  }}
-                  onMouseLeave={() => {
-                    if (typeof window !== 'undefined' && window.innerWidth >= 768) {
-                      setIsServicesOpen(false);
-                    }
-                  }}
+                  onMouseEnter={handleServicesMouseEnter}
+                  onMouseLeave={handleServicesMouseLeave}
                 >
                   <ServiceDropdown />
                 </div>
@@ -119,20 +157,11 @@ const Header = () => {
             <li
               className="relative"
               ref={solutionsRef}
-              onMouseEnter={() => {
-                if (typeof window !== 'undefined' && window.innerWidth >= 768) {
-                  setIsSolutionsOpen(true);
-                  setIsServicesOpen(false);
-                }
-              }}
-              onMouseLeave={() => {
-                if (typeof window !== 'undefined' && window.innerWidth >= 768) {
-                  setIsSolutionsOpen(false);
-                }
-              }}
+              onMouseEnter={handleSolutionsMouseEnter}
+              onMouseLeave={handleSolutionsMouseLeave}
             >
               <button
-                onClick={() => setIsSolutionsOpen(!isSolutionsOpen)}
+                onClick={handleSolutionsClick}
                 className="text-gray-600 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-bold hover:border-b-2 hover:border-blue-500 py-2 md:py-0 flex items-center hover:cursor-pointer transition-colors duration-300"
                 aria-expanded={isSolutionsOpen}
                 aria-controls="solutions-dropdown"
@@ -143,16 +172,8 @@ const Header = () => {
                 <div
                   id="solutions-dropdown"
                   className="absolute left-1/2 top-full mt-2 transform -translate-x-1/2 w-full max-w-[80vw] md:w-[600px] lg:w-[900px] bg-white dark:bg-gray-800 shadow-lg dark:shadow-gray-700 rounded-lg z-30 transition-colors duration-300"
-                  onMouseEnter={() => {
-                    if (typeof window !== 'undefined' && window.innerWidth >= 768) {
-                      setIsSolutionsOpen(true);
-                    }
-                  }}
-                  onMouseLeave={() => {
-                    if (typeof window !== 'undefined' && window.innerWidth >= 768) {
-                      setIsSolutionsOpen(false);
-                    }
-                  }}
+                  onMouseEnter={handleSolutionsMouseEnter}
+                  onMouseLeave={handleSolutionsMouseLeave}
                 >
                   <SolutionDropdown />
                 </div>
@@ -162,15 +183,12 @@ const Header = () => {
           </ul>
         </nav>
 
-        {/* Theme Toggle */}
-        <div className="flex items-center gap-6 ">
+        {/* Theme Toggle and Contact Button */}
+        <div className="flex items-center gap-6">
           <ThemeToggle />
-        
-
-        {/* Contact Button */}
-        <a href="#" className="bg-blue-700 dark:bg-blue-600 text-white px-4 py-2 rounded-md hidden md:block hover:bg-blue-800 dark:hover:bg-blue-500 transition-colors duration-300">
-          Contact Us
-        </a>
+          <a href="#" className="bg-blue-700 dark:bg-blue-600 text-white px-4 py-2 rounded-md hidden md:block hover:bg-blue-800 dark:hover:bg-blue-500 transition-colors duration-300">
+            Contact Us
+          </a>
         </div>
       </div>
     </header>
