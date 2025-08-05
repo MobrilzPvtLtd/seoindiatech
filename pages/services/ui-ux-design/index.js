@@ -1,9 +1,14 @@
 import Blog from '@/component/blog/Blog'
 import React from 'react'
+import Ideas from './Ideas'
+import Why from './Why'
 
 function page() {
   return (
-   <div>Ui/ux</div>
+   <div>
+       <Ideas/>
+       <Why/>
+   </div>
   )
 }
 
