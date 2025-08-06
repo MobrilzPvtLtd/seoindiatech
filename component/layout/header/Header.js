@@ -94,7 +94,7 @@ const Header = () => {
 
   return (
     <header className="bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 shadow-md dark:shadow-gray-800 fixed top-0 left-0 w-full z-50 transition-colors duration-300">
-      <div className="container mx-auto px-4 flex items-center justify-between h-20">
+      <div className="container mx-auto px-32 flex items-center justify-between h-20">
         {/* Logo */}
         <div className="flex items-center">
           {mounted ? (
