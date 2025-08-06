@@ -229,7 +229,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom Bar */}
-      <div className="bg-gray-100 dark:bg-gray-800 py-6 border-t border-gray-200 dark:border-gray-700">
+      <div className="bg-gray-100 dark:bg-gray-800 py-4 border-t border-gray-200 dark:border-gray-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
           <div className="flex flex-col md:flex-row items-center md:space-x-6 mb-4 md:mb-0">
             <p className="text-gray-700 dark:text-gray-300 text-sm font-medium">
