@@ -2,14 +2,17 @@ import React from "react";
 import HeroSection from "./HeroSection";
 import WorkFlowService from "./WorkflowService"; 
 import AutomationBenefits from "../automation/AutomationBenefits"; 
-import TrustWorkflow from "./TrustWorkFlow";
+import TrustWorkFlow from "./TrustWorkflow";
+
+
+
 
 function WorkFlow() {
   return (
     <>
       <HeroSection />
       <WorkFlowService />
-      <TrustWorkflow />
+      <TrustWorkFlow/>
       <AutomationBenefits />
     </>
   );

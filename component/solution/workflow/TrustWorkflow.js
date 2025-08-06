@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 
-function TrustWorkflow() {
+const  TrustWorkFlow = ()=> {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -96,5 +96,4 @@ function TrustWorkflow() {
     </div>
   );
 }
-
-export default TrustWorkflow;
+export default TrustWorkFlow;
