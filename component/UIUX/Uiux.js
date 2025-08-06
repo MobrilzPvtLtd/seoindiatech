@@ -8,14 +8,14 @@ import Why from "./Why"
 
 function Uiux() {
   return (
-    <div className="container mx-auto">
+    <>
        <Ideas/>
        <Why/>
        <Process/>
        <Branding/>
        <Form/>
 
-    </div>
+    </>
   )
 }
 
