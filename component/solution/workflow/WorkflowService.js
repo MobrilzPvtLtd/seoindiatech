@@ -1,35 +1,32 @@
 import React from 'react';
 
-const WorkflowService = () => {
+const WorkFlowService = () => {
   return (
     <div className="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg my-10">
       <h1 className="text-4xl font-bold text-gray-800 text-center mb-4">
-        CRM & Management Tools
+       Workflow Service
       </h1>
       <h2 className="text-2xl font-semibold text-gray-600 text-center mb-8">
         How Does It Work?
       </h2>
       <div className="space-y-6">
         <Section
-          title="Understanding CRM – The Backbone of Customer-Centricity"
-          text="Discover how our CRM system centralizes customer data, streamlines communication, and builds lasting relationships with key features like contact management, sales automation, and customer analytics. The next as each step is completed. This ensures the right tasks are performed in the right sequence by the right people."
+          title="Define "
+          text=" the sequence of steps in the process. This includes determining the tasks, their order, which users/roles perform them, etc."
         />
         <Section
-          title="The Art of Task and Project Management"
-          text="Efficient project and task management are vital for organizational success. Discover how our management tools facilitate seamless collaboration, task delegation, and project tracking. From simple to-do lists to complex project timelines, our tools ensure that your team stays organized and focused on delivering results."
+          title="Coordinate "
+          text="the progression of the workflow from one task to the next as each step is completed. This ensures the right tasks are performed in the right sequence by the right people."
         />
         <Section
-          title="Integration for Seamless Workflows"
-          text="One of the strengths of our CRM and management tools lies in their ability to integrate seamlessly with other business applications. Explore how our solutions connect with email, calendar, and third-party apps, creating a unified ecosystem. This integration not only saves time but also reduces the risk of errors and ensures a smooth flow of information across your organization."
+          title="Provide "
+          text="visibility into the status of each workflow instance. This allows managers and users to track the progress and ensure workflows are completed on time."
         />
         <Section
-          title="Customization for Your Unique Needs"
-          text="Every business is unique, and so are its needs. Our CRM and management tools are highly customizable, allowing you to adapt them to your specific requirements. From custom fields in CRM to personalized project workflows, our tools empower you to mold the system to fit your business like a glove."
+          title="Optimize"
+          text="and improve the workflow over time. By analyzing metrics around cycle times, bottlenecks, and throughput, workflows can be streamlined for greater efficiency."
         />
-        <Section
-          title="Data Security and Compliance"
-          text="In an era of increasing cyber threats and data breaches, ensuring the security of your business information is paramount. Learn about the robust security measures embedded in our CRM and management tools. We take data privacy seriously and comply with industry regulations to provide you with peace of mind."
-        />
+       
       </div>
     </div>
   );
@@ -42,4 +39,4 @@ const Section = ({ title, text }) => (
   </div>
 );
 
-export default WorkflowService;
+export default WorkFlowService;

@@ -1,8 +1,44 @@
-import React, { useState, useEffect } from "react";
-import Image from "next/image";
+import { CheckCheck } from 'lucide-react';
+import Image from 'next/image';
+import { useState, useEffect } from 'react';
 
-function TrustWorkflow() {
+export default function TrustCRMTool() {
   const [isVisible, setIsVisible] = useState(false);
+  const [hoveredItem, setHoveredItem] = useState(null);
+
+  // Automation benefits data
+  const automationBenefits = [
+    {
+      id: 1,
+      text: "Centralized Data Management",
+      color: "text-blue-600"
+    },
+    {
+      id: 2,
+      text: "Improved Customer Relationships",
+      color: "text-green-600"
+    },
+    {
+      id: 3,
+      text: "Enhanced Communication",
+      color: "text-purple-600"
+    },
+    {
+      id: 4,
+      text: "Increased Productivity",
+      color: "text-orange-600"
+    },
+    {
+      id: 5,
+      text: "Strategic Decision-Making",
+      color: "text-green-600"
+    },
+    {
+      id: 6,
+      text: "Scalability and Growth",
+      color: "text-teal-600"
+    },
+  ];
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -37,35 +73,33 @@ function TrustWorkflow() {
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Side - Content */}
-            <div
-              className={`transform transition-all duration-700 ease-out ${
-                isVisible
-                  ? "translate-x-0 opacity-100"
-                  : "-translate-x-10 opacity-0"
-              }`}
-            >
+            <div className={`transform transition-all duration-700 ease-out ${isVisible ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}`}>
               <div className="bg-white rounded-2xl border-2 border-gray-100 p-8 shadow-xl">
                 <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 leading-tight">
-              No Need To Worry Anymore
+                  Benefit of using CRM <br />& Management tools
                 </h3>
-               
-                <p className="text-gray-700 mt-4 mb-6">
-                  By using software, automation, and integration, tasks have
-                  never been easier. You can track your team’s progress, assign
-                  tasks, and easily find where things go wrong. Workflow
-                  management software is used to automate and streamline
-                  workflow processes.
-                </p>
+                <div className="">
+                  {automationBenefits.map((benefit, index) => (
+                    <div
+                      key={benefit.id}
+                      className={`flex items-start space-x-4 p-3 rounded-lg transform transition-all duration-300 hover:bg-gray-50 cursor-pointer ${hoveredItem === benefit.id ? 'bg-gray-50' : ''} ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}
+                      style={{ transitionDelay: `${index * 150 + 300}ms` }}
+                      onMouseEnter={() => setHoveredItem(benefit.id)}
+                      onMouseLeave={() => setHoveredItem(null)}
+                    >
+                      <div className="flex-shrink-0 mt-1">
+                        <CheckCheck className='text-green-500' />
+                      </div>
+                      <p className={`text-gray-700 text-lg leading-relaxed transition-colors duration-300 ${hoveredItem === benefit.id ? benefit.color : 'text-gray-700'}`}>
+                        {benefit.text}
+                      </p>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
             {/* Right Side - Illustration */}
-            <div
-              className={`flex justify-center items-center transform transition-all duration-700 ease-out ${
-                isVisible
-                  ? "translate-y-0 opacity-100"
-                  : "translate-y-10 opacity-0"
-              }`}
-            >
+            <div className={`flex justify-center items-center transform transition-all duration-700 ease-out ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
               <Image
                 src="/images/crm1.jpeg"
                 alt="Workflow Illustration"
@@ -96,5 +130,3 @@ function TrustWorkflow() {
     </div>
   );
 }
-
-export default TrustWorkflow;
