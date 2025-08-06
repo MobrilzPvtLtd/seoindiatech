@@ -1,8 +1,8 @@
 import { ChevronDown, ChevronUp } from 'lucide-react';
 import React, { useState, useRef, useEffect } from 'react';
 import ServiceDropdown from './ServiceDropdown';
-import SolutionDropdown from './SolutionDropdown';
-import ThemeToggle from '@/component/common/ThemeToggle'; 
+import SolutionDropdown from './SolutionDropdown'; 
+import ThemeToggleButton from './ThemeToggleButton';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -48,10 +48,10 @@ const Header = () => {
 
   const handleServicesMouseLeave = () => {
     if (typeof window !== 'undefined' && window.innerWidth >= 768) {
-      // Set a timeout to close the dropdown after 300ms
+      // Set a timeout to close the dropdown after delay
       servicesTimeoutRef.current = setTimeout(() => {
         setIsServicesOpen(false);
-      }, 100); // 300ms delay
+      }, 100); // 100ms delay
     }
   };
 
@@ -70,7 +70,7 @@ const Header = () => {
 
   const handleSolutionsMouseLeave = () => {
     if (typeof window !== 'undefined' && window.innerWidth >= 768) {
-      // Set a timeout to close the dropdown after 300ms
+      // Set a timeout to close the dropdown after delay
       solutionsTimeoutRef.current = setTimeout(() => {
         setIsSolutionsOpen(false);
       }, 300); // 300ms delay
@@ -93,8 +93,8 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-white dark:bg-gray-900 shadow-md dark:shadow-gray-800 fixed top-0 left-0 w-full z-50 transition-colors duration-300">
-      <div className="container mx-auto px-4 flex items-center justify-center space-x-64 h-20">
+    <header className="bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 shadow-md dark:shadow-gray-800 fixed top-0 left-0 w-full z-50 transition-colors duration-300">
+      <div className="container mx-auto px-4 flex items-center justify-between h-20">
         {/* Logo */}
         <div className="flex items-center">
           {mounted ? (
@@ -184,8 +184,8 @@ const Header = () => {
         </nav>
 
         {/* Theme Toggle and Contact Button */}
-        <div className="flex items-center gap-6">
-          <ThemeToggle />
+        <div className="flex items-center gap-4">
+          <ThemeToggleButton />
           <a href="#" className="bg-blue-700 dark:bg-blue-600 text-white px-4 py-2 rounded-md hidden md:block hover:bg-blue-800 dark:hover:bg-blue-500 transition-colors duration-300">
             Contact Us
           </a>

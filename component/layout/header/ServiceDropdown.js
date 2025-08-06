@@ -1,30 +1,17 @@
 import Link from 'next/link';
 import React from 'react';
-import { useTheme } from 'next-themes';
 
 const ServiceCard = ({ title, description, icon, slug }) => {
-  const { resolvedTheme } = useTheme();
-  const [mounted, setMounted] = React.useState(false);
-
-  React.useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  const bgClass = mounted && resolvedTheme === 'dark' ? 'bg-gray-700' : 'bg-blue-50';
-  const textClass = mounted && resolvedTheme === 'dark' ? 'text-white' : 'text-gray-800';
-  const descriptionClass = mounted && resolvedTheme === 'dark' ? 'text-gray-300' : 'text-gray-600';
-  const buttonBgClass = mounted && resolvedTheme === 'dark' ? 'bg-blue-500 hover:bg-blue-600' : 'bg-blue-600 hover:bg-blue-700';
-
   return (
-    <div className={`${bgClass} p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300`}>
+    <div className="bg-blue-50 dark:bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
       <div className="flex items-center mb-4">
         <span className="text-2xl mr-2">{icon}</span>
-        <h3 className={`text-xl font-semibold ${textClass}`}>{title}</h3>
+        <h3 className="text-xl font-semibold text-gray-800 dark:text-white">{title}</h3>
       </div>
-      <p className={`${descriptionClass} mb-4`}>{description}</p>
+      <p className="text-gray-600 dark:text-gray-300 mb-4">{description}</p>
       <Link 
         href={`/services/${slug}`} 
-        className={`inline-block px-4 py-2 ${buttonBgClass} text-white rounded transition-colors duration-300`}
+        className="inline-block px-4 py-2 bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white rounded transition-colors duration-300"
       >
         Learn more
       </Link>
@@ -33,15 +20,6 @@ const ServiceCard = ({ title, description, icon, slug }) => {
 };
 
 export default function ServiceDropdown() {
-  const { resolvedTheme } = useTheme();
-  const [mounted, setMounted] = React.useState(false);
-
-  React.useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  const containerBgClass = mounted && resolvedTheme === 'dark' ? 'bg-gray-900' : 'bg-white';
-
   const services = [
     {
       title: 'Social Media Marketing',
@@ -82,7 +60,7 @@ export default function ServiceDropdown() {
   ];
 
   return (
-    <div className={`p-6 ${containerBgClass} grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full transition-colors duration-300`}>
+    <div className="p-6 bg-white dark:bg-gray-900 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full transition-colors duration-300">
       {services.map((service, index) => (
         <ServiceCard 
           key={index} 

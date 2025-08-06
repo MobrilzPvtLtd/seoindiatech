@@ -12,10 +12,7 @@
   }
 }
 
-.dark {
-  --background: #000;
-  --foreground: #f1f1f1;
-}
+@custom-variant dark (&:is(.dark *));
 
 body {
   background-color: var(--background);
