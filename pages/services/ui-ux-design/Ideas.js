@@ -26,7 +26,12 @@ const Ideas = () => {
         </div>
 
       </div>
-      <h1 className='text-7xl text-white w-full h-96 flex items-center justify-center bg-cover bg-center bg-no-repeat'>Crafting Digital Experiences That Convert</h1>
+      <div className="w-full h-96 md:h-[32rem] flex items-center justify-center bg-[url('/images/background.jpg')] bg-cover bg-center bg-no-repeat shadow-2xl rounded-2xl px-4">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-gray-950 font-bold text-center drop-shadow-md">
+          Crafting Digital Experiences That Convert
+        </h1>
+      </div>
+
 
     </div>
   );
