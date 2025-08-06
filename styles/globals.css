@@ -5,10 +5,15 @@
   --foreground: #171717;
 }
 
+.dark {
+  --background: #0f172a; /* A better dark background - slate-900 */
+  --foreground: #f8fafc; /* Improved text color for dark mode - slate-50 */
+}
+
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #000;
-    --foreground: #ededed;
+  :root:not(.light) {
+    --background: #0f172a;
+    --foreground: #f8fafc;
   }
 }
 
@@ -17,5 +22,5 @@
 body {
   background-color: var(--background);
   color: var(--foreground);
-  transition: background 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
 }
