@@ -1,11 +1,13 @@
 import React from 'react'
 import CRMHeroBanner from './CRMHeroBanner'
+import BlogPostsGrid from './BlogPostsGrid'
 
 function Blog() {
   return (
-    <div className="container mx-auto px-4">
+    <>
       <CRMHeroBanner />
-    </div>
+      <BlogPostsGrid />
+    </>
   )
 }
 

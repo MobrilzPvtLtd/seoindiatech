@@ -186,7 +186,7 @@ const Header = () => {
         {/* Theme Toggle and Contact Button */}
         <div className="flex items-center gap-4">
           <ThemeToggleButton />
-          <a href="#" className="bg-blue-700 dark:bg-blue-600 text-white px-4 py-2 rounded-md hidden md:block hover:bg-blue-800 dark:hover:bg-blue-500 transition-colors duration-300">
+          <a href="/contactus" className="bg-blue-700 dark:bg-blue-600 text-white px-4 py-2 rounded-md hidden md:block hover:bg-blue-800 dark:hover:bg-blue-500 transition-colors duration-300">
             Contact Us
           </a>
         </div>
