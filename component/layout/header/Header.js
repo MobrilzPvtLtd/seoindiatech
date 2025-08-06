@@ -179,7 +179,7 @@ const Header = () => {
                 </div>
               )}
             </li>
-            <li><a href="#" className="block text-gray-600 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-bold hover:border-b-2 hover:border-blue-500 py-2 md:py-0 transition-colors duration-300">Blog</a></li>
+            <li><a href="/blog" className="block text-gray-600 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-bold hover:border-b-2 hover:border-blue-500 py-2 md:py-0 transition-colors duration-300">Blog</a></li>
           </ul>
         </nav>
 

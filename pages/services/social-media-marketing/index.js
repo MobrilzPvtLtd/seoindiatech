@@ -4,6 +4,7 @@ import Manage from './Manage'
 import Ourservices from './Ourservices'
 import Communicate from './Communicate'
 import Network from './Network'
+import FAQComponent from '@/component/common/FAQComponent'
 
 export default function index() {
   return (
@@ -13,6 +14,7 @@ export default function index() {
       <Ourservices/>
       <Communicate/>
       <Network/>
+      <FAQComponent />
     </>
   )
 }

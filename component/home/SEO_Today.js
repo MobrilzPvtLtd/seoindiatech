@@ -4,7 +4,7 @@ function SEO_Today() {
   return (
     <>
     
-     <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4 sm:p-6 md:p-8">
+     <div className="  bg-gray-100 flex items-center justify-center p-4 sm:p-6 md:p-8">
         
         {/* The card-like container with a light blue background and rounded corners */}
         <div className="bg-blue-50 p-8 sm:p-12 md:p-16 rounded-3xl shadow-2xl max-w-5xl mx-auto">

@@ -1,20 +1,10 @@
-import Blog from '@/component/blog/Blog'
-import React from 'react'
-import Ideas from './Ideas'
-import Why from './Why'
-import Process from './Process'
-import Branding from './Branding'
-import Form from './Form'
+import Uiux from "@/component/UIUX/Uiux"
+
+ 
 
 function page() {
-  return (
-   <div>
-       <Ideas/>
-       <Why/>
-       <Process/>
-       <Branding/>
-       <Form/>
-   </div>
+  return ( 
+    <Uiux />
   )
 }
 

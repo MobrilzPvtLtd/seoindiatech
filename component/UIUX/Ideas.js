@@ -3,7 +3,7 @@ import React from 'react';
 const Ideas = () => {
   return (
     <div className='bg-gray-200 py-20 px-6'>
-      <div className='max-w-7xl mx-auto flex flex-col md:flex-row items-start justify-between gap-10 mb-16'>
+      <div className='  flex flex-col md:flex-row items-start justify-between gap-10 mb-16'>
         
         {/* Left Column - Heading */}
         <div className='md:w-1/2'>
