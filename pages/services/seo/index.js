@@ -1,7 +1,12 @@
+import SEO from '@/component/SEO/SEO'
 import React from 'react'
 
-export default function index() {
+const index = () => {
   return (
-    <div>index</div>
+    <div>
+      <SEO/>
+    </div>
   )
 }
+
+export default index
