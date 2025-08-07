@@ -1,80 +1,184 @@
 import React from "react";
+import { Target, Globe, Code, Layout, Server, Rocket, RefreshCw, Database, Search, FileCode, Lock } from "lucide-react";
 
 const WebsiteCreationService = () => {
+  const websiteSteps = [
+    {
+      id: 1,
+      icon: <Target className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
+      title: "Define Purpose and Goals",
+      text: "Determine the primary objective of your website, such as selling products, providing information, generating leads, or building a community.",
+      detail: "We start with a comprehensive strategy session to identify your target audience, business objectives, and success metrics."
+    },
+    {
+      id: 2,
+      icon: <Globe className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
+      title: "Choose a Domain Name",
+      text: "Select a domain name that reflects your brand or website's purpose. It should be easy to remember, pronounce, and type.",
+      detail: "Our domain experts help you secure the perfect web address that aligns with your brand identity and improves discoverability."
+    },
+    {
+      id: 3,
+      icon: <FileCode className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
+      title: "Select a Website Platform",
+      text: "Selecting a website platform or content management system (CMS) that suits your needs and technical capabilities.",
+      detail: "We recommend the ideal technology stack based on your requirements, whether it's WordPress, React, Next.js, or custom solutions."
+    },
+    {
+      id: 4,
+      icon: <Layout className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
+      title: "Design the Website",
+      text: "Determine the visual appearance and layout of your website, including color schemes, typography, imagery, and overall user interface design.",
+      detail: "Our designers create mockups and prototypes to visualize your website's look and feel before development begins."
+    },
+    {
+      id: 5,
+      icon: <Code className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
+      title: "Develop and Build",
+      text: "Transform the design concepts into a functional website using appropriate coding languages and frameworks.",
+      detail: "Our developers write clean, efficient code to bring your website to life with responsive design and optimal performance."
+    },
+    {
+      id: 6,
+      icon: <Database className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
+      title: "Create and Organize Content",
+      text: "Planning and creating engaging and relevant content for the website, including text, images, videos, and other media.",
+      detail: "We help structure your content for maximum impact and user engagement, focusing on your brand's unique voice and message."
+    },
+    {
+      id: 7,
+      icon: <Search className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
+      title: "Optimize for Search Engines (SEO)",
+      text: "Implementing search engine optimization techniques to improve the website's visibility in search engine results.",
+      detail: "Our SEO specialists ensure your website follows best practices for on-page optimization, helping users find your site organically."
+    },
+    {
+      id: 8,
+      icon: <RefreshCw className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
+      title: "Test and Optimize",
+      text: "Thoroughly test the website across different devices, browsers, and screen sizes to ensure it is responsive and functions properly.",
+      detail: "We perform comprehensive quality assurance testing, checking functionality, performance, security, and accessibility."
+    },
+    {
+      id: 9,
+      icon: <Server className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
+      title: "Choose a Hosting Provider",
+      text: "Select a reliable web hosting service that offers appropriate storage, bandwidth, security, and support for your website.",
+      detail: "We recommend scalable hosting solutions that balance performance, security, and cost-effectiveness for your specific needs."
+    },
+    {
+      id: 10,
+      icon: <Rocket className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
+      title: "Launch the Website",
+      text: "Make the website live and accessible to the public after final checks and approvals.",
+      detail: "Our launch process includes final testing, DNS configuration, and monitoring to ensure a smooth transition to your live website."
+    },
+    {
+      id: 11,
+      icon: <Lock className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
+      title: "Maintain and Update",
+      text: "Regularly update the website with fresh content, security patches, and software updates to keep it relevant and secure.",
+      detail: "We offer ongoing maintenance packages to ensure your website remains secure, fast, and up-to-date with the latest technologies."
+    }
+  ];
+
   return (
-
-    <div className='bg-gray-100 py-10'>
-    <div className="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg my-10">
-      <h1 className="text-4xl font-bold text-gray-800 text-center mb-4">
-        Website Creation
-      </h1>
-      <h2 className="text-2xl font-semibold text-gray-600 text-center mb-8">
-        How Does It Work?
-      </h2>
-      <div className="space-y-6">
-        <Section
-          title="Defining"
-          text=" the website’s purpose and goals: Determine the primary objective of your website."
-        />
-        <Section
-          title="Choosing"
-          text=" a domain name: Select a domain name that reflects your brand or website’s purpose. "
-        />
-        <Section
-          title="Integration for Seamless Workflows"
-          text="Selecting a website platform or content management system (CMS)"
-        />
-        <Section
-          title="Customization for Your Unique Needs"
-          text="Designing the website: Determine the visual appearance and layout of your website."
-        />
-        <Section
-          title="Data Security and Compliance"
-          text="Developing and building the website."
-        />
-        <Section
-          title="Data Security and Compliance"
-          text="Creating and organizing the content: Planning and creating engaging and relevant content for the website."
-        />
-        <Section
-          title="Data Security and Compliance"
-          text="Optimizing for search engines (SEO): Implementing search engine optimization techniques to improve the website’s visibility in search engine results."
-        />
-        <Section
-          title="Data Security and Compliance"
-          text="Testing and optimizing: Thoroughly test the website across different devices, browsers, and screen sizes to ensure it is responsive and functions properly. Check for broken links, and test forms, and validate the overall user experience. Gather feedback and make necessary optimizations.
-
-"
-        />
-        <Section
-          title="Data Security and Compliance"
-          text="Choosing a hosting provider.
-
-"
-        />
-        <Section
-          title="Data Security and Compliance"
-          text="Launching the website.
-
-"
-        />
-        <Section
-          title="Data Security and Compliance"
-          text="Maintaining and updating the website: Regularly update the website with fresh content, security patches, and software updates.
-
-"
-        />
+    <section className="bg-gradient-to-b from-blue-100 to-blue-200 dark:from-gray-700 dark:to-gray-900 py-16 md:py-24 px-4 md:px-8 relative overflow-hidden">
+      {/* Background decorative elements */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-1/4 right-0 w-72 h-72 bg-white/50 dark:bg-blue-900/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 left-1/4 w-80 h-80 bg-blue-300/30 dark:bg-blue-800/10 rounded-full blur-3xl"></div>
       </div>
-    </div>
-    </div>
+
+      <div className="max-w-5xl mx-auto relative z-10">
+        <div className="bg-white dark:bg-gray-800 shadow-xl rounded-2xl overflow-hidden">
+          {/* Header with blue gradient */}
+          <div className="bg-gradient-to-r from-gray-600 to-gray-800 dark:from-gray-700 dark:to-gray-800 px-6 md:px-10 py-10 text-white">
+            <h1 className="text-3xl md:text-4xl font-bold text-center">Website Creation</h1>
+            <div className="w-20 h-1 bg-white/50 mx-auto my-4 rounded-full"></div>
+            <h2 className="text-xl md:text-2xl font-medium text-center text-blue-100">How Does It Work?</h2>
+          </div>
+
+          {/* Content */}
+          <div className="p-6 md:p-10">
+            <div className="flex items-center justify-center mb-10">
+              <div className="px-6 py-3 bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-sm font-medium">
+                Our 11-Step Process for Building Exceptional Websites
+              </div>
+            </div>
+
+            <div className="space-y-8">
+              {websiteSteps.map((step) => (
+                <div key={step.id} className="relative group">
+                  <div className="flex flex-col sm:flex-row gap-6">
+                    {/* Step number and icon */}
+                    <div className="flex-shrink-0 relative">
+                      <div className="flex items-center justify-center w-12 h-12 bg-blue-100 dark:bg-blue-900/50 rounded-lg border border-blue-200 dark:border-blue-800 shadow-sm group-hover:bg-blue-200 dark:group-hover:bg-blue-800/60 transition-colors duration-300">
+                        {step.icon}
+                      </div>
+                      <div className="absolute -top-2 -right-2 w-6 h-6 bg-blue-600 dark:bg-blue-500 rounded-full flex items-center justify-center text-white text-xs font-bold">
+                        {step.id}
+                      </div>
+                    </div>
+
+                    {/* Step content */}
+                    <div className="flex-grow">
+                      <h3 className="font-semibold text-blue-600 dark:text-blue-400 text-lg mb-2">
+                        {step.title}
+                      </h3>
+                      <p className="text-gray-700 dark:text-gray-300 mb-3">
+                        {step.text}
+                      </p>
+                      <div className="mt-2 pl-4 border-l-2 border-blue-200 dark:border-blue-800">
+                        <p className="text-gray-600 dark:text-gray-400 text-sm italic">
+                          {step.detail}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Connector line */}
+                  {step.id < websiteSteps.length && (
+                    <div className="hidden sm:block absolute left-6 top-14 bottom-0 w-0.5 bg-blue-200 dark:bg-blue-800 ml-[0.3rem]"></div>
+                  )}
+                </div>
+              ))}
+            </div>
+
+            {/* Website types section */}
+            <div className="mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">
+                Types of Websites We Create
+              </h3>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                {[
+                  { title: "E-Commerce Stores", description: "Online shopping with secure payments" },
+                  { title: "Corporate Websites", description: "Professional business presence" },
+                  { title: "Portfolio Sites", description: "Showcase creative work" },
+                  { title: "Blogs & News", description: "Content-focused platforms" },
+                  { title: "Web Applications", description: "Interactive user experiences" },
+                  { title: "Landing Pages", description: "Conversion-optimized pages" }
+                ].map((type, index) => (
+                  <div key={index} className="bg-blue-50 dark:bg-blue-900/20 border border-blue-100 dark:border-blue-800 rounded-lg p-4 text-center hover:shadow-md transition-shadow duration-300">
+                    <div className="text-lg font-semibold text-gray-900 dark:text-white mb-1">
+                      {type.title}
+                    </div>
+                    <div className="text-sm text-blue-600 dark:text-blue-400">
+                      {type.description}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+      </div>
+    </section>
   );
 };
-
-const Section = ({ title, text }) => (
-  <div>
-    <h3 className="font-semibold text-blue-600 text-lg mb-1">{title} <span className="text-gray-700 text-base text-justify">{text}</span></h3>
-    
-  </div>
-);
 
 export default WebsiteCreationService;
