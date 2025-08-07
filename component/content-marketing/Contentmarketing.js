@@ -7,13 +7,13 @@ import Why from './Why'
 
 const Contentmarketing = () => {
   return (
-    <div>
+    <>
         <Contenthero/>
         <Contentservices/>
         <Strategies/>
         <Contentbranding/>
         <Why/>
-    </div>
+    </>
   )
 }
 

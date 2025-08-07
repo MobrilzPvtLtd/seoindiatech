@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 
-// Example Tailwind FAQComponent (no Chakra UI)
 const FAQComponent = ({ faqdata }) => {
   const [openIndex, setOpenIndex] = useState(null);
 
@@ -13,7 +12,7 @@ const FAQComponent = ({ faqdata }) => {
     {
       question: "What is the cost of building a website or app?",
       answer:
-        "The cost of building a website or app with Mobrilz varies based on your project scope, features, design complexity, and required integrations. We offer flexible pricing models to suit startups, SMEs, and large enterprises. After a quick consultation, we provide a transparent quote with no hidden charges."
+        "The cost of building a website or app varies based on your project scope, features, design complexity, and required integrations. We offer flexible pricing models to suit startups, SMEs, and large enterprises. After a quick consultation, we provide a transparent quote with no hidden charges."
     },
     {
       question: "How long does it take to complete a website project?",
@@ -33,7 +32,7 @@ const FAQComponent = ({ faqdata }) => {
     {
       question: "How can you help my business grow online?",
       answer:
-        "Mobrilz helps your business grow online by combining technical excellence with creative strategy. We build responsive websites, user-friendly mobile apps, and run result-driven marketing campaigns. By focusing on user experience, keyword optimization, and performance analytics, we ensure your brand gets maximum visibility and lead conversions. Our services are tailored to each client, so you get a solution that fits your exact business needs."
+        "We help your business grow online by combining technical excellence with creative strategy. We build responsive websites, user-friendly mobile apps, and run result-driven marketing campaigns. By focusing on user experience, keyword optimization, and performance analytics, we ensure your brand gets maximum visibility and lead conversions. Our services are tailored to each client, so you get a solution that fits your exact business needs."
     },
     {
       question: "Can you manage the website or app after launch?",
@@ -45,31 +44,31 @@ const FAQComponent = ({ faqdata }) => {
   const data = faqdata || faqData;
 
   return (
-    <div className="bg-gradient-to-b from-blue-300 to-gray-100 py-20 px-4">
+    <div className="bg-gradient-to-b from-blue-300 to-white dark:from-gray-700 dark:to-gray-900 py-20 px-4">
       <div className="max-w-6xl mx-auto">
-        <div className="bg-white rounded-3xl py-10 px-4 md:px-20 shadow-2xl backdrop-blur">
+        <div className="bg-white dark:bg-gray-800 rounded-3xl py-10 px-4 md:px-20 shadow-2xl backdrop-blur">
           {/* Header Section */}
           <div className="flex flex-col items-center mb-8 text-center space-y-8">
-            <h2 className="text-2xl font-bold text-gray-800">Frequently Asked Questions</h2>
-            <p className="text-gray-600 text-md max-w-md leading-relaxed">
+            <h2 className="text-2xl font-bold text-gray-800 dark:text-white">Frequently Asked Questions</h2>
+            <p className="text-gray-600 dark:text-gray-300 text-md max-w-md leading-relaxed">
               Get answers to your questions and learn about our platform
             </p>
           </div>
           {/* FAQ Accordion */}
-          <div className="divide-y divide-gray-200">
+          <div className="divide-y divide-gray-200 dark:divide-gray-700">
             {data.map((faq, index) => (
-              <div key={index} className={index === data.length - 1 ? '' : 'border-b'}>
+              <div key={index} className={index === data.length - 1 ? '' : 'border-b dark:border-gray-700'}>
                 <button
-                  className="w-full flex justify-between items-center py-6 px-0 focus:outline-none"
+                  className="w-full flex justify-between items-center py-6 px-0 focus:outline-none focus:ring-0"
                   onClick={() => setOpenIndex(openIndex === index ? null : index)}
                   aria-expanded={openIndex === index}
                   aria-controls={`faq-panel-${index}`}
                 >
-                  <span className="flex-1 text-left font-semibold text-lg text-gray-800">
+                  <span className="flex-1 text-left font-semibold text-lg text-gray-800 dark:text-white">
                     {faq.question}
                   </span>
                   <svg
-                    className={`w-6 h-6 text-gray-600 transform transition-transform duration-200 ${openIndex === index ? 'rotate-180' : ''}`}
+                    className={`w-6 h-6 text-gray-600 dark:text-gray-400 transform transition-transform duration-200 ${openIndex === index ? 'rotate-180' : ''}`}
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -82,7 +81,7 @@ const FAQComponent = ({ faqdata }) => {
                     id={`faq-panel-${index}`}
                     className="px-0 pb-6"
                   >
-                    <p className="text-gray-600 leading-relaxed text-md">
+                    <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-md">
                       {faq.answer}
                     </p>
                   </div>

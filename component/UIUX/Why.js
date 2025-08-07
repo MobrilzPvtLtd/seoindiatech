@@ -1,61 +1,88 @@
 import React from 'react';
+import Image from 'next/image';
+
+const advantages = [
+  {
+    image: 'https://www.digitalyzeit.com/wp-content/uploads/2025/02/website-desgin.webp',
+    title: 'Instant Trust & Credibility',
+    description: '75% of users judge a brand\'s trustworthiness by its design.',
+    alt: 'Trust'
+  },
+  {
+    image: 'https://www.digitalyzeit.com/wp-content/uploads/2025/01/strategic-story-telling-scaled.webp',
+    title: 'Optimized for Conversion',
+    description: 'A seamless UI can boost conversion rates by up to 200%.',
+    alt: 'Conversion'
+  },
+  {
+    image: 'https://www.digitalyzeit.com/wp-content/uploads/2024/08/Digital-Marketing-Innovative-Image-1.webp',
+    title: 'Customer Retention & Loyalty',
+    description: 'Intuitive UX leads to 88% higher customer retention rates.',
+    alt: 'Retention'
+  }
+];
 
 const Why = () => {
   return (
-    <div className='bg-gray-200 py-20'>
-      <h1 className='text-green-950 text-6xl font-bold leading-tight px-8 md:px-36 mb-16'>
-        Why UI/UX Is Your <br />Competitive Advantage
-      </h1>
-
-      <div className='space-y-12 px-8 md:px-36'>
-
-        {/* Row 1 */}
-        <div className='flex flex-col md:flex-row items-center justify-between border-t border-b py-8 gap-6'>
-          <img 
-            src='https://www.digitalyzeit.com/wp-content/uploads/2025/02/website-desgin.webp' 
-            alt='Trust' 
-            className='w-56 h-20 object-cover rounded-full'
-          />
-          <h2 className='text-xl font-semibold text-center md:text-left text-gray-700'>
-            Instant Trust & Credibility
-          </h2>
-          <p className='text-gray-700 text-center md:text-left'>
-            75% of users judge a brand’s trustworthiness by its design.
-          </p>
+    <section className='bg-gray-200 dark:bg-gray-900 py-16 md:py-20'>
+      <div className="max-w-7xl mx-auto px-6 md:px-8">
+        {/* Section Header */}
+        <div className="mb-16">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-blue-100 dark:bg-blue-950/60 text-blue-800 dark:text-blue-300 rounded-full text-sm font-medium mb-4">
+            <span>Competitive Edge</span>
+          </div>
+          
+          <h1 className='text-gray-900 dark:text-white text-4xl md:text-5xl lg:text-6xl font-bold leading-tight'>
+            Why UI/UX Is Your <br className="hidden md:block" />Competitive Advantage
+          </h1>
+          
+          <div className="mt-6">
+            <div className="h-1 w-24 bg-blue-600 dark:bg-blue-500 rounded-full"></div>
+          </div>
         </div>
 
-        {/* Row 2 */}
-        <div className='flex flex-col md:flex-row items-center justify-between border-t border-b py-8 gap-6'>
-          <img 
-            src='https://www.digitalyzeit.com/wp-content/uploads/2025/01/strategic-story-telling-scaled.webp' 
-            alt='Conversion' 
-            className='w-56 h-20 object-cover rounded-full'
-          />
-          <h2 className='text-xl font-semibold text-center md:text-left text-gray-700'>
-            Optimized for Conversion
-          </h2>
-          <p className='text-gray-700 text-center md:text-left'>
-            A seamless UI can boost conversion rates by up to 200%.
-          </p>
+        <div className='space-y-6'>
+          {advantages.map((item, index) => (
+            <div 
+              key={index} 
+              className='flex flex-col md:flex-row items-center justify-between border-t border-b border-gray-300 dark:border-gray-700 py-8 gap-6 group hover:bg-white/50 dark:hover:bg-gray-800/50 transition-colors rounded-lg px-4'
+            >
+              <div className="relative overflow-hidden rounded-full w-56 h-20 shadow-md">
+                <Image 
+                  src={item.image}
+                  alt={item.alt}
+                  width={224}
+                  height={80}
+                  className='object-cover w-full h-full transition-transform duration-500 group-hover:scale-110'
+                />
+              </div>
+              
+              <h2 className='text-xl font-semibold text-center md:text-left text-gray-800 dark:text-gray-100 md:w-1/3'>
+                {item.title}
+              </h2>
+              
+              <p className='text-gray-700 dark:text-gray-300 text-center md:text-left md:w-1/3'>
+                {item.description}
+              </p>
+            </div>
+          ))}
         </div>
-
-        {/* Row 3 */}
-        <div className='flex flex-col md:flex-row items-center justify-between border-t border-b py-8 gap-6'>
-          <img 
-            src='https://www.digitalyzeit.com/wp-content/uploads/2024/08/Digital-Marketing-Innovative-Image-1.webp' 
-            alt='Retention' 
-            className='w-56 h-20 object-cover rounded-full'
-          />
-          <h2 className='text-xl font-semibold text-center md:text-left text-gray-700'>
-            Customer Retention & Loyalty
-          </h2>
-          <p className='text-gray-700 text-center md:text-left'>
-            Intuitive UX leads to 88% higher customer retention rates.
-          </p>
+        
+        {/* Additional statistics section */}
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
+          {[
+            { value: '2.6x', label: 'ROI for businesses that invest in UX design' },
+            { value: '94%', label: 'First impressions are design-related' },
+            { value: '8s', label: 'Average time to form an opinion on your website' }
+          ].map((stat, index) => (
+            <div key={index} className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md flex flex-col items-center text-center">
+              <span className="text-4xl font-bold text-blue-700 dark:text-blue-400">{stat.value}</span>
+              <p className="mt-2 text-gray-700 dark:text-gray-300">{stat.label}</p>
+            </div>
+          ))}
         </div>
-
       </div>
-    </div>
+    </section>
   );
 };
 

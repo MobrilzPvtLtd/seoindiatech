@@ -8,14 +8,14 @@ import Form from './Form'
 
 const Digitalbranding = () => {
   return (
-    <div>
+    <>
       <Digitalhero/>
       <Why/>
       <Approach/>
       <Begin/>
       <Casestudies/>
       <Form/>
-    </div>
+    </>
   )
 }
 
