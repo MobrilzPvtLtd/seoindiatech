@@ -101,12 +101,12 @@ const Ppchero = () => {
 
         {/* Call-to-action Button */}
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-          <button className="bg-blue-600 hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-600 text-white font-bold text-lg px-6 py-3 rounded-lg shadow-md transition-all duration-300 flex items-center group">
+          <button className="bg-gradient-to-r from-blue-600 to-blue-800 hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-600 text-white font-bold text-lg px-6 py-3 rounded-full shadow-md transition-all duration-300 flex items-center group">
             Get Your Custom PPC Strategy
             <ArrowRight className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
           </button>
           
-          <button className="bg-transparent text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium text-lg border border-gray-300 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-500 px-6 py-3 rounded-lg transition-colors duration-300">
+          <button className="bg-transparent text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium text-lg border border-gray-300 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-500 px-6 py-3 rounded-full transition-colors duration-300">
             Learn About Our Process
           </button>
         </div>
