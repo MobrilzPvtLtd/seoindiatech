@@ -44,12 +44,12 @@ const Begin = () => {
           
           {/* Buttons */}
           <div className='flex flex-col sm:flex-row gap-4 mt-10'>
-            <button className='bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-base font-semibold transition-colors shadow-lg hover:shadow-blue-900/30 flex items-center group'>
+            <button className='bg-gradient-to-r from-blue-600 to-blue-800 hover:bg-blue-700 text-white px-8 py-4 rounded-full text-base font-semibold transition-colors shadow-lg hover:shadow-blue-900/30 flex items-center group'>
               Get Started
               <ArrowRight className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
             </button>
             
-            <button className='text-white border-2 border-white/30 px-8 py-4 rounded-lg text-base font-semibold hover:bg-white/10 transition-colors flex items-center'>
+            <button className='text-white border-2 border-white/30 px-8 py-4 rounded-full text-base font-semibold hover:bg-white/10 transition-colors flex items-center'>
               Learn More
             </button>
           </div>

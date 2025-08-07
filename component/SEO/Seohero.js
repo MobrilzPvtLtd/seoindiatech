@@ -54,12 +54,12 @@ const Seohero = () => {
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4 mt-8 justify-center md:justify-start">
-            <button className="bg-gradient-to-r from-blue-600 to-blue-800 dark:from-blue-600 dark:to-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg shadow-md flex items-center justify-center group">
+            <button className="bg-gradient-to-r from-blue-600 to-blue-800 dark:from-blue-600 dark:to-blue-700 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:shadow-lg shadow-md flex items-center justify-center group">
               Get started now
               <ArrowRight className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
             </button>
             
-            <button className="bg-white dark:bg-gray-800 text-gray-800 dark:text-white border border-gray-200 dark:border-gray-700 px-6 py-3 rounded-lg font-semibold hover:bg-gray-50 dark:hover:bg-gray-700 transition">
+            <button className="bg-white dark:bg-gray-800 text-gray-800 dark:text-white border border-gray-200 dark:border-gray-700 px-6 py-3 rounded-full font-semibold hover:bg-gray-50 dark:hover:bg-gray-700 transition">
               See our results
             </button>
           </div>

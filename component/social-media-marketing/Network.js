@@ -112,7 +112,7 @@ const NetworkSection = () => {
           </p>
           
           <div className="flex justify-center mt-10">
-            <button className="bg-blue-700 dark:bg-blue-600 hover:bg-blue-800 dark:hover:bg-blue-700 text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 shadow-md hover:shadow-lg flex items-center">
+            <button className="bg-gradient-to-r from-blue-600 to-blue-800 dark:bg-blue-600 hover:bg-blue-800 dark:hover:bg-blue-700 text-white font-semibold px-8 py-4 rounded-full transition-all duration-300 shadow-md hover:shadow-lg flex items-center">
               Learn More
               <ArrowRight className="ml-2 w-5 h-5" />
             </button>

@@ -134,7 +134,7 @@ const Approach = () => {
           <p className="text-gray-700 dark:text-gray-300 mb-6 max-w-2xl mx-auto">
             Ready to establish a powerful digital brand that connects with your audience and drives business growth?
           </p>
-          <button className="bg-blue-600 hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-600 text-white font-semibold py-3 px-8 rounded-lg transition-colors">
+          <button className="bg-gradient-to-r from-blue-600 to-blue-800 hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-600 text-white font-semibold py-3 px-8 rounded-full transition-colors">
             Schedule a Brand Strategy Call
           </button>
         </div>

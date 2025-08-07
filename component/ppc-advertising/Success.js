@@ -65,11 +65,11 @@ const Success = () => {
             </p>
 
             <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
-              <button className="bg-white hover:bg-blue-50 text-blue-700 px-8 py-3.5 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg flex items-center justify-center group">
+              <button className="bg-white hover:bg-blue-50 text-blue-700 px-8 py-3.5 rounded-full font-semibold transition-all duration-300 hover:shadow-lg flex items-center justify-center group">
                 Get started now
                 <ArrowRight className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
               </button>
-              <button className="bg-transparent border border-white/50 hover:border-white text-white hover:bg-white/10 px-8 py-3.5 rounded-lg font-semibold transition-all duration-300">
+              <button className="bg-transparent border border-white/50 hover:border-white text-white hover:bg-white/10 px-8 py-3.5 rounded-full font-semibold transition-all duration-300">
                 Schedule a consultation
               </button>
             </div>
