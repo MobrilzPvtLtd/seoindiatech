@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const Hero = () => {
     return (
-        <div className='px-4 md:px-0'>
+        <div className='px-4 py-6  bg-white dark:bg-gray-900'>
 
             <div className='bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-gray-900 dark:to-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-between shadow-lg max-w-7xl mx-auto my-6 md:my-10'>
                 {/* Left Content */}

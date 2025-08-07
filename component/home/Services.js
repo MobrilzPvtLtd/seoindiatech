@@ -36,6 +36,7 @@ const Services = () => {
   ];
 
   return (
+    <div className='bg-white dark:bg-gray-900 pt-4 pb-8'>
     <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20'>
       <div className='grid md:grid-cols-3 gap-6 lg:gap-8'>
         {/* Left two columns for cards */}
@@ -83,6 +84,7 @@ const Services = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };
