@@ -90,7 +90,7 @@ const Socialmediastrategies = () => {
           <a href="#strategies" className="px-8 py-3 bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-500 dark:to-blue-600 text-white font-medium rounded-full shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
             Explore Strategies
           </a>
-          <a href="/contact" className="px-8 py-3 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-200 font-medium rounded-full hover:bg-gray-50 dark:hover:bg-gray-800 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-700">
+          <a href="/contactus" className="hidden px-8 py-3 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-200 font-medium rounded-full hover:bg-gray-50 dark:hover:bg-gray-800 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-700">
             Contact Us
           </a>
         </div>
@@ -135,7 +135,7 @@ const Socialmediastrategies = () => {
             </div>
             <div className="flex-shrink-0">
               <a 
-                href="/contact" 
+                href="/contactus" 
                 className="inline-block px-8 py-4 bg-white dark:bg-gray-800 text-blue-600 dark:text-blue-400 font-medium rounded-full shadow-md hover:bg-gray-50 dark:hover:bg-gray-700 transform hover:scale-105 transition-all duration-300"
               >
                 Schedule a Consultation

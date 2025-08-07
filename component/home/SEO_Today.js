@@ -1,5 +1,6 @@
 import React from 'react'
 import { ArrowRight } from 'lucide-react'
+import Link from 'next/link'
 
 function SEO_Today() {
   return (
@@ -41,15 +42,19 @@ function SEO_Today() {
         </p>
         
         {/* Call to action buttons */}
+        
         <div className="relative mt-10 flex flex-col sm:flex-row justify-center gap-4">
+          <Link href="/services/digital-branding">
           <button className="group bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-500 dark:to-indigo-600 text-white font-semibold py-3.5 px-8 rounded-full shadow-lg hover:shadow-xl hover:shadow-blue-500/20 dark:hover:shadow-blue-500/10 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-600 transition-all duration-300 transform hover:scale-105 active:scale-95">
             Learn More
             <ArrowRight className="inline-block ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
           </button>
-          
-          <button className="bg-transparent border border-blue-300 dark:border-blue-700 text-blue-600 dark:text-blue-400 font-semibold py-3.5 px-8 rounded-full hover:bg-blue-50 dark:hover:bg-blue-900/30 focus:outline-none focus:ring-4 focus:ring-blue-100 dark:focus:ring-blue-800 transition-all duration-300">
+          </Link>
+          <Link href="#">
+          <button className="bg-transparent border hidden border-blue-300 dark:border-blue-700 text-blue-600 dark:text-blue-400 font-semibold py-3.5 px-8 rounded-full hover:bg-blue-50 dark:hover:bg-blue-900/30 focus:outline-none focus:ring-4 focus:ring-blue-100 dark:focus:ring-blue-800 transition-all duration-300">
             Schedule Consultation
           </button>
+          </Link>
         </div>
         
         {/* Social proof */}

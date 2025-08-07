@@ -135,7 +135,7 @@ const Process = () => {
           ))}
           
           {/* Image Card */}
-          <div className='bg-white dark:bg-gray-800 shadow-lg rounded-xl overflow-hidden border border-gray-100 dark:border-gray-700 hover:shadow-xl transition duration-300'>
+          <div className='bg-white dark:bg-gray-800 shadow-lg rounded-xl overflow-hidden border border-gray-100 dark:border-gray-700 hover:scale-102 transition duration-300'>
             <div className="relative h-full w-full min-h-[300px]">
               <Image
                 src='https://www.digitalyzeit.com/wp-content/uploads/2025/02/UX-design-768x1365.webp'
