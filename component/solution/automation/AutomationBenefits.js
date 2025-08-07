@@ -45,7 +45,7 @@ export default function AutomationBenefits() {
       aria-label="Benefits of our automation services"
     >
       <div className="relative w-full max-w-6xl bg-white rounded-2xl shadow-2xl border border-gray-100 overflow-hidden">
-        <div className="grid lg:grid-cols-2 gap-0 min-h-[500px]">
+        <div className="grid lg:grid-cols-2 gap-0 ">
           {/* Left Section - Benefits */}
           <div className="flex flex-col justify-center space-y-6 p-8 lg:p-12 z-10 relative bg-white/95 backdrop-blur-sm">
 

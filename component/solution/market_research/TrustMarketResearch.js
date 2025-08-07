@@ -92,7 +92,7 @@ export default function TrustMarketResearch() {
             {/* Right Side - Illustration */}
             <div className={`flex justify-center items-center transform transition-all duration-700 ease-out ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
               <Image
-                src="/images/crm1.jpeg"
+                src="/images/market2.png"
                 alt="Workflow Illustration"
                 width={500}
                 height={500}

@@ -50,7 +50,7 @@ export default function TrustCRMTool() {
   return (
     <div className="min-h-screen bg-gray-100">
       {/* Header Section */}
-      <section className="bg-gray-200 py-12 px-6">
+      <section className="bg-gray-200 py-8 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
             <div className="text-center md:text-left">

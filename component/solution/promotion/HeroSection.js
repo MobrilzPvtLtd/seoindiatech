@@ -1,26 +1,32 @@
 // components/HeroSection.js
-import Image from 'next/image';
-import React from 'react';
+import Image from "next/image";
+import React from "react";
 
 const HeroSection = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center max-w-4xl mx-auto p-6">
+    <div className="flex flex-col md:flex-row items-center bg-white container px-20  mx-auto py-16">
       <div className="md:w-1/2 text-center md:text-left">
-        <h1 className="text-5xl md:text-6xl font-bold text-white leading-tight">
-         Promotion <br />
-And Advertising
+        <h1 className="text-5xl md:text-6xl font-bold text-black leading-tight">
+          Promotion And
+          <br />
+          Advertising
         </h1>
-        <p className="mt-4 text-gray-300 text-base md:text-lg">
-          Explore our cutting-edge products and services that redefine industry standards. Our commitment to quality and customer satisfaction is unparalleled. Stay ahead of the curve with our latest offerings and experience a seamless blend of style and functionality. Discover unbeatable deals and exclusive promotions tailored just for you.
+        <p className="mt-4 text-gray-600 text-base md:text-lg text-justify">
+          Explore our cutting-edge products and services that redefine industry
+          standards. Our commitment to quality and customer satisfaction is
+          unparalleled. Stay ahead of the curve with our latest offerings and
+          experience a seamless blend of style and functionality. Discover
+          unbeatable deals and exclusive promotions tailored just for you.
         </p>
       </div>
       <div className="md:w-1/2 mt-6 md:mt-0 md:ml-6">
-      <Image 
-        src="/images/workflow.jpg"
-        alt="Hero Image"
-        width={500}
-        height={500}
-        className="w-full h-auto object-cover rounded-lg shadow-lg"/>
+        <Image
+          src="/images/promotion.png"
+          alt="Hero Image"
+          width={500}
+          height={500}
+          className="w-full h-auto object-cover "
+        />
       </div>
     </div>
   );

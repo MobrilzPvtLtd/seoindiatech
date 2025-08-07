@@ -50,7 +50,7 @@ export default function TrustWebsiteCreation() {
   return (
     <div className="min-h-screen bg-gray-100">
       {/* Header Section */}
-      <section className="bg-gray-200 py-12 px-6">
+      <section className="bg-gray-200 py-8 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
             <div className="text-center md:text-left">
@@ -88,7 +88,7 @@ export default function TrustWebsiteCreation() {
             {/* Right Side - Illustration */}
             <div className={`flex justify-center items-center transform transition-all duration-700 ease-out ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
               <Image
-                src="/images/crm1.jpeg"
+                src="/images/website_creation1.png"
                 alt="Workflow Illustration"
                 width={500}
                 height={500}

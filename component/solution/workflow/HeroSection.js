@@ -4,12 +4,12 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center max-w-4xl mx-auto p-6">
+    <div className="bg-white flex flex-col md:flex-row items-center container mx-auto px-20 py-12">
       <div className="md:w-1/2 text-center md:text-left">
-        <h1 className="text-5xl md:text-6xl font-bold text-white leading-tight">
+        <h1 className="text-5xl md:text-6xl font-bold text-black leading-tight">
           Workflow Process
         </h1>
-        <p className="mt-4 text-gray-300 text-base md:text-lg">
+        <p className="mt-4 text-gray-600 text-base md:text-lg text-justify">
           The workflow process is an essential part of any business operation
           that involves multiple steps, tasks, and people working together to
           achieve a common goal. We help you build a systematic and organized
@@ -24,7 +24,7 @@ const HeroSection = () => {
           alt="Hero Image"
           width={500}
           height={500}
-          className="w-full h-auto object-cover rounded-lg shadow-lg"
+          className="w-full h-auto object-cover "
         />
       </div>
     </div>

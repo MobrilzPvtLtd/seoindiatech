@@ -2,6 +2,8 @@ import React from "react";
 
 const WebsiteCreationService = () => {
   return (
+
+    <div className='bg-gray-100 py-10'>
     <div className="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg my-10">
       <h1 className="text-4xl font-bold text-gray-800 text-center mb-4">
         Website Creation
@@ -64,13 +66,14 @@ const WebsiteCreationService = () => {
         />
       </div>
     </div>
+    </div>
   );
 };
 
 const Section = ({ title, text }) => (
   <div>
-    <h3 className="font-semibold text-blue-600 text-lg mb-1">{title}</h3>
-    <p className="text-gray-700 text-base text-justify">{text}</p>
+    <h3 className="font-semibold text-blue-600 text-lg mb-1">{title} <span className="text-gray-700 text-base text-justify">{text}</span></h3>
+    
   </div>
 );
 

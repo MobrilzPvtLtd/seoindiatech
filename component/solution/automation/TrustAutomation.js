@@ -1,3 +1,4 @@
+import { CheckCheck } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 export default function TrustAutomationSection() {
@@ -67,7 +68,7 @@ export default function TrustAutomationSection() {
                   Why Would You Use Digital Automation
                 </h3>
                 
-                <div className="space-y-6">
+                <div className="space-y-1">
                   {automationBenefits.map((benefit, index) => (
                     <div
                       key={benefit.id}
@@ -77,7 +78,7 @@ export default function TrustAutomationSection() {
                       onMouseLeave={() => setHoveredItem(null)}
                     >
                       <div className="flex-shrink-0">
-                        <div className={`w-3 h-3 rounded-full bg-gray-800 mt-2 transform transition-all duration-300 ${hoveredItem === benefit.id ? 'scale-125 bg-blue-600' : ''}`}></div>
+                       <CheckCheck className='text-green-500'/>
                       </div>
                       <p className={`text-gray-700 text-lg leading-relaxed transition-colors duration-300 ${hoveredItem === benefit.id ? benefit.color : 'text-gray-700'}`}>
                         {benefit.text}

@@ -14,8 +14,8 @@ export default function HeroSection() {
 
   return (
     <> 
-    <div className=" bg-white"/>
-      <div className="container mx-auto px-6 py-16">
+    <div className="bg-white">
+      <div className="container mx-auto px-20 py-16">
         <div className="grid lg:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <div className="space-y-8">
@@ -85,7 +85,8 @@ export default function HeroSection() {
            
           </div>
         </div>
-      </div>
+      </div>  
+    </div>
     </>
   );
 }

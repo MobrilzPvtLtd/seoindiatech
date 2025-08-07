@@ -2,6 +2,7 @@ import React from 'react';
 
 const CRMToolService = () => {
   return (
+    <div className='bg-gray-100 py-8'> 
     <div className="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg my-10">
       <h1 className="text-4xl font-bold text-gray-800 text-center mb-4">
         CRM & Management Tools
@@ -32,13 +33,14 @@ const CRMToolService = () => {
         />
       </div>
     </div>
+    </div>
   );
 };
 
 const Section = ({ title, text }) => (
   <div>
-    <h3 className="font-semibold text-blue-600 text-lg mb-1">{title}</h3>
-    <p className="text-gray-700 text-base text-justify">{text}</p>
+    <h3 className="font-semibold text-blue-600 text-lg mb-1">{title} <span className="text-gray-700 text-base text-justify">{text}</span></h3>
+    
   </div>
 );
 
