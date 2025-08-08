@@ -18,7 +18,7 @@ const Hero = () => {
                     </h1>
 
                     <p className="text-gray-700 dark:text-gray-300 text-base md:text-lg">
-                        Digitalyzeit is a digital marketing agency that empowers startups and
+                        SEO India Tech is a digital marketing agency that empowers startups and
                         established enterprises to grow and thrive online. We help businesses
                         achieve lasting success through innovative strategies and tailored
                         solutions. Our team of experts crafts customized strategies that

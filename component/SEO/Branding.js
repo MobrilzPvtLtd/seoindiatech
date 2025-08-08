@@ -32,7 +32,7 @@ const Branding = () => {
           <div className="flex justify-center px-4">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight max-w-5xl text-center text-gray-900 dark:text-white">
               Begin Your Digital Branding Success Story with{' '}
-              <span className="text-blue-700 dark:text-blue-400 font-bold">Digitalyzeit</span> Today!
+              <span className="text-blue-700 dark:text-blue-400 font-bold">SEO India Tech</span> Today!
             </h2>
           </div>
 
@@ -44,7 +44,7 @@ const Branding = () => {
           {/* Description */}
           <div className="flex justify-center px-4 pt-8">
             <p className="text-gray-700 dark:text-gray-300 text-lg md:text-xl mb-6 max-w-4xl text-center">
-              At <span className="font-bold text-blue-700 dark:text-blue-400">Digitalyzeit</span>,
+              At <span className="font-bold text-blue-700 dark:text-blue-400">SEO India Tech</span>,
               we're dedicated to helping you achieve your digital branding goals.
               Whether you aim to boost brand awareness, drive engagement, or
               increase conversions, our team of experts guides you every step of the

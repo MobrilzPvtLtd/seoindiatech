@@ -253,10 +253,10 @@ const ContactUsSection = () => {
                     Email
                   </div>
                   <a
-                    href="mailto:Info@digitalyzeit.com"
+                    href="mailto:Info@seoindiatech.com"
                     className="text-blue-700 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
                   >
-                    Info@digitalyzeit.com
+                    Info@seoindiatech.com
                   </a>
                 </div>
               </div>

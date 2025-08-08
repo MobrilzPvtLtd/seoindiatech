@@ -155,7 +155,7 @@ const Form = () => {
             </div>
 
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 text-center md:text-left">
-              Why Choose Digitalyzeit for PPC?
+              Why Choose SEO India Tech for PPC?
             </h2>
 
             <div className="w-20 h-1 bg-blue-600 dark:bg-blue-500 rounded-full mb-8 hidden md:block"></div>

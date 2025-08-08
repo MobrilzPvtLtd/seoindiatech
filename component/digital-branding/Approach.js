@@ -77,7 +77,7 @@ const Approach = () => {
           <div className="w-20 h-1 bg-blue-600 dark:bg-blue-500 rounded-full mb-6"></div>
           
           <p className="text-gray-700 dark:text-gray-300 text-lg">
-            At <span className="text-blue-700 dark:text-blue-400 font-bold">Digitalyzeit,</span> we craft digital brands that leave a lasting impact.
+            At <span className="text-blue-700 dark:text-blue-400 font-bold">SEO India Tech</span> we craft digital brands that leave a lasting impact.
             Our approach is data-driven, creative, and tailored to your business goals.
           </p>
         </div>

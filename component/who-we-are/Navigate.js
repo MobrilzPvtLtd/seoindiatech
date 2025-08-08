@@ -33,14 +33,14 @@ const Navigate = () => {
                 Digital Landscape
                 <span className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-purple-500 dark:from-blue-400 dark:to-purple-400 rounded-full opacity-70"></span>
               </span> <br />
-              with <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400">Digitalyzeit</span>
+              with <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400">SEO India Tech</span>
             </h2>
             
             {/* Description with improved typography */}
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
               In the ever-evolving digital realm, success hinges on understanding
               the intricacies of automation, market research, workflow building,
-              and advertising. At Digitalyzeit, we've mastered these elements,
+              and advertising. At SEO India Tech, we've mastered these elements,
               empowering businesses with over a decade of expertise and a proven
               track record of serving over 1000 clients with unwavering efficiency
               and precision.

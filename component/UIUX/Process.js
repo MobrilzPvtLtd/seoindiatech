@@ -66,7 +66,7 @@ const Process = () => {
           </h1>
           
           <p className='text-gray-800 dark:text-gray-200 text-lg mt-6 max-w-4xl'>
-            At <span className='text-blue-700 dark:text-blue-400 font-bold'>Digitalyzeit,</span> we don't just design, we innovate. Our process ensures every touchpoint enhances user engagement and drives business results.
+            At <span className='text-blue-700 dark:text-blue-400 font-bold'>SEO India Tech,</span> we don't just design, we innovate. Our process ensures every touchpoint enhances user engagement and drives business results.
           </p>
           
           <div className="mt-6 mb-12">

@@ -75,7 +75,7 @@ const Ppchero = () => {
         <p className="text-gray-700 text-justify dark:text-gray-300 text-lg md:text-xl mb-10 max-w-4xl mx-auto">
           At{' '}
           <span className="font-semibold text-gray-900 dark:text-white">
-            Digitalyzeit
+            SEO India Tech
           </span>
           , we don't just run ads—we create{' '}
           <span className="font-semibold text-gray-900 dark:text-white">

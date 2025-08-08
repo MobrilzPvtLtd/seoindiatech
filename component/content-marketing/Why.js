@@ -97,7 +97,7 @@ const Why = () => {
               </div>
               
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-                Why Digitalyzeit?
+                Why SEO India Tech?
               </h2>
               
               <div className="w-20 h-1.5 bg-blue-600 dark:bg-blue-500 rounded-full mb-6"></div>

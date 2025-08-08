@@ -81,7 +81,7 @@ const Form = () => {
                   stand out, connect, and grow.
                 </span>{" "}
                 Whether you're starting from scratch or need a digital makeover,
-                Digitalyzeit has the expertise to make it happen.
+                SEO India Tech has the expertise to make it happen.
               </p>
             </div>
 
@@ -119,7 +119,7 @@ const Form = () => {
 
             <div className="mt-8 flex flex-col space-y-4">
               <p className="text-gray-800 dark:text-gray-200 font-bold text-lg">
-                Digitalyzeit - Where Brands Become Digital Icons.
+                SEO India Tech - Where Brands Become Digital Icons.
               </p>
 
               <div className="flex items-center space-x-2 text-sm text-gray-600 dark:text-gray-400">

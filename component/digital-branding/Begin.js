@@ -32,14 +32,14 @@ const Begin = () => {
           {/* Heading */}
           <div className="text-center px-4">
             <h2 className='text-4xl md:text-5xl lg:text-6xl font-bold leading-tight max-w-5xl text-white'>
-              Begin Your Digital Branding Success Story with <span className='text-blue-500'>Digitalyzeit</span> Today!
+              Begin Your Digital Branding Success Story with <span className='text-blue-500'>SEO India Tech</span> Today!
             </h2>
           </div>
           
           {/* Description */}
           <div className='mt-8 px-4'>
             <p className='text-blue-100 text-lg md:text-xl max-w-4xl text-center'>
-              At <span className='font-bold text-blue-500'>Digitalyzeit</span>, we're dedicated to helping you achieve your digital branding goals. Whether you aim to boost brand awareness, drive engagement, or increase conversions, our team of experts guides you every step of the way.
+              At <span className='font-bold text-blue-500'>SEO India Tech</span>, we're dedicated to helping you achieve your digital branding goals. Whether you aim to boost brand awareness, drive engagement, or increase conversions, our team of experts guides you every step of the way.
             </p>
           </div>
           

@@ -40,7 +40,7 @@ const Solutions = () => {
                 Innovative UI/UX Solutions
               </h3>
               <p className="text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
-                At Digitalyzeit, we harmonize creativity with functionality to design intuitive interfaces that leave a lasting impression. Elevate your digital presence with user experiences that resonate deeply and effectively connect with your audience.
+                At SEO India Tech, we harmonize creativity with functionality to design intuitive interfaces that leave a lasting impression. Elevate your digital presence with user experiences that resonate deeply and effectively connect with your audience.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/services/ui-ux-design">
@@ -78,7 +78,7 @@ const Solutions = () => {
                 Unparalleled Digital Branding
               </h3>
               <p className="text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
-                At Digitalyzeit, we excel at navigating the digital landscape to fuel engagement, boost conversions, and ensure your brand's triumph. Trust us to elevate your brand to new heights with our comprehensive branding strategies.
+                At SEO India Tech, we excel at navigating the digital landscape to fuel engagement, boost conversions, and ensure your brand's triumph. Trust us to elevate your brand to new heights with our comprehensive branding strategies.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/services/digital-branding">

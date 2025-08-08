@@ -31,7 +31,7 @@ const Contentbranding = () => {
           {/* Main heading */}
           <div className="flex justify-center px-4">
             <h2 className='text-3xl sm:text-4xl md:text-5xl font-bold leading-tight max-w-5xl text-center text-gray-900 dark:text-white'>
-              Begin Your Content Marketing Journey with <span className='text-blue-700 dark:text-blue-400 font-bold'>Digitalyzeit</span> Today!
+              Begin Your Content Marketing Journey with <span className='text-blue-700 dark:text-blue-400 font-bold'>SEO India Tech</span> Today!
             </h2>
           </div>
           
@@ -43,7 +43,7 @@ const Contentbranding = () => {
           {/* Description */}
           <div className='flex justify-center px-4 pt-8'>
             <p className='text-gray-700 dark:text-gray-300 text-lg md:text-xl mb-6 max-w-4xl text-center'>
-              At <span className='font-bold text-blue-700 dark:text-blue-400'>Digitalyzeit</span>, we're dedicated to helping you achieve your content marketing goals. Whether you aim to boost brand awareness, drive engagement, or increase conversions, our team of expert content strategists guides you every step of the way.
+              At <span className='font-bold text-blue-700 dark:text-blue-400'>SEO India Tech</span>, we're dedicated to helping you achieve your content marketing goals. Whether you aim to boost brand awareness, drive engagement, or increase conversions, our team of expert content strategists guides you every step of the way.
             </p>
           </div>
           
@@ -95,7 +95,7 @@ const Contentbranding = () => {
             </div>
             <div>
               <p className="text-gray-600 dark:text-gray-300 italic">
-                "Digitalyzeit transformed our content strategy and helped us achieve a 78% increase in organic traffic within just 6 months. Their strategic approach to content marketing has been invaluable."
+                "SEO India Tech transformed our content strategy and helped us achieve a 78% increase in organic traffic within just 6 months. Their strategic approach to content marketing has been invaluable."
               </p>
               <p className="text-gray-900 dark:text-white font-medium mt-4">Sarah Johnson</p>
               <p className="text-gray-500 dark:text-gray-400 text-sm">Marketing Director, TechCorp</p>

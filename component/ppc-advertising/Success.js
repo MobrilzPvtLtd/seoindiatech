@@ -37,7 +37,7 @@ const Success = () => {
             
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
               Begin Your Digital Branding Success Story with <br className="hidden md:block" />
-              <span className="text-white underline decoration-blue-300 dark:decoration-blue-400 decoration-4 underline-offset-4">Digitalyzeit</span> Today!
+              <span className="text-white underline decoration-blue-300 dark:decoration-blue-400 decoration-4 underline-offset-4">SEO India Tech</span> Today!
             </h2>
 
             <div className="flex flex-wrap justify-center gap-4 mt-8 mb-10">
@@ -57,7 +57,7 @@ const Success = () => {
             </div>
 
             <p className="text-blue-50 mt-6 text-base md:text-lg max-w-3xl mx-auto">
-              At <span className="text-white font-semibold">Digitalyzeit</span>,
+              At <span className="text-white font-semibold">SEO India Tech</span>,
               we're dedicated to helping you achieve your digital branding goals.
               Whether you aim to boost brand awareness, drive engagement, or
               increase conversions, our team of experts guides you every step of the

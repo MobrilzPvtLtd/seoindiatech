@@ -35,7 +35,7 @@ const Ideas = () => {
           <div className='md:w-1/2'>
             <p className='text-gray-700 dark:text-gray-300 text-lg mb-6'>
               A frictionless, visually stunning interface can be the difference
-              between a bounce and a conversion. At <span className='font-bold text-blue-800 dark:text-blue-300'>Digitalyzeit</span>, we specialize
+              between a bounce and a conversion. At <span className='font-bold text-blue-800 dark:text-blue-300'>SEO India Tech</span>, we specialize
               in <span className='font-bold text-blue-800 dark:text-blue-300'>revolutionary UI/UX solutions</span> that captivate users and drive
               measurable success.
             </p>

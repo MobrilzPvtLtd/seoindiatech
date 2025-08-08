@@ -32,7 +32,7 @@ const Digitalhero = () => {
           </p>
           
           <p className="text-gray-700 dark:text-gray-300 text-base md:text-lg leading-relaxed">
-            At <b className="text-blue-700 dark:text-blue-400">Digitalyzeit</b>, we don't just create brands – we build digital identities that stand out, captivate, and convert.
+            At <b className="text-blue-700 dark:text-blue-400">SEO India Tech</b>, we don't just create brands – we build digital identities that stand out, captivate, and convert.
           </p>
           
           <div className="pt-4 flex flex-wrap gap-4">

@@ -83,7 +83,7 @@ const Socialmediastrategies = () => {
           </span>
         </h1>
         <p className="mt-6 max-w-3xl mx-auto text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
-          Digitalyzeit offers expertly crafted campaigns designed to captivate and connect,
+          SEO India Tech offers expertly crafted campaigns designed to captivate and connect,
           ensuring your message resonates across platforms and drives meaningful engagement.
         </p>
         <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">

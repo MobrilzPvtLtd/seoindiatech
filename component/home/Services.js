@@ -64,7 +64,7 @@ const Services = () => {
               Our Services
             </h1>
             <p className='mb-8 text-sm sm:text-base leading-relaxed text-blue-100 dark:text-blue-200'>
-              At Digitalyzeit, we offer a comprehensive suite of digital marketing solutions designed to elevate your brand and drive
+              At SEO India Tech, we offer a comprehensive suite of digital marketing solutions designed to elevate your brand and drive
               measurable success. Our services are tailored to meet your unique business needs, leveraging the latest technology and
               industry best practices to ensure optimal results.
             </p>
