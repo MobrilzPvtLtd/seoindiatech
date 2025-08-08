@@ -41,7 +41,7 @@ const CRMHeroBanner = () => (
         
         {/* CTA buttons */}
         <div className="mt-10 flex flex-col sm:flex-row gap-4">
-          <button className="flex items-center justify-center px-6 py-3 rounded-lg bg-white text-blue-900 hover:bg-blue-50 transition-all font-semibold text-base shadow-lg hover:shadow-xl">
+          <button className="hidden flex items-center justify-center px-6 py-3 rounded-lg bg-white text-blue-900 hover:bg-blue-50 transition-all font-semibold text-base shadow-lg hover:shadow-xl">
             Read More
             <ChevronRight className="ml-1 w-5 h-5" />
           </button>
