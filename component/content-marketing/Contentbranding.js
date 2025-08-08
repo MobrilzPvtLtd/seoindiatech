@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, Star } from 'lucide-react';
+import Link from 'next/link';
 
 const Contentbranding = () => {
   return (
@@ -62,12 +63,13 @@ const Contentbranding = () => {
           
           {/* CTA buttons */}
           <div className='flex flex-col sm:flex-row justify-center gap-4 mt-8'>
+            <Link href="/contactus">
             <button className='bg-gradient-to-r from-blue-600 to-blue-800 hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-700 text-white px-6 py-3 rounded-full text-base font-medium transition flex items-center justify-center group shadow-lg'>
               Get Started Now
               <ArrowRight className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
             </button>
-            
-            <button className='bg-transparent text-blue-700 dark:text-blue-400 border border-blue-200 dark:border-blue-700 hover:bg-blue-50 dark:hover:bg-blue-900/30 px-6 py-3 rounded-full text-base font-medium transition'>
+            </Link>
+            <button className='hidden bg-transparent text-blue-700 dark:text-blue-400 border border-blue-200 dark:border-blue-700 hover:bg-blue-50 dark:hover:bg-blue-900/30 px-6 py-3 rounded-full text-base font-medium transition'>
               Schedule a Consultation
             </button>
           </div>
