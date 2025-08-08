@@ -5,6 +5,7 @@ import Link from 'next/link';
 
 const Hero = () => {
   return (
+    <div className='bg-white dark:bg-gray-900 pt-4 pb-8'>
     <div className='relative overflow-hidden'>
       {/* Background elements */}
       <div className='absolute inset-0 -z-10'>
@@ -106,6 +107,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

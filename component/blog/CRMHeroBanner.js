@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 
 const CRMHeroBanner = () => (
+  <section className="bg-white dark:bg-gray-900 pt-4 pb-8">
   <section className="max-w-7xl mx-auto px-4 md:px-6 py-8 md:py-12">
     <div className="relative w-full overflow-hidden rounded-2xl shadow-2xl">
       {/* Background Image with Next.js Image for better performance */}
@@ -73,6 +74,7 @@ const CRMHeroBanner = () => (
         ))}
       </div>
     </div>
+  </section>
   </section>
 );
 
