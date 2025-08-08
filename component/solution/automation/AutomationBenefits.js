@@ -47,7 +47,7 @@ export default function AutomationBenefits() {
 
   return (
     <section 
-      className="flex items-center justify-center min-h-screen bg-gradient-to-b from-blue-100 to-blue-200 dark:from-gray-700 dark:to-gray-900 px-4 py-16 md:py-24 relative overflow-hidden"
+      className="flex items-center justify-center min-h-screen bg-gray-50 dark:bg-gray-900 px-4 py-16 md:py-24 relative overflow-hidden"
       aria-label="Benefits of our automation services"
     >
       {/* Background decorative elements */}
@@ -110,7 +110,7 @@ export default function AutomationBenefits() {
               transform transition-all duration-700 ease-out delay-500
               ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-5 opacity-0'}
             `}>
-              <div className="relative h-24 w-full">
+              {/* <div className="relative h-24 w-full">
                 <Image
                   src="/images/time.png"
                   alt="Time Management"
@@ -118,7 +118,7 @@ export default function AutomationBenefits() {
                   sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-contain object-left"
                 />
-              </div>
+              </div> */}
             </div>
 
             {/* Description */}

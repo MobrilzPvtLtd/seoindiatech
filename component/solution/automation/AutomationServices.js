@@ -57,7 +57,7 @@ export default function AutomationServices() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-200 to-blue-100 dark:from-gray-900 dark:to-gray-700 py-16 px-6">
+    <div className="min-h-screen bg-gray-50  dark:bg-gray-900 py-16 px-6">
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-16">
