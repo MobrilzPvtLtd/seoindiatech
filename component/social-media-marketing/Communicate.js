@@ -6,6 +6,7 @@ const Communicate = () => {
   const [showPost, setShowPost] = useState(false);
 
   return (
+    <section className="bg-white dark:bg-gray-900 pt-4 pb-8">
     <section className="max-w-7xl mx-auto">
       <div className="flex flex-col md:flex-row justify-between items-center p-6 md:p-12 gap-12">
         {/* Left Section */}
@@ -83,6 +84,7 @@ const Communicate = () => {
           </ul>
         </div>
       </div>
+    </section>
     </section>
   );
 };

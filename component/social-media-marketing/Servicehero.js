@@ -20,6 +20,7 @@ const ServiceHero = () => {
   ];
 
   return (
+    <section className='bg-white dark:bg-gray-900 pt-4 pb-8'>
     <section className='bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-gray-900 dark:to-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-8 md:p-12 shadow-lg max-w-7xl mx-auto my-6 md:my-10 overflow-hidden relative'>
       {/* Background decorative elements */}
       <div className="absolute top-0 left-0 w-full h-full opacity-10">
@@ -110,6 +111,7 @@ const ServiceHero = () => {
           </div>
         </div>
       </div>
+    </section>
     </section>
   );
 };

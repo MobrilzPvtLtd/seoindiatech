@@ -3,6 +3,7 @@ import Image from 'next/image';
 
 const Manage = () => {
   return (
+    <section className="bg-white dark:bg-gray-900 pt-4 pb-8">
     <section className="max-w-7xl mx-auto px-4 py-16 md:py-20 text-center">
       {/* Section Header */}
       <h1 className="text-3xl md:text-5xl font-bold leading-snug text-gray-900 dark:text-white">
@@ -61,6 +62,7 @@ const Manage = () => {
           Explore our platform
         </button>
       </div>
+    </section>
     </section>
   );
 };
