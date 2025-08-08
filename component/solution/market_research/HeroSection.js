@@ -19,7 +19,7 @@ const HeroSection = () => {
   ];
   
   return (
-    <section className="bg-gradient-to-b from-blue-100 to-blue-200 dark:from-gray-700 dark:to-gray-900 py-8 md:py-24 relative overflow-hidden">
+    <section className="bg-white dark:bg-gray-900 py-8 md:py-24 relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/4 right-0 w-72 h-72 bg-white/50 dark:bg-blue-900/10 rounded-full blur-3xl"></div>

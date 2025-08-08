@@ -42,7 +42,7 @@ export default function TrustWebsiteCreation() {
   }, []);
 
   return (
-    <section className="py-16 md:py-24 px-6 bg-gradient-to-b from-blue-100 to-blue-200 dark:from-gray-700 dark:to-gray-900 relative overflow-hidden">
+    <section className="py-16 md:py-24 px-6 bg-gray-50 dark:bg-gray-900 relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/4 right-0 w-72 h-72 bg-white/50 dark:bg-blue-900/10 rounded-full blur-3xl"></div>
