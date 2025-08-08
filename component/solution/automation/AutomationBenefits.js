@@ -141,7 +141,7 @@ export default function AutomationBenefits() {
               pt-4
             `}>
               <button className="
-                bg-gradient-to-r from-blue-600 to-blue-800 dark:from-blue-500 dark:to-blue-700
+                hidden bg-gradient-to-r from-blue-600 to-blue-800 dark:from-blue-500 dark:to-blue-700
                 text-white px-6 py-3 rounded-full font-medium
                 hover:from-blue-700 hover:to-blue-900 dark:hover:from-blue-600 dark:hover:to-blue-800
                 transform transition-all duration-300
