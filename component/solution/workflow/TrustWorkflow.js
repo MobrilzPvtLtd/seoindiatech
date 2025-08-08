@@ -60,7 +60,7 @@ const TrustWorkFlow = () => {
               
               <div className="w-20 h-1 bg-blue-600 dark:bg-blue-500 rounded-full mb-6"></div>
 
-              <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed mb-8">
+              <p className="text-justify text-gray-700 dark:text-gray-300 text-lg leading-relaxed mb-8">
                 By using software, automation, and integration, tasks have
                 never been easier. You can track your team's progress, assign
                 tasks, and easily find where things go wrong. Workflow

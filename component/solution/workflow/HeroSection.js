@@ -40,7 +40,7 @@ const HeroSection = () => {
             
             <div className="w-20 h-1 bg-blue-600 dark:bg-blue-500 rounded-full"></div>
             
-            <p className="text-gray-700 dark:text-gray-300 text-base md:text-lg leading-relaxed">
+            <p className="text-justify text-gray-700 dark:text-gray-300 text-base md:text-lg leading-relaxed">
               The workflow process is an essential part of any business operation
               that involves multiple steps, tasks, and people working together to
               achieve a common goal. We help you build a systematic and organized

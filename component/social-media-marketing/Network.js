@@ -105,15 +105,15 @@ const NetworkSection = () => {
           <div className="absolute bottom-0 right-0 w-20 h-20 border-b-4 border-r-4 border-blue-200 dark:border-blue-700 rounded-br-xl"></div>
           
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white leading-tight text-center max-w-4xl mx-auto pt-6">
-            Begin Your Digital Branding Success Story with <span className="text-blue-700 dark:text-blue-500">Digitalyzeit</span> Today!
+            Begin Your Digital Branding Success Story with <span className="text-blue-700 dark:text-blue-500">SEO India Tech</span> Today!
           </h2>
           
           <p className="text-gray-700 dark:text-gray-300 text-center max-w-3xl mx-auto mt-6 text-lg">
-            At <span className="text-blue-700 dark:text-blue-500 font-semibold">Digitalyzeit,</span> we're dedicated to helping you achieve your digital branding goals. Whether you aim to boost brand awareness, drive engagement, or increase conversions, our team of experts guides you every step of the way.
+            At <span className="text-blue-700 dark:text-blue-500 font-semibold">SEO India Tech,</span> we're dedicated to helping you achieve your digital branding goals. Whether you aim to boost brand awareness, drive engagement, or increase conversions, our team of experts guides you every step of the way.
           </p>
           
           <Link href="/services/digital-branding" className="flex justify-center mt-10">
-            <button className="bg-gradient-to-r from-blue-600 to-blue-800 dark:bg-blue-600 hover:bg-blue-800 dark:hover:bg-blue-700 text-white font-semibold px-8 py-4 rounded-full transition-all duration-300 shadow-md hover:shadow-lg flex items-center">
+            <button className="cursor-pointer bg-gradient-to-r from-blue-600 to-blue-800 dark:bg-blue-600 hover:bg-blue-800 dark:hover:bg-blue-700 text-white font-semibold px-8 py-4 rounded-full transition-all duration-300 shadow-md hover:shadow-lg flex items-center">
               Learn More
               <ArrowRight className="ml-2 w-5 h-5" />
             </button>

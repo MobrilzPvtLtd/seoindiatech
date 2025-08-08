@@ -32,7 +32,7 @@ const Ideas = () => {
 
           {/* Right Column - Text and Button */}
           <div className="md:w-1/2">
-            <p className="text-gray-700 dark:text-gray-300 text-lg mb-6">
+            <p className="text-justify text-gray-700 dark:text-gray-300 text-lg mb-6">
               A frictionless, visually stunning interface can be the difference
               between a bounce and a conversion. At{' '}
               <span className="font-bold text-blue-800 dark:text-blue-300">

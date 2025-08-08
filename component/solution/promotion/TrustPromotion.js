@@ -93,7 +93,7 @@ export default function TrustPromotion() {
               <div className="mb-6">
                 {activeTab === 'promotion' && (
                   <div className={`space-y-6 transition-opacity duration-300 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
-                    <p className="text-gray-700 dark:text-gray-300 text-base md:text-lg leading-relaxed">
+                    <p className="text-justify text-gray-700 dark:text-gray-300 text-base md:text-lg leading-relaxed">
                       Promotion involves all the activities a company undertakes to present and communicate the value of its products or services to the target market. It includes advertising, personal selling, sales promotions, public relations, and direct marketing. The primary goal of promotion is to influence customers' buying behavior and create a positive perception of the brand.
                     </p>
 

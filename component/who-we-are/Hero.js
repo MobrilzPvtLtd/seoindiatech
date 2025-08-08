@@ -38,7 +38,7 @@ const Hero = () => {
 
 
           {/* Description */}
-          <p className='text-gray-700 dark:text-gray-300 text-lg leading-relaxed mb-8 max-w-2xl'>
+          <p className='text-justify text-gray-700 dark:text-gray-300 text-lg leading-relaxed mb-8 max-w-2xl'>
             In the world of digital marketing, whether you are a small business, start-up, or even a big company, we can help you grow your audience, scale your business, and optimize your working flow.
           </p>
 

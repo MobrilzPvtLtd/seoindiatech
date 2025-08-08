@@ -25,7 +25,7 @@ const Contenthero = () => {
           
           <div className="w-20 h-1.5 bg-blue-600 dark:bg-blue-500 rounded-full"></div>
           
-          <p className="text-gray-700 dark:text-gray-300 text-base md:text-lg">
+          <p className="text-justify text-gray-700 dark:text-gray-300 text-base md:text-lg">
             Imagine content that not only grabs attention but keeps your audience coming back for more. At <span className="text-blue-700 dark:text-blue-400 font-medium">SEO Inida Tech</span>, we create stories that inspire action. Whether you're looking to generate leads, boost brand awareness, or drive conversions, our content marketing solutions are designed to turn curious visitors into loyal customers.
           </p>
           

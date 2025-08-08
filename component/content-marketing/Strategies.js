@@ -46,7 +46,7 @@ const Strategies = () => {
               </h2>
             </div>
             
-            <p className="text-gray-700 dark:text-gray-300 mb-6 text-base sm:text-lg">
+            <p className="text-justify text-gray-700 dark:text-gray-300 mb-6 text-base sm:text-lg">
               Your brand has a story, and we're here to help you tell it in a way that resonates.
               Whether it's through blogs, social media, or email campaigns, we make sure your
               message is heard loud and clear.
@@ -95,7 +95,7 @@ const Strategies = () => {
               </h2>
             </div>
             
-            <p className="text-gray-700 dark:text-gray-300 mb-6 text-base sm:text-lg">
+            <p className="text-justify text-gray-700 dark:text-gray-300 mb-6 text-base sm:text-lg">
               Content without leads is just words. Our lead generation strategies are seamlessly
               integrated into your content, turning visitors into subscribers, and subscribers into customers.
             </p>

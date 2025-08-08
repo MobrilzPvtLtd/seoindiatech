@@ -57,7 +57,7 @@ const Why = () => {
           
           <div className="w-16 h-1 bg-blue-600 dark:bg-blue-500 rounded-full mb-6"></div>
           
-          <p className="text-gray-700 dark:text-gray-300 mb-4">
+          <p className="text-justify text-gray-700 dark:text-gray-300 mb-4">
             Consumers with over <span className="font-bold text-gray-900 dark:text-white">5.3 billion internet users worldwide</span> rely
             on digital interactions to evaluate, trust, and engage with brands.
             Without a strong digital brand, businesses risk losing visibility,
@@ -88,7 +88,7 @@ const Why = () => {
           
           {/* Optional CTA */}
           <div className="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700">
-            <button className="bg-blue-600 hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-600 text-white font-medium py-2 px-5 rounded-lg transition-colors flex items-center">
+            <button className="hidden cursor-pointer bg-blue-600 hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-600 text-white font-medium py-2 px-5 rounded-lg transition-colors flex items-center">
               Learn more about our branding services
               <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

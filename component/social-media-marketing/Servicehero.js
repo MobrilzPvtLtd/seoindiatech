@@ -40,13 +40,13 @@ const ServiceHero = () => {
             Our Expert Social Media <span className="text-blue-600 dark:text-blue-400">Marketing</span> Services
           </h1>
           
-          <p className="text-gray-700 dark:text-gray-300 text-base md:text-lg">
+          <p className="text-justify text-gray-700 dark:text-gray-300 text-base md:text-lg">
             With a sharp focus on analytics and an acute awareness of social trends, we expertly navigate the complexities of algorithms to ensure your brand stands out and shines in the digital landscape.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 pt-2">
             <Link href="/contactus">
-            <button className="bg-gradient-to-r from-blue-600 to-blue-800 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition-colors shadow-md flex items-center justify-center gap-2 group">
+            <button className="cursor-pointer bg-gradient-to-r from-blue-600 to-blue-800 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition-colors shadow-md flex items-center justify-center gap-2 group">
               Get started now
               <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
             </button>

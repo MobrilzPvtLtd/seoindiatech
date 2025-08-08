@@ -43,7 +43,7 @@ const HeroSection = () => {
 
             <div className="w-20 h-1 bg-blue-600 dark:bg-blue-500 rounded-full"></div>
 
-            <p className="text-gray-700 dark:text-gray-300 text-base md:text-lg leading-relaxed">
+            <p className="text-justify text-gray-700 dark:text-gray-300 text-base md:text-lg leading-relaxed">
               Explore our cutting-edge marketing solutions that redefine industry
               standards. Our commitment to quality and customer satisfaction is
               unparalleled. Stay ahead of the curve with our latest offerings and

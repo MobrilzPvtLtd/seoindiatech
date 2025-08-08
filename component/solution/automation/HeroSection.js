@@ -89,7 +89,7 @@ export default function HeroSection() {
                 </span>
               </h1>
               
-              <p className="text-md text-gray-700 dark:text-gray-300 leading-relaxed max-w-xl">
+              <p className="text-justify text-md text-gray-700 dark:text-gray-300 leading-relaxed max-w-xl">
                 Digital automation is the key to eliminating repetitive tasks, reducing human errors, 
                 and accelerating workflows. By integrating AI-driven processes, robotic process 
                 automation (RPA), and intelligent business automation tools, we help businesses:

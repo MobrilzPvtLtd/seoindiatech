@@ -61,7 +61,7 @@ const Contentservices = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white leading-tight mb-4">
               Content That Converts
             </h2>
-            <p className="text-gray-700 dark:text-gray-300 mb-6">
+            <p className="text-justify text-gray-700 dark:text-gray-300 mb-6">
               Content is only effective if it delivers results. Our team crafts blogs, videos, infographics, and more that do more than just look good—they're designed to convert visitors into leads and leads into loyal customers.
             </p>
           </div>
@@ -116,7 +116,7 @@ const Contentservices = () => {
           
           {/* Call to action */}
           <div className="pt-4 mt-8 border-t border-gray-100 dark:border-gray-700">
-            <button className="w-full bg-blue-600 hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-600 text-white font-medium py-3 px-6 rounded-lg transition-colors flex items-center justify-center">
+            <button className="hidden w-full bg-blue-600 hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-600 text-white font-medium py-3 px-6 rounded-lg transition-colors flex items-center justify-center">
               Get a Content Strategy Assessment
               <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />

@@ -93,7 +93,7 @@ export default function AutomationServices() {
                 <h3 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white leading-tight">
                   {service.title}
                 </h3>
-                <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-base md:text-lg">
+                <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed text-base md:text-lg">
                   {service.description}
                 </p>
               </div>

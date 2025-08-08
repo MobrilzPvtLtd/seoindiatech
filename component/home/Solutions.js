@@ -39,7 +39,7 @@ const Solutions = () => {
               <h3 className="text-3xl md:text-4xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400 dark:from-blue-400 dark:to-blue-300">
                 Innovative UI/UX Solutions
               </h3>
-              <p className="text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
+              <p className="text-justify text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
                 At SEO India Tech, we harmonize creativity with functionality to design intuitive interfaces that leave a lasting impression. Elevate your digital presence with user experiences that resonate deeply and effectively connect with your audience.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -77,7 +77,7 @@ const Solutions = () => {
               <h3 className="text-3xl md:text-4xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400 dark:from-blue-400 dark:to-blue-300">
                 Unparalleled Digital Branding
               </h3>
-              <p className="text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
+              <p className="text-justify text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
                 At SEO India Tech, we excel at navigating the digital landscape to fuel engagement, boost conversions, and ensure your brand's triumph. Trust us to elevate your brand to new heights with our comprehensive branding strategies.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">

@@ -37,7 +37,7 @@ const Navigate = () => {
             </h2>
             
             {/* Description with improved typography */}
-            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            <p className="text-justify text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
               In the ever-evolving digital realm, success hinges on understanding
               the intricacies of automation, market research, workflow building,
               and advertising. At SEO India Tech, we've mastered these elements,

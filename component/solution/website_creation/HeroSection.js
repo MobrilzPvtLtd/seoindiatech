@@ -41,7 +41,7 @@ const HeroSection = () => {
             
             <div className="w-20 h-1 bg-blue-600 dark:bg-blue-500 rounded-full"></div>
             
-            <p className="text-gray-700 dark:text-gray-300 text-base md:text-lg leading-relaxed">
+            <p className="text-justify text-gray-700 dark:text-gray-300 text-base md:text-lg leading-relaxed">
               Creating a successful website requires ongoing effort and optimization. Continuously monitoring and improving the website based on user feedback, industry trends, and changing business needs is essential for maintaining a competitive online presence.
             </p>
             

@@ -26,7 +26,7 @@ const Seohero = () => {
 
           <div className="w-20 h-1.5 bg-blue-600 dark:bg-blue-500 rounded-full my-6 mx-auto md:mx-0"></div>
 
-          <p className="text-gray-700 dark:text-gray-300 text-md max-w-xl mx-auto md:mx-0 px-2 md:px-0">
+          <p className="text-justify text-gray-700 dark:text-gray-300 text-md max-w-xl mx-auto md:mx-0 px-2 md:px-0">
             In today's digital-first world, a strong online presence isn't
             optional—it's essential. Search Engine Optimization (SEO) is the
             backbone of digital success, ensuring that your business ranks

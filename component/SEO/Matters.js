@@ -73,9 +73,9 @@ const Matters = () => {
             <div className="absolute -bottom-4 -right-4 w-8 h-8 bg-blue-600 dark:bg-blue-500 rounded-full"></div>
 
             <div className="bg-blue-50 dark:bg-blue-900/20 p-5 rounded-xl mb-6">
-              <p className="text-gray-700 dark:text-gray-300">
+              <p className="text-justify text-gray-700 dark:text-gray-300">
                 At{' '}
-                <span className="font-semibold text-blue-700 dark:text-blue-400">Digitalyzeit,</span>{' '}
+                <span className="font-semibold text-blue-700 dark:text-blue-400">SEO India Tech,</span>{' '}
                 we blend creativity with analytics to build SEO strategies that go
                 beyond rankings. Our comprehensive, tailored approach ensures
                 long-term success in an ever-changing digital landscape.

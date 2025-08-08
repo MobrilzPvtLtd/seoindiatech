@@ -58,7 +58,7 @@ const Journey = () => {
           </h2>
 
           {/* Description */}
-          <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
+          <p className="text-justify text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
             Our journey began with a vision to revolutionize the way businesses interact with the digital world. We recognized the transformative power of automation and its ability to streamline processes, boost productivity, and drive growth. With this passion, we embarked on a mission to become the trusted partner for businesses seeking to navigate the complexities of the digital landscape.
           </p>
 

@@ -24,7 +24,7 @@ const Digitalhero = () => {
 
           <div className="w-20 h-1.5 bg-blue-600 dark:bg-blue-500 rounded-full"></div>
 
-          <p className="text-gray-700 dark:text-gray-300 text-base md:text-lg leading-relaxed">
+          <p className="text-justify text-gray-700 dark:text-gray-300 text-base md:text-lg leading-relaxed">
             In today's digital-first world, your brand is more than just a logo
             or a tagline – it's your audience's experience, perception, and
             emotional connection with your business online. Digital branding is
