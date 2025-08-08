@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { ArrowRight, Sparkles } from 'lucide-react';
+import Link from 'next/link';
 
 const Digitalhero = () => {
   return (
@@ -35,12 +36,13 @@ const Digitalhero = () => {
           </p>
           
           <div className="pt-4 flex flex-wrap gap-4">
-            <button className="bg-gradient-to-r from-blue-600 to-blue-800 hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-700 text-white px-6 py-3 rounded-full font-semibold transition duration-300 flex items-center group shadow-md">
+            <Link href="/contactus">
+            <button className="cursor-pointer bg-gradient-to-r from-blue-600 to-blue-800 hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-700 text-white px-6 py-3 rounded-full font-semibold transition duration-300 flex items-center group shadow-md">
               Get started now
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
-            
-            <button className="bg-white dark:bg-gray-700 text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-600 px-6 py-3 rounded-full font-semibold border border-gray-200 dark:border-gray-600 transition duration-300">
+            </Link>
+            <button className="hidden bg-white dark:bg-gray-700 text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-600 px-6 py-3 rounded-full font-semibold border border-gray-200 dark:border-gray-600 transition duration-300">
               Learn more
             </button>
           </div>

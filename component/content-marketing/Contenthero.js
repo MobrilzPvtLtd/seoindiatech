@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 
 const Contenthero = () => {
   return (
@@ -29,12 +30,13 @@ const Contenthero = () => {
           </p>
           
           <div className="flex flex-wrap gap-4 pt-2">
-            <button className="bg-gradient-to-r from-blue-600 to-blue-800 hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-700 text-white px-6 py-3 rounded-full font-semibold transition flex items-center group shadow-md">
+            <Link href="/contactus">
+            <button className="cursor-pointer bg-gradient-to-r from-blue-600 to-blue-800 hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-700 text-white px-6 py-3 rounded-full font-semibold transition flex items-center group shadow-md">
               Get started now
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
-            
-            <button className="bg-white dark:bg-gray-800 text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 px-6 py-3 rounded-full font-semibold border border-gray-200 dark:border-gray-700 transition">
+            </Link>
+            <button className="hidden bg-white dark:bg-gray-800 text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 px-6 py-3 rounded-full font-semibold border border-gray-200 dark:border-gray-700 transition">
               View our portfolio
             </button>
           </div>

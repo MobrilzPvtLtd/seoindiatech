@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 
 const Ideas = () => {
   return (
@@ -38,10 +39,12 @@ const Ideas = () => {
               in <span className='font-bold text-blue-800 dark:text-blue-300'>revolutionary UI/UX solutions</span> that captivate users and drive
               measurable success.
             </p>
-            <button className='bg-gradient-to-r from-blue-600 to-blue-800 dark:bg-blue-700 text-white px-6 py-3 rounded-full text-base hover:bg-blue-700 dark:hover:bg-blue-600 transition-colors flex items-center group'>
+            <Link href="/contactus">
+            <button className='cursor-pointer bg-gradient-to-r from-blue-600 to-blue-800 dark:bg-blue-700 text-white px-6 py-3 rounded-full text-base hover:bg-blue-700 dark:hover:bg-blue-600 transition-colors flex items-center group'>
               Let's Hear From You
               <ArrowRight className="ml-2 w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
             </button>
+            </Link>
           </div>
         </div>
 

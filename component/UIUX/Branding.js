@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, Star, Sparkles } from 'lucide-react';
+import Link from 'next/link';
 
 const Branding = () => {
   return (
@@ -49,12 +50,14 @@ const Branding = () => {
           
           {/* Buttons */}
           <div className='flex flex-col sm:flex-row gap-4 mt-10'>
-            <button className='bg-white dark:bg-gray-800 text-blue-950 dark:text-white px-8 py-4 rounded-full text-base font-semibold hover:bg-blue-50 dark:hover:bg-gray-700 transition-colors shadow-lg hover:shadow-xl flex items-center group'>
+            <Link href="/services/digital-branding">
+            <button className='cursor-pointer bg-white dark:bg-gray-800 text-blue-950 dark:text-white px-8 py-4 rounded-full text-base font-semibold hover:bg-blue-50 dark:hover:bg-gray-700 transition-colors shadow-lg hover:shadow-xl flex items-center group'>
               Get Started
               <ArrowRight className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
             </button>
+            </Link>
             
-            <button className='text-white border-2 border-white/30 dark:border-white/20 px-8 py-4 rounded-full text-base font-semibold hover:bg-white/10 dark:hover:bg-white/5 transition-colors flex items-center'>
+            <button className='hidden text-white border-2 border-white/30 dark:border-white/20 px-8 py-4 rounded-full text-base font-semibold hover:bg-white/10 dark:hover:bg-white/5 transition-colors flex items-center'>
               Learn More
             </button>
           </div>
