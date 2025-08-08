@@ -59,7 +59,7 @@ const Form = () => {
   };
 
   return (
-    <section className="bg-gradient-to-br from-gray-100 to-blue-100 dark:from-gray-900 dark:to-blue-950 py-16 px-4 sm:px-6 md:px-12 lg:px-20">
+    <section id="UIUXform" className="bg-gradient-to-br from-gray-100 to-blue-100 dark:from-gray-900 dark:to-blue-950 py-16 px-4 sm:px-6 md:px-12 lg:px-20">
       <ToastContainer />
       <div className="max-w-7xl mx-auto">
         {/* Form header */}
