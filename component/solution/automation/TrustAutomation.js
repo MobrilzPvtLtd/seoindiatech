@@ -84,7 +84,7 @@ export default function TrustAutomationSection() {
               </div>
               
               <div className="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700">
-                <button className="px-6 py-3 bg-blue-600 hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-600 text-white font-medium rounded-lg transition-colors duration-300 inline-flex items-center group">
+                <button className="px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-800 hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-600 text-white font-medium rounded-full transition-colors duration-300 inline-flex items-center group">
                   Learn more about our automation services
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2 transform transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />

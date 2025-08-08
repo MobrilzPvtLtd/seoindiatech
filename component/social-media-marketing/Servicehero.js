@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { ArrowRight, Share2 } from 'lucide-react';
+import Link from 'next/link';
 
 const ServiceHero = () => {
   const images = [
@@ -43,14 +44,17 @@ const ServiceHero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 pt-2">
+            <Link href="/contactus">
             <button className="bg-gradient-to-r from-blue-600 to-blue-800 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition-colors shadow-md flex items-center justify-center gap-2 group">
               Get started now
               <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
             </button>
-            
-            <button className="bg-transparent text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors flex items-center justify-center">
+            </Link>
+            <Link href="">
+            <button className="hidden bg-transparent text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors flex items-center justify-center">
               Explore Services
             </button>
+            </Link>
           </div>
           
           {/* Stats - Optional */}

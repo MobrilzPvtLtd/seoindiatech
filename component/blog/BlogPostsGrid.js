@@ -175,7 +175,7 @@ const BlogPostsGrid = () => (
                     />
                     <button
                         type="submit"
-                        className="px-5 py-3 bg-blue-600 dark:bg-blue-500 text-white font-medium rounded-lg hover:bg-blue-700 dark:hover:bg-blue-600 transition-colors"
+                        className="px-5 py-3 bg-gradient-to-r from-blue-600 to-blue-800 dark:bg-blue-500 text-white font-medium rounded-full hover:bg-blue-700 dark:hover:bg-blue-600 transition-colors"
                     >
                         Subscribe
                     </button>

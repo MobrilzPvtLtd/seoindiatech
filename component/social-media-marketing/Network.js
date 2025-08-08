@@ -8,6 +8,7 @@ import {
   Paintbrush2,
   ArrowRight
 } from 'lucide-react';
+import Link from 'next/link';
 
 const integrations = [
   {
@@ -111,12 +112,12 @@ const NetworkSection = () => {
             At <span className="text-blue-700 dark:text-blue-500 font-semibold">Digitalyzeit,</span> we're dedicated to helping you achieve your digital branding goals. Whether you aim to boost brand awareness, drive engagement, or increase conversions, our team of experts guides you every step of the way.
           </p>
           
-          <div className="flex justify-center mt-10">
+          <Link href="/services/digital-branding" className="flex justify-center mt-10">
             <button className="bg-gradient-to-r from-blue-600 to-blue-800 dark:bg-blue-600 hover:bg-blue-800 dark:hover:bg-blue-700 text-white font-semibold px-8 py-4 rounded-full transition-all duration-300 shadow-md hover:shadow-lg flex items-center">
               Learn More
               <ArrowRight className="ml-2 w-5 h-5" />
             </button>
-          </div>
+          </Link>
         </div>
       </div>
     </section>
