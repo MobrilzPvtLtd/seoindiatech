@@ -46,7 +46,7 @@ const Begin = () => {
           {/* Buttons */}
           <div className='flex flex-col sm:flex-row gap-4 mt-10'>
             <Link href="/contactus">
-            <button className='cursor-pointer bg-gradient-to-r from-blue-600 to-blue-800 hover:bg-blue-700 text-white px-8 py-4 rounded-full text-base font-semibold transition-colors shadow-lg hover:shadow-blue-900/30 flex items-center group'>
+            <button className='hidden cursor-pointer bg-gradient-to-r from-blue-600 to-blue-800 hover:bg-blue-700 text-white px-8 py-4 rounded-full text-base font-semibold transition-colors shadow-lg hover:shadow-blue-900/30 flex items-center group'>
               Get Started
               <ArrowRight className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
             </button>
@@ -71,11 +71,11 @@ const Begin = () => {
       </div>
 
       {/* Optional: Bottom Wave */}
-      <div className="absolute bottom-0 left-0 w-full h-16 overflow-hidden">
+      {/* <div className="absolute bottom-0 left-0 w-full h-16 overflow-hidden">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="absolute bottom-0 w-full h-auto opacity-10">
           <path fill="#3B82F6" fillOpacity="1" d="M0,64L48,80C96,96,192,128,288,122.7C384,117,480,75,576,74.7C672,75,768,117,864,128C960,139,1056,117,1152,112C1248,107,1344,117,1392,122.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
         </svg>
-      </div>
+      </div> */}
     </section>
   );
 };

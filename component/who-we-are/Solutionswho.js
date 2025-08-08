@@ -101,7 +101,7 @@ const Solutionswho = () => {
                 </div>
                 
                 {/* Button */}
-                <button className="mt-6 inline-flex items-center gap-2 text-blue-700 dark:text-blue-400 font-medium group-hover:text-white dark:group-hover:text-white px-5 py-2.5 rounded-lg border border-blue-200 dark:border-blue-800 group-hover:bg-blue-600 dark:group-hover:bg-blue-700 group-hover:border-transparent transition-all duration-300">
+                <button className="cursor-pointer mt-6 inline-flex items-center gap-2 text-blue-700 dark:text-blue-400 font-medium group-hover:text-white dark:group-hover:text-white px-5 py-2.5 rounded-lg border border-blue-200 dark:border-blue-800 group-hover:bg-blue-600 dark:group-hover:bg-blue-700 group-hover:border-transparent transition-all duration-300">
                   Read More
                   <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                 </button>

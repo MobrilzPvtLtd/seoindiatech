@@ -66,7 +66,7 @@ const Audience = () => {
             
             {/* CTA button */}
             <div className="pt-4">
-              <button className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-500 dark:to-purple-500 text-white px-6 py-3 rounded-lg font-medium shadow-md hover:shadow-lg transition-all duration-300 hover:translate-y-[-2px] active:translate-y-0">
+              <button className="cursor-pointer inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-500 dark:to-purple-500 text-white px-6 py-3 rounded-lg font-medium shadow-md hover:shadow-lg transition-all duration-300 hover:translate-y-[-2px] active:translate-y-0">
                 Discover Our Approach
                 <ArrowRight size={18} />
               </button>

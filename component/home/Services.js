@@ -72,12 +72,12 @@ const Services = () => {
           
           <div className="flex flex-col sm:flex-row gap-4">
             <Link href="/contactus">
-            <button className="bg-gradient-to-r from-blue-600 to-blue-800 dark:from-blue-500 dark:to-indigo-700 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105 transform active:scale-95 shadow-md border border-blue-700/20 dark:border-blue-500/30 text-center">
+            <button className="cursor-pointer bg-gradient-to-r from-blue-600 to-blue-800 dark:from-blue-500 dark:to-indigo-700 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105 transform active:scale-95 shadow-md border border-blue-700/20 dark:border-blue-500/30 text-center">
               Get Started
             </button>
             </Link>
             <Link href="/blog">
-            <button className="bg-transparent text-white px-6 py-3 rounded-full font-semibold hover:bg-white/10 transition-all duration-300 border border-white/20 text-center">
+            <button className="cursor-pointer bg-transparent text-white px-6 py-3 rounded-full font-semibold hover:bg-white/10 transition-all duration-300 border border-white/20 text-center">
               Learn More
             </button>
             </Link>

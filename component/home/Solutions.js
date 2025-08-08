@@ -44,7 +44,7 @@ const Solutions = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/services/ui-ux-design">
-                  <button className="bg-gradient-to-r from-blue-600 to-blue-800 dark:from-blue-500 dark:to-indigo-700 text-white px-8 py-3 rounded-full font-medium flex items-center justify-center gap-2 transition-all duration-300 hover:shadow-lg hover:scale-105 transform active:scale-95">
+                  <button className="cursor-pointer bg-gradient-to-r from-blue-600 to-blue-800 dark:from-blue-500 dark:to-indigo-700 text-white px-8 py-3 rounded-full font-medium flex items-center justify-center gap-2 transition-all duration-300 hover:shadow-lg hover:scale-105 transform active:scale-95">
                     Learn more
                     <ArrowRight size={18} />
                   </button>
@@ -82,13 +82,13 @@ const Solutions = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/services/digital-branding">
-                  <button className="bg-gradient-to-r from-blue-600 to-blue-800 dark:from-blue-500 dark:to-indigo-700 text-white px-8 py-3 rounded-full font-medium flex items-center justify-center gap-2 transition-all duration-300 hover:shadow-lg hover:scale-105 transform active:scale-95">
+                  <button className="cursor-pointer bg-gradient-to-r from-blue-600 to-blue-800 dark:from-blue-500 dark:to-indigo-700 text-white px-8 py-3 rounded-full font-medium flex items-center justify-center gap-2 transition-all duration-300 hover:shadow-lg hover:scale-105 transform active:scale-95">
                     Learn more
                     <ArrowRight size={18} />
                   </button>
                 </Link>
                 <Link href="#">
-                  <button className="hidden bg-transparent text-blue-600 dark:text-blue-400 px-8 py-3 rounded-full font-medium border border-blue-200 dark:border-blue-700 hover:bg-blue-50 dark:hover:bg-blue-900/30 transition-all duration-300 flex items-center justify-center gap-2">
+                  <button className="hidden cursor-pointer bg-transparent text-blue-600 dark:text-blue-400 px-8 py-3 rounded-full font-medium border border-blue-200 dark:border-blue-700 hover:bg-blue-50 dark:hover:bg-blue-900/30 transition-all duration-300 flex items-center justify-center gap-2">
                     Get started
                   </button>
                 </Link>

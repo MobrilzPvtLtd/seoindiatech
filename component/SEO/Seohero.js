@@ -33,7 +33,7 @@ const Seohero = () => {
             higher on search engines, attracts quality traffic, and turns
             visitors into loyal customers. At{' '}
             <span className="text-blue-700 dark:text-blue-400 font-semibold">
-              Digitalyzeit,
+              SEO India Tech,
             </span>{' '}
             we don't just optimize websites—we craft strategic SEO solutions
             that deliver measurable results.
