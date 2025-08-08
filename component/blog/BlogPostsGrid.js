@@ -2,73 +2,10 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Calendar, Clock, BookOpen } from "lucide-react";
+import posts from "@/utlis/BlogPost";
 
 // Example blog data (replace with your dynamic data as needed)
-const posts = [
-    {
-        image: "/images/seo-banner.jpg",
-        title: "The Rise of AI Marketing Assistants: How Businesses Are Scaling Faster with Automation in 2025",
-        desc: "The Rise of AI Marketing Assistants: How businesses are scaling faster with automation in sales, support, and operations.",
-        link: "#",
-        date: "Aug 5, 2025",
-        readTime: "6 min read",
-        category: "Marketing"
-    },
-    {
-        image: "/images/seo-banner.jpg",
-        title: "The Marketing Mix: Mastering the 4Ps for Business Growth in 2025",
-        desc: "Discover how the modern marketing mix can boost your business in 2025. Learn strategies for product, price, place, and promotion.",
-        link: "#",
-        date: "Jul 28, 2025",
-        readTime: "5 min read",
-        category: "Strategy"
-    },
-    {
-        image: "/images/seo-banner.jpg",
-        title: "How to Optimize Your PPC Campaigns for Maximum ROI",
-        desc: "Unlock the full potential of Paid Search with these PPC optimization strategies for 2025. Achieve more with less budget.",
-        link: "#",
-        date: "Jul 22, 2025",
-        readTime: "7 min read",
-        category: "PPC"
-    },
-    {
-        image: "/images/seo-banner.jpg",
-        title: "Command Your Business: Navigating CRM and Tools for Optimal Management",
-        desc: "Master CRM and business management tools for optimal performance and growth. Strategies, trends, and must-have features.",
-        link: "#",
-        date: "Jul 15, 2025",
-        readTime: "8 min read",
-        category: "CRM"
-    },
-    {
-        image: "/images/seo-banner.jpg",
-        title: "Unlock the Secrets: Mastering Market Research for Business Success",
-        desc: "Mastering market research for business success: introductions, methods, tools, and strategies to achieve breakthrough insights.",
-        link: "#",
-        date: "Jul 10, 2025",
-        readTime: "6 min read",
-        category: "Research"
-    },
-    {
-        image: "/images/seo-banner.jpg",
-        title: "The Ultimate Guide To Mastering Management Tools in 2025",
-        desc: "The Ultimate Guide to Mastering Management Tools in 2025: strategies for effective leadership, project management, and team collaboration.",
-        link: "#",
-        date: "Jul 3, 2025",
-        readTime: "9 min read",
-        category: "Management"
-    },
-    {
-        image: "/images/seo-banner.jpg",
-        title: "Revolutionize Your Business: Mastering the Art of Workflow Automation",
-        desc: "Revolutionize your business by mastering workflow automation—discover the latest tools, strategies, and case studies for scaling your enterprise.",
-        link: "#",
-        date: "Jun 28, 2025",
-        readTime: "7 min read",
-        category: "Automation"
-    },
-];
+
 
 const BlogPostsGrid = () => (
     <section className="py-12 md:py-20 px-4 md:px-8 bg-white dark:bg-gray-900">
@@ -91,6 +28,7 @@ const BlogPostsGrid = () => (
             {/* Blog posts grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
                 {posts.map((post, idx) => (
+                     <Link key={idx} href={`/blog/${post.slug}`} className="group">
                     <article
                         key={idx}
                         className="group relative bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden h-full"
@@ -148,16 +86,17 @@ const BlogPostsGrid = () => (
                             <p className="text-gray-600 dark:text-gray-300 text-sm flex-1 mb-4 line-clamp-3">{post.desc}</p>
                             
                             {/* Read more button */}
-                            <Link
-                                href={post.link}
+                            <span
+                                // href={post.link}
                                 className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-gray-100 dark:bg-gray-700/60 text-blue-600 dark:text-blue-400 font-medium text-sm group-hover:bg-blue-600 group-hover:text-white dark:group-hover:bg-blue-600 transition-all duration-300 w-auto self-start"
                             >
                                 <BookOpen className="w-4 h-4 mr-1.5" />
                                 Read Article
                                 <ArrowRight className="ml-1.5 w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" />
-                            </Link>
+                            </span>
                         </div>
                     </article>
+                    </Link>
                 ))}
             </div>
             
