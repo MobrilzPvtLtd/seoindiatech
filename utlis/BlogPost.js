@@ -21,7 +21,7 @@ const posts = [
         image: "/images/seo-banner.jpg",
         title: "How to Optimize Your PPC Campaigns for Maximum ROI",
         desc: "Unlock the full potential of Paid Search with these PPC optimization strategies for 2025. Achieve more with less budget.",
-        slug: " optimize-ppc-campaigns",
+        slug: "optimize-ppc-campaigns",
         date: "Jul 22, 2025",
         readTime: "7 min read",
         category: "PPC"
