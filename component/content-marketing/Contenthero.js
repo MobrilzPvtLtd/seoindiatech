@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const Contenthero = () => {
   return (
-    <section className="bg-white dark:bg-gray-900 px-4 py-16">
+    <section className="bg-white dark:bg-gray-900 md:px-4 py-4 px-2 md:py-16">
       <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-100 dark:border-blue-800/30 rounded-2xl p-6 md:p-12 flex flex-col md:flex-row items-center justify-between shadow-lg max-w-7xl mx-auto overflow-hidden relative">
         {/* Background decorative elements */}
         <div className="absolute inset-0 pointer-events-none">

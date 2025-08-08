@@ -71,7 +71,7 @@ export default function HeroSection() {
       {/* Decorative grid pattern */}
       <div className="absolute inset-0 bg-grid-pattern opacity-10 dark:opacity-5 pointer-events-none"></div>
       
-      <div className="container mx-auto px-6 md:px-12 lg:px-20 py-16 md:py-10 relative z-10">
+      <div className="container mx-auto px-6 md:px-12 lg:px-20 py-8 md:py-10 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Left Content */}
           <div className="space-y-8">

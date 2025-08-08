@@ -19,7 +19,7 @@ const Ppchero = () => {
   ]
 
   return (
-    <section className="bg-gradient-to-b from-white to-blue-50 dark:from-gray-900 dark:to-blue-950/30 px-4 py-16 md:py-20 lg:py-24 relative overflow-hidden">
+    <section className="bg-gradient-to-b from-white to-blue-50 dark:from-gray-900 dark:to-blue-950/30 px-4 py-8 md:py-20 lg:py-24 relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/4 right-0 w-72 h-72 bg-blue-100/50 dark:bg-blue-900/10 rounded-full blur-3xl"></div>
@@ -72,7 +72,7 @@ const Ppchero = () => {
         <div className="w-24 h-1.5 bg-blue-600 dark:bg-blue-500 rounded-full mx-auto mb-8"></div>
 
         {/* Subheading Paragraph */}
-        <p className="text-gray-700 dark:text-gray-300 text-lg md:text-xl mb-10 max-w-4xl mx-auto">
+        <p className="text-gray-700 text-justify dark:text-gray-300 text-lg md:text-xl mb-10 max-w-4xl mx-auto">
           At{' '}
           <span className="font-semibold text-gray-900 dark:text-white">
             Digitalyzeit

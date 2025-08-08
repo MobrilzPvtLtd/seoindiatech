@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 const Seohero = () => {
   return (
-    <section className="bg-gradient-to-b from-white to-blue-50 dark:from-gray-900 dark:to-blue-950/30 py-12 md:py-16 px-6 md:px-8 overflow-hidden relative">
+    <section className="bg-gradient-to-b from-white to-blue-50 dark:from-gray-900 dark:to-blue-950/30 py-8 md:py-16 px-6 md:px-8 overflow-hidden relative">
       {/* Background decorative elements */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/4 right-0 w-72 h-72 bg-blue-100/50 dark:bg-blue-900/10 rounded-full blur-3xl"></div>

@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const Digitalhero = () => {
   return (
-    <section className="bg-white dark:bg-gray-900 px-6 py-12">
+    <section className="bg-white dark:bg-gray-900 md:px-6 px-2 py-4 md:py-12">
       <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-6 sm:p-10 md:p-12 flex flex-col md:flex-row items-center gap-8 md:gap-12 shadow-lg max-w-7xl mx-auto overflow-hidden relative">
         {/* Background decorative elements */}
         <div className="absolute top-0 right-0 -mt-10 -mr-10 w-40 h-40 bg-blue-100 dark:bg-blue-900/20 rounded-full blur-3xl opacity-60 dark:opacity-40"></div>

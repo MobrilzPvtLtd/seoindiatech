@@ -13,7 +13,7 @@ const Hero = () => {
         <div className='absolute -bottom-10 right-10 w-72 h-72 bg-purple-100 dark:bg-purple-900/20 rounded-full blur-3xl opacity-50'></div>
       </div>
 
-      <div className='pt-16 md:pt-20 max-w-7xl flex p-6 md:p-12 flex-col md:flex-row items-center justify-between gap-12 lg:gap-20 mx-auto my-10'>
+      <div className=' md:pt-20 max-w-7xl flex p-6 md:p-12 flex-col md:flex-row items-center justify-between gap-12 lg:gap-20 mx-auto md:my-10'>
         <div className='md:max-w-xl'>
           {/* Badge/Tag */}
           <div className='mb-8'>

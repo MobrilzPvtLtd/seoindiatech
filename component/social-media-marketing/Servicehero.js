@@ -20,8 +20,8 @@ const ServiceHero = () => {
   ];
 
   return (
-    <section className='bg-white dark:bg-gray-900 pt-4 pb-8'>
-    <section className='bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-gray-900 dark:to-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-8 md:p-12 shadow-lg max-w-7xl mx-auto my-6 md:my-10 overflow-hidden relative'>
+    <section className='bg-white dark:bg-gray-900 pt-2 pb-8 px-2'>
+    <section className='bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-gray-900 dark:to-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-8 md:p-12 shadow-lg max-w-7xl mx-auto my-4 md:my-10 overflow-hidden relative'>
       {/* Background decorative elements */}
       <div className="absolute top-0 left-0 w-full h-full opacity-10">
         <div className="absolute top-0 right-0 w-96 h-96 bg-blue-300 dark:bg-blue-700 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2"></div>

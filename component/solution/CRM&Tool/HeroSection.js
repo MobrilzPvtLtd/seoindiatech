@@ -19,7 +19,7 @@ const HeroSection = () => {
   ];
   
   return (
-    <section className="bg-gradient-to-b from-blue-100 to-blue-200 dark:from-gray-700 dark:to-gray-900 py-16 md:py-24 relative overflow-hidden">
+    <section className="bg-gradient-to-b from-blue-100 to-blue-200 dark:from-gray-700 dark:to-gray-900 py-8 md:py-24 relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/4 right-0 w-72 h-72 bg-white/50 dark:bg-blue-900/10 rounded-full blur-3xl"></div>
@@ -42,7 +42,7 @@ const HeroSection = () => {
             
             <div className="w-20 h-1 bg-blue-600 dark:bg-blue-500 rounded-full"></div>
             
-            <p className="text-gray-700 dark:text-gray-300 text-base md:text-lg leading-relaxed">
+            <p className="text-gray-700 text-justify dark:text-gray-300 text-base md:text-lg leading-relaxed">
               Our CRM and management tools are more than just software – they're the catalysts for positive change within your organization. Whether you're aiming to enhance customer relationships, streamline internal processes, or improve team collaboration, our suite of tools is here to empower your journey toward success.
             </p>
             

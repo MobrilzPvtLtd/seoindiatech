@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const Ideas = () => {
   return (
-    <section className='bg-gray-200 dark:bg-gray-900 py-16 md:py-20 px-6 overflow-hidden relative'>
+    <section className='bg-gray-200 dark:bg-gray-900 py-8 md:py-20 px-6 overflow-hidden relative'>
       {/* Background decorative elements */}
       <div className="absolute inset-0 overflow-hidden opacity-5 pointer-events-none">
         <div className="absolute top-1/4 right-1/4 w-64 h-64 rounded-full border border-blue-950 dark:border-blue-700"></div>
