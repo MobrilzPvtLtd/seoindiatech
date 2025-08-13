@@ -62,24 +62,24 @@ const Communicate = () => {
             Communicate<br />Efficiently
           </h2>
           <p className="text-gray-700 dark:text-gray-300 mb-6">
-            Discover precisely how you're delivering value throughout every phase of the customer experience, and take action accordingly.
+            We help you uncover how you provide value at every stage of the customer journey, enabling you to strategically respond for maximum impact.
           </p>
           <ul className="space-y-4">
             <li className="flex items-center gap-3 text-lg text-gray-800 dark:text-gray-200">
               <CheckCircle className="text-blue-600 dark:text-blue-400 w-6 h-6" />
-              Write better and faster with Writing Assistant
+              Enhance Your Writing with Our Advanced Assistant
             </li>
             <li className="flex items-center gap-3 text-lg text-gray-800 dark:text-gray-200">
               <CheckCircle className="text-blue-600 dark:text-blue-400 w-6 h-6" />
-              Boost content via rescheduling
+              Boost Content Performance with Strategic Rescheduling
             </li>
             <li className="flex items-center gap-3 text-lg text-gray-800 dark:text-gray-200">
               <CheckCircle className="text-blue-600 dark:text-blue-400 w-6 h-6" />
-              Create content—with a personal touch
+              Crafting content with a personal touch.
             </li>
             <li className="flex items-center gap-3 text-lg text-gray-800 dark:text-gray-200">
               <CheckCircle className="text-blue-600 dark:text-blue-400 w-6 h-6" />
-              Stay consistent on Instagram
+              Maintain Consistency on Instagram
             </li>
           </ul>
         </div>

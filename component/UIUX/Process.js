@@ -62,11 +62,11 @@ const Process = () => {
           </div>
           
           <h1 className='text-gray-900 dark:text-white text-4xl md:text-5xl lg:text-6xl font-bold leading-tight'>
-            Our Proven UI/UX Design<br className="hidden md:block" /> Process
+            Our Proven Process for UI/UX <br className="hidden md:block" /> Success
           </h1>
           
           <p className='text-gray-800 dark:text-gray-200 text-lg mt-6 max-w-4xl'>
-            At <span className='text-blue-700 dark:text-blue-400 font-bold'>SEO India Tech,</span> we don't just design, we innovate. Our process ensures every touchpoint enhances user engagement and drives business results.
+            At <span className='text-blue-700 dark:text-blue-400 font-bold'>SEO India Tech,</span> we partner with you to innovate, not just design. Our process ensures every user touchpoint is a strategic opportunity to enhance engagement and drive business growth.
           </p>
           
           <div className="mt-6 mb-12">

@@ -20,7 +20,7 @@ const Ideas = () => {
               <span>Innovative Solutions</span>
             </div>
             <h1 className="text-gray-900 dark:text-gray-100 text-5xl md:text-6xl font-bold leading-tight">
-              Turn Your Ideas <br className="hidden md:block" /> Into Reality
+              Making Your Ideas <br className="hidden md:block" /> a Reality
             </h1>
             <div className="mt-6 hidden md:block">
               <div className="flex items-center gap-4">
@@ -33,16 +33,16 @@ const Ideas = () => {
           {/* Right Column - Text and Button */}
           <div className="md:w-1/2">
             <p className="text-justify text-gray-700 dark:text-gray-300 text-lg mb-6">
-              A frictionless, visually stunning interface can be the difference
-              between a bounce and a conversion. At{' '}
+              A seamless and visually stunning interface is crucial for turning
+              visitors into customers.{' '}
               <span className="font-bold text-blue-800 dark:text-blue-300">
                 SEO India Tech
               </span>
-              , we specialize in{' '}
+              , partners with you to create{' '}
               <span className="font-bold text-blue-800 dark:text-blue-300">
                 revolutionary UI/UX solutions
               </span>{' '}
-              that captivate users and drive measurable success.
+              that not only captivate users but also deliver measurable success.
             </p>
             <button
               onClick={() => {
@@ -73,11 +73,12 @@ const Ideas = () => {
           <div className="absolute inset-0 flex items-center justify-center z-20 px-4">
             <div className="text-center max-w-4xl">
               <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white font-bold drop-shadow-lg">
-                Crafting Digital Experiences That Convert
+                From User Experience to Conversion: We Craft Your Digital
+                Success
               </h2>
               <p className="mt-4 text-lg md:text-xl text-white/85 max-w-2xl mx-auto hidden md:block drop-shadow-md">
-                We blend aesthetics with functionality to create memorable user
-                journeys
+                We design with a focus on blending aesthetics and functionality,
+                crafting user journeys that are both memorable and effective.
               </p>
             </div>
           </div>

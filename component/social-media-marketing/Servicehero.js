@@ -37,11 +37,11 @@ const ServiceHero = () => {
           </div>
           
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white leading-tight">
-            Our Expert Social Media <span className="text-blue-600 dark:text-blue-400">Marketing</span> Services
+            Your Partner for Expert Social Media <span className="text-blue-600 dark:text-blue-400">Marketing</span>
           </h1>
           
           <p className="text-justify text-gray-700 dark:text-gray-300 text-base md:text-lg">
-            With a sharp focus on analytics and an acute awareness of social trends, we expertly navigate the complexities of algorithms to ensure your brand stands out and shines in the digital landscape.
+            Our expertise in analytics and understanding of social trends allows us to expertly navigate complex algorithms, making sure your brand not only stands out but truly shines.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 pt-2">
