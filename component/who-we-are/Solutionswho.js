@@ -1,66 +1,85 @@
-import React from 'react';
-import { ArrowRight, Zap, LayoutGrid, LineChart, Globe, Speaker, BarChart3 } from 'lucide-react';
+import React from 'react'
+import {
+  ArrowRight,
+  Zap,
+  LayoutGrid,
+  LineChart,
+  Globe,
+  Speaker,
+  BarChart3,
+} from 'lucide-react'
 
 const Solutionswho = () => {
   const solutions = [
     {
       title: 'Workflow',
-      desc: 'We help you build your workflow for your business, and what methods and strategies to expand',
+      desc:
+        'We partner with you to build a custom workflow for your business and provide the strategies you need to achieve sustainable growth.',
       tag: true,
-      icon: <LayoutGrid className="w-6 h-6" />
+      icon: <LayoutGrid className="w-6 h-6" />,
     },
     {
       title: 'Automation',
-      desc: 'Automate your work by using the best technology and the right one for your business',
+      desc:
+        'Choose the right technology to automate your work, so you can streamline your operations and drive growth.',
       tag: true,
-      icon: <Zap className="w-6 h-6" />
+      icon: <Zap className="w-6 h-6" />,
     },
     {
       title: 'Market Research',
-      desc: 'By understanding how the market works and needs, creating profile personas, and market approach.',
+      desc:
+        'We build your strategy by understanding market needs, creating audience personas, and defining your go-to-market approach.',
       tag: false,
-      icon: <LineChart className="w-6 h-6" />
+      icon: <LineChart className="w-6 h-6" />,
     },
     {
       title: 'Website Creation',
-      desc: 'Creating the best UI and enhancing websites layout, and understanding more about the User Experience (UX)',
+      desc:
+        'We specialize in creating intuitive UI/UX design, enhancing website layouts, and improving user experience for optimal performance.',
       tag: false,
-      icon: <Globe className="w-6 h-6" />
+      icon: <Globe className="w-6 h-6" />,
     },
     {
       title: 'Promotion and Advertising',
-      desc: 'Marketing for your products, product line, brand, or company by attracting the right audience with the right approach.',
+      desc:
+        'Attract your ideal audience and drive growth by effectively marketing your products, brand, or company with our strategic approach.',
       tag: false,
-      icon: <Speaker className="w-6 h-6" />
+      icon: <Speaker className="w-6 h-6" />,
     },
     {
       title: 'CRM & Management tools',
-      desc: 'We use the best tools in the market to help you achieve and organize your business',
+      desc:
+        'We leverage industry-leading tools to help you organize your business and achieve your strategic objectives.',
       tag: false,
-      icon: <BarChart3 className="w-6 h-6" />
-    }
-  ];
+      icon: <BarChart3 className="w-6 h-6" />,
+    },
+  ]
 
   return (
     <section className="py-16 md:py-24 px-4 bg-white dark:bg-gray-900 relative overflow-hidden">
       {/* Decorative background elements */}
       <div className="absolute -top-24 -right-24 w-96 h-96 bg-blue-50 dark:bg-blue-900/20 rounded-full blur-3xl opacity-70 -z-10"></div>
       <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-red-50 dark:bg-red-900/10 rounded-full blur-3xl opacity-70 -z-10"></div>
-      
+
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
           <span className="inline-block px-4 py-1.5 bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-sm font-medium mb-4">
             Solutions For Your Business
           </span>
-          
+
           <h1 className="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">
             <span className="text-blue-700 dark:text-blue-400">Use Our </span>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-400 dark:from-red-500 dark:to-red-300 italic font-semibold">Solutions</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-400 dark:from-red-500 dark:to-red-300 italic font-semibold">
+              Solutions
+            </span>
           </h1>
-          
+
           <p className="text-gray-700 dark:text-gray-300 max-w-2xl mx-auto text-lg">
-            You can now choose between our <span className="font-semibold">Marketing Solutions</span> that suit your business needs, depending on your niche and market requirements.
+            We offer a variety of{' '}
+            <span className="font-semibold">Marketing Solutions</span> that can
+            be tailored to suit your specific business needs, niche, and market
+            requirements.
           </p>
         </div>
 
@@ -73,7 +92,7 @@ const Solutionswho = () => {
             >
               {/* Card Background with subtle gradients */}
               <div className="absolute inset-0 bg-gradient-to-br from-gray-50 to-white dark:from-gray-800 dark:to-gray-900 -z-10"></div>
-              
+
               {/* Special offer tag */}
               {solution.tag && (
                 <div className="absolute top-0 left-0">
@@ -90,7 +109,7 @@ const Solutionswho = () => {
                   <div className="mb-5 p-3 bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-lg inline-block">
                     {solution.icon}
                   </div>
-                  
+
                   {/* Title and Description */}
                   <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
                     {solution.title}
@@ -99,7 +118,7 @@ const Solutionswho = () => {
                     {solution.desc}
                   </p>
                 </div>
-                
+
                 {/* Button */}
                 <button className="cursor-pointer mt-6 inline-flex items-center gap-2 text-blue-700 dark:text-blue-400 font-medium group-hover:text-white dark:group-hover:text-white px-5 py-2.5 rounded-lg border border-blue-200 dark:border-blue-800 group-hover:bg-blue-600 dark:group-hover:bg-blue-700 group-hover:border-transparent transition-all duration-300">
                   Read More
@@ -109,7 +128,7 @@ const Solutionswho = () => {
             </div>
           ))}
         </div>
-        
+
         {/* Bottom CTA */}
         <div className="hidden text-center mt-16">
           <button className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-500 dark:to-blue-600 text-white px-8 py-3.5 rounded-full font-medium shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 transform active:scale-95">
@@ -119,7 +138,7 @@ const Solutionswho = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Solutionswho;
+export default Solutionswho

@@ -10,7 +10,7 @@ const Testimonial = () => {
       company: "@Brello",
       avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face&auto=format&q=80",
       rating: 5,
-      testimonial: "I was looking for a way to streamline my design process and the Anima's Landing Page UI Kit was a lifesaver! The intuitive design and ease of customisation have saved me hours of time and effort. Highly recommend!"
+      testimonial: "The Anima Landing Page UI Kit saved me hours with its intuitive design and simple customization. A fantastic resource I highly recommend!"
     },
     {
       id: 2,

@@ -52,7 +52,7 @@ const Features = () => {
           </h1>
           
           <p className="text-gray-700 dark:text-gray-300 max-w-2xl mx-auto text-lg">
-            Enjoy our efficient and amazing features, and learn more about how we technically offer for you.
+            Discover our amazing features and dive deeper into the technical solutions we provide to help you succeed.
           </p>
         </div>
 

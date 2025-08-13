@@ -1,6 +1,6 @@
-import React from 'react';
-import { CheckCircle, ArrowUpRight, Star, Clock, Users } from 'lucide-react';
-import Image from 'next/image';
+import React from 'react'
+import { CheckCircle, ArrowUpRight, Star, Clock, Users } from 'lucide-react'
+import Image from 'next/image'
 
 const Journey = () => {
   return (
@@ -27,9 +27,13 @@ const Journey = () => {
           <div className="hidden absolute -bottom-6 -left-6 md:left-4 bg-white dark:bg-gray-900 p-4 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700 max-w-[180px]">
             <div className="flex items-center space-x-2 mb-1">
               <Clock className="w-5 h-5 text-blue-600 dark:text-blue-400" />
-              <h4 className="font-semibold text-gray-900 dark:text-white">Since 2013</h4>
+              <h4 className="font-semibold text-gray-900 dark:text-white">
+                Since 2013
+              </h4>
             </div>
-            <p className="text-sm text-gray-600 dark:text-gray-400">Helping businesses transform digitally</p>
+            <p className="text-sm text-gray-600 dark:text-gray-400">
+              Helping businesses transform digitally
+            </p>
           </div>
 
           <div className="hidden absolute -top-6 -right-6 md:right-4 bg-white dark:bg-gray-900 p-4 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700">
@@ -38,7 +42,9 @@ const Journey = () => {
                 <Star key={i} fill="currentColor" className="w-4 h-4" />
               ))}
             </div>
-            <p className="text-sm text-gray-700 dark:text-gray-300 font-medium">Trusted by 1000+ clients</p>
+            <p className="text-sm text-gray-700 dark:text-gray-300 font-medium">
+              Trusted by 1000+ clients
+            </p>
           </div>
         </div>
 
@@ -51,7 +57,7 @@ const Journey = () => {
 
           {/* Main heading */}
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white leading-tight">
-            Our Story: A Journey of{" "}
+            Our Story: A Journey of{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400">
               Innovation and Excellence
             </span>
@@ -59,7 +65,11 @@ const Journey = () => {
 
           {/* Description */}
           <p className="text-justify text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
-            Our journey began with a vision to revolutionize the way businesses interact with the digital world. We recognized the transformative power of automation and its ability to streamline processes, boost productivity, and drive growth. With this passion, we embarked on a mission to become the trusted partner for businesses seeking to navigate the complexities of the digital landscape.
+            We began with a simple idea: to change the way businesses engage
+            with the digital world. Recognizing the immense power of automation
+            to streamline processes, boost productivity, and fuel growth, we
+            made it our mission to become a trusted partner for any business
+            ready to thrive in a complex digital landscape.
           </p>
 
           {/* Feature cards */}
@@ -67,9 +77,13 @@ const Journey = () => {
             <div className="flex items-start bg-white dark:bg-gray-900 p-5 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 border border-gray-100 dark:border-gray-700">
               <CheckCircle className="text-blue-600 dark:text-blue-400 w-6 h-6 mr-4 mt-1 flex-shrink-0" />
               <div>
-                <h4 className="font-medium text-gray-900 dark:text-white mb-1">Streamlined Operations</h4>
+                <h4 className="font-medium text-gray-900 dark:text-white mb-1">
+                  Streamlined Operations
+                </h4>
                 <p className="text-gray-700 dark:text-gray-300">
-                  Streamline your operations, eliminate repetitive tasks, and free up your team to focus on strategic initiatives.
+                  We help you streamline operations, eliminate repetitive work,
+                  and free your team to focus on strategic, high-impact
+                  projects.
                 </p>
               </div>
             </div>
@@ -77,9 +91,13 @@ const Journey = () => {
             <div className="flex items-start bg-white dark:bg-gray-900 p-5 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 border border-gray-100 dark:border-gray-700">
               <CheckCircle className="text-blue-600 dark:text-blue-400 w-6 h-6 mr-4 mt-1 flex-shrink-0" />
               <div>
-                <h4 className="font-medium text-gray-900 dark:text-white mb-1">Workflow Optimization</h4>
+                <h4 className="font-medium text-gray-900 dark:text-white mb-1">
+                  Workflow Optimization
+                </h4>
                 <p className="text-gray-700 dark:text-gray-300">
-                  Our workflow solutions optimize your operations, eliminate bottlenecks, and enhance collaboration across teams.
+                  Let us help you optimize your operations, remove bottlenecks,
+                  and improve collaboration with our powerful workflow
+                  solutions.
                 </p>
               </div>
             </div>
@@ -87,7 +105,7 @@ const Journey = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Journey;
+export default Journey

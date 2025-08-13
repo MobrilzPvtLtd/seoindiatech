@@ -101,7 +101,7 @@ const BlogPostsGrid = () => (
             </div>
             
             {/* Newsletter signup - optional */}
-            <div className="mt-16 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 rounded-2xl p-8 md:p-10 text-center">
+            <div className="hidden mt-16 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 rounded-2xl p-8 md:p-10 text-center">
                 <h3 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white mb-2">Get the latest articles in your inbox</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-6 max-w-xl mx-auto">
                     Subscribe to our newsletter and never miss out on the latest insights, tips, and trends.

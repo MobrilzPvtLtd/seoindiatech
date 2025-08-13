@@ -6,7 +6,7 @@ import Link from 'next/link';
 const ServiceHero = () => {
   const images = [
     {
-      src: "https://www.digitalyzeit.com/wp-content/uploads/2024/07/Growth-Marketing-Hero-Image-1.webp",
+      src: "/images/account.png",
       alt: "Social Media Marketing Strategy"
     },
     {

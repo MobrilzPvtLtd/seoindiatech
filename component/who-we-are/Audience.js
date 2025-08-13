@@ -13,28 +13,28 @@ const Audience = () => {
     {
       icon: <Megaphone className="w-7 h-7" />,
       title: "From Ads",
-      desc: "Sending the accurate traffic by optimizing your ads",
+      desc: "We optimize your ads to send high-quality, targeted traffic to your site.",
       color: "bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400",
       gradient: "from-blue-50 to-blue-100/50 dark:from-blue-900/20 dark:to-blue-900/10"
     },
     {
       icon: <Globe className="w-7 h-7" />,
       title: "To Website",
-      desc: "Collecting leads and converting them into sales on your website.",
+      desc: "We help you capture leads and turn them into sales directly on your website.",
       color: "bg-amber-100 dark:bg-amber-900/30 text-amber-600 dark:text-amber-400",
       gradient: "from-amber-50 to-amber-100/50 dark:from-amber-900/20 dark:to-amber-900/10"
     },
     {
       icon: <Settings className="w-7 h-7" />,
       title: "To CRM",
-      desc: "Organize leads and start nurturing them into funnels",
+      desc: "Efficiently organize your leads and strategically nurture them through your funnels.",
       color: "bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400",
       gradient: "from-red-50 to-red-100/50 dark:from-red-900/20 dark:to-red-900/10"
     },
     {
       icon: <DollarSign className="w-7 h-7" />,
       title: "To Money",
-      desc: "Converting those leads into actual sales and calculating your revenue.",
+      desc: "Turn leads into actual sales and precisely track your revenue with our data-driven approach.",
       color: "bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400",
       gradient: "from-emerald-50 to-emerald-100/50 dark:from-emerald-900/20 dark:to-emerald-900/10"
     },
@@ -61,7 +61,7 @@ const Audience = () => {
             </h1>
             
             <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
-              Drive Traffic From Social Media To Website and convert visitors into loyal customers with our proven strategies.
+              Drive targeted traffic from social media to your website and convert visitors into loyal customers with our proven strategies.
             </p>
             
             {/* CTA button */}
