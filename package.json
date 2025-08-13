@@ -7,9 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next export" 
+    "export": "next export"
   },
   "dependencies": {
+    "@netlify/next": "^1.4.9",
     "lucide-react": "^0.536.0",
     "next": "15.4.5",
     "qs": "^6.14.0",
@@ -19,6 +20,7 @@
     "react-toastify": "^11.0.5"
   },
   "devDependencies": {
+    "@netlify/plugin-nextjs": "^5.12.0",
     "@tailwindcss/postcss": "^4",
     "@types/node": "24.1.0",
     "@types/react": "19.1.9",
