@@ -9,12 +9,12 @@ const Footer = () => {
 
   const handleCallUs = () => {
     // Add your phone number here
-    window.open('tel:+1234567890', '_self');
+    window.open('tel:+91-8010355718', '_self');
   };
 
   const handleEmailUs = () => {
     // Add your email here  
-    window.open('mailto:contact@digitalyze.com', '_self');
+    window.open('mailto:sales@seoindiatech.com', '_self');
   };
 
   const services = [
@@ -197,7 +197,7 @@ const Footer = () => {
             <div className="space-y-4">
               <p className="flex items-start space-x-3 text-gray-600 dark:text-gray-300">
                 <MapPin className="w-5 h-5 text-blue-600 dark:text-blue-400 mt-1 flex-shrink-0" />
-                <span>123 Business Avenue, Tech Park, Bangalore, India</span>
+                <span>E-160, 3rd Floor, Sector 63 Noida, U.P. 201301, India</span>
               </p>
 
               <p className="flex items-start space-x-3 text-gray-600 dark:text-gray-300">

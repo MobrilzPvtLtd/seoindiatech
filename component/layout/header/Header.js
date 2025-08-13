@@ -305,11 +305,11 @@ const Header = () => {
 
           {/* Desktop Navigation - Centered */}
           <nav className="hidden md:flex flex-1 justify-center">
-            <ul className="flex space-x-8">
+            <ul className="flex space-x-4 lg:space-x-10">
               <li className="flex items-center">
                 <Link
                   href="/"
-                  className="text-gray-600 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-bold hover:border-b-2 hover:border-blue-500 py-2 transition-colors duration-300"
+                  className="text-sm md:text-sm lg:text-base text-gray-600 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-bold hover:border-b-2 hover:border-blue-500 py-2 transition-colors duration-300"
                 >
                   Home
                 </Link>
@@ -317,7 +317,7 @@ const Header = () => {
               <li className="flex items-center">
                 <Link
                   href="/who-we-are"
-                  className="text-gray-600 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-bold hover:border-b-2 hover:border-blue-500 py-2 transition-colors duration-300"
+                  className=" whitespace-nowrap text-sm md:text-sm lg:text-base text-gray-600 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-bold hover:border-b-2 hover:border-blue-500 py-2 transition-colors duration-300"
                 >
                   Who We Are
                 </Link>
@@ -330,7 +330,7 @@ const Header = () => {
                 onMouseLeave={handleServicesMouseLeave}
               >
                 <button
-                  className="text-gray-600 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-bold hover:border-b-2 hover:border-blue-500 py-2 flex items-center hover:cursor-pointer transition-colors duration-300"
+                  className="text-sm md:text-sm lg:text-base text-gray-600 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-bold hover:border-b-2 hover:border-blue-500 py-2 flex items-center hover:cursor-pointer transition-colors duration-300"
                   aria-expanded={isServicesOpen}
                   aria-controls="services-dropdown"
                 >
@@ -361,7 +361,7 @@ const Header = () => {
                 onMouseLeave={handleSolutionsMouseLeave}
               >
                 <button
-                  className="text-gray-600 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-bold hover:border-b-2 hover:border-blue-500 py-2 flex items-center hover:cursor-pointer transition-colors duration-300"
+                  className="text-sm md:text-sm lg:text-base text-gray-600 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-bold hover:border-b-2 hover:border-blue-500 py-2 flex items-center hover:cursor-pointer transition-colors duration-300"
                   aria-expanded={isSolutionsOpen}
                   aria-controls="solutions-dropdown"
                 >
@@ -387,7 +387,7 @@ const Header = () => {
               <li className="flex items-center">
                 <Link
                   href="/blog"
-                  className="text-gray-600 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-bold hover:border-b-2 hover:border-blue-500 py-2 transition-colors duration-300"
+                  className="text-sm md:text-sm lg:text-base text-gray-600 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-bold hover:border-b-2 hover:border-blue-500 py-2 transition-colors duration-300"
                 >
                   Blog
                 </Link>

@@ -231,11 +231,11 @@ const ContactUsSection = () => {
                       href="tel:+201111772948"
                       className="text-blue-700 dark:text-blue-400 block hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
                     >
-                      +20 111 177 2948
+                      +91-8010355718
                     </a>
                     <a
                       href="tel:+6282279400935"
-                      className="text-blue-700 dark:text-blue-400 block hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
+                      className="hidden text-blue-700 dark:text-blue-400 block hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
                     >
                       +62 822 7940 0935
                     </a>
@@ -253,10 +253,10 @@ const ContactUsSection = () => {
                     Email
                   </div>
                   <a
-                    href="mailto:Info@seoindiatech.com"
+                    href="mailto:sales@seoindiatech.com"
                     className="text-blue-700 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
                   >
-                    Info@seoindiatech.com
+                    sales@seoindiatech.com
                   </a>
                 </div>
               </div>
