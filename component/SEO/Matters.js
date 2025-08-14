@@ -1,25 +1,28 @@
-import Image from 'next/image';
-import React from 'react';
-import { LineChart, Users, BarChart2, ArrowRight } from 'lucide-react';
+import Image from 'next/image'
+import React from 'react'
+import { LineChart, Users, BarChart2, ArrowRight } from 'lucide-react'
 
 const Matters = () => {
   const seoStats = [
     {
       icon: <LineChart className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
-      highlight: "93%",
-      text: "of online experiences begin with a search engine— if you're not ranking, you're invisible."
+      highlight: '93%',
+      text:
+        'of online interactions begin with a search—without SEO, your business can’t be found.',
     },
     {
       icon: <Users className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
-      highlight: "53%",
-      text: "of all website traffic comes from organic search, making it the most powerful digital marketing channel."
+      highlight: '53%',
+      text:
+        'of website traffic originates from organic search, highlighting its unmatched digital marketing impact.',
     },
     {
       icon: <BarChart2 className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
-      highlight: "14.6%",
-      text: "conversion rate for SEO leads, compared to just 1.7% from outbound strategies."
-    }
-  ];
+      highlight: '14.6%',
+      text:
+        'of SEO leads convert, making it far more effective than outbound strategies at 1.7%.',
+    },
+  ]
 
   return (
     <section className="bg-gradient-to-b from-white to-blue-50 dark:from-gray-900 dark:to-blue-950/30 px-6 md:px-10 lg:px-20 py-16 md:py-20 relative overflow-hidden">
@@ -51,7 +54,9 @@ const Matters = () => {
                 </div>
                 <div>
                   <p className="text-gray-800 dark:text-gray-200">
-                    <span className="font-bold text-blue-700 dark:text-blue-400 text-xl mr-1">{stat.highlight}</span>
+                    <span className="font-bold text-blue-700 dark:text-blue-400 text-xl mr-1">
+                      {stat.highlight}
+                    </span>
                     {stat.text}
                   </p>
                 </div>
@@ -75,10 +80,12 @@ const Matters = () => {
             <div className="bg-blue-50 dark:bg-blue-900/20 p-5 rounded-xl mb-6">
               <p className="text-justify text-gray-700 dark:text-gray-300">
                 At{' '}
-                <span className="font-semibold text-blue-700 dark:text-blue-400">SEO India Tech,</span>{' '}
-                we blend creativity with analytics to build SEO strategies that go
-                beyond rankings. Our comprehensive, tailored approach ensures
-                long-term success in an ever-changing digital landscape.
+                <span className="font-semibold text-blue-700 dark:text-blue-400">
+                  SEO India Tech,
+                </span>{' '}
+                we combine creativity and analytics to craft SEO strategies that
+                deliver more than rankings. Our tailored approach ensures
+                sustainable success in a constantly evolving digital world.
               </p>
             </div>
 
@@ -93,26 +100,36 @@ const Matters = () => {
 
               {/* Image caption overlay */}
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
-                <p className="text-white text-sm font-medium">Our SEO experts analyzing search performance data</p>
+                <p className="text-white text-sm font-medium">
+                  Our SEO experts analyzing search performance data
+                </p>
               </div>
             </div>
 
             {/* Client results - optional */}
             <div className="flex justify-between items-center mt-6 pt-4 border-t border-gray-100 dark:border-gray-700">
               <div>
-                <span className="text-xs text-gray-500 dark:text-gray-400">Average Client Results</span>
-                <div className="text-blue-700 dark:text-blue-400 font-bold">+78% Organic Traffic</div>
+                <span className="text-xs text-gray-500 dark:text-gray-400">
+                  Average Client Results
+                </span>
+                <div className="text-blue-700 dark:text-blue-400 font-bold">
+                  +78% Organic Traffic
+                </div>
               </div>
               <div>
-                <span className="text-xs text-gray-500 dark:text-gray-400">Timeframe</span>
-                <div className="text-blue-700 dark:text-blue-400 font-bold">First 6 Months</div>
+                <span className="text-xs text-gray-500 dark:text-gray-400">
+                  Timeframe
+                </span>
+                <div className="text-blue-700 dark:text-blue-400 font-bold">
+                  First 6 Months
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Matters;
+export default Matters

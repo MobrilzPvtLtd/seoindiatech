@@ -71,31 +71,31 @@ const Form = () => {
       icon: <BarChart className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
       title: "Data-Driven Campaigns",
       description:
-        "Every decision is based on analytics and real-time performance data.",
+        "All decisions are driven by analytics and real-time performance data.",
     },
     {
       icon: <Target className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
       title: "Expert Ad Management",
       description:
-        "We optimize budgets to ensure maximum return on investment (ROI).",
+        "Our strategies ensure every dollar spent delivers maximum ROI.",
     },
     {
       icon: <Target className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
       title: "Targeted Audience Reach",
-      description: "Advanced audience segmentation for hyper-targeted ads.",
+      description: "Advanced targeting to reach the right audience with every ad.",
     },
     {
       icon: (
         <CheckCircle className="w-5 h-5 text-blue-600 dark:text-blue-400" />
       ),
       title: "Transparent Reporting",
-      description: "Track progress with detailed performance insights.",
+      description: "Gain detailed insights to track campaign performance effectively.",
     },
     {
       icon: <ArrowRight className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
       title: "Ongoing Optimization",
       description:
-        "Continuous A/B testing and refinement for higher conversions.",
+        "Refining campaigns through constant A/B testing for better results.",
     },
   ];
 
@@ -178,7 +178,7 @@ const Form = () => {
 
             <div className="bg-blue-600 dark:bg-blue-700 p-5 rounded-xl border border-blue-500 dark:border-blue-600 mt-8 shadow-md text-center">
               <h3 className="text-white text-xl font-bold">
-                Start Driving Results Today!
+                Start Growing Your Business Now!
               </h3>
               <p className="text-blue-100 dark:text-blue-200 mt-2">
                 Fill out the form, and let's get started on your PPC journey.

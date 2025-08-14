@@ -4,8 +4,8 @@ import { Lightbulb, Workflow, Palette, BarChart3 } from 'lucide-react';
 
 const processCards = [
   {
-    title: 'Deep-Dive Research & Strategy',
-    description: 'We analyze user behaviors, industry trends, and competitor landscapes to develop a UI/UX strategy tailored to your audience.',
+    title: 'Comprehensive Insights & Strategy',
+    description: 'We study audience preferences, market trends, and competitor insights to craft a UI/UX design strategy that resonates with your users.',
     points: [
       'Data-driven user research',
       'Competitor benchmarking',
@@ -14,8 +14,8 @@ const processCards = [
     icon: <Lightbulb className="w-6 h-6 text-blue-600 dark:text-blue-400" />
   },
   {
-    title: 'Interactive Wireframing & Prototyping',
-    description: 'We visualize the user journey and interactions before development, ensuring an effortless experience.',
+    title: 'User-Focused Wireframes & Prototypes',
+    description: 'We design and refine the user journey beforehand to deliver smooth and intuitive interactions.',
     points: [
       'User flow architecture',
       'Low & high-fidelity wireframes',
@@ -24,8 +24,8 @@ const processCards = [
     icon: <Workflow className="w-6 h-6 text-blue-600 dark:text-blue-400" />
   },
   {
-    title: 'Bespoke UI Design That Engages',
-    description: 'Our UI designs are more than just beautiful—they\'re purpose-driven and strategically crafted to enhance usability.',
+    title: 'Tailored UI Design for Maximum Engagement',
+    description: 'We craft purposeful, user-focused interfaces that are as functional as they are beautiful.',
     points: [
       'Custom UI with a brand-focused aesthetic',
       'Mobile-first & responsive designs',
@@ -34,8 +34,8 @@ const processCards = [
     icon: <Palette className="w-6 h-6 text-blue-600 dark:text-blue-400" />
   },
   {
-    title: 'Optimization & Performance Testing',
-    description: 'We rigorously test and refine to ensure peak performance, accessibility, and user satisfaction.',
+    title: 'Performance Enhancement & Testing',
+    description: 'We refine every detail through rigorous testing to deliver speed, accessibility, and delight.',
     points: [
       'A/B testing to maximize conversions',
       'User behavior analysis & heatmaps',

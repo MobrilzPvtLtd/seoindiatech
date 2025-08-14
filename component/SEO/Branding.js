@@ -1,6 +1,6 @@
-import React from 'react';
-import { ArrowRight, Star } from 'lucide-react';
-import Link from 'next/link';
+import React from 'react'
+import { ArrowRight, Star } from 'lucide-react'
+import Link from 'next/link'
 
 const Branding = () => {
   return (
@@ -31,8 +31,10 @@ const Branding = () => {
           {/* Main heading */}
           <div className="flex justify-center px-4">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight max-w-5xl text-center text-gray-900 dark:text-white">
-              Begin Your Digital Branding Success Story with{' '}
-              <span className="text-blue-700 dark:text-blue-400 font-bold">SEO India Tech</span> Today!
+              Start Your Path to Digital Branding Success with{' '}
+              <span className="text-blue-700 dark:text-blue-400 font-bold">
+                SEO India Tech
+              </span>
             </h2>
           </div>
 
@@ -44,24 +46,41 @@ const Branding = () => {
           {/* Description */}
           <div className="flex justify-center px-4 pt-8">
             <p className="text-gray-700 dark:text-gray-300 text-lg md:text-xl mb-6 max-w-4xl text-center">
-              At <span className="font-bold text-blue-700 dark:text-blue-400">SEO India Tech</span>,
-              we're dedicated to helping you achieve your digital branding goals.
-              Whether you aim to boost brand awareness, drive engagement, or
-              increase conversions, our team of experts guides you every step of the
-              way.
+              <span className="font-bold text-blue-700 dark:text-blue-400">
+                SEO India Tech
+              </span>
+              , is your partner in achieving digital branding success—whether
+              you’re looking to enhance brand awareness, grow engagement, or
+              maximize conversions.
             </p>
           </div>
 
           {/* Feature highlights */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto mt-8 mb-12">
             {[
-              { title: "Strategic Branding", desc: "Build a lasting impression" },
-              { title: "Audience Engagement", desc: "Connect with your customers" },
-              { title: "Measurable Results", desc: "Track and optimize performance" }
+              {
+                title: 'Strategic Branding',
+                desc: 'Build a lasting impression',
+              },
+              {
+                title: 'Audience Engagement',
+                desc: 'Connect with your customers',
+              },
+              {
+                title: 'Measurable Results',
+                desc: 'Track and optimize performance',
+              },
             ].map((feature, index) => (
-              <div key={index} className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4 text-center">
-                <h3 className="font-semibold text-gray-900 dark:text-white mb-1">{feature.title}</h3>
-                <p className="text-gray-600 dark:text-gray-400 text-sm">{feature.desc}</p>
+              <div
+                key={index}
+                className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4 text-center"
+              >
+                <h3 className="font-semibold text-gray-900 dark:text-white mb-1">
+                  {feature.title}
+                </h3>
+                <p className="text-gray-600 dark:text-gray-400 text-sm">
+                  {feature.desc}
+                </p>
               </div>
             ))}
           </div>
@@ -74,19 +93,15 @@ const Branding = () => {
             </button>
 
             <Link href="/contactus">
-            <button className="hidden cursor-pointer bg-transparent text-blue-700 dark:text-blue-400 border border-blue-200 dark:border-blue-700 hover:bg-blue-50 dark:hover:bg-blue-900/30 px-6 py-3 rounded-full text-base font-medium transition">
-              Schedule a Consultation
-            </button>
+              <button className="hidden cursor-pointer bg-transparent text-blue-700 dark:text-blue-400 border border-blue-200 dark:border-blue-700 hover:bg-blue-50 dark:hover:bg-blue-900/30 px-6 py-3 rounded-full text-base font-medium transition">
+                Schedule a Consultation
+              </button>
             </Link>
           </div>
-
-
         </div>
-
-
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Branding;
+export default Branding

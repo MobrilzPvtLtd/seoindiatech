@@ -19,18 +19,13 @@ const Digitalhero = () => {
           </div>
 
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white leading-tight">
-            Your Next Level Brand Potential with Our Branding Expertise
+            Unlock Your Brand’s Full Potential with Our Expertise
           </h1>
 
           <div className="w-20 h-1.5 bg-blue-600 dark:bg-blue-500 rounded-full"></div>
 
           <p className="text-justify text-gray-700 dark:text-gray-300 text-base md:text-lg leading-relaxed">
-            In today's digital-first world, your brand is more than just a logo
-            or a tagline – it's your audience's experience, perception, and
-            emotional connection with your business online. Digital branding is
-            the strategic process of building and managing your brand's presence
-            across various digital platforms, ensuring consistency, engagement,
-            and long-term brand loyalty.
+            Your brand is more than visuals—it’s the way your audience experiences, perceives, and connects with your business in the digital space. Digital branding strategically builds and manages this presence across platforms, driving consistency, engagement, and long-term trust.
           </p>
 
           <p className="text-gray-700 dark:text-gray-300 text-base md:text-lg leading-relaxed">

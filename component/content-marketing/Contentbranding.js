@@ -31,7 +31,7 @@ const Contentbranding = () => {
           {/* Main heading */}
           <div className="flex justify-center px-4">
             <h2 className='text-3xl sm:text-4xl md:text-5xl font-bold leading-tight max-w-5xl text-center text-gray-900 dark:text-white'>
-              Begin Your Content Marketing Journey with <span className='text-blue-700 dark:text-blue-400 font-bold'>SEO India Tech</span> Today!
+              Begin Your Content Marketing Journey and grow with <span className='text-blue-700 dark:text-blue-400 font-bold'>SEO India Tech</span> Today!
             </h2>
           </div>
           
@@ -43,7 +43,7 @@ const Contentbranding = () => {
           {/* Description */}
           <div className='flex justify-center px-4 pt-8'>
             <p className='text-gray-700 dark:text-gray-300 text-lg md:text-xl mb-6 max-w-4xl text-center'>
-              At <span className='font-bold text-blue-700 dark:text-blue-400'>SEO India Tech</span>, we're dedicated to helping you achieve your content marketing goals. Whether you aim to boost brand awareness, drive engagement, or increase conversions, our team of expert content strategists guides you every step of the way.
+              At <span className='font-bold text-blue-700 dark:text-blue-400'>SEO India Tech,</span> we help you turn ideas into results. From boosting brand awareness to driving engagement and increasing conversions, our expert strategists guide you every step of the way.
             </p>
           </div>
           

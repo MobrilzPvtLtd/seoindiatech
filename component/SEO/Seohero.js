@@ -21,22 +21,21 @@ const Seohero = () => {
           </div>
 
           <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-snug md:leading-16 max-w-2xl mx-auto md:mx-0">
-            Boost Visibility, Drive Traffic, and Dominate Search Rankings
+            Enhance Your Presence, Drive More Visitors, and Top Search Rankings
           </h1>
 
           <div className="w-20 h-1.5 bg-blue-600 dark:bg-blue-500 rounded-full my-6 mx-auto md:mx-0"></div>
 
           <p className="text-justify text-gray-700 dark:text-gray-300 text-md max-w-xl mx-auto md:mx-0 px-2 md:px-0">
-            In today's digital-first world, a strong online presence isn't
-            optional—it's essential. Search Engine Optimization (SEO) is the
-            backbone of digital success, ensuring that your business ranks
-            higher on search engines, attracts quality traffic, and turns
-            visitors into loyal customers. At{' '}
+            In today’s digital-first world, a strong online presence is
+            essential. SEO drives your business higher in search results,
+            attracts quality traffic, and converts visitors into loyal
+            customers. At{' '}
             <span className="text-blue-700 dark:text-blue-400 font-semibold">
               SEO India Tech,
             </span>{' '}
-            we don't just optimize websites—we craft strategic SEO solutions
-            that deliver measurable results.
+            we create strategic SEO solutions that deliver measurable
+            results—not just website optimization.
           </p>
 
           {/* Feature points */}

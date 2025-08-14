@@ -69,19 +69,19 @@ const Why = () => {
       id: 1,
       icon: <Target className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
       title: "Results-Driven Approach",
-      description: "Every blog, video, or campaign we create is rooted in a single goal: measurable results. No fluff, just strategies that work."
+      description: "We turn every piece of content into a growth engine—driving clicks, leads, and real business results."
     },
     {
       id: 2,
       icon: <Fingerprint className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
       title: "Tailored to Your Business",
-      description: "No cookie-cutter solutions here. We dive deep into your business, industry, and audience to design a strategy that fits like a glove."
+      description: "We go beyond templates, tailoring strategies to your business, your market, and your audience."
     },
     {
       id: 3,
       icon: <Users className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
       title: "Partner, Not Just a Provider",
-      description: "Think of us as an extension of your team. Your success is our success, and we're with you every step of the way."
+      description: "As your dedicated partner, we celebrate your wins and tackle every challenge together."
     }
   ];
 
@@ -103,7 +103,7 @@ const Why = () => {
               <div className="w-20 h-1.5 bg-blue-600 dark:bg-blue-500 rounded-full mb-6"></div>
               
               <p className="text-gray-700 dark:text-gray-300 text-lg">
-                We don't just create content we craft experiences that intrigue, inspire, and convert. Here's why businesses choose us:
+                We don’t just create content — we craft experiences that intrigue, inspire, and convert. Here’s why brands choose us:
               </p>
             </div>
             

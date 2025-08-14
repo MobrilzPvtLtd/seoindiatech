@@ -1,63 +1,66 @@
-import React, { useState } from "react";
-import { Phone, ArrowRight, Shield, Users, Send } from "lucide-react";
-import { toast, ToastContainer } from "react-toastify";
+import React, { useState } from 'react'
+import { Phone, ArrowRight, Shield, Users, Send } from 'lucide-react'
+import { toast, ToastContainer } from 'react-toastify'
 
 const Form = () => {
   const [form, setForm] = useState({
-    email: "",
-    fullName: "",
+    email: '',
+    fullName: '',
 
-    phone: "",
+    phone: '',
 
-    message: "",
+    message: '',
     privacy: false,
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
+  })
+  const [isSubmitting, setIsSubmitting] = useState(false)
 
   // Handle input changes
   const handleChange = (e) => {
-    const { name, value, type, checked } = e.target;
+    const { name, value, type, checked } = e.target
     setForm((prev) => ({
       ...prev,
-      [name]: type === "checkbox" ? checked : value,
-    }));
-  };
+      [name]: type === 'checkbox' ? checked : value,
+    }))
+  }
 
   // Submit handler
   const handleSubmit = async (e) => {
-    e.preventDefault();
+    e.preventDefault()
     if (!form.privacy) {
-      toast.error("You must agree to the Privacy Policy and Terms of Service.");
-      return;
+      toast.error('You must agree to the Privacy Policy and Terms of Service.')
+      return
     }
-    setIsSubmitting(true);
+    setIsSubmitting(true)
     try {
       // Replace with your Strapi endpoint
-      const response = await fetch("/api/submit-form", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
+      const response = await fetch('/api/submit-form', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ data: form }),
-      });
-      if (!response.ok) throw new Error("Submission failed");
-      toast.success("Request submitted successfully!");
+      })
+      if (!response.ok) throw new Error('Submission failed')
+      toast.success('Request submitted successfully!')
       setForm({
-        email: "",
-        fullName: "",
+        email: '',
+        fullName: '',
 
-        phone: "",
+        phone: '',
 
-        message: "",
+        message: '',
         privacy: false,
-      });
+      })
     } catch (err) {
-      toast.error("Something went wrong. Please try again.");
+      toast.error('Something went wrong. Please try again.')
     } finally {
-      setIsSubmitting(false);
+      setIsSubmitting(false)
     }
-  };
+  }
 
   return (
-    <section id="Digitalform" className="bg-gradient-to-br from-gray-100 to-blue-100 dark:from-gray-900 dark:to-blue-950 py-16 px-4 sm:px-6 md:px-12 lg:px-20">
+    <section
+      id="Digitalform"
+      className="bg-gradient-to-br from-gray-100 to-blue-100 dark:from-gray-900 dark:to-blue-950 py-16 px-4 sm:px-6 md:px-12 lg:px-20"
+    >
       <ToastContainer />
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 bg-white dark:bg-gray-800 rounded-2xl p-6 sm:p-10 border border-gray-200 dark:border-gray-700 shadow-xl">
@@ -77,9 +80,9 @@ const Form = () => {
               <p className="text-gray-700 dark:text-gray-300 text-base md:text-lg">
                 Your brand deserves to
                 <span className="text-blue-700 dark:text-blue-400 font-semibold">
-                  {" "}
+                  {' '}
                   stand out, connect, and grow.
-                </span>{" "}
+                </span>{' '}
                 Whether you're starting from scratch or need a digital makeover,
                 SEO India Tech has the expertise to make it happen.
               </p>
@@ -97,8 +100,8 @@ const Form = () => {
                   Schedule a Free Consultation
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400 text-sm">
-                  to discuss your digital branding needs. Let's craft a brand
-                  that makes a lasting impact!
+                  to talk about your branding vision. Let’s build a brand that
+                  stands out and endures!
                 </p>
               </div>
 
@@ -112,14 +115,15 @@ const Form = () => {
                   Get Started Today
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400 text-sm">
-                  Contact us and transform your brand into a digital powerhouse.
+                  Connect with us and take your brand to the top of the digital
+                  world.
                 </p>
               </div>
             </div>
 
             <div className="mt-8 flex flex-col space-y-4">
               <p className="text-gray-800 dark:text-gray-200 font-bold text-lg">
-                SEO India Tech - Where Brands Become Digital Icons.
+                SEO India Tech - Making Brands Shine in the Digital World.
               </p>
 
               <div className="flex items-center space-x-2 text-sm text-gray-600 dark:text-gray-400">
@@ -130,7 +134,7 @@ const Form = () => {
               </div>
 
               <div className="flex flex-wrap gap-3">
-                {["Branding", "Strategy", "Design", "Digital Marketing"].map(
+                {['Branding', 'Strategy', 'Design', 'Digital Marketing'].map(
                   (tag, index) => (
                     <span
                       key={index}
@@ -138,7 +142,7 @@ const Form = () => {
                     >
                       {tag}
                     </span>
-                  )
+                  ),
                 )}
               </div>
             </div>
@@ -152,7 +156,7 @@ const Form = () => {
             <div className="space-y-5">
               <div>
                 <label className="block font-medium mb-1 text-gray-700 dark:text-gray-200">
-                  Email{" "}
+                  Email{' '}
                   <span className="text-red-600 dark:text-red-400">*</span>
                 </label>
                 <input
@@ -168,7 +172,7 @@ const Form = () => {
 
               <div>
                 <label className="block font-medium mb-1 text-gray-700 dark:text-gray-200">
-                  Full Name{" "}
+                  Full Name{' '}
                   <span className="text-red-600 dark:text-red-400">*</span>
                 </label>
                 <input
@@ -184,7 +188,7 @@ const Form = () => {
 
               <div>
                 <label className="block font-medium mb-1 text-gray-700 dark:text-gray-200">
-                  Phone Number{" "}
+                  Phone Number{' '}
                   <span className="text-red-600 dark:text-red-400">*</span>
                 </label>
                 <input
@@ -235,14 +239,14 @@ const Form = () => {
                   htmlFor="privacy"
                   className="ml-2 text-sm text-gray-600 dark:text-gray-400"
                 >
-                  I agree to the{" "}
+                  I agree to the{' '}
                   <a
                     href="#"
                     className="text-blue-600 dark:text-blue-400 hover:underline"
                   >
                     Privacy Policy
-                  </a>{" "}
-                  and{" "}
+                  </a>{' '}
+                  and{' '}
                   <a
                     href="#"
                     className="text-blue-600 dark:text-blue-400 hover:underline"
@@ -259,7 +263,7 @@ const Form = () => {
                 disabled={isSubmitting}
                 className="cursor-pointer w-full bg-blue-600 hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-600 text-white font-semibold py-3.5 px-6 rounded-xl transition duration-300 shadow-lg flex items-center justify-center group disabled:opacity-60"
               >
-                {isSubmitting ? "Submitting..." : "Submit Request"}
+                {isSubmitting ? 'Submitting...' : 'Submit Request'}
                 <Send className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </button>
               <p className="text-xs text-center text-gray-500 dark:text-gray-400 mt-3">
@@ -270,7 +274,7 @@ const Form = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Form;
+export default Form

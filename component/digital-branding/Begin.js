@@ -1,17 +1,17 @@
-import React from 'react';
-import { ArrowRight, Sparkles } from 'lucide-react';
-import Link from 'next/link';
+import React from 'react'
+import { ArrowRight, Sparkles } from 'lucide-react'
+import Link from 'next/link'
 
 const Begin = () => {
   return (
-    <section className='bg-gray-950 dark:bg-gray-900 py-16 md:py-24 px-6 relative overflow-hidden'>
+    <section className="bg-gray-950 dark:bg-gray-900 py-16 md:py-24 px-6 relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0 left-1/4 w-64 h-64 bg-blue-900/20 rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-900/10 rounded-full blur-3xl"></div>
         <div className="absolute top-1/2 left-3/4 transform -translate-x-1/2 -translate-y-1/2 w-44 h-44 bg-blue-400/10 rounded-full blur-2xl"></div>
       </div>
-      
+
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Floating accent elements */}
         <div className="absolute -top-10 left-10 md:left-20 hidden md:block">
@@ -20,7 +20,7 @@ const Begin = () => {
         <div className="absolute -bottom-10 right-10 md:right-20 hidden md:block">
           <div className="w-12 h-12 border-2 border-blue-500/20 rounded-lg"></div>
         </div>
-        
+
         {/* Main Content */}
         <div className="flex flex-col items-center">
           {/* Badge */}
@@ -28,43 +28,54 @@ const Begin = () => {
             <Sparkles className="w-4 h-4" />
             <span>Start Your Journey Today</span>
           </div>
-          
+
           {/* Heading */}
           <div className="text-center px-4">
-            <h2 className='text-4xl md:text-5xl lg:text-6xl font-bold leading-tight max-w-5xl text-white'>
-              Begin Your Digital Branding Success Story with <span className='text-blue-500'>SEO India Tech</span> Today!
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight max-w-5xl text-white">
+              Start Your Path to Digital Branding Success with{' '}
+              <span className="text-blue-500">SEO India Tech</span>
             </h2>
           </div>
-          
+
           {/* Description */}
-          <div className='mt-8 px-4'>
-            <p className='text-blue-100 text-lg md:text-xl max-w-4xl text-center'>
-              At <span className='font-bold text-blue-500'>SEO India Tech</span>, we're dedicated to helping you achieve your digital branding goals. Whether you aim to boost brand awareness, drive engagement, or increase conversions, our team of experts guides you every step of the way.
+          <div className="mt-8 px-4">
+            <p className="text-blue-100 text-lg md:text-xl max-w-4xl text-center">
+              <span className="font-bold text-blue-500">SEO India Tech,</span>{' '}
+              is your partner in achieving digital branding success—whether
+              you’re looking to enhance brand awareness, grow engagement, or
+              maximize conversions.
             </p>
           </div>
-          
+
           {/* Buttons */}
-          <div className='flex flex-col sm:flex-row gap-4 mt-10'>
+          <div className="flex flex-col sm:flex-row gap-4 mt-10">
             <Link href="/contactus">
-            <button className='hidden cursor-pointer bg-gradient-to-r from-blue-600 to-blue-800 hover:bg-blue-700 text-white px-8 py-4 rounded-full text-base font-semibold transition-colors shadow-lg hover:shadow-blue-900/30 flex items-center group'>
-              Get Started
-              <ArrowRight className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
-            </button>
+              <button className="hidden cursor-pointer bg-gradient-to-r from-blue-600 to-blue-800 hover:bg-blue-700 text-white px-8 py-4 rounded-full text-base font-semibold transition-colors shadow-lg hover:shadow-blue-900/30 flex items-center group">
+                Get Started
+                <ArrowRight className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
+              </button>
             </Link>
-            <button className='hidden text-white border-2 border-white/30 px-8 py-4 rounded-full text-base font-semibold hover:bg-white/10 transition-colors flex items-center'>
+            <button className="hidden text-white border-2 border-white/30 px-8 py-4 rounded-full text-base font-semibold hover:bg-white/10 transition-colors flex items-center">
               Learn More
             </button>
           </div>
-          
+
           {/* Optional: Social Proof */}
           <div className="hidden mt-16 md:mt-24">
-            <p className="text-blue-200 text-sm font-medium uppercase tracking-wider mb-6 text-center">Trusted by innovative brands worldwide</p>
+            <p className="text-blue-200 text-sm font-medium uppercase tracking-wider mb-6 text-center">
+              Trusted by innovative brands worldwide
+            </p>
             <div className="flex flex-wrap justify-center gap-8 md:gap-12">
-              {["Google", "Microsoft", "Amazon", "Adobe", "Shopify"].map((company, index) => (
-                <div key={index} className="text-white/40 font-bold text-lg md:text-xl">
-                  {company}
-                </div>
-              ))}
+              {['Google', 'Microsoft', 'Amazon', 'Adobe', 'Shopify'].map(
+                (company, index) => (
+                  <div
+                    key={index}
+                    className="text-white/40 font-bold text-lg md:text-xl"
+                  >
+                    {company}
+                  </div>
+                ),
+              )}
             </div>
           </div>
         </div>
@@ -77,7 +88,7 @@ const Begin = () => {
         </svg>
       </div> */}
     </section>
-  );
-};
+  )
+}
 
-export default Begin;
+export default Begin

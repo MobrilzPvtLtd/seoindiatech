@@ -283,7 +283,7 @@ const Header = () => {
           <div className="flex items-center">
             {mounted ? (
               <Link href="/" passHref>
-                <div className="relative w-16 h-10 md:w-20 md:h-12 mr-2 cursor-pointer">
+                <div className="relative w-16 h-10 md:w-28 md:h-16 mr-2 cursor-pointer">
                   <Image
                     src="/SIT-logo2.png"
                     alt="Logo"

@@ -10,7 +10,7 @@ import {
 const approachItems = [
   {
     title: "Brand Identity Development",
-    description: "We create a powerful, cohesive brand identity that resonates with your target audience. This includes:",
+    description: "We develop a cohesive, memorable brand presence that speaks directly to your target market. This includes:",
     icon: <Palette className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
     items: [
       { label: "Logo & Visual Elements", detail: "Unique, professional logo and visual assets." },
@@ -20,7 +20,7 @@ const approachItems = [
   },
   {
     title: "Social Media Branding",
-    description: "We align your social presence with your brand identity across all platforms.",
+    description: "We ensure your social media presence reflects your brand identity consistently across every platform.",
     icon: <Share2 className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
     items: [
       { label: "Social profile optimization" },
@@ -30,7 +30,7 @@ const approachItems = [
   },
   {
     title: "Website & UX/UI Design",
-    description: "We design user-friendly, SEO-optimized websites with a great user experience.",
+    description: "We craft responsive, SEO-optimized websites focused on seamless user interaction.",
     icon: <Layout className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
     items: [
       { label: "Responsive, mobile-first design" },
@@ -40,7 +40,7 @@ const approachItems = [
   },
   {
     title: "Content & Storytelling",
-    description: "We craft engaging content that builds emotional connections:",
+    description: "We develop engaging narratives that connect hearts and minds:",
     icon: <FileText className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
     items: [
       { label: "SEO-driven blogs" },
@@ -50,7 +50,7 @@ const approachItems = [
   },
   {
     title: "Digital Advertising & Visibility",
-    description: "We increase your brand's reach using:",
+    description: "Our approach extends your brand influence with:",
     icon: <BarChart className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
     items: [
       { label: "Search Engine Optimization (SEO)" },
@@ -77,8 +77,7 @@ const Approach = () => {
           <div className="w-20 h-1 bg-blue-600 dark:bg-blue-500 rounded-full mb-6"></div>
           
           <p className="text-gray-700 dark:text-gray-300 text-lg">
-            At <span className="text-blue-700 dark:text-blue-400 font-bold">SEO India Tech</span> we craft digital brands that leave a lasting impact.
-            Our approach is data-driven, creative, and tailored to your business goals.
+            At <span className="text-blue-700 dark:text-blue-400 font-bold">SEO India Tech,</span> we build digital brands that make a lasting impression, combining data-driven insights with creativity to align perfectly with your business goals.
           </p>
         </div>
 
@@ -132,7 +131,7 @@ const Approach = () => {
         {/* Optional: Call to Action */}
         <div className="mt-16 text-center">
           <p className="text-gray-700 dark:text-gray-300 mb-6 max-w-2xl mx-auto">
-            Ready to establish a powerful digital brand that connects with your audience and drives business growth?
+            Ready to turn your brand into a powerful digital presence that delivers results?
           </p>
           <button className="cursor-pointer bg-gradient-to-r from-blue-600 to-blue-800 hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-600 text-white font-semibold py-3 px-8 rounded-full transition-colors">
             Schedule a Brand Strategy Call

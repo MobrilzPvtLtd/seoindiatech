@@ -6,21 +6,21 @@ const caseStudies = [
   {
     image: 'https://www.digitalyzeit.com/wp-content/uploads/2024/07/277564223_439538341365247_7258142149719093139_n.jpg',
     title: 'E-Commerce Brand Transformation',
-    description: 'A struggling e-commerce brand approached us with low engagement and declining sales. After implementing a complete digital branding overhaul, including a revamped website, SEO optimization, and social media rebranding, the brand saw a 150% increase in organic traffic and a 75% conversion boost within six months.',
+    description: 'We partnered with a struggling e-commerce brand experiencing falling engagement and sales. By overhauling their digital branding with a new website, enhanced SEO, and refreshed social media presence, they saw organic traffic grow by 150% and conversions climb 75% in just six months.',
     icon: <TrendingUp className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
     stats: '150% increase in organic traffic'
   },
   {
     image: 'https://www.digitalyzeit.com/wp-content/uploads/2024/07/creativity360pro_logo.jpeg',
     title: 'Local Business Goes National',
-    description: 'A small local business wanted to expand its reach beyond its city. Through our targeted digital branding strategy, we created a compelling brand story, optimized its online presence, and launched strategic PPC campaigns. The result? A 200% growth in online inquiries and an expansion into three new states within a year.',
+    description: 'A local business with big ambitions sought our help to reach customers outside their city. By building a captivating brand story, refining their online visibility, and launching targeted PPC ads, we helped them achieve a 200% surge in online inquiries and grow into three new states within a year.',
     icon: <Globe className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
     stats: '200% growth in online inquiries'
   },
   {
     image: 'https://www.digitalyzeit.com/wp-content/uploads/2024/07/advyra_logo.jpeg',
     title: 'SaaS Company Gains Industry Authority',
-    description: 'A SaaS startup needed to establish credibility in a competitive market. Our solution included expert content marketing, social proof integration, and high-impact SEO strategies. The outcome? A 3x increase in lead generation and an invitation to speak at a major industry event.',
+    description: 'A SaaS startup struggling for recognition found success through our strategic mix of content marketing, trust signals, and SEO. Within months, they saw 3x more leads and received an invite to speak at a leading industry event.',
     icon: <Award className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
     stats: '3x increase in lead generation'
   }

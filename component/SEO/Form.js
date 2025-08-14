@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from 'react'
 import {
   Mail,
   User,
@@ -8,146 +8,149 @@ import {
   CheckCircle,
   ArrowRight,
   Send,
-} from "lucide-react";
-import { toast, ToastContainer } from "react-toastify";
+} from 'lucide-react'
+import { toast, ToastContainer } from 'react-toastify'
 
 const Form = () => {
   const [form, setForm] = useState({
-    email: "",
-    fullName: "",
+    email: '',
+    fullName: '',
 
-    phone: "",
+    phone: '',
 
-    message: "",
+    message: '',
     privacy: false,
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
+  })
+  const [isSubmitting, setIsSubmitting] = useState(false)
 
   // Handle input changes
   const handleChange = (e) => {
-    const { name, value, type, checked } = e.target;
+    const { name, value, type, checked } = e.target
     setForm((prev) => ({
       ...prev,
-      [name]: type === "checkbox" ? checked : value,
-    }));
-  };
+      [name]: type === 'checkbox' ? checked : value,
+    }))
+  }
 
   // Submit handler
   const handleSubmit = async (e) => {
-    e.preventDefault();
+    e.preventDefault()
     if (!form.privacy) {
-      toast.error("You must agree to the Privacy Policy and Terms of Service.");
-      return;
+      toast.error('You must agree to the Privacy Policy and Terms of Service.')
+      return
     }
-    setIsSubmitting(true);
+    setIsSubmitting(true)
     try {
       // Replace with your Strapi endpoint
-      const response = await fetch("/api/submit-form", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
+      const response = await fetch('/api/submit-form', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ data: form }),
-      });
-      if (!response.ok) throw new Error("Submission failed");
-      toast.success("Request submitted successfully!");
+      })
+      if (!response.ok) throw new Error('Submission failed')
+      toast.success('Request submitted successfully!')
       setForm({
-        email: "",
-        fullName: "",
+        email: '',
+        fullName: '',
 
-        phone: "",
+        phone: '',
 
-        message: "",
+        message: '',
         privacy: false,
-      });
+      })
     } catch (err) {
-      toast.error("Something went wrong. Please try again.");
+      toast.error('Something went wrong. Please try again.')
     } finally {
-      setIsSubmitting(false);
+      setIsSubmitting(false)
     }
-  };
+  }
 
   const benefits = [
     {
-      title: "Proven Track Record",
+      title: 'Proven Track Record',
       description:
-        "Our results speak for themselves, with businesses experiencing exponential growth through our SEO strategies.",
+        'Our SEO strategies deliver real results, helping businesses achieve exponential growth.',
       icon: (
         <CheckCircle className="w-5 h-5 text-blue-600 dark:text-blue-400" />
       ),
     },
     {
-      title: "Customized Strategies",
+      title: 'Customized Strategies',
       description:
-        "No cookie-cutter approaches. Every strategy is tailored to your industry, audience, and goals.",
+        'We craft strategies unique to your business, audience, and objectives—no cookie-cutter approaches.',
       icon: (
         <CheckCircle className="w-5 h-5 text-blue-600 dark:text-blue-400" />
       ),
     },
     {
-      title: "Ethical, White-Hat SEO",
+      title: 'Ethical, White-Hat SEO',
       description:
-        "We follow best practices to ensure sustainable rankings without risking penalties.",
+        'We use proven best practices to secure long-term rankings safely, with zero risk of penalties.',
       icon: (
         <CheckCircle className="w-5 h-5 text-blue-600 dark:text-blue-400" />
       ),
     },
     {
-      title: "Transparency & Reporting",
+      title: 'Transparency & Reporting',
       description:
-        "We keep you informed with detailed reports, so you always know how your SEO is performing.",
+        'We keep you in the loop with thorough reporting, so you can track every SEO success.',
       icon: (
         <CheckCircle className="w-5 h-5 text-blue-600 dark:text-blue-400" />
       ),
     },
     {
-      title: "Holistic Digital Marketing Expertise",
+      title: 'Holistic Digital Marketing Expertise',
       description:
-        "Beyond SEO, we integrate with content marketing, UI/UX, and paid strategies for maximum impact.",
+        'Maximize your digital impact with SEO integrated alongside content, design, and paid campaigns.',
       icon: (
         <CheckCircle className="w-5 h-5 text-blue-600 dark:text-blue-400" />
       ),
     },
-  ];
+  ]
 
   const formFields = [
     {
-      id: "email",
-      label: "Email",
-      type: "email",
+      id: 'email',
+      label: 'Email',
+      type: 'email',
       required: true,
       icon: <Mail className="w-5 h-5 text-gray-400" />,
     },
     {
-      id: "firstName",
-      label: "First Name",
-      type: "text",
+      id: 'firstName',
+      label: 'First Name',
+      type: 'text',
       required: true,
       icon: <User className="w-5 h-5 text-gray-400" />,
     },
     {
-      id: "lastName",
-      label: "Last Name",
-      type: "text",
+      id: 'lastName',
+      label: 'Last Name',
+      type: 'text',
       required: false,
       icon: <User className="w-5 h-5 text-gray-400" />,
     },
     {
-      id: "phone",
-      label: "Phone Number",
-      type: "tel",
+      id: 'phone',
+      label: 'Phone Number',
+      type: 'tel',
       required: true,
       icon: <Phone className="w-5 h-5 text-gray-400" />,
     },
     {
-      id: "company",
-      label: "Company Name",
-      type: "text",
+      id: 'company',
+      label: 'Company Name',
+      type: 'text',
       required: false,
       icon: <Briefcase className="w-5 h-5 text-gray-400" />,
     },
-  ];
+  ]
 
   return (
-    <section id="Form" className="bg-gradient-to-br from-blue-50 to-white dark:from-blue-950/30 dark:to-gray-900/80 py-16 px-4 sm:px-6 md:px-12 lg:px-20 relative overflow-hidden">
+    <section
+      id="Form"
+      className="bg-gradient-to-br from-blue-50 to-white dark:from-blue-950/30 dark:to-gray-900/80 py-16 px-4 sm:px-6 md:px-12 lg:px-20 relative overflow-hidden"
+    >
       <ToastContainer />
       {/* Background decorative elements */}
       <div className="absolute inset-0 pointer-events-none">
@@ -164,7 +167,7 @@ const Form = () => {
             </div>
 
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 text-center md:text-left">
-              Why Choose Digitalyzeit for SEO?
+              Why Choose SEO India Tech for SEO?
             </h2>
 
             <div className="w-20 h-1 bg-blue-600 dark:bg-blue-500 rounded-full mb-8 hidden md:block"></div>
@@ -206,7 +209,7 @@ const Form = () => {
             <div className="space-y-5">
               <div>
                 <label className="block font-medium mb-1 text-gray-700 dark:text-gray-200">
-                  Email{" "}
+                  Email{' '}
                   <span className="text-red-600 dark:text-red-400">*</span>
                 </label>
                 <input
@@ -222,7 +225,7 @@ const Form = () => {
 
               <div>
                 <label className="block font-medium mb-1 text-gray-700 dark:text-gray-200">
-                  Full Name{" "}
+                  Full Name{' '}
                   <span className="text-red-600 dark:text-red-400">*</span>
                 </label>
                 <input
@@ -238,7 +241,7 @@ const Form = () => {
 
               <div>
                 <label className="block font-medium mb-1 text-gray-700 dark:text-gray-200">
-                  Phone Number{" "}
+                  Phone Number{' '}
                   <span className="text-red-600 dark:text-red-400">*</span>
                 </label>
                 <input
@@ -289,14 +292,14 @@ const Form = () => {
                   htmlFor="privacy"
                   className="ml-2 text-sm text-gray-600 dark:text-gray-400"
                 >
-                  I agree to the{" "}
+                  I agree to the{' '}
                   <a
                     href="#"
                     className="text-blue-600 dark:text-blue-400 hover:underline"
                   >
                     Privacy Policy
-                  </a>{" "}
-                  and{" "}
+                  </a>{' '}
+                  and{' '}
                   <a
                     href="#"
                     className="text-blue-600 dark:text-blue-400 hover:underline"
@@ -313,7 +316,7 @@ const Form = () => {
                 disabled={isSubmitting}
                 className="cursor-pointer w-full bg-blue-600 hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-600 text-white font-semibold py-3.5 px-6 rounded-xl transition duration-300 shadow-lg flex items-center justify-center group disabled:opacity-60"
               >
-                {isSubmitting ? "Submitting..." : "Submit Request"}
+                {isSubmitting ? 'Submitting...' : 'Submit Request'}
                 <Send className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </button>
               <p className="text-xs text-center text-gray-500 dark:text-gray-400 mt-3">
@@ -324,7 +327,7 @@ const Form = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Form;
+export default Form

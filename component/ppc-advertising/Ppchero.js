@@ -19,7 +19,7 @@ const Ppchero = () => {
   ]
 
   return (
-    <section className="bg-gradient-to-b from-white to-blue-50 dark:from-gray-900 dark:to-blue-950/30 px-4 py-8 md:py-20 lg:py-24 relative overflow-hidden">
+    <section className="bg-gradient-to-b from-white to-blue-50 dark:from-gray-900 dark:to-blue-950/30 px-4 py-8 md:py-20 lg:py-16 relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/4 right-0 w-72 h-72 bg-blue-100/50 dark:bg-blue-900/10 rounded-full blur-3xl"></div>
@@ -75,18 +75,16 @@ const Ppchero = () => {
         <p className="text-gray-700 text-justify dark:text-gray-300 text-lg md:text-xl mb-10 max-w-4xl mx-auto">
           At{' '}
           <span className="font-semibold text-gray-900 dark:text-white">
-            SEO India Tech
-          </span>
-          , we don't just run ads—we create{' '}
-          <span className="font-semibold text-gray-900 dark:text-white">
-            high-converting, precision-targeted campaigns
+            SEO India Tech,
           </span>{' '}
-          that generate real business results. Our{' '}
+          we design{' '}
           <span className="font-semibold text-gray-900 dark:text-white">
-            Pay-Per-Click (PPC) advertising solutions
+            high-converting, precision-targeted PPC campaigns
           </span>{' '}
-          ensure your brand appears in front of the right audience, at the right
-          time, with the right message.
+          that drive measurable business results. Our strategies ensure your
+          brand reaches the right audience at the perfect time, delivering the
+          right message to maximize engagement, clicks, and return on
+          investment.
         </p>
 
         {/* Key benefits pills */}
