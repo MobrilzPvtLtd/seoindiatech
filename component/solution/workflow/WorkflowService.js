@@ -7,29 +7,29 @@ const WorkFlowService = () => {
       id: 1,
       icon: <ClipboardList className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
       title: "Define",
-      text: "the sequence of steps in the process. This includes determining the tasks, their order, which users/roles perform them, etc.",
-      detail: "We help you map out your entire workflow process with clear responsibilities and dependencies."
+      text: "each step in the workflow, including task sequence and assigned users or roles.",
+      detail: "We create a complete workflow map that clarifies responsibilities and task sequences."
     },
     {
       id: 2,
       icon: <ArrowRight className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
-      title: "Coordinate",
-      text: "the progression of the workflow from one task to the next as each step is completed. This ensures the right tasks are performed in the right sequence by the right people.",
-      detail: "Our automation tools ensure smooth handoffs between team members and departments."
+      title: "Manage",
+      text: "workflow progression so tasks are completed in the correct order by the right people.",
+      detail: "Ensure smooth transitions across teams and departments with our automation solutions."
     },
     {
       id: 3,
       icon: <Eye className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
       title: "Provide",
-      text: "visibility into the status of each workflow instance. This allows managers and users to track the progress and ensure workflows are completed on time.",
-      detail: "Real-time dashboards and notifications keep everyone informed about current status and next steps."
+      text: "insights into each workflow instance so progress can be monitored and completed on schedule.",
+      detail: "Stay informed with real-time dashboards and notifications that track progress and next steps."
     },
     {
       id: 4,
       icon: <RefreshCw className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
-      title: "Optimize",
-      text: "and improve the workflow over time. By analyzing metrics around cycle times, bottlenecks, and throughput, workflows can be streamlined for greater efficiency.",
-      detail: "Our analytics tools help identify bottlenecks and opportunities for continuous improvement."
+      title: "Enhance",
+      text: "workflow effectiveness over time by tracking cycle times, identifying bottlenecks, and optimizing throughput.",
+      detail: "Discover bottlenecks and drive continuous improvement with our advanced analytics tools."
     }
   ];
 

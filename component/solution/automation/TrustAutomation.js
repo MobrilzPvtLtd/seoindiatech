@@ -1,44 +1,48 @@
-import { CheckCheck } from 'lucide-react';
-import { useState, useEffect } from 'react';
+import { CheckCheck } from 'lucide-react'
+import { useState, useEffect } from 'react'
 
 export default function TrustAutomationSection() {
-  const [isVisible, setIsVisible] = useState(false);
-  const [hoveredItem, setHoveredItem] = useState(null);
+  const [isVisible, setIsVisible] = useState(false)
+  const [hoveredItem, setHoveredItem] = useState(null)
 
   // Automation benefits data
   const automationBenefits = [
     {
       id: 1,
-      text: "Automate customer service tasks, such as answering questions and processing orders.",
-      color: "text-blue-600 dark:text-blue-400",
-      iconColor: "text-blue-500 dark:text-blue-400"
+      text:
+        'Automate key customer service functions, including responses and order processing.',
+      color: 'text-blue-600 dark:text-blue-400',
+      iconColor: 'text-blue-500 dark:text-blue-400',
     },
     {
       id: 2,
-      text: "Automate marketing tasks, such as sending email newsletters and creating social media posts.",
-      color: "text-indigo-600 dark:text-indigo-400",
-      iconColor: "text-indigo-500 dark:text-indigo-400"
+      text:
+        'Use automation to manage email outreach and social media scheduling efficiently.',
+      color: 'text-indigo-600 dark:text-indigo-400',
+      iconColor: 'text-indigo-500 dark:text-indigo-400',
     },
     {
       id: 3,
-      text: "Automate sales tasks, such as generating leads and qualifying prospects.",
-      color: "text-blue-600 dark:text-blue-400",
-      iconColor: "text-blue-500 dark:text-blue-400"
+      text:
+        'Enhance sales productivity with automated lead generation and prospect scoring.',
+      color: 'text-blue-600 dark:text-blue-400',
+      iconColor: 'text-blue-500 dark:text-blue-400',
     },
     {
       id: 4,
-      text: "Automate accounting tasks, such as tracking expenses and generating invoices.",
-      color: "text-indigo-600 dark:text-indigo-400",
-      iconColor: "text-indigo-500 dark:text-indigo-400"
-    }
-  ];
+      text:
+        'Enhance accounting efficiency with automated invoicing and expense monitoring.',
+      color: 'text-indigo-600 dark:text-indigo-400',
+      iconColor: 'text-indigo-500 dark:text-indigo-400',
+    },
+  ]
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setIsVisible(true);
-    }, 100);
-    return () => clearTimeout(timer);
-  }, []);
+      setIsVisible(true)
+    }, 100)
+    return () => clearTimeout(timer)
+  }, [])
 
   return (
     <section className="py-16 md:py-24 px-6 bg-white dark:bg-gray-800 relative overflow-hidden">
@@ -47,47 +51,84 @@ export default function TrustAutomationSection() {
         <div className="absolute top-1/4 right-0 w-72 h-72 bg-white/50 dark:bg-blue-900/10 rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 left-1/4 w-80 h-80 bg-blue-300/30 dark:bg-blue-800/10 rounded-full blur-3xl"></div>
       </div>
-      
+
       {/* Grid overlay */}
       <div className="absolute inset-0 bg-grid-pattern opacity-10 dark:opacity-5 pointer-events-none"></div>
-      
+
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Side - Content */}
-          <div className={`transform transition-all duration-700 ease-out ${isVisible ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}`}>
+          <div
+            className={`transform transition-all duration-700 ease-out ${
+              isVisible
+                ? 'translate-x-0 opacity-100'
+                : '-translate-x-10 opacity-0'
+            }`}
+          >
             <div className="bg-white dark:bg-gray-800 rounded-2xl border-2 border-gray-100 dark:border-gray-700 p-8 shadow-xl">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 rounded-full text-sm font-medium mb-6">
                 <span>Benefits</span>
               </div>
-              
+
               <h3 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-8 leading-tight">
-                Why Would You Use Digital Automation
+                Benefits of Digital Automation
               </h3>
 
               <div className="space-y-3">
                 {automationBenefits.map((benefit, index) => (
                   <div
                     key={benefit.id}
-                    className={`flex items-start space-x-4 p-4 rounded-lg transform transition-all duration-300 hover:bg-gray-50 dark:hover:bg-gray-700/50 cursor-pointer ${hoveredItem === benefit.id ? 'bg-gray-50 dark:bg-gray-700/50' : ''} ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}
+                    className={`flex items-start space-x-4 p-4 rounded-lg transform transition-all duration-300 hover:bg-gray-50 dark:hover:bg-gray-700/50 cursor-pointer ${
+                      hoveredItem === benefit.id
+                        ? 'bg-gray-50 dark:bg-gray-700/50'
+                        : ''
+                    } ${
+                      isVisible
+                        ? 'translate-y-0 opacity-100'
+                        : 'translate-y-4 opacity-0'
+                    }`}
                     style={{ transitionDelay: `${index * 150 + 300}ms` }}
                     onMouseEnter={() => setHoveredItem(benefit.id)}
                     onMouseLeave={() => setHoveredItem(null)}
                   >
                     <div className="flex-shrink-0 p-1.5 bg-blue-100 dark:bg-blue-900/50 rounded-full">
-                      <CheckCheck className={`w-5 h-5 ${hoveredItem === benefit.id ? benefit.iconColor : 'text-blue-500 dark:text-blue-400'}`} />
+                      <CheckCheck
+                        className={`w-5 h-5 ${
+                          hoveredItem === benefit.id
+                            ? benefit.iconColor
+                            : 'text-blue-500 dark:text-blue-400'
+                        }`}
+                      />
                     </div>
-                    <p className={`text-gray-700 dark:text-gray-300 text-lg leading-relaxed transition-colors duration-300 ${hoveredItem === benefit.id ? benefit.color : 'text-gray-700 dark:text-gray-300'}`}>
+                    <p
+                      className={`text-gray-700 dark:text-gray-300 text-lg leading-relaxed transition-colors duration-300 ${
+                        hoveredItem === benefit.id
+                          ? benefit.color
+                          : 'text-gray-700 dark:text-gray-300'
+                      }`}
+                    >
                       {benefit.text}
                     </p>
                   </div>
                 ))}
               </div>
-              
+
               <div className="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700">
                 <button className="hidden px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-800 hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-600 text-white font-medium rounded-full transition-colors duration-300  items-center group">
                   Learn more about our automation services
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2 transform transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5 ml-2 transform transition-transform duration-300 group-hover:translate-x-1"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M14 5l7 7m0 0l-7 7m7-7H3"
+                    />
                   </svg>
                 </button>
               </div>
@@ -95,7 +136,13 @@ export default function TrustAutomationSection() {
           </div>
 
           {/* Right Side - Illustration */}
-          <div className={`transform transition-all duration-700 ease-out delay-300 ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'}`}>
+          <div
+            className={`transform transition-all duration-700 ease-out delay-300 ${
+              isVisible
+                ? 'translate-x-0 opacity-100'
+                : 'translate-x-10 opacity-0'
+            }`}
+          >
             <div className="relative bg-white dark:bg-gray-800 rounded-2xl border-2 border-gray-100 dark:border-gray-700 p-8 shadow-xl">
               {/* Main Illustration Container */}
               <div className="relative w-full max-w-lg mx-auto h-80">
@@ -171,11 +218,26 @@ export default function TrustAutomationSection() {
                 </div>
 
                 {/* Connecting Lines */}
-                <svg className="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 400 400">
+                <svg
+                  className="absolute inset-0 w-full h-full pointer-events-none"
+                  viewBox="0 0 400 400"
+                >
                   <defs>
-                    <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" style={{ stopColor: '#3B82F6', stopOpacity: 0.6 }} />
-                      <stop offset="100%" style={{ stopColor: '#8B5CF6', stopOpacity: 0.6 }} />
+                    <linearGradient
+                      id="lineGradient"
+                      x1="0%"
+                      y1="0%"
+                      x2="100%"
+                      y2="100%"
+                    >
+                      <stop
+                        offset="0%"
+                        style={{ stopColor: '#3B82F6', stopOpacity: 0.6 }}
+                      />
+                      <stop
+                        offset="100%"
+                        style={{ stopColor: '#8B5CF6', stopOpacity: 0.6 }}
+                      />
                     </linearGradient>
                   </defs>
                   <path
@@ -196,20 +258,32 @@ export default function TrustAutomationSection() {
                   />
                 </svg>
               </div>
-              
+
               {/* Key stats */}
               <div className="mt-6 grid grid-cols-3 gap-4 border-t border-gray-200 dark:border-gray-700 pt-6">
                 <div className="text-center">
-                  <div className="text-xl font-bold text-blue-600 dark:text-blue-400">85%</div>
-                  <div className="text-xs text-gray-600 dark:text-gray-400">Time Saved</div>
+                  <div className="text-xl font-bold text-blue-600 dark:text-blue-400">
+                    85%
+                  </div>
+                  <div className="text-xs text-gray-600 dark:text-gray-400">
+                    Time Saved
+                  </div>
                 </div>
                 <div className="text-center">
-                  <div className="text-xl font-bold text-indigo-600 dark:text-indigo-400">24/7</div>
-                  <div className="text-xs text-gray-600 dark:text-gray-400">Operation</div>
+                  <div className="text-xl font-bold text-indigo-600 dark:text-indigo-400">
+                    24/7
+                  </div>
+                  <div className="text-xs text-gray-600 dark:text-gray-400">
+                    Operation
+                  </div>
                 </div>
                 <div className="text-center">
-                  <div className="text-xl font-bold text-blue-600 dark:text-blue-400">95%</div>
-                  <div className="text-xs text-gray-600 dark:text-gray-400">Accuracy</div>
+                  <div className="text-xl font-bold text-blue-600 dark:text-blue-400">
+                    95%
+                  </div>
+                  <div className="text-xs text-gray-600 dark:text-gray-400">
+                    Accuracy
+                  </div>
                 </div>
               </div>
             </div>
@@ -217,5 +291,5 @@ export default function TrustAutomationSection() {
         </div>
       </div>
     </section>
-  );
+  )
 }

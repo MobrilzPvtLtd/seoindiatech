@@ -16,17 +16,17 @@ const TrustWorkFlow = () => {
     {
       icon: <CheckCircle className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
       title: "Track Progress",
-      description: "Monitor your team's performance and task completion in real-time"
+      description: "Monitor task completion and team efficiency as it happens."
     },
     {
       icon: <Zap className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
       title: "Automate Tasks",
-      description: "Eliminate repetitive manual processes with intelligent automation"
+      description: "Streamline operations by eliminating routine tasks with automation."
     },
     {
       icon: <BarChart2 className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
       title: "Identify Bottlenecks",
-      description: "Quickly find and resolve process issues before they impact productivity"
+      description: "Identify and fix workflow issues swiftly to maintain productivity."
     }
   ];
 
@@ -61,11 +61,7 @@ const TrustWorkFlow = () => {
               <div className="w-20 h-1 bg-blue-600 dark:bg-blue-500 rounded-full mb-6"></div>
 
               <p className="text-justify text-gray-700 dark:text-gray-300 text-lg leading-relaxed mb-8">
-                By using software, automation, and integration, tasks have
-                never been easier. You can track your team's progress, assign
-                tasks, and easily find where things go wrong. Workflow
-                management software is used to automate and streamline
-                workflow processes.
+                Managing tasks is effortless with workflow management software. Track team progress, assign responsibilities, and spot bottlenecks instantly. Automation and integration ensure workflows are streamlined, errors are minimized, and your operations run smoothly.
               </p>
               
               <div className="space-y-4">
