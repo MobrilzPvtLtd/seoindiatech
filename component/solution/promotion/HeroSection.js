@@ -1,22 +1,22 @@
-import Image from "next/image";
-import React from "react";
-import { TrendingUp, Target, Megaphone, ArrowRight } from 'lucide-react';
+import Image from 'next/image'
+import React from 'react'
+import { TrendingUp, Target, Megaphone, ArrowRight } from 'lucide-react'
 
 const HeroSection = () => {
   const promotionFeatures = [
     {
       icon: <Target className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
-      text: "Targeted campaigns for specific audiences"
+      text: 'Tailored campaigns for better engagement',
     },
     {
       icon: <TrendingUp className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
-      text: "Data-driven marketing strategies"
+      text: 'Smarter strategies, proven by data',
     },
     {
       icon: <Megaphone className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
-      text: "Multi-channel advertising approach"
-    }
-  ];
+      text: 'Engage customers across multiple platforms',
+    },
+  ]
 
   return (
     <section className="bg-white dark:bg-gray-900 py-8 md:py-24 relative overflow-hidden">
@@ -38,17 +38,20 @@ const HeroSection = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-tight">
               Promotion And
               <br />
-              <span className="text-blue-700 dark:text-blue-400">Advertising</span>
+              <span className="text-blue-700 dark:text-blue-400">
+                Advertising
+              </span>
             </h1>
 
             <div className="w-20 h-1 bg-blue-600 dark:bg-blue-500 rounded-full"></div>
 
             <p className="text-justify text-gray-700 dark:text-gray-300 text-base md:text-lg leading-relaxed">
-              Explore our cutting-edge marketing solutions that redefine industry
-              standards. Our commitment to quality and customer satisfaction is
-              unparalleled. Stay ahead of the curve with our latest offerings and
-              experience a seamless blend of strategy and creativity. Discover
-              unbeatable campaigns and exclusive promotions tailored just for your business.
+              Discover our cutting-edge marketing solutions designed to set new
+              industry standards. With an unwavering commitment to quality and
+              customer satisfaction, we deliver a seamless fusion of strategy
+              and creativity. Stay ahead with our innovative campaigns,
+              exclusive promotions, and tailored solutions crafted to elevate
+              your business to the next level.
             </p>
 
             <div className="pt-4 space-y-3">
@@ -63,7 +66,6 @@ const HeroSection = () => {
                 </div>
               ))}
             </div>
-
           </div>
 
           {/* Right image */}
@@ -95,8 +97,12 @@ const HeroSection = () => {
                     <TrendingUp className="w-5 h-5 text-blue-600 dark:text-blue-400" />
                   </div>
                   <div>
-                    <div className="text-sm text-gray-600 dark:text-gray-400">ROI Increase</div>
-                    <div className="text-lg font-bold text-blue-600 dark:text-blue-400">+72%</div>
+                    <div className="text-sm text-gray-600 dark:text-gray-400">
+                      ROI Increase
+                    </div>
+                    <div className="text-lg font-bold text-blue-600 dark:text-blue-400">
+                      +72%
+                    </div>
                   </div>
                 </div>
               </div>
@@ -107,10 +113,9 @@ const HeroSection = () => {
             <div className="absolute -top-4 -right-4 w-16 h-16 bg-blue-300/50 dark:bg-blue-800/30 rounded-full -z-10"></div>
           </div>
         </div>
-
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default HeroSection;
+export default HeroSection

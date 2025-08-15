@@ -6,37 +6,37 @@ const CRMToolService = () => {
     {
       id: 1,
       icon: <Users className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
-      title: "Understanding CRM – The Backbone of Customer-Centricity",
-      text: "Discover how our CRM system centralizes customer data, streamlines communication, and builds lasting relationships with key features like contact management, sales automation, and customer analytics.",
-      detail: "Our CRM platform provides a comprehensive view of each customer interaction, enabling personalized experiences that drive loyalty and revenue growth."
+      title: "CRM in Action – Streamlining Success Through Customer Focus",
+      text: "Our CRM system centralizes customer data, streamlines communication, and fosters lasting relationships through powerful features like contact management, sales automation, and in-depth customer analytics.",
+      detail: "With our CRM platform, every customer interaction becomes an opportunity—delivering personalized experiences that boost loyalty and accelerate revenue growth."
     },
     {
       id: 2,
       icon: <CheckSquare className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
-      title: "The Art of Task and Project Management",
-      text: "Efficient project and task management are vital for organizational success. Discover how our management tools facilitate seamless collaboration, task delegation, and project tracking. From simple to-do lists to complex project timelines, our tools ensure that your team stays organized and focused on delivering results.",
-      detail: "With customizable workflows, Gantt charts, and real-time progress tracking, teams can collaborate effectively regardless of location."
+      title: "Mastering the Art of Task and Project Management",
+      text: "Effective project and task management is key to organizational success. Our tools streamline collaboration, task delegation, and project tracking. From simple to-do lists to complex timelines, they help your team stay organized, focused, and consistently deliver results.",
+      detail: "Customizable workflows, Gantt charts, and real-time progress tracking enable teams to collaborate seamlessly, no matter where they are."
     },
     {
       id: 3,
       icon: <Link className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
-      title: "Integration for Seamless Workflows",
-      text: "One of the strengths of our CRM and management tools lies in their ability to integrate seamlessly with other business applications. Explore how our solutions connect with email, calendar, and third-party apps, creating a unified ecosystem. This integration not only saves time but also reduces the risk of errors and ensures a smooth flow of information across your organization.",
-      detail: "Our API-first approach allows for easy connections with over 200 popular business tools and platforms."
+      title: "Connected Systems for Effortless Workflows",
+      text: "A key strength of our CRM and management tools is their seamless integration with other business applications. By connecting email, calendars, and third-party apps, we create a unified ecosystem that saves time, minimizes errors, and ensures smooth information flow across your organization.",
+      detail: "With our API-first approach, you can effortlessly connect to over 200 popular business tools and platforms, ensuring smooth integration and workflow continuity."
     },
     {
       id: 4,
       icon: <Settings className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
-      title: "Customization for Your Unique Needs",
-      text: "Every business is unique, and so are its needs. Our CRM and management tools are highly customizable, allowing you to adapt them to your specific requirements. From custom fields in CRM to personalized project workflows, our tools empower you to mold the system to fit your business like a glove.",
-      detail: "No-code configuration options mean your team can make changes without IT assistance, reducing implementation time and costs."
+      title: "Tailored Solutions for Your Business",
+      text: "Every business is unique, and so are its requirements. Our CRM and management tools are fully customizable, letting you tailor everything from CRM fields to project workflows. This flexibility empowers your team to shape the system perfectly around your business processes.",
+      detail: "No-code tools allow quick, independent updates by your staff, minimizing both time and cost overheads."
     },
     {
       id: 5,
       icon: <Shield className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
-      title: "Data Security and Compliance",
-      text: "In an era of increasing cyber threats and data breaches, ensuring the security of your business information is paramount. Learn about the robust security measures embedded in our CRM and management tools. We take data privacy seriously and comply with industry regulations to provide you with peace of mind.",
-      detail: "Our platform adheres to GDPR, CCPA, and industry-specific compliance standards with regular security audits and updates."
+      title: "Secure and Compliant Solutions",
+      text: "In today’s world of rising cyber threats, protecting your business data is critical. Our CRM and management tools incorporate robust security measures, adhere to industry regulations, and prioritize data privacy, giving you complete peace of mind.",
+      detail: "Our platform complies with GDPR, CCPA, and industry-specific standards, supported by regular security audits and continuous updates."
     }
   ];
 
