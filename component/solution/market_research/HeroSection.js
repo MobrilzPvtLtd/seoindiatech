@@ -6,11 +6,11 @@ const HeroSection = () => {
   const researchFeatures = [
     {
       icon: <TrendingUp className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
-      text: 'Identify market trends and opportunities',
+      text: 'Analyzing industry trends and opportunities.',
     },
     {
       icon: <Target className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
-      text: 'Understand customer needs and preferences',
+      text: 'Identifying customer needs and expectations',
     },
     {
       icon: <BarChart2 className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
@@ -43,12 +43,13 @@ const HeroSection = () => {
             <div className="w-20 h-1 bg-blue-600 dark:bg-blue-500 rounded-full"></div>
 
             <p className="text-justify text-gray-700 dark:text-gray-300 text-base md:text-lg leading-relaxed">
-              Market research is the process of gathering and analyzing
-              information about a market, including its size, trends,
-              competition, and customer needs and preferences. Market research
-              aims to provide insights that can help businesses make informed
-              decisions about their products, services, and marketing
-              strategies.
+              Market research is the systematic process of collecting,
+              analyzing, and interpreting data related to a specific market.
+              This includes evaluating its size, emerging trends, competitive
+              landscape, and the needs and preferences of target customers. The
+              primary objective of market research is to deliver actionable
+              insights that enable businesses to make well-informed decisions
+              regarding their products, services, and marketing strategies.
             </p>
 
             <div className="pt-4 space-y-3">

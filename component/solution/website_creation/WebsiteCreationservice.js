@@ -1,86 +1,120 @@
-import React from "react";
-import { Target, Globe, Code, Layout, Server, Rocket, RefreshCw, Database, Search, FileCode, Lock } from "lucide-react";
+import React from 'react'
+import {
+  Target,
+  Globe,
+  Code,
+  Layout,
+  Server,
+  Rocket,
+  RefreshCw,
+  Database,
+  Search,
+  FileCode,
+  Lock,
+} from 'lucide-react'
 
 const WebsiteCreationService = () => {
   const websiteSteps = [
     {
       id: 1,
       icon: <Target className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
-      title: "Define Purpose and Goals",
-      text: "Determine the primary objective of your website, such as selling products, providing information, generating leads, or building a community.",
-      detail: "We start with a comprehensive strategy session to identify your target audience, business objectives, and success metrics."
+      title: 'Define Purpose and Goals',
+      text:
+        'Determine the primary objective of your website, such as selling products, providing information, generating leads, or building a community.',
+      detail:
+        'We begin with a detailed strategy session to define your target audience, business goals, and key success metrics.',
     },
     {
       id: 2,
       icon: <Globe className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
-      title: "Choose a Domain Name",
-      text: "Select a domain name that reflects your brand or website's purpose. It should be easy to remember, pronounce, and type.",
-      detail: "Our domain experts help you secure the perfect web address that aligns with your brand identity and improves discoverability."
+      title: 'Choose a Domain Name',
+      text:
+        'Choose a domain name that represents your brand, ensuring it is memorable, easy to pronounce, and simple to type.',
+      detail:
+        'We help secure the ideal web address to match your brand identity and improve search visibility.',
     },
     {
       id: 3,
       icon: <FileCode className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
-      title: "Select a Website Platform",
-      text: "Selecting a website platform or content management system (CMS) that suits your needs and technical capabilities.",
-      detail: "We recommend the ideal technology stack based on your requirements, whether it's WordPress, React, Next.js, or custom solutions."
+      title: 'Select a Website Platform',
+      text:
+        'Select a CMS or website platform suited to your technical abilities and specific project requirements.',
+      detail:
+        'Our team recommends an optimal technology stack tailored to your project, whether using WordPress, React, Next.js, or custom development.',
     },
     {
       id: 4,
       icon: <Layout className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
-      title: "Design the Website",
-      text: "Determine the visual appearance and layout of your website, including color schemes, typography, imagery, and overall user interface design.",
-      detail: "Our designers create mockups and prototypes to visualize your website's look and feel before development begins."
+      title: 'Design the Website',
+      text:
+        'Define the website’s appearance and layout, covering color schemes, fonts, imagery, and UI design elements.',
+      detail:
+        'We create visual prototypes and mockups to help you envision your website’s design prior to building it.',
     },
     {
       id: 5,
       icon: <Code className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
-      title: "Develop and Build",
-      text: "Transform the design concepts into a functional website using appropriate coding languages and frameworks.",
-      detail: "Our developers write clean, efficient code to bring your website to life with responsive design and optimal performance."
+      title: 'Develop and Build',
+      text:
+        'Implement website designs by applying appropriate programming languages and frameworks to create a working digital platform.',
+      detail:
+        'We write high-quality code to bring your website to life, ensuring responsiveness and peak performance.',
     },
     {
       id: 6,
       icon: <Database className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
-      title: "Create and Organize Content",
-      text: "Planning and creating engaging and relevant content for the website, including text, images, videos, and other media.",
-      detail: "We help structure your content for maximum impact and user engagement, focusing on your brand's unique voice and message."
+      title: 'Create and Organize Content',
+      text:
+        'Create and organize website content across text, images, videos, and multimedia to enhance user experience.',
+      detail:
+        'Our team crafts content layouts that enhance impact and maintain consistency with your brand’s message and tone.',
     },
     {
       id: 7,
       icon: <Search className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
-      title: "Optimize for Search Engines (SEO)",
-      text: "Implementing search engine optimization techniques to improve the website's visibility in search engine results.",
-      detail: "Our SEO specialists ensure your website follows best practices for on-page optimization, helping users find your site organically."
+      title: 'Optimize for Search Engines (SEO)',
+      text:
+        'Enhance website visibility through effective search engine optimization techniques.',
+      detail:
+        'We ensure your website follows SEO best practices, helping users find it naturally through search engines.',
     },
     {
       id: 8,
       icon: <RefreshCw className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
-      title: "Test and Optimize",
-      text: "Thoroughly test the website across different devices, browsers, and screen sizes to ensure it is responsive and functions properly.",
-      detail: "We perform comprehensive quality assurance testing, checking functionality, performance, security, and accessibility."
+      title: 'Test and Optimize',
+      text:
+        'Conduct thorough testing across multiple devices and browsers to guarantee a fully responsive and functional website.',
+      detail:
+        'We conduct thorough quality assurance testing to ensure your website’s functionality, performance, security, and accessibility meet high standards.',
     },
     {
       id: 9,
       icon: <Server className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
-      title: "Choose a Hosting Provider",
-      text: "Select a reliable web hosting service that offers appropriate storage, bandwidth, security, and support for your website.",
-      detail: "We recommend scalable hosting solutions that balance performance, security, and cost-effectiveness for your specific needs."
+      title: 'Choose a Hosting Provider',
+      text:
+        'Opt for a web hosting provider providing proper storage, bandwidth, security features, and responsive customer support.',
+      detail:
+        'Scalable hosting solutions are provided to ensure optimal performance, robust security, and cost-efficiency for your website.',
     },
     {
       id: 10,
       icon: <Rocket className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
-      title: "Launch the Website",
-      text: "Make the website live and accessible to the public after final checks and approvals.",
-      detail: "Our launch process includes final testing, DNS configuration, and monitoring to ensure a smooth transition to your live website."
+      title: 'Launch the Website',
+      text:
+        'Make the website live for users following thorough testing and final approval procedures.',
+      detail:
+        'We handle final checks, DNS configuration, and performance monitoring to ensure your website goes live smoothly.',
     },
     {
       id: 11,
       icon: <Lock className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
-      title: "Maintain and Update",
-      text: "Regularly update the website with fresh content, security patches, and software updates to keep it relevant and secure.",
-      detail: "We offer ongoing maintenance packages to ensure your website remains secure, fast, and up-to-date with the latest technologies."
-    }
-  ];
+      title: 'Maintain and Update',
+      text:
+        'Keep the website secure and up-to-date by regularly adding fresh content and applying necessary updates.',
+      detail:
+        'We provide continuous maintenance services to keep your website secure, fast, and updated with the latest technologies.',
+    },
+  ]
 
   return (
     <section className="bg-gray-50 dark:bg-gray-900 py-16 md:py-24 px-4 md:px-8 relative overflow-hidden">
@@ -94,9 +128,13 @@ const WebsiteCreationService = () => {
         <div className="bg-white dark:bg-gray-800 shadow-xl rounded-2xl overflow-hidden">
           {/* Header with blue gradient */}
           <div className="bg-gradient-to-r from-gray-600 to-gray-800 dark:from-gray-700 dark:to-gray-800 px-6 md:px-10 py-10 text-white">
-            <h1 className="text-3xl md:text-4xl font-bold text-center">Website Creation</h1>
+            <h1 className="text-3xl md:text-4xl font-bold text-center">
+              Website Creation
+            </h1>
             <div className="w-20 h-1 bg-white/50 mx-auto my-4 rounded-full"></div>
-            <h2 className="text-xl md:text-2xl font-medium text-center text-blue-100">How Does It Work?</h2>
+            <h2 className="text-xl md:text-2xl font-medium text-center text-blue-100">
+              How Does It Work?
+            </h2>
           </div>
 
           {/* Content */}
@@ -153,14 +191,35 @@ const WebsiteCreationService = () => {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {[
-                  { title: "E-Commerce Stores", description: "Online shopping with secure payments" },
-                  { title: "Corporate Websites", description: "Professional business presence" },
-                  { title: "Portfolio Sites", description: "Showcase creative work" },
-                  { title: "Blogs & News", description: "Content-focused platforms" },
-                  { title: "Web Applications", description: "Interactive user experiences" },
-                  { title: "Landing Pages", description: "Conversion-optimized pages" }
+                  {
+                    title: 'E-Commerce Stores',
+                    description: 'Online shopping with secure payments',
+                  },
+                  {
+                    title: 'Corporate Websites',
+                    description: 'Professional business presence',
+                  },
+                  {
+                    title: 'Portfolio Sites',
+                    description: 'Showcase creative work',
+                  },
+                  {
+                    title: 'Blogs & News',
+                    description: 'Content-focused platforms',
+                  },
+                  {
+                    title: 'Web Applications',
+                    description: 'Interactive user experiences',
+                  },
+                  {
+                    title: 'Landing Pages',
+                    description: 'Conversion-optimized pages',
+                  },
                 ].map((type, index) => (
-                  <div key={index} className="bg-blue-50 dark:bg-blue-900/20 border border-blue-100 dark:border-blue-800 rounded-lg p-4 text-center hover:shadow-md transition-shadow duration-300">
+                  <div
+                    key={index}
+                    className="bg-blue-50 dark:bg-blue-900/20 border border-blue-100 dark:border-blue-800 rounded-lg p-4 text-center hover:shadow-md transition-shadow duration-300"
+                  >
                     <div className="text-lg font-semibold text-gray-900 dark:text-white mb-1">
                       {type.title}
                     </div>
@@ -171,14 +230,11 @@ const WebsiteCreationService = () => {
                 ))}
               </div>
             </div>
-
           </div>
         </div>
-
-
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default WebsiteCreationService;
+export default WebsiteCreationService

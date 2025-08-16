@@ -23,27 +23,28 @@ export default function TrustWebsiteCreation() {
       icon: <Share2 className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
       title: 'Social Media Integration',
       description:
-        'Connect seamlessly with all your social platforms for consistent brand presence',
+        'Integrate your website with all social platforms for a consistent and unified brand presence.',
     },
     {
       id: 2,
       icon: <Users className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
       title: 'CRM Connection',
       description:
-        'Capture and nurture leads directly from your website into your CRM',
+        'Integrate your website with CRM to capture and cultivate leads effectively.',
     },
     {
       id: 3,
       icon: <Database className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
       title: 'Lead Management',
       description:
-        'Assign, track and analyze leads to optimize your sales process',
+        'Track and manage leads efficiently to enhance your overall sales performance.',
     },
     {
       id: 4,
       icon: <Smartphone className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
       title: 'Mobile Optimization',
-      description: 'Responsive design that works perfectly across all devices',
+      description:
+        'Responsive design ensures seamless performance and appearance across all devices and screen sizes.',
     },
   ]
 
@@ -91,15 +92,16 @@ export default function TrustWebsiteCreation() {
               <div className="w-20 h-1 bg-blue-600 dark:bg-blue-500 rounded-full mb-6"></div>
 
               <p className="text-justify text-gray-700 dark:text-gray-300 text-base md:text-lg leading-relaxed mb-8">
-                Your website is an essential tool in today's digital world. Our
-                services can help you integrate it with all your social media
-                platforms seamlessly. Not only that, but we can also connect it
-                to your CRM, which enables you to interact with your leads. This
-                helps you nurture them and build long-lasting relationships.
-                With our integrated software provider, you can send emails,
-                assign leads to your team, or give them a call with ease. We aim
-                to make your website work for you, and our services are tailored
-                to meet your needs.
+                Your website is a crucial tool in today’s digital landscape. Our
+                services help you seamlessly integrate it with all your social
+                media platforms, ensuring consistent engagement across channels.
+                Additionally, we connect your website to your CRM, allowing you
+                to efficiently manage leads, nurture relationships, and track
+                interactions. With our integrated software solutions, you can
+                send emails, assign tasks to team members, or make calls
+                directly from the system. We focus on making your website work
+                effectively for your business, offering tailored services
+                designed to meet your unique goals and requirements.
               </p>
 
               <div className="grid md:grid-cols-2 gap-4 mb-8">
@@ -237,7 +239,7 @@ export default function TrustWebsiteCreation() {
               Fast Development
             </h4>
             <p className="text-gray-600 dark:text-gray-400">
-              Get your website up and running quickly with our efficient process
+              Our efficient workflow ensures your website is up and running in minimal time.
             </p>
           </div>
 
@@ -249,7 +251,7 @@ export default function TrustWebsiteCreation() {
               Seamless Integration
             </h4>
             <p className="text-gray-600 dark:text-gray-400">
-              Connect all your business tools in one centralized ecosystem
+              Centralize your business tools to streamline operations and improve collaboration.
             </p>
           </div>
 
@@ -261,8 +263,7 @@ export default function TrustWebsiteCreation() {
               Global Reach
             </h4>
             <p className="text-gray-600 dark:text-gray-400">
-              Expand your business with a website that connects you to customers
-              worldwide
+              Grow your business with a website that reaches and connects with customers globally.
             </p>
           </div>
         </div>

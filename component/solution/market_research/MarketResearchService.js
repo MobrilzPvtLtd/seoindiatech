@@ -1,37 +1,45 @@
-import React from 'react';
-import { Target, Users, TrendingUp, BarChart2, Search } from 'lucide-react';
+import React from 'react'
+import { Target, Users, TrendingUp, BarChart2, Search } from 'lucide-react'
 
 const MarketResearchService = () => {
   const researchSteps = [
     {
       id: 1,
       icon: <Target className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
-      title: "Identify Market Opportunities",
-      text: "Identify market opportunities and potential customers through thorough analysis of market size, growth, and segmentation.",
-      detail: "Our comprehensive market opportunity analysis helps you discover untapped niches and emerging trends."
+      title: 'Identify Market Opportunities',
+      text:
+        'Discover growth opportunities and potential customers through detailed analysis of market size, segmentation, and emerging industry trends.',
+      detail:
+        'Discover hidden market niches and track emerging trends with our comprehensive analysis.',
     },
     {
       id: 2,
       icon: <Users className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
-      title: "Understand Customer Needs",
-      text: "Understand customer needs and preferences through surveys, interviews, focus groups, and behavioral analysis.",
-      detail: "We use a mix of qualitative and quantitative research methods to uncover deep customer insights."
+      title: 'Understand Customer Needs',
+      text:
+        'Gather insights into customer needs and preferences using surveys, interviews, focus groups, and detailed behavioral data analysis.',
+      detail:
+        'We combine qualitative and quantitative research methods to reveal valuable customer insights.',
     },
     {
       id: 3,
       icon: <TrendingUp className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
-      title: "Evaluate Competition and Trends",
-      text: "Evaluate the competition and market trends through competitive analysis, benchmarking, and trend forecasting.",
-      detail: "Our competitive intelligence provides you with actionable strategies to gain market advantage."
+      title: 'Evaluate Competition and Trends',
+      text:
+        'Analyze competition and market dynamics using benchmarking, competitive analysis, and strategic forecasting to identify growth opportunities.',
+      detail:
+        'Our competitive intelligence delivers actionable strategies to help you achieve a strong market advantage.',
     },
     {
       id: 4,
       icon: <Search className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
-      title: "Test New Products or Services",
-      text: "Test new products or services through prototype testing, concept validation, and market trials.",
-      detail: "Reduce risk and increase success rates by validating concepts before full-scale launch."
-    }
-  ];
+      title: 'Test New Products or Services',
+      text:
+        'Validate new offerings through prototype testing, market trials, and structured concept evaluation.',
+      detail:
+        'Validate concepts early to reduce risk and improve success rates before full-scale launch.',
+    },
+  ]
 
   return (
     <section className="bg-gray-50 dark:bg-gray-900 py-16 md:py-24 px-4 md:px-8 relative overflow-hidden">
@@ -45,9 +53,13 @@ const MarketResearchService = () => {
         <div className="bg-white dark:bg-gray-800 shadow-xl rounded-2xl overflow-hidden">
           {/* Header with blue gradient */}
           <div className="bg-gradient-to-r from-gray-600 to-gray-800 dark:from-gray-700 dark:to-gray-800 px-6 md:px-10 py-10 text-white">
-            <h1 className="text-3xl md:text-4xl font-bold text-center">Market Research</h1>
+            <h1 className="text-3xl md:text-4xl font-bold text-center">
+              Market Research
+            </h1>
             <div className="w-20 h-1 bg-white/50 mx-auto my-4 rounded-full"></div>
-            <h2 className="text-xl md:text-2xl font-medium text-center text-blue-100">How Does It Work?</h2>
+            <h2 className="text-xl md:text-2xl font-medium text-center text-blue-100">
+              How Does It Work?
+            </h2>
           </div>
 
           {/* Content */}
@@ -99,17 +111,43 @@ const MarketResearchService = () => {
               <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-100 dark:border-blue-800 rounded-xl p-6">
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                   {[
-                    { title: "Primary Research", description: "Direct data collection through surveys, interviews, and focus groups" },
-                    { title: "Secondary Research", description: "Analysis of existing studies, reports, and published data" },
-                    { title: "Data Analysis", description: "Statistical analysis and pattern identification" },
-                    { title: "Competitive Analysis", description: "Benchmarking against industry leaders and competitors" },
-                    { title: "Market Segmentation", description: "Identifying distinct customer groups and their needs" },
-                    { title: "Trend Forecasting", description: "Predicting future market movements and opportunities" }
+                    {
+                      title: 'Primary Research',
+                      description:
+                        'Direct insights through surveys, interviews, and groups',
+                    },
+                    {
+                      title: 'Secondary Research',
+                      description:
+                        'Evaluate published data, reports, and prior studies',
+                    },
+                    {
+                      title: 'Data Analysis',
+                      description:
+                        'Statistical methods for recognizing data patterns',
+                    },
+                    {
+                      title: 'Competitive Analysis',
+                      description:
+                        'Benchmark against competitors and market leaders',
+                    },
+                    {
+                      title: 'Market Segmentation',
+                      description:
+                        'Determine unique customer groups and preferences',
+                    },
+                    {
+                      title: 'Trend Forecasting',
+                      description:
+                        'Forecast market movements and potential opportunities',
+                    },
                   ].map((method, index) => (
                     <div key={index} className="flex flex-col">
                       <div className="flex items-center gap-3 mb-2">
                         <div className="w-2 h-2 bg-blue-600 dark:bg-blue-400 rounded-full"></div>
-                        <h4 className="font-medium text-gray-900 dark:text-white">{method.title}</h4>
+                        <h4 className="font-medium text-gray-900 dark:text-white">
+                          {method.title}
+                        </h4>
                       </div>
                       <p className="text-gray-600 dark:text-gray-400 text-sm pl-5">
                         {method.description}
@@ -127,13 +165,25 @@ const MarketResearchService = () => {
                   Ready to gain valuable market insights?
                 </p>
                 <p className="text-gray-500 dark:text-gray-400 text-sm">
-                  Our research team is equipped to help you make data-driven decisions.
+                  Our research team is equipped to help you make data-driven
+                  decisions.
                 </p>
               </div>
               <button className="bg-blue-600 hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 shadow-md flex items-center group whitespace-nowrap">
                 Request Research Proposal
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2 transform transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5 ml-2 transform transition-transform duration-300 group-hover:translate-x-1"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                  />
                 </svg>
               </button>
             </div>
@@ -143,20 +193,27 @@ const MarketResearchService = () => {
         {/* Benefits section */}
         <div className="mt-12 grid grid-cols-1 md:grid-cols-4 gap-6">
           {[
-            { title: "Reduced Risk", value: "75%" },
-            { title: "Better Targeting", value: "92%" },
-            { title: "Increased ROI", value: "3.4x" },
-            { title: "Growth Rate", value: "+47%" }
+            { title: 'Reduced Risk', value: '75%' },
+            { title: 'Better Targeting', value: '92%' },
+            { title: 'Increased ROI', value: '3.4x' },
+            { title: 'Growth Rate', value: '+47%' },
           ].map((stat, index) => (
-            <div key={index} className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md text-center border border-gray-200 dark:border-gray-700">
-              <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">{stat.value}</div>
-              <div className="text-gray-700 dark:text-gray-300">{stat.title}</div>
+            <div
+              key={index}
+              className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md text-center border border-gray-200 dark:border-gray-700"
+            >
+              <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">
+                {stat.value}
+              </div>
+              <div className="text-gray-700 dark:text-gray-300">
+                {stat.title}
+              </div>
             </div>
           ))}
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default MarketResearchService;
+export default MarketResearchService
