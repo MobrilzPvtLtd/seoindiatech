@@ -160,7 +160,7 @@ const SEOSolution = () => {
                 exposure of your communications.
               </p>
             </header>
-            <div className="rounded-lg overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+            <div className="rounded-lg overflow-hidden hover:scale-[1.02] transition-transform duration-300 relative bottom-0">
               <Image
                 src={'/images/subscribtion.png'}
                 width={500}
@@ -178,11 +178,10 @@ const SEOSolution = () => {
                 Competitor Analysis
               </h2>
               <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
-                Excessive bounced or unwanted emails may damage your sender
-                credibility, impacting your email delivery performance.
+                Excessive bounced emails harm sender credibility and reduce overall email delivery performance.
               </p>
             </header>
-            <div className="rounded-lg overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+            <div className="rounded-lg overflow-hidden hover:scale-[1.02] transition-transform duration-300 relative bottom-0">
               <Image
                 src={'/images/ORGANIC.png'}
                 width={500}
@@ -204,7 +203,7 @@ const SEOSolution = () => {
                 valid recipients.
               </p>
             </header>
-            <div className="rounded-lg overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+            <div className="rounded-lg overflow-hidden hover:scale-[1.02] transition-transform duration-300 relative bottom-0">
               <Image
                 src={'/images/score.png'}
                 width={500}

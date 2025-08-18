@@ -10,7 +10,7 @@ const Testimonial = () => {
       company: "@Brello",
       avatar: "/images/sarah.png",
       rating: 5,
-      testimonial: "The Anima Landing Page UI Kit saved me hours with its intuitive design and simple customization. A fantastic resource I highly recommend!"
+      testimonial: "The Anima Landing Page UI Kit saved me hours with its intuitive design and easy customization. It’s a fantastic resource that streamlines workflow, enhances creativity, and ensures professional results. I highly recommend it to designers and teams!"
     },
     {
       id: 2,
@@ -19,7 +19,7 @@ const Testimonial = () => {
       company: "@Yo",
       avatar: "/images/michael.png",
       rating: 4,
-      testimonial: "The Landing Page UI Kit has been a game changer for my agency. The pre-designed components and templates have helped us deliver projects faster and with more consistency. Great job!"
+      testimonial: "The Landing Page UI Kit has transformed my agency’s workflow. Its pre-designed templates and components allow us to deliver projects faster while maintaining consistency and quality. It has truly streamlined our process and improved client satisfaction."
     },
     {
       id: 3,
