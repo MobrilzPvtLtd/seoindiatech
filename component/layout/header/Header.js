@@ -12,7 +12,7 @@ const Header = () => {
   const [isSolutionsOpen, setIsSolutionsOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
   const [windowWidth, setWindowWidth] = useState(0);
-  
+
   // Scroll behavior state
   const [visible, setVisible] = useState(true);
   const [atTop, setAtTop] = useState(true);
@@ -90,7 +90,7 @@ const Header = () => {
   const servicesRef = useRef(null);
   const solutionsRef = useRef(null);
   const mobileMenuRef = useRef(null);
-  
+
   // For smooth scroll detection
   const lastScrollTop = useRef(0);
   const scrollingTimer = useRef(null);
@@ -125,34 +125,34 @@ const Header = () => {
       }
 
       const currentScrollTop = window.scrollY || document.documentElement.scrollTop;
-      
+
       // Determine if we're at the top of the page
       const isAtTop = currentScrollTop < 10;
       setAtTop(isAtTop);
-      
+
       // If at top, always show header
       if (isAtTop) {
         setVisible(true);
       } else {
         // Detect scroll direction with a threshold
         const scrollDifference = Math.abs(currentScrollTop - lastScrollTop.current);
-        
+
         // Only process significant scroll movements (5px threshold)
         if (scrollDifference > 5) {
           // Scrolling down
           if (currentScrollTop > lastScrollTop.current) {
             setVisible(false);
-          } 
+          }
           // Scrolling up
           else {
             setVisible(true);
           }
         }
       }
-      
+
       // Save current scroll position
       lastScrollTop.current = currentScrollTop;
-      
+
       // Reset timer for when scrolling stops
       clearTimeout(scrollingTimer.current);
       scrollingTimer.current = setTimeout(() => {
@@ -166,7 +166,7 @@ const Header = () => {
     document.addEventListener('mousedown', handleClickOutside);
     window.addEventListener('scroll', handleScroll, { passive: true });
     handleResize();
-    
+
     // Clear any timeouts on unmount
     return () => {
       if (servicesTimeoutRef.current) clearTimeout(servicesTimeoutRef.current);
@@ -187,7 +187,7 @@ const Header = () => {
       document.body.style.overflow = '';
       document.body.style.touchAction = '';
     }
-    
+
     return () => {
       document.body.style.overflow = '';
       document.body.style.touchAction = '';
@@ -217,7 +217,7 @@ const Header = () => {
     if (windowWidth >= 768) {
       servicesTimeoutRef.current = setTimeout(() => {
         setIsServicesOpen(false);
-      }, 100); 
+      }, 100);
     }
   };
 
@@ -262,13 +262,13 @@ const Header = () => {
   };
 
   // Contact button styling
-  const contactButtonClass = "bg-gradient-to-r from-blue-600 to-blue-800 dark:from-blue-500 dark:to-indigo-700 text-white px-10 py-2.5 rounded-full font-medium transition-all duration-300 hover:shadow-lg hover:scale-105 transform active:scale-95 whitespace-nowrap shadow-md border border-blue-700/20 dark:border-blue-500/30";
+  const contactButtonClass = "bg-gradient-to-r from-blue-600 to-blue-800 dark:from-gray-700 dark:to-gray-900 text-white px-10 py-2.5 rounded-full font-medium transition-all duration-300 hover:shadow-lg hover:scale-105 transform active:scale-95 whitespace-nowrap shadow-md border border-blue-700/20 dark:border-gray-500/30";
   const mobileContactButtonClass = "block bg-gradient-to-r from-blue-600 to-blue-800 dark:from-blue-500 dark:to-indigo-700 text-white px-8 py-3 rounded-full font-medium text-center transition-all duration-300 hover:shadow-lg hover:scale-105 transform active:scale-95 w-full shadow-md border border-blue-700/20 dark:border-blue-500/30";
 
   return (
     <>
       {/* Main Header */}
-      <header 
+      <header
         className={`
           fixed top-0 left-0 w-full z-40
           transform transition-transform duration-300 ease-out will-change-transform
@@ -278,22 +278,18 @@ const Header = () => {
           shadow-md dark:shadow-gray-800/30
         `}
       >
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-32 flex items-center justify-between h-16 md:h-20">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-32 flex items-center justify-between ">
           {/* Logo with Next.js Image and Link to Homepage */}
-          <div className="flex items-center">
+          {/* <div className="flex items-center"> */}
             {mounted ? (
               <Link href="/" passHref>
-                <div className="relative w-16 h-10 md:w-28 md:h-16 mr-2 cursor-pointer">
+                <div className="relative w-16 h-10 md:w-28 md:h-16 mr-2 cursor-pointer my-0.5">
                   <Image
                     src="/SIT-logo2.png"
-                    alt="Logo"
+                    alt="SIT Logo"
                     fill
                     sizes="(max-width: 768px) 64px, 96px"
-                    style={{
-                      objectFit: "contain",
-                      objectPosition: "center",
-                    }}
-                    className="dark:invert"
+                    className="object-contain object-center dark:invert"
                     priority
                   />
                 </div>
@@ -301,7 +297,7 @@ const Header = () => {
             ) : (
               <div className="w-16 h-10 md:w-20 md:h-12 mr-2 bg-gray-100 dark:bg-gray-800 animate-pulse"></div>
             )}
-          </div>
+          {/* </div> */}
 
           {/* Desktop Navigation - Centered */}
           <nav className="hidden md:flex flex-1 justify-center">
@@ -336,9 +332,9 @@ const Header = () => {
                 >
                   Services{" "}
                   {isServicesOpen ? (
-                    <ChevronUp size={24}  className='pt-1'/>
+                    <ChevronUp size={24} className='pt-1' />
                   ) : (
-                    <ChevronDown size={24}  className='pt-1' />
+                    <ChevronDown size={24} className='pt-1' />
                   )}
                 </button>
                 {isServicesOpen && (
@@ -347,7 +343,7 @@ const Header = () => {
                     className="absolute left-1/2 top-full mt-2 transform -translate-x-1/2 w-full max-w-[80vw] md:w-[600px] lg:w-[900px] bg-white dark:bg-gray-800 shadow-lg dark:shadow-gray-700 rounded-lg z-30 transition-colors duration-300"
                     onMouseEnter={handleServicesMouseEnter}
                     onMouseLeave={handleServicesMouseLeave}
-                    onClick={handleCardClick} 
+                    onClick={handleCardClick}
                   >
                     <ServiceDropdown />
                   </div>
@@ -367,9 +363,9 @@ const Header = () => {
                 >
                   Solutions{" "}
                   {isSolutionsOpen ? (
-                    <ChevronUp size={24}  className='pt-1'/>
+                    <ChevronUp size={24} className='pt-1' />
                   ) : (
-                    <ChevronDown size={24}  className='pt-1' />
+                    <ChevronDown size={24} className='pt-1' />
                   )}
                 </button>
                 {isSolutionsOpen && (
@@ -378,7 +374,7 @@ const Header = () => {
                     className="absolute left-1/2 top-full mt-2 transform -translate-x-1/2 w-full max-w-[80vw] md:w-[600px] lg:w-[900px] bg-white dark:bg-gray-800 shadow-lg dark:shadow-gray-700 rounded-lg z-30 transition-colors duration-300"
                     onMouseEnter={handleSolutionsMouseEnter}
                     onMouseLeave={handleSolutionsMouseLeave}
-                    onClick={handleCardClick} 
+                    onClick={handleCardClick}
                   >
                     <SolutionDropdown />
                   </div>
@@ -548,7 +544,7 @@ const Header = () => {
           </ul>
         </div>
 
-        <div 
+        <div
           className="p-6 border-t border-gray-200 dark:border-gray-800 mt-auto"
         >
           <Link
