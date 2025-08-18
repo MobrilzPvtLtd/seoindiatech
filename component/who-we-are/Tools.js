@@ -50,7 +50,7 @@ const Tools = () => {
     {
       name: 'Zapier',
       src:
-        '/images/whoweare/zapier.png',
+        '/images/whoweare/zap.png',
       category: 'Automation',
       description: 'Tool for automating workflows between web applications',
     },
