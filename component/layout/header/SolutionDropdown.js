@@ -36,7 +36,7 @@ const SolutionCard = ({ title, description, icon, iconBg, color, slug, index }) 
           </h3>
         </div>
 
-        <p className="text-gray-600 dark:text-gray-300 mb-0 relative z-10 text-sm">
+        <p className="text-gray-600 dark:text-gray-300 mb-0 relative z-10 text-xs">
           {description}
         </p>
       </div>
