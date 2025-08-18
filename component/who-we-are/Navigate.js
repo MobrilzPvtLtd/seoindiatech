@@ -101,7 +101,7 @@ const Navigate = () => {
             <div className="relative w-xl rounded-2xl overflow-hidden shadow-xl border border-gray-200 dark:border-gray-700 transition-transform duration-500 hover:scale-[1.03] group">
               {/* Replace with Next.js Image for better optimization */}
               <Image
-                src="https://www.digitalyzeit.com/wp-content/uploads/2023/11/Untitled-3-1024x540.png"
+                src="/images/whoweare/grow.png"
                 alt="Navigate with Digitalyzeit"
                 width={1024}
                 height={640}

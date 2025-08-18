@@ -118,7 +118,7 @@ const Hero = () => {
             <div className="relative rounded-2xl overflow-hidden shadow-xl border border-gray-200 dark:border-gray-700 transition-all hover:shadow-2xl duration-300 transform hover:scale-[1.02]">
               {/* Using Next.js Image for better optimization */}
               <Image
-                src="/images/isometric_12.jpg"
+                src="/images/whoweare/start.png"
                 alt="Business Growth"
                 width={600}
                 height={500}

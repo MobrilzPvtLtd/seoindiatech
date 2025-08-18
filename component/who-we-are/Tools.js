@@ -7,7 +7,7 @@ const Tools = () => {
     {
       name: 'HubSpot',
       src:
-        'https://www.digitalyzeit.com/wp-content/uploads/2023/05/HubSpot-Logo.png',
+        '/images/whoweare/HubSpot-Logo.png',
       category: 'CRM & Marketing',
       description:
         'Complete CRM platform with marketing, sales, and service automation',
@@ -15,56 +15,56 @@ const Tools = () => {
     {
       name: 'Webflow',
       src:
-        'https://www.digitalyzeit.com/wp-content/uploads/2023/05/6361f668d294812aef98add0_webflow-logo.png',
+        '/images/whoweare/webflow-Logo.png',
       category: 'Website Builder',
       description: 'Powerful visual design platform for responsive websites',
     },
     {
       name: 'Mailchimp',
       src:
-        'https://www.digitalyzeit.com/wp-content/uploads/2023/05/Mailchimp-Logo-2018-present.png',
+        '/images/whoweare/Mailchimp-Logo.png',
       category: 'Email Marketing',
       description: 'Marketing automation platform for email campaigns',
     },
     {
       name: 'SimplyBook.me',
       src:
-        'https://www.digitalyzeit.com/wp-content/uploads/2023/05/SimplyBook-logo-1.png',
+        '/images/whoweare/SimplyBook-Logo.png',
       category: 'Appointment Scheduling',
       description: 'Online booking system for service-based businesses',
     },
     {
       name: 'ClickUp',
       src:
-        'https://www.digitalyzeit.com/wp-content/uploads/2023/05/clickup-logo-text.png',
+        '/images/whoweare/clickup-Logo.png',
       category: 'Project Management',
       description: 'All-in-one productivity platform for tasks and projects',
     },
     {
       name: 'Miro',
       src:
-        'https://www.digitalyzeit.com/wp-content/uploads/2023/05/miro-logo-vector.png',
+        '/images/whoweare/miro.png',
       category: 'Collaboration',
       description: 'Online collaborative whiteboard platform',
     },
     {
       name: 'Zapier',
       src:
-        'https://www.digitalyzeit.com/wp-content/uploads/2023/05/image1-1024x552.png',
+        '/images/whoweare/zapier.png',
       category: 'Automation',
       description: 'Tool for automating workflows between web applications',
     },
     {
       name: 'Kissflow',
       src:
-        'https://www.digitalyzeit.com/wp-content/uploads/2023/05/kissflow-hor.svg',
+        '/images/whoweare/kissflow.png',
       category: 'Workflow Management',
       description: 'Digital workplace for workflow and process automation',
     },
     {
       name: 'Keap',
       src:
-        'https://www.digitalyzeit.com/wp-content/uploads/2023/05/2560px-Logo_of_Keap_Company.svg-1024x478.png',
+        '/images/whoweare/keap-Logo.png',
       category: 'CRM & Automation',
       description: 'CRM, sales and marketing automation for small businesses',
     },

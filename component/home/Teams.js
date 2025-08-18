@@ -4,37 +4,37 @@ import { useEffect, useRef } from 'react';
 function Teams() {
     const teamLogos = [
         {
-            src: "https://www.digitalyzeit.com/wp-content/uploads/2024/07/diyrealestate_logo.jpeg",
+            src: "/images/home/logo1.png",
             alt: "DIY Real Estate",
             name: "DIY Real Estate"
         },
         {
-            src: "https://www.digitalyzeit.com/wp-content/uploads/2024/07/New-Project-1-2-e1681330049792.png",
+            src: "/images/home/logo2.png",
             alt: "Tech Project",
             name: "Tech Project"
         },
         {
-            src: "https://www.digitalyzeit.com/wp-content/uploads/2024/07/stayksa_logo.jpeg",
+            src: "/images/home/logo3.png",
             alt: "Stay KSA",
             name: "Stay KSA"
         },
         {
-            src: "https://www.digitalyzeit.com/wp-content/uploads/2024/07/creativity360pro_logo.jpeg",
+            src: "/images/home/logo4.png",
             alt: "Creativity 360 Pro",
             name: "Creativity 360 Pro"
         },
         {
-            src: "https://www.digitalyzeit.com/wp-content/uploads/2024/07/277564223_439538341365247_7258142149719093139_n.jpg",
+            src: "/images/home/logo5.png",
             alt: "Creative Agency",
             name: "Creative Agency"
         },
         {
-            src: "https://www.digitalyzeit.com/wp-content/uploads/2024/07/327548114_556602153061050_7036279599931781900_n.jpg",
+            src: "/images/home/logo6.png",
             alt: "Digital Solutions",
             name: "Digital Solutions"
         },
         {
-            src: "https://www.digitalyzeit.com/wp-content/uploads/2024/07/advyra_logo.jpeg",
+            src: "/images/home/intgra.png",
             alt: "Advyra",
             name: "Advyra"
         }
