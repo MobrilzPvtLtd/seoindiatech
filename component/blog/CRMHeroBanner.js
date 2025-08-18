@@ -32,11 +32,11 @@ const CRMHeroBanner = () => (
         </div>
         
         <h2 className="text-white font-bold text-3xl md:text-4xl lg:text-5xl text-center max-w-4xl leading-tight drop-shadow-md">
-          Command Your Business: <span className="text-blue-300">Navigating CRM</span> and Tools for Optimal Management
+          Master Your Business: <span className="text-blue-300">Harnessing CRM</span> and Tools for Seamless Management
         </h2>
         
         <p className="text-gray-200 text-center mt-4 max-w-2xl text-lg">
-          Streamline your operations and boost productivity with our powerful CRM solutions designed for modern businesses.
+          Empower your team with smart CRM tools that boost productivity and keep operations running smoothly.
         </p>
         
         {/* CTA buttons */}

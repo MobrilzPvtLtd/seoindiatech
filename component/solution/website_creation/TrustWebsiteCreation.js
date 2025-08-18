@@ -239,7 +239,8 @@ export default function TrustWebsiteCreation() {
               Fast Development
             </h4>
             <p className="text-gray-600 dark:text-gray-400">
-              Our efficient workflow ensures your website is up and running in minimal time.
+              Our efficient workflow ensures your website is up and running in
+              minimal time.
             </p>
           </div>
 
@@ -251,7 +252,8 @@ export default function TrustWebsiteCreation() {
               Seamless Integration
             </h4>
             <p className="text-gray-600 dark:text-gray-400">
-              Centralize your business tools to streamline operations and improve collaboration.
+              Centralize your business tools to streamline operations and
+              improve collaboration.
             </p>
           </div>
 
@@ -263,7 +265,8 @@ export default function TrustWebsiteCreation() {
               Global Reach
             </h4>
             <p className="text-gray-600 dark:text-gray-400">
-              Grow your business with a website that reaches and connects with customers globally.
+              Grow your business with a website that reaches and connects with
+              customers globally.
             </p>
           </div>
         </div>

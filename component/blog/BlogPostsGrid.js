@@ -20,7 +20,7 @@ const BlogPostsGrid = () => (
                     </Link>
                 </div>
                 <p className="text-gray-600 dark:text-gray-300 max-w-2xl">
-                    Stay up-to-date with the latest strategies, tools, and insights for growing your business.
+                    Keep your business future-ready with fresh strategies and smart tools.
                 </p>
                 <span className="absolute left-0 bottom-0 w-24 h-1 bg-gradient-to-r from-blue-600 to-blue-400 dark:from-blue-500 dark:to-blue-300 rounded-full"></span>
             </div>
@@ -104,7 +104,7 @@ const BlogPostsGrid = () => (
             <div className="hidden mt-16 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 rounded-2xl p-8 md:p-10 text-center">
                 <h3 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white mb-2">Get the latest articles in your inbox</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-6 max-w-xl mx-auto">
-                    Subscribe to our newsletter and never miss out on the latest insights, tips, and trends.
+                    Subscribe now and unlock fresh insights, smart tips, and growth-driven trends every week.
                 </p>
                 <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
                     <input
