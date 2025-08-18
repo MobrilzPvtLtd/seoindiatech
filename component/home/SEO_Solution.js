@@ -162,7 +162,7 @@ const SEOSolution = () => {
             </header>
             <div className="rounded-lg overflow-hidden hover:scale-[1.02] transition-transform duration-300">
               <Image
-                src={'/SEO-agency.jpg'}
+                src={'/images/subscribtion.png'}
                 width={500}
                 height={300}
                 alt="Email Verification"
@@ -184,7 +184,7 @@ const SEOSolution = () => {
             </header>
             <div className="rounded-lg overflow-hidden hover:scale-[1.02] transition-transform duration-300">
               <Image
-                src={'/SEO-agency1.jpg'}
+                src={'/images/ORGANIC.png'}
                 width={500}
                 height={300}
                 alt="Competitor Analysis"
@@ -206,7 +206,7 @@ const SEOSolution = () => {
             </header>
             <div className="rounded-lg overflow-hidden hover:scale-[1.02] transition-transform duration-300">
               <Image
-                src={'/SEO-agency2.jpg'}
+                src={'/images/score.png'}
                 width={500}
                 height={300}
                 alt="Revenue Monitoring"

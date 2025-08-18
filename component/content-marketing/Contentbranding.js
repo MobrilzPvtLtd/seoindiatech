@@ -64,7 +64,7 @@ const Contentbranding = () => {
           {/* CTA buttons */}
           <div className='flex flex-col sm:flex-row justify-center gap-4 mt-8'>
             <Link href="/contactus">
-            <button className='cursor-pointer bg-gradient-to-r from-blue-600 to-blue-800 hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-700 text-white px-6 py-3 rounded-full text-base font-medium transition flex items-center justify-center group shadow-lg'>
+            <button className='cursor-pointer bg-gradient-to-r from-blue-600 to-blue-800 dark:from-gray-800 dark:to-gray-900 hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-700 text-white px-6 py-3 rounded-full text-base font-medium transition flex items-center justify-center group shadow-lg'>
               Get Started Now
               <ArrowRight className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
             </button>

@@ -31,7 +31,7 @@ const Hero = () => {
 
           <div className="flex items-center justify-center md:justify-start w-full md:w-auto">
             <Link href="/contactus" className="inline-block">
-              <button className="cursor-pointer bg-gradient-to-r from-blue-600 to-blue-800 dark:from-blue-500 dark:to-indigo-700 text-white px-8 py-3.5 rounded-full font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105 transform active:scale-95 shadow-md border border-blue-700/20 dark:border-blue-500/30">
+              <button className="cursor-pointer dark:from-gray-800 dark:to-gray-900 bg-gradient-to-r from-blue-600 to-blue-800 text-white px-8 py-3.5 rounded-full font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105 transform active:scale-95 shadow-md border border-blue-700/20 dark:border-gray-500/30">
                 Get started now
               </button>
             </Link>

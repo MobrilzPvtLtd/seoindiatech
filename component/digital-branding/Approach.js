@@ -133,7 +133,7 @@ const Approach = () => {
           <p className="text-gray-700 dark:text-gray-300 mb-6 max-w-2xl mx-auto">
             Ready to turn your brand into a powerful digital presence that delivers results?
           </p>
-          <button className="cursor-pointer bg-gradient-to-r from-blue-600 to-blue-800 hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-600 text-white font-semibold py-3 px-8 rounded-full transition-colors">
+          <button className="cursor-pointer bg-gradient-to-r from-blue-600 to-blue-800 hover:bg-blue-700 dark:from-gray-800 dark:to-gray-900 dark:hover:bg-blue-600 text-white font-semibold py-3 px-8 rounded-full transition-colors">
             Schedule a Brand Strategy Call
           </button>
         </div>

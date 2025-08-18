@@ -8,7 +8,7 @@ const Testimonial = () => {
       name: "Sarah K.",
       role: "UX Designer",
       company: "@Brello",
-      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face&auto=format&q=80",
+      avatar: "/images/sarah.png",
       rating: 5,
       testimonial: "The Anima Landing Page UI Kit saved me hours with its intuitive design and simple customization. A fantastic resource I highly recommend!"
     },
@@ -17,7 +17,7 @@ const Testimonial = () => {
       name: "Michael L.",
       role: "Creative Director",
       company: "@Yo",
-      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face&auto=format&q=80",
+      avatar: "/images/michael.png",
       rating: 4,
       testimonial: "The Landing Page UI Kit has been a game changer for my agency. The pre-designed components and templates have helped us deliver projects faster and with more consistency. Great job!"
     },
@@ -26,7 +26,7 @@ const Testimonial = () => {
       name: "Lauren M.",
       role: "UI Designer",
       company: "@Boo",
-      avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face&auto=format&q=80",
+      avatar: "/images/lauren.png",
       rating: 5,
       testimonial: "Anima's Landing Page UI Kit has become a staple in my design toolkit. Whether I'm working on a new project or need to make updates to an existing one, this kit has everything I need to get the job done quickly and efficiently."
     }

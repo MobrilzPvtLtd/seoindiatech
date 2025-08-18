@@ -133,7 +133,7 @@ const Ppchero = () => {
                 .getElementById('PPCform')
                 ?.scrollIntoView({ behavior: 'smooth' })
             }}
-            className="cursor-pointer bg-gradient-to-r from-blue-600 to-blue-800 hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-600 text-white font-bold text-lg px-6 py-3 rounded-full shadow-md transition-all duration-300 flex items-center group"
+            className="cursor-pointer bg-gradient-to-r from-blue-600 to-blue-800 hover:bg-blue-700 dark:from-gray-800 dark:to-gray-900 dark:hover:bg-blue-600 text-white font-bold text-lg px-6 py-3 rounded-full shadow-md transition-all duration-300 flex items-center group"
           >
             Get Your Custom PPC Strategy
             <ArrowRight className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />

@@ -262,8 +262,8 @@ const Header = () => {
   };
 
   // Contact button styling
-  const contactButtonClass = "bg-gradient-to-r from-blue-600 to-blue-800 dark:from-gray-700 dark:to-gray-900 text-white px-10 py-2.5 rounded-full font-medium transition-all duration-300 hover:shadow-lg hover:scale-105 transform active:scale-95 whitespace-nowrap shadow-md border border-blue-700/20 dark:border-gray-500/30";
-  const mobileContactButtonClass = "block bg-gradient-to-r from-blue-600 to-blue-800 dark:from-blue-500 dark:to-indigo-700 text-white px-8 py-3 rounded-full font-medium text-center transition-all duration-300 hover:shadow-lg hover:scale-105 transform active:scale-95 w-full shadow-md border border-blue-700/20 dark:border-blue-500/30";
+  const contactButtonClass = "bg-gradient-to-r from-blue-600 to-blue-800 dark:from-gray-800 dark:to-gray-900 text-white px-10 py-2.5 rounded-full font-medium transition-all duration-300 hover:shadow-lg hover:scale-105 transform active:scale-95 whitespace-nowrap shadow-md border border-blue-700/20 dark:border-gray-500/30";
+  const mobileContactButtonClass = "block bg-gradient-to-r from-blue-600 to-blue-800 dark:from-gray-800 dark:to-gray-900 text-white px-8 py-3 rounded-full font-medium text-center transition-all duration-300 hover:shadow-lg hover:scale-105 transform active:scale-95 w-full shadow-md border border-blue-700/20 dark:border-gray-500/30";
 
   return (
     <>

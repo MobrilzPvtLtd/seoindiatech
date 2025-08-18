@@ -113,7 +113,7 @@ const NetworkSection = () => {
           </p>
           
           <Link href="/services/digital-branding" className="flex justify-center mt-10">
-            <button className="cursor-pointer bg-gradient-to-r from-blue-600 to-blue-800 dark:bg-blue-600 hover:bg-blue-800 dark:hover:bg-blue-700 text-white font-semibold px-8 py-4 rounded-full transition-all duration-300 shadow-md hover:shadow-lg flex items-center">
+            <button className="cursor-pointer bg-gradient-to-r from-blue-600 to-blue-800 dark:from-gray-800 dark:to-gray-900 hover:bg-blue-800 dark:hover:bg-gray-900 text-white font-semibold px-8 py-4 rounded-full transition-all duration-300 shadow-md hover:shadow-lg flex items-center">
               Learn More
               <ArrowRight className="ml-2 w-5 h-5" />
             </button>

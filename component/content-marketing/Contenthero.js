@@ -39,7 +39,7 @@ const Contenthero = () => {
 
           <div className="flex flex-wrap gap-4 pt-2">
             <Link href="/contactus">
-              <button className="cursor-pointer bg-gradient-to-r from-blue-600 to-blue-800 hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-700 text-white px-6 py-3 rounded-full font-semibold transition flex items-center group shadow-md">
+              <button className="cursor-pointer bg-gradient-to-r from-blue-600 to-blue-800 hover:bg-blue-800 dark:from-gray-800 dark:to-gray-900 dark:hover:bg-blue-700 text-white px-6 py-3 rounded-full font-semibold transition flex items-center group shadow-md">
                 Get started now
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>

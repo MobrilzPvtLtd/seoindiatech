@@ -51,13 +51,13 @@ const Hero = () => {
             {/* Call to Action Buttons */}
             <div className="flex flex-wrap gap-4 mb-14">
               <Link href="/contactus">
-                <button className="cursor-pointer px-8 py-3.5 bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-500 dark:to-blue-600 text-white font-medium rounded-full shadow-md hover:shadow-lg transition-all duration-300 flex items-center gap-2 hover:scale-105 transform active:scale-95">
+                <button className="cursor-pointer px-8 py-3.5 bg-gradient-to-r from-blue-600 to-blue-700 dark:from-gray-800 dark:to-gray-900 text-white font-medium rounded-full shadow-md hover:shadow-lg transition-all duration-300 flex items-center gap-2 hover:scale-105 transform active:scale-95">
                   Get Started
                   <ArrowRight className="w-4 h-4" />
                 </button>
               </Link>
               <Link href="/blog">
-                <button className="cursor-pointer px-8 py-3.5 border border-gray-300 dark:border-gray-600 text-gray-800 dark:text-gray-200 font-medium rounded-full hover:bg-gray-50 dark:hover:bg-gray-800 transition-all duration-300">
+                <button className="hidden cursor-pointer px-8 py-3.5 border border-gray-300 dark:border-gray-600 text-gray-800 dark:text-gray-200 font-medium rounded-full hover:bg-gray-50 dark:hover:bg-gray-800 transition-all duration-300">
                   Learn More
                 </button>
               </Link>

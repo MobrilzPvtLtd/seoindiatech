@@ -17,14 +17,14 @@ function Automation() {
         subtitle="We Know Our Stuff!"
         buttonText="Let Us Help"
         bgGradient="bg-gradient-to-r from-blue-50 to-blue-200 dark:from-gray-900 dark:to-gray-800"
-      // buttonGradient="bg-gradient-to-r from-purple-600 to-pink-600"
+        buttonGradient="bg-gradient-to-r from-blue-700 to-blue-900 dark:from-gray-800 dark:to-gray-900"
       />
       <TrustAutomation />
       <TrustUs
         title="Ready to get started?"
         buttonText="Contact Us Now!"
         bgGradient="bg-gradient-to-r from-blue-50 to-blue-200 dark:from-gray-900 dark:to-gray-800"
-      // buttonGradient="bg-gradient-to-r from-purple-600 to-pink-600"
+        buttonGradient="bg-gradient-to-r from-blue-700 to-blue-900 dark:from-gray-800 dark:to-gray-900"
       />
       <AutomationBenefits />
     </>

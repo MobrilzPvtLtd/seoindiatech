@@ -54,7 +54,7 @@ function SEO_Today() {
 
         <div className="relative mt-10 flex flex-col sm:flex-row justify-center gap-4">
           <Link href="/services/digital-branding">
-            <button className="cursor-pointer group bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-500 dark:to-indigo-600 text-white font-semibold py-3.5 px-8 rounded-full shadow-lg hover:shadow-xl hover:shadow-blue-500/20 dark:hover:shadow-blue-500/10 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-600 transition-all duration-300 transform hover:scale-105 active:scale-95">
+            <button className="cursor-pointer group bg-gradient-to-r from-blue-600 to-blue-700 dark:from-gray-800 dark:to-gray-900 text-white font-semibold py-3.5 px-8 rounded-full shadow-lg hover:shadow-xl hover:shadow-blue-500/20 dark:hover:shadow-blue-500/10 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-600 transition-all duration-300 transform hover:scale-105 active:scale-95">
               Learn More
               <ArrowRight className="inline-block ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
             </button>

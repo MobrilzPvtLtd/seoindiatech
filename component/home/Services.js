@@ -72,12 +72,12 @@ const Services = () => {
           </div>
 
           {/* Right side description card */}
-          <div className="bg-gradient-to-br from-gray-900 to-blue-900 dark:from-blue-900 dark:to-indigo-900 text-white p-8 rounded-2xl shadow-lg flex flex-col justify-between">
+          <div className="bg-gradient-to-br from-gray-900 to-blue-900 dark:from-gray-700 dark:to-gray-800 text-white p-8 rounded-2xl shadow-lg flex flex-col justify-between">
             <div>
-              <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-white dark:from-blue-300 dark:to-white">
+              <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-white dark:from-gray-300 dark:to-white">
                 Our Services
               </h1>
-              <p className="mb-8 text-sm sm:text-base leading-relaxed text-blue-100 dark:text-blue-200">
+              <p className="mb-8 text-sm sm:text-base leading-relaxed text-blue-100 dark:text-gray-400">
                 At SEO India Tech, we deliver powerful digital marketing
                 solutions designed to elevate your brand and drive measurable
                 success. Our team of experts crafts highly customized,
@@ -89,7 +89,7 @@ const Services = () => {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/contactus">
-                <button className="cursor-pointer bg-gradient-to-r from-blue-600 to-blue-800 dark:from-blue-500 dark:to-indigo-700 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105 transform active:scale-95 shadow-md border border-blue-700/20 dark:border-blue-500/30 text-center">
+                <button className="cursor-pointer bg-gradient-to-r from-blue-600 to-blue-800 dark:from-gray-800 dark:to-gray-900 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105 transform active:scale-95 shadow-md border border-blue-700/20 dark:border-gray-500/30 text-center">
                   Get Started
                 </button>
               </Link>

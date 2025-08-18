@@ -49,7 +49,7 @@ const Solutions = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/services/ui-ux-design">
-                  <button className="cursor-pointer bg-gradient-to-r from-blue-600 to-blue-800 dark:from-blue-500 dark:to-indigo-700 text-white px-8 py-3 rounded-full font-medium flex items-center justify-center gap-2 transition-all duration-300 hover:shadow-lg hover:scale-105 transform active:scale-95">
+                  <button className="cursor-pointer bg-gradient-to-r from-blue-600 to-blue-800 dark:from-gray-800 dark:to-gray-900 text-white px-8 py-3 rounded-full font-medium flex items-center justify-center gap-2 transition-all duration-300 hover:shadow-lg hover:scale-105 transform active:scale-95">
                     Learn more
                     <ArrowRight size={18} />
                   </button>
@@ -92,7 +92,7 @@ const Solutions = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/services/digital-branding">
-                  <button className="cursor-pointer bg-gradient-to-r from-blue-600 to-blue-800 dark:from-blue-500 dark:to-indigo-700 text-white px-8 py-3 rounded-full font-medium flex items-center justify-center gap-2 transition-all duration-300 hover:shadow-lg hover:scale-105 transform active:scale-95">
+                  <button className="cursor-pointer bg-gradient-to-r from-blue-600 to-blue-800 dark:from-gray-800 dark:to-gray-900 text-white px-8 py-3 rounded-full font-medium flex items-center justify-center gap-2 transition-all duration-300 hover:shadow-lg hover:scale-105 transform active:scale-95">
                     Learn more
                     <ArrowRight size={18} />
                   </button>

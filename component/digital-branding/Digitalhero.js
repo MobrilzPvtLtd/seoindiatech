@@ -42,7 +42,7 @@ const Digitalhero = () => {
                   .getElementById('Digitalform')
                   ?.scrollIntoView({ behavior: 'smooth' })
               }}
-              className="cursor-pointer bg-gradient-to-r from-blue-600 to-blue-800 dark:bg-blue-700 text-white px-6 py-3 rounded-full text-base hover:bg-blue-700 dark:hover:bg-blue-600 transition-colors flex items-center group"
+              className="cursor-pointer bg-gradient-to-r from-blue-600 to-blue-800 dark:from-gray-800 dark:to-gray-900 text-white px-6 py-3 rounded-full text-base hover:bg-blue-700 dark:hover:bg-blue-600 transition-colors flex items-center group"
             >
               Get Started now
               <ArrowRight className="ml-2 w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />

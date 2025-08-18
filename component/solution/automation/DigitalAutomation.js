@@ -109,7 +109,7 @@ const DigitalAutomation = () => {
                 solutions?
               </p>
               <Link href="/contactus">
-                <button className="cursor-pointer bg-gradient-to-r from-blue-600 to-blue-800 hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-600 text-white px-6 py-3 rounded-full font-medium transition-all duration-300 shadow-md flex items-center mx-auto group">
+                <button className="cursor-pointer bg-gradient-to-r from-blue-600 to-blue-800 hover:bg-blue-700 dark:from-gray-800 dark:to-gray-900 dark:hover:bg-blue-600 text-white px-6 py-3 rounded-full font-medium transition-all duration-300 shadow-md flex items-center mx-auto group">
                   Get Started with Automation
                   <ArrowRight className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
                 </button>

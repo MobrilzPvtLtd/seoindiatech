@@ -114,7 +114,7 @@ const Socialmediastrategies = () => {
         <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
           <a
             href="#strategies"
-            className="px-8 py-3 bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-500 dark:to-blue-600 text-white font-medium rounded-full shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+            className="px-8 py-3 bg-gradient-to-r from-blue-600 to-blue-700 dark:from-gray-800 dark:to-gray-900 text-white font-medium rounded-full shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
           >
             Explore Strategies
           </a>
@@ -159,13 +159,13 @@ const Socialmediastrategies = () => {
 
       {/* Call to Action Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-700 dark:to-indigo-800 rounded-2xl p-8 sm:p-12 shadow-xl">
+        <div className="bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-gray-700 dark:to-gray-800 rounded-2xl p-8 sm:p-12 shadow-xl">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="mb-8 md:mb-0 md:mr-8 text-center md:text-left">
-              <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
+              <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4 dark:text-gray-200">
                 Ready to Transform Your Social Media Presence?
               </h2>
-              <p className="text-blue-100 dark:text-blue-200 max-w-xl">
+              <p className="text-blue-100 dark:text-gray-400 max-w-xl">
                 Let's discuss how our tailored social media strategies can help
                 your brand connect with your audience and achieve measurable
                 results.
@@ -174,7 +174,7 @@ const Socialmediastrategies = () => {
             <div className="flex-shrink-0">
               <a
                 href="/contactus"
-                className="inline-block px-8 py-4 bg-white dark:bg-gray-800 text-blue-600 dark:text-blue-400 font-medium rounded-full shadow-md hover:bg-gray-50 dark:hover:bg-gray-700 transform hover:scale-105 transition-all duration-300"
+                className="inline-block px-8 py-4 bg-white bg-gradient-to-r dark:from-gray-800 dark:to-gray-900 text-blue-600 dark:text-gray-200 font-medium rounded-full shadow-md hover:bg-gray-50 dark:hover:bg-gray-700 transform hover:scale-105 transition-all duration-300"
               >
                 Schedule a Consultation
               </a>
