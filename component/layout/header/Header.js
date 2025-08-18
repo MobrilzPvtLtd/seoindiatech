@@ -519,7 +519,7 @@ const Header = () => {
                   {solutions.map((solution) => (
                     <li key={solution.slug}>
                       <Link
-                        href={`/solutions/${solution.slug}`}
+                        href={`/solution/${solution.slug}`}
                         className="flex items-center text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 px-4 py-2 rounded-md"
                         onClick={() => setIsMenuOpen(false)}
                       >

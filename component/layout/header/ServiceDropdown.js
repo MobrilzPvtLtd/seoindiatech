@@ -57,7 +57,7 @@ export default function ServiceDropdown() {
       title: 'Social Media Marketing',
       description: 'Drive brand visibility and engage your target audience through strategic social media campaigns and content.',
       icon: <Megaphone className="w-3 h-3 text-white" />,
-      iconBg: 'bg-orange-500 dark:bg-orange-600',
+      iconBg: 'bg-orange-500 dark:bg-gray-700',
       color: 'bg-orange-500 dark:bg-orange-600',
       slug: 'social-media-marketing'
     },
@@ -65,7 +65,7 @@ export default function ServiceDropdown() {
       title: 'Innovative UI/UX Solutions',
       description: 'Design and develop intuitive, user-friendly interfaces to enhance user experience and engagement.',
       icon: <Palette className="w-3 h-3 text-white" />,
-      iconBg: 'bg-purple-500 dark:bg-purple-600',
+      iconBg: 'bg-purple-500 dark:bg-gray-700',
       color: 'bg-purple-500 dark:bg-purple-600',
       slug: 'ui-ux-design'
     },
@@ -73,7 +73,7 @@ export default function ServiceDropdown() {
       title: 'Digital Branding',
       description: 'Build a strong, cohesive brand identity across digital platforms to attract and retain your audience.',
       icon: <Star className="w-3 h-3 text-white" />,
-      iconBg: 'bg-blue-500 dark:bg-blue-600',
+      iconBg: 'bg-blue-500 dark:bg-gray-700',
       color: 'bg-blue-500 dark:bg-blue-600',
       slug: 'digital-branding'
     },
@@ -81,7 +81,7 @@ export default function ServiceDropdown() {
       title: 'Content Marketing',
       description: 'Create and distribute valuable, relevant content to attract and engage your target audience effectively.',
       icon: <PenTool className="w-3 h-3 text-white" />,
-      iconBg: 'bg-green-500 dark:bg-green-600',
+      iconBg: 'bg-green-500 dark:bg-gray-700',
       color: 'bg-green-500 dark:bg-green-600',
       slug: 'content-marketing'
     },
@@ -89,7 +89,7 @@ export default function ServiceDropdown() {
       title: 'Search Engine Optimization',
       description: 'Optimize your website to rank higher on search engines, increasing visibility and organic traffic.',
       icon: <Search className="w-3 h-3 text-white" />,
-      iconBg: 'bg-yellow-500 dark:bg-yellow-600',
+      iconBg: 'bg-yellow-500 dark:bg-gray-700',
       color: 'bg-yellow-500 dark:bg-yellow-600',
       slug: 'seo'
     },
@@ -97,7 +97,7 @@ export default function ServiceDropdown() {
       title: 'PPC Advertising',
       description: 'Run targeted pay-per-click campaigns to drive traffic and conversions with measurable results.',
       icon: <TrendingUp className="w-3 h-3 text-white" />,
-      iconBg: 'bg-red-500 dark:bg-red-600',
+      iconBg: 'bg-red-500 dark:bg-gray-700',
       color: 'bg-red-500 dark:bg-red-600',
       slug: 'ppc-advertising'
     },

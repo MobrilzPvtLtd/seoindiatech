@@ -14,7 +14,7 @@ const Journey = () => {
         <div className="w-full md:w-1/2 relative">
           <div className="relative rounded-2xl overflow-hidden shadow-xl border border-gray-200 dark:border-gray-700">
             <Image
-              src="https://www.digitalyzeit.com/wp-content/uploads/2023/12/Grey-Black-Fresh-Neutrals-Download-Page-Website-Download-Page.png"
+              src="/images/whoweare/aboutseo.png"
               alt="Our Journey at Digitalyzeit"
               width={800}
               height={600}

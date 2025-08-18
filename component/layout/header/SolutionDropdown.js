@@ -50,7 +50,7 @@ export default function SolutionDropdown() {
       title: 'Automation', 
       description: 'Automation streamlines tasks, boosting efficiency and reducing errors, so your team can focus on strategic goals.', 
       icon: <Settings className="w-5 h-5 text-white" />,
-      iconBg: 'bg-blue-500 dark:bg-blue-600',
+      iconBg: 'bg-blue-500 dark:bg-gray-700',
       color: 'bg-blue-500 dark:bg-blue-600',
       slug: 'automation'
     },
@@ -58,7 +58,7 @@ export default function SolutionDropdown() {
       title: 'Workflow', 
       description: 'Workflow streamlines and automates tasks, ensuring a smooth, efficient, and organized process from start to finish.', 
       icon: <ClipboardList className="w-5 h-5 text-white" />,
-      iconBg: 'bg-green-500 dark:bg-green-600',
+      iconBg: 'bg-green-500 dark:bg-gray-700',
       color: 'bg-green-500 dark:bg-green-600',
       slug: 'workflow'
     },
@@ -66,7 +66,7 @@ export default function SolutionDropdown() {
       title: 'Promotion & Ads', 
       description: 'Drive brand visibility and attract your target audience through strategic messaging and impactful campaigns.', 
       icon: <Megaphone className="w-5 h-5 text-white" />,
-      iconBg: 'bg-orange-500 dark:bg-orange-600',
+      iconBg: 'bg-orange-500 dark:bg-gray-700',
       color: 'bg-orange-500 dark:bg-orange-600',
       slug: 'promotion-and-ads'
     },
@@ -74,7 +74,7 @@ export default function SolutionDropdown() {
       title: 'CRM & Tools', 
       description: 'CRM and management tools optimize customer relationships and streamline operations for better efficiency and growth.', 
       icon: <Users className="w-5 h-5 text-white" />,
-      iconBg: 'bg-purple-500 dark:bg-purple-600',
+      iconBg: 'bg-purple-500 dark:bg-gray-700',
       color: 'bg-purple-500 dark:bg-purple-600',
       slug: 'crm-and-tools'
     },
@@ -82,7 +82,7 @@ export default function SolutionDropdown() {
       title: 'Market Research', 
       description: 'Market research provides valuable insights into consumer behavior and emerging trends, guiding smart business decisions.', 
       icon: <Search className="w-5 h-5 text-white" />,
-      iconBg: 'bg-yellow-500 dark:bg-yellow-600',
+      iconBg: 'bg-yellow-500 dark:bg-gray-700',
       color: 'bg-yellow-500 dark:bg-yellow-600',
       slug: 'market-research'
     },
@@ -90,7 +90,7 @@ export default function SolutionDropdown() {
       title: 'Website Creation', 
       description: 'Website creation involves designing and developing an engaging, functional online presence tailored to your brand\'s needs.', 
       icon: <Globe className="w-5 h-5 text-white" />,
-      iconBg: 'bg-red-500 dark:bg-red-600',
+      iconBg: 'bg-red-500 dark:bg-gray-700',
       color: 'bg-red-500 dark:bg-red-600',
       slug: 'website-creation'
     },

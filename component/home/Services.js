@@ -94,7 +94,7 @@ const Services = () => {
                 </button>
               </Link>
               <Link href="/blog">
-                <button className="cursor-pointer bg-transparent text-white px-6 py-3 rounded-full font-semibold hover:bg-white/10 transition-all duration-300 border border-white/20 text-center">
+                <button className="hidden cursor-pointer bg-transparent text-white px-6 py-3 rounded-full font-semibold hover:bg-white/10 transition-all duration-300 border border-white/20 text-center">
                   Learn More
                 </button>
               </Link>
