@@ -10,11 +10,11 @@ const ServiceHero = () => {
       alt: "Social Media Marketing Strategy"
     },
     {
-      src: "https://www.digitalyzeit.com/wp-content/uploads/2024/08/Growth-Marketing-Unlocking-Image-2.webp",
+      src: "/images/services/your.png",
       alt: "Content Creation Process"
     },
     {
-      src: "https://www.digitalyzeit.com/wp-content/uploads/2024/08/Growth-Marketing-Meaningful-Image-1.webp",
+      src: "/images/services/follow.png",
       alt: "Analytics Dashboard"
     }
   ];

@@ -28,15 +28,15 @@ const SolutionCard = ({ title, description, icon, iconBg, color, slug, index }) 
         <div className={`absolute top-0 right-0 w-20 h-20 ${color} opacity-10 transform translate-x-10 -translate-y-10 rotate-45`}></div>
 
         <div className="flex items-center mb-4 relative z-10">
-          <div className={`${iconBg} w-10 h-10 flex items-center justify-center rounded-lg mr-4 shadow-sm transform transition-transform duration-300 ${isHovered ? 'rotate-[-5deg] scale-110' : ''}`}>
+          <div className={`${iconBg} w-8 h-8 flex items-center justify-center rounded-lg mr-4 shadow-sm transform transition-transform duration-300 ${isHovered ? 'rotate-[-5deg] scale-110' : ''}`}>
             {icon}
           </div>
-          <h3 className={`text-lg font-semibold text-gray-800 dark:text-white transition-colors ${isHovered ? 'text-blue-600 dark:text-blue-400' : ''}`}>
+          <h3 className={`text-md font-semibold text-gray-800 dark:text-white transition-colors ${isHovered ? 'text-blue-600 dark:text-blue-400' : ''}`}>
             {title}
           </h3>
         </div>
 
-        <p className="text-gray-600 dark:text-gray-300 mb-0 relative z-10 text-xs">
+        <p className="text-gray-600 dark:text-gray-300 mb-0 relative z-10 text-sm">
           {description}
         </p>
       </div>

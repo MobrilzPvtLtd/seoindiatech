@@ -37,7 +37,7 @@ const ServiceCard = ({ title, description, icon, iconBg, color, slug, index }) =
           </h3>
         </div>
 
-        <p className="text-gray-600 dark:text-gray-300 text-xs relative z-10">
+        <p className="text-gray-600 dark:text-gray-300 text-sm relative z-10">
           {description}
         </p>
 

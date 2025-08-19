@@ -20,7 +20,7 @@ const Manage = () => {
           <div className="w-full md:w-1/3 max-w-sm">
             <div className="relative overflow-hidden rounded-xl">
               <Image
-                src="https://www.digitalyzeit.com/wp-content/uploads/2024/08/Growth-Marketing-Place-Image-2.webp"
+                src="/images/services/trend1.png"
                 alt="Research"
                 width={500}
                 height={350}
@@ -37,7 +37,7 @@ const Manage = () => {
           <div className="w-full md:w-1/3 max-w-sm">
             <div className="relative overflow-hidden rounded-xl">
               <Image
-                src="https://www.digitalyzeit.com/wp-content/uploads/2024/08/Growth-Marketing-Place-Image-1.webp"
+                src="/images/services/planning.png"
                 alt="Planning"
                 width={500}
                 height={350}
