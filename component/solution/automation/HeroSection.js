@@ -119,7 +119,7 @@ export default function HeroSection() {
                   className={`group border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 hover:border-transparent dark:hover:border-transparent p-4 md:p-6 rounded-xl transition-all duration-300 shadow-sm hover:shadow-md ${benefit.hoverClass}`}
                 >
                   <div className="flex gap-4">
-                    <div className="p-2 bg-gray-100 dark:bg-gray-700 rounded-lg transition-colors duration-300 group-hover:bg-white dark:group-hover:bg-gray-900">
+                    <div className="p-2 bg-gray-100 dark:bg-gray-700 rounded-lg transition-colors duration-300 group-hover:bg-white dark:group-hover:bg-gray-900 h-full">
                       {benefit.icon}
                     </div>
                     <div>

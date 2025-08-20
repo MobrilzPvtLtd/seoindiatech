@@ -87,7 +87,7 @@ const Digitalhero = () => {
         ].map((item, index) => (
           <div
             key={index}
-            className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl border border-gray-100 dark:border-gray-700"
+            className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl border border-gray-100 dark:border-gray-700 hover:scale-102 transition duration-300 hover:border-blue-200 dark:hover:border-blue-700"
           >
             <div className="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center mb-4">
               <span className="text-blue-700 dark:text-blue-400 font-bold">

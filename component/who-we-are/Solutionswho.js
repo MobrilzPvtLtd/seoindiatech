@@ -8,6 +8,7 @@ import {
   Speaker,
   BarChart3,
 } from 'lucide-react'
+import Link from 'next/link'
 
 const Solutionswho = () => {
   const solutions = [
@@ -17,6 +18,7 @@ const Solutionswho = () => {
         'We partner with you to build a custom workflow for your business and provide the strategies you need to achieve sustainable growth.',
       tag: true,
       icon: <LayoutGrid className="w-6 h-6" />,
+      url: '/solution/workflow'
     },
     {
       title: 'Automation',
@@ -24,6 +26,7 @@ const Solutionswho = () => {
         'Choose the right technology to automate your work, so you can streamline your operations and drive growth.',
       tag: true,
       icon: <Zap className="w-6 h-6" />,
+      url: '/solution/automation'
     },
     {
       title: 'Market Research',
@@ -31,6 +34,7 @@ const Solutionswho = () => {
         'We build your strategy by understanding market needs, creating audience personas, and defining your go-to-market approach.',
       tag: false,
       icon: <LineChart className="w-6 h-6" />,
+      url: '/solution/market-research'
     },
     {
       title: 'Website Creation',
@@ -38,6 +42,7 @@ const Solutionswho = () => {
         'We specialize in creating intuitive UI/UX design, enhancing website layouts, and improving user experience for optimal performance.',
       tag: false,
       icon: <Globe className="w-6 h-6" />,
+      url: '/solution/website-creation'
     },
     {
       title: 'Promotion and Advertising',
@@ -45,6 +50,7 @@ const Solutionswho = () => {
         'Attract your ideal audience and drive growth by effectively marketing your products, brand, or company with our strategic approach.',
       tag: false,
       icon: <Speaker className="w-6 h-6" />,
+      url: '/solution/promotion-and-ads'
     },
     {
       title: 'CRM & Management tools',
@@ -52,6 +58,7 @@ const Solutionswho = () => {
         'We leverage industry-leading tools to help you organize your business and achieve your strategic objectives.',
       tag: false,
       icon: <BarChart3 className="w-6 h-6" />,
+      url: '/solution/crm-and-tools'
     },
   ]
 
@@ -120,10 +127,12 @@ const Solutionswho = () => {
                 </div>
 
                 {/* Button */}
+                <Link href={solution.url}>
                 <button className="cursor-pointer mt-6 inline-flex items-center justify-center gap-1.5 text-sm text-blue-700 dark:text-blue-400 font-medium group-hover:text-white dark:group-hover:text-white px-3 py-1.5 rounded-md border border-blue-200 dark:border-blue-800 group-hover:bg-blue-600 dark:group-hover:bg-blue-700 group-hover:border-transparent transition-all duration-300 w-40">
                   Read More
                   <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
                 </button>
+                </Link>
               </div>
             </div>
           ))}
