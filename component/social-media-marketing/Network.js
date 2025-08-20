@@ -15,37 +15,37 @@ const integrations = [
     title: 'Google My Business',
     description:
       'Effectively manage your reputation by monitoring Google My Business reviews and engaging with customers via direct messaging.',
-    icon: <MessageSquare className="w-10 h-10 text-red-500 dark:text-red-400" />,
+    icon: <MessageSquare className="w-10 h-10 text-blue-500 dark:text-blue-400" />,
   },
   {
     title: 'Hootsuite Syndicator',
     description:
       'Hootsuite is a unified platform for social media management, enabling you to schedule posts, monitor interactions, and analyze performance from a single dashboard.',
-    icon: <Network className="w-10 h-10 text-red-500 dark:text-red-400" />,
+    icon: <Network className="w-10 h-10 text-blue-500 dark:text-blue-400" />,
   },
   {
     title: 'MailChimp',
     description:
       'We help you share, track, and monitor your email campaigns in Mailchimp, and integrate that data with your existing systems to give you a complete view of your marketing performance.',
-    icon: <Mail className="w-10 h-10 text-red-500 dark:text-red-400" />,
+    icon: <Mail className="w-10 h-10 text-blue-500 dark:text-blue-400" />,
   },
   {
     title: 'HubSpot',
     description:
       'By integrating HubSpot, you can strategically align your marketing, sales, and customer service operations, leading to stronger customer engagement and sustainable business growth.',
-    icon: <Briefcase className="w-10 h-10 text-red-500 dark:text-red-400" />,
+    icon: <Briefcase className="w-10 h-10 text-blue-500 dark:text-blue-400" />,
   },
   {
     title: 'Google Drive',
     description:
       'Integrate with Google Drive to streamline your document management, giving you seamless access and real-time collaboration with your team.',
-    icon: <Folder className="w-10 h-10 text-red-500 dark:text-red-400" />,
+    icon: <Folder className="w-10 h-10 text-blue-500 dark:text-blue-400" />,
   },
   {
     title: 'Canva',
     description:
       'Design stunning visuals for anything from social media to marketing materials with Canvas user-friendly graphic design platform.',
-    icon: <Paintbrush2 className="w-10 h-10 text-red-500 dark:text-red-400" />,
+    icon: <Paintbrush2 className="w-10 h-10 text-blue-500 dark:text-blue-400" />,
   },
 ];
 
@@ -77,9 +77,9 @@ const NetworkSection = () => {
           {integrations.map((item, index) => (
             <div
               key={index}
-              className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg hover:shadow-xl border border-gray-100 dark:border-gray-700 hover:border-red-400 dark:hover:border-red-500 transition-all duration-300 group"
+              className="cursor-pointer bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg hover:shadow-xl border border-gray-100 dark:border-gray-700 hover:border-blue-400 dark:hover:border-blue-500 transition-all duration-300 group"
             >
-              <div className="bg-red-50 dark:bg-red-900/30 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+              <div className="bg-blue-50 dark:bg-blue-900/30 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 {item.icon}
               </div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mt-2 text-center">
@@ -88,7 +88,7 @@ const NetworkSection = () => {
               <p className="text-gray-600 dark:text-gray-300 mt-2 text-center">
                 {item.description}
               </p>
-              <div className="mt-6 text-center">
+              <div className="hidden mt-6 text-center">
                 <button className="text-red-500 dark:text-red-400 font-medium text-sm flex items-center mx-auto opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   Learn more
                   <ArrowRight className="ml-1 w-4 h-4" />
