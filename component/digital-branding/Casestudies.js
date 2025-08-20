@@ -5,7 +5,7 @@ import { ArrowUpRight, TrendingUp, Award, Globe } from 'lucide-react'
 const caseStudies = [
   {
     image:
-      'https://www.digitalyzeit.com/wp-content/uploads/2024/07/277564223_439538341365247_7258142149719093139_n.jpg',
+      '/images/home/logo2.png',
     title: 'E-Commerce Brand Transformation',
     description:
       'We partnered with a struggling e-commerce brand experiencing falling engagement and sales. By overhauling their digital branding with a new website, enhanced SEO, and refreshed social media presence, they saw organic traffic grow by 150% and conversions climb 75% in just six months.',
@@ -14,7 +14,7 @@ const caseStudies = [
   },
   {
     image:
-      'https://www.digitalyzeit.com/wp-content/uploads/2024/07/creativity360pro_logo.jpeg',
+      '/images/home/logo4.png',
     title: 'Local Business Goes National',
     description:
       'A local business with big ambitions sought our help to reach customers outside their city. By building a captivating brand story, refining their online visibility, and launching targeted PPC ads, we helped them achieve a 200% surge in online inquiries and grow into three new states within a year.',
@@ -23,7 +23,7 @@ const caseStudies = [
   },
   {
     image:
-      'https://www.digitalyzeit.com/wp-content/uploads/2024/07/advyra_logo.jpeg',
+      '/images/home/logo3.png',
     title: 'SaaS Company Gains Industry Authority',
     description:
       'A SaaS startup struggling for recognition found success through our strategic mix of content marketing, trust signals, and SEO. Within months, they saw 3x more leads and received an invite to speak at a leading industry event.',
@@ -48,7 +48,7 @@ const Casestudies = () => {
 
           <div className="w-24 h-1.5 bg-blue-600 dark:bg-blue-500 rounded-full mb-6"></div>
 
-          <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 font-medium mb-8">
+          <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 font-medium mb-18">
             Real Results from Real Brands
           </p>
         </div>
