@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Phone, Mail, Send, MapPin, Clock } from "lucide-react";
 import { toast, ToastContainer } from "react-toastify";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const ContactUsSection = () => {
   const [formState, setFormState] = useState({
@@ -10,6 +11,8 @@ const ContactUsSection = () => {
     message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [recaptcha, setRecaptcha] = useState(null);
+  const [privacyAgreed, setPrivacyAgreed] = useState(false);
 
   // Handle input changes
   const handleInputChange = (e) => {
@@ -18,6 +21,18 @@ const ContactUsSection = () => {
       ...prev,
       [id]: value,
     }));
+  };
+
+  // Check if all required fields are filled
+  const isFormValid = () => {
+    return (
+      formState.fullName.trim() !== "" &&
+      formState.email.trim() !== "" &&
+      formState.phone.trim() !== "" &&
+      formState.message.trim() !== "" &&
+      privacyAgreed &&
+      recaptcha !== null
+    );
   };
 
   // Submit handler for Strapi API
@@ -46,6 +61,8 @@ const ContactUsSection = () => {
         phone: "",
         message: "",
       });
+      setPrivacyAgreed(false);
+      setRecaptcha(null);
     } catch (error) {
       toast.error("Something went wrong. Please try again.");
     } finally {
@@ -55,9 +72,9 @@ const ContactUsSection = () => {
 
   return (
     <section className="bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800 py-20 px-4 sm:px-6">
-        <ToastContainer/>
+      <ToastContainer />
       {/* Top Heading */}
-      <div className=" text-center mb-20">
+      <div className="text-center mb-20">
         <span className="inline-block px-4 py-1.5 bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-sm font-medium mb-4">
           Get In Touch
         </span>
@@ -167,6 +184,8 @@ const ContactUsSection = () => {
                   <input
                     type="checkbox"
                     className="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                    checked={privacyAgreed}
+                    onChange={(e) => setPrivacyAgreed(e.target.checked)}
                     required
                   />
                   <span>
@@ -181,11 +200,18 @@ const ContactUsSection = () => {
                 </label>
               </div>
 
+              {/* ReCAPTCHA */}
+              <ReCAPTCHA
+                sitekey="6LdktHIrAAAAALQqNXDH1NVAbwgm0YVsQVEuC9ij"
+                className="mx-auto"
+                onChange={setRecaptcha}
+              />
+
               <div>
                 <button
                   type="submit"
-                  disabled={isSubmitting}
-                  className="mt-4 w-full sm:w-auto inline-flex items-center justify-center gap-2 text-white bg-gradient-to-r from-blue-600 to-blue-500 dark:from-blue-500 dark:to-blue-600 hover:from-blue-700 hover:to-blue-600 font-medium px-8 py-3 rounded-full shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-[1.02] active:scale-[0.98] disabled:opacity-60"
+                  disabled={!isFormValid() || isSubmitting}
+                  className="mt-4 w-full sm:w-auto inline-flex items-center justify-center gap-2 text-white bg-gradient-to-r from-blue-600 to-blue-500 dark:from-blue-500 dark:to-blue-600 hover:from-blue-700 hover:to-blue-600 font-medium px-8 py-3 rounded-full hover:cursor-pointer shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-[1.02] active:scale-[0.98] disabled:opacity-60"
                 >
                   <Send size={18} />
                   {isSubmitting ? "Sending..." : "Send Message"}
@@ -271,9 +297,7 @@ const ContactUsSection = () => {
                     Office Address
                   </div>
                   <p className="text-gray-600 dark:text-gray-400">
-                    123 Business Avenue, Tech Park
-                    <br />
-                    Bangalore, India
+                   E-160, 3rd Floor, Sector 63 Noida, U.P. 201301, India
                   </p>
                 </div>
               </div>

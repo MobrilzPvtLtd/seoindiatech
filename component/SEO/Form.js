@@ -10,18 +10,18 @@ import {
   Send,
 } from 'lucide-react'
 import { toast, ToastContainer } from 'react-toastify'
+import ReCAPTCHA from "react-google-recaptcha";
 
 const Form = () => {
   const [form, setForm] = useState({
     email: '',
     fullName: '',
-
     phone: '',
-
     message: '',
     privacy: false,
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const [recaptcha, setRecaptcha] = useState(null)
 
   // Handle input changes
   const handleChange = (e) => {
@@ -30,6 +30,17 @@ const Form = () => {
       ...prev,
       [name]: type === 'checkbox' ? checked : value,
     }))
+  }
+
+  // Check if all required fields are filled
+  const isFormValid = () => {
+    return (
+      form.email.trim() !== '' &&
+      form.fullName.trim() !== '' &&
+      form.phone.trim() !== '' &&
+      form.privacy &&
+      recaptcha !== null
+    )
   }
 
   // Submit handler
@@ -52,12 +63,11 @@ const Form = () => {
       setForm({
         email: '',
         fullName: '',
-
         phone: '',
-
         message: '',
         privacy: false,
       })
+      setRecaptcha(null)
     } catch (err) {
       toast.error('Something went wrong. Please try again.')
     } finally {
@@ -105,44 +115,6 @@ const Form = () => {
       icon: (
         <CheckCircle className="w-5 h-5 text-blue-600 dark:text-blue-400" />
       ),
-    },
-  ]
-
-  const formFields = [
-    {
-      id: 'email',
-      label: 'Email',
-      type: 'email',
-      required: true,
-      icon: <Mail className="w-5 h-5 text-gray-400" />,
-    },
-    {
-      id: 'firstName',
-      label: 'First Name',
-      type: 'text',
-      required: true,
-      icon: <User className="w-5 h-5 text-gray-400" />,
-    },
-    {
-      id: 'lastName',
-      label: 'Last Name',
-      type: 'text',
-      required: false,
-      icon: <User className="w-5 h-5 text-gray-400" />,
-    },
-    {
-      id: 'phone',
-      label: 'Phone Number',
-      type: 'tel',
-      required: true,
-      icon: <Phone className="w-5 h-5 text-gray-400" />,
-    },
-    {
-      id: 'company',
-      label: 'Company Name',
-      type: 'text',
-      required: false,
-      icon: <Briefcase className="w-5 h-5 text-gray-400" />,
     },
   ]
 
@@ -254,17 +226,7 @@ const Form = () => {
                   required
                 />
               </div>
-              {/* <div>
-                <label className="block font-medium mb-1 text-gray-700 dark:text-gray-200">Company Name</label>
-                <input
-                  type="text"
-                  name="company"
-                  value={form.company}
-                  onChange={handleChange}
-                  className="w-full p-3 rounded-xl bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 focus:outline-none dark:text-white"
-                  placeholder="Your Company"
-                />
-              </div> */}
+
               <div>
                 <label className="block font-medium mb-1 text-gray-700 dark:text-gray-200">
                   How can we help?
@@ -278,6 +240,7 @@ const Form = () => {
                   placeholder="Tell us about your project..."
                 ></textarea>
               </div>
+
               <div className="flex items-start">
                 <input
                   type="checkbox"
@@ -308,12 +271,18 @@ const Form = () => {
                   </a>
                 </label>
               </div>
+
+              <ReCAPTCHA
+                sitekey="6LdktHIrAAAAALQqNXDH1NVAbwgm0YVsQVEuC9ij"
+                className="mx-auto"
+                onChange={setRecaptcha}
+              />
             </div>
             {/* Submit Button at the bottom */}
             <div className="pt-4">
               <button
                 type="submit"
-                disabled={isSubmitting}
+                disabled={!isFormValid() || isSubmitting}
                 className="cursor-pointer w-full bg-blue-600 hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-600 text-white font-semibold py-3.5 px-6 rounded-xl transition duration-300 shadow-lg flex items-center justify-center group disabled:opacity-60"
               >
                 {isSubmitting ? 'Submitting...' : 'Submit Request'}
