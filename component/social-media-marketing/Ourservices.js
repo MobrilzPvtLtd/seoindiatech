@@ -88,7 +88,7 @@ const OurServices = () => {
         <div className="w-full md:w-1/2 relative">
           <div className="overflow-hidden rounded-2xl shadow-lg border-1 border-blue-500 dark:border-gray-600">
             <Image
-              src="https://www.digitalyzeit.com/wp-content/uploads/2024/08/Growth-Marketing-Service-Services-Image.webp"
+              src="/images/services/reporti.png"
               alt="Analytics Visual"
               width={800}
               height={600}

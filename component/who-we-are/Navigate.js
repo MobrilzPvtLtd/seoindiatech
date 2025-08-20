@@ -98,18 +98,19 @@ const Navigate = () => {
             <div className="absolute -top-6 -left-6 w-24 h-24 bg-yellow-100 dark:bg-yellow-900/20 rounded-full blur-xl -z-10"></div>
             <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-blue-100 dark:bg-blue-900/20 rounded-full blur-xl -z-10"></div>
 
-            <div className="relative w-xl rounded-2xl overflow-hidden shadow-xl border border-gray-200 dark:border-gray-700 transition-transform duration-500 hover:scale-[1.03] group">
+            <div className="relative w-xl h-96 rounded-2xl overflow-hidden transition-transform duration-500 hover:scale-[1.03] group">
               {/* Replace with Next.js Image for better optimization */}
               <Image
                 src="/images/whoweare/grow.png"
                 alt="Navigate with Digitalyzeit"
-                width={1024}
-                height={640}
-                className=" object-cover rounded-2xl"
+                // width={1024}
+                // height={640}
+                fill
+                className=" object-cover rounded-2xl "
               />
 
               {/* Overlay gradient */}
-              <div className="absolute inset-0 bg-gradient-to-tr from-black/20 via-transparent to-transparent opacity-60"></div>
+              {/* <div className="absolute inset-0 bg-gradient-to-tr from-black/20 via-transparent to-transparent opacity-60"></div> */}
             </div>
           </div>
         </div>

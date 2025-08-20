@@ -11,9 +11,9 @@ const Communicate = () => {
       <div className="flex flex-col md:flex-row justify-between items-center p-6 md:p-12 gap-12">
         {/* Left Section */}
         <div className="relative w-full md:w-1/2">
-          <div className="rounded-xl overflow-hidden shadow-lg border-1 border-blue-500 dark:border-gray-600">
+          <div className="rounded-xl overflow-hidden shadow-lg ">
             <Image
-              src="https://www.digitalyzeit.com/wp-content/uploads/2024/08/Growth-Marketing-Service-Communicate-Image-1024x655.webp"
+              src="/images/services/copywriting.png"
               alt="Communicate Illustration"
               width={1024}
               height={655}
