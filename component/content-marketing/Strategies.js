@@ -38,7 +38,7 @@ const Strategies = () => {
           <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-[0_8px_0px_0px_rgba(59,130,246,0.5)] dark:shadow-[0_8px_0px_0px_rgba(59,130,246,0.3)] border border-gray-200 dark:border-gray-700 p-6 sm:p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
             <div className="relative rounded-xl overflow-hidden mb-6 h-64">
               <Image
-                src="https://www.digitalyzeit.com/wp-content/uploads/2025/01/strategic-story-telling-scaled.webp"
+                src="/images/services/strategies1.png"
                 alt="Storytelling"
                 fill
                 className="object-cover transition-transform duration-500 hover:scale-105"
@@ -174,7 +174,7 @@ const Strategies = () => {
 
             <div className="relative rounded-xl overflow-hidden h-64">
               <Image
-                src="https://www.digitalyzeit.com/wp-content/uploads/2025/01/group-young-businessman-businesswoman-brainstorming-ideas-working-together-1024x576.webp"
+                src="/images/services/leading.png"
                 alt="Lead Generation"
                 fill
                 className="object-cover transition-transform duration-500 hover:scale-105"

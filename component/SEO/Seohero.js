@@ -98,7 +98,7 @@ const Seohero = () => {
               SEO
             </div>
             <Image
-              src="https://www.digitalyzeit.com/wp-content/uploads/2025/02/search-engine-optimization-1024x1024.webp"
+              src="/images/services/score.png"
               alt="SEO Visualization"
               width={500}
               height={500}

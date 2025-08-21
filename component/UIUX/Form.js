@@ -144,7 +144,7 @@ const Form = () => {
             <div className="mt-8 flex justify-center">
               <div className="relative rounded-xl overflow-hidden w-full max-w-xs sm:max-w-sm md:max-w-md h-[200px] sm:h-[250px] shadow-lg">
                 <Image
-                  src="https://www.digitalyzeit.com/wp-content/uploads/2025/02/UI-design-1024x1024.webp"
+                  src="/images/services/design.png"
                   alt="UI/UX Design"
                   fill
                   className="object-cover"

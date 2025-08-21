@@ -62,7 +62,7 @@ const Process = () => {
           </div>
           
           <h1 className='text-gray-900 dark:text-white text-4xl md:text-5xl lg:text-6xl font-bold leading-tight'>
-            Our Proven Process for UI/UX <br className="hidden md:block" /> Success
+            The Roadmap to Exceptional <br className="hidden md:block" /> UI/UX 
           </h1>
           
           <p className='text-gray-800 dark:text-gray-200 text-lg mt-6 max-w-4xl'>
@@ -138,7 +138,7 @@ const Process = () => {
           <div className='bg-white dark:bg-gray-800 shadow-lg rounded-xl overflow-hidden border border-gray-100 dark:border-gray-700 hover:scale-102 transition duration-300'>
             <div className="relative h-full w-full min-h-[300px]">
               <Image
-                src='https://www.digitalyzeit.com/wp-content/uploads/2025/02/UX-design-768x1365.webp'
+                src='/images/services/our design.png'
                 alt='UI/UX Design Process'
                 fill
                 className='object-cover'

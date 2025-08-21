@@ -36,7 +36,7 @@ const Why = () => {
         <div className="w-full md:w-1/2">
           <div className="relative rounded-xl overflow-hidden shadow-lg h-[300px] sm:h-[400px] md:h-[500px]">
             <Image
-              src="https://www.digitalyzeit.com/wp-content/uploads/2025/02/Why-Digital-Branding-Matters-scaled.webp"
+              src="/images/services/digitalpresence.png"
               alt="Digital Branding"
               fill
               className="object-cover"

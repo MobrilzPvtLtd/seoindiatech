@@ -62,7 +62,7 @@ const Potential = () => {
           <div className="overflow-hidden rounded-2xl shadow-xl">
             <div className="relative">
               <Image
-                src="https://www.digitalyzeit.com/wp-content/uploads/2025/02/SEO-agency.webp"
+                src="/images/services/track.png"
                 alt="SEO Strategy Team Meeting"
                 width={900}
                 height={600}

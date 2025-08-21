@@ -78,7 +78,7 @@ const Contentservices = () => {
 
           <div className="relative rounded-xl overflow-hidden shadow-lg h-[300px] md:h-[400px] group">
             <Image
-              src="https://www.digitalyzeit.com/wp-content/uploads/2025/01/high-angle-piece-paper-with-target-audience-scaled.jpg"
+              src="/images/services/content.png"
               alt="Target Audience"
               fill
               className="object-cover transition-transform duration-500 group-hover:scale-105"

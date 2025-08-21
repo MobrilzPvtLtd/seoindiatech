@@ -91,7 +91,7 @@ const Matters = () => {
 
             <div className="relative rounded-xl overflow-hidden shadow-lg">
               <Image
-                src="https://www.digitalyzeit.com/wp-content/uploads/2025/02/SEO-meeting-1024x1024.webp"
+                src="/images/services/seo.png"
                 alt="SEO Strategy Meeting"
                 width={900}
                 height={600}

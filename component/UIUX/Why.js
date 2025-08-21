@@ -3,19 +3,19 @@ import Image from 'next/image';
 
 const advantages = [
   {
-    image: 'https://www.digitalyzeit.com/wp-content/uploads/2025/02/website-desgin.webp',
+    image: '/images/services/design part.png',
     title: 'Instant Trust & Credibility',
     description: '75% of users judge a brand\'s trustworthiness by its design.',
     alt: 'Trust'
   },
   {
-    image: 'https://www.digitalyzeit.com/wp-content/uploads/2025/01/strategic-story-telling-scaled.webp',
+    image: '/images/services/ux boost.png',
     title: 'Optimized for Conversion',
     description: 'A seamless UI can boost conversion rates by up to 200%.',
     alt: 'Conversion'
   },
   {
-    image: 'https://www.digitalyzeit.com/wp-content/uploads/2024/08/Digital-Marketing-Innovative-Image-1.webp',
+    image: '/images/services/ux leads.png',
     title: 'Customer Retention & Loyalty',
     description: 'Intuitive UX leads to 88% higher customer retention rates.',
     alt: 'Retention'
@@ -33,7 +33,7 @@ const Why = () => {
           </div>
           
           <h1 className='text-gray-900 dark:text-white text-4xl md:text-5xl lg:text-6xl font-bold leading-tight'>
-            Why UI/UX Is Your <br className="hidden md:block" />Competitive Advantage
+            Smart UI/UX, Stronger <br className="hidden md:block" />Business Impact 
           </h1>
           
           <div className="mt-6">

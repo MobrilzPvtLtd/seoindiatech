@@ -64,9 +64,9 @@ const Ideas = () => {
           <div className="absolute inset-0 bg-gradient-to-t from-gray-900/50 to-transparent z-10"></div>
 
           {/* Background Image */}
-          <div className="absolute inset-0 bg-[url('/images/background.jpg')] bg-cover bg-center bg-no-repeat">
+          <div className="absolute inset-0 bg-[url('/images/services/uibanner.png')] bg-cover bg-center bg-no-repeat">
             {/* Dark mode overlay */}
-            <div className="absolute inset-0 bg-gray-800/0 dark:bg-gray-800/40"></div>
+            <div className="absolute inset-0 bg-gray-800/0"></div>
           </div>
 
           {/* Text Content */}

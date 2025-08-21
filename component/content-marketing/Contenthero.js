@@ -86,7 +86,7 @@ const Contenthero = () => {
             <div className="relative h-40 md:h-48 overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-shadow">
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent z-10 rounded-xl"></div>
               <Image
-                src="https://www.digitalyzeit.com/wp-content/uploads/2024/08/Growth-Marketing-Unlocking-Image-2.webp"
+                src="/images/services/your.png"
                 alt="Content Creation"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-500"
@@ -100,7 +100,7 @@ const Contenthero = () => {
             <div className="relative h-40 md:h-48 overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-shadow">
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent z-10 rounded-xl"></div>
               <Image
-                src="https://www.digitalyzeit.com/wp-content/uploads/2024/08/Growth-Marketing-Meaningful-Image-1.webp"
+                src="/images/services/follow.png"
                 alt="Content Distribution"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-500"

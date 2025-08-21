@@ -58,7 +58,7 @@ const Digitalhero = () => {
           <div className="rounded-xl overflow-hidden shadow-xl transition-all duration-500 hover:shadow-2xl hover:scale-102 relative h-[400px] sm:h-[500px] w-full max-w-md">
             <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent opacity-60 z-10 rounded-xl"></div>
             <Image
-              src="https://www.digitalyzeit.com/wp-content/uploads/2025/02/Digital-Branding-1020x1536.webp"
+              src="/images/services/digital.png"
               alt="Digital Branding"
               fill
               className="object-cover rounded-xl"
