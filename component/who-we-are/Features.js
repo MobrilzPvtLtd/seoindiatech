@@ -8,7 +8,7 @@ const Features = () => {
       title: 'Ecommerce Shop',
       description: 'Upload your products is never been easier now, and connect them to your website and social media channels.',
       icon: <ShoppingCart className="w-7 h-7" />,
-      image: 'https://www.digitalyzeit.com/wp-content/uploads/2023/05/ecommerce.png',
+      image: '/images/whoweare/ecommerce.png',
       color: 'from-blue-500/20 to-blue-600/20 dark:from-blue-500/10 dark:to-blue-600/10',
       iconBg: 'bg-blue-100 dark:bg-blue-900/30',
       iconColor: 'text-blue-600 dark:text-blue-400'
@@ -17,7 +17,7 @@ const Features = () => {
       title: 'Booking System',
       description: 'An integrated system that would allow you to start generating and organizing your guidance immediately.',
       icon: <Calendar className="w-7 h-7" />,
-      image: 'https://www.digitalyzeit.com/wp-content/uploads/2023/05/appointment.png',
+      image: '/images/whoweare/appointment.png',
       color: 'from-purple-500/20 to-purple-600/20 dark:from-purple-500/10 dark:to-purple-600/10',
       iconBg: 'bg-purple-100 dark:bg-purple-900/30',
       iconColor: 'text-purple-600 dark:text-purple-400'
@@ -26,7 +26,7 @@ const Features = () => {
       title: 'Website Builder',
       description: 'Launch your website within two weeks by choosing one of our prebuilt templates that suits your business.',
       icon: <Globe className="w-7 h-7" />,
-      image: 'https://www.digitalyzeit.com/wp-content/uploads/2023/05/browser.png',
+      image: '/images/whoweare/browser.png',
       color: 'from-emerald-500/20 to-emerald-600/20 dark:from-emerald-500/10 dark:to-emerald-600/10',
       iconBg: 'bg-emerald-100 dark:bg-emerald-900/30',
       iconColor: 'text-emerald-600 dark:text-emerald-400'
