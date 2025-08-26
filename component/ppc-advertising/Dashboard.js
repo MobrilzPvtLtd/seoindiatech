@@ -82,7 +82,7 @@ const Dashboard = () => {
             {/* Dashboard image */}
             <div className="overflow-hidden rounded-lg">
               <Image
-                src="https://www.digitalyzeit.com/wp-content/uploads/2025/03/dashboard-user-panel-template.webp"
+                src="/images/services/dashboard.png"
                 alt="Business Analytics Dashboard"
                 width={1600}
                 height={900}
