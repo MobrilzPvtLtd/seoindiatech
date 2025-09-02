@@ -285,7 +285,7 @@ const Header = () => {
               <Link href="/" passHref>
                 <div className="relative w-16 h-10 md:w-28 md:h-16 mr-2 cursor-pointer my-0.5">
                   <Image
-                    src="/SIT-logo2.png"
+                    src="/sit.png"
                     alt="SIT Logo"
                     fill
                     sizes="(max-width: 768px) 64px, 96px"

@@ -139,7 +139,7 @@ const Footer = () => {
               <Link href="/" className="block relative">
                 <div className="relative w-32 h-16">
                   <Image
-                    src="/SIT-logo2.png"
+                    src="/sit.png"
                     alt="Logo"
                     fill
                     sizes="128px"
