@@ -181,7 +181,7 @@ const Footer = () => {
             <ul className="space-y-3">
               {solutions.slice(0, 6).map((solution) => (
                 <li key={solution.slug}>
-                  <Link href={`/solutions/${solution.slug}`} className="flex items-center text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">
+                  <Link href={`/solution/${solution.slug}`} className="flex items-center text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">
                     <CircleDot className="w-3 h-3 mr-2 text-blue-500 dark:text-blue-400 flex-shrink-0" />
                     <span>{solution.title}</span>
                   </Link>
