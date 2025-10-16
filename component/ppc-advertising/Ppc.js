@@ -5,7 +5,7 @@ import Advertisement from './Advertisement'
 import Success from './Success'
 import Form from './Form'
 
-const Ppc = () => {
+const PPC = () => {
   return (
     <>
       <Ppchero/>
@@ -17,4 +17,4 @@ const Ppc = () => {
   )
 }
 
-export default Ppc
+export default PPC
