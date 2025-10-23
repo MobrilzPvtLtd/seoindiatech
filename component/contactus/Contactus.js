@@ -257,14 +257,14 @@ const ContactUsSection = () => {
                       href="tel:+201111772948"
                       className="text-blue-700 dark:text-blue-400 block hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
                     >
-                      +91-8010355718
+                      +91-8076676731
                     </a>
-                    <a
+                    {/* <a
                       href="tel:+6282279400935"
                       className="hidden text-blue-700 dark:text-blue-400 block hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
                     >
                       +62 822 7940 0935
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>
@@ -297,7 +297,7 @@ const ContactUsSection = () => {
                     Office Address
                   </div>
                   <p className="text-gray-600 dark:text-gray-400">
-                   E-160, 3rd Floor, Sector 63 Noida, U.P. 201301, India
+                    Sector 63 Noida, U.P. 201301, India
                   </p>
                 </div>
               </div>
