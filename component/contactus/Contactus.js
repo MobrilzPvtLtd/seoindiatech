@@ -257,7 +257,7 @@ const ContactUsSection = () => {
                       href="tel:+201111772948"
                       className="text-blue-700 dark:text-blue-400 block hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
                     >
-                      +91-8076676731
+                      +91-7042573120
                     </a>
                     {/* <a
                       href="tel:+6282279400935"
