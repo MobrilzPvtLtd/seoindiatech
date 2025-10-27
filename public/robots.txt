@@ -1,0 +1,6 @@
+# ...existing code...
+User-agent: *
+Allow: /
+
+Sitemap: https://www.seoindiatech.com/sitemap.xml
+# ...existing code...
