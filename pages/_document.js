@@ -5,10 +5,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-       <meta
-            name="google-site-verification"
-            content="fsDpDPzF-AHExzFBGUcxlEITP5MjkpG_ih4WF0w4Y0c"
-          />
+       <meta name="google-site-verification" content="Ag4ojngx0blbdZD0WIjtjNtjFBI_DBJpUAO_di30yWY" />
           <meta
             name="robots"
             content="index, follow, max-image-preview:large, max-snippet:-1"
@@ -32,6 +29,7 @@ export default function Document() {
               `,
             }}
             />
+            
        </Head>
       <body>
         <Main />
