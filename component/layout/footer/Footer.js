@@ -257,7 +257,7 @@ const Footer = () => {
             </Link>
 
             <Link
-              href="https://instagram.com"
+              href="https://www.instagram.com/seoindiatech/"
               className="text-gray-600 dark:text-gray-400 hover:text-pink-600 dark:hover:text-pink-400 transition-all duration-300 flex items-center gap-2 hover:scale-105 transform"
               target="_blank"
               rel="noopener noreferrer"
@@ -274,6 +274,15 @@ const Footer = () => {
             >
               <FaYoutube size={18} />
               <span className="text-sm font-medium">YouTube</span>
+            </Link>
+            <Link
+              href="https://www.facebook.com/people/SEOIndiatech/61582651577922/"
+              className="text-gray-600 dark:text-gray-400 hover:text-red-600 dark:hover:text-red-400 transition-all duration-300 flex items-center gap-2 hover:scale-105 transform"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebook size={18} />
+              <span className="text-sm font-medium">Facebook</span>
             </Link>
           </div>
         </div>
