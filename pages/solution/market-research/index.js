@@ -13,7 +13,7 @@ export default function index() {
             />
             <link
               rel="canonical"
-              href="https://www.seoindiatech.com/solution/market-research/"
+              href="https://www.seoindiatech.com/solution/market-research"
             />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
           </Head>

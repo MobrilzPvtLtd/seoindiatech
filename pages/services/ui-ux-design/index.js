@@ -17,7 +17,7 @@ function page() {
         />
         <link
           rel="canonical"
-          href="https://www.seoindiatech.com/services/ui-ux-design/"
+          href="https://www.seoindiatech.com/services/ui-ux-design"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>

@@ -14,7 +14,7 @@ const index = () => {
         />
         <link
           rel="canonical"
-          href="https://www.seoindiatech.com/services/seo/"
+          href="https://www.seoindiatech.com/services/seo"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>

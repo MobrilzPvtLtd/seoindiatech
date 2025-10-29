@@ -9,7 +9,7 @@ export default function index() {
     <Head>
      <title> Content Marketing Services India – SEOIndiatech</title>
       <meta name="description" content="SEOIndiatech provides content marketing services in India to boost engagement, drive traffic, and enhance your brand’s online presence effectively." />
-      <link rel="canonical" href="https://www.seoindiatech.com/services/content-marketing/" />
+      <link rel="canonical" href="https://www.seoindiatech.com/services/content-marketing" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
     
      

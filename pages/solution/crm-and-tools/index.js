@@ -13,7 +13,7 @@ export default function index() {
             />
             <link
               rel="canonical"
-              href="https://www.seoindiatech.com/solution/crm-and-tools/"
+              href="https://www.seoindiatech.com/solution/crm-and-tools"
             />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
           </Head>

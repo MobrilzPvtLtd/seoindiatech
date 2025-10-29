@@ -14,7 +14,7 @@ export default function index() {
             />
             <link
               rel="canonical"
-              href="https://www.seoindiatech.com/solution/promotion-and-ads/"
+              href="https://www.seoindiatech.com/solution/promotion-and-ads"
             />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
           </Head>
