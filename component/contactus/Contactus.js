@@ -297,7 +297,8 @@ const ContactUsSection = () => {
                     Office Address
                   </div>
                   <p className="text-gray-600 dark:text-gray-400">
-                    Sector 63 Noida, U.P. 201301, India
+                    E 160, E Block, Sector 63, Noida, Hazratpur Wajidpur, Uttar Pradesh 201301
+ 
                   </p>
                 </div>
               </div>

@@ -197,7 +197,8 @@ const Footer = () => {
             <div className="space-y-4">
               <p className="flex items-start space-x-3 text-gray-600 dark:text-gray-300">
                 <MapPin className="w-5 h-5 text-blue-600 dark:text-blue-400 mt-1 flex-shrink-0" />
-                <span> Sector 63 Noida, U.P. 201301, India</span>
+                <span>E 160, E Block, Sector 63, Noida, Hazratpur Wajidpur, Uttar Pradesh 201301
+ </span>
               </p>
 
               <p className="flex items-start space-x-3 text-gray-600 dark:text-gray-300">
