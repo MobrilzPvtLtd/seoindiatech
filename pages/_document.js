@@ -21,7 +21,7 @@ export default function Document() {
           <meta name="author" content="SEO INDIA TECH" />
           <script
             async
-            src="https://www.googletagmanager.com/gtag/js?id=G-VW8TMX14PZ"
+            src="https://www.googletagmanager.com/gtag/js?id=G-W00JV5XW2Y"
           ></script>
           <script
             dangerouslySetInnerHTML={{
@@ -29,7 +29,7 @@ export default function Document() {
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
-                gtag('config', 'G-VW8TMX14PZ');
+                gtag('config', 'G-W00JV5XW2Y');
               `,
             }}
             />
