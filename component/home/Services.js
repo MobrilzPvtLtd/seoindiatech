@@ -6,19 +6,19 @@ const Services = () => {
     {
       title: 'Search Engine Optimization',
       desc:
-        "We optimize your website to improve rankings and increase organic traffic. From keyword research to link building, our SEO solutions strengthen your online visibility and help your business reach the right audience.",
+        ( <>  We optimize your website to improve rankings and increase organic traffic. From keyword research to link building, our  <Link href='/services/seo' className="text-blue-600 underline">SEO solutions</Link>  strengthen your online visibility and help your business reach the right audience. </>),
       icon: '🔍',
     },
     {
       title: 'Social Media Marketing',
       desc:
-        'We create impactful social media strategies to build brand recognition, increase follower engagement, and drive meaningful customer interactions across major platforms.',
+        (<>We create impactful   <Link href='services/social-media-marketing' className="text-blue-600 underline">social media strategies</Link>   to build brand recognition, increase follower engagement, and drive meaningful customer interactions across major platforms</>),
       icon: '📱',
     },
     {
       title: 'Pay-Per-Click (PPC) Advertising',
       desc:
-        'Our data-backed PPC campaigns maximize your ROI by targeting high-intent users across Google and social platforms. We focus on smart bidding, engaging ad copy, and continuous analysis.',
+       ( <>  Our data-backed  <Link href='services/ppc-advertising' className="text-blue-600 underline">PPC campaigns</Link>   maximize your ROI by targeting high-intent users across Google and social platforms. We focus on smart bidding, engaging ad copy, and continuous analysis. </>),
       icon: '📈',
     },
     {
