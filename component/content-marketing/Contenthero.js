@@ -20,8 +20,9 @@ const Contenthero = () => {
           </div>
 
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white leading-tight">
-            Content Marketing{' '}
-            <span className="text-blue-700 dark:text-blue-400">Services</span>
+           Content Marketing Services – Build Trust, Engage Audiences &amp; Grow
+
+            <span className="text-blue-700 dark:text-blue-400"> Your Brand</span>
           </h1>
 
           <div className="w-20 h-1.5 bg-blue-600 dark:bg-blue-500 rounded-full"></div>
@@ -31,10 +32,20 @@ const Contenthero = () => {
             <span className="text-blue-700 dark:text-blue-400 font-medium">
               SEO Inida Tech,
             </span>{' '}
-            we create content that goes beyond attention-grabbing—it keeps your
-            audience hooked. Through storytelling that inspires action, we help
-            you generate leads, grow brand awareness, and boost conversions,
-            transforming visitors into devoted customers.
+           High-quality content is the foundation of every successful digital strategy. At SEO India Tech, we
+offer professional content marketing services designed to elevate brand visibility, attract the
+right audience, and drive long-term engagement. With a strong focus on storytelling, SEO, and
+user intent, we help businesses deliver meaningful messages that inspire action and build
+authority across digital platforms.
+          </p>
+          <p className="text-justify text-gray-700 dark:text-gray-300 text-base md:text-lg">
+           
+          As a leading content marketing agency, we understand that customers connect with brands
+that offer value, clarity, and consistent communication. Our approach blends creativity with
+strategy to produce content that not only ranks but also resonates with your target audience.
+Whether you want to boost organic reach, improve user experience, or strengthen your digital
+identity, our comprehensive content marketing services support all aspects of your business
+growth.
           </p>
 
           <div className="flex flex-wrap gap-4 pt-2">

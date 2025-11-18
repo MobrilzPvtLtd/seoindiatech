@@ -6,37 +6,37 @@ const Services = () => {
     {
       title: 'Search Engine Optimization',
       desc:
-        "Enhance your website's visibility and achieve higher search engine rankings with our data-driven SEO strategies, customized to meet your business goals.",
+        "We optimize your website to improve rankings and increase organic traffic. From keyword research to link building, our SEO solutions strengthen your online visibility and help your business reach the right audience.",
       icon: '🔍',
     },
     {
       title: 'Social Media Marketing',
       desc:
-        'Create a powerful online presence and foster a vibrant community around your brand with our effective social media strategies.',
+        'We create impactful social media strategies to build brand recognition, increase follower engagement, and drive meaningful customer interactions across major platforms.',
       icon: '📱',
     },
     {
       title: 'Pay-Per-Click (PPC) Advertising',
       desc:
-        'Maximize your ROI by driving targeted traffic through our data-driven and strategic PPC campaigns.',
+        'Our data-backed PPC campaigns maximize your ROI by targeting high-intent users across Google and social platforms. We focus on smart bidding, engaging ad copy, and continuous analysis.',
       icon: '📈',
     },
     {
       title: 'Content Marketing',
       desc:
-        "Establish your brand's authority and build a loyal audience with compelling and relevant content designed to resonate with your customers.",
+        "Our team produces high-quality content that educates, informs, and converts. Blogs, web content, infographics, and videos—all crafted to align with your brand’s message.",
       icon: '✍️',
     },
     {
-      title: 'Email Marketing',
+      title: 'Online Reputation Management',
       desc:
-        'We design personalized email campaigns that reach your audience directly, helping you nurture leads and drive conversions for maximum impact.',
+        'We monitor, manage, and protect your digital reputation to maintain a positive brand image across all online channels.',
       icon: '📧',
     },
     {
       title: 'Web Design and Development',
       desc:
-        'Develop a visually stunning and user-friendly website that reflects your brand and converts visitors into customers.',
+        'We build fast, responsive, and user-friendly websites that support your marketing goals and deliver seamless customer experiences.',
       icon: '🌐',
     },
   ]
@@ -60,11 +60,11 @@ const Services = () => {
                   >
                     {service.icon}
                   </span>
-                  <h2 className="text-lg font-bold text-gray-800 dark:text-white">
+                  <h3 className="text-lg font-bold text-gray-800 dark:text-white">
                     {service.title}
-                  </h2>
+                  </h3>
                 </div>
-                <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">
+                <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed text-justify">
                   {service.desc}
                 </p>
               </div>
@@ -74,16 +74,15 @@ const Services = () => {
           {/* Right side description card */}
           <div className="bg-gradient-to-br from-gray-900 to-blue-900 dark:from-gray-700 dark:to-gray-800 text-white p-8 rounded-2xl shadow-lg flex flex-col justify-between">
             <div>
-              <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-white dark:from-gray-300 dark:to-white">
-                Our Services
-              </h1>
-              <p className="mb-8 text-sm sm:text-base leading-relaxed text-blue-100 dark:text-gray-400">
-                At SEO India Tech, we deliver powerful digital marketing
-                solutions designed to elevate your brand and drive measurable
-                success. Our team of experts crafts highly customized,
-                cutting-edge strategies that align with your business goals,
-                leveraging advanced technology and industry insights to ensure
-                impactful, sustainable outcomes.
+              <h2 className="text-3xl sm:text-4xl font-bold leading-tight mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-white dark:from-gray-300 dark:to-white">
+                Your Reliable Digital Marketing Service Agency
+              </h2>
+              <p className="mb-8 text-sm sm:text-base leading-relaxed text-blue-100 dark:text-gray-400 text-justify">
+              As a dedicated digital marketing service agency, we use advanced tools, proven
+              methodologies, and industry expertise to ensure your brand stands out. Our integrated services
+              help you connect with your target audience, build brand trust, and generate profitable growth.
+              With us, you get transparent execution, consistent reporting, and strong campaign optimization
+              that drives long-term success.
               </p>
             </div>
 

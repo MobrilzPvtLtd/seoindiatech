@@ -12,21 +12,23 @@ const Hero = () => {
             ⭐ Digital Marketing
           </span>
 
-          <h1 className="text-5xl text-center md:text-left md:text-7xl font-bold text-gray-900 dark:text-white leading-16 md:leading-20">
-            Shaping Your Digital{' '}
-            <span className="text-blue-700 dark:text-blue-400">Horizon</span>
+          <h1 className="text-5xl text-center md:text-left md:text-6xl font-bold text-gray-900 dark:text-white leading-16 md:leading-20">
+       Digital Marketing Services with
+            <span className="text-blue-700 dark:text-blue-400"> SEO IndiaTech</span>
           </h1>
 
           <p className="text-justify text-gray-700 dark:text-gray-300 text-base md:text-lg">
-            SEO India Tech is a results-driven digital marketing agency
-            dedicated to catapulting startups and corporations to online
-            success. Our team of seasoned experts crafts highly customized
-            strategies that deeply resonate with your target audience, ensuring
-            measurable, high-impact outcomes that drive sustainable growth. By
-            leveraging cutting-edge techniques, data-driven insights, and
-            industry best practices, we empower businesses to enhance their
-            digital presence, boost engagement, and achieve long-term prominence
-            in a competitive online landscape.
+            At SEO India Tech, we help businesses grow faster with digital marketing services designed to
+boost visibility, attract customers, and strengthen online authority. As a trusted digital
+marketing service company, we combine strategy, creativity, and data-driven techniques to
+deliver measurable results for brands across industries.
+          </p>
+
+          <p className="text-justify text-gray-700 dark:text-gray-300 text-base md:text-lg">
+            Our team focuses on providing the best digital marketing services that enhance your online
+presence, improve engagement, and increase conversions—all while keeping your business
+goals at the center of every campaign. Whether you&#39;re a startup or an established brand, our
+custom solutions help you stay competitive in today’s digital landscape.
           </p>
 
           <div className="flex items-center justify-center md:justify-start w-full md:w-auto">

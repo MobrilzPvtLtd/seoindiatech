@@ -163,13 +163,23 @@ const Socialmediastrategies = () => {
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="mb-8 md:mb-0 md:mr-8 text-center md:text-left">
               <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4 dark:text-gray-200">
-                Ready to Transform Your Social Media Presence?
+               Why Choose SEO India Tech?
               </h2>
-              <p className="text-blue-100 dark:text-gray-400 max-w-xl">
-                Let's discuss how our tailored social media strategies can help
-                your brand connect with your audience and achieve measurable
-                results.
-              </p>
+              <ul>
+                <li className="text-blue-100 dark:text-gray-400 max-w-xl mb-2">
+                <strong>Tailored Strategies:</strong>  Every business is unique, so our plans are customized to match your objectives.
+                </li>
+                <li className="text-blue-100 dark:text-gray-400 max-w-xl mb-2">
+                 <strong> Expert Team:</strong> Our specialists bring years of experience in delivering top-quality digital marketing services.
+                </li>
+                <li className="text-blue-100 dark:text-gray-400 max-w-xl mb-2">
+                  <strong> Affordable &amp; Transparent:</strong> Clear pricing, regular updates, and honest communication.
+                </li>
+                <li className="text-blue-100 dark:text-gray-400 max-w-xl mb-2">
+                  <strong>Proven Results:</strong> We stay focused on performance, growth, and real outcomes—not just metrics.
+                </li>
+              </ul>
+         
             </div>
             <div className="flex-shrink-0">
               <a

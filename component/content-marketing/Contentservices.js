@@ -45,16 +45,19 @@ const Contentservices = () => {
           <span>Content Excellence</span>
         </div>
 
-        <h1 className="text-3xl md:text-5xl font-bold leading-tight text-gray-900 dark:text-white mb-6">
-          The Power of Content
-          <br /> Marketing
-        </h1>
+        <h2 className="text-3xl md:text-5xl font-bold leading-tight text-gray-900 dark:text-white mb-6">
+          Powerful Content Marketing Services for Every 
+          <br /> Industry
+        </h2>
 
         <div className="w-24 h-1.5 bg-blue-600 dark:bg-blue-500 rounded-full mx-auto mb-6"></div>
 
-        <p className="max-w-2xl mx-auto text-gray-700 dark:text-gray-300 text-lg">
-          Strategic content that earns trust, captivates audiences, and fuels
-          measurable growth.
+        <p className="max-w-6xl mx-auto text-gray-700 dark:text-gray-300 text-lg">
+         Great content goes beyond words—it builds trust, improves conversions, and enhances brand
+recognition. Our specialized content marketing services ensure your brand message reaches
+the right audience through the right channels. With careful research, topic planning, keyword
+analysis, and competitor insights, we craft content that aligns with your business goals and
+speaks directly to your customers.
         </p>
       </div>
 
@@ -170,11 +173,13 @@ const Contentservices = () => {
       <div className="max-w-7xl mx-auto mt-24 relative z-10">
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-4">
-            Our Content Creation Process
+            Our Core Content Strategy Services
           </h2>
           <p className="text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
-            A strategic approach that ensures your content delivers measurable
-            results
+            A solid content plan is essential for consistent digital success. Our expert content strategy
+services help you define your brand voice, identify target audiences, and map out topics that
+drive traffic and conversions. We develop content calendars, keyword clusters, and publishing
+guidelines to ensure your brand remains active and relevant.
           </p>
         </div>
 
