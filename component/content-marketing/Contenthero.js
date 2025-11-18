@@ -30,7 +30,7 @@ const Contenthero = () => {
           <p className="text-justify text-gray-700 dark:text-gray-300 text-base md:text-lg">
             At{' '}
             <span className="text-blue-700 dark:text-blue-400 font-medium">
-              SEO Inida Tech,
+              SEO India Tech,
             </span>{' '}
            High-quality content is the foundation of every successful digital strategy. At SEO India Tech, we
 offer professional content marketing services designed to elevate brand visibility, attract the

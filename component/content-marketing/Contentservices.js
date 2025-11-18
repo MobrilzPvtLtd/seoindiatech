@@ -1,34 +1,34 @@
-import React from 'react'
-import Image from 'next/image'
-import { Search, MessageSquare, Film, BarChart } from 'lucide-react'
+import React from "react";
+import Image from "next/image";
+import { Search, MessageSquare, Film, BarChart } from "lucide-react";
 
 const serviceItems = [
   {
-    title: 'SEO-Driven Writing',
+    title: "SEO-Driven Writing",
     description:
-      'Get found by the people who matter most—your potential customers.',
+      "Get found by the people who matter most—your potential customers.",
     icon: <Search className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
   },
   {
-    title: 'Persuasive Copy',
+    title: "Persuasive Copy",
     description: "Speak directly to your audience's needs and inspire action.",
     icon: (
       <MessageSquare className="w-5 h-5 text-blue-600 dark:text-blue-400" />
     ),
   },
   {
-    title: 'Multimedia Excellence',
+    title: "Multimedia Excellence",
     description:
       "From eye-catching visuals to engaging videos, we tailor content to your audience's preferences.",
     icon: <Film className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
   },
   {
-    title: 'Analytics & Optimization',
+    title: "Analytics & Optimization",
     description:
-      'We measure performance and continuously refine your content for maximum impact.',
+      "We measure performance and continuously refine your content for maximum impact.",
     icon: <BarChart className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
   },
-]
+];
 
 const Contentservices = () => {
   return (
@@ -46,18 +46,19 @@ const Contentservices = () => {
         </div>
 
         <h2 className="text-3xl md:text-5xl font-bold leading-tight text-gray-900 dark:text-white mb-6">
-          Powerful Content Marketing Services for Every 
+          Powerful Content Marketing Services for Every
           <br /> Industry
         </h2>
 
         <div className="w-24 h-1.5 bg-blue-600 dark:bg-blue-500 rounded-full mx-auto mb-6"></div>
 
         <p className="max-w-6xl mx-auto text-gray-700 dark:text-gray-300 text-lg">
-         Great content goes beyond words—it builds trust, improves conversions, and enhances brand
-recognition. Our specialized content marketing services ensure your brand message reaches
-the right audience through the right channels. With careful research, topic planning, keyword
-analysis, and competitor insights, we craft content that aligns with your business goals and
-speaks directly to your customers.
+          Great content goes beyond words—it builds trust, improves conversions,
+          and enhances brand recognition. Our specialized content marketing
+          services ensure your brand message reaches the right audience through
+          the right channels. With careful research, topic planning, keyword
+          analysis, and competitor insights, we craft content that aligns with
+          your business goals and speaks directly to your customers.
         </p>
       </div>
 
@@ -175,35 +176,47 @@ speaks directly to your customers.
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-4">
             Our Core Content Strategy Services
           </h2>
-          <p className="text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
-            A solid content plan is essential for consistent digital success. Our expert content strategy
-services help you define your brand voice, identify target audiences, and map out topics that
-drive traffic and conversions. We develop content calendars, keyword clusters, and publishing
-guidelines to ensure your brand remains active and relevant.
+          <p className="text-gray-700 dark:text-gray-300 max-w-5xl mx-auto">
+            A solid content plan is essential for consistent digital success.
+            Our expert content strategy services help you define your brand
+            voice, identify target audiences, and map out topics that drive
+            traffic and conversions. We develop content calendars, keyword
+            clusters, and publishing guidelines to ensure your brand remains
+            active and relevant.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
           {[
             {
-              step: '1',
-              title: 'Research',
-              desc: 'Audience & competitor analysis',
+              step: "1",
+              title: "Audience research & persona development",
+              // desc: "",
             },
             {
-              step: '2',
-              title: 'Strategy',
-              desc: 'Content planning & calendar',
+              step: "2",
+              title: "Topic clustering & keyword mapping",
+              // desc: "Content planning & calendar",
             },
             {
-              step: '3',
-              title: 'Creation',
-              desc: 'Writing, design & production',
+              step: "3",
+              title: "Competitor & industry analysis",
+              // desc: "Writing, design & production",
             },
             {
-              step: '4',
-              title: 'Optimization',
-              desc: 'Analytics & performance',
+              step: "4",
+              title: "Multi-channel content planning",
+              // desc: "Analytics & performance",
+            },
+            {
+              step: "5",
+              title: "SEO-aligned content architecture",
+              // desc: "Analytics & performance",
+            },
+            {
+              step: "6",
+              title: "Performance tracking &amp; optimization",
+              desc: "Analytics & performance",
             },
           ].map((item, index) => (
             <div
@@ -216,15 +229,15 @@ guidelines to ensure your brand remains active and relevant.
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mt-3 mb-2">
                 {item.title}
               </h3>
-              <p className="text-gray-600 dark:text-gray-400 text-sm">
+              {/* <p className="text-gray-600 dark:text-gray-400 text-sm">
                 {item.desc}
-              </p>
+              </p> */}
             </div>
           ))}
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Contentservices
+export default Contentservices;

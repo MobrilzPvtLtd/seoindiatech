@@ -1,5 +1,5 @@
-import React from 'react'
-import Image from 'next/image'
+import React from "react";
+import Image from "next/image";
 import {
   BookOpen,
   Target,
@@ -8,7 +8,7 @@ import {
   Link,
   Download,
   Users,
-} from 'lucide-react'
+} from "lucide-react";
 
 const Strategies = () => {
   return (
@@ -22,14 +22,14 @@ const Strategies = () => {
           </div>
 
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            Innovative Content Approaches
+            Types of Content We Create
           </h2>
 
           <div className="w-24 h-1 bg-blue-600 dark:bg-blue-500 rounded-full mx-auto mb-6"></div>
 
           <p className="max-w-2xl mx-auto text-gray-700 dark:text-gray-300">
-            Smart, targeted content strategies designed to attract your
-            audience, strengthen trust, and drive tangible business growth.
+            As a dedicated content marketing agency, we produce a wide range of
+            high-quality content tailored to your goals, including
           </p>
         </div>
 
@@ -68,9 +68,15 @@ const Strategies = () => {
               </h3>
               <ul className="space-y-3 text-gray-700 dark:text-gray-300">
                 {[
-                  'Builds emotional connections with your audience.',
-                  'Differentiates you from competitors.',
-                  'Leaves a lasting impression.',
+                  "SEO-Optimized Blogs",
+                  "Website Content",
+                  "Landing Pages",
+                  "Product Descriptions",
+                  "Press Releases",
+                  "Email Campaigns",
+                  "Case Studies",
+                  "Whitepapers",
+                  
                 ].map((item, index) => (
                   <li key={index} className="flex items-start gap-3">
                     <div className="mt-1">
@@ -133,25 +139,22 @@ const Strategies = () => {
               <ul className="space-y-4 text-gray-700 dark:text-gray-300">
                 {[
                   {
-                    title: 'Landing Pages That Convert:',
-                    desc:
-                      'High-converting pages paired with compelling content.',
+                    title: "Landing Pages That Convert:",
+                    desc: "High-converting pages paired with compelling content.",
                     icon: (
                       <Link className="w-5 h-5 text-blue-600 dark:text-blue-400" />
                     ),
                   },
                   {
-                    title: 'Lead Magnets:',
-                    desc:
-                      'Free resources like eBooks, guides, or exclusive videos designed to grab attention and gather leads.',
+                    title: "Lead Magnets:",
+                    desc: "Free resources like eBooks, guides, or exclusive videos designed to grab attention and gather leads.",
                     icon: (
                       <Download className="w-5 h-5 text-blue-600 dark:text-blue-400" />
                     ),
                   },
                   {
-                    title: 'Targeted Campaigns:',
-                    desc:
-                      'Precision-targeted content distribution to attract the right audience.',
+                    title: "Targeted Campaigns:",
+                    desc: "Precision-targeted content distribution to attract the right audience.",
                     icon: (
                       <Target className="w-5 h-5 text-blue-600 dark:text-blue-400" />
                     ),
@@ -164,7 +167,7 @@ const Strategies = () => {
                     <div>
                       <span className="font-semibold text-gray-900 dark:text-white">
                         {item.title}
-                      </span>{' '}
+                      </span>{" "}
                       <span>{item.desc}</span>
                     </div>
                   </li>
@@ -248,7 +251,7 @@ const Strategies = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Strategies
+export default Strategies;
