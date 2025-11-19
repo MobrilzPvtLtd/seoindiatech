@@ -5,6 +5,7 @@ import Approach from './Approach'
 import Begin from './Begin'
 import Casestudies from './Casestudies'
 import Form from './Form'
+import WhyChooseUs from './WhyChoose'
 
 const Digitalbranding = () => {
   return (
@@ -14,6 +15,7 @@ const Digitalbranding = () => {
       <Approach/>
       <Begin/>
       <Casestudies/>
+      <WhyChooseUs/>
       <Form/>
     </>
   )

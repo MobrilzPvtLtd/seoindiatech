@@ -6,10 +6,11 @@ import {
   FileText, 
   BarChart 
 } from 'lucide-react';
+import Link from 'next/link';
 
 const approachItems = [
   {
-    title: "Brand Identity Development",
+    title: "A consistent and recognizable identity",
     description: "We develop a cohesive, memorable brand presence that speaks directly to your target market. This includes:",
     icon: <Palette className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
     items: [
@@ -19,7 +20,7 @@ const approachItems = [
     ]
   },
   {
-    title: "Social Media Branding",
+    title: "Higher trust and credibility",
     description: "We ensure your social media presence reflects your brand identity consistently across every platform.",
     icon: <Share2 className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
     items: [
@@ -29,7 +30,7 @@ const approachItems = [
     ]
   },
   {
-    title: "Website & UX/UI Design",
+    title: "Stronger customer engagement",
     description: "We craft responsive, SEO-optimized websites focused on seamless user interaction.",
     icon: <Layout className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
     items: [
@@ -39,7 +40,7 @@ const approachItems = [
     ]
   },
   {
-    title: "Content & Storytelling",
+    title: "Clear messaging across platforms",
     description: "We develop engaging narratives that connect hearts and minds:",
     icon: <FileText className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
     items: [
@@ -71,13 +72,14 @@ const Approach = () => {
           </div>
           
           <h2 className="text-gray-900 dark:text-white text-3xl sm:text-4xl font-bold leading-tight mb-4">
-            Our Digital Branding Approach
+            Why Digital Branding Services Matter
           </h2>
           
           <div className="w-20 h-1 bg-blue-600 dark:bg-blue-500 rounded-full mb-6"></div>
           
           <p className="text-gray-700 dark:text-gray-300 text-lg">
-            At <span className="text-blue-700 dark:text-blue-400 font-bold">SEO India Tech,</span> we build digital brands that make a lasting impression, combining data-driven insights with creativity to align perfectly with your business goals.
+           A strong brand influences how customers perceive your business. With our professional <Link href={'/services/digital-branding'} className='text-blue-400 underline'> digital
+           branding services</Link>  you get
           </p>
         </div>
 
@@ -98,11 +100,11 @@ const Approach = () => {
                   </h3>
                 </div>
                 
-                <p className="text-gray-600 dark:text-gray-300 text-sm mb-4">
+                {/* <p className="text-gray-600 dark:text-gray-300 text-sm mb-4">
                   {item.description}
-                </p>
+                </p> */}
                 
-                <ul className="space-y-3">
+                {/* <ul className="space-y-3">
                   {item.items.map((subItem, subIndex) => (
                     <li key={subIndex} className="flex items-start gap-3">
                       <div className="mt-1.5">
@@ -120,10 +122,10 @@ const Approach = () => {
                       </div>
                     </li>
                   ))}
-                </ul>
+                </ul> */}
               </div>
               
-              <div className="h-1 w-full bg-gradient-to-r from-blue-500 to-blue-700 dark:from-blue-600 dark:to-blue-400"></div>
+              {/* <div className="h-1 w-full bg-gradient-to-r from-blue-500 to-blue-700 dark:from-blue-600 dark:to-blue-400"></div> */}
             </div>
           ))}
         </div>

@@ -1,30 +1,36 @@
 import React from 'react'
 import Image from 'next/image'
-import { Check, Users, TrendingUp, Shield, LineChart } from 'lucide-react'
+import { Check, Users, TrendingUp, Shield, LineChart, EyeClosedIcon } from 'lucide-react'
+import Link from 'next/link'
 
 const benefits = [
   {
-    title: 'Boosts Brand Recognition',
+    title: 'Brand Strategy & Positioning',
     description:
-      'Create a powerful brand identity that’s impossible to ignore.',
+      'We study your market, competitors, and audience to create a clear and compelling brand strategy. This ensures your brand stands out with a strong message and well-defined positioning.',
     icon: <Users className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
   },
   {
-    title: 'Enhances Customer Trust',
-    description: 'Brand consistency builds trust and long-term loyalty.',
+    title: 'Content Marketing Services',
+    description:( <>  Engaging content brings your brand to life. Through blogs, web copy, social posts, and
+storytelling, our <Link href={'/services/content-marketing'} className='text-blue-400 underline'>content marketing services </Link>  help deliver your brand’s message in a meaningful
+and impactful way.</>),
     icon: <Shield className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
   },
   {
-    title: 'Increases Engagement',
+    title: 'Social Media Branding',
     description:
-      'Engage your audience meaningfully with smart, strategic digital channels.',
+     ( <>  With tailored <Link href={'/services/social-media-marketing'} className='text-blue-400 underline'>social media marketing services </Link> , we build a consistent brand image across
+platforms like Instagram, Facebook, LinkedIn, and more. From visuals to tone, every post
+reinforces your brand identity.</>),
     icon: <TrendingUp className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
   },
   {
-    title: 'Drives Revenue Growth',
+    title: 'Search Visibility &amp; SEO Support',
     description:
-      'Strong branding transforms casual visitors into buyers and buyers into advocates.',
-    icon: <LineChart className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
+      ( <>  Brand visibility depends on strong search presence. Our integrated <Link href={'/services/seo'} className='text-blue-400 underline'>seo services </Link> ensure your
+      brand ranks better, reaches more users, and gains long-term digital authority.</>),
+    icon: <EyeClosedIcon className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
   },
 ]
 
@@ -54,12 +60,12 @@ const Why = () => {
           </div>
 
           <h2 className="text-gray-900 dark:text-white text-3xl md:text-4xl font-bold mb-4">
-            Why Your Brand Needs a Digital Presence
+           What Our Digital Branding Services Include
           </h2>
 
           <div className="w-16 h-1 bg-blue-600 dark:bg-blue-500 rounded-full mb-6"></div>
 
-          <p className="text-justify text-gray-700 dark:text-gray-300 mb-4">
+          {/* <p className="text-justify text-gray-700 dark:text-gray-300 mb-4">
             Today's{' '}
             <span className="font-bold text-gray-900 dark:text-white">
               5.3 billion internet users worldwide
@@ -70,7 +76,7 @@ const Why = () => {
           </p>
           <p className="text-gray-800 dark:text-gray-200 font-bold mb-6">
             A well-executed digital branding strategy:
-          </p>
+          </p> */}
 
           {/* Enhanced Bullet List */}
           <div className="space-y-4">
@@ -83,7 +89,7 @@ const Why = () => {
                   <h3 className="font-semibold text-gray-900 dark:text-white">
                     {benefit.title}
                   </h3>
-                  <p className="text-gray-600 dark:text-gray-400">
+                  <p className="text-gray-600 dark:text-gray-400 text-justify">
                     {benefit.description}
                   </p>
                 </div>

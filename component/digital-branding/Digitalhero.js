@@ -1,7 +1,7 @@
-import React from 'react'
-import Image from 'next/image'
-import { ArrowRight, Sparkles } from 'lucide-react'
-import Link from 'next/link'
+import React from "react";
+import Image from "next/image";
+import { ArrowRight, Sparkles } from "lucide-react";
+import Link from "next/link";
 
 const Digitalhero = () => {
   return (
@@ -18,19 +18,30 @@ const Digitalhero = () => {
             <span>Digital Identity Solutions</span>
           </div>
 
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white leading-tight">
-            Unlock Your Brand’s Full Potential with Our Expertise
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-gray-900 dark:text-white leading-tight">
+            Digital Branding Serrvices With{" "}
+            <span className="text-blue-700 dark:text-blue-400">
+              {" "}
+              SEO IndiaTech
+            </span>
           </h1>
 
           <div className="w-20 h-1.5 bg-blue-600 dark:bg-blue-500 rounded-full"></div>
 
           <p className="text-justify text-gray-700 dark:text-gray-300 text-base md:text-lg leading-relaxed">
-            Your brand is more than visuals—it’s the way your audience experiences, perceives, and connects with your business in the digital space. Digital branding strategically builds and manages this presence across platforms, driving consistency, engagement, and long-term trust.
+            SEO India Tech offers professional digital branding services that
+            help businesses create a powerful and consistent brand presence
+            across all digital channels. A strong brand identity is essential
+            for standing out in today’s competitive online landscape, and our
+            expert team ensures your brand communicates trust, value, and
+            uniqueness. With a strategic approach and creative execution, we
+            deliver a complete digital branding solution that elevates your
+            business and strengthens customer perception.
           </p>
 
           <p className="text-gray-700 dark:text-gray-300 text-base md:text-lg leading-relaxed">
-            At{' '}
-            <b className="text-blue-700 dark:text-blue-400">SEO India Tech</b>,
+            At{" "}
+            <Link href={'/'}>  <b className="text-blue-700 dark:text-blue-400"> SEO India Tech</b> </Link>,
             we don't just create brands – we build digital identities that stand
             out, captivate, and convert.
           </p>
@@ -39,8 +50,8 @@ const Digitalhero = () => {
             <button
               onClick={() => {
                 document
-                  .getElementById('Digitalform')
-                  ?.scrollIntoView({ behavior: 'smooth' })
+                  .getElementById("Digitalform")
+                  ?.scrollIntoView({ behavior: "smooth" });
               }}
               className="cursor-pointer bg-gradient-to-r from-blue-600 to-blue-800 dark:from-gray-800 dark:to-gray-900 text-white px-6 py-3 rounded-full text-base hover:bg-blue-700 dark:hover:bg-blue-600 transition-colors flex items-center group"
             >
@@ -73,16 +84,16 @@ const Digitalhero = () => {
       <div className="max-w-7xl mx-auto mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {[
           {
-            title: 'Brand Strategy',
-            desc: 'Comprehensive digital brand positioning',
+            title: "Brand Strategy",
+            desc: "Comprehensive digital brand positioning",
           },
           {
-            title: 'Visual Identity',
-            desc: 'Compelling logos, colors, and design systems',
+            title: "Visual Identity",
+            desc: "Compelling logos, colors, and design systems",
           },
           {
-            title: 'Consistent Experience',
-            desc: 'Unified brand presence across all channels',
+            title: "Consistent Experience",
+            desc: "Unified brand presence across all channels",
           },
         ].map((item, index) => (
           <div
@@ -102,7 +113,7 @@ const Digitalhero = () => {
         ))}
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Digitalhero
+export default Digitalhero;
