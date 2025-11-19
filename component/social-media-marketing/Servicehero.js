@@ -37,16 +37,16 @@ const ServiceHero = () => {
             </div>
 
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white leading-tight">
-              Social Media Marketing Services with{" "}
+             Social Media Marketing Services – Boost Your Brand {" "}
               <span className="text-blue-600 dark:text-blue-400">
-                SEO India Tech
+                 SEO IndiaTech
               </span>
             </h1>
 
             <p className="text-justify text-gray-700 dark:text-gray-300 text-base md:text-lg">
               In today’s fast-paced digital world, establishing a strong social
               presence is essential for any business looking to grow, engage
-              customers, and stand out from the competition. At SEO India Tech,
+              customers, and stand out from the competition. At <Link href={'/'} className="text-blue-400">SEO India Tech </Link> ,
               we offer professional social media marketing services designed to
               increase brand visibility, drive engagement, and attract
               high-quality leads. With strategic planning, creative content, and

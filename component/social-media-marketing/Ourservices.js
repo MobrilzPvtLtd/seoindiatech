@@ -4,24 +4,34 @@ import { ChevronDown, ChevronUp } from 'lucide-react'
 
 const servicesData = [
   {
-    title: 'Insightful Analytics',
+    title: 'Social Media Strategy Development',
     content:
-      'We provide real-time analytics to give you deep insights into your campaigns and audience, so you can make smarter, faster decisions.',
+      'A strong strategy lays the foundation for successful marketing. Our social media marketing services begin with analyzing your brand goals, audience preferences, competitor activity, and existing social performance. Based on this research, we create a clear, actionable plan that aligns with your business objectives.',
   },
   {
-    title: 'Intuitive Publishing',
+    title: 'Content Creation & Management',
     content:
-      'Simplify your workflow by scheduling and publishing content to multiple platforms from one place.',
+      'Content shapes the way your audience perceives your brand. Our experts craft engaging posts,images, videos, reels, stories, banners, and creative messages tailored for each platform. With high-quality content, our social media marketing services ensure your brand gets noticed and remembered.',
   },
   {
-    title: 'Research Social Media',
+    title: 'Paid Social Media Advertising',
     content:
-      'We help you understand your audience conversations, so you can strategize accordingly and stay ahead of the curve.',
+      'Paid advertising helps you reach a larger and highly targeted audience. As part of our social media marketing services, we design effective ad campaigns, optimize audience segments, and track every detail to ensure maximum return on investment. Whether you want brand awareness or conversions, our ads deliver measurable results.',
   },
   {
-    title: 'Planning Feature',
+    title: 'Community Engagement',
     content:
-      'Easily plan your content calendar and manage collaborations for a more efficient workflow.',
+      'Growing your online community is essential for long-term success. Our social media marketing services include continuous monitoring, responding to comments, handling messages, solving customer queries, and initiating meaningful interactions that build trust and loyalty.',
+  },
+  {
+    title: 'Social Media Analytics & Reporting',
+    content:
+      'Data analysis is crucial for refining strategies. As a committed social media marketing services company, we track performance metrics such as reach, impressions, engagement, conversions, and audience growth. This helps us adjust the campaigns for better outcomes.',
+  },
+  {
+    title: 'Profile Optimization',
+    content:
+      'Your social profiles represent your brand. As part of our social media marketing services India, we optimize your bios, visuals, cover images, highlights, and overall branding to ensure a professional and consistent appearance across all platforms.',
   },
 ]
 
@@ -38,8 +48,8 @@ const OurServices = () => {
         {/* Left Section */}
         <div className="w-full md:w-1/2 space-y-6">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
-            Our{' '}
-            <span className="text-blue-700 dark:text-blue-500">Services</span>
+           What Our <span className='text-blue-700'>Social Media Marketing </span> Services Include
+            
           </h2>
           <p className="text-gray-700 dark:text-gray-300 text-base md:text-lg">
             By analyzing how value is delivered at each stage of the customer

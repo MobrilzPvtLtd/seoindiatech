@@ -5,6 +5,10 @@ import Ourservices from './Ourservices'
 import Communicate from './Communicate'
 import FAQComponent from '../common/FAQComponent'
 import NetworkSection from './Network'
+import WhyChooseSocialMedia from './WhyChooseSocialMedia'
+import SocialMediaBenefits from './SocialMediaBenefits'
+import IndustriesWeServe from './IndustriesServe'
+import SocialMediaCTA from './SocialMediaCTA'
 
 const Socialmediamarketing = () => {
   return (
@@ -13,6 +17,10 @@ const Socialmediamarketing = () => {
       <Manage/>
       <Ourservices/>
       <Communicate/>
+      <WhyChooseSocialMedia/>
+      <SocialMediaBenefits/>
+      <IndustriesWeServe/>
+      <SocialMediaCTA/>
       <NetworkSection/>
       <FAQComponent/>
     </div>
