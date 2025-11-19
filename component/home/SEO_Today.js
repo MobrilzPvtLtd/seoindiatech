@@ -31,13 +31,13 @@ function SEO_Today() {
         </div>
 
         {/* Main heading with responsive font sizes and centered text */}
-        <h1 className="relative text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center text-gray-900 dark:text-white leading-tight">
+        <h2 className="relative text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center text-gray-900 dark:text-white leading-tight">
           Ready to Build Your Brand? Start Your Success Story with{' '}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400 dark:from-blue-400 dark:to-blue-300">
             SEO India Tech
           </span>{' '}
           Today!
-        </h1>
+        </h2>
 
         {/* Subheading/description paragraph */}
         <p className="relative mt-8 text-base sm:text-lg md:text-xl text-center text-gray-700 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">

@@ -99,13 +99,13 @@ const Socialmediastrategies = () => {
         <div className="inline-block px-3 py-1 bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-sm font-medium mb-6">
           Social Media Excellence
         </div>
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight text-gray-800 dark:text-white">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight text-gray-800 dark:text-white">
           Grow Your Brand's Influence with Proven{' '}
           <br className="hidden lg:block" />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400 dark:from-blue-400 dark:to-blue-300">
             Social Media Tactics
           </span>
-        </h1>
+        </h2>
         <p className="mt-6 max-w-3xl mx-auto text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
           SEO India Tech delivers meticulously designed campaigns to engage and
           connect, amplifying your message across platforms for impactful

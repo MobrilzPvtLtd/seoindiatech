@@ -134,13 +134,13 @@ const SEOSolution = () => {
           <span className="inline-block px-4 py-1.5 bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-sm font-medium mb-4">
             Search Engine Optimization
           </span>
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white leading-tight">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white leading-tight">
             Tailored{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400 dark:from-blue-400 dark:to-blue-300">
               SEO solutions
             </span>{' '}
             for Optimal Performance
-          </h1>
+          </h2>
           <p className="mt-5 max-w-3xl mx-auto text-gray-600 dark:text-gray-300 text-lg">
             Enhance Organic Engagement, Optimize Visibility, and Reach Top
             Search Results with Strategic SEO.

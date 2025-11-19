@@ -15,10 +15,10 @@ const Solutions = () => {
             Digital Marketing Service in India for Every 
             <span className="text-blue-600 dark:text-blue-400"> Business</span>
           </h2>
-          <p className="mt-4 max-w-3xl mx-auto text-gray-600 dark:text-gray-300 text-lg">
+          <p className="mt-4 max-w-5xl mx-auto text-gray-600 dark:text-gray-300 text-lg">
            Whether you want to boost sales, increase traffic, or strengthen your brand, our digital
             marketing service in India ensures that your business stays ahead in the competitive market.
-            <br />
+            
             With a balance of innovation and strategy, we help you unlock new opportunities and achieve
             sustainable success.
           </p>
