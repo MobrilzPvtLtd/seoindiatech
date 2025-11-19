@@ -38,9 +38,9 @@ const ServiceHero = () => {
 
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white leading-tight">
              Social Media Marketing Services – Boost Your Brand {" "}
-              <span className="text-blue-600 dark:text-blue-400">
+              {/* <span className="text-blue-600 dark:text-blue-400">
                  SEO IndiaTech
-              </span>
+              </span> */}
             </h1>
 
             <p className="text-justify text-gray-700 dark:text-gray-300 text-base md:text-lg">
