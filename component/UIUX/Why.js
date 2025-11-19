@@ -5,19 +5,19 @@ const advantages = [
   {
     image: '/images/services/design part.png',
     title: 'Instant Trust & Credibility',
-    description: '75% of users judge a brand\'s trustworthiness by its design.',
+    description: 'Modern users expect simplicity, speed, and functionality. Our UI/UX design services are crafted to meet these expectations through meaningful layouts, visual balance, and smooth navigation.',
     alt: 'Trust'
   },
   {
     image: '/images/services/ux boost.png',
     title: 'Optimized for Conversion',
-    description: 'A seamless UI can boost conversion rates by up to 200%.',
+    description: 'Every design we create focuses on accessibility, responsive behavior, and user-centered architecture.',
     alt: 'Conversion'
   },
   {
     image: '/images/services/ux leads.png',
     title: 'Customer Retention & Loyalty',
-    description: 'Intuitive UX leads to 88% higher customer retention rates.',
+    description: 'We take pride in delivering the best ui/ux design services in India by combining practical design strategies with modern aesthetics. Our team ensures that your website or application not only looks impressive but also performs effortlessly across all devices.',
     alt: 'Retention'
   }
 ];
@@ -32,9 +32,9 @@ const Why = () => {
             <span>Competitive Edge</span>
           </div>
           
-          <h1 className='text-gray-900 dark:text-white text-4xl md:text-5xl lg:text-6xl font-bold leading-tight'>
-            Smart UI/UX, Stronger <br className="hidden md:block" />Business Impact 
-          </h1>
+          <h2 className='text-gray-900 dark:text-white text-4xl md:text-5xl lg:text-6xl font-bold leading-tight'>
+              Leading UI/UX Design Services for Strong Brand Impact 
+          </h2>
           
           <div className="mt-6">
             <div className="h-1 w-24 bg-blue-600 dark:bg-blue-500 rounded-full"></div>
@@ -61,7 +61,7 @@ const Why = () => {
                 {item.title}
               </h2>
               
-              <p className='text-gray-700 dark:text-gray-300 text-center md:text-left md:w-1/3'>
+              <p className='text-gray-700 dark:text-gray-300 text-center md:text-left md:w-1/3 text-justify'>
                 {item.description}
               </p>
             </div>

@@ -40,7 +40,7 @@ const Branding = () => {
           {/* Heading */}
           <div className="text-center px-4">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight max-w-5xl text-white dark:text-white">
-              Start Your Path to Digital Branding Success with{' '}
+              Digital Branding for a Strong Market Identity
               <span className="text-blue-400 dark:text-blue-400">
                 SEO India Tech
               </span>
@@ -50,12 +50,12 @@ const Branding = () => {
           {/* Description */}
           <div className="mt-8 px-4">
             <p className="text-blue-100 dark:text-blue-50 text-lg md:text-xl max-w-4xl text-center">
-              <span className="font-bold text-blue-400 dark:text-blue-400">
-                SEO India Tech
-              </span>{' '}
-              is your partner in achieving digital branding success—whether
-              you’re looking to enhance brand awareness, grow engagement, or
-              maximize conversions.
+              Your design becomes more impactful when aligned with your brand’s message. Our digital
+              branding services help create a consistent visual identity across all digital touchpoints.
+             <br/> <br/>
+              We offer complete <Link href={'/services/digital-branding'} className='text-blue-400'>digital branding  solution</Link>  packages that include brand guidelines, logo
+              design, color themes, typography, messaging tone, and brand storytelling. When combined
+              with our ui/ux design services, your business gains a unified and memorable brand presence.
             </p>
           </div>
 

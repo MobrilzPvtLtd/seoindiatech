@@ -1,6 +1,6 @@
-import React from 'react'
-import { ArrowRight } from 'lucide-react'
-import Link from 'next/link'
+import React from "react";
+import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 const Ideas = () => {
   return (
@@ -19,8 +19,9 @@ const Ideas = () => {
               <span className="w-2 h-2 bg-blue-600 dark:bg-blue-400 rounded-full"></span>
               <span>Innovative Solutions</span>
             </div>
-            <h1 className="text-gray-900 dark:text-gray-100 text-5xl md:text-6xl font-bold leading-tight">
-              Making Your Ideas <br className="hidden md:block" /> a Reality
+            <h1 className="text-gray-900 dark:text-gray-100 text-5xl  font-bold leading-tight">
+              UI/UX Design Services – Create Engaging Digital Experiences 
+             
             </h1>
             <div className="mt-6 hidden md:block">
               <div className="flex items-center gap-4">
@@ -33,22 +34,29 @@ const Ideas = () => {
           {/* Right Column - Text and Button */}
           <div className="md:w-1/2">
             <p className="text-justify text-gray-700 dark:text-gray-300 text-lg mb-6">
-              A seamless and visually stunning interface is crucial for turning
-              visitors into customers.{' '}
-              <span className="font-bold text-blue-800 dark:text-blue-300">
-                SEO India Tech
-              </span>
-              , partners with you to create{' '}
-              <span className="font-bold text-blue-800 dark:text-blue-300">
-                revolutionary UI/UX solutions
-              </span>{' '}
-              that not only captivate users but also deliver measurable success.
+              A powerful digital presence begins with intuitive, visually
+              appealing, and user-focused design.At{" "}
+              <Link href={"/"} className="text-blue-400">
+                SEO IndiaTech{" "}
+              </Link>{" "}
+              At , we deliver high-quality UI/UX design services that enhance
+              user satisfaction, improve conversions, and strengthen your brand
+              identity. Our approach combines research, creativity, and
+              technology to build designs that resonate with customers and
+              support long-term business growth.
+            </p>
+            <p className="text-justify text-gray-700 dark:text-gray-300 text-lg mb-6">
+              As a trusted ui/ux design services company, we understand how user
+              behavior, visual structure, and seamless interaction shape overall
+              digital success. Whether you’re building a new product or
+              revamping an existing platform, our design solutions ensure
+              clarity, consistency, and high-value user engagement.
             </p>
             <button
               onClick={() => {
                 document
-                  .getElementById('UIUXform')
-                  ?.scrollIntoView({ behavior: 'smooth' })
+                  .getElementById("UIUXform")
+                  ?.scrollIntoView({ behavior: "smooth" });
               }}
               className="cursor-pointer bg-gradient-to-r from-blue-600 to-blue-800 dark:from-gray-800 dark:to-gray-900 text-white px-6 py-3 rounded-full text-base hover:bg-blue-700 dark:hover:bg-blue-600 transition-colors flex items-center group"
             >
@@ -86,7 +94,7 @@ const Ideas = () => {
 
         {/* Optional: Feature Highlights */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-16">
-          {['Research', 'Design', 'Development'].map((item, index) => (
+          {["Research", "Design", "Development"].map((item, index) => (
             <div
               key={index}
               className="p-6 border   border-gray-100 dark:border-gray-700 hover:scale-102 transition duration-300 hover:border-blue-200 dark:hover:border-blue-700 bg-white dark:bg-gray-800 rounded-lg shadow-md"
@@ -108,7 +116,7 @@ const Ideas = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Ideas
+export default Ideas;
