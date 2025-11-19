@@ -46,7 +46,7 @@ const Contentbranding = () => {
 
           {/* Description */}
           <div className="flex justify-center px-4 pt-8">
-            <p className="text-gray-700 dark:text-gray-300 text-lg md:text-xl mb-6 max-w-4xl text-justify">
+            <p className="text-gray-700 dark:text-gray-300 text-lg md:text-xl mb-6 max-w-5xl text-center">
                Content becomes more powerful when optimized for search engines.
               Our  <Link href={'/services/seo'} className="text-blue-400 underline"> local seo services</Link>  work seamlessly with our content marketing
               approach to position your business in local search results and
