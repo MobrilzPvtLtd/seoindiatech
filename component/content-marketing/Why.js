@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Target, Fingerprint, Users } from 'lucide-react';
+import { Target, Fingerprint, Users, FolderDot, UserRound, TrendingUp } from 'lucide-react';
+import Link from 'next/link';
 
 const Why = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -68,19 +69,33 @@ const Why = () => {
     {
       id: 1,
       icon: <Target className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
-      title: "Results-Driven Approach",
+      title: "Efficient content distribution",
       description: "We turn every piece of content into a growth engine—driving clicks, leads, and real business results."
     },
     {
       id: 2,
       icon: <Fingerprint className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
-      title: "Tailored to Your Business",
+      title: "Enhanced user engagement",
       description: "We go beyond templates, tailoring strategies to your business, your market, and your audience."
     },
     {
       id: 3,
       icon: <Users className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
-      title: "Partner, Not Just a Provider",
+      title: "Personalized customer journeys",
+      description: "As your dedicated partner, we celebrate your wins and tackle every challenge together."
+    },
+    {
+      id: 4,
+      
+      icon: <TrendingUp className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
+      title: "Increased productivity",
+      description: "As your dedicated partner, we celebrate your wins and tackle every challenge together."
+    },
+    {
+      id: 5,
+     
+      icon: <FolderDot className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
+      title: "Consistent brand communication",
       description: "As your dedicated partner, we celebrate your wins and tackle every challenge together."
     }
   ];
@@ -102,8 +117,12 @@ const Why = () => {
               
               <div className="w-20 h-1.5 bg-blue-600 dark:bg-blue-500 rounded-full mb-6"></div>
               
-              <p className="text-gray-700 dark:text-gray-300 text-lg">
-                We don’t just create content — we craft experiences that intrigue, inspire, and convert. Here’s why brands choose us:
+              <p className="text-gray-700 dark:text-gray-300 text-lg text-justify">
+               Automation has become essential for scaling marketing activities. Our <Link href="/solution/automation" className='text-blue-400 underline'>digital automation
+                services </Link>  support your content distribution through automated email sequences, scheduled
+                social posting, CRM integration, and workflow optimization. When combined with our content
+                marketing services, automation helps deliver consistent messaging, faster responses, and
+                better customer experiences.
               </p>
             </div>
             
@@ -141,9 +160,9 @@ const Why = () => {
                     <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                       {reason.id}. {reason.title}
                     </h3>
-                    <p className="text-gray-700 dark:text-gray-300">
+                    {/* <p className="text-gray-700 dark:text-gray-300">
                       {reason.description}
-                    </p>
+                    </p> */}
                   </div>
                 </div>
               </div>

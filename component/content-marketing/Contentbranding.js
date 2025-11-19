@@ -46,8 +46,8 @@ const Contentbranding = () => {
 
           {/* Description */}
           <div className="flex justify-center px-4 pt-8">
-            <p className="text-gray-700 dark:text-gray-300 text-lg md:text-xl mb-6 max-w-4xl text-center">
-              ( <>Content becomes more powerful when optimized for search engines.
+            <p className="text-gray-700 dark:text-gray-300 text-lg md:text-xl mb-6 max-w-4xl text-justify">
+               Content becomes more powerful when optimized for search engines.
               Our  <Link href={'/services/seo'} className="text-blue-400 underline"> local seo services</Link>  work seamlessly with our content marketing
               approach to position your business in local search results and
               attract nearby customers. By incorporating geo-targeted keywords,
@@ -56,7 +56,7 @@ const Contentbranding = () => {
               operate a small store or a multi-city enterprise, our combination
               of content marketing services and local seo services drives
               stronger regional engagement, higher footfall, and improved
-              conversions. </>)
+              conversions. 
             </p>
           </div>
 
