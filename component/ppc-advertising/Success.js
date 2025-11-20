@@ -1,11 +1,13 @@
 import React from 'react'
-import { ArrowRight, Star, CheckCircle, Zap, TrendingUp } from 'lucide-react'
+import { ArrowRight, Star, CheckCircle, Zap, TrendingUp, Cable, PackageCheck } from 'lucide-react'
 
 const Success = () => {
   const benefits = [
-    { icon: <CheckCircle className="w-4 h-4" />, text: 'Expert Strategy' },
-    { icon: <Zap className="w-4 h-4" />, text: 'Fast Results' },
-    { icon: <TrendingUp className="w-4 h-4" />, text: 'Growth Focused' },
+    { icon: <CheckCircle className="w-4 h-4" />, text: 'Reduce unnecessary ad spending' },
+    { icon: <Zap className="w-4 h-4" />, text: 'Improve click-through rates' },
+    { icon: <TrendingUp className="w-4 h-4" />, text: 'Enhance lead quality' },
+    { icon: <Cable className="w-4 h-4" />, text: 'Optimize landing pages' },
+    { icon: <PackageCheck className="w-4 h-4" />, text: 'Deliver transparent performance reports' },
   ]
 
   return (
@@ -36,11 +38,11 @@ const Success = () => {
             </div>
 
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
-              Start Your Path to Digital Branding Success with{' '}
+            A PPC Advertising Company That Focuses on ROI{' '}
               <br className="hidden md:block" />
-              <span className="text-white underline decoration-blue-300 dark:decoration-blue-400 decoration-4 underline-offset-4">
+              {/* <span className="text-white underline decoration-blue-300 dark:decoration-blue-400 decoration-4 underline-offset-4">
                 SEO India Tech
-              </span>
+              </span> */}
             </h2>
 
             <div className="flex flex-wrap justify-center gap-4 mt-8 mb-10">
@@ -58,10 +60,8 @@ const Success = () => {
             </div>
 
             <p className="text-blue-50 mt-6 text-base md:text-lg max-w-3xl mx-auto">
-              <span className="text-white font-semibold">SEO India Tech</span>,
-              is your partner in achieving digital branding success—whether
-              you’re looking to enhance brand awareness, grow engagement, or
-              maximize conversions.
+              Our strength lies in creating campaigns that generate conversions, not just clicks. As a results-
+              first PPC advertising company,
             </p>
 
             <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">

@@ -4,6 +4,7 @@ import Dashboard from './Dashboard'
 import Advertisement from './Advertisement'
 import Success from './Success'
 import Form from './Form'
+import PPCBrandingHero from './PPCBrandingHero'
 
 const PPC = () => {
   return (
@@ -13,6 +14,7 @@ const PPC = () => {
       <Advertisement/>
       <Success/>
       <Form/>
+      <PPCBrandingHero/>
     </>
   )
 }

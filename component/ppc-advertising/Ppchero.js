@@ -1,22 +1,22 @@
-import React from 'react'
-import { MousePointer, BarChart2, DollarSign, ArrowRight } from 'lucide-react'
-import Link from 'next/link'
+import React from "react";
+import { MousePointer, BarChart2, DollarSign, ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 const Ppchero = () => {
   const keyBenefits = [
     {
       icon: <MousePointer className="w-5 h-5" />,
-      text: 'Instant Traffic',
+      text: "Instant Traffic",
     },
     {
       icon: <BarChart2 className="w-5 h-5" />,
-      text: 'Higher Conversions',
+      text: "Higher Conversions",
     },
     {
       icon: <DollarSign className="w-5 h-5" />,
-      text: 'Maximized ROI',
+      text: "Maximized ROI",
     },
-  ]
+  ];
 
   return (
     <section className="bg-gradient-to-b from-white to-blue-50 dark:from-gray-900 dark:to-blue-950/30 px-4 py-8 md:py-20 lg:py-16 relative overflow-hidden">
@@ -62,10 +62,8 @@ const Ppchero = () => {
         </div>
 
         {/* Heading */}
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-gray-900 dark:text-white mb-8">
-          Maximize Your ROI with High-Performance
-          <br className="hidden md:block" />
-          Pay-Per-Click Advertising
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-gray-900 dark:text-white mb-8 text-center">
+          Result-Driven PPC Advertising Services to Maximize Your ROI
         </h1>
 
         {/* Decorative underline */}
@@ -73,18 +71,18 @@ const Ppchero = () => {
 
         {/* Subheading Paragraph */}
         <p className="text-gray-700 text-justify dark:text-gray-300 text-lg md:text-xl mb-10 max-w-4xl mx-auto">
-          At{' '}
-          <span className="font-semibold text-gray-900 dark:text-white">
-            SEO India Tech,
-          </span>{' '}
-          we design{' '}
-          <span className="font-semibold text-gray-900 dark:text-white">
-            high-converting, precision-targeted PPC campaigns
-          </span>{' '}
-          that drive measurable business results. Our strategies ensure your
-          brand reaches the right audience at the perfect time, delivering the
-          right message to maximize engagement, clicks, and return on
-          investment.
+          
+          In today’s fast-paced digital world, businesses cannot rely solely on
+          organic methods to grow. Paid campaigns have become essential to reach
+          the right audience instantly. At{" "}
+          <Link href={"/"} className="text-blue-600">
+            SEO IndiaTech {" "}
+          </Link>
+          we provide powerful and performance-oriented PPC advertising services
+          that help your business achieve immediate visibility, higher
+          conversions, and maximum ROI. As a leading PPC advertising company,
+          our goal is simple — to ensure your brand reaches the right customers
+          at the right time through strategic pay per click advertising.
         </p>
 
         {/* Key benefits pills */}
@@ -107,9 +105,9 @@ const Ppchero = () => {
         {/* Statistics cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-12">
           {[
-            { value: '95%', label: 'Increased click-through rates' },
-            { value: '3.5x', label: 'Average return on ad spend' },
-            { value: '70%', label: 'Lower cost per acquisition' },
+            { value: "95%", label: "Increased click-through rates" },
+            { value: "3.5x", label: "Average return on ad spend" },
+            { value: "70%", label: "Lower cost per acquisition" },
           ].map((stat, index) => (
             <div
               key={index}
@@ -130,8 +128,8 @@ const Ppchero = () => {
           <button
             onClick={() => {
               document
-                .getElementById('PPCform')
-                ?.scrollIntoView({ behavior: 'smooth' })
+                .getElementById("PPCform")
+                ?.scrollIntoView({ behavior: "smooth" });
             }}
             className="cursor-pointer bg-gradient-to-r from-blue-600 to-blue-800 hover:bg-blue-700 dark:from-gray-800 dark:to-gray-900 dark:hover:bg-blue-600 text-white font-bold text-lg px-6 py-3 rounded-full shadow-md transition-all duration-300 flex items-center group"
           >
@@ -145,7 +143,7 @@ const Ppchero = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Ppchero
+export default Ppchero;
