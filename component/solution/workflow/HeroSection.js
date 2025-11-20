@@ -1,24 +1,25 @@
-import Image from 'next/image'
-import React from 'react'
-import { ArrowRight, CheckCircle, Activity, BarChart2 } from 'lucide-react'
+import Image from "next/image";
+import React from "react";
+import { ArrowRight, CheckCircle, Activity, BarChart2 } from "lucide-react";
+import Link from "next/link";
 
 const HeroSection = () => {
   const features = [
     {
       icon: <Activity className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
-      text: 'Streamline operations',
+      text: "Streamline operations",
     },
     {
       icon: (
         <CheckCircle className="w-5 h-5 text-blue-600 dark:text-blue-400" />
       ),
-      text: 'Increase productivity',
+      text: "Increase productivity",
     },
     {
       icon: <BarChart2 className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
-      text: 'Improve efficiency',
+      text: "Improve efficiency",
     },
-  ]
+  ];
 
   return (
     <section className="bg-white dark:bg-gray-900 py-8 md:py-24 relative overflow-hidden">
@@ -37,20 +38,21 @@ const HeroSection = () => {
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-tight">
-              Workflow{' '}
-              <span className="text-blue-700 dark:text-blue-400">Process</span>
+              Streamline your Business Operation with <span className="text-blue-600">Workflow</span>  
+              
             </h1>
 
             <div className="w-20 h-1 bg-blue-600 dark:bg-blue-500 rounded-full"></div>
 
             <p className="text-justify text-gray-700 dark:text-gray-300 text-base md:text-lg leading-relaxed">
-              The workflow process is essential for businesses where multiple
-              tasks and teams collaborate toward shared goals. We help you
-              implement organized, systematic workflows that streamline
-              operations, reduce errors, and boost productivity. By optimizing
-              processes and improving coordination, our solutions empower teams
-              to focus on high-value tasks, enhance efficiency, and achieve
-              better business outcomes consistently.
+              Every successful business relies on strong internal systems that
+              support productivity, collaboration, and smooth execution. At <Link href={'/'} className='text-blue-600'>SEO
+              IndiaTech </Link>  we help organizations enhance their operational
+              performance with structured workflow process solutions that
+              eliminate inefficiencies and empower teams to work smarter and
+              faster. Whether you run a small business or a large enterprise,
+              our advanced workflow management solutions ensure accuracy,
+              consistency, and clarity at every stage of your operations.
             </p>
 
             <div className="pt-4 space-y-3">
@@ -122,7 +124,7 @@ const HeroSection = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default HeroSection
+export default HeroSection;

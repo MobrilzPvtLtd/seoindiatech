@@ -7,30 +7,30 @@ const WorkFlowService = () => {
       id: 1,
       icon: <ClipboardList className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
       title: "Define",
-      text: "each step in the workflow, including task sequence and assigned users or roles.",
+      text: "A business cannot scale without defined processes. An optimized workflow process ensures that tasks move from one stage to another without delays, guesswork, or errors. It gives your team clarity on responsibilities, timelines, and expected outcomes. By mapping out every step, your organization reduces the risk of miscommunication and improves overall productivity.",
       detail: "We create a complete workflow map that clarifies responsibilities and task sequences."
     },
     {
       id: 2,
       icon: <ArrowRight className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
       title: "Manage",
-      text: "workflow progression so tasks are completed in the correct order by the right people.",
+      text: "At SEO India Tech, we design workflows that simplify your day-to-day activities. Our solutions cover communication, task delegation, documentation, customer management, and departmental collaboration. Instead of struggling with scattered tasks and manual processes, your business gets a structured system that improves efficiency and accountability.",
       detail: "Ensure smooth transitions across teams and departments with our automation solutions."
     },
-    {
-      id: 3,
-      icon: <Eye className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
-      title: "Provide",
-      text: "insights into each workflow instance so progress can be monitored and completed on schedule.",
-      detail: "Stay informed with real-time dashboards and notifications that track progress and next steps."
-    },
-    {
-      id: 4,
-      icon: <RefreshCw className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
-      title: "Enhance",
-      text: "workflow effectiveness over time by tracking cycle times, identifying bottlenecks, and optimizing throughput.",
-      detail: "Discover bottlenecks and drive continuous improvement with our advanced analytics tools."
-    }
+    // {
+    //   id: 3,
+    //   icon: <Eye className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
+    //   title: "Provide",
+    //   text: "insights into each workflow instance so progress can be monitored and completed on schedule.",
+    //   detail: "Stay informed with real-time dashboards and notifications that track progress and next steps."
+    // },
+    // {
+    //   id: 4,
+    //   icon: <RefreshCw className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
+    //   title: "Enhance",
+    //   text: "workflow effectiveness over time by tracking cycle times, identifying bottlenecks, and optimizing throughput.",
+    //   detail: "Discover bottlenecks and drive continuous improvement with our advanced analytics tools."
+    // }
   ];
 
   return (
@@ -47,7 +47,7 @@ const WorkFlowService = () => {
           <div className="bg-gradient-to-r from-gray-600 to-gray-800 dark:from-gray-700 dark:to-gray-800 px-6 md:px-10 py-10 text-white">
             <h1 className="text-3xl md:text-4xl font-bold text-center">Workflow</h1>
             <div className="w-20 h-1 bg-white/50 mx-auto my-4 rounded-full"></div>
-            <h2 className="text-xl md:text-2xl font-medium text-center text-blue-100">How Does It Work?</h2>
+            <h2 className="text-xl md:text-2xl font-medium text-center text-blue-100">Why an Effective Workflow Process Matters</h2>
           </div>
 
           {/* Content */}
@@ -83,12 +83,12 @@ const WorkFlowService = () => {
                     {/* Step content */}
                     <div className="flex-grow">
                       <div className="bg-gray-50 dark:bg-gray-800/80 border border-gray-100 dark:border-gray-700 rounded-xl p-6 shadow-sm">
-                        <h3 className="font-semibold text-blue-600 dark:text-blue-400 text-xl mb-2">
-                          {step.title} <span className="text-gray-700 dark:text-gray-300 font-normal">{step.text}</span>
+                        <h3 className="font-semibold text-xl mb-2">
+                           <span className="text-gray-700 dark:text-gray-300 font-normal">{step.text}</span>
                         </h3>
-                        <p className="mt-3 text-gray-600 dark:text-gray-400 pl-0 md:pl-6 border-l-2 border-blue-200 dark:border-blue-800/50">
+                        {/* <p className="mt-3 text-gray-600 dark:text-gray-400 pl-0 md:pl-6 border-l-2 border-blue-200 dark:border-blue-800/50">
                           {step.detail}
-                        </p>
+                        </p> */}
                       </div>
                     </div>
                   </div>
