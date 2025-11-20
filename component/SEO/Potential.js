@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import { TrendingUp, Target, BarChart3, ArrowRight } from 'lucide-react'
+import Link from 'next/link'
 
 const Potential = () => {
   // Key benefits data
@@ -41,14 +42,14 @@ const Potential = () => {
           </div>
 
           <h2 className="text-3xl md:text-4xl lg:text-5xl max-w-5xl font-bold leading-tight text-gray-900 dark:text-white mx-auto mb-6">
-            Elevate Your Brand Online with Expert SEO Strategies
+            Comprehensive SEO Strategy: Our Core Approach
           </h2>
 
           <div className="w-24 h-1 bg-blue-600 dark:bg-blue-500 rounded-full mx-auto mb-8"></div>
 
           <p className="text-gray-700 dark:text-gray-300 text-lg max-w-3xl mx-auto">
-            Partner with a team that combines technical precision and creative
-            insight to grow your business organically.
+           At <Link href="/" className="text-blue-600">SEO IndiaTech</Link>, our professional SEO services are built on three pillars: audit &amp; strategy,
+          content optimization, and technical excellence.
           </p>
         </div>
 

@@ -1,6 +1,6 @@
-import React from 'react'
-import { ArrowRight, Star } from 'lucide-react'
-import Link from 'next/link'
+import React from "react";
+import { ArrowRight, Star } from "lucide-react";
+import Link from "next/link";
 
 const Branding = () => {
   return (
@@ -31,7 +31,7 @@ const Branding = () => {
           {/* Main heading */}
           <div className="flex justify-center px-4">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight max-w-5xl text-center text-gray-900 dark:text-white">
-              Start Your Path to Digital Branding Success with{' '}
+              Integrated Digital Branding &amp; Content Marketing with{" "}
               <span className="text-blue-700 dark:text-blue-400 font-bold">
                 SEO India Tech
               </span>
@@ -46,12 +46,19 @@ const Branding = () => {
           {/* Description */}
           <div className="flex justify-center px-4 pt-8">
             <p className="text-gray-700 dark:text-gray-300 text-lg md:text-xl mb-6 max-w-4xl text-center">
-              <span className="font-bold text-blue-700 dark:text-blue-400">
-                SEO India Tech
-              </span>
-              , is your partner in achieving digital branding success—whether
-              you’re looking to enhance brand awareness, grow engagement, or
-              maximize conversions.
+              SEO doesn’t work in isolation. That’s why SEO India Tech offers{" "}
+              <Link
+                className="text-blue-600"
+                href={"/services/content-marketing"}
+              >
+                {" "}
+                content marketing services{" "}
+              </Link>{" "}
+              and digital branding services that complement your SEO strategy.
+              Our skilled writers create blog posts, articles, infographics, and
+              more — all optimized to rank and convert. By marrying SEO with
+              strong branding, we help you build trust, authority, and a loyal
+              audience.
             </p>
           </div>
 
@@ -59,16 +66,16 @@ const Branding = () => {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto mt-8 mb-12">
             {[
               {
-                title: 'Strategic Branding',
-                desc: 'Build a lasting impression',
+                title: "Strategic Branding",
+                desc: "Build a lasting impression",
               },
               {
-                title: 'Audience Engagement',
-                desc: 'Connect with your customers',
+                title: "Audience Engagement",
+                desc: "Connect with your customers",
               },
               {
-                title: 'Measurable Results',
-                desc: 'Track and optimize performance',
+                title: "Measurable Results",
+                desc: "Track and optimize performance",
               },
             ].map((feature, index) => (
               <div
@@ -101,7 +108,7 @@ const Branding = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Branding
+export default Branding;

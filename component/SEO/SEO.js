@@ -5,6 +5,8 @@ import Potential from './Potential'
 import Matters from './Matters'
 import Branding from './Branding'
 import Form from './Form'
+import SEOServicesSection from './SEOServicesSection'
+import LocalAndEcommerceSEO from './LocalAndEcommerceSEO'
 
 const SEO = () => {
   return (
@@ -12,9 +14,11 @@ const SEO = () => {
       <Seohero/>
       <Expertise/>
       <Potential/>
+      <LocalAndEcommerceSEO/>
       <Matters/>
       <Branding/>
       <Form/>
+      <SEOServicesSection/>
     </>
   )
 }

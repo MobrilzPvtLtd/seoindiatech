@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import {
   Search,
   FileSearch,
@@ -6,80 +6,80 @@ import {
   Link,
   MapPin,
   ShoppingCart,
-} from 'lucide-react'
+} from "lucide-react";
 
 const Expertise = () => {
   // SEO expertise cards data
   const expertiseCards = [
     {
       icon: <FileSearch className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
-      title: 'In-Depth SEO Audit & Strategy Development',
+      title: "In-Depth SEO Audit &amp; Strategy Development",
       description:
-        'Our process begins with a full website audit, uncovering technical gaps and mapping out a roadmap to enhance performance and visibility.',
+        "We begin with a full website audit to find performance bottlenecks, on-page issues, and technical gaps. This audit is followed by competitive keyword research and a strategicroadmap tailored to your business. Our SEO services map out a clear path to higherrankings and better engagement.",
       benefits: [
-        'Website performance assessment',
-        'Competitor and industry analysis',
-        'Keyword strategy development',
+        "Website performance assessment",
+        "Competitor and industry analysis",
+        "Keyword strategy development",
       ],
     },
     {
       icon: <Search className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
-      title: 'Keyword Research & Content Optimization',
+      title: "Keyword Research & Content Optimization",
       description:
-        'We target high-value search terms and optimize your content to reach the right audience.',
+        "We uncover high-value keywords that align with your audience’s search intent. Our SEO optimization services focus on on-page elements — titles, meta descriptions, header tags — and craft compelling, SEO-friendly content that drives organic growth.",
       benefits: [
-        'Advanced keyword research and clustering',
-        'On-page SEO optimization (titles, meta descriptions, headers, etc.)',
-        'Engaging, search-optimized content creation',
+        "Advanced keyword research and clustering",
+        "On-page SEO optimization (titles, meta descriptions, headers, etc.)",
+        "Engaging, search-optimized content creation",
       ],
     },
     {
       icon: <Gauge className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
-      title: 'Technical SEO for Performance & Usability',
+      title: "Technical SEO for Performance & Usability",
       description:
-        'Well-organized websites improve both usability and search visibility. We use technical SEO to keep your site running at its best.',
+        "A technically sound website improves both user experience and search visibility. We optimize your site’s speed, implement responsive design, manage XML sitemaps, and apply structured data markup. This ensures search engines crawl and index your site more efficiently..",
       benefits: [
-        'Website speed optimization',
-        'Mobile-first indexing & responsive design',
-        'XML sitemaps & structured data implementation',
+        "Website speed optimization",
+        "Mobile-first indexing & responsive design",
+        "XML sitemaps & structured data implementation",
       ],
     },
     {
       icon: <Link className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
-      title: 'Link Building & Authority Growth',
+      title: "Link Building & Authority Growth",
       description:
-        'High-quality backlinks boost your domain authority and credibility. We create natural links from reputable sources to enhance your online reputation.',
+        "Building a trustworthy digital presence requires high-quality backlinks. We employ white-hat professional SEO services, such as guest blogging, outreach campaigns, and local citations, to grow your authority organically.",
       benefits: [
-        'White-hat link-building strategies',
-        'Guest blogging & outreach campaigns',
-        'Local citations & authoritative directory listings',
+        "White-hat link-building strategies",
+        "Guest blogging & outreach campaigns",
+        "Local citations & authoritative directory listings",
       ],
     },
     {
       icon: <MapPin className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
-      title: 'Local SEO – Own Your Market',
+      title: "Local SEO – Own Your Market",
       description:
-        'Our local SEO strategies increase your presence in local searches and map listings.',
+        "Our local SEO strategies increase your presence in local searches and map listings.",
       benefits: [
-        'Google Business Profile optimization',
-        'Local citations and NAP consistency',
-        'Geo-targeted content strategies',
+        "Google Business Profile optimization",
+        "Local citations and NAP consistency",
+        "Geo-targeted content strategies",
       ],
     },
     {
       icon: (
         <ShoppingCart className="w-6 h-6 text-blue-600 dark:text-blue-400" />
       ),
-      title: 'E-Commerce SEO for More Sales',
+      title: "E-Commerce SEO for More Sales",
       description:
-        'Our e-commerce SEO strategies improve product pages, categories, and site speed, driving more traffic and higher conversions.',
+        "Our e-commerce SEO strategies improve product pages, categories, and site speed, driving more traffic and higher conversions.",
       benefits: [
-        'SEO-friendly product descriptions',
-        'Schema markup for rich snippets',
-        'Conversion rate optimization (CRO)',
+        "SEO-friendly product descriptions",
+        "Schema markup for rich snippets",
+        "Conversion rate optimization (CRO)",
       ],
     },
-  ]
+  ];
 
   return (
     <section className="bg-gradient-to-b from-white to-blue-50 dark:from-gray-900 dark:to-blue-950/30 px-4 py-20 relative overflow-hidden">
@@ -96,16 +96,26 @@ const Expertise = () => {
             <span>Our Expertise</span>
           </div>
 
-          <h2 className="text-3xl md:text-4xl lg:text-5xl max-w-5xl font-bold leading-tight text-gray-900 dark:text-white text-center mx-auto mb-6">
-            Data-Driven SEO Solutions That Accelerate Your Business
+          <h2 className="text-3xl md:text-4xl lg:text-5xl max-w-7xl font-bold leading-tight text-gray-900 dark:text-white text-center mx-auto mb-6">
+            Why SEO Matters: Beyond Just Keywords
           </h2>
 
           <div className="w-24 h-1 bg-blue-600 dark:bg-blue-500 rounded-full mx-auto mb-8"></div>
 
-          <p className="text-gray-700 dark:text-gray-300 text-lg max-w-3xl mx-auto">
-            Our approach combines expertise, creativity, and analytics to drive
-            real, measurable outcomes for your business.
+          <p className="text-gray-700 dark:text-gray-300 text-lg max-w-5xl mx-auto">
+            Search engines are the gateway to nearly all online interactions. A
+            well-optimized website helps you be discovered by potential
+            customers at the exact moment they are searching for your products
+            or services.
+        
+             Our SEO optimization services ensure that your website
+            is not only search-friendly but user-friendly too — balancing
+            technical sophistication with content that resonates. With our
+            data-driven strategies, we help you convert browsers into loyal
+            customers.
+        
           </p>
+         
         </div>
 
         {/* Cards grid */}
@@ -128,21 +138,21 @@ const Expertise = () => {
                   {card.description}
                 </p>
 
-                <ul className="text-gray-700 dark:text-gray-300 space-y-2 mt-auto">
+                {/* <ul className="text-gray-700 dark:text-gray-300 space-y-2 mt-auto">
                   {card.benefits.map((benefit, idx) => (
                     <li key={idx} className="flex items-start gap-2">
                       <div className="min-w-[8px] h-2 w-2 rounded-full bg-blue-600 dark:bg-blue-400 mt-2"></div>
                       <span>{benefit}</span>
                     </li>
                   ))}
-                </ul>
+                </ul> */}
               </div>
             </div>
           ))}
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Expertise
+export default Expertise;

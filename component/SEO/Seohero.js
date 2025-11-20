@@ -21,21 +21,21 @@ const Seohero = () => {
           </div>
 
           <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-snug md:leading-16 max-w-2xl mx-auto md:mx-0">
-            Enhance Your Presence, Drive More Visitors, and Top Search Rankings
+           Transform Your Online Presence with Expert SEO Services at <span className='text-blue-600'>SEO IndiaTech</span>
           </h1>
 
           <div className="w-20 h-1.5 bg-blue-600 dark:bg-blue-500 rounded-full my-6 mx-auto md:mx-0"></div>
 
           <p className="text-justify text-gray-700 dark:text-gray-300 text-md max-w-xl mx-auto md:mx-0 px-2 md:px-0">
-            In today’s digital-first world, a strong online presence is
-            essential. SEO drives your business higher in search results,
-            attracts quality traffic, and converts visitors into loyal
-            customers. At{' '}
-            <span className="text-blue-700 dark:text-blue-400 font-semibold">
-              SEO India Tech,
-            </span>{' '}
-            we create strategic SEO solutions that deliver measurable
-            results—not just website optimization.
+            In today’s hyper-competitive digital landscape, visibility is everything. At <span className="text-blue-700 dark:text-blue-400 font-semibold">
+             <Link href={'/'}>SEO IndiaTech </Link> ,
+            </span>{' '} we
+specialize in delivering SEO services that not only increase your search engine rankings but also
+drive qualified traffic, boost engagement, and fuel sustainable growth. Whether you are a local
+business looking to dominate your neighborhood or a national brand aiming for higher
+conversions, our professional SEO services are customized for your unique goals.
+            
+          
           </p>
 
           {/* Feature points */}
