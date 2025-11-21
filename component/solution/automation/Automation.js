@@ -5,6 +5,8 @@ import DigitalAutomation from './DigitalAutomation'
 import AutomationBenefits from './AutomationBenefits'
 import TrustAutomation from './TrustAutomation'
 import TrustUs from '@/component/common/TrustUs'
+import DigitalAutomationServices from './DigitalAutomationServices'
+import WhyDigitalAutomation from './WhyDigitalAutomation'
 
 function Automation() {
   return (
@@ -20,6 +22,7 @@ function Automation() {
         buttonGradient="bg-gradient-to-r from-blue-700 to-blue-900 dark:from-gray-800 dark:to-gray-900"
       />
       <TrustAutomation />
+      <WhyDigitalAutomation/>
       <TrustUs
         title="Ready to get started?"
         buttonText="Contact Us Now!"
@@ -27,6 +30,7 @@ function Automation() {
         buttonGradient="bg-gradient-to-r from-blue-700 to-blue-900 dark:from-gray-800 dark:to-gray-900"
       />
       <AutomationBenefits />
+      <DigitalAutomationServices />
     </>
   )
 }

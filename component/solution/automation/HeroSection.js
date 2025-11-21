@@ -1,5 +1,5 @@
-import Image from 'next/image'
-import { useState, useEffect } from 'react'
+import Image from "next/image";
+import { useState, useEffect } from "react";
 import {
   Zap,
   TrendingUp,
@@ -8,71 +8,72 @@ import {
   Scale,
   ArrowRight,
   Bot,
-} from 'lucide-react'
+} from "lucide-react";
+import Link from "next/link";
 
 export default function HeroSection() {
-  const [activeBot, setActiveBot] = useState(0)
+  const [activeBot, setActiveBot] = useState(0);
 
   // Cycle through different bot states for animation
   useEffect(() => {
     const interval = setInterval(() => {
-      setActiveBot((prev) => (prev + 1) % 3)
-    }, 2000)
-    return () => clearInterval(interval)
-  }, [])
+      setActiveBot((prev) => (prev + 1) % 3);
+    }, 2000);
+    return () => clearInterval(interval);
+  }, []);
 
   // Animation class based on active bot state
   const getAnimationClass = (index) => {
     return activeBot === index
-      ? 'opacity-100 translate-y-0'
-      : 'opacity-0 translate-y-4'
-  }
+      ? "opacity-100 translate-y-0"
+      : "opacity-0 translate-y-4";
+  };
 
   const benefits = [
     {
       icon: (
         <Zap className="w-5 h-5 text-blue-600 dark:text-blue-400 group-hover:text-blue-700 dark:group-hover:text-blue-300" />
       ),
-      title: 'Increase Efficiency',
+      title: "Increase Efficiency",
       description:
-        'Reduce manual effort and optimize processes with smart automation.',
-      hoverClass: 'group-hover:bg-blue-100 dark:group-hover:bg-blue-900/30',
+        "Reduce manual effort and optimize processes with smart automation.",
+      hoverClass: "group-hover:bg-blue-100 dark:group-hover:bg-blue-900/30",
     },
     {
       icon: (
         <DollarSign className="w-5 h-5 text-green-600 dark:text-green-400 group-hover:text-green-700 dark:group-hover:text-green-300" />
       ),
-      title: 'Reduce Costs',
+      title: "Reduce Costs",
       description:
-        'Boost operational efficiency and cut costs with precise, automated processes.',
-      hoverClass: 'group-hover:bg-green-100 dark:group-hover:bg-green-900/30',
+        "Boost operational efficiency and cut costs with precise, automated processes.",
+      hoverClass: "group-hover:bg-green-100 dark:group-hover:bg-green-900/30",
     },
     {
       icon: (
         <Users className="w-5 h-5 text-purple-600 dark:text-purple-400 group-hover:text-purple-700 dark:group-hover:text-purple-300" />
       ),
-      title: 'Enhance Customer Experience',
+      title: "Enhance Customer Experience",
       description:
-        'Enhance interactions through AI chatbots, email automation, and tailored marketing campaigns.',
-      hoverClass: 'group-hover:bg-purple-100 dark:group-hover:bg-purple-900/30',
+        "Enhance interactions through AI chatbots, email automation, and tailored marketing campaigns.",
+      hoverClass: "group-hover:bg-purple-100 dark:group-hover:bg-purple-900/30",
     },
     {
       icon: (
         <Scale className="w-5 h-5 text-amber-600 dark:text-amber-400 group-hover:text-amber-700 dark:group-hover:text-amber-300" />
       ),
-      title: 'Improve Scalability',
+      title: "Improve Scalability",
       description:
-        'Scale your operations effortlessly using tailored cloud automation tools.',
-      hoverClass: 'group-hover:bg-amber-100 dark:group-hover:bg-amber-900/30',
+        "Scale your operations effortlessly using tailored cloud automation tools.",
+      hoverClass: "group-hover:bg-amber-100 dark:group-hover:bg-amber-900/30",
     },
-  ]
+  ];
 
   // Bot animation frames
   const botAnimationFrames = [
-    '/images/bot-frame1.svg',
-    '/images/bot-frame2.svg',
-    '/images/bot-frame3.svg',
-  ]
+    "/images/bot-frame1.svg",
+    "/images/bot-frame2.svg",
+    "/images/bot-frame3.svg",
+  ];
 
   return (
     <section className="bg-white dark:bg-gray-900 overflow-hidden relative">
@@ -95,24 +96,36 @@ export default function HeroSection() {
                 <span>AI-Powered Solutions</span>
               </div>
 
-              <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white leading-16">
-                Digital
-                <br />
-                <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                  Automation
-                </span>
+              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white leading-16">
+                Transform Your Business Efficiency with Advanced{" "}
+                <span className="text-blue-500">Digital Automation </span>{" "}
+                Services
               </h1>
 
-              <p className="text-justify text-md text-gray-700 dark:text-gray-300 leading-relaxed max-w-xl">
-                Automation is essential for reducing manual effort, minimizing
-                errors, and accelerating workflows. Using AI-driven processes,
-                robotic process automation, and intelligent automation tools, we
-                help businesses optimize operations and achieve greater
-                productivity.
+              <p className="text-justify text-xl text-gray-700 dark:text-gray-300 leading-relaxed max-w-xl">
+                In today’s competitive digital economy, businesses must operate
+                faster, smarter, and more efficiently to stay ahead. At{" "}
+                <Link className="text-blue-600" href="/">
+                  {" "}
+                  SEO IndiaTech
+                </Link>{" "}
+                our digital automation services are designed to streamline your
+                operations, enhance customer engagement, and drive measurable
+                business growth. From workflow automation to marketing
+                optimization and CRM integration, we deliver cutting-edge
+                digital automation as a service tailored to your unique
+                organizational needs.
+              </p>
+              <p className="text-justify text-xl text-gray-700 dark:text-gray-300 leading-relaxed max-w-xl">
+                Automation is no longer a luxury — it is a necessity. Modern
+                companies require intelligent systems that reduce manual work,
+                eliminate operational errors, and create room for innovation.
+                Our automation solutions empower your business to reduce costs,
+                accelerate productivity, and scale effortlessly.
               </p>
             </div>
 
-            <div className="space-y-4">
+            {/* <div className="space-y-4">
               {benefits.map((benefit, index) => (
                 <div
                   key={index}
@@ -133,7 +146,7 @@ export default function HeroSection() {
                   </div>
                 </div>
               ))}
-            </div>
+            </div> */}
           </div>
 
           {/* Right Illustration */}
@@ -157,17 +170,17 @@ export default function HeroSection() {
                     <div
                       key={index}
                       className={`absolute transition-all duration-700 ease-in-out ${getAnimationClass(
-                        index,
+                        index
                       )}`}
                     >
                       <div className="bg-white dark:bg-gray-900 p-3 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700">
                         <Bot
                           className={`w-12 h-12 ${
                             index === 0
-                              ? 'text-blue-500'
+                              ? "text-blue-500"
                               : index === 1
-                              ? 'text-purple-500'
-                              : 'text-green-500'
+                              ? "text-purple-500"
+                              : "text-green-500"
                           }`}
                         />
                       </div>
@@ -210,5 +223,5 @@ export default function HeroSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
