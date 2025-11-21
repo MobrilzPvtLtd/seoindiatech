@@ -4,6 +4,9 @@ import PromotionService from './PromotionService'
 import TrustPromotion from './TrustPromotion'
 import AutomationBenefits from '../automation/AutomationBenefits'
 import TrustUs from '@/component/common/TrustUs'
+import PromotionalStrategies from './PromotionalStrategies'
+import IntegratedPromotionSection from './IntegratedPromotionSection'
+import TrustedAdvertisingCompany from './TrustedAdvertisingCompany'
 
 function Promotion() {
   return (
@@ -17,7 +20,9 @@ function Promotion() {
         bgGradient="bg-gradient-to-r from-blue-50 to-blue-200 dark:from-gray-900 dark:to-gray-800"
         buttonGradient="bg-gradient-to-r from-blue-700 to-blue-900 dark:from-gray-800 dark:to-gray-900"
       />
+      <PromotionalStrategies />
       <TrustPromotion />
+      <TrustedAdvertisingCompany/>
       <TrustUs
         title="Ready to get started?"
         buttonText="Contact Us Now!"
@@ -25,6 +30,7 @@ function Promotion() {
         buttonGradient="bg-gradient-to-r from-blue-700 to-blue-900 dark:from-gray-800 dark:to-gray-900"
       />
       <AutomationBenefits />
+      <IntegratedPromotionSection/>
 
 
     </>

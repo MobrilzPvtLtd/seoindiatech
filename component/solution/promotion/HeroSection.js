@@ -1,22 +1,23 @@
-import Image from 'next/image'
-import React from 'react'
-import { TrendingUp, Target, Megaphone, ArrowRight } from 'lucide-react'
+import Image from "next/image";
+import React from "react";
+import { TrendingUp, Target, Megaphone, ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 const HeroSection = () => {
   const promotionFeatures = [
     {
       icon: <Target className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
-      text: 'Tailored campaigns for better engagement',
+      text: "Tailored campaigns for better engagement",
     },
     {
       icon: <TrendingUp className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
-      text: 'Smarter strategies, proven by data',
+      text: "Smarter strategies, proven by data",
     },
     {
       icon: <Megaphone className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
-      text: 'Engage customers across multiple platforms',
+      text: "Engage customers across multiple platforms",
     },
-  ]
+  ];
 
   return (
     <section className="bg-white dark:bg-gray-900 py-8 md:py-24 relative overflow-hidden">
@@ -35,26 +36,36 @@ const HeroSection = () => {
               <span>Marketing Solutions</span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-tight">
-              Promotion And
-              <br />
-              <span className="text-blue-700 dark:text-blue-400">
-                Advertising
-              </span>
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white leading-tight">
+             Powerful Advertising & Promotional Solutions with SEO IndiaTech
             </h1>
 
             <div className="w-20 h-1 bg-blue-600 dark:bg-blue-500 rounded-full"></div>
 
             <p className="text-justify text-gray-700 dark:text-gray-300 text-base md:text-lg leading-relaxed">
-              Discover our cutting-edge marketing solutions designed to set new
-              industry standards. With an unwavering commitment to quality and
-              customer satisfaction, we deliver a seamless fusion of strategy
-              and creativity. Stay ahead with our innovative campaigns,
-              exclusive promotions, and tailored solutions crafted to elevate
-              your business to the next level.
+              In a fast-moving digital world, every business needs strong
+              visibility, consistent branding, and targeted promotions to
+              attract the right audience. At{" "}
+              <Link className="text-blue-600" href="/">
+                {" "}
+                SEO IndiaTech
+              </Link>{" "}
+              , we provide result-driven advertising &amp; promotional solutions
+              that help businesses grow faster, reach new markets, and stand out
+              from the competition. Whether you’re launching a new product,
+              expanding your services, or strengthening your online presence,
+              our strategic promotional plans deliver measurable results that
+              positively impact your bottom line.
+            </p>
+            <p className="text-justify text-gray-700 dark:text-gray-300 text-base md:text-lg leading-relaxed">
+              As a trusted advertising &amp; promotion company, we develop
+              customized campaigns that align with your brand identity, target
+              audience, and business objectives. Our goal is to help your brand
+              communicate its message effectively through the right channels and
+              at the right time.
             </p>
 
-            <div className="pt-4 space-y-3">
+            {/* <div className="pt-4 space-y-3">
               {promotionFeatures.map((feature, index) => (
                 <div key={index} className="flex items-center gap-3">
                   <div className="p-1.5 bg-blue-100 dark:bg-blue-900/50 rounded-full">
@@ -65,7 +76,7 @@ const HeroSection = () => {
                   </span>
                 </div>
               ))}
-            </div>
+            </div> */}
           </div>
 
           {/* Right image */}
@@ -115,7 +126,7 @@ const HeroSection = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default HeroSection
+export default HeroSection;
