@@ -35,24 +35,40 @@ const HeroSection = () => {
               <span>Data-Driven Insights</span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-tight">
+            <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-tight">
               Market{' '}
-              <span className="text-blue-700 dark:text-blue-400">Research</span>
+              <span className="text-blue-700 dark:text-blue-400">
+                Research Services
+              </span>{' '}
+              with SEO India Tech
             </h1>
 
             <div className="w-20 h-1 bg-blue-600 dark:bg-blue-500 rounded-full"></div>
 
             <p className="text-justify text-gray-700 dark:text-gray-300 text-base md:text-lg leading-relaxed">
-              Market research is the systematic process of collecting,
-              analyzing, and interpreting data related to a specific market.
-              This includes evaluating its size, emerging trends, competitive
-              landscape, and the needs and preferences of target customers. The
-              primary objective of market research is to deliver actionable
-              insights that enable businesses to make well-informed decisions
-              regarding their products, services, and marketing strategies.
+              In today’s competitive business environment, brands can no longer
+              rely on assumptions or guesswork to make key decisions.
+              Understanding customer needs, market demand, and competitive
+              landscape is the foundation of sustainable success. At <a href="https://www.seoindiatech.com/" className="text-blue-600">SEO India
+              Tech,</a> we combine intelligence, data, and strategic insights to
+              help businesses thrive through our specialized{' '}
+              <b>market research services</b>. Whether you are launching a new
+              product, scaling an existing one, or trying to tap into new
+              customer segments, our
+              <b>market research service</b> offers precise analysis to support
+              informed decision-making.
             </p>
 
-            <div className="pt-4 space-y-3">
+            <p className="text-justify text-gray-700 dark:text-gray-300 text-base md:text-lg leading-relaxed">
+              As a leading <b>digital marketing service company,</b> we recognize that
+              strategy begins with information. Without clarity, every marketing
+              move becomes unpredictable. Our team uses advanced tools,
+              real-time data, and proven methodologies to deliver <b>custom market
+              research services</b> that align with your business goals and market
+              needs.
+            </p>
+
+            {/* <div className="pt-4 space-y-3">
               {researchFeatures.map((feature, index) => (
                 <div key={index} className="flex items-center gap-3">
                   <div className="p-1.5 bg-blue-100 dark:bg-blue-900/50 rounded-full">
@@ -63,7 +79,7 @@ const HeroSection = () => {
                   </span>
                 </div>
               ))}
-            </div>
+            </div> */}
 
             <div className="hidden pt-6">
               <button className="bg-blue-600 hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 shadow-md flex items-center group">

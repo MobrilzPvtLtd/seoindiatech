@@ -78,6 +78,92 @@ export default function TrustMarketResearch() {
 
   return (
     <section className="py-16 md:py-24 px-6 bg-white dark:bg-gray-900 relative overflow-hidden">
+      {/* Linking Market Research with Digital Marketing Success Section */}
+      <div className="mb-16">
+        <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-100 dark:border-blue-800 rounded-2xl p-6 md:p-10 shadow-lg">
+          <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white text-center mb-6">
+            Linking Market Research with Digital Marketing Success
+          </h3>
+
+          <p className="text-gray-700 dark:text-gray-300 text-center max-w-4xl mx-auto mb-10 leading-relaxed">
+            Effective marketing needs strategy. Strategy needs research. At SEO
+            India Tech, we bridge the two through research-driven marketing.
+            Many businesses struggle with advertising wastage and low ROI
+            because they lack market clarity. With our integrated approach, we
+            align <b>market research services</b> with{' '}
+            <a
+              href="https://www.seoindiatech.com/services/content-marketing"
+              className="text-blue-600"
+            >
+              content marketing services,
+            </a>{' '}
+            SEO, paid ads, and brand promotion strategies to ensure every
+            marketing investment generates results.
+          </p>
+
+          {/* Timeline / Flow */}
+          <div className="max-w-4xl mx-auto">
+            <div className="relative border-l-2 border-blue-300 dark:border-blue-700 pl-6 space-y-10">
+              {[
+                {
+                  title: 'Research & insights',
+                  icon: 'Search',
+                },
+                {
+                  title: 'Campaign planning based on findings',
+                  icon: 'Target',
+                },
+                {
+                  title: (
+                    <>
+                      Execution through{' '}
+                      <strong>content marketing services,</strong> SEO, email,
+                      social media, display ads
+                    </>
+                  ),
+                  icon: 'TrendingUp',
+                },
+                {
+                  title: 'Performance monitoring and optimization',
+                  icon: 'BarChart2',
+                },
+              ].map((item, index) => {
+                const Icon =
+                  item.icon === 'Search'
+                    ? require('lucide-react').Search
+                    : item.icon === 'Target'
+                    ? require('lucide-react').Target
+                    : item.icon === 'TrendingUp'
+                    ? require('lucide-react').TrendingUp
+                    : require('lucide-react').BarChart2
+
+                return (
+                  <div key={index} className="relative">
+                    {/* Dot */}
+                    <div className="absolute -left-[14px] top-1 w-3 h-3 bg-blue-600 dark:bg-blue-400 rounded-full shadow-md"></div>
+
+                    {/* Content Card */}
+                    <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-300 flex items-start gap-4">
+                      <div className="w-12 h-12 rounded-xl bg-blue-100 dark:bg-blue-900/40 border border-blue-300/50 dark:border-blue-700 flex items-center justify-center">
+                        <Icon className="w-6 h-6 text-blue-600 dark:text-blue-400" />
+                      </div>
+                      <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
+                        {item.title}
+                      </p>
+                    </div>
+                  </div>
+                )
+              })}
+            </div>
+          </div>
+
+          <p className="text-gray-700 dark:text-gray-300 text-center max-w-3xl mx-auto mt-10">
+            When backed by insights, <b>advertising & promotional</b> campaigns
+            deliver higher engagement and superior conversions.
+          </p>
+        </div>
+      </div>
+
       {/* Background decorative elements */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/4 right-0 w-72 h-72 bg-white/50 dark:bg-blue-900/10 rounded-full blur-3xl"></div>
@@ -299,6 +385,80 @@ export default function TrustMarketResearch() {
               ))}
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* Market Research for Advertising & Promotional Campaigns */}
+      <div className="mt-16">
+        <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl shadow-xl p-6 md:p-10">
+          <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white text-center mb-6">
+            Market Research for Advertising & Promotional Campaigns
+          </h3>
+
+          <p className="text-gray-700 dark:text-gray-300 text-center max-w-4xl mx-auto mb-10 leading-relaxed">
+            Launching a campaign without research is like navigating without a
+            map. With our dedicated <b>market research service,</b> businesses
+            can reduce guesswork and maximize returns. We evaluate audience
+            demographics, interests, pain points, preferred platforms, and
+            buying triggers to create hyper-targeted marketing messages.
+          </p>
+
+          {/* Feature grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              {
+                title: 'Lead generation & customer acquisition',
+                icon: 'Target',
+              },
+              {
+                title: 'Brand awareness & recall building',
+                icon: 'Users',
+              },
+              {
+                title: 'Product launches & seasonal promotions',
+                icon: 'TrendingUp',
+              },
+              {
+                title: 'Customer re-engagement & retention strategies',
+                icon: 'BarChart2',
+              },
+            ].map((item, index) => {
+              const Icon =
+                item.icon === 'Target'
+                  ? require('lucide-react').Target
+                  : item.icon === 'Users'
+                  ? require('lucide-react').Users
+                  : item.icon === 'TrendingUp'
+                  ? require('lucide-react').TrendingUp
+                  : require('lucide-react').BarChart2
+
+              return (
+                <div
+                  key={index}
+                  className="bg-gray-50 dark:bg-gray-900/40 border border-gray-200 dark:border-gray-700 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col items-center text-center gap-4"
+                >
+                  <div className="w-14 h-14 rounded-xl bg-blue-100 dark:bg-blue-900/40 border border-blue-300/50 dark:border-blue-700 flex items-center justify-center">
+                    <Icon className="w-7 h-7 text-blue-600 dark:text-blue-400" />
+                  </div>
+
+                  <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
+                    {item.title}
+                  </p>
+                </div>
+              )
+            })}
+          </div>
+
+          <p className="text-gray-700 dark:text-gray-300 text-center max-w-3xl mx-auto mt-10 leading-relaxed">
+            With accurate consumer insights, your{' '}
+            <a
+              href="https://www.seoindiatech.com/solution/promotion-and-ads"
+              className="text-blue-600"
+            >
+              advertising & promotional{' '}
+            </a>
+            approach becomes laser- focused and budget-efficient.
+          </p>
         </div>
       </div>
     </section>

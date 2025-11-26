@@ -4,6 +4,9 @@ import MarketResearchService from './MarketResearchService'
 import TrustMarketResearch from './TrustMarketResearch'
 import AutomationBenefits from '../automation/AutomationBenefits'
 import TrustUs from '@/component/common/TrustUs'
+import BoostBrandStrategy from './BoostBrandStrategy'
+import WhyMarketResearch from './WhyMarketResearch'
+import MarketStrategy from './MarketStrategy'
 
 function MarektResearch() {
   return (
@@ -25,8 +28,10 @@ function MarektResearch() {
         bgGradient="bg-gradient-to-r from-blue-50 to-blue-200 dark:from-gray-900 dark:to-gray-800"
         buttonGradient="bg-gradient-to-r from-blue-700 to-blue-900 dark:from-gray-800 dark:to-gray-900"
       />
+      <BoostBrandStrategy />
       <AutomationBenefits />
-
+      <WhyMarketResearch />
+      <MarketStrategy />
     </>
   )
 }

@@ -212,6 +212,162 @@ const MarketResearchService = () => {
           ))}
         </div>
       </div>
+
+      {/* Why Market Research Matters Section */}
+      <div className="mt-16">
+        <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 p-6 md:p-10">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white text-center mb-4">
+            Why Market Research Matters for Business Success
+          </h2>
+
+          <p className="text-gray-700 dark:text-gray-300 text-center max-w-3xl mx-auto mb-10">
+            Modern customers are smarter, informed, and selective. Businesses
+            need deeper understanding about what customers expect, how markets
+            behave, and how competitors position their offerings. Through our
+            professional <b>market research services,</b> we help brands decode
+            consumer psychology and identify growth opportunities.
+          </p>
+
+          {/* Points Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            {[
+              {
+                title: 'Discover Pain Points & Buyer Behavior',
+                icon: 'Target',
+              },
+              {
+                title: 'Understand Emerging Market Trends',
+                icon: 'TrendingUp',
+              },
+              {
+                title: 'Identify Market Gaps & Product Fit',
+                icon: 'Search',
+              },
+              {
+                title: 'Evaluate Competitor Strengths',
+                icon: 'BarChart2',
+              },
+              {
+                title: 'Measure Brand Identity & Perception',
+                icon: 'Users',
+              },
+            ].map((item, i) => {
+              const Icon =
+                item.icon === 'Target'
+                  ? require('lucide-react').Target
+                  : item.icon === 'TrendingUp'
+                  ? require('lucide-react').TrendingUp
+                  : item.icon === 'Search'
+                  ? require('lucide-react').Search
+                  : item.icon === 'BarChart2'
+                  ? require('lucide-react').BarChart2
+                  : require('lucide-react').Users
+
+              return (
+                <div
+                  key={i}
+                  className="flex items-start gap-4 p-5 bg-gray-50 dark:bg-gray-900/40 border border-gray-200 dark:border-gray-700 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 group"
+                >
+                  <div className="w-12 h-12 rounded-xl bg-blue-100 dark:bg-blue-900/40 border border-blue-300/50 dark:border-blue-700 flex items-center justify-center shadow-sm">
+                    <Icon className="w-6 h-6 text-blue-600 dark:text-blue-400" />
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-1">
+                      {item.title}
+                    </h4>
+                  </div>
+                </div>
+              )
+            })}
+          </div>
+
+          {/* Bottom paragraph */}
+          <p className="text-gray-700 dark:text-gray-300 text-center max-w-3xl mx-auto mt-10">
+            With data-driven insights, companies can craft smarter marketing
+            strategies, optimize products, and build customer-centric
+            experiences that drive higher ROI and long-term business success.
+          </p>
+        </div>
+      </div>
+
+      {/* Custom Market Research Services Section */}
+      <div className="mt-16">
+        <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 p-6 md:p-10">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white text-center mb-4">
+            Our Custom Market Research Services
+          </h2>
+
+          <p className="text-gray-700 dark:text-gray-300 text-center max-w-3xl mx-auto mb-10">
+            Every business is unique, and so is its market approach. That is why
+            we offer fully <b>custom market research services</b> tailored to
+            specific industries, audiences, and objectives. We go beyond generic
+            reporting and deliver actionable insights that help you plan,
+            execute, and optimize your marketing blueprint.
+          </p>
+
+          {/* Research Capabilities */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            {[
+              {
+                title: 'Customer & Buyer Persona Research',
+                icon: 'Users',
+              },
+              {
+                title: 'Product/Service Demand Forecasting',
+                icon: 'TrendingUp',
+              },
+              {
+                title: 'Competitor & Opportunity Analysis',
+                icon: 'Search',
+              },
+              {
+                title: 'Brand Positioning & Market Perception Study',
+                icon: 'Target',
+              },
+              {
+                title: 'Pricing Strategy & Customer Value Analysis',
+                icon: 'BarChart2',
+              },
+              {
+                title: 'Industry Growth & Trend Assessment',
+                icon: 'TrendingUp',
+              },
+            ].map((item, i) => {
+              const Icon =
+                item.icon === 'Users'
+                  ? require('lucide-react').Users
+                  : item.icon === 'TrendingUp'
+                  ? require('lucide-react').TrendingUp
+                  : item.icon === 'Search'
+                  ? require('lucide-react').Search
+                  : item.icon === 'Target'
+                  ? require('lucide-react').Target
+                  : require('lucide-react').BarChart2
+
+              return (
+                <div
+                  key={i}
+                  className="flex items-start gap-4 p-5 bg-gray-50 dark:bg-gray-900/40 border border-gray-200 dark:border-gray-700 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 group"
+                >
+                  <div className="w-12 h-12 rounded-xl bg-blue-100 dark:bg-blue-900/40 border border-blue-300/50 dark:border-blue-700 flex items-center justify-center shadow-sm">
+                    <Icon className="w-6 h-6 text-blue-600 dark:text-blue-400" />
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-1">
+                      {item.title}
+                    </h4>
+                  </div>
+                </div>
+              )
+            })}
+          </div>
+
+          <p className="text-gray-700 dark:text-gray-300 text-center max-w-3xl mx-auto mt-10">
+            These insights empower business leaders to take confident decisions
+            backed by verified data and analytics.
+          </p>
+        </div>
+      </div>
     </section>
   )
 }
