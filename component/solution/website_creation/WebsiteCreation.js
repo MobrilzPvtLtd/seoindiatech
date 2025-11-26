@@ -4,6 +4,8 @@ import WebsiteCreationService from './WebsiteCreationservice'
 import TrustWebsiteCreation from './TrustWebsiteCreation'
 import AutomationBenefits from '../automation/AutomationBenefits'
 import TrustUs from '@/component/common/TrustUs'
+import AboutWork from './AboutWork'
+import SolutionImpact from './SolutionImpact'
 
 function WebsiteCreation() {
   return (
@@ -24,9 +26,9 @@ function WebsiteCreation() {
         bgGradient="bg-gradient-to-r from-blue-50 to-blue-200 dark:from-gray-900 dark:to-gray-800"
         buttonGradient="bg-gradient-to-r from-blue-700 to-blue-900 dark:from-gray-800 dark:to-gray-900"
       />
+      <AboutWork />
       <AutomationBenefits />
-
-
+      <SolutionImpact />
     </>
   )
 }

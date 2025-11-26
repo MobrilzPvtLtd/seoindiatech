@@ -49,9 +49,12 @@ const HeroSection = () => {
               In today’s competitive business environment, brands can no longer
               rely on assumptions or guesswork to make key decisions.
               Understanding customer needs, market demand, and competitive
-              landscape is the foundation of sustainable success. At <a href="https://www.seoindiatech.com/" className="text-blue-600">SEO India
-              Tech,</a> we combine intelligence, data, and strategic insights to
-              help businesses thrive through our specialized{' '}
+              landscape is the foundation of sustainable success. At{' '}
+              <a href="https://www.seoindiatech.com/" className="text-blue-600">
+                SEO India Tech,
+              </a>{' '}
+              we combine intelligence, data, and strategic insights to help
+              businesses thrive through our specialized{' '}
               <b>market research services</b>. Whether you are launching a new
               product, scaling an existing one, or trying to tap into new
               customer segments, our
@@ -60,12 +63,12 @@ const HeroSection = () => {
             </p>
 
             <p className="text-justify text-gray-700 dark:text-gray-300 text-base md:text-lg leading-relaxed">
-              As a leading <b>digital marketing service company,</b> we recognize that
-              strategy begins with information. Without clarity, every marketing
-              move becomes unpredictable. Our team uses advanced tools,
-              real-time data, and proven methodologies to deliver <b>custom market
-              research services</b> that align with your business goals and market
-              needs.
+              As a leading <b>digital marketing service company,</b> we
+              recognize that strategy begins with information. Without clarity,
+              every marketing move becomes unpredictable. Our team uses advanced
+              tools, real-time data, and proven methodologies to deliver{' '}
+              <b>custom market research services</b> that align with your
+              business goals and market needs.
             </p>
 
             {/* <div className="pt-4 space-y-3">

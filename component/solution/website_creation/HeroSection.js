@@ -35,22 +35,29 @@ const HeroSection = () => {
               <span>Professional Web Development</span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-tight">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white leading-tight">
               Website{' '}
-              <span className="text-blue-700 dark:text-blue-400">Creation</span>
+              <span className="text-blue-700 dark:text-blue-400">
+                Creation Services
+              </span>{' '}
+              by SEO India Tech
             </h1>
 
             <div className="w-20 h-1 bg-blue-600 dark:bg-blue-500 rounded-full"></div>
 
             <p className="text-justify text-gray-700 dark:text-gray-300 text-base md:text-lg leading-relaxed">
-              Creating and maintaining a successful website demands consistent
-              effort, monitoring, and optimization. By leveraging user feedback,
-              tracking industry trends, and adapting to evolving business needs,
-              organizations can ensure a strong and competitive digital
-              presence.
+              In today’s fiercely competitive digital landscape, having a
+              robust, user-friendly website is no longer optional — it’s
+              essential. At SEO India Tech, we deliver <b>best website creation
+              services,</b> tailored to your business goals and designed to grow
+              with you. Whether you’re launching a startup, scaling operations,
+              or seeking a professional online presence, our <b>professional
+              website creation services</b> combine strategic insight, technical
+              excellence, and marketing know-how to give you a powerful digital
+              edge.
             </p>
 
-            <div className="pt-4 space-y-3">
+            {/* <div className="pt-4 space-y-3">
               {websiteFeatures.map((feature, index) => (
                 <div key={index} className="flex items-center gap-3">
                   <div className="p-1.5 bg-blue-100 dark:bg-blue-900/50 rounded-full">
@@ -61,7 +68,7 @@ const HeroSection = () => {
                   </span>
                 </div>
               ))}
-            </div>
+            </div> */}
 
             <div className="hidden pt-6 flex flex-wrap gap-4">
               <button className="bg-blue-600 hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 shadow-md flex items-center group">

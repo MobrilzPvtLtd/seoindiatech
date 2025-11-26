@@ -57,6 +57,38 @@ export default function TrustWebsiteCreation() {
 
   return (
     <section className="py-16 md:py-24 px-6 bg-gray-50 dark:bg-gray-900 relative overflow-hidden">
+      {/* Robust Development &amp; Content Integration */}
+      <div className="mb-16">
+        <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-100 dark:border-blue-800 rounded-2xl p-6 md:p-10 shadow-lg">
+          <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white text-center mb-6">
+            Robust Development &amp; Content Integration
+          </h3>
+
+          <p className="text-gray-700 dark:text-gray-300 text-center max-w-4xl mx-auto mb-10 leading-relaxed">
+            Behind every great website is solid development. Our technical team
+            builds your site using the optimal technology stack — from CMS
+            platforms like WordPress to custom frameworks — ensuring your site
+            is fast, stable, secure, and scalable. We write clean, maintainable
+            code that supports seamless functionality across devices and
+            platforms.
+            <br />
+            <br />
+            Content is king — but only when it’s structured, organized, and
+            optimized. We craft content layouts, integrate multimedia, and
+            ensure a consistent tone that aligns with your brand. Every page,
+            section, and call-to-action is strategically placed to maximize
+            engagement and conversions.
+          </p>
+
+          {/* Timeline / Flow (Optional, can add key points if needed) */}
+          <div className="max-w-4xl mx-auto">
+            <div className="relative border-l-2 border-blue-300 dark:border-blue-700 pl-6 space-y-10">
+              {/* Example: You can add steps or leave empty if no sub-points */}
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Background decorative elements */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/4 right-0 w-72 h-72 bg-white/50 dark:bg-blue-900/10 rounded-full blur-3xl"></div>
@@ -267,6 +299,58 @@ export default function TrustWebsiteCreation() {
             <p className="text-gray-600 dark:text-gray-400">
               Grow your business with a website that reaches and connects with
               customers globally.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 max-w-6xl mx-auto px-6">
+          {/* Left Column */}
+          <div className="bg-gradient-to-r from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 border border-blue-200 dark:border-blue-800 rounded-3xl p-8 md:p-10 shadow-xl hover:shadow-2xl transition-all duration-300">
+            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white text-center mb-6">
+              SEO, Local SEO &amp; Digital Branding Services Support
+            </h3>
+
+            <p className="text-gray-800 dark:text-gray-300 text-center leading-relaxed">
+              A beautiful website is just the start. To truly succeed online,
+              you need visibility. That’s where our <b>local SEO services,</b>{' '}
+              <a
+                href="https://www.seoindiatech.com/services/digital-branding"
+                className="text-blue-600 underline"
+              >
+                digital branding services,
+              </a>{' '}
+              and ongoing optimization come in. From metadata and keyword
+              optimization to technical SEO and local search strategies, we
+              ensure your website is discoverable by the right audience.
+              <br />
+              <br />
+              Our integrated approach — combining website development with SEO
+              and branding — means you don’t just get a website; you get a
+              digital marketing powerhouse. This end-to-end offering is what
+              sets our top website creation services apart.
+            </p>
+          </div>
+
+          {/* Right Column */}
+          <div className="bg-gradient-to-r from-purple-50 to-purple-100 dark:from-purple-900/20 dark:to-purple-800/20 border border-purple-200 dark:border-purple-800 rounded-3xl p-8 md:p-10 shadow-xl hover:shadow-2xl transition-all duration-300">
+            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white text-center mb-6">
+              Quality Assurance, Launch &amp; Maintenance
+            </h3>
+
+            <p className="text-gray-800 dark:text-gray-300 text-center leading-relaxed">
+              Before your site goes live, we perform extensive testing across
+              devices, browsers, and screen sizes. We check functionality,
+              performance, security, and accessibility — ensuring a seamless
+              user experience.
+              <br />
+              <br />
+              Once launched, we don’t just walk away. We offer continuous
+              maintenance and updates to keep your website secure, fast, and
+              current with evolving technologies. This ongoing support reflects
+              our commitment to providing professional website creation services
+              that remain relevant and effective long after launch.
             </p>
           </div>
         </div>

@@ -233,6 +233,79 @@ const WebsiteCreationService = () => {
           </div>
         </div>
       </div>
+
+      <div className="mt-16">
+        <div className="bg-white dark:bg-gray-900 rounded-3xl shadow-2xl border border-gray-200 dark:border-gray-700 p-6 md:p-10 relative overflow-hidden">
+          {/* Section Heading */}
+          <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 dark:text-white text-center mb-12">
+            Why Choose Our Top Website Creation Services
+          </h2>
+
+          {/* 2-Column Split Layout */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-stretch max-w-6xl mx-auto">
+            {/* LEFT CARD */}
+            <div className="flex flex-col h-full bg-gradient-to-br from-blue-50 to-white dark:from-blue-900/20 dark:to-gray-800 rounded-3xl shadow-lg border border-blue-200 dark:border-blue-700 p-6 md:p-8 hover:shadow-2xl">
+              {/* Accent Line */}
+              <div className="w-16 h-1 bg-blue-600 dark:bg-blue-400 rounded-full mb-4"></div>
+
+              <p className="text-gray-800 dark:text-gray-300 leading-relaxed text-lg">
+                <span className="font-semibold text-gray-900 dark:text-white">
+                  Strategic Planning &amp; Market Research
+                </span>
+                <br />
+                <br />
+                Your website is more than just pages — it’s your digital
+                storefront, brand ambassador, and lead generation engine. That’s
+                why we start with through{' '}
+                <a
+                  href="https://www.seoindiatech.com/solution/market-research"
+                  className="text-blue-600"
+                >
+                  market research
+                </a>{' '}
+                and strategy sessions to define your target audience, goals, and
+                success metrics. This critical first step ensures we build a
+                website that not only looks great, but also resonates with your
+                audience and supports your business objectives.
+                <br />
+                <br />
+                We analyze your competitors, discover what works in your
+                industry, and use those insights to shape a website structure
+                optimized for conversions. The result? A smart online platform
+                that’s not just visually appealing, but purpose-driven — giving
+                you an edge among the top website creation services available.
+              </p>
+            </div>
+
+            {/* RIGHT CARD */}
+            <div className="flex flex-col h-full bg-gradient-to-br from-purple-50 to-white dark:from-purple-900/20 dark:to-gray-800 rounded-3xl shadow-lg border border-purple-200 dark:border-purple-700 p-6 md:p-8 hover:shadow-2xl">
+              {/* Accent Line */}
+              <div className="w-16 h-1 bg-purple-600 dark:bg-purple-400 rounded-full mb-4"></div>
+
+              <p className="text-gray-800 dark:text-gray-300 leading-relaxed text-lg">
+                <span className="font-semibold text-gray-900 dark:text-white">
+                  Tailored Design &amp; User Experience
+                </span>
+                <br />
+                <br />
+                Design matters. A clean, intuitive layout — with easy
+                navigation, smart UI/UX, and responsive design — can make or
+                break a visitor’s impression. Our design team selects colors,
+                fonts, imagery, and layouts that match your brand identity and
+                engage your visitors.
+                <br />
+                <br />
+                Whether your site is a sleek corporate site, a dynamic
+                e-commerce store, or a creative portfolio, we ensure every
+                element is optimized for performance and user satisfaction. This
+                commitment to quality helps us deliver on our promise of
+                professional website creation services that impress from the
+                first glance.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   )
 }
