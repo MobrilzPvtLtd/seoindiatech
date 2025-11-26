@@ -24,28 +24,32 @@ const Hero = () => {
 
             {/* Main Heading */}
             {/* <div className="flex flex-col items-center justify-center text-center min-h-screen"> */}
-            <h1 className="text-gray-900 dark:text-white text-4xl sm:text-5xl md:text-6xl font-medium leading-tight mb-6">
-              Start Your{' '}
+            <h1 className="text-gray-900 dark:text-white text-3xl sm:text-4xl md:text-5xl font-medium leading-tight mb-6">
               <span className="font-bold text-blue-600 dark:text-blue-400">
-                Business
+                Who We Are{' '}
               </span>
-              <span className="relative text-center ">
-                {' '}
-                &
-                <span className="absolute -bottom-1.5 left-0 w-full h-1 bg-blue-500 dark:bg-blue-400 rounded-full opacity-60"></span>
-              </span>
-              <span className="block mt-1 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400 dark:from-blue-400 dark:to-blue-300">
-                Grow With Us
-              </span>
+              - At SEO India Tech
             </h1>
             {/* </div> */}
 
             {/* Description */}
             <p className="text-justify text-gray-700 dark:text-gray-300 text-lg leading-relaxed mb-8 max-w-2xl">
-              Ready to take your business to the next level? From growing your
-              audience to scaling your business and optimizing your workflow, we
-              provide digital marketing strategies that deliver real results for
-              businesses of all sizes.
+              Welcome to SEO India Tech — we are not just another digital
+              agency. We are architects of growth, innovators of efficiency, and
+              passionate believers in harnessing technology to transform how
+              businesses operate and succeed online. Our mission is to deliver
+              comprehensive, intelligent solutions that power every aspect of
+              your digital journey: from idea to execution, from lead to loyal
+              customer.
+            </p>
+            <p className="text-justify text-gray-700 dark:text-gray-300 text-lg leading-relaxed mb-8 max-w-2xl">
+              We combine structured <b>workflow</b> design, smart{' '}
+              <b>automation,</b> deep
+              <b>market research,</b> expert <b>website creation,</b> and robust{' '}
+              <b>promotion & advertising</b> — all unified under a powerful{' '}
+              <b>CRM & management tool</b>
+              strategy. This fusion allows us to build digital ecosystems that
+              perform, scale, and evolve with your business.
             </p>
 
             {/* Call to Action Buttons */}

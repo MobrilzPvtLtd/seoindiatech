@@ -7,13 +7,17 @@ import Features from './Features'
 import Solutionswho from './Solutionswho'
 import Tools from './Tools'
 import Audience from './Audience'
+import Insightimpact from './Insightimpact'
+import Services from './Services'
 
 function WhoWeAre() {
   return (
     <div>
       <Hero />
       <Navigate />
+      <Insightimpact />
       <Journey />
+      <Services />
       <Solutionswho />
       <TrustUs
         title="Trust Us" 
