@@ -163,45 +163,76 @@ const Solutionswho = () => {
               {
                 title: '1. Discovery & Market Research',
                 icon: 'Search',
-                text: `We begin with an in-depth discovery phase, conducting market research to understand
-          your industry landscape, target audience, and competitors. This insight lays the
-          foundation for all subsequent steps.`,
+                text: (
+                  <>
+                    We begin with an in-depth discovery phase, conducting{' '}
+                    <strong>market research</strong> to understand your industry
+                    landscape, target audience, and competitors. This insight
+                    lays the foundation for all subsequent steps.
+                  </>
+                ),
               },
+
               {
                 title: '2. Workflow Design & Automation Setup',
                 icon: 'Workflow',
-                text: `Based on insights and your business structure, we craft a tailored workflow — mapping
-          tasks, responsibilities, milestones, and data flows. Then, we implement automation
-          wherever possible — to streamline operations, reduce manual effort, and ensure
-          consistency.`,
+                text: (
+                  <>
+                    Based on insights and your business structure, we craft a
+                    tailored <strong>workflow</strong> — mapping tasks,
+                    responsibilities, milestones, and data flows. Then, we
+                    implement <strong>automation </strong>
+                    wherever possible — to streamline operations, reduce manual
+                    effort, and ensure consistency.
+                  </>
+                ),
               },
               {
                 title: '3. Website Creation & Digital Build',
                 icon: 'Layout',
-                text: `Our development team steps in to build the digital platform: design, development,
-          content integration, responsive layouts, and technical optimization. This becomes the
-          central hub of your digital presence.`,
+                text: (
+                  <>
+                    Our development team steps in to build the digital platform:
+                    design, development, content integration, responsive
+                    layouts, and technical optimization. This becomes the
+                    central hub of your digital presence.
+                  </>
+                ),
               },
               {
                 title: '4. Promotion & Advertising Launch',
                 icon: 'Megaphone',
-                text: `Once the digital foundation is live, we deploy targeted promotion & advertising
-          campaigns to drive traffic, raise brand awareness, and attract leads.`,
+                text: (
+                  <>
+                    Once the digital foundation is live, we deploy targeted
+                    <strong> promotion & advertising</strong> campaigns to drive
+                    traffic, raise brand awareness, and attract leads.
+                  </>
+                ),
               },
               {
                 title: '5. CRM & Management Integration',
                 icon: 'Users',
-                text: `As traffic and leads start coming in, we activate CRM & management tool systems to
-          capture leads, follow up with prospects, manage communication, and nurture
-          relationships toward conversion.`,
+                text: (
+                  <>
+                    As traffic and leads start coming in, we activate{' '}
+                    <strong>CRM & management tool</strong> systems to capture
+                    leads, follow up with prospects, manage communication, and
+                    nurture relationships toward conversion.
+                  </>
+                ),
               },
               {
                 title: '6. Continuous Improvement & Optimization',
                 icon: 'Repeat',
-                text: `Using data from market feedback, analytics, and CRM insights, we continuously refine
-          workflows, update strategies, tweak campaigns, and optimize for better performance.
-          This step-by-step, integrated process ensures your business doesn’t just get a static
-          deliverable — you get a living, evolving digital engine built for growth.`,
+                text: (
+                  <>
+                    Using data from market feedback, analytics, and CRM
+                    insights, we continuously refine workflows, update
+                    strategies, tweak campaigns, and optimize for better
+                    performance.
+                  </>
+                ),
               },
             ].map((item, index) => (
               <div

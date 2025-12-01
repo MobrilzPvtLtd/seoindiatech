@@ -9,6 +9,8 @@ import Tools from './Tools'
 import Audience from './Audience'
 import Insightimpact from './Insightimpact'
 import Services from './Services'
+import WhyChoose from './WhyChoose'
+import Vission from './Vission'
 
 function WhoWeAre() {
   return (
@@ -26,7 +28,9 @@ function WhoWeAre() {
         bgGradient="bg-gradient-to-r from-blue-50 to-blue-200 dark:from-gray-900 dark:to-gray-800"
         buttonGradient="bg-gradient-to-r from-blue-600 to-blue-800 dark:from-gray-800 dark:to-gray-900"
       />
+      <WhyChoose />
       <Features />
+      <Vission />
       <Tools/>
       <TrustUs
         title="Ready to get started?"
