@@ -248,7 +248,7 @@ const Footer = () => {
 
           <div className="flex flex-wrap justify-center gap-6">
             <Link
-              href="https://twitter.com"
+              href="https://x.com/seoindiatech411"
               className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-300 flex items-center gap-2 hover:scale-105 transform"
               target="_blank"
               rel="noopener noreferrer"
