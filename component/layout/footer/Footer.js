@@ -1,99 +1,126 @@
-import React from 'react';
-import { Phone, Mail, Globe, CircleDot, MapPin, Clock, ArrowUpRight } from 'lucide-react';
-import { FaXTwitter, FaInstagram, FaYoutube, FaLinkedinIn, FaFacebook } from "react-icons/fa6";
-import Link from 'next/link';
-import Image from 'next/image';
+import React from 'react'
+import {
+  Phone,
+  Mail,
+  Globe,
+  CircleDot,
+  MapPin,
+  Clock,
+  ArrowUpRight,
+} from 'lucide-react'
+import {
+  FaXTwitter,
+  FaInstagram,
+  FaYoutube,
+  FaLinkedinIn,
+  FaFacebook,
+  FaLinkedin,
+} from 'react-icons/fa6'
+import Link from 'next/link'
+import Image from 'next/image'
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
+  const currentYear = new Date().getFullYear()
 
   const handleCallUs = () => {
     // Add your phone number here
-    window.open('tel:+91-8010355718', '_self');
-  };
+    window.open('tel:+91-8010355718', '_self')
+  }
 
   const handleEmailUs = () => {
-    // Add your email here  
-    window.open('mailto:sales@seoindiatech.com', '_self');
-  };
+    // Add your email here
+    window.open('mailto:sales@seoindiatech.com', '_self')
+  }
 
   const services = [
     {
       title: 'Social Media Marketing',
-      description: 'Drive brand visibility and engage your target audience through strategic social media campaigns and content.',
+      description:
+        'Drive brand visibility and engage your target audience through strategic social media campaigns and content.',
       icon: '📣',
-      slug: 'social-media-marketing'
+      slug: 'social-media-marketing',
     },
     {
       title: 'Innovative UI/UX Solutions',
-      description: 'Design and develop intuitive, user-friendly interfaces to enhance user experience and engagement.',
+      description:
+        'Design and develop intuitive, user-friendly interfaces to enhance user experience and engagement.',
       icon: '🎨',
-      slug: 'ui-ux-design'
+      slug: 'ui-ux-design',
     },
     {
       title: 'Digital Branding',
-      description: 'Build a strong, cohesive brand identity across digital platforms to attract and retain your audience.',
+      description:
+        'Build a strong, cohesive brand identity across digital platforms to attract and retain your audience.',
       icon: '🌟',
-      slug: 'digital-branding'
+      slug: 'digital-branding',
     },
     {
       title: 'Content Marketing',
-      description: 'Create and distribute valuable, relevant content to attract and engage your target audience effectively.',
+      description:
+        'Create and distribute valuable, relevant content to attract and engage your target audience effectively.',
       icon: '✍️',
-      slug: 'content-marketing'
+      slug: 'content-marketing',
     },
     {
       title: 'Search Engine Optimization',
-      description: 'Optimize your website to rank higher on search engines, increasing visibility and organic traffic.',
+      description:
+        'Optimize your website to rank higher on search engines, increasing visibility and organic traffic.',
       icon: '🔍',
-      slug: 'seo'
+      slug: 'seo',
     },
     {
       title: '(PPC) Advertising',
-      description: 'Run targeted pay-per-click campaigns to drive traffic and conversions with measurable results.',
+      description:
+        'Run targeted pay-per-click campaigns to drive traffic and conversions with measurable results.',
       icon: '📈',
-      slug: 'ppc-advertising'
+      slug: 'ppc-advertising',
     },
-  ];
+  ]
 
   const solutions = [
     {
       title: 'Automation',
-      description: 'Automation streamlines tasks, boosting efficiency and reducing errors, so your team can focus on strategic goals.',
+      description:
+        'Automation streamlines tasks, boosting efficiency and reducing errors, so your team can focus on strategic goals.',
       icon: '⚙️',
-      slug: 'automation'
+      slug: 'automation',
     },
     {
       title: 'Workflow',
-      description: 'Workflow streamlines and automates tasks, ensuring a smooth, efficient, and organized process from start to finish.',
+      description:
+        'Workflow streamlines and automates tasks, ensuring a smooth, efficient, and organized process from start to finish.',
       icon: '📋',
-      slug: 'workflow'
+      slug: 'workflow',
     },
     {
       title: 'Promotion & Ads',
-      description: 'Drive brand visibility and attract your target audience through strategic messaging and impactful campaigns.',
+      description:
+        'Drive brand visibility and attract your target audience through strategic messaging and impactful campaigns.',
       icon: '📣',
-      slug: 'promotion-and-ads'
+      slug: 'promotion-and-ads',
     },
     {
       title: 'CRM & Tools',
-      description: 'CRM and management tools optimize customer relationships and streamline operations for better efficiency and growth.',
+      description:
+        'CRM and management tools optimize customer relationships and streamline operations for better efficiency and growth.',
       icon: '👥',
-      slug: 'crm-and-tools'
+      slug: 'crm-and-tools',
     },
     {
       title: 'Market Research',
-      description: 'Market research provides valuable insights into consumer behavior and emerging trends, guiding smart business decisions.',
+      description:
+        'Market research provides valuable insights into consumer behavior and emerging trends, guiding smart business decisions.',
       icon: '🔍',
-      slug: 'market-research'
+      slug: 'market-research',
     },
     {
       title: 'Website Creation',
-      description: 'Website creation involves designing and developing an engaging, functional online presence tailored to your brand\'s needs.',
+      description:
+        "Website creation involves designing and developing an engaging, functional online presence tailored to your brand's needs.",
       icon: '🌐',
-      slug: 'website-creation'
+      slug: 'website-creation',
     },
-  ];
+  ]
 
   return (
     <footer className="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100">
@@ -106,7 +133,8 @@ const Footer = () => {
                 Subscribe to our newsletter
               </h3>
               <p className="mt-2 text-gray-600 dark:text-gray-300">
-                Stay updated with the latest trends, tips, and insights in digital marketing.
+                Stay updated with the latest trends, tips, and insights in
+                digital marketing.
               </p>
             </div>
             <div className="w-full md:w-auto flex-1 max-w-md">
@@ -153,20 +181,29 @@ const Footer = () => {
               </Link>
             </div>
             <p className="text-lg font-medium">
-              Start Your Business & <span className="font-bold text-blue-600 dark:text-blue-400">GROW WITH US</span>
+              Start Your Business &{' '}
+              <span className="font-bold text-blue-600 dark:text-blue-400">
+                GROW WITH US
+              </span>
             </p>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-              We help businesses transform their digital presence and achieve sustainable growth through innovative marketing solutions.
-            </p> 
+              We help businesses transform their digital presence and achieve
+              sustainable growth through innovative marketing solutions.
+            </p>
           </div>
 
           {/* Services */}
           <div className="space-y-6">
-            <h3 className="text-xl font-bold text-gray-900 dark:text-white">Our Services</h3>
+            <h3 className="text-xl font-bold text-gray-900 dark:text-white">
+              Our Services
+            </h3>
             <ul className="space-y-3">
               {services.slice(0, 6).map((service) => (
                 <li key={service.slug}>
-                  <Link href={`/services/${service.slug}`} className="flex items-center text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">
+                  <Link
+                    href={`/services/${service.slug}`}
+                    className="flex items-center text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
+                  >
                     <CircleDot className="w-3 h-3 mr-2 text-blue-500 dark:text-blue-400 flex-shrink-0" />
                     <span>{service.title}</span>
                   </Link>
@@ -177,11 +214,16 @@ const Footer = () => {
 
           {/* Solutions */}
           <div className="space-y-6">
-            <h3 className="text-xl font-bold text-gray-900 dark:text-white">Our Solutions</h3>
+            <h3 className="text-xl font-bold text-gray-900 dark:text-white">
+              Our Solutions
+            </h3>
             <ul className="space-y-3">
               {solutions.slice(0, 6).map((solution) => (
                 <li key={solution.slug}>
-                  <Link href={`/solution/${solution.slug}`} className="flex items-center text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">
+                  <Link
+                    href={`/solution/${solution.slug}`}
+                    className="flex items-center text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
+                  >
                     <CircleDot className="w-3 h-3 mr-2 text-blue-500 dark:text-blue-400 flex-shrink-0" />
                     <span>{solution.title}</span>
                   </Link>
@@ -192,13 +234,17 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div className="space-y-6">
-            <h3 className="text-xl font-bold text-gray-900 dark:text-white">Contact Info</h3>
+            <h3 className="text-xl font-bold text-gray-900 dark:text-white">
+              Contact Info
+            </h3>
 
             <div className="space-y-4">
               <p className="flex items-start space-x-3 text-gray-600 dark:text-gray-300">
                 <MapPin className="w-5 h-5 text-blue-600 dark:text-blue-400 mt-1 flex-shrink-0" />
-                <span>E 160, E Block, Sector 63, Noida, Hazratpur Wajidpur, Uttar Pradesh 201301
- </span>
+                <span>
+                  E 160, E Block, Sector 63, Noida, Hazratpur Wajidpur, Uttar
+                  Pradesh 201301
+                </span>
               </p>
 
               <p className="flex items-start space-x-3 text-gray-600 dark:text-gray-300">
@@ -224,7 +270,6 @@ const Footer = () => {
                 <span>Email Us</span>
               </button>
             </div>
-
           </div>
         </div>
       </div>
@@ -237,10 +282,16 @@ const Footer = () => {
               &copy; {currentYear} SEO India Tech – All rights reserved
             </p>
             <div className="flex space-x-4 mt-2 md:mt-0">
-              <Link href="/privacy-policy" className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+              <Link
+                href="/privacy-policy"
+                className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+              >
                 Privacy Policy
               </Link>
-              <Link href="/terms" className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+              <Link
+                href="/terms"
+                className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+              >
                 Terms of Service
               </Link>
             </div>
@@ -285,11 +336,20 @@ const Footer = () => {
               <FaFacebook size={18} />
               <span className="text-sm font-medium">Facebook</span>
             </Link>
+            <Link
+              href="https://www.linkedin.com/company/seo-india-tech/"
+              className="text-gray-600 dark:text-gray-400 hover:text-red-600 dark:hover:text-red-400 transition-all duration-300 flex items-center gap-2 hover:scale-105 transform"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin size={18} />
+              <span className="text-sm font-medium">LinkedIn</span>
+            </Link>
           </div>
         </div>
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
