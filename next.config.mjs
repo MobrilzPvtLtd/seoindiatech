@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
     images: {
-    domains: ['www.digitalyzeit.com'],
+    remotePatterns: [{ hostname: 'www.digitalyzeit.com' }],
   },
 };
 
