@@ -319,7 +319,7 @@ const Footer = () => {
             </Link>
 
             <Link
-              href="https://youtube.com"
+              href="https://www.youtube.com/@SEOIndiatech"
               className="text-gray-600 dark:text-gray-400 hover:text-red-600 dark:hover:text-red-400 transition-all duration-300 flex items-center gap-2 hover:scale-105 transform"
               target="_blank"
               rel="noopener noreferrer"
