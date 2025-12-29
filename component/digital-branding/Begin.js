@@ -1,43 +1,49 @@
 import React from 'react'
-import { ArrowRight, PenTool, Search, Sparkles, SparklesIcon, Users } from 'lucide-react'
+import {
+  ArrowRight,
+  PenTool,
+  Search,
+  Sparkles,
+  SparklesIcon,
+  Users,
+} from 'lucide-react'
 import Link from 'next/link'
 
 const Begin = () => {
   const services = [
-  {
-      title: "SEO Services",
-      description: "Boost visibility and attract organic traffic.",
+    {
+      title: 'SEO Services',
+      description: 'Boost visibility and attract organic traffic.',
       icon: Search,
-      color: "from-blue-500 to-blue-600"
+      color: 'from-blue-500 to-blue-600',
     },
     {
-      title: "Content Marketing",
-      description: "Communicate your message with clarity and impact.",
+      title: 'Content Marketing',
+      description: 'Communicate your message with clarity and impact.',
       icon: PenTool,
-      color: "from-purple-500 to-purple-600"
+      color: 'from-purple-500 to-purple-600',
     },
     {
-      title: "Social Media Marketing",
-      description: "Build trust, engagement, and community.",
+      title: 'Social Media Marketing',
+      description: 'Build trust, engagement, and community.',
       icon: Users,
-      color: "from-green-500 to-green-600"
+      color: 'from-green-500 to-green-600',
     },
     {
-      title: "UI/UX Design",
-      description: "Improve user experience and digital aesthetics.",
+      title: 'UI/UX Design',
+      description: 'Improve user experience and digital aesthetics.',
       icon: SparklesIcon,
-      color: "from-pink-500 to-pink-600"
-    }
- 
-];
+      color: 'from-pink-500 to-pink-600',
+    },
+  ]
   return (
-    <section className="bg-gray-950 dark:bg-gray-900 py-16 md:py-24 px-6 relative overflow-hidden">
+    <section className="bg-white dark:bg-gray-900 py-16 md:py-24 px-6 relative overflow-hidden">
       {/* Background decorative elements */}
-      <div className="absolute inset-0 pointer-events-none">
+      {/* <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0 left-1/4 w-64 h-64 bg-blue-900/20 rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-900/10 rounded-full blur-3xl"></div>
         <div className="absolute top-1/2 left-3/4 transform -translate-x-1/2 -translate-y-1/2 w-44 h-44 bg-blue-400/10 rounded-full blur-2xl"></div>
-      </div>
+      </div> */}
 
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Floating accent elements */}
@@ -51,14 +57,14 @@ const Begin = () => {
         {/* Main Content */}
         <div className="flex flex-col items-center">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-900/50 text-blue-300 rounded-full text-sm font-medium mb-8">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-900/50 text-gray-100 rounded-full text-sm font-medium mb-8">
             <Sparkles className="w-4 h-4" />
             <span>Start Your Journey Today</span>
           </div>
 
           {/* Heading */}
           <div className="text-center px-4">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight max-w-5xl text-white">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight max-w-5xl text-gray-900 dark:text-white">
               Enhancing Branding Through Supporting Services{' '}
               <span className="text-blue-500">SEO India Tech</span>
             </h2>
@@ -66,32 +72,34 @@ const Begin = () => {
 
           {/* Description */}
           <div className="mt-8 px-4">
-            <p className="text-blue-100 text-lg md:text-xl max-w-4xl text-center">
-              Our digital marketing service agency strengthens your brand with complementary services that
-              support long-term growth
+            <p className="text-gray-600 dark:text-gray-200 text-lg md:text-xl max-w-4xl text-center">
+              Our digital marketing service agency strengthens your brand with
+              complementary services that support long-term growth
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-6">
-          {services.map((service, index) => {
-            const Icon = service.icon;
-            return (
-              <div
-                key={index}
-                className="group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 text-center border border-gray-100 hover:-translate-y-2"
-              >
-                <div className={`w-16 h-16 mx-auto mb-5 bg-gradient-to-br ${service.color} rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
-                  <Icon className="w-9 h-9 text-white" strokeWidth={2} />
+            {services.map((service, index) => {
+              const Icon = service.icon
+              return (
+                <div
+                  key={index}
+                  className="group bg-gray-100 dark:bg-gray-800  rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 text-center border border-gray-400 hover:-translate-y-2"
+                >
+                  <div
+                    className={`w-16 h-16 mx-auto mb-5 bg-gradient-to-br ${service.color} rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}
+                  >
+                    <Icon className="w-9 h-9 text-white" strokeWidth={2} />
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100 mb-3">
+                    {service.title}
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-200 leading-relaxed">
+                    {service.description}
+                  </p>
                 </div>
-                <h3 className="text-xl font-bold text-gray-800 mb-3">
-                  {service.title}
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  {service.description}
-                </p>
-              </div>
-            );
-          })}
-        </div>
+              )
+            })}
+          </div>
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mt-10">

@@ -11,7 +11,7 @@ export default function DigitalAutomationServices() {
   ];
 
   return (
-    <section className="py-24 px-6 bg-gradient-to-b from-slate-50 via-white to-indigo-50">
+    <section className="py-24 px-6 bg-gradient-to-b from-slate-50 via-white to-indigo-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
       <div className="max-w-7xl mx-auto">
 
         {/* Header */}
@@ -21,13 +21,13 @@ export default function DigitalAutomationServices() {
             Future-Proof Your Business with Intelligent Automation
           </div>
 
-          <h2 className="text-5xl md:text-6xl font-extrabold text-gray-900 mb-8 leading-tight">
+          <h2 className="text-5xl md:text-6xl font-extrabold text-gray-900 dark:text-white mb-8 leading-tight">
             Why Choose <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-blue-700">SEO India Tech</span>
             <br />
             for <span className="text-indigo-600">Digital Automation Services</span>?
           </h2>
 
-          <p className="text-xl  text-gray-600 max-w-5xl mx-auto leading-relaxed">
+          <p className="text-xl  text-gray-600 dark:text-gray-100 max-w-5xl mx-auto leading-relaxed">
             At <strong>SEO India Tech</strong>, we believe automation should <span className="font-bold text-indigo-600">empower your team</span>, not complicate your processes. 
             We combine technical expertise with deep industry knowledge to deliver automation solutions that make your business more <strong>agile and scalable</strong>.
           </p>
@@ -38,16 +38,16 @@ export default function DigitalAutomationServices() {
           {differentiators.map((item, index) => (
             <div
               key={index}
-              className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-400 border border-gray-100 hover:border-indigo-200 hover:-translate-y-3"
+              className="group relative bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-400 border border-gray-400 hover:-translate-y-3"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/5 to-blue-600/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-400 pointer-events-none" />
+              {/* <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/5 to-blue-600/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-400 pointer-events-none" /> */}
               
               <div className="relative z-10">
                 <div className="w-16 h-16 bg-indigo-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-indigo-600 transition-colors duration-300">
                   <item.icon className="w-9 h-9 text-indigo-600 group-hover:text-white transition-colors duration-300" />
                 </div>
-                <h4 className="text-xl font-bold text-gray-900 mb-3">{item.title}</h4>
-                <p className="text-gray-600 leading-relaxed">{item.desc}</p>
+                <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-3">{item.title}</h4>
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed">{item.desc}</p>
               </div>
             </div>
           ))}
@@ -87,11 +87,11 @@ export default function DigitalAutomationServices() {
         </div>
 
         {/* Final Branding CTA */}
-        <div className="text-center mt-20 bg-white rounded-3xl shadow-2xl p-16 border border-gray-100">
-          <h4 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">
+        <div className="text-center mt-20 bg-white dark:bg-gray-800 rounded-3xl shadow-2xl p-16 border border-gray-400">
+          <h4 className="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-6">
             Partner with SEO India Tech
           </h4>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-10 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-10 leading-relaxed">
             Build a brand that stands out. Our <strong>digital branding solutions</strong> give your business the identity, voice, and influence it needs 
             to dominate the digital world — backed by intelligent automation and data-driven strategy.
           </p>
