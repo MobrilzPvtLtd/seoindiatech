@@ -73,7 +73,7 @@ const Hero = () => {
                 Follow us:
               </p>
               <Link
-                href="https://facebook.com"
+                href="https://www.facebook.com/people/SEOIndiatech/61582651577922/"
                 className="flex items-center gap-2 text-gray-700 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 transition-colors duration-200"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -87,7 +87,7 @@ const Hero = () => {
                 <span className="font-medium">Facebook</span>
               </Link>
               <Link
-                href="https://instagram.com"
+                href="https://www.instagram.com/seoindiatech/"
                 className="flex items-center gap-2 text-gray-700 dark:text-gray-300 hover:text-pink-600 dark:hover:text-pink-400 transition-colors duration-200"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -101,7 +101,7 @@ const Hero = () => {
                 <span className="font-medium">Instagram</span>
               </Link>
               <Link
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/company/seo-india-tech/"
                 className="flex items-center gap-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
                 target="_blank"
                 rel="noopener noreferrer"

@@ -158,7 +158,7 @@ const Socialmediastrategies = () => {
       </div>
 
       {/* Call to Action Section */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      {/* <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-gray-700 dark:to-gray-800 rounded-2xl p-8 sm:p-12 shadow-xl">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="mb-8 md:mb-0 md:mr-8 text-center md:text-left">
@@ -191,7 +191,7 @@ const Socialmediastrategies = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }

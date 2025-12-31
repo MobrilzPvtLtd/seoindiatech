@@ -1,40 +1,82 @@
 import Link from 'next/link'
 import React from 'react'
+import { useRouter } from 'next/router'
 
 const Services = () => {
+  const router = useRouter()
   const services = [
     {
       title: 'Search Engine Optimization',
-      desc:
-        ( <>  We optimize your website to improve rankings and increase organic traffic. From keyword research to link building, our  <Link href='/services/seo' className="text-blue-600 underline">SEO solutions</Link>  strengthen your online visibility and help your business reach the right audience. </>),
+      href: '/services/seo',
+      desc: (
+        <>
+          {' '}
+          We optimize your website to improve rankings and increase organic
+          traffic. From keyword research to link building, our{' '}
+          <Link href="/services/seo" className="text-blue-600 underline">
+            SEO solutions
+          </Link>{' '}
+          strengthen your online visibility and help your business reach the
+          right audience.{' '}
+        </>
+      ),
       icon: '🔍',
     },
     {
       title: 'Social Media Marketing',
-      desc:
-        (<>We create impactful   <Link href='services/social-media-marketing' className="text-blue-600 underline">social media strategies</Link>   to build brand recognition, increase follower engagement, and drive meaningful customer interactions across major platforms</>),
+      href: '/services/social-media-marketing',
+      desc: (
+        <>
+          We create impactful{' '}
+          <Link
+            href="services/social-media-marketing"
+            className="text-blue-600 underline"
+          >
+            social media strategies
+          </Link>{' '}
+          to build brand recognition, increase follower engagement, and drive
+          meaningful customer interactions across major platforms
+        </>
+      ),
       icon: '📱',
     },
     {
       title: 'Pay-Per-Click (PPC) Advertising',
-      desc:
-       ( <>  Our data-backed  <Link href='services/ppc-advertising' className="text-blue-600 underline">PPC campaigns</Link>   maximize your ROI by targeting high-intent users across Google and social platforms. We focus on smart bidding, engaging ad copy, and continuous analysis. </>),
+      href: '/services/ppc-advertising',
+      desc: (
+        <>
+          {' '}
+          Our data-backed{' '}
+          <Link
+            href="services/ppc-advertising"
+            className="text-blue-600 underline"
+          >
+            PPC campaigns
+          </Link>{' '}
+          maximize your ROI by targeting high-intent users across Google and
+          social platforms. We focus on smart bidding, engaging ad copy, and
+          continuous analysis.{' '}
+        </>
+      ),
       icon: '📈',
     },
     {
       title: 'Content Marketing',
+      href: '/services/content-marketing',
       desc:
-        "Our team produces high-quality content that educates, informs, and converts. Blogs, web content, infographics, and videos—all crafted to align with your brand’s message.",
+        'Our team produces high-quality content that educates, informs, and converts. Blogs, web content, infographics, and videos—all crafted to align with your brand’s message.',
       icon: '✍️',
     },
     {
       title: 'Online Reputation Management',
+      href: '#',
       desc:
         'We monitor, manage, and protect your digital reputation to maintain a positive brand image across all online channels.',
       icon: '📧',
     },
     {
       title: 'Web Design and Development',
+      href: '/solution/website-creation',
       desc:
         'We build fast, responsive, and user-friendly websites that support your marketing goals and deliver seamless customer experiences.',
       icon: '🌐',
@@ -50,21 +92,24 @@ const Services = () => {
             {services.map((service, index) => (
               <div
                 key={index}
-                className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-gray-800 dark:to-gray-700 p-6 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 hover:translate-y-[-5px] border border-blue-100 dark:border-gray-600"
+                onClick={() => router.push(service.href)}
+                className="cursor-pointer bg-gradient-to-br from-blue-50 to-blue-100 
+                 dark:from-gray-800 dark:to-gray-700 p-6 rounded-2xl 
+                 shadow-md hover:shadow-lg transition-all duration-300 
+                 hover:translate-y-[-5px] border border-blue-100 
+                 dark:border-gray-600"
               >
                 <div className="flex items-start mb-4">
-                  <span
-                    className="text-3xl mr-3"
-                    role="img"
-                    aria-label={service.title}
-                  >
-                    {service.icon}
-                  </span>
+                  <span className="text-3xl mr-3">{service.icon}</span>
                   <h3 className="text-lg font-bold text-gray-800 dark:text-white">
                     {service.title}
                   </h3>
                 </div>
-                <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed text-justify">
+
+                <p
+                  className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed text-justify"
+                  onClick={(e) => e.stopPropagation()} // 👈 IMPORTANT
+                >
                   {service.desc}
                 </p>
               </div>
@@ -78,11 +123,13 @@ const Services = () => {
                 Your Reliable Digital Marketing Service Agency
               </h2>
               <p className="mb-8 text-sm sm:text-base leading-relaxed text-blue-100 dark:text-gray-400 text-justify">
-              As a dedicated digital marketing service agency, we use advanced tools, proven
-              methodologies, and industry expertise to ensure your brand stands out. Our integrated services
-              help you connect with your target audience, build brand trust, and generate profitable growth.
-              With us, you get transparent execution, consistent reporting, and strong campaign optimization
-              that drives long-term success.
+                As a dedicated digital marketing service agency, we use advanced
+                tools, proven methodologies, and industry expertise to ensure
+                your brand stands out. Our integrated services help you connect
+                with your target audience, build brand trust, and generate
+                profitable growth. With us, you get transparent execution,
+                consistent reporting, and strong campaign optimization that
+                drives long-term success.
               </p>
             </div>
 
