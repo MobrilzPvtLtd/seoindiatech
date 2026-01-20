@@ -74,7 +74,7 @@ export default function SocialMediaCTA() {
           {/* Primary CTA */}
           <div className="mt-12">
             <a
-              href="/contact"
+              href="/contactus"
               className="group inline-flex items-center px-10 py-5 bg-blue-600 hover:bg-blue-700 text-white font-bold text-lg rounded-full shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
             >
               Start Growing Your Brand Today

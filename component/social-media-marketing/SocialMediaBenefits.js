@@ -111,7 +111,7 @@ export default function SocialMediaBenefits() {
           {/* CTA Button */}
           <div className="mt-10">
             <a
-              href="/contact"
+              href="/contactus"
               className="inline-flex items-center px-10 py-5 bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 text-white font-bold text-lg rounded-full shadow-2xl hover:shadow-blue-600/50 transform hover:scale-105 transition-all duration-300"
             >
               Start Growing on Social Media

@@ -101,7 +101,7 @@ export default function WhyChooseSocialMedia() {
         {/* CTA */}
         <div className="text-center mt-16">
           <a
-            href="/contact"
+            href="/contactus"
             className="inline-flex items-center px-10 py-5 bg-blue-700 hover:bg-blue-800 text-white font-bold text-lg rounded-full shadow-2xl hover:shadow-indigo-500/50 transform hover:scale-105 transition-all duration-300"
           >
             Boost Your Social Media Presence Today
