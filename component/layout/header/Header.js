@@ -1,269 +1,276 @@
-import { ChevronDown, ChevronUp, CircleDot, Menu, X } from 'lucide-react';
-import React, { useState, useRef, useEffect } from 'react';
-import ServiceDropdown from './ServiceDropdown';
-import SolutionDropdown from './SolutionDropdown';
-import ThemeToggleButton from './ThemeToggleButton';
-import Link from 'next/link';
-import Image from 'next/image';
+import { ChevronDown, ChevronUp, CircleDot, Menu, X } from 'lucide-react'
+import React, { useState, useRef, useEffect } from 'react'
+import ServiceDropdown from './ServiceDropdown'
+import SolutionDropdown from './SolutionDropdown'
+import ThemeToggleButton from './ThemeToggleButton'
+import Link from 'next/link'
+import Image from 'next/image'
 
 const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isServicesOpen, setIsServicesOpen] = useState(false);
-  const [isSolutionsOpen, setIsSolutionsOpen] = useState(false);
-  const [mounted, setMounted] = useState(false);
-  const [windowWidth, setWindowWidth] = useState(0);
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isServicesOpen, setIsServicesOpen] = useState(false)
+  const [isSolutionsOpen, setIsSolutionsOpen] = useState(false)
+  const [mounted, setMounted] = useState(false)
+  const [windowWidth, setWindowWidth] = useState(0)
 
   // Scroll behavior state
-  const [visible, setVisible] = useState(true);
-  const [atTop, setAtTop] = useState(true);
+  const [visible, setVisible] = useState(true)
+  const [atTop, setAtTop] = useState(true)
 
   // Services and solutions data for mobile view
   const services = [
     {
       title: 'Social Media Marketing',
       icon: '📣',
-      slug: 'social-media-marketing'
+      slug: 'social-media-marketing',
     },
     {
       title: 'Innovative UI/UX Solutions',
       icon: '🎨',
-      slug: 'ui-ux-design'
+      slug: 'ui-ux-design',
     },
     {
       title: 'Digital Branding',
       icon: '🌟',
-      slug: 'digital-branding'
+      slug: 'digital-branding',
     },
     {
       title: 'Content Marketing',
       icon: '✍️',
-      slug: 'content-marketing'
+      slug: 'content-marketing',
     },
     {
       title: 'Search Engine Optimization',
       icon: '🔍',
-      slug: 'seo'
+      slug: 'seo',
     },
     {
       title: '(PPC) Advertising',
       icon: '📈',
-      slug: 'ppc-advertising'
+      slug: 'ppc-advertising',
     },
-  ];
+  ]
 
   const solutions = [
     {
       title: 'Automation',
       icon: '⚙️',
-      slug: 'automation'
+      slug: 'automation',
     },
     {
       title: 'Workflow',
       icon: '📋',
-      slug: 'workflow'
+      slug: 'workflow',
     },
     {
       title: 'Promotion & Ads',
       icon: '📣',
-      slug: 'promotion-and-ads'
+      slug: 'promotion-and-ads',
     },
     {
       title: 'CRM & Tools',
       icon: '👥',
-      slug: 'crm-and-tools'
+      slug: 'crm-and-tools',
     },
     {
       title: 'Market Research',
       icon: '🔍',
-      slug: 'market-research'
+      slug: 'market-research',
     },
     {
       title: 'Website Creation',
       icon: '🌐',
-      slug: 'website-creation'
+      slug: 'website-creation',
     },
-  ];
+  ]
 
   // Refs for timeout management
-  const servicesTimeoutRef = useRef(null);
-  const solutionsTimeoutRef = useRef(null);
-  const servicesRef = useRef(null);
-  const solutionsRef = useRef(null);
-  const mobileMenuRef = useRef(null);
+  const servicesTimeoutRef = useRef(null)
+  const solutionsTimeoutRef = useRef(null)
+  const servicesRef = useRef(null)
+  const solutionsRef = useRef(null)
+  const mobileMenuRef = useRef(null)
 
   // For smooth scroll detection
-  const lastScrollTop = useRef(0);
-  const scrollingTimer = useRef(null);
+  const lastScrollTop = useRef(0)
+  const scrollingTimer = useRef(null)
 
   // Set mounted state when component mounts to avoid hydration issues
   useEffect(() => {
-    setMounted(true);
+    setMounted(true)
 
     const handleResize = () => {
-      setWindowWidth(window.innerWidth);
+      setWindowWidth(window.innerWidth)
       if (window.innerWidth >= 768) {
-        setIsMenuOpen(false);
+        setIsMenuOpen(false)
       }
-    };
+    }
 
     // Handle clicks outside of mobile menu to close it
     const handleClickOutside = (e) => {
-      if (isMenuOpen &&
+      if (
+        isMenuOpen &&
         mobileMenuRef.current &&
         !mobileMenuRef.current.contains(e.target) &&
-        !e.target.closest('.menu-toggle')) {
-        setIsMenuOpen(false);
+        !e.target.closest('.menu-toggle')
+      ) {
+        setIsMenuOpen(false)
       }
-    };
+    }
 
     // Improved scroll handler with better detection
     const handleScroll = () => {
       // Don't hide the header when the mobile menu is open
       if (isMenuOpen) {
-        setVisible(true);
-        return;
+        setVisible(true)
+        return
       }
 
-      const currentScrollTop = window.scrollY || document.documentElement.scrollTop;
+      const currentScrollTop =
+        window.scrollY || document.documentElement.scrollTop
 
       // Determine if we're at the top of the page
-      const isAtTop = currentScrollTop < 10;
-      setAtTop(isAtTop);
+      const isAtTop = currentScrollTop < 10
+      setAtTop(isAtTop)
 
       // If at top, always show header
       if (isAtTop) {
-        setVisible(true);
+        setVisible(true)
       } else {
         // Detect scroll direction with a threshold
-        const scrollDifference = Math.abs(currentScrollTop - lastScrollTop.current);
+        const scrollDifference = Math.abs(
+          currentScrollTop - lastScrollTop.current,
+        )
 
         // Only process significant scroll movements (5px threshold)
         if (scrollDifference > 5) {
           // Scrolling down
           if (currentScrollTop > lastScrollTop.current) {
-            setVisible(false);
+            setVisible(false)
           }
           // Scrolling up
           else {
-            setVisible(true);
+            setVisible(true)
           }
         }
       }
 
       // Save current scroll position
-      lastScrollTop.current = currentScrollTop;
+      lastScrollTop.current = currentScrollTop
 
       // Reset timer for when scrolling stops
-      clearTimeout(scrollingTimer.current);
+      clearTimeout(scrollingTimer.current)
       scrollingTimer.current = setTimeout(() => {
         if (window.scrollY < 10) {
-          setVisible(true);
+          setVisible(true)
         }
-      }, 150);
-    };
+      }, 150)
+    }
 
-    window.addEventListener('resize', handleResize);
-    document.addEventListener('mousedown', handleClickOutside);
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    handleResize();
+    window.addEventListener('resize', handleResize)
+    document.addEventListener('mousedown', handleClickOutside)
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    handleResize()
 
     // Clear any timeouts on unmount
     return () => {
-      if (servicesTimeoutRef.current) clearTimeout(servicesTimeoutRef.current);
-      if (solutionsTimeoutRef.current) clearTimeout(solutionsTimeoutRef.current);
-      if (scrollingTimer.current) clearTimeout(scrollingTimer.current);
-      window.removeEventListener('resize', handleResize);
-      document.removeEventListener('mousedown', handleClickOutside);
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, [isMenuOpen]);
+      if (servicesTimeoutRef.current) clearTimeout(servicesTimeoutRef.current)
+      if (solutionsTimeoutRef.current) clearTimeout(solutionsTimeoutRef.current)
+      if (scrollingTimer.current) clearTimeout(scrollingTimer.current)
+      window.removeEventListener('resize', handleResize)
+      document.removeEventListener('mousedown', handleClickOutside)
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [isMenuOpen])
 
   // Toggle body scroll when menu is open/closed
   useEffect(() => {
     if (isMenuOpen) {
-      document.body.style.overflow = 'hidden';
-      document.body.style.touchAction = 'none'; // For mobile devices
+      document.body.style.overflow = 'hidden'
+      document.body.style.touchAction = 'none' // For mobile devices
     } else {
-      document.body.style.overflow = '';
-      document.body.style.touchAction = '';
+      document.body.style.overflow = ''
+      document.body.style.touchAction = ''
     }
 
     return () => {
-      document.body.style.overflow = '';
-      document.body.style.touchAction = '';
-    };
-  }, [isMenuOpen]);
+      document.body.style.overflow = ''
+      document.body.style.touchAction = ''
+    }
+  }, [isMenuOpen])
 
   // Handle mobile menu toggle
   const toggleMobileMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-    if (isServicesOpen) setIsServicesOpen(false);
-    if (isSolutionsOpen) setIsSolutionsOpen(false);
-  };
+    setIsMenuOpen(!isMenuOpen)
+    if (isServicesOpen) setIsServicesOpen(false)
+    if (isSolutionsOpen) setIsSolutionsOpen(false)
+  }
 
   // Functions to handle dropdown hover behavior for desktop with delay
   const handleServicesMouseEnter = () => {
     if (windowWidth >= 768) {
       if (servicesTimeoutRef.current) {
-        clearTimeout(servicesTimeoutRef.current);
-        servicesTimeoutRef.current = null;
+        clearTimeout(servicesTimeoutRef.current)
+        servicesTimeoutRef.current = null
       }
-      setIsServicesOpen(true);
-      setIsSolutionsOpen(false);
+      setIsServicesOpen(true)
+      setIsSolutionsOpen(false)
     }
-  };
+  }
 
   const handleServicesMouseLeave = () => {
     if (windowWidth >= 768) {
       servicesTimeoutRef.current = setTimeout(() => {
-        setIsServicesOpen(false);
-      }, 100);
+        setIsServicesOpen(false)
+      }, 100)
     }
-  };
+  }
 
   const handleSolutionsMouseEnter = () => {
     if (windowWidth >= 768) {
       if (solutionsTimeoutRef.current) {
-        clearTimeout(solutionsTimeoutRef.current);
-        solutionsTimeoutRef.current = null;
+        clearTimeout(solutionsTimeoutRef.current)
+        solutionsTimeoutRef.current = null
       }
-      setIsSolutionsOpen(true);
-      setIsServicesOpen(false);
+      setIsSolutionsOpen(true)
+      setIsServicesOpen(false)
     }
-  };
+  }
 
   const handleSolutionsMouseLeave = () => {
     if (windowWidth >= 768) {
       solutionsTimeoutRef.current = setTimeout(() => {
-        setIsSolutionsOpen(false);
-      }, 300);
+        setIsSolutionsOpen(false)
+      }, 300)
     }
-  };
+  }
 
   // Functions for mobile dropdown toggle (click behavior)
   const handleServicesClick = () => {
     if (windowWidth < 768) {
-      setIsServicesOpen(!isServicesOpen);
-      setIsSolutionsOpen(false);
+      setIsServicesOpen(!isServicesOpen)
+      setIsSolutionsOpen(false)
     }
-  };
+  }
 
   const handleSolutionsClick = () => {
     if (windowWidth < 768) {
-      setIsSolutionsOpen(!isSolutionsOpen);
-      setIsServicesOpen(false);
+      setIsSolutionsOpen(!isSolutionsOpen)
+      setIsServicesOpen(false)
     }
-  };
+  }
 
   // NEW: Function to close dropdown when a card is clicked
   const handleCardClick = () => {
-    setIsServicesOpen(false);
-    setIsSolutionsOpen(false);
-  };
+    setIsServicesOpen(false)
+    setIsSolutionsOpen(false)
+  }
 
   // Contact button styling
-  const contactButtonClass = "bg-gradient-to-r from-blue-600 to-blue-800 dark:from-gray-800 dark:to-gray-900 text-white px-10 py-2.5 rounded-full font-medium transition-all duration-300 hover:shadow-lg hover:scale-105 transform active:scale-95 whitespace-nowrap shadow-md border border-blue-700/20 dark:border-gray-500/30";
-  const mobileContactButtonClass = "block bg-gradient-to-r from-blue-600 to-blue-800 dark:from-gray-800 dark:to-gray-900 text-white px-8 py-3 rounded-full font-medium text-center transition-all duration-300 hover:shadow-lg hover:scale-105 transform active:scale-95 w-full shadow-md border border-blue-700/20 dark:border-gray-500/30";
+  const contactButtonClass =
+    'bg-gradient-to-r from-blue-600 to-blue-800 dark:from-gray-800 dark:to-gray-900 text-white px-10 py-2.5 rounded-full font-medium transition-all duration-300 hover:shadow-lg hover:scale-105 transform active:scale-95 whitespace-nowrap shadow-md border border-blue-700/20 dark:border-gray-500/30'
+  const mobileContactButtonClass =
+    'block bg-gradient-to-r from-blue-600 to-blue-800 dark:from-gray-800 dark:to-gray-900 text-white px-8 py-3 rounded-full font-medium text-center transition-all duration-300 hover:shadow-lg hover:scale-105 transform active:scale-95 w-full shadow-md border border-blue-700/20 dark:border-gray-500/30'
 
   return (
     <>
@@ -273,7 +280,11 @@ const Header = () => {
           fixed top-0 left-0 w-full z-40
           transform transition-transform duration-300 ease-out will-change-transform
           ${visible ? 'translate-y-0' : '-translate-y-full'}
-          ${atTop || isMenuOpen ? 'bg-white dark:bg-gray-900' : 'bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm'}
+          ${
+            atTop || isMenuOpen
+              ? 'bg-white dark:bg-gray-900'
+              : 'bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm'
+          }
           border-b border-gray-200 dark:border-gray-800 
           shadow-md dark:shadow-gray-800/30
         `}
@@ -281,22 +292,22 @@ const Header = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-32 flex items-center justify-between ">
           {/* Logo with Next.js Image and Link to Homepage */}
           {/* <div className="flex items-center"> */}
-            {mounted ? (
-              <Link href="/" passHref>
-                <div className="relative w-16 h-10 md:w-28 md:h-16 mr-2 cursor-pointer my-0.5">
-                  <Image
-                    src="/sit.png"
-                    alt="SIT Logo"
-                    fill
-                    sizes="(max-width: 768px) 64px, 96px"
-                    className="object-contain object-center dark:invert"
-                    priority
-                  />
-                </div>
-              </Link>
-            ) : (
-              <div className="w-16 h-10 md:w-20 md:h-12 mr-2 bg-gray-100 dark:bg-gray-800 animate-pulse"></div>
-            )}
+          {mounted ? (
+            <Link href="/" passHref>
+              <div className="relative w-16 h-10 md:w-28 md:h-16 mr-2 cursor-pointer my-0.5">
+                <Image
+                  src="/sit.png"
+                  alt="SIT Logo"
+                  fill
+                  sizes="(max-width: 768px) 64px, 96px"
+                  className="object-contain object-center dark:invert"
+                  priority
+                />
+              </div>
+            </Link>
+          ) : (
+            <div className="w-16 h-10 md:w-20 md:h-12 mr-2 bg-gray-100 dark:bg-gray-800 animate-pulse"></div>
+          )}
           {/* </div> */}
 
           {/* Desktop Navigation - Centered */}
@@ -330,11 +341,11 @@ const Header = () => {
                   aria-expanded={isServicesOpen}
                   aria-controls="services-dropdown"
                 >
-                  Services{" "}
+                  Services{' '}
                   {isServicesOpen ? (
-                    <ChevronUp size={24} className='pt-1' />
+                    <ChevronUp size={24} className="pt-1" />
                   ) : (
-                    <ChevronDown size={24} className='pt-1' />
+                    <ChevronDown size={24} className="pt-1" />
                   )}
                 </button>
                 {isServicesOpen && (
@@ -361,11 +372,11 @@ const Header = () => {
                   aria-expanded={isSolutionsOpen}
                   aria-controls="solutions-dropdown"
                 >
-                  Solutions{" "}
+                  Solutions{' '}
                   {isSolutionsOpen ? (
-                    <ChevronUp size={24} className='pt-1' />
+                    <ChevronUp size={24} className="pt-1" />
                   ) : (
-                    <ChevronDown size={24} className='pt-1' />
+                    <ChevronDown size={24} className="pt-1" />
                   )}
                 </button>
                 {isSolutionsOpen && (
@@ -379,6 +390,14 @@ const Header = () => {
                     <SolutionDropdown />
                   </div>
                 )}
+              </li>
+              <li className="flex items-center">
+                <Link
+                  href="/seo-package"
+                  className="text-sm md:text-sm lg:text-base text-gray-600 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-bold hover:border-b-2 hover:border-blue-500 py-2 transition-colors duration-300"
+                >
+                  Packages
+                </Link>
               </li>
               <li className="flex items-center">
                 <Link
@@ -407,17 +426,13 @@ const Header = () => {
           {/* Theme Toggle and Contact Button - Desktop only */}
           <div className="hidden md:flex items-center gap-4">
             <ThemeToggleButton />
-            <Link
-              href="/contactus"
-              className={contactButtonClass}
-            >
+            <Link href="/contactus" className={contactButtonClass}>
               Contact Us
             </Link>
           </div>
         </div>
       </header>
 
-      {/* Mobile Menu System - Outside of the header */}
       {/* Mobile Menu Drawer Overlay */}
       {isMenuOpen && (
         <div
@@ -433,7 +448,7 @@ const Header = () => {
         className={`
           fixed top-0 right-0 h-full w-3/4 max-w-xs bg-white dark:bg-gray-900 
           shadow-xl z-50 transform transition-transform duration-300 ease-in-out
-          ${isMenuOpen ? "translate-x-0" : "translate-x-full"}
+          ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}
           flex flex-col md:hidden
         `}
       >
@@ -534,6 +549,16 @@ const Header = () => {
 
             <li>
               <Link
+                href="/seo-package"
+                className="block text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 px-4 py-3 rounded-md font-medium"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Packages
+              </Link>
+            </li>
+
+            <li>
+              <Link
                 href="/blog"
                 className="block text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 px-4 py-3 rounded-md font-medium"
                 onClick={() => setIsMenuOpen(false)}
@@ -544,9 +569,7 @@ const Header = () => {
           </ul>
         </div>
 
-        <div
-          className="p-6 border-t border-gray-200 dark:border-gray-800 mt-auto"
-        >
+        <div className="p-6 border-t border-gray-200 dark:border-gray-800 mt-auto">
           <Link
             href="/contactus"
             className={mobileContactButtonClass}
@@ -557,7 +580,7 @@ const Header = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
