@@ -393,7 +393,7 @@ const Header = () => {
               </li>
               <li className="flex items-center">
                 <Link
-                  href="/seo-package"
+                  href="/seo-packages"
                   className="text-sm md:text-sm lg:text-base text-gray-600 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-bold hover:border-b-2 hover:border-blue-500 py-2 transition-colors duration-300"
                 >
                   Packages
@@ -549,7 +549,7 @@ const Header = () => {
 
             <li>
               <Link
-                href="/seo-package"
+                href="/seo-packages"
                 className="block text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 px-4 py-3 rounded-md font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
