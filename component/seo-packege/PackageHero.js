@@ -1,5 +1,5 @@
-import React from "react";
-import Link from "next/link";
+import React from 'react'
+import Link from 'next/link'
 
 export default function PackageHero() {
   return (
@@ -23,10 +23,12 @@ export default function PackageHero() {
         </div>
 
         {/* CTA Button */}
-        <button className="border border-blue-900 dark:border-white text-blue-900 dark:text-white px-6 py-3 rounded-md font-medium transition hover:bg-blue-900 hover:text-white dark:hover:bg-white dark:hover:text-gray-900">
-          Get a Free Consultation
-        </button>
+        <Link href="/contactus">
+          <button className="border border-blue-900 dark:border-white text-blue-900 dark:text-white cursor-pointer px-6 py-3 rounded-md font-medium transition hover:bg-blue-900 hover:text-white dark:hover:bg-white dark:hover:text-gray-900">
+            Get a Free Consultation
+          </button>
+        </Link>
       </div>
     </section>
-  );
+  )
 }

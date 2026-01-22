@@ -131,7 +131,8 @@ const Hero = () => {
                   Proven Results
                 </h4>
                 <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">
-                  We stay focused on performance, growth, and real outcomes—not just metrics.
+                  We stay focused on performance, growth, and real outcomes—not
+                  just metrics.
                 </p>
               </div>
             </div>

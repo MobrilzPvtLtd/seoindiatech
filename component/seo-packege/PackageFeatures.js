@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const plans = ['Starter', 'Growth', 'Platinum', 'Dedicated']
@@ -210,15 +211,15 @@ const sections = [
 
 function TableSection({ title, rows }) {
   return (
-    <div className="bg-white dark:bg-gray-900 rounded-xl shadow-sm overflow-hidden">
+    <div className="bg-white dark:bg-gray-900 shadow-sm overflow-hidden">
       <h3 className="bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-500 dark:to-blue-600 text-white px-6 py-3 font-semibold">
         {title}
       </h3>
 
       <div className="overflow-x-auto">
-        <table className="min-w-[900px] w-full text-sm text-center">
+        <table className="min-w-[900px] w-full text-sm text-center border-collapse">
           <thead className="bg-gray-100 dark:bg-gray-800 sticky top-0 z-10">
-            <tr>
+            <tr className="h-12 md:h-14">
               <th className="text-left px-4 py-3 bg-gray-100 dark:bg-gray-800">
                 Feature
               </th>
@@ -241,18 +242,28 @@ function TableSection({ title, rows }) {
             {rows.map((row, i) => (
               <tr
                 key={i}
-                className="odd:bg-white even:bg-gray-50 dark:odd:bg-gray-900 dark:even:bg-gray-800 hover:bg-blue-50/60 dark:hover:bg-blue-900/30 transition"
+                className="
+                  min-h-[3.5rem] md:min-h-[4rem]
+                  odd:bg-white even:bg-gray-50 dark:odd:bg-gray-900 dark:even:bg-gray-800
+                  hover:bg-blue-50/60 dark:hover:bg-blue-900/30 transition-colors
+                  align-middle
+                "
               >
-                <td className="px-4 py-2 text-left font-medium">{row[0]}</td>
-
+                <td className="px-4 py-3 text-left font-medium border-t border-gray-200 dark:border-gray-700">
+                  {row[0]}
+                </td>
                 {row.slice(1).map((cell, idx) => (
                   <td
                     key={idx}
-                    className={`py-2 border-l ${
-                      idx >= 2
-                        ? 'border-blue-300/60 dark:border-blue-700/60 bg-blue-50/40 dark:bg-blue-900/20'
-                        : 'border-gray-200 dark:border-gray-700'
-                    }`}
+                    className={`
+                      py-3 border-l border-t border-gray-200 dark:border-gray-700
+                      align-middle
+                      ${
+                        idx >= 2
+                          ? 'border-blue-300/60 dark:border-blue-700/60 bg-blue-50/40 dark:bg-blue-900/20'
+                          : ''
+                      }
+                    `}
                   >
                     <Cell value={cell} />
                   </td>
@@ -269,10 +280,26 @@ function TableSection({ title, rows }) {
 export default function PackageFeatures() {
   return (
     <section className="py-20 bg-gray-50 dark:bg-gray-950">
-      <div className="max-w-7xl mx-auto px-6 space-y-14">
-        {sections.map((section) => (
-          <TableSection key={section.title} {...section} />
-        ))}
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="divide-y divide-gray-200 dark:divide-gray-800 rounded-xl overflow-hidden shadow-sm">
+          {sections.map((section) => (
+            <TableSection key={section.title} {...section} />
+          ))}
+        </div>
+
+        {/* Single button after the last table */}
+        <div className="mt-10 flex justify-center">
+          <Link href="/contactus">
+            <button
+              className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 
+                       text-white font-medium px-8 py-3 cursor-pointer rounded-lg shadow-md 
+                       transition-all duration-200 transform hover:scale-[1.03] 
+                       focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+            >
+              Ready to start a plan
+            </button>
+          </Link>
+        </div>
       </div>
     </section>
   )
