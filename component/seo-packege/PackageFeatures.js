@@ -2,6 +2,22 @@ import React from 'react'
 
 const plans = ['Starter', 'Growth', 'Platinum', 'Dedicated']
 
+const Cell = ({ value }) => {
+  if (value === 'Yes') {
+    return (
+      <span className="text-green-600 dark:text-green-400 font-semibold">
+        ✔
+      </span>
+    )
+  }
+  if (value === 'No') {
+    return (
+      <span className="text-red-500 dark:text-red-400 font-semibold">✖</span>
+    )
+  }
+  return <span className="font-medium">{value}</span>
+}
+
 const sections = [
   {
     title: 'Initial Website Audit and Review',
@@ -201,24 +217,44 @@ function TableSection({ title, rows }) {
 
       <div className="overflow-x-auto">
         <table className="min-w-[900px] w-full text-sm text-center">
-          <thead className="bg-gray-100 dark:bg-gray-800">
+          <thead className="bg-gray-100 dark:bg-gray-800 sticky top-0 z-10">
             <tr>
-              <th className="text-left px-4 py-3">Feature</th>
-              {plans.map((plan) => (
-                <th key={plan} className="py-3">
+              <th className="text-left px-4 py-3 bg-gray-100 dark:bg-gray-800">
+                Feature
+              </th>
+              {plans.map((plan, index) => (
+                <th
+                  key={plan}
+                  className={`py-3 font-semibold ${
+                    index >= 2
+                      ? 'bg-blue-50 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300'
+                      : ''
+                  }`}
+                >
                   {plan}
                 </th>
               ))}
             </tr>
           </thead>
 
-          <tbody className="divide-y">
+          <tbody>
             {rows.map((row, i) => (
-              <tr key={i}>
-                <td className="px-4 py-2 text-left">{row[0]}</td>
+              <tr
+                key={i}
+                className="odd:bg-white even:bg-gray-50 dark:odd:bg-gray-900 dark:even:bg-gray-800 hover:bg-blue-50/60 dark:hover:bg-blue-900/30 transition"
+              >
+                <td className="px-4 py-2 text-left font-medium">{row[0]}</td>
+
                 {row.slice(1).map((cell, idx) => (
-                  <td key={idx} className="py-2">
-                    {cell}
+                  <td
+                    key={idx}
+                    className={`py-2 border-l ${
+                      idx >= 2
+                        ? 'border-blue-300/60 dark:border-blue-700/60 bg-blue-50/40 dark:bg-blue-900/20'
+                        : 'border-gray-200 dark:border-gray-700'
+                    }`}
+                  >
+                    <Cell value={cell} />
                   </td>
                 ))}
               </tr>
