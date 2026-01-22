@@ -33,7 +33,7 @@ const packages = [
 
 export default function PackageSolution() {
   return (
-    <section className="py-24 bg-gray-50 dark:bg-gray-950">
+    <section className="pt-24 bg-gray-50 dark:bg-gray-950">
       <div className="max-w-7xl mx-auto px-6">
         {/* Heading */}
         <div className="text-center mb-16">

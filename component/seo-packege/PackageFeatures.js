@@ -1,257 +1,242 @@
 import React from 'react'
 
+const plans = ['Starter', 'Growth', 'Platinum', 'Dedicated']
+
+const sections = [
+  {
+    title: 'Initial Website Audit and Review',
+    rows: [
+      ['Basic Website Audit', 'Yes', 'Yes', 'Yes', 'Yes'],
+      ['Backlinks Analysis', 'Yes', 'Yes', 'Yes', 'Yes'],
+      ['Competitor Analysis', '1', '1', '2', '3'],
+      ['Keywords Research and Analysis', 'Yes', 'Yes', 'Yes', 'Yes'],
+      ['Website Modification Consulting', 'Yes', 'Yes', 'Yes', 'Yes'],
+      ['Duplicate Content Check', 'Yes', 'Yes', 'Yes', 'Yes'],
+      ['Google Penalty Check', 'Yes', 'Yes', 'Yes', 'Yes'],
+      ['Manual Spam Check', 'Yes', 'Yes', 'Yes', 'Yes'],
+      ['Broken Links Check', 'Yes', 'Yes', 'Yes', 'Yes'],
+      ['Initial Rank Report', 'Yes', 'Yes', 'Yes', 'Yes'],
+      ['Mobile Usability Check', 'Yes', 'Yes', 'Yes', 'Yes'],
+    ],
+  },
+  {
+    title: 'On Page Optimization',
+    rows: [
+      ['Website Architecture Checking', 'Yes', 'Yes', 'Yes', 'Yes'],
+      ['Duplicate Content Issues Check', 'Yes', 'Yes', 'Yes', 'Yes'],
+      ['Google Search Console Account Setup', 'Yes', 'Yes', 'Yes', 'Yes'],
+      ['Google Analytics Account Setup', 'Yes', 'Yes', 'Yes', 'Yes'],
+      ['XML Sitemaps Creation and Optimization', 'Yes', 'Yes', 'Yes', 'Yes'],
+      ['Robots.txt File Creation and Optimization', 'Yes', 'Yes', 'Yes', 'Yes'],
+      ['Canonicalization / 301 Redirect', 'Yes', 'Yes', 'Yes', 'Yes'],
+      ['Existing Content Analysis and Suggestion', 'Yes', 'Yes', 'Yes', 'Yes'],
+      ['Page Speed Score Analysis', 'Yes', 'Yes', 'Yes', 'Yes'],
+      ['Page Speed Score Improving', 'No', 'No', 'Yes', 'Yes'],
+      [
+        'Title Tag & Meta Description Optimization',
+        'Up to 20 Pages',
+        'Up to 50 Pages',
+        'Up to 100 Pages',
+        'All Pages',
+      ],
+      [
+        'Image Optimization',
+        'Up to 20 Pages',
+        'Up to 50 Pages',
+        'Up to 100 Pages',
+        'All Pages',
+      ],
+      [
+        'Anchor Tag Optimization',
+        'Up to 20 Pages',
+        'Up to 50 Pages',
+        'Up to 100 Pages',
+        'All Pages',
+      ],
+      [
+        'Internal Linking Optimization',
+        'Up to 20 Pages',
+        'Up to 50 Pages',
+        'Up to 100 Pages',
+        'All Pages',
+      ],
+      [
+        'Heading Tags Optimization',
+        'Up to 20 Pages',
+        'Up to 50 Pages',
+        'Up to 100 Pages',
+        'All Pages',
+      ],
+      [
+        'Schema Markup Analysis and Optimization',
+        'Up to 20 Pages',
+        'Up to 50 Pages',
+        'Up to 100 Pages',
+        'All Pages',
+      ],
+      [
+        'Web Content Suggestions (Writing Cost Extra)',
+        'Up to 20 Pages',
+        'Up to 50 Pages',
+        'Up to 100 Pages',
+        'All Pages',
+      ],
+      [
+        'URL Re-Writing (If Required)',
+        'Up to 20 Pages',
+        'Up to 50 Pages',
+        'Up to 100 Pages',
+        'All Pages',
+      ],
+      ['New Pages Creation (Content Cost Extra)', '2', '5', '10', '50'],
+      ['Bing Webmaster Tools Setup', 'No', 'No', 'Yes', 'Yes'],
+      ['Custom 404 Page Creation (If Required)', 'Yes', 'Yes', 'Yes', 'Yes'],
+      ['Blog Section Creation (If Required)', 'No', 'No', 'Yes', 'Yes'],
+    ],
+  },
+  {
+    title: 'Content Writing (Per Month)',
+    rows: [
+      ['Article Writing', '1', '2', '2', 'Up to 5'],
+      ['Blog Writing', '1', '2', '3', 'Up to 5'],
+      ['Guest Blog Writing', '2', '2', '3', 'Up to 6'],
+      ['Classified Writing', '1', '2', '2', 'Up to 5'],
+      ['PDF Creation', '1', '2', '3', 'Up to 5'],
+      ['Podcast Creation', '1', '2', '3', 'Up to 5'],
+      ['On-site Blog Writing', 'No', '1', '2', 'Up to 4'],
+      ['Infographic Creation', 'No', '1', '2', 'Up to 5'],
+      ['Press Release Writing', 'No', 'No', '1', 'Up to 2'],
+    ],
+  },
+  {
+    title: 'Off Page / Link Building (Per Month)',
+    rows: [
+      ['Article Submission', '1', '2', '2', 'Up to 5'],
+      ['Article Promotion', '5', '10', '10', 'Up to 25'],
+      ['Blog Submission', '1', '2', '3', 'Up to 5'],
+      ['Blog Promotion', '5', '10', '15', 'Up to 25'],
+      ['Guest Blog Submissions', '2', '2', '3', 'Up to 5'],
+      ['Guest Blog Promotion', '10', '10', '15', 'Up to 25'],
+      ['Social Bookmarking', '30', '75', '100', 'Up to 120'],
+      ['Business Profile Creation', '5', '8', '10', 'Up to 12'],
+      ['Podcast Submission', '5', '10', '15', 'Up to 20'],
+      ['Classified Submissions', '20', '30', '40', 'Up to 60'],
+      ['On-site Blog Submission', 'No', '1', '2', 'Up to 4'],
+      ['On-site Blog Promotion', 'No', '5', '10', 'Up to 20'],
+      ['PDF / PPT Submission', '4', '6', '8', 'Up to 12'],
+      ['Business Citation', '2', '5', '8', 'Up to 11'],
+      ['Infographic Submission', 'No', '5', '10', 'Up to 15'],
+      ['Press Release Submissions', 'No', 'No', '1', 'Up to 2'],
+      ['Press Release Promotion', 'No', 'No', '5', 'Up to 10'],
+      ['Total Backlinks / Month', '90', '181', '257', 'Up to 375'],
+    ],
+  },
+  {
+    title: 'Local Search Optimization',
+    rows: [
+      ['Google Business Profile Analysis', 'Yes', 'Yes', 'Yes', 'Yes'],
+      [
+        'Google Business Profile Setup & Verification',
+        'Yes',
+        'Yes',
+        'Yes',
+        'Yes',
+      ],
+      ['NAP Syndication', 'No', 'Yes', 'Yes', 'Yes'],
+      ['Google Business Profile Optimization', 'No', 'Yes', 'Yes', 'Yes'],
+      ['Bing Local Listing Creation & Verification', 'No', 'Yes', 'Yes', 'Yes'],
+      ['Posting on GBP (Per Month)', 'No', '4', '8', 'Up to 12'],
+    ],
+  },
+  {
+    title: 'Social Media Optimization',
+    rows: [
+      [
+        'Account Creation (FB, X, Instagram, LinkedIn)',
+        'Yes',
+        'Yes',
+        'Yes',
+        'Yes',
+      ],
+      ['Social Channel Account Optimization', 'Yes', 'Yes', 'Yes', 'Yes'],
+      ['Profile Bio Writing', 'Yes', 'Yes', 'Yes', 'Yes'],
+      ['Cover Image Design & Update', 'Yes', 'Yes', 'Yes', 'Yes'],
+      ['Creative Creation (Per Month)', 'No', '4', '8', 'Up to 16'],
+      ['Instagram Reel Posts', 'No', 'Up to 2', 'Up to 5', 'Up to 10'],
+      ['Facebook Posts', 'No', '4', '8', 'Up to 16'],
+      ['LinkedIn Posts', 'No', '4', '8', 'Up to 16'],
+      ['Instagram Posts', 'No', '4', '8', 'Up to 16'],
+      ['X Posts', 'No', '4', '8', 'Up to 16'],
+    ],
+  },
+  {
+    title: 'Reporting',
+    rows: [
+      ['Keyword Ranking Report', 'Semimonthly', 'Weekly', 'Weekly', 'Weekly'],
+      ['Activity Reports', 'Semimonthly', 'Weekly', 'Weekly', 'Daily'],
+      [
+        'Google Analytics Report',
+        'Monthly',
+        'Monthly',
+        'Monthly',
+        'Weekly & Monthly',
+      ],
+      [
+        'Google Search Console Report',
+        'Monthly',
+        'Monthly',
+        'Monthly',
+        'Weekly & Monthly',
+      ],
+    ],
+  },
+]
+
+function TableSection({ title, rows }) {
+  return (
+    <div className="bg-white dark:bg-gray-900 rounded-xl shadow-sm overflow-hidden">
+      <h3 className="bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-500 dark:to-blue-600 text-white px-6 py-3 font-semibold">
+        {title}
+      </h3>
+
+      <div className="overflow-x-auto">
+        <table className="min-w-[900px] w-full text-sm text-center">
+          <thead className="bg-gray-100 dark:bg-gray-800">
+            <tr>
+              <th className="text-left px-4 py-3">Feature</th>
+              {plans.map((plan) => (
+                <th key={plan} className="py-3">
+                  {plan}
+                </th>
+              ))}
+            </tr>
+          </thead>
+
+          <tbody className="divide-y">
+            {rows.map((row, i) => (
+              <tr key={i}>
+                <td className="px-4 py-2 text-left">{row[0]}</td>
+                {row.slice(1).map((cell, idx) => (
+                  <td key={idx} className="py-2">
+                    {cell}
+                  </td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  )
+}
+
 export default function PackageFeatures() {
   return (
     <section className="py-20 bg-gray-50 dark:bg-gray-950">
       <div className="max-w-7xl mx-auto px-6 space-y-14">
-        {/* ================= Initial Website Review ================= */}
-        <div className="bg-white dark:bg-gray-900 rounded-xl shadow-sm overflow-hidden">
-          <h3 className="bg-purple-600 text-white px-6 py-3 font-semibold">
-            Initial Website Review and Analysis
-          </h3>
-
-          <div className="overflow-x-auto">
-            <table className="min-w-[900px] w-full text-sm text-center">
-              <thead className="bg-gray-100 dark:bg-gray-800">
-                <tr>
-                  <th className="text-left px-4 py-3 whitespace-nowrap">
-                    Feature
-                  </th>
-                  <th className="py-3 whitespace-nowrap">Starter</th>
-                  <th className="py-3 whitespace-nowrap">Bronze</th>
-                  <th className="py-3 whitespace-nowrap">Silver</th>
-                  <th className="py-3 whitespace-nowrap">Gold</th>
-                  <th className="py-3 whitespace-nowrap">Platinum</th>
-                </tr>
-              </thead>
-
-              <tbody className="divide-y">
-                <tr>
-                  <td className="px-4 py-2 text-left">
-                    In-depth Website Analysis
-                  </td>
-                  <td>✓</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                </tr>
-                <tr>
-                  <td className="px-4 py-2 text-left">Backlink Analysis</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                </tr>
-                <tr>
-                  <td className="px-4 py-2 text-left">Competitive Analysis</td>
-                  <td>1</td>
-                  <td>1</td>
-                  <td>2</td>
-                  <td>4</td>
-                  <td>5</td>
-                </tr>
-                <tr>
-                  <td className="px-4 py-2 text-left">Keyword Research</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                </tr>
-                <tr>
-                  <td className="px-4 py-2 text-left">
-                    Duplicate Content Check
-                  </td>
-                  <td>✓</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                </tr>
-                <tr>
-                  <td className="px-4 py-2 text-left">Google Penalty Check</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                </tr>
-                <tr>
-                  <td className="px-4 py-2 text-left">Manual Spam Check</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                </tr>
-                <tr>
-                  <td className="px-4 py-2 text-left">Initial Rank Report</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        {/* ================= On Page Optimization ================= */}
-        <div className="bg-white dark:bg-gray-900 rounded-xl shadow-sm overflow-hidden">
-          <h3 className="bg-purple-600 text-white px-6 py-3 font-semibold">
-            On Page Optimization
-          </h3>
-
-          <div className="overflow-x-auto">
-            <table className="min-w-[900px] w-full text-sm text-center">
-              <thead className="bg-gray-100 dark:bg-gray-800">
-                <tr>
-                  <th className="text-left px-4 py-3">Feature</th>
-                  <th>Starter</th>
-                  <th>Bronze</th>
-                  <th>Silver</th>
-                  <th>Gold</th>
-                  <th>Platinum</th>
-                </tr>
-              </thead>
-
-              <tbody className="divide-y">
-                <tr>
-                  <td className="px-4 py-2 text-left">Website Structure</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                </tr>
-                <tr>
-                  <td className="px-4 py-2 text-left">Broken Link Fixing</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                </tr>
-                <tr>
-                  <td className="px-4 py-2 text-left">
-                    Google Analytics Setup
-                  </td>
-                  <td>✓</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                </tr>
-                <tr>
-                  <td className="px-4 py-2 text-left">XML Sitemap Creation</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                </tr>
-                <tr>
-                  <td className="px-4 py-2 text-left">
-                    Meta Tags Optimization
-                  </td>
-                  <td>20</td>
-                  <td>40</td>
-                  <td>80</td>
-                  <td>120</td>
-                  <td>Site Wide</td>
-                </tr>
-                <tr>
-                  <td className="px-4 py-2 text-left">Image Optimization</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                </tr>
-                <tr>
-                  <td className="px-4 py-2 text-left">Internal Linking</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        {/* ================= Reporting ================= */}
-        <div className="bg-white dark:bg-gray-900 rounded-xl shadow-sm overflow-hidden">
-          <h3 className="bg-purple-600 text-white px-6 py-3 font-semibold">
-            Reporting
-          </h3>
-
-          <div className="overflow-x-auto">
-            <table className="min-w-[900px] w-full text-sm text-center">
-              <thead className="bg-gray-100 dark:bg-gray-800">
-                <tr>
-                  <th className="text-left px-4 py-3">Feature</th>
-                  <th>Starter</th>
-                  <th>Bronze</th>
-                  <th>Silver</th>
-                  <th>Gold</th>
-                  <th>Platinum</th>
-                </tr>
-              </thead>
-
-              <tbody className="divide-y">
-                <tr>
-                  <td className="px-4 py-2 text-left">
-                    Monthly SEO Ranking Reports
-                  </td>
-                  <td>✓</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                </tr>
-                <tr>
-                  <td className="px-4 py-2 text-left">
-                    Google Analytics Report
-                  </td>
-                  <td>✓</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                </tr>
-                <tr>
-                  <td className="px-4 py-2 text-left">
-                    Email, Chat & Phone Support
-                  </td>
-                  <td>✓</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        {/* ================= Why Choose ================= */}
-        <div className="bg-gray-100 dark:bg-gray-800 p-8 rounded-xl">
-          <h4 className="text-xl font-semibold mb-3">
-            Why Choose Our SEO Packages?
-          </h4>
-          <p className="text-sm text-gray-700 dark:text-gray-300">
-            Our SEO packages are crafted to deliver strong online visibility,
-            sustainable traffic growth, and long-term results.
-          </p>
-          <p className="mt-3 text-sm text-gray-700 dark:text-gray-300">
-            For best performance, we recommend a minimum 6-month SEO commitment.
-          </p>
-        </div>
+        {sections.map((section) => (
+          <TableSection key={section.title} {...section} />
+        ))}
       </div>
     </section>
   )
