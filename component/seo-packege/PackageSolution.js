@@ -38,10 +38,10 @@ export default function PackageSolution() {
         {/* Heading */}
         <div className="text-center mb-16">
           <h2 className="text-4xl font-semibold text-gray-900 dark:text-white">
-            Choose Your SEO Plan
+            SEO Package Solutions
           </h2>
           <p className="mt-3 text-gray-600 dark:text-gray-400">
-            Simple pricing. Real results. No hidden fees.
+            Choose the perfect SEO package for your business needs
           </p>
         </div>
 

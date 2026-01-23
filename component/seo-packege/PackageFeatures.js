@@ -212,7 +212,7 @@ const sections = [
 function TableSection({ title, rows }) {
   return (
     <div className="bg-white dark:bg-gray-900 shadow-sm overflow-hidden">
-      <h3 className="bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-500 dark:to-blue-600 text-white px-6 py-3 font-semibold">
+      <h3 className="bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-500 dark:to-blue-600 text-white px-6 py-3 font-semibold text-center text-xl">
         {title}
       </h3>
 
