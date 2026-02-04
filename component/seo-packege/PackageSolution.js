@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const packages = [
@@ -104,17 +105,17 @@ export default function PackageSolution() {
 
                 {/* Button */}
                 <div className="px-6 pb-7">
-                  <a
-                    href="/get-quote"
+                  <Link
+                    href="/contactus"
                     className={`block w-full text-center py-3 rounded-lg font-medium transition
                     ${
                       isPopular
-                        ? 'bg-blue-600 text-white hover:bg-blue-700'
-                        : 'bg-gray-600 text-white hover:bg-gray-800 dark:bg-gray-300 dark:text-gray-900 dark:hover:bg-gray-400'
+                        ? 'w-full cursor-pointer sm:w-auto bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-500 dark:to-blue-600 text-white font-semibold tracking-wide  hover:shadow-xl hover:scale-[1.02] transition-all duration-300 border border-blue-700/20'
+                        : 'w-full cursor-pointer sm:w-auto bg-gradient-to-r from-gray-600 to-gray-700 bg-gradient-to-r dark:from-gray-800 dark:to-gray-900 text-white font-semibold tracking-wide  hover:shadow-xl hover:scale-[1.02] transition-all duration-300 border dark:border-gray-500/30'
                     }`}
                   >
                     Get Quote
-                  </a>
+                  </Link>
                 </div>
               </div>
             )
