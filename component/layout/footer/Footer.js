@@ -24,7 +24,7 @@ const Footer = () => {
 
   const handleCallUs = () => {
     // Add your phone number here
-    window.open('tel:+91-8010355718', '_self')
+    window.open('tel:+91-8076676731', '_self')
   }
 
   const handleEmailUs = () => {
