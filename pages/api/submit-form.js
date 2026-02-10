@@ -1,5 +1,6 @@
 // pages/api/submit-form.js
 import { getStrapiURL } from "../../utlis/api";
+import { sendContactFormEmail } from "../../utlis/sendEmail";
 
 export default async function handler(req, res) {
   if (req.method === "POST") {
@@ -43,6 +44,15 @@ export default async function handler(req, res) {
 
       const data = await response.json();
     //   console.log("Strapi response data:", data);
+
+      // Send confirmation emails
+      try {
+        await sendContactFormEmail(reqBody);
+        console.log('Contact form emails sent successfully');
+      } catch (emailError) {
+        console.error('Error sending confirmation emails:', emailError);
+        // Don't fail the request if email fails, log it but continue
+      }
 
       res.status(200).json(data);
     } catch (error) {
