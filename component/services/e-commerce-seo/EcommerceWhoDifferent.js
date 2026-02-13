@@ -31,7 +31,7 @@ export default function EcommerceWhoDifferent() {
               <li>Stores that sell services as well as products</li>
             </ul>
             <p>
-              No matter your size, we tailor our work to fit your SEO goals. If you are a small business looking for small business SEO services and support, we can help. If you want a local SEO company in India that understands your market, that is us.
+              No matter your size, we tailor our work to fit your SEO goals. If you are a small business looking for <Link href="https://www.seoindiatech.com/services/small-business-seo" className="font-medium text-sky-600 dark:text-sky-400 hover:underline">small business SEO services</Link> and support, we can help. If you want a local SEO company in India that understands your market, that is us.
             </p>
           </div>
         </div>
@@ -105,7 +105,7 @@ export default function EcommerceWhoDifferent() {
 
           <div className="text-gray-600 dark:text-gray-300 text-justify leading-relaxed text-lg mb-8">
             <p>
-              If you want ecommerce SEO services that deliver real attention from search engines and real buyers, contact us. We will review your site and share clear steps you can take next.
+              If you want ecommerce <Link href="https://www.seoindiatech.com/services/seo" className="font-medium text-sky-600 dark:text-sky-400 hover:underline">SEO services</Link> that deliver real attention from search engines and real buyers, contact us. We will review your site and share clear steps you can take next.
             </p>
           </div>
 

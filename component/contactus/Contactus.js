@@ -1,74 +1,74 @@
-import React, { useState } from "react";
-import { Phone, Mail, Send, MapPin, Clock } from "lucide-react";
-import { toast, ToastContainer } from "react-toastify";
-import ReCAPTCHA from "react-google-recaptcha";
+import React, { useState } from 'react'
+import { Phone, Mail, Send, MapPin, Clock } from 'lucide-react'
+import { toast, ToastContainer } from 'react-toastify'
+import ReCAPTCHA from 'react-google-recaptcha'
 
 const ContactUsSection = () => {
   const [formState, setFormState] = useState({
-    fullName: "",
-    email: "",
-    phone: "",
-    message: "",
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [recaptcha, setRecaptcha] = useState(null);
-  const [privacyAgreed, setPrivacyAgreed] = useState(false);
+    fullName: '',
+    email: '',
+    phone: '',
+    message: '',
+  })
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [recaptcha, setRecaptcha] = useState(null)
+  const [privacyAgreed, setPrivacyAgreed] = useState(false)
 
   // Handle input changes
   const handleInputChange = (e) => {
-    const { id, value } = e.target;
+    const { id, value } = e.target
     setFormState((prev) => ({
       ...prev,
       [id]: value,
-    }));
-  };
+    }))
+  }
 
   // Check if all required fields are filled
   const isFormValid = () => {
     return (
-      formState.fullName.trim() !== "" &&
-      formState.email.trim() !== "" &&
-      formState.phone.trim() !== "" &&
-      formState.message.trim() !== "" &&
+      formState.fullName.trim() !== '' &&
+      formState.email.trim() !== '' &&
+      formState.phone.trim() !== '' &&
+      formState.message.trim() !== '' &&
       privacyAgreed &&
       recaptcha !== null
-    );
-  };
+    )
+  }
 
   // Submit handler for Strapi API
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
+    e.preventDefault()
+    setIsSubmitting(true)
 
     try {
-      const response = await fetch("/api/submit-form", {
-        method: "POST",
+      const response = await fetch('/api/submit-form', {
+        method: 'POST',
         headers: {
-          "Content-Type": "application/json",
+          'Content-Type': 'application/json',
         },
         body: JSON.stringify(formState),
-      });
+      })
 
       if (!response.ok) {
-        throw new Error("Form submission failed");
+        throw new Error('Form submission failed')
       }
 
-      await response.json();
-      toast.success("Message Sent Successfully!");
+      await response.json()
+      toast.success('Message Sent Successfully!')
       setFormState({
-        fullName: "",
-        email: "",
-        phone: "",
-        message: "",
-      });
-      setPrivacyAgreed(false);
-      setRecaptcha(null);
+        fullName: '',
+        email: '',
+        phone: '',
+        message: '',
+      })
+      setPrivacyAgreed(false)
+      setRecaptcha(null)
     } catch (error) {
-      toast.error("Something went wrong. Please try again.");
+      toast.error('Something went wrong. Please try again.')
     } finally {
-      setIsSubmitting(false);
+      setIsSubmitting(false)
     }
-  };
+  }
 
   return (
     <section className="bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800 py-20 px-4 sm:px-6">
@@ -79,7 +79,7 @@ const ContactUsSection = () => {
           Get In Touch
         </span>
         <h1 className="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-          Let's Start a{" "}
+          Let's Start a{' '}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400 dark:from-blue-400 dark:to-blue-300">
             Conversation
           </span>
@@ -189,7 +189,7 @@ const ContactUsSection = () => {
                     required
                   />
                   <span>
-                    I agree to the{" "}
+                    I agree to the{' '}
                     <a
                       href="#"
                       className="text-blue-600 dark:text-blue-400 hover:underline"
@@ -214,7 +214,7 @@ const ContactUsSection = () => {
                   className="mt-4 w-full sm:w-auto inline-flex items-center justify-center gap-2 text-white bg-gradient-to-r from-blue-600 to-blue-500 dark:from-blue-500 dark:to-blue-600 hover:from-blue-700 hover:to-blue-600 font-medium px-8 py-3 rounded-full hover:cursor-pointer shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-[1.02] active:scale-[0.98] disabled:opacity-60"
                 >
                   <Send size={18} />
-                  {isSubmitting ? "Sending..." : "Send Message"}
+                  {isSubmitting ? 'Sending...' : 'Send Message'}
                 </button>
               </div>
             </form>
@@ -257,7 +257,7 @@ const ContactUsSection = () => {
                       href="tel:+201111772948"
                       className="text-blue-700 dark:text-blue-400 block hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
                     >
-                      +91-7042573120
+                      +91-8076676731
                     </a>
                     {/* <a
                       href="tel:+6282279400935"
@@ -297,8 +297,8 @@ const ContactUsSection = () => {
                     Office Address
                   </div>
                   <p className="text-gray-600 dark:text-gray-400">
-                    E 160, E Block, Sector 63, Noida, Hazratpur Wajidpur, Uttar Pradesh 201301
- 
+                    E 160, E Block, Sector 63, Noida, Hazratpur Wajidpur, Uttar
+                    Pradesh 201301
                   </p>
                 </div>
               </div>
@@ -324,7 +324,7 @@ const ContactUsSection = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default ContactUsSection;
+export default ContactUsSection

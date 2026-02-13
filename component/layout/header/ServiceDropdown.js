@@ -101,6 +101,22 @@ export default function ServiceDropdown() {
       color: 'bg-red-500 dark:bg-red-600',
       slug: 'ppc-advertising'
     },
+    {
+      title: 'E Commerce Seo',
+      description: 'Ecommerce SEO Services that improve product visibility, search rankings, and sales for your online store consistently.',
+      icon: <TrendingUp className="w-3 h-3 text-white" />,
+      iconBg: 'bg-red-500 dark:bg-gray-700',
+      color: 'bg-red-500 dark:bg-red-600',
+      slug: 'e-commerce-seo'
+    },
+    {
+      title: 'Digital Marketing',
+      description: '',
+      icon: <TrendingUp className="w-3 h-3 text-white" />,
+      iconBg: 'bg-red-500 dark:bg-gray-700',
+      color: 'bg-red-500 dark:bg-red-600',
+      slug: 'digital-marketing'
+    },
   ];
 
   return (
@@ -110,7 +126,7 @@ export default function ServiceDropdown() {
           <ServiceCard
             key={index}
             title={service.title}
-            description={service.description}
+            // description={service.description}
             icon={service.icon}
             iconBg={service.iconBg}
             color={service.color}
