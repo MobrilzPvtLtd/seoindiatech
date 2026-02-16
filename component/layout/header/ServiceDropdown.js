@@ -141,14 +141,14 @@ export default function ServiceDropdown() {
       color: 'bg-yellow-500 dark:bg-yellow-600',
       slug: 'small-business-seo'
     },
-    // {
-    //   title: 'PPC Advertising',
-    //   description: 'Run targeted pay-per-click campaigns to drive traffic and conversions with measurable results.',
-    //   icon: <TrendingUp className="w-3 h-3 text-white" />,
-    //   iconBg: 'bg-red-500 dark:bg-gray-700',
-    //   color: 'bg-red-500 dark:bg-red-600',
-    //   slug: 'ppc-advertising'
-    // },
+    {
+      title: 'Online Reputation Management',
+      description: ' ',
+      icon: <TrendingUp className="w-3 h-3 text-white" />,
+      iconBg: 'bg-red-500 dark:bg-gray-700',
+      color: 'bg-red-500 dark:bg-red-600',
+      slug: 'online-reputation-management'
+    },
   ];
 
   return (
