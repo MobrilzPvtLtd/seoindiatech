@@ -145,7 +145,7 @@ export default function SEOServicesSection() {
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <Link
-              href="/contact"
+              href="/contactus"
               className="inline-flex items-center px-10 py-5 bg-white text-blue-400 font-bold text-lg rounded-full hover:bg-gray-100 transition shadow-lg hover:shadow-xl"
             >
               Claim Your Free Consultation

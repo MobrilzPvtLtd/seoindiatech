@@ -3,43 +3,43 @@
 import React, { useState } from 'react'
 import { ChevronDown } from 'lucide-react'
 
-export default function DigitalMarketingFAQ() {
+export default function SmallBusinessFaq() {
   const [openIndex, setOpenIndex] = useState(null)
 
   const faqs = [
     {
-      question: 'Q1. What does an AI focused digital marketing company do?',
+      question: 'Q1. What are small business SEO services?',
       answer:
-        'It uses AI tools to support research and testing, then applies human review to improve SEO, ads, and conversions.',
+        'Small business SEO services are website and local improvements that help your business rank higher on search engines and earn more leads from organic search.',
     },
     {
       question:
-        'Q2. How long does it take to see results from a digital marketing services company?',
+        'Q2. How long do SEO services for small businesses take to show results?',
       answer:
-        'Small improvements can show in 4 to 8 weeks. Strong SEO growth usually takes 3 to 6 months, depending on competition and site condition.',
+        'Many sites see early movement in 4 to 8 weeks, while stronger results often take 3 to 6 months, depending on competition and site condition.',
     },
     {
       question:
-        'Q3. Do you offer Ecommerce SEO services for Shopify and WooCommerce?',
+        'Q3. What is included in local SEO services for small business?',
       answer:
-        'Yes. We work on product pages, category structure, technical fixes, and tracking to improve rankings and sales actions.',
-    },
-    {
-      question: 'Q4. What is included in Local SEO services?',
-      answer:
-        'Google Business Profile work, local pages, citations, review support, and local content that targets map and local search results.',
+        'Local SEO services for small business often include Google Business Profile updates, citation cleanup, local page work, review support, and map ranking improvements.',
     },
     {
       question:
-        'Q5. Are Small business SEO services different from enterprise SEO?',
+        'Q4. Do I need local SEO for small business if I already run ads?',
       answer:
-        'Yes. Small business SEO focuses on fast wins, fewer pages, clear priorities, and budget control while building steady growth.',
+        'Yes. Ads stop when the budget stops. Local SEO for small business builds long term visibility that can keep bringing leads.',
     },
     {
       question:
-        'Q6. Can I use local SEO marketing services if I have multiple locations?',
+        'Q5. Can an SEO company for small business help ecommerce stores?',
       answer:
-        'Yes. We create location pages, manage listings, and keep each location consistent across profiles and citations.',
+        'Yes. Ecommerce SEO services help category pages and product pages rank, improve site structure, and increase search traffic that converts.',
+    },
+    {
+      question: 'Q6. How do I choose a small business SEO agency?',
+      answer:
+        'Choose a small business SEO agency that shares a clear plan, explains tasks, provides reporting, and focuses on rankings, traffic, and leads.  ',
     },
   ]
 

@@ -83,14 +83,14 @@ export default function SocialMediaCTA() {
           </div>
 
           {/* Optional secondary link */}
-          <p className="mt-6 text-sm text-gray-500 dark:text-gray-300">
+          {/* <p className="mt-6 text-sm text-gray-500 dark:text-gray-300">
             <a
               href="/case-studies"
               className="hover:text-blue-600 transition-colors"
             >
               See real results from businesses like yours →
             </a>
-          </p>
+          </p> */}
         </div>
       </div>
     </section>

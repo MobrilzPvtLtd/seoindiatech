@@ -103,20 +103,52 @@ export default function ServiceDropdown() {
     },
     {
       title: 'E Commerce Seo',
-      description: 'Ecommerce SEO Services that improve product visibility, search rankings, and sales for your online store consistently.',
-      icon: <TrendingUp className="w-3 h-3 text-white" />,
-      iconBg: 'bg-red-500 dark:bg-gray-700',
-      color: 'bg-red-500 dark:bg-red-600',
+      description: 'Drive brand visibility and engage your target audience through strategic social media campaigns and content.',
+      icon: <Megaphone className="w-3 h-3 text-white" />,
+      iconBg: 'bg-orange-500 dark:bg-gray-700',
+      color: 'bg-orange-500 dark:bg-orange-600',
       slug: 'e-commerce-seo'
     },
     {
       title: 'Digital Marketing',
       description: '',
-      icon: <TrendingUp className="w-3 h-3 text-white" />,
-      iconBg: 'bg-red-500 dark:bg-gray-700',
-      color: 'bg-red-500 dark:bg-red-600',
+      icon: <Palette className="w-3 h-3 text-white" />,
+      iconBg: 'bg-purple-500 dark:bg-gray-700',
+      color: 'bg-purple-500 dark:bg-purple-600',
       slug: 'digital-marketing'
     },
+    {
+      title: 'Local SEO',
+      description: ' ',
+      icon: <Star className="w-3 h-3 text-white" />,
+      iconBg: 'bg-blue-500 dark:bg-gray-700',
+      color: 'bg-blue-500 dark:bg-blue-600',
+      slug: 'local-seo-service'
+    },
+    {
+      title: 'AI SEO',
+      description: ' ',
+      icon: <PenTool className="w-3 h-3 text-white" />,
+      iconBg: 'bg-green-500 dark:bg-gray-700',
+      color: 'bg-green-500 dark:bg-green-600',
+      slug: 'generative-engine-optimization'
+    },
+    {
+      title: 'Small Business SEO',
+      description: 'Optimize your website to rank higher on search engines, increasing visibility and organic traffic.',
+      icon: <Search className="w-3 h-3 text-white" />,
+      iconBg: 'bg-yellow-500 dark:bg-gray-700',
+      color: 'bg-yellow-500 dark:bg-yellow-600',
+      slug: 'small-business-seo'
+    },
+    // {
+    //   title: 'PPC Advertising',
+    //   description: 'Run targeted pay-per-click campaigns to drive traffic and conversions with measurable results.',
+    //   icon: <TrendingUp className="w-3 h-3 text-white" />,
+    //   iconBg: 'bg-red-500 dark:bg-gray-700',
+    //   color: 'bg-red-500 dark:bg-red-600',
+    //   slug: 'ppc-advertising'
+    // },
   ];
 
   return (

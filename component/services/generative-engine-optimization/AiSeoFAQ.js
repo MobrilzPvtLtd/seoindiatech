@@ -3,43 +3,39 @@
 import React, { useState } from 'react'
 import { ChevronDown } from 'lucide-react'
 
-export default function DigitalMarketingFAQ() {
+export default function AiSeoFAQ() {
   const [openIndex, setOpenIndex] = useState(null)
 
   const faqs = [
     {
-      question: 'Q1. What does an AI focused digital marketing company do?',
+      question: 'Q1. What does an ai SEO company do?',
       answer:
-        'It uses AI tools to support research and testing, then applies human review to improve SEO, ads, and conversions.',
+        'An ai SEO company improves your site for standard search results and for AI answer surfaces. It focuses on clear content, strong structure, and technical health.',
     },
     {
-      question:
-        'Q2. How long does it take to see results from a digital marketing services company?',
+      question: 'Q2. How are AI SEO services different from regular SEO?',
       answer:
-        'Small improvements can show in 4 to 8 weeks. Strong SEO growth usually takes 3 to 6 months, depending on competition and site condition.',
+        'AI SEO services include regular SEO work plus extra focus on question based intent, answer formatting, and signals that help AI tools cite your pages.',
     },
     {
-      question:
-        'Q3. Do you offer Ecommerce SEO services for Shopify and WooCommerce?',
+      question: 'Q3. What are answer engine optimization services?',
       answer:
-        'Yes. We work on product pages, category structure, technical fixes, and tracking to improve rankings and sales actions.',
+        'Answer engine optimization services help your pages show up as direct answers in AI tools and search features by using clear sections, short answers, and strong topic coverage.',
     },
     {
-      question: 'Q4. What is included in Local SEO services?',
+      question: 'Q4. What is a generative engine optimization agency?',
       answer:
-        'Google Business Profile work, local pages, citations, review support, and local content that targets map and local search results.',
+        'A generative engine optimization agency builds content and structure that increases the chance your brand is referenced in AI generated answers across search and AI tools.',
     },
     {
-      question:
-        'Q5. Are Small business SEO services different from enterprise SEO?',
+      question: 'Q5. How long does AI SEO take to show results?',
       answer:
-        'Yes. Small business SEO focuses on fast wins, fewer pages, clear priorities, and budget control while building steady growth.',
+        'Many sites see early movement in 4 to 8 weeks, but stronger results often take 3 to 6 months. Timing depends on competition, site health, and content needs.',
     },
     {
-      question:
-        'Q6. Can I use local SEO marketing services if I have multiple locations?',
+      question: 'Q6. Can a digital marketing company support AI SEO too?',
       answer:
-        'Yes. We create location pages, manage listings, and keep each location consistent across profiles and citations.',
+        'Yes. A digital marketing company can align AI SEO strategy with your lead funnel, landing pages, and conversion tracking so traffic turns into leads.  ',
     },
   ]
 

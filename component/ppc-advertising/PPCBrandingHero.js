@@ -153,7 +153,7 @@ export default function PPCBrandingHero() {
           <div className="flex flex-col sm:flex-row gap-5 justify-center">
             {/* Primary Button */}
             <Link
-              href="/contact"
+              href="/contactus"
               className="inline-flex items-center justify-center px-10 py-4 bg-blue-600 hover:bg-blue-700 text-white font-medium text-lg rounded-lg transition duration-200 shadow-md hover:shadow-lg"
             >
               Get Started Now

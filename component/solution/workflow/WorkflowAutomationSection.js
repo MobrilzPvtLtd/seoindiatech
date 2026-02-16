@@ -185,7 +185,7 @@ export default function WorkflowAutomationSection() {
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Link
-                href="/contact"
+                href="/contactus"
                 className="inline-flex items-center px-10 py-5 bg-white text-blue-700 font-bold text-lg rounded-full hover:bg-gray-100 transition shadow-xl"
               >
                 Start Your Free Workflow Audit
