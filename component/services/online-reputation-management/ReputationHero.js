@@ -34,14 +34,14 @@ export default function ReputationHero() {
             </p>
           </div>
 
-          <div className="pt-4 md:pt-6 flex justify-center md:justify-start">
+          {/* <div className="pt-4 md:pt-6 flex justify-center md:justify-start">
             <a
-              href="#contact"
+              href="/contactus"
               className="inline-flex items-center justify-center px-7 sm:px-8 py-3.5 sm:py-4 text-base sm:text-lg font-semibold text-white bg-gradient-to-r from-blue-600 to-indigo-600 rounded-xl shadow-lg hover:shadow-xl hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 hover:scale-[1.03] focus:outline-none focus:ring-4 focus:ring-blue-300/40"
             >
               Get Your Free Reputation Audit
             </a>
-          </div>
+          </div> */}
         </div>
 
         {/* Right - Image */}
