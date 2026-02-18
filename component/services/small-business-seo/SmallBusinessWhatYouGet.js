@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 import { FiCheckCircle } from 'react-icons/fi'
 
@@ -65,12 +66,19 @@ export default function SmallBusinessWhatYouGet() {
               </p>
 
               <p>
-                Our local SEO services for small business include consistent
-                business details, accurate categories, service areas, and strong
-                photos. We also build and clean citations, improve map
-                relevance, and guide review growth with ethical steps. Local SEO
-                for small business works best when your contact details match
-                everywhere and your location signals are clear.
+                Our{' '}
+                <Link
+                  href="/services/local-seo-service"
+                  className="text-blue-600 dark:text-blue-400 hover:underline"
+                >
+                  local SEO services
+                </Link>{' '}
+                for small business include consistent business details, accurate
+                categories, service areas, and strong photos. We also build and
+                clean citations, improve map relevance, and guide review growth
+                with ethical steps. Local SEO for small business works best when
+                your contact details match everywhere and your location signals
+                are clear.
               </p>
 
               <p>
@@ -107,10 +115,16 @@ export default function SmallBusinessWhatYouGet() {
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 text-justify text-lg leading-relaxed">
                   <p>
                     A small business cannot burn cash on long campaigns that do
-                    not move. An SEO company for small business should plan
-                    around your market, your website’s current state, and your
-                    monthly budget. That is how we run small business SEO
-                    services at SEO India Tech.
+                    not move. An{' '}
+                    <Link
+                      href="/services/seo"
+                      className="text-blue-600 dark:text-blue-400 hover:underline"
+                    >
+                      SEO company
+                    </Link>{' '}
+                    for small business should plan around your market, your
+                    website’s current state, and your monthly budget. That is
+                    how we run small business SEO services at SEO India Tech.
                   </p>
                   <p>
                     We start with quick fixes that remove friction, then move
@@ -143,9 +157,15 @@ export default function SmallBusinessWhatYouGet() {
                   </p>
                   <p>
                     Many brands need both. A store may want local SEO services
-                    for small business to drive foot traffic and ecommerce SEO
-                    services to grow online orders. We can run both paths in one
-                    plan while keeping tasks clear.
+                    for small business to drive foot traffic and{' '}
+                    <Link
+                      href="/services/e-commerce-seo"
+                      className="text-blue-600 dark:text-blue-400 hover:underline"
+                    >
+                      ecommerce SEO services
+                    </Link>{' '}
+                    to grow online orders. We can run both paths in one plan
+                    while keeping tasks clear.
                   </p>
                 </div>
               </div>
@@ -163,10 +183,16 @@ export default function SmallBusinessWhatYouGet() {
               </h5>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 text-justify text-lg leading-relaxed">
                 <p>
-                  SEO India Tech is a top digital marketing company for
-                  businesses that want direct work and steady growth. We focus
-                  on small business SEO services, not generic packages that try
-                  to fit everyone.
+                  SEO India Tech is a top{' '}
+                  <Link
+                    href="/services/digital-marketing"
+                    className="text-blue-600 dark:text-blue-400 hover:underline"
+                  >
+                    digital marketing company
+                  </Link>{' '}
+                  for businesses that want direct work and steady growth. We
+                  focus on small business SEO services, not generic packages
+                  that try to fit everyone.
                 </p>
                 <p>Here is what you can expect.</p>
                 <ul className="list-disc marker:text-blue-500 dark:marker:text-green-400 pl-6 space-y-3">

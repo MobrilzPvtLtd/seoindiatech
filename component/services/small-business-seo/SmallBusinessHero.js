@@ -43,7 +43,7 @@ export default function SmallBusinessHero() {
 
           <div className="relative w-full max-w-md h-[300px] md:h-[480px] transition-transform duration-500 hover:scale-105">
             <Image
-              src="/images/services/Local_seo.png"
+              src="/images/services/Small_Business_hero.png"
               alt="Small Business SEO Services"
               fill
               className="object-contain drop-shadow-2xl"

@@ -38,9 +38,22 @@ export default function PPCHero() {
           </p>
 
           <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
-            A well-built PPC campaign uses clean keyword lists, clear ad groups,
-            strong landing pages, and accurate conversion tracking to generate
-            measurable results.
+            As a pay per click advertising agency, we work with businesses that
+            want calls, form fills, store visits, and online sales. If you are
+            looking for a pay per click agency that stays hands on, our pay per
+            click services are built around clear targets and clean tracking.
+            Many clients also choose us as their{' '}
+            <Link
+              href="/services/ppc-advertising"
+              className="font-medium text-sky-600 dark:text-sky-400 hover:underline"
+            >
+              pay per click marketing agency
+            </Link>{' '}
+            because we manage the full loop, from keywords to ads to landing
+            page feedback. If you have tried ads before and the results felt
+            random, the issue is usually structure. A well-built pay per click
+            campaign uses clean keyword lists, clear ad groups, strong landing
+            pages, and accurate conversion tracking.
           </p>
 
           {/* CTA Button */}
