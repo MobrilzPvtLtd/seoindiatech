@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 export default function LocalBusiness() {
@@ -19,7 +20,13 @@ export default function LocalBusiness() {
                 <p>
                   If you want true local presence online, basic SEO is not
                   enough. You need targeted local SEO services that speak
-                  directly to your audience. Our local business SEO service
+                  directly to your audience. Our local business{' '}
+                  <Link
+                    href="/services/seo"
+                    className="text-blue-600 dark:text-blue-400 hover:underline"
+                  >
+                    SEO service
+                  </Link>{' '}
                   ensures that your business appears in Google Maps and local
                   packs.
                 </p>
@@ -90,11 +97,18 @@ export default function LocalBusiness() {
               </p>
 
               <p>
-                Our small business SEO services team understands local markets.
-                We know how customers search. We know how to place your business
-                in front of them. We focus on search terms that lead to traffic
-                and sales. That includes local keywords, map listings, and page
-                content that matches user intent.
+                Our{' '}
+                <Link
+                  href="/services/small-business-seo"
+                  className="text-blue-600 dark:text-blue-400 hover:underline"
+                >
+                  small business SEO
+                </Link>{' '}
+                services team understands local markets. We know how customers
+                search. We know how to place your business in front of them. We
+                focus on search terms that lead to traffic and sales. That
+                includes local keywords, map listings, and page content that
+                matches user intent.
               </p>
 
               <p>

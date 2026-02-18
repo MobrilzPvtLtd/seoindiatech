@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function LocalSeoHero() {
   return (
@@ -28,9 +29,15 @@ export default function LocalSeoHero() {
             <p>
               If you run a business that serves local customers, you need strong
               local SEO services. Local search matters for small stores,
-              clinics, shops, and service providers. At SEO India Tech we focus
-              on local SEO service work that helps you show up when your
-              customers search online.
+              clinics, shops, and service providers. At{' '}
+              <Link
+                href="/"
+                className="font-medium text-sky-600 dark:text-sky-400 hover:underline"
+              >
+                SEO India Tech
+              </Link>{' '}
+              we focus on local SEO service work that helps you show up when
+              your customers search online.
             </p>
 
             <p>

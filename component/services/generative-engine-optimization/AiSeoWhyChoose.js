@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 export default function AiSeoWhyChoose() {
@@ -17,12 +18,19 @@ export default function AiSeoWhyChoose() {
 
               <div className="space-y-6 text-lg leading-relaxed text-gray-700 dark:text-gray-300 text-justify">
                 <p>
-                  SEO India Tech is a digital marketing company that builds
-                  search growth with a clear plan. We do not rely on vague
-                  promises. We set targets that you can track, like ranking
-                  movement, clicks from key pages, lead form actions, and calls.
-                  As a digital marketing services company, we also align SEO
-                  work with your broader funnel so traffic turns into business.
+                  SEO India Tech is a{' '}
+                  <Link
+                    href="/services/digital-marketing"
+                    className="text-blue-600 dark:text-blue-400 hover:underline"
+                  >
+                    digital marketing company
+                  </Link>{' '}
+                  that builds search growth with a clear plan. We do not
+                  rely on vague promises. We set targets that you can track,
+                  like ranking movement, clicks from key pages, lead form
+                  actions, and calls. As a digital marketing services company,
+                  we also align SEO work with your broader funnel so traffic
+                  turns into business.
                 </p>
 
                 <p>

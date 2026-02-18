@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 export default function GenerativeHero() {
@@ -26,13 +27,19 @@ export default function GenerativeHero() {
             </p>
 
             <p>
-              SEO India Tech works as an ai SEO company for brands that want
-              steady growth from organic search and AI led discovery. We focus
-              on clean site structure, helpful content, and clear topic signals
-              that machines can understand and people can trust. When you work
-              with an ai SEO company, you are not buying shortcuts. You are
-              building a site that gives direct answers and ranks for the terms
-              that bring real leads.
+              SEO India Tech works as an{' '}
+              <Link
+                href="/"
+                className="text-blue-600 dark:text-blue-400 hover:underline"
+              >
+                AI SEO company
+              </Link>{' '}
+              for brands that want steady growth from organic search and AI led
+              discovery. We focus on clean site structure, helpful content, and
+              clear topic signals that machines can understand and people can
+              trust. When you work with an ai SEO company, you are not buying
+              shortcuts. You are building a site that gives direct answers and
+              ranks for the terms that bring real leads.
             </p>
           </div>
         </div>

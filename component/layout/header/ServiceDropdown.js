@@ -164,7 +164,7 @@ export default function ServiceDropdown() {
       icon: <PenTool className="w-3 h-3 text-white" />,
       iconBg: 'bg-green-500 dark:bg-gray-700',
       color: 'bg-green-500 dark:bg-green-600',
-      slug: 'generative-engine-optimization',
+      slug: 'ai-seo',
     },
     {
       title: 'Small Business SEO',

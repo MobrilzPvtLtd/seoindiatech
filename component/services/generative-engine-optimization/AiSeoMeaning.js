@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 export default function AiSeoMeaning() {
@@ -20,11 +21,18 @@ export default function AiSeoMeaning() {
             </p>
 
             <p>
-              AI SEO also supports answer engine optimization services. That
-              means your pages should be easy to scan, easy to cite, and built
-              around questions your customers ask. When your page is structured
-              well, AI tools can pull accurate lines from it. That often leads
-              to more clicks, more calls, and better brand recall.
+              AI SEO also supports{' '}
+              <Link
+                href="/services/answer-engine-optimization"
+                className="text-blue-600 dark:text-blue-400 hover:underline"
+              >
+                answer engine optimization services.
+              </Link>{' '}
+              That means your pages should be easy to scan, easy to
+              cite, and built around questions your customers ask. When your
+              page is structured well, AI tools can pull accurate lines from it.
+              That often leads to more clicks, more calls, and better brand
+              recall.
             </p>
           </div>
         </div>
