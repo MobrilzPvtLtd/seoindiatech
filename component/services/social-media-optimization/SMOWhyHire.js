@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 export default function SMOWhyHire() {
@@ -107,8 +108,14 @@ export default function SMOWhyHire() {
 
             <p className="text-gray-600 dark:text-gray-300 text-base md:text-lg leading-relaxed text-justify mb-8">
               Social and local search often work together. If you serve a local
-              area, google business profile gbp optimization helps you show up
-              on Maps and local results. We help with:
+              area, google business profile{' '}
+              <Link
+                href="/services/gbp-optimization"
+                className="text-blue-600 dark:text-blue-400 hover:underline"
+              >
+                GBP optimization
+              </Link>{' '}
+              helps you show up on Maps and local results. We help with:
             </p>
 
             <ul className="grid md:grid-cols-2 gap-5 md:gap-6">
@@ -132,7 +139,8 @@ export default function SMOWhyHire() {
               ))}
             </ul>
             <p className="text-gray-600 dark:text-gray-300 text-base md:text-lg leading-relaxed text-justify mt-8">
-              When your social pages and GBP look consistent, people trust you faster.
+              When your social pages and GBP look consistent, people trust you
+              faster.
             </p>
           </div>
         </div>

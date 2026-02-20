@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 export default function ServiceCovers() {
@@ -17,9 +18,15 @@ export default function ServiceCovers() {
         <p className="leading-8 text-justify text-gray-700 dark:text-gray-300 text-lg">
           Online reputation management is the daily work of tracking, improving,
           and protecting your brand’s public image across search, review sites,
-          social platforms, and local listings. Online reputation management in
-          digital marketing connects closely with SEO and content because search
-          results often shape a decision before a customer visits your site.
+          social platforms, and local listings. Online reputation management in{' '}
+          <Link
+            href="/services/digital-marketing"
+            className="text-blue-600 dark:text-blue-400 hover:underline"
+          >
+            digital marketing
+          </Link>{' '}
+          connects closely with SEO and content because search results often
+          shape a decision before a customer visits your site.
         </p>
       </div>
     </section>

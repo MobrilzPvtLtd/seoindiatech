@@ -128,6 +128,129 @@ const posts = [
       },
     ],
   },
+  {
+    slug: 'seo-for-restaurants-local-diners',
+    title: 'SEO for Restaurants: How to Get More Local Diners Through Google',
+    category: 'Local SEO',
+    image: '/images/Local-seo-Restaurants.jpg',
+    desc:
+      'Learn how restaurants can use SEO to attract more local diners through Google search and map results.',
+
+    content: [
+      {
+        type: 'paragraph',
+        text:
+          'We’ve all been there. You’re out and about, hunger hits, and the first thing you do is pull out your phone. You type in something like "best burgers nearby" or "sushi open now". In a split second, Google gives you a list of winners. As a restaurant owner, you want to be at the top of that list. That is what SEO—Search Engine Optimisation—is all about.',
+      },
+      {
+        type: 'paragraph',
+        text:
+          'It sounds like a big, technical word, but it’s really just about making sure your shop shows up when local people are looking for a place to eat. To do this effectively, many modern eateries utilise specialised ',
+        link: {
+          text: 'SEO services',
+          url: '/services/seo',
+        },
+        textAfter:
+          ' to ensure they do not get lost in the digital noise. In this guide, we’ll walk through how this works in plain English.',
+      },
+
+      {
+        type: 'heading',
+        text: 'How Google Decides Who to Recommend?',
+      },
+      {
+        type: 'paragraph',
+        text:
+          'Think of Google as a digital word-of-mouth friend. When someone asks for a food recommendation, Google wants to suggest a place that is close by, serves what the person wants, and has a good reputation. It looks at where the person is standing and then scans the internet for businesses that match.',
+      },
+      {
+        type: 'paragraph',
+        text:
+          'If your restaurant is right down the street, you’re already in the running. But Google also needs to be 100% sure about what you do. If it’s not clear whether you’re a coffee shop or a full-service bakery, Google might skip over you. This is where professional SEO optimisation services come in handy; they help clarify your "identity" to search engines so Google feels confident enough to send people your way.',
+      },
+
+      {
+        type: 'heading',
+        text: 'Why Do Some Competitors Always Show Up First?',
+      },
+      {
+        type: 'paragraph',
+        text:
+          'It can be frustrating to see the cafe across the street getting all the digital love while you’re sitting there with better food. Usually, it’s because that cafe is giving Google more "proof" that they’re a great choice. The restaurants that win at this usually do a few things well: they’re specific about their location, they have fresh reviews, and they keep their info updated.',
+      },
+      {
+        type: 'paragraph',
+        text:
+          'For example, a place that says they are "next to the old library in the West End" gives Google a much better "anchor". If you find your competitors are consistently outranking you, it might be time to look into local SEO services to help pin your business to the map more effectively.',
+        link: {
+          text: 'local SEO services',
+          url: '/services/local-seo',
+        },
+        textAfter: ' to help pin your business to the map more effectively.',
+      },
+
+      {
+        type: 'heading',
+        text: 'Easy Mistakes That Might Be Hiding Your Business',
+      },
+      {
+        type: 'paragraph',
+        text:
+          'Many owners work hard in the kitchen but accidentally ignore their online "front door". Here are some common slips:',
+      },
+      {
+        type: 'list',
+        items: [
+          '<strong>Mixed-up Info:</strong> If your address or phone number is written differently on your website than it is on social media, search engines get confused.',
+          '<strong>Forgetting Your Town Name:</strong> If you do not mention you are in "Greenwood", people searching for food in Greenwood might never see you.',
+          '<strong>The Menu Image Trap:</strong> Google cannot "read" a photo or a PDF. If your menu is not typed out as plain text, Google will not know you have the best "vegan lasagna" in town.',
+          '<strong>Hard-to-Read Mobile Sites:</strong> Most people look for food on their phones. If your site is slow or hard to navigate, they will go somewhere else.',
+          '<strong>Old News:</strong> If your hours have not been updated since last year, customers might assume you are closed.',
+        ],
+      },
+
+      {
+        type: 'heading',
+        text: 'Simple Ways to Bring in More Customers',
+      },
+      {
+        type: 'paragraph',
+        text: `You don't need a huge marketing budget to fix your online presence. You can start seeing progress by taking these small steps:`,
+      },
+      {
+        type: 'ordered-list',
+        items: [
+          '<strong>Keep Your Details the Same:</strong> Make sure your name, address, and phone number are exactly the same everywhere online.',
+          '<strong>Talk Like a Local:</strong> On your "About" page, mention local landmarks. Telling people you are "right across from the high school" helps Google pin you to that exact spot.',
+          '<strong>Type Out Your Menu:</strong> Create a page where your dishes are written as actual text so specific ingredients can be searched.',
+          '<strong>Simple Titles Work Best:</strong> Do not get too fancy. Instead of "A Taste of Heaven", just call your page "Our Food Menu".',
+          '<strong>Ask for Reviews:</strong> Recent reviews tell Google that people are still loving what you do.',
+          '<strong>Post Real Photos:</strong> Clear, bright photos of your food and dining room show people exactly what to expect.',
+        ],
+      },
+
+      {
+        type: 'heading',
+        text: 'Why Restaurants Should Partner with an SEO Agency?',
+      },
+      {
+        type: 'paragraph',
+        text:
+          'Running a kitchen is a full-time job, and staying on top of the latest search trends can be overwhelming. This is why many successful restaurants choose to partner with ',
+        link: {
+          text: 'SEO agency',
+          url: '/',
+        },
+        textAfter:
+          '. Professional SEO services take the guesswork out of your digital marketing, allowing you to focus on the food while experts handle your visibility.',
+      },
+      {
+        type: 'paragraph',
+        text:
+          'An agency providing local SEO services understands exactly how to get you into that "Top 3" map pack on Google. They can manage your reviews, optimise your website for mobile users, and ensure your menu is searchable. By investing in SEO optimisation services, you are not just "fixing a website"—you are building a steady stream of new diners who will find you exactly when they are hungriest. Focus on your guests, and let the experts handle the algorithms.',
+      },
+    ],
+  },
 ]
 
 export default posts

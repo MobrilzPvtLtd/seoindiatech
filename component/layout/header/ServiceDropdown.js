@@ -191,6 +191,47 @@ export default function ServiceDropdown() {
       color: 'bg-orange-500 dark:bg-orange-600',
       slug: 'pay-per-click',
     },
+    {
+      title: 'Social Media Optimization',
+      description: '',
+      icon: <Palette className="w-3 h-3 text-white" />,
+      iconBg: 'bg-purple-500 dark:bg-gray-700',
+      color: 'bg-purple-500 dark:bg-purple-600',
+      slug: 'social-media-optimization',
+    },
+    // {
+    //   title: 'Local SEO',
+    //   description: ' ',
+    //   icon: <Star className="w-3 h-3 text-white" />,
+    //   iconBg: 'bg-blue-500 dark:bg-gray-700',
+    //   color: 'bg-blue-500 dark:bg-blue-600',
+    //   slug: 'local-seo-service',
+    // },
+    // {
+    //   title: 'AI SEO',
+    //   description: ' ',
+    //   icon: <PenTool className="w-3 h-3 text-white" />,
+    //   iconBg: 'bg-green-500 dark:bg-gray-700',
+    //   color: 'bg-green-500 dark:bg-green-600',
+    //   slug: 'ai-seo',
+    // },
+    // {
+    //   title: 'Small Business SEO',
+    //   description:
+    //     'Optimize your website to rank higher on search engines, increasing visibility and organic traffic.',
+    //   icon: <Search className="w-3 h-3 text-white" />,
+    //   iconBg: 'bg-yellow-500 dark:bg-gray-700',
+    //   color: 'bg-yellow-500 dark:bg-yellow-600',
+    //   slug: 'small-business-seo',
+    // },
+    // {
+    //   title: 'Online Reputation Management',
+    //   description: ' ',
+    //   icon: <TrendingUp className="w-3 h-3 text-white" />,
+    //   iconBg: 'bg-red-500 dark:bg-gray-700',
+    //   color: 'bg-red-500 dark:bg-red-600',
+    //   slug: 'online-reputation-management',
+    // },
   ]
 
   return (

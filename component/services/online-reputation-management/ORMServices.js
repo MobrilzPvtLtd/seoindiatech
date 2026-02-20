@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 import {
   FaStar,
@@ -18,8 +19,21 @@ export default function ORMServices() {
     {
       icon: <FaGoogle size={18} />,
       title: 'Google Business Profile support',
-      description:
-        'For local brands, your listing is often the first impression. We improve accuracy, categories, services, photos, and review workflows. We also include Google Business Profile (GBP) optimization steps that support more calls, direction requests, and trust.',
+      description: (
+        <>
+          For local brands, your listing is often the first impression. We
+          improve accuracy, categories, services, photos, and review workflows.
+          We also include{' '}
+          <Link
+            href="/services/gbp-optimization"
+            className="text-blue-600 dark:text-blue-400 hover:underline"
+          >
+            Google Business Profile (GBP) optimization
+          </Link>{' '}
+          steps that support more calls, direction requests, and
+          trust.
+        </>
+      ),
     },
     {
       icon: <FaSearch size={18} />,

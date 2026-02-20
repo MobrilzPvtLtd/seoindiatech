@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 export default function SMOHero() {
@@ -26,12 +27,18 @@ export default function SMOHero() {
             </p>
 
             <p className="text-gray-600 dark:text-gray-300 text-base text-justify md:text-lg leading-relaxed">
-              SEO India Tech works as a social media optimization company that
-              supports brands across platforms like Instagram, Facebook,
-              LinkedIn, X, YouTube, and Pinterest. If you want an SMO partner
-              that understands Indian audiences, we also work as a social media
-              optimization company in India with processes built for local
-              markets, regional language needs, and fast changing trends.
+              <Link
+                href="/"
+                className="text-blue-600 dark:text-blue-400 hover:underline"
+              >
+                SEO India Tech
+              </Link>{' '}
+              works as a social media optimization company that supports brands
+              across platforms like Instagram, Facebook, LinkedIn, X, YouTube,
+              and Pinterest. If you want an SMO partner that understands Indian
+              audiences, we also work as a social media optimization company in
+              India with processes built for local markets, regional language
+              needs, and fast changing trends.
             </p>
           </div>
 
