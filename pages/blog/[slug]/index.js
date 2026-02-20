@@ -95,7 +95,10 @@ export default function BlogDetail() {
                       className="list-disc pl-6 space-y-2 text-justify text-gray-700 dark:text-gray-300"
                     >
                       {block.items.map((item, i) => (
-                        <li key={i} dangerouslySetInnerHTML={{ __html: item }} />
+                        <li
+                          key={i}
+                          dangerouslySetInnerHTML={{ __html: item }}
+                        />
                       ))}
                     </ul>
                   )
@@ -108,7 +111,10 @@ export default function BlogDetail() {
                       className="list-decimal pl-6 space-y-2 text-justify text-gray-700 dark:text-gray-300"
                     >
                       {block.items.map((item, i) => (
-                        <li key={i} dangerouslySetInnerHTML={{ __html: item }} />
+                        <li
+                          key={i}
+                          dangerouslySetInnerHTML={{ __html: item }}
+                        />
                       ))}
                     </ol>
                   )

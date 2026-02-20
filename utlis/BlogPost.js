@@ -1,7 +1,8 @@
 const posts = [
   {
     metaTitle: 'How Google AI Overviews Are Changing SEO',
-    metaDesc:'Learn simple SEO tips for restaurants and local diners. Improve local rankings, attract nearby customers, and turn more online searches into table bookings.',
+    metaDesc:
+      'Learn simple SEO tips for restaurants and local diners. Improve local rankings, attract nearby customers, and turn more online searches into table bookings.',
     slug: 'how-google-ai-overviews-are-changing-seo',
     title:
       'How Google AI Overviews Are Changing SEO and What Website Owners Should Do?',
@@ -132,7 +133,8 @@ const posts = [
   },
   {
     metaTitle: 'SEO for Restaurants & Local Diners Guide',
-    metaDesc:'Learn how Google AI Overviews affect search rankings, content strategy, and traffic. Adapt your SEO approach to stay visible in AI driven search results.',
+    metaDesc:
+      'Learn how Google AI Overviews affect search rankings, content strategy, and traffic. Adapt your SEO approach to stay visible in AI driven search results.',
     slug: 'seo-for-restaurants-local-diners',
     title: 'SEO for Restaurants: How to Get More Local Diners Through Google',
     category: 'Local SEO',
@@ -257,7 +259,8 @@ const posts = [
   },
   {
     metaTitle: 'YouTube Business Marketing Trends 2026',
-    metaDesc:'Explore YouTube business marketing trends for 2026. Learn content ideas, ad formats, and growth tips to reach more viewers and turn traffic into leads and sales.',
+    metaDesc:
+      'Explore YouTube business marketing trends for 2026. Learn content ideas, ad formats, and growth tips to reach more viewers and turn traffic into leads and sales.',
     slug: 'youtube-business-marketing-2026',
     title: 'How to Use YouTube for Business Marketing in 2026?',
     category: 'Social Media Marketing',

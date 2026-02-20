@@ -21,37 +21,37 @@ export default function WhyAppStore() {
       icon: <FaPenNib />,
       title: 'Metadata copy that reads like a human',
       content:
-        'We write copy that sounds natural, stays clear, and still supports app store optimization services. We avoid fluff. We explain what the app does, who it helps, and why it is worth installing. We keep it easy to scan...',
+        'We write copy that sounds natural, stays clear, and still supports app store optimization services. We avoid fluff. We explain what the app does, who it helps, and why it is worth installing. We keep it easy to scan. We also align text with mobile app store optimization best practices, so it supports ranking without sounding stuffed.',
     },
     {
       icon: <FaImage />,
       title: 'Creative improvements that drive installs',
       content:
-        'Your icon and screenshots do heavy lifting. We review your current creatives and suggest changes to improve clarity and tap-through. We can support with screenshot copy, layout guidance, and video preview direction...',
+        'Your icon and screenshots do heavy lifting. We review your current creatives and suggest changes to improve clarity and tap-through. We can support with screenshot copy, layout guidance, and video preview direction. These changes often lift conversion fast, especially when traffic is already present.',
     },
     {
       icon: <FaStar />,
       title: 'Ratings and review support',
       content:
-        'Stores reward apps that earn trust. We help you build a review plan that follows store policies. We also guide response templates and timing. A strong rating profile supports advanced app store optimization...',
+        'Stores reward apps that earn trust. We help you build a review plan that follows store policies. We also guide response templates and timing. A strong rating profile supports advanced app store optimization because it improves both conversion and long-term retention signals.',
     },
     {
       icon: <FaGlobe />,
       title: 'Localization for India and beyond',
       content:
-        'If you are targeting regional audiences, localization matters. We adapt messaging and keywords for app store optimization India goals. If you want global growth, we plan rollouts market by market...',
+        'If you are targeting regional audiences, localization matters. We adapt messaging and keywords for app store optimization India goals. If you want global growth, we plan rollouts market by market. This is a key part of mobile app store optimization because the same keyword rarely performs the same way in every region.',
     },
     {
       icon: <FaChartLine />,
       title: 'A/B testing and iteration',
       content:
-        'Better ASO comes from testing. We run experiments on screenshots, short description hooks, and other elements where the store allows. Then we scale what works...',
+        'Better ASO comes from testing. We run experiments on screenshots, short description hooks, and other elements where the store allows. Then we scale what works. This is where advanced app store optimization delivers steady gains instead of one-time changes.',
     },
     {
       icon: <FaFileAlt />,
       title: 'Reporting you can actually use',
       content:
-        'You get clean reporting on ranking movement, conversion trends, and what changed. We connect ASO work with your wider marketing plan...',
+        'You get clean reporting on ranking movement, conversion trends, and what changed. We connect ASO work with your wider marketing plan, so you can see how paid, organic, and store improvements work together.',
       full: true,
     },
   ]
