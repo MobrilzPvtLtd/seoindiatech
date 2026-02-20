@@ -4,7 +4,7 @@ const posts = [
     title:
       'How Google AI Overviews Are Changing SEO and What Website Owners Should Do?',
     category: 'SEO & AI',
-    image: '/images/AI_SEO_Blog.png',
+    image: '/images/Google-Ai-Overviews.png',
     desc:
       'Google AI Overviews are changing how websites rank in search results. Learn what this means for SEO and what website owners should do to stay visible.',
 
