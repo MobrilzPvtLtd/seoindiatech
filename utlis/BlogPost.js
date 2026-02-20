@@ -1,5 +1,7 @@
 const posts = [
   {
+    metaTitle: 'How Google AI Overviews Are Changing SEO',
+    metaDesc:'Learn simple SEO tips for restaurants and local diners. Improve local rankings, attract nearby customers, and turn more online searches into table bookings.',
     slug: 'how-google-ai-overviews-are-changing-seo',
     title:
       'How Google AI Overviews Are Changing SEO and What Website Owners Should Do?',
@@ -129,6 +131,8 @@ const posts = [
     ],
   },
   {
+    metaTitle: 'SEO for Restaurants & Local Diners Guide',
+    metaDesc:'Learn how Google AI Overviews affect search rankings, content strategy, and traffic. Adapt your SEO approach to stay visible in AI driven search results.',
     slug: 'seo-for-restaurants-local-diners',
     title: 'SEO for Restaurants: How to Get More Local Diners Through Google',
     category: 'Local SEO',
@@ -252,125 +256,126 @@ const posts = [
     ],
   },
   {
-  slug: 'youtube-business-marketing-2026',
-  title: 'How to Use YouTube for Business Marketing in 2026?',
-  category: 'Social Media Marketing',
-  image: '/images/Importance-of-Youtube-Marketing-in-Business-Growth.jpg',
-  desc:
-    'Learn how businesses can use YouTube marketing in 2026 to build trust, attract customers, and create long-term brand visibility.',
+    metaTitle: 'YouTube Business Marketing Trends 2026',
+    metaDesc:'Explore YouTube business marketing trends for 2026. Learn content ideas, ad formats, and growth tips to reach more viewers and turn traffic into leads and sales.',
+    slug: 'youtube-business-marketing-2026',
+    title: 'How to Use YouTube for Business Marketing in 2026?',
+    category: 'Social Media Marketing',
+    image: '/images/Importance-of-Youtube-Marketing-in-Business-Growth.jpg',
+    desc:
+      'Learn how businesses can use YouTube marketing in 2026 to build trust, attract customers, and create long-term brand visibility.',
 
-  content: [
-    {
-      type: 'heading',
-      text: 'Introduction: It’s Not Just a Video Site Anymore',
-    },
-    {
-      type: 'paragraph',
-      text:
-        'Let’s be honest: in 2026, if your business isn’t on YouTube, you’re essentially invisible to a huge chunk of your market. It’s no longer about "going viral" or having a million subscribers. Today, YouTube acts as a digital shopfront. Before someone buys a product or books a service, they’re searching for a video to see if the people behind the brand actually know what they’re talking about.',
-    },
-    {
-      type: 'paragraph',
-      text:
-        'For small business owners, this is actually great news. You don’t need a Hollywood production crew. You just need to show up. Whether it’s a quick 60-second tip or a ten-minute deep dive, video builds a level of trust that text simply can’t touch. It’s where curiosity turns into real confidence.',
-    },
-
-    {
-      type: 'heading',
-      text: 'Why YouTube is Your Secret Research Weapon?',
-    },
-    {
-      type: 'paragraph',
-      text:
-        'Most people forget that YouTube is the world’s second-largest search engine. When someone has a problem—whether it’s a leaky pipe or a complex business hurdle—they don’t just want to read an article; they want to see a solution in action.',
-    },
-    {
-      type: 'paragraph',
-      text:
-        'In 2026, this "intent-based" searching is how small brands beat giant corporations. If you can provide a clear, honest answer to a specific question, you win the customer\'s attention. Plus, unlike a social media post that dies after 24 hours, a YouTube video is "evergreen". A helpful video you record today can keep bringing in leads three years from now. It’s one of the few marketing moves that actually gets more valuable over time.',
-    },
-
-    {
-      type: 'heading',
-      text: 'Four Content Styles That Actually Convert',
-    },
-    {
-  type: 'ordered-list',
-  items: [
-    '<strong>The "How-To" Teacher:</strong> Stop trying to sell and start trying to teach. Answer the questions you hear every single day from your clients. If you sell skincare, show a morning routine. If you\'re an accountant, explain a new tax change. This positions you as the expert before you ever ask for a dime.',
-    '<strong>The Simple Explainer:</strong> Show your product in the real world. Do not just list features; show how it solves a headache. A good explainer feels like a recommendation from a friend, not a pitch from a salesperson.',
-    '<strong>The Human Side (Behind the Scenes):</strong> People buy from people. Show your warehouse, your morning coffee, or even your mistakes. This is where a <a href="/" class="text-blue-600 dark:text-blue-400 font-medium hover:underline">digital marketing company</a> can help you figure out how to tell your brand story without it feeling forced or "cringey".',
-    '<strong>The FAQ Response:</strong> Take your ten most common customer emails and turn them into videos. It saves you time on customer support and brings in new viewers who are searching for those exact same answers.',
-  ],
-},
-
-    {
-      type: 'heading',
-      text: 'Strategy: Consistency Over "Going Viral"',
-    },
-    {
-      type: 'paragraph',
-      text:
-        'I see so many business owners quit after three videos because they did not get 10,000 views. That’s the wrong metric. Success on YouTube in 2026 is about being reliable. One video a week—or even every two weeks—is plenty as long as you stick to it.',
-    },
-    {
-      type: 'paragraph',
-      text:
-        'YouTube "Shorts" are fantastic for getting your face in front of new people, while longer videos are where you build the real relationship. Think of it as a funnel: the Shorts grab their attention, and the long-form content earns their trust. When you combine the two, you’re building a brand that actually lasts.',
-    },
-
-    {
-      type: 'heading',
-      text: 'Common Blunders to Watch Out For',
-    },
-    {
-      type: 'paragraph',
-      text:
-        'The biggest mistake is making your channel all about you instead of your customer. If your videos are just "we did this" and "buy our that", people will tune out. Another trap is over-editing. In 2026, people crave authenticity. If a video is too polished, it starts to look like a generic ad, and we’ve all learned to ignore those.',
-    },
-    {
-      type: 'paragraph',
-      text:
-        'Many businesses struggle to keep the momentum going, which is why they look toward social media marketing services in India to handle the heavy lifting of scheduling and distribution. It’s hard to run a business and be a full-time creator at the same time.',
-    },
-
-    {
-      type: 'heading',
-      text: 'Connecting the Dots',
-    },
-    {
-      type: 'paragraph',
-      text:
-        'YouTube should not be an island. It’s the engine that should feed your entire marketing plan. You can take the audio from a video and turn it into a podcast, or take the key points and turn them into an email newsletter.',
-    },
-    {
-      type: 'paragraph',
-      text:
-        'If this feels like a lot to manage, that’s where professional ',
-      link: {
-        text: 'social media marketing services',
-        url: '/services/social-media-marketing',
+    content: [
+      {
+        type: 'heading',
+        text: 'Introduction: It’s Not Just a Video Site Anymore',
       },
-      textAfter:
-        ' come in. They can help you take one single video and turn it into ten pieces of content for other platforms. Working with a dedicated team ensures your video strategy actually links back to your website and your bottom line.',
-    },
+      {
+        type: 'paragraph',
+        text:
+          'Let’s be honest: in 2026, if your business isn’t on YouTube, you’re essentially invisible to a huge chunk of your market. It’s no longer about "going viral" or having a million subscribers. Today, YouTube acts as a digital shopfront. Before someone buys a product or books a service, they’re searching for a video to see if the people behind the brand actually know what they’re talking about.',
+      },
+      {
+        type: 'paragraph',
+        text:
+          'For small business owners, this is actually great news. You don’t need a Hollywood production crew. You just need to show up. Whether it’s a quick 60-second tip or a ten-minute deep dive, video builds a level of trust that text simply can’t touch. It’s where curiosity turns into real confidence.',
+      },
 
-    {
-      type: 'heading',
-      text: 'Conclusion: Just Hit Record',
-    },
-    {
-      type: 'paragraph',
-      text:
-        'The biggest hurdle to YouTube marketing in 2026 is not the algorithm or the equipment—it is just getting started. Your first few videos might be a little rough, and that’s perfectly fine.',
-    },
-    {
-      type: 'paragraph',
-      text:
-        'Focus on being helpful. If you genuinely try to solve your audience’s problems, they will reward you with their loyalty. YouTube is a long-term play, but the visibility and authority it builds are worth the effort. So, do not overthink it. Find a question your customers are asking, sit in front of a window for some natural light, and hit record. Your business will thank you for it later.',
-    },
-  ],
-}
+      {
+        type: 'heading',
+        text: 'Why YouTube is Your Secret Research Weapon?',
+      },
+      {
+        type: 'paragraph',
+        text:
+          'Most people forget that YouTube is the world’s second-largest search engine. When someone has a problem—whether it’s a leaky pipe or a complex business hurdle—they don’t just want to read an article; they want to see a solution in action.',
+      },
+      {
+        type: 'paragraph',
+        text:
+          'In 2026, this "intent-based" searching is how small brands beat giant corporations. If you can provide a clear, honest answer to a specific question, you win the customer\'s attention. Plus, unlike a social media post that dies after 24 hours, a YouTube video is "evergreen". A helpful video you record today can keep bringing in leads three years from now. It’s one of the few marketing moves that actually gets more valuable over time.',
+      },
+
+      {
+        type: 'heading',
+        text: 'Four Content Styles That Actually Convert',
+      },
+      {
+        type: 'ordered-list',
+        items: [
+          '<strong>The "How-To" Teacher:</strong> Stop trying to sell and start trying to teach. Answer the questions you hear every single day from your clients. If you sell skincare, show a morning routine. If you\'re an accountant, explain a new tax change. This positions you as the expert before you ever ask for a dime.',
+          '<strong>The Simple Explainer:</strong> Show your product in the real world. Do not just list features; show how it solves a headache. A good explainer feels like a recommendation from a friend, not a pitch from a salesperson.',
+          '<strong>The Human Side (Behind the Scenes):</strong> People buy from people. Show your warehouse, your morning coffee, or even your mistakes. This is where a <a href="/" class="text-blue-600 dark:text-blue-400 font-medium hover:underline">digital marketing company</a> can help you figure out how to tell your brand story without it feeling forced or "cringey".',
+          '<strong>The FAQ Response:</strong> Take your ten most common customer emails and turn them into videos. It saves you time on customer support and brings in new viewers who are searching for those exact same answers.',
+        ],
+      },
+
+      {
+        type: 'heading',
+        text: 'Strategy: Consistency Over "Going Viral"',
+      },
+      {
+        type: 'paragraph',
+        text:
+          'I see so many business owners quit after three videos because they did not get 10,000 views. That’s the wrong metric. Success on YouTube in 2026 is about being reliable. One video a week—or even every two weeks—is plenty as long as you stick to it.',
+      },
+      {
+        type: 'paragraph',
+        text:
+          'YouTube "Shorts" are fantastic for getting your face in front of new people, while longer videos are where you build the real relationship. Think of it as a funnel: the Shorts grab their attention, and the long-form content earns their trust. When you combine the two, you’re building a brand that actually lasts.',
+      },
+
+      {
+        type: 'heading',
+        text: 'Common Blunders to Watch Out For',
+      },
+      {
+        type: 'paragraph',
+        text:
+          'The biggest mistake is making your channel all about you instead of your customer. If your videos are just "we did this" and "buy our that", people will tune out. Another trap is over-editing. In 2026, people crave authenticity. If a video is too polished, it starts to look like a generic ad, and we’ve all learned to ignore those.',
+      },
+      {
+        type: 'paragraph',
+        text:
+          'Many businesses struggle to keep the momentum going, which is why they look toward social media marketing services in India to handle the heavy lifting of scheduling and distribution. It’s hard to run a business and be a full-time creator at the same time.',
+      },
+
+      {
+        type: 'heading',
+        text: 'Connecting the Dots',
+      },
+      {
+        type: 'paragraph',
+        text:
+          'YouTube should not be an island. It’s the engine that should feed your entire marketing plan. You can take the audio from a video and turn it into a podcast, or take the key points and turn them into an email newsletter.',
+      },
+      {
+        type: 'paragraph',
+        text: 'If this feels like a lot to manage, that’s where professional ',
+        link: {
+          text: 'social media marketing services',
+          url: '/services/social-media-marketing',
+        },
+        textAfter:
+          ' come in. They can help you take one single video and turn it into ten pieces of content for other platforms. Working with a dedicated team ensures your video strategy actually links back to your website and your bottom line.',
+      },
+
+      {
+        type: 'heading',
+        text: 'Conclusion: Just Hit Record',
+      },
+      {
+        type: 'paragraph',
+        text:
+          'The biggest hurdle to YouTube marketing in 2026 is not the algorithm or the equipment—it is just getting started. Your first few videos might be a little rough, and that’s perfectly fine.',
+      },
+      {
+        type: 'paragraph',
+        text:
+          'Focus on being helpful. If you genuinely try to solve your audience’s problems, they will reward you with their loyalty. YouTube is a long-term play, but the visibility and authority it builds are worth the effort. So, do not overthink it. Find a question your customers are asking, sit in front of a window for some natural light, and hit record. Your business will thank you for it later.',
+      },
+    ],
+  },
 ]
 
 export default posts
