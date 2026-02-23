@@ -199,22 +199,22 @@ export default function ServiceDropdown() {
       color: 'bg-purple-500 dark:bg-purple-600',
       slug: 'social-media-optimization',
     },
-    // {
-    //   title: 'Local SEO',
-    //   description: ' ',
-    //   icon: <Star className="w-3 h-3 text-white" />,
-    //   iconBg: 'bg-blue-500 dark:bg-gray-700',
-    //   color: 'bg-blue-500 dark:bg-blue-600',
-    //   slug: 'local-seo-service',
-    // },
-    // {
-    //   title: 'AI SEO',
-    //   description: ' ',
-    //   icon: <PenTool className="w-3 h-3 text-white" />,
-    //   iconBg: 'bg-green-500 dark:bg-gray-700',
-    //   color: 'bg-green-500 dark:bg-green-600',
-    //   slug: 'ai-seo',
-    // },
+    {
+      title: 'App Store Optimization',
+      description: ' ',
+      icon: <Star className="w-3 h-3 text-white" />,
+      iconBg: 'bg-blue-500 dark:bg-gray-700',
+      color: 'bg-blue-500 dark:bg-blue-600',
+      slug: 'app-store-optimization',
+    },
+    {
+      title: 'Google Business Profile Optimization',
+      description: ' ',
+      icon: <PenTool className="w-3 h-3 text-white" />,
+      iconBg: 'bg-green-500 dark:bg-gray-700',
+      color: 'bg-green-500 dark:bg-green-600',
+      slug: 'gbp-optimization',
+    },
     // {
     //   title: 'Small Business SEO',
     //   description:
