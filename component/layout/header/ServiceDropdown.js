@@ -1,269 +1,198 @@
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React from 'react'
 import {
-  Megaphone,
-  Palette,
-  Star,
-  PenTool,
-  Search,
-  TrendingUp,
-  ArrowRight,
-} from 'lucide-react'
+  FaRobot,
+  FaMapMarkerAlt,
+  FaStore,
+  FaShoppingCart,
+  FaMobileAlt,
+  FaMapMarkedAlt,
+  FaBullhorn,
+  FaPenNib,
+  FaUserShield,
+  FaShareAlt,
+  FaAd,
+  FaMousePointer,
+  FaPencilRuler,
+} from 'react-icons/fa'
 
-const ServiceCard = ({
-  title,
-  description,
-  icon,
-  iconBg,
-  color,
-  slug,
-  index,
-}) => {
-  const [isHovered, setIsHovered] = useState(false)
-
+export default function ServiceDropdown({ closeMenu }) {
   return (
-    <Link href={`/services/${slug}`}>
-      <div
-        className={`bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-500 border border-gray-100 dark:border-gray-700 transform hover:-translate-y-1 relative overflow-hidden cursor-pointer h-full`}
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
-        style={{
-          animation: `fadeIn 0.5s ease-out forwards`,
-          animationDelay: `${index * 0.1}s`,
-          opacity: 0,
-        }}
-      >
-        {/* Corner accent */}
-        <div
-          className={`absolute top-0 right-0 w-20 h-20 ${color} opacity-10 transform translate-x-10 -translate-y-10 rotate-45`}
-        ></div>
+    <div className="absolute left-0 top-full w-full bg-white dark:bg-gray-900 shadow-xl rounded-xl p-8 z-50 transition-all duration-300">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
+        {/* SEO */}
+        <div>
+          <Link
+            href="/services/seo"
+            onClick={closeMenu}
+            className="flex items-center gap-2 mb-8"
+          >
+            <h2 className="text-sm font-semibold text-gray-800 dark:text-white">
+              SEO
+            </h2>
+          </Link>
 
-        <div className="flex items-center mb-4 relative z-10">
-          <div
-            className={`${iconBg} w-8 h-8 flex items-center justify-center rounded-lg mr-4 shadow-sm transform transition-transform duration-300 ${
-              isHovered ? 'rotate-[-5deg] scale-110' : ''
-            }`}
-          >
-            {icon}
+          <div className="space-y-6">
+            <MegaItem
+              icon={<FaMapMarkerAlt size={18} />}
+              title="Local SEO"
+              link="/services/local-seo-service"
+              closeMenu={closeMenu}
+            />
+
+            <MegaItem
+              icon={<FaRobot size={18} />}
+              title="AI SEO"
+              link="/services/ai-seo"
+              closeMenu={closeMenu}
+            />
+
+            <MegaItem
+              icon={<FaStore size={18} />}
+              title="Small Business SEO"
+              link="/services/small-business-seo"
+              closeMenu={closeMenu}
+            />
+
+            <MegaItem
+              icon={<FaShoppingCart size={18} />}
+              title="E Commerce Seo"
+              link="/services/e-commerce-seo"
+              closeMenu={closeMenu}
+            />
+
+            <MegaItem
+              icon={<FaMobileAlt size={18} />}
+              title="App Store Optimization"
+              link="/services/app-store-optimization"
+              closeMenu={closeMenu}
+            />
+
+            <MegaItem
+              icon={<FaMapMarkedAlt size={18} />}
+              title="GBP Optimization"
+              link="/services/gbp-optimization"
+              closeMenu={closeMenu}
+            />
           </div>
-          <h3
-            className={`text-md font-semibold text-gray-800 dark:text-white transition-colors ${
-              isHovered ? 'text-blue-600 dark:text-blue-400' : ''
-            }`}
-          >
-            {title}
-          </h3>
         </div>
 
-        <p className="text-gray-600 dark:text-gray-300 text-sm relative z-10">
-          {description}
-        </p>
+        {/* DIGITAL MARKETING */}
+        <div>
+          <Link
+            href="/services/digital-marketing"
+            onClick={closeMenu}
+            className="flex items-center gap-2 mb-8"
+          >
+            <h2 className="text-sm font-semibold text-gray-800 dark:text-white">
+              DIGITAL MARKETING
+            </h2>
+          </Link>
 
-        {/* Removed the conflicting "hidden" class */}
-        <div
-          className={`absolute bottom-4 right-4 items-center text-sm text-blue-600 dark:text-blue-400 font-medium transition-opacity hidden ${
-            isHovered ? 'opacity-100' : 'opacity-0'
-          }`}
-        >
-          <span>Learn more</span>
-          <ArrowRight
-            className={`ml-1 w-4 h-4 transition-transform duration-300 ${
-              isHovered ? 'transform translate-x-1' : ''
-            }`}
-          />
+          <div className="space-y-6">
+            <MegaItem
+              icon={<FaBullhorn size={18} />}
+              title="Digital Branding"
+              link="/services/digital-branding"
+              closeMenu={closeMenu}
+            />
+
+            <MegaItem
+              icon={<FaPenNib size={18} />}
+              title="Content Marketing"
+              link="/services/content-marketing"
+              closeMenu={closeMenu}
+            />
+
+            <MegaItem
+              icon={<FaUserShield size={18} />}
+              title="Online Reputation Management"
+              link="/services/online-reputation-management"
+              closeMenu={closeMenu}
+            />
+
+            <MegaItem
+              icon={<FaShareAlt size={18} />}
+              title="Social Media Optimization"
+              link="/services/social-media-optimization"
+              closeMenu={closeMenu}
+            />
+          </div>
+        </div>
+
+        {/* PAID ADVERTISING */}
+        <div>
+          <Link
+            href="#"
+            onClick={closeMenu}
+            className="flex items-center gap-2 mb-8"
+          >
+            <h2 className="text-sm font-semibold text-gray-800 dark:text-white">
+              PAID ADVERTISING
+            </h2>
+          </Link>
+
+          <div className="space-y-6">
+            <MegaItem
+              icon={<FaAd size={18} />}
+              title="PPC Advertising"
+              link="/services/ppc-advertising"
+              closeMenu={closeMenu}
+            />
+
+            <MegaItem
+              icon={<FaMousePointer size={18} />}
+              title="Pay Per Click"
+              link="/services/pay-per-click"
+              closeMenu={closeMenu}
+            />
+          </div>
+        </div>
+
+        {/* DESIGN & DEVELOPMENT */}
+        <div>
+          <Link
+            href="#"
+            onClick={closeMenu}
+            className="flex items-center gap-2 mb-8"
+          >
+            <h2 className="text-sm font-semibold text-gray-800 dark:text-white">
+              DESIGN & DEVELOPMENT
+            </h2>
+          </Link>
+
+          <div className="space-y-6">
+            <MegaItem
+              icon={<FaPencilRuler size={18} />}
+              title="UI/UX Design"
+              link="/services/ui-ux-design"
+              closeMenu={closeMenu}
+            />
+          </div>
         </div>
       </div>
-    </Link>
+    </div>
   )
 }
 
-export default function ServiceDropdown() {
-  const services = [
-    {
-      title: 'Social Media Marketing',
-      description:
-        'Drive brand visibility and engage your target audience through strategic social media campaigns and content.',
-      icon: <Megaphone className="w-3 h-3 text-white" />,
-      iconBg: 'bg-orange-500 dark:bg-gray-700',
-      color: 'bg-orange-500 dark:bg-orange-600',
-      slug: 'social-media-marketing',
-    },
-    {
-      title: 'Innovative UI/UX Solutions',
-      description:
-        'Design and develop intuitive, user-friendly interfaces to enhance user experience and engagement.',
-      icon: <Palette className="w-3 h-3 text-white" />,
-      iconBg: 'bg-purple-500 dark:bg-gray-700',
-      color: 'bg-purple-500 dark:bg-purple-600',
-      slug: 'ui-ux-design',
-    },
-    {
-      title: 'Digital Branding',
-      description:
-        'Build a strong, cohesive brand identity across digital platforms to attract and retain your audience.',
-      icon: <Star className="w-3 h-3 text-white" />,
-      iconBg: 'bg-blue-500 dark:bg-gray-700',
-      color: 'bg-blue-500 dark:bg-blue-600',
-      slug: 'digital-branding',
-    },
-    {
-      title: 'Content Marketing',
-      description:
-        'Create and distribute valuable, relevant content to attract and engage your target audience effectively.',
-      icon: <PenTool className="w-3 h-3 text-white" />,
-      iconBg: 'bg-green-500 dark:bg-gray-700',
-      color: 'bg-green-500 dark:bg-green-600',
-      slug: 'content-marketing',
-    },
-    {
-      title: 'Search Engine Optimization',
-      description:
-        'Optimize your website to rank higher on search engines, increasing visibility and organic traffic.',
-      icon: <Search className="w-3 h-3 text-white" />,
-      iconBg: 'bg-yellow-500 dark:bg-gray-700',
-      color: 'bg-yellow-500 dark:bg-yellow-600',
-      slug: 'seo',
-    },
-    {
-      title: 'PPC Advertising',
-      description:
-        'Run targeted pay-per-click campaigns to drive traffic and conversions with measurable results.',
-      icon: <TrendingUp className="w-3 h-3 text-white" />,
-      iconBg: 'bg-red-500 dark:bg-gray-700',
-      color: 'bg-red-500 dark:bg-red-600',
-      slug: 'ppc-advertising',
-    },
-    {
-      title: 'E Commerce Seo',
-      description:
-        'Drive brand visibility and engage your target audience through strategic social media campaigns and content.',
-      icon: <Megaphone className="w-3 h-3 text-white" />,
-      iconBg: 'bg-orange-500 dark:bg-gray-700',
-      color: 'bg-orange-500 dark:bg-orange-600',
-      slug: 'e-commerce-seo',
-    },
-    {
-      title: 'Digital Marketing',
-      description: '',
-      icon: <Palette className="w-3 h-3 text-white" />,
-      iconBg: 'bg-purple-500 dark:bg-gray-700',
-      color: 'bg-purple-500 dark:bg-purple-600',
-      slug: 'digital-marketing',
-    },
-    {
-      title: 'Local SEO',
-      description: ' ',
-      icon: <Star className="w-3 h-3 text-white" />,
-      iconBg: 'bg-blue-500 dark:bg-gray-700',
-      color: 'bg-blue-500 dark:bg-blue-600',
-      slug: 'local-seo-service',
-    },
-    {
-      title: 'AI SEO',
-      description: ' ',
-      icon: <PenTool className="w-3 h-3 text-white" />,
-      iconBg: 'bg-green-500 dark:bg-gray-700',
-      color: 'bg-green-500 dark:bg-green-600',
-      slug: 'ai-seo',
-    },
-    {
-      title: 'Small Business SEO',
-      description:
-        'Optimize your website to rank higher on search engines, increasing visibility and organic traffic.',
-      icon: <Search className="w-3 h-3 text-white" />,
-      iconBg: 'bg-yellow-500 dark:bg-gray-700',
-      color: 'bg-yellow-500 dark:bg-yellow-600',
-      slug: 'small-business-seo',
-    },
-    {
-      title: 'Online Reputation Management',
-      description: ' ',
-      icon: <TrendingUp className="w-3 h-3 text-white" />,
-      iconBg: 'bg-red-500 dark:bg-gray-700',
-      color: 'bg-red-500 dark:bg-red-600',
-      slug: 'online-reputation-management',
-    },
-    {
-      title: 'Pay Per CLick',
-      description: ' ',
-      icon: <Megaphone className="w-3 h-3 text-white" />,
-      iconBg: 'bg-orange-500 dark:bg-gray-700',
-      color: 'bg-orange-500 dark:bg-orange-600',
-      slug: 'pay-per-click',
-    },
-    {
-      title: 'Social Media Optimization',
-      description: '',
-      icon: <Palette className="w-3 h-3 text-white" />,
-      iconBg: 'bg-purple-500 dark:bg-gray-700',
-      color: 'bg-purple-500 dark:bg-purple-600',
-      slug: 'social-media-optimization',
-    },
-    {
-      title: 'App Store Optimization',
-      description: ' ',
-      icon: <Star className="w-3 h-3 text-white" />,
-      iconBg: 'bg-blue-500 dark:bg-gray-700',
-      color: 'bg-blue-500 dark:bg-blue-600',
-      slug: 'app-store-optimization',
-    },
-    {
-      title: 'Google Business Profile Optimization',
-      description: ' ',
-      icon: <PenTool className="w-3 h-3 text-white" />,
-      iconBg: 'bg-green-500 dark:bg-gray-700',
-      color: 'bg-green-500 dark:bg-green-600',
-      slug: 'gbp-optimization',
-    },
-    // {
-    //   title: 'Small Business SEO',
-    //   description:
-    //     'Optimize your website to rank higher on search engines, increasing visibility and organic traffic.',
-    //   icon: <Search className="w-3 h-3 text-white" />,
-    //   iconBg: 'bg-yellow-500 dark:bg-gray-700',
-    //   color: 'bg-yellow-500 dark:bg-yellow-600',
-    //   slug: 'small-business-seo',
-    // },
-    // {
-    //   title: 'Online Reputation Management',
-    //   description: ' ',
-    //   icon: <TrendingUp className="w-3 h-3 text-white" />,
-    //   iconBg: 'bg-red-500 dark:bg-gray-700',
-    //   color: 'bg-red-500 dark:bg-red-600',
-    //   slug: 'online-reputation-management',
-    // },
-  ]
-
+/* Single Item Component */
+function MegaItem({ icon, title, desc, link, closeMenu }) {
   return (
-    <div className="p-6 bg-gradient-to-b from-blue-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 transition-colors duration-300 rounded-lg">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
-        {services.map((service, index) => (
-          <ServiceCard
-            key={index}
-            title={service.title}
-            // description={service.description}
-            icon={service.icon}
-            iconBg={service.iconBg}
-            color={service.color}
-            slug={service.slug}
-            index={index}
-          />
-        ))}
+    <Link
+      href={link}
+      onClick={closeMenu}
+      className="flex gap-4 group transition-all duration-200"
+    >
+      <div className="text-blue-600 mt-1 group-hover:scale-110 group-hover:dark:text-orange-400 transition-transform">
+        {icon}
       </div>
 
-      {/* CSS Animation */}
-      <style jsx global>{`
-        @keyframes fadeIn {
-          from {
-            opacity: 0;
-            transform: translateY(10px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-      `}</style>
-    </div>
+      <div>
+        <h4 className="font-medium text-gray-800 dark:text-white group-hover:text-blue-600 transition-colors">
+          {title}
+        </h4>
+        <p className="text-sm text-gray-500">{desc}</p>
+      </div>
+    </Link>
   )
 }

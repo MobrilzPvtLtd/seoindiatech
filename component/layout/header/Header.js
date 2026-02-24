@@ -12,42 +12,54 @@ const Header = () => {
   const [isSolutionsOpen, setIsSolutionsOpen] = useState(false)
   const [mounted, setMounted] = useState(false)
   const [windowWidth, setWindowWidth] = useState(0)
+  const [openCategory, setOpenCategory] = useState(null)
 
   // Scroll behavior state
   const [visible, setVisible] = useState(true)
   const [atTop, setAtTop] = useState(true)
 
   // Services and solutions data for mobile view
-  const services = [
+  const serviceCategories = [
     {
-      title: 'Social Media Marketing',
-      icon: '📣',
-      slug: 'social-media-marketing',
-    },
-    {
-      title: 'Innovative UI/UX Solutions',
-      icon: '🎨',
-      slug: 'ui-ux-design',
-    },
-    {
-      title: 'Digital Branding',
-      icon: '🌟',
-      slug: 'digital-branding',
-    },
-    {
-      title: 'Content Marketing',
-      icon: '✍️',
-      slug: 'content-marketing',
-    },
-    {
-      title: 'Search Engine Optimization',
-      icon: '🔍',
+      title: 'SEO',
       slug: 'seo',
+      services: [
+        { title: 'Local SEO', slug: 'local-seo-service' },
+        { title: 'AI SEO', slug: 'ai-seo' },
+        { title: 'Small Business SEO', slug: 'small-business-seo' },
+        { title: 'E Commerce Seo', slug: 'e-commerce-seo' },
+        { title: 'App Store Optimization', slug: 'app-store-optimization' },
+        { title: 'GBP Optimization', slug: 'gbp-optimization' },
+      ],
     },
     {
-      title: '(PPC) Advertising',
-      icon: '📈',
-      slug: 'ppc-advertising',
+      title: 'DIGITAL MARKETING',
+      slug: 'digital-marketing',
+      services: [
+        { title: 'Digital Branding', slug: 'digital-branding' },
+        { title: 'Content Marketing', slug: 'content-marketing' },
+        {
+          title: 'Online Reputation Management',
+          slug: 'online-reputation-management',
+        },
+        {
+          title: 'Social Media Optimization',
+          slug: 'social-media-optimization',
+        },
+      ],
+    },
+    {
+      title: 'PAID ADVERTISING',
+      slug: 'paid-advertising',
+      services: [
+        { title: 'PPC Advertising', slug: 'ppc-advertising' },
+        { title: 'Pay Per Click', slug: 'pay-per-click' },
+      ],
+    },
+    {
+      title: 'DESIGN & DEVELOPMENT',
+      slug: 'design-development',
+      services: [{ title: 'UI/UX Design', slug: 'ui-ux-design' }],
     },
   ]
 
@@ -361,7 +373,7 @@ const Header = () => {
                 )}
               </li>
               {/* Desktop Solutions Dropdown */}
-              <li
+              {/* <li
                 className="relative flex items-center"
                 ref={solutionsRef}
                 onMouseEnter={handleSolutionsMouseEnter}
@@ -390,7 +402,7 @@ const Header = () => {
                     <SolutionDropdown />
                   </div>
                 )}
-              </li>
+              </li> */}
               <li className="flex items-center">
                 <Link
                   href="/seo-packages"
@@ -485,38 +497,52 @@ const Header = () => {
 
             {/* Mobile Services Dropdown */}
             <li>
-              <button
-                onClick={handleServicesClick}
-                className="flex justify-between items-center w-full text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 px-4 py-3 rounded-md font-medium"
-                aria-expanded={isServicesOpen}
-              >
+              <button className="flex justify-between items-center w-full text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 px-4 py-3 rounded-md font-medium">
                 Services
-                {isServicesOpen ? (
-                  <ChevronUp size={18} />
-                ) : (
-                  <ChevronDown size={18} />
-                )}
               </button>
-              {isServicesOpen && (
-                <ul className="pl-6 mt-1 space-y-1">
-                  {services.map((service) => (
-                    <li key={service.slug}>
-                      <Link
-                        href={`/services/${service.slug}`}
-                        className="flex items-center text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 px-4 py-2 rounded-md"
-                        onClick={() => setIsMenuOpen(false)}
-                      >
-                        <CircleDot className="w-2 h-2 mr-2 text-black dark:text-white" />
-                        {service.title}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              )}
+
+              <ul className="pl-4 mt-1 space-y-1">
+                {serviceCategories.map((category) => (
+                  <li key={category.slug}>
+                    <button
+                      onClick={() =>
+                        setOpenCategory(
+                          openCategory === category.slug ? null : category.slug,
+                        )
+                      }
+                      className="flex justify-between items-center w-full text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 px-4 py-2 rounded-md"
+                    >
+                      {category.title}
+                      {openCategory === category.slug ? (
+                        <ChevronUp size={16} />
+                      ) : (
+                        <ChevronDown size={16} />
+                      )}
+                    </button>
+
+                    {openCategory === category.slug && (
+                      <ul className="pl-6 mt-1 space-y-1">
+                        {category.services.map((service) => (
+                          <li key={service.slug}>
+                            <Link
+                              href={`/services/${service.slug}`}
+                              className="flex items-center text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 px-4 py-2 rounded-md"
+                              onClick={() => setIsMenuOpen(false)}
+                            >
+                              <CircleDot className="w-2 h-2 mr-2 text-black dark:text-white" />
+                              {service.title}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </li>
+                ))}
+              </ul>
             </li>
 
             {/* Mobile Solutions Dropdown */}
-            <li>
+            {/* <li>
               <button
                 onClick={handleSolutionsClick}
                 className="flex justify-between items-center w-full text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 px-4 py-3 rounded-md font-medium"
@@ -545,7 +571,7 @@ const Header = () => {
                   ))}
                 </ul>
               )}
-            </li>
+            </li> */}
 
             <li>
               <Link
