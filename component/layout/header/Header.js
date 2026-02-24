@@ -30,6 +30,7 @@ const Header = () => {
         { title: 'E Commerce Seo', slug: 'e-commerce-seo' },
         { title: 'App Store Optimization', slug: 'app-store-optimization' },
         { title: 'GBP Optimization', slug: 'gbp-optimization' },
+        { title: 'GEO Optimization', slug: 'generative-engine-optimization' },
       ],
     },
     {

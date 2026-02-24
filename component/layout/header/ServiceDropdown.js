@@ -74,6 +74,13 @@ export default function ServiceDropdown({ closeMenu }) {
               link="/services/gbp-optimization"
               closeMenu={closeMenu}
             />
+
+            <MegaItem
+              icon={<FaMobileAlt size={18} />}
+              title="GEO Optimization"
+              link="/services/generative-engine-optimization"
+              closeMenu={closeMenu}
+            />
           </div>
         </div>
 

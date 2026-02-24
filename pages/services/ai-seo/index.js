@@ -1,6 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
-import GenerativeEngine from '@/component/services/generative-engine-optimization/GenerativeEngine'
+import GenerativeEngine from '@/component/services/ai-seo/GenerativeEngine'
 
 export default function index() {
   const schemaData = {
