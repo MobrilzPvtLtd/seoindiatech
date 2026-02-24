@@ -5,17 +5,17 @@ import { ArrowRight, BookOpen } from 'lucide-react'
 import posts from '@/utlis/BlogPost'
 
 const BlogPostsGrid = () => (
-  <section className="py-12 md:py-20 px-4 md:px-8 bg-white dark:bg-gray-900">
+  <section className="py-12 md:py-10 px-4 md:px-8 bg-white dark:bg-gray-900">
     <div className="max-w-7xl mx-auto">
       {/* Section Header */}
-      <div className="relative mb-12 border-b border-gray-200 dark:border-gray-800 pb-4">
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-4">
+      <div className="relative mb-12 border-b border-gray-200 dark:border-gray-800 pb-4 text-center">
+        <h2 className="text-xl md:text-2xl font-bold text-blue-600 dark:text-blue-400 mt-3">
           Latest Insights
         </h2>
-        <p className="text-gray-600 dark:text-gray-300 max-w-2xl">
+        <p className="text-gray-600 dark:text-gray-300 max-w-2xltext-center">
           Keep your business future-ready with fresh strategies and smart tools.
         </p>
-        <span className="absolute left-0 bottom-0 w-24 h-1 bg-gradient-to-r from-blue-600 to-blue-400 rounded-full"></span>
+        <div className="mx-auto mt-3 w-24 h-1 bg-gradient-to-r from-blue-600 to-blue-400 rounded-full"></div>
       </div>
 
       {/* Grid */}

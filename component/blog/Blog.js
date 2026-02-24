@@ -5,7 +5,7 @@ import BlogPostsGrid from './BlogPostsGrid'
 function Blog() {
   return (
     <>
-      <CRMHeroBanner />
+      {/* <CRMHeroBanner /> */}
       <BlogPostsGrid />
     </>
   )
