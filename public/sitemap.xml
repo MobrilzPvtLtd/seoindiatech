@@ -1,5 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<?xml version="1.0" encoding="UTF-8" ?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+>
   <url>
     <loc>https://www.seoindiatech.com/</loc>
     <lastmod>2025-10-27T10:13:08+00:00</lastmod>
@@ -76,7 +80,8 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.seoindiatech.com/services/online-reputation-management</loc>
+    <loc
+    >https://www.seoindiatech.com/services/online-reputation-management</loc>
     <lastmod>2026-02-23T08:30:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
@@ -87,6 +92,27 @@
   </url>
   <url>
     <loc>https://www.seoindiatech.com/services/social-media-optimization</loc>
+    <lastmod>2026-02-23T08:30:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.seoindiatech.com/services/app-store-optimization</loc>
+    <lastmod>2026-02-23T08:30:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.seoindiatech.com/services/gbp-optimization</loc>
+    <lastmod>2026-02-23T08:30:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc
+    >https://www.seoindiatech.com/services/generative-engine-optimization</loc>
+    <lastmod>2026-02-23T08:30:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.seoindiatech.com/services/answer-engine-optimization</loc>
     <lastmod>2026-02-23T08:30:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
@@ -131,7 +157,8 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.seoindiatech.com/blog/the-rise-of-ai-marketing-assistants</loc>
+    <loc
+    >https://www.seoindiatech.com/blog/the-rise-of-ai-marketing-assistants</loc>
     <lastmod>2025-10-27T10:13:08+00:00</lastmod>
     <priority>0.64</priority>
   </url>

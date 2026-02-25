@@ -81,6 +81,13 @@ export default function ServiceDropdown({ closeMenu }) {
               link="/services/generative-engine-optimization"
               closeMenu={closeMenu}
             />
+
+            <MegaItem
+              icon={<FaMapMarkedAlt size={18} />}
+              title="AEO"
+              link="/services/answer-engine-optimization"
+              closeMenu={closeMenu}
+            />
           </div>
         </div>
 

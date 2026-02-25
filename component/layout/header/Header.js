@@ -31,6 +31,7 @@ const Header = () => {
         { title: 'App Store Optimization', slug: 'app-store-optimization' },
         { title: 'GBP Optimization', slug: 'gbp-optimization' },
         { title: 'GEO Optimization', slug: 'generative-engine-optimization' },
+        { title: 'AEO', slug: 'answer-engine-optimization' },
       ],
     },
     {
