@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
-import posts from '@/utlis/BlogPost'
+import posts from '@/utils/BlogPost'
 import Link from 'next/link'
 
 export default function BlogDetail() {

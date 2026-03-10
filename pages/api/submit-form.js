@@ -1,6 +1,6 @@
 // pages/api/submit-form.js
-import { getStrapiURL } from "../../utlis/api";
-import { sendContactFormEmail } from "../../utlis/sendEmail";
+import { getStrapiURL } from "../../utils/api";
+import { sendContactFormEmail } from "../../utils/sendEmail";
 
 export default async function handler(req, res) {
   if (req.method === "POST") {
