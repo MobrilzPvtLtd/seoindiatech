@@ -1,55 +1,55 @@
-"use client"; // Required for client-side interactivity
+'use client' // Required for client-side interactivity
 
-import { useState } from "react";
-import { ChevronDown, ChevronUp } from "lucide-react"; // Optional icons – npm install lucide-react
+import { useState } from 'react'
+import { ChevronDown, ChevronUp } from 'lucide-react' // Optional icons – npm install lucide-react
 
 export default function LocationFAQ({ faqs, city }) {
-  const [openIndex, setOpenIndex] = useState(null);
+  const [openIndex, setOpenIndex] = useState(null)
 
   const toggleFAQ = (index) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
+    setOpenIndex(openIndex === index ? null : index)
+  }
 
   // Default FAQs if none provided (fallback)
   const defaultFAQs = [
     {
       question: `How long does it take to see results from SEO in ${city}?`,
       answer:
-        "Most clients see noticeable improvements in 3–6 months, depending on competition, current site health, and keyword difficulty. We provide monthly reports so you always know the progress.",
+        'Most clients see noticeable improvements in 3–6 months, depending on competition, current site health, and keyword difficulty. We provide monthly reports so you always know the progress.',
     },
     {
       question: `Do you guarantee first-page rankings?`,
       answer:
-        "No ethical SEO company can guarantee #1 rankings (Google decides that). We do guarantee transparent work, white-hat strategies, and measurable traffic & lead growth.",
+        'No ethical SEO company can guarantee #1 rankings (Google decides that). We do guarantee transparent work, white-hat strategies, and measurable traffic & lead growth.',
     },
     {
       question: `What makes your SEO services different in ${city}?`,
       answer:
-        "We focus heavily on local SEO signals (Google Business Profile, citations, reviews), city-specific keyword research, and fast-loading pages tailored to ${city} search behavior.",
+        'We focus heavily on local SEO signals (Google Business Profile, citations, reviews), city-specific keyword research, and fast-loading pages tailored to ${city} search behavior.',
     },
     {
       question: `How much do your SEO packages cost?`,
       answer:
-        "Pricing starts from ₹15,000–₹45,000/month depending on scope (local, national, e-commerce, etc.). We offer a free site audit and custom proposal after discussion.",
+        'Pricing starts from ₹15,000–₹45,000/month depending on scope (local, national, e-commerce, etc.). We offer a free site audit and custom proposal after discussion.',
     },
     {
       question: `Will my website be safe during SEO work?`,
       answer:
-        "Yes – we never use black-hat tactics. All changes are tested, backed up, and reversible. Your site stays live and secure throughout the process.",
+        'Yes – we never use black-hat tactics. All changes are tested, backed up, and reversible. Your site stays live and secure throughout the process.',
     },
-  ];
+  ]
 
-  const faqList = faqs && faqs.length > 0 ? faqs : defaultFAQs;
+  const faqList = faqs && faqs.length > 0 ? faqs : defaultFAQs
 
   return (
-    <section className="py-16 md:py-20 lg:py-24 bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+    <section className="py-16 md:py-20 lg:py-24 bg-gradient-to-t from-gray-50 to-white dark:from-gray-950 dark:to-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
       <div className="container mx-auto px-5 sm:px-6 lg:px-8 max-w-4xl">
         <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight bg-gradient-to-r from-blue-700 to-indigo-700 dark:from-blue-400 dark:to-indigo-400 bg-clip-text text-transparent">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-400 dark:to-indigo-400 bg-clip-text text-transparent">
             Frequently Asked Questions
           </h2>
           <p className="mt-4 text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Common questions about our SEO services in {city || "your city"}
+            Common questions about our SEO services in {city || 'your city'}
           </p>
         </div>
 
@@ -82,7 +82,9 @@ export default function LocationFAQ({ faqs, city }) {
               <div
                 id={`faq-answer-${index}`}
                 className={`px-6 pb-5 transition-all duration-300 ease-in-out overflow-hidden ${
-                  openIndex === index ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+                  openIndex === index
+                    ? 'max-h-96 opacity-100'
+                    : 'max-h-0 opacity-0'
                 }`}
                 aria-hidden={openIndex !== index}
               >
@@ -101,12 +103,12 @@ export default function LocationFAQ({ faqs, city }) {
           </p>
           <a
             href="/contactus"
-            className="inline-flex items-center px-8 py-4 text-base font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-600 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-950"
+            className="inline-flex items-center px-8 py-4 text-base font-medium text-white bg-gradient-to-r from-blue-600 to-blue-800 dark:from-gray-800 dark:to-gray-900 rounded-lg"
           >
             Contact Us Now →
           </a>
         </div>
       </div>
     </section>
-  );
+  )
 }

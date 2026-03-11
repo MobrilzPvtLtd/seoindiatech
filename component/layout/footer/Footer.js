@@ -274,6 +274,63 @@ const Footer = () => {
         </div>
       </div>
 
+      {/* SEO Locations Inline */}
+      <div className="border-t border-gray-200 dark:border-gray-700 py-3">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-left text-sm text-gray-600 dark:text-gray-300">
+          <span className="font-semibold text-gray-800 dark:text-gray-200">
+            Our Presence:
+          </span>{' '}
+          <Link
+            href="/seo-services/seo-services-in-noida"
+            className="text-blue-600 dark:text-blue-400 font-semibold hover:underline"
+          >
+            Noida
+          </Link>{' '}
+          |{' '}
+          <Link
+            href="/seo-services/seo-services-in-delhi"
+            className="text-blue-600 dark:text-blue-400 font-semibold hover:underline"
+          >
+            Delhi
+          </Link>{' '}
+          |{' '}
+          <Link
+            href="/seo-services/seo-services-in-hyderabad"
+            className="text-blue-600 dark:text-blue-400 font-semibold hover:underline"
+          >
+            Hyderabad
+          </Link>{' '}
+          |{' '}
+          <Link
+            href="/seo-services/seo-services-in-pune"
+            className="text-blue-600 dark:text-blue-400 font-semibold hover:underline"
+          >
+            Pune
+          </Link>{' '}
+          |{' '}
+          <Link
+            href="/seo-services/seo-services-in-chandigarh"
+            className="text-blue-600 dark:text-blue-400 font-semibold hover:underline"
+          >
+            Chandigarh
+          </Link>{' '}
+          |{' '}
+          <Link
+            href="/seo-services/seo-services-in-mumbai"
+            className="text-blue-600 dark:text-blue-400 font-semibold hover:underline"
+          >
+            Mumbai
+          </Link>{' '}
+          |{' '}
+          <Link
+            href="/seo-services/seo-services-in-jaipur"
+            className="text-blue-600 dark:text-blue-400 font-semibold hover:underline"
+          >
+            Jaipur
+          </Link>
+        </div>
+      </div>
+
       {/* Bottom Bar */}
       <div className="bg-gray-100 dark:bg-gray-800 py-4 border-t border-gray-200 dark:border-gray-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
