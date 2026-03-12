@@ -1,34 +1,36 @@
-import React from "react";
-import Image from "next/image";
-import { ArrowRight, Sparkles } from "lucide-react";
-import Link from "next/link";
+import React from 'react'
+import Image from 'next/image'
+import { ArrowRight, Sparkles } from 'lucide-react'
+import Link from 'next/link'
 
 const Digitalhero = () => {
   return (
-    <section className="bg-white dark:bg-gray-900 md:px-6 px-2 py-4 md:py-12">
-      <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-6 sm:p-10 md:p-12 flex flex-col md:flex-row items-center gap-8 md:gap-12 shadow-lg max-w-7xl mx-auto overflow-hidden relative">
-        {/* Background decorative elements */}
-        <div className="absolute top-0 right-0 -mt-10 -mr-10 w-40 h-40 bg-blue-100 dark:bg-blue-900/20 rounded-full blur-3xl opacity-60 dark:opacity-40"></div>
-        <div className="absolute bottom-0 left-0 -mb-10 -ml-10 w-40 h-40 bg-blue-50 dark:bg-blue-900/10 rounded-full blur-3xl opacity-60 dark:opacity-40"></div>
+    <section className="relative bg-white dark:bg-gray-950 py-16 md:py-24 px-4 md:px-6 overflow-hidden">
+      {/* background glow */}
+      <div className="absolute -top-40 -left-40 w-[500px] h-[500px] bg-blue-400/20 blur-3xl rounded-full"></div>
+      <div className="absolute -bottom-40 -right-40 w-[500px] h-[500px] bg-indigo-400/20 blur-3xl rounded-full"></div>
 
-        {/* Left Content */}
-        <div className="max-w-xl space-y-6 w-full md:w-1/2 z-10">
-          <div className="inline-flex items-center px-3 py-1 bg-blue-50 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 rounded-full text-sm font-medium">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-14 items-center">
+        {/* LEFT CONTENT */}
+        <div className="space-y-6 relative z-10">
+          {/* badge */}
+          <div className="inline-flex items-center px-4 py-1.5 bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-sm font-medium">
             <Sparkles className="w-4 h-4 mr-2" />
-            <span>Digital Identity Solutions</span>
+            Digital Identity Solutions
           </div>
 
-          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-gray-900 dark:text-white leading-tight">
-            Digital Branding Serrvices With{" "}
+          {/* heading */}
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-tight">
+            Digital Branding Serrvices With{' '}
             <span className="text-blue-700 dark:text-blue-400">
-              {" "}
               SEO IndiaTech
             </span>
           </h1>
 
           <div className="w-20 h-1.5 bg-blue-600 dark:bg-blue-500 rounded-full"></div>
 
-          <p className="text-justify text-gray-700 dark:text-gray-300 text-base md:text-lg leading-relaxed">
+          {/* content */}
+          <p className="text-gray-700 dark:text-gray-300 text-base md:text-lg leading-relaxed text-justify">
             SEO India Tech offers professional digital branding services that
             help businesses create a powerful and consistent brand presence
             across all digital channels. A strong brand identity is essential
@@ -40,80 +42,80 @@ const Digitalhero = () => {
           </p>
 
           <p className="text-gray-700 dark:text-gray-300 text-base md:text-lg leading-relaxed">
-            At{" "}
-            <Link href={'/'}>  <b className="text-blue-700 dark:text-blue-400"> SEO India Tech</b> </Link>,
-            we don't just create brands – we build digital identities that stand
-            out, captivate, and convert.
+            At{' '}
+            <Link href={'/'}>
+              <b className="text-blue-700 dark:text-blue-400">SEO India Tech</b>
+            </Link>
+            , we don't just create brands – we build digital identities that
+            stand out, captivate, and convert.
           </p>
 
+          {/* CTA */}
           <div className="pt-4 flex flex-wrap gap-4">
-            <button
-              onClick={() => {
-                document
-                  .getElementById("Digitalform")
-                  ?.scrollIntoView({ behavior: "smooth" });
-              }}
-              className="cursor-pointer bg-gradient-to-r from-blue-600 to-blue-800 dark:from-gray-800 dark:to-gray-900 text-white px-6 py-3 rounded-full text-base hover:bg-blue-700 dark:hover:bg-blue-600 transition-colors flex items-center group"
+            <Link
+              href="/contactus"
+              className="cursor-pointer bg-gradient-to-r from-blue-600 to-blue-800 text-white px-6 py-3 rounded-full text-base hover:scale-105 transition-all flex items-center group"
             >
               Get Started now
               <ArrowRight className="ml-2 w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
-            </button>
-            <button className="hidden bg-white dark:bg-gray-700 text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-600 px-6 py-3 rounded-full font-semibold border border-gray-200 dark:border-gray-600 transition duration-300">
-              Learn more
-            </button>
+            </Link>
           </div>
         </div>
 
-        {/* Right Image */}
-        <div className="w-full md:w-1/2 mt-10 md:mt-0 flex justify-center">
-          <div className="rounded-xl overflow-hidden shadow-xl transition-all duration-500 hover:shadow-2xl hover:scale-102 relative h-[400px] sm:h-[500px] w-full max-w-md">
-            <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent opacity-60 z-10 rounded-xl"></div>
+        {/* RIGHT IMAGE */}
+        <div className="relative flex justify-center items-center">
+          {/* glow behind image */}
+          <div className="absolute w-[420px] h-[420px] bg-blue-400/20 blur-3xl rounded-full"></div>
+
+          <div className="relative transition-transform duration-500 hover:scale-105">
             <Image
-              src="/images/services/digital.png"
+              src="/images/services/digital-branding.jpg"
               alt="Digital Branding"
-              fill
-              className="object-cover rounded-xl"
-              sizes="(max-width: 768px) 100vw, 50vw"
+              width={520}
+              height={520}
+              className="rounded-2xl shadow-2xl object-contain"
               priority
             />
           </div>
         </div>
       </div>
 
-      {/* Optional: Feature highlights */}
-      <div className="max-w-7xl mx-auto mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      {/* FEATURE CARDS */}
+      <div className="max-w-7xl mx-auto mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {[
           {
-            title: "Brand Strategy",
-            desc: "Comprehensive digital brand positioning",
+            title: 'Brand Strategy',
+            desc: 'Comprehensive digital brand positioning',
           },
           {
-            title: "Visual Identity",
-            desc: "Compelling logos, colors, and design systems",
+            title: 'Visual Identity',
+            desc: 'Compelling logos, colors, and design systems',
           },
           {
-            title: "Consistent Experience",
-            desc: "Unified brand presence across all channels",
+            title: 'Consistent Experience',
+            desc: 'Unified brand presence across all channels',
           },
         ].map((item, index) => (
           <div
             key={index}
-            className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl border border-gray-100 dark:border-gray-700 hover:scale-102 transition duration-300 hover:border-blue-200 dark:hover:border-blue-700"
+            className="bg-white dark:bg-gray-900 p-6 rounded-xl border border-gray-200 dark:border-gray-700 hover:shadow-lg hover:-translate-y-1 transition duration-300"
           >
-            <div className="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center mb-4">
+            <div className="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900/40 flex items-center justify-center mb-4">
               <span className="text-blue-700 dark:text-blue-400 font-bold">
                 {index + 1}
               </span>
             </div>
+
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
               {item.title}
             </h3>
+
             <p className="text-gray-600 dark:text-gray-400">{item.desc}</p>
           </div>
         ))}
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Digitalhero;
+export default Digitalhero
