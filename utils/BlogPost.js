@@ -465,9 +465,14 @@ const posts = [
         "text": "The Change of Structure: Legacy SEO vs 2026 SEO"
       },
       {
-        "type": "paragraph",
-        "text": "To clearly show how SEO tactics have evolved, the SEO India data engineering team has built out a comparison of legacy and modern SEO tactics regarding optimization."
-      },
+  "type": "paragraph",
+  "text": "To clearly show how SEO tactics have evolved, the ",
+  "link": {
+    "text": "SEO India",
+    "url": "/"
+  },
+  "textAfter": " data engineering team has built out a comparison of legacy and modern SEO tactics regarding optimization."
+},
       {
         "type": "list",
         "items": [
