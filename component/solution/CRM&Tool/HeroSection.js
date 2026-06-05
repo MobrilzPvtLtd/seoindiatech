@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import { Users, ChartBar, Zap, ArrowRight } from 'lucide-react'
+import Link from 'next/link'
 
 const HeroSection = () => {
   // const crmFeatures = [
@@ -48,9 +49,9 @@ const HeroSection = () => {
               databases, and automate business operations. CRM systems make this
               possible by centralizing all customer and sales information in one
               place. At{' '}
-              <a href="https://www.seoindiatech.com/" className="text-blue-600">
+              <Link href="https://www.seoindiatech.com/" className="text-blue-600">
                 SEO India Tech,
-              </a>{' '}
+              </Link>
               we empower businesses with advanced CRM integration and automation
               solutions that transform the way teams operate. Our goal is to
               create simplified and productive business environments using smart{' '}

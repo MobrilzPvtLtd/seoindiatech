@@ -24,12 +24,12 @@ const Hero = () => {
 
             {/* Main Heading */}
             {/* <div className="flex flex-col items-center justify-center text-center min-h-screen"> */}
-            <h1 className="text-gray-900 dark:text-white text-3xl sm:text-4xl md:text-5xl font-medium leading-tight mb-6">
+            <h3 className="text-gray-900 dark:text-white text-3xl sm:text-4xl md:text-5xl font-medium leading-tight mb-6">
               <span className="font-bold text-blue-600 dark:text-blue-400">
                 Who We Are{' '}
               </span>
               - At SEO India Tech
-            </h1>
+            </h3>
             {/* </div> */}
 
             {/* Description */}

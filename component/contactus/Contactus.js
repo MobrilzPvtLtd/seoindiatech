@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Phone, Mail, Send, MapPin, Clock } from 'lucide-react'
 import { toast, ToastContainer } from 'react-toastify'
 import ReCAPTCHA from 'react-google-recaptcha'
+import Image from 'next/image'
 
 const ContactUsSection = () => {
   const [formState, setFormState] = useState({
@@ -229,9 +230,11 @@ const ContactUsSection = () => {
         <div className="flex flex-col items-center lg:items-start">
           {/* Illustration */}
           <div className="mb-8 w-full max-w-md overflow-hidden rounded-2xl shadow-lg">
-            <img
-              src="images/contactusbanner.png"
+            <Image
+              src="/images/contactusbanner.png"  // Add leading slash
               alt="Contact illustration"
+              width={600}
+              height={400}  // Adjust based on your actual image dimensions
               className="w-full h-auto object-cover rounded-2xl hover:scale-105 transition-transform duration-500"
             />
           </div>

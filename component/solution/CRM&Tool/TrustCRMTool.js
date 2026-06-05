@@ -8,6 +8,7 @@ import {
   ArrowRight,
 } from 'lucide-react'
 import Image from 'next/image'
+import Link from 'next/link'
 import { useState, useEffect } from 'react'
 
 export default function TrustCRMTool() {
@@ -364,10 +365,10 @@ export default function TrustCRMTool() {
 
           <p className="text-gray-700 dark:text-gray-300 text-center max-w-4xl mx-auto mb-10 leading-relaxed">
             Automation is the backbone of modern CRM. We integrate advanced
-            <a href="https://www.seoindiatech.com/solution/automation" className="text-blue-600"> digital automation services</a> to unlock full CRM potential and
-            minimize dependency on manual operations. Automation not only
-            improves productivity but also helps businesses reduce operational
-            costs.
+            <Link href="https://www.seoindiatech.com/solution/automation" className="text-blue-600">
+              digital automation services
+            </Link>
+            to unlock full CRM potential and minimize dependency on manual operations. Automation not only improves productivity but also helps businesses reduce operational costs.
           </p>
 
           <p className="text-gray-700 dark:text-gray-300 text-center max-w-4xl mx-auto mb-10 leading-relaxed">

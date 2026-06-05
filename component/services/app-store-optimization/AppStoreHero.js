@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
@@ -36,11 +37,13 @@ export default function AppStoreHero() {
         <div className="relative flex justify-center">
           <div className="absolute -inset-4 bg-blue-500/10 blur-2xl rounded-3xl"></div>
 
-          <img
-            src="/images/services/ASO.png"
-            alt="App Store Optimization India"
-            className="relative w-full max-w-lg rounded-2xl shadow-xl object-cover"
-          />
+          <Image
+  src="/images/services/ASO.png"
+  alt="App Store Optimization India"
+  width={800}  // Add actual width of your image
+  height={600} // Add actual height of your image
+  className="relative w-full max-w-lg rounded-2xl shadow-xl object-cover"
+/>
         </div>
       </div>
     </section>

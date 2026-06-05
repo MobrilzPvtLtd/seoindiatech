@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 import { useEffect, useRef } from 'react';
 
@@ -45,43 +46,44 @@ function Teams() {
 
     return (
         <div className='bg-white dark:bg-gray-900 py-8'>
-        <div className="max-w-7xl mx-auto overflow-hidden py-10 md:py-20">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-6 md:mb-24">
-                <h2 className="text-center text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-100">
-                    Empowering Global Workforces
-                </h2>
-            </div>
+            <div className="max-w-7xl mx-auto overflow-hidden py-10 md:py-20">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-6 md:mb-24">
+                    <h2 className="text-center text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-100">
+                        Empowering Global Workforces
+                    </h2>
+                </div>
 
-            {/* Main marquee container */}
-            <div className="relative w-full overflow-hidden">
-                {/* First marquee row - moves left */}
-                <div className="marquee-container">
-                    <div className="marquee-animation-left h-44">
-                        {allLogos.map((logo, index) => (
-                            <div
-                                key={`marquee1-${index}`}
-                                className="mx-2 sm:mx-4 flex-shrink-0 bg-white dark:bg-gray-800 p-2 sm:p-3 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-center"
-                                style={{
-                                    width: 'clamp(110px, 25vw, 170px)',
-                                    height: 'clamp(100px, 20vw, 170px)'
-                                }}
-                            >
-                                <img
-                                    src={logo.src}
-                                    alt={logo.alt}
-                                    className="max-w-full max-h-full object-contain rounded-lg"
+                {/* Main marquee container */}
+                <div className="relative w-full overflow-hidden">
+                    {/* First marquee row - moves left */}
+                    <div className="marquee-container">
+                        <div className="marquee-animation-left h-44">
+                            {allLogos.map((logo, index) => (
+                                <div
+                                    key={`marquee1-${index}`}
+                                    className="mx-2 sm:mx-4 flex-shrink-0 bg-white dark:bg-gray-800 p-2 sm:p-3 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-center"
                                     style={{
-                                        maxHeight: 'clamp(70px, 15vw, 110px)'
+                                        width: 'clamp(110px, 25vw, 170px)',
+                                        height: 'clamp(100px, 20vw, 170px)'
                                     }}
-                                />
-                            </div>
-                        ))}
+                                >
+                                    <div className="relative w-full h-full">
+                                        <Image
+                                            src={logo.src}
+                                            alt={logo.alt}
+                                            fill
+                                            className="rounded-lg object-contain"
+                                            sizes="(max-width: 640px) 110px, (max-width: 768px) 140px, 170px"
+                                        />
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            {/* Add the following CSS to your component */}
-            <style jsx>{`
+                {/* Add the following CSS to your component */}
+                <style jsx>{`
                 .marquee-container {
                     overflow: hidden;
                     width: 100%;
@@ -123,7 +125,7 @@ function Teams() {
                     }
                 }
             `}</style>
-        </div>
+            </div>
         </div>
     );
 }

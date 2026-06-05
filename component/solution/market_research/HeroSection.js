@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import { BarChart2, Target, TrendingUp, ArrowRight } from 'lucide-react'
+import Link from 'next/link'
 
 const HeroSection = () => {
   const researchFeatures = [
@@ -50,9 +51,9 @@ const HeroSection = () => {
               rely on assumptions or guesswork to make key decisions.
               Understanding customer needs, market demand, and competitive
               landscape is the foundation of sustainable success. At{' '}
-              <a href="https://www.seoindiatech.com/" className="text-blue-600">
+              <Link href="https://www.seoindiatech.com/" className="text-blue-600">
                 SEO India Tech,
-              </a>{' '}
+              </Link>{' '}
               we combine intelligence, data, and strategic insights to help
               businesses thrive through our specialized{' '}
               <b>market research services</b>. Whether you are launching a new

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 export default function SolutionImpact() {
@@ -16,9 +17,9 @@ export default function SolutionImpact() {
           <div className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/30 rounded-3xl p-10 shadow-xl border border-gray-200 dark:border-gray-700">
             <p className="text-gray-800 dark:text-gray-300 leading-relaxed mb-6">
               At{' '}
-              <a href="https://www.seoindiatech.com/" className="text-blue-600">
+              <Link href="https://www.seoindiatech.com/" className="text-blue-600">
                 SEO India Tech,
-              </a>{' '}
+              </Link>{' '}
               we believe a website should be more than a standalone asset.
               That’s why our services connect your site with social media, CRM
               systems, lead management tools, and analytics — allowing you to

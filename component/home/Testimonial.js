@@ -1,5 +1,6 @@
 import React from 'react';
 import { Star, Quote } from 'lucide-react';
+import Image from 'next/image';
 
 const Testimonial = () => {
   const testimonials = [
@@ -36,11 +37,10 @@ const Testimonial = () => {
     return Array.from({ length: 5 }, (_, index) => (
       <Star
         key={index}
-        className={`w-4 h-4 ${
-          index < rating 
-            ? 'fill-yellow-400 text-yellow-400 dark:fill-yellow-300 dark:text-yellow-300' 
+        className={`w-4 h-4 ${index < rating
+            ? 'fill-yellow-400 text-yellow-400 dark:fill-yellow-300 dark:text-yellow-300'
             : 'text-gray-300 dark:text-gray-600'
-        }`}
+          }`}
       />
     ));
   };
@@ -60,11 +60,11 @@ const Testimonial = () => {
             Hear from our satisfied customers about their experience with our products and services.
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
           {testimonials.map((testimonial) => (
-            <div 
-              key={testimonial.id} 
+            <div
+              key={testimonial.id}
               className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-700 relative"
             >
               {/* Quote Icon */}
@@ -76,7 +76,7 @@ const Testimonial = () => {
               <div className="flex space-x-1 mb-6 justify-center">
                 {renderStars(testimonial.rating)}
               </div>
-              
+
               {/* Testimonial Text */}
               <div className="mb-6">
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-center">
@@ -87,12 +87,17 @@ const Testimonial = () => {
               {/* Profile Section */}
               <div className="flex flex-col items-center text-center mt-8 pt-6 border-t border-gray-100 dark:border-gray-700">
                 <div className="w-16 h-16 rounded-full overflow-hidden mb-4 ring-4 ring-blue-50 dark:ring-blue-900/30 shadow-md">
-                  <img
-                    src={testimonial.avatar}
-                    alt={testimonial.name}
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                  />
+                  <div className="w-16 h-16 rounded-full overflow-hidden mb-4 ring-4 ring-blue-50 dark:ring-blue-900/30 shadow-md relative">
+                    <Image
+                      src={testimonial.avatar}
+                      alt={testimonial.name}
+                      width={64}
+                      height={64}
+                      className="object-cover"
+                      style={{ width: '100%', height: '100%' }}
+                      loading="lazy"
+                    />
+                  </div>
                 </div>
                 <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-1">
                   {testimonial.name}
