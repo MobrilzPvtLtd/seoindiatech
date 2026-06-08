@@ -138,8 +138,12 @@ const Footer = () => {
               </p>
             </div>
             <div className="w-full md:w-auto flex-1 max-w-md">
-              <form className="flex flex-col sm:flex-row gap-3">
+              <form className="flex flex-col sm:flex-row gap-3" action="/api/submit-form">
+                <label htmlFor="newsletterEmail" className="sr-only">
+                  Subscribe to our newsletter
+                </label>
                 <input
+                  id="newsletterEmail"
                   type="email"
                   placeholder="Enter your email"
                   className="flex-1 px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 focus:border-blue-500 dark:focus:border-blue-400 bg-white dark:bg-gray-800 text-gray-900 dark:text-white"

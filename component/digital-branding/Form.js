@@ -196,12 +196,16 @@ const Form = () => {
           {/* RIGHT COLUMN - FORM */}
           <form
             className="bg-gray-50 dark:bg-gray-900 rounded-2xl p-6 sm:p-8 space-y-5 border border-gray-200 dark:border-gray-700 flex flex-col justify-between shadow-inner"
+            action="/api/submit-form"
             onSubmit={handleSubmit}
           >
             <div className="space-y-5">
               {formFields.map((field) => (
                 <div key={field.id}>
-                  <label className="block font-medium mb-1 text-gray-700 dark:text-gray-200">
+                  <label
+                    htmlFor={field.id}
+                    className="block font-medium mb-1 text-gray-700 dark:text-gray-200"
+                  >
                     {field.label}{" "}
                     {field.required && (
                       <span className="text-red-600 dark:text-red-400">*</span>
@@ -209,6 +213,7 @@ const Form = () => {
                   </label>
                   <div className="relative">
                     <input
+                      id={field.id}
                       type={field.type}
                       name={field.id}
                       value={form[field.id] || ""}
@@ -230,11 +235,15 @@ const Form = () => {
                 </div>
               ))}
               <div>
-                <label className="block font-medium mb-1 text-gray-700 dark:text-gray-200">
+                <label
+                  htmlFor="message"
+                  className="block font-medium mb-1 text-gray-700 dark:text-gray-200"
+                >
                   How can we help?
                 </label>
                 <div className="relative">
                   <textarea
+                    id="message"
                     rows="4"
                     name="message"
                     value={form.message}

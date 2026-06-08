@@ -99,7 +99,7 @@ const ContactUsSection = () => {
           </div>
 
           <div className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 shadow-xl p-8 transition-all hover:shadow-2xl relative z-1">
-            <form className="mt-6 space-y-6" onSubmit={handleSubmit}>
+            <form className="mt-6 space-y-6" action="/api/submit-form" onSubmit={handleSubmit}>
               {/* Name */}
               <div>
                 <label

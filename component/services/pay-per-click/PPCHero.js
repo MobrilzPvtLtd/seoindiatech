@@ -70,6 +70,8 @@ export default function PPCHero() {
           <img
             src="/images/services/ppc.png" // Replace with your hero image
             alt="Pay Per Click Advertising"
+            width="800"
+            height="450"
             className="w-full h-auto rounded-xl shadow-2xl"
           />
 

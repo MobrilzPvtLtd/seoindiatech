@@ -11,10 +11,6 @@ export default function Document() {
             content="fsDpDPzF-AHExzFBGUcxlEITP5MjkpG_ih4WF0w4Y0c"
           /> */}
           <meta
-            name="robots"
-            content="index, follow, max-image-preview:large, max-snippet:-1"
-          />
-          <meta
             name="p:domain_verify"
             content="0c89be4ab18144828edff9618257a5a3"
           />
@@ -23,22 +19,23 @@ export default function Document() {
             async
             src="https://www.googletagmanager.com/gtag/js?id=G-W00JV5XW2Y"
           ></script>
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', 'G-W00JV5XW2Y');
-              `,
-            }}
-            />
+          {/* moved inline gtag config to body to avoid blocking head */}
         
             
        </Head>
       <body>
         <Main />
         <NextScript />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-W00JV5XW2Y');
+            `,
+          }}
+        />
       </body>
     </Html>
   );

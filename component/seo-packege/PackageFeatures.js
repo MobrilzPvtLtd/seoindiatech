@@ -217,20 +217,19 @@ function TableSection({ title, rows }) {
       </h3>
 
       <div className="overflow-x-auto">
-        <table className="min-w-[900px] w-full text-sm text-center border-collapse">
+        <table className="min-w-[900px] w-full text-sm text-center border-collapse text-gray-900 dark:text-gray-100">
           <thead className="bg-gray-100 dark:bg-gray-800 sticky top-0 z-10">
             <tr className="h-12 md:h-14">
-              <th className="text-left px-4 py-3 bg-gray-100 dark:bg-gray-800">
+              <th className="text-left px-4 py-3 bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100">
                 Feature
               </th>
               {plans.map((plan, index) => (
                 <th
                   key={plan}
-                  className={`py-3 font-semibold ${
-                    index >= 2
+                  className={`py-3 font-semibold text-gray-900 dark:text-gray-100 ${index >= 2
                       ? 'bg-blue-50 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300'
                       : ''
-                  }`}
+                    }`}
                 >
                   {plan}
                 </th>
@@ -249,7 +248,7 @@ function TableSection({ title, rows }) {
                   align-middle
                 "
               >
-                <td className="px-4 py-3 text-left font-medium border-t border-gray-200 dark:border-gray-700">
+                <td className="px-4 py-3 text-left font-medium border-t border-gray-200 dark:border-gray-700 text-gray-900 dark:text-gray-100">
                   {row[0]}
                 </td>
                 {row.slice(1).map((cell, idx) => (
@@ -258,10 +257,10 @@ function TableSection({ title, rows }) {
                     className={`
                       py-3 border-l border-t border-gray-200 dark:border-gray-700
                       align-middle
-                      ${
-                        idx >= 2
-                          ? 'border-blue-300/60 dark:border-blue-700/60 bg-blue-50/40 dark:bg-blue-900/20'
-                          : ''
+                      text-gray-900 dark:text-gray-100
+                      ${idx >= 2
+                        ? 'border-blue-300/60 dark:border-blue-700/60 bg-blue-50/40 dark:bg-blue-900/20'
+                        : ''
                       }
                     `}
                   >

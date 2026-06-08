@@ -9,7 +9,7 @@ const CRMHeroBanner = () => (
       {/* Background Image with Next.js Image for better performance */}
       <div className="relative w-full h-[400px] md:h-[500px]">
         <Image
-          src="/images/Crmbanner.jpg" // Replace with your image path
+          src="/images/Crmbanner.jpg"
           alt="CRM Management Dashboard"
           fill
           sizes="(max-width: 768px) 100vw, 1280px"

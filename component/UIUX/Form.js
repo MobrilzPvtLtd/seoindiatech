@@ -161,15 +161,20 @@ const Form = () => {
           {/* RIGHT COLUMN - FORM */}
           <form
             className="bg-gray-50 dark:bg-gray-900 rounded-2xl p-6 sm:p-8 space-y-5 border border-gray-200 dark:border-gray-700 flex flex-col justify-between shadow-inner"
+            action="/api/submit-form"
             onSubmit={handleSubmit}
           >
             <div className="space-y-5">
               <div>
-                <label className="block font-medium mb-1 text-gray-700 dark:text-gray-200">
+                <label
+                  htmlFor="email"
+                  className="block font-medium mb-1 text-gray-700 dark:text-gray-200"
+                >
                   Email{' '}
                   <span className="text-red-600 dark:text-red-400">*</span>
                 </label>
                 <input
+                  id="email"
                   type="email"
                   name="email"
                   value={form.email}
@@ -181,11 +186,15 @@ const Form = () => {
               </div>
 
               <div>
-                <label className="block font-medium mb-1 text-gray-700 dark:text-gray-200">
+                <label
+                  htmlFor="fullName"
+                  className="block font-medium mb-1 text-gray-700 dark:text-gray-200"
+                >
                   Full Name{' '}
                   <span className="text-red-600 dark:text-red-400">*</span>
                 </label>
                 <input
+                  id="fullName"
                   type="text"
                   name="fullName"
                   value={form.fullName}
@@ -197,11 +206,15 @@ const Form = () => {
               </div>
 
               <div>
-                <label className="block font-medium mb-1 text-gray-700 dark:text-gray-200">
+                <label
+                  htmlFor="phone"
+                  className="block font-medium mb-1 text-gray-700 dark:text-gray-200"
+                >
                   Phone Number{' '}
                   <span className="text-red-600 dark:text-red-400">*</span>
                 </label>
                 <input
+                  id="phone"
                   type="tel"
                   name="phone"
                   value={form.phone}
@@ -213,10 +226,14 @@ const Form = () => {
               </div>
 
               <div>
-                <label className="block font-medium mb-1 text-gray-700 dark:text-gray-200">
+                <label
+                  htmlFor="message"
+                  className="block font-medium mb-1 text-gray-700 dark:text-gray-200"
+                >
                   How can we help?
                 </label>
                 <textarea
+                  id="message"
                   rows="4"
                   name="message"
                   value={form.message}

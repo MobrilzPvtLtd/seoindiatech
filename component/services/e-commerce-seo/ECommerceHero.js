@@ -69,6 +69,8 @@ export default function ECommerceHero() {
             <img
               src="/images/services/ecommerce-seo.png"
               alt="E-commerce SEO Services"
+              width="420"
+              height="420"
               className="relative max-h-[460px] object-contain transition-transform duration-500 hover:scale-105"
             />
 
