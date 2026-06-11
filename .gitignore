@@ -24,6 +24,9 @@
 .DS_Store
 *.pem
 
+# local form submissions
+/submissions
+
 # debug
 npm-debug.log*
 yarn-debug.log*
