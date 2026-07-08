@@ -10,6 +10,9 @@ const createTransporter = () => {
       user: process.env.SMTP_USER,
       pass: process.env.SMTP_PASS,
     },
+    connectionTimeout: 5000,
+    greetingTimeout: 5000,
+    socketTimeout: 10000,
   });
 };
 
@@ -36,7 +39,7 @@ export const sendContactFormEmail = async (data) => {
             <p><strong>Phone:</strong> ${data.phone || 'Not provided'}</p>
             <p><strong>Inquiry Type:</strong> ${data.inquiryType || 'Not specified'}</p>
             <p><strong>Message:</strong></p>
-            <p style="background-color: white; padding: 10px; border-left: 4px solid #2563eb;">${data.message.replace(/\n/g, '<br>')}</p>
+            <p style="background-color: white; padding: 10px; border-left: 4px solid #2563eb;">${(data.message || '').replace(/\n/g, '<br>')}</p>
             ${data.wantsAppointment ? `
               <p><strong>Appointment Requested:</strong> Yes</p>
               <p><strong>Preferred Date:</strong> ${data.appointmentDate}</p>
@@ -65,7 +68,7 @@ export const sendContactFormEmail = async (data) => {
             <p><strong>Your Inquiry Details:</strong></p>
             <p><strong>Type:</strong> ${data.inquiryType || 'Not specified'}</p>
             <p><strong>Message:</strong></p>
-            <p style="background-color: white; padding: 10px; border-left: 4px solid #2563eb;">${data.message.replace(/\n/g, '<br>')}</p>
+            <p style="background-color: white; padding: 10px; border-left: 4px solid #2563eb;">${(data.message || '').replace(/\n/g, '<br>')}</p>
           </div>
           <p>In the meantime, you can:</p>
           <ul>
