@@ -108,7 +108,7 @@ const Services = () => {
 
                 <p
                   className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed text-justify"
-                  onClick={(e) => e.stopPropagation()} // 👈 IMPORTANT
+                  onClick={(e) => e.stopPropagation()}
                 >
                   {service.desc}
                 </p>
