@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
-import { FaStar, FaCheckCircle } from 'react-icons/fa'
+import { FaStar, FaCheckCircle, FaArrowRight } from 'react-icons/fa'
 import { MdTimer, MdVerified, MdLock } from 'react-icons/md'
 import { HiOutlineChatBubbleLeftRight } from 'react-icons/hi2'
 
@@ -36,151 +36,176 @@ const NewHero = () => {
 
     return () => clearTimeout(timeout)
   }, [text, isDeleting, serviceIndex])
-  return (
-    <div className="px-4 bg-white dark:bg-gray-900 overflow-hidden">
-      <div className="max-w-7xl mx-auto relative">
-        {/* Main Hero Section */}
-        <div className="p-6 md:p-12 flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12 relative rounded-2xl bg-gradient-to-r from-white to-sky-50 dark:from-gray-900 dark:to-gray-800">
-          {/* Decorative right image - top right */}
-          <div className="hidden lg:block absolute right-0 top-0 h-full w-[35%] pointer-events-none">
-            <div className="h-full w-full relative">
-              <img src="/images/herobg.jpg" alt="hero decorative" className="h-full w-full object-cover opacity-95 rounded-bl-3xl" />
-              <div className="absolute inset-0 bg-gradient-to-l from-white/60 to-transparent rounded-bl-3xl"></div>
-            </div>
-          </div>
 
+  return (
+    <section className="relative bg-gradient-to-br from-slate-50 via-white to-slate-50 dark:from-slate-900 dark:via-slate-900 dark:to-slate-800/90 overflow-hidden">
+      {/* Decorative elements */}
+      <div className="absolute top-0 left-0 w-96 h-96 bg-blue-100/30 rounded-full blur-3xl dark:bg-blue-900/10 -translate-x-1/2 -translate-y-1/2" />
+      <div className="absolute bottom-0 right-0 w-[30rem] h-[30rem] bg-indigo-50/40 rounded-full blur-3xl dark:bg-indigo-900/5 translate-x-1/3 translate-y-1/3" />
+      <div className="absolute top-1/2 left-1/2 w-[40rem] h-[40rem] bg-blue-50/20 rounded-full blur-3xl dark:bg-blue-900/5 -translate-x-1/2 -translate-y-1/2" />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 md:py-16 lg:py-20 relative z-10">
+        <div className="flex flex-col lg:flex-row items-start gap-12 lg:gap-16 xl:gap-20">
           {/* Left Content */}
-          <div className="w-full lg:w-[45%] space-y-5">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white leading-tight md:leading-snug text-center md:text-left">
-              Grow Your Business with Result-Driven
+          <div className="w-full lg:w-[55%] space-y-7">
+            {/* Badge */}
+            <div className="inline-flex items-center gap-2.5 bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm border border-blue-100/80 dark:border-blue-800/40 px-4 py-1.5 rounded-full shadow-sm shadow-blue-500/5">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75" />
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500" />
+              </span>
+              <span className="text-[11px] font-semibold text-blue-600 dark:text-blue-300 tracking-wider uppercase">
+                India's Trusted SEO Agency
+              </span>
+            </div>
+
+            {/* Heading */}
+            <h1 className="text-4xl md:text-5xl lg:text-[3.4rem] font-extrabold text-slate-900 dark:text-white leading-[1.12] tracking-tight">
+              Grow Your Business with{' '}
+              <span className="text-blue-600">Result-Driven</span>
               <br />
-              <span className="inline-block h-[2.8em] overflow-hidden leading-tight">
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400">{text}</span>
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400 animate-pulse text-xl md:text-2xl lg:text-3xl font-normal">|</span>
+              <span className="inline-block h-[1.2em] overflow-hidden align-bottom">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">
+                  {text}
+                </span>
+                <span className="text-blue-600 animate-pulse font-light">|</span>
               </span>
             </h1>
 
-            <p className="text-gray-700 dark:text-gray-300 text-sm md:text-base leading-relaxed max-w-xl md:max-w-2xl text-center md:text-left">
+            {/* Description */}
+            <p className="text-slate-500 dark:text-slate-400 text-base md:text-lg leading-relaxed max-w-xl">
               We help businesses rank higher, get more traffic, generate quality leads, and increase revenue with customized strategies.
             </p>
 
-            {/* Feature List */}
-            <div className="flex flex-wrap gap-6 py-2">
-              <div className="flex items-center gap-2">
-                <FaCheckCircle className="w-5 h-5 text-blue-600 dark:text-blue-400" />
-                <span className="text-gray-800 dark:text-gray-200 font-medium">Increase Organic Traffic</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <FaCheckCircle className="w-5 h-5 text-blue-600 dark:text-blue-400" />
-                <span className="text-gray-800 dark:text-gray-200 font-medium">Generate Quality Leads</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <FaCheckCircle className="w-5 h-5 text-blue-600 dark:text-blue-400" />
-                <span className="text-gray-800 dark:text-gray-200 font-medium">Maximize ROI &amp; Revenue</span>
-              </div>
+            {/* Feature Pills */}
+            <div className="flex flex-wrap gap-2.5">
+              {['Increase Organic Traffic', 'Generate Quality Leads', 'Maximize ROI & Revenue'].map((feature) => (
+                <div
+                  key={feature}
+                  className="flex items-center gap-2 bg-white dark:bg-slate-800/80 px-4 py-2 rounded-full border border-slate-100/80 dark:border-slate-700/60 shadow-sm shadow-slate-200/20 dark:shadow-slate-900/20"
+                >
+                  <FaCheckCircle className="w-3.5 h-3.5 text-blue-500 shrink-0" />
+                  <span className="text-sm font-medium text-slate-700 dark:text-slate-200">{feature}</span>
+                </div>
+              ))}
             </div>
 
             {/* Trust Badge */}
-            <div className="flex items-center gap-2 bg-white/90 dark:bg-gray-800/80 backdrop-blur px-4 py-2 rounded-full w-fit border border-gray-200 dark:border-gray-700">
-              <FaStar className="w-5 h-5 text-yellow-500" />
-              <span className="text-gray-700 dark:text-gray-300 font-medium">
-                Trusted by <span className="font-bold text-blue-600 dark:text-blue-400">500+</span> Businesses
+            <div className="flex items-center gap-3">
+              <div className="flex gap-0.5">
+                {[...Array(5)].map((_, i) => (
+                  <FaStar key={i} className="w-4 h-4 text-yellow-400 fill-yellow-400" />
+                ))}
+              </div>
+              <span className="text-sm text-slate-500 dark:text-slate-400">
+                Trusted by{' '}
+                <span className="font-bold text-slate-900 dark:text-white">500+</span> Businesses
+              </span>
+              <span className="w-px h-5 bg-slate-200 dark:bg-slate-700" />
+              <span className="text-sm text-slate-500 dark:text-slate-400">
+                ⚡ 4.9/5 Rating
               </span>
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-wrap gap-4 pt-2">
+            <div className="flex flex-wrap gap-4 pt-1">
               <Link href="/contactus">
-                <button className="cursor-pointer bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:shadow-lg transform active:scale-95 shadow-md border border-orange-600/20">
+                <button className="cursor-pointer bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-8 py-3.5 rounded-full font-semibold transition-all duration-300 hover:shadow-xl hover:shadow-orange-500/25 transform hover:-translate-y-0.5 active:scale-95 flex items-center gap-2.5 text-sm tracking-wide">
                   GET FREE SEO AUDIT
+                  <FaArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5" />
                 </button>
               </Link>
               <Link href="/contactus">
-                <button className="cursor-pointer bg-white text-blue-700 px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:shadow-lg transform active:scale-95 shadow-md border border-blue-700/10 flex items-center gap-2">
-                  <HiOutlineChatBubbleLeftRight className="w-5 h-5" />
-                  TALK TO SEO EXPERT
+                <button className="cursor-pointer bg-white dark:bg-slate-800 text-blue-600 dark:text-blue-300 px-8 py-3.5 rounded-full font-semibold transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/10 transform hover:-translate-y-0.5 active:scale-95 shadow-md border border-slate-200/80 dark:border-slate-700 flex items-center gap-2.5 text-sm tracking-wide">
+                  <HiOutlineChatBubbleLeftRight className="w-4 h-4" />
+                  TALK TO EXPERT
                 </button>
               </Link>
             </div>
           </div>
 
           {/* Right Content - Form */}
-          <div className="w-full lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:right-[25%] lg:w-[320px] z-20">
-            <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-4 md:p-5 border border-gray-200 dark:border-gray-700 max-w-sm mx-auto lg:ml-auto max-h-[480px] overflow-hidden">
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 text-center">
-                Get Your <span className="text-orange-500">FREE Proposal</span>
-              </h3>
-
-              <form className="space-y-3">
-                <input
-                  type="text"
-                  placeholder="Full Name*"
-                  className="w-full px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
-                  required
-                />
-                <input
-                  type="text"
-                  placeholder="Business Name*"
-                  className="w-full px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
-                  required
-                />
-                <input
-                  type="email"
-                  placeholder="Email Address*"
-                  className="w-full px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
-                  required
-                />
-                <input
-                  type="tel"
-                  placeholder="Phone Number*"
-                  className="w-full px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
-                  required
-                />
-                <input
-                  type="url"
-                  placeholder="Website URL*"
-                  className="w-full px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
-                  required
-                />
-
-                <select className="w-full px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 appearance-none text-sm">
-                  <option value="">Services Needed</option>
-                  <option value="seo">SEO Services</option>
-                  <option value="ppc">PPC Advertising</option>
-                  <option value="social">Social Media Marketing</option>
-                  <option value="content">Content Marketing</option>
-                  <option value="email">Email Marketing</option>
-                  <option value="web">Web Development</option>
-                </select>
-
-                <button
-                  type="submit"
-                  className="w-full cursor-pointer bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-4 py-2.5 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg transform active:scale-95 shadow-md border border-orange-600/20 text-sm"
-                >
-                  GET FREE PROPOSAL
-                </button>
-
-                {/* Trust Badges with Icons */}
-                <div className="flex flex-wrap justify-center gap-3 pt-1 text-xs text-gray-500 dark:text-gray-400">
-                  <span className="flex items-center gap-1.5">
-                    <MdTimer className="w-4 h-4" />
-                    Response within 30 Minutes
-                  </span>
-                  <span className="flex items-center gap-1.5">
-                    <MdLock className="w-4 h-4" />
-                    No Obligation
-                  </span>
-                  <span className="flex items-center gap-1.5">
-                    <MdVerified className="w-4 h-4" />
-                    100% Confidential
-                  </span>
+          <div className="w-full lg:w-[45%] flex justify-center lg:justify-end">
+            <div className="w-full max-w-md">
+              <div className="bg-white dark:bg-slate-800/90 rounded-2xl shadow-2xl shadow-slate-200/40 dark:shadow-slate-900/60 p-7 border border-slate-100 dark:border-slate-700/60 backdrop-blur-sm">
+                <div className="text-center mb-5">
+                  <h3 className="text-xl font-bold text-slate-900 dark:text-white">
+                    Get Your <span className="text-orange-500">FREE Proposal</span>
+                  </h3>
+                  <p className="text-xs text-slate-400 dark:text-slate-500 mt-0.5">Fill in the details below</p>
                 </div>
-              </form>
+
+                <form className="space-y-3.5">
+                  <input
+                    type="text"
+                    placeholder="Full Name*"
+                    className="w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-600 bg-slate-50/80 dark:bg-slate-700/50 text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm transition-all"
+                    required
+                  />
+                  <input
+                    type="text"
+                    placeholder="Business Name*"
+                    className="w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-600 bg-slate-50/80 dark:bg-slate-700/50 text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm transition-all"
+                    required
+                  />
+                  <input
+                    type="email"
+                    placeholder="Email Address*"
+                    className="w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-600 bg-slate-50/80 dark:bg-slate-700/50 text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm transition-all"
+                    required
+                  />
+                  <input
+                    type="tel"
+                    placeholder="Phone Number*"
+                    className="w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-600 bg-slate-50/80 dark:bg-slate-700/50 text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm transition-all"
+                    required
+                  />
+                  <input
+                    type="url"
+                    placeholder="Website URL*"
+                    className="w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-600 bg-slate-50/80 dark:bg-slate-700/50 text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm transition-all"
+                    required
+                  />
+
+                  <select className="w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-600 bg-slate-50/80 dark:bg-slate-700/50 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent appearance-none text-sm transition-all cursor-pointer">
+                    <option value="">Select Services Needed</option>
+                    <option value="seo">SEO Services</option>
+                    <option value="ppc">PPC Advertising</option>
+                    <option value="social">Social Media Marketing</option>
+                    <option value="content">Content Marketing</option>
+                    <option value="email">Email Marketing</option>
+                    <option value="web">Web Development</option>
+                  </select>
+
+                  <button
+                    type="submit"
+                    className="w-full cursor-pointer bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-4 py-3.5 rounded-xl font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-orange-500/25 transform hover:-translate-y-0.5 active:scale-95 text-sm tracking-wide"
+                  >
+                    GET FREE PROPOSAL
+                  </button>
+
+                  {/* Trust Badges */}
+                  <div className="flex flex-wrap justify-center gap-4 pt-1 text-xs text-slate-400 dark:text-slate-500">
+                    <span className="flex items-center gap-1.5">
+                      <MdTimer className="w-3.5 h-3.5" />
+                      Response within 24 Hrs
+                    </span>
+                    <span className="flex items-center gap-1.5">
+                      <MdLock className="w-3.5 h-3.5" />
+                      No Obligation
+                    </span>
+                    <span className="flex items-center gap-1.5">
+                      <MdVerified className="w-3.5 h-3.5" />
+                      100% Confidential
+                    </span>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

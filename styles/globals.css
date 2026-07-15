@@ -24,3 +24,11 @@ body {
   color: var(--foreground);
   transition: background-color 0.3s, color 0.3s;
 }
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

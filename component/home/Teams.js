@@ -46,7 +46,7 @@ function Teams() {
 
     return (
         <div className='bg-white dark:bg-gray-900 py-8'>
-            <div className="max-w-7xl mx-auto overflow-hidden py-10 md:py-20">
+            <div className="max-w-7xl mx-auto overflow-hidden py-10 md:py-14">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-6 md:mb-24">
                     <h2 className="text-center text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-100">
                         Empowering Global Workforces

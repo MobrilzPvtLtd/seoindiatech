@@ -16,7 +16,7 @@ const industries = [
 
 const IndustriesSection = () => {
   return (
-    <section className="py-20 bg-gradient-to-b from-slate-50 to-white dark:from-gray-950 dark:to-gray-900">
+    <section className="py-14 md:py-16 bg-gradient-to-b from-slate-50 to-white dark:from-gray-950 dark:to-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
           <p className="text-xs uppercase tracking-[0.4em] text-blue-600 font-semibold mb-3">

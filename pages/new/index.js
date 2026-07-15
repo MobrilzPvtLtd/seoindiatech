@@ -11,6 +11,7 @@ import AverageClientResults from '@/component/home/AverageClientResults'
 import IndustriesSection from '@/component/home/IndustriesSection'
 import Testimonial from '@/component/home/Testimonial'
 import Teams from '@/component/home/Teams'
+import FAQSection from '@/component/home/FAQSection'
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -121,7 +122,7 @@ export default function Home() {
       <NewHero />
       <WhyChooseSection />
       <OurServicesSection />
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 bg-slate-50 dark:bg-slate-950">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 bg-slate-50 dark:bg-slate-950">
         <div className="grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
           <OurSEOProcess />
           <AverageClientResults />
@@ -130,6 +131,7 @@ export default function Home() {
       <IndustriesSection />
       <Testimonial />
       <Teams />
+      <FAQSection />
     </>
   )
 }
