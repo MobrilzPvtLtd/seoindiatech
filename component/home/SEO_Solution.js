@@ -1,221 +1,257 @@
-import React from 'react'
-import { Star } from 'lucide-react'
-import Image from 'next/image'
+import React, { useEffect, useRef, useState } from 'react'
+import { Mail, BarChart2, DollarSign } from 'lucide-react'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-// Optimized circular progress component
-const CircularProgress = ({ percentage, color, size = 80 }) => {
+if (typeof window !== 'undefined') {
+  gsap.registerPlugin(ScrollTrigger)
+}
+
+const barHeights = [40, 65, 50, 80, 60, 90, 75]
+const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+
+const LINE_PATH = 'M0,60 Q40,50 60,40 Q100,25 140,20 Q180,15 200,10'
+const LINE_LENGTH = 260
+
+function useInView(threshold = 0.4) {
+  const ref = useRef(null)
+  const [inView, setInView] = useState(false)
+
+  useEffect(() => {
+    const el = ref.current
+    if (!el) return
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setInView(true)
+          observer.disconnect()
+        }
+      },
+      { threshold }
+    )
+    observer.observe(el)
+    return () => observer.disconnect()
+  }, [threshold])
+
+  return { ref, inView }
+}
+
+function BarChartCard() {
+  const { ref, inView } = useInView()
+
+  return (
+    <article
+      ref={ref}
+      className="bg-white dark:bg-gray-800 rounded-2xl p-6 border border-gray-100 dark:border-gray-700 hover:shadow-lg hover:shadow-blue-100/50 dark:hover:shadow-blue-900/20 transition-shadow duration-200 group"
+    >
+      <div className="flex items-center justify-between mb-5">
+        <div className="w-10 h-10 rounded-lg bg-blue-50 dark:bg-blue-900/30 flex items-center justify-center text-blue-600 dark:text-blue-400 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-200">
+          <Mail className="w-5 h-5" />
+        </div>
+        <span className="text-xs font-medium text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-900/30 px-2.5 py-1 rounded-full">
+          Active
+        </span>
+      </div>
+      <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Email Verification</h3>
+      <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed mb-6">
+        Your email approach quietly shapes the effectiveness and exposure of your communications.
+      </p>
+
+      <div className="bg-gray-50 dark:bg-gray-900/50 rounded-xl p-4">
+        <div className="flex items-end justify-between gap-1.5 h-24">
+          {barHeights.map((h, i) => (
+            <div key={i} className="flex flex-col items-center flex-1 h-full justify-end">
+              <div
+                className="w-full rounded-sm bg-gradient-to-t from-blue-300 to-blue-500 transition-[height] ease-out"
+                style={{
+                  height: inView ? `${h}%` : '0%',
+                  transitionDuration: '800ms',
+                  transitionDelay: `${i * 80}ms`,
+                }}
+              />
+            </div>
+          ))}
+        </div>
+        <div className="flex justify-between mt-2 text-[10px] text-gray-400 dark:text-gray-500">
+          {days.map((d) => (
+            <span key={d} className="flex-1 text-center">{d}</span>
+          ))}
+        </div>
+      </div>
+    </article>
+  )
+}
+
+function LineChartCard() {
+  const { ref, inView } = useInView()
+
+  return (
+    <article
+      ref={ref}
+      className="bg-white dark:bg-gray-800 rounded-2xl p-6 border border-gray-100 dark:border-gray-700 hover:shadow-lg hover:shadow-blue-100/50 dark:hover:shadow-blue-900/20 transition-shadow duration-200 group"
+    >
+      <div className="flex items-center justify-between mb-5">
+        <div className="w-10 h-10 rounded-lg bg-emerald-50 dark:bg-emerald-900/30 flex items-center justify-center text-emerald-600 dark:text-emerald-400 group-hover:bg-emerald-600 group-hover:text-white transition-colors duration-200">
+          <BarChart2 className="w-5 h-5" />
+        </div>
+        <span className="text-xs font-medium text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/30 px-2.5 py-1 rounded-full">
+          +24%
+        </span>
+      </div>
+      <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Competitor Analysis</h3>
+      <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed mb-6">
+        Excessive bounced emails harm sender credibility and reduce overall email delivery performance.
+      </p>
+
+      <div className="bg-gray-50 dark:bg-gray-900/50 rounded-xl p-4 h-32">
+        <svg
+          className="w-full h-full overflow-visible"
+          viewBox="0 0 200 80"
+          preserveAspectRatio="none"
+        >
+          <defs>
+            <linearGradient id="lineGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stopColor="#10B981" stopOpacity="0.3" />
+              <stop offset="100%" stopColor="#10B981" stopOpacity="0" />
+            </linearGradient>
+            <clipPath id="revealClip">
+              <rect
+                x="0"
+                y="0"
+                width={inView ? 200 : 0}
+                height="80"
+                style={{ transition: 'width 1200ms cubic-bezier(0.4,0,0.2,1)' }}
+              />
+            </clipPath>
+          </defs>
+          <path
+            d="M0,60 Q40,50 60,40 Q100,25 140,20 Q180,15 200,10 L200,80 L0,80 Z"
+            fill="url(#lineGrad)"
+            clipPath="url(#revealClip)"
+          />
+          <path
+            d={LINE_PATH}
+            stroke="#10B981"
+            strokeWidth="2.5"
+            fill="none"
+            strokeDasharray={LINE_LENGTH}
+            strokeDashoffset={inView ? 0 : LINE_LENGTH}
+            style={{ transition: 'stroke-dashoffset 1200ms cubic-bezier(0.4,0,0.2,1)' }}
+          />
+        </svg>
+      </div>
+    </article>
+  )
+}
+
+function DonutChartCard() {
+  const { ref, inView } = useInView()
   const radius = 14
   const circumference = 2 * Math.PI * radius
-  const strokeDashoffset = circumference - (percentage / 100) * circumference
+  const target = 0.75
+  const offset = circumference * (1 - target)
 
   return (
-    <div className="relative" style={{ width: size, height: size }}>
-      <svg className="w-full h-full transform -rotate-90" viewBox="0 0 32 32">
-        <circle
-          cx="16"
-          cy="16"
-          r={radius}
-          stroke="#E5E7EB"
-          className="dark:stroke-gray-700"
-          strokeWidth="4"
-          fill="none"
-        />
-        <circle
-          cx="16"
-          cy="16"
-          r={radius}
-          stroke={color}
-          strokeWidth="4"
-          fill="none"
-          strokeDasharray={circumference}
-          strokeDashoffset={strokeDashoffset}
-          className="transition-all duration-500 ease-out"
-        />
-      </svg>
-    </div>
-  )
-}
-
-// Optimized status badge component
-const StatusBadge = ({ status, type }) => {
-  const styles = {
-    processing:
-      'bg-yellow-100 text-yellow-700 dark:bg-yellow-900/30 dark:text-yellow-300',
-    verified:
-      'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-300',
-  }
-
-  return (
-    <span className={`${styles[type]} px-2 py-1 rounded text-xs font-medium`}>
-      {status}
-    </span>
-  )
-}
-
-// Optimized status item component
-const StatusItem = ({ title, rating, status, type }) => (
-  <div className="flex items-center justify-between bg-white dark:bg-gray-800 rounded-lg p-3 border dark:border-gray-700">
-    <div className="flex items-center gap-3">
-      <div className="w-8 h-8 bg-gray-200 dark:bg-gray-700 rounded-full flex items-center justify-center">
-        <Star className="w-4 h-4 text-yellow-500" />
+    <article
+      ref={ref}
+      className="bg-white dark:bg-gray-800 rounded-2xl p-6 border border-gray-100 dark:border-gray-700 hover:shadow-lg hover:shadow-blue-100/50 dark:hover:shadow-blue-900/20 transition-shadow duration-200 group"
+    >
+      <div className="flex items-center justify-between mb-5">
+        <div className="w-10 h-10 rounded-lg bg-amber-50 dark:bg-amber-900/30 flex items-center justify-center text-amber-600 dark:text-amber-400 group-hover:bg-amber-600 group-hover:text-white transition-colors duration-200">
+          <DollarSign className="w-5 h-5" />
+        </div>
+        <span className="text-xs font-medium text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-900/30 px-2.5 py-1 rounded-full">
+          +12.5%
+        </span>
       </div>
-      <div>
-        <div className="font-medium text-sm dark:text-white">{title}</div>
-        <div className="text-xs text-gray-500 dark:text-gray-400">
-          {rating} ⭐
+      <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Revenue Monitoring</h3>
+      <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed mb-6">
+        Email list verification ensures your messages reach active and valid recipients.
+      </p>
+
+      <div className="bg-gray-50 dark:bg-gray-900/50 rounded-xl p-4 h-32 flex items-center justify-center">
+        <div className="relative w-24 h-24">
+          <svg className="w-full h-full -rotate-90" viewBox="0 0 36 36">
+            <circle
+              cx="18"
+              cy="18"
+              r={radius}
+              fill="none"
+              stroke="#E2E8F0"
+              className="dark:stroke-gray-700"
+              strokeWidth="3.5"
+            />
+            <circle
+              cx="18"
+              cy="18"
+              r={radius}
+              fill="none"
+              stroke="#F59E0B"
+              strokeWidth="3.5"
+              strokeLinecap="round"
+              strokeDasharray={circumference}
+              strokeDashoffset={inView ? offset : circumference}
+              style={{ transition: 'stroke-dashoffset 1200ms cubic-bezier(0.4,0,0.2,1)' }}
+            />
+          </svg>
+          <div className="absolute inset-0 flex items-center justify-center">
+            <span
+              className="text-base font-bold text-gray-900 dark:text-white transition-opacity duration-500"
+              style={{ opacity: inView ? 1 : 0, transitionDelay: '600ms' }}
+            >
+              75%
+            </span>
+          </div>
         </div>
       </div>
-    </div>
-    <StatusBadge status={status} type={type} />
-  </div>
-)
-
-// Optimized traffic chart component
-const TrafficChart = () => (
-  <div className="relative h-20 bg-gradient-to-r from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 rounded-lg overflow-hidden">
-    <svg
-      className="w-full h-full"
-      viewBox="0 0 300 60"
-      preserveAspectRatio="none"
-    >
-      <defs>
-        <linearGradient id="chartGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-          <stop offset="0%" stopColor="#3B82F6" stopOpacity="0.4" />
-          <stop offset="100%" stopColor="#3B82F6" stopOpacity="0.1" />
-        </linearGradient>
-      </defs>
-      <path
-        d="M0,50 Q75,45 150,30 Q225,15 300,10"
-        stroke="#3B82F6"
-        strokeWidth="3"
-        fill="none"
-        className="dark:stroke-blue-400"
-      />
-      <path
-        d="M0,50 Q75,45 150,30 Q225,15 300,10 L300,60 L0,60 Z"
-        fill="url(#chartGradient)"
-        className="dark:opacity-50"
-      />
-    </svg>
-  </div>
-)
+    </article>
+  )
+}
 
 const SEOSolution = () => {
-  const statusData = [
-    {
-      title: 'Subscription',
-      rating: '5.0',
-      status: 'Processing',
-      type: 'processing',
-    },
-    {
-      title: 'Get free extension',
-      rating: '5.0',
-      status: 'Verified',
-      type: 'verified',
-    },
-  ]
+  const sectionRef = useRef(null)
+  const headerRef = useRef(null)
+  const gridRef = useRef(null)
 
-  const metrics = [
-    {
-      label: 'Authority Score',
-      value: 82,
-      displayValue: '92%',
-      color: '#3B82F6',
-    },
-    { label: 'Content score', value: 74, displayValue: '74', color: '#10B981' },
-  ]
+  useEffect(() => {
+    if (!sectionRef.current) return
+
+    const ctx = gsap.context(() => {
+      gsap.fromTo(headerRef.current,
+        { y: 30, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.7, ease: 'power3.out', immediateRender: false,
+          scrollTrigger: { trigger: headerRef.current, start: 'top 85%', toggleActions: 'play none none none' } }
+      )
+
+      gsap.fromTo(gridRef.current.children,
+        { y: 50, opacity: 0, scale: 0.95 },
+        { y: 0, opacity: 1, scale: 1, duration: 0.6, stagger: 0.12, ease: 'power3.out', immediateRender: false,
+          scrollTrigger: { trigger: gridRef.current, start: 'top 85%', toggleActions: 'play none none none' } }
+      )
+    }, sectionRef)
+
+    return () => ctx.revert()
+  }, [])
 
   return (
-    <div className="bg-gray-50 dark:bg-gray-900 py-12 px-4 sm:px-6">
-      <div className="max-w-7xl mx-auto">
-        {/* Header */}
-        <header className="text-center mb-12">
-          <span className="inline-block px-4 py-1.5 bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-sm font-medium mb-4">
-            Search Engine Optimization
-          </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white leading-tight">
-            Tailored{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400 dark:from-blue-400 dark:to-blue-300">
-              SEO solutions
-            </span>{' '}
-            for Optimal Performance
+    <section ref={sectionRef} className="bg-gray-50 dark:bg-gray-900 py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div ref={headerRef} className="text-center mb-14">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white leading-tight">
+            Tailored <span className="text-blue-600 dark:text-blue-400">SEO solutions</span> for Optimal Performance
           </h2>
-          <p className="mt-5 max-w-3xl mx-auto text-gray-600 dark:text-gray-300 text-lg">
-            Enhance Organic Engagement, Optimize Visibility, and Reach Top
-            Search Results with Strategic SEO.
+          <p className="mt-5 max-w-2xl mx-auto text-gray-500 dark:text-gray-400 text-lg leading-relaxed">
+            Enhance Organic Engagement, Optimize Visibility, and Reach Top Search Results with Strategic SEO.
           </p>
-        </header>
+        </div>
 
-        {/* Cards Row */}
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-8">
-          {/* Email Verification Card */}
-          <article className="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 border border-gray-100 dark:border-gray-700 overflow-hidden">
-            <header className="mb-6">
-              <h2 className="text-xl font-bold text-blue-600 dark:text-blue-400 mb-3">
-                Email Verification
-              </h2>
-              <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
-                Your email approach quietly shapes the effectiveness and
-                exposure of your communications.
-              </p>
-            </header>
-            <div className="rounded-lg overflow-hidden hover:scale-[1.02] transition-transform duration-300 relative bottom-0">
-              <Image
-                src={'/images/subscribtion.png'}
-                width={500}
-                height={300}
-                alt="Email Verification"
-                className="object-cover w-full h-auto rounded-lg"
-              />
-            </div>
-          </article>
-
-          {/* Competitor Analysis Card */}
-          <article className="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 border border-gray-100 dark:border-gray-700 overflow-hidden">
-            <header className="mb-6">
-              <h2 className="text-xl font-bold text-blue-600 dark:text-blue-400 mb-3">
-                Competitor Analysis
-              </h2>
-              <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
-                Excessive bounced emails harm sender credibility and reduce overall email delivery performance.
-              </p>
-            </header>
-            <div className="rounded-lg overflow-hidden hover:scale-[1.02] transition-transform duration-300 relative bottom-0">
-              <Image
-                src={'/images/ORGANIC.png'}
-                width={500}
-                height={300}
-                alt="Competitor Analysis"
-                className="object-cover w-full h-auto rounded-lg"
-              />
-            </div>
-          </article>
-
-          {/* Revenue Monitoring Card */}
-          <article className="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 md:col-span-2 xl:col-span-1 border border-gray-100 dark:border-gray-700 overflow-hidden">
-            <header className="mb-6">
-              <h2 className="text-xl font-bold text-blue-600 dark:text-blue-400 mb-3">
-                Revenue Monitoring
-              </h2>
-              <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
-                Email list verification ensures your messages reach active and
-                valid recipients.
-              </p>
-            </header>
-            <div className="rounded-lg overflow-hidden hover:scale-[1.02] transition-transform duration-300 relative bottom-0">
-              <Image
-                src={'/images/score.png'}
-                width={500}
-                height={300}
-                alt="Revenue Monitoring"
-                className="object-cover w-full h-auto rounded-lg"
-              />
-            </div>
-          </article>
+        <div ref={gridRef} className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <BarChartCard />
+          <LineChartCard />
+          <DonutChartCard />
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

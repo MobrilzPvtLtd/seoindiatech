@@ -1,61 +1,51 @@
 import Image from 'next/image';
-import React from 'react';
-import { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+if (typeof window !== 'undefined') {
+  gsap.registerPlugin(ScrollTrigger)
+}
 
 function Teams() {
     const teamLogos = [
-        {
-            src: "/images/home/logo1.png",
-            alt: "DIY Real Estate",
-            name: "DIY Real Estate"
-        },
-        {
-            src: "/images/home/logo2.png",
-            alt: "Tech Project",
-            name: "Tech Project"
-        },
-        {
-            src: "/images/home/logo3.png",
-            alt: "Stay KSA",
-            name: "Stay KSA"
-        },
-        {
-            src: "/images/home/logo4.png",
-            alt: "Creativity 360 Pro",
-            name: "Creativity 360 Pro"
-        },
-        {
-            src: "/images/home/logo5.png",
-            alt: "Creative Agency",
-            name: "Creative Agency"
-        },
-        {
-            src: "/images/home/logo6.png",
-            alt: "Digital Solutions",
-            name: "Digital Solutions"
-        },
-        {
-            src: "/images/home/intgra.png",
-            alt: "Advyra",
-            name: "Advyra"
-        }
+        { src: "/images/home/logo1.png", alt: "DIY Real Estate", name: "DIY Real Estate" },
+        { src: "/images/home/logo2.png", alt: "Tech Project", name: "Tech Project" },
+        { src: "/images/home/logo3.png", alt: "Stay KSA", name: "Stay KSA" },
+        { src: "/images/home/logo4.png", alt: "Creativity 360 Pro", name: "Creativity 360 Pro" },
+        { src: "/images/home/logo5.png", alt: "Creative Agency", name: "Creative Agency" },
+        { src: "/images/home/logo6.png", alt: "Digital Solutions", name: "Digital Solutions" },
+        { src: "/images/home/intgra.png", alt: "Advyra", name: "Advyra" }
     ];
 
-    // Duplicate the array for seamless looping
     const allLogos = [...teamLogos, ...teamLogos];
+    const sectionRef = useRef(null)
+    const headerRef = useRef(null)
+
+    useEffect(() => {
+        if (!sectionRef.current) return
+
+        const ctx = gsap.context(() => {
+            gsap.fromTo(headerRef.current,
+                { y: 25, opacity: 0 },
+                { y: 0, opacity: 1, duration: 0.7, ease: 'power3.out', immediateRender: false,
+                    scrollTrigger: { trigger: headerRef.current, start: 'top 85%', toggleActions: 'play none none none' } }
+            )
+        }, sectionRef)
+
+        return () => ctx.revert()
+    }, [])
 
     return (
-        <div className='bg-white dark:bg-gray-900 py-8'>
+        <div ref={sectionRef} className='bg-white dark:bg-gray-900 py-8'>
             <div className="max-w-7xl mx-auto overflow-hidden py-10 md:py-14">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-6 md:mb-24">
+                <div ref={headerRef} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-6 md:mb-24">
                     <h2 className="text-center text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-100">
                         Empowering Global Workforces
                     </h2>
                 </div>
 
-                {/* Main marquee container */}
                 <div className="relative w-full overflow-hidden">
-                    {/* First marquee row - moves left */}
                     <div className="marquee-container">
                         <div className="marquee-animation-left h-44">
                             {allLogos.map((logo, index) => (
@@ -82,43 +72,29 @@ function Teams() {
                     </div>
                 </div>
 
-                {/* Add the following CSS to your component */}
                 <style jsx>{`
                 .marquee-container {
                     overflow: hidden;
                     width: 100%;
                     position: relative;
                 }
-                
                 .marquee-animation-left {
                     display: flex;
                     animation: marqueeLeft 30s linear infinite;
                     will-change: transform;
-                    
                 }
-                
                 @keyframes marqueeLeft {
-                    0% {
-                        transform: translateX(0);
-                    }
-                    100% {
-                        transform: translateX(-50%);
-                    }
+                    0% { transform: translateX(0); }
+                    100% { transform: translateX(-50%); }
                 }
-                
-                /* Pause animation on hover for better user experience */
                 .marquee-container:hover .marquee-animation-left {
                     animation-play-state: paused;
                 }
-                
-                /* Apply smoother animation for all browsers */
                 @media (prefers-reduced-motion: no-preference) {
                     .marquee-animation-left {
                         animation-timing-function: linear;
                     }
                 }
-                
-                /* Slow down a bit on small screens for better readability */
                 @media (max-width: 640px) {
                     .marquee-animation-left {
                         animation-duration: 5s;
