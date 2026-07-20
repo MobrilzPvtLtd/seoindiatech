@@ -37,10 +37,10 @@ function Teams() {
     }, [])
 
     return (
-        <div ref={sectionRef} className='bg-white dark:bg-gray-900 py-8'>
-            <div className="max-w-7xl mx-auto overflow-hidden py-10 md:py-14">
+        <div ref={sectionRef} className='bg-white dark:bg-gray-900 py-14 md:py-20 transition-colors duration-300'>
+            <div className="max-w-7xl mx-auto overflow-hidden">
                 <div ref={headerRef} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-6 md:mb-24">
-                    <h2 className="text-center text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-100">
+                    <h2 className="text-center text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white leading-tight">
                         Empowering Global Workforces
                     </h2>
                 </div>

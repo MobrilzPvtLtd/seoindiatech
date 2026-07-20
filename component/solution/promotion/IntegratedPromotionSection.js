@@ -212,7 +212,7 @@ export default function IntegratedPromotionSection() {
               <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform" />
             </button> */}
             <Link
-              href={'/contactus'}
+              href={'/contact-us'}
               className="inline-flex items-center gap-3 border-2 border-blue-600 text-blue-600 hover:bg-blue-50 font-bold text-lg px-10 py-5 rounded-full transition-all duration-300"
             >
               Schedule a Free Strategy Call

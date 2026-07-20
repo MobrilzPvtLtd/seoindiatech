@@ -27,7 +27,7 @@ export default function LocationHero({ heading, content, imageSrc }) {
 
             <div className="pt-4">
               <a
-                href="/contactus"
+                href="/contact-us"
                 className="inline-block px-6 py-3 text-sm font-semibold text-white bg-gradient-to-r from-blue-600 to-blue-800 dark:from-gray-800 dark:to-gray-900 rounded-lg transition"
               >
                 Get Your Free SEO Audit →

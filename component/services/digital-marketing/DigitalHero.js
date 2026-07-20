@@ -42,7 +42,7 @@ export default function DigitalHero() {
             {/* CTA */}
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="/contactus"
+                href="/contact-us"
                 className="px-8 py-4 rounded-xl bg-blue-600 text-white font-semibold shadow-lg hover:bg-blue-700 hover:shadow-xl transition-all duration-300"
               >
                 Get Free Strategy Call

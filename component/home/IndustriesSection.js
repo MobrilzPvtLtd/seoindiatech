@@ -47,16 +47,19 @@ const IndustriesSection = () => {
   }, [])
 
   return (
-    <section ref={sectionRef} className="py-14 md:py-16 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-900">
+    <section ref={sectionRef} className="bg-gray-50 dark:bg-gray-900 py-14 md:py-20 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div ref={headerRef} className="text-center mb-14">
-          <p className="text-xs uppercase tracking-[0.4em] text-blue-600 font-semibold mb-3">
-            Our Expertise
-          </p>
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white">
-            Industries <span className="text-blue-600">We Serve</span>
+          <div className="inline-flex items-center gap-2 bg-blue-50 dark:bg-blue-950/60 border border-blue-100/60 dark:border-blue-800/30 px-4 py-1.5 rounded-full mb-4">
+            <span className="w-1.5 h-1.5 rounded-full bg-blue-500" />
+            <span className="text-[11px] font-semibold text-blue-600 dark:text-blue-300 tracking-wider uppercase">
+              Our Expertise
+            </span>
+          </div>
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white leading-tight">
+            Industries <span className="text-blue-600 dark:text-blue-400">We Serve</span>
           </h2>
-          <p className="mt-3 text-sm text-gray-500 dark:text-gray-400">
+          <p className="mt-4 text-base text-gray-600 dark:text-gray-400">
             Driving growth across diverse industries
           </p>
         </div>

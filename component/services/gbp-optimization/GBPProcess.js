@@ -200,7 +200,7 @@ export default function GBPProcess() {
               {/* CTA Button */}
               <div>
                 <Link
-                  href="/contactus"
+                  href="/contact-us"
                   className="inline-block mt-4 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-medium transition-all duration-300 shadow-md hover:shadow-lg"
                 >
                   Contact Us

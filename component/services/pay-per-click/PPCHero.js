@@ -58,7 +58,7 @@ export default function PPCHero() {
 
           {/* CTA Button */}
           <Link
-            href="/contactus"
+            href="/contact-us"
             className="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-8 rounded-lg shadow-2xl transition transform hover:scale-105"
           >
             Get Started <FaArrowRight className="ml-2" />

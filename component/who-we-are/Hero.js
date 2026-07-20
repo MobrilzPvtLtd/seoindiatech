@@ -54,7 +54,7 @@ const Hero = () => {
 
             {/* Call to Action Buttons */}
             <div className="flex flex-wrap gap-4 mb-14">
-              <Link href="/contactus">
+              <Link href="/contact-us">
                 <button className="cursor-pointer px-8 py-3.5 bg-gradient-to-r from-blue-600 to-blue-700 dark:from-gray-800 dark:to-gray-900 text-white font-medium rounded-full shadow-md hover:shadow-lg transition-all duration-300 flex items-center gap-2 hover:scale-105 transform active:scale-95">
                   Get Started
                   <ArrowRight className="w-4 h-4" />

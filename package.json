@@ -12,7 +12,6 @@
   "dependencies": {
     "@netlify/next": "^1.4.9",
     "@tailwindcss/typography": "^0.5.19",
-    "framer-motion": "^12.27.5",
     "gsap": "^3.15.0",
     "lucide-react": "^0.562.0",
     "next": "^16.1.4",

@@ -103,7 +103,7 @@ const Begin = () => {
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mt-10">
-            <Link href="/contactus">
+            <Link href="/contact-us">
               <button className="hidden cursor-pointer bg-gradient-to-r from-blue-600 to-blue-800 hover:bg-blue-700 text-white px-8 py-4 rounded-full text-base font-semibold transition-colors shadow-lg hover:shadow-blue-900/30 flex items-center group">
                 Get Started
                 <ArrowRight className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />

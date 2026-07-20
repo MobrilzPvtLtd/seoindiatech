@@ -134,7 +134,7 @@ export default function TrustedAdvertisingCompany() {
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Link
-              href={'/contactus'}
+              href={'/contact-us'}
               className="group inline-flex items-center gap-4 bg-gradient-to-r from-blue-600 to-indigo-700 text-white font-bold text-lg px-10 py-5 rounded-full shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300"
             >
               Launch Your Campaign Today

@@ -106,7 +106,7 @@ export default function PackageSolution() {
                 {/* Button */}
                 <div className="px-6 pb-7">
                   <Link
-                    href="/contactus"
+                    href="/contact-us"
                     className={`block w-full text-center py-3 rounded-lg font-medium transition
                     ${
                       isPopular

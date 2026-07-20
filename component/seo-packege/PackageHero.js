@@ -23,7 +23,7 @@ export default function PackageHero() {
         </div>
 
         {/* CTA Button */}
-        <Link href="/contactus">
+        <Link href="/contact-us">
           <button className="border border-blue-900 dark:border-white text-blue-900 dark:text-white cursor-pointer px-6 py-3 rounded-md font-medium transition hover:bg-blue-900 hover:text-white dark:hover:bg-white dark:hover:text-gray-900">
             Get a Free Consultation
           </button>

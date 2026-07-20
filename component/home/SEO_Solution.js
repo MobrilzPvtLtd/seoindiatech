@@ -1,5 +1,5 @@
-import React, { useEffect, useRef, useState } from 'react'
-import { Mail, BarChart2, DollarSign } from 'lucide-react'
+import React, { useState, useEffect, useRef } from 'react'
+import { Search, TrendingUp, Target } from 'lucide-react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
@@ -44,17 +44,19 @@ function BarChartCard() {
       ref={ref}
       className="bg-white dark:bg-gray-800 rounded-2xl p-6 border border-gray-100 dark:border-gray-700 hover:shadow-lg hover:shadow-blue-100/50 dark:hover:shadow-blue-900/20 transition-shadow duration-200 group"
     >
-      <div className="flex items-center justify-between mb-5">
-        <div className="w-10 h-10 rounded-lg bg-blue-50 dark:bg-blue-900/30 flex items-center justify-center text-blue-600 dark:text-blue-400 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-200">
-          <Mail className="w-5 h-5" />
+      <div className="flex items-start justify-between mb-5">
+        <div className="flex items-center gap-3">
+          <div className="w-10 h-10 shrink-0 rounded-lg bg-blue-50 dark:bg-blue-900/30 flex items-center justify-center text-blue-600 dark:text-blue-400 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-200">
+            <Search className="w-5 h-5" />
+          </div>
+          <h3 className="text-lg font-bold text-gray-900 dark:text-white">Keyword Rankings</h3>
         </div>
-        <span className="text-xs font-medium text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-900/30 px-2.5 py-1 rounded-full">
-          Active
+        <span className="shrink-0 text-xs font-medium text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-900/30 px-2.5 py-1 rounded-full">
+          Live Tracking
         </span>
       </div>
-      <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Email Verification</h3>
       <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed mb-6">
-        Your email approach quietly shapes the effectiveness and exposure of your communications.
+        Track your website&apos;s keyword positions across search engines with real-time monitoring and performance insights.
       </p>
 
       <div className="bg-gray-50 dark:bg-gray-900/50 rounded-xl p-4">
@@ -90,17 +92,19 @@ function LineChartCard() {
       ref={ref}
       className="bg-white dark:bg-gray-800 rounded-2xl p-6 border border-gray-100 dark:border-gray-700 hover:shadow-lg hover:shadow-blue-100/50 dark:hover:shadow-blue-900/20 transition-shadow duration-200 group"
     >
-      <div className="flex items-center justify-between mb-5">
-        <div className="w-10 h-10 rounded-lg bg-emerald-50 dark:bg-emerald-900/30 flex items-center justify-center text-emerald-600 dark:text-emerald-400 group-hover:bg-emerald-600 group-hover:text-white transition-colors duration-200">
-          <BarChart2 className="w-5 h-5" />
+      <div className="flex items-start justify-between mb-5">
+        <div className="flex items-center gap-3">
+          <div className="w-10 h-10 shrink-0 rounded-lg bg-emerald-50 dark:bg-emerald-900/30 flex items-center justify-center text-emerald-600 dark:text-emerald-400 group-hover:bg-emerald-600 group-hover:text-white transition-colors duration-200">
+            <TrendingUp className="w-5 h-5" />
+          </div>
+          <h3 className="text-lg font-bold text-gray-900 dark:text-white">Organic Traffic Growth</h3>
         </div>
-        <span className="text-xs font-medium text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/30 px-2.5 py-1 rounded-full">
-          +24%
+        <span className="shrink-0 text-xs font-medium text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/30 px-2.5 py-1 rounded-full">
+          +156%
         </span>
       </div>
-      <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Competitor Analysis</h3>
       <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed mb-6">
-        Excessive bounced emails harm sender credibility and reduce overall email delivery performance.
+        Monitor your website&apos;s organic traffic growth over time with detailed analytics and conversion tracking.
       </p>
 
       <div className="bg-gray-50 dark:bg-gray-900/50 rounded-xl p-4 h-32">
@@ -156,17 +160,19 @@ function DonutChartCard() {
       ref={ref}
       className="bg-white dark:bg-gray-800 rounded-2xl p-6 border border-gray-100 dark:border-gray-700 hover:shadow-lg hover:shadow-blue-100/50 dark:hover:shadow-blue-900/20 transition-shadow duration-200 group"
     >
-      <div className="flex items-center justify-between mb-5">
-        <div className="w-10 h-10 rounded-lg bg-amber-50 dark:bg-amber-900/30 flex items-center justify-center text-amber-600 dark:text-amber-400 group-hover:bg-amber-600 group-hover:text-white transition-colors duration-200">
-          <DollarSign className="w-5 h-5" />
+      <div className="flex items-start justify-between mb-5">
+        <div className="flex items-center gap-3">
+          <div className="w-10 h-10 shrink-0 rounded-lg bg-amber-50 dark:bg-amber-900/30 flex items-center justify-center text-amber-600 dark:text-amber-400 group-hover:bg-amber-600 group-hover:text-white transition-colors duration-200">
+            <Target className="w-5 h-5" />
+          </div>
+          <h3 className="text-lg font-bold text-gray-900 dark:text-white">SEO Goal Achievement</h3>
         </div>
-        <span className="text-xs font-medium text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-900/30 px-2.5 py-1 rounded-full">
-          +12.5%
+        <span className="shrink-0 text-xs font-medium text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-900/30 px-2.5 py-1 rounded-full">
+          Goal Progress
         </span>
       </div>
-      <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Revenue Monitoring</h3>
       <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed mb-6">
-        Email list verification ensures your messages reach active and valid recipients.
+        Track your SEO objectives including keyword targets, traffic milestones, and conversion rate goals.
       </p>
 
       <div className="bg-gray-50 dark:bg-gray-900/50 rounded-xl p-4 h-32 flex items-center justify-center">
@@ -234,13 +240,19 @@ const SEOSolution = () => {
   }, [])
 
   return (
-    <section ref={sectionRef} className="bg-gray-50 dark:bg-gray-900 py-20">
+    <section ref={sectionRef} className="bg-gray-50 dark:bg-gray-900 py-14 md:py-20 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div ref={headerRef} className="text-center mb-14">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white leading-tight">
+          <div className="inline-flex items-center gap-2 bg-blue-50 dark:bg-blue-950/60 border border-blue-100/60 dark:border-blue-800/30 px-4 py-1.5 rounded-full mb-4">
+            <span className="w-1.5 h-1.5 rounded-full bg-blue-500" />
+            <span className="text-[11px] font-semibold text-blue-600 dark:text-blue-300 tracking-wider uppercase">
+              SEO Solutions
+            </span>
+          </div>
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white leading-tight">
             Tailored <span className="text-blue-600 dark:text-blue-400">SEO solutions</span> for Optimal Performance
           </h2>
-          <p className="mt-5 max-w-2xl mx-auto text-gray-500 dark:text-gray-400 text-lg leading-relaxed">
+          <p className="mt-4 max-w-2xl mx-auto text-base text-gray-600 dark:text-gray-400">
             Enhance Organic Engagement, Optimize Visibility, and Reach Top Search Results with Strategic SEO.
           </p>
         </div>

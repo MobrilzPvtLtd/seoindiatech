@@ -98,7 +98,7 @@ export default function DigitalAutomationServices() {
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
           
-            <Link href={'/contactus'} className="inline-flex items-center gap-3 border-2 border-indigo-600 text-indigo-600 hover:bg-indigo-50 font-bold text-lg px-10 py-5 rounded-full transition-all duration-300">
+            <Link href={'/contact-us'} className="inline-flex items-center gap-3 border-2 border-indigo-600 text-indigo-600 hover:bg-indigo-50 font-bold text-lg px-10 py-5 rounded-full transition-all duration-300">
               Book a Free Automation Audit
             </Link>
           </div>

@@ -101,7 +101,7 @@ export default function WhyChooseUIUX() {
         {/* Optional CTA at bottom */}
         <div className="text-center mt-16">
           <Link
-            href="/contactus"
+            href="/contact-us"
             className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold text-lg rounded-full shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300"
           >
             Get a Free UI/UX Audit

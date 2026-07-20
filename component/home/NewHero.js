@@ -152,8 +152,8 @@ const NewHero = () => {
         ))}
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 md:py-16 lg:py-20 relative z-10">
-        <div className="flex flex-col lg:flex-row items-stretch gap-12 lg:gap-16 xl:gap-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-12 lg:py-16 relative z-10">
+        <div className="flex flex-col lg:flex-row items-stretch gap-8 lg:gap-12 xl:gap-16">
           {/* Left Content */}
           <div className="w-full lg:w-[55%] space-y-7">
             {/* Badge */}
@@ -172,7 +172,7 @@ const NewHero = () => {
               Grow Your Business with{' '}
               <span className="text-blue-600">Result-Driven</span>
               <br />
-              <span className="inline-block h-[1.2em] overflow-hidden align-bottom">
+              <span className="inline-block align-bottom">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">
                   {text}
                 </span>
@@ -217,13 +217,13 @@ const NewHero = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-wrap gap-4 pt-1">
-              <Link href="/contactus">
+              <Link href="/contact-us">
                 <button className="cursor-pointer bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 text-white px-8 py-3.5 rounded-full font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95 border border-blue-700/20 flex items-center gap-2.5 text-sm">
                   GET FREE SEO AUDIT
                   <FaArrowRight className="w-3.5 h-3.5" />
                 </button>
               </Link>
-              <Link href="/contactus">
+              <Link href="/contact-us">
                 <button className="cursor-pointer bg-white dark:bg-gray-800 text-blue-600 dark:text-blue-300 px-8 py-3.5 rounded-full font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95 shadow-md border border-gray-200/80 dark:border-gray-700 flex items-center gap-2.5 text-sm">
                   <HiOutlineChatBubbleLeftRight className="w-4 h-4" />
                   TALK TO EXPERT

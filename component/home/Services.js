@@ -134,7 +134,7 @@ const Services = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/contactus">
+              <Link href="/contact-us">
                 <button className="cursor-pointer bg-gradient-to-r from-blue-600 to-blue-800 dark:from-gray-800 dark:to-gray-900 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105 transform active:scale-95 shadow-md border border-blue-700/20 dark:border-gray-500/30 text-center">
                   Get Started
                 </button>

@@ -77,7 +77,7 @@ const TestimonialCard = ({ testimonial }) => (
       {renderStars(testimonial.rating)}
     </div>
     <div className="mb-6">
-      <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-center">
+      <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-center text-sm">
         &ldquo;{testimonial.testimonial}&rdquo;
       </p>
     </div>
@@ -93,11 +93,12 @@ const TestimonialCard = ({ testimonial }) => (
           loading="lazy"
         />
       </div>
-      <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-1">
+      <h3 className="text-base font-bold text-gray-900 dark:text-white mb-1">
         {testimonial.name}
       </h3>
       <p className="text-gray-600 dark:text-gray-400 text-sm">
-        <span className="font-medium">{testimonial.role}</span> <span className="text-blue-600 dark:text-blue-400">{testimonial.company}</span>
+        <span className="font-medium">{testimonial.role}</span>{' '}
+        <span className="text-blue-600 dark:text-blue-400">{testimonial.company}</span>
       </p>
     </div>
   </div>
@@ -183,16 +184,19 @@ const Testimonial = () => {
   };
 
   return (
-    <div ref={sectionRef} className="bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800 py-12 md:py-14 px-4 sm:px-6 lg:px-8">
+    <div ref={sectionRef} className="bg-gray-50 dark:bg-gray-800 py-14 md:py-20 px-4 sm:px-6 lg:px-8 transition-colors duration-300">
       <div className="max-w-7xl mx-auto">
         <div ref={headerRef} className="text-center mb-12 md:mb-16">
-          <span className="inline-block px-3 py-1 text-sm font-medium rounded-full bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 mb-4">
-            Testimonials
-          </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+          <div className="inline-flex items-center gap-2 bg-blue-50 dark:bg-blue-950/60 border border-blue-100/60 dark:border-blue-800/30 px-4 py-1.5 rounded-full mb-4">
+            <span className="w-1.5 h-1.5 rounded-full bg-blue-500" />
+            <span className="text-[11px] font-semibold text-blue-600 dark:text-blue-300 tracking-wider uppercase">
+              Testimonials
+            </span>
+          </div>
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white leading-tight mb-4">
             What Our Clients Say
           </h2>
-          <p className="max-w-2xl mx-auto text-gray-600 dark:text-gray-300">
+          <p className="max-w-2xl mx-auto text-base text-gray-600 dark:text-gray-400">
             Hear from our satisfied customers about their experience with our products and services.
           </p>
         </div>

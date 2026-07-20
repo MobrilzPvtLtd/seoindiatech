@@ -102,7 +102,7 @@ export default function LocationFAQ({ faqs, city }) {
             Still have questions? We're here to help.
           </p>
           <a
-            href="/contactus"
+            href="/contact-us"
             className="inline-flex items-center px-8 py-4 text-base font-medium text-white bg-gradient-to-r from-blue-600 to-blue-800 dark:from-gray-800 dark:to-gray-900 rounded-lg"
           >
             Contact Us Now →

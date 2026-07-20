@@ -1,130 +1,207 @@
-import React, { useEffect, useRef } from 'react'
-import { FaArrowUp, FaChartBar, FaTrophy, FaDollarSign } from 'react-icons/fa'
+import React, { useRef, useEffect } from 'react'
 import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
+import { FaArrowUp, FaChartBar, FaTrophy, FaDollarSign } from 'react-icons/fa'
 
 if (typeof window !== 'undefined') {
   gsap.registerPlugin(ScrollTrigger)
 }
 
+/* ---------- tiny inline charts, kept minimal — no background block ---------- */
+
+const MiniBarChart = ({ color = '#5B4FE9' }) => {
+  const bars = [40, 62, 50, 78, 58, 90, 70]
+  const days = ['M', 'T', 'W', 'T', 'F', 'S', 'S']
+  return (
+    <div className="flex items-end justify-between h-20 gap-1.5">
+      {bars.map((h, i) => (
+        <div key={i} className="flex flex-col items-center gap-1.5 flex-1">
+          <div
+            className="w-full rounded-sm"
+            style={{ height: `${h}%`, backgroundColor: color, opacity: 0.85 }}
+          />
+          <span className="text-[9px] text-gray-400 dark:text-gray-500">{days[i]}</span>
+        </div>
+      ))}
+    </div>
+  )
+}
+
+const MiniLineChart = ({ color = '#2FD07C' }) => (
+  <div className="h-20">
+    <svg viewBox="0 0 120 50" className="w-full h-full" preserveAspectRatio="none">
+      <path
+        d="M0,40 C15,36 24,30 36,26 C48,22 56,16 72,13 C88,10 100,8 120,3"
+        fill="none"
+        stroke={color}
+        strokeWidth="2"
+        strokeLinecap="round"
+      />
+    </svg>
+  </div>
+)
+
+const MiniDonut = ({ percent = 75, color = '#5B4FE9' }) => {
+  const r = 22
+  const c = 2 * Math.PI * r
+  const offset = c - (percent / 100) * c
+  return (
+    <div className="h-20 flex items-center justify-center">
+      <svg width="60" height="60" viewBox="0 0 56 56">
+        <circle cx="28" cy="28" r={r} fill="none" stroke="#EEECE6" strokeWidth="5" className="dark:stroke-gray-700" />
+        <circle
+          cx="28"
+          cy="28"
+          r={r}
+          fill="none"
+          stroke={color}
+          strokeWidth="5"
+          strokeLinecap="round"
+          strokeDasharray={c}
+          strokeDashoffset={offset}
+          transform="rotate(-90 28 28)"
+        />
+        <text x="28" y="32" textAnchor="middle" className="fill-gray-900 dark:fill-white" style={{ fontSize: '11px', fontWeight: 700 }}>
+          {percent}%
+        </text>
+      </svg>
+    </div>
+  )
+}
+
+/* ---------------------------------------------------------------------- */
+
 const metrics = [
-  { value: '78%', label: 'Increase in Organic Traffic', icon: FaArrowUp, iconClass: 'text-green-400', bar: 78, num: 78, suffix: '%' },
-  { value: '3X', label: 'More Qualified Leads', icon: FaChartBar, iconClass: 'text-blue-400', bar: 85, num: 3, suffix: 'X' },
-  { value: 'Top 3', label: 'Rankings for Target Keywords', icon: FaTrophy, iconClass: 'text-amber-400', bar: 92, num: 3, suffix: '', prefix: 'Top ' },
-  { value: '45%', label: 'Decrease in Cost Per Lead', icon: FaDollarSign, iconClass: 'text-emerald-400', bar: 45, num: 45, suffix: '%' },
+  {
+    value: '+78%',
+    valueColor: 'text-blue-600',
+    title: 'Organic Traffic',
+    desc: 'Increase in qualified organic sessions month over month.',
+    icon: FaArrowUp,
+    iconColor: 'text-blue-600',
+    chart: <MiniBarChart color="#5B4FE9" />,
+  },
+  {
+    value: '3X',
+    valueColor: 'text-emerald-600',
+    title: 'Qualified Leads',
+    desc: 'More leads that match your ideal customer profile.',
+    icon: FaChartBar,
+    iconColor: 'text-emerald-600',
+    chart: <MiniLineChart color="#2FD07C" />,
+  },
+  {
+    value: 'Top 3',
+    valueColor: 'text-amber-600',
+    title: 'Keyword Rankings',
+    desc: 'Average position for the keywords that matter most.',
+    icon: FaTrophy,
+    iconColor: 'text-amber-500',
+    chart: <MiniDonut percent={92} color="#5B4FE9" />,
+  },
+  {
+    value: '-45%',
+    valueColor: 'text-orange-600',
+    title: 'Cost Per Lead',
+    desc: 'Lower acquisition cost through sharper targeting.',
+    icon: FaDollarSign,
+    iconColor: 'text-orange-500',
+    chart: <MiniDonut percent={45} color="#F5A623" />,
+  },
 ]
 
 const AverageClientResults = () => {
-  const sectionRef = useRef(null)
-  const valueRefs = useRef([])
-  const barRefs = useRef([])
+  const headerRef = useRef(null)
+  const cardsRef = useRef([])
 
   useEffect(() => {
-    if (!sectionRef.current) return
-
     const ctx = gsap.context(() => {
-      // Card reveal
-      gsap.fromTo(sectionRef.current,
-        { y: 40, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.8, ease: 'power3.out', immediateRender: false,
-          scrollTrigger: { trigger: sectionRef.current, start: 'top 85%', toggleActions: 'play none none none' } }
+      gsap.fromTo(
+        headerRef.current,
+        { opacity: 0, y: 24 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.5,
+          ease: 'power2.out',
+          scrollTrigger: {
+            trigger: headerRef.current,
+            start: 'top 80%',
+          },
+        }
       )
 
-      // Count up values
-      valueRefs.current.forEach((el, i) => {
-        if (!el) return
-        const m = metrics[i]
-        const obj = { val: 0 }
-        gsap.to(obj, {
-          val: m.num,
-          duration: 1.8,
-          ease: 'power2.out',
-          delay: 0.3,
-          scrollTrigger: { trigger: el, start: 'top 85%' },
-          onUpdate: () => {
-            if (el) {
-              el.textContent = `${m.prefix || ''}${Math.round(obj.val)}${m.suffix}`
-            }
-          },
-        })
-      })
-
-      // Animate progress bars
-      barRefs.current.forEach((el, i) => {
-        if (!el) return
+      cardsRef.current.forEach((card, index) => {
+        if (!card) return
         gsap.fromTo(
-          el,
-          { width: '0%' },
+          card,
+          { opacity: 0, y: 24 },
           {
-            width: `${metrics[i].bar}%`,
-            duration: 1.5,
+            opacity: 1,
+            y: 0,
+            duration: 0.4,
             ease: 'power2.out',
-            delay: 0.5,
-            scrollTrigger: { trigger: el, start: 'top 90%' },
+            delay: index * 0.08,
+            scrollTrigger: {
+              trigger: card,
+              start: 'top 85%',
+            },
           }
         )
       })
-    }, sectionRef)
+    })
 
     return () => ctx.revert()
   }, [])
 
   return (
-    <section ref={sectionRef} className="relative overflow-hidden rounded-2xl text-white h-full flex flex-col">
-      <div className="absolute inset-0 bg-[url('/images/home/hero.png')] bg-cover bg-center opacity-15" />
-      <div className="absolute inset-0 bg-gray-950/90" />
-      <div className="relative rounded-2xl border border-white/10 bg-gray-900/80 p-5 md:p-6 lg:p-7 flex flex-col flex-1">
-        <div className="mb-5">
-          <div className="flex items-center gap-2 mb-2">
-            <span className="inline-block px-3 py-1 text-[10px] md:text-xs font-semibold tracking-wider uppercase bg-emerald-500/15 rounded-full border border-emerald-500/20 text-emerald-400">
+    <section className="bg-white dark:bg-gray-900 py-14 md:py-20 transition-colors duration-300">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header */}
+        <div ref={headerRef} className="max-w-2xl mb-16 opacity-0">
+          <div className="inline-flex items-center gap-2 bg-blue-50 dark:bg-blue-950/60 border border-blue-100/60 dark:border-blue-800/30 px-4 py-1.5 rounded-full mb-4">
+            <span className="w-1.5 h-1.5 rounded-full bg-blue-500" />
+            <span className="text-[11px] font-semibold text-blue-600 dark:text-blue-300 tracking-wider uppercase">
               Client Results
             </span>
           </div>
-          <h3 className="text-lg md:text-xl font-bold text-white">
-            Average Client Results
-          </h3>
-          <p className="mt-1 text-sm text-gray-400 leading-relaxed">
-            Real outcomes delivered through data-driven SEO and performance marketing.
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white leading-tight transition-colors duration-300">
+            Real outcomes, not vanity metrics
+          </h2>
+          <p className="mt-4 text-base text-gray-600 dark:text-gray-400 transition-colors duration-300">
+            What data-driven SEO, content, and performance marketing
+            typically deliver for our clients.
           </p>
         </div>
 
-        <div className="flex-1 grid gap-3 grid-cols-2">
-          {metrics.map((metric, idx) => {
+        {/* Metric columns */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-10 gap-y-14">
+          {metrics.map((metric, index) => {
             const Icon = metric.icon
             return (
               <div
-                key={idx}
-                className="flex flex-col justify-between rounded-2xl bg-white/5 backdrop-blur border border-white/10 p-4 transition-all duration-300 hover:bg-white/[0.08] hover:border-white/20"
+                key={metric.title}
+                ref={(el) => (cardsRef.current[index] = el)}
+                className="opacity-0"
               >
-                <div className="flex items-center gap-2.5">
-                  <div className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-white/10 ${metric.iconClass}`}>
-                    <Icon className="h-4 w-4 text-white" />
-                  </div>
-                  <p
-                    ref={(el) => (valueRefs.current[idx] = el)}
-                    className="text-xl font-bold text-white leading-none"
-                  >
-                    0
-                  </p>
+                <div className="flex items-center gap-2">
+                  <Icon className={`text-sm ${metric.iconColor}`} />
+                  <span className={`text-sm font-semibold ${metric.valueColor}`}>
+                    {metric.value}
+                  </span>
                 </div>
-                <div>
-                  <p className="text-xs text-gray-400 leading-snug mt-2">{metric.label}</p>
-                  <div className="mt-2 h-1 w-full rounded-full bg-white/10 overflow-hidden">
-                    <div
-                      ref={(el) => (barRefs.current[idx] = el)}
-                      className="h-full rounded-full bg-gradient-to-r from-blue-500 to-blue-400"
-                      style={{ width: '0%' }}
-                    />
-                  </div>
-                </div>
+
+                <p className="mt-3 text-base font-semibold text-gray-900 dark:text-white transition-colors duration-300">
+                  {metric.title}
+                </p>
+                <p className="mt-1 text-xs leading-relaxed text-gray-500 dark:text-gray-400 min-h-[32px] transition-colors duration-300">
+                  {metric.desc}
+                </p>
+
+                <div className="mt-4">{metric.chart}</div>
               </div>
             )
           })}
-        </div>
-
-        <div className="mt-4 pt-3 border-t border-white/10 flex items-center justify-between">
-          <span className="text-[10px] text-gray-500">Based on average across 50+ clients</span>
-          <span className="text-[10px] text-emerald-400/70 font-medium">Verified Results</span>
         </div>
       </div>
     </section>

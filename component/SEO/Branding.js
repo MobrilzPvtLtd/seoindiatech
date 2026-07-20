@@ -99,7 +99,7 @@ const Branding = () => {
               <ArrowRight className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
             </button>
 
-            <Link href="/contactus">
+            <Link href="/contact-us">
               <button className="hidden cursor-pointer bg-transparent text-blue-700 dark:text-blue-400 border border-blue-200 dark:border-blue-700 hover:bg-blue-50 dark:hover:bg-blue-900/30 px-6 py-3 rounded-full text-base font-medium transition">
                 Schedule a Consultation
               </button>

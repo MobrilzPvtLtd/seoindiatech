@@ -12,14 +12,14 @@ import Testimonial from './Testimonial'
 function HomePage() {
   return (
     <>
-      <Hero/>
-      <Teams/>
-      <Services/>
-      <Socialmediastrategies/>
-      <Solutions/>
-      <SEOSolution/>
-      <SEO_Today/>
-      <Testimonial/>
+      <Hero />
+      <Teams />
+      <Services />
+      <Socialmediastrategies />
+      <Solutions />
+      <SEOSolution />
+      <SEO_Today />
+      <Testimonial />
     </>
   )
 }

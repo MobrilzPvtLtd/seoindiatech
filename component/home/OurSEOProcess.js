@@ -1,178 +1,170 @@
-import React, { useEffect, useRef } from 'react'
-import { FaClipboardList, FaSearch, FaLightbulb, FaCode, FaTools, FaRegFileAlt, FaLink, FaChartLine } from 'react-icons/fa'
+import React, { useRef, useEffect } from 'react'
 import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
+import {
+  FaClipboardList,
+  FaSearch,
+  FaLightbulb,
+  FaCode,
+  FaTools,
+  FaRegFileAlt,
+  FaLink,
+  FaChartLine,
+} from 'react-icons/fa'
 
 if (typeof window !== 'undefined') {
   gsap.registerPlugin(ScrollTrigger)
 }
 
 const processSteps = [
-  { number: '1', title: 'Website Audit', icon: FaClipboardList },
-  { number: '2', title: 'Competitor Analysis', icon: FaSearch },
-  { number: '3', title: 'Keyword Research', icon: FaLightbulb },
-  { number: '4', title: 'On-page SEO', icon: FaCode },
-  { number: '5', title: 'Technical SEO', icon: FaTools },
-  { number: '6', title: 'Content Optimization', icon: FaRegFileAlt },
-  { number: '7', title: 'Authority Building', icon: FaLink },
-  { number: '8', title: 'Monthly Reporting', icon: FaChartLine },
+  { title: 'Website Audit', desc: 'Full technical & content health check', icon: FaClipboardList },
+  { title: 'Competitor Analysis', desc: 'See exactly where you\'re losing ground', icon: FaSearch },
+  { title: 'Keyword Research', desc: 'Target terms your buyers actually search', icon: FaLightbulb },
+  { title: 'On-page SEO', desc: 'Structure & copy tuned for relevance', icon: FaCode },
+  { title: 'Technical SEO', desc: 'Speed, crawlability, and site health', icon: FaTools },
+  { title: 'Content Optimization', desc: 'Refresh pages that are close to ranking', icon: FaRegFileAlt },
+  { title: 'Authority Building', desc: 'Earn links that move the needle', icon: FaLink },
+  { title: 'Monthly Reporting', desc: 'Clear numbers, no jargon', icon: FaChartLine },
 ]
 
-const StepItem = ({ step }) => {
-  const Icon = step.icon
-  return (
-    <div className="flex flex-col items-center p-2 md:p-3 text-center group cursor-default">
-      <div className="relative flex h-14 w-14 md:h-12 md:w-12 items-center justify-center rounded-2xl bg-white/15 border border-white/20 text-white shadow-lg shadow-black/10 transition-all duration-300 group-hover:bg-white/25 group-hover:scale-110 group-hover:shadow-xl group-hover:shadow-black/20">
-        <Icon className="text-xl md:text-lg" />
-      </div>
-      <p className="mt-2 font-bold text-white/50 text-[9px] md:text-[8px] tracking-[0.15em] uppercase">
-        Step {step.number}
-      </p>
-      <p className="mt-1 text-sm md:text-xs font-semibold text-white leading-snug max-w-[12rem] md:max-w-[10rem]">
-        {step.title}
-      </p>
-    </div>
-  )
-}
-
-const RightArrow = () => (
-  <div className="flex items-center justify-center text-white/40 shrink-0">
-    <svg width="24" height="10" viewBox="0 0 24 10" fill="none" className="md:w-[32px] md:h-[12px]">
-      <line x1="0" y1="5" x2="19" y2="5" stroke="currentColor" strokeWidth="1.5" strokeDasharray="3 2" />
-      <polygon points="18,1 24,5 18,9" fill="currentColor" />
-    </svg>
-  </div>
-)
-
-const LeftArrow = () => (
-  <div className="flex items-center justify-center text-white/40 shrink-0">
-    <svg width="24" height="10" viewBox="0 0 24 10" fill="none" className="md:w-[32px] md:h-[12px]">
-      <line x1="5" y1="5" x2="24" y2="5" stroke="currentColor" strokeWidth="1.5" strokeDasharray="3 2" />
-      <polygon points="6,1 0,5 6,9" fill="currentColor" />
-    </svg>
-  </div>
-)
-
-const DownArrowMobile = ({ align }) => (
-  <div className={`grid grid-cols-[1fr_auto_1fr] items-center md:hidden`}>
-    {align === 'right' ? (
-      <>
-        <div />
-        <div />
-        <div className="flex justify-center py-1.5 text-white/40">
-          <svg width="10" height="18" viewBox="0 0 10 18" fill="none">
-            <line x1="5" y1="0" x2="5" y2="13" stroke="currentColor" strokeWidth="1.5" strokeDasharray="3 2" />
-            <polygon points="1,12 5,18 9,12" fill="currentColor" />
-          </svg>
-        </div>
-      </>
-    ) : (
-      <>
-        <div className="flex justify-center py-1.5 text-white/40">
-          <svg width="10" height="18" viewBox="0 0 10 18" fill="none">
-            <line x1="5" y1="0" x2="5" y2="13" stroke="currentColor" strokeWidth="1.5" strokeDasharray="3 2" />
-            <polygon points="1,12 5,18 9,12" fill="currentColor" />
-          </svg>
-        </div>
-        <div />
-        <div />
-      </>
-    )}
-  </div>
-)
+const columns = [processSteps.slice(0, 4), processSteps.slice(4, 8)]
 
 const OurSEOProcess = () => {
-  const sectionRef = useRef(null)
+  const headerRef = useRef(null)
+  const stepRefs = useRef([])
+  const bottomRef = useRef(null)
 
   useEffect(() => {
-    if (!sectionRef.current) return
-
     const ctx = gsap.context(() => {
-      gsap.fromTo(sectionRef.current,
-        { y: 40, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.8, ease: 'power3.out', immediateRender: false,
-          scrollTrigger: { trigger: sectionRef.current, start: 'top 85%', toggleActions: 'play none none none' } }
+      gsap.fromTo(
+        headerRef.current,
+        { opacity: 0, y: 24 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.5,
+          ease: 'power2.out',
+          scrollTrigger: {
+            trigger: headerRef.current,
+            start: 'top 80%',
+          },
+        }
       )
-    }, sectionRef)
+
+      stepRefs.current.forEach((step, i) => {
+        if (!step) return
+        gsap.fromTo(
+          step,
+          { opacity: 0, y: 24 },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 0.4,
+            ease: 'power2.out',
+            delay: i * 0.08,
+            scrollTrigger: {
+              trigger: step,
+              start: 'top 80%',
+            },
+          }
+        )
+      })
+
+      if (bottomRef.current) {
+        gsap.fromTo(
+          bottomRef.current,
+          { opacity: 0, y: 24 },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 0.5,
+            ease: 'power2.out',
+            scrollTrigger: {
+              trigger: bottomRef.current,
+              start: 'top 90%',
+            },
+          }
+        )
+      }
+    })
 
     return () => ctx.revert()
   }, [])
 
+  let stepIndex = 0
+
   return (
-    <section ref={sectionRef} className="relative bg-gradient-to-br from-blue-500 via-blue-600 to-blue-700 rounded-2xl p-5 md:p-6 text-white overflow-hidden shadow-xl shadow-blue-500/15 h-full flex flex-col">
-      <div className="absolute top-0 right-0 w-48 h-48 bg-white/[0.06] rounded-full -translate-y-1/2 translate-x-1/2"></div>
-      <div className="absolute bottom-0 left-0 w-40 h-40 bg-white/[0.06] rounded-full translate-y-1/2 -translate-x-1/2"></div>
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-white/[0.04] rounded-full blur-3xl"></div>
+    <section className="bg-white dark:bg-gray-900 py-14 md:py-20 transition-colors duration-300">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header */}
+        <div ref={headerRef} className="text-center max-w-2xl mx-auto mb-16 opacity-0">
+          <div className="inline-flex items-center gap-2 bg-blue-50 dark:bg-blue-950/60 border border-blue-100/60 dark:border-blue-800/30 px-4 py-1.5 rounded-full mb-4">
+            <span className="w-1.5 h-1.5 rounded-full bg-blue-500" />
+            <span className="text-[11px] font-semibold text-blue-600 dark:text-blue-300 tracking-wider uppercase">
+              Our Process
+            </span>
+          </div>
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white leading-tight transition-colors duration-300">
+            Our SEO process
+          </h2>
+          <p className="mt-4 text-base text-gray-600 dark:text-gray-400 transition-colors duration-300">
+            Step-by-step strategy for measurable growth, transparent and
+            data-driven from day one.
+          </p>
+        </div>
 
-      <div className="relative mb-4 md:mb-5">
-        <div className="flex items-center gap-2">
-          <span className="inline-block px-3 py-1 text-[10px] md:text-xs font-semibold tracking-wider uppercase bg-white/15 rounded-full border border-white/10">
-            Our Process
+        {/* Timeline columns */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12">
+          {columns.map((col, colIndex) => (
+            <div key={colIndex} className="relative">
+              {/* dotted connector line */}
+              <div className="absolute left-4 top-4 bottom-4 border-l border-dashed border-gray-200 dark:border-gray-700 transition-colors duration-300" />
+
+              <div className="space-y-10">
+                {col.map((step, i) => {
+                  const Icon = step.icon
+                  const index = colIndex * 4 + i
+                  const currentIndex = stepIndex++
+                  return (
+                    <div
+                      key={step.title}
+                      ref={(el) => (stepRefs.current[currentIndex] = el)}
+                      className="relative flex items-start gap-5 opacity-0"
+                    >
+                      <span className="relative z-10 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 text-gray-900 dark:text-white text-xs font-mono font-semibold transition-colors duration-300">
+                        {index + 1}
+                      </span>
+                      <div className="pt-0.5">
+                        <div className="flex items-center gap-2 mb-1">
+                          <Icon className="text-blue-600 dark:text-blue-400 text-sm transition-colors duration-300" />
+                          <p className="text-sm font-semibold text-gray-900 dark:text-white transition-colors duration-300">
+                            {step.title}
+                          </p>
+                        </div>
+                        <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed transition-colors duration-300">
+                          {step.desc}
+                        </p>
+                      </div>
+                    </div>
+                  )
+                })}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Bottom indicator */}
+        <div
+          ref={bottomRef}
+          className="mt-16 pt-6 border-t border-gray-200 dark:border-gray-700 flex flex-col sm:flex-row justify-between items-center gap-2 transition-colors duration-300 opacity-0"
+        >
+          <span className="text-[11px] text-gray-500 dark:text-gray-400 transition-colors duration-300">
+            Transparent &bull; Data-Driven &bull; Results
           </span>
-          <span className="text-[10px] text-white/60">8 Steps</span>
+          <span className="text-[11px] text-gray-500 dark:text-gray-400 transition-colors duration-300">
+            8 Steps to Success
+          </span>
         </div>
-        <h3 className="text-lg md:text-xl font-bold text-white mt-2">
-          Our SEO Process
-        </h3>
-        <p className="text-white/60 text-xs md:text-sm mt-0.5">Step-by-step strategy for measurable growth</p>
-      </div>
-
-      {/* Mobile: zigzag snake pattern */}
-      <div className="relative md:hidden">
-        <div className="grid grid-cols-[1fr_auto_1fr] items-center">
-          <StepItem step={processSteps[0]} />
-          <RightArrow />
-          <StepItem step={processSteps[1]} />
-        </div>
-        <DownArrowMobile align="right" />
-        <div className="grid grid-cols-[1fr_auto_1fr] items-center">
-          <StepItem step={processSteps[3]} />
-          <LeftArrow />
-          <StepItem step={processSteps[2]} />
-        </div>
-        <DownArrowMobile align="left" />
-        <div className="grid grid-cols-[1fr_auto_1fr] items-center">
-          <StepItem step={processSteps[4]} />
-          <RightArrow />
-          <StepItem step={processSteps[5]} />
-        </div>
-        <DownArrowMobile align="right" />
-        <div className="grid grid-cols-[1fr_auto_1fr] items-center">
-          <StepItem step={processSteps[7]} />
-          <LeftArrow />
-          <StepItem step={processSteps[6]} />
-        </div>
-      </div>
-
-      {/* Desktop: zigzag snake pattern */}
-      <div className="relative hidden md:block">
-        <div className="flex items-center justify-between">
-          {processSteps.slice(0, 4).map((step, stepIndex) => (
-            <React.Fragment key={step.title}>
-              <StepItem step={step} />
-              {stepIndex < 3 && <RightArrow />}
-            </React.Fragment>
-          ))}
-        </div>
-        <div className="flex justify-end py-1 pr-12 text-white/40">
-          <svg width="10" height="16" viewBox="0 0 10 16" fill="none">
-            <line x1="5" y1="0" x2="5" y2="11" stroke="currentColor" strokeWidth="1.5" strokeDasharray="3 2" />
-            <polygon points="1,10 5,16 9,10" fill="currentColor" />
-          </svg>
-        </div>
-        <div className="flex items-center justify-between">
-          {[processSteps[7], processSteps[6], processSteps[5], processSteps[4]].map((step, stepIndex) => (
-            <React.Fragment key={step.title}>
-              <StepItem step={step} />
-              {stepIndex < 3 && <LeftArrow />}
-            </React.Fragment>
-          ))}
-        </div>
-      </div>
-
-      <div className="relative mt-4 md:mt-5 pt-3 md:pt-4 border-t border-white/10 flex justify-between items-center">
-        <span className="text-[10px] text-white/50">Transparent • Data-Driven • Results</span>
-        <span className="text-[10px] text-white/50">8 Steps to Success</span>
       </div>
     </section>
   )

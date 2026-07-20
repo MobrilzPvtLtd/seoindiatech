@@ -288,7 +288,7 @@ export default function PackageFeatures() {
 
         {/* Single button after the last table */}
         <div className="mt-10 flex justify-center">
-          <Link href="/contactus">
+          <Link href="/contact-us">
             <button
               className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 
                        text-white font-medium px-8 py-3 cursor-pointer rounded-lg shadow-md 

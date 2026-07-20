@@ -201,7 +201,7 @@ const Header = () => {
   useEffect(() => {
     if (isMenuOpen) {
       document.body.style.overflow = 'hidden'
-      document.body.style.touchAction = 'none' // For mobile devices
+      document.body.style.touchAction = 'none'
     } else {
       document.body.style.overflow = ''
       document.body.style.touchAction = ''
@@ -280,9 +280,10 @@ const Header = () => {
     setIsSolutionsOpen(false)
   }
 
-  // Contact button styling
+  // Contact button styling - IMPROVED with better padding and spacing
   const contactButtonClass =
-    'bg-gradient-to-r from-blue-600 to-blue-800 dark:from-gray-800 dark:to-gray-900 text-white px-10 py-2.5 rounded-full font-medium transition-all duration-300 hover:shadow-lg hover:scale-105 transform active:scale-95 whitespace-nowrap shadow-md border border-blue-700/20 dark:border-gray-500/30'
+    'bg-gradient-to-r from-blue-600 to-blue-800 dark:from-gray-800 dark:to-gray-900 text-white px-6 py-2.5 rounded-full font-medium transition-all duration-300 hover:shadow-lg hover:scale-105 transform active:scale-95 whitespace-nowrap shadow-md border border-blue-700/20 dark:border-gray-500/30 text-sm'
+  
   const mobileContactButtonClass =
     'block bg-gradient-to-r from-blue-600 to-blue-800 dark:from-gray-800 dark:to-gray-900 text-white px-8 py-3 rounded-full font-medium text-center transition-all duration-300 hover:shadow-lg hover:scale-105 transform active:scale-95 w-full shadow-md border border-blue-700/20 dark:border-gray-500/30'
 
@@ -303,63 +304,63 @@ const Header = () => {
           shadow-md dark:shadow-gray-800/30
         `}
       >
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-32 flex items-center justify-between ">
-          {/* Logo with Next.js Image and Link to Homepage */}
-          {/* <div className="flex items-center"> */}
-          {mounted ? (
-            <Link href="/" passHref>
-              <div className="relative w-16 h-10 md:w-28 md:h-16 mr-2 cursor-pointer my-0.5">
-                <Image
-                  src="/sit.png"
-                  alt="SIT Logo"
-                  fill
-                  sizes="(max-width: 768px) 64px, 96px"
-                  className="object-contain object-center dark:invert"
-                  priority
-                />
-              </div>
-            </Link>
-          ) : (
-            <div className="w-16 h-10 md:w-20 md:h-12 mr-2 bg-gray-100 dark:bg-gray-800 animate-pulse"></div>
-          )}
-          {/* </div> */}
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 flex items-center justify-between h-16 md:h-20">
+          {/* Logo - FIXED: Better padding and sizing */}
+          <div className="flex items-center flex-shrink-0">
+            {mounted ? (
+              <Link href="/" passHref className="block">
+                <div className="relative w-12 h-12 md:w-20 md:h-20 cursor-pointer">
+                  <Image
+                    src="/sit.png"
+                    alt="SIT Logo"
+                    fill
+                    sizes="(max-width: 768px) 48px, 80px"
+                    className="object-contain object-left dark:invert"
+                    priority
+                  />
+                </div>
+              </Link>
+            ) : (
+              <div className="w-12 h-12 md:w-20 md:h-20 bg-gray-100 dark:bg-gray-800 animate-pulse rounded"></div>
+            )}
+          </div>
 
           {/* Desktop Navigation - Centered */}
           <nav className="hidden md:flex flex-1 justify-center">
-            <ul className="flex space-x-4 lg:space-x-10">
-              <li className="flex items-center">
+            <ul className="flex space-x-6 lg:space-x-8 xl:space-x-10 items-center">
+              <li>
                 <Link
                   href="/"
-                  className="text-sm md:text-sm lg:text-base text-gray-600 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-bold hover:border-b-2 hover:border-blue-500 py-2 transition-colors duration-300"
+                  className="text-sm lg:text-base text-gray-600 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-semibold hover:border-b-2 hover:border-blue-500 py-1 transition-colors duration-300"
                 >
                   Home
                 </Link>
               </li>
-              <li className="flex items-center">
+              <li>
                 <Link
                   href="/who-we-are"
-                  className=" whitespace-nowrap text-sm md:text-sm lg:text-base text-gray-600 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-bold hover:border-b-2 hover:border-blue-500 py-2 transition-colors duration-300"
+                  className="text-sm lg:text-base text-gray-600 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-semibold hover:border-b-2 hover:border-blue-500 py-1 transition-colors duration-300 whitespace-nowrap"
                 >
                   Who We Are
                 </Link>
               </li>
               {/* Desktop Services Dropdown */}
               <li
-                className="relative flex items-center"
+                className="relative"
                 ref={servicesRef}
                 onMouseEnter={handleServicesMouseEnter}
                 onMouseLeave={handleServicesMouseLeave}
               >
                 <button
-                  className="text-sm md:text-sm lg:text-base text-gray-600 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-bold hover:border-b-2 hover:border-blue-500 py-2 flex items-center hover:cursor-pointer transition-colors duration-300"
+                  className="text-sm lg:text-base text-gray-600 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-semibold hover:border-b-2 hover:border-blue-500 py-1 flex items-center gap-1 transition-colors duration-300"
                   aria-expanded={isServicesOpen}
                   aria-controls="services-dropdown"
                 >
-                  Services{' '}
+                  Services
                   {isServicesOpen ? (
-                    <ChevronUp size={24} className="pt-1" />
+                    <ChevronUp size={18} className="mt-0.5" />
                   ) : (
-                    <ChevronDown size={24} className="pt-1" />
+                    <ChevronDown size={18} className="mt-0.5" />
                   )}
                 </button>
                 {isServicesOpen && (
@@ -374,49 +375,18 @@ const Header = () => {
                   </div>
                 )}
               </li>
-              {/* Desktop Solutions Dropdown */}
-              {/* <li
-                className="relative flex items-center"
-                ref={solutionsRef}
-                onMouseEnter={handleSolutionsMouseEnter}
-                onMouseLeave={handleSolutionsMouseLeave}
-              >
-                <button
-                  className="text-sm md:text-sm lg:text-base text-gray-600 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-bold hover:border-b-2 hover:border-blue-500 py-2 flex items-center hover:cursor-pointer transition-colors duration-300"
-                  aria-expanded={isSolutionsOpen}
-                  aria-controls="solutions-dropdown"
-                >
-                  Solutions{' '}
-                  {isSolutionsOpen ? (
-                    <ChevronUp size={24} className="pt-1" />
-                  ) : (
-                    <ChevronDown size={24} className="pt-1" />
-                  )}
-                </button>
-                {isSolutionsOpen && (
-                  <div
-                    id="solutions-dropdown"
-                    className="absolute left-1/2 top-full mt-2 transform -translate-x-1/2 w-full max-w-[80vw] md:w-[600px] lg:w-[900px] bg-white dark:bg-gray-800 shadow-lg dark:shadow-gray-700 rounded-lg z-30 transition-colors duration-300"
-                    onMouseEnter={handleSolutionsMouseEnter}
-                    onMouseLeave={handleSolutionsMouseLeave}
-                    onClick={handleCardClick}
-                  >
-                    <SolutionDropdown />
-                  </div>
-                )}
-              </li> */}
-              <li className="flex items-center">
+              <li>
                 <Link
                   href="/seo-packages"
-                  className="text-sm md:text-sm lg:text-base text-gray-600 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-bold hover:border-b-2 hover:border-blue-500 py-2 transition-colors duration-300"
+                  className="text-sm lg:text-base text-gray-600 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-semibold hover:border-b-2 hover:border-blue-500 py-1 transition-colors duration-300"
                 >
                   Packages
                 </Link>
               </li>
-              <li className="flex items-center">
+              <li>
                 <Link
                   href="/blog"
-                  className="text-sm md:text-sm lg:text-base text-gray-600 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-bold hover:border-b-2 hover:border-blue-500 py-2 transition-colors duration-300"
+                  className="text-sm lg:text-base text-gray-600 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-semibold hover:border-b-2 hover:border-blue-500 py-1 transition-colors duration-300"
                 >
                   Blog
                 </Link>
@@ -425,7 +395,7 @@ const Header = () => {
           </nav>
 
           {/* Mobile Menu Toggle Button */}
-          <div className="md:hidden flex items-center gap-4">
+          <div className="md:hidden flex items-center gap-3">
             <ThemeToggleButton />
             <button
               className="menu-toggle text-gray-600 dark:text-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-md p-1 z-50"
@@ -438,9 +408,9 @@ const Header = () => {
           </div>
 
           {/* Theme Toggle and Contact Button - Desktop only */}
-          <div className="hidden md:flex items-center gap-4">
+          <div className="hidden md:flex items-center gap-3">
             <ThemeToggleButton />
-            <Link href="/contactus" className={contactButtonClass}>
+            <Link href="/contact-us" className={contactButtonClass}>
               Contact Us
             </Link>
           </div>
@@ -456,7 +426,7 @@ const Header = () => {
         ></div>
       )}
 
-      {/* Mobile Menu Drawer - Fixed to viewport, not relative to header */}
+      {/* Mobile Menu Drawer - Fixed to viewport */}
       <div
         ref={mobileMenuRef}
         className={`
@@ -466,11 +436,12 @@ const Header = () => {
           flex flex-col md:hidden
         `}
       >
-        <div className="flex justify-end p-5 border-b border-gray-200 dark:border-gray-800">
+        <div className="flex justify-between items-center p-5 border-b border-gray-200 dark:border-gray-800">
+          <span className="text-lg font-bold text-gray-900 dark:text-white">Menu</span>
           <button
             onClick={toggleMobileMenu}
             aria-label="Close menu"
-            className="text-gray-600 dark:text-gray-300 focus:outline-none"
+            className="text-gray-600 dark:text-gray-300 focus:outline-none p-1"
           >
             <X className="w-6 h-6" />
           </button>
@@ -499,81 +470,59 @@ const Header = () => {
 
             {/* Mobile Services Dropdown */}
             <li>
-              <button className="flex justify-between items-center w-full text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 px-4 py-3 rounded-md font-medium">
-                Services
-              </button>
-
-              <ul className="pl-4 mt-1 space-y-1">
-                {serviceCategories.map((category) => (
-                  <li key={category.slug}>
-                    <button
-                      onClick={() =>
-                        setOpenCategory(
-                          openCategory === category.slug ? null : category.slug,
-                        )
-                      }
-                      className="flex justify-between items-center w-full text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 px-4 py-2 rounded-md"
-                    >
-                      {category.title}
-                      {openCategory === category.slug ? (
-                        <ChevronUp size={16} />
-                      ) : (
-                        <ChevronDown size={16} />
-                      )}
-                    </button>
-
-                    {openCategory === category.slug && (
-                      <ul className="pl-6 mt-1 space-y-1">
-                        {category.services.map((service) => (
-                          <li key={service.slug}>
-                            <Link
-                              href={`/services/${service.slug}`}
-                              className="flex items-center text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 px-4 py-2 rounded-md"
-                              onClick={() => setIsMenuOpen(false)}
-                            >
-                              <CircleDot className="w-2 h-2 mr-2 text-black dark:text-white" />
-                              {service.title}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    )}
-                  </li>
-                ))}
-              </ul>
-            </li>
-
-            {/* Mobile Solutions Dropdown */}
-            {/* <li>
-              <button
-                onClick={handleSolutionsClick}
+              <button 
+                onClick={handleServicesClick}
                 className="flex justify-between items-center w-full text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 px-4 py-3 rounded-md font-medium"
-                aria-expanded={isSolutionsOpen}
               >
-                Solutions
-                {isSolutionsOpen ? (
+                Services
+                {isServicesOpen ? (
                   <ChevronUp size={18} />
                 ) : (
                   <ChevronDown size={18} />
                 )}
               </button>
-              {isSolutionsOpen && (
-                <ul className="pl-6 mt-1 space-y-1">
-                  {solutions.map((solution) => (
-                    <li key={solution.slug}>
-                      <Link
-                        href={`/solution/${solution.slug}`}
-                        className="flex items-center text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 px-4 py-2 rounded-md"
-                        onClick={() => setIsMenuOpen(false)}
+
+              {isServicesOpen && (
+                <ul className="pl-4 mt-1 space-y-1">
+                  {serviceCategories.map((category) => (
+                    <li key={category.slug}>
+                      <button
+                        onClick={() =>
+                          setOpenCategory(
+                            openCategory === category.slug ? null : category.slug,
+                          )
+                        }
+                        className="flex justify-between items-center w-full text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 px-4 py-2 rounded-md text-sm"
                       >
-                        <CircleDot className="w-2 h-2 mr-2 text-black dark:text-white" />
-                        {solution.title}
-                      </Link>
+                        {category.title}
+                        {openCategory === category.slug ? (
+                          <ChevronUp size={14} />
+                        ) : (
+                          <ChevronDown size={14} />
+                        )}
+                      </button>
+
+                      {openCategory === category.slug && (
+                        <ul className="pl-6 mt-1 space-y-1">
+                          {category.services.map((service) => (
+                            <li key={service.slug}>
+                              <Link
+                                href={`/services/${service.slug}`}
+                                className="flex items-center text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 px-4 py-2 rounded-md text-sm"
+                                onClick={() => setIsMenuOpen(false)}
+                              >
+                                <CircleDot className="w-2 h-2 mr-2 text-black dark:text-white flex-shrink-0" />
+                                {service.title}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
                     </li>
                   ))}
                 </ul>
               )}
-            </li> */}
+            </li>
 
             <li>
               <Link
@@ -599,7 +548,7 @@ const Header = () => {
 
         <div className="p-6 border-t border-gray-200 dark:border-gray-800 mt-auto">
           <Link
-            href="/contactus"
+            href="/contact-us"
             className={mobileContactButtonClass}
             onClick={() => setIsMenuOpen(false)}
           >

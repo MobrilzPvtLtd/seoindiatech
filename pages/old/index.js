@@ -1,19 +1,7 @@
 import Image from 'next/image'
 import { Geist, Geist_Mono } from 'next/font/google'
 import HomePage from '@/component/home/HomePage'
-import SEO from '@/component/SEO/SEO'
 import Head from 'next/head'
-import NewHero from '@/component/home/NewHero'
-import WhyChooseSection from '@/component/home/WhyChooseSection'
-import OurServicesSection from '@/component/home/OurServicesSection'
-import OurSEOProcess from '@/component/home/OurSEOProcess'
-import AverageClientResults from '@/component/home/AverageClientResults'
-import IndustriesSection from '@/component/home/IndustriesSection'
-import BlogSection from '@/component/home/BlogSection'
-import Testimonial from '@/component/home/Testimonial'
-import Teams from '@/component/home/Teams'
-import FAQSection from '@/component/home/FAQSection'
-import SEOSolution from '@/component/home/SEO_Solution'
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -121,39 +109,7 @@ export default function Home() {
           }}
         />
       </Head>
-      <NewHero />
-      <WhyChooseSection />
-      <OurServicesSection />
-      <section className="bg-white dark:bg-gray-900 py-16 md:py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-10">
-            <div className="inline-flex items-center gap-2 bg-blue-50 dark:bg-blue-950/60 border border-blue-100/60 dark:border-blue-800/30 px-4 py-1.5 rounded-full mb-4">
-              <span className="w-1.5 h-1.5 rounded-full bg-blue-500" />
-              <span className="text-[11px] font-semibold text-blue-600 dark:text-blue-300 tracking-wider uppercase">
-                How We Work
-              </span>
-            </div>
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white">
-              Our Proven Process &{' '}
-              <span className="text-blue-600 dark:text-blue-400">Client Results</span>
-            </h2>
-            <p className="mt-3 text-gray-600 dark:text-gray-300 text-base max-w-lg mx-auto">
-              A systematic approach to SEO that delivers measurable growth for every client.
-            </p>
-          </div>
-
-          <div className="grid gap-5 lg:grid-cols-[1.15fr_0.85fr] items-stretch">
-            <OurSEOProcess />
-            <AverageClientResults />
-          </div>
-        </div>
-      </section>
-      <SEOSolution/>
-      <IndustriesSection />
-      <BlogSection />
-      <Testimonial />
-      <Teams />
-      <FAQSection />
+      <HomePage />
     </>
   )
 }

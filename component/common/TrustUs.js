@@ -53,7 +53,7 @@ const TrustUs = ({
         {/* Button */}
         <div className="w-full md:w-auto flex-shrink-0">
           <Link
-            href="/contactus"
+            href="/contact-us"
             className={`
               ${buttonGradient} ${buttonTextColor} 
               inline-flex items-center justify-center gap-2

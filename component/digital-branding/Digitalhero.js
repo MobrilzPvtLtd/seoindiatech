@@ -53,7 +53,7 @@ const Digitalhero = () => {
           {/* CTA */}
           <div className="pt-4 flex flex-wrap gap-4">
             <Link
-              href="/contactus"
+              href="/contact-us"
               className="cursor-pointer bg-gradient-to-r from-blue-600 to-blue-800 text-white px-6 py-3 rounded-full text-base hover:scale-105 transition-all flex items-center group"
             >
               Get Started now

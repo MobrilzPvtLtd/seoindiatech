@@ -25,7 +25,7 @@ export default function WhyChooseSection() {
           </p>
 
           {/* CTA Button */}
-          <Link href="/contactus">
+          <Link href="/contact-us">
             <button className="bg-blue-600 hover:bg-blue-700 text-white cursor-pointer font-semibold py-3 px-6 rounded-lg transition duration-300">
               Talk to Our Team
             </button>

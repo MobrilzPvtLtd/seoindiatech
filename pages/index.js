@@ -1,8 +1,18 @@
 import Image from 'next/image'
 import { Geist, Geist_Mono } from 'next/font/google'
-import HomePage from '@/component/home/HomePage'
-import SEO from '@/component/SEO/SEO'
 import Head from 'next/head'
+import NewHero from '@/component/home/NewHero'
+import WhyChooseSection from '@/component/home/WhyChooseSection'
+import OurServicesSection from '@/component/home/OurServicesSection'
+import OurSEOProcess from '@/component/home/OurSEOProcess'
+import AverageClientResults from '@/component/home/AverageClientResults'
+import IndustriesSection from '@/component/home/IndustriesSection'
+import BlogSection from '@/component/home/BlogSection'
+import Testimonial from '@/component/home/Testimonial'
+import Teams from '@/component/home/Teams'
+import FAQSection from '@/component/home/FAQSection'
+import SEOSolution from '@/component/home/SEO_Solution'
+import CTABanner from '@/component/home/CTABanner'
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -110,7 +120,17 @@ export default function Home() {
           }}
         />
       </Head>
-      <HomePage />
+      <NewHero />
+      <WhyChooseSection />
+      <OurServicesSection />
+      <OurSEOProcess />
+      <SEOSolution />
+      <IndustriesSection />
+      <BlogSection />
+      <Testimonial />
+      <Teams />
+      <FAQSection />
+      <CTABanner />
     </>
   )
 }

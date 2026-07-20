@@ -119,7 +119,7 @@ const Socialmediastrategies = () => {
             Explore Strategies
           </a>
           <a
-            href="/contactus"
+            href="/contact-us"
             className="hidden px-8 py-3 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-200 font-medium rounded-full hover:bg-gray-50 dark:hover:bg-gray-800 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-700"
           >
             Contact Us
@@ -183,7 +183,7 @@ const Socialmediastrategies = () => {
             </div>
             <div className="flex-shrink-0">
               <a
-                href="/contactus"
+                href="/contact-us"
                 className="inline-block px-8 py-4 bg-white bg-gradient-to-r dark:from-gray-800 dark:to-gray-900 text-blue-600 dark:text-gray-200 font-medium rounded-full shadow-md hover:bg-gray-50 dark:hover:bg-gray-700 transform hover:scale-105 transition-all duration-300"
               >
                 Schedule a Consultation

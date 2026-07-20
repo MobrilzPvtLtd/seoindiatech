@@ -111,7 +111,7 @@ export default function EcommerceWhoDifferent() {
 
           {/* CTA Button */}
           <Link
-            href="/contactus"
+            href="/contact-us"
             className="inline-block w-fit px-6 py-3 rounded-xl bg-blue-600 text-white font-medium transition-all duration-300 hover:bg-blue-700 hover:shadow-lg"
           >
             Contact Us Today

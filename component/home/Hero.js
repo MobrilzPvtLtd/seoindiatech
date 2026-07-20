@@ -39,7 +39,7 @@ const Hero = () => {
           </p>
 
           <div className="flex items-center justify-center md:justify-start w-full md:w-auto">
-            <Link href="/contactus" className="inline-block">
+            <Link href="/contact-us" className="inline-block">
               <button className="cursor-pointer dark:from-gray-800 dark:to-gray-900 bg-gradient-to-r from-blue-600 to-blue-800 text-white px-8 py-3.5 rounded-full font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105 transform active:scale-95 shadow-md border border-blue-700/20 dark:border-gray-500/30">
                 Get started now
               </button>
@@ -138,7 +138,7 @@ const Hero = () => {
             </div>
 
             {/* CTA Button */}
-            <Link href="/contactus">
+            <Link href="/contact-us">
               <button className="w-full cursor-pointer sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r dark:from-gray-800 dark:to-gray-900 bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-500 dark:to-blue-600 text-white font-semibold tracking-wide  hover:shadow-xl hover:scale-[1.02] transition-all duration-300 border border-blue-700/20 dark:border-gray-500/30">
                 Schedule a Consultation
               </button>
