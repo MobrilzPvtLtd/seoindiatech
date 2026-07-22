@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function PackageHero() {
   return (
-    <section className="w-full bg-blue-50 dark:bg-gray-900 py-20">
+    <section className="w-full bg-blue-50 dark:bg-gray-900 pt-[140px] pb-20">
       <div className="max-w-5xl mx-auto px-6 text-center">
         {/* Heading */}
         <h1 className="text-3xl md:text-4xl font-semibold text-blue-900 dark:text-white mb-4">

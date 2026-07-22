@@ -1,7 +1,7 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { ArrowRight, Clock, Calendar, User } from 'lucide-react'
+import { ArrowRight, Clock, Calendar, User, Sparkles, Filter, Grid3X3, LayoutList } from 'lucide-react'
 import posts from '@/utils/BlogPost'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
@@ -23,6 +23,10 @@ const BlogSection = () => {
   const sectionRef = useRef(null)
   const headerRef = useRef(null)
   const gridRef = useRef(null)
+  const [activeFilter, setActiveFilter] = useState('All')
+  const [viewMode, setViewMode] = useState('grid')
+
+  const filters = ['All', 'Blogs', 'News', 'Case Studies', 'Interviews']
 
   useEffect(() => {
     if (!sectionRef.current) return
@@ -49,147 +53,159 @@ const BlogSection = () => {
   }, [])
 
   return (
-    <section ref={sectionRef} className="relative py-14 md:py-20 bg-white dark:bg-gray-900 transition-colors duration-300">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header with accent line */}
-        <div ref={headerRef} className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 bg-blue-50 dark:bg-blue-950/60 border border-blue-100/60 dark:border-blue-800/30 px-4 py-1.5 rounded-full mb-4">
-            <span className="w-1.5 h-1.5 rounded-full bg-blue-500" />
-            <span className="text-[11px] font-semibold text-blue-600 dark:text-blue-300 tracking-wider uppercase">
-              Our Blog
+    <section ref={sectionRef} className="relative py-16 md:py-24 bg-white dark:bg-gray-900 transition-colors duration-300 overflow-hidden">
+      {/* Decorative background elements */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute -top-40 -right-40 w-96 h-96 bg-blue-500/5 dark:bg-blue-500/10 rounded-full blur-3xl" />
+        <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-violet-500/5 dark:bg-violet-500/10 rounded-full blur-3xl" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-emerald-500/5 dark:bg-emerald-500/10 rounded-full blur-3xl" />
+      </div>
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header Section */}
+        <div ref={headerRef}>
+          {/* INSIGHTS Label */}
+          <div className="flex items-center gap-3 mb-4">
+            <div className="w-8 h-0.5 bg-gradient-to-r from-blue-500 to-violet-500" />
+            <span className="text-xs font-bold tracking-[0.2em] text-blue-600 dark:text-blue-400 uppercase">
+              Insights
             </span>
+            <div className="flex-1 h-0.5 bg-gradient-to-r from-violet-500 to-transparent" />
           </div>
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white leading-tight">
-            Insights from the{' '}
-            <span className="text-blue-600 dark:text-blue-400">Digital Frontier</span>
-          </h2>
+
+          {/* Title and Action Row */}
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-8">
+            <div>
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white leading-tight">
+                Latest News &amp; Insights
+              </h2>
+              <p className="mt-3 text-gray-600 dark:text-gray-400 text-lg">
+                Stay updated with the latest trends and strategies
+              </p>
+            </div>
+            <Link
+              href="/blog"
+              className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 font-semibold hover:gap-3 transition-all group shrink-0"
+            >
+              <span>View all</span>
+              <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+            </Link>
+          </div>
+
+          {/* Filter Bar - As shown in screenshot */}
+          <div className="flex flex-wrap items-center justify-between gap-4 py-4 border-y border-gray-200 dark:border-gray-800 mb-8">
+            <div className="flex items-center gap-2">
+              <Filter className="w-4 h-4 text-gray-400 dark:text-gray-500" />
+              <span className="text-sm font-medium text-gray-600 dark:text-gray-400">Filter by</span>
+            </div>
+            
+            <div className="flex flex-wrap items-center gap-2">
+              {filters.map((filter) => (
+                <button
+                  key={filter}
+                  onClick={() => setActiveFilter(filter)}
+                  className={`px-4 py-1.5 rounded-full text-sm font-medium transition-all duration-300 ${
+                    activeFilter === filter
+                      ? 'bg-blue-600 text-white shadow-lg shadow-blue-500/25'
+                      : 'text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800'
+                  }`}
+                >
+                  {filter}
+                </button>
+              ))}
+            </div>
+
+            {/* View Toggle - Optional */}
+            <div className="flex items-center gap-1 border border-gray-200 dark:border-gray-700 rounded-lg p-1">
+              <button
+                onClick={() => setViewMode('grid')}
+                className={`p-1.5 rounded transition-colors ${
+                  viewMode === 'grid' 
+                    ? 'bg-blue-600 text-white' 
+                    : 'text-gray-400 hover:text-gray-600 dark:hover:text-gray-300'
+                }`}
+              >
+                <Grid3X3 className="w-4 h-4" />
+              </button>
+              <button
+                onClick={() => setViewMode('list')}
+                className={`p-1.5 rounded transition-colors ${
+                  viewMode === 'list' 
+                    ? 'bg-blue-600 text-white' 
+                    : 'text-gray-400 hover:text-gray-600 dark:hover:text-gray-300'
+                }`}
+              >
+                <LayoutList className="w-4 h-4" />
+              </button>
+            </div>
+          </div>
         </div>
 
-        {/* Featured Post - Hero Style */}
-        <div ref={gridRef} className="mb-8">
-          <Link href={`/blog/${latestPosts[0].slug}`} className="group block">
-            <article className="relative rounded-3xl overflow-hidden bg-gray-900">
-              <div className="relative h-[400px] md:h-[500px]">
-                <Image
-                  src={latestPosts[0].image}
-                  alt={latestPosts[0].title}
-                  fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/60 to-transparent" />
-
-                {/* Content overlay */}
-                <div className="absolute bottom-0 left-0 right-0 p-8 md:p-12 max-w-3xl">
-                  <span className={`inline-block ${categoryColors[latestPosts[0].category] || 'bg-blue-600'} text-white text-xs font-bold px-3 py-1.5 rounded-full tracking-wider uppercase mb-4`}>
-                    {latestPosts[0].category}
-                  </span>
-                  <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight group-hover:text-blue-300 transition-colors">
-                    {latestPosts[0].title}
-                  </h3>
-                  <p className="mt-3 text-white/80 text-base md:text-lg line-clamp-2">
-                    {latestPosts[0].desc}
-                  </p>
-                  <div className="mt-5 flex flex-wrap items-center gap-6 text-white/60 text-sm">
-                    <span className="flex items-center gap-2">
-                      <User className="w-4 h-4" /> Admin
-                    </span>
-                    <span className="flex items-center gap-2">
-                      <Calendar className="w-4 h-4" /> Dec 15, 2024
-                    </span>
-                    <span className="flex items-center gap-2">
-                      <Clock className="w-4 h-4" /> 5 min read
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </article>
-          </Link>
-        </div>
-
-        {/* Grid Posts - Magazine Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {latestPosts.slice(1, 4).map((post, idx) => (
-            <Link key={idx} href={`/blog/${post.slug}`} className="group block">
-              <article className="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-700 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/10 dark:hover:shadow-blue-900/20 hover:-translate-y-2">
-                <div className="relative h-56 overflow-hidden">
+        {/* 3 Column Grid - Full Card Background Images */}
+        <div ref={gridRef} className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {latestPosts.slice(0, 3).map((post, idx) => (
+            <Link key={idx} href={`/blog/${post.slug}`} className="group block h-full">
+              <article className="relative h-[420px] rounded-2xl overflow-hidden transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl">
+                {/* Background Image */}
+                <div className="absolute inset-0">
                   <Image
                     src={post.image}
                     alt={post.title}
                     fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="object-cover transition-transform duration-700 group-hover:scale-110"
+                    priority={idx === 0}
                   />
-                  <div className="absolute top-4 left-4">
-                    <span className={`${categoryColors[post.category] || 'bg-blue-600'} text-white text-[10px] font-bold px-3 py-1 rounded-full tracking-wider uppercase`}>
+                  {/* Dark Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/20 group-hover:from-black/80 group-hover:via-black/40 transition-all duration-500" />
+                </div>
+
+                {/* Content - Positioned at bottom */}
+                <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
+                  {/* Category Badge */}
+                  <div className="mb-3">
+                    <span className={`${categoryColors[post.category] || 'bg-blue-600'} text-white text-[10px] font-bold px-3 py-1.5 rounded-full tracking-wider uppercase shadow-lg`}>
                       {post.category}
                     </span>
                   </div>
-                </div>
-                <div className="p-6">
-                  <h3 className="font-bold text-gray-900 dark:text-white text-lg line-clamp-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+
+                  {/* Title */}
+                  <h3 className="text-xl md:text-2xl font-bold text-white leading-snug line-clamp-2 group-hover:text-blue-300 transition-colors">
                     {post.title}
                   </h3>
-                  <p className="mt-2 text-gray-500 dark:text-gray-400 text-sm line-clamp-2">
+
+                  {/* Description */}
+                  <p className="mt-2 text-white/70 text-sm line-clamp-2">
                     {post.desc}
                   </p>
-                  <div className="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700 flex items-center justify-between">
-                    <div className="flex items-center gap-3 text-gray-400 dark:text-gray-500 text-xs">
-                      <span className="flex items-center gap-1">
-                        <Calendar className="w-3 h-3" /> Dec 15
-                      </span>
+
+                  {/* Footer with Author & Meta */}
+                  <div className="mt-4 pt-4 border-t border-white/20 flex items-center justify-between">
+                    <div className="flex items-center gap-3">
+                      <div className="w-8 h-8 rounded-full bg-gradient-to-r from-blue-500 to-violet-500 flex items-center justify-center text-white font-bold text-xs">
+                        JD
+                      </div>
+                      <div>
+                        <p className="text-white text-sm font-medium">John Doe</p>
+                        <div className="flex items-center gap-2 text-white/50 text-xs">
+                          <span className="flex items-center gap-1">
+                            <Clock className="w-3 h-3" /> 4 min read
+                          </span>
+                          <span>•</span>
+                          <span>Dec 15, 2024</span>
+                        </div>
+                      </div>
                     </div>
-                    <span className="text-blue-600 dark:text-blue-400 font-semibold text-sm group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">
-                      Read <ArrowRight className="w-4 h-4" />
+                    <span className="text-white font-semibold text-sm group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">
+                      Read <ArrowRight className="w-3.5 h-3.5" />
                     </span>
                   </div>
                 </div>
+
+                {/* Gradient overlay on hover for better text readability */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </article>
             </Link>
           ))}
-        </div>
-
-        {/* Bottom Posts - Minimal */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
-          {latestPosts.slice(4, 6).map((post, idx) => (
-            <Link key={idx} href={`/blog/${post.slug}`} className="group block">
-              <article className="flex gap-5 bg-white dark:bg-gray-800 rounded-2xl p-4 border border-gray-200 dark:border-gray-700 transition-all duration-300 hover:shadow-xl hover:border-blue-400 dark:hover:border-blue-500">
-                <div className="relative w-28 h-28 md:w-32 md:h-32 flex-shrink-0 rounded-xl overflow-hidden">
-                  <Image
-                    src={post.image}
-                    alt={post.title}
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                </div>
-                <div className="flex-1 flex flex-col justify-center min-w-0">
-                  <span className={`inline-block ${categoryColors[post.category] || 'bg-blue-600'} text-white text-[8px] font-bold px-2 py-0.5 rounded-full tracking-wider uppercase w-fit mb-2`}>
-                    {post.category}
-                  </span>
-                  <h3 className="font-bold text-gray-900 dark:text-white text-sm line-clamp-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-                    {post.title}
-                  </h3>
-                  <div className="mt-1 flex items-center gap-3 text-gray-400 dark:text-gray-500 text-xs">
-                    <span className="flex items-center gap-1">
-                      <Calendar className="w-3 h-3" /> Dec 15
-                    </span>
-                    <span className="flex items-center gap-1">
-                      <Clock className="w-3 h-3" /> 5 min
-                    </span>
-                  </div>
-                </div>
-              </article>
-            </Link>
-          ))}
-        </div>
-
-        {/* CTA */}
-        <div className="text-center mt-14">
-          <Link
-            href="/blog"
-            className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:shadow-xl hover:scale-105 active:scale-95 text-sm"
-          >
-            Explore All Articles
-            <ArrowRight className="w-4 h-4" />
-          </Link>
         </div>
       </div>
     </section>

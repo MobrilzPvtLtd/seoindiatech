@@ -133,7 +133,7 @@ const NewHero = () => {
   }, [])
 
   return (
-    <section className="relative bg-gradient-to-br from-gray-50 via-white to-gray-50 dark:from-gray-900 dark:via-gray-900 dark:to-gray-800/90 overflow-hidden">
+    <section className="relative bg-gradient-to-br from-gray-50 via-white to-gray-50 dark:from-gray-900 dark:via-gray-900 dark:to-gray-800/90 overflow-hidden pt-12">
       {/* GSAP Animated Background */}
       <div ref={bgRef} className="absolute inset-0 pointer-events-none overflow-hidden">
         {orbs.map((orb) => (

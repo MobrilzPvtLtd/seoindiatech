@@ -1,245 +1,228 @@
-import React, { useState, useEffect, useRef } from 'react'
-import { FaStar } from 'react-icons/fa'
-import { FiChevronDown, FiChevronUp, FiPhone, FiMessageCircle, FiMail, FiHelpCircle, FiCheckCircle } from 'react-icons/fi'
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import React from 'react';
+import {
+  HiOutlineChatBubbleLeftRight,
+  HiOutlineDocumentText,
+  HiOutlineShieldCheck,
+  HiOutlineChartBar,
+  HiOutlineGlobeAlt,
+  HiOutlineTag,
+  HiCheck,
+  HiOutlineArrowRight,
+} from 'react-icons/hi2';
+import Link from 'next/link';
+import { Reveal } from '@/component/motion/Reveal'
 
-if (typeof window !== 'undefined') {
-  gsap.registerPlugin(ScrollTrigger)
-}
-
-const faqData = [
+const faqs = [
   {
+    question: 'What SEO services does SEO India Tech offer?',
+    answer: 'We offer comprehensive SEO services including technical SEO, on-page optimization, off-page link building, content marketing, local SEO, and analytics reporting. Our strategies are tailored to your business goals for maximum results.',
     category: 'Services',
-    question: 'What services does SEO India Tech provide?',
-    answer: 'We offer SEO, Google Ads (PPC), Content Marketing, Web Design & Development, Social Media Marketing, Local SEO, and Custom Software Development.',
-    highlight: true
   },
   {
-    category: 'Pricing',
-    question: 'What is the cost of your SEO services?',
-    answer: 'Our SEO packages start from ₹14,999/month and vary based on your business goals, competition, and scope of work. We offer customized plans for every budget.',
-    highlight: false
-  },
-  {
-    category: 'Results',
     question: 'How long does it take to see SEO results?',
-    answer: 'Typically, you can expect noticeable improvements within 3-6 months. However, some on-page and technical SEO wins can show results within the first 4-6 weeks.',
-    highlight: true
+    answer: 'SEO is a long-term strategy. While minor improvements may appear within 4-6 weeks, significant results typically take 3-6 months. We provide weekly progress reports so you can track every improvement along the way.',
+    category: 'Timeline',
   },
   {
-    category: 'Process',
-    question: 'Do you follow white-hat SEO techniques?',
-    answer: 'Yes, we strictly follow Google\'s Webmaster Guidelines using ethical, white-hat SEO strategies that ensure sustainable rankings without risk of penalties.',
-    highlight: false
+    question: 'Do you follow white-hat SEO practices?',
+    answer: 'Absolutely. We strictly follow Google\'s webmaster guidelines and use only white-hat SEO techniques. Our focus is on sustainable, long-term growth rather than quick tricks that could harm your website.',
+    category: 'Ethics',
   },
   {
-    category: 'Support',
-    question: 'Will I have a dedicated account manager?',
-    answer: 'Absolutely. Every client is assigned a dedicated SEO Manager who handles your campaign, provides weekly updates, and is available for any queries.',
-    highlight: false
+    question: 'How do you report on SEO performance?',
+    answer: 'We provide detailed weekly reports covering keyword rankings, traffic growth, backlink profile, technical health, and conversions. Our transparent reporting ensures you always know what\'s happening with your SEO campaign.',
+    category: 'Reporting',
   },
   {
-    category: 'Results',
-    question: 'Do you work with international clients?',
-    answer: 'Yes, we work with clients across the USA, UK, UAE, Australia, and other regions, delivering tailored strategies for each market.',
-    highlight: true
+    question: 'What industries do you work with?',
+    answer: 'We work across diverse industries including e-commerce, healthcare, real estate, education, technology, finance, and more. Our team adapts strategies to fit the unique needs and competition of each industry.',
+    category: 'Industries',
   },
-]
+  {
+    question: 'Can I cancel my SEO plan anytime?',
+    answer: 'Yes, we offer flexible plans with no long-term lock-in contracts. However, we recommend at least 3-6 months for meaningful results. You can upgrade, downgrade, or cancel your plan as needed.',
+    category: 'Pricing',
+  },
+];
 
-const categoryIcons = {
-  Services: FiHelpCircle,
-  Pricing: FiHelpCircle,
-  Results: FiCheckCircle,
-  Process: FiCheckCircle,
-  Support: FiPhone,
-}
+const MOCKS = [
+  {
+    gradient: 'from-blue-200 via-blue-300 to-cyan-300',
+    icon: HiOutlineChatBubbleLeftRight,
+    title: 'Full-funnel SEO',
+    badge: 'SERVICES',
+    type: 'chat',
+    prompt: 'Technical SEO, on-page, off-page, local — everything under one roof.',
+    footer: 'Auto-scoped',
+  },
+  {
+    gradient: 'from-blue-300 via-indigo-300 to-blue-400',
+    icon: HiOutlineDocumentText,
+    title: 'Growth timeline',
+    badge: 'LIVE',
+    type: 'checklist',
+    items: ['Week 4-6 · quick wins land', 'Month 3 · rankings climb', 'Month 6 · growth compounds'],
+  },
+  {
+    gradient: 'from-blue-100 via-blue-200 to-cyan-200',
+    icon: HiOutlineShieldCheck,
+    title: 'Google guidelines',
+    badge: 'COMPLIANT',
+    type: 'checklist',
+    items: ['White-hat techniques only', 'No link schemes or cloaking', 'No spam or paid links'],
+  },
+  {
+    gradient: 'from-blue-200 via-blue-300 to-indigo-300',
+    icon: HiOutlineChartBar,
+    title: 'Weekly report',
+    badge: '+24%',
+    type: 'chart',
+  },
+  {
+    gradient: 'from-cyan-200 via-blue-200 to-blue-300',
+    icon: HiOutlineGlobeAlt,
+    title: 'Industry coverage',
+    badge: '10+',
+    type: 'chat',
+    prompt: 'Healthcare, real estate, education, eCommerce, finance & more.',
+    footer: 'Sector-tuned',
+  },
+  {
+    gradient: 'from-blue-200 via-indigo-200 to-blue-300',
+    icon: HiOutlineTag,
+    title: 'Flexible plans',
+    badge: 'NO LOCK-IN',
+    type: 'checklist',
+    items: ['Upgrade anytime', 'Downgrade anytime', 'Cancel anytime'],
+  },
+];
 
-const FAQItem = ({ faq, isOpen, onToggle }) => {
-  const CategoryIcon = categoryIcons[faq.category] || FiHelpCircle
+const bars = [40, 62, 50, 74, 58, 88, 66];
+const days = ['M', 'T', 'W', 'T', 'F', 'S', 'S'];
+
+const MockPanel = ({ mock }) => {
+  const Icon = mock.icon;
   return (
-    <div
-      className={`group rounded-2xl transition-all duration-300 ${isOpen
-        ? 'bg-white dark:bg-gray-800 shadow-xl shadow-blue-500/5 border border-blue-200/60 dark:border-blue-800/30'
-        : 'border border-gray-200/80 dark:border-gray-700/80 bg-white/60 dark:bg-gray-800/40 hover:border-blue-400/40 dark:hover:border-blue-500/30 hover:shadow-[0_4px_20px_rgba(0,0,0,0.03)] dark:hover:shadow-[0_4px_20px_rgba(59,130,246,0.05)]'
-        }`}
-    >
-      <button
-        onClick={onToggle}
-        className="w-full text-left px-5 py-4 flex items-start gap-3.5 cursor-pointer"
-      >
-        <div
-          className={`mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-lg transition-all duration-300 ${isOpen
-            ? 'bg-blue-100 text-blue-600 dark:bg-blue-900/40 dark:text-blue-300 shadow-sm shadow-blue-500/10'
-            : 'bg-gray-100 text-gray-600 dark:bg-gray-700 dark:text-gray-300 group-hover:bg-blue-100 dark:group-hover:bg-blue-900/30'
-            }`}
-        >
-          <CategoryIcon className="w-4 h-4" />
+    <div className={`h-full w-full rounded-[1.75rem] bg-gradient-to-br ${mock.gradient} p-5 md:p-6 flex items-start`}>
+      <div className="w-full bg-white rounded-2xl shadow-xl shadow-black/10 p-5">
+        <div className="flex items-center justify-between mb-4">
+          <div className="flex items-center gap-2.5">
+            <div className="w-9 h-9 rounded-xl bg-blue-600 text-white flex items-center justify-center shrink-0">
+              <Icon className="w-4.5 h-4.5" />
+            </div>
+            <span className="font-display text-sm font-semibold text-gray-900">{mock.title}</span>
+          </div>
+          <span className="font-mono text-[10px] font-semibold tracking-wide text-blue-600 bg-blue-100 px-2.5 py-1 rounded-full whitespace-nowrap">
+            {mock.badge}
+          </span>
         </div>
-        <div className="flex-1 min-w-0">
-          <div className="flex items-center gap-2">
-            {faq.highlight && (
-              <span className="inline-block px-2 py-0.5 text-[10px] font-semibold rounded-full bg-blue-50 dark:bg-blue-900/40 text-blue-600 dark:text-blue-300 border border-blue-100 dark:border-blue-800/30">
-                Popular
-              </span>
+
+        {mock.type === 'chat' && (
+          <div className="bg-gray-50 border border-gray-200 rounded-xl px-4 py-3">
+            <p className="text-sm text-gray-600 leading-relaxed">&ldquo;{mock.prompt}&rdquo;</p>
+            {mock.footer && (
+              <p className="mt-2 font-mono text-[10px] uppercase tracking-wider text-gray-400">{mock.footer}</p>
             )}
-            <span className="text-[10px] font-medium text-gray-400 dark:text-gray-500 uppercase tracking-wider">
-              {faq.category}
-            </span>
           </div>
-          <h3
-            className={`mt-1.5 text-sm font-semibold leading-snug transition-colors duration-200 ${isOpen
-              ? 'text-gray-900 dark:text-white'
-              : 'text-gray-700 dark:text-gray-200'
-              }`}
-          >
-            {faq.question}
-          </h3>
-        </div>
-        <div
-          className={`mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-lg transition-all duration-300 ${isOpen
-            ? 'bg-blue-500 text-white rotate-0 shadow-sm shadow-blue-500/20'
-            : 'bg-gray-50 dark:bg-gray-700/50 group-hover:bg-blue-50 dark:group-hover:bg-blue-900/20 text-gray-400 dark:text-gray-500'
-            }`}
-        >
-          {isOpen ? <FiChevronUp className="w-3.5 h-3.5" /> : <FiChevronDown className="w-3.5 h-3.5" />}
-        </div>
-      </button>
+        )}
 
-      <div
-        className={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-60 opacity-100' : 'max-h-0 opacity-0'
-          }`}
-      >
-        <div className="px-5 pb-5 pl-16">
-          <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
-            {faq.answer}
-          </p>
-        </div>
-      </div>
-    </div>
-  )
-}
-
-const FAQSection = () => {
-  const [openIndex, setOpenIndex] = useState(0)
-  const sectionRef = useRef(null)
-  const headerRef = useRef(null)
-  const leftRef = useRef(null)
-  const rightRef = useRef(null)
-
-  useEffect(() => {
-    if (!sectionRef.current) return
-
-    const ctx = gsap.context(() => {
-      gsap.fromTo(headerRef.current,
-        { y: 30, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.7, ease: 'power3.out', immediateRender: false,
-          scrollTrigger: { trigger: headerRef.current, start: 'top 85%', toggleActions: 'play none none none' } }
-      )
-
-      // Left side - FAQ items stagger from left
-      gsap.fromTo(leftRef.current.children,
-        { x: -40, opacity: 0 },
-        {
-          x: 0, opacity: 1, duration: 0.6, stagger: 0.08, ease: 'power3.out', immediateRender: false,
-          scrollTrigger: { trigger: leftRef.current, start: 'top 80%', toggleActions: 'play none none none' }
-        }
-      )
-
-      // Right side - CTA card slides in from right
-      gsap.fromTo(rightRef.current,
-        { x: 50, opacity: 0 },
-        {
-          x: 0, opacity: 1, duration: 0.8, ease: 'power3.out', immediateRender: false,
-          scrollTrigger: { trigger: rightRef.current, start: 'top 80%', toggleActions: 'play none none none' }
-        }
-      )
-    }, sectionRef)
-
-    return () => ctx.revert()
-  }, [])
-
-  return (
-    <section ref={sectionRef} className="bg-white dark:bg-gray-900 overflow-hidden relative py-14 md:py-20 transition-colors duration-300">
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute -top-40 -right-40 w-[30rem] h-[30rem] bg-blue-50/30 rounded-full blur-3xl dark:bg-blue-900/5" />
-        <div className="absolute -bottom-40 -left-40 w-[25rem] h-[25rem] bg-indigo-50/20 rounded-full blur-3xl dark:bg-indigo-900/5" />
-      </div>
-
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div ref={headerRef} className="text-center mb-12 md:mb-16">
-          <div className="inline-flex items-center gap-2 bg-blue-50 dark:bg-blue-950/60 border border-blue-100/60 dark:border-blue-800/30 px-4 py-1.5 rounded-full mb-4">
-            <span className="w-1.5 h-1.5 rounded-full bg-blue-500" />
-            <span className="text-[11px] font-semibold text-blue-600 dark:text-blue-300 tracking-wider uppercase">
-              FAQ
-            </span>
-          </div>
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white leading-tight">
-            Frequently Asked <span className="text-blue-600 dark:text-blue-400">Questions</span>
-          </h2>
-        </div>
-
-        <div className="grid lg:grid-cols-[1fr_380px] gap-8 lg:gap-12 items-start">
-          {/* Left Column — FAQ Accordion */}
-          <div ref={leftRef} className="space-y-3">
-            {faqData.map((faq, index) => (
-              <FAQItem
-                key={index}
-                faq={faq}
-                isOpen={openIndex === index}
-                onToggle={() => setOpenIndex(openIndex === index ? -1 : index)}
-              />
+        {mock.type === 'checklist' && (
+          <div className="space-y-2">
+            {mock.items.map((item) => (
+              <div key={item} className="flex items-center gap-2.5 bg-gray-50 border border-gray-200 rounded-xl px-3.5 py-2.5">
+                <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-blue-100 text-blue-600">
+                  <HiCheck className="w-3.5 h-3.5" />
+                </span>
+                <span className="text-sm text-gray-700">{item}</span>
+              </div>
             ))}
           </div>
+        )}
 
-          {/* Right Column — CTA Card */}
-          <div ref={rightRef} className="lg:sticky lg:top-8">
-            <div className="relative bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-800 rounded-2xl p-8 lg:p-10 text-white shadow-2xl shadow-blue-600/20 dark:shadow-blue-600/10 sticky top-8 overflow-hidden">
-              <div className="absolute top-0 right-0 w-40 h-40 bg-white/[0.05] rounded-full -translate-y-1/2 translate-x-1/2" />
-              <div className="absolute bottom-0 left-0 w-32 h-32 bg-white/[0.05] rounded-full translate-y-1/2 -translate-x-1/2" />
-
-              <div className="relative">
-                <div className="flex items-center gap-2 mb-4">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/15 border border-white/10">
-                    <FiMessageCircle className="w-5 h-5" />
-                  </div>
-                  <span className="text-xs font-semibold text-blue-100/80 uppercase tracking-wider">Need Help?</span>
-                </div>
-
-                <h3 className="text-xl sm:text-2xl font-bold mb-3 leading-snug">
-                  Talk to an SEO Expert
-                </h3>
-                <p className="text-sm text-blue-100/70 mb-8 leading-relaxed">
-                  Get a free consultation and learn how we can help your business grow online.
-                </p>
-
-                <div className="space-y-3">
-                  <a
-                    href="/contact-us"
-                    className="w-full cursor-pointer bg-white/10 hover:bg-white/20 text-white border border-white/20 px-6 py-4 rounded-full font-semibold transition-all duration-300 flex items-center justify-center gap-2.5 text-sm backdrop-blur-sm group"
-                  >
-                    <FiMail className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
-                    Request a Quote
-                  </a>
-                </div>
-
-                <div className="mt-6 flex items-center justify-center gap-6 text-xs text-gray-400 dark:text-gray-500">
-                  <span className="flex items-center gap-1.5">
-                    <FiCheckCircle className="w-3.5 h-3.5 text-emerald-400" />
-                    100% Free
-                  </span>
-                  <span className="flex items-center gap-1.5">
-                    <FiCheckCircle className="w-3.5 h-3.5 text-emerald-400" />
-                    No Commitments
-                  </span>
-                </div>
-              </div>
+        {mock.type === 'chart' && (
+          <div className="bg-gray-50 border border-gray-200 rounded-xl px-4 pt-4 pb-3">
+            <div className="flex items-end justify-between gap-1.5 h-24">
+              {bars.map((h, i) => (
+                <div key={i} className="flex-1 rounded-t-md bg-gradient-to-t from-blue-600 to-blue-400" style={{ height: `${h}%` }} />
+              ))}
+            </div>
+            <div className="flex justify-between mt-1.5">
+              {days.map((d, i) => (
+                <span key={i} className="flex-1 text-center font-mono text-[9px] text-gray-400">{d}</span>
+              ))}
             </div>
           </div>
-        </div>
+        )}
       </div>
-    </section>
-  )
-}
+    </div>
+  );
+};
 
-export default FAQSection
+const FAQSection = () => {
+  const stickyTop = (i) => 88 + i * 22;
+
+  return (
+    <section className="bg-white dark:bg-gray-900 relative transition-colors duration-300">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 md:pt-20 pb-10 text-center">
+        <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 dark:bg-blue-950/60 border border-blue-100 dark:border-blue-800/30 rounded-full text-sm font-medium text-blue-600 dark:text-blue-400 mb-6">
+          <span className="w-2 h-2 bg-blue-600 dark:bg-blue-400 rounded-full" />
+          FAQ
+        </div>
+        <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-[1.05] tracking-tight">
+          Frequently Asked
+          <br />
+          Questions
+        </h2>
+        <p className="mt-5 text-gray-600 dark:text-gray-400 max-w-lg mx-auto">
+          Got questions? We have answers — everything you need to know about working with us.
+        </p>
+      </div>
+
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
+        {faqs.map((faq, i) => (
+          <div key={i} className="sticky mb-8 md:mb-10" style={{ top: `${stickyTop(i)}px` }}>
+            <Reveal once amount={0.15}>
+              <div className="rounded-[2rem] border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 shadow-xl shadow-blue-500/5 dark:shadow-blue-900/10 p-6 md:p-10 transition-colors duration-300">
+                <div className="grid md:grid-cols-2 gap-8 md:gap-10 items-center">
+                  {/* Left — text */}
+                  <div className="order-2 md:order-1">
+                    <span className="inline-block font-mono text-[11px] font-semibold tracking-[0.15em] uppercase text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-950/60 border border-blue-100 dark:border-blue-800/30 rounded-full px-3 py-1 mb-5">
+                      Question {String(i + 1).padStart(2, '0')}
+                    </span>
+                    <h3 className="font-display text-2xl md:text-3xl font-bold text-gray-900 dark:text-white leading-snug mb-4">
+                      {faq.question}
+                    </h3>
+                    <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                      {faq.answer}
+                    </p>
+                  </div>
+
+                  {/* Right — mockup panel */}
+                  <div className="order-1 md:order-2 h-56 md:h-64">
+                    <MockPanel mock={MOCKS[i]} />
+                  </div>
+                </div>
+              </div>
+            </Reveal>
+          </div>
+        ))}
+      </div>
+
+      {/* Bottom CTA */}
+      {/* <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 text-center">
+        <p className="text-gray-600 dark:text-gray-400 mb-6">
+          Still have questions? We&apos;re here to help.
+        </p>
+        <Link
+          href="/contact-us"
+          className="inline-flex items-center gap-2 px-8 py-4 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-full transition-all duration-300 shadow-lg shadow-blue-600/25 group"
+        >
+          Contact Us
+          <HiOutlineArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
+        </Link>
+      </div> */}
+    </section>
+  );
+};
+
+export default FAQSection;

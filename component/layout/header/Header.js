@@ -147,38 +147,11 @@ const Header = () => {
       const isAtTop = currentScrollTop < 10
       setAtTop(isAtTop)
 
-      // If at top, always show header
-      if (isAtTop) {
-        setVisible(true)
-      } else {
-        // Detect scroll direction with a threshold
-        const scrollDifference = Math.abs(
-          currentScrollTop - lastScrollTop.current,
-        )
-
-        // Only process significant scroll movements (5px threshold)
-        if (scrollDifference > 5) {
-          // Scrolling down
-          if (currentScrollTop > lastScrollTop.current) {
-            setVisible(false)
-          }
-          // Scrolling up
-          else {
-            setVisible(true)
-          }
-        }
-      }
+      // Always show header (sticky)
+      setVisible(true)
 
       // Save current scroll position
       lastScrollTop.current = currentScrollTop
-
-      // Reset timer for when scrolling stops
-      clearTimeout(scrollingTimer.current)
-      scrollingTimer.current = setTimeout(() => {
-        if (window.scrollY < 10) {
-          setVisible(true)
-        }
-      }, 150)
     }
 
     window.addEventListener('resize', handleResize)
@@ -295,16 +268,9 @@ const Header = () => {
           fixed top-0 left-0 w-full z-40
           transform transition-transform duration-300 ease-out will-change-transform
           ${visible ? 'translate-y-0' : '-translate-y-full'}
-          ${
-            atTop || isMenuOpen
-              ? 'bg-white dark:bg-gray-900'
-              : 'bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm'
-          }
-          border-b border-gray-200 dark:border-gray-800 
-          shadow-md dark:shadow-gray-800/30
         `}
       >
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 flex items-center justify-between h-16 md:h-20">
+        <div className="mx-3 mt-3 md:mx-5 md:mt-4 bg-blue-50/80 dark:bg-gray-900/90 border border-blue-100 dark:border-gray-800 rounded-2xl shadow-lg dark:shadow-gray-800/50 px-4 sm:px-6 lg:px-8 xl:px-12 flex items-center justify-between h-16 md:h-18 backdrop-blur-sm">
           {/* Logo - FIXED: Better padding and sizing */}
           <div className="flex items-center flex-shrink-0">
             {mounted ? (
