@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function SMOHero() {
   return (
-    <section className="relative w-full overflow-hidden bg-gradient-to-br from-white via-gray-50 to-gray-100 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950 py-20 md:py-28 transition-colors duration-300">
+    <section className="relative w-full overflow-hidden bg-gradient-to-br from-white via-gray-50 to-gray-100 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950 pt-24 md:pt-28 pb-20 md:pb-28 transition-colors duration-300">
       {/* Subtle Background Glow */}
       <div className="absolute top-0 right-0 w-72 h-72 bg-blue-500/10 dark:bg-blue-500/20 blur-3xl rounded-full"></div>
       <div className="absolute bottom-0 left-0 w-72 h-72 bg-purple-500/10 dark:bg-purple-500/20 blur-3xl rounded-full"></div>

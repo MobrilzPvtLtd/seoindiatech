@@ -164,10 +164,6 @@ const FAQSection = () => {
   return (
     <section className="bg-white dark:bg-gray-900 relative transition-colors duration-300">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 md:pt-20 pb-10 text-center">
-        <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 dark:bg-blue-950/60 border border-blue-100 dark:border-blue-800/30 rounded-full text-sm font-medium text-blue-600 dark:text-blue-400 mb-6">
-          <span className="w-2 h-2 bg-blue-600 dark:bg-blue-400 rounded-full" />
-          FAQ
-        </div>
         <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-[1.05] tracking-tight">
           Frequently Asked
           <br />

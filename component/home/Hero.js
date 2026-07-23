@@ -8,9 +8,6 @@ const Hero = () => {
       <div className="bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-gray-900 dark:to-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-between shadow-lg max-w-7xl mx-auto my-6 md:my-10">
         {/* Left Content */}
         <div className="max-w-xl space-y-4 w-full md:w-1/2 md:pr-8">
-          {/* <span className="inline-block bg-white dark:bg-gray-800 shadow-md border border-gray-200 dark:border-gray-700 rounded-full px-4 py-1.5 text-sm font-medium text-black dark:text-white">
-            ⭐ Digital Marketing
-          </span> */}
 
           <h1 className="text-5xl text-center md:text-left md:text-6xl font-bold text-gray-900 dark:text-white leading-16 md:leading-20">
             Digital Marketing Services with

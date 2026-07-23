@@ -32,3 +32,12 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 120px;
+}
+
+section[id] {
+  scroll-margin-top: 120px;
+}

@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 const Digitalhero = () => {
   return (
-    <section className="relative bg-white dark:bg-gray-950 py-16 md:py-24 px-4 md:px-6 overflow-hidden">
+    <section className="relative bg-white dark:bg-gray-950 pt-24 md:pt-28 pb-16 md:pb-24 px-4 md:px-6 overflow-hidden">
       {/* background glow */}
       <div className="absolute -top-40 -left-40 w-[500px] h-[500px] bg-blue-400/20 blur-3xl rounded-full"></div>
       <div className="absolute -bottom-40 -right-40 w-[500px] h-[500px] bg-indigo-400/20 blur-3xl rounded-full"></div>

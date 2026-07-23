@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function GBPHero() {
   return (
-    <section className="relative w-full py-20 bg-gradient-to-b from-gray-50 to-white dark:from-gray-950 dark:to-gray-900 overflow-hidden">
+    <section className="relative w-full pt-24 md:pt-28 pb-20 bg-gradient-to-b from-gray-50 to-white dark:from-gray-950 dark:to-gray-900 overflow-hidden">
       <div className="max-w-6xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content Section */}

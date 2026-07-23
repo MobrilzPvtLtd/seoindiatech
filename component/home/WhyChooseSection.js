@@ -74,15 +74,19 @@ const WhyChooseSection = () => {
       // Header fade in
       gsap.fromTo(headerRef.current,
         { y: 30, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.7, ease: 'power3.out', immediateRender: false,
-          scrollTrigger: { trigger: headerRef.current, start: 'top 85%', toggleActions: 'play none none none' } }
+        {
+          y: 0, opacity: 1, duration: 0.7, ease: 'power3.out', immediateRender: false,
+          scrollTrigger: { trigger: headerRef.current, start: 'top 85%', toggleActions: 'play none none none' }
+        }
       )
 
       // Stats strip - slide up with stagger
       gsap.fromTo(statsRef.current.children,
         { y: 40, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.6, stagger: 0.1, ease: 'power3.out', immediateRender: false,
-          scrollTrigger: { trigger: statsRef.current, start: 'top 85%', toggleActions: 'play none none none' } }
+        {
+          y: 0, opacity: 1, duration: 0.6, stagger: 0.1, ease: 'power3.out', immediateRender: false,
+          scrollTrigger: { trigger: statsRef.current, start: 'top 85%', toggleActions: 'play none none none' }
+        }
       )
 
       // Count up numbers
@@ -108,15 +112,19 @@ const WhyChooseSection = () => {
       // Feature cards - stagger from bottom
       gsap.fromTo(featuresRef.current.children,
         { y: 50, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.6, stagger: 0.08, ease: 'power3.out', immediateRender: false,
-          scrollTrigger: { trigger: featuresRef.current, start: 'top 85%', toggleActions: 'play none none none' } }
+        {
+          y: 0, opacity: 1, duration: 0.6, stagger: 0.08, ease: 'power3.out', immediateRender: false,
+          scrollTrigger: { trigger: featuresRef.current, start: 'top 85%', toggleActions: 'play none none none' }
+        }
       )
 
       // Trust line
       gsap.fromTo(trustRef.current,
         { y: 20, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.5, ease: 'power3.out', immediateRender: false,
-          scrollTrigger: { trigger: trustRef.current, start: 'top 90%', toggleActions: 'play none none none' } }
+        {
+          y: 0, opacity: 1, duration: 0.5, ease: 'power3.out', immediateRender: false,
+          scrollTrigger: { trigger: trustRef.current, start: 'top 90%', toggleActions: 'play none none none' }
+        }
       )
     }, sectionRef)
 
@@ -131,12 +139,6 @@ const WhyChooseSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 md:py-20 relative z-10">
         {/* Header */}
         <div ref={headerRef} className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 bg-blue-50 dark:bg-blue-950/60 border border-blue-100/60 dark:border-blue-800/30 px-4 py-1.5 rounded-full mb-4">
-            <span className="w-1.5 h-1.5 rounded-full bg-blue-500" />
-            <span className="text-[11px] font-semibold text-blue-600 dark:text-blue-300 tracking-wider uppercase">
-              Why Choose Us
-            </span>
-          </div>
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white leading-tight">
             Why Choose{' '}
             <span className="relative inline-block">

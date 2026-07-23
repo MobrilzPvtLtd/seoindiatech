@@ -10,7 +10,7 @@ export default function PPCHero() {
       <div className="absolute bottom-0 -right-20 w-96 h-96 bg-pink-100 dark:bg-pink-900 rounded-full opacity-20 animate-pulse -z-10"></div>
       <div className="absolute top-1/2 right-1/3 w-32 h-32 bg-yellow-100 dark:bg-yellow-800 rounded-full opacity-10 animate-ping -z-10"></div>
 
-      <div className="max-w-7xl mx-auto px-6 md:px-12 py-15 flex flex-col lg:flex-row items-center gap-12">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 pt-24 md:pt-28 pb-15 flex flex-col lg:flex-row items-center gap-12">
         {/* Left Text Content */}
         <div className="flex-1 space-y-8 text-center lg:text-left">
           {/* Heading */}

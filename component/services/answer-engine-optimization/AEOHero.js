@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function AEOHero() {
   return (
-    <section className="bg-gray-50 dark:bg-gray-900 py-16 px-4 sm:px-6 lg:px-8">
+    <section className="bg-gray-50 dark:bg-gray-900 pt-24 md:pt-28 pb-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-8">
         {/* Text Content */}
         <div className="w-full lg:w-1/2">

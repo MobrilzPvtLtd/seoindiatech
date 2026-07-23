@@ -137,7 +137,7 @@ export default function ServiceDropdown({ closeMenu }) {
         {/* PAID ADVERTISING */}
         <div>
           <Link
-            href="#"
+            href="/services/paid-advertising"
             onClick={closeMenu}
             className="flex items-center gap-2 mb-8"
           >
@@ -166,7 +166,7 @@ export default function ServiceDropdown({ closeMenu }) {
         {/* DESIGN & DEVELOPMENT */}
         <div>
           <Link
-            href="#"
+            href="/services/design-and-development"
             onClick={closeMenu}
             className="flex items-center gap-2 mb-8"
           >

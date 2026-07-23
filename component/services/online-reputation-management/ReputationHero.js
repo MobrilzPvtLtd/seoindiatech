@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function ReputationHero() {
   return (
-    <section className="relative w-full overflow-hidden py-16 md:py-24 px-6 bg-white dark:bg-gray-950">
+    <section className="relative w-full overflow-hidden pt-24 md:pt-28 pb-16 md:pb-24 px-6 bg-white dark:bg-gray-950">
 
       {/* background bubbles */}
       <div className="absolute top-20 left-10 w-40 h-40 bg-blue-400/20 rounded-full blur-3xl"></div>

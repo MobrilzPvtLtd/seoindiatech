@@ -153,19 +153,9 @@ const NewHero = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-12 lg:py-16 relative z-10">
-        <div className="flex flex-col lg:flex-row items-stretch gap-8 lg:gap-12 xl:gap-16">
+        <div className="flex flex-col lg:flex-row items-stretch lg:items-center gap-8 lg:gap-12 xl:gap-16">
           {/* Left Content */}
-          <div className="w-full lg:w-[55%] space-y-7">
-            {/* Badge */}
-            <div className="inline-flex items-center gap-2.5 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm border border-blue-100/80 dark:border-blue-800/40 px-4 py-1.5 rounded-full shadow-sm shadow-blue-500/5">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75" />
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500" />
-              </span>
-              <span className="text-[11px] font-semibold text-blue-600 dark:text-blue-300 tracking-wider uppercase">
-                India&apos;s Trusted SEO Agency
-              </span>
-            </div>
+          <div className="w-full lg:w-[60%] space-y-7">
 
             {/* Heading */}
             <h1 className="text-4xl md:text-5xl lg:text-[3.4rem] font-bold text-gray-900 dark:text-white leading-[1.12] tracking-tight">
@@ -186,7 +176,7 @@ const NewHero = () => {
             </p>
 
             {/* Feature Pills */}
-            <div className="flex flex-wrap gap-2.5">
+            <div className="flex flex-wrap lg:flex-nowrap gap-2.5">
               {['Increase Organic Traffic', 'Generate Quality Leads', 'Maximize ROI & Revenue'].map((feature) => (
                 <div
                   key={feature}
@@ -233,7 +223,7 @@ const NewHero = () => {
           </div>
 
           {/* Right Content - Form */}
-          <div className="w-full lg:w-[45%] flex justify-center lg:justify-end">
+          <div className="w-full lg:w-[40%] flex justify-center lg:justify-end">
             <HeroContactForm />
           </div>
         </div>

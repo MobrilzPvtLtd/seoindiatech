@@ -112,7 +112,7 @@ const HeroContactForm = () => {
 
           <textarea
             id="message"
-            rows={3}
+            rows={2}
             required
             value={formState.message}
             onChange={handleInputChange}

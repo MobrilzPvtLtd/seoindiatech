@@ -13,7 +13,7 @@ const iconMap = {
 
 export default function ServiceHero({ title, subtitle, features, image, badge }) {
   return (
-    <section className="bg-gradient-to-b from-white to-blue-50 dark:from-gray-900 dark:to-blue-950/30 pt-12 pb-8 md:pb-16 px-6 md:px-8 overflow-hidden relative transition-colors duration-300">
+    <section className="bg-gradient-to-b from-white to-blue-50 dark:from-gray-900 dark:to-blue-950/30 pt-24 md:pt-28 pb-8 md:pb-16 px-6 md:px-8 overflow-hidden relative transition-colors duration-300">
       {/* Background decorative elements */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div className="absolute top-10 right-10 w-96 h-96 bg-blue-200/60 dark:bg-blue-800/20 rounded-full blur-3xl"></div>

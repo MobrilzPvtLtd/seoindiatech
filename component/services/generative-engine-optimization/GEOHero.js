@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function GEOHero() {
   return (
-    <section className="relative w-full bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-950 py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <section className="relative w-full bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-950 pt-24 md:pt-28 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
       
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         

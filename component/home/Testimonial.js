@@ -187,12 +187,6 @@ const Testimonial = () => {
     <div ref={sectionRef} className="bg-gray-50 dark:bg-gray-800 py-14 md:py-20 px-4 sm:px-6 lg:px-8 transition-colors duration-300">
       <div className="max-w-7xl mx-auto">
         <div ref={headerRef} className="text-center mb-12 md:mb-16">
-          <div className="inline-flex items-center gap-2 bg-blue-50 dark:bg-blue-950/60 border border-blue-100/60 dark:border-blue-800/30 px-4 py-1.5 rounded-full mb-4">
-            <span className="w-1.5 h-1.5 rounded-full bg-blue-500" />
-            <span className="text-[11px] font-semibold text-blue-600 dark:text-blue-300 tracking-wider uppercase">
-              Testimonials
-            </span>
-          </div>
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white leading-tight mb-4">
             What Our Clients Say
           </h2>

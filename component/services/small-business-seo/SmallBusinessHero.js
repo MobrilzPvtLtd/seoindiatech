@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function SmallBusinessHero() {
   return (
-    <section className="relative w-full overflow-hidden bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950 py-20 md:py-28 px-6">
+    <section className="relative w-full overflow-hidden bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950 pt-24 md:pt-28 pb-20 md:pb-28 px-6">
 
       {/* background glow */}
       <div className="absolute -top-32 -left-32 w-[420px] h-[420px] bg-blue-200 dark:bg-blue-900/20 rounded-full blur-3xl opacity-40"></div>

@@ -12,7 +12,7 @@ import Link from 'next/link'
 
 export default function PPCBrandingHero() {
   return (
-    <section className="bg-gray-100 dark:bg-gray-900 py-16 px-6 lg:py-24 lg:px-8">
+    <section className="bg-gray-100 dark:bg-gray-900 pt-24 md:pt-28 pb-16 px-6 lg:pb-24 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Main Headline */}
         <div className="text-center mb-16">
