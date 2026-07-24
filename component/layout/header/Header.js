@@ -1,4 +1,4 @@
-import { ChevronDown, ChevronUp, CircleDot, Menu, X } from 'lucide-react'
+import { ChevronDown, Menu, X } from 'lucide-react'
 import React, { useState, useRef, useEffect } from 'react'
 import ServiceDropdown from './ServiceDropdown'
 import SolutionDropdown from './SolutionDropdown'
@@ -13,12 +13,8 @@ const Header = () => {
   const [mounted, setMounted] = useState(false)
   const [windowWidth, setWindowWidth] = useState(0)
   const [openCategory, setOpenCategory] = useState(null)
+  const [scrolled, setScrolled] = useState(false)
 
-  // Scroll behavior state
-  const [visible, setVisible] = useState(true)
-  const [atTop, setAtTop] = useState(true)
-
-  // Services and solutions data for mobile view
   const serviceCategories = [
     {
       title: 'SEO',
@@ -40,14 +36,8 @@ const Header = () => {
       services: [
         { title: 'Digital Branding', slug: 'digital-branding' },
         { title: 'Content Marketing', slug: 'content-marketing' },
-        {
-          title: 'Online Reputation Management',
-          slug: 'online-reputation-management',
-        },
-        {
-          title: 'Social Media Optimization',
-          slug: 'social-media-optimization',
-        },
+        { title: 'Online Reputation Management', slug: 'online-reputation-management' },
+        { title: 'Social Media Optimization', slug: 'social-media-optimization' },
       ],
     },
     {
@@ -66,61 +56,28 @@ const Header = () => {
   ]
 
   const solutions = [
-    {
-      title: 'Automation',
-      icon: '⚙️',
-      slug: 'automation',
-    },
-    {
-      title: 'Workflow',
-      icon: '📋',
-      slug: 'workflow',
-    },
-    {
-      title: 'Promotion & Ads',
-      icon: '📣',
-      slug: 'promotion-and-ads',
-    },
-    {
-      title: 'CRM & Tools',
-      icon: '👥',
-      slug: 'crm-and-tools',
-    },
-    {
-      title: 'Market Research',
-      icon: '🔍',
-      slug: 'market-research',
-    },
-    {
-      title: 'Website Creation',
-      icon: '🌐',
-      slug: 'website-creation',
-    },
+    { title: 'Automation', icon: '⚙️', slug: 'automation' },
+    { title: 'Workflow', icon: '📋', slug: 'workflow' },
+    { title: 'Promotion & Ads', icon: '📣', slug: 'promotion-and-ads' },
+    { title: 'CRM & Tools', icon: '👥', slug: 'crm-and-tools' },
+    { title: 'Market Research', icon: '🔍', slug: 'market-research' },
+    { title: 'Website Creation', icon: '🌐', slug: 'website-creation' },
   ]
 
-  // Refs for timeout management
   const servicesTimeoutRef = useRef(null)
   const solutionsTimeoutRef = useRef(null)
   const servicesRef = useRef(null)
   const solutionsRef = useRef(null)
   const mobileMenuRef = useRef(null)
 
-  // For smooth scroll detection
-  const lastScrollTop = useRef(0)
-  const scrollingTimer = useRef(null)
-
-  // Set mounted state when component mounts to avoid hydration issues
   useEffect(() => {
     setMounted(true)
 
     const handleResize = () => {
       setWindowWidth(window.innerWidth)
-      if (window.innerWidth >= 768) {
-        setIsMenuOpen(false)
-      }
+      if (window.innerWidth >= 768) setIsMenuOpen(false)
     }
 
-    // Handle clicks outside of mobile menu to close it
     const handleClickOutside = (e) => {
       if (
         isMenuOpen &&
@@ -132,45 +89,26 @@ const Header = () => {
       }
     }
 
-    // Improved scroll handler with better detection
     const handleScroll = () => {
-      // Don't hide the header when the mobile menu is open
-      if (isMenuOpen) {
-        setVisible(true)
-        return
-      }
-
-      const currentScrollTop =
-        window.scrollY || document.documentElement.scrollTop
-
-      // Determine if we're at the top of the page
-      const isAtTop = currentScrollTop < 10
-      setAtTop(isAtTop)
-
-      // Always show header (sticky)
-      setVisible(true)
-
-      // Save current scroll position
-      lastScrollTop.current = currentScrollTop
+      const currentScrollTop = window.scrollY || document.documentElement.scrollTop
+      setScrolled(currentScrollTop > 12)
     }
 
     window.addEventListener('resize', handleResize)
     document.addEventListener('mousedown', handleClickOutside)
     window.addEventListener('scroll', handleScroll, { passive: true })
     handleResize()
+    handleScroll()
 
-    // Clear any timeouts on unmount
     return () => {
       if (servicesTimeoutRef.current) clearTimeout(servicesTimeoutRef.current)
       if (solutionsTimeoutRef.current) clearTimeout(solutionsTimeoutRef.current)
-      if (scrollingTimer.current) clearTimeout(scrollingTimer.current)
       window.removeEventListener('resize', handleResize)
       document.removeEventListener('mousedown', handleClickOutside)
       window.removeEventListener('scroll', handleScroll)
     }
   }, [isMenuOpen])
 
-  // Toggle body scroll when menu is open/closed
   useEffect(() => {
     if (isMenuOpen) {
       document.body.style.overflow = 'hidden'
@@ -179,21 +117,18 @@ const Header = () => {
       document.body.style.overflow = ''
       document.body.style.touchAction = ''
     }
-
     return () => {
       document.body.style.overflow = ''
       document.body.style.touchAction = ''
     }
   }, [isMenuOpen])
 
-  // Handle mobile menu toggle
   const toggleMobileMenu = () => {
     setIsMenuOpen(!isMenuOpen)
     if (isServicesOpen) setIsServicesOpen(false)
     if (isSolutionsOpen) setIsSolutionsOpen(false)
   }
 
-  // Functions to handle dropdown hover behavior for desktop with delay
   const handleServicesMouseEnter = () => {
     if (windowWidth >= 768) {
       if (servicesTimeoutRef.current) {
@@ -207,9 +142,7 @@ const Header = () => {
 
   const handleServicesMouseLeave = () => {
     if (windowWidth >= 768) {
-      servicesTimeoutRef.current = setTimeout(() => {
-        setIsServicesOpen(false)
-      }, 100)
+      servicesTimeoutRef.current = setTimeout(() => setIsServicesOpen(false), 150)
     }
   }
 
@@ -226,13 +159,10 @@ const Header = () => {
 
   const handleSolutionsMouseLeave = () => {
     if (windowWidth >= 768) {
-      solutionsTimeoutRef.current = setTimeout(() => {
-        setIsSolutionsOpen(false)
-      }, 300)
+      solutionsTimeoutRef.current = setTimeout(() => setIsSolutionsOpen(false), 300)
     }
   }
 
-  // Functions for mobile dropdown toggle (click behavior)
   const handleServicesClick = () => {
     if (windowWidth < 768) {
       setIsServicesOpen(!isServicesOpen)
@@ -247,70 +177,71 @@ const Header = () => {
     }
   }
 
-  // NEW: Function to close dropdown when a card is clicked
   const handleCardClick = () => {
     setIsServicesOpen(false)
     setIsSolutionsOpen(false)
   }
 
-  // Contact button styling - IMPROVED with better padding and spacing
+  // Underlined nav link — replaces the old jumpy border-b hover
+  const NavLink = ({ href, children }) => (
+    <Link
+      href={href}
+      className="relative text-[15px] text-slate-600 dark:text-slate-300 font-medium py-1 transition-colors duration-200 hover:text-slate-900 dark:hover:text-white after:content-[''] after:absolute after:left-0 after:-bottom-0.5 after:h-[2px] after:w-0 after:bg-blue-600 dark:after:bg-blue-400 after:transition-all after:duration-300 hover:after:w-full"
+    >
+      {children}
+    </Link>
+  )
+
   const contactButtonClass =
-    'bg-gradient-to-r from-blue-600 to-blue-800 dark:from-gray-800 dark:to-gray-900 text-white px-6 py-2.5 rounded-full font-medium transition-all duration-300 hover:shadow-lg hover:scale-105 transform active:scale-95 whitespace-nowrap shadow-md border border-blue-700/20 dark:border-gray-500/30 text-sm'
-  
+    'inline-flex items-center justify-center bg-slate-900 dark:bg-blue-600 text-white px-5 py-2.5 rounded-full font-semibold text-sm tracking-wide transition-all duration-300 hover:bg-blue-600 dark:hover:bg-blue-500 hover:shadow-[0_8px_20px_-6px_rgba(37,99,235,0.55)] active:scale-95 whitespace-nowrap'
+
   const mobileContactButtonClass =
-    'block bg-gradient-to-r from-blue-600 to-blue-800 dark:from-gray-800 dark:to-gray-900 text-white px-8 py-3 rounded-full font-medium text-center transition-all duration-300 hover:shadow-lg hover:scale-105 transform active:scale-95 w-full shadow-md border border-blue-700/20 dark:border-gray-500/30'
+    'block bg-slate-900 dark:bg-blue-600 text-white px-8 py-3.5 rounded-full font-semibold text-center transition-all duration-300 hover:bg-blue-600 active:scale-95 w-full shadow-md'
 
   return (
     <>
-      {/* Main Header */}
-      <header
-        className={`
-          fixed top-0 left-0 w-full z-40
-          transform transition-transform duration-300 ease-out will-change-transform
-          ${visible ? 'translate-y-0' : '-translate-y-full'}
-        `}
-      >
-        <div className="mx-3 mt-3 md:mx-5 md:mt-4 bg-blue-50/80 dark:bg-gray-900/90 border border-blue-100 dark:border-gray-800 rounded-2xl shadow-lg dark:shadow-gray-800/50 px-4 sm:px-6 lg:px-8 xl:px-12 flex items-center justify-between h-16 md:h-18 backdrop-blur-sm">
-          {/* Logo - FIXED: Better padding and sizing */}
+      <header className="fixed top-0 left-0 w-full z-40">
+        <div
+          className={`
+            mx-3 mt-3 md:mx-6 md:mt-4 max-w-7xl md:mx-auto
+            flex items-center justify-between h-16 md:h-[68px]
+            px-4 sm:px-6 lg:px-8
+            rounded-full border
+            backdrop-blur-xl backdrop-saturate-150
+            transition-all duration-300 ease-out
+            ${
+              scrolled
+                ? 'bg-white/85 dark:bg-slate-900/85 border-slate-200/70 dark:border-slate-700/60 shadow-[0_8px_30px_-8px_rgba(15,23,42,0.18)]'
+                : 'bg-white/60 dark:bg-slate-900/60 border-white/40 dark:border-slate-700/40 shadow-[0_4px_16px_-4px_rgba(15,23,42,0.08)]'
+            }
+          `}
+        >
+          {/* Logo */}
           <div className="flex items-center flex-shrink-0">
             {mounted ? (
-              <Link href="/" passHref className="block">
-                <div className="relative w-12 h-12 md:w-20 md:h-20 cursor-pointer">
+              <Link href="/" className="block">
+                <div className="relative w-10 h-10 md:w-14 md:h-14 cursor-pointer">
                   <Image
                     src="/sit.png"
                     alt="SIT Logo"
                     fill
-                    sizes="(max-width: 768px) 48px, 80px"
+                    sizes="(max-width: 768px) 40px, 56px"
                     className="object-contain object-left dark:invert"
                     priority
                   />
                 </div>
               </Link>
             ) : (
-              <div className="w-12 h-12 md:w-20 md:h-20 bg-gray-100 dark:bg-gray-800 animate-pulse rounded"></div>
+              <div className="w-10 h-10 md:w-14 md:h-14 bg-slate-100 dark:bg-slate-800 animate-pulse rounded-full" />
             )}
           </div>
 
-          {/* Desktop Navigation - Centered */}
+          {/* Desktop nav */}
           <nav className="hidden md:flex flex-1 justify-center">
-            <ul className="flex space-x-6 lg:space-x-8 xl:space-x-10 items-center">
-              <li>
-                <Link
-                  href="/"
-                  className="text-sm lg:text-base text-gray-600 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-semibold hover:border-b-2 hover:border-blue-500 py-1 transition-colors duration-300"
-                >
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/who-we-are"
-                  className="text-sm lg:text-base text-gray-600 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-semibold hover:border-b-2 hover:border-blue-500 py-1 transition-colors duration-300 whitespace-nowrap"
-                >
-                  Who We Are
-                </Link>
-              </li>
-              {/* Desktop Services Dropdown */}
+            <ul className="flex items-center gap-7 lg:gap-9">
+              <li><NavLink href="/">Home</NavLink></li>
+              <li><NavLink href="/who-we-are">Who We Are</NavLink></li>
+
               <li
                 className="relative"
                 ref={servicesRef}
@@ -318,62 +249,54 @@ const Header = () => {
                 onMouseLeave={handleServicesMouseLeave}
               >
                 <button
-                  className="text-sm lg:text-base text-gray-600 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-semibold hover:border-b-2 hover:border-blue-500 py-1 flex items-center gap-1 transition-colors duration-300"
+                  className="flex items-center gap-1 text-[15px] text-slate-600 dark:text-slate-300 font-medium py-1 transition-colors duration-200 hover:text-slate-900 dark:hover:text-white"
                   aria-expanded={isServicesOpen}
                   aria-controls="services-dropdown"
                 >
                   Services
-                  {isServicesOpen ? (
-                    <ChevronUp size={18} className="mt-0.5" />
-                  ) : (
-                    <ChevronDown size={18} className="mt-0.5" />
-                  )}
+                  <ChevronDown
+                    size={16}
+                    className={`transition-transform duration-300 ${isServicesOpen ? 'rotate-180' : ''}`}
+                  />
                 </button>
-                {isServicesOpen && (
-                  <div
-                    id="services-dropdown"
-                    className="absolute left-1/2 top-full mt-2 transform -translate-x-1/2 w-full max-w-[80vw] md:w-[600px] lg:w-[900px] bg-white dark:bg-gray-800 shadow-lg dark:shadow-gray-700 rounded-lg z-30 transition-colors duration-300"
-                    onMouseEnter={handleServicesMouseEnter}
-                    onMouseLeave={handleServicesMouseLeave}
-                    onClick={handleCardClick}
-                  >
-                    <ServiceDropdown />
-                  </div>
-                )}
-              </li>
-              <li>
-                <Link
-                  href="/seo-packages"
-                  className="text-sm lg:text-base text-gray-600 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-semibold hover:border-b-2 hover:border-blue-500 py-1 transition-colors duration-300"
+                <div
+                  id="services-dropdown"
+                  className={`
+                    absolute left-1/2 top-full mt-3 -translate-x-1/2
+                    w-full max-w-[80vw] md:w-[600px] lg:w-[900px]
+                    bg-white dark:bg-slate-800 rounded-2xl z-30
+                    border border-slate-200/70 dark:border-slate-700/60
+                    shadow-[0_20px_50px_-12px_rgba(15,23,42,0.25)]
+                    transition-all duration-200 origin-top
+                    ${isServicesOpen ? 'opacity-100 scale-100 pointer-events-auto' : 'opacity-0 scale-95 pointer-events-none'}
+                  `}
+                  onMouseEnter={handleServicesMouseEnter}
+                  onMouseLeave={handleServicesMouseLeave}
+                  onClick={handleCardClick}
                 >
-                  Packages
-                </Link>
+                  <ServiceDropdown />
+                </div>
               </li>
-              <li>
-                <Link
-                  href="/blog"
-                  className="text-sm lg:text-base text-gray-600 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-semibold hover:border-b-2 hover:border-blue-500 py-1 transition-colors duration-300"
-                >
-                  Blog
-                </Link>
-              </li>
+
+              <li><NavLink href="/seo-packages">Packages</NavLink></li>
+              <li><NavLink href="/blog">Blog</NavLink></li>
             </ul>
           </nav>
 
-          {/* Mobile Menu Toggle Button */}
-          <div className="md:hidden flex items-center gap-3">
+          {/* Mobile toggle */}
+          <div className="md:hidden flex items-center gap-2">
             <ThemeToggleButton />
             <button
-              className="menu-toggle text-gray-600 dark:text-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-md p-1 z-50"
+              className="menu-toggle text-slate-700 dark:text-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-full p-2 z-50 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
               onClick={toggleMobileMenu}
               aria-label="Toggle menu"
               aria-expanded={isMenuOpen}
             >
-              <Menu className="w-6 h-6" />
+              <Menu className="w-5 h-5" />
             </button>
           </div>
 
-          {/* Theme Toggle and Contact Button - Desktop only */}
+          {/* Desktop right side */}
           <div className="hidden md:flex items-center gap-3">
             <ThemeToggleButton />
             <Link href="/contact-us" className={contactButtonClass}>
@@ -383,33 +306,33 @@ const Header = () => {
         </div>
       </header>
 
-      {/* Mobile Menu Drawer Overlay */}
+      {/* Mobile overlay */}
       {isMenuOpen && (
         <div
-          className="fixed inset-0 bg-black/50 z-50 md:hidden"
+          className="fixed inset-0 bg-slate-900/50 backdrop-blur-sm z-50 md:hidden transition-opacity duration-300"
           onClick={toggleMobileMenu}
           aria-hidden="true"
-        ></div>
+        />
       )}
 
-      {/* Mobile Menu Drawer - Fixed to viewport */}
+      {/* Mobile drawer */}
       <div
         ref={mobileMenuRef}
         className={`
-          fixed top-0 right-0 h-full w-3/4 max-w-xs bg-white dark:bg-gray-900 
-          shadow-xl z-50 transform transition-transform duration-300 ease-in-out
+          fixed top-0 right-0 h-full w-3/4 max-w-xs bg-white dark:bg-slate-900
+          shadow-2xl z-50 transform transition-transform duration-300 ease-in-out
           ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}
           flex flex-col md:hidden
         `}
       >
-        <div className="flex justify-between items-center p-5 border-b border-gray-200 dark:border-gray-800">
-          <span className="text-lg font-bold text-gray-900 dark:text-white">Menu</span>
+        <div className="flex justify-between items-center p-5 border-b border-slate-200 dark:border-slate-800">
+          <span className="text-lg font-bold text-slate-900 dark:text-white">Menu</span>
           <button
             onClick={toggleMobileMenu}
             aria-label="Close menu"
-            className="text-gray-600 dark:text-gray-300 focus:outline-none p-1"
+            className="text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full p-1.5 transition-colors"
           >
-            <X className="w-6 h-6" />
+            <X className="w-5 h-5" />
           </button>
         </div>
 
@@ -418,7 +341,7 @@ const Header = () => {
             <li>
               <Link
                 href="/"
-                className="block text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 px-4 py-3 rounded-md font-medium"
+                className="block text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-white px-4 py-3 rounded-xl font-medium transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Home
@@ -427,25 +350,23 @@ const Header = () => {
             <li>
               <Link
                 href="/who-we-are"
-                className="block text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 px-4 py-3 rounded-md font-medium"
+                className="block text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-white px-4 py-3 rounded-xl font-medium transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Who We Are
               </Link>
             </li>
 
-            {/* Mobile Services Dropdown */}
             <li>
-              <button 
+              <button
                 onClick={handleServicesClick}
-                className="flex justify-between items-center w-full text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 px-4 py-3 rounded-md font-medium"
+                className="flex justify-between items-center w-full text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-white px-4 py-3 rounded-xl font-medium transition-colors"
               >
                 Services
-                {isServicesOpen ? (
-                  <ChevronUp size={18} />
-                ) : (
-                  <ChevronDown size={18} />
-                )}
+                <ChevronDown
+                  size={16}
+                  className={`transition-transform duration-300 ${isServicesOpen ? 'rotate-180' : ''}`}
+                />
               </button>
 
               {isServicesOpen && (
@@ -454,30 +375,26 @@ const Header = () => {
                     <li key={category.slug}>
                       <button
                         onClick={() =>
-                          setOpenCategory(
-                            openCategory === category.slug ? null : category.slug,
-                          )
+                          setOpenCategory(openCategory === category.slug ? null : category.slug)
                         }
-                        className="flex justify-between items-center w-full text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 px-4 py-2 rounded-md text-sm"
+                        className="flex justify-between items-center w-full text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 px-4 py-2 rounded-lg text-sm font-medium tracking-wide"
                       >
                         {category.title}
-                        {openCategory === category.slug ? (
-                          <ChevronUp size={14} />
-                        ) : (
-                          <ChevronDown size={14} />
-                        )}
+                        <ChevronDown
+                          size={13}
+                          className={`transition-transform duration-300 ${openCategory === category.slug ? 'rotate-180' : ''}`}
+                        />
                       </button>
 
                       {openCategory === category.slug && (
-                        <ul className="pl-6 mt-1 space-y-1">
+                        <ul className="pl-4 mt-1 space-y-0.5 border-l border-slate-200 dark:border-slate-700 ml-4">
                           {category.services.map((service) => (
                             <li key={service.slug}>
                               <Link
                                 href={`/services/${service.slug}`}
-                                className="flex items-center text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 px-4 py-2 rounded-md text-sm"
+                                className="block text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 px-4 py-2 text-sm transition-colors"
                                 onClick={() => setIsMenuOpen(false)}
                               >
-                                <CircleDot className="w-2 h-2 mr-2 text-black dark:text-white flex-shrink-0" />
                                 {service.title}
                               </Link>
                             </li>
@@ -493,7 +410,7 @@ const Header = () => {
             <li>
               <Link
                 href="/seo-packages"
-                className="block text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 px-4 py-3 rounded-md font-medium"
+                className="block text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-white px-4 py-3 rounded-xl font-medium transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Packages
@@ -503,7 +420,7 @@ const Header = () => {
             <li>
               <Link
                 href="/blog"
-                className="block text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 px-4 py-3 rounded-md font-medium"
+                className="block text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-white px-4 py-3 rounded-xl font-medium transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Blog
@@ -512,12 +429,8 @@ const Header = () => {
           </ul>
         </div>
 
-        <div className="p-6 border-t border-gray-200 dark:border-gray-800 mt-auto">
-          <Link
-            href="/contact-us"
-            className={mobileContactButtonClass}
-            onClick={() => setIsMenuOpen(false)}
-          >
+        <div className="p-6 border-t border-slate-200 dark:border-slate-800 mt-auto">
+          <Link href="/contact-us" className={mobileContactButtonClass} onClick={() => setIsMenuOpen(false)}>
             Contact Us
           </Link>
         </div>

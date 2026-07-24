@@ -29,7 +29,7 @@ export default function BlogDetail() {
         <meta property="og:type" content="article" />
       </Head>
 
-      <section className="bg-white dark:bg-gray-900 py-12 px-4 md:px-8">
+      <section className="bg-white dark:bg-gray-900 pt-32 pb-12 px-4 md:px-8">
         <div className="max-w-4xl mx-auto">
           {/* Main Blog Content */}
           <div className="mb-10">

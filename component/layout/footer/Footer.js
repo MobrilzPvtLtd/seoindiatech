@@ -1,214 +1,502 @@
+// import React from 'react'
+// import {
+//   Phone,
+//   Mail,
+//   Globe,
+//   CircleDot,
+//   MapPin,
+//   Clock,
+//   ArrowUpRight,
+// } from 'lucide-react'
+// import {
+//   FaXTwitter,
+//   FaInstagram,
+//   FaYoutube,
+//   FaLinkedinIn,
+//   FaFacebook,
+//   FaLinkedin,
+// } from 'react-icons/fa6'
+// import Link from 'next/link'
+// import Image from 'next/image'
+
+// const Footer = () => {
+//   const currentYear = new Date().getFullYear()
+
+//   const handleCallUs = () => {
+//     // Add your phone number here
+//     window.open('tel:+91-8076676731', '_self')
+//   }
+
+//   const handleEmailUs = () => {
+//     // Add your email here
+//     window.open('mailto:sales@seoindiatech.com', '_self')
+//   }
+
+//   const services = [
+//     {
+//       title: 'Social Media Marketing',
+//       description:
+//         'Drive brand visibility and engage your target audience through strategic social media campaigns and content.',
+//       icon: '📣',
+//       slug: 'social-media-marketing',
+//     },
+//     {
+//       title: 'Innovative UI/UX Solutions',
+//       description:
+//         'Design and develop intuitive, user-friendly interfaces to enhance user experience and engagement.',
+//       icon: '🎨',
+//       slug: 'ui-ux-design',
+//     },
+//     {
+//       title: 'Digital Branding',
+//       description:
+//         'Build a strong, cohesive brand identity across digital platforms to attract and retain your audience.',
+//       icon: '🌟',
+//       slug: 'digital-branding',
+//     },
+//     {
+//       title: 'Content Marketing',
+//       description:
+//         'Create and distribute valuable, relevant content to attract and engage your target audience effectively.',
+//       icon: '✍️',
+//       slug: 'content-marketing',
+//     },
+//     {
+//       title: 'Search Engine Optimization',
+//       description:
+//         'Optimize your website to rank higher on search engines, increasing visibility and organic traffic.',
+//       icon: '🔍',
+//       slug: 'seo',
+//     },
+//     {
+//       title: '(PPC) Advertising',
+//       description:
+//         'Run targeted pay-per-click campaigns to drive traffic and conversions with measurable results.',
+//       icon: '📈',
+//       slug: 'ppc-advertising',
+//     },
+//   ]
+
+//   const solutions = [
+//     {
+//       title: 'Automation',
+//       description:
+//         'Automation streamlines tasks, boosting efficiency and reducing errors, so your team can focus on strategic goals.',
+//       icon: '⚙️',
+//       slug: 'automation',
+//     },
+//     {
+//       title: 'Workflow',
+//       description:
+//         'Workflow streamlines and automates tasks, ensuring a smooth, efficient, and organized process from start to finish.',
+//       icon: '📋',
+//       slug: 'workflow',
+//     },
+//     {
+//       title: 'Promotion & Ads',
+//       description:
+//         'Drive brand visibility and attract your target audience through strategic messaging and impactful campaigns.',
+//       icon: '📣',
+//       slug: 'promotion-and-ads',
+//     },
+//     {
+//       title: 'CRM & Tools',
+//       description:
+//         'CRM and management tools optimize customer relationships and streamline operations for better efficiency and growth.',
+//       icon: '👥',
+//       slug: 'crm-and-tools',
+//     },
+//     {
+//       title: 'Market Research',
+//       description:
+//         'Market research provides valuable insights into consumer behavior and emerging trends, guiding smart business decisions.',
+//       icon: '🔍',
+//       slug: 'market-research',
+//     },
+//     {
+//       title: 'Website Creation',
+//       description:
+//         "Website creation involves designing and developing an engaging, functional online presence tailored to your brand's needs.",
+//       icon: '🌐',
+//       slug: 'website-creation',
+//     },
+//   ]
+
+//   return (
+//     <footer className="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100">
+//       {/* Newsletter Section */}
+//       <div className="bg-blue-50 dark:bg-blue-900/30 py-10 border-b border-blue-100 dark:border-blue-800/30 hidden ">
+//         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+//           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+//             <div className="md:max-w-xl">
+//               <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
+//                 Subscribe to our newsletter
+//               </h3>
+//               <p className="mt-2 text-gray-600 dark:text-gray-300">
+//                 Stay updated with the latest trends, tips, and insights in
+//                 digital marketing.
+//               </p>
+//             </div>
+//             <div className="w-full md:w-auto flex-1 max-w-md">
+//               <form className="flex flex-col sm:flex-row gap-3" action="/api/submit-form">
+//                 <label htmlFor="newsletterEmail" className="sr-only">
+//                   Subscribe to our newsletter
+//                 </label>
+//                 <input
+//                   id="newsletterEmail"
+//                   type="email"
+//                   placeholder="Enter your email"
+//                   className="flex-1 px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 focus:border-blue-500 dark:focus:border-blue-400 bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
+//                   required
+//                 />
+//                 <button
+//                   type="submit"
+//                   className="px-6 py-3 bg-blue-600 dark:bg-blue-500 text-white font-medium rounded-lg hover:bg-blue-700 dark:hover:bg-blue-600 transition-colors duration-300 whitespace-nowrap flex items-center justify-center gap-2"
+//                 >
+//                   Subscribe
+//                   <ArrowUpRight className="w-4 h-4" />
+//                 </button>
+//               </form>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+
+//       {/* Main Footer */}
+//       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+//         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+//           {/* Company Info */}
+//           <div className="space-y-6">
+//             <div className="flex items-center space-x-2">
+//               <Link href="/" className="block relative">
+//                 <div className="relative w-32 h-16">
+//                   <Image
+//                     src="/sit.png"
+//                     alt="Logo"
+//                     fill
+//                     sizes="128px"
+//                     style={{
+//                       objectFit: 'contain',
+//                       objectPosition: 'center',
+//                     }}
+//                     className="bg-white dark:bg-gray-800 p-1.5 rounded-md shadow-sm"
+//                   />
+//                 </div>
+//               </Link>
+//             </div>
+//             <p className="text-lg font-medium">
+//               Start Your Business &{' '}
+//               <span className="font-bold text-blue-600 dark:text-blue-400">
+//                 GROW WITH US
+//               </span>
+//             </p>
+//             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+//               We help businesses transform their digital presence and achieve
+//               sustainable growth through innovative marketing solutions.
+//             </p>
+//           </div>
+
+//           {/* Services */}
+//           <div className="space-y-6">
+//             <h3 className="text-xl font-bold text-gray-900 dark:text-white">
+//               Our Services
+//             </h3>
+//             <ul className="space-y-3">
+//               {services.slice(0, 6).map((service) => (
+//                 <li key={service.slug}>
+//                   <Link
+//                     href={`/services/${service.slug}`}
+//                     className="flex items-center text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
+//                   >
+//                     <CircleDot className="w-3 h-3 mr-2 text-blue-500 dark:text-blue-400 flex-shrink-0" />
+//                     <span>{service.title}</span>
+//                   </Link>
+//                 </li>
+//               ))}
+//             </ul>
+//           </div>
+
+//           {/* Solutions */}
+//           <div className="space-y-6">
+//             <h3 className="text-xl font-bold text-gray-900 dark:text-white">
+//               Our Solutions
+//             </h3>
+//             <ul className="space-y-3">
+//               {solutions.slice(0, 6).map((solution) => (
+//                 <li key={solution.slug}>
+//                   <Link
+//                     href={`/solution/${solution.slug}`}
+//                     className="flex items-center text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
+//                   >
+//                     <CircleDot className="w-3 h-3 mr-2 text-blue-500 dark:text-blue-400 flex-shrink-0" />
+//                     <span>{solution.title}</span>
+//                   </Link>
+//                 </li>
+//               ))}
+//             </ul>
+//           </div>
+
+//           {/* Contact Info */}
+//           <div className="space-y-6">
+//             <h3 className="text-xl font-bold text-gray-900 dark:text-white">
+//               Contact Info
+//             </h3>
+
+//             <div className="space-y-4">
+//               <p className="flex items-start space-x-3 text-gray-600 dark:text-gray-300">
+//                 <MapPin className="w-5 h-5 text-blue-600 dark:text-blue-400 mt-1 flex-shrink-0" />
+//                 <span>
+//                   E 160, E Block, Sector 63, Noida, Hazratpur Wajidpur, Uttar
+//                   Pradesh 201301
+//                 </span>
+//               </p>
+
+//               <p className="flex items-start space-x-3 text-gray-600 dark:text-gray-300">
+//                 <Clock className="w-5 h-5 text-blue-600 dark:text-blue-400 mt-1 flex-shrink-0" />
+//                 <span>Mon - Fri: 9:00 AM - 6:00 PM</span>
+//               </p>
+//             </div>
+
+//             <div className="pt-2 space-y-3">
+//               <button
+//                 onClick={handleCallUs}
+//                 className="w-full bg-gradient-to-r from-blue-600 to-blue-800 dark:from-blue-500 dark:to-indigo-700 text-white px-6 py-3 rounded-full font-medium transition-all duration-300 flex items-center justify-center space-x-2 shadow-md hover:shadow-lg hover:scale-105 transform active:scale-95 border border-blue-700/20 dark:border-blue-500/30"
+//               >
+//                 <Phone className="w-4 h-4" />
+//                 <span>Call Us</span>
+//               </button>
+
+//               <button
+//                 onClick={handleEmailUs}
+//                 className="w-full bg-gradient-to-r from-red-500 to-red-700 dark:from-red-600 dark:to-red-800 text-white px-6 py-3 rounded-full font-medium transition-all duration-300 flex items-center justify-center space-x-2 shadow-md hover:shadow-lg hover:scale-105 transform active:scale-95 border border-red-500/20 dark:border-red-500/30"
+//               >
+//                 <Mail className="w-4 h-4" />
+//                 <span>Email Us</span>
+//               </button>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+
+//       {/* SEO Locations Inline */}
+//       <div className="border-t border-gray-200 dark:border-gray-700 py-3">
+//         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-left text-sm text-gray-600 dark:text-gray-300">
+//           <span className="font-semibold text-gray-800 dark:text-gray-200">
+//             Our Presence:
+//           </span>{' '}
+//           <Link
+//             href="/seo-services/seo-services-in-noida"
+//             className="text-blue-600 dark:text-blue-400 font-semibold hover:underline"
+//           >
+//             Noida
+//           </Link>{' '}
+//           |{' '}
+//           <Link
+//             href="/seo-services/seo-services-in-delhi"
+//             className="text-blue-600 dark:text-blue-400 font-semibold hover:underline"
+//           >
+//             Delhi
+//           </Link>{' '}
+//           |{' '}
+//           <Link
+//             href="/seo-services/seo-services-in-hyderabad"
+//             className="text-blue-600 dark:text-blue-400 font-semibold hover:underline"
+//           >
+//             Hyderabad
+//           </Link>{' '}
+//           |{' '}
+//           <Link
+//             href="/seo-services/seo-services-in-pune"
+//             className="text-blue-600 dark:text-blue-400 font-semibold hover:underline"
+//           >
+//             Pune
+//           </Link>{' '}
+//           |{' '}
+//           <Link
+//             href="/seo-services/seo-services-in-chandigarh"
+//             className="text-blue-600 dark:text-blue-400 font-semibold hover:underline"
+//           >
+//             Chandigarh
+//           </Link>{' '}
+//           |{' '}
+//           <Link
+//             href="/seo-services/seo-services-in-mumbai"
+//             className="text-blue-600 dark:text-blue-400 font-semibold hover:underline"
+//           >
+//             Mumbai
+//           </Link>{' '}
+//           |{' '}
+//           <Link
+//             href="/seo-services/seo-services-in-jaipur"
+//             className="text-blue-600 dark:text-blue-400 font-semibold hover:underline"
+//           >
+//             Jaipur
+//           </Link>
+//         </div>
+//       </div>
+
+//       {/* Bottom Bar */}
+//       <div className="bg-gray-100 dark:bg-gray-800 py-4 border-t border-gray-200 dark:border-gray-700">
+//         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+//           <div className="flex flex-col md:flex-row items-center md:space-x-6 mb-4 md:mb-0">
+//             <p className="text-gray-700 dark:text-gray-300 text-sm font-medium">
+//               &copy; {currentYear} SEO India Tech – All rights reserved
+//             </p>
+//             <div className="flex space-x-4 mt-2 md:mt-0">
+//               <Link
+//                 href="/privacy-policy"
+//                 className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+//               >
+//                 Privacy Policy
+//               </Link>
+//               <Link
+//                 href="/terms"
+//                 className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+//               >
+//                 Terms of Service
+//               </Link>
+//             </div>
+//           </div>
+
+//           <div className="flex flex-wrap justify-center gap-6">
+//             <Link
+//               href="https://x.com/seoindiatech411"
+//               className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-300 flex items-center gap-2 hover:scale-105 transform"
+//               target="_blank"
+//               rel="noopener noreferrer"
+//             >
+//               <FaXTwitter size={18} />
+//               <span className="text-sm font-medium">Twitter</span>
+//             </Link>
+
+//             <Link
+//               href="https://www.instagram.com/seoindiatech/"
+//               className="text-gray-600 dark:text-gray-400 hover:text-pink-600 dark:hover:text-pink-400 transition-all duration-300 flex items-center gap-2 hover:scale-105 transform"
+//               target="_blank"
+//               rel="noopener noreferrer"
+//             >
+//               <FaInstagram size={18} />
+//               <span className="text-sm font-medium">Instagram</span>
+//             </Link>
+
+//             <Link
+//               href="https://www.youtube.com/@SEOIndiatech"
+//               className="text-gray-600 dark:text-gray-400 hover:text-red-600 dark:hover:text-red-400 transition-all duration-300 flex items-center gap-2 hover:scale-105 transform"
+//               target="_blank"
+//               rel="noopener noreferrer"
+//             >
+//               <FaYoutube size={18} />
+//               <span className="text-sm font-medium">YouTube</span>
+//             </Link>
+//             <Link
+//               href="https://www.facebook.com/profile.php?id=61582651577922"
+//               className="text-gray-600 dark:text-gray-400 hover:text-red-600 dark:hover:text-red-400 transition-all duration-300 flex items-center gap-2 hover:scale-105 transform"
+//               target="_blank"
+//               rel="noopener noreferrer"
+//             >
+//               <FaFacebook size={18} />
+//               <span className="text-sm font-medium">Facebook</span>
+//             </Link>
+//             <Link
+//               href="https://www.linkedin.com/company/seo-india-tech/"
+//               className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-red-400 transition-all duration-300 flex items-center gap-2 hover:scale-105 transform"
+//               target="_blank"
+//               rel="noopener noreferrer"
+//             >
+//               <FaLinkedin size={18} />
+//               <span className="text-sm font-medium">LinkedIn</span>
+//             </Link>
+//           </div>
+//         </div>
+//       </div>
+//     </footer>
+//   )
+// }
+
+// export default Footer
+
+
+
 import React from 'react'
-import {
-  Phone,
-  Mail,
-  Globe,
-  CircleDot,
-  MapPin,
-  Clock,
-  ArrowUpRight,
-} from 'lucide-react'
-import {
-  FaXTwitter,
-  FaInstagram,
-  FaYoutube,
-  FaLinkedinIn,
-  FaFacebook,
-  FaLinkedin,
-} from 'react-icons/fa6'
+import { Phone, Mail, MapPin, Clock } from 'lucide-react'
+import { FaXTwitter, FaInstagram, FaYoutube, FaFacebook, FaLinkedin } from 'react-icons/fa6'
+import { CircleDot } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
 
-  const handleCallUs = () => {
-    // Add your phone number here
-    window.open('tel:+91-8076676731', '_self')
-  }
-
-  const handleEmailUs = () => {
-    // Add your email here
-    window.open('mailto:sales@seoindiatech.com', '_self')
-  }
+  const handleCallUs = () => window.open('tel:+91-8076676731', '_self')
+  const handleEmailUs = () => window.open('mailto:sales@seoindiatech.com', '_self')
 
   const services = [
-    {
-      title: 'Social Media Marketing',
-      description:
-        'Drive brand visibility and engage your target audience through strategic social media campaigns and content.',
-      icon: '📣',
-      slug: 'social-media-marketing',
-    },
-    {
-      title: 'Innovative UI/UX Solutions',
-      description:
-        'Design and develop intuitive, user-friendly interfaces to enhance user experience and engagement.',
-      icon: '🎨',
-      slug: 'ui-ux-design',
-    },
-    {
-      title: 'Digital Branding',
-      description:
-        'Build a strong, cohesive brand identity across digital platforms to attract and retain your audience.',
-      icon: '🌟',
-      slug: 'digital-branding',
-    },
-    {
-      title: 'Content Marketing',
-      description:
-        'Create and distribute valuable, relevant content to attract and engage your target audience effectively.',
-      icon: '✍️',
-      slug: 'content-marketing',
-    },
-    {
-      title: 'Search Engine Optimization',
-      description:
-        'Optimize your website to rank higher on search engines, increasing visibility and organic traffic.',
-      icon: '🔍',
-      slug: 'seo',
-    },
-    {
-      title: '(PPC) Advertising',
-      description:
-        'Run targeted pay-per-click campaigns to drive traffic and conversions with measurable results.',
-      icon: '📈',
-      slug: 'ppc-advertising',
-    },
+    { title: 'Social Media Marketing', slug: 'social-media-marketing' },
+    { title: 'Innovative UI/UX Solutions', slug: 'ui-ux-design' },
+    { title: 'Digital Branding', slug: 'digital-branding' },
+    { title: 'Content Marketing', slug: 'content-marketing' },
+    { title: 'Search Engine Optimization', slug: 'seo' },
+    { title: '(PPC) Advertising', slug: 'ppc-advertising' },
   ]
 
   const solutions = [
-    {
-      title: 'Automation',
-      description:
-        'Automation streamlines tasks, boosting efficiency and reducing errors, so your team can focus on strategic goals.',
-      icon: '⚙️',
-      slug: 'automation',
-    },
-    {
-      title: 'Workflow',
-      description:
-        'Workflow streamlines and automates tasks, ensuring a smooth, efficient, and organized process from start to finish.',
-      icon: '📋',
-      slug: 'workflow',
-    },
-    {
-      title: 'Promotion & Ads',
-      description:
-        'Drive brand visibility and attract your target audience through strategic messaging and impactful campaigns.',
-      icon: '📣',
-      slug: 'promotion-and-ads',
-    },
-    {
-      title: 'CRM & Tools',
-      description:
-        'CRM and management tools optimize customer relationships and streamline operations for better efficiency and growth.',
-      icon: '👥',
-      slug: 'crm-and-tools',
-    },
-    {
-      title: 'Market Research',
-      description:
-        'Market research provides valuable insights into consumer behavior and emerging trends, guiding smart business decisions.',
-      icon: '🔍',
-      slug: 'market-research',
-    },
-    {
-      title: 'Website Creation',
-      description:
-        "Website creation involves designing and developing an engaging, functional online presence tailored to your brand's needs.",
-      icon: '🌐',
-      slug: 'website-creation',
-    },
+    { title: 'Automation', slug: 'automation' },
+    { title: 'Workflow', slug: 'workflow' },
+    { title: 'Promotion & Ads', slug: 'promotion-and-ads' },
+    { title: 'CRM & Tools', slug: 'crm-and-tools' },
+    { title: 'Market Research', slug: 'market-research' },
+    { title: 'Website Creation', slug: 'website-creation' },
+  ]
+
+  const locations = ['Noida', 'Delhi', 'Hyderabad', 'Pune', 'Chandigarh', 'Mumbai', 'Jaipur']
+
+  const socials = [
+    { icon: FaXTwitter, href: 'https://x.com/seoindiatech411', label: 'Twitter', hover: 'hover:text-white' },
+    { icon: FaInstagram, href: 'https://www.instagram.com/seoindiatech/', label: 'Instagram', hover: 'hover:text-pink-400' },
+    { icon: FaYoutube, href: 'https://www.youtube.com/@SEOIndiatech', label: 'YouTube', hover: 'hover:text-red-400' },
+    { icon: FaFacebook, href: 'https://www.facebook.com/profile.php?id=61582651577922', label: 'Facebook', hover: 'hover:text-blue-400' },
+    { icon: FaLinkedin, href: 'https://www.linkedin.com/company/seo-india-tech/', label: 'LinkedIn', hover: 'hover:text-blue-400' },
   ]
 
   return (
-    <footer className="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100">
-      {/* Newsletter Section */}
-      <div className="bg-blue-50 dark:bg-blue-900/30 py-10 border-b border-blue-100 dark:border-blue-800/30 hidden ">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-            <div className="md:max-w-xl">
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
-                Subscribe to our newsletter
-              </h3>
-              <p className="mt-2 text-gray-600 dark:text-gray-300">
-                Stay updated with the latest trends, tips, and insights in
-                digital marketing.
-              </p>
-            </div>
-            <div className="w-full md:w-auto flex-1 max-w-md">
-              <form className="flex flex-col sm:flex-row gap-3" action="/api/submit-form">
-                <label htmlFor="newsletterEmail" className="sr-only">
-                  Subscribe to our newsletter
-                </label>
-                <input
-                  id="newsletterEmail"
-                  type="email"
-                  placeholder="Enter your email"
-                  className="flex-1 px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 focus:border-blue-500 dark:focus:border-blue-400 bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
-                  required
-                />
-                <button
-                  type="submit"
-                  className="px-6 py-3 bg-blue-600 dark:bg-blue-500 text-white font-medium rounded-lg hover:bg-blue-700 dark:hover:bg-blue-600 transition-colors duration-300 whitespace-nowrap flex items-center justify-center gap-2"
-                >
-                  Subscribe
-                  <ArrowUpRight className="w-4 h-4" />
-                </button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-
+    <footer className="relative bg-black text-gray-300 overflow-hidden">
       {/* Main Footer */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Company Info */}
           <div className="space-y-6">
-            <div className="flex items-center space-x-2">
-              <Link href="/" className="block relative">
-                <div className="relative w-32 h-16">
-                  <Image
-                    src="/sit.png"
-                    alt="Logo"
-                    fill
-                    sizes="128px"
-                    style={{
-                      objectFit: 'contain',
-                      objectPosition: 'center',
-                    }}
-                    className="bg-white dark:bg-gray-800 p-1.5 rounded-md shadow-sm"
-                  />
-                </div>
+            <div className="relative w-32 h-16">
+              <Link href="/" className="block relative w-full h-full">
+                <Image
+                  src="/sit.png"
+                  alt="SEO India Tech Logo"
+                  fill
+                  sizes="128px"
+                  style={{ objectFit: 'contain', objectPosition: 'center' }}
+                  className="bg-white p-1.5 rounded-md"
+                />
               </Link>
             </div>
-            <p className="text-lg font-medium">
+            <p className="text-base font-medium text-gray-200">
               Start Your Business &{' '}
-              <span className="font-bold text-blue-600 dark:text-blue-400">
-                GROW WITH US
-              </span>
+              <span className="font-bold text-blue-400">GROW WITH US</span>
             </p>
-            <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-              We help businesses transform their digital presence and achieve
-              sustainable growth through innovative marketing solutions.
+            <p className="text-gray-500 leading-relaxed text-sm">
+              We help businesses transform their digital presence and achieve sustainable growth
+              through innovative marketing solutions.
             </p>
           </div>
 
           {/* Services */}
           <div className="space-y-6">
-            <h3 className="text-xl font-bold text-gray-900 dark:text-white">
-              Our Services
-            </h3>
+            <h3 className="text-base font-bold text-white tracking-wide">Our Services</h3>
             <ul className="space-y-3">
-              {services.slice(0, 6).map((service) => (
+              {services.map((service) => (
                 <li key={service.slug}>
                   <Link
                     href={`/services/${service.slug}`}
-                    className="flex items-center text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
+                    className="flex items-center text-gray-500 hover:text-white transition-colors duration-200 text-sm"
                   >
-                    <CircleDot className="w-3 h-3 mr-2 text-blue-500 dark:text-blue-400 flex-shrink-0" />
                     <span>{service.title}</span>
                   </Link>
                 </li>
@@ -218,17 +506,14 @@ const Footer = () => {
 
           {/* Solutions */}
           <div className="space-y-6">
-            <h3 className="text-xl font-bold text-gray-900 dark:text-white">
-              Our Solutions
-            </h3>
+            <h3 className="text-base font-bold text-white tracking-wide">Our Solutions</h3>
             <ul className="space-y-3">
-              {solutions.slice(0, 6).map((solution) => (
+              {solutions.map((solution) => (
                 <li key={solution.slug}>
                   <Link
                     href={`/solution/${solution.slug}`}
-                    className="flex items-center text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
+                    className="flex items-center text-gray-500 hover:text-white transition-colors duration-200 text-sm"
                   >
-                    <CircleDot className="w-3 h-3 mr-2 text-blue-500 dark:text-blue-400 flex-shrink-0" />
                     <span>{solution.title}</span>
                   </Link>
                 </li>
@@ -238,37 +523,29 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div className="space-y-6">
-            <h3 className="text-xl font-bold text-gray-900 dark:text-white">
-              Contact Info
-            </h3>
-
-            <div className="space-y-4">
-              <p className="flex items-start space-x-3 text-gray-600 dark:text-gray-300">
-                <MapPin className="w-5 h-5 text-blue-600 dark:text-blue-400 mt-1 flex-shrink-0" />
-                <span>
-                  E 160, E Block, Sector 63, Noida, Hazratpur Wajidpur, Uttar
-                  Pradesh 201301
-                </span>
+            <h3 className="text-base font-bold text-white tracking-wide">Contact Info</h3>
+            <div className="space-y-4 text-sm">
+              <p className="flex items-start space-x-3 text-gray-500">
+                <MapPin className="w-4 h-4 text-blue-400 mt-0.5 flex-shrink-0" />
+                <span>E 160, E Block, Sector 63, Noida, Hazratpur Wajidpur, Uttar Pradesh 201301</span>
               </p>
-
-              <p className="flex items-start space-x-3 text-gray-600 dark:text-gray-300">
-                <Clock className="w-5 h-5 text-blue-600 dark:text-blue-400 mt-1 flex-shrink-0" />
+              <p className="flex items-start space-x-3 text-gray-500">
+                <Clock className="w-4 h-4 text-blue-400 mt-0.5 flex-shrink-0" />
                 <span>Mon - Fri: 9:00 AM - 6:00 PM</span>
               </p>
             </div>
 
-            <div className="pt-2 space-y-3">
+            <div className="pt-1 space-y-3">
               <button
                 onClick={handleCallUs}
-                className="w-full bg-gradient-to-r from-blue-600 to-blue-800 dark:from-blue-500 dark:to-indigo-700 text-white px-6 py-3 rounded-full font-medium transition-all duration-300 flex items-center justify-center space-x-2 shadow-md hover:shadow-lg hover:scale-105 transform active:scale-95 border border-blue-700/20 dark:border-blue-500/30"
+                className="w-full bg-white text-gray-900 px-6 py-3 rounded-full font-semibold text-sm transition-all duration-300 flex items-center justify-center space-x-2 hover:bg-blue-50 hover:scale-[1.02] active:scale-95"
               >
                 <Phone className="w-4 h-4" />
                 <span>Call Us</span>
               </button>
-
               <button
                 onClick={handleEmailUs}
-                className="w-full bg-gradient-to-r from-red-500 to-red-700 dark:from-red-600 dark:to-red-800 text-white px-6 py-3 rounded-full font-medium transition-all duration-300 flex items-center justify-center space-x-2 shadow-md hover:shadow-lg hover:scale-105 transform active:scale-95 border border-red-500/20 dark:border-red-500/30"
+                className="w-full border border-white/15 text-white px-6 py-3 rounded-full font-semibold text-sm transition-all duration-300 flex items-center justify-center space-x-2 hover:bg-white/10 hover:scale-[1.02] active:scale-95"
               >
                 <Mail className="w-4 h-4" />
                 <span>Email Us</span>
@@ -278,139 +555,71 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* SEO Locations Inline */}
-      <div className="border-t border-gray-200 dark:border-gray-700 py-3">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-left text-sm text-gray-600 dark:text-gray-300">
-          <span className="font-semibold text-gray-800 dark:text-gray-200">
-            Our Presence:
-          </span>{' '}
-          <Link
-            href="/seo-services/seo-services-in-noida"
-            className="text-blue-600 dark:text-blue-400 font-semibold hover:underline"
-          >
-            Noida
-          </Link>{' '}
-          |{' '}
-          <Link
-            href="/seo-services/seo-services-in-delhi"
-            className="text-blue-600 dark:text-blue-400 font-semibold hover:underline"
-          >
-            Delhi
-          </Link>{' '}
-          |{' '}
-          <Link
-            href="/seo-services/seo-services-in-hyderabad"
-            className="text-blue-600 dark:text-blue-400 font-semibold hover:underline"
-          >
-            Hyderabad
-          </Link>{' '}
-          |{' '}
-          <Link
-            href="/seo-services/seo-services-in-pune"
-            className="text-blue-600 dark:text-blue-400 font-semibold hover:underline"
-          >
-            Pune
-          </Link>{' '}
-          |{' '}
-          <Link
-            href="/seo-services/seo-services-in-chandigarh"
-            className="text-blue-600 dark:text-blue-400 font-semibold hover:underline"
-          >
-            Chandigarh
-          </Link>{' '}
-          |{' '}
-          <Link
-            href="/seo-services/seo-services-in-mumbai"
-            className="text-blue-600 dark:text-blue-400 font-semibold hover:underline"
-          >
-            Mumbai
-          </Link>{' '}
-          |{' '}
-          <Link
-            href="/seo-services/seo-services-in-jaipur"
-            className="text-blue-600 dark:text-blue-400 font-semibold hover:underline"
-          >
-            Jaipur
-          </Link>
+      {/* SEO Locations */}
+      <div className="relative border-t border-white/10 py-3">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-sm text-gray-500">
+          <span className="font-semibold text-gray-300">Our Presence:</span>{' '}
+          {locations.map((city, i) => (
+            <React.Fragment key={city}>
+              <Link
+                href={`/seo-services/seo-services-in-${city.toLowerCase()}`}
+                className="text-blue-400 font-medium hover:text-blue-300 hover:underline"
+              >
+                {city}
+              </Link>
+              {i < locations.length - 1 && ' | '}
+            </React.Fragment>
+          ))}
         </div>
       </div>
 
       {/* Bottom Bar */}
-      <div className="bg-gray-100 dark:bg-gray-800 py-4 border-t border-gray-200 dark:border-gray-700">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
-          <div className="flex flex-col md:flex-row items-center md:space-x-6 mb-4 md:mb-0">
-            <p className="text-gray-700 dark:text-gray-300 text-sm font-medium">
-              &copy; {currentYear} SEO India Tech – All rights reserved
-            </p>
+      <div className="relative border-t border-white/10 py-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
+          <div className="flex flex-col md:flex-row items-center md:space-x-6">
+            <p className="text-gray-500 text-sm">&copy; {currentYear} SEO India Tech &ndash; All rights reserved</p>
             <div className="flex space-x-4 mt-2 md:mt-0">
-              <Link
-                href="/privacy-policy"
-                className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-              >
-                Privacy Policy
-              </Link>
-              <Link
-                href="/terms"
-                className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-              >
-                Terms of Service
-              </Link>
+              <Link href="/privacy-policy" className="text-sm text-gray-500 hover:text-blue-400 transition-colors">Privacy Policy</Link>
+              <Link href="/terms" className="text-sm text-gray-500 hover:text-blue-400 transition-colors">Terms of Service</Link>
             </div>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-6">
-            <Link
-              href="https://x.com/seoindiatech411"
-              className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-300 flex items-center gap-2 hover:scale-105 transform"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaXTwitter size={18} />
-              <span className="text-sm font-medium">Twitter</span>
-            </Link>
-
-            <Link
-              href="https://www.instagram.com/seoindiatech/"
-              className="text-gray-600 dark:text-gray-400 hover:text-pink-600 dark:hover:text-pink-400 transition-all duration-300 flex items-center gap-2 hover:scale-105 transform"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaInstagram size={18} />
-              <span className="text-sm font-medium">Instagram</span>
-            </Link>
-
-            <Link
-              href="https://www.youtube.com/@SEOIndiatech"
-              className="text-gray-600 dark:text-gray-400 hover:text-red-600 dark:hover:text-red-400 transition-all duration-300 flex items-center gap-2 hover:scale-105 transform"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaYoutube size={18} />
-              <span className="text-sm font-medium">YouTube</span>
-            </Link>
-            <Link
-              href="https://www.facebook.com/profile.php?id=61582651577922"
-              className="text-gray-600 dark:text-gray-400 hover:text-red-600 dark:hover:text-red-400 transition-all duration-300 flex items-center gap-2 hover:scale-105 transform"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaFacebook size={18} />
-              <span className="text-sm font-medium">Facebook</span>
-            </Link>
-            <Link
-              href="https://www.linkedin.com/company/seo-india-tech/"
-              className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-red-400 transition-all duration-300 flex items-center gap-2 hover:scale-105 transform"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaLinkedin size={18} />
-              <span className="text-sm font-medium">LinkedIn</span>
-            </Link>
+          <div className="flex flex-wrap justify-center gap-3">
+            {socials.map(({ icon: Icon, href, label, hover }) => (
+              <Link
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={label}
+                className={`h-9 w-9 flex items-center justify-center rounded-full border border-white/10 text-gray-400 transition-all duration-300 hover:border-white/30 hover:-translate-y-0.5 ${hover}`}
+              >
+                <Icon size={16} />
+              </Link>
+            ))}
           </div>
         </div>
+      </div>
+
+      {/* Oversized faded wordmark, like a signature watermark closing out the page */}
+      <div className="relative select-none pointer-events-none pb-2 pt-6 overflow-hidden">
+        <p
+          className="text-center font-extrabold leading-none whitespace-nowrap"
+          style={{
+            fontSize: 'clamp(3rem, 12vw, 11rem)',
+            background: 'linear-gradient(180deg, rgba(255,255,255,0.14) 0%, rgba(255,255,255,0.02) 100%)',
+            WebkitBackgroundClip: 'text',
+            backgroundClip: 'text',
+            color: 'transparent',
+          }}
+        >
+          SEO INDIA TECH
+        </p>
       </div>
     </footer>
   )
 }
 
 export default Footer
+
+
