@@ -1,9 +1,9 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { FaStar, FaCheckCircle, FaArrowRight } from 'react-icons/fa'
 import { HiOutlineChatBubbleLeftRight } from 'react-icons/hi2'
 import HeroContactForm from './HeroContactForm'
-import gsap from 'gsap'
+import { motion } from 'framer-motion'
 
 const services = [
   'Digital Marketing',
@@ -13,6 +13,20 @@ const services = [
   'Social Media Marketing',
   'Pay per Click',
   'Custom Software Development',
+]
+
+const orbAnimations = [
+  { x: [-30, 30, -20], y: [-25, 25, -15], scale: [0.85, 1.15, 0.9], opacity: [0.15, 0.28, 0.15], duration: 20, delay: 0 },
+  { x: [-25, 35, -15], y: [-20, 30, -10], scale: [0.9, 1.2, 0.85], opacity: [0.12, 0.25, 0.12], duration: 24, delay: 1 },
+  { x: [-35, 20, -25], y: [-15, 20, -20], scale: [0.8, 1.1, 0.9], opacity: [0.14, 0.22, 0.14], duration: 22, delay: 2 },
+]
+
+const dotAnimations = [
+  { x: [-12, 12], y: [-10, 10], scale: [0.7, 1.4], opacity: [0.25, 0.5], duration: 12, delay: 0 },
+  { x: [-10, 15], y: [-8, 12], scale: [0.6, 1.3], opacity: [0.3, 0.55], duration: 14, delay: 0.8 },
+  { x: [-14, 10], y: [-12, 8], scale: [0.8, 1.5], opacity: [0.2, 0.45], duration: 11, delay: 1.6 },
+  { x: [-8, 12], y: [-10, 14], scale: [0.7, 1.2], opacity: [0.25, 0.4], duration: 13, delay: 2.4 },
+  { x: [-11, 9], y: [-9, 11], scale: [0.65, 1.35], opacity: [0.28, 0.48], duration: 15, delay: 3.2 },
 ]
 
 const orbs = [
@@ -33,9 +47,7 @@ const NewHero = () => {
   const [text, setText] = useState('')
   const [serviceIndex, setServiceIndex] = useState(0)
   const [isDeleting, setIsDeleting] = useState(false)
-  const bgRef = useRef(null)
 
-  // Typewriter effect
   useEffect(() => {
     const current = services[serviceIndex]
     let timeout
@@ -54,100 +66,48 @@ const NewHero = () => {
     return () => clearTimeout(timeout)
   }, [text, isDeleting, serviceIndex])
 
-  // GSAP floating orbs animation
-  useEffect(() => {
-    if (!bgRef.current) return
-
-    const ctx = gsap.context(() => {
-      const orbEls = bgRef.current.querySelectorAll('.orb')
-      const dotEls = bgRef.current.querySelectorAll('.dot')
-
-      // Large orbs — slow drift + pulse
-      orbEls.forEach((el, i) => {
-        const xRange = 40 + i * 20
-        const yRange = 30 + i * 15
-        const driftDuration = 18 + i * 4
-        const pulseDuration = 10 + i * 3
-
-        // Drift
-        gsap.to(el, {
-          x: `random(-${xRange}, ${xRange})`,
-          y: `random(-${yRange}, ${yRange})`,
-          duration: driftDuration,
-          repeat: -1,
-          yoyo: true,
-          ease: 'sine.inOut',
-          delay: i * 1.5,
-        })
-
-        // Scale pulse
-        gsap.to(el, {
-          scale: `random(0.8, 1.25)`,
-          duration: pulseDuration,
-          repeat: -1,
-          yoyo: true,
-          ease: 'sine.inOut',
-          delay: i * 2,
-        })
-
-        // Opacity breathing
-        gsap.to(el, {
-          opacity: `random(0.12, 0.3)`,
-          duration: pulseDuration * 1.3,
-          repeat: -1,
-          yoyo: true,
-          ease: 'sine.inOut',
-          delay: i * 1.8,
-        })
-      })
-
-      // Small dots — faster, tighter movement
-      dotEls.forEach((el, i) => {
-        const xRange = 15 + i * 5
-        const yRange = 12 + i * 4
-        const duration = 10 + i * 2
-
-        gsap.to(el, {
-          x: `random(-${xRange}, ${xRange})`,
-          y: `random(-${yRange}, ${yRange})`,
-          duration: duration,
-          repeat: -1,
-          yoyo: true,
-          ease: 'sine.inOut',
-          delay: i * 0.8,
-        })
-
-        gsap.to(el, {
-          scale: `random(0.6, 1.5)`,
-          opacity: `random(0.2, 0.55)`,
-          duration: duration * 0.8,
-          repeat: -1,
-          yoyo: true,
-          ease: 'sine.inOut',
-          delay: i * 1.2,
-        })
-      })
-    }, bgRef)
-
-    return () => ctx.revert()
-  }, [])
-
   return (
     <section className="relative bg-gradient-to-br from-gray-50 via-white to-gray-50 dark:from-gray-900 dark:via-gray-900 dark:to-gray-800/90 overflow-hidden pt-12">
-      {/* GSAP Animated Background */}
-      <div ref={bgRef} className="absolute inset-0 pointer-events-none overflow-hidden">
-        {orbs.map((orb) => (
-          <div
+      {/* Animated Background */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        {orbs.map((orb, i) => (
+          <motion.div
             key={orb.className}
-            className={`orb absolute rounded-full opacity-20 will-change-transform ${orb.className}`}
+            className={`absolute rounded-full opacity-20 will-change-transform ${orb.className}`}
             style={orb.style}
+            animate={{
+              x: orbAnimations[i].x,
+              y: orbAnimations[i].y,
+              scale: orbAnimations[i].scale,
+              opacity: orbAnimations[i].opacity,
+            }}
+            transition={{
+              duration: orbAnimations[i].duration,
+              repeat: Infinity,
+              repeatType: 'reverse',
+              ease: 'easeInOut',
+              delay: orbAnimations[i].delay,
+            }}
           />
         ))}
-        {dots.map((dot) => (
-          <div
+        {dots.map((dot, i) => (
+          <motion.div
             key={dot.className}
-            className={`dot absolute rounded-full will-change-transform ${dot.className}`}
+            className={`absolute rounded-full will-change-transform ${dot.className}`}
             style={{ ...dot.style, filter: 'blur(1.5px)' }}
+            animate={{
+              x: dotAnimations[i].x,
+              y: dotAnimations[i].y,
+              scale: dotAnimations[i].scale,
+              opacity: dotAnimations[i].opacity,
+            }}
+            transition={{
+              duration: dotAnimations[i].duration,
+              repeat: Infinity,
+              repeatType: 'reverse',
+              ease: 'easeInOut',
+              delay: dotAnimations[i].delay,
+            }}
           />
         ))}
       </div>

@@ -1,11 +1,6 @@
 import Image from 'next/image'
-import React, { useEffect, useRef } from 'react'
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
-
-if (typeof window !== 'undefined') {
-    gsap.registerPlugin(ScrollTrigger)
-}
+import React from 'react'
+import { motion } from 'framer-motion'
 
 const clientLogos = [
     { src: '/images/home/logo1.png', alt: 'DIY Real Estate' },
@@ -20,34 +15,16 @@ const clientLogos = [
 const allLogos = [...clientLogos, ...clientLogos, ...clientLogos]
 
 const TrustedBy = () => {
-    const sectionRef = useRef(null)
-    const headerRef = useRef(null)
-
-    useEffect(() => {
-        if (!sectionRef.current) return
-        const ctx = gsap.context(() => {
-            gsap.fromTo(
-                headerRef.current,
-                { y: 24, opacity: 0 },
-                {
-                    y: 0,
-                    opacity: 1,
-                    duration: 0.7,
-                    ease: 'power3.out',
-                    scrollTrigger: { trigger: headerRef.current, start: 'top 85%', toggleActions: 'play none none none' },
-                }
-            )
-        }, sectionRef)
-        return () => ctx.revert()
-    }, [])
-
     return (
-        <section ref={sectionRef} className="relative bg-white py-13 md:py-15 overflow-hidden">
+        <section className="relative bg-white py-13 md:py-15 overflow-hidden">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div ref={headerRef} className="text-center mb-12 opacity-0">
-                    <span className="inline-block text-sm font-semibold text-blue-600 bg-blue-50 px-4 py-1.5 rounded-full mb-4 tracking-wide uppercase">
-                        Trusted Partners
-                    </span>
+                <motion.div
+                    className="text-center mb-12"
+                    initial={{ y: 24, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.7, ease: 'easeOut' }}
+                    viewport={{ once: true, amount: 0.15 }}
+                >
                     <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 tracking-tight">
                         Loved by brands <br className="sm:hidden" />
                         <span className="relative">
@@ -72,7 +49,7 @@ const TrustedBy = () => {
                     <p className="mt-4 text-base md:text-lg text-gray-500 max-w-2xl mx-auto">
                         From startups to enterprises, our clients consistently achieve top rankings and measurable growth.
                     </p>
-                </div>
+                </motion.div>
             </div>
 
             <div className="relative w-full">

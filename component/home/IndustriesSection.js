@@ -1,11 +1,6 @@
-import React, { useEffect, useRef } from 'react'
+import React from 'react'
 import { FaClinicMedical, FaGraduationCap, FaHome, FaPlane, FaIndustry, FaGavel, FaUtensils, FaShoppingCart, FaCloud, FaDollarSign } from 'react-icons/fa'
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
-
-if (typeof window !== 'undefined') {
-  gsap.registerPlugin(ScrollTrigger)
-}
+import { motion } from 'framer-motion'
 
 const industries = [
   { name: 'Healthcare', icon: FaClinicMedical, desc: 'Boost patient reach & visibility' },
@@ -20,50 +15,48 @@ const industries = [
   { name: 'Finance', icon: FaDollarSign, desc: 'Build trust & attract clients' },
 ]
 
+const containerVariants = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.06 } }
+}
+
+const cardVariants = {
+  hidden: { scale: 0.85, opacity: 0 },
+  visible: { scale: 1, opacity: 1, transition: { duration: 0.5, ease: [0.34, 1.56, 0.64, 1] } }
+}
+
 const IndustriesSection = () => {
-  const sectionRef = useRef(null)
-  const headerRef = useRef(null)
-  const gridRef = useRef(null)
-
-  useEffect(() => {
-    if (!sectionRef.current) return
-
-    const ctx = gsap.context(() => {
-      gsap.fromTo(headerRef.current,
-        { y: 30, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.7, ease: 'power3.out', immediateRender: false,
-          scrollTrigger: { trigger: headerRef.current, start: 'top 85%', toggleActions: 'play none none none' } }
-      )
-
-      // Cards pop in with scale + fade
-      gsap.fromTo(gridRef.current.children,
-        { scale: 0.85, opacity: 0 },
-        { scale: 1, opacity: 1, duration: 0.5, stagger: 0.06, ease: 'back.out(1.4)', immediateRender: false,
-          scrollTrigger: { trigger: gridRef.current, start: 'top 85%', toggleActions: 'play none none none' } }
-      )
-    }, sectionRef)
-
-    return () => ctx.revert()
-  }, [])
-
   return (
-    <section ref={sectionRef} className="bg-gray-50 dark:bg-gray-900 py-14 md:py-20 transition-colors duration-300">
+    <section className="bg-gray-50 dark:bg-gray-900 py-14 md:py-20 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div ref={headerRef} className="text-center mb-14">
+        <motion.div
+          className="text-center mb-14"
+          initial={{ y: 30, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.7, ease: 'easeOut' }}
+          viewport={{ once: true, amount: 0.15 }}
+        >
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white leading-tight">
             Industries <span className="text-blue-600 dark:text-blue-400">We Serve</span>
           </h2>
           <p className="mt-4 text-base text-gray-600 dark:text-gray-400">
             Driving growth across diverse industries
           </p>
-        </div>
+        </motion.div>
 
-        <div ref={gridRef} className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-5">
+        <motion.div
+          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-5"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.15 }}
+        >
           {industries.map((industry, index) => {
             const Icon = industry.icon
             return (
-              <div
+              <motion.div
                 key={index}
+                variants={cardVariants}
                 className="group flex flex-col rounded-2xl bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 shadow-md p-5 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-blue-200 dark:hover:border-blue-800"
               >
                 <div className="flex items-center gap-2 mb-2">
@@ -77,10 +70,10 @@ const IndustriesSection = () => {
                 <p className="text-sm text-gray-500 dark:text-gray-400">
                   {industry.desc}
                 </p>
-              </div>
+              </motion.div>
             )
           })}
-        </div>
+        </motion.div>
       </div>
     </section>
   )

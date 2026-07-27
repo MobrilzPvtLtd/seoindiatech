@@ -1,4 +1,5 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useState, useEffect, useCallback } from 'react'
+import { motion } from 'framer-motion'
 import {
   FaAward,
   FaUserTie,
@@ -12,11 +13,26 @@ import {
   FaCheckCircle,
 } from 'react-icons/fa'
 import { SiGoogle } from 'react-icons/si'
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-if (typeof window !== 'undefined') {
-  gsap.registerPlugin(ScrollTrigger)
+function useCountUp(target, duration = 2000, isDecimal = false) {
+  const [count, setCount] = useState(0)
+  const [started, setStarted] = useState(false)
+
+  const start = useCallback(() => {
+    if (started) return
+    setStarted(true)
+    const startTime = performance.now()
+    const animate = (now) => {
+      const elapsed = now - startTime
+      const progress = Math.min(elapsed / duration, 1)
+      const eased = 1 - Math.pow(1 - progress, 3)
+      setCount(eased * target)
+      if (progress < 1) requestAnimationFrame(animate)
+    }
+    requestAnimationFrame(animate)
+  }, [target, duration, started])
+
+  return { count: isDecimal ? count.toFixed(1) : Math.round(count), start }
 }
 
 const stats = [
@@ -59,86 +75,59 @@ const features = [
   },
 ]
 
-const WhyChooseSection = () => {
-  const sectionRef = useRef(null)
-  const headerRef = useRef(null)
-  const statsRef = useRef(null)
-  const featuresRef = useRef(null)
-  const trustRef = useRef(null)
-  const countRefs = useRef([])
+const containerVariants = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.1 } },
+}
 
-  useEffect(() => {
-    if (!sectionRef.current) return
+const itemVariants = {
+  hidden: { y: 40, opacity: 0 },
+  visible: { y: 0, opacity: 1, transition: { duration: 0.6, ease: 'easeOut' } },
+}
 
-    const ctx = gsap.context(() => {
-      // Header fade in
-      gsap.fromTo(headerRef.current,
-        { y: 30, opacity: 0 },
-        {
-          y: 0, opacity: 1, duration: 0.7, ease: 'power3.out', immediateRender: false,
-          scrollTrigger: { trigger: headerRef.current, start: 'top 85%', toggleActions: 'play none none none' }
-        }
-      )
-
-      // Stats strip - slide up with stagger
-      gsap.fromTo(statsRef.current.children,
-        { y: 40, opacity: 0 },
-        {
-          y: 0, opacity: 1, duration: 0.6, stagger: 0.1, ease: 'power3.out', immediateRender: false,
-          scrollTrigger: { trigger: statsRef.current, start: 'top 85%', toggleActions: 'play none none none' }
-        }
-      )
-
-      // Count up numbers
-      countRefs.current.forEach((el, i) => {
-        if (!el) return
-        const stat = stats[i]
-        const obj = { val: 0 }
-        gsap.to(obj, {
-          val: stat.num,
-          duration: 2,
-          ease: 'power2.out',
-          scrollTrigger: { trigger: el, start: 'top 85%' },
-          onUpdate: () => {
-            if (el) {
-              el.textContent = stat.isDecimal
-                ? `${obj.val.toFixed(1)}${stat.suffix}`
-                : `${Math.round(obj.val)}${stat.suffix}`
-            }
-          },
-        })
-      })
-
-      // Feature cards - stagger from bottom
-      gsap.fromTo(featuresRef.current.children,
-        { y: 50, opacity: 0 },
-        {
-          y: 0, opacity: 1, duration: 0.6, stagger: 0.08, ease: 'power3.out', immediateRender: false,
-          scrollTrigger: { trigger: featuresRef.current, start: 'top 85%', toggleActions: 'play none none none' }
-        }
-      )
-
-      // Trust line
-      gsap.fromTo(trustRef.current,
-        { y: 20, opacity: 0 },
-        {
-          y: 0, opacity: 1, duration: 0.5, ease: 'power3.out', immediateRender: false,
-          scrollTrigger: { trigger: trustRef.current, start: 'top 90%', toggleActions: 'play none none none' }
-        }
-      )
-    }, sectionRef)
-
-    return () => ctx.revert()
-  }, [])
+const StatCard = ({ stat }) => {
+  const { count, start } = useCountUp(stat.num, 2000, stat.isDecimal)
+  const Icon = stat.icon
 
   return (
-    <section ref={sectionRef} className="bg-white dark:bg-gray-900 relative overflow-hidden">
+    <motion.div
+      variants={itemVariants}
+      whileInView="visible"
+      initial="hidden"
+      viewport={{ once: true, amount: 0.15 }}
+      onViewportEnter={start}
+      className="flex items-center gap-4 bg-gray-50/80 dark:bg-gray-900/60 backdrop-blur-sm rounded-2xl border border-gray-100/80 dark:border-gray-800/60 shadow-md px-5 py-4 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/5 hover:border-blue-200/50 dark:hover:border-blue-800/30 hover:-translate-y-0.5"
+    >
+      <div className="flex-shrink-0 w-11 h-11 rounded-xl bg-gradient-to-br from-blue-500 to-blue-600 text-white flex items-center justify-center shadow-md shadow-blue-500/20">
+        <Icon className="w-5 h-5" />
+      </div>
+      <div>
+        <div className="text-xl font-bold text-gray-900 dark:text-white leading-none">
+          {count}{stat.suffix}
+        </div>
+        <div className="text-[11px] font-medium text-gray-500 dark:text-gray-400 mt-0.5">
+          {stat.label}
+        </div>
+      </div>
+    </motion.div>
+  )
+}
+
+const WhyChooseSection = () => {
+  return (
+    <section className="bg-white dark:bg-gray-900 relative overflow-hidden">
       <div className="absolute top-0 left-1/2 w-[50rem] h-[50rem] bg-blue-50/30 rounded-full blur-3xl dark:bg-blue-900/5 -translate-x-1/2 -translate-y-1/2" />
       <div className="absolute bottom-0 right-0 w-80 h-80 bg-indigo-50/20 rounded-full blur-3xl dark:bg-indigo-900/5 translate-x-1/3 translate-y-1/3" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 md:py-20 relative z-10">
         {/* Header */}
-        <div ref={headerRef} className="text-center mb-12">
+        <motion.div
+          initial={{ y: 30, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.7, ease: 'easeOut' }}
+          viewport={{ once: true, amount: 0.15 }}
+          className="text-center mb-12"
+        >
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white leading-tight">
             Why Choose{' '}
             <span className="relative inline-block">
@@ -151,43 +140,35 @@ const WhyChooseSection = () => {
           <p className="mt-3 text-gray-600 dark:text-gray-300 text-base max-w-lg mx-auto">
             We combine expertise, transparency, and results-driven strategies to help your business succeed online.
           </p>
-        </div>
+        </motion.div>
 
         {/* Stats Strip */}
-        <div ref={statsRef} className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 mb-14">
-          {stats.map((stat, i) => {
-            const Icon = stat.icon
-            return (
-              <div
-                key={i}
-                className="flex items-center gap-4 bg-gray-50/80 dark:bg-gray-900/60 backdrop-blur-sm rounded-2xl border border-gray-100/80 dark:border-gray-800/60 shadow-md px-5 py-4 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/5 hover:border-blue-200/50 dark:hover:border-blue-800/30 hover:-translate-y-0.5"
-              >
-                <div className="flex-shrink-0 w-11 h-11 rounded-xl bg-gradient-to-br from-blue-500 to-blue-600 text-white flex items-center justify-center shadow-md shadow-blue-500/20">
-                  <Icon className="w-5 h-5" />
-                </div>
-                <div>
-                  <div
-                    ref={(el) => (countRefs.current[i] = el)}
-                    className="text-xl font-bold text-gray-900 dark:text-white leading-none"
-                  >
-                    0
-                  </div>
-                  <div className="text-[11px] font-medium text-gray-500 dark:text-gray-400 mt-0.5">
-                    {stat.label}
-                  </div>
-                </div>
-              </div>
-            )
-          })}
-        </div>
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.15 }}
+          className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 mb-14"
+        >
+          {stats.map((stat, i) => (
+            <StatCard key={i} stat={stat} />
+          ))}
+        </motion.div>
 
         {/* Features Grid */}
-        <div ref={featuresRef} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.15 }}
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5"
+        >
           {features.map((item, index) => {
             const Icon = item.icon
             return (
-              <div
+              <motion.div
                 key={index}
+                variants={itemVariants}
                 className="group relative bg-white dark:bg-gray-800 backdrop-blur-sm rounded-2xl border border-gray-100 dark:border-gray-700 shadow-md p-6 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/5 hover:border-blue-200/50 dark:hover:border-blue-800/30 hover:-translate-y-1"
               >
                 <div className="flex items-start gap-4">
@@ -204,13 +185,19 @@ const WhyChooseSection = () => {
                   </div>
                 </div>
                 <div className="absolute bottom-0 left-6 right-6 h-0.5 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
-              </div>
+              </motion.div>
             )
           })}
-        </div>
+        </motion.div>
 
         {/* Bottom trust line */}
-        <div ref={trustRef} className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 mt-12 text-sm text-gray-500 dark:text-gray-400">
+        <motion.div
+          initial={{ y: 20, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5, ease: 'easeOut' }}
+          viewport={{ once: true, amount: 0.1 }}
+          className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 mt-12 text-sm text-gray-500 dark:text-gray-400"
+        >
           <span className="flex items-center gap-1.5">
             <FaCheckCircle className="w-3.5 h-3.5 text-blue-500" />
             No Lock-In Contracts
@@ -223,7 +210,7 @@ const WhyChooseSection = () => {
             <FaCheckCircle className="w-3.5 h-3.5 text-blue-500" />
             Free Strategy Consultation
           </span>
-        </div>
+        </motion.div>
       </div>
     </section>
   )

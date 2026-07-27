@@ -1,12 +1,7 @@
-import React, { useRef, useEffect } from 'react'
+import React from 'react'
 import Link from 'next/link'
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
+import { motion } from 'framer-motion'
 import { FaSearch, FaGoogle, FaMapMarkerAlt, FaPaintBrush, FaArrowRight } from 'react-icons/fa'
-
-if (typeof window !== 'undefined') {
-  gsap.registerPlugin(ScrollTrigger)
-}
 
 const services = [
   {
@@ -67,103 +62,60 @@ const services = [
   },
 ]
 
+const containerVariants = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.1 } }
+}
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 40, scale: 0.97 },
+  visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.6, ease: 'easeOut' } }
+}
+
 const OurServicesSection = () => {
-  const headerRef = useRef(null)
-  const cardsRef = useRef([])
-  const decorativeRef = useRef(null)
-
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      // Header animation
-      gsap.fromTo(
-        headerRef.current,
-        { opacity: 0, y: 30 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.6,
-          ease: 'power3.out',
-          scrollTrigger: {
-            trigger: headerRef.current,
-            start: 'top 80%',
-            toggleActions: 'play none none reverse',
-          },
-        }
-      )
-
-      // Decorative line animation
-      gsap.fromTo(
-        decorativeRef.current,
-        { scaleX: 0, opacity: 0 },
-        {
-          scaleX: 1,
-          opacity: 1,
-          duration: 0.8,
-          ease: 'power2.out',
-          scrollTrigger: {
-            trigger: decorativeRef.current,
-            start: 'top 85%',
-            toggleActions: 'play none none reverse',
-          },
-        }
-      )
-
-      // Cards animation with enhanced effects
-      cardsRef.current.forEach((card, index) => {
-        gsap.fromTo(
-          card,
-          {
-            opacity: 0,
-            y: 40,
-            rotationX: 3,
-            scale: 0.97,
-          },
-          {
-            opacity: 1,
-            y: 0,
-            rotationX: 0,
-            scale: 1,
-            duration: 0.6,
-            ease: 'power3.out',
-            delay: index * 0.1,
-            scrollTrigger: {
-              trigger: card,
-              start: 'top 85%',
-              toggleActions: 'play none none reverse',
-            },
-          }
-        )
-      })
-    })
-
-    return () => ctx.revert()
-  }, [])
-
   return (
     <section className="bg-white dark:bg-gray-900 py-16 md:py-24 transition-colors duration-300 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div ref={headerRef} className="text-center max-w-3xl mx-auto mb-16 opacity-0">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: 'easeOut' }}
+          viewport={{ once: true, amount: 0.2 }}
+          className="text-center max-w-3xl mx-auto mb-16"
+        >
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white leading-tight transition-colors duration-300">
             Our services
           </h2>
 
-          <div ref={decorativeRef} className="w-20 h-1 mx-auto mt-4 bg-blue-500 rounded-full origin-center" />
+          <motion.div
+            initial={{ scaleX: 0, opacity: 0 }}
+            whileInView={{ scaleX: 1, opacity: 1 }}
+            transition={{ duration: 0.8, ease: 'easeOut' }}
+            viewport={{ once: true, amount: 0.2 }}
+            className="w-20 h-1 mx-auto mt-4 bg-blue-500 rounded-full origin-center"
+          />
 
           <p className="mt-5 text-base text-gray-600 dark:text-gray-400 max-w-2xl mx-auto transition-colors duration-300">
             The core disciplines we lean on to get your business found, trusted, and chosen.
           </p>
-        </div>
+        </motion.div>
 
         {/* Service cards */}
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {services.map((service, index) => {
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.1 }}
+          className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4"
+        >
+          {services.map((service) => {
             const Icon = service.icon
             const cardContent = (
-              <div
+              <motion.div
                 key={service.title}
-                ref={(el) => (cardsRef.current[index] = el)}
-                className={`group relative flex flex-col h-full gap-4 rounded-2xl border ${service.borderColor} ${service.hoverBorder} bg-white dark:bg-gray-800/50 backdrop-blur-sm p-6 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl ${service.shadowHover} opacity-0 cursor-pointer overflow-hidden`}
+                variants={cardVariants}
+                className={`group relative flex flex-col h-full gap-4 rounded-2xl border ${service.borderColor} ${service.hoverBorder} bg-white dark:bg-gray-800/50 backdrop-blur-sm p-6 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl ${service.shadowHover} cursor-pointer overflow-hidden`}
               >
                 {/* Glow effect on hover */}
                 <div className={`absolute -inset-1 bg-gradient-to-r ${service.lightText.replace('text-', '')} ${service.darkText.replace('dark:text-', '')} opacity-0 group-hover:opacity-10 dark:group-hover:opacity-5 blur-xl transition-opacity duration-500`} />
@@ -201,7 +153,7 @@ const OurServicesSection = () => {
 
                 {/* Hover ring effect */}
                 <div className={`absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-${service.lightText.replace('text-', '')}/20 dark:group-hover:border-${service.darkText.replace('dark:text-', '')}/20 transition-all duration-500 pointer-events-none`} />
-              </div>
+              </motion.div>
             )
 
             return service.href ? (
@@ -212,7 +164,7 @@ const OurServicesSection = () => {
               cardContent
             )
           })}
-        </div>
+        </motion.div>
       </div>
     </section>
   )

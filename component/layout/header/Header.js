@@ -1,5 +1,6 @@
 import { ChevronDown, Menu, X } from 'lucide-react'
 import React, { useState, useRef, useEffect } from 'react'
+import { useRouter } from 'next/router'
 import ServiceDropdown from './ServiceDropdown'
 import SolutionDropdown from './SolutionDropdown'
 import ThemeToggleButton from './ThemeToggleButton'
@@ -7,6 +8,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 const Header = () => {
+  const router = useRouter()
+  const isHome = router.pathname === '/'
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isServicesOpen, setIsServicesOpen] = useState(false)
   const [isSolutionsOpen, setIsSolutionsOpen] = useState(false)
@@ -14,6 +17,8 @@ const Header = () => {
   const [windowWidth, setWindowWidth] = useState(0)
   const [openCategory, setOpenCategory] = useState(null)
   const [scrolled, setScrolled] = useState(false)
+  const [hidden, setHidden] = useState(false)
+  const lastScrollY = useRef(0)
 
   const serviceCategories = [
     {
@@ -92,6 +97,15 @@ const Header = () => {
     const handleScroll = () => {
       const currentScrollTop = window.scrollY || document.documentElement.scrollTop
       setScrolled(currentScrollTop > 12)
+
+      if (currentScrollTop < 10) {
+        setHidden(false)
+      } else if (currentScrollTop > lastScrollY.current && currentScrollTop > 80) {
+        setHidden(true)
+      } else {
+        setHidden(false)
+      }
+      lastScrollY.current = currentScrollTop
     }
 
     window.addEventListener('resize', handleResize)
@@ -186,26 +200,24 @@ const Header = () => {
   const NavLink = ({ href, children }) => (
     <Link
       href={href}
-      className="relative text-[15px] text-slate-600 dark:text-slate-300 font-medium py-1 transition-colors duration-200 hover:text-slate-900 dark:hover:text-white after:content-[''] after:absolute after:left-0 after:-bottom-0.5 after:h-[2px] after:w-0 after:bg-blue-600 dark:after:bg-blue-400 after:transition-all after:duration-300 hover:after:w-full"
+      className={`relative text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] ${navLinkTextColor} font-medium py-1 transition-colors duration-200 after:content-[''] after:absolute after:left-0 after:-bottom-0.5 after:h-[2px] after:w-0 after:bg-blue-600 dark:after:bg-blue-400 after:transition-all after:duration-300 hover:after:w-full`}
     >
       {children}
     </Link>
   )
 
   const contactButtonClass =
-    'inline-flex items-center justify-center bg-slate-900 dark:bg-blue-600 text-white px-5 py-2.5 rounded-full font-semibold text-sm tracking-wide transition-all duration-300 hover:bg-blue-600 dark:hover:bg-blue-500 hover:shadow-[0_8px_20px_-6px_rgba(37,99,235,0.55)] active:scale-95 whitespace-nowrap'
+    'inline-flex items-center justify-center bg-gradient-to-r from-blue-600 to-blue-700 text-white px-3 md:px-4 lg:px-5 py-2 md:py-2.5 rounded-full font-semibold text-[11px] md:text-xs lg:text-sm tracking-wide transition-all duration-300 hover:bg-blue-600 dark:hover:bg-blue-500 hover:shadow-[0_8px_20px_-6px_rgba(37,99,235,0.55)] active:scale-95 whitespace-nowrap'
 
   const mobileContactButtonClass =
     'block bg-slate-900 dark:bg-blue-600 text-white px-8 py-3.5 rounded-full font-semibold text-center transition-all duration-300 hover:bg-blue-600 active:scale-95 w-full shadow-md'
 
-  return (
-    <>
-      <header className="fixed top-0 left-0 w-full z-40">
-        <div
-          className={`
-            mx-3 mt-3 md:mx-6 md:mt-4 max-w-7xl md:mx-auto
-            flex items-center justify-between h-16 md:h-[68px]
-            px-4 sm:px-6 lg:px-8
+  const headerContainerClass = isHome && !scrolled
+    ? 'mt-2 md:mt-3 lg:mt-4 mx-3 sm:mx-4 md:mx-6 lg:mx-8 xl:mx-auto max-w-md sm:max-w-lg md:max-w-2xl lg:max-w-5xl xl:max-w-6xl flex items-center justify-between h-16 md:h-[68px] lg:h-[72px] px-2 sm:px-4 lg:px-6 rounded-full border border-transparent backdrop-blur-none transition-all duration-300 ease-out'
+    : `
+            mt-2 md:mt-3 lg:mt-4 mx-3 sm:mx-4 md:mx-6 lg:mx-8 xl:mx-auto max-w-md sm:max-w-lg md:max-w-2xl lg:max-w-5xl xl:max-w-6xl
+            flex items-center justify-between h-16 md:h-[68px] lg:h-[72px]
+            px-2 sm:px-4 lg:px-6
             rounded-full border
             backdrop-blur-xl backdrop-saturate-150
             transition-all duration-300 ease-out
@@ -214,19 +226,31 @@ const Header = () => {
                 ? 'bg-white/85 dark:bg-slate-900/85 border-slate-200/70 dark:border-slate-700/60 shadow-[0_8px_30px_-8px_rgba(15,23,42,0.18)]'
                 : 'bg-white/60 dark:bg-slate-900/60 border-white/40 dark:border-slate-700/40 shadow-[0_4px_16px_-4px_rgba(15,23,42,0.08)]'
             }
-          `}
-        >
+          `
+
+  const navLinkTextColor = isHome && !scrolled
+    ? 'text-white/80 hover:text-white'
+    : 'text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white'
+
+  const servicesBtnColor = isHome && !scrolled
+    ? 'text-white/80 hover:text-white'
+    : 'text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white'
+
+  return (
+    <>
+      <header className={`fixed top-0 left-0 w-full z-40 transition-transform duration-300 ease-in-out ${hidden ? '-translate-y-full' : 'translate-y-0'}`}>
+        <div className={headerContainerClass}>
           {/* Logo */}
-          <div className="flex items-center flex-shrink-0">
+          <div className="flex items-center flex-shrink-0 pl-1 sm:pl-0">
             {mounted ? (
               <Link href="/" className="block">
-                <div className="relative w-10 h-10 md:w-14 md:h-14 cursor-pointer">
+                <div className="relative w-[56px] h-[56px] md:w-14 md:h-14 lg:w-16 lg:h-16 cursor-pointer">
                   <Image
                     src="/sit.png"
                     alt="SIT Logo"
                     fill
-                    sizes="(max-width: 768px) 40px, 56px"
-                    className="object-contain object-left dark:invert"
+                    sizes="(max-width: 768px) 56px, (max-width: 1024px) 56px, 64px"
+                    className={`object-contain object-center ${isHome && !scrolled ? 'invert' : 'dark:invert'}`}
                     priority
                   />
                 </div>
@@ -238,7 +262,7 @@ const Header = () => {
 
           {/* Desktop nav */}
           <nav className="hidden md:flex flex-1 justify-center">
-            <ul className="flex items-center gap-7 lg:gap-9">
+            <ul className="flex items-center gap-3 lg:gap-5 xl:gap-7">
               <li><NavLink href="/">Home</NavLink></li>
               <li><NavLink href="/who-we-are">Who We Are</NavLink></li>
 
@@ -249,7 +273,7 @@ const Header = () => {
                 onMouseLeave={handleServicesMouseLeave}
               >
                 <button
-                  className="flex items-center gap-1 text-[15px] text-slate-600 dark:text-slate-300 font-medium py-1 transition-colors duration-200 hover:text-slate-900 dark:hover:text-white"
+                  className={`flex items-center gap-1 text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] ${servicesBtnColor} font-medium py-1 transition-colors duration-200`}
                   aria-expanded={isServicesOpen}
                   aria-controls="services-dropdown"
                 >
@@ -263,7 +287,7 @@ const Header = () => {
                   id="services-dropdown"
                   className={`
                     absolute left-1/2 top-full mt-3 -translate-x-1/2
-                    w-full max-w-[80vw] md:w-[600px] lg:w-[900px]
+                    w-full max-w-[90vw] md:w-[500px] lg:w-[700px] xl:w-[900px]
                     bg-white dark:bg-slate-800 rounded-2xl z-30
                     border border-slate-200/70 dark:border-slate-700/60
                     shadow-[0_20px_50px_-12px_rgba(15,23,42,0.25)]
@@ -287,7 +311,7 @@ const Header = () => {
           <div className="md:hidden flex items-center gap-2">
             <ThemeToggleButton />
             <button
-              className="menu-toggle text-slate-700 dark:text-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-full p-2 z-50 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+              className={`menu-toggle ${isHome && !scrolled ? 'text-white hover:bg-white/10' : 'text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800'} focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-full p-2 z-50 transition-colors`}
               onClick={toggleMobileMenu}
               aria-label="Toggle menu"
               aria-expanded={isMenuOpen}

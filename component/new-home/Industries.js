@@ -1,12 +1,7 @@
-import React, { useEffect, useRef } from 'react'
+import React from 'react'
 import { FaClinicMedical, FaGraduationCap, FaHome, FaPlane, FaIndustry, FaGavel, FaUtensils, FaShoppingCart, FaCloud, FaDollarSign } from 'react-icons/fa'
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
- 
-if (typeof window !== 'undefined') {
-  gsap.registerPlugin(ScrollTrigger)
-}
- 
+import { motion } from 'framer-motion'
+
 const industries = [
   { name: 'Healthcare', icon: FaClinicMedical, desc: 'Boost patient reach & visibility' },
   { name: 'Education', icon: FaGraduationCap, desc: 'Attract more enrollments online' },
@@ -19,11 +14,10 @@ const industries = [
   { name: 'SaaS', icon: FaCloud, desc: 'Grow subscriptions & trials' },
   { name: 'Finance', icon: FaDollarSign, desc: 'Build trust & attract clients' },
 ]
- 
-// Split industries into two rows for the marquee
+
 const row1 = industries.slice(0, 5);
 const row2 = industries.slice(5, 10);
- 
+
 const IndustryCard = ({ item }) => {
   const Icon = item.icon;
   return (
@@ -42,47 +36,36 @@ const IndustryCard = ({ item }) => {
     </div>
   );
 };
- 
+
 const Industries = () => {
-  const sectionRef = useRef(null)
-  const headerRef = useRef(null)
- 
-  useEffect(() => {
-    if (!sectionRef.current) return
-    const ctx = gsap.context(() => {
-      gsap.from(headerRef.current, {
-        y: 50,
-        opacity: 0,
-        duration: 1,
-        ease: 'power3.out',
-        scrollTrigger: { trigger: headerRef.current, start: 'top 90%' }
-      })
-    }, sectionRef)
-    return () => ctx.revert()
-  }, [])
- 
   return (
-    <section ref={sectionRef} className="bg-black py-20 md:py-32 overflow-hidden relative">
-      
+    <section className="bg-black py-15 md:py-20 overflow-hidden relative">
+
       {/* 1. Background Grid Decoration (Subtle Lines) */}
       <div className="absolute inset-0 opacity-[0.03] pointer-events-none"
           //  style={{ backgroundImage: `linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)`, backgroundSize: '60px 60px' }}
       />
- 
+
       {/* 2. Header */}
-      <div ref={headerRef} className="relative z-10 max-w-7xl mx-auto px-4 text-center mb-16">
+      <motion.div
+        initial={{ y: 50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1, ease: 'easeOut' }}
+        viewport={{ once: true, amount: 0.1 }}
+        className="relative z-10 max-w-7xl mx-auto px-4 text-center mb-16"
+      >
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white tracking-tight leading-tight">
-          Industries <span className="text-blue-500">We Serve</span>
+          Industries <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400 dark:from-blue-400 dark:to-blue-300">We Serve</span>
         </h2>
         <p className="mt-6 text-slate-400 max-w-2xl mx-auto text-lg">
           We combine data-driven SEO with deep industry knowledge to deliver
           high-performance results across specialized sectors.
         </p>
-      </div>
- 
+      </motion.div>
+
       {/* 3. Scrolling Marquee (Two Rows moving in opposite directions) */}
       <div className="relative z-10 flex flex-col gap-6">
-        
+
         {/* Row 1: Moving Right */}
         <div className="flex overflow-hidden">
           <div className="flex gap-6 animate-marquee">
@@ -91,7 +74,7 @@ const Industries = () => {
             ))}
           </div>
         </div>
- 
+
         {/* Row 2: Moving Left */}
         <div className="flex overflow-hidden">
           <div className="flex gap-6 animate-marquee-reverse">
@@ -100,13 +83,13 @@ const Industries = () => {
             ))}
           </div>
         </div>
- 
+
       </div>
- 
+
       {/* 4. Side Gradient Fades (Makes the scroll smooth) */}
       <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-slate-950 to-transparent z-20 pointer-events-none" />
       <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-slate-950 to-transparent z-20 pointer-events-none" />
- 
+
       <style jsx>{`
         @keyframes marquee {
           0% { transform: translateX(0); }
@@ -131,6 +114,5 @@ const Industries = () => {
     </section>
   )
 }
- 
+
 export default Industries
- 

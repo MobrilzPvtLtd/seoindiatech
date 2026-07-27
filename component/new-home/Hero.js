@@ -120,7 +120,7 @@ const Hero = () => {
                         </button>
                     </Link>
 
-                    <Link href="/contact-us" className="w-full sm:w-auto">
+                    <Link href="#faq" className="w-full sm:w-auto">
                         <button className="w-full bg-white/10 hover:bg-white/20 border border-white/20 backdrop-blur-md text-white px-10 py-4 rounded-full font-bold text-sm transition-all active:scale-95 flex items-center justify-center gap-3 cursor-pointer">
                             <HiOutlineChatBubbleLeftRight className="w-5 h-5" />
                             TALK TO EXPERT

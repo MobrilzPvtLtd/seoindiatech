@@ -1,17 +1,17 @@
 import Head from "next/head";
 import { Geist, Geist_Mono } from "next/font/google";
-import { FaChartLine, FaLightbulb, FaHandshake } from "react-icons/fa";
-import { FiUsers, FiTrendingUp, FiShield } from "react-icons/fi";
 
-import SmoothScroll from "@/component/motion/SmoothScroll";
-import Hero from "@/component/new-home/Hero";
-import TrustedBy from "@/component/new-home/TrustedBy";
-import OurServiceSection from "@/component/new-home/OurServiceSection";
-import Industries from "@/component/new-home/Industries";
-import Testimonials from "@/component/new-home/Testimonials";
-import Blog from "@/component/new-home/Blog";
-import FAQAndContact from "@/component/new-home/FAQAndContact";
-import NewFooter from "@/component/new-home/NewFooter";
+import NewHero from "@/component/home/NewHero";
+import WhyChooseSection from "@/component/home/WhyChooseSection";
+import OurServicesSection from "@/component/home/OurServicesSection";
+import OurSEOProcess from "@/component/home/OurSEOProcess";
+import SEOSolution from "@/component/home/SEO_Solution";
+import IndustriesSection from "@/component/home/IndustriesSection";
+import BlogSection from "@/component/home/BlogSection";
+import Testimonial from "@/component/home/Testimonial";
+import Teams from "@/component/home/Teams";
+import FAQSection from "@/component/home/FAQSection";
+import CTABanner from "@/component/home/CTABanner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -94,47 +94,34 @@ export default function Home() {
 
   return (
     <>
-      <SmoothScroll>
-        <Head>
-          <title>Expert SEO & Digital Marketing Services - SEOIndiatech</title>
-          <meta
-            name="description"
-            content="SEOIndiatech offers expert SEO & digital marketing services in India, boosting your website traffic, rankings, and online visibility for measurable results."
-          />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <meta
-            name="robots"
-            content="index, follow, max-image-preview:large, max-snippet:-1"
-          />
-          <link rel="canonical" href="https://www.seoindiatech.com" />
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
-          />
-        </Head>
-
-        {/* 1. Thesis — the claim, no form friction up front */}
-        <Hero />
-
-        {/* 2. Immediate social proof, dark band */}
-        <TrustedBy />
-
-        {/* 3. Why us / stats */}
-        {/* <WhyChooseSection /> */}
-
-        {/* 4. What we do */}
-        <OurServiceSection />
-
-        {/* 5. Authority band #1 — dark */}
-        {/* 6. How it works */}
-        {/* <OurSEOProcess /> */}
-        {/* <SEOSolution /> */}
-        <Industries />
-        <Testimonials />
-        <Blog />
-        <FAQAndContact />
-        {/* <NewFooter /> */}
-      </SmoothScroll>
+      <Head>
+        <title>Expert SEO & Digital Marketing Services - SEOIndiatech</title>
+        <meta
+          name="description"
+          content="SEOIndiatech offers expert SEO & digital marketing services in India, boosting your website traffic, rankings, and online visibility for measurable results."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="robots"
+          content="index, follow, max-image-preview:large, max-snippet:-1"
+        />
+        <link rel="canonical" href="https://www.seoindiatech.com" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+        />
+      </Head>
+      <NewHero />
+      <WhyChooseSection />
+      <OurServicesSection />
+      <OurSEOProcess />
+      <SEOSolution />
+      <IndustriesSection />
+      <BlogSection />
+      <Testimonial />
+      <Teams />
+      <FAQSection />
+      <CTABanner />
     </>
   );
 }

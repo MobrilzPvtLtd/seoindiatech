@@ -1,13 +1,8 @@
-import React, { useRef, useEffect, useState } from 'react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 import { FiArrowRight, FiPlus, FiCheck, FiUser, FiMail, FiPhone, FiMessageSquare } from 'react-icons/fi';
 import { toast, ToastContainer } from 'react-toastify';
 import ReCAPTCHA from 'react-google-recaptcha';
-
-if (typeof window !== 'undefined') {
-    gsap.registerPlugin(ScrollTrigger);
-}
 
 const faqs = [
     {
@@ -29,7 +24,6 @@ const faqs = [
 ];
 
 const FAQAndContact = () => {
-    const containerRef = useRef(null);
     const [form, setForm] = useState({ fullName: '', email: '', phone: '', message: '' });
     const [openIndex, setOpenIndex] = useState(0);
     const [focusedField, setFocusedField] = useState(null);
@@ -37,24 +31,6 @@ const FAQAndContact = () => {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [recaptcha, setRecaptcha] = useState(null);
     const [privacyAgreed, setPrivacyAgreed] = useState(false);
-
-    useEffect(() => {
-        if (!containerRef.current) return;
-        const ctx = gsap.context(() => {
-            gsap.from('.animate-in', {
-                y: 50,
-                opacity: 0,
-                duration: 1,
-                stagger: 0.2,
-                ease: 'power4.out',
-                scrollTrigger: {
-                    trigger: containerRef.current,
-                    start: 'top 80%',
-                },
-            });
-        }, containerRef);
-        return () => ctx.revert();
-    }, []);
 
     const handleChange = (e) => setForm((f) => ({ ...f, [e.target.name]: e.target.value }));
 
@@ -103,7 +79,7 @@ const FAQAndContact = () => {
     ];
 
     return (
-        <section ref={containerRef} className="relative bg-white dark:bg-slate-950 py-8 md:py-10 overflow-hidden">
+        <section id="faq" className="relative bg-white dark:bg-slate-950 py-8 md:py-10 overflow-hidden">
             <ToastContainer />
             {/* Ambient background texture */}
             <div
@@ -118,12 +94,17 @@ const FAQAndContact = () => {
                 <div className="grid lg:grid-cols-5 gap-8 lg:gap-10 items-start">
 
                     {/* LEFT: FAQ SECTION */}
-                    <div className="animate-in lg:col-span-3">
+                    <motion.div
+                        className="lg:col-span-3"
+                        initial={{ y: 50, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{ duration: 1, ease: 'easeOut' }}
+                        viewport={{ once: true, amount: 0.2 }}
+                    >
                         <div className="mb-12">
 
                             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 dark:text-white leading-[1.1] tracking-tight">
-                                Frequently Asked Questions
-
+                                Frequently Asked <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400 dark:from-blue-400 dark:to-blue-300">Questions</span>
                             </h2>
                             <p className="mt-4 text-slate-500 dark:text-slate-400 leading-relaxed max-w-md">
                                 Everything you need to know before we start working together. Can't find what you're looking for? Send us a message.
@@ -173,10 +154,16 @@ const FAQAndContact = () => {
                                 );
                             })}
                         </div>
-                    </div>
+                    </motion.div>
 
                     {/* RIGHT: CONTACT CARD */}
-                    <div className="animate-in contact-card relative rounded-[2.5rem] p-6 sm:p-8 overflow-hidden shadow-2xl shadow-blue-600/20 bg-gradient-to-br from-[#0066FF] via-[#0057DB] to-[#003E9E] lg:col-span-2">
+                    <motion.div
+                        className="contact-card relative rounded-[2.5rem] p-6 sm:p-8 overflow-hidden shadow-2xl shadow-blue-600/20 bg-gradient-to-br from-[#0066FF] via-[#0057DB] to-[#003E9E] lg:col-span-2"
+                        initial={{ y: 50, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{ duration: 1, ease: 'easeOut', delay: 0.2 }}
+                        viewport={{ once: true, amount: 0.2 }}
+                    >
                         {/* Decorative orbs */}
                         <div className="absolute -bottom-24 -right-24 w-80 h-80 bg-white/10 rounded-full blur-3xl pointer-events-none" />
                         <div className="absolute -top-20 -left-20 w-56 h-56 bg-cyan-300/10 rounded-full blur-3xl pointer-events-none" />
@@ -190,7 +177,6 @@ const FAQAndContact = () => {
 
                         <div className="relative z-10">
                             <header className="mb-5">
-                                {/* <span className="text-xs font-semibold tracking-widest text-blue-100/70 uppercase">Get in touch</span> */}
                                 <h2 className="text-2xl sm:text-3xl font-bold text-white mt-1 mb-1 tracking-tight">Send a message</h2>
                                 <p className="text-blue-100/70 text-xs leading-relaxed">Tell us a bit about your project and we'll reply within one business day.</p>
                             </header>
@@ -306,7 +292,7 @@ const FAQAndContact = () => {
                                 </div>
                             </form>
                         </div>
-                    </div>
+                    </motion.div>
 
                 </div>
             </div>
@@ -315,4 +301,3 @@ const FAQAndContact = () => {
 };
 
 export default FAQAndContact;
-

@@ -1,11 +1,6 @@
 import Image from 'next/image';
-import React, { useEffect, useRef } from 'react';
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
-
-if (typeof window !== 'undefined') {
-  gsap.registerPlugin(ScrollTrigger)
-}
+import React from 'react';
+import { motion } from 'framer-motion';
 
 function Teams() {
     const teamLogos = [
@@ -19,31 +14,21 @@ function Teams() {
     ];
 
     const allLogos = [...teamLogos, ...teamLogos];
-    const sectionRef = useRef(null)
-    const headerRef = useRef(null)
-
-    useEffect(() => {
-        if (!sectionRef.current) return
-
-        const ctx = gsap.context(() => {
-            gsap.fromTo(headerRef.current,
-                { y: 25, opacity: 0 },
-                { y: 0, opacity: 1, duration: 0.7, ease: 'power3.out', immediateRender: false,
-                    scrollTrigger: { trigger: headerRef.current, start: 'top 85%', toggleActions: 'play none none none' } }
-            )
-        }, sectionRef)
-
-        return () => ctx.revert()
-    }, [])
 
     return (
-        <div ref={sectionRef} className='bg-white dark:bg-gray-900 py-14 md:py-20 transition-colors duration-300'>
+        <div className='bg-white dark:bg-gray-900 py-14 md:py-20 transition-colors duration-300'>
             <div className="max-w-7xl mx-auto overflow-hidden">
-                <div ref={headerRef} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-6 md:mb-24">
+                <motion.div
+                    initial={{ y: 25, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.7, ease: 'easeOut' }}
+                    viewport={{ once: true, amount: 0.15 }}
+                    className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-6 md:mb-24"
+                >
                     <h2 className="text-center text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white leading-tight">
                         Empowering Global Workforces
                     </h2>
-                </div>
+                </motion.div>
 
                 <div className="relative w-full overflow-hidden">
                     <div className="marquee-container">

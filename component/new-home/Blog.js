@@ -51,7 +51,7 @@ const Blog = () => {
     }
 
     return (
-        <section ref={sectionRef} className="relative py-20 md:py-40 bg-white overflow-x-hidden overflow-y-visible flex flex-col items-center">
+        <section ref={sectionRef} className="relative py-15 md:py-20 bg-white overflow-x-hidden overflow-y-visible flex flex-col items-center">
 
             <div className="absolute inset-0 pointer-events-none opacity-[0.03]"
             />
@@ -92,7 +92,7 @@ const Blog = () => {
                 <div className="relative">
                     <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight leading-[1.1]">
                         <span className="text-slate-900 block">Latest news</span>
-                        <span className="text-slate-400">&amp; insights that matter</span>
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400 dark:from-blue-400 dark:to-blue-300">&amp; insights that matter</span>
                     </h2>
 
                     <p className="mt-6 max-w-lg mx-auto text-slate-600 text-base md:text-lg font-medium leading-relaxed">
@@ -101,7 +101,7 @@ const Blog = () => {
 
                     <Link
                         href="/blog"
-                        className="mt-8 inline-flex items-center gap-2 rounded-full bg-slate-900 text-white px-8 py-4 text-sm font-semibold hover:bg-slate-800 transition-all hover:gap-4 shadow-lg shadow-slate-900/20"
+                        className="mt-8 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-400 dark:to-blue-300 text-white px-8 py-4 text-sm font-semibold hover:bg-slate-800 transition-all hover:gap-4 shadow-lg shadow-slate-900/20"
                     >
                         View all articles
                         <ArrowRight className="w-4 h-4" />

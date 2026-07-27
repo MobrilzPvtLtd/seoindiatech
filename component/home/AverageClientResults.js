@@ -1,11 +1,6 @@
-import React, { useRef, useEffect } from 'react'
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
+import React from 'react'
+import { motion } from 'framer-motion'
 import { FaArrowUp, FaChartBar, FaTrophy, FaDollarSign } from 'react-icons/fa'
-
-if (typeof window !== 'undefined') {
-  gsap.registerPlugin(ScrollTrigger)
-}
 
 /* ---------- tiny inline charts, kept minimal — no background block ---------- */
 
@@ -110,55 +105,27 @@ const metrics = [
   },
 ]
 
+const containerVariants = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.08 } }
+}
+const itemVariants = {
+  hidden: { opacity: 0, y: 24 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.4, ease: 'easeOut' } }
+}
+
 const AverageClientResults = () => {
-  const headerRef = useRef(null)
-  const cardsRef = useRef([])
-
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      gsap.fromTo(
-        headerRef.current,
-        { opacity: 0, y: 24 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.5,
-          ease: 'power2.out',
-          scrollTrigger: {
-            trigger: headerRef.current,
-            start: 'top 80%',
-          },
-        }
-      )
-
-      cardsRef.current.forEach((card, index) => {
-        if (!card) return
-        gsap.fromTo(
-          card,
-          { opacity: 0, y: 24 },
-          {
-            opacity: 1,
-            y: 0,
-            duration: 0.4,
-            ease: 'power2.out',
-            delay: index * 0.08,
-            scrollTrigger: {
-              trigger: card,
-              start: 'top 85%',
-            },
-          }
-        )
-      })
-    })
-
-    return () => ctx.revert()
-  }, [])
-
   return (
     <section className="bg-white dark:bg-gray-900 py-14 md:py-20 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div ref={headerRef} className="max-w-2xl mb-16 opacity-0">
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: 'easeOut' }}
+          viewport={{ once: true, amount: 0.2 }}
+          className="max-w-2xl mb-16"
+        >
           <div className="inline-flex items-center gap-2 bg-blue-50 dark:bg-blue-950/60 border border-blue-100/60 dark:border-blue-800/30 px-4 py-1.5 rounded-full mb-4">
             <span className="w-1.5 h-1.5 rounded-full bg-blue-500" />
             <span className="text-[11px] font-semibold text-blue-600 dark:text-blue-300 tracking-wider uppercase">
@@ -172,17 +139,22 @@ const AverageClientResults = () => {
             What data-driven SEO, content, and performance marketing
             typically deliver for our clients.
           </p>
-        </div>
+        </motion.div>
 
         {/* Metric columns */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-10 gap-y-14">
-          {metrics.map((metric, index) => {
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.1 }}
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-10 gap-y-14"
+        >
+          {metrics.map((metric) => {
             const Icon = metric.icon
             return (
-              <div
+              <motion.div
                 key={metric.title}
-                ref={(el) => (cardsRef.current[index] = el)}
-                className="opacity-0"
+                variants={itemVariants}
               >
                 <div className="flex items-center gap-2">
                   <Icon className={`text-sm ${metric.iconColor}`} />
@@ -199,10 +171,10 @@ const AverageClientResults = () => {
                 </p>
 
                 <div className="mt-4">{metric.chart}</div>
-              </div>
+              </motion.div>
             )
           })}
-        </div>
+        </motion.div>
       </div>
     </section>
   )

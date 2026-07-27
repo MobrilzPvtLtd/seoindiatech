@@ -1,6 +1,5 @@
-import React, { useRef, useEffect } from 'react'
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
+import React from 'react'
+import { motion } from 'framer-motion'
 import { ShieldCheck } from 'lucide-react'
 import {
   Search,
@@ -10,10 +9,6 @@ import {
   MapPin,
   BarChart3,
 } from 'lucide-react'
-
-if (typeof window !== 'undefined') {
-  gsap.registerPlugin(ScrollTrigger)
-}
 
 const items = [
   {
@@ -55,87 +50,33 @@ const items = [
 ]
 
 export default function ECommerceAbout() {
-  const headingRef = useRef(null)
-  const paragraphRef = useRef(null)
-  const itemRefs = useRef([])
-
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      gsap.fromTo(
-        headingRef.current,
-        { opacity: 0, y: 30 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.6,
-          ease: 'power2.out',
-          scrollTrigger: {
-            trigger: headingRef.current,
-            start: 'top 80%',
-          },
-        }
-      )
-
-      gsap.fromTo(
-        paragraphRef.current,
-        { opacity: 0, y: 30 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.6,
-          ease: 'power2.out',
-          delay: 0.1,
-          scrollTrigger: {
-            trigger: paragraphRef.current,
-            start: 'top 80%',
-          },
-        }
-      )
-
-      itemRefs.current.forEach((item, index) => {
-        if (!item) return
-        gsap.fromTo(
-          item,
-          { opacity: 0, y: 30 },
-          {
-            opacity: 1,
-            y: 0,
-            duration: 0.5,
-            ease: 'power2.out',
-            delay: index * 0.08,
-            scrollTrigger: {
-              trigger: item,
-              start: 'top 85%',
-            },
-          }
-        )
-      })
-    })
-
-    return () => ctx.revert()
-  }, [])
-
   return (
     <>
       <section className="pt-14 pb-24 bg-slate-100 dark:bg-slate-950">
         <div className="max-w-6xl mx-auto px-6">
           {/* HEADING */}
-          <h2
-            ref={headingRef}
-            className="text-4xl md:text-5xl font-extrabold text-center text-slate-900 dark:text-white mb-6 opacity-0"
+          <motion.h2
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: 'easeOut' }}
+            viewport={{ once: true, amount: 0.2 }}
+            className="text-4xl md:text-5xl font-extrabold text-center text-slate-900 dark:text-white mb-6"
           >
             What We Do
-          </h2>
+          </motion.h2>
 
           {/* PARAGRAPH */}
-          <p
-            ref={paragraphRef}
-            className="max-w-4xl mx-auto mb-20 text-lg text-slate-600 dark:text-slate-300 text-justify leading-relaxed opacity-0"
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: 'easeOut', delay: 0.1 }}
+            viewport={{ once: true, amount: 0.2 }}
+            className="max-w-4xl mx-auto mb-20 text-lg text-slate-600 dark:text-slate-300 text-justify leading-relaxed"
           >
             We do more than just fix tags and links. We help your store become
             more visible in search results. We focus on results you can measure.
             That includes traffic, rankings, and conversions.
-          </p>
+          </motion.p>
 
           {/* FLOW LINE */}
           <div className="relative">
@@ -147,12 +88,15 @@ export default function ECommerceAbout() {
                 const isLeft = index % 2 === 0
 
                 return (
-                  <div
+                  <motion.div
                     key={index}
-                    ref={(el) => (itemRefs.current[index] = el)}
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, ease: 'easeOut', delay: index * 0.08 }}
+                    viewport={{ once: true, amount: 0.15 }}
                     className={`relative flex flex-col md:flex-row ${
                       isLeft ? 'md:justify-start' : 'md:justify-end'
-                    } opacity-0`}
+                    }`}
                   >
                     {/* DOT */}
                     <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 top-6 w-4 h-4 rounded-full bg-sky-600 dark:bg-sky-400"></div>
@@ -172,7 +116,7 @@ export default function ECommerceAbout() {
                         {item.text}
                       </p>
                     </div>
-                  </div>
+                  </motion.div>
                 )
               })}
             </div>

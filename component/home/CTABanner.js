@@ -1,43 +1,17 @@
-import React, { useRef, useEffect } from 'react'
+import React from 'react'
 import Link from 'next/link'
 import { FiArrowRight, FiPhone, FiStar, FiAward, FiTrendingUp } from 'react-icons/fi'
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
-
-if (typeof window !== 'undefined') {
-  gsap.registerPlugin(ScrollTrigger)
-}
+import { motion } from 'framer-motion'
 
 const CTABanner = () => {
-  const sectionRef = useRef(null)
-
-  useEffect(() => {
-    if (!sectionRef.current) return
-
-    const ctx = gsap.context(() => {
-      gsap.fromTo(
-        sectionRef.current,
-        { y: 30, opacity: 0 },
-        {
-          y: 0,
-          opacity: 1,
-          duration: 0.7,
-          ease: 'power3.out',
-          immediateRender: false,
-          scrollTrigger: {
-            trigger: sectionRef.current,
-            start: 'top 85%',
-            toggleActions: 'play none none none',
-          },
-        }
-      )
-    }, sectionRef)
-
-    return () => ctx.revert()
-  }, [])
-
   return (
-    <section ref={sectionRef} className="bg-white dark:bg-gray-900 py-16 md:py-20 transition-colors duration-300">
+    <motion.section
+      initial={{ y: 30, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.7, ease: 'easeOut' }}
+      viewport={{ once: true, amount: 0.15 }}
+      className="bg-white dark:bg-gray-900 py-16 md:py-20 transition-colors duration-300"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative bg-gradient-to-br from-white to-blue-50/50 dark:from-gray-800 dark:to-gray-800/50 border-2 border-dashed border-gray-300 dark:border-gray-700 rounded-3xl p-8 md:p-12 lg:p-16 text-center hover:border-blue-400 dark:hover:border-blue-500 transition-all duration-300 shadow-xl shadow-blue-500/5">
           {/* Decorative elements */}
@@ -87,7 +61,7 @@ const CTABanner = () => {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   )
 }
 

@@ -1,17 +1,21 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { Search, TrendingUp, Target } from 'lucide-react'
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
-
-if (typeof window !== 'undefined') {
-  gsap.registerPlugin(ScrollTrigger)
-}
+import { motion } from 'framer-motion'
 
 const barHeights = [40, 65, 50, 80, 60, 90, 75]
 const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
 
 const LINE_PATH = 'M0,60 Q40,50 60,40 Q100,25 140,20 Q180,15 200,10'
 const LINE_LENGTH = 260
+
+const containerVariants = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.12 } }
+}
+const cardVariants = {
+  hidden: { y: 50, opacity: 0, scale: 0.95 },
+  visible: { y: 0, opacity: 1, scale: 1, transition: { duration: 0.6, ease: 'easeOut' } }
+}
 
 function useInView(threshold = 0.4) {
   const ref = useRef(null)
@@ -40,7 +44,8 @@ function BarChartCard() {
   const { ref, inView } = useInView()
 
   return (
-    <article
+    <motion.article
+      variants={cardVariants}
       ref={ref}
       className="bg-white dark:bg-gray-800 rounded-2xl p-6 border border-gray-100 dark:border-gray-700 hover:shadow-lg hover:shadow-blue-100/50 dark:hover:shadow-blue-900/20 transition-shadow duration-200 group"
     >
@@ -80,7 +85,7 @@ function BarChartCard() {
           ))}
         </div>
       </div>
-    </article>
+    </motion.article>
   )
 }
 
@@ -88,7 +93,8 @@ function LineChartCard() {
   const { ref, inView } = useInView()
 
   return (
-    <article
+    <motion.article
+      variants={cardVariants}
       ref={ref}
       className="bg-white dark:bg-gray-800 rounded-2xl p-6 border border-gray-100 dark:border-gray-700 hover:shadow-lg hover:shadow-blue-100/50 dark:hover:shadow-blue-900/20 transition-shadow duration-200 group"
     >
@@ -144,7 +150,7 @@ function LineChartCard() {
           />
         </svg>
       </div>
-    </article>
+    </motion.article>
   )
 }
 
@@ -156,7 +162,8 @@ function DonutChartCard() {
   const offset = circumference * (1 - target)
 
   return (
-    <article
+    <motion.article
+      variants={cardVariants}
       ref={ref}
       className="bg-white dark:bg-gray-800 rounded-2xl p-6 border border-gray-100 dark:border-gray-700 hover:shadow-lg hover:shadow-blue-100/50 dark:hover:shadow-blue-900/20 transition-shadow duration-200 group"
     >
@@ -210,52 +217,40 @@ function DonutChartCard() {
           </div>
         </div>
       </div>
-    </article>
+    </motion.article>
   )
 }
 
 const SEOSolution = () => {
-  const sectionRef = useRef(null)
-  const headerRef = useRef(null)
-  const gridRef = useRef(null)
-
-  useEffect(() => {
-    if (!sectionRef.current) return
-
-    const ctx = gsap.context(() => {
-      gsap.fromTo(headerRef.current,
-        { y: 30, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.7, ease: 'power3.out', immediateRender: false,
-          scrollTrigger: { trigger: headerRef.current, start: 'top 85%', toggleActions: 'play none none none' } }
-      )
-
-      gsap.fromTo(gridRef.current.children,
-        { y: 50, opacity: 0, scale: 0.95 },
-        { y: 0, opacity: 1, scale: 1, duration: 0.6, stagger: 0.12, ease: 'power3.out', immediateRender: false,
-          scrollTrigger: { trigger: gridRef.current, start: 'top 85%', toggleActions: 'play none none none' } }
-      )
-    }, sectionRef)
-
-    return () => ctx.revert()
-  }, [])
-
   return (
-    <section ref={sectionRef} className="bg-gray-50 dark:bg-gray-900 py-14 md:py-20 transition-colors duration-300">
+    <section className="bg-gray-50 dark:bg-gray-900 py-14 md:py-20 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div ref={headerRef} className="text-center mb-14">
+        <motion.div
+          initial={{ y: 30, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.7, ease: 'easeOut' }}
+          viewport={{ once: true, amount: 0.15 }}
+          className="text-center mb-14"
+        >
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white leading-tight">
             Tailored <span className="text-blue-600 dark:text-blue-400">SEO solutions</span> for Optimal Performance
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-base text-gray-600 dark:text-gray-400">
             Enhance Organic Engagement, Optimize Visibility, and Reach Top Search Results with Strategic SEO.
           </p>
-        </div>
+        </motion.div>
 
-        <div ref={gridRef} className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.15 }}
+          className="grid grid-cols-1 md:grid-cols-3 gap-6"
+        >
           <BarChartCard />
           <LineChartCard />
           <DonutChartCard />
-        </div>
+        </motion.div>
       </div>
     </section>
   )

@@ -1,12 +1,16 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
+import { motion } from 'framer-motion';
 import { Star, Quote } from 'lucide-react';
 import Image from 'next/image';
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-if (typeof window !== 'undefined') {
-  gsap.registerPlugin(ScrollTrigger)
-}
+const containerVariants = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.1 } }
+};
+const cardVariants = {
+  hidden: { y: 40, opacity: 0 },
+  visible: { y: 0, opacity: 1, transition: { duration: 0.6, ease: 'easeOut' } }
+};
 
 const testimonials = [
   {
@@ -110,9 +114,6 @@ const Testimonial = () => {
   const [isUserScrolling, setIsUserScrolling] = useState(false);
   const scrollTimeoutRef = useRef(null);
   const intervalRef = useRef(null);
-  const sectionRef = useRef(null)
-  const headerRef = useRef(null)
-  const cardsRef = useRef(null)
 
   useEffect(() => {
     const update = () => setItemsPerView(window.innerWidth < 768 ? 1 : 3);
@@ -120,29 +121,6 @@ const Testimonial = () => {
     window.addEventListener('resize', update);
     return () => window.removeEventListener('resize', update);
   }, []);
-
-  // GSAP scroll animation
-  useEffect(() => {
-    if (!sectionRef.current) return
-
-    const ctx = gsap.context(() => {
-      gsap.fromTo(headerRef.current,
-        { y: 30, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.7, ease: 'power3.out', immediateRender: false,
-          scrollTrigger: { trigger: headerRef.current, start: 'top 85%', toggleActions: 'play none none none' } }
-      )
-
-      if (cardsRef.current) {
-        gsap.fromTo(cardsRef.current.children.length ? cardsRef.current.children : cardsRef.current,
-          { y: 40, opacity: 0 },
-          { y: 0, opacity: 1, duration: 0.6, stagger: 0.1, ease: 'power3.out', immediateRender: false,
-            scrollTrigger: { trigger: cardsRef.current, start: 'top 85%', toggleActions: 'play none none none' } }
-        )
-      }
-    }, sectionRef)
-
-    return () => ctx.revert()
-  }, [itemsPerView])
 
   const shouldSlide = testimonials.length > itemsPerView;
 
@@ -184,20 +162,32 @@ const Testimonial = () => {
   };
 
   return (
-    <div ref={sectionRef} className="bg-gray-50 dark:bg-gray-800 py-14 md:py-20 px-4 sm:px-6 lg:px-8 transition-colors duration-300">
+    <motion.div
+      variants={containerVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.1 }}
+      className="bg-gray-50 dark:bg-gray-800 py-14 md:py-20 px-4 sm:px-6 lg:px-8 transition-colors duration-300"
+    >
       <div className="max-w-7xl mx-auto">
-        <div ref={headerRef} className="text-center mb-12 md:mb-16">
+        <motion.div
+          initial={{ y: 30, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.7, ease: 'easeOut' }}
+          viewport={{ once: true, amount: 0.15 }}
+          className="text-center mb-12 md:mb-16"
+        >
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white leading-tight mb-4">
             What Our Clients Say
           </h2>
           <p className="max-w-2xl mx-auto text-base text-gray-600 dark:text-gray-400">
             Hear from our satisfied customers about their experience with our products and services.
           </p>
-        </div>
+        </motion.div>
 
         {shouldSlide ? (
           <div
-            ref={(el) => { scrollRef.current = el; cardsRef.current = el; }}
+            ref={scrollRef}
             className="flex gap-8 overflow-x-auto scrollbar-hide py-3 px-4 touch-pan-x snap-x snap-mandatory"
             onTouchStart={handleUserScrollStart}
             onTouchEnd={handleUserScrollEnd}
@@ -206,18 +196,22 @@ const Testimonial = () => {
             onMouseLeave={handleUserScrollEnd}
           >
             {[...testimonials, ...testimonials.slice(0, itemsPerView)].map((testimonial, index) => (
-              <TestimonialCard key={`${testimonial.id}-${index}`} testimonial={testimonial} />
+              <motion.div key={`${testimonial.id}-${index}`} variants={cardVariants}>
+                <TestimonialCard testimonial={testimonial} />
+              </motion.div>
             ))}
           </div>
         ) : (
-          <div ref={cardsRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
             {testimonials.map((testimonial) => (
-              <TestimonialCard key={testimonial.id} testimonial={testimonial} />
+              <motion.div key={testimonial.id} variants={cardVariants}>
+                <TestimonialCard testimonial={testimonial} />
+              </motion.div>
             ))}
           </div>
         )}
       </div>
-    </div>
+    </motion.div>
   );
 };
 
