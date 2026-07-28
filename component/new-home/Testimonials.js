@@ -31,7 +31,7 @@ const track = [...testimonials, ...testimonials]; // duplicated for a seamless l
 const AUTO_SPEED = 26; // px per second
 
 const TickerCard = ({ item, accent }) => (
-  <div className="flex-none w-[300px] select-none rounded-xl border border-white/10 bg-white/[0.03] px-5 py-5 backdrop-blur-sm">
+  <div className="flex-none w-[300px] select-none rounded-xl border border-gray-200 bg-white px-5 py-5 shadow-sm">
     {/* Symbol + sparkline */}
     <div className="mb-4 flex items-center justify-between">
       <span className="flex items-center gap-1.5 font-mono text-xs font-semibold tracking-wide" style={{ color: accent }}>
@@ -44,16 +44,16 @@ const TickerCard = ({ item, accent }) => (
     </div>
 
     {/* Quote */}
-    <p className="mb-5 text-[14px] leading-relaxed text-slate-200" style={{ display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
+    <p className="mb-5 text-[14px] leading-relaxed text-gray-600" style={{ display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
       "{item.text}"
     </p>
 
     {/* Identity + rating */}
-    <div className="flex items-center justify-between border-t border-white/10 pt-4">
+    <div className="flex items-center justify-between border-t border-gray-200 pt-4">
       <div className="flex items-center gap-2.5 min-w-0">
         <img src={item.avatar} alt={item.name} className="h-7 w-7 shrink-0 rounded-full object-cover grayscale" />
         <div className="min-w-0">
-          <p className="truncate text-xs font-semibold text-white">{item.name}</p>
+          <p className="truncate text-xs font-semibold text-gray-900">{item.name}</p>
         </div>
       </div>
       <span className="shrink-0 font-mono text-[11px] tracking-wide" style={{ color: accent }}>★★★★★</span>
@@ -99,12 +99,7 @@ const Testimonials = () => {
   const endDrag = () => { drag.current.active = false; };
 
   return (
-    <section className="relative overflow-hidden bg-[#0E0F16] py-16 md:py-20">
-      {/* Faint chart-grid backdrop */}
-      <div
-        className="pointer-events-none absolute inset-0 opacity-[0.05]"
-        style={{ backgroundImage: 'linear-gradient(to right, #fff 1px, transparent 1px)', backgroundSize: '64px 100%' }}
-      />
+    <section className="relative overflow-hidden bg-gray-50 py-16 md:py-20">
 
       <div className="relative z-10 max-w-3xl mx-auto px-4 text-center mb-12 md:mb-14">
         {/* <motion.div
@@ -125,7 +120,7 @@ const Testimonials = () => {
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.05, ease: [0.16, 1, 0.3, 1] }}
           viewport={{ once: true, amount: 0.5 }}
-          className="mb-3 text-3xl sm:text-4xl md:text-[2.75rem] font-semibold tracking-tight text-white"
+          className="mb-3 text-3xl sm:text-4xl md:text-[2.75rem] font-semibold tracking-tight text-gray-900"
         >
           Our trusted <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400 dark:from-blue-400 dark:to-blue-300">clients</span>
         </motion.h2>
@@ -134,7 +129,7 @@ const Testimonials = () => {
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
           viewport={{ once: true, amount: 0.5 }}
-          className="text-base sm:text-lg leading-relaxed text-slate-400"
+          className="text-base sm:text-lg leading-relaxed text-gray-500"
         >
           Every engagement gets tracked like a position — here's what's showing on the board.
         </motion.p>
@@ -164,8 +159,8 @@ const Testimonials = () => {
           </motion.div>
         </div>
 
-        <div className="pointer-events-none absolute inset-y-0 left-0 w-16 sm:w-32 bg-gradient-to-r from-[#0E0F16] to-transparent" />
-        <div className="pointer-events-none absolute inset-y-0 right-0 w-16 sm:w-32 bg-gradient-to-l from-[#0E0F16] to-transparent" />
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-16 sm:w-32 bg-gradient-to-r from-gray-50 to-transparent" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-16 sm:w-32 bg-gradient-to-l from-gray-50 to-transparent" />
       </motion.div>
     </section>
   );

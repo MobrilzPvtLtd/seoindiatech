@@ -20,7 +20,7 @@ const reasons = [
   },
   {
     icon: Zap,
-    title: 'Holistic Expertise',
+    title: 'Holistic Digital Marketing Expertise',
     desc: 'From SEO to Content Marketing, Design, and PPC — we cover it all.',
   },
   {

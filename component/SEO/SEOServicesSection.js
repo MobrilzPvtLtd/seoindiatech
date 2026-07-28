@@ -89,7 +89,7 @@ export default function SEOServicesSection() {
               },
               {
                 icon: ShieldCheck,
-                title: 'White-Hat Techniques',
+                title: 'White-Hat SEO Techniques',
                 desc:
                   'Ethical, Google-compliant methods ensuring long-term results without penalties.',
               },

@@ -134,8 +134,8 @@ export default function Home() {
         {/* <OurSEOProcess /> */}
         {/* <SEOSolution /> */}
         <Industries />
-        <Blog />
         <Testimonials />
+        <Blog />
         <FAQAndContact />
         {/* <NewFooter /> */}
       </SmoothScroll>

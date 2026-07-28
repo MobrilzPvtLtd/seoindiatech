@@ -27,9 +27,9 @@ export default function ServiceDropdown({ closeMenu }) {
             onClick={closeMenu}
             className="flex items-center gap-2 mb-8"
           >
-            <h2 className="text-sm font-semibold text-gray-800 dark:text-white">
+            <span className="text-sm font-semibold text-gray-800 dark:text-white">
               SEO
-            </h2>
+            </span>
           </Link>
 
           <div className="space-y-6">
@@ -98,9 +98,9 @@ export default function ServiceDropdown({ closeMenu }) {
             onClick={closeMenu}
             className="flex items-center gap-2 mb-8"
           >
-            <h2 className="text-sm font-semibold text-gray-800 dark:text-white">
+            <span className="text-sm font-semibold text-gray-800 dark:text-white">
               DIGITAL MARKETING
-            </h2>
+            </span>
           </Link>
 
           <div className="space-y-6">
@@ -141,9 +141,9 @@ export default function ServiceDropdown({ closeMenu }) {
             onClick={closeMenu}
             className="flex items-center gap-2 mb-8"
           >
-            <h2 className="text-sm font-semibold text-gray-800 dark:text-white">
+            <span className="text-sm font-semibold text-gray-800 dark:text-white">
               PAID ADVERTISING
-            </h2>
+            </span>
           </Link>
 
           <div className="space-y-6">
@@ -170,9 +170,9 @@ export default function ServiceDropdown({ closeMenu }) {
             onClick={closeMenu}
             className="flex items-center gap-2 mb-8"
           >
-            <h2 className="text-sm font-semibold text-gray-800 dark:text-white">
+            <span className="text-sm font-semibold text-gray-800 dark:text-white">
               DESIGN & DEVELOPMENT
-            </h2>
+            </span>
           </Link>
 
           <div className="space-y-6">
@@ -202,9 +202,9 @@ function MegaItem({ icon, title, desc, link, closeMenu }) {
       </div>
 
       <div>
-        <h4 className="font-medium text-gray-800 dark:text-white group-hover:text-blue-600 transition-colors">
+        <p className="font-medium text-gray-800 dark:text-white group-hover:text-blue-600 transition-colors">
           {title}
-        </h4>
+        </p>
         <p className="text-sm text-gray-500">{desc}</p>
       </div>
     </Link>

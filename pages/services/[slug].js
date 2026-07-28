@@ -10,9 +10,9 @@ import ServiceHero from '@/component/common/ServiceHero'
 
 const categoryMeta = {
   seo: {
-    title: 'SEO Services | SEO India Tech',
+    title: 'SEO Agency India | AI SEO, eCommerce & GBP Optimization',
     description:
-      'Explore our full range of SEO services including Local SEO, AI SEO, E-Commerce SEO, and more. Drive organic traffic and grow your business.',
+      'Partner with a leading SEO agency in India for AI SEO optimization, eCommerce SEO, GBP optimization, Google Business Profile optimization, and SEO solutions for small businesses.',
     heroTitle: (
       <>
         Transform Your Online Presence with{' '}

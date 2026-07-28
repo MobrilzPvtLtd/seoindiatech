@@ -104,7 +104,7 @@ const NewFooter = () => {
  
           {/* Contact Info */}
           <div className="space-y-6">
-            <h3 className="text-base font-bold text-white tracking-wide">Contact Info</h3>
+            <h3 className="text-base font-bold text-white tracking-wide">Contact Information</h3>
             <div className="space-y-4 text-sm">
               <p className="flex items-start space-x-3 text-gray-500">
                 <MapPin className="w-4 h-4 text-blue-400 mt-0.5 flex-shrink-0" />
