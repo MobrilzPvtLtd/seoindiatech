@@ -196,136 +196,161 @@ const Header = () => {
     setIsSolutionsOpen(false)
   }
 
-  // Underlined nav link — replaces the old jumpy border-b hover
-  const NavLink = ({ href, children }) => (
-    <Link
-      href={href}
-      className={`relative text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] ${navLinkTextColor} font-medium py-1 transition-colors duration-200 after:content-[''] after:absolute after:left-0 after:-bottom-0.5 after:h-[2px] after:w-0 after:bg-blue-600 dark:after:bg-blue-400 after:transition-all after:duration-300 hover:after:w-full`}
-    >
-      {children}
-    </Link>
-  )
+  const lightBg = isHome && !scrolled
+
+  // Underlined nav link, with a persistent (not just hover) indicator for the active route
+  const NavLink = ({ href, children }) => {
+    const isActive = router.pathname === href
+    return (
+      <Link
+        href={href}
+        className={`relative text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] font-medium py-1 transition-colors duration-200
+          after:content-[''] after:absolute after:left-0 after:-bottom-0.5 after:h-[2px] after:bg-blue-600 dark:after:bg-blue-400
+          after:transition-all after:duration-300 hover:after:w-full
+          ${
+            isActive
+              ? `after:w-full ${lightBg ? 'text-white' : 'text-slate-900 dark:text-white'}`
+              : `after:w-0 ${navLinkTextColor}`
+          }`}
+      >
+        {children}
+      </Link>
+    )
+  }
 
   const contactButtonClass =
-    'inline-flex items-center justify-center bg-gradient-to-r from-blue-600 to-blue-700 text-white px-3 md:px-4 lg:px-5 py-2 md:py-2.5 rounded-full font-semibold text-[11px] md:text-xs lg:text-sm tracking-wide transition-all duration-300 hover:bg-blue-600 dark:hover:bg-blue-500 hover:shadow-[0_8px_20px_-6px_rgba(37,99,235,0.55)] active:scale-95 whitespace-nowrap'
+    'inline-flex items-center justify-center bg-gradient-to-r from-blue-600 to-blue-700 text-white px-3 md:px-4 lg:px-5 py-2 md:py-2.5 rounded-full font-semibold text-[11px] md:text-xs lg:text-sm tracking-wide transition-all duration-300 hover:from-blue-500 hover:to-blue-600 hover:shadow-[0_8px_20px_-6px_rgba(37,99,235,0.55)] active:scale-95 whitespace-nowrap'
 
   const mobileContactButtonClass =
     'block bg-slate-900 dark:bg-blue-600 text-white px-8 py-3.5 rounded-full font-semibold text-center transition-all duration-300 hover:bg-blue-600 active:scale-95 w-full shadow-md'
 
-  const headerContainerClass = isHome && !scrolled
-    ? 'mt-2 md:mt-3 lg:mt-4 mx-3 sm:mx-4 md:mx-6 lg:mx-8 xl:mx-auto max-w-md sm:max-w-lg md:max-w-2xl lg:max-w-5xl xl:max-w-6xl flex items-center justify-between h-16 md:h-[68px] lg:h-[72px] px-2 sm:px-4 lg:px-6 rounded-full border border-transparent backdrop-blur-none transition-all duration-300 ease-out'
-    : `
-            mt-2 md:mt-3 lg:mt-4 mx-3 sm:mx-4 md:mx-6 lg:mx-8 xl:mx-auto max-w-md sm:max-w-lg md:max-w-2xl lg:max-w-5xl xl:max-w-6xl
-            flex items-center justify-between h-16 md:h-[68px] lg:h-[72px]
-            px-2 sm:px-4 lg:px-6
-            rounded-full border
-            backdrop-blur-xl backdrop-saturate-150
-            transition-all duration-300 ease-out
-            ${
-              scrolled
-                ? 'bg-white/85 dark:bg-slate-900/85 border-slate-200/70 dark:border-slate-700/60 shadow-[0_8px_30px_-8px_rgba(15,23,42,0.18)]'
-                : 'bg-white/60 dark:bg-slate-900/60 border-white/40 dark:border-slate-700/40 shadow-[0_4px_16px_-4px_rgba(15,23,42,0.08)]'
-            }
-          `
+  // Note: horizontal gutter now lives on the OUTER wrapper as padding, and this inner
+  // element centers itself with `mx-auto` at every breakpoint. Previously the gutter was
+  // applied as a fixed `mx-*` margin on this element directly (mx-3 sm:mx-4 md:mx-6 lg:mx-8),
+  // with `mx-auto` only kicking in at `xl`. Since a fixed margin isn't the same as centering,
+  // the header sat closer to the left edge than the right on tablet (md/lg) widths — the
+  // `max-w-*` box wasn't given a way to distribute leftover space evenly. `mx-auto` on all
+  // breakpoints fixes that.
+  const headerContainerClass = `
+    mx-auto flex items-center justify-between h-16 md:h-[68px] lg:h-[72px]
+    w-full max-w-md sm:max-w-lg md:max-w-2xl lg:max-w-5xl xl:max-w-6xl
+    px-2 sm:px-4 lg:px-6
+    rounded-full border
+    transition-all duration-300 ease-out
+    ${
+      lightBg
+        ? 'border-transparent backdrop-blur-none'
+        : `backdrop-blur-xl backdrop-saturate-150 ${
+            scrolled
+              ? 'bg-white/85 dark:bg-slate-900/85 border-slate-200/70 dark:border-slate-700/60 shadow-[0_8px_30px_-8px_rgba(15,23,42,0.18)]'
+              : 'bg-white/60 dark:bg-slate-900/60 border-white/40 dark:border-slate-700/40 shadow-[0_4px_16px_-4px_rgba(15,23,42,0.08)]'
+          }`
+    }
+  `
 
-  const navLinkTextColor = isHome && !scrolled
+  const navLinkTextColor = lightBg
     ? 'text-white/80 hover:text-white'
     : 'text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white'
 
-  const servicesBtnColor = isHome && !scrolled
+  const servicesBtnColor = lightBg
     ? 'text-white/80 hover:text-white'
     : 'text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white'
 
   return (
     <>
       <header className={`fixed top-0 left-0 w-full z-40 transition-transform duration-300 ease-in-out ${hidden ? '-translate-y-full' : 'translate-y-0'}`}>
-        <div className={headerContainerClass}>
-          {/* Logo */}
-          <div className="flex items-center flex-shrink-0 pl-1 sm:pl-0">
-            {mounted ? (
-              <Link href="/" className="block">
-                <div className="relative w-[56px] h-[56px] md:w-14 md:h-14 lg:w-16 lg:h-16 cursor-pointer">
-                  <Image
-                    src="/sit.png"
-                    alt="SIT Logo"
-                    fill
-                    sizes="(max-width: 768px) 56px, (max-width: 1024px) 56px, 64px"
-                    className={`object-contain object-center ${isHome && !scrolled ? 'invert' : 'dark:invert'}`}
-                    priority
-                  />
-                </div>
-              </Link>
-            ) : (
-              <div className="w-10 h-10 md:w-14 md:h-14 bg-slate-100 dark:bg-slate-800 animate-pulse rounded-full" />
-            )}
-          </div>
+        {/* Outer wrapper owns the responsive gutter + centers the inner pill via mx-auto */}
+        <div className="mt-2 md:mt-3 lg:mt-4 px-3 sm:px-4 md:px-6 lg:px-8">
+          <div className={headerContainerClass}>
+            {/* Logo */}
+            <div className="flex items-center flex-shrink-0 pl-1 sm:pl-0">
+              {mounted ? (
+                <Link href="/" className="block group">
+                  <div className="relative w-[56px] h-[56px] md:w-14 md:h-14 lg:w-16 lg:h-16 cursor-pointer transition-transform duration-300 group-hover:scale-105">
+                    <Image
+                      src="/sit.png"
+                      alt="SIT Logo"
+                      fill
+                      sizes="(max-width: 768px) 56px, (max-width: 1024px) 56px, 64px"
+                      className={`object-contain object-center ${lightBg ? 'invert' : 'dark:invert'}`}
+                      priority
+                    />
+                  </div>
+                </Link>
+              ) : (
+                <div className="w-10 h-10 md:w-14 md:h-14 bg-slate-100 dark:bg-slate-800 animate-pulse rounded-full" />
+              )}
+            </div>
 
-          {/* Desktop nav */}
-          <nav className="hidden md:flex flex-1 justify-center">
-            <ul className="flex items-center gap-3 lg:gap-5 xl:gap-7">
-              <li><NavLink href="/">Home</NavLink></li>
-              <li><NavLink href="/who-we-are">Who We Are</NavLink></li>
+            {/* Desktop nav */}
+            <nav className="hidden md:flex flex-1 justify-center">
+              <ul className="flex items-center gap-3 lg:gap-5 xl:gap-7">
+                <li><NavLink href="/">Home</NavLink></li>
+                <li><NavLink href="/who-we-are">Who We Are</NavLink></li>
 
-              <li
-                className="relative"
-                ref={servicesRef}
-                onMouseEnter={handleServicesMouseEnter}
-                onMouseLeave={handleServicesMouseLeave}
-              >
-                <button
-                  className={`flex items-center gap-1 text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] ${servicesBtnColor} font-medium py-1 transition-colors duration-200`}
-                  aria-expanded={isServicesOpen}
-                  aria-controls="services-dropdown"
-                >
-                  Services
-                  <ChevronDown
-                    size={16}
-                    className={`transition-transform duration-300 ${isServicesOpen ? 'rotate-180' : ''}`}
-                  />
-                </button>
-                <div
-                  id="services-dropdown"
-                  className={`
-                    absolute left-1/2 top-full mt-3 -translate-x-1/2
-                    w-full max-w-[90vw] md:w-[500px] lg:w-[700px] xl:w-[900px]
-                    bg-white dark:bg-slate-800 rounded-2xl z-30
-                    border border-slate-200/70 dark:border-slate-700/60
-                    shadow-[0_20px_50px_-12px_rgba(15,23,42,0.25)]
-                    transition-all duration-200 origin-top
-                    ${isServicesOpen ? 'opacity-100 scale-100 pointer-events-auto' : 'opacity-0 scale-95 pointer-events-none'}
-                  `}
+                <li
+                  className="relative"
+                  ref={servicesRef}
                   onMouseEnter={handleServicesMouseEnter}
                   onMouseLeave={handleServicesMouseLeave}
-                  onClick={handleCardClick}
                 >
-                  <ServiceDropdown />
-                </div>
-              </li>
+                  <button
+                    className={`flex items-center gap-1 text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] ${servicesBtnColor} font-medium py-1 transition-colors duration-200`}
+                    aria-expanded={isServicesOpen}
+                    aria-controls="services-dropdown"
+                  >
+                    Services
+                    <ChevronDown
+                      size={16}
+                      className={`transition-transform duration-300 ${isServicesOpen ? 'rotate-180' : ''}`}
+                    />
+                  </button>
+                  <div
+                    id="services-dropdown"
+                    data-lenis-prevent
+                    className={`
+                      absolute left-1/2 top-full mt-3 -translate-x-1/2
+                      w-full max-w-[90vw] md:w-[500px] lg:w-[700px] xl:w-[900px]
+                      max-h-[75vh] overflow-hidden flex flex-col
+                      bg-white dark:bg-slate-800 rounded-2xl z-30
+                      border border-slate-200/70 dark:border-slate-700/60
+                      shadow-[0_20px_50px_-12px_rgba(15,23,42,0.25)]
+                      transition-all duration-200 origin-top
+                      ${isServicesOpen ? 'opacity-100 scale-100 pointer-events-auto' : 'opacity-0 scale-95 pointer-events-none'}
+                    `}
+                    onMouseEnter={handleServicesMouseEnter}
+                    onMouseLeave={handleServicesMouseLeave}
+                    onClick={handleCardClick}
+                  >
+                    <ServiceDropdown />
+                  </div>
+                </li>
 
-              <li><NavLink href="/seo-packages">Packages</NavLink></li>
-              <li><NavLink href="/blog">Blog</NavLink></li>
-            </ul>
-          </nav>
+                <li><NavLink href="/seo-packages">Packages</NavLink></li>
+                <li><NavLink href="/blog">Blog</NavLink></li>
+              </ul>
+            </nav>
 
-          {/* Mobile toggle */}
-          <div className="md:hidden flex items-center gap-2">
-            <ThemeToggleButton />
-            <button
-              className={`menu-toggle ${isHome && !scrolled ? 'text-white hover:bg-white/10' : 'text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800'} focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-full p-2 z-50 transition-colors`}
-              onClick={toggleMobileMenu}
-              aria-label="Toggle menu"
-              aria-expanded={isMenuOpen}
-            >
-              <Menu className="w-5 h-5" />
-            </button>
-          </div>
+            {/* Mobile toggle */}
+            <div className="md:hidden flex items-center gap-2">
+              <ThemeToggleButton />
+              <button
+                className={`menu-toggle ${lightBg ? 'text-white hover:bg-white/10' : 'text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800'} focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-full p-2 z-50 transition-colors`}
+                onClick={toggleMobileMenu}
+                aria-label="Toggle menu"
+                aria-expanded={isMenuOpen}
+              >
+                <Menu className="w-5 h-5" />
+              </button>
+            </div>
 
-          {/* Desktop right side */}
-          <div className="hidden md:flex items-center gap-3">
-            <ThemeToggleButton />
-            <Link href="/contact-us" className={contactButtonClass}>
-              Contact Us
-            </Link>
+            {/* Desktop right side */}
+            <div className="hidden md:flex items-center gap-3">
+              <ThemeToggleButton />
+              <Link href="/contact-us" className={contactButtonClass}>
+                Contact Us
+              </Link>
+            </div>
           </div>
         </div>
       </header>
@@ -365,7 +390,11 @@ const Header = () => {
             <li>
               <Link
                 href="/"
-                className="block text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-white px-4 py-3 rounded-xl font-medium transition-colors"
+                className={`block px-4 py-3 rounded-xl font-medium transition-colors ${
+                  router.pathname === '/'
+                    ? 'bg-blue-50 dark:bg-blue-950/40 text-blue-600 dark:text-blue-400'
+                    : 'text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-white'
+                }`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Home
@@ -374,7 +403,11 @@ const Header = () => {
             <li>
               <Link
                 href="/who-we-are"
-                className="block text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-white px-4 py-3 rounded-xl font-medium transition-colors"
+                className={`block px-4 py-3 rounded-xl font-medium transition-colors ${
+                  router.pathname === '/who-we-are'
+                    ? 'bg-blue-50 dark:bg-blue-950/40 text-blue-600 dark:text-blue-400'
+                    : 'text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-white'
+                }`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Who We Are
@@ -434,7 +467,11 @@ const Header = () => {
             <li>
               <Link
                 href="/seo-packages"
-                className="block text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-white px-4 py-3 rounded-xl font-medium transition-colors"
+                className={`block px-4 py-3 rounded-xl font-medium transition-colors ${
+                  router.pathname === '/seo-packages'
+                    ? 'bg-blue-50 dark:bg-blue-950/40 text-blue-600 dark:text-blue-400'
+                    : 'text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-white'
+                }`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Packages
@@ -444,7 +481,11 @@ const Header = () => {
             <li>
               <Link
                 href="/blog"
-                className="block text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-white px-4 py-3 rounded-xl font-medium transition-colors"
+                className={`block px-4 py-3 rounded-xl font-medium transition-colors ${
+                  router.pathname === '/blog'
+                    ? 'bg-blue-50 dark:bg-blue-950/40 text-blue-600 dark:text-blue-400'
+                    : 'text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-white'
+                }`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Blog

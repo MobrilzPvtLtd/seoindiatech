@@ -3,10 +3,11 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { serviceCategories } from '@/utils/serviceCategories'
-import { ArrowRight, Search, BarChart, Globe, Shield, Zap, Target, TrendingUp } from 'lucide-react'
+import { ArrowRight, Search, BarChart, Globe, Shield, Zap, Target, TrendingUp, HelpCircle } from 'lucide-react'
 import WhyPartnerSection from '@/component/common/WhyPartnerSection'
 import ContactFormSection from '@/component/common/ContactFormSection'
 import ServiceHero from '@/component/common/ServiceHero'
+import FaqSection from '@/component/common/FaqSection'
 
 const categoryMeta = {
   seo: {
@@ -15,19 +16,24 @@ const categoryMeta = {
       'Partner with a leading SEO agency in India for AI SEO optimization, eCommerce SEO, GBP optimization, Google Business Profile optimization, and SEO solutions for small businesses.',
     heroTitle: (
       <>
-        Transform Your Online Presence with{' '}
-        <span className="text-blue-600">Expert SEO Services</span>
+        Grow Your Business with the Best{' '}
+        <span className="text-blue-600">SEO Services in India</span>
       </>
     ),
-    heroSubtitle:
-      'In today\'s hyper-competitive digital landscape, visibility is everything. At SEO India Tech, we specialize in delivering SEO services that not only increase your search engine rankings but also drive qualified traffic, boost engagement, and fuel sustainable growth.',
+    heroSubtitle: (
+      <>In today&apos;s competitive digital landscape, visibility is essential for business growth. At SEO India Tech, we deliver <strong>Best SEO Services in India</strong> that improve search rankings, attract qualified organic traffic, increase engagement, and drive long-term business success through proven, data-driven SEO strategies.</>
+    ),
     heroBadge: 'Search Engine Optimization',
     heroImage: '/images/services/score.png',
     heroFeatures: [
-      { icon: 'Search', text: 'Organic Rankings' },
-      { icon: 'Globe', text: 'Local SEO' },
-      { icon: 'BarChart', text: 'Technical Optimization' },
-      { icon: 'Target', text: 'Conversion Rate Focus' },
+      { icon: 'Target', text: 'Custom SEO Strategy' },
+      { icon: 'Search', text: 'Technical Site Audits' },
+      { icon: 'Zap', text: 'AI Search Ready' },
+      { icon: 'Globe', text: 'Local & GBP Optimization' },
+      { icon: 'BarChart', text: 'E-Commerce SEO' },
+      { icon: 'TrendingUp', text: 'Transparent Reporting' },
+      { icon: 'Shield', text: 'Content-Driven Rankings' },
+      { icon: 'Search', text: 'Small Business SEO' },
     ],
     industries: [
       { title: 'Local Businesses', desc: 'Dominate local searches and attract more customers from your area.' },
@@ -36,6 +42,67 @@ const categoryMeta = {
       { title: 'Healthcare', desc: 'Connect with patients through optimized local and organic search.' },
       { title: 'Startups', desc: 'Build organic visibility from day one with cost-effective SEO.' },
     ],
+    contentSection: (
+      <section className="bg-gray-50 dark:bg-gray-800/30 py-16 md:py-20 transition-colors duration-300">
+        <div className="max-w-6xl mx-auto px-6 md:px-8">
+          <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 md:p-12 border border-gray-200 dark:border-gray-700 shadow-sm">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-6">
+              Professional SEO Services for Every Business
+            </h2>
+            <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
+              SEO India Tech delivers comprehensive SEO services that help businesses build lasting organic visibility. From local shops to national e-commerce brands, we build strategies designed for long-term ranking performance, not short-term spikes. Every engagement follows a structured process to ensure faster indexing, stronger technical foundations, and measurable growth in traffic and leads.
+            </p>
+            <p className="text-gray-700 dark:text-gray-300 font-medium mb-3">Our services include:</p>
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-8">
+              {[
+                { text: 'Local SEO' },
+                { text: 'AI SEO' },
+                { text: 'Small Business SEO' },
+                { text: 'E-Commerce SEO' },
+                { text: 'App Store Optimization', link: '/services/app-store-optimization' },
+                { text: 'GBP Optimization', link: '/services/gbp-optimization' },
+                { text: 'GEO Optimization' },
+                { text: 'AEO' },
+              ].map((item) => (
+                <li key={item.text} className="flex items-center gap-2 text-gray-700 dark:text-gray-300">
+                  <span className="w-1.5 h-1.5 rounded-full bg-blue-600 flex-shrink-0" />
+                  {item.link ? (
+                    <Link href={item.link} className="font-semibold text-blue-600 dark:text-blue-400 hover:underline transition-colors duration-200">
+                      {item.text}
+                    </Link>
+                  ) : (
+                    item.text
+                  )}
+                </li>
+              ))}
+            </ul>
+
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-6">
+              Why Choose SEO India Tech?
+            </h2>
+            <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
+              Choosing the right SEO partner plays a major role in your online growth. As a trusted SEO agency in India, SEO India Tech offers a full range of services built around your specific business goals — not a fixed package applied to every client. Our team of SEO strategists, content writers, and technical specialists work together to deliver results you can actually track.
+            </p>
+            <p className="text-gray-700 dark:text-gray-300 font-medium mb-3">Our advantages include:</p>
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-8">
+              {['Experienced SEO Strategists', 'Custom SEO Roadmaps', 'White-Hat, Google-Compliant Methods', 'Technical & On-Page Expertise', 'Transparent Monthly Reporting', 'Ongoing Optimization Support'].map((item) => (
+                <li key={item} className="flex items-center gap-2 text-gray-700 dark:text-gray-300">
+                  <span className="w-1.5 h-1.5 rounded-full bg-blue-600 flex-shrink-0" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-6">
+              Grow Your Online Presence with SEO India Tech
+            </h2>
+            <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+              Whether you run a local business, an online store, or an established enterprise, SEO India Tech has the expertise to deliver real, sustainable results. As a leading <strong><Link href="/" className="text-blue-600 dark:text-blue-400 hover:underline">SEO company in India</Link></strong>, we help businesses turn search visibility into real revenue — not just better numbers on a dashboard.
+            </p>
+          </div>
+        </div>
+      </section>
+    ),
   },
   'digital-marketing': {
     title: 'Digital Marketing Services | SEO India Tech',
@@ -158,6 +225,8 @@ export default function ServiceCategoryPage() {
   const data = serviceCategories[slug]
   const meta = categoryMeta[slug]
 
+  if (!slug) return null
+
   if (!data || !meta) {
     return (
       <section className="bg-white dark:bg-gray-900 min-h-screen flex items-center justify-center transition-colors duration-300">
@@ -204,16 +273,11 @@ export default function ServiceCategoryPage() {
       <section className="bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-6 md:px-8 py-16 md:py-20">
           <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 dark:bg-blue-950/60 border border-blue-100 dark:border-blue-800/30 rounded-full text-sm font-medium text-blue-600 dark:text-blue-400 mb-6 transition-colors duration-300">
-              <span className="w-2 h-2 bg-blue-600 dark:bg-blue-400 rounded-full" />
-              {data.title}
-            </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white leading-tight mb-4 transition-colors duration-300">
-              Explore Our {data.title}
+              Explore Our <span className="text-blue-600">{data.title}</span>
             </h2>
             <p className="text-gray-600 dark:text-gray-400 text-lg max-w-2xl mx-auto transition-colors duration-300">
-              Choose from our specialized services below. Each service is
-              tailored to deliver measurable results for your business.
+              Our SEO company in India offers a focused service for every kind of business — local, e-commerce, small business, or enterprise. Explore each one below to find the right fit for where you're trying to grow.
             </p>
             <div className="h-1 w-16 bg-blue-600 dark:bg-blue-500 rounded-full mt-6 mx-auto" />
           </div>
@@ -227,15 +291,27 @@ export default function ServiceCategoryPage() {
                   href={service.slug}
                   className="group relative bg-gray-50 dark:bg-gray-800/50 rounded-2xl p-7 border border-gray-200 dark:border-gray-700 hover:border-blue-200 dark:hover:border-blue-800/50 hover:shadow-xl hover:shadow-blue-500/5 dark:hover:shadow-blue-900/10 transition-all duration-300 hover:-translate-y-1"
                 >
-                  <div className="w-12 h-12 rounded-xl bg-blue-50 dark:bg-blue-900/40 flex items-center justify-center mb-5 group-hover:bg-blue-600 group-hover:scale-110 transition-all duration-300">
-                    <Icon className="w-6 h-6 text-blue-600 dark:text-blue-400 group-hover:text-white transition-colors duration-300" />
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-10 h-10 rounded-xl bg-blue-50 dark:bg-blue-900/40 flex items-center justify-center flex-shrink-0 group-hover:bg-blue-600 group-hover:scale-110 transition-all duration-300">
+                      <Icon className="w-5 h-5 text-blue-600 dark:text-blue-400 group-hover:text-white transition-colors duration-300" />
+                    </div>
+                    <h3 className="text-lg font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300">
+                      {service.title}
+                    </h3>
                   </div>
-                  <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300">
-                    {service.title}
-                  </h3>
-                  <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-5 transition-colors duration-300">
+                  <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed mb-3 transition-colors duration-300">
                     {service.description}
                   </p>
+                  {service.features && (
+                    <ul className="space-y-1 mb-5">
+                      {service.features.map((feature, i) => (
+                        <li key={i} className="flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
+                          <span className="w-1.5 h-1.5 rounded-full bg-blue-600 flex-shrink-0" />
+                          {feature}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                   <div className="flex items-center gap-2 text-sm font-medium text-blue-600 dark:text-blue-400">
                     Learn More
                     <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
@@ -252,10 +328,16 @@ export default function ServiceCategoryPage() {
         subtitle={meta.subtitle}
       />
 
+      {/* Content Section */}
+      {meta.contentSection}
+
       {/* Contact Form Section */}
       <ContactFormSection
         industries={meta.industries}
       />
+
+      {/* FAQ Section - SEO only */}
+      {slug === 'seo' && <FaqSection />}
     </>
   )
 }

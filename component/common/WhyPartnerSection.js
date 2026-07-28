@@ -6,32 +6,32 @@ const reasons = [
   {
     icon: TrendingUp,
     title: 'Proven Track Record',
-    desc: 'Data-driven strategies that have helped businesses of all sizes grow sustainably.',
+    desc: <>We've worked across enough industries and business sizes to know the difference between what actually moves rankings and what just looks like activity on a report. Our experience delivering <Link href="/services/ai-seo" className="text-blue-600 dark:text-blue-400 hover:underline">AI SEO services India</Link> helps businesses achieve sustainable organic growth.</>,
   },
   {
     icon: Target,
     title: 'Customized Strategies',
-    desc: 'Tailored plans built specifically for your business goals and target audience.',
+    desc: 'Your market, your competitors, and your audience shape the plan—not a template we run for every client. Every strategy is tailored to your business goals and long-term success.',
   },
   {
     icon: ShieldCheck,
-    title: 'White-Hat Techniques',
-    desc: 'Ethical, Google-compliant methods ensuring long-term results without penalties.',
+    title: 'White-Hat SEO Techniques',
+    desc: 'We only use methods search engines actually reward, so your rankings hold up long after the work is done, not just until the next algorithm update.',
   },
   {
     icon: Zap,
     title: 'Holistic Digital Marketing Expertise',
-    desc: 'From SEO to Content Marketing, Design, and PPC — we cover it all.',
+    desc: 'SEO rarely works in isolation. When it needs to connect with content, design, or paid campaigns, we handle that too instead of leaving gaps for someone else to fill.',
   },
   {
     icon: FileText,
     title: 'Full Transparency',
-    desc: 'Regular performance reports and actionable insights — no guesswork, ever.',
+    desc: "You'll always know exactly what's been done, what's coming next, and why—not just a dashboard full of numbers with no context.",
   },
   {
     icon: BarChart3,
     title: 'ROI-Focused Growth',
-    desc: 'Every campaign is designed to deliver measurable returns and scalable growth.',
+    desc: <>Every recommendation gets weighed against one question: does this actually grow the business, or does it just move a metric that looks good in a slide deck? That's the approach behind our <strong>Best SEO Services in India</strong>, where every action is focused on measurable business results.</>,
   },
 ]
 
@@ -42,13 +42,10 @@ export default function WhyPartnerSection({ title, subtitle, showCheckmarks = fa
         <div className="flex flex-col md:flex-row gap-12 md:gap-20 items-start">
           {/* Left Side — Heading + Text */}
           <div className="w-full md:w-5/12 md:sticky md:top-28">
-            <span className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 dark:bg-blue-950/60 border border-blue-100 dark:border-blue-800/30 rounded-full text-sm font-medium text-blue-600 dark:text-blue-400 mb-6">
-              Why Us
-            </span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white leading-tight mb-6">
               {title || (
                 <>
-                  Why Partner with{' '}
+                  Why Businesses Choose{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">
                     SEO India Tech
                   </span>
@@ -57,7 +54,7 @@ export default function WhyPartnerSection({ title, subtitle, showCheckmarks = fa
               )}
             </h2>
             <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed mb-8">
-              {subtitle || 'We are a trusted digital partner delivering high-performance solutions backed by research, creativity, and innovation. Our commitment to quality sets us apart.'}
+              {subtitle || `Most SEO agencies promise rankings. We focus on what actually gets you there — a real audit of your site and competitors, a strategy built around your specific goals, and reporting that shows exactly what's working each month. No guesswork, no cookie-cutter packages, just SEO built the way it should be.`}
             </p>
             <Link
               href="/contact-us"

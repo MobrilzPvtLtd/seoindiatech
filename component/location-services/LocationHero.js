@@ -5,7 +5,7 @@ export default function LocationHero({ heading, content, imageSrc }) {
   const cityForAlt = cityMatch ? cityMatch[1] : 'your city'
 
   return (
-    <section className="py-16 md:py-20 bg-gray-50 dark:bg-gray-950 text-gray-900 dark:text-gray-100">
+    <section className="pt-24 md:pt-28 pb-16 md:pb-20 bg-gray-50 dark:bg-gray-950 text-gray-900 dark:text-gray-100">
       <div className="container mx-auto px-5 sm:px-6 lg:px-8 max-w-7xl">
         <div className="flex flex-col lg:flex-row items-center gap-12">
           {/* LEFT CONTENT */}

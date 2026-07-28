@@ -1,5 +1,6 @@
 import Layout from "@/component/layout/Layout";
 import { ThemeProvider } from "@/context/ThemeContext";
+import SmoothScroll from "@/component/motion/SmoothScroll";
 import "@/styles/globals.css";
 import Script from "next/script";
 import Head from "next/head";
@@ -31,9 +32,11 @@ export default function App({ Component, pageProps }) {
       />
 
       <ThemeProvider>
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
+        <SmoothScroll>
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
+        </SmoothScroll>
       </ThemeProvider>
     </>
   );

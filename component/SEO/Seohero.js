@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import { ArrowRight, Search, BarChart, Globe } from 'lucide-react'
+import { ArrowRight, Search, BarChart, Globe, Target, Zap, TrendingUp, Shield } from 'lucide-react'
 import Link from 'next/link'
 
 const Seohero = () => {
@@ -42,17 +42,36 @@ conversions, our professional SEO services are customized for your unique goals.
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4 mt-8 max-w-xl mx-auto md:mx-0">
             {[
               {
-                icon: <Search className="w-4 h-4" />,
-                text: 'Organic Rankings',
+                icon: <Target className="w-4 h-4" />,
+                text: 'Custom SEO Strategy',
               },
-              { icon: <Globe className="w-4 h-4" />, text: 'Local SEO' },
+              {
+                icon: <Search className="w-4 h-4" />,
+                text: 'Technical Site Audits',
+              },
+              {
+                icon: <Zap className="w-4 h-4" />,
+                text: 'AI Search Ready',
+              },
+              {
+                icon: <Globe className="w-4 h-4" />,
+                text: 'Local & GBP Optimization',
+              },
               {
                 icon: <BarChart className="w-4 h-4" />,
-                text: 'Technical Optimization',
+                text: 'E-Commerce SEO',
               },
               {
-                icon: <ArrowRight className="w-4 h-4" />,
-                text: 'Conversion Rate Focus',
+                icon: <TrendingUp className="w-4 h-4" />,
+                text: 'Transparent Reporting',
+              },
+              {
+                icon: <Shield className="w-4 h-4" />,
+                text: 'Content-Driven Rankings',
+              },
+              {
+                icon: <Search className="w-4 h-4" />,
+                text: 'Small Business SEO',
               },
             ].map((item, index) => (
               <div key={index} className="flex items-center space-x-2">
@@ -67,17 +86,13 @@ conversions, our professional SEO services are customized for your unique goals.
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 mt-8 justify-center md:justify-start">
-            <button
-              onClick={() => {
-                document
-                  .getElementById('Form')
-                  ?.scrollIntoView({ behavior: 'smooth' })
-              }}
+            <a
+              href="/contact-us"
               className="cursor-pointer bg-gradient-to-r from-blue-600 to-blue-800 dark:from-gray-800 dark:to-gray-900 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:shadow-lg shadow-md flex items-center justify-center group"
             >
               Get started now
               <ArrowRight className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
-            </button>
+            </a>
 
             <button className="hidden bg-white dark:bg-gray-800 text-gray-800 dark:text-white border border-gray-200 dark:border-gray-700 px-6 py-3 rounded-full font-semibold hover:bg-gray-50 dark:hover:bg-gray-700 transition">
               See our results

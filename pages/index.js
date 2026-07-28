@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import { Geist, Geist_Mono } from 'next/font/google'
 
-import SmoothScroll from '@/component/motion/SmoothScroll'
 import Hero from '@/component/new-home/Hero'
 import TrustedBy from '@/component/new-home/TrustedBy'
 import OurServiceSection from '@/component/new-home/OurServiceSection'
@@ -96,7 +95,6 @@ export default function Home() {
 
   return (
     <>
-      <SmoothScroll>
         <Head>
           <title>Expert SEO & Digital Marketing Services - SEOIndiatech</title>
           <meta
@@ -138,7 +136,6 @@ export default function Home() {
         <Blog />
         <FAQAndContact />
         {/* <NewFooter /> */}
-      </SmoothScroll>
     </>
   )
 }

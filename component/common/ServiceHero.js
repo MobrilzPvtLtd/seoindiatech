@@ -25,10 +25,6 @@ export default function ServiceHero({ title, subtitle, features, image, badge })
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-center items-center gap-10 lg:gap-20 relative z-10">
         {/* Left Content Column */}
         <div className="w-full md:w-1/2 text-center md:text-left">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300 rounded-full text-sm font-medium mb-6 transition-colors duration-300">
-            <span className="w-2 h-2 bg-blue-600 dark:bg-blue-400 rounded-full" />
-            <span>{badge || 'Our Services'}</span>
-          </div>
 
           <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-snug md:leading-16 max-w-2xl mx-auto md:mx-0 transition-colors duration-300">
             {title}
@@ -61,7 +57,7 @@ export default function ServiceHero({ title, subtitle, features, image, badge })
 
           <div className="flex flex-col sm:flex-row gap-4 mt-8 justify-center md:justify-start">
             <a
-              href="#contact-form"
+              href="/contact-us"
               className="cursor-pointer bg-gradient-to-r from-blue-600 to-blue-800 dark:from-gray-800 dark:to-gray-900 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:shadow-lg shadow-md flex items-center justify-center group"
             >
               Get started now
