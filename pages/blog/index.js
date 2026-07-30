@@ -1,22 +1,14 @@
+import SeoHead from '@/component/common/SeoHead'
+import { getPageSeo } from '@/utils/pageSeoRegistry'
 import Blog from '@/component/blog/Blog'
-import Head from 'next/head'
-import React from 'react'
 
-function page() {
+const seo = getPageSeo('/blog')
+
+export default function BlogPage() {
   return (
     <>
-      <Head>
-        <title> Blog in India - SEOIndiatech</title>
-        <meta
-          name="description"
-          content="SEOIndiatech offers digital branding services in India to enhance your brand identity, online presence, and audience engagement effectively."
-        />
-        <link rel="canonical" href="https://www.seoindiatech.com/blog" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
+      <SeoHead title={seo.title} description={seo.description} path="/blog" />
       <Blog />
     </>
   )
 }
-
-export default page

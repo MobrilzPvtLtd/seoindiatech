@@ -1,5 +1,5 @@
 import Promotion from '@/component/solution/promotion/Promotion'
-import Head from 'next/head'
+import SeoHead from '@/component/common/SeoHead'
 import React from 'react'
 
 export default function index() {
@@ -81,25 +81,12 @@ export default function index() {
 
   return (
     <>
-      <Head>
-        <title>Promotion & Ads Services India - SEOIndiatech</title>
-        <meta
-          name="description"
-          content="SEOIndiatech provides promotion and ads services in India to boost brand visibility, attract target audiences, and drive higher engagement and conversions."
-        />
-        <link
-          rel="canonical"
-          href="https://www.seoindiatech.com/solution/promotion-and-ads"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        {/* SEO SERVICE SCHEMA */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(schemaData),
-          }}
-        />
-      </Head>
+      <SeoHead
+        title="Promotion & Ads Services India | SEO India Tech"
+        description="Boost brand visibility with integrated promotion and advertising services. Drive engagement, leads, and conversions across digital channels."
+        path="/solution/promotion-and-ads"
+        schema={schemaData}
+      />
       <Promotion />
     </>
   )

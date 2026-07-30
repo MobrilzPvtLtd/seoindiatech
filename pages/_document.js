@@ -1,24 +1,15 @@
 // pages/_document.js
-import { Html, Head, Main, NextScript } from "next/document";
+import { Html, Head, Main, NextScript } from 'next/document'
 
 export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function () {
-                try {
-                  var t = localStorage.getItem('theme');
-                  var dark = t === 'dark';
-                  var root = document.documentElement;
-                  root.classList.add(dark ? 'dark' : 'light');
-                  root.style.colorScheme = dark ? 'dark' : 'light';
-                } catch (e) {}
-              })();
-            `,
-          }}
+        <link rel="icon" href="/favicon.ico" />
+        <meta name="author" content="SEO INDIA TECH" />
+        <meta
+          name="p:domain_verify"
+          content="0c89be4ab18144828edff9618257a5a3"
         />
         {/* Google Tag Manager */}
         <script
@@ -32,52 +23,22 @@ export default function Document() {
             `,
           }}
         />
-        {/* End Google Tag Manager */}
-
-        <meta
-          name="google-site-verification"
-          content="Ag4ojngx0blbdZD0WIjtjNtjFBI_DBJpUAO_di30yWY"
-        />
-
-        <meta
-          name="p:domain_verify"
-          content="0c89be4ab18144828edff9618257a5a3"
-        />
-
-        <meta name="author" content="SEO INDIA TECH" />
-
-        {/* Google Analytics */}
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-W00JV5XW2Y"
-        />
       </Head>
 
       <body>
-        {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-5TS8QJRM"
             height="0"
             width="0"
-            style={{ display: "none", visibility: "hidden" }}
+            style={{ display: 'none', visibility: 'hidden' }}
+            title="Google Tag Manager"
           />
         </noscript>
 
         <Main />
         <NextScript />
-
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-W00JV5XW2Y');
-          `,
-          }}
-        />
       </body>
     </Html>
-  );
+  )
 }

@@ -70,7 +70,7 @@ const faqs = [
 
 const FAQAndContact = () => {
   const [form, setForm] = useState({ fullName: '', email: '', phone: '', message: '' })
-  const [openIndex, setOpenIndex] = useState(0)
+  const [openIndex, setOpenIndex] = useState(null)
   const [focusedField, setFocusedField] = useState(null)
   const [submitted, setSubmitted] = useState(false)
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -78,6 +78,10 @@ const FAQAndContact = () => {
   const [privacyAgreed, setPrivacyAgreed] = useState(false)
 
   const handleChange = (e) => setForm((f) => ({ ...f, [e.target.name]: e.target.value }))
+
+  const toggleFaq = (index) => {
+    setOpenIndex((prev) => (prev === index ? null : index))
+  }
 
   const isFormValid = () =>
     form.fullName.trim() !== '' &&
@@ -139,12 +143,16 @@ const FAQAndContact = () => {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-4 md:gap-5">
+          <div className="grid md:grid-cols-2 gap-4 md:gap-5 items-start">
             {faqs.map((faq, i) => {
+              const faqId = `home-faq-${i}`
               const isOpen = openIndex === i
+              const answer = faq.answer?.trim()
+              if (!faq.question?.trim() || !answer) return null
+
               return (
                 <motion.div
-                  key={i}
+                  key={faqId}
                   initial={{ opacity: 0, y: 16 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
@@ -153,30 +161,34 @@ const FAQAndContact = () => {
                 >
                   <button
                     type="button"
-                    onClick={() => setOpenIndex(isOpen ? -1 : i)}
+                    onClick={() => toggleFaq(i)}
                     className="w-full flex items-start justify-between gap-4 p-5 md:p-6 text-left"
                     aria-expanded={isOpen}
+                    aria-controls={faqId}
                   >
                     <span className="text-sm md:text-[15px] font-semibold text-heading leading-snug pr-2">
                       {faq.question}
                     </span>
-                    <span className="shrink-0 text-primary dark:text-accent pt-0.5">
+                    <span className="shrink-0 text-primary dark:text-accent pt-0.5" aria-hidden="true">
                       <FiPlus
                         className={`h-5 w-5 transition-transform duration-300 ${isOpen ? 'rotate-45' : ''}`}
                         strokeWidth={2.5}
                       />
                     </span>
                   </button>
-                  <div
-                    className="grid transition-[grid-template-rows] duration-300 ease-out"
-                    style={{ gridTemplateRows: isOpen ? '1fr' : '0fr' }}
-                  >
-                    <div className="overflow-hidden">
-                      <p className="px-5 md:px-6 pb-5 md:pb-6 text-sm leading-relaxed text-muted border-t border-border/40 dark:border-white/10 pt-4">
-                        {faq.answer}
-                      </p>
+                  {isOpen && (
+                    <div
+                      id={faqId}
+                      className="grid transition-[grid-template-rows] duration-300 ease-out"
+                      style={{ gridTemplateRows: '1fr' }}
+                    >
+                      <div className="overflow-hidden">
+                        <p className="px-5 md:px-6 pb-5 md:pb-6 text-sm leading-relaxed text-muted border-t border-border/40 dark:border-white/10 pt-4">
+                          {answer}
+                        </p>
+                      </div>
                     </div>
-                  </div>
+                  )}
                 </motion.div>
               )
             })}

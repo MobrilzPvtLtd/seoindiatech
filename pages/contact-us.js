@@ -1,8 +1,16 @@
-import ContactUsSection from '@/component/contactus/Contactus' 
-import React from 'react'
+import ContactUsSection from '@/component/contactus/Contactus'
+import ContactSeoContent from '@/component/contactus/ContactSeoContent'
+import SeoHead from '@/component/common/SeoHead'
+import { getPageSeo } from '@/utils/pageSeoRegistry'
 
-export default function contactus() {
+const seo = getPageSeo('/contact-us')
+
+export default function ContactUsPage() {
   return (
-    < ContactUsSection />
+    <>
+      <SeoHead title={seo.title} description={seo.description} path="/contact-us" />
+      <ContactUsSection />
+      <ContactSeoContent />
+    </>
   )
 }

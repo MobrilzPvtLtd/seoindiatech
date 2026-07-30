@@ -1,3 +1,5 @@
+import SeoHead from '@/component/common/SeoHead'
+import { getPageSeo } from '@/utils/pageSeoRegistry'
 import Image from 'next/image'
 import { Geist, Geist_Mono } from 'next/font/google'
 import HomePage from '@/component/home/HomePage'
@@ -88,18 +90,13 @@ export default function Home() {
 
   return (
     <>
+      <SeoHead
+        title={getPageSeo('/').title}
+        description={getPageSeo('/').description}
+        path="/old"
+        noindex
+      />
       <Head>
-        <title>Expert SEO & Digital Marketing Services - SEOIndiatech</title>
-        <meta
-          name="description"
-          content="SEOIndiatech offers expert SEO & digital marketing services in India, boosting your website traffic, rankings, and online visibility for measurable results."
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta
-          name="robots"
-          content="index, follow, max-image-preview:large, max-snippet:-1"
-        />
-        <link rel="canonical" href="https://www.seoindiatech.com" />
 
         {/* SCHEMA */}
         <script

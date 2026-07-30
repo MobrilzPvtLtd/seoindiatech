@@ -229,14 +229,14 @@ export default function ContactFormSection({ title, description, industries }) {
                 >
                   I agree to the{' '}
                   <Link
-                    href="#"
+                    href="/privacy-policy"
                     className="text-blue-600 dark:text-blue-400 hover:underline"
                   >
                     Privacy Policy
                   </Link>{' '}
                   and{' '}
                   <Link
-                    href="#"
+                    href="/terms"
                     className="text-blue-600 dark:text-blue-400 hover:underline"
                   >
                     Terms of Service

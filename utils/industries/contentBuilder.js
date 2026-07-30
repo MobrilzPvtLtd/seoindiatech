@@ -77,6 +77,40 @@ ${profile.services
   const aiHtml = `
 <h2>AI search &amp; answer engine visibility</h2>
 <p>Patients, homeowners, and commercial buyers increasingly ask AI assistants for provider recommendations. Our ${kw} includes Generative Engine Optimization (GEO) and Answer Engine Optimization (AEO)-structuring content so your ${labelLower} brand can surface in AI Overviews, voice results, and chat-based discovery when users ask "who is the best ${labelLower} near me" or procedure-specific questions in your vertical.</p>
+<p>We format service pages with concise answer blocks, FAQ schema, comparison tables, and expert-byline signals so Google AI Overviews and third-party answer engines can cite your ${labelLower} business with confidence.</p>
+`
+
+  const gmbHtml = `
+<h2>Google Business Profile (GMB) optimization</h2>
+<p>Map pack visibility often decides which ${labelLower} provider gets the call. We optimize categories, services, service areas, photos, posts, and review workflows so your profile ranks for high-intent local queries and converts views into calls, direction requests, and bookings.</p>
+<ul>
+<li><strong>Profile completeness</strong> - accurate NAP, hours, attributes, and service menus</li>
+<li><strong>Review velocity</strong> - ethical review generation and response templates</li>
+<li><strong>Local content</strong> - geo pages and GBP posts aligned to seasonal demand</li>
+<li><strong>Performance tracking</strong> - calls, clicks, and map impressions in monthly reports</li>
+</ul>
+`
+
+  const ppcHtml = `
+<h2>PPC advertising for ${label} leads</h2>
+<p>Organic SEO builds long-term equity, but paid search captures urgent and high-intent demand immediately. We run ${labelLower} PPC campaigns on Google and Meta with tightly matched landing pages, negative keyword governance, and conversion tracking tied to real leads-not vanity clicks.</p>
+<ul>
+<li><strong>Search campaigns</strong> for emergency, comparison, and "near me" intent</li>
+<li><strong>Local Service Ads</strong> and call-only formats where they fit your vertical</li>
+<li><strong>Retargeting</strong> to re-engage visitors who did not convert on first visit</li>
+<li><strong>ROAS reporting</strong> with weekly optimization and budget recommendations</li>
+</ul>
+`
+
+  const smoHtml = `
+<h2>SMO &amp; social media growth</h2>
+<p>Social proof influences both human buyers and search algorithms. Our Social Media Optimization (SMO) for ${labelLower} brands strengthens visibility on Instagram, Facebook, LinkedIn, and YouTube with platform-native content, engagement routines, and creative that supports trust.</p>
+<ul>
+<li><strong>Content calendars</strong> with educational posts, proof, and seasonal offers</li>
+<li><strong>Community management</strong> - comments, DMs, and reputation monitoring</li>
+<li><strong>Creative production</strong> - short-form video, carousels, and testimonial clips</li>
+<li><strong>Cross-channel alignment</strong> - social campaigns synced with SEO and PPC themes</li>
+</ul>
 `
 
   const metricsHtml = `
@@ -114,6 +148,9 @@ ${profile.services
     complianceHtml +
     technicalHtml +
     aiHtml +
+    gmbHtml +
+    ppcHtml +
+    smoHtml +
     metricsHtml +
     processHtml +
     ctaHtml

@@ -1,6 +1,5 @@
-import SEO from '@/component/SEO/SEO'
 import Automation from '@/component/solution/automation/Automation'
-import Head from 'next/head'
+import SeoHead from '@/component/common/SeoHead'
 import React from 'react'
 
 export default function index() {
@@ -84,26 +83,12 @@ export default function index() {
 
   return (
     <>
-      <Head>
-        <title>Digital Automation Services India- SEOIndiatech</title>
-        <meta
-          name="description"
-          content="SEOIndiatech offers digital automation services in India to streamline processes, boost efficiency, and enhance business productivity effectively."
-        />
-        <link
-          rel="canonical"
-          href="https://www.seoindiatech.com/solution/automation"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-        {/* SEO SERVICE SCHEMA */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(schemaData),
-          }}
-        />
-      </Head>
+      <SeoHead
+        title="Digital Automation Services India | SEO India Tech"
+        description="Streamline business processes with digital automation solutions. Reduce manual work, improve accuracy, and scale operations with SEO India Tech."
+        path="/solution/automation"
+        schema={schemaData}
+      />
       <Automation />
     </>
   )

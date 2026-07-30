@@ -1,6 +1,7 @@
-# ...existing code...
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /new
+Disallow: /old
 
 Sitemap: https://www.seoindiatech.com/sitemap.xml
-# ...existing code...

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <defs>
+    <linearGradient id="ss-bg" x1="0" y1="0" x2="800" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F3F6FE"/>
+      <stop offset="1" stop-color="#EEF4FF"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#ss-bg)"/>
+  <rect x="110" y="110" width="580" height="380" rx="28" fill="#FFFFFF"/>
+  <rect x="150" y="150" width="500" height="70" rx="14" fill="#2A255D"/>
+  <rect x="170" y="175" width="180" height="20" rx="10" fill="#A4DDFB"/>
+  <rect x="150" y="250" width="150" height="110" rx="14" fill="#F26522" opacity="0.9"/>
+  <rect x="325" y="250" width="150" height="110" rx="14" fill="#6B2E88" opacity="0.9"/>
+  <rect x="500" y="250" width="150" height="110" rx="14" fill="#1E3A5F" opacity="0.9"/>
+  <text x="175" y="305" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="18" font-weight="700">PPC</text>
+  <text x="350" y="305" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="18" font-weight="700">GMB</text>
+  <text x="520" y="305" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="18" font-weight="700">SMO</text>
+  <text x="150" y="410" fill="#1E3A5F" font-family="Arial, sans-serif" font-size="28" font-weight="700">Service Sector SEO</text>
+  <text x="150" y="445" fill="#6B7280" font-family="Arial, sans-serif" font-size="16">Leads, bookings, and repeat contracts from search</text>
+</svg>

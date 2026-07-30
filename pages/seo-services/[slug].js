@@ -1,10 +1,11 @@
-import Head from 'next/head'
-import { locations } from '../../utils/locations'
+import SeoHead from '@/component/common/SeoHead'
+import { absoluteUrl } from '@/utils/siteConfig'
 
 import LocationHero from '@/component/location-services/LocationHero'
 import LocationContent from '@/component/location-services/LocationContent'
 import LocationFAQ from '@/component/location-services/LocationFAQ'
-import SeoSchema from '@//component/location-services/SeoSchema'
+import SeoSchema from '@/component/location-services/SeoSchema'
+import { locations } from '../../utils/locations'
 
 export default function LocationPage({ location }) {
   if (!location) {
@@ -17,37 +18,27 @@ export default function LocationPage({ location }) {
     )
   }
 
-  const pageUrl = `https://www.seoindiatech.com/${location.slug}`
+  const pagePath = `/seo-services/${location.slug}`
+  const pageUrl = absoluteUrl(pagePath)
 
   return (
     <>
-      <Head>
-        <title>{location.title}</title>
-        <meta name="description" content={location.description} />
-
-        {/* SEO */}
-        <meta property="og:title" content={location.title} />
-        <meta property="og:description" content={location.description} />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content={pageUrl} />
-        <meta name="robots" content="index, follow" />
-
-        {/* Schema Markup */}
-        <SeoSchema location={location} url={pageUrl} />
-      </Head>
+      <SeoHead
+        title={location.title}
+        description={location.description}
+        path={pagePath}
+      />
+      <SeoSchema location={location} url={pageUrl} />
 
       <main className="min-h-screen bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100">
-        {/* HERO SECTION */}
         <LocationHero
           heading={location.heading}
           content={location.content}
           imageSrc={location.heroImage}
         />
 
-        {/* MAIN PAGE CONTENT */}
         <LocationContent pageContent={location.pageContent} />
 
-        {/* FAQ SECTION */}
         <LocationFAQ faqs={location.faqs} city={location.city} />
       </main>
     </>

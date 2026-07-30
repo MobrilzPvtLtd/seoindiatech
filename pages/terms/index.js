@@ -2,24 +2,16 @@
 
 import React from 'react';
 import Link from 'next/link';
-import Head from 'next/head';
 import { Check } from 'lucide-react';
+import SeoHead from '@/component/common/SeoHead';
+import { getPageSeo } from '@/utils/pageSeoRegistry';
+
+const seo = getPageSeo('/terms');
 
 export default function TermsOfService() {
   return (
     <>
-     <Head>
-        <title> terms - SEOIndiatech</title>
-        <meta
-          name="description"
-          content="SEOIndiatech offers digital branding services in India to enhance your brand identity, online presence, and audience engagement effectively."
-        />
-        <link
-          rel="canonical"
-          href="https://www.seoindiatech.com/terms"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
+     <SeoHead title={seo.title} description={seo.description} path="/terms" />
       <main className="bg-gray-50 dark:bg-gray-900 min-h-screen py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-8">

@@ -532,6 +532,210 @@ const posts = [
       }
     ]
   },
+  {
+    metaTitle: 'Local SEO Guide for Indian Businesses in 2026',
+    metaDesc:
+      'Learn how local SEO helps Indian businesses rank on Google Maps and local search. Practical steps for GBP, citations, reviews, and city pages.',
+    slug: 'local-seo-guide-indian-businesses-2026',
+    title: 'Local SEO Guide for Indian Businesses: Rank on Google Maps in 2026',
+    category: 'Local SEO',
+    image: '/images/seo-company-1.png',
+    desc:
+      'A practical local SEO guide for Indian businesses covering Google Business Profile, citations, reviews, and city landing pages.',
+    content: [
+      {
+        type: 'paragraph',
+        text:
+          'If you run a local business in India, most of your customers search on Google before they call, visit, or book. Local SEO is how you show up in those searches - especially in Google Maps and the local pack. This guide walks through what actually works for Indian businesses in 2026.',
+      },
+      {
+        type: 'heading',
+        text: 'Start with Google Business Profile',
+      },
+      {
+        type: 'paragraph',
+        text:
+          'Your Google Business Profile (GBP) is the foundation of local SEO. Complete every section: categories, services, service areas, hours, photos, and posts. Keep your name, address, and phone (NAP) consistent everywhere online. Mismatched details confuse Google and hurt map rankings.',
+      },
+      {
+        type: 'heading',
+        text: 'Build city and service area pages',
+      },
+      {
+        type: 'paragraph',
+        text:
+          'Create dedicated pages for each city or neighbourhood you serve. Each page should answer real questions local customers ask - pricing, service areas, reviews, and how to book. Link these pages from your main navigation and GBP.',
+      },
+      {
+        type: 'heading',
+        text: 'Earn and respond to reviews',
+      },
+      {
+        type: 'paragraph',
+        text:
+          'Reviews influence both rankings and conversions. Ask satisfied customers for honest reviews. Respond to every review - positive and negative - in a professional tone. Mention your city and service naturally when relevant.',
+      },
+      {
+        type: 'paragraph',
+        text:
+          'Need help with local SEO in your city? SEO India Tech offers local SEO services across Delhi, Mumbai, Bangalore, Noida, and more. Visit our local SEO service page or contact us for a free audit.',
+      },
+    ],
+  },
+  {
+    metaTitle: 'What Is AI SEO and Why Your Business Needs It',
+    metaDesc:
+      'AI SEO helps your content appear in Google AI Overviews and AI search tools. Learn what AI SEO is and how to optimize for ChatGPT, Gemini, and Perplexity.',
+    slug: 'what-is-ai-seo-why-business-needs-it',
+    title: 'What Is AI SEO and Why Your Business Needs It in 2026',
+    category: 'AI SEO',
+    image: '/images/Google-Ai-Overviews.png',
+    desc:
+      'AI SEO optimizes your content for AI search engines and Google AI Overviews. Here is what it means and how to get started.',
+    content: [
+      {
+        type: 'paragraph',
+        text:
+          'Search is changing. Google AI Overviews, ChatGPT, Perplexity, and Gemini now answer questions directly - often without users clicking through to websites. AI SEO is the practice of structuring your content so these systems can find, understand, and cite your brand as a trusted source.',
+      },
+      {
+        type: 'heading',
+        text: 'How AI SEO differs from traditional SEO',
+      },
+      {
+        type: 'paragraph',
+        text:
+          'Traditional SEO focuses on ranking blue links. AI SEO adds answer formatting, entity clarity, FAQ structure, and topical depth so machines can extract accurate summaries. You still need technical SEO and backlinks - but content must also be citation-ready.',
+      },
+      {
+        type: 'heading',
+        text: 'Practical steps to start',
+      },
+      {
+        type: 'paragraph',
+        text:
+          'Use clear headings and direct answers. Add FAQ sections with real questions customers ask. Build authority with original data, case studies, and expert bylines. Ensure schema markup matches visible content. SEO India Tech offers dedicated AI SEO and answer engine optimization services for businesses ready to adapt.',
+      },
+    ],
+  },
+  {
+    metaTitle: 'PPC vs SEO: Which Is Better for Your Business?',
+    metaDesc:
+      'Compare PPC and SEO for lead generation. Learn when to use paid ads, when to invest in organic SEO, and why most businesses need both.',
+    slug: 'ppc-vs-seo-which-is-better',
+    title: 'PPC vs SEO: Which Marketing Channel Is Better for Your Business?',
+    category: 'Digital Marketing',
+    image: '/images/services/ppc.png',
+    desc:
+      'PPC delivers fast leads. SEO builds long-term traffic. Here is how to decide which channel fits your business goals and budget.',
+    content: [
+      {
+        type: 'paragraph',
+        text:
+          'Every business owner asks: should I invest in Google Ads or SEO? The honest answer is that they solve different problems. PPC gives you visibility immediately. SEO compounds over months and years with lower cost per lead at scale. Most successful businesses use both strategically.',
+      },
+      {
+        type: 'heading',
+        text: 'When PPC makes sense',
+      },
+      {
+        type: 'paragraph',
+        text:
+          'Choose PPC when you need leads now - new product launches, seasonal promotions, or testing market demand. PPC works well for high-intent keywords where organic rankings take too long to build.',
+      },
+      {
+        type: 'heading',
+        text: 'When SEO makes sense',
+      },
+      {
+        type: 'paragraph',
+        text:
+          'Choose SEO when you want sustainable traffic without paying for every click. SEO builds brand authority, supports content marketing, and reduces dependency on ad spend over time.',
+      },
+      {
+        type: 'paragraph',
+        text:
+          'SEO India Tech manages both PPC advertising and SEO services under one roof so your paid and organic strategies align. Explore our SEO packages or PPC services to get started.',
+      },
+    ],
+  },
+  {
+    metaTitle: 'E-Commerce SEO Checklist for Online Stores in India',
+    metaDesc:
+      'Essential e-commerce SEO checklist for Indian online stores. Fix product pages, category structure, technical SEO, and content for better Google rankings.',
+    slug: 'ecommerce-seo-checklist-india',
+    title: 'E-Commerce SEO Checklist: Rank Your Online Store in India',
+    category: 'E-Commerce SEO',
+    image: '/images/seo-company-1.png',
+    desc:
+      'A practical e-commerce SEO checklist covering product pages, categories, technical fixes, and content for Indian online stores.',
+    content: [
+      {
+        type: 'paragraph',
+        text:
+          'E-commerce SEO is competitive in India. Thousands of stores sell similar products - but only a fraction optimize properly for search. This checklist covers the highest-impact fixes for product visibility and organic sales.',
+      },
+      {
+        type: 'heading',
+        text: 'Product page optimization',
+      },
+      {
+        type: 'paragraph',
+        text:
+          'Every product page needs a unique title, meta description, H1, and product description. Avoid copying manufacturer text. Add specifications, use cases, and internal links to related products and categories.',
+      },
+      {
+        type: 'heading',
+        text: 'Technical foundations',
+      },
+      {
+        type: 'paragraph',
+        text:
+          'Fix crawl errors, improve page speed, implement proper canonical tags, and ensure mobile usability. Use structured data for products (price, availability, reviews) so Google can show rich results.',
+      },
+      {
+        type: 'paragraph',
+        text:
+          'For full e-commerce SEO support, see SEO India Tech e-commerce SEO services - we handle technical audits, category architecture, and content at scale.',
+      },
+    ],
+  },
+  {
+    metaTitle: 'How to Choose the Best SEO Agency in India',
+    metaDesc:
+      'Learn how to evaluate and choose the best SEO agency in India. Red flags, questions to ask, and what good SEO reporting looks like.',
+    slug: 'how-to-choose-best-seo-agency-india',
+    title: 'How to Choose the Best SEO Agency in India (2026 Guide)',
+    category: 'SEO',
+    image: '/images/seo-company-1.png',
+    desc:
+      'A practical guide to choosing an SEO agency in India - what to ask, red flags to avoid, and what transparent SEO looks like.',
+    content: [
+      {
+        type: 'paragraph',
+        text:
+          'Choosing an SEO agency in India is difficult because every company promises page-one rankings. The best agencies focus on process, transparency, and business outcomes - not guarantees. Here is how to evaluate partners before you sign.',
+      },
+      {
+        type: 'heading',
+        text: 'Questions to ask before hiring',
+      },
+      {
+        type: 'paragraph',
+        text:
+          'Ask for a technical audit sample, month-one task list, how leads will be tracked, and examples from similar industries. Avoid agencies that guarantee #1 rankings or refuse to explain their methods.',
+      },
+      {
+        type: 'heading',
+        text: 'What good reporting looks like',
+      },
+      {
+        type: 'paragraph',
+        text:
+          'Good agencies report on rankings, traffic, leads, and revenue impact - not just vanity metrics. You should understand what was done each month and what happens next. SEO India Tech provides weekly dashboards and dedicated account managers on every project.',
+      },
+    ],
+  },
 ]
 
 export default posts

@@ -21,12 +21,37 @@ export default function BlogDetail() {
     <>
       {/* Meta Title & Description */}
       <Head>
-        <title>{post.metaTitle} || SEO India Tech</title>
+        <title>{post.metaTitle} | SEO India Tech</title>
         <meta name="description" content={post.metaDesc} />
+        <link rel="canonical" href={`https://www.seoindiatech.com/blog/${post.slug}`} />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
         <meta property="og:title" content={post.metaTitle} />
         <meta property="og:description" content={post.metaDesc} />
-        <meta property="og:image" content={post.image} />
+        <meta property="og:image" content={`https://www.seoindiatech.com${post.image}`} />
         <meta property="og:type" content="article" />
+        <meta property="og:url" content={`https://www.seoindiatech.com/blog/${post.slug}`} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={post.metaTitle} />
+        <meta name="twitter:description" content={post.metaDesc} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'Article',
+              headline: post.title,
+              description: post.metaDesc,
+              image: `https://www.seoindiatech.com${post.image}`,
+              url: `https://www.seoindiatech.com/blog/${post.slug}`,
+              author: { '@type': 'Organization', name: 'SEO India Tech' },
+              publisher: {
+                '@type': 'Organization',
+                name: 'SEO India Tech',
+                logo: { '@type': 'ImageObject', url: 'https://www.seoindiatech.com/sit-transparent.png' },
+              },
+            }),
+          }}
+        />
       </Head>
 
       <section className="bg-white dark:bg-gray-900 pt-32 pb-12 px-4 md:px-8">

@@ -1,5 +1,7 @@
-import Head from 'next/head'
+import SeoHead from '@/component/common/SeoHead'
+import { absoluteUrl } from '@/utils/siteConfig'
 import LocationHero from '@/component/location-services/LocationHero'
+import IndustryBenefits from '@/component/industry-services/IndustryBenefits'
 import LocationContent from '@/component/location-services/LocationContent'
 import LocationFAQ from '@/component/location-services/LocationFAQ'
 import IndustrySchema from '@/component/industry-services/IndustrySchema'
@@ -14,21 +16,17 @@ export default function IndustryPage({ industry }) {
     )
   }
 
-  const pageUrl = `https://www.seoindiatech.com/industries/${industry.slug}`
+  const pagePath = `/industries/${industry.slug}`
+  const pageUrl = absoluteUrl(pagePath)
 
   return (
     <>
-      <Head>
-        <title>{industry.title}</title>
-        <meta name="description" content={industry.description} />
-        <meta property="og:title" content={industry.title} />
-        <meta property="og:description" content={industry.description} />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content={pageUrl} />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href={pageUrl} />
-        <IndustrySchema industry={industry} url={pageUrl} />
-      </Head>
+      <SeoHead
+        title={industry.title}
+        description={industry.description}
+        path={pagePath}
+      />
+      <IndustrySchema industry={industry} url={pageUrl} />
 
       <main className="min-h-screen bg-white dark:bg-background text-heading dark:text-foreground">
         <LocationHero
@@ -36,6 +34,7 @@ export default function IndustryPage({ industry }) {
           content={industry.content}
           imageSrc={industry.heroImage}
         />
+        <IndustryBenefits label={industry.name} categoryTitle={industry.categoryTitle} />
         <LocationContent pageContent={industry.pageContent} />
         <LocationFAQ faqs={industry.faqs} city={industry.name} subject={industry.name} />
       </main>

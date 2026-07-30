@@ -1,4 +1,6 @@
-import Head from 'next/head'
+import SeoHead from '@/component/common/SeoHead'
+import { getPageSeo } from '@/utils/pageSeoRegistry'
+import { buildWebSiteNode } from '@/utils/schemaBuilders'
 
 import TopContactBar from '@/component/ui/TopContactBar'
 import Hero from '@/component/new-home/Hero'
@@ -16,12 +18,15 @@ import Testimonials from '@/component/new-home/Testimonials'
 import AuthorityBand from '@/component/new-home/AuthorityBand'
 import Blog from '@/component/new-home/Blog'
 import FAQAndContact from '@/component/new-home/FAQAndContact'
+import CityLinksBand from '@/component/new-home/CityLinksBand'
 import ScrollToTop from '@/component/ui/ScrollToTop'
 
 export default function Home() {
+  const homeSeo = getPageSeo('/')
   const schemaData = {
     '@context': 'https://schema.org',
     '@graph': [
+      buildWebSiteNode(),
       {
         '@type': 'Organization',
         '@id': 'https://www.seoindiatech.com/#organization',
@@ -113,27 +118,12 @@ export default function Home() {
 
   return (
     <>
-      <Head>
-        <title>
-          AI-Powered SEO & Digital Marketing Agency | SEO INDIA TECH
-        </title>
-        <meta
-          name="description"
-          content="Global digital growth partner for AI-powered SEO, performance marketing, and technology. 14+ years serving businesses in USA, UK, Australia, and worldwide."
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta
-          name="robots"
-          content="index, follow, max-image-preview:large, max-snippet:-1"
-        />
-        <link rel="canonical" href="https://www.seoindiatech.com" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(schemaData),
-          }}
-        />
-      </Head>
+      <SeoHead
+        title={homeSeo.title}
+        description={homeSeo.description}
+        path="/"
+        schema={schemaData}
+      />
 
       <TopContactBar />
 
@@ -178,6 +168,9 @@ export default function Home() {
 
       {/* 14. Blog - Autus-style grid */}
       <Blog />
+
+      {/* City SEO links */}
+      <CityLinksBand />
 
       {/* 15. FAQ + Contact */}
       <FAQAndContact />

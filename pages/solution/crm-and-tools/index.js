@@ -1,5 +1,5 @@
 import CRMTools from '@/component/solution/CRM&Tool/CRMTool'
-import Head from 'next/head'
+import SeoHead from '@/component/common/SeoHead'
 import React from 'react'
 
 export default function index() {
@@ -88,26 +88,12 @@ export default function index() {
 
   return (
     <>
-      <Head>
-        <title>CRM & Tools Services India- SEOIndiatech</title>
-        <meta
-          name="description"
-          content="SEOIndiatech offers CRM & tools services in India, helping businesses streamline operations, enhance customer management, and boost overall productivity."
-        />
-        <link
-          rel="canonical"
-          href="https://www.seoindiatech.com/solution/crm-and-tools"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-        {/* SEO SERVICE SCHEMA */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(schemaData),
-          }}
-        />
-      </Head>
+      <SeoHead
+        title="CRM & Tools Services India | SEO India Tech"
+        description="Streamline customer management and operations with CRM and automation tools. Boost productivity and sales pipeline visibility with SEO India Tech."
+        path="/solution/crm-and-tools"
+        schema={schemaData}
+      />
       <CRMTools />
     </>
   )

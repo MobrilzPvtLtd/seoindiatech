@@ -108,6 +108,8 @@ export default function index() {
           name="description"
           content="AI SEO company for AI SEO services, AEO, and GEO. Improve visibility in search and AI answers with clear content, technical fixes, and strategy."
         />
+        <link rel="canonical" href="https://www.seoindiatech.com/services/ai-seo" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
 
         {/* Open Graph */}
         <meta

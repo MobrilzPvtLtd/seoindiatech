@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <defs>
+    <linearGradient id="fh-bg" x1="0" y1="0" x2="800" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F0FFF6"/>
+      <stop offset="1" stop-color="#F3F6FE"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#fh-bg)"/>
+  <circle cx="400" cy="280" r="150" fill="#6B2E88" opacity="0.12"/>
+  <path d="M400 170 C340 230 310 280 310 330 C310 390 350 430 400 430 C450 430 490 390 490 330 C490 280 460 230 400 170Z" fill="#F26522"/>
+  <rect x="385" y="250" width="30" height="90" rx="15" fill="#FFFFFF"/>
+  <rect x="355" y="290" width="90" height="30" rx="15" fill="#FFFFFF"/>
+  <rect x="120" y="420" width="220" height="100" rx="18" fill="#FFFFFF"/>
+  <text x="145" y="460" fill="#1E3A5F" font-family="Arial, sans-serif" font-size="22" font-weight="700">Food &amp; Health SEO</text>
+  <text x="145" y="490" fill="#6B7280" font-family="Arial, sans-serif" font-size="14">SMO  |  Reviews  |  Local Pack</text>
+  <rect x="460" y="420" width="220" height="100" rx="18" fill="#2A255D"/>
+  <text x="485" y="460" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="22" font-weight="700">Wellness Growth</text>
+  <text x="485" y="490" fill="#A4DDFB" font-family="Arial, sans-serif" font-size="14">Content + AI Visibility</text>
+</svg>

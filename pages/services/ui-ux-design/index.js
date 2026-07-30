@@ -1,7 +1,8 @@
 import React from 'react'
 import Uiux from '@/component/UIUX/Uiux'
-import SEO from '@/component/common/SEO'
-import Head from 'next/head'
+import SeoHead from '@/component/common/SeoHead'
+import VisibleFaq from '@/component/common/VisibleFaq'
+import { PAGE_FAQS } from '@/utils/pageFaqs'
 
 function page() {
   const schemaData = {
@@ -89,28 +90,15 @@ function page() {
 
   return (
     <>
-      <Head>
-        <title>UI/UX Design Services India- SEOIndiatech</title>
-        <meta
-          name="description"
-          content="SEOIndiatech provides professional UI/UX design services in India, creating intuitive, engaging, and user-friendly digital experiences that drive results."
-        />
-        <link
-          rel="canonical"
-          href="https://www.seoindiatech.com/services/ui-ux-design"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-        {/* UI/UX SERVICE SCHEMA */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(schemaData),
-          }}
-        />
-      </Head>
+      <SeoHead
+        title="UI/UX Design Services India | SEO India Tech"
+        description="Create intuitive, conversion-focused UI/UX designs. User-friendly digital experiences that drive engagement and business results."
+        path="/services/ui-ux-design"
+        schema={schemaData}
+      />
 
       <Uiux />
+      <VisibleFaq faqs={PAGE_FAQS.uiUxDesign} />
     </>
   )
 }

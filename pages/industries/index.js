@@ -1,18 +1,18 @@
-import Head from 'next/head'
+import SeoHead from '@/component/common/SeoHead'
+import VisibleFaq from '@/component/common/VisibleFaq'
+import { getPageSeo } from '@/utils/pageSeoRegistry'
+import { PAGE_FAQS } from '@/utils/pageFaqs'
+import Image from 'next/image'
 import Link from 'next/link'
-import { industries, INDUSTRY_CATEGORIES, toSlug } from '@/utils/industries'
+import { INDUSTRY_CATEGORIES, toSlug } from '@/utils/industries'
+import { CATEGORY_HERO_IMAGES, INDUSTRY_BENEFIT_PILLARS } from '@/utils/industries/industryMedia'
+
+const seo = getPageSeo('/industries')
 
 export default function IndustriesIndexPage() {
   return (
     <>
-      <Head>
-        <title>Industry SEO Services | SEO India Tech</title>
-        <meta
-          name="description"
-          content="Browse 41 specialized industry SEO programs - healthcare, home services, food & health, and professional sectors. AI-powered search and local SEO."
-        />
-        <link rel="canonical" href="https://www.seoindiatech.com/industries" />
-      </Head>
+      <SeoHead title={seo.title} description={seo.description} path="/industries" />
 
       <main className="min-h-screen bg-background pt-28 pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -21,47 +21,82 @@ export default function IndustriesIndexPage() {
               Industry SEO Services
             </h1>
             <p className="mt-4 text-muted leading-relaxed">
-              Specialized SEO landing pages for 41 verticals - local search, AI visibility, and conversion-focused content.
+              Specialized programs for 41 verticals with SEO, AI Overview visibility, Google Business
+              Profile optimization, PPC advertising, and SMO social growth in one roadmap.
+            </p>
+            <p className="mt-4 text-muted leading-relaxed text-sm md:text-base">
+              Every industry program is built from real search data - not generic templates. We map how your customers search, what competitors rank for, and which local and organic signals drive calls and bookings in your sector. From dentists and plumbers to SaaS and e-commerce, each page includes a tailored SEO, AI Overview, GMB, PPC, and SMO strategy.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
-            {INDUSTRY_CATEGORIES.map((cat) => (
+          <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4 mb-14">
+            {INDUSTRY_BENEFIT_PILLARS.map((pillar) => (
               <div
-                key={cat.id}
-                className={`rounded-2xl border p-5 ${
-                  cat.highlight
-                    ? 'bg-amber-50/80 border-amber-200/70 dark:bg-amber-950/20'
-                    : 'bg-white dark:bg-card border-border'
-                }`}
+                key={pillar.id}
+                className="rounded-2xl border border-border bg-white dark:bg-card p-4 text-center"
               >
-                <h2 className="text-sm font-bold text-heading uppercase tracking-wide mb-4 pb-3 border-b border-dashed border-border/70">
-                  {cat.title}
-                </h2>
-                <ul className="space-y-0">
-                  {cat.items.map((item, i) => (
-                    <li
-                      key={toSlug(item)}
-                      className={i < cat.items.length - 1 ? 'border-b border-dashed border-border/50' : ''}
-                    >
-                      <Link
-                        href={`/industries/${toSlug(item)}`}
-                        className="block py-2 text-sm font-medium text-body hover:text-primary transition-colors"
-                      >
-                        {item}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
+                <div className="relative h-24 mb-3">
+                  <Image
+                    src={pillar.image}
+                    alt={pillar.title}
+                    fill
+                    className="object-contain"
+                    sizes="200px"
+                  />
+                </div>
+                <p className="text-sm font-bold text-heading">{pillar.title}</p>
               </div>
             ))}
           </div>
 
-          <p className="mt-10 text-center text-sm text-muted">
-            {industries.length} industry programs  |  Updated weekly with performance insights
-          </p>
+          <div className="space-y-16">
+            {INDUSTRY_CATEGORIES.map((category) => (
+              <section
+                key={category.id}
+                className="rounded-3xl border border-border bg-white dark:bg-card p-6 md:p-10 shadow-sm"
+              >
+                <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
+                  <div className="relative h-48 md:h-56">
+                    <Image
+                      src={CATEGORY_HERO_IMAGES[category.id]}
+                      alt={`${category.title} industry SEO services`}
+                      fill
+                      className="object-contain"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
+                  </div>
+                  <div>
+                    <h2 className="font-heading text-2xl md:text-3xl font-bold text-heading">
+                      {category.title}
+                    </h2>
+                    <p className="mt-3 text-muted leading-relaxed">
+                      Tailored SEO, AI Overview, GMB, PPC, and SMO strategies for{' '}
+                      {category.title.toLowerCase()} businesses ready to dominate local and organic search.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                  {category.items.map((item) => {
+                    const slug = toSlug(item)
+                    const label = item.replace(/\s+SEO$/i, '').trim()
+                    return (
+                      <Link
+                        key={slug}
+                        href={`/industries/${slug}`}
+                        className="rounded-xl border border-border/60 bg-cream/50 dark:bg-secondary/20 px-4 py-3 text-sm font-semibold text-heading hover:border-primary/40 hover:bg-primary/5 transition-colors"
+                      >
+                        {label}
+                      </Link>
+                    )
+                  })}
+                </div>
+              </section>
+            ))}
+          </div>
         </div>
       </main>
+      <VisibleFaq faqs={PAGE_FAQS.industriesHub} />
     </>
   )
 }

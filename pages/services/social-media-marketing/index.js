@@ -1,6 +1,6 @@
 import React from 'react'
 import Socialmediamarketing from '@/component/social-media-marketing/Socialmediamarketing'
-import Head from 'next/head'
+import SeoHead from '@/component/common/SeoHead'
 
 export default function Index() {
   const schemaData = {
@@ -131,26 +131,12 @@ export default function Index() {
 
   return (
     <>
-      <Head>
-        <title>Social Media Marketing Services India - SEOIndiatech</title>
-        <meta
-          name="description"
-          content="SEOIndiatech offers expert social media marketing services in India to grow your brand, engage audiences, and boost online visibility effectively."
-        />
-        <link
-          rel="canonical"
-          href="https://www.seoindiatech.com/services/social-media-marketing"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-        {/* SERVICE PAGE SCHEMA */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(schemaData),
-          }}
-        />
-      </Head>
+      <SeoHead
+        title="Social Media Marketing Services India | SEO India Tech"
+        description="Grow your brand on social media with expert marketing services. Drive engagement, followers, and leads across Facebook, Instagram, LinkedIn, and more."
+        path="/services/social-media-marketing"
+        schema={schemaData}
+      />
 
       <Socialmediamarketing />
     </>

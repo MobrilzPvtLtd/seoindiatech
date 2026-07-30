@@ -20,6 +20,7 @@ export default function SeoSchema({ location, url }) {
           url: 'https://www.seoindiatech.com/sit-transparent.png',
         },
         email: 'sales@seoindiatech.com',
+        telephone: '+91-8076676731',
         address: {
           '@type': 'PostalAddress',
           streetAddress: 'E 160, E Block, Sector 63, Noida',

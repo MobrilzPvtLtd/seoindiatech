@@ -192,7 +192,7 @@ const ContactUsSection = () => {
                   <span>
                     I agree to the{' '}
                     <a
-                      href="#"
+                      href="/privacy-policy"
                       className="text-blue-600 dark:text-blue-400 hover:underline"
                     >
                       Privacy Policy

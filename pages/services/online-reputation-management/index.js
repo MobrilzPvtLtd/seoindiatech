@@ -12,7 +12,8 @@ export default function Index() {
           name="description"
           content="Result-driven online reputation management services for brands. Review support, branded search improvements, and google business profile gbp optimization."
         />
-        <meta name="robots" content="index, follow" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+        <link rel="canonical" href="https://www.seoindiatech.com/services/online-reputation-management" />
 
         {/* Open Graph / Facebook */}
         <meta

@@ -1,5 +1,5 @@
 import React from 'react'
-import Head from 'next/head'
+import SeoHead from '@/component/common/SeoHead'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { serviceCategories } from '@/utils/serviceCategories'
@@ -8,6 +8,9 @@ import WhyPartnerSection from '@/component/common/WhyPartnerSection'
 import ContactFormSection from '@/component/common/ContactFormSection'
 import ServiceHero from '@/component/common/ServiceHero'
 import FaqSection from '@/component/common/FaqSection'
+import HubContentSection from '@/component/common/HubContentSection'
+import VisibleFaq from '@/component/common/VisibleFaq'
+import { PAGE_FAQS } from '@/utils/pageFaqs'
 
 const categoryMeta = {
   seo: {
@@ -131,6 +134,27 @@ const categoryMeta = {
       { title: 'Education', desc: 'Attract students and build trust with strategic content.' },
       { title: 'Startups', desc: 'Build brand presence and acquire customers cost-effectively.' },
     ],
+    hubContent: {
+      title: 'Full-Funnel Digital Marketing Services in India',
+      paragraphs: [
+        'Digital marketing is more than posting on social media. It is a coordinated system of content, branding, reputation, and social visibility that builds trust and drives conversions over time. SEO India Tech delivers integrated digital marketing services that work alongside your SEO strategy - so organic and brand channels reinforce each other instead of competing.',
+        'Our team handles content marketing that ranks and converts, digital branding that builds recognition, social media optimization that grows engagement, and online reputation management that protects what customers see when they search your name. Every campaign is tied to measurable KPIs with transparent monthly reporting.',
+      ],
+      bullets: [
+        'SEO-optimized content marketing',
+        'Brand identity and digital branding',
+        'Social media optimization (SMO)',
+        'Online reputation management (ORM)',
+        'Integrated reporting across channels',
+        'AI-ready content for search and social',
+      ],
+      links: [
+        { label: 'Content Marketing', href: '/services/content-marketing' },
+        { label: 'Digital Branding', href: '/services/digital-branding' },
+        { label: 'Social Media Marketing', href: '/services/social-media-marketing' },
+      ],
+    },
+    hubFaqs: PAGE_FAQS.digitalMarketingHub,
   },
   'pay-per-click': {
     title: 'Paid Advertising Services | SEO India Tech',
@@ -159,6 +183,26 @@ const categoryMeta = {
       { title: 'Education', desc: 'Drive enrollments with strategic PPC campaigns.' },
       { title: 'Startups', desc: 'Get fast traction and validate your market with paid ads.' },
     ],
+    hubContent: {
+      title: 'Paid Advertising That Delivers Measurable ROI',
+      paragraphs: [
+        'When you need visibility now, paid advertising delivers. SEO India Tech designs, launches, and optimizes PPC campaigns across Google Ads, Meta, LinkedIn, and YouTube - with conversion tracking on every click so you know exactly what each lead costs.',
+        'We do not set up campaigns and disappear. Our team continuously tests ad copy, landing pages, audience targeting, and bid strategies to improve quality scores and lower cost per acquisition. Whether you are a local service business or a national e-commerce brand, we align paid spend with your revenue goals.',
+      ],
+      bullets: [
+        'Google Ads search and display campaigns',
+        'Meta Ads (Facebook and Instagram)',
+        'LinkedIn and YouTube advertising',
+        'Landing page optimization for conversions',
+        'Conversion tracking and CPL reporting',
+        'PPC + SEO integrated strategy',
+      ],
+      links: [
+        { label: 'PPC Advertising Services', href: '/services/ppc-advertising' },
+        { label: 'SEO Services', href: '/services/seo' },
+      ],
+    },
+    hubFaqs: PAGE_FAQS.paidAdvertisingHub,
   },
   'paid-advertising': {
     title: 'Paid Advertising Services | SEO India Tech',
@@ -187,6 +231,21 @@ const categoryMeta = {
       { title: 'Education', desc: 'Drive enrollments with strategic PPC campaigns.' },
       { title: 'Startups', desc: 'Get fast traction and validate your market with paid ads.' },
     ],
+    hubContent: {
+      title: 'Paid Advertising That Delivers Measurable ROI',
+      paragraphs: [
+        'When you need visibility now, paid advertising delivers. SEO India Tech designs, launches, and optimizes PPC campaigns across Google Ads, Meta, LinkedIn, and YouTube - with conversion tracking on every click.',
+        'We continuously test ad copy, landing pages, audience targeting, and bid strategies to improve quality scores and lower cost per acquisition.',
+      ],
+      bullets: [
+        'Google Ads search and display campaigns',
+        'Meta Ads (Facebook and Instagram)',
+        'LinkedIn and YouTube advertising',
+        'Conversion tracking and CPL reporting',
+      ],
+      links: [{ label: 'PPC Advertising Services', href: '/services/ppc-advertising' }],
+    },
+    hubFaqs: PAGE_FAQS.paidAdvertisingHub,
   },
   'design-and-development': {
     title: 'Design & Development Services | SEO India Tech',
@@ -215,6 +274,23 @@ const categoryMeta = {
       { title: 'Education', desc: 'Engaging e-learning platforms and management systems.' },
       { title: 'Startups', desc: 'MVP development and rapid prototyping for quick market entry.' },
     ],
+    hubContent: {
+      title: 'Design & Development Built for Speed, UX, and SEO',
+      paragraphs: [
+        'Your website is often the first impression customers have of your business. SEO India Tech designs and develops digital experiences that look professional, load fast, and convert visitors into leads. Every project starts with user research and ends with a site optimized for search engines from day one.',
+        'From UI/UX design and wireframing to responsive development and landing page creation, our team delivers solutions that balance aesthetics with performance. We build sites that rank, load quickly on mobile, and guide users toward clear calls to action.',
+      ],
+      bullets: [
+        'UI/UX design and prototyping',
+        'Responsive web development',
+        'SEO-ready site architecture',
+        'Fast Core Web Vitals performance',
+        'Landing page design for campaigns',
+        'Website redesign and migration',
+      ],
+      links: [{ label: 'UI/UX Design Services', href: '/services/ui-ux-design' }],
+    },
+    hubFaqs: PAGE_FAQS.designDevelopmentHub,
   },
 }
 
@@ -250,15 +326,11 @@ export default function ServiceCategoryPage() {
 
   return (
     <>
-      <Head>
-        <title>{meta.title}</title>
-        <meta name="description" content={meta.description} />
-        <link
-          rel="canonical"
-          href={`https://www.seoindiatech.com/services/${slug}`}
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
+      <SeoHead
+        title={meta.title}
+        description={meta.description}
+        path={`/services/${slug}`}
+      />
 
       {/* Hero Section with Image */}
       <ServiceHero
@@ -330,14 +402,16 @@ export default function ServiceCategoryPage() {
 
       {/* Content Section */}
       {meta.contentSection}
+      {meta.hubContent && <HubContentSection {...meta.hubContent} />}
 
       {/* Contact Form Section */}
       <ContactFormSection
         industries={meta.industries}
       />
 
-      {/* FAQ Section - SEO only */}
+      {/* FAQ Section */}
       {slug === 'seo' && <FaqSection />}
+      {meta.hubFaqs && <VisibleFaq faqs={meta.hubFaqs} />}
     </>
   )
 }

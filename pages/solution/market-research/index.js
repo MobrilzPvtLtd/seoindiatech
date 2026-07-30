@@ -1,23 +1,18 @@
 import MarektResearch from '@/component/solution/market_research/MarektResearch'
-import Head from 'next/head'
-import React from 'react'
+import SeoHead from '@/component/common/SeoHead'
+import VisibleFaq from '@/component/common/VisibleFaq'
+import { PAGE_FAQS } from '@/utils/pageFaqs'
 
-export default function index() {
+export default function MarketResearchPage() {
   return (
     <>
-     <Head>
-            <title>Market Research Services India- SEOIndiatech</title>
-            <meta
-              name="description"
-              content="SEOIndiatech provides market research services in India, delivering insights and analytics to help businesses make informed decisions and drive growth."
-            />
-            <link
-              rel="canonical"
-              href="https://www.seoindiatech.com/solution/market-research"
-            />
-            <meta name="viewport" content="width=device-width, initial-scale=1" />
-          </Head>
-    <MarektResearch/>
+      <SeoHead
+        title="Market Research Services India | SEO India Tech"
+        description="Data-driven market research services to understand your audience, competitors, and opportunities. Make informed growth decisions with SEO India Tech."
+        path="/solution/market-research"
+      />
+      <MarektResearch />
+      <VisibleFaq faqs={PAGE_FAQS.marketResearch} />
     </>
   )
 }

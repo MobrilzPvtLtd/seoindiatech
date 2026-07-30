@@ -19,6 +19,7 @@ export default function IndustrySchema({ industry, url }) {
           url: 'https://www.seoindiatech.com/sit-transparent.png',
         },
         email: 'sales@seoindiatech.com',
+        telephone: '+91-8076676731',
       },
       {
         '@type': 'WebPage',

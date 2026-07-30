@@ -34,7 +34,7 @@ export default function SocialMediaOptimizationPage() {
           content="https://www.seoindiatech.com/services/social-media-optimization"
         />
         <meta property="og:site_name" content="SEO India Tech" />
-        <meta property="og:image" content="Replace with your OG image URL" />
+        <meta property="og:image" content="https://www.seoindiatech.com/sit-transparent.png" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -48,7 +48,7 @@ export default function SocialMediaOptimizationPage() {
         />
         <meta
           name="twitter:image"
-          content="Replace with your Twitter image URL"
+          content="https://www.seoindiatech.com/sit-transparent.png"
         />
 
         {/* JSON-LD Schema */}

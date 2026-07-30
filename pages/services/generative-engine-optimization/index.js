@@ -12,6 +12,8 @@ export default function Index() {
           name="description"
           content="Use proven generative engine optimization strategies to help your brand appear in AI search answers and improve online visibility with our GEO experts."
         />
+        <link rel="canonical" href="https://www.seoindiatech.com/services/generative-engine-optimization" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
 
         {/* Open Graph / OG Tags */}
         <meta property="og:title" content="Rank in AI Search with GEO Experts" />

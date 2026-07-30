@@ -43,7 +43,7 @@ export default function LocationHero({ heading, content, imageSrc }) {
                 src={heroImage}
                 alt={`Professional SEO services illustration for ${cityForAlt}`}
                 fill
-                className="object-cover transition-transform duration-300 hover:scale-105"
+                className="object-contain p-2 bg-white dark:bg-secondary/20 transition-transform duration-300 hover:scale-[1.02]"
                 priority
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />

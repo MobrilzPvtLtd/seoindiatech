@@ -1,10 +1,12 @@
+import { extraLocations } from './extraLocations'
+
 export const locations = [
   {
     slug: 'seo-services-in-chandigarh',
     city: 'Chandigarh',
     title: 'SEO Services in Chandigarh | SEOIndiaTech',
     description:
-      'Professional SEO services in Chandigarh to help businesses grow online.',
+      'Get SEO services in Chandigarh to improve rankings, local visibility, and leads. Local SEO, technical fixes, and content from SEO India Tech.',
     heading: 'Best SEO Services in Chandigarh',
     content: [
       `If people cannot find you on Google, they will find a competitor. That is why SEO services in Chandigarh matter for clinics, coaching centers, IT firms, real estate, restaurants, and local shops. You need pages that match what people search, a site that loads fast, and local signals that help you show up on Maps. SEO India Tech helps you get there with clear steps, steady work, and reporting you can actually read.`,
@@ -1141,5 +1143,5 @@ export const locations = [
       },
     ],
   },
-  
+  ...extraLocations,
 ]

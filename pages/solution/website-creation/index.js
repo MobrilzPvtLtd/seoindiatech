@@ -1,23 +1,18 @@
 import WebsiteCreation from '@/component/solution/website_creation/WebsiteCreation'
-import Head from 'next/head'
-import React from 'react'
+import SeoHead from '@/component/common/SeoHead'
+import VisibleFaq from '@/component/common/VisibleFaq'
+import { PAGE_FAQS } from '@/utils/pageFaqs'
 
-export default function index() {
+export default function WebsiteCreationPage() {
   return (
     <>
-     <Head>
-            <title>Website Creation Services India- SEOIndiatech</title>
-            <meta
-              name="description"
-              content="SEOIndiatech offers website creation services in India, building responsive, user-friendly, and SEO-optimized websites to enhance your online presence."
-            />
-            <link
-              rel="canonical"
-              href="https://www.seoindiatech.com/solution/website-creation"
-            />
-            <meta name="viewport" content="width=device-width, initial-scale=1" />
-          </Head>
-   <WebsiteCreation/>
+      <SeoHead
+        title="Website Creation Services India | SEO India Tech"
+        description="Build responsive, SEO-optimized websites that convert visitors into customers. Professional website creation services from SEO India Tech."
+        path="/solution/website-creation"
+      />
+      <WebsiteCreation />
+      <VisibleFaq faqs={PAGE_FAQS.websiteCreation} />
     </>
   )
 }

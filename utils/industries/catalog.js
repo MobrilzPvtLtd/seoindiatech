@@ -1,6 +1,7 @@
 /**
  * Canonical industry catalog - 4 mega-menu columns, 41 SEO landing pages.
  */
+import { getCategoryHeroImage } from './industryMedia'
 export const INDUSTRY_CATEGORIES = [
   {
     id: 'popular-markets',
@@ -85,57 +86,12 @@ export function toSlug(title) {
     .replace(/^-|-$/g, '')
 }
 
-/** Local hero images by category - relevant SEO / business visuals from /public/images */
+/** Category hero visuals - one themed image per industry column */
 const CATEGORY_IMAGES = {
-  'popular-markets': [
-    '/images/services/local-seo.jpg',
-    '/images/Local-seo-Restaurants.jpg',
-    '/images/mobile-optimization-for-seo.jpg',
-    '/images/seo-services.jpg',
-    '/images/SEO_service.jpg',
-    '/images/search-engine.jpg',
-    '/images/whoweare/ecommerce.png',
-    '/images/services/GOOGLE-MAPS-SEO.jpg',
-    '/images/ECommerceSEO.png',
-    '/images/services/ecommerce-seo.png',
-    '/images/whoweare/aboutseo.png',
-    '/images/services/reputation.png',
-  ],
-  'automobile-home': [
-    '/images/herobg.jpg',
-    '/images/seo-banner.jpg',
-    '/images/seo-images.jpg',
-    '/images/isometric_12.jpg',
-    '/images/uiux.png',
-    '/images/digital-branding-banner.png',
-    '/images/website_creation2.png',
-    '/images/services/design.png',
-    '/images/services/our-design.png',
-    '/images/services/uibanner.png',
-    '/images/whoweare/grow.png',
-    '/images/whoweare/start.png',
-  ],
-  'food-health': [
-    '/images/Importance-of-Youtube-Marketing-in-Business-Growth.jpg',
-    '/images/ORGANIC.png',
-    '/images/services/digital-branding.jpg',
-    '/images/services/leading.png',
-    '/images/savetime.jpg',
-  ],
-  'service-sector': [
-    '/images/marketresearch.png',
-    '/images/automation.png',
-    '/images/crm.png',
-    '/images/promotion.png',
-    '/images/workflow.jpg',
-    '/images/services/dashboard.png',
-    '/images/services/plan.png',
-    '/images/services/reporti.png',
-    '/images/services/track.png',
-    '/images/whoweare/appointment.png',
-    '/images/whoweare/browser.png',
-    '/images/whoweare/me.png',
-  ],
+  'popular-markets': [getCategoryHeroImage('popular-markets')],
+  'automobile-home': [getCategoryHeroImage('automobile-home')],
+  'food-health': [getCategoryHeroImage('food-health')],
+  'service-sector': [getCategoryHeroImage('service-sector')],
 }
 
 const CATEGORY_CONTEXT = {

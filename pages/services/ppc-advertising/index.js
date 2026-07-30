@@ -1,7 +1,7 @@
-import SEO from '@/component/common/SEO'
+import SeoHead from '@/component/common/SeoHead'
+import VisibleFaq from '@/component/common/VisibleFaq'
+import { PAGE_FAQS } from '@/utils/pageFaqs'
 import PPC from '@/component/ppc-advertising/Ppc'
-import Ppc from '@/component/ppc-advertising/Ppc'
-import Head from 'next/head'
 import React from 'react'
 
 export default function index() {
@@ -96,27 +96,14 @@ export default function index() {
 
   return (
     <>
-      <Head>
-        <title> PPC Advertising Services India - SEOIndiatech</title>
-        <meta
-          name="description"
-          content="SEOIndiatech provides PPC advertising services in India to drive targeted traffic, increase leads, and maximize ROI with effective paid marketing strategies."
-        />
-        <link
-          rel="canonical"
-          href="https://www.seoindiatech.com/services/ppc-advertising"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-        {/* SEO SERVICE SCHEMA */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(schemaData),
-          }}
-        />
-      </Head>
+      <SeoHead
+        title="PPC Advertising Services India | SEO India Tech"
+        description="Drive targeted traffic and maximize ROI with expert PPC advertising services. Google Ads and paid media management from SEO India Tech."
+        path="/services/ppc-advertising"
+        schema={schemaData}
+      />
       <PPC />
+      <VisibleFaq faqs={PAGE_FAQS.ppcAdvertising} />
     </>
   )
 }

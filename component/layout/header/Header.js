@@ -5,6 +5,7 @@ import React, { useState, useRef, useEffect } from 'react'
 import { useRouter } from 'next/router'
 import ServiceDropdown from './ServiceDropdown'
 import IndustryDropdown from './IndustryDropdown'
+import { MegaMenuPanel, megaMenuOpenClass } from './MegaMenu'
 import ThemeToggleButton from './ThemeToggleButton'
 import Link from 'next/link'
 import BrandLogo from '@/component/ui/BrandLogo'
@@ -280,25 +281,15 @@ const Header = () => {
                       className={`transition-transform duration-300 ${isServicesOpen ? 'rotate-180' : ''}`}
                     />
                   </button>
-                  <div
+                  <MegaMenuPanel
                     id="services-dropdown"
-                    data-lenis-prevent
-                    className={`
-                      absolute left-1/2 top-full mt-3 -translate-x-1/2
-                      w-full max-w-[90vw] md:w-[500px] lg:w-[700px] xl:w-[900px]
-                      max-h-[75vh] overflow-hidden flex flex-col
-                      bg-white dark:bg-slate-800 rounded-2xl z-[100]
-                      border border-slate-200/70 dark:border-slate-700/60
-                      shadow-[0_20px_50px_-12px_rgba(15,23,42,0.25)]
-                      transition-all duration-200 origin-top
-                      ${isServicesOpen ? 'opacity-100 scale-100 pointer-events-auto visible' : 'opacity-0 scale-95 pointer-events-none invisible'}
-                    `}
+                    className={megaMenuOpenClass(isServicesOpen)}
                     onMouseEnter={handleServicesMouseEnter}
                     onMouseLeave={handleServicesMouseLeave}
                     onClick={handleCardClick}
                   >
                     <ServiceDropdown closeMenu={handleCardClick} />
-                  </div>
+                  </MegaMenuPanel>
                 </li>
 
                 <li
@@ -320,25 +311,15 @@ const Header = () => {
                       className={`transition-transform duration-300 ${isIndustryOpen ? 'rotate-180' : ''}`}
                     />
                   </button>
-                  <div
+                  <MegaMenuPanel
                     id="industry-dropdown"
-                    data-lenis-prevent
-                    className={`
-                      absolute left-1/2 top-full mt-3 -translate-x-1/2
-                      w-full max-w-[95vw] xl:w-[1100px]
-                      max-h-[75vh] overflow-hidden flex flex-col
-                      bg-white dark:bg-secondary rounded-2xl z-[100]
-                      border border-slate-200/70 dark:border-white/10
-                      shadow-[0_20px_50px_-12px_rgba(15,23,42,0.25)]
-                      transition-all duration-200 origin-top
-                      ${isIndustryOpen ? 'opacity-100 scale-100 pointer-events-auto visible' : 'opacity-0 scale-95 pointer-events-none invisible'}
-                    `}
+                    className={megaMenuOpenClass(isIndustryOpen)}
                     onMouseEnter={handleIndustryMouseEnter}
                     onMouseLeave={handleIndustryMouseLeave}
                     onClick={handleCardClick}
                   >
                     <IndustryDropdown closeMenu={handleCardClick} />
-                  </div>
+                  </MegaMenuPanel>
                 </li>
 
                 <li><NavLink href="/seo-packages">SEO Packages</NavLink></li>

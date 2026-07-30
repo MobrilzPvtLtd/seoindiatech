@@ -1,25 +1,20 @@
-import WhoWeAre from '@/component/who-we-are/WhoWeAre'
-import Head from 'next/head'
 import React from 'react'
+import WhoWeAre from '@/component/who-we-are/WhoWeAre'
+import VisibleFaq from '@/component/common/VisibleFaq'
+import { PAGE_FAQS } from '@/utils/pageFaqs'
+import SeoHead from '@/component/common/SeoHead'
+import { getPageSeo } from '@/utils/pageSeoRegistry'
 
-function index() {
+const seo = getPageSeo('/who-we-are')
+
+function WhoWeArePage() {
   return (
     <>
-      <Head>
-        <title> Know us - SEOIndiatech</title>
-        <meta
-          name="description"
-          content="SEOIndiatech offers digital branding services in India to enhance your brand identity, online presence, and audience engagement effectively."
-        />
-        <link
-          rel="canonical"
-          href="https://www.seoindiatech.com/who-we-are"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
-  <WhoWeAre/>
+      <SeoHead title={seo.title} description={seo.description} path="/who-we-are" />
+      <WhoWeAre />
+      <VisibleFaq faqs={PAGE_FAQS.whoWeAre} />
     </>
   )
 }
 
-export default index
+export default WhoWeArePage
