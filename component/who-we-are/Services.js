@@ -6,10 +6,10 @@ export default function Services() {
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Heading */}
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-10">
-          What We Do — Our Integrated Services
+          What We Do - Our Integrated Services
         </h2>
 
-        {/* ROW 1 — IMAGE + ONE CARD */}
+        {/* ROW 1 - IMAGE + ONE CARD */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           {/* Left: Image */}
           <div className="bg-white dark:bg-gray-800 shadow-lg rounded-2xl overflow-hidden">
@@ -28,7 +28,7 @@ export default function Services() {
               Website Creation & Digital Foundation
             </h3>
             <p className="text-gray-600 dark:text-gray-300">
-              A brand’s digital presence starts with a strong foundation. Our
+              A brand's digital presence starts with a strong foundation. Our
               <a
                 href="https://www.seoindiatech.com/solution/website-creation"
                 className="text-blue-600"
@@ -36,11 +36,11 @@ export default function Services() {
                 {' '}
                 website creation
               </a>{' '}
-              service builds that foundation — whether you need a sleek
+              service builds that foundation - whether you need a sleek
               corporate website, a dynamic e-commerce store, a creative
               portfolio, or content-rich platform tailored to your business
               goals. From wireframes to responsive design, content structuring
-              to technical setup — we handle all aspects so your website stands
+              to technical setup - we handle all aspects so your website stands
               out and performs.
               <br />
               <br />
@@ -48,12 +48,12 @@ export default function Services() {
               expertise, and user experience focus to create websites that are
               not only visually compelling but also optimized for performance.
               This foundational service is where your digital journey begins,
-              but it doesn’t stop there.
+              but it doesn't stop there.
             </p>
           </div>
         </div>
 
-        {/* ROW 2 — TWO CARDS */}
+        {/* ROW 2 - TWO CARDS */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Card 2 */}
           <div className="bg-white dark:bg-gray-800 p-8 shadow-lg rounded-2xl flex flex-col">
@@ -62,7 +62,7 @@ export default function Services() {
             </h3>
             <p className="text-gray-600 dark:text-gray-300">
               Launching a website is just the first step. To truly succeed
-              online, you need visibility, reach, and engagement. That’s where
+              online, you need visibility, reach, and engagement. That's where
               our{' '}
               <a
                 href="https://www.seoindiatech.com/solution/promotion-and-ads"
@@ -75,8 +75,8 @@ export default function Services() {
               brand reaches your ideal audience effectively.
               <br />
               <br />
-              Whether it’s search-engine marketing, social campaigns, or
-              targeted advertising — we design promotion and advertising
+              Whether it's search-engine marketing, social campaigns, or
+              targeted advertising - we design promotion and advertising
               strategies that amplify your brand, drive traffic, generate leads,
               and maximize conversions.
             </p>
@@ -104,7 +104,7 @@ export default function Services() {
               <br />
               With a robust CRM backbone, your business gains clarity on
               customer journeys, better insights into sales pipelines, and
-              improved customer retention — turning chaotic data into strategic
+              improved customer retention - turning chaotic data into strategic
               assets.
             </p>
           </div>

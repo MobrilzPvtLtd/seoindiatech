@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 import { useRouter } from 'next/router'
+import { Search, Smartphone, TrendingUp, PenLine, Mail, Globe } from 'lucide-react'
 
 const Services = () => {
   const router = useRouter()
@@ -20,7 +21,7 @@ const Services = () => {
           right audience.{' '}
         </>
       ),
-      icon: '🔍',
+      icon: Search,
     },
     {
       title: 'Social Media Marketing',
@@ -38,7 +39,7 @@ const Services = () => {
           meaningful customer interactions across major platforms
         </>
       ),
-      icon: '📱',
+      icon: Smartphone,
     },
     {
       title: 'Pay-Per-Click (PPC) Advertising',
@@ -58,28 +59,28 @@ const Services = () => {
           continuous analysis.{' '}
         </>
       ),
-      icon: '📈',
+      icon: TrendingUp,
     },
     {
       title: 'Content Marketing',
       href: '/services/content-marketing',
       desc:
-        'Our team produces high-quality content that educates, informs, and converts. Blogs, web content, infographics, and videos—all crafted to align with your brand’s message.',
-      icon: '✍️',
+        'Our team produces high-quality content that educates, informs, and converts. Blogs, web content, infographics, and videos-all crafted to align with your brand\'s message.',
+      icon: PenLine,
     },
     {
       title: 'Online Reputation Management',
       href: '#',
       desc:
         'We monitor, manage, and protect your digital reputation to maintain a positive brand image across all online channels.',
-      icon: '📧',
+      icon: Mail,
     },
     {
       title: 'Web Design and Development',
       href: '/solution/website-creation',
       desc:
         'We build fast, responsive, and user-friendly websites that support your marketing goals and deliver seamless customer experiences.',
-      icon: '🌐',
+      icon: Globe,
     },
   ]
 
@@ -89,7 +90,9 @@ const Services = () => {
         <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
           {/* Left two columns for cards */}
           <div className="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-5 md:gap-6">
-            {services.map((service, index) => (
+            {services.map((service, index) => {
+              const Icon = service.icon
+              return (
               <div
                 key={index}
                 onClick={() => router.push(service.href)}
@@ -100,7 +103,7 @@ const Services = () => {
                  dark:border-gray-600"
               >
                 <div className="flex items-start mb-4">
-                  <span className="text-3xl mr-3">{service.icon}</span>
+                  <Icon className="w-8 h-8 mr-3 text-blue-600 dark:text-blue-400 shrink-0" aria-hidden="true" />
                   <h3 className="text-lg font-bold text-gray-800 dark:text-white">
                     {service.title}
                   </h3>
@@ -113,7 +116,7 @@ const Services = () => {
                   {service.desc}
                 </p>
               </div>
-            ))}
+            )})}
           </div>
 
           {/* Right side description card */}

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Plus, Minus, CheckCircle } from 'lucide-react';
+import { Plus, Minus, CheckCircle, MapPin, Calendar, Globe, MessageCircle } from 'lucide-react';
 import Image from 'next/image';
 
 const Communicate = () => {
@@ -46,11 +46,11 @@ const Communicate = () => {
                 <li>Amet non placerat mattis quis.</li>
               </ol>
               {/* Social/Icons Placeholder */}
-              <div className="flex gap-3 text-xl text-gray-600 dark:text-gray-400">
-                <span>📍</span>
-                <span>📅</span>
-                <span>🌐</span>
-                <span>💬</span>
+              <div className="flex gap-3 text-gray-600 dark:text-gray-400">
+                <MapPin className="w-5 h-5" aria-hidden="true" />
+                <Calendar className="w-5 h-5" aria-hidden="true" />
+                <Globe className="w-5 h-5" aria-hidden="true" />
+                <MessageCircle className="w-5 h-5" aria-hidden="true" />
               </div>
             </div>
           )}

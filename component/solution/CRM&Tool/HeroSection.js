@@ -7,7 +7,7 @@ const HeroSection = () => {
   // const crmFeatures = [
   //   {
   //     icon: <Users className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
-  //     text: '360° customer relationship management',
+  //     text: '360-degree customer relationship management',
   //   },
   //   {
   //     icon: <ChartBar className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
@@ -44,7 +44,7 @@ const HeroSection = () => {
             <div className="w-20 h-1 bg-blue-600 dark:bg-blue-500 rounded-full"></div>
 
             <p className="text-gray-700 text-justify dark:text-gray-300 text-base md:text-lg leading-relaxed">
-              In today’s competitive market, every business needs a structured
+              In today's competitive market, every business needs a structured
               and efficient way to manage customer relationships, streamline
               databases, and automate business operations. CRM systems make this
               possible by centralizing all customer and sales information in one

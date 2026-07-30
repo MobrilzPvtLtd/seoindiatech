@@ -27,7 +27,7 @@ const Seohero = () => {
           <div className="w-20 h-1.5 bg-blue-600 dark:bg-blue-500 rounded-full my-6 mx-auto md:mx-0"></div>
 
           <p className="text-justify text-gray-700 dark:text-gray-300 text-md max-w-xl mx-auto md:mx-0 px-2 md:px-0">
-            In today’s hyper-competitive digital landscape, visibility is everything. At <span className="text-blue-700 dark:text-blue-400 font-semibold">
+            In today's hyper-competitive digital landscape, visibility is everything. At <span className="text-blue-700 dark:text-blue-400 font-semibold">
              <Link href={'/'}>SEO IndiaTech </Link> ,
             </span>{' '} we
 specialize in delivering SEO services that not only increase your search engine rankings but also

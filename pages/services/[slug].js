@@ -81,7 +81,7 @@ const categoryMeta = {
               Why Choose SEO India Tech?
             </h2>
             <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
-              Choosing the right SEO partner plays a major role in your online growth. As a trusted SEO agency in India, SEO India Tech offers a full range of services built around your specific business goals — not a fixed package applied to every client. Our team of SEO strategists, content writers, and technical specialists work together to deliver results you can actually track.
+              Choosing the right SEO partner plays a major role in your online growth. As a trusted SEO agency in India, SEO India Tech offers a full range of services built around your specific business goals - not a fixed package applied to every client. Our team of SEO strategists, content writers, and technical specialists work together to deliver results you can actually track.
             </p>
             <p className="text-gray-700 dark:text-gray-300 font-medium mb-3">Our advantages include:</p>
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-8">
@@ -97,7 +97,7 @@ const categoryMeta = {
               Grow Your Online Presence with SEO India Tech
             </h2>
             <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-              Whether you run a local business, an online store, or an established enterprise, SEO India Tech has the expertise to deliver real, sustainable results. As a leading <strong><Link href="/" className="text-blue-600 dark:text-blue-400 hover:underline">SEO company in India</Link></strong>, we help businesses turn search visibility into real revenue — not just better numbers on a dashboard.
+              Whether you run a local business, an online store, or an established enterprise, SEO India Tech has the expertise to deliver real, sustainable results. As a leading <strong><Link href="/" className="text-blue-600 dark:text-blue-400 hover:underline">SEO company in India</Link></strong>, we help businesses turn search visibility into real revenue - not just better numbers on a dashboard.
             </p>
           </div>
         </div>
@@ -117,7 +117,7 @@ const categoryMeta = {
     heroSubtitle:
       'In today\'s digital world, a strong online presence is essential for business growth. Our comprehensive digital marketing strategies help you reach your audience where they spend their time.',
     heroBadge: 'Digital Marketing',
-    heroImage: '/images/services/Digital-marketing.png',
+    heroImage: '/images/services/digital-marketing.png',
     heroFeatures: [
       { icon: 'TrendingUp', text: 'Brand Visibility' },
       { icon: 'Target', text: 'Lead Generation' },
@@ -201,7 +201,7 @@ const categoryMeta = {
     heroSubtitle:
       'We are a trusted design and development company delivering high-performance digital solutions backed by research, creativity, and innovation. Our commitment to quality sets us apart.',
     heroBadge: 'Design & Development',
-    heroImage: '/images/services/our design.png',
+    heroImage: '/images/services/our-design.png',
     heroFeatures: [
       { icon: 'Target', text: 'User-First Design' },
       { icon: 'Zap', text: 'Fast Performance' },
@@ -277,7 +277,7 @@ export default function ServiceCategoryPage() {
               Explore Our <span className="text-blue-600">{data.title}</span>
             </h2>
             <p className="text-gray-600 dark:text-gray-400 text-lg max-w-2xl mx-auto transition-colors duration-300">
-              Our SEO company in India offers a focused service for every kind of business — local, e-commerce, small business, or enterprise. Explore each one below to find the right fit for where you're trying to grow.
+              Our SEO company in India offers a focused service for every kind of business - local, e-commerce, small business, or enterprise. Explore each one below to find the right fit for where you're trying to grow.
             </p>
             <div className="h-1 w-16 bg-blue-600 dark:bg-blue-500 rounded-full mt-6 mx-auto" />
           </div>

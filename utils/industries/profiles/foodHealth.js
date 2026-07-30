@@ -1,0 +1,192 @@
+/** Unique 1200+ word content blocks + FAQs - Food & Health (5 industries) */
+export const foodHealthProfiles = {
+  'catering-seo': {
+    hero: [
+      'Corporate event planners, wedding couples, and venue coordinators search for caterers by cuisine style, guest count capacity, and service level-not random directory listings. Catering SEO positions your kitchen for wedding, corporate, and private event discovery with menu-rich, occasion-specific content.',
+      'SEO India Tech helps catering companies rank for wedding catering, corporate lunch programs, BBQ catering, and dietary-specialty events with localized pages, gallery optimization, and review strategies that convert planners into booked events.',
+    ],
+    why: {
+      title: 'Why catering companies need occasion-specific SEO',
+      paragraphs: [
+        'Catering search is occasion-driven-weddings, corporate meetings, graduations, and holiday parties each have distinct planning timelines, budget expectations, and search language requiring dedicated landing experiences.',
+        'Menu transparency and dietary accommodation (vegan, gluten-free, halal) are decision factors. SEO content addressing customization, tasting policies, and service staff inclusion shortens planner qualification calls.',
+        'Corporate recurring lunch programs represent stable B2B revenue beyond one-time events. Dedicated corporate catering pages capture facility manager and HR searches year-round.',
+        'Visual proof drives catering decisions. Gallery SEO with compressed food photography, event setup images, and venue partnership logos supports rankings without sacrificing mobile load speed.',
+      ],
+    },
+    services: [
+      { title: 'Wedding catering SEO', body: 'Pages for plated dinners, buffet service, cocktail receptions, and tasting event promotion.' },
+      { title: 'Corporate catering SEO', body: 'B2B landing pages for office lunches, board meetings, and recurring meal programs.' },
+      { title: 'Cuisine-style SEO', body: 'Dedicated pages for BBQ, Italian, farm-to-table, and ethnic cuisine catering searches.' },
+      { title: 'Dietary specialty SEO', body: 'Content for vegan, gluten-free, kosher, and allergen-conscious event catering.' },
+      { title: 'Private party & venue SEO', body: 'Pages for birthdays, fundraisers, and venue partnership catering packages.' },
+      { title: 'Gallery & menu optimization', body: 'Food photography SEO, PDF menu indexing, and event gallery structured data.' },
+    ],
+    local: 'Caterers serve events across a regional radius. We optimize for city and venue-area searches aligned to your delivery and service capabilities.',
+    compliance: 'Food safety credentials and health permit references are presented accurately; we avoid unverifiable "award-winning" claims without substantiation.',
+    faqs: [
+      { question: 'Should wedding and corporate catering have separate SEO pages?', answer: 'Yes-search intent, pricing, and decision makers differ completely between occasion types.' },
+      { question: 'How do food photos affect Catering SEO?', answer: 'Optimized galleries with cuisine and event type tags strengthen visual search and planner confidence.' },
+      { question: 'What keywords drive catering leads?', answer: 'Wedding caterer [city], corporate catering near me, BBQ catering, vegan event catering.' },
+      { question: 'Can SEO help recurring corporate lunch contracts?', answer: 'B2B corporate pages capture HR and facility manager searches for ongoing meal program providers.' },
+      { question: 'How long for catering SEO results?', answer: 'Local occasion terms often improve in 3-5 months; competitive wedding market keywords may need longer.' },
+      { question: 'Should each cuisine style have its own page?', answer: 'For distinct search demand-BBQ, Italian, farm-to-table-yes, with menu samples and event photos.' },
+      { question: 'Do dietary specialty pages rank?', answer: 'Yes-vegan, gluten-free, and kosher catering searches grow and warrant dedicated optimized content.' },
+      { question: 'How important are reviews for caterers?', answer: 'Reviews mentioning food quality, service staff, and event execution heavily influence planner decisions.' },
+      { question: 'What KPIs should catering companies track?', answer: 'Event inquiry forms, tasting bookings, corporate contract leads, and occasion mix by landing page.' },
+      { question: 'How do we start Catering SEO?', answer: 'Book a free audit of occasion pages, menu SEO, and competitor local visibility.' },
+    ],
+  },
+
+  'breweries-seo': {
+    hero: [
+      'Craft beer enthusiasts search for taprooms, brewery tours, seasonal releases, and distribution partners in their city-and tourists plan brewery trail visits before they arrive. Breweries SEO connects your brand to local discovery, event promotion, and wholesale partner searches.',
+      'We help breweries rank for taproom visits, private event bookings, beer distribution inquiries, and regional craft beer tourism with content that showcases your brewing story and drives foot traffic.',
+    ],
+    why: {
+      title: 'Why breweries need local discovery and experience SEO',
+      paragraphs: [
+        'Brewery customers search for experiences-taproom hours, food pairings, live music nights, and tour availability-not just "beer near me." Experience-rich content captures tourism and local regular discovery.',
+        'Seasonal and limited releases create search spikes. SEO content calendars publishing release dates, tasting notes, and availability before launch capture enthusiast demand when interest peaks.',
+        'Private event and taproom rental revenue diversifies beyond pint sales. Dedicated event pages capture birthday, corporate, and wedding after-party searches.',
+        'Distribution and wholesale inquiries from bars and restaurants represent B2B growth. Separate wholesale SEO paths avoid confusing retail taproom visitors with trade partner content.',
+      ],
+    },
+    services: [
+      { title: 'Taproom & tasting room SEO', body: 'Pages for hours, flight options, food menus, and family-friendly policies.' },
+      { title: 'Beer release & seasonal SEO', body: 'Content calendars for new releases, seasonal brews, and limited can drops.' },
+      { title: 'Private event & rental SEO', body: 'Landing pages for taproom rentals, brewery tours, and private party bookings.' },
+      { title: 'Craft beer tourism SEO', body: 'Regional brewery trail content capturing tourist and day-trip search intent.' },
+      { title: 'Wholesale & distribution SEO', body: 'B2B pages for bar, restaurant, and retailer distribution inquiries.' },
+      { title: 'Local map & event optimization', body: 'GBP event posts, photo updates, and review workflows highlighting atmosphere and beer quality.' },
+    ],
+    local: 'Breweries draw local regulars and tourists. We optimize for neighborhood discovery, regional beer trail searches, and event-driven local queries.',
+    compliance: 'Alcohol advertising content aligns with regional regulations; age-gate and responsible consumption messaging where required.',
+    faqs: [
+      { question: 'Should taproom and wholesale SEO be separate?', answer: 'Yes-retail visitors and bar owners searching distribution partners have completely different intents and needs.' },
+      { question: 'How do beer releases affect Breweries SEO?', answer: 'Timely release content captures enthusiast search spikes and builds email and social amplification loops.' },
+      { question: 'What keywords drive brewery traffic?', answer: 'Brewery near me, craft beer [city], brewery tour, taproom events, brewery private event rental.' },
+      { question: 'Can SEO help taproom event bookings?', answer: 'Private event and tour pages capture birthday, corporate, and tourist group booking searches.' },
+      { question: 'How long for brewery SEO results?', answer: 'Local taproom terms often improve in 2-4 months; regional tourism keywords may need 4-6 months.' },
+      { question: 'Do seasonal beer pages rank?', answer: 'Yes-seasonal and limited release content captures timely enthusiast searches with strong conversion potential.' },
+      { question: 'How important are reviews for breweries?', answer: 'Reviews mentioning beer quality, atmosphere, and staff knowledge influence taproom discovery and tourism decisions.' },
+      { question: 'Can SEO support wholesale distribution growth?', answer: 'B2B wholesale pages help bars and restaurants discover your distribution availability organically.' },
+      { question: 'What KPIs should breweries track?', answer: 'Taproom visit trends, event booking inquiries, wholesale leads, and map discovery impressions.' },
+      { question: 'How do we start Breweries SEO?', answer: 'Request a free audit of taproom pages, event SEO, and local competitor visibility.' },
+    ],
+  },
+
+  'wineries-seo': {
+    hero: [
+      'Wine tourists, wedding planners, and retail buyers search for wineries by region, varietal, tasting experience, and event capability-often planning visits weeks in advance. Wineries SEO positions your estate for tourism discovery, wine club growth, and private event bookings.',
+      'We help wineries rank for tasting room visits, vineyard tours, wedding venue inquiries, and direct-to-consumer wine sales with terroir-rich content and visual SEO that captures oenophile search intent.',
+    ],
+    why: {
+      title: 'Why wineries need tourism and terroir-driven SEO',
+      paragraphs: [
+        'Winery search blends tourism, retail, and event intent-"winery near me," "vineyard wedding venue," and "wine tasting [region]" each need tailored landing experiences with appropriate CTAs.',
+        'Terroir storytelling and varietal education differentiate estate wineries from bulk producers. Long-form content on growing conditions, winemaking philosophy, and tasting notes ranks for enthusiast research queries.',
+        'Wine club and DTC shipping represent recurring revenue beyond tasting room visits. SEO funnels from discovery content to club signup and bottle shop pages capture remote customers.',
+        'Wedding and corporate event venues at wineries command premium pricing. Dedicated event pages with capacity, catering partnerships, and seasonal availability capture planner searches months ahead.',
+      ],
+    },
+    services: [
+      { title: 'Tasting room & tour SEO', body: 'Pages for tasting flights, guided tours, seasonal hours, and reservation workflows.' },
+      { title: 'Wine club & DTC sales SEO', body: 'Funnels from discovery content to club membership and online bottle shop conversion.' },
+      { title: 'Vineyard wedding & event SEO', body: 'Landing pages for weddings, corporate retreats, and private celebrations at your estate.' },
+      { title: 'Varietal & terroir content SEO', body: 'Education content on grape varieties, vintages, and regional wine characteristics.' },
+      { title: 'Wine tourism & regional SEO', body: 'Content for regional wine trail visitors and destination tourism search intent.' },
+      { title: 'Local map & visual optimization', body: 'GBP with vineyard photography, event posts, and review workflows highlighting experience quality.' },
+    ],
+    local: 'Wineries attract regional tourists and local regulars. We optimize for wine country searches, regional trail queries, and local tasting room discovery.',
+    compliance: 'Alcohol marketing follows regional regulations; age verification and shipping restriction content is presented accurately.',
+    faqs: [
+      { question: 'Should tasting room and wedding venue SEO be separate?', answer: 'Yes-tourist tasting searches and wedding planner research have different timelines, budgets, and content needs.' },
+      { question: 'How does terroir content help Wineries SEO?', answer: 'Varietal and region education ranks for enthusiast research queries and builds brand authority beyond generic winery searches.' },
+      { question: 'What keywords drive winery leads?', answer: 'Winery near me, vineyard wedding [region], wine tasting [city], wine club, winery tour.' },
+      { question: 'Can SEO grow wine club memberships?', answer: 'Discovery content funneling to club signup pages captures remote customers who may never visit the tasting room.' },
+      { question: 'How long for winery SEO results?', answer: 'Local tasting terms often improve in 3-5 months; regional tourism and wedding keywords may need 6+ months.' },
+      { question: 'Do event venue pages rank for weddings?', answer: 'Yes-vineyard wedding searches are high-value and warrant dedicated pages with capacity and catering details.' },
+      { question: 'How important are reviews for wineries?', answer: 'Reviews mentioning tasting experience, grounds beauty, and staff knowledge influence tourism and event booking decisions.' },
+      { question: 'Can SEO help direct-to-consumer wine sales?', answer: 'Bottle shop and shipping pages optimized for varietal searches capture DTC revenue from non-local customers.' },
+      { question: 'What KPIs should wineries track?', answer: 'Tasting reservations, wine club signups, event inquiries, DTC sales, and tourism search impressions.' },
+      { question: 'How do we start Wineries SEO?', answer: 'Book a free audit of tasting, event, and DTC pages plus regional competitor visibility.' },
+    ],
+  },
+
+  'herbal-product-seo': {
+    hero: [
+      'Wellness consumers search for herbal supplements, Ayurvedic remedies, natural skincare, and organic botanical products with increasing scrutiny about ingredients, sourcing, and efficacy claims. Herbal Product SEO builds discoverability for brands competing in crowded natural health markets.',
+      'We deliver compliant SEO for herbal supplement brands, Ayurvedic product lines, natural cosmetics, and botanical retailers-with ingredient education content, E-E-A-T signals, and e-commerce optimization.',
+    ],
+    why: {
+      title: 'Why herbal product brands need compliant, education-first SEO',
+      paragraphs: [
+        'Herbal and supplement search is YMYL-adjacent-Google scrutinizes health claims, ingredient transparency, and author expertise. Education-first content with proper disclaimers outperforms aggressive cure-claim marketing.',
+        'Ingredient-specific searches-"ashwagandha benefits," "turmeric supplement," "neem skincare"-drive discovery for brands with strong product lines. Ingredient hub pages capture research-phase traffic.',
+        'Ayurvedic and traditional medicine brands serve both domestic Indian markets and international wellness export demand. Multilingual and geo-targeted SEO strategies align content with regulatory environments.',
+        'E-commerce and marketplace competition is intense. Brand SEO building direct traffic reduces dependency on Amazon and marketplace fees while strengthening customer data ownership.',
+      ],
+    },
+    services: [
+      { title: 'Ingredient education hub SEO', body: 'Authoritative content on botanical ingredients, traditional uses, and research references with compliant disclaimers.' },
+      { title: 'Product category SEO', body: 'Optimized category and product pages for supplements, skincare, teas, and wellness kits.' },
+      { title: 'Ayurvedic brand authority SEO', body: 'Content establishing practitioner expertise, sourcing transparency, and traditional formulation knowledge.' },
+      { title: 'E-commerce technical SEO', body: 'Site speed, schema for products, faceted navigation cleanup, and conversion tracking.' },
+      { title: 'International & export SEO', body: 'Geo-targeted content for US, UK, EU, and Middle East wellness markets with regulatory awareness.' },
+      { title: 'AI & answer engine visibility', body: 'AEO for ingredient questions and wellness queries in AI Overviews with compliant structured answers.' },
+    ],
+    local: 'Herbal brands may serve local retail and clinic partners alongside e-commerce. We optimize for local wellness store discovery and practitioner referral pathways where applicable.',
+    compliance: 'All health-related copy includes appropriate disclaimers, avoids unapproved drug claims, and aligns with FSSAI, FDA, and regional supplement marketing regulations.',
+    faqs: [
+      { question: 'Can Herbal Product SEO include health benefit claims?', answer: 'We use compliant structure/function language and educational content with disclaimers-never unapproved disease treatment claims.' },
+      { question: 'Should each ingredient have its own SEO page?', answer: 'High-search ingredients like ashwagandha, turmeric, and neem warrant dedicated education hubs that funnel to products.' },
+      { question: 'What keywords drive herbal product sales?', answer: 'Ingredient + supplement, Ayurvedic [product type], organic herbal [category], natural skincare [ingredient].' },
+      { question: 'How long for herbal brand SEO results?', answer: 'Ingredient education terms may improve in 4-6 months; competitive supplement keywords often need sustained authority building.' },
+      { question: 'Can SEO reduce marketplace dependency?', answer: 'Strong brand SEO drives direct e-commerce traffic, improving margins and customer data ownership vs Amazon-only strategies.' },
+      { question: 'Do Ayurvedic brands need different SEO than general supplements?', answer: 'Yes-traditional medicine positioning, practitioner authority, and cultural context require distinct content strategies.' },
+      { question: 'How important is E-E-A-T for herbal SEO?', answer: 'Critical-author credentials, sourcing transparency, and cited research strengthen rankings for health-adjacent queries.' },
+      { question: 'Can SEO target international export markets?', answer: 'Geo-targeted content and hreflang strategies capture US, UK, and EU wellness searches with market-appropriate compliance.' },
+      { question: 'What KPIs should herbal brands track?', answer: 'Organic revenue, ingredient page traffic, direct vs marketplace sales mix, and AI Overview impression growth.' },
+      { question: 'How do we start Herbal Product SEO?', answer: 'Request a free audit of product pages, ingredient content, compliance review, and competitor visibility.' },
+    ],
+  },
+
+  'chiropractor-seo': {
+    hero: [
+      'Back pain sufferers, athletes, and desk workers search for chiropractors when pain interrupts daily life-often on mobile seeking same-week appointments. Chiropractor SEO connects your practice to spinal adjustment, sports injury, and wellness care searches with clinical trust content.',
+      'We build YMYL-compliant SEO for chiropractic clinics-condition-specific pages, insurance transparency, new patient funnels, and local map dominance that converts pain-driven searches into booked evaluations.',
+    ],
+    why: {
+      title: 'Why chiropractors need condition-based clinical SEO',
+      paragraphs: [
+        'Patients search symptoms and conditions-"lower back pain chiropractor," "sciatica treatment," "sports chiropractor"-not generic "chiropractor" alone. Condition pages match clinical specialties and referral patterns.',
+        'Insurance and cash-pay transparency reduces front-desk friction. SEO content clarifying accepted plans, visit costs, and care plan expectations shortens new patient qualification calls.',
+        'Sports chiropractic, pediatric care, and workplace ergonomics represent niche growth areas. Specialty program pages capture searches general chiropractic pages cannot rank for.',
+        'Medical skeptics and educated patients research treatment approaches before booking. Evidence-informed content addressing adjustment safety, treatment duration, and integrative care options builds pre-visit trust.',
+      ],
+    },
+    services: [
+      { title: 'Condition-specific SEO', body: 'Pages for back pain, neck pain, sciatica, headaches, and sports injuries with clinical education.' },
+      { title: 'Specialty program SEO', body: 'Landing pages for sports chiropractic, pediatric care, pregnancy chiropractic, and auto injury recovery.' },
+      { title: 'New patient funnel SEO', body: 'Optimized intake pages with insurance FAQs, first-visit expectations, and online scheduling.' },
+      { title: 'Insurance & payment SEO', body: 'Transparent content on accepted plans, cash rates, and care package options.' },
+      { title: 'Local map & review optimization', body: 'GBP tuning, review workflows highlighting pain relief outcomes and doctor communication.' },
+      { title: 'YMYL-compliant content strategy', body: 'Clinician-reviewed content with appropriate disclaimers and evidence-based treatment descriptions.' },
+    ],
+    local: 'Chiropractic patients want convenient nearby care. We optimize for "chiropractor near me," workplace district searches, and sports community targeting in your service area.',
+    compliance: 'Treatment claims stay within chiropractic scope-of-practice advertising rules; we avoid guaranteed cure language and use appropriate clinical disclaimers.',
+    faqs: [
+      { question: 'Should each condition have its own SEO page?', answer: 'Yes-back pain, sciatica, and sports injuries have distinct search intent and patient populations.' },
+      { question: 'How do you handle YMYL for Chiropractor SEO?', answer: 'Clinician-reviewed content, cited sources, credential visibility, and conservative claims aligned with healthcare SEO policies.' },
+      { question: 'What keywords drive chiropractic appointments?', answer: 'Chiropractor near me, back pain chiropractor, sports chiropractor [city], auto accident chiropractor.' },
+      { question: 'Can SEO help sports chiropractic growth?', answer: 'Dedicated sports injury pages capture athlete and gym-community searches with referral potential from trainers and coaches.' },
+      { question: 'How long for chiropractor SEO results?', answer: 'Local map terms often improve in 2-4 months; condition-specific authority may need 4-6 months.' },
+      { question: 'Should insurance info be on SEO pages?', answer: 'Yes-insurance and payment transparency ranks for related queries and reduces new patient call friction.' },
+      { question: 'How important are reviews for chiropractors?', answer: 'Reviews mentioning pain relief, doctor explanations, and scheduling flexibility strongly influence map rankings and patient choice.' },
+      { question: 'Can SEO integrate with online scheduling?', answer: 'We optimize booking widget placement, speed, and tracking without hurting Core Web Vitals.' },
+      { question: 'What KPIs should chiropractors track?', answer: 'New patient bookings, condition page conversions, map calls, and care plan acceptance rates.' },
+      { question: 'How do we start Chiropractor SEO?', answer: 'Book a free audit of condition pages, GBP health, and competitor local visibility.' },
+    ],
+  },
+}

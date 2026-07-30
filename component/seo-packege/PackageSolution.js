@@ -123,7 +123,7 @@ export default function PackageSolution() {
         </div>
 
         <p className="mt-12 text-center text-sm text-gray-500">
-          Monthly reporting included • Best results with 6-month plan
+          Monthly reporting included - Best results with 6-month plan
         </p>
       </div>
     </section>

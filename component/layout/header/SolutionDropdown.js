@@ -88,7 +88,7 @@ export default function SolutionDropdown() {
     },
     { 
       title: 'Website Creation', 
-      description: 'Website creation involves designing and developing an engaging, functional online presence tailored to your brand\'s needs.', 
+      description: 'Website creation involves designing and developing an engaging, functional online presence tailored to your brand's needs.', 
       icon: <Globe className="w-5 h-5 text-white" />,
       iconBg: 'bg-red-500 dark:bg-gray-700',
       color: 'bg-red-500 dark:bg-red-600',

@@ -6,11 +6,11 @@ const CRMToolService = () => {
     {
       id: 1,
       icon: <Users className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
-      title: 'CRM in Action – Streamlining Success Through Customer Focus',
+      title: 'CRM in Action - Streamlining Success Through Customer Focus',
       text:
         'Our CRM system centralizes customer data, streamlines communication, and fosters lasting relationships through powerful features like contact management, sales automation, and in-depth customer analytics.',
       detail:
-        'With our CRM platform, every customer interaction becomes an opportunity—delivering personalized experiences that boost loyalty and accelerate revenue growth.',
+        'With our CRM platform, every customer interaction becomes an opportunity-delivering personalized experiences that boost loyalty and accelerate revenue growth.',
     },
     {
       id: 2,
@@ -46,7 +46,7 @@ const CRMToolService = () => {
       icon: <Shield className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
       title: 'Secure and Compliant Solutions',
       text:
-        'In today’s world of rising cyber threats, protecting your business data is critical. Our CRM and management tools incorporate robust security measures, adhere to industry regulations, and prioritize data privacy, giving you complete peace of mind.',
+        'In today\'s world of rising cyber threats, protecting your business data is critical. Our CRM and management tools incorporate robust security measures, adhere to industry regulations, and prioritize data privacy, giving you complete peace of mind.',
       detail:
         'Our platform complies with GDPR, CCPA, and industry-specific standards, supported by regular security audits and continuous updates.',
     },
@@ -247,7 +247,7 @@ const CRMToolService = () => {
           <p className="text-gray-700 dark:text-gray-300 text-center max-w-3xl mx-auto mt-10">
             With our structured <b>crm tool management,</b> companies can build
             lasting customer relationships while eliminating manual errors and
-            redundant tasks. CRM tools don’t just support sales workflows—they
+            redundant tasks. CRM tools don't just support sales workflows-they
             help businesses convert opportunities faster and retain existing
             customers more effectively.
           </p>
@@ -264,7 +264,7 @@ const CRMToolService = () => {
             Every business has different customer processes, sales cycles,
             communication channels, and reporting needs. Our CRM specialists
             analyze your business structure and build tailored CRM architecture
-            that fits your workflow—no generalized solutions, only strategic and
+            that fits your workflow-no generalized solutions, only strategic and
             customized deployments.
           </p>
           <p className="text-gray-700 dark:text-gray-300 text-center max-w-3xl mx-auto mb-10">

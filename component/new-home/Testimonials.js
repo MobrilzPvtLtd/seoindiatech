@@ -1,169 +1,249 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { motion, useMotionValue, useAnimationFrame } from 'framer-motion';
+'use client'
 
-/**
- * DESIGN — "The Ticker"
- *
- * This agency's whole pitch is numbers that climb (rankings, ROI,
- * conversion rate — see the services section). So instead of another
- * card wall, testimonials are framed as a live market ticker: each
- * client gets a ticker symbol, a sparkline, a star rating — quotes,
- * literally. It runs as a continuously drifting strip full-bleed
- * across the section (grab it and drag, or just let it scroll),
- * which also happens to solve "compact + scrollable on every screen"
- * for free — a ticker tape is supposed to scroll.
- *
- * Deliberately breaks from the site's light rhythm with a dark,
- * dashboard-style band — a held breath before the next light section.
- */
+import Link from 'next/link'
+import Image from 'next/image'
+import { motion } from 'framer-motion'
+import { ChevronLeft, ChevronRight, Quote } from 'lucide-react'
+import { useCallback, useEffect, useRef, useState } from 'react'
+import SectionBadge from '@/component/ui/SectionBadge'
+import ScribbleText from '@/component/ui/ScribbleText'
+import { homeTestimonials } from '@/utils/homeTestimonials'
 
-const testimonials = [
-  { id: 1, ticker: 'CJX', name: 'Christine Jackson', handle: 'luminous_statue_35', avatar: 'https://randomuser.me/api/portraits/women/44.jpg', text: "If you're not using testimonials, you're missing out on a golden opportunity to turn visitors into customers.", spark: 'M2,30 C10,29 14,22 22,23 C30,24 32,14 42,12 C52,10 56,18 66,10 C74,4 80,8 90,2' },
-  { id: 2, ticker: 'YAG', name: 'Yasmine Garcia', handle: 'pendulous_ukulele_30', avatar: 'https://randomuser.me/api/portraits/women/68.jpg', text: "Golden opportunity to turn visitors and potential buyers into actual, paying customers.", spark: 'M2,26 C10,27 16,30 22,26 C30,20 32,10 42,11 C52,12 54,20 64,16 C74,12 78,4 90,3' },
-  { id: 3, ticker: 'SKP', name: 'Sakura Palastri', handle: 'salubrious_producer_83', avatar: 'https://randomuser.me/api/portraits/women/50.jpg', text: "Missing out on a golden opportunity to turn visitors into actual customers, plain and simple.", spark: 'M2,32 C12,31 16,26 24,27 C32,28 34,18 44,16 C54,14 58,20 68,10 C76,2 82,6 90,3' },
-  { id: 4, ticker: 'BLL', name: 'Bác Lỡ Lĩnh', handle: 'puckish_cookies_38', avatar: 'https://randomuser.me/api/portraits/men/32.jpg', text: "You're missing out on a golden opportunity to turn visitors into customers without them.", spark: 'M2,28 C10,29 16,32 22,28 C30,23 32,12 42,13 C52,14 54,22 64,18 C74,14 78,6 90,4' },
-  { id: 5, ticker: 'IRH', name: 'Ibrahim Mahmud', handle: 'limpid_cupcake_68', avatar: 'https://randomuser.me/api/portraits/men/46.jpg', text: "A golden opportunity to turn visitors and potential buyers into actual customers, finally realized.", spark: 'M2,34 C12,33 16,26 26,27 C34,28 36,18 46,16 C56,14 60,20 70,10 C78,2 84,6 90,3' },
-  { id: 6, ticker: 'MGT', name: 'Margaret Taylor', handle: 'amatory_clerk_73', avatar: 'https://randomuser.me/api/portraits/women/26.jpg', text: "Testimonials turned our visitors and potential buyers into actual, loyal customers.", spark: 'M2,30 C10,31 16,34 22,30 C30,25 32,14 42,15 C52,16 54,24 64,20 C74,16 78,6 90,4' },
-];
+const LOCAL_AVATARS = ['/images/sarah.png', '/images/michael.png', '/images/lauren.png', '/images/profile.png']
 
-const accents = ['#16C784', '#FF6B4A', '#3355FF', '#8B5CF6'];
-const track = [...testimonials, ...testimonials]; // duplicated for a seamless loop
-const AUTO_SPEED = 26; // px per second
-
-const TickerCard = ({ item, accent }) => (
-  <div className="flex-none w-[300px] select-none rounded-xl border border-gray-200 bg-white px-5 py-5 shadow-sm">
-    {/* Symbol + sparkline */}
-    <div className="mb-4 flex items-center justify-between">
-      <span className="flex items-center gap-1.5 font-mono text-xs font-semibold tracking-wide" style={{ color: accent }}>
-        <svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M4 0L8 8H0L4 0Z" fill={accent} /></svg>
-        ${item.ticker}
-      </span>
-      <svg viewBox="0 0 92 36" className="h-4 w-16" fill="none">
-        <path d={item.spark} stroke={accent} strokeWidth="2" strokeLinecap="round" />
-      </svg>
+function Stars() {
+  return (
+    <div className="flex gap-0.5 text-accent" aria-label="5 star rating">
+      {[...Array(5)].map((_, i) => (
+        <svg key={i} width="16" height="16" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+          <path d="M10 1.5l2.47 5.01 5.53.8-4 3.9.94 5.5L10 13.9l-4.94 2.71.94-5.5-4-3.9 5.53-.8L10 1.5z" />
+        </svg>
+      ))}
     </div>
+  )
+}
 
-    {/* Quote */}
-    <p className="mb-5 text-[14px] leading-relaxed text-gray-600" style={{ display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
-      "{item.text}"
-    </p>
-
-    {/* Identity + rating */}
-    <div className="flex items-center justify-between border-t border-gray-200 pt-4">
-      <div className="flex items-center gap-2.5 min-w-0">
-        <img src={item.avatar} alt={item.name} className="h-7 w-7 shrink-0 rounded-full object-cover grayscale" />
+function TestimonialCard({ item }) {
+  return (
+    <article className="flex flex-col rounded-t-3xl bg-white p-6 md:p-8 min-h-[300px] shrink-0 snap-center w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]">
+      <div className="flex items-start justify-between gap-4 mb-5">
+        <Quote className="h-8 w-8 text-primary fill-primary/20 shrink-0" strokeWidth={1.5} />
+        <Stars />
+      </div>
+      <p className="flex-1 text-sm md:text-[15px] leading-relaxed text-heading/90">
+        {item.text}
+      </p>
+      <div className="mt-6 flex items-center gap-3 pt-5 border-t border-border/60">
+        <div className="relative h-11 w-11 shrink-0 rounded-full overflow-hidden bg-surface">
+          <Image src={LOCAL_AVATARS[(item.id - 1) % LOCAL_AVATARS.length]} alt={item.name} fill className="object-cover" sizes="44px" />
+        </div>
         <div className="min-w-0">
-          <p className="truncate text-xs font-semibold text-gray-900">{item.name}</p>
+          <p className="text-sm font-bold text-heading truncate">{item.name}</p>
+          <p className="text-xs text-muted truncate">{item.role}</p>
+          {item.company && (
+            <p className="text-xs text-primary/80 truncate">{item.company}</p>
+          )}
         </div>
       </div>
-      <span className="shrink-0 font-mono text-[11px] tracking-wide" style={{ color: accent }}>★★★★★</span>
-    </div>
-  </div>
-);
+    </article>
+  )
+}
 
 const Testimonials = () => {
-  const trackRef = useRef(null);
-  const x = useMotionValue(0);
-  const [halfWidth, setHalfWidth] = useState(0);
-  const [paused, setPaused] = useState(false);
-  const drag = useRef({ active: false, startClientX: 0, startX: 0 });
+  const scrollRef = useRef(null)
+  const [itemsPerView, setItemsPerView] = useState(3)
+  const [activeIndex, setActiveIndex] = useState(0)
+  const [isUserScrolling, setIsUserScrolling] = useState(false)
+  const scrollTimeoutRef = useRef(null)
+  const intervalRef = useRef(null)
 
   useEffect(() => {
-    if (trackRef.current) setHalfWidth(trackRef.current.scrollWidth / 2);
-  }, []);
+    const update = () => {
+      if (window.innerWidth < 640) setItemsPerView(1)
+      else if (window.innerWidth < 1024) setItemsPerView(2)
+      else setItemsPerView(3)
+    }
+    update()
+    window.addEventListener('resize', update)
+    return () => window.removeEventListener('resize', update)
+  }, [])
 
-  useAnimationFrame((_, delta) => {
-    if (paused || drag.current.active || !halfWidth) return;
-    let next = x.get() - (AUTO_SPEED * delta) / 1000;
-    if (next <= -halfWidth) next += halfWidth;
-    if (next > 0) next -= halfWidth;
-    x.set(next);
-  });
+  const maxIndex = Math.max(0, homeTestimonials.length - itemsPerView)
 
-  const wrap = (val) => {
-    if (!halfWidth) return val;
-    let v = val;
-    while (v <= -halfWidth) v += halfWidth;
-    while (v > 0) v -= halfWidth;
-    return v;
-  };
+  const scrollToIndex = useCallback(
+    (index) => {
+      const container = scrollRef.current
+      if (!container || !container.children[0]) return
 
-  const onPointerDown = (e) => {
-    drag.current = { active: true, startClientX: e.clientX, startX: x.get() };
-    e.currentTarget.setPointerCapture?.(e.pointerId);
-  };
-  const onPointerMove = (e) => {
-    if (!drag.current.active) return;
-    x.set(wrap(drag.current.startX + (e.clientX - drag.current.startClientX)));
-  };
-  const endDrag = () => { drag.current.active = false; };
+      const card = container.children[0]
+      const gap = 24
+      const cardWidth = card.offsetWidth + gap
+      const target = Math.min(Math.max(0, index), maxIndex)
+
+      container.scrollTo({ left: target * cardWidth, behavior: 'smooth' })
+      setActiveIndex(target)
+    },
+    [maxIndex]
+  )
+
+  const scrollNext = useCallback(() => {
+    const next = activeIndex >= maxIndex ? 0 : activeIndex + 1
+    scrollToIndex(next)
+  }, [activeIndex, maxIndex, scrollToIndex])
+
+  const scrollPrev = useCallback(() => {
+    const prev = activeIndex <= 0 ? maxIndex : activeIndex - 1
+    scrollToIndex(prev)
+  }, [activeIndex, maxIndex, scrollToIndex])
+
+  useEffect(() => {
+    if (isUserScrolling) {
+      if (intervalRef.current) clearInterval(intervalRef.current)
+      return
+    }
+    intervalRef.current = setInterval(scrollNext, 4500)
+    return () => clearInterval(intervalRef.current)
+  }, [isUserScrolling, scrollNext])
+
+  const handleScroll = () => {
+    const container = scrollRef.current
+    if (!container || !container.children[0]) return
+    const card = container.children[0]
+    const gap = 24
+    const cardWidth = card.offsetWidth + gap
+    const index = Math.round(container.scrollLeft / cardWidth)
+    setActiveIndex(Math.min(index, maxIndex))
+  }
+
+  const pauseAutoScroll = () => {
+    setIsUserScrolling(true)
+    if (scrollTimeoutRef.current) clearTimeout(scrollTimeoutRef.current)
+  }
+
+  const resumeAutoScroll = () => {
+    if (scrollTimeoutRef.current) clearTimeout(scrollTimeoutRef.current)
+    scrollTimeoutRef.current = setTimeout(() => setIsUserScrolling(false), 4000)
+  }
+
+  const dotCount = maxIndex + 1
 
   return (
-    <section className="relative overflow-hidden bg-gray-50 py-16 md:py-20">
+    <section className="dark-grid-bg section-padding relative overflow-hidden">
+      <div className="pointer-events-none absolute inset-0 hero-glow-primary opacity-40" />
 
-      <div className="relative z-10 max-w-3xl mx-auto px-4 text-center mb-12 md:mb-14">
-        {/* <motion.div
-          initial={{ y: 20, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-          viewport={{ once: true, amount: 0.6 }}
-          className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 font-mono text-[10px] uppercase tracking-[0.2em] text-slate-400"
-        >
-          <span className="relative flex h-1.5 w-1.5">
-            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#16C784] opacity-75" />
-            <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-[#16C784]" />
-          </span>
-          Live client feedback
-        </motion.div> */}
-        <motion.h2
-          initial={{ y: 24, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.05, ease: [0.16, 1, 0.3, 1] }}
-          viewport={{ once: true, amount: 0.5 }}
-          className="mb-3 text-3xl sm:text-4xl md:text-[2.75rem] font-semibold tracking-tight text-gray-900"
-        >
-          Our trusted <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400 dark:from-blue-400 dark:to-blue-300">clients</span>
-        </motion.h2>
-        <motion.p
-          initial={{ y: 24, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-          viewport={{ once: true, amount: 0.5 }}
-          className="text-base sm:text-lg leading-relaxed text-gray-500"
-        >
-          Every engagement gets tracked like a position — here's what's showing on the board.
-        </motion.p>
-      </div>
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="grid gap-8 lg:grid-cols-2 lg:items-end lg:gap-12 mb-10 md:mb-12">
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="section-dark-copy"
+          >
+            <SectionBadge dark>Testimonials</SectionBadge>
+            <h2 className="mt-6 font-heading text-3xl font-extrabold text-white sm:text-4xl md:text-[2.75rem] md:leading-[1.12]">
+              Our Client{' '}
+              <ScribbleText className="text-accent" scribbleColor="#6B2E88">
+                Success
+              </ScribbleText>{' '}
+              Stories!
+            </h2>
+            <p className="mt-5 text-base md:text-lg leading-relaxed text-white/60 max-w-xl">
+              Real outcomes from {homeTestimonials.length} clients across SEO, paid media, and AI
+              search - transparent reporting and accountable growth worldwide.
+            </p>
+          </motion.div>
 
-      {/* Full-bleed ticker strip */}
-      <motion.div
-        className="relative z-10"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.7, delay: 0.15 }}
-        viewport={{ once: true, amount: 0.2 }}
-        onMouseEnter={() => setPaused(true)}
-        onMouseLeave={() => setPaused(false)}
-      >
-        <div
-          className="overflow-hidden cursor-grab active:cursor-grabbing"
-          onPointerDown={onPointerDown}
-          onPointerMove={onPointerMove}
-          onPointerUp={endDrag}
-          onPointerLeave={endDrag}
-        >
-          <motion.div ref={trackRef} style={{ x }} className="flex w-max gap-4 px-4">
-            {track.map((item, index) => (
-              <TickerCard key={`${item.id}-${index}`} item={item} accent={accents[index % accents.length]} />
-            ))}
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+            className="flex flex-col sm:flex-row gap-3 lg:justify-end"
+          >
+            <Link
+              href="/contact-us"
+              className="inline-flex items-center justify-center rounded-full bg-primary hover:bg-primary-hover px-8 py-3.5 text-sm font-bold text-white shadow-glow-brand transition-all hover:-translate-y-0.5"
+            >
+              Work With Us
+            </Link>
+            <Link
+              href="/services/ai-seo"
+              className="inline-flex items-center justify-center rounded-full border-2 border-white/80 text-white hover:bg-white/10 px-8 py-3.5 text-sm font-bold transition-all hover:-translate-y-0.5"
+            >
+              Check AI-Powered Services
+            </Link>
           </motion.div>
         </div>
 
-        <div className="pointer-events-none absolute inset-y-0 left-0 w-16 sm:w-32 bg-gradient-to-r from-gray-50 to-transparent" />
-        <div className="pointer-events-none absolute inset-y-0 right-0 w-16 sm:w-32 bg-gradient-to-l from-gray-50 to-transparent" />
-      </motion.div>
-    </section>
-  );
-};
+        <div className="relative">
+          <div
+            ref={scrollRef}
+            className="flex gap-6 overflow-x-auto scrollbar-hide snap-x snap-mandatory pb-2 touch-pan-x"
+            onScroll={handleScroll}
+            onTouchStart={pauseAutoScroll}
+            onTouchEnd={resumeAutoScroll}
+            onMouseEnter={pauseAutoScroll}
+            onMouseLeave={resumeAutoScroll}
+          >
+            {homeTestimonials.map((item) => (
+              <TestimonialCard key={item.id} item={item} />
+            ))}
+          </div>
 
-export default Testimonials;
+          <div className="mt-8 flex items-center justify-between gap-4">
+            <div className="flex items-center gap-2">
+              <button
+                type="button"
+                onClick={() => {
+                  pauseAutoScroll()
+                  scrollPrev()
+                  resumeAutoScroll()
+                }}
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-white/10 text-white hover:bg-white/20 transition-colors"
+                aria-label="Previous testimonials"
+              >
+                <ChevronLeft className="h-5 w-5" />
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  pauseAutoScroll()
+                  scrollNext()
+                  resumeAutoScroll()
+                }}
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-white/10 text-white hover:bg-white/20 transition-colors"
+                aria-label="Next testimonials"
+              >
+                <ChevronRight className="h-5 w-5" />
+              </button>
+            </div>
+
+            <div className="flex items-center gap-1.5">
+              {Array.from({ length: dotCount }).map((_, i) => (
+                <button
+                  key={i}
+                  type="button"
+                  onClick={() => {
+                    pauseAutoScroll()
+                    scrollToIndex(i)
+                    resumeAutoScroll()
+                  }}
+                  className={`h-2 rounded-full transition-all ${
+                    i === activeIndex ? 'w-6 bg-accent' : 'w-2 bg-white/30 hover:bg-white/50'
+                  }`}
+                  aria-label={`Go to testimonial slide ${i + 1}`}
+                />
+              ))}
+            </div>
+
+            <p className="hidden sm:block text-xs text-white/50 font-medium">
+              {activeIndex + 1} / {dotCount}  |  {homeTestimonials.length} reviews
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export default Testimonials

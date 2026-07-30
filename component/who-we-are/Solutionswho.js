@@ -153,7 +153,7 @@ const Solutionswho = () => {
         <div className="max-w-7xl mx-auto px-6">
           {/* Heading */}
           <h3 className="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white mb-12 opacity-0 animate-fadeUp">
-            How We Work — Our Process
+            How We Work - Our Process
           </h3>
 
           {/* Grid */}
@@ -179,10 +179,10 @@ const Solutionswho = () => {
                 text: (
                   <>
                     Based on insights and your business structure, we craft a
-                    tailored <strong>workflow</strong> — mapping tasks,
+                    tailored <strong>workflow</strong> - mapping tasks,
                     responsibilities, milestones, and data flows. Then, we
                     implement <strong>automation </strong>
-                    wherever possible — to streamline operations, reduce manual
+                    wherever possible - to streamline operations, reduce manual
                     effort, and ensure consistency.
                   </>
                 ),

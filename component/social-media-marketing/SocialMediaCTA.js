@@ -24,11 +24,11 @@ export default function SocialMediaCTA() {
             </Link>{' '}
             gives you a real strategic advantage. Our professional social media
             marketing services help you expand reach, engage customers, and
-            build a loyal audience — powered by creativity, consistency, and
+            build a loyal audience - powered by creativity, consistency, and
             deep market expertise.
           </p>
 
-          {/* Short Benefits – Clean List */}
+          {/* Short Benefits - Clean List */}
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             <div className="flex items-center gap-4">
               <div className="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center flex-shrink-0">
@@ -59,7 +59,7 @@ export default function SocialMediaCTA() {
           {/* Final Statement */}
           <p className="mt-12 text-xl md:text-2xl font-medium text-gray-800 dark:text-gray-100 max-w-4xl mx-auto">
             Whether you want organic growth, paid campaigns, or long-term brand
-            authority — our{' '}
+            authority - our{' '}
             <span className="text-blue-600 font-bold">
               social media marketing services India
             </span>{' '}
@@ -67,7 +67,7 @@ export default function SocialMediaCTA() {
           </p>
 
           <p className="mt-6 text-lg text-gray-600 dark:text-gray-200">
-            Start your journey with SEO India Tech — your trusted social media
+            Start your journey with SEO India Tech - your trusted social media
             marketing services company.
           </p>
 
@@ -88,7 +88,7 @@ export default function SocialMediaCTA() {
               href="/case-studies"
               className="hover:text-blue-600 transition-colors"
             >
-              See real results from businesses like yours →
+              See real results from businesses like yours{'->'}
             </a>
           </p> */}
         </div>

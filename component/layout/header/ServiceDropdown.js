@@ -60,7 +60,7 @@ const categories = [
 ]
 
 export default function ServiceDropdown({ closeMenu }) {
-  // Note: no outer absolute/bg/shadow/rounded wrapper here — the parent dropdown
+  // Note: no outer absolute/bg/shadow/rounded wrapper here - the parent dropdown
   // container in Header.jsx already supplies positioning, width, background,
   // border and shadow. Duplicating those here (as the original did) stacked two
   // rounded/shadowed boxes on top of each other. This component now only owns
@@ -68,16 +68,16 @@ export default function ServiceDropdown({ closeMenu }) {
   //
   // Layout scales with the parent's width breakpoints (500 / 700 / 900px):
   //   - 1 column below sm (mobile drawer width)
-  //   - 2 columns at md (~500px) — 4 columns would squeeze long labels like
+  //   - 2 columns at md (~500px) - 4 columns would squeeze long labels like
   //     "Reputation Management" into ~100px each and wrap badly
-  //   - 4 columns at lg/xl (700–900px), where there's room to breathe
+  //   - 4 columns at lg/xl (700-900px), where there's room to breathe
   // Categories sit in their own soft card instead of divider lines, so
   // reflowing from 4 columns down to 2 (or 1) never leaves an orphaned
   // divider floating mid-row.
   //
   // Height: capped at 75vh with its own scroll area so on shorter laptop
   // screens the 8-item SEO column can't push the menu past the viewport or
-  // overlap the page below it — it scrolls internally instead. The CTA
+  // overlap the page below it - it scrolls internally instead. The CTA
   // footer stays outside that scroll area so it's always visible.
   return (
     <div className="flex flex-col flex-1 min-h-0">
@@ -112,7 +112,7 @@ export default function ServiceDropdown({ closeMenu }) {
         </div>
       </div>
 
-      {/* Footer CTA — outside the scroll area so it's always reachable, and gives
+      {/* Footer CTA - outside the scroll area so it's always reachable, and gives
           the menu a single clear next step for anyone unsure which service fits */}
       <div className="flex-shrink-0 mt-4 mx-6 md:mx-8 pt-5 pb-6 md:pb-8 border-t border-slate-100 dark:border-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
         <p className="text-sm text-slate-500 dark:text-slate-400">

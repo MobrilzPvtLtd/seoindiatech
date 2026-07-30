@@ -29,7 +29,7 @@ export default function MarketingWorkflowSection() {
             </span>
           </h2>
           <p className="mt-6 text-xl lg:text-2xl text-gray-600 dark:text-gray-100 max-w-5xl mx-auto">
-            From campaign planning to PPC execution and lead follow-up — our
+            From campaign planning to PPC execution and lead follow-up - our
             intelligent workflow systems keep your marketing team organized,
             consistent, and laser-focused on results.
           </p>
@@ -47,7 +47,7 @@ export default function MarketingWorkflowSection() {
             </p>
             <ul className="space-y-4">
               {[
-                'Keyword research → approval → ad copy → launch — all automated',
+                'Keyword research -> approval -> ad copy -> launch - all automated',
                 'Daily budget & bid adjustments triggered by performance rules',
                 'Real-time performance alerts sent to Slack/Email',
                 'Weekly reports auto-generated and shared with stakeholders',
@@ -62,7 +62,7 @@ export default function MarketingWorkflowSection() {
               ))}
             </ul>
             <p className="mt-8 text-lg font-semibold text-indigo-600">
-              Result: Higher ROI, zero missed opportunities, and full control —
+              Result: Higher ROI, zero missed opportunities, and full control -
               without micromanagement.
             </p>
           </div>
@@ -76,7 +76,7 @@ export default function MarketingWorkflowSection() {
                   PPC Workflow Automation
                 </p>
                 <p className="text-gray-600 dark:text-gray-300">
-                  From Launch to Optimization — Fully Automated
+                  From Launch to Optimization - Fully Automated
                 </p>
               </div>
               <div className="space-y-4">
@@ -177,7 +177,7 @@ export default function MarketingWorkflowSection() {
                 icon: TrendingUp,
                 title: 'Marketing Optimization',
                 desc:
-                  'PPC, SEO, content, and email — all perfectly coordinated',
+                  'PPC, SEO, content, and email - all perfectly coordinated',
               },
               {
                 icon: BarChart3,

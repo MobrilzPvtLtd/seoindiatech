@@ -34,7 +34,7 @@ const Hero = () => {
 
             {/* Description */}
             <p className="text-justify text-gray-700 dark:text-gray-300 text-lg leading-relaxed mb-8 max-w-2xl">
-              Welcome to SEO India Tech — we are not just another digital
+              Welcome to SEO India Tech - we are not just another digital
               agency. We are architects of growth, innovators of efficiency, and
               passionate believers in harnessing technology to transform how
               businesses operate and succeed online. Our mission is to deliver
@@ -46,7 +46,7 @@ const Hero = () => {
               We combine structured <b>workflow</b> design, smart{' '}
               <b>automation,</b> deep
               <b>market research,</b> expert <b>website creation,</b> and robust{' '}
-              <b>promotion & advertising</b> — all unified under a powerful{' '}
+              <b>promotion & advertising</b> - all unified under a powerful{' '}
               <b>CRM & management tool</b>
               strategy. This fusion allows us to build digital ecosystems that
               perform, scale, and evolve with your business.

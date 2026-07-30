@@ -66,14 +66,14 @@ export default function TrustWebsiteCreation() {
 
           <p className="text-gray-700 dark:text-gray-300 text-center max-w-4xl mx-auto mb-10 leading-relaxed">
             Behind every great website is solid development. Our technical team
-            builds your site using the optimal technology stack — from CMS
-            platforms like WordPress to custom frameworks — ensuring your site
+            builds your site using the optimal technology stack - from CMS
+            platforms like WordPress to custom frameworks - ensuring your site
             is fast, stable, secure, and scalable. We write clean, maintainable
             code that supports seamless functionality across devices and
             platforms.
             <br />
             <br />
-            Content is king — but only when it’s structured, organized, and
+            Content is king - but only when it's structured, organized, and
             optimized. We craft content layouts, integrate multimedia, and
             ensure a consistent tone that aligns with your brand. Every page,
             section, and call-to-action is strategically placed to maximize
@@ -124,7 +124,7 @@ export default function TrustWebsiteCreation() {
               <div className="w-20 h-1 bg-blue-600 dark:bg-blue-500 rounded-full mb-6"></div>
 
               <p className="text-justify text-gray-700 dark:text-gray-300 text-base md:text-lg leading-relaxed mb-8">
-                Your website is a crucial tool in today’s digital landscape. Our
+                Your website is a crucial tool in today's digital landscape. Our
                 services help you seamlessly integrate it with all your social
                 media platforms, ensuring consistent engagement across channels.
                 Additionally, we connect your website to your CRM, allowing you
@@ -314,7 +314,7 @@ export default function TrustWebsiteCreation() {
 
             <p className="text-gray-800 dark:text-gray-300 text-center leading-relaxed">
               A beautiful website is just the start. To truly succeed online,
-              you need visibility. That’s where our <b>local SEO services,</b>{' '}
+              you need visibility. That's where our <b>local SEO services,</b>{' '}
               <a
                 href="https://www.seoindiatech.com/services/digital-branding"
                 className="text-blue-600 underline"
@@ -326,8 +326,8 @@ export default function TrustWebsiteCreation() {
               ensure your website is discoverable by the right audience.
               <br />
               <br />
-              Our integrated approach — combining website development with SEO
-              and branding — means you don’t just get a website; you get a
+              Our integrated approach - combining website development with SEO
+              and branding - means you don't just get a website; you get a
               digital marketing powerhouse. This end-to-end offering is what
               sets our top website creation services apart.
             </p>
@@ -342,11 +342,11 @@ export default function TrustWebsiteCreation() {
             <p className="text-gray-800 dark:text-gray-300 text-center leading-relaxed">
               Before your site goes live, we perform extensive testing across
               devices, browsers, and screen sizes. We check functionality,
-              performance, security, and accessibility — ensuring a seamless
+              performance, security, and accessibility - ensuring a seamless
               user experience.
               <br />
               <br />
-              Once launched, we don’t just walk away. We offer continuous
+              Once launched, we don't just walk away. We offer continuous
               maintenance and updates to keep your website secure, fast, and
               current with evolving technologies. This ongoing support reflects
               our commitment to providing professional website creation services

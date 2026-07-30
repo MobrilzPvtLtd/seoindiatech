@@ -52,7 +52,7 @@ const MOCKS = [
     title: 'Full-funnel SEO',
     badge: 'SERVICES',
     type: 'chat',
-    prompt: 'Technical SEO, on-page, off-page, local — everything under one roof.',
+    prompt: 'Technical SEO, on-page, off-page, local - everything under one roof.',
     footer: 'Auto-scoped',
   },
   {
@@ -61,7 +61,7 @@ const MOCKS = [
     title: 'Growth timeline',
     badge: 'LIVE',
     type: 'checklist',
-    items: ['Week 4-6 · quick wins land', 'Month 3 · rankings climb', 'Month 6 · growth compounds'],
+    items: ['Week 4-6  |  quick wins land', 'Month 3  |  rankings climb', 'Month 6  |  growth compounds'],
   },
   {
     gradient: 'from-blue-100 via-blue-200 to-cyan-200',
@@ -170,7 +170,7 @@ const FAQSection = () => {
           Questions
         </h2>
         <p className="mt-5 text-gray-600 dark:text-gray-400 max-w-lg mx-auto">
-          Got questions? We have answers — everything you need to know about working with us.
+          Got questions? We have answers - everything you need to know about working with us.
         </p>
       </div>
 
@@ -180,7 +180,7 @@ const FAQSection = () => {
             <Reveal once amount={0.15}>
               <div className="rounded-[2rem] border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 shadow-xl shadow-blue-500/5 dark:shadow-blue-900/10 p-6 md:p-10 transition-colors duration-300">
                 <div className="grid md:grid-cols-2 gap-8 md:gap-10 items-center">
-                  {/* Left — text */}
+                  {/* Left - text */}
                   <div className="order-2 md:order-1">
                     <span className="inline-block font-mono text-[11px] font-semibold tracking-[0.15em] uppercase text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-950/60 border border-blue-100 dark:border-blue-800/30 rounded-full px-3 py-1 mb-5">
                       Question {String(i + 1).padStart(2, '0')}
@@ -193,7 +193,7 @@ const FAQSection = () => {
                     </p>
                   </div>
 
-                  {/* Right — mockup panel */}
+                  {/* Right - mockup panel */}
                   <div className="order-1 md:order-2 h-56 md:h-64">
                     <MockPanel mock={MOCKS[i]} />
                   </div>

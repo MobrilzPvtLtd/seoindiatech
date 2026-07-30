@@ -3,19 +3,19 @@ import Image from 'next/image';
 
 const advantages = [
   {
-    image: '/images/services/design part.png',
+    image: '/images/services/design-part.png',
     title: 'Instant Trust & Credibility',
     description: 'Modern users expect simplicity, speed, and functionality. Our UI/UX design services are crafted to meet these expectations through meaningful layouts, visual balance, and smooth navigation.',
     alt: 'Trust'
   },
   {
-    image: '/images/services/ux boost.png',
+    image: '/images/services/ux-boost.png',
     title: 'Optimized for Conversion',
     description: 'Every design we create focuses on accessibility, responsive behavior, and user-centered architecture.',
     alt: 'Conversion'
   },
   {
-    image: '/images/services/ux leads.png',
+    image: '/images/services/ux-leads.png',
     title: 'Customer Retention & Loyalty',
     description: 'We take pride in delivering the best ui/ux design services in India by combining practical design strategies with modern aesthetics. Our team ensures that your website or application not only looks impressive but also performs effortlessly across all devices.',
     alt: 'Retention'

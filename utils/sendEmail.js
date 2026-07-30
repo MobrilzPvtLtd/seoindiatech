@@ -78,7 +78,7 @@ export const sendContactFormEmail = async (data) => {
           <p>Best regards,<br><strong>SEO India Tech Team</strong></p>
           <hr style="border: none; border-top: 1px solid #e5e7eb; margin: 30px 0;">
           <p style="color: #666; font-size: 12px; text-align: center;">
-            © 2026 SEO India Tech. All rights reserved.
+            (c) 2026 SEO India Tech. All rights reserved.
           </p>
         </div>
       `,

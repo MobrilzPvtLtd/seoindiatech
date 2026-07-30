@@ -27,7 +27,7 @@ const PromotionService = () => {
       text:
         'Identify key performance indicators to evaluate campaign success, such as engagement rates, conversion rates, or return on investment, ensuring alignment with overall business goals.',
       detail:
-        'We craft tailored strategies that focus on achievable targets, trackable progress, and timelines to maximize your campaign’s effectiveness.',
+        'We craft tailored strategies that focus on achievable targets, trackable progress, and timelines to maximize your campaign\'s effectiveness.',
     },
     {
       id: 3,
@@ -45,7 +45,7 @@ const PromotionService = () => {
       ),
       title: 'Developing the Message',
       text:
-        'We develop impactful narratives that highlight your product’s strengths and inspire action from your target market.',
+        'We develop impactful narratives that highlight your product\'s strengths and inspire action from your target market.',
       detail:
         'Our storytelling approach ensures your message is memorable, authentic, and aligned with your brand values.',
     },

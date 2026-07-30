@@ -70,7 +70,7 @@ export default function WhyAppStore() {
           </p>
         </div>
 
-        {/* Cards – icon + title in one row */}
+        {/* Cards - icon + title in one row */}
         <div className="grid gap-7 md:grid-cols-2 lg:grid-cols-3">
           {data.map((item, index) => (
             <div
@@ -79,7 +79,7 @@ export default function WhyAppStore() {
                 item.full ? 'md:col-span-2 lg:col-span-3' : ''
               }`}
             >
-              {/* Icon + Title – single row */}
+              {/* Icon + Title - single row */}
               <div className="flex items-center gap-4 mb-5">
                 <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 md:w-14 md:h-14 rounded-xl bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 text-2xl transition-transform duration-300 group-hover:scale-110">
                   {item.icon}

@@ -1,119 +1,75 @@
 import Image from 'next/image'
-import React from 'react'
 import { motion } from 'framer-motion'
 
 const clientLogos = [
-    { src: '/images/home/logo1.png', alt: 'DIY Real Estate' },
-    { src: '/images/home/logo2.png', alt: 'Tech Project' },
-    { src: '/images/home/logo3.png', alt: 'Stay KSA' },
-    { src: '/images/home/logo4.png', alt: 'Creativity 360 Pro' },
-    { src: '/images/home/logo5.png', alt: 'Creative Agency' },
-    { src: '/images/home/logo6.png', alt: 'Digital Solutions' },
-    { src: '/images/home/intgra.png', alt: 'Advyra' },
+  { src: '/images/home/logo1.png', alt: 'DIY Real Estate' },
+  { src: '/images/home/logo2.png', alt: 'Tech Project' },
+  { src: '/images/home/logo3.png', alt: 'Stay KSA' },
+  { src: '/images/home/logo4.png', alt: 'Creativity 360 Pro' },
+  { src: '/images/home/logo5.png', alt: 'Creative Agency' },
+  { src: '/images/home/logo6.png', alt: 'Digital Solutions' },
+  { src: '/images/home/intgra.png', alt: 'Advyra' },
 ]
 
 const allLogos = [...clientLogos, ...clientLogos, ...clientLogos]
 
 const TrustedBy = () => {
-    return (
-        <section className="relative bg-white py-13 md:py-15 overflow-hidden">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <motion.div
-                    className="text-center mb-12"
-                    initial={{ y: 24, opacity: 0 }}
-                    whileInView={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.7, ease: 'easeOut' }}
-                    viewport={{ once: true, amount: 0.15 }}
-                >
-                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 tracking-tight">
-                        Loved by brands <br className="sm:hidden" />
-                        <span className="relative">
-                            <span className="relative z-10 bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">
-                                big and small
-                            </span>
-                            {/* Decorative curve line */}
-                            <svg
-                                className="absolute -bottom-2 left-0 w-full h-4 text-blue-200/50"
-                                viewBox="0 0 200 20"
-                                fill="currentColor"
-                            >
-                                <path
-                                    d="M0,10 C50,-5 150,25 200,10"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    fill="none"
-                                />
-                            </svg>
-                        </span>
-                    </h2>
-                    <p className="mt-4 text-base md:text-lg text-gray-500 max-w-2xl mx-auto">
-                        From startups to enterprises, our clients consistently achieve top rankings and measurable growth.
-                    </p>
-                </motion.div>
-            </div>
+  return (
+    <section className="relative pt-2 pb-12 md:pb-16 overflow-hidden bg-cream">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-8">
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="flex flex-col items-center gap-4 sm:flex-row sm:justify-between"
+        >
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-muted">
+            Trusted by <span className="text-heading">500+ companies</span> worldwide
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-6 text-center sm:gap-8">
+            {[
+              { v: '14+', l: 'Years' },
+              { v: '500+', l: 'Clients' },
+              { v: '4.9*', l: 'Rating' },
+              { v: '6', l: 'Continents' },
+            ].map((s) => (
+              <div key={s.l}>
+                <p className="font-mono text-lg font-bold text-heading">{s.v}</p>
+                <p className="text-[10px] uppercase tracking-wider text-muted">{s.l}</p>
+              </div>
+            ))}
+          </div>
+        </motion.div>
+      </div>
 
-            <div className="relative w-full">
-                {/* Edge Gradient Fades - Enhanced */}
-                <div className="pointer-events-none absolute inset-y-0 left-0 w-32 md:w-48 z-10 bg-gradient-to-r from-gray-50/80 via-white/60 to-transparent" />
-                <div className="pointer-events-none absolute inset-y-0 right-0 w-32 md:w-48 z-10 bg-gradient-to-l from-gray-50/80 via-white/60 to-transparent" />
+      <div className="relative w-full">
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-24 md:w-40 z-10 bg-gradient-to-r from-background to-transparent" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-24 md:w-40 z-10 bg-gradient-to-l from-background to-transparent" />
 
-                <div className="marquee-container">
-                    <div className="marquee-track gap-8">
-                        {allLogos.map((logo, index) => (
-                            <div
-                                key={`logo-${index}`}
-                                className="flex-shrink-0 flex items-center justify-center rounded-2xl bg-white border border-gray-100 shadow-sm hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-400 hover:-translate-y-1"
-                                style={{ width: '220px', height: '110px' }}
-                            >
-                                <div className="relative w-4/5 h-4/5 transition-all duration-300">
-                                    <Image
-                                        src={logo.src}
-                                        alt={logo.alt}
-                                        fill
-                                        className="object-contain opacity-70 hover:opacity-100 transition-all duration-300"
-                                        sizes="220px"
-                                    />
-                                </div>
-                            </div>
-                        ))}
-                    </div>
+        <div className="marquee-container">
+          <div className="marquee-track gap-6">
+            {allLogos.map((logo, index) => (
+              <div
+                key={`logo-${index}`}
+                className="flex-shrink-0 flex items-center justify-center rounded-xl border border-border bg-surface/80 px-8 py-5 transition-all duration-300 hover:-translate-y-1 hover:border-secondary/25 hover:shadow-md"
+                style={{ width: '200px', height: '96px' }}
+              >
+                <div className="relative h-12 w-36">
+                  <Image
+                    src={logo.src}
+                    alt={logo.alt}
+                    fill
+                    className="object-contain opacity-60 grayscale transition-all duration-300 hover:opacity-100 hover:grayscale-0"
+                    sizes="144px"
+                  />
                 </div>
-
-                {/* Decorative dots pattern */}
-                <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-blue-300/40"></div>
-                    <div className="w-1.5 h-1.5 rounded-full bg-blue-400/40"></div>
-                    <div className="w-1.5 h-1.5 rounded-full bg-blue-500/40"></div>
-                    <div className="w-1.5 h-1.5 rounded-full bg-blue-400/40"></div>
-                    <div className="w-1.5 h-1.5 rounded-full bg-blue-300/40"></div>
-                </div>
-            </div>
-
-            <style jsx>{`
-                .marquee-container {
-                    overflow: hidden;
-                    width: 100%;
-                    padding: 20px 0;
-                }
-                .marquee-track {
-                    display: flex;
-                    width: max-content;
-                    animation: marquee-scroll 30s linear infinite;
-                }
-                .marquee-container:hover .marquee-track {
-                    animation-play-state: paused;
-                }
-                @keyframes marquee-scroll {
-                    0% {
-                        transform: translateX(0);
-                    }
-                    100% {
-                        transform: translateX(-33.33%);
-                    }
-                }
-            `}</style>
-        </section>
-    )
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  )
 }
 
 export default TrustedBy

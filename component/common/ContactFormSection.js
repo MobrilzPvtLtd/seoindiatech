@@ -93,7 +93,7 @@ export default function ContactFormSection({ title, description, industries }) {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 bg-white dark:bg-gray-800 rounded-3xl p-6 sm:p-10 border border-gray-200 dark:border-gray-700 shadow-2xl dark:shadow-blue-900/20">
-          {/* Left Side — Info */}
+          {/* Left Side - Info */}
           <div className="flex flex-col justify-between border border-gray-200 dark:border-gray-700 rounded-2xl p-6 sm:p-8 bg-white dark:bg-gray-800">
             <div>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 text-center md:text-left">
@@ -119,7 +119,7 @@ export default function ContactFormSection({ title, description, industries }) {
                         {item.title}
                       </span>{' '}
                       <span className="text-gray-600 dark:text-gray-300">
-                        – {item.desc}
+                        - {item.desc}
                       </span>
                     </div>
                   </div>
@@ -128,7 +128,7 @@ export default function ContactFormSection({ title, description, industries }) {
             </div>
           </div>
 
-          {/* Right Side — Form */}
+          {/* Right Side - Form */}
           <form
             className="bg-gray-50 dark:bg-gray-900 rounded-2xl p-6 sm:p-8 space-y-5 border border-gray-200 dark:border-gray-700 flex flex-col justify-between shadow-inner"
             action="/api/submit-form"

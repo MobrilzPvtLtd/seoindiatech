@@ -55,7 +55,7 @@ export default function SEOServicesSection() {
                 Measurable Results with Transparent Reporting
               </h3>
               <p className="text-lg text-gray-600 dark:text-gray-100 leading-relaxed">
-                With our professional services, you’re never in the dark. We
+                With our professional services, you're never in the dark. We
                 provide <strong>regular, in-depth analytics reports</strong>
                 so you can track progress across organic rankings, traffic,
                 conversions, and engagement. These insights power smarter
@@ -97,13 +97,13 @@ export default function SEOServicesSection() {
                 icon: Zap,
                 title: 'Holistic Expertise',
                 desc:
-                  'From Local SEO to Content Marketing, Digital Branding, and Google PPC — we cover it all.',
+                  'From Local SEO to Content Marketing, Digital Branding, and Google PPC - we cover it all.',
               },
               {
                 icon: FileText,
                 title: 'Full Transparency',
                 desc:
-                  'Regular performance reports and actionable insights — no guesswork, ever.',
+                  'Regular performance reports and actionable insights - no guesswork, ever.',
               },
               {
                 icon: BarChart3,
@@ -138,9 +138,9 @@ export default function SEOServicesSection() {
           <p className="text-xl  mb-10 max-w-4xl mx-auto opacity-95">
             Ready to transform your online visibility? Get in touch with SEO
             India Tech for a
-            <span className="font-bold"> free consultation</span>. We’ll build a
+            <span className="font-bold"> free consultation</span>. We'll build a
             powerful, data-driven plan combining expert SEO, Local SEO, Content
-            Marketing, and PPC advertising services — tailored for your success.
+            Marketing, and PPC advertising services - tailored for your success.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">

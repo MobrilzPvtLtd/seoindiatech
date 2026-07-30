@@ -180,7 +180,7 @@ const BlogSection = () => {
                             <span className="flex items-center gap-1">
                               <Clock className="w-3 h-3" /> 4 min read
                             </span>
-                            <span>•</span>
+                            <span>-</span>
                             <span>Dec 15, 2024</span>
                           </div>
                         </div>

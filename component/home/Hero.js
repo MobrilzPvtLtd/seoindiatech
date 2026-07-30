@@ -29,9 +29,9 @@ const Hero = () => {
           <p className="text-justify text-gray-700 dark:text-gray-300 text-base md:text-lg">
             Our team focuses on providing the best digital marketing services
             that enhance your online presence, improve engagement, and increase
-            conversions—all while keeping your business goals at the center of
+            conversions-all while keeping your business goals at the center of
             every campaign. Whether you&#39;re a startup or an established
-            brand, our custom solutions help you stay competitive in today’s
+            brand, our custom solutions help you stay competitive in today's
             digital landscape.
           </p>
 
@@ -128,7 +128,7 @@ const Hero = () => {
                   Proven Results
                 </h4>
                 <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">
-                  We stay focused on performance, growth, and real outcomes—not
+                  We stay focused on performance, growth, and real outcomes-not
                   just metrics.
                 </p>
               </div>

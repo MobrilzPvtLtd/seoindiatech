@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { FaArrowUp, FaChartBar, FaTrophy, FaDollarSign } from 'react-icons/fa'
 
-/* ---------- tiny inline charts, kept minimal — no background block ---------- */
+/* ---------- tiny inline charts, kept minimal - no background block ---------- */
 
 const MiniBarChart = ({ color = '#5B4FE9' }) => {
   const bars = [40, 62, 50, 78, 58, 90, 70]

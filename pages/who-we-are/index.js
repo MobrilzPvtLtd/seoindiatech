@@ -6,7 +6,7 @@ function index() {
   return (
     <>
       <Head>
-        <title> Know us – SEOIndiatech</title>
+        <title> Know us - SEOIndiatech</title>
         <meta
           name="description"
           content="SEOIndiatech offers digital branding services in India to enhance your brand identity, online presence, and audience engagement effectively."

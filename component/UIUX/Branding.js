@@ -51,7 +51,7 @@ const Branding = () => {
           {/* Description */}
           <div className="mt-8 px-4">
             <p className="text-gray-600 dark:text-blue-50 text-lg md:text-xl max-w-4xl text-center">
-              Your design becomes more impactful when aligned with your brand’s
+              Your design becomes more impactful when aligned with your brand's
               message. Our digital branding services help create a consistent
               visual identity across all digital touchpoints.
               <br />

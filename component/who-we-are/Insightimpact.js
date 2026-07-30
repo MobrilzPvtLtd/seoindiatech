@@ -20,7 +20,7 @@ export default function Insightimpact() {
         >
           <p className="text-gray-800 dark:text-gray-300 leading-relaxed mb-6">
             At SEO India Tech, we believe that success begins with a clear path.
-            That’s why we emphasize
+            That's why we emphasize
             <a
               href="https://www.seoindiatech.com/solution/workflow"
               className="text-blue-600"
@@ -28,14 +28,14 @@ export default function Insightimpact() {
               {' '}
               workflow
             </a>{' '}
-            — designing processes that eliminate confusion, reduce delays, and
+            - designing processes that eliminate confusion, reduce delays, and
             ensure clarity across teams. A well-defined <b>workflow</b> ensures
             that every task, from research to deployment, moves fluidly and
             predictably.
           </p>
 
           <p className="text-gray-800 dark:text-gray-300 leading-relaxed mb-6">
-            But workflow alone isn’t enough. We layer <b>automation</b> on top —
+            But workflow alone isn't enough. We layer <b>automation</b> on top -
             automating routine tasks, data flows, and follow-ups so that your
             team spends time on strategy and creativity, not repetitive work.
             Through <b>automation,</b> we increase efficiency, minimize manual
@@ -50,7 +50,7 @@ export default function Insightimpact() {
             >
               market research,
             </a>{' '}
-            we gather insights about your industry, competitors, and audience —
+            we gather insights about your industry, competitors, and audience -
             ensuring decisions are data-driven, not guesswork. Market research
             helps us tailor our digital solutions so you reach the right
             customers, at the right time, with the right message.

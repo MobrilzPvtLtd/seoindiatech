@@ -36,7 +36,7 @@ export default function IndustriesWeServe() {
             <span className="font-semibold text-blue-700">
               social media marketing services company
             </span>
-            , we work with businesses across diverse sectors — helping every
+            , we work with businesses across diverse sectors - helping every
             brand stand out and grow.
           </p>
         </div>

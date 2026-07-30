@@ -41,7 +41,7 @@ const Hero = () => {
 
         {/* Subtitle */}
         <p className="text-gray-600 dark:text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed transition-colors duration-300">
-          From intuitive UI/UX design to powerful web development — we craft
+          From intuitive UI/UX design to powerful web development - we craft
           end-to-end digital solutions that engage users and drive business
           growth.
         </p>

@@ -12,6 +12,8 @@ const iconMap = {
 }
 
 export default function ServiceHero({ title, subtitle, features, image, badge }) {
+  const imageSrc = image || '/images/services/score.png'
+
   return (
     <section className="bg-gradient-to-b from-white to-blue-50 dark:from-gray-900 dark:to-blue-950/30 pt-24 md:pt-28 pb-8 md:pb-16 px-6 md:px-8 overflow-hidden relative transition-colors duration-300">
       {/* Background decorative elements */}
@@ -76,11 +78,12 @@ export default function ServiceHero({ title, subtitle, features, image, badge })
         {/* Right Image Column */}
         <div className="w-full md:w-1/2 flex justify-center">
           <Image
-            src={image}
-            alt={title}
+            src={imageSrc}
+            alt={typeof title === 'string' ? title : 'SEO services illustration'}
             width={400}
             height={400}
             className="w-full max-w-[280px] sm:max-w-[320px] md:max-w-[360px] lg:max-w-[400px] object-contain"
+            priority
           />
         </div>
       </div>

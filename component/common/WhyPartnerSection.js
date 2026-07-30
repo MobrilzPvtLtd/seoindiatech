@@ -11,7 +11,7 @@ const reasons = [
   {
     icon: Target,
     title: 'Customized Strategies',
-    desc: 'Your market, your competitors, and your audience shape the plan—not a template we run for every client. Every strategy is tailored to your business goals and long-term success.',
+    desc: 'Your market, your competitors, and your audience shape the plan-not a template we run for every client. Every strategy is tailored to your business goals and long-term success.',
   },
   {
     icon: ShieldCheck,
@@ -26,7 +26,7 @@ const reasons = [
   {
     icon: FileText,
     title: 'Full Transparency',
-    desc: "You'll always know exactly what's been done, what's coming next, and why—not just a dashboard full of numbers with no context.",
+    desc: "You\'ll always know exactly what\'s been done, what\'s coming next, and why-not just a dashboard full of numbers with no context.",
   },
   {
     icon: BarChart3,
@@ -40,7 +40,7 @@ export default function WhyPartnerSection({ title, subtitle, showCheckmarks = fa
     <section className="bg-white dark:bg-gray-900 py-20 md:py-28 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-6 md:px-8">
         <div className="flex flex-col md:flex-row gap-12 md:gap-20 items-start">
-          {/* Left Side — Heading + Text */}
+          {/* Left Side - Heading + Text */}
           <div className="w-full md:w-5/12 md:sticky md:top-28">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white leading-tight mb-6">
               {title || (
@@ -54,7 +54,7 @@ export default function WhyPartnerSection({ title, subtitle, showCheckmarks = fa
               )}
             </h2>
             <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed mb-8">
-              {subtitle || `Most SEO agencies promise rankings. We focus on what actually gets you there — a real audit of your site and competitors, a strategy built around your specific goals, and reporting that shows exactly what's working each month. No guesswork, no cookie-cutter packages, just SEO built the way it should be.`}
+              {subtitle || `Most SEO agencies promise rankings. We focus on what actually gets you there - a real audit of your site and competitors, a strategy built around your specific goals, and reporting that shows exactly what's working each month. No guesswork, no cookie-cutter packages, just SEO built the way it should be.`}
             </p>
             <Link
               href="/contact-us"
@@ -64,7 +64,7 @@ export default function WhyPartnerSection({ title, subtitle, showCheckmarks = fa
             </Link>
           </div>
 
-          {/* Right Side — Reasons List */}
+          {/* Right Side - Reasons List */}
           <div className="w-full md:w-7/12">
             <div className="space-y-6">
               {reasons.map((reason, index) => (

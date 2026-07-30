@@ -47,7 +47,7 @@ const HeroSection = () => {
             <div className="w-20 h-1 bg-blue-600 dark:bg-blue-500 rounded-full"></div>
 
             <p className="text-justify text-gray-700 dark:text-gray-300 text-base md:text-lg leading-relaxed">
-              In today’s competitive business environment, brands can no longer
+              In today's competitive business environment, brands can no longer
               rely on assumptions or guesswork to make key decisions.
               Understanding customer needs, market demand, and competitive
               landscape is the foundation of sustainable success. At{' '}

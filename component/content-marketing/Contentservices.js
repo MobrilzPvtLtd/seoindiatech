@@ -6,7 +6,7 @@ const serviceItems = [
   {
     title: "SEO-Driven Writing",
     description:
-      "Get found by the people who matter most—your potential customers.",
+      "Get found by the people who matter most-your potential customers.",
     icon: <Search className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
   },
   {
@@ -53,7 +53,7 @@ const Contentservices = () => {
         <div className="w-24 h-1.5 bg-blue-600 dark:bg-blue-500 rounded-full mx-auto mb-6"></div>
 
         <p className="max-w-6xl mx-auto text-gray-700 dark:text-gray-300 text-lg">
-          Great content goes beyond words—it builds trust, improves conversions,
+          Great content goes beyond words-it builds trust, improves conversions,
           and enhances brand recognition. Our specialized content marketing
           services ensure your brand message reaches the right audience through
           the right channels. With careful research, topic planning, keyword
@@ -75,7 +75,7 @@ const Contentservices = () => {
             </h2>
             <p className="text-justify text-gray-700 dark:text-gray-300 mb-6">
               From blogs to videos, every piece we create is backed by
-              strategy—designed to position your brand as a leader and turn
+              strategy-designed to position your brand as a leader and turn
               casual visitors into committed clients.
             </p>
           </div>

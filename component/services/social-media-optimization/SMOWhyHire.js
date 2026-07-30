@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
+import { Check } from 'lucide-react'
 
 export default function SMOWhyHire() {
   return (
@@ -128,8 +129,8 @@ export default function SMOWhyHire() {
               ].map((item, index) => (
                 <li key={index} className="flex items-start gap-4">
                   {/* CHECK ICON */}
-                  <span className="shrink-0 flex items-center justify-center w-7 h-7 md:w-9 md:h-9 rounded-full bg-gradient-to-br from-blue-600 to-purple-600 text-white text-xs md:text-sm font-semibold">
-                    ✓
+                  <span className="shrink-0 flex items-center justify-center w-7 h-7 md:w-9 md:h-9 rounded-full bg-gradient-to-br from-blue-600 to-purple-600 text-white">
+                    <Check className="w-4 h-4 md:w-5 md:h-5" aria-hidden="true" />
                   </span>
 
                   <span className="text-gray-700 dark:text-gray-300 text-sm md:text-lg leading-relaxed">

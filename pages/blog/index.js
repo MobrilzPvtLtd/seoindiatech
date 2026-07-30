@@ -6,7 +6,7 @@ function page() {
   return (
     <>
       <Head>
-        <title> Blog in India – SEOIndiatech</title>
+        <title> Blog in India - SEOIndiatech</title>
         <meta
           name="description"
           content="SEOIndiatech offers digital branding services in India to enhance your brand identity, online presence, and audience engagement effectively."

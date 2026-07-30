@@ -114,7 +114,7 @@ const Process = () => {
               <ul className='space-y-2'>
                 {card.points.map((point, i) => (
                   <li key={i} className='flex items-start gap-2 text-gray-700 dark:text-gray-300'>
-                    <span className="text-blue-600 dark:text-blue-400 font-bold text-lg leading-tight">•</span>
+                    <span className="text-blue-600 dark:text-blue-400 font-bold text-lg leading-tight">-</span>
                     <span>{point}</span>
                   </li>
                 ))}
@@ -145,7 +145,7 @@ const Process = () => {
               {/* <ul className='space-y-2'>
                 {card.points.map((point, i) => (
                   <li key={i} className='flex items-start gap-2 text-gray-700 dark:text-gray-300'>
-                    <span className="text-blue-600 dark:text-blue-400 font-bold text-lg leading-tight">•</span>
+                    <span className="text-blue-600 dark:text-blue-400 font-bold text-lg leading-tight">-</span>
                     <span>{point}</span>
                   </li>
                 ))}
@@ -157,7 +157,7 @@ const Process = () => {
           {/* <div className='bg-white dark:bg-gray-800 shadow-lg rounded-xl overflow-hidden border border-gray-100 dark:border-gray-700 hover:scale-102 transition duration-300'>
             <div className="relative h-full w-full min-h-[300px]">
               <Image
-                src='/images/services/our design.png'
+                src='/images/services/our-design.png'
                 alt='UI/UX Design Process'
                 fill
                 className='object-cover'

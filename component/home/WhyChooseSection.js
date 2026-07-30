@@ -66,7 +66,7 @@ const features = [
   {
     icon: FaClipboardCheck,
     title: 'Transparent Reporting',
-    desc: 'Full visibility into every action taken — no hidden work, no guesswork.',
+    desc: 'Full visibility into every action taken - no hidden work, no guesswork.',
   },
   {
     icon: FaMoneyBillWave,

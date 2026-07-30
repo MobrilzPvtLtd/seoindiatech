@@ -3,6 +3,7 @@ import Image from 'next/image'
 export default function LocationHero({ heading, content, imageSrc }) {
   const cityMatch = heading.match(/in (.+)$/)
   const cityForAlt = cityMatch ? cityMatch[1] : 'your city'
+  const heroImage = imageSrc || '/images/seo-banner.jpg'
 
   return (
     <section className="pt-24 md:pt-28 pb-16 md:pb-20 bg-gray-50 dark:bg-gray-950 text-gray-900 dark:text-gray-100">
@@ -30,7 +31,7 @@ export default function LocationHero({ heading, content, imageSrc }) {
                 href="/contact-us"
                 className="inline-block px-6 py-3 text-sm font-semibold text-white bg-gradient-to-r from-blue-600 to-blue-800 dark:from-gray-800 dark:to-gray-900 rounded-lg transition"
               >
-                Get Your Free SEO Audit →
+                Get Your Free SEO Audit{'->'}
               </a>
             </div>
           </div>
@@ -39,7 +40,7 @@ export default function LocationHero({ heading, content, imageSrc }) {
           <div className="w-full lg:w-1/2 flex justify-center">
             <div className="relative w-full max-w-md aspect-[4/3] rounded-xl overflow-hidden shadow-md">
               <Image
-                src={imageSrc}
+                src={heroImage}
                 alt={`Professional SEO services illustration for ${cityForAlt}`}
                 fill
                 className="object-cover transition-transform duration-300 hover:scale-105"

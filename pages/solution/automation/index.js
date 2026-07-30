@@ -85,7 +85,7 @@ export default function index() {
   return (
     <>
       <Head>
-        <title>Digital Automation Services India– SEOIndiatech</title>
+        <title>Digital Automation Services India- SEOIndiatech</title>
         <meta
           name="description"
           content="SEOIndiatech offers digital automation services in India to streamline processes, boost efficiency, and enhance business productivity effectively."

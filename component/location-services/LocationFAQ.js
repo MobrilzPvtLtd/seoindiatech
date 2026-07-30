@@ -1,10 +1,11 @@
 'use client' // Required for client-side interactivity
 
 import { useState } from 'react'
-import { ChevronDown, ChevronUp } from 'lucide-react' // Optional icons – npm install lucide-react
+import { ChevronDown, ChevronUp } from 'lucide-react' // Optional icons - npm install lucide-react
 
-export default function LocationFAQ({ faqs, city }) {
+export default function LocationFAQ({ faqs, city, subject }) {
   const [openIndex, setOpenIndex] = useState(null)
+  const topic = subject || city || 'your business'
 
   const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? null : index)
@@ -15,7 +16,7 @@ export default function LocationFAQ({ faqs, city }) {
     {
       question: `How long does it take to see results from SEO in ${city}?`,
       answer:
-        'Most clients see noticeable improvements in 3–6 months, depending on competition, current site health, and keyword difficulty. We provide monthly reports so you always know the progress.',
+        'Most clients see noticeable improvements in 3-6 months, depending on competition, current site health, and keyword difficulty. We provide monthly reports so you always know the progress.',
     },
     {
       question: `Do you guarantee first-page rankings?`,
@@ -30,12 +31,12 @@ export default function LocationFAQ({ faqs, city }) {
     {
       question: `How much do your SEO packages cost?`,
       answer:
-        'Pricing starts from ₹15,000–₹45,000/month depending on scope (local, national, e-commerce, etc.). We offer a free site audit and custom proposal after discussion.',
+        'Pricing starts from ₹15,000-₹45,000/month depending on scope (local, national, e-commerce, etc.). We offer a free site audit and custom proposal after discussion.',
     },
     {
       question: `Will my website be safe during SEO work?`,
       answer:
-        'Yes – we never use black-hat tactics. All changes are tested, backed up, and reversible. Your site stays live and secure throughout the process.',
+        'Yes - we never use black-hat tactics. All changes are tested, backed up, and reversible. Your site stays live and secure throughout the process.',
     },
   ]
 
@@ -49,7 +50,7 @@ export default function LocationFAQ({ faqs, city }) {
             Frequently Asked Questions
           </h2>
           <p className="mt-4 text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Common questions about our SEO services in {city || 'your city'}
+            Common questions about our SEO services for {topic}
           </p>
         </div>
 
@@ -105,7 +106,7 @@ export default function LocationFAQ({ faqs, city }) {
             href="/contact-us"
             className="inline-flex items-center px-8 py-4 text-base font-medium text-white bg-gradient-to-r from-blue-600 to-blue-800 dark:from-gray-800 dark:to-gray-900 rounded-lg"
           >
-            Contact Us Now →
+            Contact Us Now{'->'}
           </a>
         </div>
       </div>

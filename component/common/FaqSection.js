@@ -6,27 +6,27 @@ import { ChevronDown } from 'lucide-react'
 const faqs = [
   {
     q: 'Can you guarantee first-page Google rankings?',
-    a: 'No ethical SEO agency can guarantee specific rankings—anyone who does either doesn\'t understand how search engines work or isn\'t being honest with you. What we can guarantee is a sound process: thorough audits, ethical tactics, and strategies built around what actually moves rankings for your industry and competition.',
+    a: 'No ethical SEO agency can guarantee specific rankings-anyone who does either doesn\'t understand how search engines work or isn\'t being honest with you. What we can guarantee is a sound process: thorough audits, ethical tactics, and strategies built around what actually moves rankings for your industry and competition.',
   },
   {
     q: 'How much do your SEO services cost?',
-    a: 'Cost depends on your website\'s size, industry competitiveness, and goals—a local business targeting a few service areas is a different scope than an e-commerce brand competing nationally. We\'ll give you a clear, itemized proposal after understanding your specific situation, rather than a generic flat rate that doesn\'t reflect the actual work involved.',
+    a: 'Cost depends on your website\'s size, industry competitiveness, and goals-a local business targeting a few service areas is a different scope than an e-commerce brand competing nationally. We\'ll give you a clear, itemized proposal after understanding your specific situation, rather than a generic flat rate that doesn\'t reflect the actual work involved.',
   },
   {
     q: 'Do I need to sign a long-term contract?',
-    a: 'We work on a monthly retainer model because SEO is an ongoing process, not a one-time fix—but we don\'t lock clients into rigid long-term contracts. If our work isn\'t delivering value, you should be free to walk away.',
+    a: 'We work on a monthly retainer model because SEO is an ongoing process, not a one-time fix-but we don\'t lock clients into rigid long-term contracts. If our work isn\'t delivering value, you should be free to walk away.',
   },
   {
     q: 'What happens to my rankings if I stop SEO?',
-    a: 'Unlike paid ads, organic rankings don\'t disappear the moment you stop paying — but they also don\'t stay static forever. Competitors keep optimizing, algorithms keep changing, and content ages. Rankings built through solid SEO tend to hold longer than quick-win tactics, but ongoing maintenance is what keeps them from slowly eroding.',
+    a: 'Unlike paid ads, organic rankings don\'t disappear the moment you stop paying - but they also don\'t stay static forever. Competitors keep optimizing, algorithms keep changing, and content ages. Rankings built through solid SEO tend to hold longer than quick-win tactics, but ongoing maintenance is what keeps them from slowly eroding.',
   },
   {
     q: 'Should I invest in SEO or PPC?',
-    a: 'They solve different problems. PPC gets you visibility immediately but stops the moment you stop paying. SEO takes longer to build but keeps generating traffic without ongoing ad spend. Most businesses benefit from a mix—PPC for immediate results while SEO compounds in the background.',
+    a: 'They solve different problems. PPC gets you visibility immediately but stops the moment you stop paying. SEO takes longer to build but keeps generating traffic without ongoing ad spend. Most businesses benefit from a mix-PPC for immediate results while SEO compounds in the background.',
   },
   {
     q: 'Do you work with specific industries, or is your approach one-size-fits-all?',
-    a: 'We\'ve worked across industries—from local service businesses to e-commerce and enterprise brands—but we don\'t run the same playbook for all of them. Search behavior, competition, and buying cycles differ by industry, so every strategy starts with understanding your specific market, not a template.',
+    a: 'We\'ve worked across industries-from local service businesses to e-commerce and enterprise brands-but we don\'t run the same playbook for all of them. Search behavior, competition, and buying cycles differ by industry, so every strategy starts with understanding your specific market, not a template.',
   },
 ]
 

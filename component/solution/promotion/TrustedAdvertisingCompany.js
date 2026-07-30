@@ -77,7 +77,7 @@ export default function TrustedAdvertisingCompany() {
         <div className="text-center mb-12">
           <p className="text-xl text-gray-700 dark:text-gray-200 max-w-4xl mx-auto">
             From creative ad design to platform selection and performance
-            monitoring — our team manages the{' '}
+            monitoring - our team manages the{' '}
             <strong>entire process seamlessly</strong>.
           </p>
         </div>
@@ -92,7 +92,7 @@ export default function TrustedAdvertisingCompany() {
             </h3>
 
             <p className="text-xl md:text-2xl opacity-95 leading-relaxed mb-12 max-w-4xl mx-auto">
-              Your brand is more than just a logo — it is an emotional and
+              Your brand is more than just a logo - it is an emotional and
               strategic representation of your business. Our advertising & brand
               promotion solutions help you create a{' '}
               <strong>strong identity that connects deeply</strong> with your
@@ -112,8 +112,8 @@ export default function TrustedAdvertisingCompany() {
             </div>
 
             <p className="mt-12 text-xl font-medium opacity-95">
-              Whether you’re targeting local customers or building a nationwide
-              audience — we help your business build{' '}
+              Whether you're targeting local customers or building a nationwide
+              audience - we help your business build{' '}
               <span className="text-yellow-300 font-bold">
                 credibility and influence
               </span>
@@ -125,11 +125,11 @@ export default function TrustedAdvertisingCompany() {
         {/* Final CTA */}
         <div className="text-center mt-20">
           <h4 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6">
-            Ready to Transform Your Brand’s Presence?
+            Ready to Transform Your Brand's Presence?
           </h4>
           <p className="text-xl text-gray-600 dark:text-gray-300 mb-10">
-            Let’s build advertising & promotion campaigns that don’t just get
-            seen — they get <strong>results</strong>.
+            Let's build advertising & promotion campaigns that don't just get
+            seen - they get <strong>results</strong>.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center">

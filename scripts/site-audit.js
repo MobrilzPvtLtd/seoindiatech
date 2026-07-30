@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const { execSync } = require('child_process');
 
 const root = process.cwd();
 const scanDirs = ['pages', 'component', 'public'];
@@ -116,5 +117,12 @@ const summary = {
     smallTextClassCount: textXsCount,
     smallTapCandidates: smallTapCandidates.slice(0, 30),
 };
+
+try {
+    execSync('node scripts/check-unicode.js', { stdio: 'pipe' });
+    summary.unicodeCheck = 'passed';
+} catch (error) {
+    summary.unicodeCheck = 'failed';
+}
 
 console.log(JSON.stringify(summary, null, 2));

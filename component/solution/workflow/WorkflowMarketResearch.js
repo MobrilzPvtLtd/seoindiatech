@@ -29,7 +29,7 @@ export default function WorkflowMarketResearch() {
           </h2>
           <p className="mt-6 text-xl lg:text-2xl text-gray-600 dark:text-gray-100 max-w-5xl mx-auto leading-relaxed">
             Stop making decisions in the dark. We embed automated market
-            research directly into your daily workflows — delivering competitor
+            research directly into your daily workflows - delivering competitor
             insights, customer trends, and growth opportunities exactly when
             your team needs them.
           </p>
@@ -39,7 +39,7 @@ export default function WorkflowMarketResearch() {
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
           <div>
             <p className="text-lg lg:text-xl text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
-              Strong decision-making starts with accurate insights. That’s why
+              Strong decision-making starts with accurate insights. That's why
               we enhance workflows with automated market research services that
               support strategic planning and product development. Our tools
               collect, analyze, and structure data from multiple sources, giving
@@ -95,7 +95,7 @@ export default function WorkflowMarketResearch() {
               <div className="mt-8 text-center">
                 <Activity className="w-12 h-12 text-indigo-600 mx-auto animate-pulse" />
                 <p className="text-sm text-gray-500 dark:text-gray-400 mt-2">
-                  Live Data Flow • Updated Hourly
+                  Live Data Flow - Updated Hourly
                 </p>
               </div>
             </div>
@@ -115,7 +115,7 @@ export default function WorkflowMarketResearch() {
               icon: Zap,
               title: 'Zero Manual Research',
               desc:
-                'Automated collection & analysis — your team focuses on execution, not data hunting.',
+                'Automated collection & analysis - your team focuses on execution, not data hunting.',
             },
             {
               icon: FileSearch,

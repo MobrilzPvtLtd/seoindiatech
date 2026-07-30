@@ -113,7 +113,7 @@ export default function index() {
   return (
     <>
       <Head>
-        <title> Digital Branding Services India – SEOIndiatech</title>
+        <title> Digital Branding Services India - SEOIndiatech</title>
         <meta
           name="description"
           content="SEOIndiatech offers digital branding services in India to enhance your brand identity, online presence, and audience engagement effectively."

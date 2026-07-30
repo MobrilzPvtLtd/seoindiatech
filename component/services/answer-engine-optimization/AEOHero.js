@@ -18,7 +18,7 @@ export default function AEOHero() {
           </p>
           <p className="text-lg sm:text-xl text-gray-700 dark:text-gray-300 mb-4 text-justify">
             If your content only targets classic blue link rankings, you miss a
-            big part of today’s traffic. Answer engines pull short, direct
+            big part of today's traffic. Answer engines pull short, direct
             passages. They also rely on structured data and clean page signals.
             Your job is to make your site easy to understand, easy to trust, and
             easy to quote.

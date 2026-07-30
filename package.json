@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next export"
+    "export": "next export",
+    "normalize-text": "node scripts/normalize-unicode.js",
+    "check-unicode": "node scripts/check-unicode.js"
   },
   "dependencies": {
     "@netlify/next": "^1.4.9",

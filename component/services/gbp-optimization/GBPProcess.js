@@ -131,7 +131,7 @@ export default function GBPProcess() {
                 {/* Content */}
                 <p className="text-gray-600 dark:text-gray-300 text-justify leading-relaxed">
                   Clinics, salons, contractors, restaurants, and service brands
-                  benefit the most. If customers search “near me” on Maps,
+                  benefit the most. If customers search "near me" on Maps,
                   Google Business Profile SEO matters. We can also support your
                   campaigns as a top digital marketing company.
                 </p>

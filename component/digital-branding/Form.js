@@ -145,7 +145,7 @@ const Form = () => {
                   Schedule a Free Consultation
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400 text-sm">
-                  to talk about your branding vision. Let’s build a brand that
+                  to talk about your branding vision. Let's build a brand that
                   stands out and endures!
                 </p>
               </div>

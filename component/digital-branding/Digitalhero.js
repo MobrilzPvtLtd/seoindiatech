@@ -34,7 +34,7 @@ const Digitalhero = () => {
             SEO India Tech offers professional digital branding services that
             help businesses create a powerful and consistent brand presence
             across all digital channels. A strong brand identity is essential
-            for standing out in today’s competitive online landscape, and our
+            for standing out in today's competitive online landscape, and our
             expert team ensures your brand communicates trust, value, and
             uniqueness. With a strategic approach and creative execution, we
             deliver a complete digital branding solution that elevates your
@@ -46,7 +46,7 @@ const Digitalhero = () => {
             <Link href={'/'}>
               <b className="text-blue-700 dark:text-blue-400">SEO India Tech</b>
             </Link>
-            , we don't just create brands – we build digital identities that
+            , we don't just create brands - we build digital identities that
             stand out, captivate, and convert.
           </p>
 

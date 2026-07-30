@@ -59,7 +59,7 @@ export default function SmallBusinessWhatYouGet() {
             <div className="space-y-6 text-lg text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
               <p>
                 For many brands, local searches are the main source of leads.
-                People type phrases like “near me,” add a city name, or search
+                People type phrases like "near me," add a city name, or search
                 inside Google Maps. Local SEO services for small business target
                 this traffic by improving your Google Business Profile, location
                 pages, and listings across the web.
@@ -123,7 +123,7 @@ export default function SmallBusinessWhatYouGet() {
                       SEO company
                     </Link>{' '}
                     for small business should plan around your market, your
-                    website’s current state, and your monthly budget. That is
+                    website's current state, and your monthly budget. That is
                     how we run small business SEO services at SEO India Tech.
                   </p>
                   <p>

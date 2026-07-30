@@ -20,7 +20,7 @@ const steps = [
     color: 'blue',
     title: 'Workflow Planning & Structure Development',
     desc:
-      'We start by analyzing your existing operations to identify bottlenecks. Once we understand the pain points, we design a clear, optimized workflow process that aligns with your organizational goals — including task sequencing, role assignment, documentation structure, and automated triggers.',
+      'We start by analyzing your existing operations to identify bottlenecks. Once we understand the pain points, we design a clear, optimized workflow process that aligns with your organizational goals - including task sequencing, role assignment, documentation structure, and automated triggers.',
   },
   {
     number: '02',
@@ -35,8 +35,8 @@ const steps = [
         <Link href={'/solution/automation'} className="text-blue-500">
           digital automation services{' '}
         </Link>{' '}
-        — from automated notifications and approval systems to integrated data
-        tracking — reducing errors, saving time, and delivering consistent
+        - from automated notifications and approval systems to integrated data
+        tracking - reducing errors, saving time, and delivering consistent
         results with minimal effort.
       </>
     ),
@@ -47,7 +47,7 @@ const steps = [
     color: 'purple',
     title: 'Collaboration & Task Management',
     desc:
-      'Our workflow management setup enables seamless team collaboration. Employees get real-time updates, track progress instantly, assign tasks clearly, and communicate within the platform — ensuring alignment and preventing critical tasks from slipping through the cracks.',
+      'Our workflow management setup enables seamless team collaboration. Employees get real-time updates, track progress instantly, assign tasks clearly, and communicate within the platform - ensuring alignment and preventing critical tasks from slipping through the cracks.',
   },
   {
     number: '04',
@@ -180,7 +180,7 @@ export default function WorkflowAutomationSection() {
             </h3>
             <p className="text-xl opacity-95 mb-10 max-w-3xl mx-auto">
               Let us build a custom workflow system that eliminates repetitive
-              tasks and empowers your team to focus on what truly matters —
+              tasks and empowers your team to focus on what truly matters -
               growing your business.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">

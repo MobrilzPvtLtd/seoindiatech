@@ -33,7 +33,7 @@ export default function LocalBusiness() {
 
                 <p>
                   We focus on helping your business appear for searches like
-                  “near me” and location based terms. If you want people in your
+                  "near me" and location based terms. If you want people in your
                   city to pick your business over the competition, local SEO
                   service work is key.
                 </p>

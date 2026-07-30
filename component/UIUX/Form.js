@@ -138,7 +138,7 @@ const Form = () => {
                         {item.title}
                       </span>{' '}
                       <span className="text-gray-600 dark:text-gray-300">
-                        – {item.desc}
+                        - {item.desc}
                       </span>
                     </div>
                   </div>

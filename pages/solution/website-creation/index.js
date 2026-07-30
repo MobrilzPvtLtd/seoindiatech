@@ -6,7 +6,7 @@ export default function index() {
   return (
     <>
      <Head>
-            <title>Website Creation Services India– SEOIndiatech</title>
+            <title>Website Creation Services India- SEOIndiatech</title>
             <meta
               name="description"
               content="SEOIndiatech offers website creation services in India, building responsive, user-friendly, and SEO-optimized websites to enhance your online presence."

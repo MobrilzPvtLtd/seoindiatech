@@ -13,19 +13,19 @@ const benefits = [
     icon: Target,
     title: 'Tailored Social Media Solutions',
     desc:
-      'Every business is unique — our strategies are 100% customized to your brand and goals.',
+      'Every business is unique - our strategies are 100% customized to your brand and goals.',
   },
   {
     icon: Users,
     title: 'Experienced Professionals',
     desc:
-      'Our team lives and breathes social media — from trending content to platform algorithms.',
+      'Our team lives and breathes social media - from trending content to platform algorithms.',
   },
   {
     icon: RefreshCw,
     title: 'Full-Service Campaign Management',
     desc:
-      'From strategy & content creation to scheduling, engagement, and ads — we handle it all.',
+      'From strategy & content creation to scheduling, engagement, and ads - we handle it all.',
   },
   {
     icon: BarChart3,
@@ -43,7 +43,7 @@ const benefits = [
     icon: MessageSquare,
     title: 'Consistent Communication',
     desc:
-      'Weekly reports, monthly reviews, and instant updates — you’re always in the loop.',
+      'Weekly reports, monthly reviews, and instant updates - you\'re always in the loop.',
   },
 ]
 

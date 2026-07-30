@@ -1,116 +1,98 @@
-import React from 'react'
-import { FaClinicMedical, FaGraduationCap, FaHome, FaPlane, FaIndustry, FaGavel, FaUtensils, FaShoppingCart, FaCloud, FaDollarSign } from 'react-icons/fa'
+import Link from 'next/link'
 import { motion } from 'framer-motion'
+import SectionBadge from '@/component/ui/SectionBadge'
+import ScribbleText from '@/component/ui/ScribbleText'
+import { INDUSTRY_CATEGORIES, toSlug } from '@/utils/industries'
 
-const industries = [
-  { name: 'Healthcare', icon: FaClinicMedical, desc: 'Boost patient reach & visibility' },
-  { name: 'Education', icon: FaGraduationCap, desc: 'Attract more enrollments online' },
-  { name: 'Real Estate', icon: FaHome, desc: 'Generate qualified property leads' },
-  { name: 'Travel', icon: FaPlane, desc: 'Drive bookings & travel traffic' },
-  { name: 'Manufacturing', icon: FaIndustry, desc: 'Expand B2B digital presence' },
-  { name: 'Law Firms', icon: FaGavel, desc: 'Get found by potential clients' },
-  { name: 'Restaurants', icon: FaUtensils, desc: 'Increase local foot traffic' },
-  { name: 'eCommerce', icon: FaShoppingCart, desc: 'Maximize online store sales' },
-  { name: 'SaaS', icon: FaCloud, desc: 'Grow subscriptions & trials' },
-  { name: 'Finance', icon: FaDollarSign, desc: 'Build trust & attract clients' },
+const featuredSlugs = [
+  'dentist-seo',
+  'hvac-seo',
+  'realtor-seo',
+  'plumber-seo',
+  'chiropractor-seo',
+  'roofers-seo',
+  'automotive-seo',
+  'personal-injury-seo',
 ]
 
-const row1 = industries.slice(0, 5);
-const row2 = industries.slice(5, 10);
-
-const IndustryCard = ({ item }) => {
-  const Icon = item.icon;
-  return (
-    <div className="group flex items-center gap-4 bg-white/5 border border-white/10 p-5 rounded-2xl backdrop-blur-sm transition-all duration-500 hover:bg-white/10 hover:border-blue-500/50 hover:shadow-[0_0_30px_-10px_rgba(59,130,246,0.5)] w-[280px] shrink-0">
-      <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-blue-600/20 text-blue-400 text-2xl transition-transform duration-500 group-hover:scale-110 group-hover:bg-blue-600 group-hover:text-white">
-        <Icon />
-      </div>
-      <div>
-        <p className="text-sm font-bold text-white mb-1 tracking-wide">
-          {item.name}
-        </p>
-        <p className="text-xs text-slate-400 leading-relaxed">
-          {item.desc}
-        </p>
-      </div>
-    </div>
-  );
-};
+const featuredIndustries = INDUSTRY_CATEGORIES.flatMap((c) => c.items)
+  .filter((item) => featuredSlugs.includes(toSlug(item)))
+  .map((name) => ({ name, slug: toSlug(name) }))
 
 const Industries = () => {
   return (
-    <section className="bg-[#0E0F16] py-15 md:py-20 overflow-hidden relative">
-
-      {/* 1. Background Grid Decoration (Subtle Lines) */}
-      <div className="pointer-events-none absolute inset-0 opacity-[0.05]"
-        style={{ backgroundImage: 'linear-gradient(to right, #fff 1px, transparent 1px)', backgroundSize: '64px 100%' }}
-      />
-
-      {/* 2. Header */}
-      <motion.div
-        initial={{ y: 50, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 1, ease: 'easeOut' }}
-        viewport={{ once: true, amount: 0.1 }}
-        className="relative z-10 max-w-7xl mx-auto px-4 text-center mb-16"
-      >
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white tracking-tight leading-tight">
-          Industries <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400 dark:from-blue-400 dark:to-blue-300">We Serve</span>
-        </h2>
-        <p className="mt-6 text-slate-400 max-w-2xl mx-auto text-lg">
-          We combine data-driven SEO with deep industry knowledge to deliver
-          high-performance results across specialized sectors.
-        </p>
-      </motion.div>
-
-      {/* 3. Scrolling Marquee (Two Rows moving in opposite directions) */}
-      <div className="relative z-10 flex flex-col gap-6">
-
-        {/* Row 1: Moving Right */}
-        <div className="flex overflow-hidden">
-          <div className="flex gap-6 animate-marquee">
-            {[...row1, ...row1, ...row1].map((item, i) => (
-              <IndustryCard key={i} item={item} />
-            ))}
+    <section className="section-padding bg-white dark:bg-card relative overflow-hidden">
+      <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <div className="flex justify-center">
+            <SectionBadge>Sectors We Perform</SectionBadge>
           </div>
-        </div>
 
-        {/* Row 2: Moving Left */}
-        <div className="flex overflow-hidden">
-          <div className="flex gap-6 animate-marquee-reverse">
-            {[...row2, ...row2, ...row2].map((item, i) => (
-              <IndustryCard key={i} item={item} />
-            ))}
-          </div>
-        </div>
+          <h2 className="mt-6 font-heading text-3xl font-extrabold tracking-tight text-heading sm:text-4xl md:text-[2.75rem] md:leading-[1.12]">
+            Industries We Have{' '}
+            <ScribbleText className="text-primary" scribbleColor="#6B2E88">
+              Served
+            </ScribbleText>{' '}
+            With AI-Powered Services!
+          </h2>
 
+          <p className="mt-5 text-base md:text-lg leading-relaxed text-muted max-w-2xl mx-auto">
+            Specialized SEO for healthcare, home services, food &amp; health, and professional sectors -
+            41 industry programs with local SEO, AI visibility, and lead-focused content.
+          </p>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.15, duration: 0.55 }}
+          className="mt-10 md:mt-12 flex flex-wrap justify-center gap-3 md:gap-4"
+        >
+          {featuredIndustries.map((item, i) => (
+            <motion.div
+              key={item.slug}
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.05 }}
+            >
+              <Link
+                href={`/industries/${item.slug}`}
+                className="inline-flex items-center rounded-full border border-border bg-cream dark:bg-secondary/50 px-5 py-2.5 text-sm font-semibold text-heading hover:border-primary/30 hover:bg-primary/5 transition-colors duration-300"
+              >
+                {item.name.replace(/\s+SEO$/i, '')}
+              </Link>
+            </motion.div>
+          ))}
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.3 }}
+          className="mt-10 md:mt-12 flex flex-wrap justify-center gap-3"
+        >
+          <Link
+            href="/industries"
+            className="inline-flex items-center justify-center rounded-full bg-primary hover:bg-primary-hover px-10 py-4 text-sm font-bold text-white shadow-glow-brand transition-all hover:-translate-y-0.5"
+          >
+            Browse All Industries
+          </Link>
+          <Link
+            href="/contact-us"
+            className="inline-flex items-center justify-center rounded-full border border-border bg-white dark:bg-secondary/50 px-10 py-4 text-sm font-bold text-heading hover:border-primary/30 transition-all hover:-translate-y-0.5"
+          >
+            Get Free Audit
+          </Link>
+        </motion.div>
       </div>
-
-      {/* 4. Side Gradient Fades (Makes the scroll smooth) */}
-      <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-slate-950 to-transparent z-20 pointer-events-none" />
-      <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-slate-950 to-transparent z-20 pointer-events-none" />
-
-      <style jsx>{`
-        @keyframes marquee {
-          0% { transform: translateX(0); }
-          100% { transform: translateX(-33.33%); }
-        }
-        @keyframes marquee-reverse {
-          0% { transform: translateX(-33.33%); }
-          100% { transform: translateX(0); }
-        }
-        .animate-marquee {
-          animation: marquee 30s linear infinite;
-        }
-        .animate-marquee-reverse {
-          animation: marquee-reverse 30s linear infinite;
-        }
-        /* Pause scroll on hover so users can read the card */
-        .animate-marquee:hover,
-        .animate-marquee-reverse:hover {
-          animation-play-state: paused;
-        }
-      `}</style>
     </section>
   )
 }

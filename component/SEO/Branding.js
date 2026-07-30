@@ -46,7 +46,7 @@ const Branding = () => {
           {/* Description */}
           <div className="flex justify-center px-4 pt-8">
             <p className="text-gray-700 dark:text-gray-300 text-lg md:text-xl mb-6 max-w-4xl text-center">
-              SEO doesn’t work in isolation. That’s why SEO India Tech offers{" "}
+              SEO doesn't work in isolation. That's why SEO India Tech offers{" "}
               <Link
                 className="text-blue-600"
                 href={"/services/content-marketing"}
@@ -56,7 +56,7 @@ const Branding = () => {
               </Link>{" "}
               and digital branding services that complement your SEO strategy.
               Our skilled writers create blog posts, articles, infographics, and
-              more — all optimized to rank and convert. By marrying SEO with
+              more - all optimized to rank and convert. By marrying SEO with
               strong branding, we help you build trust, authority, and a loyal
               audience.
             </p>

@@ -20,7 +20,7 @@ export default function LocalAndEcommerceSEO() {
           </h2>
           <p className="mt-5 text-xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto">
             Whether you're a local business wanting to dominate your
-            neighborhood or an online store focused on sales — we have tailored
+            neighborhood or an online store focused on sales - we have tailored
             SEO strategies built exactly for your goals.
           </p>
         </div>
@@ -52,7 +52,7 @@ export default function LocalAndEcommerceSEO() {
               {[
                 'Rank #1 in the Google Map Pack (Local 3-Pack)',
                 'Get more phone calls, directions & foot traffic',
-                'Dominate “near me” and location-based searches',
+                'Dominate "near me" and location-based searches',
                 'Build trust with reviews & optimized GBP posts',
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-3">

@@ -87,7 +87,7 @@ const Form = () => {
     {
       title: 'Customized Strategies',
       description:
-        'We craft strategies unique to your business, audience, and objectives—no cookie-cutter approaches.',
+        'We craft strategies unique to your business, audience, and objectives-no cookie-cutter approaches.',
       icon: (
         <CheckCircle className="w-5 h-5 text-blue-600 dark:text-blue-400" />
       ),

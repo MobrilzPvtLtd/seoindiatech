@@ -13,7 +13,7 @@ const reasons = [
   },
   {
     title: 'End-to-End Solutions',
-    desc: 'From concept and design to development, testing, and launch — we handle everything under one roof.',
+    desc: 'From concept and design to development, testing, and launch - we handle everything under one roof.',
   },
   {
     title: 'Fast & Performant',
@@ -34,7 +34,7 @@ const WhyChooseUs = () => {
     <section className="bg-white dark:bg-gray-900 py-20 md:py-28">
       <div className="max-w-7xl mx-auto px-6 md:px-8">
         <div className="flex flex-col md:flex-row gap-12 md:gap-20 items-start">
-          {/* Left Side — Heading + Text */}
+          {/* Left Side - Heading + Text */}
           <div className="w-full md:w-5/12 md:sticky md:top-28">
             <span className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 dark:bg-blue-950/60 border border-blue-100 dark:border-blue-800/30 rounded-full text-sm font-medium text-blue-600 dark:text-blue-400 mb-6">
               Why Us
@@ -59,7 +59,7 @@ const WhyChooseUs = () => {
             </Link>
           </div>
 
-          {/* Right Side — Reasons List */}
+          {/* Right Side - Reasons List */}
           <div className="w-full md:w-7/12">
             <div className="space-y-6">
               {reasons.map((reason, index) => (

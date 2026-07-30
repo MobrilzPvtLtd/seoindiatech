@@ -72,7 +72,7 @@ const Solutions = () => {
           <div className="w-full md:w-1/2 md:order-2 order-1">
             <div className="relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300">
               <Image
-                src="/images/digital branding.png"
+                src="/images/digital-branding-banner.png"
                 alt="Digital Branding Solutions"
                 width={800}
                 height={600}
@@ -89,7 +89,7 @@ const Solutions = () => {
               </h3>
               <p className="text-justify text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
                 SEO India Tech excels at mastering the digital realm to drive
-                engagement, boost conversions, and secure your brand’s
+                engagement, boost conversions, and secure your brand's
                 prominence. Trust our expert branding strategies to elevate your
                 brand to new peaks.
               </p>

@@ -32,7 +32,7 @@ const DigitalAutomation = () => {
       icon: <Clipboard className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
       title: "CRM Management Tool Integration",
       description:
-        "A powerful customer relationship strategy begins with the right tools. That’s why we integrate and optimize your crm management tool to enhance customer tracking, communication, and service delivery. Our automation ensures your CRM captures essential information, updates customer profiles, and distributes tasks seamlessly — boosting your team’s efficiency.",
+        "A powerful customer relationship strategy begins with the right tools. That's why we integrate and optimize your crm management tool to enhance customer tracking, communication, and service delivery. Our automation ensures your CRM captures essential information, updates customer profiles, and distributes tasks seamlessly - boosting your team's efficiency.",
     },
     {
       icon: (

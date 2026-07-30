@@ -18,7 +18,7 @@ export default function PackageHero() {
           >
             Home
           </Link>
-          <span>›</span>
+          <span>{'>'}</span>
           <span className="font-medium">SEO Packages</span>
         </div>
 

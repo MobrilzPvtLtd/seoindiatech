@@ -81,7 +81,7 @@ export default function Index() {
             acceptedAnswer: {
               '@type': 'Answer',
               text:
-                'The timeline for completing a website project can vary depending on its size, complexity, and specific features required. However, for a standard business website with common functionalities and a clean design, it typically takes 3 to 8 weeks from start to finish. This includes phases like discovery, planning, design, development, testing, and launch. Larger or more complex websites—such as e-commerce stores or custom portals—may take longer. We also accommodate urgent timelines where possible, without compromising on quality. Regular updates and approvals are shared throughout the process to keep you involved every step of the way.',
+                'The timeline for completing a website project can vary depending on its size, complexity, and specific features required. However, for a standard business website with common functionalities and a clean design, it typically takes 3 to 8 weeks from start to finish. This includes phases like discovery, planning, design, development, testing, and launch. Larger or more complex websites-such as e-commerce stores or custom portals-may take longer. We also accommodate urgent timelines where possible, without compromising on quality. Regular updates and approvals are shared throughout the process to keep you involved every step of the way.',
             },
           },
 
@@ -132,7 +132,7 @@ export default function Index() {
   return (
     <>
       <Head>
-        <title>Social Media Marketing Services India – SEOIndiatech</title>
+        <title>Social Media Marketing Services India - SEOIndiatech</title>
         <meta
           name="description"
           content="SEOIndiatech offers expert social media marketing services in India to grow your brand, engage audiences, and boost online visibility effectively."

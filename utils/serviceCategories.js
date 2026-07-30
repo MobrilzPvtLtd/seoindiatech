@@ -35,7 +35,7 @@ export const serviceCategories = {
         title: 'AI SEO',
         slug: '/services/ai-seo',
         icon: FaRobot,
-        description: 'Search is shifting from ranked links to AI-generated answers—our AI SEO optimization work keeps your content visible through that change, not left behind.',
+        description: 'Search is shifting from ranked links to AI-generated answers-our AI SEO optimization work keeps your content visible through that change, not left behind.',
         features: [
           'AI Search Content Structuring',
           'Entity & Topical Authority Building',

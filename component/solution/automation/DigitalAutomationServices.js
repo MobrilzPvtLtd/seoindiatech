@@ -93,7 +93,7 @@ export default function DigitalAutomationServices() {
           </h4>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-10 leading-relaxed">
             Build a brand that stands out. Our <strong>digital branding solutions</strong> give your business the identity, voice, and influence it needs 
-            to dominate the digital world — backed by intelligent automation and data-driven strategy.
+            to dominate the digital world - backed by intelligent automation and data-driven strategy.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center">

@@ -80,7 +80,7 @@ export default function index() {
   return (
     <>
       <Head>
-        <title>Workflow Process Services India– SEOIndiatech</title>
+        <title>Workflow Process Services India- SEOIndiatech</title>
         <meta
           name="description"
           content="SEOIndiatech offers workflow process services in India to optimize operations, improve efficiency, and streamline business tasks for better productivity."

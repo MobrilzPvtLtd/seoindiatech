@@ -103,7 +103,7 @@ export default function HeroSection() {
               </h1>
 
               <p className="text-justify text-xl text-gray-700 dark:text-gray-300 leading-relaxed max-w-xl">
-                In today’s competitive digital economy, businesses must operate
+                In today's competitive digital economy, businesses must operate
                 faster, smarter, and more efficiently to stay ahead. At{" "}
                 <Link className="text-blue-600" href="/">
                   {" "}
@@ -117,7 +117,7 @@ export default function HeroSection() {
                 organizational needs.
               </p>
               <p className="text-justify text-xl text-gray-700 dark:text-gray-300 leading-relaxed max-w-xl">
-                Automation is no longer a luxury — it is a necessity. Modern
+                Automation is no longer a luxury - it is a necessity. Modern
                 companies require intelligent systems that reduce manual work,
                 eliminate operational errors, and create room for innovation.
                 Our automation solutions empower your business to reduce costs,

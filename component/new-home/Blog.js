@@ -1,128 +1,83 @@
-import React, { useRef, useState } from 'react'
 import Link from 'next/link'
-import { ArrowRight } from 'lucide-react'
+import Image from 'next/image'
+import { motion } from 'framer-motion'
 import posts from '@/utils/BlogPost'
+import ScribbleText from '@/component/ui/ScribbleText'
 
-const WALL_SIZE = 15
-const wallPosts = Array.from({ length: WALL_SIZE }, (_, i) => ({
-    ...posts[i % posts.length],
-    _key: i,
-    offset: i % 3 === 0 ? 'mt-0' : i % 3 === 1 ? 'mt-12' : 'mt-24',
-}))
+const latestPosts = posts.slice(0, 2)
+
+function formatDate() {
+  return new Date().toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  })
+}
+
+function BlogCard({ post, index }) {
+  return (
+    <motion.article
+      initial={{ opacity: 0, y: 28 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ delay: index * 0.12, duration: 0.55 }}
+    >
+      <Link href={`/blog/${post.slug}`} className="group block">
+        <div className="relative aspect-[16/10] rounded-3xl overflow-hidden shadow-premium mb-5">
+          <Image
+            src={post.image || '/images/home/logo1.png'}
+            alt={post.title}
+            fill
+            className="object-cover transition-transform duration-500 group-hover:scale-105"
+            sizes="(max-width: 768px) 100vw, 50vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+        </div>
+        <time className="text-sm text-muted">{formatDate()}</time>
+        <h3 className="mt-2 text-lg md:text-xl font-bold text-heading leading-snug group-hover:text-primary transition-colors">
+          {post.title}
+        </h3>
+        <p className="mt-3 text-sm md:text-base leading-relaxed text-muted line-clamp-3">
+          {post.desc}
+        </p>
+      </Link>
+    </motion.article>
+  )
+}
 
 const Blog = () => {
-    const sectionRef = useRef(null)
-    const [touching, setTouching] = useState(false)
-    const startX = useRef(0)
+  return (
+    <section className="section-padding bg-cream relative overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center max-w-3xl mx-auto mb-10 md:mb-14"
+        >
+          <h2 className="font-heading text-3xl font-extrabold tracking-tight text-heading sm:text-4xl md:text-[2.75rem]">
+            Our{' '}
+            <ScribbleText className="text-primary italic" scribbleColor="#6B2E88">
+              Latest
+            </ScribbleText>{' '}
+            Blogs
+          </h2>
+          <Link
+            href="/blog"
+            className="mt-8 inline-flex items-center justify-center rounded-full bg-primary hover:bg-primary-hover px-10 py-4 text-sm font-bold text-white shadow-glow-brand transition-all hover:-translate-y-0.5"
+          >
+            View All
+          </Link>
+        </motion.div>
 
-    const handleTouchStart = (e) => {
-        setTouching(true)
-        startX.current = e.touches[0].clientX
-        if (sectionRef.current) {
-            const track = sectionRef.current.querySelector('.animate-marquee')
-            if (track) track.style.animationPlayState = 'paused'
-        }
-    }
-
-    const handleTouchMove = (e) => {
-        if (!touching || !sectionRef.current) return
-        const track = sectionRef.current.querySelector('.animate-marquee')
-        if (!track) return
-        const diff = startX.current - e.touches[0].clientX
-        const currentTransform = getComputedStyle(track).transform
-        let currentX = 0
-        if (currentTransform !== 'none') {
-            const matrix = new DOMMatrix(currentTransform)
-            currentX = matrix.m41
-        }
-        track.style.transform = `translateX(${currentX - diff}px)`
-        startX.current = e.touches[0].clientX
-    }
-
-    const handleTouchEnd = () => {
-        setTouching(false)
-        if (sectionRef.current) {
-            const track = sectionRef.current.querySelector('.animate-marquee')
-            if (track) {
-                track.style.transform = ''
-                track.style.animationPlayState = 'running'
-            }
-        }
-    }
-
-    return (
-        <section ref={sectionRef} className="relative py-15 md:py-20 bg-white overflow-x-hidden overflow-y-visible flex flex-col items-center">
-
-            <div className="absolute inset-0 pointer-events-none opacity-[0.03]"
-            />
-
-            {/* Card Marquee Wall */}
-            <div className="w-full relative z-10 overflow-hidden">
-                <div
-                    onTouchStart={handleTouchStart}
-                    onTouchMove={handleTouchMove}
-                    onTouchEnd={handleTouchEnd}
-                    className="flex gap-10 animate-marquee"
-                >
-                    {[...wallPosts, ...wallPosts].map((post, i) => (
-                        <Link
-                            href={`/blog/${post.slug}`}
-                            key={`${post._key}-${i}`}
-                            className={`relative w-[220px] sm:w-[250px] h-[300px] sm:h-[350px] shrink-0 rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:-rotate-3 hover:scale-110 hover:z-30 group cursor-pointer ${post.offset}`}
-                        >
-                            <img
-                                src={post.image || "https://randomuser.me/api/portraits/men/1.jpg"}
-                                alt={post.title}
-                                className="w-full h-full object-cover pointer-events-none"
-                                draggable={false}
-                            />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-                            <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-5">
-                                <h3 className="text-white text-xs sm:text-sm font-semibold leading-tight line-clamp-2 drop-shadow-lg">{post.title}</h3>
-                                <span className="text-blue-300 text-[10px] sm:text-xs mt-1 inline-block">{post.category}</span>
-                            </div>
-                        </Link>
-                    ))}
-                </div>
-            </div>
-
-            {/* Centered Content Below the Wall */}
-            <div className="relative z-20 flex flex-col items-center text-center px-6 mt-8">
-
-                <div className="relative">
-                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight leading-[1.1]">
-                        <span className="text-slate-900 block">Latest news</span>
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400 dark:from-blue-400 dark:to-blue-300">&amp; insights that matter</span>
-                    </h2>
-
-                    <p className="mt-6 max-w-lg mx-auto text-slate-600 text-base md:text-lg font-medium leading-relaxed">
-                        Stay updated with the strategies, trends, and stories shaping SEO today.
-                    </p>
-
-                    <Link
-                        href="/blog"
-                        className="mt-8 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-400 dark:to-blue-300 text-white px-8 py-4 text-sm font-semibold hover:bg-slate-800 transition-all hover:gap-4 shadow-lg shadow-slate-900/20"
-                    >
-                        View all articles
-                        <ArrowRight className="w-4 h-4" />
-                    </Link>
-                </div>
-            </div>
-
-            <style jsx>{`
-        @keyframes marquee {
-          0% { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
-        }
-        .animate-marquee {
-          animation: marquee 20s linear infinite;
-        }
-        .animate-marquee:hover {
-          animation-play-state: paused;
-        }
-      `}</style>
-        </section>
-    )
+        <div className="grid gap-10 md:grid-cols-2 md:gap-12">
+          {latestPosts.map((post, i) => (
+            <BlogCard key={post.slug} post={post} index={i} />
+          ))}
+        </div>
+      </div>
+    </section>
+  )
 }
 
 export default Blog

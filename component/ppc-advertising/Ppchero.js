@@ -72,7 +72,7 @@ const Ppchero = () => {
         {/* Subheading Paragraph */}
         <p className="text-gray-700 text-justify dark:text-gray-300 text-lg md:text-xl mb-10 max-w-4xl mx-auto">
           
-          In today’s fast-paced digital world, businesses cannot rely solely on
+          In today's fast-paced digital world, businesses cannot rely solely on
           organic methods to grow. Paid campaigns have become essential to reach
           the right audience instantly. At{" "}
           <Link href={"/"} className="text-blue-600">
@@ -81,7 +81,7 @@ const Ppchero = () => {
           we provide powerful and performance-oriented PPC advertising services
           that help your business achieve immediate visibility, higher
           conversions, and maximum ROI. As a leading PPC advertising company,
-          our goal is simple — to ensure your brand reaches the right customers
+          our goal is simple - to ensure your brand reaches the right customers
           at the right time through strategic pay per click advertising.
         </p>
 

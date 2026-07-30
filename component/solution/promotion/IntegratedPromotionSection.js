@@ -61,7 +61,7 @@ export default function IntegratedPromotionSection() {
           </h3>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed">
             Promotions and advertisements become significantly more effective
-            when paired with strong search engine visibility. That’s why we
+            when paired with strong search engine visibility. That's why we
             integrate <strong>professional SEO services</strong> into your
             promotional strategy to ensure your brand ranks higher, reaches the
             right audience, and maintains long-term visibility.
@@ -86,7 +86,7 @@ export default function IntegratedPromotionSection() {
             <span className="text-blue-600">
               immediate and long-term results
             </span>{' '}
-            — higher visibility, stronger traffic, and improved conversions.
+            - higher visibility, stronger traffic, and improved conversions.
           </p>
         </div>
 
@@ -122,7 +122,7 @@ export default function IntegratedPromotionSection() {
             </ul>
             <div className="mt-10 p-6 bg-white/20 backdrop-blur rounded-2xl">
               <p className="text-lg font-semibold text-black dark:text-white">
-                Attract high-intent customers • Boost ROI • Scale fast
+                Attract high-intent customers - Boost ROI - Scale fast
               </p>
             </div>
           </div>
@@ -132,7 +132,7 @@ export default function IntegratedPromotionSection() {
             <p className="text-xl text-gray-700 dark:text-gray-200 leading-relaxed">
               PPC allows your business to gain <strong>fast traction</strong>,
               appear at the exact moment customers search, and drive qualified
-              leads instantly. Combined with targeted promotional campaigns —{' '}
+              leads instantly. Combined with targeted promotional campaigns -{' '}
               <span className="font-bold text-blue-600">
                 your growth accelerates
               </span>
@@ -148,7 +148,7 @@ export default function IntegratedPromotionSection() {
             Integrated Promotion Strategy for Maximum Results
           </h4>
           <p className="text-xl max-w-4xl mx-auto leading-relaxed opacity-95">
-            At <strong>SEO India Tech</strong>, we don’t do isolated campaigns.
+            At <strong>SEO India Tech</strong>, we don't do isolated campaigns.
             We blend advertisement, SEO, PPC, and brand promotion into one
             unified, high-performance strategy.
           </p>
@@ -189,8 +189,8 @@ export default function IntegratedPromotionSection() {
           <div className="bg-gradient-to-br from-gray-900 to-gray-700 rounded-3xl p-12 text-white shadow-2xl">
             <MessageSquare className="w-16 h-16 mb-6" />
             <blockquote className="text-2xl font-bold italic">
-              “We work closely with your team to understand your objectives and
-              build promotional solutions that bring real, measurable results.”
+              "We work closely with your team to understand your objectives and
+              build promotional solutions that bring real, measurable results."
             </blockquote>
           </div>
         </div>
@@ -201,8 +201,8 @@ export default function IntegratedPromotionSection() {
             Grow Your Business with Strategic Promotion & Ads
           </h5>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-10">
-            If you’re ready to elevate your brand, dominate search results, and
-            accelerate growth —
+            If you're ready to elevate your brand, dominate search results, and
+            accelerate growth -
             <strong className="text-blue-600"> SEO India Tech</strong> is your
             trusted partner.
           </p>

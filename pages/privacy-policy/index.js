@@ -3,12 +3,13 @@
 import React from 'react';
 import Link from 'next/link';
 import Head from 'next/head';
+import { Check } from 'lucide-react';
 
 export default function PrivacyPolicy() {
   return (
     <>
          <Head>
-        <title>Privacy Policy – SEOIndiatech</title>
+        <title>Privacy Policy - SEOIndiatech</title>
         <meta
           name="description"
           content="SEOIndiatech offers digital branding services in India to enhance your brand identity, online presence, and audience engagement effectively."
@@ -96,7 +97,7 @@ export default function PrivacyPolicy() {
                   </h2>
                   <ul className="space-y-4">
                     <li className="flex items-start">
-                      <span className="text-green-500 mr-2 mt-1">✓</span>
+                      <Check className="text-green-500 mr-2 mt-1 w-4 h-4 shrink-0" aria-hidden="true" />
                       <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                         <strong className="text-blue-700 dark:text-blue-300">SEO India Tech</strong> makes every effort to ensure that the information provided on the website is accurate and true 
                         but does not guarantee the same. <strong className="text-blue-700 dark:text-blue-300">SEO India Tech</strong> holds all the rights to upload any information on the website 
@@ -104,7 +105,7 @@ export default function PrivacyPolicy() {
                       </p>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-green-500 mr-2 mt-1">✓</span>
+                      <Check className="text-green-500 mr-2 mt-1 w-4 h-4 shrink-0" aria-hidden="true" />
                       <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                         At no point of time does <strong className="text-blue-700 dark:text-blue-300">SEO India Tech</strong> should be held responsible for any inaccuracies or incoherence that 
                         might appear on the website. <strong className="text-blue-700 dark:text-blue-300">SEO India Tech</strong> would make any changes to the website at its own discretion and 
@@ -112,7 +113,7 @@ export default function PrivacyPolicy() {
                       </p>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-green-500 mr-2 mt-1">✓</span>
+                      <Check className="text-green-500 mr-2 mt-1 w-4 h-4 shrink-0" aria-hidden="true" />
                       <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                         At no point of time does the information on the website is intended to coerce or spur the visitor to avail the products 
                         and services offered by SEO India Tech.

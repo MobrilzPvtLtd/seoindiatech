@@ -20,7 +20,7 @@ const Ideas = () => {
               <span>Innovative Solutions</span>
             </div>
             <h1 className="text-gray-900 dark:text-gray-100 text-5xl  font-bold leading-tight">
-              UI/UX Design Services – Create Engaging Digital Experiences 
+              UI/UX Design Services - Create Engaging Digital Experiences 
              
             </h1>
             <div className="mt-6 hidden md:block">
@@ -48,7 +48,7 @@ const Ideas = () => {
             <p className="text-justify text-gray-700 dark:text-gray-300 text-lg mb-6">
               As a trusted ui/ux design services company, we understand how user
               behavior, visual structure, and seamless interaction shape overall
-              digital success. Whether you’re building a new product or
+              digital success. Whether you're building a new product or
               revamping an existing platform, our design solutions ensure
               clarity, consistency, and high-value user engagement.
             </p>

@@ -12,7 +12,7 @@ export default function OurApproach() {
           </h2>
         </div>
 
-        {/* Core Content – Intro + Approach Points as Cards */}
+        {/* Core Content - Intro + Approach Points as Cards */}
         <div className="max-w-5xl mx-auto mb-20 md:mb-24">
           <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 font-medium leading-relaxed mb-12 text-center">
             A good plan combines visibility and conversion. Our app store optimization strategies cover:
@@ -52,7 +52,7 @@ export default function OurApproach() {
           </div>
         </div>
 
-        {/* Who should use section – same card style */}
+        {/* Who should use section - same card style */}
         <div className="max-w-5xl mx-auto">
           <h3 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white text-center mb-12 md:mb-16">
             Who should use app store optimization services

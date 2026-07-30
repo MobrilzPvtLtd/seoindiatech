@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
+import { Check, X } from 'lucide-react'
 
 const plans = ['Starter', 'Growth', 'Platinum', 'Dedicated']
 
@@ -7,13 +8,15 @@ const Cell = ({ value }) => {
   if (value === 'Yes') {
     return (
       <span className="text-green-600 dark:text-green-400 font-semibold">
-        ✔
+        <Check className="w-4 h-4 inline-block" aria-hidden="true" />
       </span>
     )
   }
   if (value === 'No') {
     return (
-      <span className="text-red-500 dark:text-red-400 font-semibold">✖</span>
+      <span className="text-red-500 dark:text-red-400 font-semibold">
+        <X className="w-4 h-4 inline-block" aria-hidden="true" />
+      </span>
     )
   }
   return <span className="font-medium">{value}</span>

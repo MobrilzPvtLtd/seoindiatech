@@ -23,7 +23,7 @@ export default function PPCBrandingHero() {
           <p className="mt-6 text-xl text-gray-600 dark:text-gray-100 max-w-4xl mx-auto">
             PPC cannot function in isolation. To build a complete online
             presence, your paid ads must work together with SEO, branding, and
-            content strategy. That’s why we combine PPC with local seo services
+            content strategy. That's why we combine PPC with local seo services
             to help businesses dominate local search results while driving
             instant paid traffic.
           </p>
@@ -95,13 +95,13 @@ export default function PPCBrandingHero() {
                 icon: Target,
                 title: 'Tailored Strategies',
                 desc:
-                  'Custom campaigns — no generic templates. Designed to maximize your ROI.',
+                  'Custom campaigns - no generic templates. Designed to maximize your ROI.',
               },
               {
                 icon: MessageSquare,
                 title: 'Transparent Reports',
                 desc:
-                  'Detailed insights on clicks, conversions, and ROI — always know where your money goes.',
+                  'Detailed insights on clicks, conversions, and ROI - always know where your money goes.',
               },
               {
                 icon: Zap,
@@ -113,7 +113,7 @@ export default function PPCBrandingHero() {
                 icon: Shield,
                 title: 'Complete Digital Support',
                 desc:
-                  'PPC + Local SEO + Content + Branding — a full-stack growth solution.',
+                  'PPC + Local SEO + Content + Branding - a full-stack growth solution.',
               },
               {
                 icon: ArrowRight,

@@ -28,7 +28,7 @@ export default function PPCFaq() {
       question:
         'Q4. Can PPC work for local businesses?',
       answer:
-        'Yes. A pay per click campaign can target specific locations, service areas, and “near me” intent. It works well alongside local SEO.',
+        'Yes. A pay per click campaign can target specific locations, service areas, and "near me" intent. It works well alongside local SEO.',
     },
     {
       question:

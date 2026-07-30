@@ -38,7 +38,7 @@ export default function WhyDigitalAutomation() {
     {
       icon: Shield,
       title: 'Zero Infrastructure Hassle',
-      desc: 'We manage everything — you just enjoy the results.',
+      desc: 'We manage everything - you just enjoy the results.',
     },
   ]
 

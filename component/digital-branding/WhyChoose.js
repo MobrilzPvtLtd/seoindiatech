@@ -53,8 +53,8 @@ export default function WhyChooseUs() {
             Our goal is to deliver digital branding services that help your
             business grow stronger, stand out, and stay relevant in a
             competitive digital market. <br />
-            Strengthen your presence with SEO India Tech’s digital branding
-            services. Let’s build a brand identity that inspires trust, enhances
+            Strengthen your presence with SEO India Tech's digital branding
+            services. Let's build a brand identity that inspires trust, enhances
             engagement, and supports your long-term success.
           </p>
         </div>
@@ -122,7 +122,7 @@ export default function WhyChooseUs() {
             from-indigo-600 to-pink-600
             dark:from-indigo-200 dark:to-pink-200"
           >
-            Strengthen your presence with SEO India Tech’s digital branding
+            Strengthen your presence with SEO India Tech's digital branding
             services.
           </p>
 
@@ -131,7 +131,7 @@ export default function WhyChooseUs() {
           text-gray-600
           dark:text-gray-300"
           >
-            Let’s build a brand identity that inspires trust, enhances
+            Let's build a brand identity that inspires trust, enhances
             engagement, and supports your long-term success.
           </p>
 

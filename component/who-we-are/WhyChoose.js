@@ -14,8 +14,8 @@ export default function WhyChoose() {
               icon: 'Layers',
               text: (
                 <>
-                  <strong>Holistic approach:</strong> We don’t just build
-                  websites — we build digital ecosystems that combine{' '}
+                  <strong>Holistic approach:</strong> We don't just build
+                  websites - we build digital ecosystems that combine{' '}
                   <strong>
                     workflow, automation, market research, website creation,
                     promotion & advertising, and CRM & management tool
@@ -59,7 +59,7 @@ export default function WhyChoose() {
               text: (
                 <>
                   <strong>End-to-end support:</strong> From initial handshake to
-                  long-term optimization and maintenance — we stay with you
+                  long-term optimization and maintenance - we stay with you
                   through the entire digital journey.
                 </>
               ),

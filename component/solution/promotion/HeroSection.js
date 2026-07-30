@@ -52,7 +52,7 @@ const HeroSection = () => {
               </Link>{" "}
               , we provide result-driven advertising &amp; promotional solutions
               that help businesses grow faster, reach new markets, and stand out
-              from the competition. Whether you’re launching a new product,
+              from the competition. Whether you're launching a new product,
               expanding your services, or strengthening your online presence,
               our strategic promotional plans deliver measurable results that
               positively impact your bottom line.

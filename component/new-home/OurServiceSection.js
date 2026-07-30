@@ -7,8 +7,8 @@ import { HiArrowUpRight } from 'react-icons/hi2'
 const MotionLink = motion(Link)
 
 /**
- * Each service is framed as a metric the client actually watches —
- * rankings, local visibility, ROI, conversion rate — and paired with
+ * Each service is framed as a metric the client actually watches -
+ * rankings, local visibility, ROI, conversion rate - and paired with
  * a small hand-drawn trend line that "climbs" on hover. The kicker
  * labels aren't decoration; they name the number that moves.
  */
@@ -19,8 +19,8 @@ const services = [
         description: 'Boost your website rankings, increase organic traffic, and grow online visibility with result-oriented SEO strategies.',
         icon: FaSearch,
         href: '/services/seo',
-        accent: '#16C784',
-        accentSoft: 'rgba(22, 199, 132, 0.12)',
+        accent: '#6B2E88',
+        accentSoft: 'rgba(107, 46, 136, 0.12)',
         spark: 'M2,34 C 14,32 18,26 26,27 C 34,28 36,18 46,16 C 56,14 60,20 70,10 C 78,2 84,6 92,3',
     },
     {
@@ -29,8 +29,8 @@ const services = [
         description: 'Grow your local visibility, attract nearby customers, and rank higher in local searches and Google Maps.',
         icon: FaMapMarkerAlt,
         href: '/services/digital-marketing',
-        accent: '#FF6B4A',
-        accentSoft: 'rgba(255, 107, 74, 0.12)',
+        accent: '#706295',
+        accentSoft: 'rgba(112, 98, 149, 0.12)',
         spark: 'M2,30 C 10,31 16,34 22,30 C 30,25 32,14 42,15 C 52,16 54,24 64,20 C 74,16 78,6 92,4',
     },
     {
@@ -39,8 +39,8 @@ const services = [
         description: 'Drive targeted traffic, generate quality leads, and maximize ROI with data-driven PPC advertising campaigns.',
         icon: FaGoogle,
         href: '/services/paid-advertising',
-        accent: '#3355FF',
-        accentSoft: 'rgba(51, 85, 255, 0.12)',
+        accent: '#A4DDFB',
+        accentSoft: 'rgba(164, 221, 251, 0.2)',
         spark: 'M2,36 C 12,35 16,30 24,31 C 32,32 34,22 44,23 C 54,24 56,12 66,9 C 76,6 82,10 92,2',
     },
     {
@@ -49,8 +49,8 @@ const services = [
         description: 'End-to-end design and development solutions that combine stunning visuals with high-performance technology.',
         icon: FaPaintBrush,
         href: '/services/design-and-development',
-        accent: '#8B5CF6',
-        accentSoft: 'rgba(139, 92, 246, 0.12)',
+        accent: '#6B2E88',
+        accentSoft: 'rgba(107, 46, 136, 0.12)',
         spark: 'M2,32 C 12,30 18,32 26,26 C 34,20 36,24 46,18 C 56,12 60,16 70,11 C 80,6 84,8 92,3',
     },
 ]
@@ -77,7 +77,7 @@ const lineVariants = {
 
 const OurServiceSection = () => {
     return (
-        <section className="relative bg-[#F6F7F9] dark:bg-[#101119] py-15 md:py-20 overflow-hidden transition-colors duration-500">
+        <section className="section-padding relative bg-surface dark:bg-[#101119] overflow-hidden">
             {/* Faint ascending watermark line across the whole section */}
             <svg
                 className="pointer-events-none absolute inset-x-0 top-0 h-full w-full opacity-[0.05] dark:opacity-[0.08]"
@@ -95,24 +95,22 @@ const OurServiceSection = () => {
             <div className="max-w-7xl mx-auto px-6 relative z-10">
                 {/* Header */}
                 <motion.div
-                    className="max-w-2xl mx-auto text-center mb-8 md:mb-10"
+                    className="mb-10 md:mb-14"
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.6 }}
                     variants={headerVariants}
                 >
-                    {/* <div className="flex items-center gap-3 mb-6">
-                        <span className="h-px w-8 bg-[#3355FF]" />
-                        <span className="font-mono text-xs tracking-[0.25em] uppercase text-[#3355FF] dark:text-[#7C93FF]">
-                            What we do
-                        </span>
-                    </div> */}
-                    <h2 className="text-4xl sm:text-5xl md:text-[3.25rem] font-semibold text-[#14161F] dark:text-white tracking-tight leading-[1.08]">
-                        Explore Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400 dark:from-blue-400 dark:to-blue-300">Services</span>
+                    <span className="inline-flex items-center gap-2 rounded-full bg-primary/8 border border-primary/15 px-4 py-1.5 text-[11px] font-semibold uppercase tracking-[0.18em] text-primary mb-5">
+                        <span className="h-1.5 w-1.5 rounded-full bg-accent" />
+                        What We Do
+                    </span>
+                    <h2 className="text-3xl sm:text-4xl md:text-[2.75rem] font-bold text-heading dark:text-white tracking-tight leading-[1.1]">
+                        Explore Our <span className="text-primary">Services</span>
                     </h2>
-                    <p className="mt-6 text-[#64748B] dark:text-slate-400 text-lg leading-relaxed">
-                        Rankings, visibility, return on ad spend, and conversion rate — every
-                        engagement is built to move at least one of these, and we show you the line.
+                    <p className="mt-4 text-muted dark:text-slate-400 text-base md:text-lg leading-relaxed max-w-2xl">
+                        Rankings, visibility, return on ad spend, and conversion rate - every
+                        engagement is built to move at least one of these.
                     </p>
                 </motion.div>
 
@@ -133,18 +131,16 @@ const OurServiceSection = () => {
                                 variants={cardVariants}
                                 whileHover={{ scale: 1.01 }}
                                 transition={{ type: 'spring', stiffness: 300, damping: 22 }}
-                                className="service-card group relative flex h-full flex-col rounded-2xl border border-black/[0.06] dark:border-white/[0.08] bg-white dark:bg-[#171927] p-7 hover:border-transparent hover:shadow-[0_18px_40px_-16px_rgba(20,22,31,0.18)]"
+                                className="service-card group relative flex h-full flex-col rounded-2xl border border-border bg-white dark:bg-[#171927] p-6 md:p-7 hover:border-secondary/25 hover:shadow-[0_20px_50px_-15px_rgba(15,23,42,0.12)] transition-all duration-300"
                                 style={{ '--accent': service.accent, '--accent-soft': service.accentSoft }}
                             >
-                                {/* Kicker */}
-                                {/* <span
-                                    className="mb-6 inline-flex w-fit items-center rounded-full px-3 py-1 font-mono text-[0.65rem] font-medium uppercase tracking-[0.14em]"
+                                <span
+                                    className="mb-5 inline-flex w-fit items-center rounded-full px-3 py-1 font-mono text-[0.65rem] font-semibold uppercase tracking-[0.14em]"
                                     style={{ color: service.accent, backgroundColor: service.accentSoft }}
                                 >
                                     {service.kicker}
-                                </span> */}
+                                </span>
 
-                                {/* Icon + Title row */}
                                 <div className="mb-3 flex items-center gap-3">
                                     <div
                                         className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl text-lg transition-transform duration-300 group-hover:scale-105"
@@ -187,7 +183,7 @@ const OurServiceSection = () => {
 
                 {/* CTA banner */}
                 <motion.div
-                    className="mt-16 md:mt-20 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 rounded-2xl border border-black/[0.06] dark:border-white/[0.08] bg-white dark:bg-[#171927] px-8 py-8"
+                    className="mt-14 md:mt-16 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 rounded-2xl border border-border bg-white dark:bg-[#171927] px-6 py-6 md:px-8 md:py-8 shadow-sm"
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.6 }}
@@ -204,7 +200,7 @@ const OurServiceSection = () => {
                     </div>
                     <Link
                         href="/contact-us"
-                        className="group inline-flex shrink-0 items-center gap-2 rounded-full bg-gradient-to-r from-blue-600 to-blue-700 px-6 py-3 text-sm font-semibold text-white transition-transform duration-300 hover:-translate-y-0.5"
+                        className="group inline-flex shrink-0 items-center gap-2 rounded-full bg-cta hover:bg-cta-hover px-6 py-3 text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-0.5"
                     >
                         Talk about your project
                         <HiArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />

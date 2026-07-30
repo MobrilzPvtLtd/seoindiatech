@@ -158,7 +158,7 @@ const NewFooter = () => {
       <div className="relative border-t border-white/10 py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="flex flex-col md:flex-row items-center md:space-x-6">
-            <p className="text-gray-500 text-sm">&copy; {currentYear} SEO India Tech &ndash; All rights reserved</p>
+            <p className="text-gray-500 text-sm">&copy; {currentYear} SEO India Tech - All rights reserved</p>
             <div className="flex space-x-4 mt-2 md:mt-0">
               <Link href="/privacy-policy" className="text-sm text-gray-500 hover:text-blue-400 transition-colors">Privacy Policy</Link>
               <Link href="/terms" className="text-sm text-gray-500 hover:text-blue-400 transition-colors">Terms of Service</Link>

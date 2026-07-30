@@ -56,7 +56,7 @@ const Strategies = () => {
             </div>
 
             <p className="text-justify text-gray-700 dark:text-gray-300 mb-6 text-base sm:text-lg">
-              Your brand’s story deserves to be told in a way that inspires and
+              Your brand's story deserves to be told in a way that inspires and
               resonates. From blogs to social media and email campaigns, we
               amplify your message so it reaches the right audience with impact.
             </p>
@@ -125,7 +125,7 @@ const Strategies = () => {
             </div>
 
             <p className="text-justify text-gray-700 dark:text-gray-300 mb-6 text-base sm:text-lg">
-              Great content should deliver more than engagement—it should drive
+              Great content should deliver more than engagement-it should drive
               results. Our lead generation strategies are built into every word,
               transforming casual visitors into subscribers and subscribers into
               customers.

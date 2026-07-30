@@ -6,7 +6,7 @@ export default function index() {
   return (
     <>
      <Head>
-            <title>Market Research Services India– SEOIndiatech</title>
+            <title>Market Research Services India- SEOIndiatech</title>
             <meta
               name="description"
               content="SEOIndiatech provides market research services in India, delivering insights and analytics to help businesses make informed decisions and drive growth."

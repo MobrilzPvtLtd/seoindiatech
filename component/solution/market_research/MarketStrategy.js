@@ -11,7 +11,7 @@ export default function MarketStrategy() {
 
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
         <h5 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-8">
-          Let’s Build a Smarter Market Strategy Together
+          Let's Build a Smarter Market Strategy Together
         </h5>
 
         <p className="text-gray-800 dark:text-gray-300 leading-relaxed mb-6">
@@ -26,7 +26,7 @@ export default function MarketStrategy() {
 
         <p className="text-gray-800 dark:text-gray-300 leading-relaxed mb-10">
           Start building your future with confidence. Partner with SEO India
-          Tech — where research meets success and strategy meets growth.
+          Tech - where research meets success and strategy meets growth.
         </p>
 
         {/* CTA Box */}

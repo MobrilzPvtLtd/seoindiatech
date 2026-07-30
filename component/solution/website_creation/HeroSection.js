@@ -46,11 +46,11 @@ const HeroSection = () => {
             <div className="w-20 h-1 bg-blue-600 dark:bg-blue-500 rounded-full"></div>
 
             <p className="text-justify text-gray-700 dark:text-gray-300 text-base md:text-lg leading-relaxed">
-              In today’s fiercely competitive digital landscape, having a
-              robust, user-friendly website is no longer optional — it’s
+              In today's fiercely competitive digital landscape, having a
+              robust, user-friendly website is no longer optional - it's
               essential. At SEO India Tech, we deliver <b>best website creation
               services,</b> tailored to your business goals and designed to grow
-              with you. Whether you’re launching a startup, scaling operations,
+              with you. Whether you're launching a startup, scaling operations,
               or seeking a professional online presence, our <b>professional
               website creation services</b> combine strategic insight, technical
               excellence, and marketing know-how to give you a powerful digital

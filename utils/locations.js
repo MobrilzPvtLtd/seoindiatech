@@ -91,10 +91,10 @@ export const locations = [
       </p>
 
       <ul>
-      <li><b>Step 1</b>: Week 1 to 2 – Audit and priority list</li>
-      <li><b>Step 2</b>: Week 3 to 6 – Fixes and page updates</li>
-      <li><b>Step 3</b>: Month 2 onward – Content, local work, and link growth</li>
-      <li><b>Step 4</b>: Monthly review – Report and next actions</li>
+      <li><b>Step 1</b>: Week 1 to 2 - Audit and priority list</li>
+      <li><b>Step 2</b>: Week 3 to 6 - Fixes and page updates</li>
+      <li><b>Step 3</b>: Month 2 onward - Content, local work, and link growth</li>
+      <li><b>Step 4</b>: Monthly review - Report and next actions</li>
       </ul>
 
       <p>
@@ -376,7 +376,7 @@ export const locations = [
     
     <li>
     <h3>Keyword mapping that matches intent</h3>
-    <p>We group keywords by what the searcher wants. Someone searching for pricing needs a different page than someone searching for “near me.” Our SEO services in Jaipur use this mapping to plan pages that bring enquiries and calls.</p>
+    <p>We group keywords by what the searcher wants. Someone searching for pricing needs a different page than someone searching for "near me." Our SEO services in Jaipur use this mapping to plan pages that bring enquiries and calls.</p>
     </li>
     
     <li>
@@ -537,7 +537,7 @@ export const locations = [
     </ul>
 
     <p>
-      This approach helps your business show up when people search “near me” and location
+      This approach helps your business show up when people search "near me" and location
       based terms. Local SEO services in Mumbai work best when your website and Google
       Business Profile support each other.
     </p>
@@ -654,8 +654,8 @@ export const locations = [
    heading: "Local SEO Service in Pune",
  
    content: [
-     "If your customers search on Google before they call, you need SEO services in Pune that bring real enquiries, not just traffic. Pune is crowded online. Your competitors show up in Maps, in “near me” searches, and in local results. SEO services in Pune help you show up when people want to book, visit, or buy.",
-     "This work starts with local intent. A person searching “dentist in Baner” wants a quick answer. A person searching “industrial supplier near Pimpri” wants a phone number, directions, and proof you deliver. SEO services in Pune build those signals across your website, your Google Business Profile, and your local listings.",
+     "If your customers search on Google before they call, you need SEO services in Pune that bring real enquiries, not just traffic. Pune is crowded online. Your competitors show up in Maps, in \"near me\" searches, and in local results. SEO services in Pune help you show up when people want to book, visit, or buy.",
+     "This work starts with local intent. A person searching \"dentist in Baner\" wants a quick answer. A person searching \"industrial supplier near Pimpri\" wants a phone number, directions, and proof you deliver. SEO services in Pune build those signals across your website, your Google Business Profile, and your local listings.",
    ],
  
    heroImage: "/images/mobile-optimization-for-seo.jpg",
@@ -706,7 +706,7 @@ export const locations = [
     <p>
       Most local buyers choose from the first page. Many click Maps first. If you are not in the
       local pack, you lose calls you could have won today. SEO services in Pune help you appear
-      for “near me” and area based searches, not just broad terms.
+      for "near me" and area based searches, not just broad terms.
     </p>
 
     <p>
@@ -998,7 +998,7 @@ export const locations = [
     
     <h3>Local SEO services in Delhi for map visibility</h3>
     <p>
-    Many Delhi leads start with a “near me” search. People choose from the map results and call.
+    Many Delhi leads start with a "near me" search. People choose from the map results and call.
     local SEO services in Delhi help you show up where those calls happen.
     </p>
     
@@ -1067,7 +1067,7 @@ export const locations = [
     <li>Explains the service in plain language</li>
     <li>Answers objections before a call</li>
     <li>Uses Delhi context only where it fits</li>
-    <li>Adds clear next steps like “request a quote” or “book a call”</li>
+    <li>Adds clear next steps like "request a quote" or "book a call"</li>
     </ul>
     
     <p>

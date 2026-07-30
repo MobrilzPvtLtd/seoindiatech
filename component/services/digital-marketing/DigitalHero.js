@@ -34,7 +34,7 @@ export default function DigitalHero() {
             <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6 md:text-justify">
               Many brands try random ads, posts, and blog pages. Results stay
               mixed because the work is not connected. We connect your SEO, ads,
-              content, and social media so they support one goal — more
+              content, and social media so they support one goal - more
               qualified leads and more sales. You see what is working, what is
               not, and what comes next.
             </p>

@@ -65,7 +65,7 @@ export default function index() {
           },
           {
             '@type': 'Question',
-            name: 'Why choose SEO India Tech’s CRM solutions?',
+            name: 'Why choose SEO India Tech\'s CRM solutions?',
             acceptedAnswer: {
               '@type': 'Answer',
               text:
@@ -89,7 +89,7 @@ export default function index() {
   return (
     <>
       <Head>
-        <title>CRM & Tools Services India– SEOIndiatech</title>
+        <title>CRM & Tools Services India- SEOIndiatech</title>
         <meta
           name="description"
           content="SEOIndiatech offers CRM & tools services in India, helping businesses streamline operations, enhance customer management, and boost overall productivity."

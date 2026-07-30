@@ -70,7 +70,7 @@ const Why = () => {
       id: 1,
       icon: <Target className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
       title: "Efficient content distribution",
-      description: "We turn every piece of content into a growth engine—driving clicks, leads, and real business results."
+      description: "We turn every piece of content into a growth engine-driving clicks, leads, and real business results."
     },
     {
       id: 2,

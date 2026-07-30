@@ -97,7 +97,7 @@ export default function index() {
   return (
     <>
       <Head>
-        <title> PPC Advertising Services India – SEOIndiatech</title>
+        <title> PPC Advertising Services India - SEOIndiatech</title>
         <meta
           name="description"
           content="SEOIndiatech provides PPC advertising services in India to drive targeted traffic, increase leads, and maximize ROI with effective paid marketing strategies."

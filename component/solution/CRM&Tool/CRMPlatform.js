@@ -14,7 +14,7 @@ export default function CRMPlatform() {
         {/* Card */}
         <div className="bg-gray-100 dark:bg-gray-800 rounded-3xl p-10 shadow-lg">
           <p className="text-gray-800 dark:text-gray-300 leading-relaxed mb-6">
-            We work with the world’s leading CRM systems and provide fully
+            We work with the world's leading CRM systems and provide fully
             custom implementation based on business requirements:
           </p>
 

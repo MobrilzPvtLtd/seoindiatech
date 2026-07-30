@@ -21,10 +21,10 @@ export default function SolutionImpact() {
                 SEO India Tech,
               </Link>{' '}
               we believe a website should be more than a standalone asset.
-              That’s why our services connect your site with social media, CRM
-              systems, lead management tools, and analytics — allowing you to
+              That's why our services connect your site with social media, CRM
+              systems, lead management tools, and analytics - allowing you to
               manage your online presence, track leads, nurture relationships,
-              and grow your brand — all from one centralized platform.
+              and grow your brand - all from one centralized platform.
             </p>
 
             <p className="text-gray-800 dark:text-gray-300 leading-relaxed">
@@ -57,8 +57,8 @@ export default function SolutionImpact() {
           </p>
 
           <p className="text-gray-800 dark:text-gray-300 leading-relaxed mb-10">
-            Whether you’re starting from scratch or looking to upgrade your
-            existing online presence, our team is ready to help — delivering{' '}
+            Whether you're starting from scratch or looking to upgrade your
+            existing online presence, our team is ready to help - delivering{' '}
             <b>professional website creation services</b> tailored to your needs
             and backed by real results.
           </p>

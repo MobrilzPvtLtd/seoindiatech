@@ -20,7 +20,7 @@ const posts = [
       {
         type: 'paragraph',
         text:
-          'For many small business owners and bloggers, this change feels a bit scary. You might worry that if Google provides the answer directly, no one will click on your website anymore. While it is true that the way we use the internet is shifting, it does not mean SEO is over. In fact, AI SEO changes where you appear, but it doesn’t eliminate the need for your expertise. This guide will help you understand this new landscape and show you how to adapt.',
+          'For many small business owners and bloggers, this change feels a bit scary. You might worry that if Google provides the answer directly, no one will click on your website anymore. While it is true that the way we use the internet is shifting, it does not mean SEO is over. In fact, AI SEO changes where you appear, but it doesn\'t eliminate the need for your expertise. This guide will help you understand this new landscape and show you how to adapt.',
       },
 
       {
@@ -35,7 +35,7 @@ const posts = [
       {
         type: 'paragraph',
         text:
-          "Think of the AI Overview as a helpful assistant that gathers information from across the web. It doesn't write these answers from scratch based on thin air; it pulls facts and advice from real websites—potentially yours. This shift is exactly why many companies are now seeking specialized ",
+          "Think of the AI Overview as a helpful assistant that gathers information from across the web. It doesn't write these answers from scratch based on thin air; it pulls facts and advice from real websites-potentially yours. This shift is exactly why many companies are now seeking specialized ",
         link: {
           text: 'AI SEO services',
           url: '/services/seo',
@@ -67,8 +67,8 @@ const posts = [
         type: 'list',
         items: [
           `<strong>Fewer Clicks for Simple Questions:</strong> If someone searches for something simple, like "What is the boiling point of water?", they will get the answer in the AI box and leave. They don't need to click your site to read a 500-word article about it. This means traffic for basic, factual information may go down.`,
-          `<strong>More Importance on Clear Answers:</strong> Google’s AI is looking for "answer blocks". If your content is the clearest and most direct answer to a question, Google is more likely to feature you as the source.`,
-          `<strong>Increased Competition for Visibility:</strong> Because the AI box takes up so much space, the "top spot" is more valuable than ever. However, the AI often cites 3–5 different websites at once. This gives smaller websites a chance to be seen alongside much larger brands if their content is better structured.`,
+          `<strong>More Importance on Clear Answers:</strong> Google's AI is looking for "answer blocks". If your content is the clearest and most direct answer to a question, Google is more likely to feature you as the source.`,
+          `<strong>Increased Competition for Visibility:</strong> Because the AI box takes up so much space, the "top spot" is more valuable than ever. However, the AI often cites 3-5 different websites at once. This gives smaller websites a chance to be seen alongside much larger brands if their content is better structured.`,
         ],
       },
 
@@ -90,7 +90,7 @@ const posts = [
         type: 'list',
         items: [
           `<strong>Burying the Lead:</strong> If you wait until the end of a long article to answer the main question, the AI might skip over you.`,
-          `<strong>Keyword Stuffing:</strong> Repeating the same phrase over and over feels robotic. AI prefers "natural language"—the way a human would actually explain a topic to a friend.`,
+          `<strong>Keyword Stuffing:</strong> Repeating the same phrase over and over feels robotic. AI prefers "natural language"-the way a human would actually explain a topic to a friend.`,
           `<strong>Weak Headings:</strong> Using vague headings like "Introduction" or "More Info" doesn't tell the AI what that section is about.`,
           `<strong>Mixing Too Many Topics:</strong> If a single page tries to cover too many unrelated subjects, the AI gets confused about the page's main purpose.`,
           `<strong>Walls of Text:</strong> Huge, unbroken paragraphs are hard for both humans and AI to scan.`,
@@ -108,10 +108,10 @@ const posts = [
       {
         type: 'ordered-list',
         items: [
-          `<strong>Use the "Answer First" Approach:</strong>  When you write a blog post, try to answer the primary question in the first 1–2 sentences. This makes it easy for Google's AI to see your page as a perfect source for a summary.`,
+          `<strong>Use the "Answer First" Approach:</strong>  When you write a blog post, try to answer the primary question in the first 1-2 sentences. This makes it easy for Google's AI to see your page as a perfect source for a summary.`,
           `<strong>Organize with Clear Headings:</strong> Turn your subheadings (H2 and H3 tags) into questions. Instead of a heading that says "Pricing," try "How much does a professional plumber cost?"`,
           `<strong>Use Bullet Points and Tables:</strong> AI loves structure. If you are listing steps in a process or comparing two products, use numbered lists, bullet points, or simple tables for data.`,
-          `<strong>Share Real Human Experience:</strong> AI can summarise facts, but it can’t share personal stories. Include phrases like "In my 10 years of experience..." or "When I tried this, I found that..." This "human touch" is a core strategy used in modern AI SEO services to build authority.`,
+          `<strong>Share Real Human Experience:</strong> AI can summarise facts, but it can't share personal stories. Include phrases like "In my 10 years of experience..." or "When I tried this, I found that..." This "human touch" is a core strategy used in modern AI SEO services to build authority.`,
         ],
       },
 
@@ -127,7 +127,7 @@ const posts = [
       {
         type: 'paragraph',
         text:
-          'The fundamentals of good SEO—writing helpful, clear, and honest content—are more important now than ever. Focus on being the most helpful resource for your audience, and Google’s AI will likely see you as a source worth sharing.',
+          'The fundamentals of good SEO-writing helpful, clear, and honest content-are more important now than ever. Focus on being the most helpful resource for your audience, and Google\'s AI will likely see you as a source worth sharing.',
       },
     ],
   },
@@ -146,18 +146,18 @@ const posts = [
       {
         type: 'paragraph',
         text:
-          'We’ve all been there. You’re out and about, hunger hits, and the first thing you do is pull out your phone. You type in something like "best burgers nearby" or "sushi open now". In a split second, Google gives you a list of winners. As a restaurant owner, you want to be at the top of that list. That is what SEO—Search Engine Optimisation—is all about.',
+          'We\'ve all been there. You\'re out and about, hunger hits, and the first thing you do is pull out your phone. You type in something like "best burgers nearby" or "sushi open now". In a split second, Google gives you a list of winners. As a restaurant owner, you want to be at the top of that list. That is what SEO-Search Engine Optimisation-is all about.',
       },
       {
         type: 'paragraph',
         text:
-          'It sounds like a big, technical word, but it’s really just about making sure your shop shows up when local people are looking for a place to eat. To do this effectively, many modern eateries utilise specialised ',
+          'It sounds like a big, technical word, but it\'s really just about making sure your shop shows up when local people are looking for a place to eat. To do this effectively, many modern eateries utilise specialised ',
         link: {
           text: 'SEO services',
           url: '/services/seo',
         },
         textAfter:
-          ' to ensure they do not get lost in the digital noise. In this guide, we’ll walk through how this works in plain English.',
+          ' to ensure they do not get lost in the digital noise. In this guide, we\'ll walk through how this works in plain English.',
       },
 
       {
@@ -172,7 +172,7 @@ const posts = [
       {
         type: 'paragraph',
         text:
-          'If your restaurant is right down the street, you’re already in the running. But Google also needs to be 100% sure about what you do. If it’s not clear whether you’re a coffee shop or a full-service bakery, Google might skip over you. This is where professional SEO optimisation services come in handy; they help clarify your "identity" to search engines so Google feels confident enough to send people your way.',
+          'If your restaurant is right down the street, you\'re already in the running. But Google also needs to be 100% sure about what you do. If it\'s not clear whether you\'re a coffee shop or a full-service bakery, Google might skip over you. This is where professional SEO optimisation services come in handy; they help clarify your "identity" to search engines so Google feels confident enough to send people your way.',
       },
 
       {
@@ -182,7 +182,7 @@ const posts = [
       {
         type: 'paragraph',
         text:
-          'It can be frustrating to see the cafe across the street getting all the digital love while you’re sitting there with better food. Usually, it’s because that cafe is giving Google more "proof" that they’re a great choice. The restaurants that win at this usually do a few things well: they’re specific about their location, they have fresh reviews, and they keep their info updated.',
+          'It can be frustrating to see the cafe across the street getting all the digital love while you\'re sitting there with better food. Usually, it\'s because that cafe is giving Google more "proof" that they\'re a great choice. The restaurants that win at this usually do a few things well: they\'re specific about their location, they have fresh reviews, and they keep their info updated.',
       },
       {
         type: 'paragraph',
@@ -253,7 +253,7 @@ const posts = [
       {
         type: 'paragraph',
         text:
-          'An agency providing local SEO services understands exactly how to get you into that "Top 3" map pack on Google. They can manage your reviews, optimise your website for mobile users, and ensure your menu is searchable. By investing in SEO optimisation services, you are not just "fixing a website"—you are building a steady stream of new diners who will find you exactly when they are hungriest. Focus on your guests, and let the experts handle the algorithms.',
+          'An agency providing local SEO services understands exactly how to get you into that "Top 3" map pack on Google. They can manage your reviews, optimise your website for mobile users, and ensure your menu is searchable. By investing in SEO optimisation services, you are not just "fixing a website"-you are building a steady stream of new diners who will find you exactly when they are hungriest. Focus on your guests, and let the experts handle the algorithms.',
       },
     ],
   },
@@ -271,17 +271,17 @@ const posts = [
     content: [
       {
         type: 'heading',
-        text: 'Introduction: It’s Not Just a Video Site Anymore',
+        text: 'Introduction: It\'s Not Just a Video Site Anymore',
       },
       {
         type: 'paragraph',
         text:
-          'Let’s be honest: in 2026, if your business isn’t on YouTube, you’re essentially invisible to a huge chunk of your market. It’s no longer about "going viral" or having a million subscribers. Today, YouTube acts as a digital shopfront. Before someone buys a product or books a service, they’re searching for a video to see if the people behind the brand actually know what they’re talking about.',
+          'Let\'s be honest: in 2026, if your business isn\'t on YouTube, you\'re essentially invisible to a huge chunk of your market. It\'s no longer about "going viral" or having a million subscribers. Today, YouTube acts as a digital shopfront. Before someone buys a product or books a service, they\'re searching for a video to see if the people behind the brand actually know what they\'re talking about.',
       },
       {
         type: 'paragraph',
         text:
-          'For small business owners, this is actually great news. You don’t need a Hollywood production crew. You just need to show up. Whether it’s a quick 60-second tip or a ten-minute deep dive, video builds a level of trust that text simply can’t touch. It’s where curiosity turns into real confidence.',
+          'For small business owners, this is actually great news. You don\'t need a Hollywood production crew. You just need to show up. Whether it\'s a quick 60-second tip or a ten-minute deep dive, video builds a level of trust that text simply can\'t touch. It\'s where curiosity turns into real confidence.',
       },
 
       {
@@ -291,12 +291,12 @@ const posts = [
       {
         type: 'paragraph',
         text:
-          'Most people forget that YouTube is the world’s second-largest search engine. When someone has a problem—whether it’s a leaky pipe or a complex business hurdle—they don’t just want to read an article; they want to see a solution in action.',
+          'Most people forget that YouTube is the world\'s second-largest search engine. When someone has a problem-whether it\'s a leaky pipe or a complex business hurdle-they don\'t just want to read an article; they want to see a solution in action.',
       },
       {
         type: 'paragraph',
         text:
-          'In 2026, this "intent-based" searching is how small brands beat giant corporations. If you can provide a clear, honest answer to a specific question, you win the customer\'s attention. Plus, unlike a social media post that dies after 24 hours, a YouTube video is "evergreen". A helpful video you record today can keep bringing in leads three years from now. It’s one of the few marketing moves that actually gets more valuable over time.',
+          'In 2026, this "intent-based" searching is how small brands beat giant corporations. If you can provide a clear, honest answer to a specific question, you win the customer\'s attention. Plus, unlike a social media post that dies after 24 hours, a YouTube video is "evergreen". A helpful video you record today can keep bringing in leads three years from now. It\'s one of the few marketing moves that actually gets more valuable over time.',
       },
 
       {
@@ -320,12 +320,12 @@ const posts = [
       {
         type: 'paragraph',
         text:
-          'I see so many business owners quit after three videos because they did not get 10,000 views. That’s the wrong metric. Success on YouTube in 2026 is about being reliable. One video a week—or even every two weeks—is plenty as long as you stick to it.',
+          'I see so many business owners quit after three videos because they did not get 10,000 views. That\'s the wrong metric. Success on YouTube in 2026 is about being reliable. One video a week-or even every two weeks-is plenty as long as you stick to it.',
       },
       {
         type: 'paragraph',
         text:
-          'YouTube "Shorts" are fantastic for getting your face in front of new people, while longer videos are where you build the real relationship. Think of it as a funnel: the Shorts grab their attention, and the long-form content earns their trust. When you combine the two, you’re building a brand that actually lasts.',
+          'YouTube "Shorts" are fantastic for getting your face in front of new people, while longer videos are where you build the real relationship. Think of it as a funnel: the Shorts grab their attention, and the long-form content earns their trust. When you combine the two, you\'re building a brand that actually lasts.',
       },
 
       {
@@ -335,12 +335,12 @@ const posts = [
       {
         type: 'paragraph',
         text:
-          'The biggest mistake is making your channel all about you instead of your customer. If your videos are just "we did this" and "buy our that", people will tune out. Another trap is over-editing. In 2026, people crave authenticity. If a video is too polished, it starts to look like a generic ad, and we’ve all learned to ignore those.',
+          'The biggest mistake is making your channel all about you instead of your customer. If your videos are just "we did this" and "buy our that", people will tune out. Another trap is over-editing. In 2026, people crave authenticity. If a video is too polished, it starts to look like a generic ad, and we\'ve all learned to ignore those.',
       },
       {
         type: 'paragraph',
         text:
-          'Many businesses struggle to keep the momentum going, which is why they look toward social media marketing services in India to handle the heavy lifting of scheduling and distribution. It’s hard to run a business and be a full-time creator at the same time.',
+          'Many businesses struggle to keep the momentum going, which is why they look toward social media marketing services in India to handle the heavy lifting of scheduling and distribution. It\'s hard to run a business and be a full-time creator at the same time.',
       },
 
       {
@@ -350,11 +350,11 @@ const posts = [
       {
         type: 'paragraph',
         text:
-          'YouTube should not be an island. It’s the engine that should feed your entire marketing plan. You can take the audio from a video and turn it into a podcast, or take the key points and turn them into an email newsletter.',
+          'YouTube should not be an island. It\'s the engine that should feed your entire marketing plan. You can take the audio from a video and turn it into a podcast, or take the key points and turn them into an email newsletter.',
       },
       {
         type: 'paragraph',
-        text: 'If this feels like a lot to manage, that’s where professional ',
+        text: 'If this feels like a lot to manage, that\'s where professional ',
         link: {
           text: 'social media marketing services',
           url: '/services/social-media-marketing',
@@ -370,12 +370,12 @@ const posts = [
       {
         type: 'paragraph',
         text:
-          'The biggest hurdle to YouTube marketing in 2026 is not the algorithm or the equipment—it is just getting started. Your first few videos might be a little rough, and that’s perfectly fine.',
+          'The biggest hurdle to YouTube marketing in 2026 is not the algorithm or the equipment-it is just getting started. Your first few videos might be a little rough, and that\'s perfectly fine.',
       },
       {
         type: 'paragraph',
         text:
-          'Focus on being helpful. If you genuinely try to solve your audience’s problems, they will reward you with their loyalty. YouTube is a long-term play, but the visibility and authority it builds are worth the effort. So, do not overthink it. Find a question your customers are asking, sit in front of a window for some natural light, and hit record. Your business will thank you for it later.',
+          'Focus on being helpful. If you genuinely try to solve your audience\'s problems, they will reward you with their loyalty. YouTube is a long-term play, but the visibility and authority it builds are worth the effort. So, do not overthink it. Find a question your customers are asking, sit in front of a window for some natural light, and hit record. Your business will thank you for it later.',
       },
     ],
   },
@@ -454,7 +454,7 @@ const posts = [
       },
       {
         "type": "paragraph",
-        "text": "To support each significant claim that you make in your writing, you must provide adequate proof. Original examples of proof include screenshots, case studies – proprietary or not, URL links to your telemetry calculations, or compelling direct quotes from reputable sources with all of your references, etc."
+        "text": "To support each significant claim that you make in your writing, you must provide adequate proof. Original examples of proof include screenshots, case studies - proprietary or not, URL links to your telemetry calculations, or compelling direct quotes from reputable sources with all of your references, etc."
       },
       {
         "type": "paragraph",
@@ -499,7 +499,7 @@ const posts = [
         "items": [
           "<strong>Implementing Granular Schema Markup:</strong> Structured (machine-readable) data is processed by AI agents exponentially faster than unstructured prose. Consequently, having a Product Schema, Organization Schema and Author Page Schema in place will help Gemini successfully associate your site link to his Knowledge Graph based on this structured and clearly identified type of data.",
           "<strong>Implementing Radical Author Transparency:</strong> Going forward, establishing anonymous niche web properties is an implausible business model. In order to appropriately establish trust with web visitors, your site needs to have an entity that can be identified, i.e., there must be an 'About Us' section, 'Editorial Guidelines' section and 'Contact' section on your site. All articles should include an explicit Author byline that includes credentials, history and at least one of their social media accounts (LinkedIn, Twitter for example). Google uses all three identifiers as part of its validation processes to determine if a real person expert is providing the content for the article.",
-          "<strong>Optimizing Dwell Time and User Engagement Signals:</strong> These are becoming hugely important within the next year due to Google's May 2026 Core Update. If a person clicks on a link from an AI overview on your website and then returns to the search engine results page within five seconds then Google will see that person as having had a bad experience. Dwell Time and Interaction Rates are closely related; have your content laid out with appropriate typography, headings that are descriptive and engaging, and use engaging visual data to keep users on your website for at least 2–3 minutes."
+          "<strong>Optimizing Dwell Time and User Engagement Signals:</strong> These are becoming hugely important within the next year due to Google's May 2026 Core Update. If a person clicks on a link from an AI overview on your website and then returns to the search engine results page within five seconds then Google will see that person as having had a bad experience. Dwell Time and Interaction Rates are closely related; have your content laid out with appropriate typography, headings that are descriptive and engaging, and use engaging visual data to keep users on your website for at least 2-3 minutes."
         ]
       },
       {

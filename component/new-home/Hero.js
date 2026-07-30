@@ -1,139 +1,175 @@
-"use client";
+'use client'
 
-import React, { useState, useEffect } from 'react';
-import Link from 'next/link';
-import { FaStar, FaCheckCircle, FaArrowRight } from 'react-icons/fa';
-import { HiOutlineChatBubbleLeftRight } from 'react-icons/hi2';
-import { motion, AnimatePresence } from 'framer-motion';
+import Link from 'next/link'
+import { motion } from 'framer-motion'
+import {
+  Clock,
+  Globe,
+  Rocket,
+  TrendingUp,
+  ArrowRight,
+} from 'lucide-react'
+import FloatingStatPill from '@/component/ui/FloatingStatPill'
+import SideConnectTab from '@/component/ui/SideConnectTab'
+import ScribbleText from '@/component/ui/ScribbleText'
+import HeroVisual from '@/component/new-home/HeroVisual'
 
-const services = [
-    'SEO Strategies',
-    'Digital Marketing',
-    'Content Growth',
-    'Paid Advertising',
-    'Web Solutions',
-];
+const statPills = [
+  {
+    icon: Clock,
+    label: '14+ Years of Legacy',
+    metric: 'Driven by Results',
+    metricColor: 'text-accent',
+    className: 'absolute -left-4 top-4 lg:-left-12 lg:top-8 z-20',
+    delay: 0.5,
+  },
+  {
+    icon: Globe,
+    label: 'Brand Exposure',
+    metric: 'Scale Visibility 10X',
+    metricColor: 'text-accent',
+    className: 'absolute -right-2 top-0 lg:-right-6 lg:top-2 z-20',
+    delay: 0.6,
+  },
+  {
+    icon: Rocket,
+    label: 'Boosting Revenue',
+    metric: 'Scale Revenue Up to 6x',
+    metricColor: 'text-accent',
+    className: 'absolute -left-2 bottom-32 lg:-left-10 lg:bottom-36 z-20',
+    delay: 0.7,
+  },
+  {
+    icon: TrendingUp,
+    label: 'Improved Leads',
+    metric: 'Drive Up to 8x More Leads',
+    metricColor: 'text-accent',
+    className: 'absolute -right-1 bottom-24 lg:right-0 lg:bottom-28 z-20',
+    delay: 0.8,
+  },
+]
+
+const mobilePills = [
+  { icon: Clock, label: '14+ Years', metric: 'Driven by Results', metricColor: 'text-accent' },
+  { icon: Globe, label: 'Exposure', metric: '10X Visibility', metricColor: 'text-accent' },
+  { icon: Rocket, label: 'Revenue', metric: 'Up to 6x', metricColor: 'text-accent' },
+  { icon: TrendingUp, label: 'Leads', metric: 'Up to 8x', metricColor: 'text-accent' },
+]
 
 const Hero = () => {
-    const [index, setIndex] = useState(0);
+  return (
+    <section className="relative min-h-[100svh] overflow-hidden hero-grid-bg">
+      <div className="pointer-events-none absolute inset-0 hero-glow-primary" />
+      <div className="pointer-events-none absolute inset-0 hero-glow-secondary" />
+      <div className="pointer-events-none absolute inset-0 hero-glow-cta" />
 
-    useEffect(() => {
-        const timer = setInterval(() => {
-            setIndex((prev) => (prev + 1) % services.length);
-        }, 3000);
-        return () => clearInterval(timer);
-    }, []);
+      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-28 pb-24 md:pt-32 lg:pt-36 lg:pb-28">
+        <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-8 xl:gap-12">
+          {/* Left - Autus-style typography stack */}
+          <motion.div
+            initial={{ opacity: 0, y: 28 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+            className="text-center lg:text-left text-white hero-copy"
+          >
+            <h1 className="font-heading text-[1.85rem] font-extrabold leading-[1.08] tracking-tight sm:text-5xl lg:text-[3.25rem] xl:text-[3.5rem]">
+              Search &amp; Performance
+              <br />
+              <ScribbleText className="text-accent" scribbleColor="#A4DDFB">Marketing</ScribbleText> Agency
+            </h1>
 
-    return (
-        <section className="relative w-full h-screen max-h-[1000px] min-h-[600px] flex items-center justify-center overflow-hidden">
+            <p className="mt-5 text-base font-semibold text-accent sm:text-lg lg:text-xl leading-snug">
+              Result-Oriented, AI-Powered Digital Marketing Agency
+            </p>
+            <p className="mt-2 text-sm font-medium text-white/80 sm:text-base">
+              Your trusted partner for measurable online growth with AI-enabled solutions
+            </p>
 
-            {/* 1. BACKGROUND IMAGE - Using a professional marketing/tech image from Unsplash */}
-            <div className="absolute inset-0 z-0">
-                <img
-                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop"
-                    alt="Business Results"
-                    className="w-full h-full object-cover"
+            <p className="mt-5 max-w-xl text-sm leading-relaxed text-white/75 sm:text-base mx-auto lg:mx-0">
+              Search, ads, and technology under one roof - SEO INDIA TECH helps global brands
+              rank higher, convert better, and scale revenue across USA, UK, Australia, and beyond.
+            </p>
+
+            <div className="mt-8 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4">
+              <Link
+                href="/services/ai-seo"
+                className="inline-flex w-full sm:w-auto items-center justify-center gap-2 rounded-full bg-primary hover:bg-primary-hover px-8 py-4 text-sm font-bold text-white shadow-glow-brand transition-all hover:-translate-y-0.5"
+              >
+                Explore AI-Powered Services
+              </Link>
+              <Link
+                href="/contact-us"
+                className="inline-flex w-full sm:w-auto items-center justify-center gap-2 rounded-full bg-white hover:bg-white/90 px-8 py-4 text-sm font-bold text-secondary transition-all hover:-translate-y-0.5"
+              >
+                Book Free Consultation Call
+              </Link>
+            </div>
+          </motion.div>
+
+          {/* Right - visual + floating pills */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.94 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+            className="relative mx-auto w-full max-w-lg lg:max-w-none"
+          >
+            <div className="relative">
+              <HeroVisual />
+              <div className="hidden lg:block">
+                {statPills.map((pill) => (
+                  <FloatingStatPill
+                    key={pill.label}
+                    icon={pill.icon}
+                    label={pill.label}
+                    metric={pill.metric}
+                    metricColor={pill.metricColor}
+                    className={pill.className}
+                    delay={pill.delay}
+                    float
+                  />
+                ))}
+              </div>
+            </div>
+
+            <div className="mt-6 grid grid-cols-2 gap-3 lg:hidden">
+              {mobilePills.map((pill, i) => (
+                <FloatingStatPill
+                  key={pill.label}
+                  icon={pill.icon}
+                  label={pill.label}
+                  metric={pill.metric}
+                  metricColor={pill.metricColor}
+                  delay={0.1 * i}
                 />
-                {/* Dark overlay that is light enough to see the image but dark enough to read text */}
-                <div className="absolute inset-0 bg-slate-900/60 backdrop-blur-[2px]" />
-                <div className="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-transparent to-slate-950/90" />
+              ))}
             </div>
+          </motion.div>
+        </div>
+      </div>
 
-            {/* 2. CONTENT AREA */}
-            <div className="relative z-10 max-w-6xl mx-auto px-6 pt-24 pb-8 md:pt-24 md:pb-12 text-center flex flex-col items-center justify-center">
+      {/* Wave to cream section */}
+      <div className="absolute bottom-0 left-0 right-0 z-10">
+        <svg viewBox="0 0 1440 80" fill="none" className="w-full h-auto" preserveAspectRatio="none">
+          <path
+            d="M0,40 C360,80 720,0 1080,40 C1260,55 1380,65 1440,60 L1440,80 L0,80 Z"
+            fill="#FAF8FF"
+          />
+        </svg>
+      </div>
 
-                {/* Social Proof Badge */}
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    className="inline-flex flex-col sm:flex-row items-center gap-3 bg-white/10 border border-white/20 backdrop-blur-md px-6 py-2.5 rounded-2xl mb-6 md:mb-8"
-                >
-                    <div className="flex items-center gap-1">
-                        {[...Array(5)].map((_, i) => (
-                            <FaStar key={i} className="text-yellow-400 w-3 h-3" />
-                        ))}
-                    </div>
-                    <div className="h-4 w-px bg-white/20 hidden sm:block" />
-                    <p className="text-white text-xs font-semibold tracking-wide">
-                        Trusted by <span className="text-blue-400">500+</span> Businesses | <span className="text-blue-400">4.9/5</span> Rating
-                    </p>
-                </motion.div>
+      <SideConnectTab />
 
-                {/* Main Headline */}
-                <h1 className="text-3xl md:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.1] mb-4 md:mb-6">
-                    Grow Your Business with <br className="hidden md:block" />
-                    <span className="text-white">Result-Driven </span>
-                    <div className="relative inline-block min-w-[200px] text-left align-bottom">
-                        <AnimatePresence mode="wait">
-                            <motion.span
-                                key={services[index]}
-                                initial={{ opacity: 0, y: 20 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                exit={{ opacity: 0, y: -20 }}
-                                transition={{ duration: 0.5 }}
-                                className="inline-block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300"
-                            >
-                                {services[index]}
-                            </motion.span>
-                        </AnimatePresence>
-                        <span className="text-blue-500 animate-pulse ml-1">|</span>
-                    </div>
-                </h1>
+      <div className="fixed bottom-0 left-0 right-0 z-40 border-t border-white/10 bg-[#0e0c18]/95 backdrop-blur-xl p-3 lg:hidden">
+        <Link
+          href="/contact-us"
+          className="flex w-full items-center justify-center gap-2 rounded-full bg-primary py-3.5 text-sm font-bold text-white shadow-glow-brand"
+        >
+          Book Free Consultation
+          <ArrowRight className="h-4 w-4" />
+        </Link>
+      </div>
+    </section>
+  )
+}
 
-                {/* Subheading */}
-                <motion.p
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 0.3 }}
-                    className="text-slate-200 text-sm md:text-lg lg:text-xl max-w-3xl mx-auto leading-relaxed mb-6 md:mb-8"
-                >
-                    We help businesses rank higher, get more traffic, generate quality leads,
-                    and increase revenue with customized strategies.
-                </motion.p>
-
-                {/* Features List */}
-                <motion.div
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.5 }}
-                    className="flex flex-wrap justify-center gap-4 md:gap-8 mb-8 md:mb-10"
-                >
-                    {['Increase Organic Traffic', 'Generate Quality Leads', 'Maximize ROI & Revenue'].map((item) => (
-                        <div key={item} className="flex items-center gap-2 text-white/90">
-                            <FaCheckCircle className="text-blue-400 w-4 h-4" />
-                            <span className="text-sm md:text-base font-medium">{item}</span>
-                        </div>
-                    ))}
-                </motion.div>
-
-                {/* CTAs */}
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.7 }}
-                    className="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-5"
-                >
-                    <Link href="/contact-us" className="w-full sm:w-auto">
-                        <button className="w-full bg-blue-600 hover:bg-blue-500 text-white px-10 py-4 rounded-full font-bold text-sm transition-all shadow-xl shadow-blue-600/30 active:scale-95 flex items-center justify-center gap-3 cursor-pointer">
-                            GET FREE SEO AUDIT
-                            <FaArrowRight className="w-4 h-4" />
-                        </button>
-                    </Link>
-
-                    <Link href="#faq" className="w-full sm:w-auto">
-                        <button className="w-full bg-white/10 hover:bg-white/20 border border-white/20 backdrop-blur-md text-white px-10 py-4 rounded-full font-bold text-sm transition-all active:scale-95 flex items-center justify-center gap-3 cursor-pointer">
-                            <HiOutlineChatBubbleLeftRight className="w-5 h-5" />
-                            TALK TO EXPERT
-                        </button>
-                    </Link>
-                </motion.div>
-            </div>
-
-            {/* Decorative Bottom Fade */}
-            <div className="absolute bottom-0 left-0 w-full h-24 md:h-32 bg-gradient-to-t from-slate-950 to-transparent z-10 pointer-events-none" />
-
-        </section>
-    );
-};
-
-export default Hero;
+export default Hero

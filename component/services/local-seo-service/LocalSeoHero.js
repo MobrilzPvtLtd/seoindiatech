@@ -15,7 +15,7 @@ export default function LocalSeoHero() {
         <div className="space-y-7 z-10">
 
           <h1 className="text-4xl md:text-5xl font-bold leading-tight text-gray-900 dark:text-white">
-            Local SEO Service Company –{" "}
+            Local SEO Service Company -{" "}
             <span className="text-blue-600 dark:text-blue-400">
               Local SEO Services That Drive Results
             </span>

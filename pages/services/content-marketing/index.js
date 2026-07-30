@@ -14,7 +14,7 @@ export default function index() {
         name: 'Content Marketing Services',
         url: 'https://www.seoindiatech.com/services/content-marketing',
         description:
-          'SEOIndiatech provides content marketing services in India to boost engagement, drive traffic, and enhance your brand’s online presence effectively.',
+          'SEOIndiatech provides content marketing services in India to boost engagement, drive traffic, and enhance your brand\'s online presence effectively.',
         provider: {
           '@type': 'Organization',
           name: 'SEO India Tech',
@@ -87,10 +87,10 @@ export default function index() {
   return (
     <>
       <Head>
-        <title> Content Marketing Services India – SEOIndiatech</title>
+        <title> Content Marketing Services India - SEOIndiatech</title>
         <meta
           name="description"
-          content="SEOIndiatech provides content marketing services in India to boost engagement, drive traffic, and enhance your brand’s online presence effectively."
+          content="SEOIndiatech provides content marketing services in India to boost engagement, drive traffic, and enhance your brand's online presence effectively."
         />
         <link
           rel="canonical"

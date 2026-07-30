@@ -1,24 +1,28 @@
-import { ChevronDown, Menu, X } from 'lucide-react'
+'use client'
+
+import { ChevronDown, Home, Menu, X } from 'lucide-react'
 import React, { useState, useRef, useEffect } from 'react'
 import { useRouter } from 'next/router'
 import ServiceDropdown from './ServiceDropdown'
-import SolutionDropdown from './SolutionDropdown'
+import IndustryDropdown from './IndustryDropdown'
 import ThemeToggleButton from './ThemeToggleButton'
 import Link from 'next/link'
-import Image from 'next/image'
+import BrandLogo from '@/component/ui/BrandLogo'
+import { INDUSTRY_CATEGORIES, toSlug } from '@/utils/industries'
+import { useTheme } from '@/context/ThemeContext'
 
 const Header = () => {
   const router = useRouter()
+  const { theme } = useTheme()
+  const isDarkTheme = theme === 'dark'
   const isHome = router.pathname === '/'
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isServicesOpen, setIsServicesOpen] = useState(false)
-  const [isSolutionsOpen, setIsSolutionsOpen] = useState(false)
+  const [isIndustryOpen, setIsIndustryOpen] = useState(false)
   const [mounted, setMounted] = useState(false)
   const [windowWidth, setWindowWidth] = useState(0)
   const [openCategory, setOpenCategory] = useState(null)
   const [scrolled, setScrolled] = useState(false)
-  const [hidden, setHidden] = useState(false)
-  const lastScrollY = useRef(0)
 
   const serviceCategories = [
     {
@@ -55,24 +59,15 @@ const Header = () => {
     },
     {
       title: 'DESIGN & DEVELOPMENT',
-      slug: 'design-development',
+      slug: 'design-and-development',
       services: [{ title: 'UI/UX Design', slug: 'ui-ux-design' }],
     },
   ]
 
-  const solutions = [
-    { title: 'Automation', icon: '⚙️', slug: 'automation' },
-    { title: 'Workflow', icon: '📋', slug: 'workflow' },
-    { title: 'Promotion & Ads', icon: '📣', slug: 'promotion-and-ads' },
-    { title: 'CRM & Tools', icon: '👥', slug: 'crm-and-tools' },
-    { title: 'Market Research', icon: '🔍', slug: 'market-research' },
-    { title: 'Website Creation', icon: '🌐', slug: 'website-creation' },
-  ]
-
   const servicesTimeoutRef = useRef(null)
-  const solutionsTimeoutRef = useRef(null)
   const servicesRef = useRef(null)
-  const solutionsRef = useRef(null)
+  const industryTimeoutRef = useRef(null)
+  const industryRef = useRef(null)
   const mobileMenuRef = useRef(null)
 
   useEffect(() => {
@@ -97,15 +92,6 @@ const Header = () => {
     const handleScroll = () => {
       const currentScrollTop = window.scrollY || document.documentElement.scrollTop
       setScrolled(currentScrollTop > 12)
-
-      if (currentScrollTop < 10) {
-        setHidden(false)
-      } else if (currentScrollTop > lastScrollY.current && currentScrollTop > 80) {
-        setHidden(true)
-      } else {
-        setHidden(false)
-      }
-      lastScrollY.current = currentScrollTop
     }
 
     window.addEventListener('resize', handleResize)
@@ -116,7 +102,7 @@ const Header = () => {
 
     return () => {
       if (servicesTimeoutRef.current) clearTimeout(servicesTimeoutRef.current)
-      if (solutionsTimeoutRef.current) clearTimeout(solutionsTimeoutRef.current)
+      if (industryTimeoutRef.current) clearTimeout(industryTimeoutRef.current)
       window.removeEventListener('resize', handleResize)
       document.removeEventListener('mousedown', handleClickOutside)
       window.removeEventListener('scroll', handleScroll)
@@ -140,7 +126,34 @@ const Header = () => {
   const toggleMobileMenu = () => {
     setIsMenuOpen(!isMenuOpen)
     if (isServicesOpen) setIsServicesOpen(false)
-    if (isSolutionsOpen) setIsSolutionsOpen(false)
+    if (isIndustryOpen) setIsIndustryOpen(false)
+  }
+
+  const handleIndustryMouseEnter = () => {
+    if (windowWidth >= 768) {
+      if (industryTimeoutRef.current) {
+        clearTimeout(industryTimeoutRef.current)
+        industryTimeoutRef.current = null
+      }
+      setIsIndustryOpen(true)
+      setIsServicesOpen(false)
+    }
+  }
+
+  const handleIndustryMouseLeave = () => {
+    if (windowWidth >= 768) {
+      industryTimeoutRef.current = setTimeout(() => setIsIndustryOpen(false), 150)
+    }
+  }
+
+  const handleServicesClick = () => {
+    setIsServicesOpen((open) => !open)
+    setIsIndustryOpen(false)
+  }
+
+  const handleIndustryClick = () => {
+    setIsIndustryOpen((open) => !open)
+    setIsServicesOpen(false)
   }
 
   const handleServicesMouseEnter = () => {
@@ -150,7 +163,7 @@ const Header = () => {
         servicesTimeoutRef.current = null
       }
       setIsServicesOpen(true)
-      setIsSolutionsOpen(false)
+      setIsIndustryOpen(false)
     }
   }
 
@@ -160,56 +173,25 @@ const Header = () => {
     }
   }
 
-  const handleSolutionsMouseEnter = () => {
-    if (windowWidth >= 768) {
-      if (solutionsTimeoutRef.current) {
-        clearTimeout(solutionsTimeoutRef.current)
-        solutionsTimeoutRef.current = null
-      }
-      setIsSolutionsOpen(true)
-      setIsServicesOpen(false)
-    }
-  }
-
-  const handleSolutionsMouseLeave = () => {
-    if (windowWidth >= 768) {
-      solutionsTimeoutRef.current = setTimeout(() => setIsSolutionsOpen(false), 300)
-    }
-  }
-
-  const handleServicesClick = () => {
-    if (windowWidth < 768) {
-      setIsServicesOpen(!isServicesOpen)
-      setIsSolutionsOpen(false)
-    }
-  }
-
-  const handleSolutionsClick = () => {
-    if (windowWidth < 768) {
-      setIsSolutionsOpen(!isSolutionsOpen)
-      setIsServicesOpen(false)
-    }
-  }
-
   const handleCardClick = () => {
     setIsServicesOpen(false)
-    setIsSolutionsOpen(false)
+    setIsIndustryOpen(false)
   }
 
-  const lightBg = isHome && !scrolled
+  const darkHeroNav = isHome && !scrolled && !isDarkTheme
+  const headerTopClass = isHome && !scrolled ? 'top-[34px]' : 'top-0'
 
-  // Underlined nav link, with a persistent (not just hover) indicator for the active route
   const NavLink = ({ href, children }) => {
     const isActive = router.pathname === href
     return (
       <Link
         href={href}
-        className={`relative text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] font-medium py-1 transition-colors duration-200
-          after:content-[''] after:absolute after:left-0 after:-bottom-0.5 after:h-[2px] after:bg-blue-600 dark:after:bg-blue-400
+        className={`relative text-[10px] lg:text-[11px] font-medium uppercase tracking-wide py-1 whitespace-nowrap shrink-0 transition-colors duration-200
+          after:content-[''] after:absolute after:left-0 after:-bottom-0.5 after:h-[2px] after:bg-primary
           after:transition-all after:duration-300 hover:after:w-full
           ${
             isActive
-              ? `after:w-full ${lightBg ? 'text-white' : 'text-slate-900 dark:text-white'}`
+              ? `after:w-full ${darkHeroNav ? 'text-white' : 'text-primary'}`
               : `after:w-0 ${navLinkTextColor}`
           }`}
       >
@@ -218,75 +200,66 @@ const Header = () => {
     )
   }
 
+  const navLinkTextColor = darkHeroNav
+    ? 'text-white/80 hover:text-white'
+    : isDarkTheme
+      ? 'text-white/75 hover:text-white'
+      : 'text-heading/80 hover:text-heading'
+
+  const servicesBtnColor = darkHeroNav
+    ? 'text-white/80 hover:text-white'
+    : isDarkTheme
+      ? 'text-white/75 hover:text-white'
+      : 'text-heading/80 hover:text-heading'
+
   const contactButtonClass =
-    'inline-flex items-center justify-center bg-gradient-to-r from-blue-600 to-blue-700 text-white px-3 md:px-4 lg:px-5 py-2 md:py-2.5 rounded-full font-semibold text-[11px] md:text-xs lg:text-sm tracking-wide transition-all duration-300 hover:from-blue-500 hover:to-blue-600 hover:shadow-[0_8px_20px_-6px_rgba(37,99,235,0.55)] active:scale-95 whitespace-nowrap'
+    'inline-flex items-center justify-center shrink-0 rounded-full bg-primary hover:bg-primary-hover text-white px-4 lg:px-5 py-2 lg:py-2.5 font-bold text-[11px] tracking-wide uppercase transition-all duration-300 hover:shadow-glow-brand active:scale-95 whitespace-nowrap'
 
   const mobileContactButtonClass =
-    'block bg-slate-900 dark:bg-blue-600 text-white px-8 py-3.5 rounded-full font-semibold text-center transition-all duration-300 hover:bg-blue-600 active:scale-95 w-full shadow-md'
+    'block rounded-full bg-primary hover:bg-primary-hover text-white px-8 py-3.5 font-bold text-center transition-all duration-300 active:scale-95 w-full shadow-glow-brand'
 
-  // Note: horizontal gutter now lives on the OUTER wrapper as padding, and this inner
-  // element centers itself with `mx-auto` at every breakpoint. Previously the gutter was
-  // applied as a fixed `mx-*` margin on this element directly (mx-3 sm:mx-4 md:mx-6 lg:mx-8),
-  // with `mx-auto` only kicking in at `xl`. Since a fixed margin isn't the same as centering,
-  // the header sat closer to the left edge than the right on tablet (md/lg) widths — the
-  // `max-w-*` box wasn't given a way to distribute leftover space evenly. `mx-auto` on all
-  // breakpoints fixes that.
-  const headerContainerClass = `
-    mx-auto flex items-center justify-between h-16 md:h-[68px] lg:h-[72px]
-    w-full max-w-md sm:max-w-lg md:max-w-2xl lg:max-w-5xl xl:max-w-6xl
-    px-2 sm:px-4 lg:px-6
-    rounded-full border
-    transition-all duration-300 ease-out
-    ${
-      lightBg
-        ? 'border-transparent backdrop-blur-none'
-        : `backdrop-blur-xl backdrop-saturate-150 ${
-            scrolled
-              ? 'bg-white/85 dark:bg-slate-900/85 border-slate-200/70 dark:border-slate-700/60 shadow-[0_8px_30px_-8px_rgba(15,23,42,0.18)]'
-              : 'bg-white/60 dark:bg-slate-900/60 border-white/40 dark:border-slate-700/40 shadow-[0_4px_16px_-4px_rgba(15,23,42,0.08)]'
-          }`
-    }
-  `
+  const logoOnDark = darkHeroNav || isDarkTheme
 
-  const navLinkTextColor = lightBg
-    ? 'text-white/80 hover:text-white'
-    : 'text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white'
+  const headerBarClass =
+    darkHeroNav
+      ? 'bg-transparent border-transparent'
+      : isDarkTheme
+        ? 'bg-secondary/95 backdrop-blur-md border-white/10'
+        : 'bg-white/95 backdrop-blur-md border-border/60 shadow-sm'
 
-  const servicesBtnColor = lightBg
-    ? 'text-white/80 hover:text-white'
-    : 'text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white'
+  const headerInnerClass =
+    'mx-auto grid w-full max-w-7xl grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-3 sm:gap-4 lg:gap-5 h-16 md:h-[72px] px-4 sm:px-6 lg:px-8'
 
   return (
     <>
-      <header className={`fixed top-0 left-0 w-full z-40 transition-transform duration-300 ease-in-out ${hidden ? '-translate-y-full' : 'translate-y-0'}`}>
-        {/* Outer wrapper owns the responsive gutter + centers the inner pill via mx-auto */}
-        <div className="mt-2 md:mt-3 lg:mt-4 px-3 sm:px-4 md:px-6 lg:px-8">
-          <div className={headerContainerClass}>
-            {/* Logo */}
-            <div className="flex items-center flex-shrink-0 pl-1 sm:pl-0">
+      <header
+        className={`fixed left-0 w-full z-50 isolate overflow-visible transition-[top,transform] duration-300 ease-in-out ${headerTopClass}`}
+      >
+        <div className={`w-full border-b transition-all duration-300 ${headerBarClass}`}>
+          <div className={headerInnerClass}>
+            <div className="flex items-center shrink-0 min-w-0">
               {mounted ? (
-                <Link href="/" className="block group">
-                  <div className="relative w-[56px] h-[56px] md:w-14 md:h-14 lg:w-16 lg:h-16 cursor-pointer transition-transform duration-300 group-hover:scale-105">
-                    <Image
-                      src="/sit.png"
-                      alt="SIT Logo"
-                      fill
-                      sizes="(max-width: 768px) 56px, (max-width: 1024px) 56px, 64px"
-                      className={`object-contain object-center ${lightBg ? 'invert' : 'dark:invert'}`}
-                      priority
-                    />
-                  </div>
-                </Link>
+                <BrandLogo
+                  variant={logoOnDark ? 'onDark' : 'onLight'}
+                  size="md"
+                />
               ) : (
-                <div className="w-10 h-10 md:w-14 md:h-14 bg-slate-100 dark:bg-slate-800 animate-pulse rounded-full" />
+                <div className="h-8 w-[120px] bg-neutral/30 animate-pulse rounded-lg" />
               )}
             </div>
 
-            {/* Desktop nav */}
-            <nav className="hidden md:flex flex-1 justify-center">
-              <ul className="flex items-center gap-3 lg:gap-5 xl:gap-7">
-                <li><NavLink href="/">Home</NavLink></li>
-                <li><NavLink href="/who-we-are">Who We Are</NavLink></li>
+            <nav className="hidden md:flex justify-center min-w-0 overflow-visible">
+              <ul className="flex items-center flex-nowrap gap-x-2 lg:gap-x-3 xl:gap-x-4">
+                <li>
+                  <Link
+                    href="/"
+                    className={`flex items-center justify-center p-1 transition-colors ${darkHeroNav ? 'text-accent hover:text-accent/80' : 'text-primary'}`}
+                    aria-label="Home"
+                  >
+                    <Home size={18} strokeWidth={2} />
+                  </Link>
+                </li>
+                <li><NavLink href="/who-we-are">About Us</NavLink></li>
 
                 <li
                   className="relative"
@@ -295,11 +268,13 @@ const Header = () => {
                   onMouseLeave={handleServicesMouseLeave}
                 >
                   <button
-                    className={`flex items-center gap-1 text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] ${servicesBtnColor} font-medium py-1 transition-colors duration-200`}
+                    type="button"
+                    onClick={handleServicesClick}
+                    className={`flex items-center gap-1 text-[10px] lg:text-[11px] uppercase tracking-wide whitespace-nowrap shrink-0 ${servicesBtnColor} font-medium py-1 transition-colors duration-200`}
                     aria-expanded={isServicesOpen}
                     aria-controls="services-dropdown"
                   >
-                    Services
+                    Our Services
                     <ChevronDown
                       size={16}
                       className={`transition-transform duration-300 ${isServicesOpen ? 'rotate-180' : ''}`}
@@ -312,30 +287,70 @@ const Header = () => {
                       absolute left-1/2 top-full mt-3 -translate-x-1/2
                       w-full max-w-[90vw] md:w-[500px] lg:w-[700px] xl:w-[900px]
                       max-h-[75vh] overflow-hidden flex flex-col
-                      bg-white dark:bg-slate-800 rounded-2xl z-30
+                      bg-white dark:bg-slate-800 rounded-2xl z-[100]
                       border border-slate-200/70 dark:border-slate-700/60
                       shadow-[0_20px_50px_-12px_rgba(15,23,42,0.25)]
                       transition-all duration-200 origin-top
-                      ${isServicesOpen ? 'opacity-100 scale-100 pointer-events-auto' : 'opacity-0 scale-95 pointer-events-none'}
+                      ${isServicesOpen ? 'opacity-100 scale-100 pointer-events-auto visible' : 'opacity-0 scale-95 pointer-events-none invisible'}
                     `}
                     onMouseEnter={handleServicesMouseEnter}
                     onMouseLeave={handleServicesMouseLeave}
                     onClick={handleCardClick}
                   >
-                    <ServiceDropdown />
+                    <ServiceDropdown closeMenu={handleCardClick} />
                   </div>
                 </li>
 
-                <li><NavLink href="/seo-packages">Packages</NavLink></li>
+                <li
+                  className="relative"
+                  ref={industryRef}
+                  onMouseEnter={handleIndustryMouseEnter}
+                  onMouseLeave={handleIndustryMouseLeave}
+                >
+                  <button
+                    type="button"
+                    onClick={handleIndustryClick}
+                    className={`flex items-center gap-1 text-[10px] lg:text-[11px] uppercase tracking-wide whitespace-nowrap shrink-0 ${servicesBtnColor} font-medium py-1 transition-colors duration-200`}
+                    aria-expanded={isIndustryOpen}
+                    aria-controls="industry-dropdown"
+                  >
+                    Industry
+                    <ChevronDown
+                      size={16}
+                      className={`transition-transform duration-300 ${isIndustryOpen ? 'rotate-180' : ''}`}
+                    />
+                  </button>
+                  <div
+                    id="industry-dropdown"
+                    data-lenis-prevent
+                    className={`
+                      absolute left-1/2 top-full mt-3 -translate-x-1/2
+                      w-full max-w-[95vw] xl:w-[1100px]
+                      max-h-[75vh] overflow-hidden flex flex-col
+                      bg-white dark:bg-secondary rounded-2xl z-[100]
+                      border border-slate-200/70 dark:border-white/10
+                      shadow-[0_20px_50px_-12px_rgba(15,23,42,0.25)]
+                      transition-all duration-200 origin-top
+                      ${isIndustryOpen ? 'opacity-100 scale-100 pointer-events-auto visible' : 'opacity-0 scale-95 pointer-events-none invisible'}
+                    `}
+                    onMouseEnter={handleIndustryMouseEnter}
+                    onMouseLeave={handleIndustryMouseLeave}
+                    onClick={handleCardClick}
+                  >
+                    <IndustryDropdown closeMenu={handleCardClick} />
+                  </div>
+                </li>
+
                 <li><NavLink href="/blog">Blog</NavLink></li>
+                <li><NavLink href="/contact-us">Contact Us</NavLink></li>
               </ul>
             </nav>
 
             {/* Mobile toggle */}
             <div className="md:hidden flex items-center gap-2">
-              <ThemeToggleButton />
+              <ThemeToggleButton onDark={logoOnDark} compact />
               <button
-                className={`menu-toggle ${lightBg ? 'text-white hover:bg-white/10' : 'text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800'} focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-full p-2 z-50 transition-colors`}
+                className={`menu-toggle ${darkHeroNav ? 'text-white hover:bg-white/10' : 'text-heading hover:bg-surface'} focus:outline-none focus:ring-2 focus:ring-primary rounded-full p-2 z-50 transition-colors`}
                 onClick={toggleMobileMenu}
                 aria-label="Toggle menu"
                 aria-expanded={isMenuOpen}
@@ -344,11 +359,10 @@ const Header = () => {
               </button>
             </div>
 
-            {/* Desktop right side */}
-            <div className="hidden md:flex items-center gap-3">
-              <ThemeToggleButton />
+            <div className="hidden md:flex items-center justify-end shrink-0 gap-2 lg:gap-3">
+              <ThemeToggleButton onDark={logoOnDark} compact />
               <Link href="/contact-us" className={contactButtonClass}>
-                Contact Us
+                Book a Call
               </Link>
             </div>
           </div>
@@ -358,7 +372,7 @@ const Header = () => {
       {/* Mobile overlay */}
       {isMenuOpen && (
         <div
-          className="fixed inset-0 bg-slate-900/50 backdrop-blur-sm z-50 md:hidden transition-opacity duration-300"
+          className="fixed inset-0 bg-slate-900/50 backdrop-blur-sm z-[60] md:hidden transition-opacity duration-300"
           onClick={toggleMobileMenu}
           aria-hidden="true"
         />
@@ -368,18 +382,18 @@ const Header = () => {
       <div
         ref={mobileMenuRef}
         className={`
-          fixed top-0 right-0 h-full w-3/4 max-w-xs bg-white dark:bg-slate-900
-          shadow-2xl z-50 transform transition-transform duration-300 ease-in-out
+          fixed top-0 right-0 h-full w-3/4 max-w-xs bg-secondary dark:bg-slate-900
+          shadow-2xl z-[70] transform transition-transform duration-300 ease-in-out
           ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}
           flex flex-col md:hidden
         `}
       >
-        <div className="flex justify-between items-center p-5 border-b border-slate-200 dark:border-slate-800">
-          <span className="text-lg font-bold text-slate-900 dark:text-white">Menu</span>
+        <div className="flex justify-between items-center p-5 border-b border-white/10">
+          <span className="text-lg font-bold text-white">Menu</span>
           <button
             onClick={toggleMobileMenu}
             aria-label="Close menu"
-            className="text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full p-1.5 transition-colors"
+            className="text-white/70 hover:bg-white/10 rounded-full p-1.5 transition-colors"
           >
             <X className="w-5 h-5" />
           </button>
@@ -392,8 +406,8 @@ const Header = () => {
                 href="/"
                 className={`block px-4 py-3 rounded-xl font-medium transition-colors ${
                   router.pathname === '/'
-                    ? 'bg-blue-50 dark:bg-blue-950/40 text-blue-600 dark:text-blue-400'
-                    : 'text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-white'
+                    ? 'bg-white/10 text-accent'
+                    : 'text-white/75 hover:bg-white/10 hover:text-white'
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -405,8 +419,8 @@ const Header = () => {
                 href="/who-we-are"
                 className={`block px-4 py-3 rounded-xl font-medium transition-colors ${
                   router.pathname === '/who-we-are'
-                    ? 'bg-blue-50 dark:bg-blue-950/40 text-blue-600 dark:text-blue-400'
-                    : 'text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-white'
+                    ? 'bg-white/10 text-accent'
+                    : 'text-white/75 hover:bg-white/10 hover:text-white'
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -417,7 +431,7 @@ const Header = () => {
             <li>
               <button
                 onClick={handleServicesClick}
-                className="flex justify-between items-center w-full text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-white px-4 py-3 rounded-xl font-medium transition-colors"
+                className="flex justify-between items-center w-full text-white/75 hover:bg-white/10 hover:text-white px-4 py-3 rounded-xl font-medium transition-colors"
               >
                 Services
                 <ChevronDown
@@ -430,26 +444,36 @@ const Header = () => {
                 <ul className="pl-4 mt-1 space-y-1">
                   {serviceCategories.map((category) => (
                     <li key={category.slug}>
-                      <button
-                        onClick={() =>
-                          setOpenCategory(openCategory === category.slug ? null : category.slug)
-                        }
-                        className="flex justify-between items-center w-full text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 px-4 py-2 rounded-lg text-sm font-medium tracking-wide"
-                      >
-                        {category.title}
-                        <ChevronDown
-                          size={13}
-                          className={`transition-transform duration-300 ${openCategory === category.slug ? 'rotate-180' : ''}`}
-                        />
-                      </button>
+                      <div className="flex items-center">
+                        <Link
+                          href={`/services/${category.slug}`}
+                          className="flex-1 text-white/70 hover:bg-white/10 hover:text-white px-4 py-2 rounded-lg text-sm font-medium tracking-wide"
+                          onClick={() => setIsMenuOpen(false)}
+                        >
+                          {category.title}
+                        </Link>
+                        <button
+                          type="button"
+                          onClick={() =>
+                            setOpenCategory(openCategory === category.slug ? null : category.slug)
+                          }
+                          className="text-white/50 hover:text-white px-2 py-2 rounded-lg"
+                          aria-label={`Expand ${category.title} services`}
+                        >
+                          <ChevronDown
+                            size={13}
+                            className={`transition-transform duration-300 ${openCategory === category.slug ? 'rotate-180' : ''}`}
+                          />
+                        </button>
+                      </div>
 
                       {openCategory === category.slug && (
-                        <ul className="pl-4 mt-1 space-y-0.5 border-l border-slate-200 dark:border-slate-700 ml-4">
+                        <ul className="pl-4 mt-1 space-y-0.5 border-l border-white/20 ml-4">
                           {category.services.map((service) => (
                             <li key={service.slug}>
                               <Link
                                 href={`/services/${service.slug}`}
-                                className="block text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 px-4 py-2 text-sm transition-colors"
+                                className="block text-white/60 hover:text-accent px-4 py-2 text-sm transition-colors"
                                 onClick={() => setIsMenuOpen(false)}
                               >
                                 {service.title}
@@ -465,12 +489,59 @@ const Header = () => {
             </li>
 
             <li>
+              <button
+                onClick={handleIndustryClick}
+                className="flex justify-between items-center w-full text-white/75 hover:bg-white/10 hover:text-white px-4 py-3 rounded-xl font-medium transition-colors"
+              >
+                Industries
+                <ChevronDown
+                  size={16}
+                  className={`transition-transform duration-300 ${isIndustryOpen ? 'rotate-180' : ''}`}
+                />
+              </button>
+
+              {isIndustryOpen && (
+                <ul className="pl-2 mt-1 space-y-3">
+                  <li>
+                    <Link
+                      href="/industries"
+                      className="block text-accent hover:text-white px-4 py-2 text-sm font-semibold transition-colors"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      All Industries
+                    </Link>
+                  </li>
+                  {INDUSTRY_CATEGORIES.map((cat) => (
+                    <li key={cat.id}>
+                      <p className="px-4 py-1 text-[10px] font-bold uppercase tracking-widest text-accent/80">
+                        {cat.title}
+                      </p>
+                      <ul className="space-y-0.5">
+                        {cat.items.map((item) => (
+                          <li key={toSlug(item)}>
+                            <Link
+                              href={`/industries/${toSlug(item)}`}
+                              className="block text-white/60 hover:text-accent px-4 py-1.5 text-sm transition-colors"
+                              onClick={() => setIsMenuOpen(false)}
+                            >
+                              {item}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </li>
+
+            <li>
               <Link
                 href="/seo-packages"
                 className={`block px-4 py-3 rounded-xl font-medium transition-colors ${
                   router.pathname === '/seo-packages'
-                    ? 'bg-blue-50 dark:bg-blue-950/40 text-blue-600 dark:text-blue-400'
-                    : 'text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-white'
+                    ? 'bg-white/10 text-accent'
+                    : 'text-white/75 hover:bg-white/10 hover:text-white'
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -483,20 +554,34 @@ const Header = () => {
                 href="/blog"
                 className={`block px-4 py-3 rounded-xl font-medium transition-colors ${
                   router.pathname === '/blog'
-                    ? 'bg-blue-50 dark:bg-blue-950/40 text-blue-600 dark:text-blue-400'
-                    : 'text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-white'
+                    ? 'bg-white/10 text-accent'
+                    : 'text-white/75 hover:bg-white/10 hover:text-white'
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Blog
               </Link>
             </li>
+
+            <li>
+              <Link
+                href="/contact-us"
+                className={`block px-4 py-3 rounded-xl font-medium transition-colors ${
+                  router.pathname === '/contact-us'
+                    ? 'bg-white/10 text-accent'
+                    : 'text-white/75 hover:bg-white/10 hover:text-white'
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Contact Us
+              </Link>
+            </li>
           </ul>
         </div>
 
-        <div className="p-6 border-t border-slate-200 dark:border-slate-800 mt-auto">
+        <div className="p-6 border-t border-white/10 mt-auto">
           <Link href="/contact-us" className={mobileContactButtonClass} onClick={() => setIsMenuOpen(false)}>
-            Contact Us
+            Book a Strategy Call
           </Link>
         </div>
       </div>

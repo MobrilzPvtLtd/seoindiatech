@@ -5,6 +5,21 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function () {
+                try {
+                  var t = localStorage.getItem('theme');
+                  var dark = t === 'dark';
+                  var root = document.documentElement;
+                  root.classList.add(dark ? 'dark' : 'light');
+                  root.style.colorScheme = dark ? 'dark' : 'light';
+                } catch (e) {}
+              })();
+            `,
+          }}
+        />
         {/* Google Tag Manager */}
         <script
           dangerouslySetInnerHTML={{

@@ -114,7 +114,7 @@ export default function TrustPromotion() {
                   >
                     <p className="text-justify text-gray-700 dark:text-gray-300 text-base md:text-lg leading-relaxed">
                       Promotion encompasses various strategies and activities
-                      aimed at showcasing a product or service’s value to the
+                      aimed at showcasing a product or service's value to the
                       target audience. It includes advertising, sales
                       promotions, personal selling, public relations, and direct
                       marketing, all working together to shape positive brand

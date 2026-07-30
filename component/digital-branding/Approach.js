@@ -116,7 +116,7 @@ const Approach = () => {
                         </span>
                         {subItem.detail && (
                           <span className="text-gray-600 dark:text-gray-400 text-sm">
-                            {' – '}{subItem.detail}
+                            {' - '}{subItem.detail}
                           </span>
                         )}
                       </div>

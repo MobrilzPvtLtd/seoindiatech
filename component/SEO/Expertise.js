@@ -26,7 +26,7 @@ const Expertise = () => {
       icon: <Search className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
       title: "Keyword Research & Content Optimization",
       description:
-        "We uncover high-value keywords that align with your audience’s search intent. Our SEO optimization services focus on on-page elements — titles, meta descriptions, header tags — and craft compelling, SEO-friendly content that drives organic growth.",
+        "We uncover high-value keywords that align with your audience's search intent. Our SEO optimization services focus on on-page elements - titles, meta descriptions, header tags - and craft compelling, SEO-friendly content that drives organic growth.",
       benefits: [
         "Advanced keyword research and clustering",
         "On-page SEO optimization (titles, meta descriptions, headers, etc.)",
@@ -37,7 +37,7 @@ const Expertise = () => {
       icon: <Gauge className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
       title: "Technical SEO for Performance & Usability",
       description:
-        "A technically sound website improves both user experience and search visibility. We optimize your site’s speed, implement responsive design, manage XML sitemaps, and apply structured data markup. This ensures search engines crawl and index your site more efficiently..",
+        "A technically sound website improves both user experience and search visibility. We optimize your site's speed, implement responsive design, manage XML sitemaps, and apply structured data markup. This ensures search engines crawl and index your site more efficiently..",
       benefits: [
         "Website speed optimization",
         "Mobile-first indexing & responsive design",
@@ -57,7 +57,7 @@ const Expertise = () => {
     },
     {
       icon: <MapPin className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
-      title: "Local SEO – Own Your Market",
+      title: "Local SEO - Own Your Market",
       description:
         "Our local SEO strategies increase your presence in local searches and map listings.",
       benefits: [
@@ -109,7 +109,7 @@ const Expertise = () => {
             or services.
         
              Our SEO optimization services ensure that your website
-            is not only search-friendly but user-friendly too — balancing
+            is not only search-friendly but user-friendly too - balancing
             technical sophistication with content that resonates. With our
             data-driven strategies, we help you convert browsers into loyal
             customers.

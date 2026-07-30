@@ -90,7 +90,7 @@ function page() {
   return (
     <>
       <Head>
-        <title>UI/UX Design Services India– SEOIndiatech</title>
+        <title>UI/UX Design Services India- SEOIndiatech</title>
         <meta
           name="description"
           content="SEOIndiatech provides professional UI/UX design services in India, creating intuitive, engaging, and user-friendly digital experiences that drive results."

@@ -47,9 +47,9 @@ const WebsiteCreationService = () => {
       icon: <Layout className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
       title: 'Design the Website',
       text:
-        'Define the website’s appearance and layout, covering color schemes, fonts, imagery, and UI design elements.',
+        'Define the website\'s appearance and layout, covering color schemes, fonts, imagery, and UI design elements.',
       detail:
-        'We create visual prototypes and mockups to help you envision your website’s design prior to building it.',
+        'We create visual prototypes and mockups to help you envision your website\'s design prior to building it.',
     },
     {
       id: 5,
@@ -67,7 +67,7 @@ const WebsiteCreationService = () => {
       text:
         'Create and organize website content across text, images, videos, and multimedia to enhance user experience.',
       detail:
-        'Our team crafts content layouts that enhance impact and maintain consistency with your brand’s message and tone.',
+        'Our team crafts content layouts that enhance impact and maintain consistency with your brand\'s message and tone.',
     },
     {
       id: 7,
@@ -85,7 +85,7 @@ const WebsiteCreationService = () => {
       text:
         'Conduct thorough testing across multiple devices and browsers to guarantee a fully responsive and functional website.',
       detail:
-        'We conduct thorough quality assurance testing to ensure your website’s functionality, performance, security, and accessibility meet high standards.',
+        'We conduct thorough quality assurance testing to ensure your website\'s functionality, performance, security, and accessibility meet high standards.',
     },
     {
       id: 9,
@@ -254,8 +254,8 @@ const WebsiteCreationService = () => {
                 </span>
                 <br />
                 <br />
-                Your website is more than just pages — it’s your digital
-                storefront, brand ambassador, and lead generation engine. That’s
+                Your website is more than just pages - it's your digital
+                storefront, brand ambassador, and lead generation engine. That's
                 why we start with through{' '}
                 <a
                   href="https://www.seoindiatech.com/solution/market-research"
@@ -272,7 +272,7 @@ const WebsiteCreationService = () => {
                 We analyze your competitors, discover what works in your
                 industry, and use those insights to shape a website structure
                 optimized for conversions. The result? A smart online platform
-                that’s not just visually appealing, but purpose-driven — giving
+                that's not just visually appealing, but purpose-driven - giving
                 you an edge among the top website creation services available.
               </p>
             </div>
@@ -288,9 +288,9 @@ const WebsiteCreationService = () => {
                 </span>
                 <br />
                 <br />
-                Design matters. A clean, intuitive layout — with easy
-                navigation, smart UI/UX, and responsive design — can make or
-                break a visitor’s impression. Our design team selects colors,
+                Design matters. A clean, intuitive layout - with easy
+                navigation, smart UI/UX, and responsive design - can make or
+                break a visitor's impression. Our design team selects colors,
                 fonts, imagery, and layouts that match your brand identity and
                 engage your visitors.
                 <br />

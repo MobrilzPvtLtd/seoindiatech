@@ -176,7 +176,7 @@ const Socialmediastrategies = () => {
                   <strong> Affordable &amp; Transparent:</strong> Clear pricing, regular updates, and honest communication.
                 </li>
                 <li className="text-blue-100 dark:text-gray-400 max-w-xl mb-2">
-                  <strong>Proven Results:</strong> We stay focused on performance, growth, and real outcomes—not just metrics.
+                  <strong>Proven Results:</strong> We stay focused on performance, growth, and real outcomes-not just metrics.
                 </li>
               </ul>
          

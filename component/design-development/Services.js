@@ -48,7 +48,7 @@ const services = [
     icon: Zap,
     title: 'Performance Optimization',
     description:
-      'Improve load times, Core Web Vitals, and overall site performance for better user experience and SEO rankings. Speed matters — we make your site lightning fast.',
+      'Improve load times, Core Web Vitals, and overall site performance for better user experience and SEO rankings. Speed matters - we make your site lightning fast.',
     points: ['Core Web Vitals Audit', 'Image & Code Optimization', 'CDN & Caching Strategy'],
   },
 ]

@@ -17,7 +17,7 @@ const FAQComponent = ({ faqdata }) => {
     {
       question: "How long does it take to complete a website project?",
       answer:
-        "The timeline for completing a website project can vary depending on its size, complexity, and specific features required. However, for a standard business website with common functionalities and a clean design, it typically takes 3 to 8 weeks from start to finish. This includes phases like discovery, planning, design, development, testing, and launch. Larger or more complex websites—such as e-commerce stores or custom portals—may take longer. We also accommodate urgent timelines where possible, without compromising on quality. Regular updates and approvals are shared throughout the process to keep you involved every step of the way."
+        "The timeline for completing a website project can vary depending on its size, complexity, and specific features required. However, for a standard business website with common functionalities and a clean design, it typically takes 3 to 8 weeks from start to finish. This includes phases like discovery, planning, design, development, testing, and launch. Larger or more complex websites-such as e-commerce stores or custom portals-may take longer. We also accommodate urgent timelines where possible, without compromising on quality. Regular updates and approvals are shared throughout the process to keep you involved every step of the way."
     },
     {
       question: "Do you provide ongoing support after project delivery?",

@@ -97,7 +97,7 @@ export default function TrustCRMTool() {
 
           <p className="text-gray-700 dark:text-gray-300 text-center max-w-4xl mx-auto mb-10 leading-relaxed">
             Technology alone cannot enhance performance unless it supports the
-            right business process. That’s why our CRM solutions emphasize
+            right business process. That's why our CRM solutions emphasize
             building a highly efficient{' '}
             <a
               href="https://www.seoindiatech.com/solution/workflow"

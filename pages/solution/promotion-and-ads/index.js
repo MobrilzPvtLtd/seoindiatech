@@ -82,7 +82,7 @@ export default function index() {
   return (
     <>
       <Head>
-        <title>Promotion & Ads Services India – SEOIndiatech</title>
+        <title>Promotion & Ads Services India - SEOIndiatech</title>
         <meta
           name="description"
           content="SEOIndiatech provides promotion and ads services in India to boost brand visibility, attract target audiences, and drive higher engagement and conversions."

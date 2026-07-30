@@ -8,7 +8,7 @@ const Matters = () => {
       icon: <LineChart className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
       highlight: '93%',
       text:
-        'of online interactions begin with a search—without SEO, your business can’t be found.',
+        'of online interactions begin with a search-without SEO, your business can\'t be found.',
     },
     {
       icon: <Users className="w-5 h-5 text-blue-600 dark:text-blue-400" />,

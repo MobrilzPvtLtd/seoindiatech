@@ -70,7 +70,7 @@ export default function EcommerceWhoDifferent() {
     <section className="max-w-7xl mx-auto px-6 py-14">
       <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
 
-        {/* LEFT SIDE – 60% */}
+        {/* LEFT SIDE - 60% */}
         <div className="lg:col-span-3 group relative rounded-3xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 p-10 shadow-sm transition-all duration-500 hover:shadow-xl">
 
           <div className="flex items-center gap-4 mb-6">
@@ -92,7 +92,7 @@ export default function EcommerceWhoDifferent() {
         </div>
 
 
-        {/* RIGHT SIDE – 40% */}
+        {/* RIGHT SIDE - 40% */}
         <div className="lg:col-span-2 group relative rounded-3xl border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 p-10 shadow-sm transition-all duration-500 hover:shadow-xl hover:-translate-y-1 flex flex-col justify-center">
 
           <div className="relative inline-block mb-6">

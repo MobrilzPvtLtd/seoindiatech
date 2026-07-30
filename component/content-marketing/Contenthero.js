@@ -20,7 +20,7 @@ const Contenthero = () => {
           </div>
 
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white leading-tight">
-           Content Marketing Services – Build Trust, Engage Audiences &amp; Grow
+           Content Marketing Services - Build Trust, Engage Audiences &amp; Grow
 
             <span className="text-blue-700 dark:text-blue-400"> Your Brand</span>
           </h1>

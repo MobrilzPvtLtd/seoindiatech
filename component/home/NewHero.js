@@ -12,7 +12,7 @@
 //  * accent dots around the big word, a floating proof chip straddling
 //  * the seam between panels, scattered background shapes on the paper
 //  * side, a proper avatar-stack proof row, and a slow keyword marquee
-//  * along the bottom edge. The structure didn't change — the richness
+//  * along the bottom edge. The structure didn't change - the richness
 //  * did.
 //  */
 
@@ -51,7 +51,7 @@
 //         <section className="relative w-full overflow-hidden bg-[#F6F7F9]">
 //             <div className="relative grid lg:grid-cols-[42%_58%] min-h-[680px] lg:min-h-[92vh] lg:max-h-[1000px]">
 
-//                 {/* LEFT — ink block */}
+//                 {/* LEFT - ink block */}
 //                 <div className="relative flex flex-col items-center lg:items-start justify-center bg-[#14161F] px-8 sm:px-14 lg:px-16 py-20 lg:py-0 overflow-hidden">
 //                     {/* Layered glows */}
 //                     <div className="pointer-events-none absolute w-[420px] h-[420px] rounded-full blur-[110px] opacity-25" style={{ background: `radial-gradient(circle, ${accents[2]}, transparent 70%)`, top: '20%', left: '10%' }} />
@@ -139,7 +139,7 @@
 //                     <div className="hidden lg:block absolute top-0 right-0 h-full w-[2px] bg-gradient-to-b from-[#16C784] via-[#3355FF] to-[#8B5CF6] opacity-70" />
 //                 </div>
 
-//                 {/* RIGHT — paper block */}
+//                 {/* RIGHT - paper block */}
 //                 <div className="relative flex flex-col justify-center px-6 sm:px-12 lg:px-16 py-16 lg:py-0 overflow-hidden">
 //                     <div
 //                         className="pointer-events-none absolute inset-0 opacity-[0.04]"
@@ -261,7 +261,7 @@
 //                     {[...marqueeItems, ...marqueeItems].map((item, i) => (
 //                         <span key={i} className="flex items-center gap-8 font-mono text-xs uppercase tracking-wider text-[#94A3B8] whitespace-nowrap">
 //                             {item}
-//                             <span style={{ color: accents[i % accents.length] }}>•</span>
+//                             <span style={{ color: accents[i % accents.length] }}>-</span>
 //                         </span>
 //                     ))}
 //                 </motion.div>
@@ -287,7 +287,7 @@
 //  * single dominant headline as the focal point, instead of content
 //  * broken into panels or tiles. Richness comes from the background
 //  * (layered glows, drifting particles, a big graphic sparkline, a fine
-//  * grid) and from craft in the typography — not from adding more boxes.
+//  * grid) and from craft in the typography - not from adding more boxes.
 //  */
 
 // const services = ['SEO', 'PPC', 'Content', 'Branding', 'Web'];
@@ -473,7 +473,7 @@
 //                     {[...marqueeItems, ...marqueeItems].map((item, i) => (
 //                         <span key={i} className="flex items-center gap-8 font-mono text-xs uppercase tracking-wider text-slate-500 whitespace-nowrap">
 //                             {item}
-//                             <span style={{ color: accents[i % accents.length] }}>•</span>
+//                             <span style={{ color: accents[i % accents.length] }}>-</span>
 //                         </span>
 //                     ))}
 //                 </motion.div>
@@ -554,7 +554,7 @@ const Hero = () => {
 
             <div className="relative z-10 max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-14 items-center">
 
-                {/* LEFT — copy */}
+                {/* LEFT - copy */}
                 <div className="text-center lg:text-left">
                     <motion.div
                         initial={{ opacity: 0, y: 16 }}
@@ -645,7 +645,7 @@ const Hero = () => {
                     </motion.div>
                 </div>
 
-                {/* RIGHT — live search results mockup */}
+                {/* RIGHT - live search results mockup */}
                 <motion.div
                     initial={{ opacity: 0, y: 24 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -676,14 +676,14 @@ const Hero = () => {
 
                         {/* Results */}
                         <div className="px-5 py-4 space-y-4">
-                            {/* Client's result — #1, highlighted */}
+                            {/* Client's result - #1, highlighted */}
                             <div className="relative rounded-xl border-l-4 pl-4 py-1" style={{ borderColor: accents.green }}>
                                 <span className="absolute -top-2 right-0 inline-flex items-center gap-1 rounded-full bg-[#16C784]/10 px-2 py-0.5 text-[10px] font-bold" style={{ color: accents.green }}>
                                     <HiArrowTrendingUp className="w-3 h-3" /> #1
                                 </span>
                                 <p className="text-[11px] text-[#16C784] font-medium">yourbusiness.com</p>
                                 <p className="text-[15px] font-semibold" style={{ color: accents.indigo }}>
-                                    Best Digital Marketing Agency — SEO India Tech
+                                    Best Digital Marketing Agency - SEO India Tech
                                 </p>
                                 <p className="text-xs text-[#64748B] leading-relaxed mt-0.5">
                                     Result-driven SEO, PPC, and content strategies that turn traffic into revenue.
