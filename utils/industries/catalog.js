@@ -1,7 +1,7 @@
 /**
  * Canonical industry catalog - 4 mega-menu columns, 41 SEO landing pages.
  */
-import { getCategoryHeroImage } from './industryMedia'
+import { getIndustryHeroImage } from './industryMedia'
 export const INDUSTRY_CATEGORIES = [
   {
     id: 'popular-markets',
@@ -86,13 +86,7 @@ export function toSlug(title) {
     .replace(/^-|-$/g, '')
 }
 
-/** Category hero visuals - one themed image per industry column */
-const CATEGORY_IMAGES = {
-  'popular-markets': [getCategoryHeroImage('popular-markets')],
-  'automobile-home': [getCategoryHeroImage('automobile-home')],
-  'food-health': [getCategoryHeroImage('food-health')],
-  'service-sector': [getCategoryHeroImage('service-sector')],
-}
+/** Per-industry hero visuals — unique illustration per landing page */
 
 const CATEGORY_CONTEXT = {
   'popular-markets': {
@@ -125,9 +119,9 @@ export function buildCatalogEntries() {
   const entries = []
 
   INDUSTRY_CATEGORIES.forEach((cat) => {
-    cat.items.forEach((title, index) => {
+    cat.items.forEach((title) => {
       const slug = toSlug(title)
-      const imagePath = CATEGORY_IMAGES[cat.id][index % CATEGORY_IMAGES[cat.id].length]
+      const imagePath = getIndustryHeroImage(slug, cat.id)
       const ctx = CATEGORY_CONTEXT[cat.id]
       const label = title.replace(/\s+SEO$/i, '').trim()
 

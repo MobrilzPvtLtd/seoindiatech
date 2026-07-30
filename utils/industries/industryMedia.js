@@ -5,6 +5,58 @@ export const CATEGORY_HERO_IMAGES = {
   'service-sector': '/images/industries/service-sector-hero.svg',
 }
 
+/** Per-industry hero illustrations — generated via scripts/generate-industry-hero-svgs.mjs */
+export const INDUSTRY_HERO_SLUGS = [
+  'plastic-surgery-seo',
+  'property-management-seo',
+  'realtor-seo',
+  'fertility-clinic-seo',
+  'optometrist-seo',
+  'orthodontist-seo',
+  'doctor-physician-seo',
+  'physiotherapy-seo',
+  'personal-injury-seo',
+  'dentist-seo',
+  'hvac-seo',
+  'plumber-seo',
+  'garage-door-seo',
+  'well-drilling-company-seo',
+  'fence-installer-seo',
+  'deck-builder-seo',
+  'cabinet-manufacturer-seo',
+  'architect-seo',
+  'painter-seo',
+  'automotive-seo',
+  'locksmith-service-seo',
+  'interior-designer-seo',
+  'flooring-company-seo',
+  'home-builder-and-remodeler-seo',
+  'catering-seo',
+  'breweries-seo',
+  'wineries-seo',
+  'herbal-product-seo',
+  'chiropractor-seo',
+  'movers-and-moving-company-seo',
+  'pest-control-service-seo',
+  'cpa-firm-seo',
+  'wildlife-removal-company-seo',
+  'sign-company-seo',
+  'waste-management-seo',
+  'dry-cleaner-seo',
+  'tree-care-seo',
+  'roofers-seo',
+  'accountants-seo',
+  'pet-service-seo',
+  'janitorial-service-seo',
+]
+
+export function getIndustryHeroImage(slug, categoryId) {
+  if (INDUSTRY_HERO_SLUGS.includes(slug)) {
+    return `/images/industries/heroes/${slug}.svg`
+  }
+  return getCategoryHeroImage(categoryId)
+}
+
 export const INDUSTRY_BENEFIT_PILLARS = [
   {
     id: 'seo',

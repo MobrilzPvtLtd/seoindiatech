@@ -1,9 +1,10 @@
 import Image from 'next/image'
 
-export default function LocationHero({ heading, content, imageSrc }) {
+export default function LocationHero({ heading, content, imageSrc, imageAlt }) {
   const cityMatch = heading.match(/in (.+)$/)
   const cityForAlt = cityMatch ? cityMatch[1] : 'your city'
   const heroImage = imageSrc || '/images/seo-banner.jpg'
+  const altText = imageAlt || `Professional SEO services illustration for ${cityForAlt}`
 
   return (
     <section className="pt-24 md:pt-28 pb-16 md:pb-20 bg-gray-50 dark:bg-gray-950 text-gray-900 dark:text-gray-100">
@@ -41,7 +42,7 @@ export default function LocationHero({ heading, content, imageSrc }) {
             <div className="relative w-full max-w-md aspect-[4/3] rounded-xl overflow-hidden shadow-md">
               <Image
                 src={heroImage}
-                alt={`Professional SEO services illustration for ${cityForAlt}`}
+                alt={altText}
                 fill
                 className="object-contain p-2 bg-white dark:bg-secondary/20 transition-transform duration-300 hover:scale-[1.02]"
                 priority

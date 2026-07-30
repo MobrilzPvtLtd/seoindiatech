@@ -33,6 +33,7 @@ export default function IndustryPage({ industry }) {
           heading={industry.heading}
           content={industry.content}
           imageSrc={industry.heroImage}
+          imageAlt={`${industry.name} SEO services illustration`}
         />
         <IndustryBenefits label={industry.name} categoryTitle={industry.categoryTitle} />
         <LocationContent pageContent={industry.pageContent} />

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none" role="img" aria-label="Plumber SEO illustration">
+  <defs>
+    <linearGradient id="bg-plumberseo" x1="0" y1="0" x2="800" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EEF4FF"/>
+      <stop offset="1" stop-color="#F8FAFF"/>
+    </linearGradient>
+    <linearGradient id="card-plumberseo" x1="120" y1="120" x2="680" y2="480" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2A255D"/>
+      <stop offset="1" stop-color="#4A3F8C"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg-plumberseo)"/>
+  <rect x="70" y="70" width="660" height="460" rx="28" fill="url(#card-plumberseo)"/>
+  <path d="M340 280h120" stroke="#FFFFFF" stroke-width="14" stroke-linecap="round"/><rect x="365" y="195" width="70" height="85" rx="8" fill="#FFFFFF" opacity="0.15"/><path d="M400 195 L400 170 L420 170" stroke="#F26522" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <rect x="110" y="360" width="580" height="130" rx="18" fill="#FFFFFF" opacity="0.12"/>
+  <text x="140" y="410" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="30" font-weight="700">Plumber SEO</text>
+  <text x="140" y="448" fill="#C9D4F5" font-family="Arial, sans-serif" font-size="17">Local SEO  |  AI Overview  |  GMB  |  PPC  |  SMO</text>
+  <rect x="140" y="468" width="95" height="22" rx="11" fill="#F26522"/>
+  <rect x="248" y="468" width="95" height="22" rx="11" fill="#6B2E88"/>
+  <rect x="356" y="468" width="95" height="22" rx="11" fill="#1E3A5F"/>
+  <rect x="464" y="468" width="95" height="22" rx="11" fill="#A4DDFB"/>
+</svg>
