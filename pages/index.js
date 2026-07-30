@@ -27,7 +27,7 @@ export default function Home() {
         '@id': 'https://www.seoindiatech.com/#organization',
         name: 'SEO India Tech',
         url: 'https://www.seoindiatech.com/',
-        logo: 'https://www.seoindiatech.com/sit.png',
+        logo: 'https://www.seoindiatech.com/sit-transparent.png',
         description:
           'SEO INDIA TECH is a global 360-degree digital growth partner delivering AI-powered SEO, performance marketing, and technology solutions with transparent ROI reporting.',
         contactPoint: {

@@ -115,10 +115,19 @@ export default function ServiceDropdown({ closeMenu }) {
       {/* Footer CTA - outside the scroll area so it's always reachable, and gives
           the menu a single clear next step for anyone unsure which service fits */}
       <div className="flex-shrink-0 mt-4 mx-6 md:mx-8 pt-5 pb-6 md:pb-8 border-t border-slate-100 dark:border-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4">
         <p className="text-sm text-slate-500 dark:text-slate-400">
           Not sure where to start?{' '}
           <span className="text-slate-700 dark:text-slate-200 font-medium">We'll help you pick the right service.</span>
         </p>
+        <div className="flex flex-wrap items-center gap-2">
+        <Link
+          href="/seo-packages"
+          onClick={closeMenu}
+          className="flex-shrink-0 inline-flex items-center gap-1.5 border border-slate-200 dark:border-slate-600 text-slate-700 dark:text-slate-200 px-4 py-2 rounded-full font-semibold text-xs tracking-wide transition-all duration-300 hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 whitespace-nowrap"
+        >
+          SEO Packages
+        </Link>
         <Link
           href="/contact-us"
           onClick={closeMenu}
@@ -126,6 +135,8 @@ export default function ServiceDropdown({ closeMenu }) {
         >
           Get Free Audit
         </Link>
+        </div>
+      </div>
       </div>
     </div>
   )

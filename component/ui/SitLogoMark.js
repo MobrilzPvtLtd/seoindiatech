@@ -1,74 +1,58 @@
 /**
- * Original SIT logo layout - transparent SVG, brand palette (no sticker box).
- * compact: single-line wordmark for navigation header.
+ * SEO India Tech wordmark - transparent background, brand orange accents.
+ * compact: single-line for navigation; default: stacked "tech" line.
  */
 export default function SitLogoMark({ variant = 'onLight', compact = false, className = '' }) {
   const isDark = variant === 'onDark'
 
-  const navy = isDark ? '#F3F6FE' : '#2A255D'
-  const purple = isDark ? '#C4B8E8' : '#6B2E88'
-  const sky = isDark ? '#A4DDFB' : '#A4DDFB'
-  const deep = isDark ? '#141228' : '#2A255D'
+  const text = isDark ? '#F8FAFC' : '#1E3A5F'
+  const orange = '#F26522'
+  const orangeDark = '#D95412'
+  const targetMid = isDark ? '#1E3A5F' : '#FFFFFF'
+
+  const TargetO = ({ x, y, scale = 1 }) => (
+    <g transform={`translate(${x}, ${y}) scale(${scale})`}>
+      <circle cx="12" cy="12" r="12" fill={orange} />
+      <circle cx="12" cy="12" r="8" fill={targetMid} />
+      <circle cx="12" cy="12" r="5" fill={orange} />
+      <circle cx="12" cy="12" r="2.2" fill={orangeDark} />
+    </g>
+  )
+
+  const ArrowI = ({ x, y, scale = 1 }) => (
+    <g transform={`translate(${x}, ${y}) scale(${scale})`}>
+      <circle cx="10" cy="3" r="3" fill={orange} />
+      <circle cx="10" cy="3" r="1.2" fill={orangeDark} />
+      <path
+        d="M10 6 L10 20 L6 15 M10 20 L14 15"
+        stroke={orange}
+        strokeWidth="3.2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </g>
+  )
+
+  const font = 'var(--font-heading), Plus Jakarta Sans, Arial, sans-serif'
 
   if (compact) {
     return (
       <svg
-        viewBox="0 0 220 36"
+        viewBox="0 0 228 36"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         className={className}
         aria-hidden="true"
       >
-        <text
-          x="0"
-          y="26"
-          fill={navy}
-          fontFamily="var(--font-heading), Plus Jakarta Sans, Arial, sans-serif"
-          fontSize="22"
-          fontWeight="800"
-        >
+        <text x="0" y="27" fill={text} fontFamily={font} fontSize="24" fontWeight="800">
           SE
         </text>
-        <g transform="translate(40, 2)">
-          <circle cx="11" cy="11" r="11" fill={purple} />
-          <circle cx="11" cy="11" r="7" fill={deep} />
-          <circle cx="11" cy="11" r="3.8" fill={sky} />
-          <circle cx="11" cy="11" r="1.5" fill={deep} />
-          <path
-            d="M16 4 L21 9 L16 14"
-            stroke={isDark ? '#F3F6FE' : '#2A255D'}
-            strokeWidth="2.2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </g>
-        <circle cx="66" cy="7" r="3" fill={purple} />
-        <path
-          d="M66 11 L66 22 L61 17 M66 22 L71 17"
-          stroke={purple}
-          strokeWidth="2.4"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <text
-          x="74"
-          y="26"
-          fill={navy}
-          fontFamily="var(--font-heading), Plus Jakarta Sans, Arial, sans-serif"
-          fontSize="22"
-          fontWeight="800"
-        >
+        <TargetO x={42} y={2} scale={0.92} />
+        <ArrowI x={66} y={0} scale={0.9} />
+        <text x={84} y="27" fill={text} fontFamily={font} fontSize="24" fontWeight="800">
           ndia
         </text>
-        <text
-          x="128"
-          y="26"
-          fill={navy}
-          fontFamily="var(--font-heading), Plus Jakarta Sans, Arial, sans-serif"
-          fontSize="18"
-          fontWeight="800"
-          letterSpacing="0.4"
-        >
+        <text x="142" y="27" fill={text} fontFamily={font} fontSize="20" fontWeight="800" letterSpacing="0.3">
           tech
         </text>
       </svg>
@@ -77,68 +61,29 @@ export default function SitLogoMark({ variant = 'onLight', compact = false, clas
 
   return (
     <svg
-      viewBox="0 0 210 56"
+      viewBox="0 0 200 58"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
       aria-hidden="true"
     >
-      <text
-        x="0"
-        y="30"
-        fill={navy}
-        fontFamily="var(--font-heading), Plus Jakarta Sans, Arial, sans-serif"
-        fontSize="26"
-        fontWeight="800"
-      >
+      <text x="0" y="32" fill={text} fontFamily={font} fontSize="28" fontWeight="800">
         SE
       </text>
-
-      {/* O - target */}
-      <g transform="translate(46, 4)">
-        <circle cx="13" cy="13" r="13" fill={purple} />
-        <circle cx="13" cy="13" r="8.5" fill={deep} />
-        <circle cx="13" cy="13" r="4.5" fill={sky} />
-        <circle cx="13" cy="13" r="1.8" fill={deep} />
-        <path
-          d="M19 5 L25 11 L19 17"
-          stroke={isDark ? '#F3F6FE' : '#2A255D'}
-          strokeWidth="2.5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-      </g>
-
-      {/* I - arrow + dot */}
-      <circle cx="74" cy="8" r="3.5" fill={purple} />
-      <path
-        d="M74 13 L74 26 L68 20 M74 26 L80 20"
-        stroke={purple}
-        strokeWidth="2.8"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-
-      <text
-        x="84"
-        y="30"
-        fill={navy}
-        fontFamily="var(--font-heading), Plus Jakarta Sans, Arial, sans-serif"
-        fontSize="26"
-        fontWeight="800"
-      >
+      <TargetO x={48} y={4} />
+      <ArrowI x={76} y={2} />
+      <text x="96" y="32" fill={text} fontFamily={font} fontSize="28" fontWeight="800">
         ndia
       </text>
-
       <text
-        x="105"
-        y="52"
+        x="100"
+        y="54"
         textAnchor="middle"
-        fill={navy}
-        fontFamily="var(--font-heading), Plus Jakarta Sans, Arial, sans-serif"
-        fontSize="19"
+        fill={text}
+        fontFamily={font}
+        fontSize="21"
         fontWeight="800"
-        letterSpacing="0.5"
+        letterSpacing="0.6"
       >
         tech
       </text>

@@ -341,6 +341,7 @@ const Header = () => {
                   </div>
                 </li>
 
+                <li><NavLink href="/seo-packages">SEO Packages</NavLink></li>
                 <li><NavLink href="/blog">Blog</NavLink></li>
                 <li><NavLink href="/contact-us">Contact Us</NavLink></li>
               </ul>
@@ -545,7 +546,7 @@ const Header = () => {
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >
-                Packages
+                SEO Packages
               </Link>
             </li>
 

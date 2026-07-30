@@ -3,7 +3,7 @@ import { Phone, Mail, MapPin, Clock } from 'lucide-react'
 import { FaXTwitter, FaInstagram, FaYoutube, FaFacebook, FaLinkedin } from 'react-icons/fa6'
 import { CircleDot } from 'lucide-react'
 import Link from 'next/link'
-import Image from 'next/image'
+import BrandLogo from '@/component/ui/BrandLogo'
  
 const NewFooter = () => {
   const currentYear = new Date().getFullYear()
@@ -46,18 +46,7 @@ const NewFooter = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Company Info */}
           <div className="space-y-6">
-            <div className="relative w-32 h-16">
-              <Link href="/" className="block relative w-full h-full">
-                <Image
-                  src="/sit.png"
-                  alt="SEO India Tech Logo"
-                  fill
-                  sizes="128px"
-                  style={{ objectFit: 'contain', objectPosition: 'left' }}
-                  className="bg-white p-1.5 rounded-md"
-                />
-              </Link>
-            </div>
+            <BrandLogo variant="onDark" size="lg" compact={false} className="[&_svg]:max-w-[160px]" />
             <p className="text-base font-medium text-gray-200">
               Start Your Business &{' '}
               <span className="font-bold text-blue-400">GROW WITH US</span>

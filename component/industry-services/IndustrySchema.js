@@ -16,7 +16,7 @@ export default function IndustrySchema({ industry, url }) {
         url: 'https://www.seoindiatech.com/',
         logo: {
           '@type': 'ImageObject',
-          url: 'https://www.seoindiatech.com/sit.png',
+          url: 'https://www.seoindiatech.com/sit-transparent.png',
         },
         email: 'sales@seoindiatech.com',
       },
