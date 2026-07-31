@@ -1,8 +1,9 @@
 import Layout from '@/component/layout/Layout'
+import DeferredGtm from '@/component/tracking/DeferredGtm'
 import { ThemeProvider } from '@/context/ThemeContext'
 import '@/styles/globals.css'
-import Script from 'next/script'
 import Head from 'next/head'
+import { MotionConfig } from 'framer-motion'
 import { Plus_Jakarta_Sans, Inter } from 'next/font/google'
 
 const plusJakarta = Plus_Jakarta_Sans({
@@ -47,25 +48,14 @@ export default function App({ Component, pageProps }) {
         />
       </Head>
 
-      {/* GTM — deferred to avoid blocking first paint */}
-      <Script
-        id="gtm"
-        strategy="lazyOnload"
-        dangerouslySetInnerHTML={{
-          __html: `
-            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-5TS8QJRM');
-          `,
-        }}
-      />
+      <DeferredGtm />
 
       <ThemeProvider>
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
+        <MotionConfig initial={false}>
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
+        </MotionConfig>
       </ThemeProvider>
     </div>
   )

@@ -60,9 +60,9 @@ const mobilePills = [
 const Hero = () => {
   return (
     <section className="relative min-h-[100svh] overflow-hidden hero-grid-bg">
-      <div className="pointer-events-none absolute inset-0 hero-glow-primary" />
-      <div className="pointer-events-none absolute inset-0 hero-glow-secondary" />
-      <div className="pointer-events-none absolute inset-0 hero-glow-cta" />
+      <div className="pointer-events-none absolute inset-0 hero-glow-primary max-md:hidden" />
+      <div className="pointer-events-none absolute inset-0 hero-glow-secondary max-md:hidden" />
+      <div className="pointer-events-none absolute inset-0 hero-glow-cta max-md:hidden" />
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-28 pb-24 md:pt-32 lg:pt-36 lg:pb-28">
         <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-8 xl:gap-12">
@@ -102,9 +102,9 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right — hero visual */}
+          {/* Right — hero visual (desktop only; mobile LCP stays on headline text) */}
           <div className="relative mx-auto w-full max-w-lg lg:max-w-none">
-            <div className="relative">
+            <div className="relative hidden md:block">
               <HeroVisual />
               <div className="hidden lg:block">
                 {statPills.map((pill) => (
@@ -122,7 +122,7 @@ const Hero = () => {
               </div>
             </div>
 
-            <div className="mt-6 grid grid-cols-2 gap-3 lg:hidden">
+            <div className="mt-6 grid grid-cols-2 gap-3 md:mt-6 lg:hidden">
               {mobilePills.map((pill, i) => (
                 <FloatingStatPill
                   key={pill.label}

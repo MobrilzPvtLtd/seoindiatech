@@ -1,6 +1,7 @@
 /** Local homepage images - reliable paths under /public/images */
 export const HOME_IMAGES = {
-  hero: '/images/Google-Ai-Overviews.png',
+  hero: '/images/hero-home.webp',
+  heroMobile: '/images/hero-mobile.webp',
   heroGmb: '/images/services/GOOGLE-MAPS-SEO.jpg',
   heroSeoProcess: '/images/services/score.png',
   heroAnalytics: '/images/services/dashboard.png',

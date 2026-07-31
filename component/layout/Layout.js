@@ -1,7 +1,9 @@
+import dynamic from 'next/dynamic'
 import Header from './header/Header'
 import Footer from './footer/Footer'
-import WhatsAppButton from '@/component/ui/WhatsAppButton'
 import SkipToContent from '@/component/ui/SkipToContent'
+
+const WhatsAppButton = dynamic(() => import('@/component/ui/WhatsAppButton'), { ssr: false })
 
 const Layout = ({ children }) => (
   <>

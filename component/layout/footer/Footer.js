@@ -1,5 +1,4 @@
 import React from 'react'
-import { motion } from 'framer-motion'
 import { Globe, Award, Users } from 'lucide-react'
 import { FaXTwitter, FaInstagram, FaYoutube, FaFacebook, FaLinkedin, FaWhatsapp } from 'react-icons/fa6'
 import { HiArrowUpRight } from 'react-icons/hi2'
@@ -7,16 +6,6 @@ import Link from 'next/link'
 import BrandLogo from '@/component/ui/BrandLogo'
 import FooterQuickContact from './FooterQuickContact'
 import { WHATSAPP_URL } from '@/component/ui/WhatsAppButton'
-
-const fadeUp = {
-  hidden: { y: 20, opacity: 0 },
-  visible: { y: 0, opacity: 1, transition: { duration: 0.55, ease: [0.16, 1, 0.3, 1] } },
-}
-
-const staggerParent = {
-  hidden: {},
-  visible: { transition: { staggerChildren: 0.07 } },
-}
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
@@ -72,16 +61,10 @@ const Footer = () => {
       <div className="pointer-events-none absolute inset-0 hero-grid-bg opacity-25" />
       <div className="pointer-events-none absolute inset-0 hero-glow-primary opacity-40" />
 
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.08 }}
-        variants={staggerParent}
-        className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-14"
-      >
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-14">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-x-8 lg:gap-y-10">
           {/* Brand + stats */}
-          <motion.div variants={fadeUp} className="sm:col-span-2 lg:col-span-4 space-y-5">
+          <div className="sm:col-span-2 lg:col-span-4 space-y-5">
             <BrandLogo variant="onDark" size="lg" />
             <p className="text-sm leading-relaxed text-white/65 max-w-sm">
               Global 360-degree digital growth partner - AI-powered SEO, performance marketing,
@@ -122,10 +105,10 @@ const Footer = () => {
                 </div>
               ))}
             </div>
-          </motion.div>
+          </div>
 
           {/* Services */}
-          <motion.div variants={fadeUp} className="lg:col-span-2 space-y-4">
+          <div className="lg:col-span-2 space-y-4">
             <h3 className="text-[11px] font-bold text-white uppercase tracking-[0.18em]">Services</h3>
             <ul className="space-y-2.5">
               {services.map((item) => (
@@ -140,10 +123,10 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
-          </motion.div>
+          </div>
 
           {/* Solutions */}
-          <motion.div variants={fadeUp} className="lg:col-span-2 space-y-4">
+          <div className="lg:col-span-2 space-y-4">
             <h3 className="text-[11px] font-bold text-white uppercase tracking-[0.18em]">Solutions</h3>
             <ul className="space-y-2.5">
               {solutions.map((item) => (
@@ -158,10 +141,10 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
-          </motion.div>
+          </div>
 
           {/* Company links */}
-          <motion.div variants={fadeUp} className="lg:col-span-4 space-y-4">
+          <div className="lg:col-span-4 space-y-4">
             <h3 className="text-[11px] font-bold text-white uppercase tracking-[0.18em]">Company</h3>
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2.5">
               {company.map((item) => (
@@ -177,11 +160,11 @@ const Footer = () => {
             </ul>
 
             <FooterQuickContact />
-          </motion.div>
+          </div>
         </div>
 
         {/* Markets */}
-        <motion.div variants={fadeUp} className="mt-10 pt-8 border-t border-white/10 space-y-4">
+        <div className="mt-10 pt-8 border-t border-white/10 space-y-4">
           <div className="flex flex-col sm:flex-row sm:items-center gap-3">
             <div className="flex items-center gap-2 shrink-0">
               <Globe className="h-4 w-4 text-accent" />
@@ -216,14 +199,14 @@ const Footer = () => {
               ))}
             </div>
           </div>
-        </motion.div>
-      </motion.div>
+        </div>
+      </div>
 
       {/* Copyright */}
       <div className="relative border-t border-white/10 bg-black/25">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row justify-between items-center gap-2">
           <p className="text-xs text-white/45">
-            &copy; {currentYear} SEO INDIA TECH. All rights reserved.
+            &copy; <span suppressHydrationWarning>{currentYear}</span> SEO INDIA TECH. All rights reserved.
           </p>
           <p className="text-xs text-white/35">
             Engineering measurable growth worldwide

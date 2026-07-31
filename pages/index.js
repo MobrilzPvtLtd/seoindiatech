@@ -4,10 +4,10 @@ import { HOME_IMAGES } from '@/utils/homeImages'
 import { getPageSeo } from '@/utils/pageSeoRegistry'
 import { buildWebSiteNode } from '@/utils/schemaBuilders'
 
-import TopContactBar from '@/component/ui/TopContactBar'
 import Hero from '@/component/new-home/Hero'
-import TrustedBy from '@/component/new-home/TrustedBy'
 
+const TopContactBar = dynamic(() => import('@/component/ui/TopContactBar'), { ssr: false })
+const TrustedBy = dynamic(() => import('@/component/new-home/TrustedBy'))
 const OfferingsSection = dynamic(() => import('@/component/new-home/OfferingsSection'))
 const AboutBand = dynamic(() => import('@/component/new-home/AboutBand'))
 const WhyUsSection = dynamic(() => import('@/component/new-home/WhyUsSection'))
@@ -21,7 +21,7 @@ const Testimonials = dynamic(() => import('@/component/new-home/Testimonials'))
 const AuthorityBand = dynamic(() => import('@/component/new-home/AuthorityBand'))
 const Blog = dynamic(() => import('@/component/new-home/Blog'))
 const CityLinksBand = dynamic(() => import('@/component/new-home/CityLinksBand'))
-const FAQAndContact = dynamic(() => import('@/component/new-home/FAQAndContact'))
+const FAQAndContact = dynamic(() => import('@/component/new-home/FAQAndContact'), { ssr: false })
 const ScrollToTop = dynamic(() => import('@/component/ui/ScrollToTop'), { ssr: false })
 
 export default function Home() {
@@ -129,7 +129,9 @@ export default function Home() {
         lcpImage={HOME_IMAGES.hero}
       />
 
-      <TopContactBar />
+      <div className="hidden md:block">
+        <TopContactBar />
+      </div>
       <Hero />
       <TrustedBy />
       <OfferingsSection />

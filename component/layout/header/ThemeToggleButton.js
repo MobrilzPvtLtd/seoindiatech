@@ -3,27 +3,32 @@
 import { useTheme } from '@/context/ThemeContext'
 
 export default function ThemeToggleButton({ onDark = false, compact = false }) {
-  const { theme, toggleTheme } = useTheme()
+  const { theme, toggleTheme, isInitialized } = useTheme()
 
-  const sizeClass = compact ? 'h-11 w-11' : 'h-11 w-11'
+  const sizeClass = 'h-11 w-11'
 
   const buttonClass = onDark
     ? `relative z-10 flex items-center justify-center ${sizeClass} rounded-full border border-white/20 bg-white/10 text-white/80 hover:bg-white/15 hover:text-white transition-colors shrink-0 cursor-pointer`
     : `relative z-10 flex items-center justify-center ${sizeClass} rounded-full border border-border bg-white text-muted hover:bg-surface hover:text-heading transition-colors shrink-0 cursor-pointer dark:border-white/15 dark:bg-white/10 dark:text-white/80 dark:hover:bg-white/15 dark:hover:text-white`
 
   const handleClick = () => {
+    if (!isInitialized) return
     toggleTheme()
   }
+
+  const showDarkIcon = isInitialized && theme === 'dark'
 
   return (
     <button
       type="button"
       onClick={handleClick}
-      className={buttonClass}
-      aria-label={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
+      disabled={!isInitialized}
+      className={`${buttonClass} disabled:opacity-50`}
+      aria-label={showDarkIcon ? 'Switch to light mode' : 'Switch to dark mode'}
+      suppressHydrationWarning
     >
       <svg
-        className={theme === 'dark' ? 'block' : 'hidden'}
+        className={showDarkIcon ? 'block' : 'hidden'}
         width="18"
         height="18"
         viewBox="0 0 20 20"
@@ -39,7 +44,7 @@ export default function ThemeToggleButton({ onDark = false, compact = false }) {
         />
       </svg>
       <svg
-        className={theme === 'dark' ? 'hidden' : 'block'}
+        className={showDarkIcon ? 'hidden' : 'block'}
         width="18"
         height="18"
         viewBox="0 0 20 20"

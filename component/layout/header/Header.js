@@ -177,7 +177,8 @@ const Header = () => {
   }
 
   const darkHeroNav = isHome && !scrolled && !isDarkTheme
-  const headerTopClass = isHome && !scrolled ? 'top-[34px]' : 'top-0'
+  const showTopContactBar = isHome && !scrolled && (windowWidth === 0 || windowWidth >= 768)
+  const headerTopClass = showTopContactBar ? 'top-8' : 'top-0'
 
   const NavLink = ({ href, children }) => {
     const isActive = router.pathname === href

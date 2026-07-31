@@ -28,7 +28,13 @@ export default function SEO({
       <meta name="robots" content={robotsContent} />
       <link rel="canonical" href={canonicalUrl} />
       {lcpImage && (
-        <link rel="preload" as="image" href={lcpImage} fetchPriority="high" />
+        <link
+          rel="preload"
+          as="image"
+          href={lcpImage}
+          fetchPriority="high"
+          media="(min-width: 768px)"
+        />
       )}
 
       <meta property="og:title" content={title} />

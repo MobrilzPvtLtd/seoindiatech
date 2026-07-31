@@ -6,8 +6,8 @@ import { HOME_IMAGES, HERO_PROCESS_STEPS } from '@/utils/homeImages'
 export default function HeroVisual() {
   return (
     <div className="relative mx-auto w-full max-w-[560px]">
-      <div className="pointer-events-none absolute -inset-4 rounded-3xl bg-primary/30 blur-[80px] opacity-60" />
-      <div className="pointer-events-none absolute top-1/4 right-0 h-40 w-40 rounded-full bg-accent/20 blur-[60px]" />
+      <div className="pointer-events-none absolute -inset-4 rounded-3xl bg-primary/30 blur-[80px] opacity-60 max-md:hidden" />
+      <div className="pointer-events-none absolute top-1/4 right-0 h-40 w-40 rounded-full bg-accent/20 blur-[60px] max-md:hidden" />
 
       <div className="relative overflow-hidden rounded-2xl border border-white/15 bg-[#0e0c18] shadow-[0_24px_60px_-12px_rgba(0,0,0,0.55)]">
         <div className="relative aspect-[16/10] w-full">
@@ -17,7 +17,7 @@ export default function HeroVisual() {
             fill
             className="object-cover object-center"
             sizes="(max-width: 768px) 90vw, 560px"
-            quality={60}
+            quality={55}
             priority
             fetchPriority="high"
           />
@@ -35,7 +35,7 @@ export default function HeroVisual() {
               SEO Process
             </p>
             <p className="mt-0.5 text-sm font-bold text-white sm:text-base">
-              Audit{'->'} Optimize{'->'} Rank in Google &amp; AI Search
+              Audit → Optimize → Rank in Google &amp; AI Search
             </p>
           </div>
         </div>

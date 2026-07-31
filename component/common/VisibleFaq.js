@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Head from 'next/head'
 import { ChevronDown } from 'lucide-react'
 import SectionHeader from '@/component/ui/SectionHeader'
 import PageSection from '@/component/ui/PageSection'
@@ -33,66 +34,70 @@ export default function VisibleFaq({
       : 'space-y-3'
 
   const accordion = (
-  <>
-      {schema && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-        />
-      )}
-      <div className={listClassName}>
-        {faqList.map((faq, i) => {
-          const isOpen = openIndex === i
-          const buttonId = `faq-button-${i}`
-          const panelId = `faq-panel-${i}`
-          return (
-            <div
-              key={`${faq.question}-${i}`}
-              className={`card-premium rounded-2xl overflow-hidden transition-all duration-300 ${
-                isOpen ? 'border-primary/30 shadow-premium' : ''
-              }`}
+    <div className={listClassName}>
+      {faqList.map((faq, i) => {
+        const isOpen = openIndex === i
+        const buttonId = `faq-button-${i}`
+        const panelId = `faq-panel-${i}`
+        return (
+          <div
+            key={`${faq.question}-${i}`}
+            className={`card-premium rounded-2xl overflow-hidden transition-all duration-300 ${
+              isOpen ? 'border-primary/30 shadow-premium' : ''
+            }`}
+          >
+            <button
+              type="button"
+              id={buttonId}
+              onClick={() => toggle(i)}
+              className="flex w-full items-center justify-between gap-4 p-5 min-h-11 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/40"
+              aria-expanded={isOpen}
+              aria-controls={panelId}
             >
-              <button
-                type="button"
-                id={buttonId}
-                onClick={() => toggle(i)}
-                className="flex w-full items-center justify-between gap-4 p-5 min-h-11 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/40"
-                aria-expanded={isOpen}
-                aria-controls={panelId}
+              <span className="font-semibold text-heading text-sm md:text-base leading-snug">
+                {faq.question}
+              </span>
+              <ChevronDown
+                className={`h-5 w-5 shrink-0 text-muted transition-transform duration-300 ${isOpen ? 'rotate-180 text-primary' : ''}`}
+                aria-hidden="true"
+              />
+            </button>
+            {isOpen && (
+              <div
+                id={panelId}
+                role="region"
+                aria-labelledby={buttonId}
+                className="border-t border-border px-5 pb-5 pt-4 text-sm leading-relaxed text-muted"
               >
-                <span className="font-semibold text-heading text-sm md:text-base leading-snug">
-                  {faq.question}
-                </span>
-                <ChevronDown
-                  className={`h-5 w-5 shrink-0 text-muted transition-transform duration-300 ${isOpen ? 'rotate-180 text-primary' : ''}`}
-                  aria-hidden="true"
-                />
-              </button>
-              {isOpen && (
-                <div
-                  id={panelId}
-                  role="region"
-                  aria-labelledby={buttonId}
-                  className="border-t border-border px-5 pb-5 pt-4 text-sm leading-relaxed text-muted"
-                >
-                  {faq.answer}
-                </div>
-              )}
-            </div>
-          )
-        })}
-      </div>
-    </>
+                {faq.answer}
+              </div>
+            )}
+          </div>
+        )
+      })}
+    </div>
   )
 
-  if (embedded) {
-    return <div className={className}>{accordion}</div>
-  }
-
-  return (
+  const content = embedded ? (
+    <div className={className}>{accordion}</div>
+  ) : (
     <PageSection variant="cream" padding="default" containerClassName={`max-w-4xl ${className}`}>
       <SectionHeader badge={badge} title={title} align="center" className="mb-10" />
       {accordion}
     </PageSection>
+  )
+
+  return (
+    <>
+      {schema && (
+        <Head>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+          />
+        </Head>
+      )}
+      {content}
+    </>
   )
 }
