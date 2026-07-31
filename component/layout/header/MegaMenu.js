@@ -34,9 +34,8 @@ export const megaMenuOpenClass = (isOpen) =>
 export default function MegaMenu({ categories, footer, closeMenu }) {
   return (
     <div className="flex flex-col flex-1 min-h-0">
-      <div
+      <nav
         className="flex-1 min-h-0 overflow-y-auto px-6 md:px-8 pt-6 md:pt-8 pb-2 [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-slate-200 dark:[&::-webkit-scrollbar-thumb]:bg-slate-700 [&::-webkit-scrollbar-thumb]:rounded-full"
-        role="navigation"
         aria-label="Mega menu"
       >
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-4">
@@ -44,7 +43,7 @@ export default function MegaMenu({ categories, footer, closeMenu }) {
             <MegaMenuCategory key={category.title} category={category} closeMenu={closeMenu} />
           ))}
         </div>
-      </div>
+      </nav>
       {footer && <MegaMenuFooter footer={footer} closeMenu={closeMenu} />}
     </div>
   )
@@ -90,11 +89,13 @@ function MegaMenuCategory({ category, closeMenu }) {
         </div>
       )}
 
-      <div className="space-y-1" role="list">
+      <ul className="space-y-1">
         {items.map((item) => (
-          <MegaMenuItem key={item.link + item.title} item={item} closeMenu={closeMenu} />
+          <li key={item.link + item.title}>
+            <MegaMenuItem item={item} closeMenu={closeMenu} />
+          </li>
         ))}
-      </div>
+      </ul>
     </div>
   )
 }
@@ -106,8 +107,7 @@ function MegaMenuItem({ item, closeMenu }) {
     <Link
       href={link}
       onClick={closeMenu}
-      role="listitem"
-      className="group flex items-start gap-3 -mx-2 px-2 py-2 rounded-lg transition-colors duration-200 hover:bg-white/80 dark:hover:bg-slate-800/80 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/40"
+      className="group flex items-start gap-3 -mx-2 px-2 py-2.5 min-h-11 rounded-lg transition-colors duration-200 hover:bg-white/80 dark:hover:bg-slate-800/80 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/40"
     >
       <div
         className="flex-shrink-0 mt-0.5 h-8 w-8 rounded-lg flex items-center justify-center bg-primary/10 text-primary dark:text-accent group-hover:bg-primary group-hover:text-white transition-colors duration-200"

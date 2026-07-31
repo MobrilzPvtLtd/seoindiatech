@@ -21,7 +21,7 @@
 
   --font-heading: var(--font-plus-jakarta), ui-sans-serif, system-ui, sans-serif;
   --font-body: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
-  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 
   --shadow-premium: 0 25px 50px -12px rgba(42, 37, 93, 0.12);
   --shadow-glow-brand: 0 0 50px -10px rgba(107, 46, 136, 0.45);
@@ -236,6 +236,19 @@ html.lenis, html.lenis body { height: auto; }
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.55s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-in-up { animation: none; }
 }
 
 @keyframes float-soft {

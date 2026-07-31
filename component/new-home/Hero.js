@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { motion } from 'framer-motion'
+import dynamic from 'next/dynamic'
 import {
   Clock,
   Globe,
@@ -9,10 +9,11 @@ import {
   TrendingUp,
   ArrowRight,
 } from 'lucide-react'
-import FloatingStatPill from '@/component/ui/FloatingStatPill'
-import SideConnectTab from '@/component/ui/SideConnectTab'
-import ScribbleText from '@/component/ui/ScribbleText'
 import HeroVisual from '@/component/new-home/HeroVisual'
+import FloatingStatPill from '@/component/ui/FloatingStatPill'
+import ScribbleText from '@/component/ui/ScribbleText'
+
+const SideConnectTab = dynamic(() => import('@/component/ui/SideConnectTab'), { ssr: false })
 
 const statPills = [
   {
@@ -65,13 +66,8 @@ const Hero = () => {
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-28 pb-24 md:pt-32 lg:pt-36 lg:pb-28">
         <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-8 xl:gap-12">
-          {/* Left - Autus-style typography stack */}
-          <motion.div
-            initial={{ opacity: 0, y: 28 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-            className="text-center lg:text-left text-white hero-copy"
-          >
+          {/* Left — visible immediately for LCP (no JS animation gate) */}
+          <div className="text-center lg:text-left text-white hero-copy animate-fade-in-up">
             <h1 className="font-heading text-[1.85rem] font-extrabold leading-[1.08] tracking-tight sm:text-5xl lg:text-[3.25rem] xl:text-[3.5rem]">
               Search &amp; Performance
               <br />
@@ -104,15 +100,10 @@ const Hero = () => {
                 Book Free Consultation Call
               </Link>
             </div>
-          </motion.div>
+          </div>
 
-          {/* Right - visual + floating pills */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.94 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-            className="relative mx-auto w-full max-w-lg lg:max-w-none"
-          >
+          {/* Right — hero visual */}
+          <div className="relative mx-auto w-full max-w-lg lg:max-w-none">
             <div className="relative">
               <HeroVisual />
               <div className="hidden lg:block">
@@ -143,11 +134,10 @@ const Hero = () => {
                 />
               ))}
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
 
-      {/* Wave to cream section */}
       <div className="absolute bottom-0 left-0 right-0 z-10">
         <svg viewBox="0 0 1440 80" fill="none" className="w-full h-auto" preserveAspectRatio="none">
           <path
@@ -159,7 +149,7 @@ const Hero = () => {
 
       <SideConnectTab />
 
-      <div className="fixed bottom-0 left-0 right-0 z-40 border-t border-white/10 bg-[#0e0c18]/95 backdrop-blur-xl p-3 lg:hidden">
+      <div className="fixed bottom-0 left-0 right-0 z-40 border-t border-white/10 bg-[#0e0c18]/95 backdrop-blur-md p-3 lg:hidden">
         <Link
           href="/contact-us"
           className="flex w-full items-center justify-center gap-2 rounded-full bg-primary py-3.5 text-sm font-bold text-white shadow-glow-brand"

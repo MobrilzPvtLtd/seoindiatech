@@ -1,25 +1,28 @@
+import dynamic from 'next/dynamic'
 import SeoHead from '@/component/common/SeoHead'
+import { HOME_IMAGES } from '@/utils/homeImages'
 import { getPageSeo } from '@/utils/pageSeoRegistry'
 import { buildWebSiteNode } from '@/utils/schemaBuilders'
 
 import TopContactBar from '@/component/ui/TopContactBar'
 import Hero from '@/component/new-home/Hero'
 import TrustedBy from '@/component/new-home/TrustedBy'
-import OfferingsSection from '@/component/new-home/OfferingsSection'
-import AboutBand from '@/component/new-home/AboutBand'
-import WhyUsSection from '@/component/new-home/WhyUsSection'
-import SolutionsShowcase from '@/component/new-home/SolutionsShowcase'
-import ResultsSection from '@/component/new-home/ResultsSection'
-import ProblemsSection from '@/component/new-home/ProblemsSection'
-import Industries from '@/component/new-home/Industries'
-import BenefitsSection from '@/component/new-home/BenefitsSection'
-import ProcessSection from '@/component/new-home/ProcessSection'
-import Testimonials from '@/component/new-home/Testimonials'
-import AuthorityBand from '@/component/new-home/AuthorityBand'
-import Blog from '@/component/new-home/Blog'
-import FAQAndContact from '@/component/new-home/FAQAndContact'
-import CityLinksBand from '@/component/new-home/CityLinksBand'
-import ScrollToTop from '@/component/ui/ScrollToTop'
+
+const OfferingsSection = dynamic(() => import('@/component/new-home/OfferingsSection'))
+const AboutBand = dynamic(() => import('@/component/new-home/AboutBand'))
+const WhyUsSection = dynamic(() => import('@/component/new-home/WhyUsSection'))
+const SolutionsShowcase = dynamic(() => import('@/component/new-home/SolutionsShowcase'))
+const ResultsSection = dynamic(() => import('@/component/new-home/ResultsSection'))
+const ProblemsSection = dynamic(() => import('@/component/new-home/ProblemsSection'))
+const Industries = dynamic(() => import('@/component/new-home/Industries'))
+const BenefitsSection = dynamic(() => import('@/component/new-home/BenefitsSection'))
+const ProcessSection = dynamic(() => import('@/component/new-home/ProcessSection'))
+const Testimonials = dynamic(() => import('@/component/new-home/Testimonials'))
+const AuthorityBand = dynamic(() => import('@/component/new-home/AuthorityBand'))
+const Blog = dynamic(() => import('@/component/new-home/Blog'))
+const CityLinksBand = dynamic(() => import('@/component/new-home/CityLinksBand'))
+const FAQAndContact = dynamic(() => import('@/component/new-home/FAQAndContact'))
+const ScrollToTop = dynamic(() => import('@/component/ui/ScrollToTop'), { ssr: false })
 
 export default function Home() {
   const homeSeo = getPageSeo('/')
@@ -123,58 +126,26 @@ export default function Home() {
         description={homeSeo.description}
         path="/"
         schema={schemaData}
+        lcpImage={HOME_IMAGES.hero}
       />
 
       <TopContactBar />
-
-      {/* 1. Hero - dark split, floating stats */}
       <Hero />
-
-      {/* 2. Trust bar + logo marquee */}
       <TrustedBy />
-
-      {/* 3. Core offerings - 3 pillars */}
       <OfferingsSection />
-
-      {/* 4. About + 500+ stat */}
       <AboutBand />
-
-      {/* 5. Why choose us - 3 reasons */}
       <WhyUsSection />
-
-      {/* 6. Four core services - split image layout */}
       <SolutionsShowcase />
-
-      {/* 7. Case study outcomes */}
       <ResultsSection />
-
-      {/* 8. Problems we solve */}
       <ProblemsSection />
-
-      {/* 9. Industries - centered pills (Autus-style) */}
       <Industries />
-
-      {/* 10. Our benefits - Autus-style cards */}
       <BenefitsSection />
-
-      {/* 11. Process */}
       <ProcessSection />
-
-      {/* 12. Testimonials - dark Autus-style grid */}
       <Testimonials />
-
-      {/* 13. Authority trust band */}
       <AuthorityBand />
-
-      {/* 14. Blog - Autus-style grid */}
       <Blog />
-
-      {/* City SEO links */}
       <CityLinksBand />
-
-      {/* 15. FAQ + Contact */}
       <FAQAndContact />
-
       <ScrollToTop />
     </>
   )

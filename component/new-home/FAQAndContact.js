@@ -1,12 +1,13 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
-import { motion } from 'framer-motion'
+import dynamic from 'next/dynamic'
 import { FiArrowRight, FiCheck, FiUser, FiMail, FiPhone, FiMessageSquare } from 'react-icons/fi'
 import { toast, ToastContainer } from 'react-toastify'
-import ReCAPTCHA from 'react-google-recaptcha'
 import VisibleFaq from '@/component/common/VisibleFaq'
 import SectionHeader from '@/component/ui/SectionHeader'
 import { PAGE_FAQS } from '@/utils/pageFaqs'
+
+const ReCAPTCHA = dynamic(() => import('react-google-recaptcha'), { ssr: false })
 
 const FAQAndContact = () => {
   const [form, setForm] = useState({ fullName: '', email: '', phone: '', message: '' })
@@ -15,8 +16,26 @@ const FAQAndContact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [recaptcha, setRecaptcha] = useState(null)
   const [privacyAgreed, setPrivacyAgreed] = useState(false)
+  const [showCaptcha, setShowCaptcha] = useState(false)
+  const captchaRef = useRef(null)
 
   const handleChange = (e) => setForm((f) => ({ ...f, [e.target.name]: e.target.value }))
+
+  useEffect(() => {
+    const el = captchaRef.current
+    if (!el) return
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setShowCaptcha(true)
+          observer.disconnect()
+        }
+      },
+      { rootMargin: '200px' }
+    )
+    observer.observe(el)
+    return () => observer.disconnect()
+  }, [])
 
   const isFormValid = () =>
     form.fullName.trim() !== '' &&
@@ -75,34 +94,26 @@ const FAQAndContact = () => {
             embedded
             columns={2}
             minCount={8}
-            showSchema
+            showSchema={false}
           />
 
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="mt-10 text-center"
-          >
+          <div className="mt-10 text-center">
             <Link
               href="/contact-us"
               className="inline-flex items-center justify-center rounded-full bg-primary hover:bg-primary-hover px-10 py-4 text-sm font-bold text-white shadow-glow-brand transition-all hover:-translate-y-0.5"
             >
               Book Consultation Now
             </Link>
-          </motion.div>
+          </div>
         </div>
       </div>
 
       {/* Contact form */}
       <div className="section-padding bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
+          <div
+            ref={captchaRef}
             className="contact-card relative rounded-2xl p-6 sm:p-8 overflow-hidden shadow-2xl shadow-secondary/20 bg-secondary max-w-2xl mx-auto border border-white/10"
-            initial={{ y: 40, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.7 }}
-            viewport={{ once: true }}
           >
             <div className="absolute -bottom-24 -right-24 w-80 h-80 bg-white/10 rounded-full blur-3xl pointer-events-none" />
             <div className="relative z-10">
@@ -115,7 +126,7 @@ const FAQAndContact = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {fields.filter((f) => f.half).map((f) => (
                     <div key={f.name} className="space-y-1">
-                      <label className="text-[10px] font-bold text-white/60 ml-1 uppercase tracking-widest">{f.label}</label>
+                      <label htmlFor={`home-${f.name}`} className="text-[10px] font-bold text-white/60 ml-1 uppercase tracking-widest">{f.label}</label>
                       <div
                         className={`flex items-center gap-2 rounded-xl border bg-white/[0.07] px-3 py-2 transition-all ${
                           focusedField === f.name ? 'border-white/60 bg-white/[0.12]' : 'border-white/15'
@@ -123,6 +134,7 @@ const FAQAndContact = () => {
                       >
                         <f.icon className="w-3.5 h-3.5 text-white/40 shrink-0" />
                         <input
+                          id={`home-${f.name}`}
                           type={f.type}
                           name={f.name}
                           placeholder={f.placeholder}
@@ -139,7 +151,7 @@ const FAQAndContact = () => {
 
                 {fields.filter((f) => !f.half).map((f) => (
                   <div key={f.name} className="space-y-1">
-                    <label className="text-[10px] font-bold text-white/60 ml-1 uppercase tracking-widest">{f.label}</label>
+                    <label htmlFor={`home-${f.name}`} className="text-[10px] font-bold text-white/60 ml-1 uppercase tracking-widest">{f.label}</label>
                     <div
                       className={`flex items-center gap-2 rounded-xl border bg-white/[0.07] px-3 py-2 transition-all ${
                         focusedField === f.name ? 'border-white/60 bg-white/[0.12]' : 'border-white/15'
@@ -147,6 +159,7 @@ const FAQAndContact = () => {
                     >
                       <f.icon className="w-3.5 h-3.5 text-white/40 shrink-0" />
                       <input
+                        id={`home-${f.name}`}
                         type={f.type}
                         name={f.name}
                         placeholder={f.placeholder}
@@ -161,7 +174,7 @@ const FAQAndContact = () => {
                 ))}
 
                 <div className="space-y-1">
-                  <label className="text-[10px] font-bold text-white/60 ml-1 uppercase tracking-widest">Message</label>
+                  <label htmlFor="home-message" className="text-[10px] font-bold text-white/60 ml-1 uppercase tracking-widest">Message</label>
                   <div
                     className={`flex items-start gap-2 rounded-xl border bg-white/[0.07] px-3 py-2 transition-all ${
                       focusedField === 'message' ? 'border-white/60 bg-white/[0.12]' : 'border-white/15'
@@ -169,6 +182,7 @@ const FAQAndContact = () => {
                   >
                     <FiMessageSquare className="w-3.5 h-3.5 text-white/40 shrink-0 mt-0.5" />
                     <textarea
+                      id="home-message"
                       name="message"
                       placeholder="How can we help?"
                       value={form.message}
@@ -185,22 +199,31 @@ const FAQAndContact = () => {
                 <div className="flex items-center gap-2">
                   <input
                     type="checkbox"
-                    className="h-4 w-4 rounded border-white/30"
+                    id="home-privacy-agree"
+                    name="privacy"
+                    className="h-4 w-4 shrink-0 rounded border-white/30"
                     checked={privacyAgreed}
                     onChange={(e) => setPrivacyAgreed(e.target.checked)}
+                    aria-labelledby="home-privacy-label"
                     required
                   />
-                  <span className="text-white/60 text-xs">
+                  <label
+                    id="home-privacy-label"
+                    htmlFor="home-privacy-agree"
+                    className="text-white/60 text-xs cursor-pointer"
+                  >
                     I agree to the{' '}
                     <Link href="/privacy-policy" className="text-white/80 hover:underline">Privacy Policy</Link>
-                  </span>
+                  </label>
                 </div>
 
-                <ReCAPTCHA
-                  sitekey="6LdktHIrAAAAALQqNXDH1NVAbwgm0YVsQVEuC9ij"
-                  className="mx-auto"
-                  onChange={setRecaptcha}
-                />
+                {showCaptcha && (
+                  <ReCAPTCHA
+                    sitekey="6LdktHIrAAAAALQqNXDH1NVAbwgm0YVsQVEuC9ij"
+                    className="mx-auto"
+                    onChange={setRecaptcha}
+                  />
+                )}
 
                 <button
                   type="submit"
@@ -215,7 +238,7 @@ const FAQAndContact = () => {
                 </button>
               </form>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

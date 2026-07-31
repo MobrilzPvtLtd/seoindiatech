@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useState, useContext, useEffect } from "react";
+import { createContext, useState, useContext, useLayoutEffect } from "react";
 
 const ThemeContext = createContext(undefined);
 
@@ -11,19 +11,31 @@ function applyThemeClass(theme) {
   root.style.colorScheme = theme === "dark" ? "dark" : "light";
 }
 
+function readStoredTheme() {
+  try {
+    const saved = localStorage.getItem("theme");
+    if (saved === "dark" || saved === "light") return saved;
+  } catch {
+    /* private mode */
+  }
+  if (typeof document !== "undefined" && document.documentElement.classList.contains("dark")) {
+    return "dark";
+  }
+  return "light";
+}
+
 export const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState("light");
   const [isInitialized, setIsInitialized] = useState(false);
 
-  useEffect(() => {
-    const savedTheme = localStorage.getItem("theme");
-    const initialTheme = savedTheme === "dark" ? "dark" : "light";
+  useLayoutEffect(() => {
+    const initialTheme = readStoredTheme();
     setTheme(initialTheme);
     applyThemeClass(initialTheme);
     setIsInitialized(true);
   }, []);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (!isInitialized) return;
     localStorage.setItem("theme", theme);
     applyThemeClass(theme);

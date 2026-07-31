@@ -88,7 +88,15 @@ const AboutBand = () => {
           >
             {images.map((img) => (
               <div key={img.src} className={`${img.className} overflow-hidden shadow-premium`}>
-                <Image src={img.src} alt={img.alt} fill className="object-cover" sizes="400px" />
+                <Image
+                  src={img.src}
+                  alt={img.alt}
+                  fill
+                  className="object-cover"
+                  sizes="400px"
+                  loading="lazy"
+                  quality={75}
+                />
               </div>
             ))}
             {/* Decorative scribble */}

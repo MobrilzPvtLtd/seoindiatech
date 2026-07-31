@@ -14,6 +14,7 @@ export default function SEO({
   type = 'website',
   robots = 'index, follow, max-image-preview:large, max-snippet:-1',
   noindex = false,
+  lcpImage,
 }) {
   const canonicalUrl = canonical || absoluteUrl(path)
   const ogImage = image?.startsWith('http') ? image : absoluteUrl(image)
@@ -26,6 +27,9 @@ export default function SEO({
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="robots" content={robotsContent} />
       <link rel="canonical" href={canonicalUrl} />
+      {lcpImage && (
+        <link rel="preload" as="image" href={lcpImage} fetchPriority="high" />
+      )}
 
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />

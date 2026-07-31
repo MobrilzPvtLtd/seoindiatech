@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import { motion } from 'framer-motion'
 
 const clientLogos = [
   { src: '/images/home/logo1.png', alt: 'DIY Real Estate' },
@@ -11,18 +10,14 @@ const clientLogos = [
   { src: '/images/home/intgra.png', alt: 'Advyra' },
 ]
 
-const allLogos = [...clientLogos, ...clientLogos, ...clientLogos]
+/* Duplicate once for seamless CSS marquee — not 3x */
+const marqueeLogos = [...clientLogos, ...clientLogos]
 
 const TrustedBy = () => {
   return (
     <section className="relative pt-2 pb-12 md:pb-16 overflow-hidden bg-cream">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-8">
-        <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="flex flex-col items-center gap-4 sm:flex-row sm:justify-between"
-        >
+        <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-between">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-muted">
             Trusted by <span className="text-heading">500+ companies</span> worldwide
           </p>
@@ -39,7 +34,7 @@ const TrustedBy = () => {
               </div>
             ))}
           </div>
-        </motion.div>
+        </div>
       </div>
 
       <div className="relative w-full">
@@ -48,7 +43,7 @@ const TrustedBy = () => {
 
         <div className="marquee-container">
           <div className="marquee-track gap-6">
-            {allLogos.map((logo, index) => (
+            {marqueeLogos.map((logo, index) => (
               <div
                 key={`logo-${index}`}
                 className="flex-shrink-0 flex items-center justify-center rounded-xl border border-border bg-surface/80 px-8 py-5 transition-all duration-300 hover:-translate-y-1 hover:border-secondary/25 hover:shadow-md"
@@ -61,6 +56,8 @@ const TrustedBy = () => {
                     fill
                     className="object-contain opacity-60 grayscale transition-all duration-300 hover:opacity-100 hover:grayscale-0"
                     sizes="144px"
+                    loading="lazy"
+                    quality={75}
                   />
                 </div>
               </div>

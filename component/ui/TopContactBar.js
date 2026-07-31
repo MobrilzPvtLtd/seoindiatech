@@ -26,14 +26,14 @@ export default function TopContactBar() {
         <div className="flex flex-wrap items-center justify-center sm:justify-end gap-x-4 gap-y-1 text-[11px] sm:text-xs">
           <a
             href="tel:+91-8076676731"
-            className="flex items-center gap-1.5 text-white/70 hover:text-accent transition-colors"
+            className="inline-flex items-center gap-1.5 min-h-11 px-2 text-white/70 hover:text-accent transition-colors"
           >
             <Phone className="h-3 w-3" />
             <span className="hidden md:inline">IN</span> +91-8076676731
           </a>
           <a
             href="mailto:sales@seoindiatech.com"
-            className="flex items-center gap-1.5 text-white/70 hover:text-accent transition-colors"
+            className="inline-flex items-center gap-1.5 min-h-11 px-2 text-white/70 hover:text-accent transition-colors"
           >
             <Mail className="h-3 w-3" />
             sales@seoindiatech.com

@@ -13,6 +13,7 @@ export default function BrandLogo({
   size = 'md',
   compact = false,
   className = '',
+  priority = false,
 }) {
   const isDark = variant === 'onDark'
 
@@ -38,7 +39,7 @@ export default function BrandLogo({
         width={832}
         height={458}
         className={`${imageClass} object-contain object-left ${toneClass}`}
-        priority
+        priority={priority}
       />
     </Link>
   )

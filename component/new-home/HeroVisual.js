@@ -6,11 +6,9 @@ import { HOME_IMAGES, HERO_PROCESS_STEPS } from '@/utils/homeImages'
 export default function HeroVisual() {
   return (
     <div className="relative mx-auto w-full max-w-[560px]">
-      {/* Glow */}
       <div className="pointer-events-none absolute -inset-4 rounded-3xl bg-primary/30 blur-[80px] opacity-60" />
       <div className="pointer-events-none absolute top-1/4 right-0 h-40 w-40 rounded-full bg-accent/20 blur-[60px]" />
 
-      {/* Main - Google AI Overviews */}
       <div className="relative overflow-hidden rounded-2xl border border-white/15 bg-[#0e0c18] shadow-[0_24px_60px_-12px_rgba(0,0,0,0.55)]">
         <div className="relative aspect-[16/10] w-full">
           <Image
@@ -18,9 +16,10 @@ export default function HeroVisual() {
             alt="Google AI Overviews - AI-powered search visibility and SEO performance"
             fill
             className="object-cover object-center"
-            sizes="(max-width: 768px) 100vw, 560px"
-            quality={95}
+            sizes="(max-width: 768px) 90vw, 560px"
+            quality={60}
             priority
+            fetchPriority="high"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0e0c18]/70 via-[#0e0c18]/10 to-transparent" />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0e0c18]/40 via-transparent to-transparent" />
@@ -42,8 +41,8 @@ export default function HeroVisual() {
         </div>
       </div>
 
-      {/* GMB + SEO process cards */}
-      <div className="mt-3 grid grid-cols-3 gap-2 sm:gap-3">
+      {/* Process cards — desktop only to reduce mobile bandwidth */}
+      <div className="mt-3 hidden sm:grid grid-cols-3 gap-2 sm:gap-3">
         {HERO_PROCESS_STEPS.map((step) => (
           <div
             key={step.label}
@@ -55,8 +54,9 @@ export default function HeroVisual() {
                 alt={step.label}
                 fill
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                sizes="(max-width: 768px) 33vw, 180px"
-                quality={90}
+                sizes="180px"
+                quality={70}
+                loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0e0c18]/85 via-[#0e0c18]/20 to-transparent" />
               <div className="absolute bottom-2 left-2 right-2">
@@ -71,17 +71,6 @@ export default function HeroVisual() {
           </div>
         ))}
       </div>
-
-      {/* Dotted connection lines */}
-      <svg
-        className="pointer-events-none absolute -inset-2 opacity-25"
-        viewBox="0 0 400 400"
-        fill="none"
-        aria-hidden="true"
-      >
-        <path d="M40,120 Q120,80 200,100" stroke="white" strokeWidth="1.5" strokeDasharray="4 6" />
-        <path d="M360,80 Q280,120 220,140" stroke="white" strokeWidth="1.5" strokeDasharray="4 6" />
-      </svg>
     </div>
   )
 }

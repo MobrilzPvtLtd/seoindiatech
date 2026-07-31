@@ -1,36 +1,29 @@
-import Layout from "@/component/layout/Layout";
-import { ThemeProvider } from "@/context/ThemeContext";
-import SmoothScroll from "@/component/motion/SmoothScroll";
-import "@/styles/globals.css";
-import Script from "next/script";
-import Head from "next/head";
-import { Plus_Jakarta_Sans, Inter, Geist_Mono } from "next/font/google";
+import Layout from '@/component/layout/Layout'
+import { ThemeProvider } from '@/context/ThemeContext'
+import '@/styles/globals.css'
+import Script from 'next/script'
+import Head from 'next/head'
+import { Plus_Jakarta_Sans, Inter } from 'next/font/google'
 
 const plusJakarta = Plus_Jakarta_Sans({
-  variable: "--font-plus-jakarta",
-  subsets: ["latin"],
-  weight: ["500", "600", "700"],
-  display: "swap",
-});
+  variable: '--font-plus-jakarta',
+  subsets: ['latin'],
+  weight: ['600', '700'],
+  display: 'swap',
+  adjustFontFallback: true,
+})
 
 const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  display: "swap",
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-  display: "swap",
-});
+  variable: '--font-inter',
+  subsets: ['latin'],
+  weight: ['400', '600'],
+  display: 'swap',
+  adjustFontFallback: true,
+})
 
 export default function App({ Component, pageProps }) {
   return (
-    <div
-      className={`${plusJakarta.variable} ${inter.variable} ${geistMono.variable} antialiased`}
-    >
+    <div className={`${plusJakarta.variable} ${inter.variable} antialiased`}>
       <Head>
         <meta
           name="google-site-verification"
@@ -54,30 +47,26 @@ export default function App({ Component, pageProps }) {
         />
       </Head>
 
+      {/* GTM — deferred to avoid blocking first paint */}
       <Script
-        strategy="afterInteractive"
-        src="https://www.googletagmanager.com/gtag/js?id=G-VMZHW0JYVN"
-      />
-      <Script
-        id="google-analytics"
-        strategy="afterInteractive"
+        id="gtm"
+        strategy="lazyOnload"
         dangerouslySetInnerHTML={{
           __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-VMZHW0JYVN');
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-5TS8QJRM');
           `,
         }}
       />
 
       <ThemeProvider>
-        <SmoothScroll>
-          <Layout>
-            <Component {...pageProps} />
-          </Layout>
-        </SmoothScroll>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
       </ThemeProvider>
     </div>
-  );
+  )
 }

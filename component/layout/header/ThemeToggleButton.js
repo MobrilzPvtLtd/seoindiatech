@@ -3,16 +3,15 @@
 import { useTheme } from '@/context/ThemeContext'
 
 export default function ThemeToggleButton({ onDark = false, compact = false }) {
-  const { theme, toggleTheme, isInitialized } = useTheme()
+  const { theme, toggleTheme } = useTheme()
 
-  const sizeClass = compact ? 'h-9 w-9' : 'h-10 w-10'
+  const sizeClass = compact ? 'h-11 w-11' : 'h-11 w-11'
 
   const buttonClass = onDark
     ? `relative z-10 flex items-center justify-center ${sizeClass} rounded-full border border-white/20 bg-white/10 text-white/80 hover:bg-white/15 hover:text-white transition-colors shrink-0 cursor-pointer`
     : `relative z-10 flex items-center justify-center ${sizeClass} rounded-full border border-border bg-white text-muted hover:bg-surface hover:text-heading transition-colors shrink-0 cursor-pointer dark:border-white/15 dark:bg-white/10 dark:text-white/80 dark:hover:bg-white/15 dark:hover:text-white`
 
   const handleClick = () => {
-    if (!isInitialized) return
     toggleTheme()
   }
 
@@ -20,8 +19,7 @@ export default function ThemeToggleButton({ onDark = false, compact = false }) {
     <button
       type="button"
       onClick={handleClick}
-      disabled={!isInitialized}
-      className={`${buttonClass} disabled:opacity-50`}
+      className={buttonClass}
       aria-label={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
     >
       <svg

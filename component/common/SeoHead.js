@@ -14,6 +14,7 @@ export default function SeoHead({
   type = 'website',
   noindex = false,
   schema,
+  lcpImage,
 }) {
   return (
     <>
@@ -25,6 +26,7 @@ export default function SeoHead({
         image={image}
         type={type}
         noindex={noindex}
+        lcpImage={lcpImage}
       />
       <JsonLd data={schema} />
     </>

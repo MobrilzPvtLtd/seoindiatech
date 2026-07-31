@@ -13,7 +13,7 @@ const LOCAL_AVATARS = ['/images/sarah.png', '/images/michael.png', '/images/laur
 
 function Stars() {
   return (
-    <div className="flex gap-0.5 text-accent" aria-label="5 star rating">
+    <div role="img" className="flex gap-0.5 text-accent" aria-label="5 star rating">
       {[...Array(5)].map((_, i) => (
         <svg key={i} width="16" height="16" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
           <path d="M10 1.5l2.47 5.01 5.53.8-4 3.9.94 5.5L10 13.9l-4.94 2.71.94-5.5-4-3.9 5.53-.8L10 1.5z" />
@@ -199,7 +199,7 @@ const Testimonials = () => {
                   scrollPrev()
                   resumeAutoScroll()
                 }}
-                className="flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-white/10 text-white hover:bg-white/20 transition-colors"
+                className="flex h-11 w-11 items-center justify-center rounded-full border border-white/20 bg-white/10 text-white hover:bg-white/20 transition-colors"
                 aria-label="Previous testimonials"
               >
                 <ChevronLeft className="h-5 w-5" />
@@ -211,14 +211,14 @@ const Testimonials = () => {
                   scrollNext()
                   resumeAutoScroll()
                 }}
-                className="flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-white/10 text-white hover:bg-white/20 transition-colors"
+                className="flex h-11 w-11 items-center justify-center rounded-full border border-white/20 bg-white/10 text-white hover:bg-white/20 transition-colors"
                 aria-label="Next testimonials"
               >
                 <ChevronRight className="h-5 w-5" />
               </button>
             </div>
 
-            <div className="flex items-center gap-1.5">
+            <div className="flex items-center gap-2">
               {Array.from({ length: dotCount }).map((_, i) => (
                 <button
                   key={i}
@@ -228,11 +228,16 @@ const Testimonials = () => {
                     scrollToIndex(i)
                     resumeAutoScroll()
                   }}
-                  className={`h-2 rounded-full transition-all ${
-                    i === activeIndex ? 'w-6 bg-accent' : 'w-2 bg-white/30 hover:bg-white/50'
-                  }`}
+                  className="flex h-11 w-11 items-center justify-center rounded-full"
                   aria-label={`Go to testimonial slide ${i + 1}`}
-                />
+                >
+                  <span
+                    className={`block rounded-full transition-all ${
+                      i === activeIndex ? 'h-2.5 w-6 bg-accent' : 'h-2.5 w-2.5 bg-white/30 hover:bg-white/50'
+                    }`}
+                    aria-hidden="true"
+                  />
+                </button>
               ))}
             </div>
 

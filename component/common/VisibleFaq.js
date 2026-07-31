@@ -43,6 +43,8 @@ export default function VisibleFaq({
       <div className={listClassName}>
         {faqList.map((faq, i) => {
           const isOpen = openIndex === i
+          const buttonId = `faq-button-${i}`
+          const panelId = `faq-panel-${i}`
           return (
             <div
               key={`${faq.question}-${i}`}
@@ -52,21 +54,29 @@ export default function VisibleFaq({
             >
               <button
                 type="button"
+                id={buttonId}
                 onClick={() => toggle(i)}
-                className="flex w-full items-center justify-between gap-4 p-5 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/40"
+                className="flex w-full items-center justify-between gap-4 p-5 min-h-11 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/40"
                 aria-expanded={isOpen}
+                aria-controls={panelId}
               >
                 <span className="font-semibold text-heading text-sm md:text-base leading-snug">
                   {faq.question}
                 </span>
                 <ChevronDown
                   className={`h-5 w-5 shrink-0 text-muted transition-transform duration-300 ${isOpen ? 'rotate-180 text-primary' : ''}`}
+                  aria-hidden="true"
                 />
               </button>
               {isOpen && (
-                <p className="border-t border-border px-5 pb-5 pt-4 text-sm leading-relaxed text-muted">
+                <div
+                  id={panelId}
+                  role="region"
+                  aria-labelledby={buttonId}
+                  className="border-t border-border px-5 pb-5 pt-4 text-sm leading-relaxed text-muted"
+                >
                   {faq.answer}
-                </p>
+                </div>
               )}
             </div>
           )

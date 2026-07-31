@@ -20,7 +20,6 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isServicesOpen, setIsServicesOpen] = useState(false)
   const [isIndustryOpen, setIsIndustryOpen] = useState(false)
-  const [mounted, setMounted] = useState(false)
   const [windowWidth, setWindowWidth] = useState(0)
   const [openCategory, setOpenCategory] = useState(null)
   const [scrolled, setScrolled] = useState(false)
@@ -72,8 +71,6 @@ const Header = () => {
   const mobileMenuRef = useRef(null)
 
   useEffect(() => {
-    setMounted(true)
-
     const handleResize = () => {
       setWindowWidth(window.innerWidth)
       if (window.innerWidth >= 768) setIsMenuOpen(false)
@@ -187,7 +184,7 @@ const Header = () => {
     return (
       <Link
         href={href}
-        className={`relative text-[10px] lg:text-[11px] font-medium uppercase tracking-wide py-1 whitespace-nowrap shrink-0 transition-colors duration-200
+        className={`relative inline-flex items-center min-h-11 px-1 text-[10px] lg:text-[11px] font-medium uppercase tracking-wide whitespace-nowrap shrink-0 transition-colors duration-200
           after:content-[''] after:absolute after:left-0 after:-bottom-0.5 after:h-[2px] after:bg-primary
           after:transition-all after:duration-300 hover:after:w-full
           ${
@@ -239,14 +236,11 @@ const Header = () => {
         <div className={`w-full border-b transition-all duration-300 ${headerBarClass}`}>
           <div className={headerInnerClass}>
             <div className="flex items-center shrink-0 min-w-0">
-              {mounted ? (
-                <BrandLogo
-                  variant={logoOnDark ? 'onDark' : 'onLight'}
-                  size="md"
-                />
-              ) : (
-                <div className="h-8 w-[120px] bg-neutral/30 animate-pulse rounded-lg" />
-              )}
+              <BrandLogo
+                variant={logoOnDark ? 'onDark' : 'onLight'}
+                size="md"
+                priority
+              />
             </div>
 
             <nav className="hidden md:flex justify-center min-w-0 overflow-visible">
@@ -254,7 +248,7 @@ const Header = () => {
                 <li>
                   <Link
                     href="/"
-                    className={`flex items-center justify-center p-1 transition-colors ${darkHeroNav ? 'text-accent hover:text-accent/80' : 'text-primary'}`}
+                    className={`flex items-center justify-center min-h-11 min-w-11 rounded-lg transition-colors ${darkHeroNav ? 'text-accent hover:text-accent/80' : 'text-primary'}`}
                     aria-label="Home"
                   >
                     <Home size={18} strokeWidth={2} />
@@ -271,7 +265,7 @@ const Header = () => {
                   <button
                     type="button"
                     onClick={handleServicesClick}
-                    className={`flex items-center gap-1 text-[10px] lg:text-[11px] uppercase tracking-wide whitespace-nowrap shrink-0 ${servicesBtnColor} font-medium py-1 transition-colors duration-200`}
+                    className={`flex items-center gap-1 min-h-11 px-2 text-[10px] lg:text-[11px] uppercase tracking-wide whitespace-nowrap shrink-0 ${servicesBtnColor} font-medium transition-colors duration-200`}
                     aria-expanded={isServicesOpen}
                     aria-controls="services-dropdown"
                   >
@@ -301,7 +295,7 @@ const Header = () => {
                   <button
                     type="button"
                     onClick={handleIndustryClick}
-                    className={`flex items-center gap-1 text-[10px] lg:text-[11px] uppercase tracking-wide whitespace-nowrap shrink-0 ${servicesBtnColor} font-medium py-1 transition-colors duration-200`}
+                    className={`flex items-center gap-1 min-h-11 px-2 text-[10px] lg:text-[11px] uppercase tracking-wide whitespace-nowrap shrink-0 ${servicesBtnColor} font-medium transition-colors duration-200`}
                     aria-expanded={isIndustryOpen}
                     aria-controls="industry-dropdown"
                   >
@@ -332,7 +326,7 @@ const Header = () => {
             <div className="md:hidden flex items-center gap-2">
               <ThemeToggleButton onDark={logoOnDark} compact />
               <button
-                className={`menu-toggle ${darkHeroNav ? 'text-white hover:bg-white/10' : 'text-heading hover:bg-surface'} focus:outline-none focus:ring-2 focus:ring-primary rounded-full p-2 z-50 transition-colors`}
+                className={`menu-toggle min-h-11 min-w-11 flex items-center justify-center ${darkHeroNav ? 'text-white hover:bg-white/10' : 'text-heading hover:bg-surface'} focus:outline-none focus:ring-2 focus:ring-primary rounded-full z-50 transition-colors`}
                 onClick={toggleMobileMenu}
                 aria-label="Toggle menu"
                 aria-expanded={isMenuOpen}
@@ -375,7 +369,7 @@ const Header = () => {
           <button
             onClick={toggleMobileMenu}
             aria-label="Close menu"
-            className="text-white/70 hover:bg-white/10 rounded-full p-1.5 transition-colors"
+            className="flex items-center justify-center min-h-11 min-w-11 text-white/70 hover:bg-white/10 rounded-full transition-colors"
           >
             <X className="w-5 h-5" />
           </button>
@@ -439,7 +433,7 @@ const Header = () => {
                           onClick={() =>
                             setOpenCategory(openCategory === category.slug ? null : category.slug)
                           }
-                          className="text-white/50 hover:text-white px-2 py-2 rounded-lg"
+                          className="flex items-center justify-center min-h-11 min-w-11 text-white/50 hover:text-white rounded-lg shrink-0"
                           aria-label={`Expand ${category.title} services`}
                         >
                           <ChevronDown
