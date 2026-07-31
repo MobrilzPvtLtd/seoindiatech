@@ -90,6 +90,62 @@ const nextConfig = {
 
       },
 
+      {
+
+        source: '/sitemap.xml',
+
+        headers: [
+
+          { key: 'Content-Type', value: 'application/xml; charset=utf-8' },
+
+          { key: 'Cache-Control', value: 'public, max-age=86400' },
+
+        ],
+
+      },
+
+      {
+
+        source: '/llms.txt',
+
+        headers: [
+
+          { key: 'Content-Type', value: 'text/plain; charset=utf-8' },
+
+          { key: 'Cache-Control', value: 'public, max-age=86400' },
+
+        ],
+
+      },
+
+      {
+
+        source: '/agents.json',
+
+        headers: [
+
+          { key: 'Content-Type', value: 'application/json; charset=utf-8' },
+
+          { key: 'Cache-Control', value: 'public, max-age=86400' },
+
+        ],
+
+      },
+
+      {
+
+        source: '/agent-instructions.md',
+
+        headers: [
+
+          { key: 'Content-Type', value: 'text/markdown; charset=utf-8' },
+
+          { key: 'Cache-Control', value: 'public, max-age=86400' },
+
+        ],
+
+      },
+
     ]
 
   },

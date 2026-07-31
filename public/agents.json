@@ -1,0 +1,39 @@
+{
+  "name": "SEO India Tech",
+  "description": "AI-powered SEO and digital marketing agency. Contact for consultations, service inquiries, and SEO audits.",
+  "url": "https://www.seoindiatech.com/",
+  "contact": {
+    "phone": "+91-8076676731",
+    "email": "sales@seoindiatech.com"
+  },
+  "actions": [
+    {
+      "name": "contact",
+      "description": "Submit a contact or consultation request",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string", "description": "Full name" },
+          "email": { "type": "string", "description": "Email address" },
+          "phone": { "type": "string", "description": "Phone number" },
+          "message": { "type": "string", "description": "Message or inquiry details" }
+        },
+        "required": ["name", "email", "message"]
+      }
+    },
+    {
+      "name": "browse_services",
+      "description": "List available SEO and digital marketing services",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "category": {
+            "type": "string",
+            "description": "Service category such as seo, ppc, or content-marketing"
+          }
+        },
+        "required": []
+      }
+    }
+  ]
+}

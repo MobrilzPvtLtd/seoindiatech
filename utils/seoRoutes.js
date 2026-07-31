@@ -1,6 +1,6 @@
-import posts from './BlogPost'
-import { locations } from './locations'
-import { getAllIndustrySlugs } from './industries'
+import posts from './BlogPost.js'
+import { locations } from './locations.js'
+import { getAllIndustrySlugs } from './industries/index.js'
 
 const STATIC_ROUTES = [
   '/',
