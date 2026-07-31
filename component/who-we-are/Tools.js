@@ -71,28 +71,28 @@ const Tools = () => {
   ]
 
   return (
-    <section className="py-16 md:py-24 px-6 md:px-8 bg-gray-50 dark:bg-gray-900 relative overflow-hidden">
+    <section className="py-16 md:py-24 px-6 md:px-8 bg-background relative overflow-hidden">
       {/* Decorative background elements */}
-      <div className="absolute top-20 -right-10 w-64 h-64 bg-blue-50 dark:bg-blue-900/20 rounded-full blur-3xl opacity-70 -z-10"></div>
-      <div className="absolute -bottom-20 -left-10 w-64 h-64 bg-purple-50 dark:bg-purple-900/20 rounded-full blur-3xl opacity-70 -z-10"></div>
+      <div className="absolute top-20 -right-10 w-64 h-64 bg-background dark:bg-primary/15 rounded-full blur-3xl opacity-70 -z-10"></div>
+      <div className="absolute -bottom-20 -left-10 w-64 h-64 bg-cream dark:bg-purple-900/20 rounded-full blur-3xl opacity-70 -z-10"></div>
 
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-14">
-          <span className="inline-flex items-center gap-2 px-4 py-1.5 bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-sm font-medium mb-4">
-            <ToolCase size={16} className="text-blue-600 dark:text-blue-400" />
+          <span className="inline-flex items-center gap-2 px-4 py-1.5 bg-background dark:bg-primary/15 text-primary dark:text-accent rounded-full text-sm font-medium mb-4">
+            <ToolCase size={16} className="text-primary dark:text-accent" />
             Best-in-Class Technology
           </span>
 
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-heading mb-6">
             The tools that make us work{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 relative">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary dark:from-accent dark:to-purple-400 relative">
               smarter
               <Sparkles className="text-yellow-400 w-8 h-8 absolute -top-4 -right-8" />
             </span>
           </h2>
 
-          <p className="text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
+          <p className="text-lg text-body max-w-2xl mx-auto">
             By leveraging a suite of industry-leading tools, we deliver
             efficient, scalable solutions that drive tangible results for your
             business.
@@ -104,7 +104,7 @@ const Tools = () => {
           {tools.map((tool, index) => (
             <div
               key={index}
-              className="group relative aspect-[4/2] bg-white dark:bg-gray-800 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden"
+              className="group relative aspect-[4/2] bg-card dark:bg-card rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden"
             >
               {/* Tool logo - centered */}
               <div className="absolute inset-0 flex items-center justify-center p-6">
@@ -118,9 +118,9 @@ const Tools = () => {
               </div>
 
               {/* Hover overlay - appears when hovered */}
-              <div className="hidden absolute inset-0 bg-gradient-to-br from-blue-600/90 to-purple-600/90 dark:from-blue-700/95 dark:to-purple-700/95 opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col items-center justify-center p-6 text-white">
+              <div className="hidden absolute inset-0 bg-gradient-to-br from-primary/90 to-purple-600/90 dark:from-blue-700/95 dark:to-purple-700/95 opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col items-center justify-center p-6 text-white">
                 <h3 className="text-xl font-bold mb-2">{tool.name}</h3>
-                <p className="text-sm font-medium text-blue-100 dark:text-blue-200 mb-3">
+                <p className="text-sm font-medium text-white/90 dark:text-accent mb-3">
                   {tool.category}
                 </p>
                 <p className="text-center text-sm text-white/90">
@@ -137,11 +137,11 @@ const Tools = () => {
 
         {/* Bottom Text and CTA */}
         <div className="hidden mt-16 text-center">
-          <p className="text-xl font-medium text-gray-900 dark:text-white mb-6">
+          <p className="text-xl font-medium text-heading mb-6">
             And Many More Cutting-Edge Tools...
           </p>
 
-          <button className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-500 dark:to-purple-500 text-white px-8 py-3 rounded-full font-medium shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 transform active:scale-95">
+          <button className="inline-flex items-center gap-2 bg-gradient-to-r from-primary to-secondary dark:from-primary dark:to-purple-500 text-white px-8 py-3 rounded-full font-medium shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 transform active:scale-95">
             Explore Our Full Tech Stack
             <ArrowRight className="w-5 h-5" />
           </button>

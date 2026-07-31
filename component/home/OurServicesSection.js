@@ -9,14 +9,14 @@ const services = [
     description: 'Boost your website rankings, increase organic traffic, and grow online visibility with result-oriented SEO strategies.',
     icon: FaSearch,
     href: '/services/seo',
-    lightBg: 'bg-blue-50',
-    darkBg: 'dark:bg-blue-900/20',
-    lightText: 'text-blue-600',
-    darkText: 'dark:text-blue-400',
-    borderColor: 'border-blue-200 dark:border-blue-800/30',
-    hoverBorder: 'hover:border-blue-400 dark:hover:border-blue-500/50',
+    lightBg: 'bg-background',
+    darkBg: 'dark:bg-primary/15',
+    lightText: 'text-primary',
+    darkText: 'dark:text-accent',
+    borderColor: 'border-primary/30 dark:border-primary/40/30',
+    hoverBorder: 'hover:border-blue-400 dark:hover:border-primary/50',
     shadowHover: 'hover:shadow-blue-500/10',
-    gradient: 'from-blue-500 to-blue-600',
+    gradient: 'from-primary to-primary-hover',
   },
   {
     title: 'Digital Marketing',
@@ -74,7 +74,7 @@ const cardVariants = {
 
 const OurServicesSection = () => {
   return (
-    <section className="bg-white dark:bg-gray-900 py-16 md:py-24 transition-colors duration-300 overflow-hidden">
+    <section className="bg-white dark:bg-background py-16 md:py-24 transition-colors duration-300 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
@@ -84,7 +84,7 @@ const OurServicesSection = () => {
           viewport={{ once: true, amount: 0.2 }}
           className="text-center max-w-3xl mx-auto mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white leading-tight transition-colors duration-300">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-heading leading-tight transition-colors duration-300">
             Our services
           </h2>
 
@@ -93,10 +93,10 @@ const OurServicesSection = () => {
             whileInView={{ scaleX: 1, opacity: 1 }}
             transition={{ duration: 0.8, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.2 }}
-            className="w-20 h-1 mx-auto mt-4 bg-blue-500 rounded-full origin-center"
+            className="w-20 h-1 mx-auto mt-4 bg-secondary rounded-full origin-center"
           />
 
-          <p className="mt-5 text-base text-gray-600 dark:text-gray-400 max-w-2xl mx-auto transition-colors duration-300">
+          <p className="mt-5 text-base text-muted max-w-2xl mx-auto transition-colors duration-300">
             The core disciplines we lean on to get your business found, trusted, and chosen.
           </p>
         </motion.div>
@@ -115,7 +115,7 @@ const OurServicesSection = () => {
               <motion.div
                 key={service.title}
                 variants={cardVariants}
-                className={`group relative flex flex-col h-full gap-4 rounded-2xl border ${service.borderColor} ${service.hoverBorder} bg-white dark:bg-gray-800/50 backdrop-blur-sm p-6 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl ${service.shadowHover} cursor-pointer overflow-hidden`}
+                className={`group relative flex flex-col h-full gap-4 rounded-2xl border ${service.borderColor} ${service.hoverBorder} bg-card dark:bg-card/50 backdrop-blur-sm p-6 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl ${service.shadowHover} cursor-pointer overflow-hidden`}
               >
                 {/* Glow effect on hover */}
                 <div className={`absolute -inset-1 bg-gradient-to-r ${service.lightText.replace('text-', '')} ${service.darkText.replace('dark:text-', '')} opacity-0 group-hover:opacity-10 dark:group-hover:opacity-5 blur-xl transition-opacity duration-500`} />
@@ -124,12 +124,12 @@ const OurServicesSection = () => {
                   <div className={`relative flex h-11 w-11 shrink-0 items-center justify-center rounded-xl text-lg ${service.lightBg} ${service.darkBg} ${service.lightText} ${service.darkText} transition-all duration-500 group-hover:scale-110 group-hover:rotate-3`}>
                     <Icon />
                   </div>
-                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white transition-colors duration-300">
+                  <h3 className="text-lg font-semibold text-heading transition-colors duration-300">
                     {service.title}
                   </h3>
                 </div>
 
-                <p className="relative text-sm leading-relaxed text-gray-600 dark:text-gray-300 transition-colors duration-300 flex-1">
+                <p className="relative text-sm leading-relaxed text-muted transition-colors duration-300 flex-1">
                   {service.description}
                 </p>
 

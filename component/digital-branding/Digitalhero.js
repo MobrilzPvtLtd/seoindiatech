@@ -7,30 +7,30 @@ const Digitalhero = () => {
   return (
     <section className="relative bg-white dark:bg-gray-950 pt-24 md:pt-28 pb-16 md:pb-24 px-4 md:px-6 overflow-hidden">
       {/* background glow */}
-      <div className="absolute -top-40 -left-40 w-[500px] h-[500px] bg-blue-400/20 blur-3xl rounded-full"></div>
+      <div className="absolute -top-40 -left-40 w-[500px] h-[500px] bg-accent/20 blur-3xl rounded-full"></div>
       <div className="absolute -bottom-40 -right-40 w-[500px] h-[500px] bg-indigo-400/20 blur-3xl rounded-full"></div>
 
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-14 items-center">
         {/* LEFT CONTENT */}
         <div className="space-y-6 relative z-10">
           {/* badge */}
-          <div className="inline-flex items-center px-4 py-1.5 bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-sm font-medium">
+          <div className="inline-flex items-center px-4 py-1.5 bg-background dark:bg-primary/15 text-primary dark:text-accent rounded-full text-sm font-medium">
             <Sparkles className="w-4 h-4 mr-2" />
             Digital Identity Solutions
           </div>
 
           {/* heading */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-heading leading-tight">
             Digital Branding Serrvices With{' '}
-            <span className="text-blue-700 dark:text-blue-400">
+            <span className="text-primary dark:text-accent">
               SEO IndiaTech
             </span>
           </h1>
 
-          <div className="w-20 h-1.5 bg-blue-600 dark:bg-blue-500 rounded-full"></div>
+          <div className="w-20 h-1.5 bg-primary dark:bg-primary rounded-full"></div>
 
           {/* content */}
-          <p className="text-gray-700 dark:text-gray-300 text-base md:text-lg leading-relaxed text-justify">
+          <p className="text-body text-base md:text-lg leading-relaxed text-justify">
             SEO India Tech offers professional digital branding services that
             help businesses create a powerful and consistent brand presence
             across all digital channels. A strong brand identity is essential
@@ -41,10 +41,10 @@ const Digitalhero = () => {
             business and strengthens customer perception.
           </p>
 
-          <p className="text-gray-700 dark:text-gray-300 text-base md:text-lg leading-relaxed">
+          <p className="text-body text-base md:text-lg leading-relaxed">
             At{' '}
             <Link href={'/'}>
-              <b className="text-blue-700 dark:text-blue-400">SEO India Tech</b>
+              <b className="text-primary dark:text-accent">SEO India Tech</b>
             </Link>
             , we don't just create brands - we build digital identities that
             stand out, captivate, and convert.
@@ -54,7 +54,7 @@ const Digitalhero = () => {
           <div className="pt-4 flex flex-wrap gap-4">
             <Link
               href="/contact-us"
-              className="cursor-pointer bg-gradient-to-r from-blue-600 to-blue-800 text-white px-6 py-3 rounded-full text-base hover:scale-105 transition-all flex items-center group"
+              className="cursor-pointer bg-gradient-to-r from-primary to-secondary text-white px-6 py-3 rounded-full text-base hover:scale-105 transition-all flex items-center group"
             >
               Get Started now
               <ArrowRight className="ml-2 w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
@@ -65,7 +65,7 @@ const Digitalhero = () => {
         {/* RIGHT IMAGE */}
         <div className="relative flex justify-center items-center">
           {/* glow behind image */}
-          <div className="absolute w-[420px] h-[420px] bg-blue-400/20 blur-3xl rounded-full"></div>
+          <div className="absolute w-[420px] h-[420px] bg-accent/20 blur-3xl rounded-full"></div>
 
           <div className="relative transition-transform duration-500 hover:scale-105">
             <Image
@@ -98,19 +98,19 @@ const Digitalhero = () => {
         ].map((item, index) => (
           <div
             key={index}
-            className="bg-white dark:bg-gray-900 p-6 rounded-xl border border-gray-200 dark:border-gray-700 hover:shadow-lg hover:-translate-y-1 transition duration-300"
+            className="bg-white dark:bg-background p-6 rounded-xl border border-border hover:shadow-lg hover:-translate-y-1 transition duration-300"
           >
-            <div className="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900/40 flex items-center justify-center mb-4">
-              <span className="text-blue-700 dark:text-blue-400 font-bold">
+            <div className="w-10 h-10 rounded-full bg-primary/10 dark:bg-primary/20/40 flex items-center justify-center mb-4">
+              <span className="text-primary dark:text-accent font-bold">
                 {index + 1}
               </span>
             </div>
 
-            <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+            <h3 className="text-xl font-semibold text-heading mb-2">
               {item.title}
             </h3>
 
-            <p className="text-gray-600 dark:text-gray-400">{item.desc}</p>
+            <p className="text-muted">{item.desc}</p>
           </div>
         ))}
       </div>

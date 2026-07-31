@@ -67,29 +67,29 @@ const CTA = () => {
   return (
     <section
       id="DDform"
-      className="bg-gradient-to-br from-gray-100 to-blue-100 dark:from-gray-900 dark:to-blue-950 py-16 px-4 sm:px-6 md:px-12 lg:px-20"
+      className="bg-gradient-to-br from-cream to-background dark:from-background dark:to-secondary/40 py-16 px-4 sm:px-6 md:px-12 lg:px-20"
     >
       <ToastContainer />
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-10">
-          <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 dark:bg-blue-900/60 text-blue-800 dark:text-blue-300 mb-4">
+          <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-primary/10 dark:bg-primary/25 text-primary dark:text-accent mb-4">
             <Check className="w-4 h-4 mr-2" /> Contact Us
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
+          <h2 className="text-3xl md:text-4xl font-bold text-heading">
             Let&apos;s Build Something Great Together
           </h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 bg-white dark:bg-gray-800 rounded-3xl p-6 sm:p-10 border border-gray-200 dark:border-gray-700 shadow-2xl dark:shadow-blue-900/20">
-          <div className="flex flex-col justify-between border border-gray-200 dark:border-gray-700 rounded-2xl p-6 sm:p-8 bg-white dark:bg-gray-800">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 bg-card dark:bg-card rounded-3xl p-6 sm:p-10 border border-border shadow-2xl dark:shadow-primary/15">
+          <div className="flex flex-col justify-between border border-border rounded-2xl p-6 sm:p-8 bg-card dark:bg-card">
             <div>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 text-center md:text-left">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-heading mb-6 text-center md:text-left">
                 Where{' '}
-                <span className="text-blue-700 dark:text-blue-400">
+                <span className="text-primary dark:text-accent">
                   Design Meets Development
                 </span>{' '}
                 Excellence
               </h2>
-              <p className="text-gray-600 dark:text-gray-300 mb-6 text-center md:text-left">
+              <p className="text-muted mb-6 text-center md:text-left">
                 From startups to enterprises, we deliver transformative digital
                 solutions across diverse industries:
               </p>
@@ -118,15 +118,15 @@ const CTA = () => {
                 ].map((item, index) => (
                   <div key={index} className="flex items-start gap-3">
                     <div className="mt-1">
-                      <div className="w-4 h-4 bg-blue-500 dark:bg-blue-400 rounded-full flex items-center justify-center">
+                      <div className="w-4 h-4 bg-secondary dark:bg-accent rounded-full flex items-center justify-center">
                         <Check className="w-3 h-3 text-white" />
                       </div>
                     </div>
                     <div>
-                      <span className="font-semibold text-gray-900 dark:text-white">
+                      <span className="font-semibold text-heading">
                         {item.title}
                       </span>{' '}
-                      <span className="text-gray-600 dark:text-gray-300">
+                      <span className="text-muted">
                         - {item.desc}
                       </span>
                     </div>
@@ -137,7 +137,7 @@ const CTA = () => {
           </div>
 
           <form
-            className="bg-gray-50 dark:bg-gray-900 rounded-2xl p-6 sm:p-8 space-y-5 border border-gray-200 dark:border-gray-700 flex flex-col justify-between shadow-inner"
+            className="bg-background rounded-2xl p-6 sm:p-8 space-y-5 border border-border flex flex-col justify-between shadow-inner"
             action="/api/submit-form"
             onSubmit={handleSubmit}
           >
@@ -145,7 +145,7 @@ const CTA = () => {
               <div>
                 <label
                   htmlFor="dd-email"
-                  className="block font-medium mb-1 text-gray-700 dark:text-gray-200"
+                  className="block font-medium mb-1 text-body"
                 >
                   Email{' '}
                   <span className="text-red-600 dark:text-red-400">*</span>
@@ -156,7 +156,7 @@ const CTA = () => {
                   name="email"
                   value={form.email}
                   onChange={handleChange}
-                  className="w-full p-3 rounded-xl bg-white text-gray-700 dark:bg-gray-800 border border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 focus:outline-none dark:text-white"
+                  className="w-full p-3 rounded-xl bg-white text-body dark:bg-card border border-border focus:ring-2 focus:ring-primary dark:focus:ring-accent focus:outline-none dark:text-white"
                   placeholder="your@email.com"
                   required
                 />
@@ -165,7 +165,7 @@ const CTA = () => {
               <div>
                 <label
                   htmlFor="dd-fullName"
-                  className="block font-medium mb-1 text-gray-700 dark:text-gray-200"
+                  className="block font-medium mb-1 text-body"
                 >
                   Full Name{' '}
                   <span className="text-red-600 dark:text-red-400">*</span>
@@ -176,7 +176,7 @@ const CTA = () => {
                   name="fullName"
                   value={form.fullName}
                   onChange={handleChange}
-                  className="w-full p-3 rounded-xl bg-white text-gray-700 dark:bg-gray-800 border border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 focus:outline-none dark:text-white"
+                  className="w-full p-3 rounded-xl bg-white text-body dark:bg-card border border-border focus:ring-2 focus:ring-primary dark:focus:ring-accent focus:outline-none dark:text-white"
                   placeholder="John"
                   required
                 />
@@ -185,7 +185,7 @@ const CTA = () => {
               <div>
                 <label
                   htmlFor="dd-phone"
-                  className="block font-medium mb-1 text-gray-700 dark:text-gray-200"
+                  className="block font-medium mb-1 text-body"
                 >
                   Phone Number{' '}
                   <span className="text-red-600 dark:text-red-400">*</span>
@@ -196,7 +196,7 @@ const CTA = () => {
                   name="phone"
                   value={form.phone}
                   onChange={handleChange}
-                  className="w-full p-3 rounded-xl bg-white text-gray-700 dark:bg-gray-800 border border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 focus:outline-none dark:text-white"
+                  className="w-full p-3 rounded-xl bg-white text-body dark:bg-card border border-border focus:ring-2 focus:ring-primary dark:focus:ring-accent focus:outline-none dark:text-white"
                   placeholder="+1 (555) 123-4567"
                   required
                 />
@@ -205,7 +205,7 @@ const CTA = () => {
               <div>
                 <label
                   htmlFor="dd-message"
-                  className="block font-medium mb-1 text-gray-700 dark:text-gray-200"
+                  className="block font-medium mb-1 text-body"
                 >
                   How can we help?
                 </label>
@@ -215,7 +215,7 @@ const CTA = () => {
                   name="message"
                   value={form.message}
                   onChange={handleChange}
-                  className="w-full p-3 rounded-xl bg-white text-gray-700 dark:bg-gray-800 border border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 focus:outline-none resize-none dark:text-white"
+                  className="w-full p-3 rounded-xl bg-white text-body dark:bg-card border border-border focus:ring-2 focus:ring-primary dark:focus:ring-accent focus:outline-none resize-none dark:text-white"
                   placeholder="Tell us about your project..."
                 ></textarea>
               </div>
@@ -227,24 +227,24 @@ const CTA = () => {
                   name="privacy"
                   checked={form.privacy}
                   onChange={handleChange}
-                  className="mt-1.5 h-4 w-4 rounded text-gray-700 border-gray-300 text-blue-600 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800"
+                  className="mt-1.5 h-4 w-4 rounded text-body border-border text-primary focus:ring-primary dark:border-gray-600 dark:bg-surface dark:ring-offset-gray-800"
                   required
                 />
                 <label
                   htmlFor="dd-privacy"
-                  className="ml-2 text-sm text-gray-600 dark:text-gray-400"
+                  className="ml-2 text-sm text-muted"
                 >
                   I agree to the{' '}
                   <Link
                     href="#"
-                    className="text-blue-600 dark:text-blue-400 hover:underline"
+                    className="text-primary dark:text-accent hover:underline"
                   >
                     Privacy Policy
                   </Link>{' '}
                   and{' '}
                   <Link
                     href="#"
-                    className="text-blue-600 dark:text-blue-400 hover:underline"
+                    className="text-primary dark:text-accent hover:underline"
                   >
                     Terms of Service
                   </Link>
@@ -262,12 +262,12 @@ const CTA = () => {
               <button
                 type="submit"
                 disabled={!isFormValid() || isSubmitting}
-                className="cursor-pointer w-full bg-blue-600 hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-600 text-white font-semibold py-3.5 px-6 rounded-xl transition duration-300 shadow-lg flex items-center justify-center group disabled:opacity-60"
+                className="cursor-pointer w-full bg-primary hover:bg-primary-hover dark:bg-primary-hover dark:hover:bg-primary-hover text-white font-semibold py-3.5 px-6 rounded-xl transition duration-300 shadow-lg flex items-center justify-center group disabled:opacity-60"
               >
                 {isSubmitting ? 'Submitting...' : 'Submit Request'}
                 <Send className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </button>
-              <p className="text-xs text-center text-gray-500 dark:text-gray-400 mt-3">
+              <p className="text-xs text-center text-muted mt-3">
                 We&apos;ll get back to you within 24-48 hours
               </p>
             </div>

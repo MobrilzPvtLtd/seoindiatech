@@ -32,12 +32,12 @@ export default function HeroSection() {
   const benefits = [
     {
       icon: (
-        <Zap className="w-5 h-5 text-blue-600 dark:text-blue-400 group-hover:text-blue-700 dark:group-hover:text-blue-300" />
+        <Zap className="w-5 h-5 text-primary dark:text-accent group-hover:text-primary dark:group-hover:text-accent" />
       ),
       title: "Increase Efficiency",
       description:
         "Reduce manual effort and optimize processes with smart automation.",
-      hoverClass: "group-hover:bg-blue-100 dark:group-hover:bg-blue-900/30",
+      hoverClass: "group-hover:bg-primary/10 dark:group-hover:bg-blue-900/30",
     },
     {
       icon: (
@@ -50,12 +50,12 @@ export default function HeroSection() {
     },
     {
       icon: (
-        <Users className="w-5 h-5 text-purple-600 dark:text-purple-400 group-hover:text-purple-700 dark:group-hover:text-purple-300" />
+        <Users className="w-5 h-5 text-primary dark:text-accent group-hover:text-purple-700 dark:group-hover:text-purple-300" />
       ),
       title: "Enhance Customer Experience",
       description:
         "Enhance interactions through AI chatbots, email automation, and tailored marketing campaigns.",
-      hoverClass: "group-hover:bg-purple-100 dark:group-hover:bg-purple-900/30",
+      hoverClass: "group-hover:bg-primary/10 dark:group-hover:bg-purple-900/30",
     },
     {
       icon: (
@@ -76,11 +76,11 @@ export default function HeroSection() {
   ];
 
   return (
-    <section className="bg-white dark:bg-gray-900 overflow-hidden relative">
+    <section className="bg-white dark:bg-background overflow-hidden relative">
       {/* Background decorative elements */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/4 right-0 w-72 h-72 bg-white/50 dark:bg-blue-900/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 left-1/4 w-80 h-80 bg-blue-300/30 dark:bg-blue-800/10 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/4 right-0 w-72 h-72 bg-white/50 dark:bg-primary/20/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 left-1/4 w-80 h-80 bg-accent/20 dark:bg-primary/10 rounded-full blur-3xl"></div>
       </div>
 
       {/* Decorative grid pattern */}
@@ -91,21 +91,21 @@ export default function HeroSection() {
           {/* Left Content */}
           <div className="space-y-8">
             <div className="space-y-6">
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-white dark:bg-gray-800/80 text-blue-700 dark:text-blue-300 rounded-full text-sm font-medium shadow-sm">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-card dark:bg-card/80 text-primary dark:text-accent rounded-full text-sm font-medium shadow-sm">
                 <Bot className="w-4 h-4" />
                 <span>AI-Powered Solutions</span>
               </div>
 
-              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white leading-16">
+              <h1 className="text-4xl md:text-5xl font-bold text-heading leading-16">
                 Transform Your Business Efficiency with Advanced{" "}
-                <span className="text-blue-500">Digital Automation </span>{" "}
+                <span className="text-primary">Digital Automation </span>{" "}
                 Services
               </h1>
 
-              <p className="text-justify text-xl text-gray-700 dark:text-gray-300 leading-relaxed max-w-xl">
+              <p className="text-justify text-xl text-body leading-relaxed max-w-xl">
                 In today's competitive digital economy, businesses must operate
                 faster, smarter, and more efficiently to stay ahead. At{" "}
-                <Link className="text-blue-600" href="/">
+                <Link className="text-primary" href="/">
                   {" "}
                   SEO IndiaTech
                 </Link>{" "}
@@ -116,7 +116,7 @@ export default function HeroSection() {
                 digital automation as a service tailored to your unique
                 organizational needs.
               </p>
-              <p className="text-justify text-xl text-gray-700 dark:text-gray-300 leading-relaxed max-w-xl">
+              <p className="text-justify text-xl text-body leading-relaxed max-w-xl">
                 Automation is no longer a luxury - it is a necessity. Modern
                 companies require intelligent systems that reduce manual work,
                 eliminate operational errors, and create room for innovation.
@@ -129,17 +129,17 @@ export default function HeroSection() {
               {benefits.map((benefit, index) => (
                 <div
                   key={index}
-                  className={`group border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 hover:border-transparent dark:hover:border-transparent p-4 md:p-6 rounded-xl transition-all duration-300 shadow-sm hover:shadow-md ${benefit.hoverClass}`}
+                  className={`group border border-border bg-card dark:bg-card hover:border-transparent dark:hover:border-transparent p-4 md:p-6 rounded-xl transition-all duration-300 shadow-sm hover:shadow-md ${benefit.hoverClass}`}
                 >
                   <div className="flex gap-4">
-                    <div className="p-2 bg-gray-100 dark:bg-gray-700 rounded-lg transition-colors duration-300 group-hover:bg-white dark:group-hover:bg-gray-900 h-full">
+                    <div className="p-2 bg-cream dark:bg-surface rounded-lg transition-colors duration-300 group-hover:bg-white dark:group-hover:bg-gray-900 h-full">
                       {benefit.icon}
                     </div>
                     <div>
-                      <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                      <h3 className="text-xl font-semibold text-heading mb-2">
                         {benefit.title}
                       </h3>
-                      <p className="text-gray-600 text-sm dark:text-gray-400">
+                      <p className="text-muted text-sm dark:text-gray-400">
                         {benefit.description}
                       </p>
                     </div>
@@ -153,7 +153,7 @@ export default function HeroSection() {
           <div className="relative flex justify-center items-center">
             {/* Main image with glow effect */}
             <div className="relative">
-              <div className="absolute -inset-2 bg-gradient-to-r from-blue-600 to-purple-600 opacity-30 dark:opacity-50 blur-xl rounded-full"></div>
+              <div className="absolute -inset-2 bg-gradient-to-r from-primary to-secondary opacity-30 dark:opacity-50 blur-xl rounded-full"></div>
 
               <div className="relative rounded-2xl overflow-hidden border-4 border-white dark:border-gray-800 shadow-xl">
                 <Image
@@ -173,11 +173,11 @@ export default function HeroSection() {
                         index
                       )}`}
                     >
-                      <div className="bg-white dark:bg-gray-900 p-3 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700">
+                      <div className="bg-white dark:bg-background p-3 rounded-lg shadow-lg border border-border">
                         <Bot
                           className={`w-12 h-12 ${
                             index === 0
-                              ? "text-blue-500"
+                              ? "text-primary"
                               : index === 1
                               ? "text-purple-500"
                               : "text-green-500"
@@ -189,7 +189,7 @@ export default function HeroSection() {
                 </div>
 
                 {/* Decorative elements */}
-                <div className="absolute top-4 left-4 bg-white dark:bg-gray-800 p-2 rounded-lg shadow-md">
+                <div className="absolute top-4 left-4 bg-card dark:bg-card p-2 rounded-lg shadow-md">
                   <div className="flex space-x-1">
                     <div className="w-2 h-2 bg-red-500 rounded-full"></div>
                     <div className="w-2 h-2 bg-yellow-500 rounded-full"></div>
@@ -200,21 +200,21 @@ export default function HeroSection() {
             </div>
 
             {/* Stats overlay */}
-            <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 bg-white dark:bg-gray-800 px-8 py-4 rounded-lg shadow-lg border border-gray-100 dark:border-gray-700 flex gap-6 items-center">
+            <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 bg-card dark:bg-card px-8 py-4 rounded-lg shadow-lg border border-border dark:border-border flex gap-6 items-center">
               <div className="text-center">
-                <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">
+                <div className="text-2xl font-bold text-primary dark:text-accent">
                   85%
                 </div>
-                <div className="text-sm text-gray-600 dark:text-gray-400">
+                <div className="text-sm text-muted">
                   Efficiency
                 </div>
               </div>
-              <div className="h-10 w-px bg-gray-200 dark:bg-gray-700"></div>
+              <div className="h-10 w-px bg-gray-200 dark:bg-surface"></div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-purple-600 dark:text-purple-400">
+                <div className="text-2xl font-bold text-primary dark:text-accent">
                   24/7
                 </div>
-                <div className="text-sm text-gray-600 dark:text-gray-400">
+                <div className="text-sm text-muted">
                   Operation
                 </div>
               </div>

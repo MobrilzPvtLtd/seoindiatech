@@ -72,20 +72,20 @@ const ContactUsSection = () => {
   }
 
   return (
-    <section className="bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800 pt-[140px] pb-20 px-4 sm:px-6">
+    <section className="bg-gradient-to-b from-gray-50 to-white dark:from-background dark:to-surface pt-[140px] pb-20 px-4 sm:px-6">
       <ToastContainer />
       {/* Top Heading */}
       <div className="text-center mb-20">
-        <span className="inline-block px-4 py-1.5 bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-sm font-medium mb-4">
+        <span className="inline-block px-4 py-1.5 bg-background dark:bg-primary/15 text-primary dark:text-accent rounded-full text-sm font-medium mb-4">
           Get In Touch
         </span>
-        <h1 className="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+        <h1 className="text-3xl md:text-5xl font-bold text-heading mb-6">
           Let's Start a{' '}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400 dark:from-blue-400 dark:to-blue-300">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent dark:from-accent dark:to-accent">
             Conversation
           </span>
         </h1>
-        <p className="text-gray-600 dark:text-gray-300 text-lg max-w-2xl mx-auto">
+        <p className="text-muted text-lg max-w-2xl mx-auto">
           Fill out the form and one of our experts will contact you within 24
           hours
         </p>
@@ -94,16 +94,16 @@ const ContactUsSection = () => {
       <div className="max-w-7xl mx-auto md:pl-24 grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
         {/* Left: Form Card */}
         <div className="relative">
-          <div className="absolute z-10 -top-5 left-1/2 transform -translate-x-1/2 bg-blue-600 dark:bg-blue-500 text-white px-6 py-2 rounded-full font-medium text-sm shadow-lg">
+          <div className="absolute z-10 -top-5 left-1/2 transform -translate-x-1/2 bg-primary dark:bg-primary text-white px-6 py-2 rounded-full font-medium text-sm shadow-lg">
             We're here to help you succeed
           </div>
 
-          <div className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 shadow-xl p-8 transition-all hover:shadow-2xl relative z-1">
+          <div className="bg-card dark:bg-card rounded-2xl border border-border shadow-xl p-8 transition-all hover:shadow-2xl relative z-1">
             <form className="mt-6 space-y-6" action="/api/submit-form" onSubmit={handleSubmit}>
               {/* Name */}
               <div>
                 <label
-                  className="block text-gray-700 dark:text-gray-200 font-semibold mb-2"
+                  className="block text-body font-semibold mb-2"
                   htmlFor="fullName"
                 >
                   Full Name <span className="text-red-500">*</span>
@@ -115,14 +115,14 @@ const ContactUsSection = () => {
                   value={formState.fullName}
                   onChange={handleInputChange}
                   placeholder="Enter your full name"
-                  className="w-full border-b-2 border-gray-200 dark:border-gray-600 focus:border-blue-600 dark:focus:border-blue-400 transition py-2 px-1 bg-transparent outline-none text-gray-800 dark:text-gray-200"
+                  className="w-full border-b-2 border-gray-200 dark:border-gray-600 focus:border-primary dark:focus:border-blue-400 transition py-2 px-1 bg-transparent outline-none text-heading dark:text-gray-200"
                 />
               </div>
 
               {/* Email */}
               <div>
                 <label
-                  className="block text-gray-700 dark:text-gray-200 font-semibold mb-2"
+                  className="block text-body font-semibold mb-2"
                   htmlFor="email"
                 >
                   Email Address <span className="text-red-500">*</span>
@@ -134,14 +134,14 @@ const ContactUsSection = () => {
                   value={formState.email}
                   onChange={handleInputChange}
                   placeholder="you@email.com"
-                  className="w-full border-b-2 border-gray-200 dark:border-gray-600 focus:border-blue-600 dark:focus:border-blue-400 transition py-2 px-1 bg-transparent outline-none text-gray-800 dark:text-gray-200"
+                  className="w-full border-b-2 border-gray-200 dark:border-gray-600 focus:border-primary dark:focus:border-blue-400 transition py-2 px-1 bg-transparent outline-none text-heading dark:text-gray-200"
                 />
               </div>
 
               {/* Phone */}
               <div>
                 <label
-                  className="block text-gray-700 dark:text-gray-200 font-semibold mb-2"
+                  className="block text-body font-semibold mb-2"
                   htmlFor="phone"
                 >
                   Phone Number <span className="text-red-500">*</span>
@@ -153,14 +153,14 @@ const ContactUsSection = () => {
                   value={formState.phone}
                   onChange={handleInputChange}
                   placeholder="Your phone number"
-                  className="w-full border-b-2 border-gray-200 dark:border-gray-600 focus:border-blue-600 dark:focus:border-blue-400 transition py-2 px-1 bg-transparent outline-none text-gray-800 dark:text-gray-200"
+                  className="w-full border-b-2 border-gray-200 dark:border-gray-600 focus:border-primary dark:focus:border-blue-400 transition py-2 px-1 bg-transparent outline-none text-heading dark:text-gray-200"
                 />
               </div>
 
               {/* Message */}
               <div>
                 <label
-                  className="block text-gray-700 dark:text-gray-200 font-semibold mb-2"
+                  className="block text-body font-semibold mb-2"
                   htmlFor="message"
                 >
                   Message
@@ -172,19 +172,19 @@ const ContactUsSection = () => {
                   value={formState.message}
                   onChange={handleInputChange}
                   placeholder="How can we help you?"
-                  className="w-full border border-gray-200 dark:border-gray-600 rounded-lg p-3 outline-none focus:border-blue-600 dark:focus:border-blue-400 transition resize-none text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-700"
+                  className="w-full border border-gray-200 dark:border-gray-600 rounded-lg p-3 outline-none focus:border-primary dark:focus:border-blue-400 transition resize-none text-heading dark:text-gray-200 bg-white dark:bg-surface"
                 ></textarea>
-                <div className="text-xs text-gray-400 dark:text-gray-500 text-right mt-1">
+                <div className="text-xs text-muted text-right mt-1">
                   {formState.message.length} / 180
                 </div>
               </div>
 
               {/* Privacy Agreement */}
               <div className="flex items-center gap-3 mt-2">
-                <label className="flex items-center gap-3 text-gray-600 dark:text-gray-300 text-sm cursor-pointer">
+                <label className="flex items-center gap-3 text-muted text-sm cursor-pointer">
                   <input
                     type="checkbox"
-                    className="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                    className="h-4 w-4 rounded border-border text-primary focus:ring-primary"
                     checked={privacyAgreed}
                     onChange={(e) => setPrivacyAgreed(e.target.checked)}
                     required
@@ -193,7 +193,7 @@ const ContactUsSection = () => {
                     I agree to the{' '}
                     <a
                       href="/privacy-policy"
-                      className="text-blue-600 dark:text-blue-400 hover:underline"
+                      className="text-primary dark:text-accent hover:underline"
                     >
                       Privacy Policy
                     </a>
@@ -212,7 +212,7 @@ const ContactUsSection = () => {
                 <button
                   type="submit"
                   disabled={!isFormValid() || isSubmitting}
-                  className="mt-4 w-full sm:w-auto inline-flex items-center justify-center gap-2 text-white bg-gradient-to-r from-blue-600 to-blue-500 dark:from-blue-500 dark:to-blue-600 hover:from-blue-700 hover:to-blue-600 font-medium px-8 py-3 rounded-full hover:cursor-pointer shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-[1.02] active:scale-[0.98] disabled:opacity-60"
+                  className="mt-4 w-full sm:w-auto inline-flex items-center justify-center gap-2 text-white bg-gradient-to-r from-primary to-secondary dark:from-primary dark:to-primary-hover hover:from-primary-hover hover:to-primary font-medium px-8 py-3 rounded-full hover:cursor-pointer shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-[1.02] active:scale-[0.98] disabled:opacity-60"
                 >
                   <Send size={18} />
                   {isSubmitting ? 'Sending...' : 'Send Message'}
@@ -222,8 +222,8 @@ const ContactUsSection = () => {
           </div>
 
           {/* Decorative elements */}
-          <div className="absolute -z-10 -bottom-4 -right-4 w-32 h-32 bg-blue-100 dark:bg-blue-900/20 rounded-full opacity-70 blur-xl"></div>
-          <div className="absolute -z-10 -top-4 -left-4 w-20 h-20 bg-purple-100 dark:bg-purple-900/20 rounded-full opacity-70 blur-lg"></div>
+          <div className="absolute -z-10 -bottom-4 -right-4 w-32 h-32 bg-primary/10 dark:bg-primary/15 rounded-full opacity-70 blur-xl"></div>
+          <div className="absolute -z-10 -top-4 -left-4 w-20 h-20 bg-primary/10 dark:bg-purple-900/20 rounded-full opacity-70 blur-lg"></div>
         </div>
 
         {/* Right: Side Info */}
@@ -240,31 +240,31 @@ const ContactUsSection = () => {
           </div>
 
           {/* Contact Info Card */}
-          <div className="bg-white dark:bg-gray-800 rounded-xl shadow-md border border-gray-100 dark:border-gray-700 px-10 py-5 w-full max-w-md">
-            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-6">
+          <div className="bg-card dark:bg-card rounded-xl shadow-md border border-border dark:border-border px-10 py-5 w-full max-w-md">
+            <h3 className="text-xl font-bold text-heading mb-6">
               Contact Information
             </h3>
 
             <div className="space-y-6">
               {/* Phone */}
               <div className="flex gap-4 items-start">
-                <div className="p-3 bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full">
+                <div className="p-3 bg-background dark:bg-primary/15 text-primary dark:text-accent rounded-full">
                   <Phone className="w-5 h-5" />
                 </div>
                 <div>
-                  <div className="text-gray-700 dark:text-gray-300 font-medium mb-1">
+                  <div className="text-body font-medium mb-1">
                     Phone Numbers
                   </div>
                   <div className="space-y-1">
                     <a
                       href="tel:+201111772948"
-                      className="text-blue-700 dark:text-blue-400 block hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
+                      className="text-primary dark:text-accent block hover:text-primary dark:hover:text-accent transition-colors"
                     >
                       +91-8076676731
                     </a>
                     {/* <a
                       href="tel:+6282279400935"
-                      className="hidden text-blue-700 dark:text-blue-400 block hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
+                      className="hidden text-primary dark:text-accent block hover:text-primary dark:hover:text-accent transition-colors"
                     >
                       +62 822 7940 0935
                     </a> */}
@@ -274,16 +274,16 @@ const ContactUsSection = () => {
 
               {/* Email */}
               <div className="flex gap-4 items-start">
-                <div className="p-3 bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full">
+                <div className="p-3 bg-background dark:bg-primary/15 text-primary dark:text-accent rounded-full">
                   <Mail className="w-5 h-5" />
                 </div>
                 <div>
-                  <div className="text-gray-700 dark:text-gray-300 font-medium mb-1">
+                  <div className="text-body font-medium mb-1">
                     Email
                   </div>
                   <a
                     href="mailto:sales@seoindiatech.com"
-                    className="text-blue-700 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
+                    className="text-primary dark:text-accent hover:text-primary dark:hover:text-accent transition-colors"
                   >
                     sales@seoindiatech.com
                   </a>
@@ -292,14 +292,14 @@ const ContactUsSection = () => {
 
               {/* Address */}
               <div className="flex gap-4 items-start">
-                <div className="p-3 bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full">
+                <div className="p-3 bg-background dark:bg-primary/15 text-primary dark:text-accent rounded-full">
                   <MapPin className="w-5 h-5" />
                 </div>
                 <div>
-                  <div className="text-gray-700 dark:text-gray-300 font-medium mb-1">
+                  <div className="text-body font-medium mb-1">
                     Office Address
                   </div>
-                  <p className="text-gray-600 dark:text-gray-400">
+                  <p className="text-muted">
                     E 160, E Block, Sector 63, Noida, Hazratpur Wajidpur, Uttar
                     Pradesh 201301
                   </p>
@@ -308,14 +308,14 @@ const ContactUsSection = () => {
 
               {/* Hours */}
               <div className="flex gap-4 items-start hidden">
-                <div className="p-3 bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full">
+                <div className="p-3 bg-background dark:bg-primary/15 text-primary dark:text-accent rounded-full">
                   <Clock className="w-5 h-5" />
                 </div>
                 <div>
-                  <div className="text-gray-700 dark:text-gray-300 font-medium mb-1">
+                  <div className="text-body font-medium mb-1">
                     Business Hours
                   </div>
-                  <p className="text-gray-600 dark:text-gray-400">
+                  <p className="text-muted">
                     Monday - Friday: 9:00 AM - 6:00 PM
                     <br />
                     Saturday: 10:00 AM - 2:00 PM

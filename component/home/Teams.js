@@ -16,7 +16,7 @@ function Teams() {
     const allLogos = [...teamLogos, ...teamLogos];
 
     return (
-        <div className='bg-white dark:bg-gray-900 py-14 md:py-20 transition-colors duration-300'>
+        <div className='bg-white dark:bg-background py-14 md:py-20 transition-colors duration-300'>
             <div className="max-w-7xl mx-auto overflow-hidden">
                 <motion.div
                     initial={{ y: 25, opacity: 0 }}
@@ -25,7 +25,7 @@ function Teams() {
                     viewport={{ once: true, amount: 0.15 }}
                     className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-6 md:mb-24"
                 >
-                    <h2 className="text-center text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white leading-tight">
+                    <h2 className="text-center text-3xl sm:text-4xl font-bold text-heading leading-tight">
                         Empowering Global Workforces
                     </h2>
                 </motion.div>
@@ -36,7 +36,7 @@ function Teams() {
                             {allLogos.map((logo, index) => (
                                 <div
                                     key={`marquee1-${index}`}
-                                    className="mx-2 sm:mx-4 flex-shrink-0 bg-white dark:bg-gray-800 p-2 sm:p-3 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-center"
+                                    className="mx-2 sm:mx-4 flex-shrink-0 bg-card dark:bg-card p-2 sm:p-3 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-center"
                                     style={{
                                         width: 'clamp(110px, 25vw, 170px)',
                                         height: 'clamp(100px, 20vw, 170px)'

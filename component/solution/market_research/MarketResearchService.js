@@ -5,7 +5,7 @@ const MarketResearchService = () => {
   const researchSteps = [
     {
       id: 1,
-      icon: <Target className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
+      icon: <Target className="w-6 h-6 text-primary dark:text-accent" />,
       title: 'Identify Market Opportunities',
       text:
         'Discover growth opportunities and potential customers through detailed analysis of market size, segmentation, and emerging industry trends.',
@@ -14,7 +14,7 @@ const MarketResearchService = () => {
     },
     {
       id: 2,
-      icon: <Users className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
+      icon: <Users className="w-6 h-6 text-primary dark:text-accent" />,
       title: 'Understand Customer Needs',
       text:
         'Gather insights into customer needs and preferences using surveys, interviews, focus groups, and detailed behavioral data analysis.',
@@ -23,7 +23,7 @@ const MarketResearchService = () => {
     },
     {
       id: 3,
-      icon: <TrendingUp className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
+      icon: <TrendingUp className="w-6 h-6 text-primary dark:text-accent" />,
       title: 'Evaluate Competition and Trends',
       text:
         'Analyze competition and market dynamics using benchmarking, competitive analysis, and strategic forecasting to identify growth opportunities.',
@@ -32,7 +32,7 @@ const MarketResearchService = () => {
     },
     {
       id: 4,
-      icon: <Search className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
+      icon: <Search className="w-6 h-6 text-primary dark:text-accent" />,
       title: 'Test New Products or Services',
       text:
         'Validate new offerings through prototype testing, market trials, and structured concept evaluation.',
@@ -42,22 +42,22 @@ const MarketResearchService = () => {
   ]
 
   return (
-    <section className="bg-gray-50 dark:bg-gray-900 py-16 md:py-24 px-4 md:px-8 relative overflow-hidden">
+    <section className="bg-background py-16 md:py-24 px-4 md:px-8 relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/4 right-0 w-72 h-72 bg-white/50 dark:bg-blue-900/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 left-1/4 w-80 h-80 bg-blue-300/30 dark:bg-blue-800/10 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/4 right-0 w-72 h-72 bg-white/50 dark:bg-primary/20/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 left-1/4 w-80 h-80 bg-accent/20 dark:bg-primary/10 rounded-full blur-3xl"></div>
       </div>
 
       <div className="max-w-5xl mx-auto relative z-10">
-        <div className="bg-white dark:bg-gray-800 shadow-xl rounded-2xl overflow-hidden">
+        <div className="bg-card dark:bg-card shadow-xl rounded-2xl overflow-hidden">
           {/* Header with blue gradient */}
-          <div className="bg-gradient-to-r from-gray-600 to-gray-800 dark:from-gray-700 dark:to-gray-800 px-6 md:px-10 py-10 text-white">
+          <div className="bg-gradient-to-r from-gray-600 to-gray-800 dark:from-gray-700 dark:to-surface px-6 md:px-10 py-10 text-white">
             <h1 className="text-3xl md:text-4xl font-bold text-center">
               Market Research
             </h1>
             <div className="w-20 h-1 bg-white/50 mx-auto my-4 rounded-full"></div>
-            <h2 className="text-xl md:text-2xl font-medium text-center text-blue-100">
+            <h2 className="text-xl md:text-2xl font-medium text-center text-white/90">
               How Does It Work?
             </h2>
           </div>
@@ -65,7 +65,7 @@ const MarketResearchService = () => {
           {/* Content */}
           <div className="p-6 md:p-10">
             <div className="flex items-center justify-center mb-10">
-              <div className="px-6 py-3 bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-sm font-medium">
+              <div className="px-6 py-3 bg-background dark:bg-primary/15 text-primary dark:text-accent rounded-full text-sm font-medium">
                 Data-Driven Insights for Business Growth
               </div>
             </div>
@@ -73,27 +73,27 @@ const MarketResearchService = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {researchSteps.map((step) => (
                 <div key={step.id} className="flex flex-col h-full group">
-                  <div className="bg-gray-50 dark:bg-gray-800/80 border border-gray-100 dark:border-gray-700 rounded-xl p-6 shadow-sm h-full flex flex-col transition-all duration-300 group-hover:shadow-md group-hover:border-blue-200 dark:group-hover:border-blue-800/50">
+                  <div className="bg-gray-50 dark:bg-card/80 border border-border dark:border-border rounded-xl p-6 shadow-sm h-full flex flex-col transition-all duration-300 group-hover:shadow-md group-hover:border-primary/30 dark:group-hover:border-primary/40">
                     <div className="flex items-start gap-4 mb-4">
-                      <div className="flex items-center justify-center w-12 h-12 bg-blue-100 dark:bg-blue-900/50 rounded-lg border border-blue-200 dark:border-blue-800 shadow-sm">
+                      <div className="flex items-center justify-center w-12 h-12 bg-primary/10 dark:bg-primary/20 rounded-lg border border-primary/30 dark:border-primary/40 shadow-sm">
                         {step.icon}
                       </div>
                       <div className="relative">
-                        <span className="absolute -top-3 -left-3 w-6 h-6 bg-blue-600 dark:bg-blue-500 rounded-full flex items-center justify-center text-white text-xs font-bold">
+                        <span className="absolute -top-3 -left-3 w-6 h-6 bg-primary dark:bg-primary rounded-full flex items-center justify-center text-white text-xs font-bold">
                           {step.id}
                         </span>
-                        <h3 className="font-semibold text-blue-600 dark:text-blue-400 text-lg">
+                        <h3 className="font-semibold text-primary dark:text-accent text-lg">
                           {step.title}
                         </h3>
                       </div>
                     </div>
 
-                    <p className="text-gray-700 dark:text-gray-300 mb-4">
+                    <p className="text-body mb-4">
                       {step.text}
                     </p>
 
-                    <div className="mt-auto pt-4 border-t border-gray-200 dark:border-gray-700">
-                      <p className="text-gray-600 dark:text-gray-400 text-sm italic">
+                    <div className="mt-auto pt-4 border-t border-border">
+                      <p className="text-muted text-sm italic">
                         {step.detail}
                       </p>
                     </div>
@@ -103,12 +103,12 @@ const MarketResearchService = () => {
             </div>
 
             {/* Research methodology */}
-            <div className="mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">
+            <div className="mt-12 pt-8 border-t border-border">
+              <h3 className="text-2xl font-bold text-heading mb-6 text-center">
                 Our Research Methodology
               </h3>
 
-              <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-100 dark:border-blue-800 rounded-xl p-6">
+              <div className="bg-background dark:bg-primary/15 border border-primary/20 dark:border-primary/40 rounded-xl p-6">
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                   {[
                     {
@@ -144,12 +144,12 @@ const MarketResearchService = () => {
                   ].map((method, index) => (
                     <div key={index} className="flex flex-col">
                       <div className="flex items-center gap-3 mb-2">
-                        <div className="w-2 h-2 bg-blue-600 dark:bg-blue-400 rounded-full"></div>
-                        <h4 className="font-medium text-gray-900 dark:text-white">
+                        <div className="w-2 h-2 bg-primary dark:bg-accent rounded-full"></div>
+                        <h4 className="font-medium text-heading">
                           {method.title}
                         </h4>
                       </div>
-                      <p className="text-gray-600 dark:text-gray-400 text-sm pl-5">
+                      <p className="text-muted text-sm pl-5">
                         {method.description}
                       </p>
                     </div>
@@ -159,17 +159,17 @@ const MarketResearchService = () => {
             </div>
 
             {/* Call to action */}
-            <div className="hidden  mt-12 pt-8 border-t border-gray-200 dark:border-gray-700 flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div className="hidden  mt-12 pt-8 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-6">
               <div>
-                <p className="text-gray-700 dark:text-gray-300 font-medium">
+                <p className="text-body font-medium">
                   Ready to gain valuable market insights?
                 </p>
-                <p className="text-gray-500 dark:text-gray-400 text-sm">
+                <p className="text-muted text-sm">
                   Our research team is equipped to help you make data-driven
                   decisions.
                 </p>
               </div>
-              <button className="bg-blue-600 hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 shadow-md flex items-center group whitespace-nowrap">
+              <button className="bg-primary hover:bg-primary-hover dark:bg-primary-hover dark:hover:bg-primary-hover text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 shadow-md flex items-center group whitespace-nowrap">
                 Request Research Proposal
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -200,12 +200,12 @@ const MarketResearchService = () => {
           ].map((stat, index) => (
             <div
               key={index}
-              className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md text-center border border-gray-200 dark:border-gray-700"
+              className="bg-card dark:bg-card p-6 rounded-xl shadow-md text-center border border-border"
             >
-              <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">
+              <div className="text-3xl font-bold text-primary dark:text-accent mb-2">
                 {stat.value}
               </div>
-              <div className="text-gray-700 dark:text-gray-300">
+              <div className="text-body">
                 {stat.title}
               </div>
             </div>
@@ -215,12 +215,12 @@ const MarketResearchService = () => {
 
       {/* Why Market Research Matters Section */}
       <div className="mt-16">
-        <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 p-6 md:p-10">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white text-center mb-4">
+        <div className="bg-card dark:bg-card rounded-2xl shadow-xl border border-border p-6 md:p-10">
+          <h2 className="text-2xl md:text-3xl font-bold text-heading text-center mb-4">
             Why Market Research Matters for Business Success
           </h2>
 
-          <p className="text-gray-700 dark:text-gray-300 text-center max-w-3xl mx-auto mb-10">
+          <p className="text-body text-center max-w-3xl mx-auto mb-10">
             Modern customers are smarter, informed, and selective. Businesses
             need deeper understanding about what customers expect, how markets
             behave, and how competitors position their offerings. Through our
@@ -266,13 +266,13 @@ const MarketResearchService = () => {
               return (
                 <div
                   key={i}
-                  className="flex items-start gap-4 p-5 bg-gray-50 dark:bg-gray-900/40 border border-gray-200 dark:border-gray-700 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 group"
+                  className="flex items-start gap-4 p-5 bg-background/40 border border-border rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 group"
                 >
-                  <div className="w-12 h-12 rounded-xl bg-blue-100 dark:bg-blue-900/40 border border-blue-300/50 dark:border-blue-700 flex items-center justify-center shadow-sm">
-                    <Icon className="w-6 h-6 text-blue-600 dark:text-blue-400" />
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 dark:bg-primary/20/40 border border-primary/30/50 dark:border-primary/30 flex items-center justify-center shadow-sm">
+                    <Icon className="w-6 h-6 text-primary dark:text-accent" />
                   </div>
                   <div>
-                    <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-1">
+                    <h4 className="text-lg font-semibold text-heading mb-1">
                       {item.title}
                     </h4>
                   </div>
@@ -282,7 +282,7 @@ const MarketResearchService = () => {
           </div>
 
           {/* Bottom paragraph */}
-          <p className="text-gray-700 dark:text-gray-300 text-center max-w-3xl mx-auto mt-10">
+          <p className="text-body text-center max-w-3xl mx-auto mt-10">
             With data-driven insights, companies can craft smarter marketing
             strategies, optimize products, and build customer-centric
             experiences that drive higher ROI and long-term business success.
@@ -292,12 +292,12 @@ const MarketResearchService = () => {
 
       {/* Custom Market Research Services Section */}
       <div className="mt-16">
-        <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 p-6 md:p-10">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white text-center mb-4">
+        <div className="bg-card dark:bg-card rounded-2xl shadow-xl border border-border p-6 md:p-10">
+          <h2 className="text-2xl md:text-3xl font-bold text-heading text-center mb-4">
             Our Custom Market Research Services
           </h2>
 
-          <p className="text-gray-700 dark:text-gray-300 text-center max-w-3xl mx-auto mb-10">
+          <p className="text-body text-center max-w-3xl mx-auto mb-10">
             Every business is unique, and so is its market approach. That is why
             we offer fully <b>custom market research services</b> tailored to
             specific industries, audiences, and objectives. We go beyond generic
@@ -347,13 +347,13 @@ const MarketResearchService = () => {
               return (
                 <div
                   key={i}
-                  className="flex items-start gap-4 p-5 bg-gray-50 dark:bg-gray-900/40 border border-gray-200 dark:border-gray-700 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 group"
+                  className="flex items-start gap-4 p-5 bg-background/40 border border-border rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 group"
                 >
-                  <div className="w-12 h-12 rounded-xl bg-blue-100 dark:bg-blue-900/40 border border-blue-300/50 dark:border-blue-700 flex items-center justify-center shadow-sm">
-                    <Icon className="w-6 h-6 text-blue-600 dark:text-blue-400" />
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 dark:bg-primary/20/40 border border-primary/30/50 dark:border-primary/30 flex items-center justify-center shadow-sm">
+                    <Icon className="w-6 h-6 text-primary dark:text-accent" />
                   </div>
                   <div>
-                    <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-1">
+                    <h4 className="text-lg font-semibold text-heading mb-1">
                       {item.title}
                     </h4>
                   </div>
@@ -362,7 +362,7 @@ const MarketResearchService = () => {
             })}
           </div>
 
-          <p className="text-gray-700 dark:text-gray-300 text-center max-w-3xl mx-auto mt-10">
+          <p className="text-body text-center max-w-3xl mx-auto mt-10">
             These insights empower business leaders to take confident decisions
             backed by verified data and analytics.
           </p>

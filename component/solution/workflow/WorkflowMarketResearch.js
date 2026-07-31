@@ -17,17 +17,17 @@ import Link from 'next/link'
 
 export default function WorkflowMarketResearch() {
   return (
-    <section className="bg-gradient-to-b from-gray-50 to-white py-20 dark:from-gray-900 dark:to-gray-800 px-6 lg:py-28 overflow-hidden">
+    <section className="bg-gradient-to-b from-gray-50 to-white py-20 dark:from-background dark:to-surface px-6 lg:py-28 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         {/* Main Headline */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-tight">
+          <h2 className="text-4xl lg:text-6xl font-bold text-heading leading-tight">
             Intelligent Workflows Powered by{' '}
-            <span className="text-transparent bg-clip-text bg-blue-600">
+            <span className="text-transparent bg-clip-text bg-primary">
               Real-Time Market Research
             </span>
           </h2>
-          <p className="mt-6 text-xl lg:text-2xl text-gray-600 dark:text-gray-100 max-w-5xl mx-auto leading-relaxed">
+          <p className="mt-6 text-xl lg:text-2xl text-muted dark:text-gray-100 max-w-5xl mx-auto leading-relaxed">
             Stop making decisions in the dark. We embed automated market
             research directly into your daily workflows - delivering competitor
             insights, customer trends, and growth opportunities exactly when
@@ -38,19 +38,19 @@ export default function WorkflowMarketResearch() {
         {/* Core Value Proposition */}
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
           <div>
-            <p className="text-lg lg:text-xl text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
+            <p className="text-lg lg:text-xl text-body leading-relaxed mb-8">
               Strong decision-making starts with accurate insights. That's why
               we enhance workflows with automated market research services that
               support strategic planning and product development. Our tools
               collect, analyze, and structure data from multiple sources, giving
               your team the right information at the right time.
             </p>
-            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            <p className="text-lg text-body leading-relaxed">
               Whether your business needs customer behavior insights, competitor
               tracking, demand forecasting, or industry trend reports, our{' '}
               <Link
                 href={'/solution/market-research'}
-                className="text-blue-500"
+                className="text-primary"
               >
                 {' '}
                 market research services{' '}
@@ -63,8 +63,8 @@ export default function WorkflowMarketResearch() {
 
           {/* Visual Illustration */}
           <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-3xl blur-3xl opacity-30"></div>
-            <div className="relative bg-white dark:bg-gray-800 rounded-3xl shadow-2xl p-10 border border-gray-400">
+            <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary rounded-3xl blur-3xl opacity-30"></div>
+            <div className="relative bg-card dark:bg-card rounded-3xl shadow-2xl p-10 border border-gray-400">
               <div className="grid grid-cols-2 gap-6 text-center">
                 {[
                   {
@@ -86,15 +86,15 @@ export default function WorkflowMarketResearch() {
                     >
                       <item.icon className="w-10 h-10 text-white" />
                     </div>
-                    <p className="mt-4 font-semibold text-gray-800 dark:text-gray-100">
+                    <p className="mt-4 font-semibold text-heading dark:text-gray-100">
                       {item.label}
                     </p>
                   </div>
                 ))}
               </div>
               <div className="mt-8 text-center">
-                <Activity className="w-12 h-12 text-indigo-600 mx-auto animate-pulse" />
-                <p className="text-sm text-gray-500 dark:text-gray-400 mt-2">
+                <Activity className="w-12 h-12 text-primary mx-auto animate-pulse" />
+                <p className="text-sm text-muted mt-2">
                   Live Data Flow - Updated Hourly
                 </p>
               </div>
@@ -126,15 +126,15 @@ export default function WorkflowMarketResearch() {
           ].map((benefit, i) => (
             <div
               key={i}
-              className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg border border-gray-400 hover:shadow-xl transition-shadow"
+              className="bg-card dark:bg-card rounded-2xl p-8 shadow-lg border border-gray-400 hover:shadow-xl transition-shadow"
             >
-              <div className="w-14 h-14 bg-blue-600 rounded-xl flex items-center justify-center mb-5">
+              <div className="w-14 h-14 bg-primary rounded-xl flex items-center justify-center mb-5">
                 <benefit.icon className="w-8 h-8 text-white" />
               </div>
-              <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+              <h4 className="text-xl font-bold text-heading mb-3">
                 {benefit.title}
               </h4>
-              <p className="text-gray-600 dark:text-gray-300">{benefit.desc}</p>
+              <p className="text-muted">{benefit.desc}</p>
             </div>
           ))}
         </div>

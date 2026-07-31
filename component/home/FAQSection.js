@@ -56,7 +56,7 @@ const MOCKS = [
     footer: 'Auto-scoped',
   },
   {
-    gradient: 'from-blue-300 via-indigo-300 to-blue-400',
+    gradient: 'from-accent via-indigo-300 to-accent',
     icon: HiOutlineDocumentText,
     title: 'Growth timeline',
     badge: 'LIVE',
@@ -79,7 +79,7 @@ const MOCKS = [
     type: 'chart',
   },
   {
-    gradient: 'from-cyan-200 via-blue-200 to-blue-300',
+    gradient: 'from-cyan-200 via-blue-200 to-accent',
     icon: HiOutlineGlobeAlt,
     title: 'Industry coverage',
     badge: '10+',
@@ -88,7 +88,7 @@ const MOCKS = [
     footer: 'Sector-tuned',
   },
   {
-    gradient: 'from-blue-200 via-indigo-200 to-blue-300',
+    gradient: 'from-blue-200 via-indigo-200 to-accent',
     icon: HiOutlineTag,
     title: 'Flexible plans',
     badge: 'NO LOCK-IN',
@@ -107,19 +107,19 @@ const MockPanel = ({ mock }) => {
       <div className="w-full bg-white rounded-2xl shadow-xl shadow-black/10 p-5">
         <div className="flex items-center justify-between mb-4">
           <div className="flex items-center gap-2.5">
-            <div className="w-9 h-9 rounded-xl bg-blue-600 text-white flex items-center justify-center shrink-0">
+            <div className="w-9 h-9 rounded-xl bg-primary text-white flex items-center justify-center shrink-0">
               <Icon className="w-4.5 h-4.5" />
             </div>
             <span className="font-display text-sm font-semibold text-gray-900">{mock.title}</span>
           </div>
-          <span className="font-mono text-[10px] font-semibold tracking-wide text-blue-600 bg-blue-100 px-2.5 py-1 rounded-full whitespace-nowrap">
+          <span className="font-mono text-[10px] font-semibold tracking-wide text-primary bg-primary/10 px-2.5 py-1 rounded-full whitespace-nowrap">
             {mock.badge}
           </span>
         </div>
 
         {mock.type === 'chat' && (
           <div className="bg-gray-50 border border-gray-200 rounded-xl px-4 py-3">
-            <p className="text-sm text-gray-600 leading-relaxed">&ldquo;{mock.prompt}&rdquo;</p>
+            <p className="text-sm text-muted leading-relaxed">&ldquo;{mock.prompt}&rdquo;</p>
             {mock.footer && (
               <p className="mt-2 font-mono text-[10px] uppercase tracking-wider text-gray-400">{mock.footer}</p>
             )}
@@ -130,10 +130,10 @@ const MockPanel = ({ mock }) => {
           <div className="space-y-2">
             {mock.items.map((item) => (
               <div key={item} className="flex items-center gap-2.5 bg-gray-50 border border-gray-200 rounded-xl px-3.5 py-2.5">
-                <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-blue-100 text-blue-600">
+                <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
                   <HiCheck className="w-3.5 h-3.5" />
                 </span>
-                <span className="text-sm text-gray-700">{item}</span>
+                <span className="text-sm text-body">{item}</span>
               </div>
             ))}
           </div>
@@ -143,7 +143,7 @@ const MockPanel = ({ mock }) => {
           <div className="bg-gray-50 border border-gray-200 rounded-xl px-4 pt-4 pb-3">
             <div className="flex items-end justify-between gap-1.5 h-24">
               {bars.map((h, i) => (
-                <div key={i} className="flex-1 rounded-t-md bg-gradient-to-t from-blue-600 to-blue-400" style={{ height: `${h}%` }} />
+                <div key={i} className="flex-1 rounded-t-md bg-gradient-to-t from-primary to-accent" style={{ height: `${h}%` }} />
               ))}
             </div>
             <div className="flex justify-between mt-1.5">
@@ -162,14 +162,14 @@ const FAQSection = () => {
   const stickyTop = (i) => 88 + i * 22;
 
   return (
-    <section className="bg-white dark:bg-gray-900 relative transition-colors duration-300">
+    <section className="bg-white dark:bg-background relative transition-colors duration-300">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 md:pt-20 pb-10 text-center">
-        <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-[1.05] tracking-tight">
+        <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-heading leading-[1.05] tracking-tight">
           Frequently Asked
           <br />
           Questions
         </h2>
-        <p className="mt-5 text-gray-600 dark:text-gray-400 max-w-lg mx-auto">
+        <p className="mt-5 text-muted max-w-lg mx-auto">
           Got questions? We have answers - everything you need to know about working with us.
         </p>
       </div>
@@ -178,17 +178,17 @@ const FAQSection = () => {
         {faqs.map((faq, i) => (
           <div key={i} className="sticky mb-8 md:mb-10" style={{ top: `${stickyTop(i)}px` }}>
             <Reveal once amount={0.15}>
-              <div className="rounded-[2rem] border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 shadow-xl shadow-blue-500/5 dark:shadow-blue-900/10 p-6 md:p-10 transition-colors duration-300">
+              <div className="rounded-[2rem] border border-border bg-card dark:bg-card shadow-xl shadow-primary/5 dark:shadow-primary/10 p-6 md:p-10 transition-colors duration-300">
                 <div className="grid md:grid-cols-2 gap-8 md:gap-10 items-center">
                   {/* Left - text */}
                   <div className="order-2 md:order-1">
-                    <span className="inline-block font-mono text-[11px] font-semibold tracking-[0.15em] uppercase text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-950/60 border border-blue-100 dark:border-blue-800/30 rounded-full px-3 py-1 mb-5">
+                    <span className="inline-block font-mono text-[11px] font-semibold tracking-[0.15em] uppercase text-primary dark:text-accent bg-background dark:bg-secondary/40/60 border border-primary/20 dark:border-primary/40/30 rounded-full px-3 py-1 mb-5">
                       Question {String(i + 1).padStart(2, '0')}
                     </span>
-                    <h3 className="font-display text-2xl md:text-3xl font-bold text-gray-900 dark:text-white leading-snug mb-4">
+                    <h3 className="font-display text-2xl md:text-3xl font-bold text-heading leading-snug mb-4">
                       {faq.question}
                     </h3>
-                    <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                    <p className="text-muted leading-relaxed">
                       {faq.answer}
                     </p>
                   </div>
@@ -206,12 +206,12 @@ const FAQSection = () => {
 
       {/* Bottom CTA */}
       {/* <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 text-center">
-        <p className="text-gray-600 dark:text-gray-400 mb-6">
+        <p className="text-muted mb-6">
           Still have questions? We&apos;re here to help.
         </p>
         <Link
           href="/contact-us"
-          className="inline-flex items-center gap-2 px-8 py-4 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-full transition-all duration-300 shadow-lg shadow-blue-600/25 group"
+          className="inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-primary-hover text-white font-semibold rounded-full transition-all duration-300 shadow-lg shadow-primary/25 group"
         >
           Contact Us
           <HiOutlineArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />

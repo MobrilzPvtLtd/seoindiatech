@@ -3,16 +3,16 @@ export default function LocationContent({ pageContent }) {
     <section className="py-20 bg-gradient-to-b from-gray-50 to-white dark:from-gray-950 dark:to-gray-900">
       <div className="max-w-6xl mx-auto px-6">
         {/* Content Card */}
-        <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-lg border border-gray-100 dark:border-gray-800 p-8 md:p-12">
+        <div className="bg-white dark:bg-background rounded-2xl shadow-lg border border-border dark:border-gray-800 p-8 md:p-12">
           <div
             className="
-            text-gray-700 dark:text-gray-300
+            text-body
             text-justify
 
             [&_h1]:text-4xl [&_h1]:font-bold [&_h1]:mb-6
 
             [&_h2]:text-3xl [&_h2]:font-bold [&_h2]:mt-12 [&_h2]:mb-4
-            [&_h2]:border-l-4 [&_h2]:border-blue-600 [&_h2]:pl-4
+            [&_h2]:border-l-4 [&_h2]:border-primary [&_h2]:pl-4
 
             [&_h3]:text-2xl [&_h3]:font-semibold [&_h3]:mt-10 [&_h3]:mb-3
 
@@ -36,9 +36,9 @@ export default function LocationContent({ pageContent }) {
 
             [&_li]:mb-2
 
-            [&_strong]:text-blue-600
+            [&_strong]:text-primary
 
-            [&_a]:text-blue-600
+            [&_a]:text-primary
             [&_a:hover]:underline
             "
             dangerouslySetInnerHTML={{ __html: pageContent }}

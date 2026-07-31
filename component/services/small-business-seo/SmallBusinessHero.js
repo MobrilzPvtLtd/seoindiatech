@@ -6,8 +6,8 @@ export default function SmallBusinessHero() {
     <section className="relative w-full overflow-hidden bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950 pt-24 md:pt-28 pb-20 md:pb-28 px-6">
 
       {/* background glow */}
-      <div className="absolute -top-32 -left-32 w-[420px] h-[420px] bg-blue-200 dark:bg-blue-900/20 rounded-full blur-3xl opacity-40"></div>
-      <div className="absolute -bottom-32 -right-32 w-[420px] h-[420px] bg-indigo-200 dark:bg-indigo-900/20 rounded-full blur-3xl opacity-40"></div>
+      <div className="absolute -top-32 -left-32 w-[420px] h-[420px] bg-primary/15 dark:bg-primary/15 rounded-full blur-3xl opacity-40"></div>
+      <div className="absolute -bottom-32 -right-32 w-[420px] h-[420px] bg-indigo-200 dark:bg-primary/15 rounded-full blur-3xl opacity-40"></div>
 
       <div className="relative max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
 
@@ -15,19 +15,19 @@ export default function SmallBusinessHero() {
         <div className="max-w-xl">
 
           {/* small badge */}
-          <div className="inline-block mb-5 px-4 py-1 text-sm rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-300">
+          <div className="inline-block mb-5 px-4 py-1 text-sm rounded-full bg-primary/10 text-primary dark:bg-primary/20/40 dark:text-accent">
             SEO Services
           </div>
 
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 dark:text-white leading-tight mb-8">
-            <span className="text-blue-600 dark:text-blue-400">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-heading leading-tight mb-8">
+            <span className="text-primary dark:text-accent">
               Small Business SEO Services
             </span>{' '}
             for Real Growth
           </h1>
 
           {/* YOUR CONTENT (UNCHANGED) */}
-          <div className="space-y-6 text-lg text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+          <div className="space-y-6 text-lg text-body leading-relaxed text-justify">
             <p>
               If you run a small business, you already know the problem. People
               search, they compare, and they choose fast. If your site is hard
@@ -51,7 +51,7 @@ export default function SmallBusinessHero() {
         <div className="relative flex justify-center mt-10 md:mt-0">
 
           {/* glow behind image */}
-          <div className="absolute w-80 h-80 bg-indigo-200 dark:bg-indigo-900/30 rounded-full blur-3xl opacity-40"></div>
+          <div className="absolute w-80 h-80 bg-indigo-200 dark:bg-primary/20 rounded-full blur-3xl opacity-40"></div>
 
           <div className="relative w-full max-w-md h-[320px] md:h-[480px] transition-transform duration-500 hover:scale-105">
             <Image

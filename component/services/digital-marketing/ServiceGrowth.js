@@ -6,18 +6,18 @@ export default function ServiceGrowth() {
     <section className="relative py-24 px-6 md:px-12 lg:px-24 bg-white dark:bg-black transition-colors duration-300">
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-20 text-gray-900 dark:text-white">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-20 text-heading">
           CORE SERVICES THAT DRIVE GROWTH
         </h2>
 
         {/* Grid Layout */}
         <div className="grid md:grid-cols-2 gap-12">
           {/* Card 1 */}
-          <div className="group relative p-10 rounded-2xl bg-gray-50 dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800 hover:border-indigo-500 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-            <h3 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-white">
+          <div className="group relative p-10 rounded-2xl bg-gray-50 dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800 hover:border-primary transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+            <h3 className="text-2xl font-semibold mb-6 text-heading">
               1. E-commerce SEO services
             </h3>
-            <p className="text-gray-700 dark:text-gray-400 leading-relaxed text-lg">
+            <p className="text-body dark:text-gray-400 leading-relaxed text-lg">
               Product pages often miss basic details. Titles are weak.
               Categories overlap. Filters block indexing.{' '}
               <Link
@@ -31,15 +31,15 @@ export default function ServiceGrowth() {
               category pages. As a digital marketing services company, we track
               rankings, clicks, and sales actions, not vanity metrics.
             </p>
-            <div className="mt-8 h-[2px] w-16 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full"></div>
+            <div className="mt-8 h-[2px] w-16 bg-gradient-to-r from-primary to-secondary rounded-full"></div>
           </div>
 
           {/* Card 2 */}
-          <div className="group relative p-10 rounded-2xl bg-gray-50 dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800 hover:border-indigo-500 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-            <h3 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-white">
+          <div className="group relative p-10 rounded-2xl bg-gray-50 dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800 hover:border-primary transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+            <h3 className="text-2xl font-semibold mb-6 text-heading">
               2. Local SEO services and local SEO marketing services
             </h3>
-            <p className="text-gray-700 dark:text-gray-400 leading-relaxed text-lg">
+            <p className="text-body dark:text-gray-400 leading-relaxed text-lg">
               Local buyers usually search with intent. They want a nearby
               option, open hours, reviews, and quick answers. Our{' '}
               <Link
@@ -54,15 +54,15 @@ export default function ServiceGrowth() {
               support. As a digital marketing services company, we keep your
               local presence consistent, accurate, and easy to trust.
             </p>
-            <div className="mt-8 h-[2px] w-16 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full"></div>
+            <div className="mt-8 h-[2px] w-16 bg-gradient-to-r from-primary to-secondary rounded-full"></div>
           </div>
 
           {/* Card 3 */}
-          <div className="group relative p-10 rounded-2xl bg-gray-50 dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800 hover:border-indigo-500 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-            <h3 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-white">
+          <div className="group relative p-10 rounded-2xl bg-gray-50 dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800 hover:border-primary transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+            <h3 className="text-2xl font-semibold mb-6 text-heading">
               3. Small business SEO services
             </h3>
-            <p className="text-gray-700 dark:text-gray-400 leading-relaxed text-lg">
+            <p className="text-body dark:text-gray-400 leading-relaxed text-lg">
               Small teams need results without waste. Our{' '}
               <Link
                 href="https://www.seoindiatech.com/services/small-business-seo"
@@ -77,15 +77,15 @@ export default function ServiceGrowth() {
               around search intent. As a digital marketing services company, we
               keep tasks simple, so you can see progress month to month.
             </p>
-            <div className="mt-8 h-[2px] w-16 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full"></div>
+            <div className="mt-8 h-[2px] w-16 bg-gradient-to-r from-primary to-secondary rounded-full"></div>
           </div>
 
           {/* Card 4 */}
-          <div className="group relative p-10 rounded-2xl bg-gray-50 dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800 hover:border-indigo-500 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-            <h3 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-white">
+          <div className="group relative p-10 rounded-2xl bg-gray-50 dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800 hover:border-primary transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+            <h3 className="text-2xl font-semibold mb-6 text-heading">
               4. Digital marketing company support for full funnel growth
             </h3>
-            <p className="text-gray-700 dark:text-gray-400 leading-relaxed text-lg">
+            <p className="text-body dark:text-gray-400 leading-relaxed text-lg">
               Many clients need more than SEO. They need paid ads, landing
               pages, and conversion work. As your digital marketing company
               partner, we run search ads, display remarketing, and paid social
@@ -94,23 +94,23 @@ export default function ServiceGrowth() {
               services company should help you connect spend to outcomes, so we
               do.
             </p>
-            <div className="mt-8 h-[2px] w-16 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full"></div>
+            <div className="mt-8 h-[2px] w-16 bg-gradient-to-r from-primary to-secondary rounded-full"></div>
           </div>
 
           {/* Card 5 (Centered Last Row) */}
           <div className="md:col-span-2 flex justify-center">
-            <div className="group relative p-10 rounded-2xl bg-gray-50 dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800 hover:border-indigo-500 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl max-w-2xl">
-              <h3 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-white">
+            <div className="group relative p-10 rounded-2xl bg-gray-50 dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800 hover:border-primary transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl max-w-2xl">
+              <h3 className="text-2xl font-semibold mb-6 text-heading">
                 5. Content and social support that fits your brand
               </h3>
-              <p className="text-gray-700 dark:text-gray-400 leading-relaxed text-lg">
+              <p className="text-body dark:text-gray-400 leading-relaxed text-lg">
                 Content only helps if it answers real questions and matches
                 search intent. We plan topics based on what people search and
                 what they ask in AI tools. Social content supports trust and
                 repeat visits. As a digital marketing services company, we keep
                 the messaging clear and keep posts aligned with your offers.
               </p>
-              <div className="mt-8 h-[2px] w-16 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full"></div>
+              <div className="mt-8 h-[2px] w-16 bg-gradient-to-r from-primary to-secondary rounded-full"></div>
             </div>
           </div>
         </div>

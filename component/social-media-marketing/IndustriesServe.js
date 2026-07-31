@@ -24,16 +24,16 @@ const industries = [
 
 export default function IndustriesWeServe() {
   return (
-    <section className="py-20 bg-white dark:bg-gray-900">
+    <section className="py-20 bg-white dark:bg-background">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-            Industries <span className="text-blue-600">We Serve</span>
+          <h2 className="text-4xl md:text-5xl font-bold text-heading mb-6">
+            Industries <span className="text-primary">We Serve</span>
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-200 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-muted dark:text-gray-200 max-w-3xl mx-auto leading-relaxed">
             As a seasoned{' '}
-            <span className="font-semibold text-blue-700">
+            <span className="font-semibold text-primary">
               social media marketing services company
             </span>
             , we work with businesses across diverse sectors - helping every
@@ -48,20 +48,20 @@ export default function IndustriesWeServe() {
             return (
               <div
                 key={index}
-                className="group relative bg-white dark:bg-gray-800 rounded-2xl p-10 shadow-md hover:shadow-2xl border border-gray-100 hover:border-blue-200 transition-all duration-400 hover:-translate-y-4 text-center"
+                className="group relative bg-card dark:bg-card rounded-2xl p-10 shadow-md hover:shadow-2xl border border-border hover:border-primary/30 transition-all duration-400 hover:-translate-y-4 text-center"
               >
                 {/* Icon */}
-                <div className="w-20 h-20 mx-auto mb-5 rounded-full bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:shadow-blue-500/50 transition-all duration-300">
+                <div className="w-20 h-20 mx-auto mb-5 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:shadow-primary/50 transition-all duration-300">
                   <Icon className="w-10 h-10 text-white" strokeWidth={2} />
                 </div>
 
                 {/* Industry Name */}
-                <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-100 transition-colors">
+                <h3 className="text-lg font-semibold text-heading dark:text-gray-100 transition-colors">
                   {industry.name}
                 </h3>
 
                 {/* Subtle background glow on hover */}
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-600/5 to-blue-800/5 rounded-2xl blur-3xl scale-0 group-hover:scale-110 transition-transform duration-500 -z-10"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl blur-3xl scale-0 group-hover:scale-110 transition-transform duration-500 -z-10"></div>
               </div>
             )
           })}
@@ -69,9 +69,9 @@ export default function IndustriesWeServe() {
 
         {/* Closing Statement */}
         <div className="mt-16 text-center">
-          <p className="text-2xl font-medium text-gray-800 dark:text-gray-100 max-w-4xl mx-auto">
+          <p className="text-2xl font-medium text-heading dark:text-gray-100 max-w-4xl mx-auto">
             No matter your industry, our{' '}
-            <span className="text-blue-600 font-bold">
+            <span className="text-primary font-bold">
               social media marketing services
             </span>{' '}
             ensure your brand <span className="">captures attention</span> and
@@ -82,7 +82,7 @@ export default function IndustriesWeServe() {
           <div className="mt-10">
             <a
               href="/contact-us"
-              className="inline-flex items-center px-10 py-5 bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 text-white font-bold text-lg rounded-full shadow-xl hover:shadow-blue-600/60 transform hover:scale-105 transition-all duration-300"
+              className="inline-flex items-center px-10 py-5 bg-gradient-to-r from-primary to-secondary hover:from-primary-hover hover:to-secondary text-white font-bold text-lg rounded-full shadow-xl hover:shadow-blue-600/60 transform hover:scale-105 transition-all duration-300"
             >
               See How We Can Help Your Industry
               <svg

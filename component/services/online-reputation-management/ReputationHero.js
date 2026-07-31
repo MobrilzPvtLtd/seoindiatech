@@ -6,7 +6,7 @@ export default function ReputationHero() {
     <section className="relative w-full overflow-hidden pt-24 md:pt-28 pb-16 md:pb-24 px-6 bg-white dark:bg-gray-950">
 
       {/* background bubbles */}
-      <div className="absolute top-20 left-10 w-40 h-40 bg-blue-400/20 rounded-full blur-3xl"></div>
+      <div className="absolute top-20 left-10 w-40 h-40 bg-accent/20 rounded-full blur-3xl"></div>
       <div className="absolute bottom-10 right-20 w-52 h-52 bg-indigo-400/20 rounded-full blur-3xl"></div>
       <div className="absolute top-1/2 right-10 w-28 h-28 bg-purple-400/20 rounded-full blur-2xl"></div>
 
@@ -15,16 +15,16 @@ export default function ReputationHero() {
         {/* LEFT CONTENT */}
         <div className="space-y-7 relative z-10">
 
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[52px] font-bold text-gray-900 dark:text-white leading-tight">
-            <span className="text-blue-600 dark:text-blue-400">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[52px] font-bold text-heading leading-tight">
+            <span className="text-primary dark:text-accent">
               Online Reputation Management Services
             </span>{" "}
             That Bring Real Results
           </h1>
 
-          <div className="w-20 h-1.5 bg-blue-600 dark:bg-blue-500 rounded-full"></div>
+          <div className="w-20 h-1.5 bg-primary dark:bg-primary rounded-full"></div>
 
-          <div className="space-y-6 text-[1.05rem] leading-relaxed text-gray-700 dark:text-gray-300 text-justify">
+          <div className="space-y-6 text-[1.05rem] leading-relaxed text-body text-justify">
 
             <p>
               When people search your brand, they form an opinion in seconds. A

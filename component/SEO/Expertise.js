@@ -12,7 +12,7 @@ const Expertise = () => {
   // SEO expertise cards data
   const expertiseCards = [
     {
-      icon: <FileSearch className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
+      icon: <FileSearch className="w-6 h-6 text-primary dark:text-accent" />,
       title: "In-Depth SEO Audit &amp; Strategy Development",
       description:
         "We begin with a full website audit to find performance bottlenecks, on-page issues, and technical gaps. This audit is followed by competitive keyword research and a strategicroadmap tailored to your business. Our SEO services map out a clear path to higherrankings and better engagement.",
@@ -23,7 +23,7 @@ const Expertise = () => {
       ],
     },
     {
-      icon: <Search className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
+      icon: <Search className="w-6 h-6 text-primary dark:text-accent" />,
       title: "Keyword Research & Content Optimization",
       description:
         "We uncover high-value keywords that align with your audience's search intent. Our SEO optimization services focus on on-page elements - titles, meta descriptions, header tags - and craft compelling, SEO-friendly content that drives organic growth.",
@@ -34,7 +34,7 @@ const Expertise = () => {
       ],
     },
     {
-      icon: <Gauge className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
+      icon: <Gauge className="w-6 h-6 text-primary dark:text-accent" />,
       title: "Technical SEO for Performance & Usability",
       description:
         "A technically sound website improves both user experience and search visibility. We optimize your site's speed, implement responsive design, manage XML sitemaps, and apply structured data markup. This ensures search engines crawl and index your site more efficiently..",
@@ -45,7 +45,7 @@ const Expertise = () => {
       ],
     },
     {
-      icon: <Link className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
+      icon: <Link className="w-6 h-6 text-primary dark:text-accent" />,
       title: "Link Building & Authority Growth",
       description:
         "Building a trustworthy digital presence requires high-quality backlinks. We employ white-hat professional SEO services, such as guest blogging, outreach campaigns, and local citations, to grow your authority organically.",
@@ -56,7 +56,7 @@ const Expertise = () => {
       ],
     },
     {
-      icon: <MapPin className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
+      icon: <MapPin className="w-6 h-6 text-primary dark:text-accent" />,
       title: "Local SEO - Own Your Market",
       description:
         "Our local SEO strategies increase your presence in local searches and map listings.",
@@ -68,7 +68,7 @@ const Expertise = () => {
     },
     {
       icon: (
-        <ShoppingCart className="w-6 h-6 text-blue-600 dark:text-blue-400" />
+        <ShoppingCart className="w-6 h-6 text-primary dark:text-accent" />
       ),
       title: "E-Commerce SEO for More Sales",
       description:
@@ -82,27 +82,27 @@ const Expertise = () => {
   ];
 
   return (
-    <section className="bg-gradient-to-b from-white to-blue-50 dark:from-gray-900 dark:to-blue-950/30 px-4 py-20 relative overflow-hidden">
+    <section className="bg-gradient-to-b from-white to-background dark:from-background dark:to-secondary/40/30 px-4 py-20 relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-0 left-1/4 w-72 h-72 bg-blue-100/50 dark:bg-blue-900/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-blue-50/70 dark:bg-blue-800/10 rounded-full blur-3xl"></div>
+        <div className="absolute top-0 left-1/4 w-72 h-72 bg-primary/10 dark:bg-primary/20/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-background/70 dark:bg-primary/10 rounded-full blur-3xl"></div>
       </div>
 
       <div className="mx-auto text-center relative z-10">
         {/* Header section */}
         <div className="max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 rounded-full text-sm font-medium mb-6">
+          <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary/10 dark:bg-primary/20/40 text-primary dark:text-accent rounded-full text-sm font-medium mb-6">
             <span>Our Expertise</span>
           </div>
 
-          <h2 className="text-3xl md:text-4xl lg:text-5xl max-w-7xl font-bold leading-tight text-gray-900 dark:text-white text-center mx-auto mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl max-w-7xl font-bold leading-tight text-heading text-center mx-auto mb-6">
             Why SEO Matters: Beyond Just Keywords
           </h2>
 
-          <div className="w-24 h-1 bg-blue-600 dark:bg-blue-500 rounded-full mx-auto mb-8"></div>
+          <div className="w-24 h-1 bg-primary dark:bg-primary rounded-full mx-auto mb-8"></div>
 
-          <p className="text-gray-700 dark:text-gray-300 text-lg max-w-5xl mx-auto">
+          <p className="text-body text-lg max-w-5xl mx-auto">
             Search engines are the gateway to nearly all online interactions. A
             well-optimized website helps you be discovered by potential
             customers at the exact moment they are searching for your products
@@ -122,26 +122,26 @@ const Expertise = () => {
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch max-w-7xl mx-auto">
           {expertiseCards.map((card, index) => (
             <div key={index} className="flex justify-center">
-              <div className="w-full max-w-sm h-full flex flex-col bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl p-8 rounded-2xl border border-gray-100 dark:border-gray-700 hover:-translate-y-1 transition-all duration-300">
+              <div className="w-full max-w-sm h-full flex flex-col bg-card dark:bg-card shadow-lg hover:shadow-xl p-8 rounded-2xl border border-border dark:border-border hover:-translate-y-1 transition-all duration-300">
                 {/* Icon header */}
-                <div className="mb-4 p-2 bg-blue-100 dark:bg-blue-900/40 rounded-lg w-fit">
+                <div className="mb-4 p-2 bg-primary/10 dark:bg-primary/20/40 rounded-lg w-fit">
                   {card.icon}
                 </div>
 
-                <h3 className="text-gray-900 dark:text-white text-xl font-semibold mb-4">
+                <h3 className="text-heading text-xl font-semibold mb-4">
                   {card.title}
                 </h3>
 
-                <div className="w-12 h-1 bg-blue-600 dark:bg-blue-500 rounded-full mb-4"></div>
+                <div className="w-12 h-1 bg-primary dark:bg-primary rounded-full mb-4"></div>
 
-                <p className="text-gray-700 dark:text-gray-300 mb-6">
+                <p className="text-body mb-6">
                   {card.description}
                 </p>
 
-                {/* <ul className="text-gray-700 dark:text-gray-300 space-y-2 mt-auto">
+                {/* <ul className="text-body space-y-2 mt-auto">
                   {card.benefits.map((benefit, idx) => (
                     <li key={idx} className="flex items-start gap-2">
-                      <div className="min-w-[8px] h-2 w-2 rounded-full bg-blue-600 dark:bg-blue-400 mt-2"></div>
+                      <div className="min-w-[8px] h-2 w-2 rounded-full bg-primary dark:bg-accent mt-2"></div>
                       <span>{benefit}</span>
                     </li>
                   ))}

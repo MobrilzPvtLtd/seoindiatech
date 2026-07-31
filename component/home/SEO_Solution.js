@@ -47,29 +47,29 @@ function BarChartCard() {
     <motion.article
       variants={cardVariants}
       ref={ref}
-      className="bg-white dark:bg-gray-800 rounded-2xl p-6 border border-gray-100 dark:border-gray-700 hover:shadow-lg hover:shadow-blue-100/50 dark:hover:shadow-blue-900/20 transition-shadow duration-200 group"
+      className="bg-card dark:bg-card rounded-2xl p-6 border border-border dark:border-border hover:shadow-lg hover:shadow-blue-100/50 dark:hover:shadow-blue-900/20 transition-shadow duration-200 group"
     >
       <div className="flex items-start justify-between mb-5">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 shrink-0 rounded-lg bg-blue-50 dark:bg-blue-900/30 flex items-center justify-center text-blue-600 dark:text-blue-400 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-200">
+          <div className="w-10 h-10 shrink-0 rounded-lg bg-background dark:bg-primary/15 flex items-center justify-center text-primary dark:text-accent group-hover:bg-primary-hover group-hover:text-white transition-colors duration-200">
             <Search className="w-5 h-5" />
           </div>
-          <h3 className="text-lg font-bold text-gray-900 dark:text-white">Keyword Rankings</h3>
+          <h3 className="text-lg font-bold text-heading">Keyword Rankings</h3>
         </div>
         <span className="shrink-0 text-xs font-medium text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-900/30 px-2.5 py-1 rounded-full">
           Live Tracking
         </span>
       </div>
-      <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed mb-6">
+      <p className="text-sm text-muted leading-relaxed mb-6">
         Track your website&apos;s keyword positions across search engines with real-time monitoring and performance insights.
       </p>
 
-      <div className="bg-gray-50 dark:bg-gray-900/50 rounded-xl p-4">
+      <div className="bg-background rounded-xl p-4">
         <div className="flex items-end justify-between gap-1.5 h-24">
           {barHeights.map((h, i) => (
             <div key={i} className="flex flex-col items-center flex-1 h-full justify-end">
               <div
-                className="w-full rounded-sm bg-gradient-to-t from-blue-300 to-blue-500 transition-[height] ease-out"
+                className="w-full rounded-sm bg-gradient-to-t from-accent to-secondary transition-[height] ease-out"
                 style={{
                   height: inView ? `${h}%` : '0%',
                   transitionDuration: '800ms',
@@ -79,7 +79,7 @@ function BarChartCard() {
             </div>
           ))}
         </div>
-        <div className="flex justify-between mt-2 text-[10px] text-gray-400 dark:text-gray-500">
+        <div className="flex justify-between mt-2 text-[10px] text-muted">
           {days.map((d) => (
             <span key={d} className="flex-1 text-center">{d}</span>
           ))}
@@ -96,24 +96,24 @@ function LineChartCard() {
     <motion.article
       variants={cardVariants}
       ref={ref}
-      className="bg-white dark:bg-gray-800 rounded-2xl p-6 border border-gray-100 dark:border-gray-700 hover:shadow-lg hover:shadow-blue-100/50 dark:hover:shadow-blue-900/20 transition-shadow duration-200 group"
+      className="bg-card dark:bg-card rounded-2xl p-6 border border-border dark:border-border hover:shadow-lg hover:shadow-blue-100/50 dark:hover:shadow-blue-900/20 transition-shadow duration-200 group"
     >
       <div className="flex items-start justify-between mb-5">
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 shrink-0 rounded-lg bg-emerald-50 dark:bg-emerald-900/30 flex items-center justify-center text-emerald-600 dark:text-emerald-400 group-hover:bg-emerald-600 group-hover:text-white transition-colors duration-200">
             <TrendingUp className="w-5 h-5" />
           </div>
-          <h3 className="text-lg font-bold text-gray-900 dark:text-white">Organic Traffic Growth</h3>
+          <h3 className="text-lg font-bold text-heading">Organic Traffic Growth</h3>
         </div>
-        <span className="shrink-0 text-xs font-medium text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/30 px-2.5 py-1 rounded-full">
+        <span className="shrink-0 text-xs font-medium text-primary dark:text-accent bg-background dark:bg-primary/15 px-2.5 py-1 rounded-full">
           +156%
         </span>
       </div>
-      <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed mb-6">
+      <p className="text-sm text-muted leading-relaxed mb-6">
         Monitor your website&apos;s organic traffic growth over time with detailed analytics and conversion tracking.
       </p>
 
-      <div className="bg-gray-50 dark:bg-gray-900/50 rounded-xl p-4 h-32">
+      <div className="bg-background rounded-xl p-4 h-32">
         <svg
           className="w-full h-full overflow-visible"
           viewBox="0 0 200 80"
@@ -165,24 +165,24 @@ function DonutChartCard() {
     <motion.article
       variants={cardVariants}
       ref={ref}
-      className="bg-white dark:bg-gray-800 rounded-2xl p-6 border border-gray-100 dark:border-gray-700 hover:shadow-lg hover:shadow-blue-100/50 dark:hover:shadow-blue-900/20 transition-shadow duration-200 group"
+      className="bg-card dark:bg-card rounded-2xl p-6 border border-border dark:border-border hover:shadow-lg hover:shadow-blue-100/50 dark:hover:shadow-blue-900/20 transition-shadow duration-200 group"
     >
       <div className="flex items-start justify-between mb-5">
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 shrink-0 rounded-lg bg-amber-50 dark:bg-amber-900/30 flex items-center justify-center text-amber-600 dark:text-amber-400 group-hover:bg-amber-600 group-hover:text-white transition-colors duration-200">
             <Target className="w-5 h-5" />
           </div>
-          <h3 className="text-lg font-bold text-gray-900 dark:text-white">SEO Goal Achievement</h3>
+          <h3 className="text-lg font-bold text-heading">SEO Goal Achievement</h3>
         </div>
         <span className="shrink-0 text-xs font-medium text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-900/30 px-2.5 py-1 rounded-full">
           Goal Progress
         </span>
       </div>
-      <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed mb-6">
+      <p className="text-sm text-muted leading-relaxed mb-6">
         Track your SEO objectives including keyword targets, traffic milestones, and conversion rate goals.
       </p>
 
-      <div className="bg-gray-50 dark:bg-gray-900/50 rounded-xl p-4 h-32 flex items-center justify-center">
+      <div className="bg-background rounded-xl p-4 h-32 flex items-center justify-center">
         <div className="relative w-24 h-24">
           <svg className="w-full h-full -rotate-90" viewBox="0 0 36 36">
             <circle
@@ -209,7 +209,7 @@ function DonutChartCard() {
           </svg>
           <div className="absolute inset-0 flex items-center justify-center">
             <span
-              className="text-base font-bold text-gray-900 dark:text-white transition-opacity duration-500"
+              className="text-base font-bold text-heading transition-opacity duration-500"
               style={{ opacity: inView ? 1 : 0, transitionDelay: '600ms' }}
             >
               75%
@@ -223,7 +223,7 @@ function DonutChartCard() {
 
 const SEOSolution = () => {
   return (
-    <section className="bg-gray-50 dark:bg-gray-900 py-14 md:py-20 transition-colors duration-300">
+    <section className="bg-background py-14 md:py-20 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ y: 30, opacity: 0 }}
@@ -232,10 +232,10 @@ const SEOSolution = () => {
           viewport={{ once: true, amount: 0.15 }}
           className="text-center mb-14"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white leading-tight">
-            Tailored <span className="text-blue-600 dark:text-blue-400">SEO solutions</span> for Optimal Performance
+          <h2 className="text-3xl sm:text-4xl font-bold text-heading leading-tight">
+            Tailored <span className="text-primary dark:text-accent">SEO solutions</span> for Optimal Performance
           </h2>
-          <p className="mt-4 max-w-2xl mx-auto text-base text-gray-600 dark:text-gray-400">
+          <p className="mt-4 max-w-2xl mx-auto text-base text-muted">
             Enhance Organic Engagement, Optimize Visibility, and Reach Top Search Results with Strategic SEO.
           </p>
         </motion.div>

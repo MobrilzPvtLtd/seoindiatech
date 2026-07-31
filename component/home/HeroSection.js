@@ -90,7 +90,7 @@ const NewHero = () => {
         <div className="bg-white rounded-[50px] shadow-[0_40px_80px_-20px_rgba(0,0,0,0.12)] py-16 overflow-hidden border border-gray-50">
           
           <div className="text-center mb-14 px-6">
-            <p className="text-gray-500 text-lg md:text-xl max-w-4xl mx-auto leading-relaxed">
+            <p className="text-muted text-lg md:text-xl max-w-4xl mx-auto leading-relaxed">
               Trusted by more than <span className="font-bold text-gray-900">500,000+ leading GTM teams</span>.
               Inspired by our <span className="font-bold text-gray-900">customers</span>. Built with <span className="font-bold text-gray-900">love</span>.
             </p>
@@ -102,7 +102,7 @@ const NewHero = () => {
               {[...companyCards, ...companyCards, ...companyCards].map((card, idx) => (
                 <div
                   key={idx}
-                  className={`inline-block mx-4 bg-[#F9FAFB] border border-gray-100 rounded-3xl p-8 h-48 flex flex-col justify-between
+                  className={`inline-block mx-4 bg-[#F9FAFB] border border-border rounded-3xl p-8 h-48 flex flex-col justify-between
                     ${card.type === 'quote' ? 'min-w-[480px]' : 'min-w-[260px]'}`}
                 >
                   <div className="flex justify-between items-start">
@@ -120,7 +120,7 @@ const NewHero = () => {
                   )}
  
                   {card.type === 'quote' && (
-                    <p className="text-[13px] text-gray-600 whitespace-normal mt-auto leading-relaxed font-medium italic">
+                    <p className="text-[13px] text-muted whitespace-normal mt-auto leading-relaxed font-medium italic">
                       {card.text}
                     </p>
                   )}

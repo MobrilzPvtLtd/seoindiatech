@@ -27,28 +27,28 @@ const Potential = () => {
   ]
 
   return (
-    <section className="bg-gradient-to-b from-gray-100 to-blue-50 dark:from-gray-900 dark:to-blue-950/30 px-6 py-20 relative overflow-hidden">
+    <section className="bg-gradient-to-b from-gray-100 to-background dark:from-background dark:to-secondary/40/30 px-6 py-20 relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/4 left-0 w-72 h-72 bg-blue-100/50 dark:bg-blue-900/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-blue-50/70 dark:bg-blue-800/10 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/4 left-0 w-72 h-72 bg-primary/10 dark:bg-primary/20/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-background/70 dark:bg-primary/10 rounded-full blur-3xl"></div>
       </div>
 
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Header section */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 rounded-full text-sm font-medium mb-6">
+          <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary/10 dark:bg-primary/20/40 text-primary dark:text-accent rounded-full text-sm font-medium mb-6">
             <span>Unlock Your Potential</span>
           </div>
 
-          <h2 className="text-3xl md:text-4xl lg:text-5xl max-w-5xl font-bold leading-tight text-gray-900 dark:text-white mx-auto mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl max-w-5xl font-bold leading-tight text-heading mx-auto mb-6">
             Comprehensive SEO Strategy: Our Core Approach
           </h2>
 
-          <div className="w-24 h-1 bg-blue-600 dark:bg-blue-500 rounded-full mx-auto mb-8"></div>
+          <div className="w-24 h-1 bg-primary dark:bg-primary rounded-full mx-auto mb-8"></div>
 
-          <p className="text-gray-700 dark:text-gray-300 text-lg max-w-3xl mx-auto">
-           At <Link href="/" className="text-blue-600">SEO IndiaTech</Link>, our professional SEO services are built on three pillars: audit &amp; strategy,
+          <p className="text-body text-lg max-w-3xl mx-auto">
+           At <Link href="/" className="text-primary">SEO IndiaTech</Link>, our professional SEO services are built on three pillars: audit &amp; strategy,
           content optimization, and technical excellence.
           </p>
         </div>
@@ -56,8 +56,8 @@ const Potential = () => {
         {/* Main image with frame */}
         <div className="relative mx-auto mb-16 max-w-4xl">
           {/* Decorative elements */}
-          <div className="absolute -top-4 -left-4 w-20 h-20 border-t-4 border-l-4 border-blue-600 dark:border-blue-500 rounded-tl-xl"></div>
-          <div className="absolute -bottom-4 -right-4 w-20 h-20 border-b-4 border-r-4 border-blue-600 dark:border-blue-500 rounded-br-xl"></div>
+          <div className="absolute -top-4 -left-4 w-20 h-20 border-t-4 border-l-4 border-primary dark:border-primary rounded-tl-xl"></div>
+          <div className="absolute -bottom-4 -right-4 w-20 h-20 border-b-4 border-r-4 border-primary dark:border-primary rounded-br-xl"></div>
 
           {/* Main image */}
           <div className="overflow-hidden rounded-2xl shadow-xl">
@@ -90,15 +90,15 @@ const Potential = () => {
           {benefits.map((benefit, index) => (
             <div
               key={index}
-              className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md border border-gray-100 dark:border-gray-700 text-center"
+              className="bg-card dark:bg-card p-6 rounded-xl shadow-md border border-border dark:border-border text-center"
             >
-              <div className="bg-blue-100 dark:bg-blue-900/40 p-3 rounded-full inline-flex items-center justify-center text-blue-700 dark:text-blue-400 mb-4">
+              <div className="bg-primary/10 dark:bg-primary/20/40 p-3 rounded-full inline-flex items-center justify-center text-primary dark:text-accent mb-4">
                 {benefit.icon}
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+              <h3 className="text-xl font-semibold text-heading mb-2">
                 {benefit.title}
               </h3>
-              <p className="text-gray-600 dark:text-gray-300 text-sm">
+              <p className="text-muted text-sm">
                 {benefit.description}
               </p>
             </div>

@@ -11,7 +11,7 @@ const categoryColors = {
   'SEO & AI': 'bg-violet-600',
   'Local SEO': 'bg-emerald-600',
   'Social Media Marketing': 'bg-orange-600',
-  'Agentic AI & SEO': 'bg-blue-600',
+  'Agentic AI & SEO': 'bg-primary',
 }
 
 const containerVariants = {
@@ -31,10 +31,10 @@ const BlogSection = () => {
   const filters = ['All', 'Blogs', 'News', 'Case Studies', 'Interviews']
 
   return (
-    <section className="relative py-16 md:py-24 bg-white dark:bg-gray-900 transition-colors duration-300 overflow-hidden">
+    <section className="relative py-16 md:py-24 bg-white dark:bg-background transition-colors duration-300 overflow-hidden">
       {/* Decorative background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-40 -right-40 w-96 h-96 bg-blue-500/5 dark:bg-blue-500/10 rounded-full blur-3xl" />
+        <div className="absolute -top-40 -right-40 w-96 h-96 bg-primary/5 dark:bg-primary/10 rounded-full blur-3xl" />
         <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-violet-500/5 dark:bg-violet-500/10 rounded-full blur-3xl" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-emerald-500/5 dark:bg-emerald-500/10 rounded-full blur-3xl" />
       </div>
@@ -49,8 +49,8 @@ const BlogSection = () => {
         >
           {/* INSIGHTS Label */}
           <div className="flex items-center gap-3 mb-4">
-            <div className="w-8 h-0.5 bg-gradient-to-r from-blue-500 to-violet-500" />
-            <span className="text-xs font-bold tracking-[0.2em] text-blue-600 dark:text-blue-400 uppercase">
+            <div className="w-8 h-0.5 bg-gradient-to-r from-primary to-violet-500" />
+            <span className="text-xs font-bold tracking-[0.2em] text-primary dark:text-accent uppercase">
               Insights
             </span>
             <div className="flex-1 h-0.5 bg-gradient-to-r from-violet-500 to-transparent" />
@@ -59,16 +59,16 @@ const BlogSection = () => {
           {/* Title and Action Row */}
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-8">
             <div>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white leading-tight">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-heading leading-tight">
                 Latest News &amp; Insights
               </h2>
-              <p className="mt-3 text-gray-600 dark:text-gray-400 text-lg">
+              <p className="mt-3 text-muted text-lg">
                 Stay updated with the latest trends and strategies
               </p>
             </div>
             <Link
               href="/blog"
-              className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 font-semibold hover:gap-3 transition-all group shrink-0"
+              className="inline-flex items-center gap-2 text-primary dark:text-accent font-semibold hover:gap-3 transition-all group shrink-0"
             >
               <span>View all</span>
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -78,8 +78,8 @@ const BlogSection = () => {
           {/* Filter Bar */}
           <div className="flex flex-wrap items-center justify-between gap-4 py-4 border-y border-gray-200 dark:border-gray-800 mb-8">
             <div className="flex items-center gap-2">
-              <Filter className="w-4 h-4 text-gray-400 dark:text-gray-500" />
-              <span className="text-sm font-medium text-gray-600 dark:text-gray-400">Filter by</span>
+              <Filter className="w-4 h-4 text-muted" />
+              <span className="text-sm font-medium text-muted">Filter by</span>
             </div>
             
             <div className="flex flex-wrap items-center gap-2">
@@ -89,8 +89,8 @@ const BlogSection = () => {
                   onClick={() => setActiveFilter(filter)}
                   className={`px-4 py-1.5 rounded-full text-sm font-medium transition-all duration-300 ${
                     activeFilter === filter
-                      ? 'bg-blue-600 text-white shadow-lg shadow-blue-500/25'
-                      : 'text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800'
+                      ? 'bg-primary text-white shadow-lg shadow-blue-500/25'
+                      : 'text-muted hover:bg-cream dark:hover:bg-gray-800'
                   }`}
                 >
                   {filter}
@@ -99,13 +99,13 @@ const BlogSection = () => {
             </div>
 
             {/* View Toggle */}
-            <div className="flex items-center gap-1 border border-gray-200 dark:border-gray-700 rounded-lg p-1">
+            <div className="flex items-center gap-1 border border-border rounded-lg p-1">
               <button
                 onClick={() => setViewMode('grid')}
                 className={`p-1.5 rounded transition-colors ${
                   viewMode === 'grid' 
-                    ? 'bg-blue-600 text-white' 
-                    : 'text-gray-400 hover:text-gray-600 dark:hover:text-gray-300'
+                    ? 'bg-primary text-white' 
+                    : 'text-gray-400 hover:text-muted dark:hover:text-gray-300'
                 }`}
               >
                 <Grid3X3 className="w-4 h-4" />
@@ -114,8 +114,8 @@ const BlogSection = () => {
                 onClick={() => setViewMode('list')}
                 className={`p-1.5 rounded transition-colors ${
                   viewMode === 'list' 
-                    ? 'bg-blue-600 text-white' 
-                    : 'text-gray-400 hover:text-gray-600 dark:hover:text-gray-300'
+                    ? 'bg-primary text-white' 
+                    : 'text-gray-400 hover:text-muted dark:hover:text-gray-300'
                 }`}
               >
                 <LayoutList className="w-4 h-4" />
@@ -153,13 +153,13 @@ const BlogSection = () => {
                   <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
                     {/* Category Badge */}
                     <div className="mb-3">
-                      <span className={`${categoryColors[post.category] || 'bg-blue-600'} text-white text-[10px] font-bold px-3 py-1.5 rounded-full tracking-wider uppercase shadow-lg`}>
+                      <span className={`${categoryColors[post.category] || 'bg-primary'} text-white text-[10px] font-bold px-3 py-1.5 rounded-full tracking-wider uppercase shadow-lg`}>
                         {post.category}
                       </span>
                     </div>
 
                     {/* Title */}
-                    <h3 className="text-xl md:text-2xl font-bold text-white leading-snug line-clamp-2 group-hover:text-blue-300 transition-colors">
+                    <h3 className="text-xl md:text-2xl font-bold text-white leading-snug line-clamp-2 group-hover:text-accent transition-colors">
                       {post.title}
                     </h3>
 
@@ -171,7 +171,7 @@ const BlogSection = () => {
                     {/* Footer with Author & Meta */}
                     <div className="mt-4 pt-4 border-t border-white/20 flex items-center justify-between">
                       <div className="flex items-center gap-3">
-                        <div className="w-8 h-8 rounded-full bg-gradient-to-r from-blue-500 to-violet-500 flex items-center justify-center text-white font-bold text-xs">
+                        <div className="w-8 h-8 rounded-full bg-gradient-to-r from-primary to-violet-500 flex items-center justify-center text-white font-bold text-xs">
                           JD
                         </div>
                         <div>

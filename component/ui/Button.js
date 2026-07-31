@@ -7,7 +7,7 @@ const variants = {
     'bg-white/95 text-secondary hover:bg-white border border-white/30 shadow-lg hover:shadow-xl hover:-translate-y-0.5',
   outline:
     'border-2 border-accent/60 text-white bg-accent/10 hover:bg-accent/20 backdrop-blur-sm',
-  ghost: 'text-secondary hover:text-white bg-transparent',
+  ghost: 'text-heading hover:text-primary bg-transparent border border-transparent hover:bg-primary/5',
 }
 
 const sizes = {

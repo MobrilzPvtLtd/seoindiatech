@@ -124,28 +124,28 @@ export default function ECommerceAbout() {
         </div>
       </section>
       <section className="max-w-6xl mx-auto px-6 py-12">
-        <div className="group relative overflow-hidden rounded-3xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 shadow-md transition-all duration-500 hover:shadow-xl">
+        <div className="group relative overflow-hidden rounded-3xl border border-border bg-white dark:bg-background shadow-md transition-all duration-500 hover:shadow-xl">
           {/* Permanent Left Border */}
-          <div className="absolute left-0 top-0 h-full w-2 bg-blue-600"></div>
+          <div className="absolute left-0 top-0 h-full w-2 bg-primary"></div>
 
           <div className="relative p-8 md:p-12">
             {/* Heading */}
             <div className="flex items-start gap-4 mb-6">
-              <div className="p-3 rounded-xl bg-blue-100 dark:bg-blue-800 text-blue-600 dark:text-blue-300 transition-transform duration-500 group-hover:scale-110">
+              <div className="p-3 rounded-xl bg-primary/10 dark:bg-primary/20 text-primary dark:text-accent transition-transform duration-500 group-hover:scale-110">
                 <ShieldCheck className="w-6 h-6" />
               </div>
 
               <div>
-                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white relative inline-block">
+                <h2 className="text-2xl md:text-3xl font-bold text-heading relative inline-block">
                   Why You Need Ecommerce SEO Services
                   {/* Animated Underline */}
-                  <span className="absolute left-0 -bottom-2 h-1 w-0 bg-blue-600 transition-all duration-500 group-hover:w-full"></span>
+                  <span className="absolute left-0 -bottom-2 h-1 w-0 bg-primary transition-all duration-500 group-hover:w-full"></span>
                 </h2>
               </div>
             </div>
 
             {/* Content */}
-            <div className="space-y-5 text-gray-600 dark:text-gray-300 text-justify leading-relaxed text-lg">
+            <div className="space-y-5 text-muted text-justify leading-relaxed text-lg">
               <p>
                 Many store owners focus only on ads. Ads can bring traffic, but
                 they cost money every time. SEO brings free clicks from search

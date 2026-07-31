@@ -24,20 +24,20 @@ const advantages = [
 
 const Why = () => {
   return (
-    <section className='bg-gray-200 dark:bg-gray-900 py-16 md:py-20'>
+    <section className='bg-gray-200 dark:bg-background py-16 md:py-20'>
       <div className="max-w-7xl mx-auto px-6 md:px-8">
         {/* Section Header */}
         <div className="mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-blue-100 dark:bg-blue-950/60 text-blue-800 dark:text-blue-300 rounded-full text-sm font-medium mb-4">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-primary/10 dark:bg-secondary/40/60 text-primary dark:text-accent rounded-full text-sm font-medium mb-4">
             <span>Competitive Edge</span>
           </div>
           
-          <h2 className='text-gray-900 dark:text-white text-4xl md:text-5xl lg:text-6xl font-bold leading-tight'>
+          <h2 className='text-heading text-4xl md:text-5xl lg:text-6xl font-bold leading-tight'>
               Leading UI/UX Design Services for Strong Brand Impact 
           </h2>
           
           <div className="mt-6">
-            <div className="h-1 w-24 bg-blue-600 dark:bg-blue-500 rounded-full"></div>
+            <div className="h-1 w-24 bg-primary dark:bg-primary rounded-full"></div>
           </div>
         </div>
 
@@ -45,7 +45,7 @@ const Why = () => {
           {advantages.map((item, index) => (
             <div 
               key={index} 
-              className='flex flex-col md:flex-row items-center justify-between border-t border-b border-gray-300 dark:border-gray-700 py-8 gap-6 group hover:bg-white/50 dark:hover:bg-gray-800/50 transition-colors rounded-lg px-4'
+              className='flex flex-col md:flex-row items-center justify-between border-t border-b border-border dark:border-border py-8 gap-6 group hover:bg-white/50 dark:hover:bg-gray-800/50 transition-colors rounded-lg px-4'
             >
               <div className="relative overflow-hidden rounded-full w-56 h-20 shadow-md">
                 <Image 
@@ -57,11 +57,11 @@ const Why = () => {
                 />
               </div>
               
-              <h2 className='text-xl font-semibold text-center md:text-left text-gray-800 dark:text-gray-100 md:w-1/3'>
+              <h2 className='text-xl font-semibold text-center md:text-left text-heading dark:text-gray-100 md:w-1/3'>
                 {item.title}
               </h2>
               
-              <p className='text-gray-700 dark:text-gray-300 text-center md:text-left md:w-1/3 text-justify'>
+              <p className='text-body text-center md:text-left md:w-1/3 text-justify'>
                 {item.description}
               </p>
             </div>
@@ -75,9 +75,9 @@ const Why = () => {
             { value: '94%', label: 'First impressions are design-related' },
             { value: '8s', label: 'Average time to form an opinion on your website' }
           ].map((stat, index) => (
-            <div key={index} className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md flex flex-col items-center text-center">
-              <span className="text-4xl font-bold text-blue-700 dark:text-blue-400">{stat.value}</span>
-              <p className="mt-2 text-gray-700 dark:text-gray-300">{stat.label}</p>
+            <div key={index} className="bg-card dark:bg-card p-6 rounded-xl shadow-md flex flex-col items-center text-center">
+              <span className="text-4xl font-bold text-primary dark:text-accent">{stat.value}</span>
+              <p className="mt-2 text-body">{stat.label}</p>
             </div>
           ))}
         </div>

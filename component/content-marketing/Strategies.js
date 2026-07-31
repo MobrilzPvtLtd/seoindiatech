@@ -12,22 +12,22 @@ import {
 
 const Strategies = () => {
   return (
-    <section className="bg-white dark:bg-gray-900 py-16 px-4 sm:px-6 lg:px-8">
+    <section className="bg-white dark:bg-background py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 rounded-full text-sm font-medium mb-4">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-primary/10 dark:bg-primary/20/40 text-primary dark:text-accent rounded-full text-sm font-medium mb-4">
             <Lightbulb className="w-4 h-4" />
             <span>Content Strategies</span>
           </div>
 
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-heading mb-4">
             Types of Content We Create
           </h2>
 
-          <div className="w-24 h-1 bg-blue-600 dark:bg-blue-500 rounded-full mx-auto mb-6"></div>
+          <div className="w-24 h-1 bg-primary dark:bg-primary rounded-full mx-auto mb-6"></div>
 
-          <p className="max-w-2xl mx-auto text-gray-700 dark:text-gray-300">
+          <p className="max-w-2xl mx-auto text-body">
             As a dedicated content marketing agency, we produce a wide range of
             high-quality content tailored to your goals, including
           </p>
@@ -35,7 +35,7 @@ const Strategies = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
           {/* Left Card - Strategic Storytelling */}
-          <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-[0_8px_0px_0px_rgba(59,130,246,0.5)] dark:shadow-[0_8px_0px_0px_rgba(59,130,246,0.3)] border border-gray-200 dark:border-gray-700 p-6 sm:p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+          <div className="bg-card dark:bg-card rounded-2xl shadow-[0_8px_0px_0px_rgba(59,130,246,0.5)] dark:shadow-[0_8px_0px_0px_rgba(59,130,246,0.3)] border border-border p-6 sm:p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
             <div className="relative rounded-xl overflow-hidden mb-6 h-64">
               <Image
                 src="/images/services/strategies1.png"
@@ -47,26 +47,26 @@ const Strategies = () => {
             </div>
 
             <div className="flex items-center gap-3 mb-4">
-              <div className="p-2 bg-blue-100 dark:bg-blue-900/40 rounded-lg">
-                <BookOpen className="w-5 h-5 text-blue-700 dark:text-blue-400" />
+              <div className="p-2 bg-primary/10 dark:bg-primary/20/40 rounded-lg">
+                <BookOpen className="w-5 h-5 text-primary dark:text-accent" />
               </div>
-              <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 dark:text-white">
+              <h2 className="text-2xl sm:text-3xl font-bold text-heading">
                 Strategic Storytelling
               </h2>
             </div>
 
-            <p className="text-justify text-gray-700 dark:text-gray-300 mb-6 text-base sm:text-lg">
+            <p className="text-justify text-body mb-6 text-base sm:text-lg">
               Your brand's story deserves to be told in a way that inspires and
               resonates. From blogs to social media and email campaigns, we
               amplify your message so it reaches the right audience with impact.
             </p>
 
-            <div className="bg-blue-50 dark:bg-blue-900/20 p-5 rounded-xl">
-              <h3 className="font-bold text-gray-900 dark:text-white mb-3 text-lg flex items-center">
-                <Award className="w-5 h-5 mr-2 text-blue-600 dark:text-blue-400" />
+            <div className="bg-background dark:bg-primary/15 p-5 rounded-xl">
+              <h3 className="font-bold text-heading mb-3 text-lg flex items-center">
+                <Award className="w-5 h-5 mr-2 text-primary dark:text-accent" />
                 Why It Works:
               </h3>
-              <ul className="space-y-3 text-gray-700 dark:text-gray-300">
+              <ul className="space-y-3 text-body">
                 {[
                   "SEO-Optimized Blogs",
                   "Website Content",
@@ -80,7 +80,7 @@ const Strategies = () => {
                 ].map((item, index) => (
                   <li key={index} className="flex items-start gap-3">
                     <div className="mt-1">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-600 dark:bg-blue-400"></div>
+                      <div className="w-1.5 h-1.5 rounded-full bg-primary dark:bg-accent"></div>
                     </div>
                     <span>{item}</span>
                   </li>
@@ -89,10 +89,10 @@ const Strategies = () => {
             </div>
 
             {/* Case Study Link */}
-            <div className="mt-6 pt-4 border-t border-gray-100 dark:border-gray-700">
+            <div className="mt-6 pt-4 border-t border-border dark:border-border">
               <a
                 href="#"
-                className="text-blue-600 dark:text-blue-400 font-medium flex items-center group hover:underline"
+                className="text-primary dark:text-accent font-medium flex items-center group hover:underline"
               >
                 Read storytelling case study
                 <svg
@@ -114,58 +114,58 @@ const Strategies = () => {
           </div>
 
           {/* Right Card - Lead Generation */}
-          <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-[0_8px_0px_0px_rgba(59,130,246,0.5)] dark:shadow-[0_8px_0px_0px_rgba(59,130,246,0.3)] border border-gray-200 dark:border-gray-700 p-6 sm:p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+          <div className="bg-card dark:bg-card rounded-2xl shadow-[0_8px_0px_0px_rgba(59,130,246,0.5)] dark:shadow-[0_8px_0px_0px_rgba(59,130,246,0.3)] border border-border p-6 sm:p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
             <div className="flex items-center gap-3 mb-4">
-              <div className="p-2 bg-blue-100 dark:bg-blue-900/40 rounded-lg">
-                <Target className="w-5 h-5 text-blue-700 dark:text-blue-400" />
+              <div className="p-2 bg-primary/10 dark:bg-primary/20/40 rounded-lg">
+                <Target className="w-5 h-5 text-primary dark:text-accent" />
               </div>
-              <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 dark:text-white">
+              <h2 className="text-2xl sm:text-3xl font-bold text-heading">
                 Lead Generation Magic
               </h2>
             </div>
 
-            <p className="text-justify text-gray-700 dark:text-gray-300 mb-6 text-base sm:text-lg">
+            <p className="text-justify text-body mb-6 text-base sm:text-lg">
               Great content should deliver more than engagement-it should drive
               results. Our lead generation strategies are built into every word,
               transforming casual visitors into subscribers and subscribers into
               customers.
             </p>
 
-            <div className="bg-blue-50 dark:bg-blue-900/20 p-5 rounded-xl mb-6">
-              <h3 className="font-bold text-gray-900 dark:text-white mb-3 text-lg flex items-center">
-                <Users className="w-5 h-5 mr-2 text-blue-600 dark:text-blue-400" />
+            <div className="bg-background dark:bg-primary/15 p-5 rounded-xl mb-6">
+              <h3 className="font-bold text-heading mb-3 text-lg flex items-center">
+                <Users className="w-5 h-5 mr-2 text-primary dark:text-accent" />
                 Our Process:
               </h3>
-              <ul className="space-y-4 text-gray-700 dark:text-gray-300">
+              <ul className="space-y-4 text-body">
                 {[
                   {
                     title: "Landing Pages That Convert:",
                     desc: "High-converting pages paired with compelling content.",
                     icon: (
-                      <Link className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+                      <Link className="w-5 h-5 text-primary dark:text-accent" />
                     ),
                   },
                   {
                     title: "Lead Magnets:",
                     desc: "Free resources like eBooks, guides, or exclusive videos designed to grab attention and gather leads.",
                     icon: (
-                      <Download className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+                      <Download className="w-5 h-5 text-primary dark:text-accent" />
                     ),
                   },
                   {
                     title: "Targeted Campaigns:",
                     desc: "Precision-targeted content distribution to attract the right audience.",
                     icon: (
-                      <Target className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+                      <Target className="w-5 h-5 text-primary dark:text-accent" />
                     ),
                   },
                 ].map((item, index) => (
                   <li key={index} className="flex items-start gap-3">
-                    <div className="p-1.5 bg-white dark:bg-gray-700 rounded-md shadow-sm">
+                    <div className="p-1.5 bg-white dark:bg-surface rounded-md shadow-sm">
                       {item.icon}
                     </div>
                     <div>
-                      <span className="font-semibold text-gray-900 dark:text-white">
+                      <span className="font-semibold text-heading">
                         {item.title}
                       </span>{" "}
                       <span>{item.desc}</span>
@@ -186,18 +186,18 @@ const Strategies = () => {
             </div>
 
             {/* Results Stat - Optional */}
-            <div className="mt-6 pt-4 border-t border-gray-100 dark:border-gray-700 flex justify-between items-center">
+            <div className="mt-6 pt-4 border-t border-border dark:border-border flex justify-between items-center">
               <div>
-                <p className="text-gray-500 dark:text-gray-400 text-sm">
+                <p className="text-muted text-sm">
                   Average client result
                 </p>
-                <p className="text-blue-600 dark:text-blue-400 font-bold text-2xl">
+                <p className="text-primary dark:text-accent font-bold text-2xl">
                   +137% Leads
                 </p>
               </div>
               <a
                 href="#"
-                className="text-blue-600 dark:text-blue-400 font-medium flex items-center group hover:underline"
+                className="text-primary dark:text-accent font-medium flex items-center group hover:underline"
               >
                 See our approach
                 <svg
@@ -220,17 +220,17 @@ const Strategies = () => {
         </div>
 
         {/* Optional: CTA Section */}
-        <div className="hidden mt-16 bg-gradient-to-r from-blue-600 to-blue-800 dark:from-blue-700 dark:to-blue-900 rounded-xl p-8 text-white shadow-lg">
+        <div className="hidden mt-16 bg-gradient-to-r from-primary to-secondary dark:from-blue-700 dark:to-secondary/30 rounded-xl p-8 text-white shadow-lg">
           <div className="md:flex items-center justify-between">
             <div className="mb-6 md:mb-0">
               <h3 className="text-2xl font-bold mb-2">
                 Ready to transform your content strategy?
               </h3>
-              <p className="text-blue-100">
+              <p className="text-white/90">
                 Book a free strategy session with our content experts
               </p>
             </div>
-            <button className="bg-white text-blue-700 hover:bg-blue-50 px-6 py-3 rounded-lg font-medium transition-colors flex items-center">
+            <button className="bg-white text-primary hover:bg-background px-6 py-3 rounded-lg font-medium transition-colors flex items-center">
               Schedule a consultation
               <svg
                 className="ml-2 w-5 h-5"

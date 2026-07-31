@@ -12,9 +12,9 @@ export default function AutomationBenefits() {
       title: 'Save Money',
       description:
         'Increase efficiency and ROI by implementing intelligent automation.',
-      icon: <DollarSign className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
-      color: 'text-blue-600 dark:text-blue-400',
-      bgAccent: 'bg-blue-100 dark:bg-blue-900/30',
+      icon: <DollarSign className="w-5 h-5 text-primary dark:text-accent" />,
+      color: 'text-primary dark:text-accent',
+      bgAccent: 'bg-primary/10 dark:bg-primary/15',
       delay: 'delay-100',
     },
     {
@@ -22,9 +22,9 @@ export default function AutomationBenefits() {
       title: 'Save Time',
       description:
         'Automate routine tasks to concentrate on what truly matters.',
-      icon: <Clock className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
-      color: 'text-blue-600 dark:text-blue-400',
-      bgAccent: 'bg-blue-100 dark:bg-blue-900/30',
+      icon: <Clock className="w-5 h-5 text-primary dark:text-accent" />,
+      color: 'text-primary dark:text-accent',
+      bgAccent: 'bg-primary/10 dark:bg-primary/15',
       delay: 'delay-200',
     },
     {
@@ -32,9 +32,9 @@ export default function AutomationBenefits() {
       title: 'Save Energy',
       description:
         'Streamline operations by reducing manual effort with automation.',
-      icon: <Battery className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
-      color: 'text-blue-600 dark:text-blue-400',
-      bgAccent: 'bg-blue-100 dark:bg-blue-900/30',
+      icon: <Battery className="w-5 h-5 text-primary dark:text-accent" />,
+      color: 'text-primary dark:text-accent',
+      bgAccent: 'bg-primary/10 dark:bg-primary/15',
       delay: 'delay-300',
     },
   ]
@@ -50,22 +50,22 @@ export default function AutomationBenefits() {
 
   return (
     <section
-      className="flex items-center justify-center min-h-screen bg-gray-50 dark:bg-gray-900 px-4 py-16 md:py-24 relative overflow-hidden"
+      className="flex items-center justify-center min-h-screen bg-background px-4 py-16 md:py-24 relative overflow-hidden"
       aria-label="Benefits of our automation services"
     >
       {/* Background decorative elements */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/4 right-0 w-72 h-72 bg-white/50 dark:bg-blue-900/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 left-1/4 w-80 h-80 bg-blue-300/30 dark:bg-blue-800/10 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/4 right-0 w-72 h-72 bg-white/50 dark:bg-primary/20/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 left-1/4 w-80 h-80 bg-accent/20 dark:bg-primary/10 rounded-full blur-3xl"></div>
       </div>
 
       {/* Grid overlay */}
       <div className="absolute inset-0 bg-grid-pattern opacity-10 dark:opacity-5 pointer-events-none"></div>
 
-      <div className="relative w-full max-w-6xl bg-white dark:bg-gray-800 rounded-2xl shadow-2xl border border-gray-100 dark:border-gray-700 overflow-hidden z-10">
+      <div className="relative w-full max-w-6xl bg-card dark:bg-card rounded-2xl shadow-2xl border border-border dark:border-border overflow-hidden z-10">
         <div className="grid lg:grid-cols-2 gap-0">
           {/* Left Section - Benefits */}
-          <div className="flex flex-col justify-center space-y-6 p-8 lg:p-12 z-10 relative bg-white/95 dark:bg-gray-800/95 backdrop-blur-sm">
+          <div className="flex flex-col justify-center space-y-6 p-8 lg:p-12 z-10 relative bg-white/95 dark:bg-card/95 backdrop-blur-sm">
             {/* Title */}
             <div
               className={`
@@ -77,13 +77,13 @@ export default function AutomationBenefits() {
               }
             `}
             >
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 rounded-full text-sm font-medium mb-6">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 dark:bg-primary/20/40 text-primary dark:text-accent rounded-full text-sm font-medium mb-6">
                 <span>Automation Benefits</span>
               </div>
 
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white leading-tight">
+              <h2 className="text-3xl md:text-4xl font-bold text-heading leading-tight">
                 Let Us Do The{' '}
-                <span className="text-blue-600 dark:text-blue-400">
+                <span className="text-primary dark:text-accent">
                   Hard Work
                 </span>{' '}
                 For You
@@ -96,8 +96,8 @@ export default function AutomationBenefits() {
                 <div
                   key={benefit.id}
                   className={`
-                    flex items-center space-x-4 p-4 rounded-xl border border-gray-100 dark:border-gray-700
-                    bg-white dark:bg-gray-800/80 shadow-sm hover:shadow-md transition-all duration-300
+                    flex items-center space-x-4 p-4 rounded-xl border border-border dark:border-border
+                    bg-card dark:bg-card/80 shadow-sm hover:shadow-md transition-all duration-300
                     transform transition-all ease-out ${benefit.delay}
                     ${
                       isVisible
@@ -116,7 +116,7 @@ export default function AutomationBenefits() {
                     <h3 className={`font-semibold text-xl ${benefit.color}`}>
                       {benefit.title}
                     </h3>
-                    <p className="text-gray-600 dark:text-gray-300 text-sm">
+                    <p className="text-muted text-sm">
                       {benefit.description}
                     </p>
                   </div>
@@ -157,10 +157,10 @@ export default function AutomationBenefits() {
               }
             `}
             >
-              <p className="text-gray-600 dark:text-gray-300 text-base md:text-lg leading-relaxed">
+              <p className="text-muted text-base md:text-lg leading-relaxed">
                 Everyone faces challenges in the beginning, but we ensure you
                 start strong. <br />
-                <span className="font-semibold text-gray-800 dark:text-white">
+                <span className="font-semibold text-heading">
                   Let Us Do The Hard Work!
                 </span>
               </p>
@@ -180,12 +180,12 @@ export default function AutomationBenefits() {
             >
               <button
                 className="
-                hidden bg-gradient-to-r from-blue-600 to-blue-800 dark:from-blue-500 dark:to-blue-700
+                hidden bg-gradient-to-r from-primary to-secondary dark:from-primary dark:to-primary-hover
                 text-white px-6 py-3 rounded-full font-medium
-                hover:from-blue-700 hover:to-blue-900 dark:hover:from-blue-600 dark:hover:to-blue-800
+                hover:from-primary-hover hover:to-secondary dark:hover:from-primary dark:hover:to-secondary
                 transform transition-all duration-300
                 shadow-lg hover:shadow-xl
-                focus:outline-none focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800
+                focus:outline-none focus:ring-4 focus:ring-primary/30 dark:focus:ring-primary/30
                 flex items-center group
               "
               >
@@ -217,34 +217,34 @@ export default function AutomationBenefits() {
             </div>
 
             {/* Decorative Elements */}
-            <div className="absolute top-8 right-8 w-4 h-4 bg-blue-500 rounded-full opacity-60 animate-pulse"></div>
-            <div className="absolute bottom-12 right-12 w-6 h-6 bg-blue-500 rounded-full opacity-40 animate-bounce"></div>
-            <div className="absolute top-1/2 right-4 w-2 h-2 bg-blue-500 rounded-full opacity-50 animate-ping"></div>
+            <div className="absolute top-8 right-8 w-4 h-4 bg-secondary rounded-full opacity-60 animate-pulse"></div>
+            <div className="absolute bottom-12 right-12 w-6 h-6 bg-secondary rounded-full opacity-40 animate-bounce"></div>
+            <div className="absolute top-1/2 right-4 w-2 h-2 bg-secondary rounded-full opacity-50 animate-ping"></div>
 
             {/* Statistics overlay */}
-            <div className="absolute bottom-8 left-8 right-8 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-lg p-4 shadow-lg border border-gray-200 dark:border-gray-700 z-20">
+            <div className="absolute bottom-8 left-8 right-8 bg-white/90 dark:bg-card/90 backdrop-blur-sm rounded-lg p-4 shadow-lg border border-border z-20">
               <div className="grid grid-cols-3 gap-4">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">
+                  <div className="text-2xl font-bold text-primary dark:text-accent">
                     85%
                   </div>
-                  <div className="text-xs text-gray-600 dark:text-gray-400">
+                  <div className="text-xs text-muted">
                     Time Saved
                   </div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">
+                  <div className="text-2xl font-bold text-primary dark:text-accent">
                     40%
                   </div>
-                  <div className="text-xs text-gray-600 dark:text-gray-400">
+                  <div className="text-xs text-muted">
                     Cost Reduction
                   </div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">
+                  <div className="text-2xl font-bold text-primary dark:text-accent">
                     24/7
                   </div>
-                  <div className="text-xs text-gray-600 dark:text-gray-400">
+                  <div className="text-xs text-muted">
                     Availability
                   </div>
                 </div>
@@ -265,29 +265,29 @@ export default function AutomationBenefits() {
             />
 
             {/* Mobile Statistics overlay */}
-            <div className="absolute bottom-4 left-4 right-4 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-lg p-3 shadow-lg border border-gray-200 dark:border-gray-700">
+            <div className="absolute bottom-4 left-4 right-4 bg-white/90 dark:bg-card/90 backdrop-blur-sm rounded-lg p-3 shadow-lg border border-border">
               <div className="grid grid-cols-3 gap-2">
                 <div className="text-center">
-                  <div className="text-lg font-bold text-blue-600 dark:text-blue-400">
+                  <div className="text-lg font-bold text-primary dark:text-accent">
                     85%
                   </div>
-                  <div className="text-xxs text-gray-600 dark:text-gray-400">
+                  <div className="text-xxs text-muted">
                     Time Saved
                   </div>
                 </div>
                 <div className="text-center">
-                  <div className="text-lg font-bold text-blue-600 dark:text-blue-400">
+                  <div className="text-lg font-bold text-primary dark:text-accent">
                     40%
                   </div>
-                  <div className="text-xxs text-gray-600 dark:text-gray-400">
+                  <div className="text-xxs text-muted">
                     Cost Reduction
                   </div>
                 </div>
                 <div className="text-center">
-                  <div className="text-lg font-bold text-blue-600 dark:text-blue-400">
+                  <div className="text-lg font-bold text-primary dark:text-accent">
                     24/7
                   </div>
-                  <div className="text-xxs text-gray-600 dark:text-gray-400">
+                  <div className="text-xxs text-muted">
                     Availability
                   </div>
                 </div>

@@ -2,6 +2,8 @@
 
 import React, { useState } from 'react'
 import { ChevronDown } from 'lucide-react'
+import SectionHeader from '@/component/ui/SectionHeader'
+import PageSection from '@/component/ui/PageSection'
 
 const faqs = [
   {
@@ -33,73 +35,56 @@ const faqs = [
 export default function FaqSection() {
   const [openIndex, setOpenIndex] = useState(null)
 
-  const toggle = (i) => {
-    setOpenIndex(openIndex === i ? null : i)
-  }
+  const toggle = (i) => setOpenIndex(openIndex === i ? null : i)
 
   return (
-    <section className="bg-gradient-to-br from-gray-100 to-blue-100 dark:from-gray-900 dark:to-blue-950 py-16 md:py-20 transition-colors duration-300">
-      <div className="max-w-4xl mx-auto px-6 md:px-8">
-        <div className="text-center mb-12">
-          <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 dark:bg-blue-900/60 text-blue-800 dark:text-blue-300 mb-4">
-            FAQ
-          </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
-            Frequently Asked Questions
-          </h2>
-        </div>
-        <div className="space-y-3">
-          {faqs.map((faq, i) => {
-            const isOpen = openIndex === i
-            return (
+    <PageSection variant="gradient" padding="default" containerClassName="max-w-4xl">
+      <SectionHeader badge="FAQ" title="Frequently Asked Questions" align="center" className="mb-10" />
+      <div className="space-y-3">
+        {faqs.map((faq, i) => {
+          const isOpen = openIndex === i
+          return (
+            <div
+              key={i}
+              className={`card-premium rounded-2xl overflow-hidden transition-all duration-300 ${
+                isOpen ? 'border-primary/30 shadow-premium' : ''
+              }`}
+            >
+              <button
+                type="button"
+                onClick={() => toggle(i)}
+                className="flex w-full items-center justify-between gap-4 p-5 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/40"
+                aria-expanded={isOpen}
+              >
+                <div className="flex items-center gap-3">
+                  <span
+                    className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-xs font-bold transition-colors ${
+                      isOpen ? 'bg-primary text-white' : 'bg-primary/10 text-primary'
+                    }`}
+                  >
+                    {i + 1}
+                  </span>
+                  <h3 className={`text-base font-bold transition-colors ${isOpen ? 'text-primary' : 'text-heading'}`}>
+                    {faq.q}
+                  </h3>
+                </div>
+                <ChevronDown
+                  className={`h-5 w-5 shrink-0 text-muted transition-transform duration-300 ${isOpen ? 'rotate-180 text-primary' : ''}`}
+                />
+              </button>
               <div
-                key={i}
-                className={`bg-white dark:bg-gray-800 rounded-2xl border transition-all duration-300 ${
-                  isOpen
-                    ? 'border-blue-200 dark:border-blue-800/50 shadow-lg shadow-blue-500/5 dark:shadow-blue-900/10'
-                    : 'border-gray-200 dark:border-gray-700 hover:border-blue-200 dark:hover:border-blue-800/50'
+                className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                  isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
                 }`}
               >
-                <button
-                  onClick={() => toggle(i)}
-                  className="w-full flex items-center justify-between gap-4 p-5 text-left cursor-pointer"
-                >
-                  <div className="flex items-center gap-3">
-                    <span className={`w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0 text-xs font-bold transition-colors duration-300 ${
-                      isOpen
-                        ? 'bg-blue-600 text-white'
-                        : 'bg-blue-100 dark:bg-blue-900/60 text-blue-600 dark:text-blue-400'
-                    }`}>
-                      {i + 1}
-                    </span>
-                    <h3 className={`text-base font-bold transition-colors duration-300 ${
-                      isOpen
-                        ? 'text-blue-600 dark:text-blue-400'
-                        : 'text-gray-900 dark:text-white'
-                    }`}>
-                      {faq.q}
-                    </h3>
-                  </div>
-                  <ChevronDown
-                    className={`w-5 h-5 flex-shrink-0 text-gray-400 dark:text-gray-500 transition-transform duration-300 ${
-                      isOpen ? 'rotate-180 text-blue-600 dark:text-blue-400' : ''
-                    }`}
-                  />
-                </button>
-                <div
-                  className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                    isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-                  }`}
-                >
-                  <p className="px-5 pb-5 pl-[3.25rem] text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
-                    {faq.a}
-                  </p>
-                </div>
+                <p className="border-t border-border px-5 pb-5 pt-4 pl-[3.25rem] text-sm leading-relaxed text-muted">
+                  {faq.a}
+                </p>
               </div>
-            )
-          })}
-        </div>
+            </div>
+          )
+        })}
       </div>
-    </section>
+    </PageSection>
   )
 }

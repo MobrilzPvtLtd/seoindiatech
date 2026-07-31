@@ -34,14 +34,14 @@ const packages = [
 
 export default function PackageSolution() {
   return (
-    <section className="pt-24 bg-gray-50 dark:bg-gray-950">
+    <section className="pt-24 bg-background">
       <div className="max-w-7xl mx-auto px-6">
         {/* Heading */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-semibold text-gray-900 dark:text-white">
+          <h2 className="text-4xl font-semibold text-heading">
             SEO Package Solutions
           </h2>
-          <p className="mt-3 text-gray-600 dark:text-gray-400">
+          <p className="mt-3 text-muted">
             Choose the perfect SEO package for your business needs
           </p>
         </div>
@@ -54,11 +54,11 @@ export default function PackageSolution() {
             return (
               <div
                 key={pkg.name}
-                className={`relative rounded-2xl bg-white dark:bg-gray-900 
+                className={`relative rounded-2xl bg-white dark:bg-background 
                 border transition-all duration-300 hover:-translate-y-1 hover:shadow-lg
                 ${
                   isPopular
-                    ? 'border-blue-500 shadow-md'
+                    ? 'border-primary shadow-md'
                     : 'border-gray-200 dark:border-gray-800'
                 }`}
               >
@@ -66,7 +66,7 @@ export default function PackageSolution() {
                 {isPopular && (
                   <span
                     className="absolute -top-3 left-1/2 -translate-x-1/2 
-                    bg-blue-600 text-white text-xs font-semibold px-4 py-1 rounded-full"
+                    bg-primary text-white text-xs font-semibold px-4 py-1 rounded-full"
                   >
                     Popular
                   </span>
@@ -74,15 +74,15 @@ export default function PackageSolution() {
 
                 {/* Content */}
                 <div className="px-6 py-8 text-center">
-                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                  <h3 className="text-lg font-semibold text-heading">
                     {pkg.name}
                   </h3>
 
                   <div className="mt-4">
-                    <span className="text-4xl font-bold text-gray-900 dark:text-white">
+                    <span className="text-4xl font-bold text-heading">
                       ${pkg.price}
                     </span>
-                    <span className="text-gray-500 text-base"> /mo</span>
+                    <span className="text-muted text-base"> /mo</span>
                   </div>
 
                   <div className="mt-4 text-sm text-green-600 dark:text-green-400 font-medium">
@@ -91,7 +91,7 @@ export default function PackageSolution() {
                 </div>
 
                 {/* Features */}
-                <div className="border-t border-gray-100 dark:border-gray-800 px-6 py-6 space-y-3 text-sm text-gray-700 dark:text-gray-300">
+                <div className="border-t border-border dark:border-gray-800 px-6 py-6 space-y-3 text-sm text-body">
                   <div className="flex justify-between">
                     <span>Keywords</span>
                     <span className="font-medium">{pkg.keywords}</span>
@@ -110,8 +110,8 @@ export default function PackageSolution() {
                     className={`block w-full text-center py-3 rounded-lg font-medium transition
                     ${
                       isPopular
-                        ? 'w-full cursor-pointer sm:w-auto bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-500 dark:to-blue-600 text-white font-semibold tracking-wide  hover:shadow-xl hover:scale-[1.02] transition-all duration-300 border border-blue-700/20'
-                        : 'w-full cursor-pointer sm:w-auto bg-gradient-to-r from-gray-600 to-gray-700 bg-gradient-to-r dark:from-gray-800 dark:to-gray-900 text-white font-semibold tracking-wide  hover:shadow-xl hover:scale-[1.02] transition-all duration-300 border dark:border-gray-500/30'
+                        ? 'w-full cursor-pointer sm:w-auto bg-gradient-to-r from-primary to-primary-hover dark:from-primary dark:to-primary-hover text-white font-semibold tracking-wide  hover:shadow-xl hover:scale-[1.02] transition-all duration-300 border border-primary/20'
+                        : 'w-full cursor-pointer sm:w-auto bg-gradient-to-r from-gray-600 to-gray-700 bg-gradient-to-r dark:from-surface dark:to-background text-white font-semibold tracking-wide  hover:shadow-xl hover:scale-[1.02] transition-all duration-300 border dark:border-gray-500/30'
                     }`}
                   >
                     Get Quote
@@ -122,7 +122,7 @@ export default function PackageSolution() {
           })}
         </div>
 
-        <p className="mt-12 text-center text-sm text-gray-500">
+        <p className="mt-12 text-center text-sm text-muted">
           Monthly reporting included - Best results with 6-month plan
         </p>
       </div>

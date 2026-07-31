@@ -55,21 +55,21 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="bg-white dark:bg-gray-900 py-20 md:py-28">
+    <section className="bg-white dark:bg-background py-20 md:py-28">
       <div className="max-w-7xl mx-auto px-6 md:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <span className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 dark:bg-blue-950/60 border border-blue-100 dark:border-blue-800/30 rounded-full text-sm font-medium text-blue-600 dark:text-blue-400 mb-6">
+          <span className="inline-flex items-center gap-2 px-4 py-2 bg-background dark:bg-secondary/40/60 border border-primary/20 dark:border-primary/40/30 rounded-full text-sm font-medium text-primary dark:text-accent mb-6">
             What We Offer
           </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white leading-tight mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-heading leading-tight mb-4">
             Comprehensive Design &
             <br className="hidden sm:block" />
             Development Services
           </h2>
-          <p className="text-gray-600 dark:text-gray-400 text-lg max-w-2xl mx-auto">
+          <p className="text-muted text-lg max-w-2xl mx-auto">
             At{' '}
-            <span className="font-semibold text-gray-900 dark:text-white">
+            <span className="font-semibold text-heading">
               SEO India Tech,
             </span>{' '}
             we transform ideas into powerful digital products through design
@@ -92,29 +92,29 @@ const Services = () => {
                 {/* Icon Side */}
                 <div className="w-full md:w-1/3 flex justify-center">
                   <div className="relative">
-                    <div className="w-32 h-32 rounded-3xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center shadow-xl shadow-blue-500/20 rotate-3 hover:rotate-0 transition-transform duration-500">
+                    <div className="w-32 h-32 rounded-3xl bg-gradient-to-br from-primary to-accent flex items-center justify-center shadow-xl shadow-primary/20 rotate-3 hover:rotate-0 transition-transform duration-500">
                       <Icon className="w-14 h-14 text-white" />
                     </div>
-                    <div className="absolute -inset-4 rounded-3xl border border-blue-200 dark:border-blue-800/30 -rotate-3 hover:rotate-0 transition-transform duration-500" />
+                    <div className="absolute -inset-4 rounded-3xl border border-primary/30 dark:border-primary/40/30 -rotate-3 hover:rotate-0 transition-transform duration-500" />
                   </div>
                 </div>
 
                 {/* Content Side */}
                 <div className="w-full md:w-2/3">
-                  <span className="text-sm font-semibold text-blue-500 dark:text-blue-400 uppercase tracking-wider mb-2 block">
+                  <span className="text-sm font-semibold text-primary dark:text-accent uppercase tracking-wider mb-2 block">
                     0{index + 1}
                   </span>
-                  <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-4">
+                  <h3 className="text-2xl md:text-3xl font-bold text-heading mb-4">
                     {service.title}
                   </h3>
-                  <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed mb-6">
+                  <p className="text-muted text-lg leading-relaxed mb-6">
                     {service.description}
                   </p>
                   <div className="flex flex-wrap gap-3">
                     {service.points.map((point, i) => (
                       <span
                         key={i}
-                        className="px-4 py-2 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-sm rounded-full border border-gray-200 dark:border-gray-700"
+                        className="px-4 py-2 bg-cream dark:bg-card text-body text-sm rounded-full border border-border"
                       >
                         {point}
                       </span>

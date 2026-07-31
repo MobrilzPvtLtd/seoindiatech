@@ -25,9 +25,9 @@ export default function OurProcess() {
   ]
 
   return (
-    <section className="px-6 md:px-12 py-16 bg-gray-50 dark:bg-gray-900">
+    <section className="px-6 md:px-12 py-16 bg-background">
       <div className="max-w-5xl mx-auto">
-        <h4 className="text-3xl md:text-4xl font-bold mb-10 text-gray-900 dark:text-white">
+        <h4 className="text-3xl md:text-4xl font-bold mb-10 text-heading">
           Our process
         </h4>
 
@@ -35,12 +35,12 @@ export default function OurProcess() {
           {steps.map((step, index) => (
             <div
               key={index}
-              className="bg-white dark:bg-gray-800 rounded-xl shadow-sm hover:shadow-md transition p-6 border-l-4 border-blue-600"
+              className="bg-card dark:bg-card rounded-xl shadow-sm hover:shadow-md transition p-6 border-l-4 border-primary"
             >
-              <h5 className="text-xl md:text-2xl font-semibold mb-2 text-gray-900 dark:text-white">
+              <h5 className="text-xl md:text-2xl font-semibold mb-2 text-heading">
                 {step.title}
               </h5>
-              <p className="text-gray-700 dark:text-gray-300 text-base md:text-lg leading-7 text-justify">
+              <p className="text-body text-base md:text-lg leading-7 text-justify">
                 {step.description}
               </p>
             </div>

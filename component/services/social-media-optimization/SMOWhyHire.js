@@ -6,22 +6,22 @@ export default function SMOWhyHire() {
   return (
     <>
       {/* WHY HIRE SECTION */}
-      <section className="relative py-20 md:py-32 bg-gray-50 dark:bg-gray-950 transition-colors duration-300">
+      <section className="relative py-20 md:py-32 bg-background transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="grid lg:grid-cols-2 gap-14 items-start">
             {/* LEFT SIDE CONTENT */}
             <div>
-              <h4 className="text-2xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 md:mb-8">
+              <h4 className="text-2xl md:text-4xl font-bold text-heading mb-6 md:mb-8">
                 Why hire a social media optimization agency
               </h4>
 
-              <p className="text-gray-600 dark:text-gray-300 text-base md:text-lg leading-relaxed text-justify mb-6">
+              <p className="text-muted text-base md:text-lg leading-relaxed text-justify mb-6">
                 Many brands try to manage everything in house and still
                 struggle. The problem is not effort. The problem is direction. A
                 social media optimization agency gives you a system:
               </p>
 
-              <p className="text-gray-600 dark:text-gray-300 text-base md:text-lg leading-relaxed text-justify">
+              <p className="text-muted text-base md:text-lg leading-relaxed text-justify">
                 If you are comparing options, choose a social media optimization
                 company that can also support the rest of your funnel. Many
                 clients need a full plan, so we align SMO with SEO, paid ads,
@@ -33,7 +33,7 @@ export default function SMOWhyHire() {
 
             {/* RIGHT SIDE BENEFIT PANEL */}
             <div>
-              <div className="bg-white dark:bg-gray-900 rounded-3xl shadow-lg p-6 md:p-10 border border-gray-200 dark:border-gray-800">
+              <div className="bg-white dark:bg-background rounded-3xl shadow-lg p-6 md:p-10 border border-gray-200 dark:border-gray-800">
                 <ul className="space-y-5">
                   {[
                     'Clear goals for each platform',
@@ -44,11 +44,11 @@ export default function SMOWhyHire() {
                   ].map((item, index) => (
                     <li key={index} className="flex items-start gap-4">
                       {/* NUMBER CIRCLE */}
-                      <span className="shrink-0 flex items-center justify-center w-7 h-7 md:w-9 md:h-9 rounded-full bg-gradient-to-br from-blue-600 to-purple-600 text-white text-xs md:text-sm font-semibold">
+                      <span className="shrink-0 flex items-center justify-center w-7 h-7 md:w-9 md:h-9 rounded-full bg-gradient-to-br from-primary to-secondary text-white text-xs md:text-sm font-semibold">
                         {index + 1}
                       </span>
 
-                      <span className="text-gray-700 dark:text-gray-300 text-sm md:text-lg leading-relaxed">
+                      <span className="text-body text-sm md:text-lg leading-relaxed">
                         {item}
                       </span>
                     </li>
@@ -60,12 +60,12 @@ export default function SMOWhyHire() {
 
           {/* SECOND SECTION */}
           <div className="mt-20 md:mt-28">
-            <h4 className="text-2xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 md:mb-8">
+            <h4 className="text-2xl md:text-4xl font-bold text-heading mb-6 md:mb-8">
               Social media optimization services India for different business
               types
             </h4>
 
-            <p className="text-gray-600 dark:text-gray-300 text-base md:text-lg leading-relaxed text-justify mb-8">
+            <p className="text-muted text-base md:text-lg leading-relaxed text-justify mb-8">
               Social media optimization services India work well for:
             </p>
 
@@ -80,16 +80,16 @@ export default function SMOWhyHire() {
               ].map((item, index) => (
                 <div
                   key={index}
-                  className="bg-white dark:bg-gray-900 p-6 md:p-8 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 border border-gray-200 dark:border-gray-800"
+                  className="bg-white dark:bg-background p-6 md:p-8 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 border border-gray-200 dark:border-gray-800"
                 >
-                  <p className="text-gray-700 dark:text-gray-300 text-sm md:text-lg leading-relaxed">
+                  <p className="text-body text-sm md:text-lg leading-relaxed">
                     {item}
                   </p>
                 </div>
               ))}
             </div>
 
-            <p className="mt-10 md:mt-12 text-gray-600 dark:text-gray-300 text-base md:text-lg leading-relaxed text-justify">
+            <p className="mt-10 md:mt-12 text-muted text-base md:text-lg leading-relaxed text-justify">
               We adjust the approach based on your audience and your buying
               cycle. Some businesses need daily reels. Others need fewer posts
               and stronger messaging. Social media optimization services are not
@@ -102,17 +102,17 @@ export default function SMOWhyHire() {
       {/* GBP SECTION */}
       <section className="relative py-20 md:py-24 bg-gradient-to-br from-gray-50 to-white dark:from-gray-950 dark:to-gray-900 transition-colors duration-300">
         <div className="max-w-6xl mx-auto px-6 lg:px-12">
-          <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-3xl p-6 md:p-14 shadow-lg">
-            <h5 className="text-xl md:text-3xl font-bold text-gray-900 dark:text-white mb-6 md:mb-8">
+          <div className="bg-white dark:bg-background border border-gray-200 dark:border-gray-800 rounded-3xl p-6 md:p-14 shadow-lg">
+            <h5 className="text-xl md:text-3xl font-bold text-heading mb-6 md:mb-8">
               Add on support: Google Business Profile GBP optimization
             </h5>
 
-            <p className="text-gray-600 dark:text-gray-300 text-base md:text-lg leading-relaxed text-justify mb-8">
+            <p className="text-muted text-base md:text-lg leading-relaxed text-justify mb-8">
               Social and local search often work together. If you serve a local
               area, google business profile{' '}
               <Link
                 href="/services/gbp-optimization"
-                className="text-blue-600 dark:text-blue-400 hover:underline"
+                className="text-primary dark:text-accent hover:underline"
               >
                 GBP optimization
               </Link>{' '}
@@ -129,17 +129,17 @@ export default function SMOWhyHire() {
               ].map((item, index) => (
                 <li key={index} className="flex items-start gap-4">
                   {/* CHECK ICON */}
-                  <span className="shrink-0 flex items-center justify-center w-7 h-7 md:w-9 md:h-9 rounded-full bg-gradient-to-br from-blue-600 to-purple-600 text-white">
+                  <span className="shrink-0 flex items-center justify-center w-7 h-7 md:w-9 md:h-9 rounded-full bg-gradient-to-br from-primary to-secondary text-white">
                     <Check className="w-4 h-4 md:w-5 md:h-5" aria-hidden="true" />
                   </span>
 
-                  <span className="text-gray-700 dark:text-gray-300 text-sm md:text-lg leading-relaxed">
+                  <span className="text-body text-sm md:text-lg leading-relaxed">
                     {item}
                   </span>
                 </li>
               ))}
             </ul>
-            <p className="text-gray-600 dark:text-gray-300 text-base md:text-lg leading-relaxed text-justify mt-8">
+            <p className="text-muted text-base md:text-lg leading-relaxed text-justify mt-8">
               When your social pages and GBP look consistent, people trust you
               faster.
             </p>

@@ -8,15 +8,15 @@ export default function GenerativeHero() {
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         {/* LEFT CONTENT */}
         <div className="space-y-8">
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight text-gray-900 dark:text-white">
+          <h1 className="text-4xl md:text-5xl font-bold leading-tight text-heading">
             AI{' '}
-            <span className="text-blue-600 dark:text-blue-400">
+            <span className="text-primary dark:text-accent">
               SEO Services
             </span>{' '}
             for Consistent Organic Growth
           </h1>
 
-          <div className="space-y-6 text-lg leading-relaxed text-gray-700 dark:text-gray-300 text-justify">
+          <div className="space-y-6 text-lg leading-relaxed text-body text-justify">
             <p>
               Search is changing fast. People still use Google, but they also
               ask questions in AI tools and chat results. That shift changes how
@@ -30,7 +30,7 @@ export default function GenerativeHero() {
               SEO India Tech works as an{' '}
               <Link
                 href="/"
-                className="text-blue-600 dark:text-blue-400 hover:underline"
+                className="text-primary dark:text-accent hover:underline"
               >
                 AI SEO company
               </Link>{' '}

@@ -7,52 +7,52 @@ const serviceItems = [
     title: "SEO-Driven Writing",
     description:
       "Get found by the people who matter most-your potential customers.",
-    icon: <Search className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
+    icon: <Search className="w-5 h-5 text-primary dark:text-accent" />,
   },
   {
     title: "Persuasive Copy",
     description: "Speak directly to your audience's needs and inspire action.",
     icon: (
-      <MessageSquare className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+      <MessageSquare className="w-5 h-5 text-primary dark:text-accent" />
     ),
   },
   {
     title: "Multimedia Excellence",
     description:
       "From eye-catching visuals to engaging videos, we tailor content to your audience's preferences.",
-    icon: <Film className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
+    icon: <Film className="w-5 h-5 text-primary dark:text-accent" />,
   },
   {
     title: "Analytics & Optimization",
     description:
       "We measure performance and continuously refine your content for maximum impact.",
-    icon: <BarChart className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
+    icon: <BarChart className="w-5 h-5 text-primary dark:text-accent" />,
   },
 ];
 
 const Contentservices = () => {
   return (
-    <section className="bg-white dark:bg-gray-900 py-20 px-4 relative overflow-hidden">
+    <section className="bg-white dark:bg-background py-20 px-4 relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-20 right-10 w-64 h-64 bg-blue-50 dark:bg-blue-900/10 rounded-full blur-3xl opacity-70 dark:opacity-30"></div>
-        <div className="absolute bottom-10 left-10 w-80 h-80 bg-blue-50 dark:bg-blue-900/10 rounded-full blur-3xl opacity-70 dark:opacity-30"></div>
+        <div className="absolute top-20 right-10 w-64 h-64 bg-background dark:bg-primary/20/10 rounded-full blur-3xl opacity-70 dark:opacity-30"></div>
+        <div className="absolute bottom-10 left-10 w-80 h-80 bg-background dark:bg-primary/20/10 rounded-full blur-3xl opacity-70 dark:opacity-30"></div>
       </div>
 
       {/* Page Heading */}
       <div className="max-w-7xl mx-auto text-center mb-16 relative z-10">
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300 rounded-full text-sm font-medium mb-4">
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-primary/10 dark:bg-primary/20 text-primary dark:text-accent rounded-full text-sm font-medium mb-4">
           <span>Content Excellence</span>
         </div>
 
-        <h2 className="text-3xl md:text-5xl font-bold leading-tight text-gray-900 dark:text-white mb-6">
+        <h2 className="text-3xl md:text-5xl font-bold leading-tight text-heading mb-6">
           Powerful Content Marketing Services for Every
           <br /> Industry
         </h2>
 
-        <div className="w-24 h-1.5 bg-blue-600 dark:bg-blue-500 rounded-full mx-auto mb-6"></div>
+        <div className="w-24 h-1.5 bg-primary dark:bg-primary rounded-full mx-auto mb-6"></div>
 
-        <p className="max-w-6xl mx-auto text-gray-700 dark:text-gray-300 text-lg">
+        <p className="max-w-6xl mx-auto text-body text-lg">
           Great content goes beyond words-it builds trust, improves conversions,
           and enhances brand recognition. Our specialized content marketing
           services ensure your brand message reaches the right audience through
@@ -67,13 +67,13 @@ const Contentservices = () => {
         {/* Left Section */}
         <div className="space-y-6">
           <div>
-            <p className="text-sm text-blue-700 dark:text-blue-400 font-semibold mb-2">
+            <p className="text-sm text-primary dark:text-accent font-semibold mb-2">
               What We Offer
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white leading-tight mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-heading leading-tight mb-4">
               Content That Converts
             </h2>
-            <p className="text-justify text-gray-700 dark:text-gray-300 mb-6">
+            <p className="text-justify text-body mb-6">
               From blogs to videos, every piece we create is backed by
               strategy-designed to position your brand as a leader and turn
               casual visitors into committed clients.
@@ -97,19 +97,19 @@ const Contentservices = () => {
 
           {/* Stats section */}
           <div className="grid grid-cols-2 gap-4 mt-8">
-            <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
-              <p className="text-3xl font-bold text-blue-700 dark:text-blue-400">
+            <div className="bg-background dark:bg-primary/15 p-4 rounded-lg">
+              <p className="text-3xl font-bold text-primary dark:text-accent">
                 67%
               </p>
-              <p className="text-gray-700 dark:text-gray-300 text-sm">
+              <p className="text-body text-sm">
                 of B2B buyers rely on content to make purchasing decisions
               </p>
             </div>
-            <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
-              <p className="text-3xl font-bold text-blue-700 dark:text-blue-400">
+            <div className="bg-background dark:bg-primary/15 p-4 rounded-lg">
+              <p className="text-3xl font-bold text-primary dark:text-accent">
                 6x
               </p>
-              <p className="text-gray-700 dark:text-gray-300 text-sm">
+              <p className="text-body text-sm">
                 higher conversion rates for companies using content marketing
               </p>
             </div>
@@ -117,12 +117,12 @@ const Contentservices = () => {
         </div>
 
         {/* Right Section */}
-        <div className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 p-8 space-y-8 shadow-[0_8px_0px_0px_rgba(59,130,246,0.5)] dark:shadow-[0_8px_0px_0px_rgba(59,130,246,0.3)] transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+        <div className="bg-card dark:bg-card rounded-2xl border border-border p-8 space-y-8 shadow-[0_8px_0px_0px_rgba(59,130,246,0.5)] dark:shadow-[0_8px_0px_0px_rgba(59,130,246,0.3)] transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
           <div className="mb-8">
-            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
+            <h3 className="text-2xl font-bold text-heading mb-2">
               Our Content Services
             </h3>
-            <p className="text-gray-600 dark:text-gray-400">
+            <p className="text-muted">
               Comprehensive solutions designed to elevate your brand's voice and
               visibility
             </p>
@@ -132,14 +132,14 @@ const Contentservices = () => {
           <div className="space-y-6">
             {serviceItems.map((item, index) => (
               <div key={index} className="flex items-start space-x-4">
-                <div className="p-2 bg-blue-100 dark:bg-blue-900/40 rounded-lg">
+                <div className="p-2 bg-primary/10 dark:bg-primary/20/40 rounded-lg">
                   {item.icon}
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
+                  <h3 className="text-xl font-bold text-heading mb-1">
                     {item.title}
                   </h3>
-                  <p className="text-gray-600 dark:text-gray-400">
+                  <p className="text-muted">
                     {item.description}
                   </p>
                 </div>
@@ -148,8 +148,8 @@ const Contentservices = () => {
           </div>
 
           {/* Call to action */}
-          <div className="pt-4 mt-8 border-t border-gray-100 dark:border-gray-700">
-            <button className="hidden w-full bg-blue-600 hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-600 text-white font-medium py-3 px-6 rounded-lg transition-colors flex items-center justify-center">
+          <div className="pt-4 mt-8 border-t border-border dark:border-border">
+            <button className="hidden w-full bg-primary hover:bg-primary-hover dark:bg-primary-hover dark:hover:bg-primary-hover text-white font-medium py-3 px-6 rounded-lg transition-colors flex items-center justify-center">
               Get a Content Strategy Assessment
               <svg
                 className="ml-2 w-4 h-4"
@@ -173,10 +173,10 @@ const Contentservices = () => {
       {/* Content Process - Optional */}
       <div className="max-w-7xl mx-auto mt-24 relative z-10">
         <div className="text-center mb-12">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-2xl md:text-3xl font-bold text-heading mb-4">
             Our Core Content Strategy Services
           </h2>
-          <p className="text-gray-700 dark:text-gray-300 max-w-5xl mx-auto">
+          <p className="text-body max-w-5xl mx-auto">
             A solid content plan is essential for consistent digital success.
             Our expert content strategy services help you define your brand
             voice, identify target audiences, and map out topics that drive
@@ -221,15 +221,15 @@ const Contentservices = () => {
           ].map((item, index) => (
             <div
               key={index}
-              className="bg-white dark:bg-gray-800 p-6 rounded-xl border border-gray-200 dark:border-gray-700 text-center relative"
+              className="bg-card dark:bg-card p-6 rounded-xl border border-border text-center relative"
             >
-              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm">
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm">
                 {item.step}
               </div>
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white mt-3 mb-2">
+              <h3 className="text-xl font-bold text-heading mt-3 mb-2">
                 {item.title}
               </h3>
-              {/* <p className="text-gray-600 dark:text-gray-400 text-sm">
+              {/* <p className="text-muted text-sm">
                 {item.desc}
               </p> */}
             </div>

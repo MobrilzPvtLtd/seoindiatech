@@ -3,15 +3,15 @@ import Image from 'next/image'
 
 const Manage = () => {
   return (
-    <section className="bg-white dark:bg-gray-900 pt-4 pb-8">
+    <section className="bg-white dark:bg-background pt-4 pb-8">
       <section className="max-w-7xl mx-auto px-4 py-16 md:py-20 text-center">
         {/* Section Header */}
-        <h1 className="text-3xl md:text-5xl font-bold leading-snug text-gray-900 dark:text-white">
+        <h1 className="text-3xl md:text-5xl font-bold leading-snug text-heading">
           Centralized Social Media
           <br />
-          <span className="text-blue-700 dark:text-blue-500"> Management</span>
+          <span className="text-primary dark:text-primary"> Management</span>
         </h1>
-        <p className="mt-4 text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+        <p className="mt-4 text-muted max-w-3xl mx-auto">
           We offer a comprehensive platform to simplify and streamline your{' '}
           <b>social media management</b>
         </p>
@@ -20,7 +20,7 @@ const Manage = () => {
         <div className="mt-12 flex flex-col md:flex-row items-center justify-center gap-8">
           {/* Card 1 */}
           <div className="w-full md:w-1/3 max-w-sm">
-            <div className="relative overflow-hidden rounded-xl border-1 border-blue-500 dark:border-gray-600 hover:scale-105 transition-transform duration-300">
+            <div className="relative overflow-hidden rounded-xl border-1 border-primary dark:border-gray-600 hover:scale-105 transition-transform duration-300">
               <Image
                 src="/images/services/trend.png"
                 alt="Research"
@@ -29,10 +29,10 @@ const Manage = () => {
                 className="w-full h-auto object-cover rounded-xl shadow-md"
               />
             </div>
-            <h2 className="text-blue-700 dark:text-blue-400 mt-4 text-xl font-semibold">
+            <h2 className="text-primary dark:text-accent mt-4 text-xl font-semibold">
               Research
             </h2>
-            <p className="text-gray-700 dark:text-gray-300">
+            <p className="text-body">
               Our comprehensive research process provides the foundation for
               success.
             </p>
@@ -40,7 +40,7 @@ const Manage = () => {
 
           {/* Card 2 */}
           <div className="w-full md:w-1/3 max-w-sm">
-            <div className="relative overflow-hidden rounded-xl border-1 border-blue-500 dark:border-gray-600 hover:scale-105 transition-transform duration-300">
+            <div className="relative overflow-hidden rounded-xl border-1 border-primary dark:border-gray-600 hover:scale-105 transition-transform duration-300">
               <Image
                 src="/images/services/plan.png"
                 alt="Planning"
@@ -50,10 +50,10 @@ const Manage = () => {
               />
             </div>
 
-            <h2 className="text-blue-700 dark:text-blue-400 mt-4 text-xl font-semibold">
+            <h2 className="text-primary dark:text-accent mt-4 text-xl font-semibold">
               Planning
             </h2>
-            <p className="text-gray-700 dark:text-gray-300">
+            <p className="text-body">
               Our planning expertise turns your ideas into powerful strategies
               for success.
             </p>
@@ -61,7 +61,7 @@ const Manage = () => {
 
           {/* Card 3 */}
           <div className="w-full md:w-1/3 max-w-sm">
-            <div className="relative overflow-hidden rounded-xl border-1 border-blue-500 dark:border-gray-600 hover:scale-105 transition-transform duration-300">
+            <div className="relative overflow-hidden rounded-xl border-1 border-primary dark:border-gray-600 hover:scale-105 transition-transform duration-300">
               <Image
                 src="/images/services/camera.png"
                 alt="Posting"
@@ -70,10 +70,10 @@ const Manage = () => {
                 className="w-full h-auto object-cover rounded-xl shadow-md"
               />
             </div>
-            <h2 className="text-blue-700 dark:text-blue-400 mt-4 text-xl font-semibold">
+            <h2 className="text-primary dark:text-accent mt-4 text-xl font-semibold">
               Posting
             </h2>
-            <p className="text-gray-700 dark:text-gray-300">
+            <p className="text-body">
               Our posting strategy blends creativity and precision to ensure
               your content is both engaging and effective.
             </p>
@@ -82,7 +82,7 @@ const Manage = () => {
 
         {/* Optional CTA button */}
         <div className="mt-10 hidden">
-          <button className="px-6 py-3 bg-blue-700 dark:bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-800 dark:hover:bg-blue-700 transition-colors">
+          <button className="px-6 py-3 bg-primary-hover dark:bg-primary text-white rounded-lg font-semibold hover:bg-blue-800 dark:hover:bg-primary-hover transition-colors">
             Explore our platform
           </button>
         </div>

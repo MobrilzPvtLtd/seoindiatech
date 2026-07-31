@@ -54,7 +54,7 @@ export default function BlogDetail() {
         />
       </Head>
 
-      <section className="bg-white dark:bg-gray-900 pt-32 pb-12 px-4 md:px-8">
+      <section className="bg-white dark:bg-background pt-32 pb-12 px-4 md:px-8">
         <div className="max-w-4xl mx-auto">
           {/* Main Blog Content */}
           <div className="mb-10">
@@ -68,13 +68,13 @@ export default function BlogDetail() {
               />
             </div>
 
-            <div className="mb-4 text-sm text-gray-500 dark:text-gray-400">
-              <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-xs">
+            <div className="mb-4 text-sm text-muted">
+              <span className="bg-primary text-white px-3 py-1 rounded-full text-xs">
                 {post.category}
               </span>
             </div>
 
-            <h1 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900 dark:text-white">
+            <h1 className="text-3xl md:text-4xl font-bold mb-6 text-heading">
               {post.title}
             </h1>
 
@@ -85,13 +85,13 @@ export default function BlogDetail() {
                   return (
                     <p
                       key={index}
-                      className="leading-relaxed text-justify text-gray-700 dark:text-gray-300"
+                      className="leading-relaxed text-justify text-body"
                     >
                       {block.text}
 
                       {block.link && (
                         <Link href={block.link.url}>
-                          <span className="text-blue-600 dark:text-blue-400 font-semibold hover:underline">
+                          <span className="text-primary dark:text-accent font-semibold hover:underline">
                             {block.link.text}
                           </span>
                         </Link>
@@ -106,7 +106,7 @@ export default function BlogDetail() {
                   return (
                     <h2
                       key={index}
-                      className="text-2xl font-semibold mt-10 text-gray-900 dark:text-white"
+                      className="text-2xl font-semibold mt-10 text-heading"
                     >
                       {block.text}
                     </h2>
@@ -117,7 +117,7 @@ export default function BlogDetail() {
                   return (
                     <ul
                       key={index}
-                      className="list-disc pl-6 space-y-2 text-justify text-gray-700 dark:text-gray-300"
+                      className="list-disc pl-6 space-y-2 text-justify text-body"
                     >
                       {block.items.map((item, i) => (
                         <li
@@ -133,7 +133,7 @@ export default function BlogDetail() {
                   return (
                     <ol
                       key={index}
-                      className="list-decimal pl-6 space-y-2 text-justify text-gray-700 dark:text-gray-300"
+                      className="list-decimal pl-6 space-y-2 text-justify text-body"
                     >
                       {block.items.map((item, i) => (
                         <li
@@ -152,7 +152,7 @@ export default function BlogDetail() {
 
           {/* Recent Posts Below Blog (commented out as in original) */}
           {/* <div className="mt-16">
-            <h3 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">
+            <h3 className="text-2xl font-bold mb-6 text-heading">
               Recent Posts
             </h3>
 
@@ -161,7 +161,7 @@ export default function BlogDetail() {
                 <div
                   key={item.slug}
                   onClick={() => handleRecentClick(item.slug)}
-                  className="cursor-pointer bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-lg transition p-4"
+                  className="cursor-pointer bg-card dark:bg-card rounded-xl shadow-md hover:shadow-lg transition p-4"
                 >
                   <Image
                     src={item.image}
@@ -171,11 +171,11 @@ export default function BlogDetail() {
                     className="rounded-lg object-cover w-full h-40 mb-4"
                   />
 
-                  <span className="text-xs bg-blue-600 text-white px-2 py-1 rounded">
+                  <span className="text-xs bg-primary text-white px-2 py-1 rounded">
                     {item.category}
                   </span>
 
-                  <h4 className="mt-3 font-semibold text-gray-900 dark:text-white">
+                  <h4 className="mt-3 font-semibold text-heading">
                     {item.title}
                   </h4>
                 </div>

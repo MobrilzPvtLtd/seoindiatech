@@ -5,7 +5,7 @@ const CRMToolService = () => {
   const crmSections = [
     {
       id: 1,
-      icon: <Users className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
+      icon: <Users className="w-6 h-6 text-primary dark:text-accent" />,
       title: 'CRM in Action - Streamlining Success Through Customer Focus',
       text:
         'Our CRM system centralizes customer data, streamlines communication, and fosters lasting relationships through powerful features like contact management, sales automation, and in-depth customer analytics.',
@@ -15,7 +15,7 @@ const CRMToolService = () => {
     {
       id: 2,
       icon: (
-        <CheckSquare className="w-6 h-6 text-blue-600 dark:text-blue-400" />
+        <CheckSquare className="w-6 h-6 text-primary dark:text-accent" />
       ),
       title: 'Mastering the Art of Task and Project Management',
       text:
@@ -25,7 +25,7 @@ const CRMToolService = () => {
     },
     {
       id: 3,
-      icon: <Link className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
+      icon: <Link className="w-6 h-6 text-primary dark:text-accent" />,
       title: 'Connected Systems for Effortless Workflows',
       text:
         'A key strength of our CRM and management tools is their seamless integration with other business applications. By connecting email, calendars, and third-party apps, we create a unified ecosystem that saves time, minimizes errors, and ensures smooth information flow across your organization.',
@@ -34,7 +34,7 @@ const CRMToolService = () => {
     },
     {
       id: 4,
-      icon: <Settings className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
+      icon: <Settings className="w-6 h-6 text-primary dark:text-accent" />,
       title: 'Tailored Solutions for Your Business',
       text:
         'Every business is unique, and so are its requirements. Our CRM and management tools are fully customizable, letting you tailor everything from CRM fields to project workflows. This flexibility empowers your team to shape the system perfectly around your business processes.',
@@ -43,7 +43,7 @@ const CRMToolService = () => {
     },
     {
       id: 5,
-      icon: <Shield className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
+      icon: <Shield className="w-6 h-6 text-primary dark:text-accent" />,
       title: 'Secure and Compliant Solutions',
       text:
         'In today\'s world of rising cyber threats, protecting your business data is critical. Our CRM and management tools incorporate robust security measures, adhere to industry regulations, and prioritize data privacy, giving you complete peace of mind.',
@@ -53,22 +53,22 @@ const CRMToolService = () => {
   ]
 
   return (
-    <section className="bg-gray-50 dark:bg-gray-900 py-16 md:py-24 px-4 md:px-8 relative overflow-hidden">
+    <section className="bg-background py-16 md:py-24 px-4 md:px-8 relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/4 right-0 w-72 h-72 bg-white/50 dark:bg-blue-900/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 left-1/4 w-80 h-80 bg-blue-300/30 dark:bg-blue-800/10 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/4 right-0 w-72 h-72 bg-white/50 dark:bg-primary/20/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 left-1/4 w-80 h-80 bg-accent/20 dark:bg-primary/10 rounded-full blur-3xl"></div>
       </div>
 
       <div className="max-w-5xl mx-auto relative z-10">
-        <div className="bg-white dark:bg-gray-800 shadow-xl rounded-2xl overflow-hidden">
+        <div className="bg-card dark:bg-card shadow-xl rounded-2xl overflow-hidden">
           {/* Header with blue gradient */}
-          <div className="bg-gradient-to-r from-gray-600 to-gray-800 dark:from-gray-700 dark:to-gray-800  px-6 md:px-10 py-10 text-white">
+          <div className="bg-gradient-to-r from-gray-600 to-gray-800 dark:from-gray-700 dark:to-surface  px-6 md:px-10 py-10 text-white">
             <h1 className="text-3xl md:text-4xl font-bold text-center">
               CRM & Management Tools
             </h1>
             <div className="w-20 h-1 bg-white/50 mx-auto my-4 rounded-full"></div>
-            <h2 className="text-xl md:text-2xl font-medium text-center text-blue-100">
+            <h2 className="text-xl md:text-2xl font-medium text-center text-white/90">
               How Does It Work?
             </h2>
           </div>
@@ -76,7 +76,7 @@ const CRMToolService = () => {
           {/* Content */}
           <div className="p-6 md:p-10">
             <div className="flex items-center justify-center mb-10">
-              <div className="px-6 py-3 bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-sm font-medium">
+              <div className="px-6 py-3 bg-background dark:bg-primary/15 text-primary dark:text-accent rounded-full text-sm font-medium">
                 Complete Business Solution
               </div>
             </div>
@@ -89,22 +89,22 @@ const CRMToolService = () => {
                 >
                   {/* Icon */}
                   <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center w-14 h-14 bg-blue-100 dark:bg-blue-900/50 rounded-lg border border-blue-200 dark:border-blue-800 shadow-sm group-hover:bg-blue-200 dark:group-hover:bg-blue-800/60 transition-colors duration-300">
+                    <div className="flex items-center justify-center w-14 h-14 bg-primary/10 dark:bg-primary/20 rounded-lg border border-primary/30 dark:border-primary/40 shadow-sm group-hover:bg-primary/15 dark:group-hover:bg-primary/25 transition-colors duration-300">
                       {section.icon}
                     </div>
                   </div>
 
                   {/* Content */}
                   <div className="flex-grow">
-                    <div className="bg-gray-50 dark:bg-gray-800/80 border border-gray-100 dark:border-gray-700 rounded-xl p-6 shadow-sm">
-                      <h3 className="font-semibold text-blue-600 dark:text-blue-400 text-xl mb-3">
+                    <div className="bg-gray-50 dark:bg-card/80 border border-border dark:border-border rounded-xl p-6 shadow-sm">
+                      <h3 className="font-semibold text-primary dark:text-accent text-xl mb-3">
                         {section.title}
                       </h3>
-                      <p className="text-gray-700 dark:text-gray-300 mb-4">
+                      <p className="text-body mb-4">
                         {section.text}
                       </p>
-                      <div className="mt-3 pl-4 border-l-2 border-blue-200 dark:border-blue-800">
-                        <p className="text-gray-600 dark:text-gray-400 text-sm">
+                      <div className="mt-3 pl-4 border-l-2 border-primary/30 dark:border-primary/40">
+                        <p className="text-muted text-sm">
                           {section.detail}
                         </p>
                       </div>
@@ -115,8 +115,8 @@ const CRMToolService = () => {
             </div>
 
             {/* Feature highlights */}
-            <div className="mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">
+            <div className="mt-12 pt-8 border-t border-border">
+              <h3 className="text-2xl font-bold text-heading mb-6 text-center">
                 Key Features at a Glance
               </h3>
 
@@ -140,12 +140,12 @@ const CRMToolService = () => {
                 ].map((feature, index) => (
                   <div
                     key={index}
-                    className="bg-blue-50 dark:bg-blue-900/20 border border-blue-100 dark:border-blue-800 rounded-lg p-4 text-center hover:shadow-md transition-shadow duration-300"
+                    className="bg-background dark:bg-primary/15 border border-primary/20 dark:border-primary/40 rounded-lg p-4 text-center hover:shadow-md transition-shadow duration-300"
                   >
-                    <div className="text-lg font-semibold text-gray-900 dark:text-white mb-1">
+                    <div className="text-lg font-semibold text-heading mb-1">
                       {feature.title}
                     </div>
-                    <div className="text-sm text-blue-600 dark:text-blue-400">
+                    <div className="text-sm text-primary dark:text-accent">
                       {feature.value}
                     </div>
                   </div>
@@ -164,12 +164,12 @@ const CRMToolService = () => {
           ].map((stat, index) => (
             <div
               key={index}
-              className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md text-center border border-gray-200 dark:border-gray-700"
+              className="bg-card dark:bg-card p-6 rounded-xl shadow-md text-center border border-border"
             >
-              <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">
+              <div className="text-3xl font-bold text-primary dark:text-accent mb-2">
                 {stat.value}
               </div>
-              <div className="text-gray-700 dark:text-gray-300">
+              <div className="text-body">
                 {stat.title}
               </div>
             </div>
@@ -178,12 +178,12 @@ const CRMToolService = () => {
       </div>
       {/* Why Market Research Matters Section */}
       <div className="mt-16">
-        <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 p-6 md:p-10">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white text-center mb-4">
+        <div className="bg-card dark:bg-card rounded-2xl shadow-xl border border-border p-6 md:p-10">
+          <h2 className="text-2xl md:text-3xl font-bold text-heading text-center mb-4">
             Why CRM Tools Matter for Growing Businesses
           </h2>
 
-          <p className="text-gray-700 dark:text-gray-300 text-center max-w-3xl mx-auto mb-10">
+          <p className="text-body text-center max-w-3xl mx-auto mb-10">
             Modern businesses succeed when they understand customer behavior,
             track performance, and create personalized customer journeys. CRM
             tools act as the foundation of successful digital operations by:
@@ -228,13 +228,13 @@ const CRMToolService = () => {
               return (
                 <div
                   key={i}
-                  className="flex items-start gap-4 p-5 bg-gray-50 dark:bg-gray-900/40 border border-gray-200 dark:border-gray-700 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 group"
+                  className="flex items-start gap-4 p-5 bg-background/40 border border-border rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 group"
                 >
-                  <div className="w-12 h-12 rounded-xl bg-blue-100 dark:bg-blue-900/40 border border-blue-300/50 dark:border-blue-700 flex items-center justify-center shadow-sm">
-                    <Icon className="w-6 h-6 text-blue-600 dark:text-blue-400" />
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 dark:bg-primary/20/40 border border-primary/30/50 dark:border-primary/30 flex items-center justify-center shadow-sm">
+                    <Icon className="w-6 h-6 text-primary dark:text-accent" />
                   </div>
                   <div>
-                    <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-1">
+                    <h4 className="text-lg font-semibold text-heading mb-1">
                       {item.title}
                     </h4>
                   </div>
@@ -244,7 +244,7 @@ const CRMToolService = () => {
           </div>
 
           {/* Bottom paragraph */}
-          <p className="text-gray-700 dark:text-gray-300 text-center max-w-3xl mx-auto mt-10">
+          <p className="text-body text-center max-w-3xl mx-auto mt-10">
             With our structured <b>crm tool management,</b> companies can build
             lasting customer relationships while eliminating manual errors and
             redundant tasks. CRM tools don't just support sales workflows-they
@@ -255,19 +255,19 @@ const CRMToolService = () => {
       </div>
 
       <div className="mt-16">
-        <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 p-6 md:p-10">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white text-center mb-4">
+        <div className="bg-card dark:bg-card rounded-2xl shadow-xl border border-border p-6 md:p-10">
+          <h2 className="text-2xl md:text-3xl font-bold text-heading text-center mb-4">
             Complete CRM Tool Management for Every Industry
           </h2>
 
-          <p className="text-gray-700 dark:text-gray-300 text-center max-w-3xl mx-auto mb-10">
+          <p className="text-body text-center max-w-3xl mx-auto mb-10">
             Every business has different customer processes, sales cycles,
             communication channels, and reporting needs. Our CRM specialists
             analyze your business structure and build tailored CRM architecture
             that fits your workflow-no generalized solutions, only strategic and
             customized deployments.
           </p>
-          <p className="text-gray-700 dark:text-gray-300 text-center max-w-3xl mx-auto mb-10">
+          <p className="text-body text-center max-w-3xl mx-auto mb-10">
             Our <b>crm management tool</b> services cover end-to-end support
             including:
           </p>
@@ -314,13 +314,13 @@ const CRMToolService = () => {
               return (
                 <div
                   key={i}
-                  className="flex items-start gap-4 p-5 bg-gray-50 dark:bg-gray-900/40 border border-gray-200 dark:border-gray-700 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 group"
+                  className="flex items-start gap-4 p-5 bg-background/40 border border-border rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 group"
                 >
-                  <div className="w-12 h-12 rounded-xl bg-blue-100 dark:bg-blue-900/40 border border-blue-300/50 dark:border-blue-700 flex items-center justify-center shadow-sm">
-                    <Icon className="w-6 h-6 text-blue-600 dark:text-blue-400" />
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 dark:bg-primary/20/40 border border-primary/30/50 dark:border-primary/30 flex items-center justify-center shadow-sm">
+                    <Icon className="w-6 h-6 text-primary dark:text-accent" />
                   </div>
                   <div>
-                    <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-1">
+                    <h4 className="text-lg font-semibold text-heading mb-1">
                       {item.title}
                     </h4>
                   </div>
@@ -329,7 +329,7 @@ const CRMToolService = () => {
             })}
           </div>
 
-          <p className="text-gray-700 dark:text-gray-300 text-center max-w-3xl mx-auto mt-10">
+          <p className="text-body text-center max-w-3xl mx-auto mt-10">
             We ensure your CRM becomes a productive, user-friendly, and
             high-performing asset for daily operations.
           </p>

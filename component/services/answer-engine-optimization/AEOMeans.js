@@ -5,9 +5,9 @@ export default function AEOMeans() {
     <section className="relative bg-white dark:bg-gray-950 py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
-        <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 dark:text-white mb-12">
+        <h2 className="text-3xl sm:text-4xl font-bold text-center text-heading mb-12">
           What{' '}
-          <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
             answer engine optimization
           </span>{' '}
           means for your business
@@ -16,8 +16,8 @@ export default function AEOMeans() {
         <div className="grid lg:grid-cols-2 gap-14 items-center">
           {/* Left Content */}
           <div className="space-y-6">
-            <p className="text-lg text-gray-700 dark:text-gray-300 text-justify leading-relaxed">
-              <span className="font-semibold text-gray-900 dark:text-white">
+            <p className="text-lg text-body text-justify leading-relaxed">
+              <span className="font-semibold text-heading">
                 Answer engine optimization
               </span>{' '}
               is the practice of shaping your content so AI systems and search
@@ -25,9 +25,9 @@ export default function AEOMeans() {
               intent, and format.
             </p>
 
-            <p className="text-lg text-gray-700 dark:text-gray-300 text-justify leading-relaxed">
+            <p className="text-lg text-body text-justify leading-relaxed">
               When done well,{' '}
-              <span className="font-semibold text-gray-900 dark:text-white">
+              <span className="font-semibold text-heading">
                 answer engine optimization
               </span>{' '}
               can improve visibility in featured snippets, People Also Ask
@@ -47,13 +47,13 @@ export default function AEOMeans() {
             ].map((item, index) => (
               <div
                 key={index}
-                className="group flex items-start gap-4 bg-gray-50 dark:bg-gray-900 p-6 rounded-2xl border border-gray-200 dark:border-gray-800 hover:border-blue-500 dark:hover:border-blue-500 transition duration-300 hover:shadow-xl"
+                className="group flex items-start gap-4 bg-background p-6 rounded-2xl border border-gray-200 dark:border-gray-800 hover:border-primary dark:hover:border-primary transition duration-300 hover:shadow-xl"
               >
-                <div className="w-10 h-10 flex items-center justify-center rounded-full bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-400 font-bold shrink-0">
+                <div className="w-10 h-10 flex items-center justify-center rounded-full bg-primary/10 dark:bg-primary/20 text-primary dark:text-accent font-bold shrink-0">
                   {index + 1}
                 </div>
 
-                <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
+                <p className="text-body text-sm leading-relaxed">
                   {item}
                 </p>
               </div>

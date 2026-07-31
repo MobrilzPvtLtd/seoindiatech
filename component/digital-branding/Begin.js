@@ -15,13 +15,13 @@ const Begin = () => {
       title: 'SEO Services',
       description: 'Boost visibility and attract organic traffic.',
       icon: Search,
-      color: 'from-blue-500 to-blue-600',
+      color: 'from-primary to-primary-hover',
     },
     {
       title: 'Content Marketing',
       description: 'Communicate your message with clarity and impact.',
       icon: PenTool,
-      color: 'from-purple-500 to-purple-600',
+      color: 'from-cream0 to-purple-600',
     },
     {
       title: 'Social Media Marketing',
@@ -37,7 +37,7 @@ const Begin = () => {
     },
   ]
   return (
-    <section className="bg-white dark:bg-gray-900 py-16 md:py-24 px-6 relative overflow-hidden">
+    <section className="bg-white dark:bg-background py-16 md:py-24 px-6 relative overflow-hidden">
       {/* Background decorative elements */}
       {/* <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0 left-1/4 w-64 h-64 bg-blue-900/20 rounded-full blur-3xl"></div>
@@ -48,10 +48,10 @@ const Begin = () => {
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Floating accent elements */}
         <div className="absolute -top-10 left-10 md:left-20 hidden md:block">
-          <div className="w-16 h-16 border-2 border-blue-500/20 rounded-full transform rotate-45"></div>
+          <div className="w-16 h-16 border-2 border-primary/20 rounded-full transform rotate-45"></div>
         </div>
         <div className="absolute -bottom-10 right-10 md:right-20 hidden md:block">
-          <div className="w-12 h-12 border-2 border-blue-500/20 rounded-lg"></div>
+          <div className="w-12 h-12 border-2 border-primary/20 rounded-lg"></div>
         </div>
 
         {/* Main Content */}
@@ -64,15 +64,15 @@ const Begin = () => {
 
           {/* Heading */}
           <div className="text-center px-4">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight max-w-5xl text-gray-900 dark:text-white">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight max-w-5xl text-heading">
               Enhancing Branding Through Supporting Services{' '}
-              <span className="text-blue-500">SEO India Tech</span>
+              <span className="text-primary">SEO India Tech</span>
             </h2>
           </div>
 
           {/* Description */}
           <div className="mt-8 px-4">
-            <p className="text-gray-600 dark:text-gray-200 text-lg md:text-xl max-w-4xl text-center">
+            <p className="text-muted dark:text-gray-200 text-lg md:text-xl max-w-4xl text-center">
               Our digital marketing service agency strengthens your brand with
               complementary services that support long-term growth
             </p>
@@ -83,17 +83,17 @@ const Begin = () => {
               return (
                 <div
                   key={index}
-                  className="group bg-gray-100 dark:bg-gray-800  rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 text-center border border-gray-400 hover:-translate-y-2"
+                  className="group bg-cream dark:bg-card  rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 text-center border border-gray-400 hover:-translate-y-2"
                 >
                   <div
                     className={`w-16 h-16 mx-auto mb-5 bg-gradient-to-br ${service.color} rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}
                   >
                     <Icon className="w-9 h-9 text-white" strokeWidth={2} />
                   </div>
-                  <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100 mb-3">
+                  <h3 className="text-xl font-bold text-heading dark:text-gray-100 mb-3">
                     {service.title}
                   </h3>
-                  <p className="text-gray-600 dark:text-gray-200 leading-relaxed">
+                  <p className="text-muted dark:text-gray-200 leading-relaxed">
                     {service.description}
                   </p>
                 </div>
@@ -104,7 +104,7 @@ const Begin = () => {
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mt-10">
             <Link href="/contact-us">
-              <button className="hidden cursor-pointer bg-gradient-to-r from-blue-600 to-blue-800 hover:bg-blue-700 text-white px-8 py-4 rounded-full text-base font-semibold transition-colors shadow-lg hover:shadow-blue-900/30 flex items-center group">
+              <button className="hidden cursor-pointer bg-gradient-to-r from-primary to-secondary hover:bg-primary-hover text-white px-8 py-4 rounded-full text-base font-semibold transition-colors shadow-lg hover:shadow-blue-900/30 flex items-center group">
                 Get Started
                 <ArrowRight className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
               </button>
@@ -116,7 +116,7 @@ const Begin = () => {
 
           {/* Optional: Social Proof */}
           <div className="hidden mt-16 md:mt-24">
-            <p className="text-blue-200 text-sm font-medium uppercase tracking-wider mb-6 text-center">
+            <p className="text-accent/80 text-sm font-medium uppercase tracking-wider mb-6 text-center">
               Trusted by innovative brands worldwide
             </p>
             <div className="flex flex-wrap justify-center gap-8 md:gap-12">

@@ -66,26 +66,26 @@ const renderStars = (rating) => {
       key={index}
       className={`w-4 h-4 ${index < rating
           ? 'fill-yellow-400 text-yellow-400 dark:fill-yellow-300 dark:text-yellow-300'
-          : 'text-gray-300 dark:text-gray-600'
+          : 'text-gray-300 dark:text-muted'
         }`}
     />
   ));
 };
 
 const TestimonialCard = ({ testimonial }) => (
-  <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-700 relative shrink-0 snap-center w-[calc(100%-2rem)] md:w-[calc(33.333%-1.34rem)]">
-    <div className="absolute -top-3 -left-3 bg-blue-100 dark:bg-blue-900 rounded-full p-2">
-      <Quote className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+  <div className="bg-card dark:bg-card rounded-2xl p-8 shadow-md hover:shadow-lg transition-all duration-300 border border-border dark:border-border relative shrink-0 snap-center w-[calc(100%-2rem)] md:w-[calc(33.333%-1.34rem)]">
+    <div className="absolute -top-3 -left-3 bg-primary/10 dark:bg-primary/20 rounded-full p-2">
+      <Quote className="w-5 h-5 text-primary dark:text-accent" />
     </div>
     <div className="flex space-x-1 mb-6 justify-center">
       {renderStars(testimonial.rating)}
     </div>
     <div className="mb-6">
-      <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-center text-sm">
+      <p className="text-body leading-relaxed text-center text-sm">
         &ldquo;{testimonial.testimonial}&rdquo;
       </p>
     </div>
-    <div className="flex flex-col items-center text-center mt-8 pt-6 border-t border-gray-100 dark:border-gray-700">
+    <div className="flex flex-col items-center text-center mt-8 pt-6 border-t border-border dark:border-border">
       <div className="w-16 h-16 rounded-full overflow-hidden mb-4 ring-4 ring-blue-50 dark:ring-blue-900/30 shadow-md relative">
         <Image
           src={testimonial.avatar}
@@ -97,12 +97,12 @@ const TestimonialCard = ({ testimonial }) => (
           loading="lazy"
         />
       </div>
-      <h3 className="text-base font-bold text-gray-900 dark:text-white mb-1">
+      <h3 className="text-base font-bold text-heading mb-1">
         {testimonial.name}
       </h3>
-      <p className="text-gray-600 dark:text-gray-400 text-sm">
+      <p className="text-muted text-sm">
         <span className="font-medium">{testimonial.role}</span>{' '}
-        <span className="text-blue-600 dark:text-blue-400">{testimonial.company}</span>
+        <span className="text-primary dark:text-accent">{testimonial.company}</span>
       </p>
     </div>
   </div>
@@ -167,7 +167,7 @@ const Testimonial = () => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.1 }}
-      className="bg-gray-50 dark:bg-gray-800 py-14 md:py-20 px-4 sm:px-6 lg:px-8 transition-colors duration-300"
+      className="bg-gray-50 dark:bg-card py-14 md:py-20 px-4 sm:px-6 lg:px-8 transition-colors duration-300"
     >
       <div className="max-w-7xl mx-auto">
         <motion.div
@@ -177,10 +177,10 @@ const Testimonial = () => {
           viewport={{ once: true, amount: 0.15 }}
           className="text-center mb-12 md:mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white leading-tight mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-heading leading-tight mb-4">
             What Our Clients Say
           </h2>
-          <p className="max-w-2xl mx-auto text-base text-gray-600 dark:text-gray-400">
+          <p className="max-w-2xl mx-auto text-base text-muted">
             Hear from our satisfied customers about their experience with our products and services.
           </p>
         </motion.div>

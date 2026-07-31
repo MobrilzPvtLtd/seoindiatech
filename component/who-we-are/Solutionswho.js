@@ -64,26 +64,26 @@ const Solutionswho = () => {
 
   return (
     <>
-      <section className="py-16 md:py-24 px-4 bg-white dark:bg-gray-900 relative overflow-hidden">
+      <section className="py-16 md:py-24 px-4 bg-white dark:bg-background relative overflow-hidden">
         {/* Decorative background elements */}
-        <div className="absolute -top-24 -right-24 w-96 h-96 bg-blue-50 dark:bg-blue-900/20 rounded-full blur-3xl opacity-70 -z-10"></div>
+        <div className="absolute -top-24 -right-24 w-96 h-96 bg-background dark:bg-primary/15 rounded-full blur-3xl opacity-70 -z-10"></div>
         <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-red-50 dark:bg-red-900/10 rounded-full blur-3xl opacity-70 -z-10"></div>
 
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <span className="inline-block px-4 py-1.5 bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-sm font-medium mb-4">
+            <span className="inline-block px-4 py-1.5 bg-background dark:bg-primary/15 text-primary dark:text-accent rounded-full text-sm font-medium mb-4">
               Solutions For Your Business
             </span>
 
             <h1 className="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">
-              <span className="text-blue-700 dark:text-blue-400">Use Our </span>
+              <span className="text-primary dark:text-accent">Use Our </span>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-400 dark:from-red-500 dark:to-red-300 italic font-semibold">
                 Solutions
               </span>
             </h1>
 
-            <p className="text-gray-700 dark:text-gray-300 max-w-2xl mx-auto text-lg">
+            <p className="text-body max-w-2xl mx-auto text-lg">
               We offer a variety of{' '}
               <span className="font-semibold">Marketing Solutions</span> that
               can be tailored to suit your specific business needs, niche, and
@@ -99,37 +99,37 @@ const Solutionswho = () => {
                 className="relative group rounded-xl overflow-hidden"
               >
                 {/* Card Background with subtle gradients */}
-                <div className="absolute inset-0 bg-gradient-to-br from-gray-50 to-white dark:from-gray-800 dark:to-gray-900 -z-10"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-gray-50 to-white dark:from-surface dark:to-background -z-10"></div>
 
                 {/* Special offer tag */}
                 {solution.tag && (
                   <div className="absolute top-0 left-0">
-                    <div className="bg-gradient-to-r from-blue-600 to-blue-500 dark:from-blue-500 dark:to-blue-600 text-white text-xs font-bold px-4 py-1.5 rounded-br-lg shadow-md">
+                    <div className="bg-gradient-to-r from-primary to-secondary dark:from-primary dark:to-primary-hover text-white text-xs font-bold px-4 py-1.5 rounded-br-lg shadow-md">
                       SPECIAL OFFER
                     </div>
                   </div>
                 )}
 
                 {/* Card Content */}
-                <div className="p-8 border border-gray-200 dark:border-gray-700 rounded-xl group-hover:border-blue-500 dark:group-hover:border-blue-500 transition-all duration-300 h-full flex flex-col justify-between shadow-sm group-hover:shadow-xl bg-white dark:bg-gray-800">
+                <div className="p-8 border border-border rounded-xl group-hover:border-primary dark:group-hover:border-primary transition-all duration-300 h-full flex flex-col justify-between shadow-sm group-hover:shadow-xl bg-card dark:bg-card">
                   <div>
                     {/* Icon */}
-                    <div className="mb-5 p-3 bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-lg inline-block">
+                    <div className="mb-5 p-3 bg-background dark:bg-primary/15 text-primary dark:text-accent rounded-lg inline-block">
                       {solution.icon}
                     </div>
 
                     {/* Title and Description */}
-                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                    <h3 className="text-xl font-bold text-heading mb-3">
                       {solution.title}
                     </h3>
-                    <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                    <p className="text-muted leading-relaxed">
                       {solution.desc}
                     </p>
                   </div>
 
                   {/* Button */}
                   <Link href={solution.url}>
-                    <button className="cursor-pointer mt-6 inline-flex items-center justify-center gap-1.5 text-sm text-blue-700 dark:text-blue-400 font-medium group-hover:text-white dark:group-hover:text-white px-3 py-1.5 rounded-md border border-blue-200 dark:border-blue-800 group-hover:bg-blue-600 dark:group-hover:bg-blue-700 group-hover:border-transparent transition-all duration-300 w-40">
+                    <button className="cursor-pointer mt-6 inline-flex items-center justify-center gap-1.5 text-sm text-primary dark:text-accent font-medium group-hover:text-white dark:group-hover:text-white px-3 py-1.5 rounded-md border border-primary/30 dark:border-primary/40 group-hover:bg-primary-hover dark:group-hover:bg-primary-hover group-hover:border-transparent transition-all duration-300 w-40">
                       Read More
                       <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
                     </button>
@@ -141,7 +141,7 @@ const Solutionswho = () => {
 
           {/* Bottom CTA */}
           <div className="hidden text-center mt-16">
-            <button className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-500 dark:to-blue-600 text-white px-8 py-3.5 rounded-full font-medium shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 transform active:scale-95">
+            <button className="inline-flex items-center gap-2 bg-gradient-to-r from-primary to-primary-hover dark:from-primary dark:to-primary-hover text-white px-8 py-3.5 rounded-full font-medium shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 transform active:scale-95">
               Explore All Solutions
               <ArrowRight className="w-5 h-5" />
             </button>
@@ -149,10 +149,10 @@ const Solutionswho = () => {
         </div>
       </section>
 
-      <section className="py-16 bg-white dark:bg-gray-900">
+      <section className="py-16 bg-white dark:bg-background">
         <div className="max-w-7xl mx-auto px-6">
           {/* Heading */}
-          <h3 className="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white mb-12 opacity-0 animate-fadeUp">
+          <h3 className="text-3xl md:text-4xl font-extrabold text-heading mb-12 opacity-0 animate-fadeUp">
             How We Work - Our Process
           </h3>
 
@@ -237,11 +237,11 @@ const Solutionswho = () => {
             ].map((item, index) => (
               <div
                 key={index}
-                className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 flex gap-4 opacity-0 animate-fadeUp"
+                className="bg-gray-50 dark:bg-card p-6 rounded-xl shadow-sm border border-border flex gap-4 opacity-0 animate-fadeUp"
                 style={{ animationDelay: `${index * 0.15}s` }}
               >
                 {/* Icon */}
-                <div className="p-3 bg-blue-600 text-white rounded-lg w-fit h-fit">
+                <div className="p-3 bg-primary text-white rounded-lg w-fit h-fit">
                   {React.createElement(require('lucide-react')[item.icon], {
                     size: 22,
                   })}
@@ -249,10 +249,10 @@ const Solutionswho = () => {
 
                 {/* Text */}
                 <div>
-                  <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
+                  <h4 className="text-xl font-bold text-heading mb-1">
                     {item.title}
                   </h4>
-                  <p className="text-gray-700 dark:text-gray-300">
+                  <p className="text-body">
                     {item.text}
                   </p>
                 </div>

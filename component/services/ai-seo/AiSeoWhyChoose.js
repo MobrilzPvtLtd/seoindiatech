@@ -9,19 +9,19 @@ export default function AiSeoWhyChoose() {
           {/* TOP TWO CARDS */}
           <div className="grid md:grid-cols-2 gap-12">
             {/* LEFT CARD */}
-            <div className="relative overflow-hidden bg-white dark:bg-gray-900 rounded-2xl p-10 md:p-12 shadow-md hover:shadow-2xl transition-all duration-500 border border-gray-100 dark:border-gray-800 hover:-translate-y-2">
-              <div className="absolute top-0 left-0 w-full h-1 bg-blue-600"></div>
+            <div className="relative overflow-hidden bg-white dark:bg-background rounded-2xl p-10 md:p-12 shadow-md hover:shadow-2xl transition-all duration-500 border border-border dark:border-gray-800 hover:-translate-y-2">
+              <div className="absolute top-0 left-0 w-full h-1 bg-primary"></div>
 
-              <h4 className="text-3xl font-semibold mb-6 text-gray-900 dark:text-white leading-snug">
+              <h4 className="text-3xl font-semibold mb-6 text-heading leading-snug">
                 Why choose SEO India Tech
               </h4>
 
-              <div className="space-y-6 text-lg leading-relaxed text-gray-700 dark:text-gray-300 text-justify">
+              <div className="space-y-6 text-lg leading-relaxed text-body text-justify">
                 <p>
                   SEO India Tech is a{' '}
                   <Link
                     href="/services/digital-marketing"
-                    className="text-blue-600 dark:text-blue-400 hover:underline"
+                    className="text-primary dark:text-accent hover:underline"
                   >
                     digital marketing company
                   </Link>{' '}
@@ -44,14 +44,14 @@ export default function AiSeoWhyChoose() {
             </div>
 
             {/* RIGHT CARD */}
-            <div className="relative overflow-hidden bg-white dark:bg-gray-900 rounded-2xl p-10 md:p-12 shadow-md hover:shadow-2xl transition-all duration-500 border border-gray-100 dark:border-gray-800 hover:-translate-y-2">
-              <div className="absolute top-0 left-0 w-full h-1 bg-indigo-600"></div>
+            <div className="relative overflow-hidden bg-white dark:bg-background rounded-2xl p-10 md:p-12 shadow-md hover:shadow-2xl transition-all duration-500 border border-border dark:border-gray-800 hover:-translate-y-2">
+              <div className="absolute top-0 left-0 w-full h-1 bg-primary"></div>
 
-              <h5 className="text-3xl font-semibold mb-6 text-gray-900 dark:text-white leading-snug">
+              <h5 className="text-3xl font-semibold mb-6 text-heading leading-snug">
                 Who benefits most from AI SEO Services
               </h5>
 
-              <div className="space-y-6 text-lg leading-relaxed text-gray-700 dark:text-gray-300 text-justify">
+              <div className="space-y-6 text-lg leading-relaxed text-body text-justify">
                 <p>
                   AI SEO services fit businesses that want stable inbound leads
                   and long term visibility. This is common for local services,
@@ -72,14 +72,14 @@ export default function AiSeoWhyChoose() {
           </div>
 
           {/* THIRD FULL WIDTH CARD */}
-          <div className="relative overflow-hidden bg-white dark:bg-gray-900 rounded-2xl p-12 md:p-14 shadow-md hover:shadow-2xl transition-all duration-500 border border-gray-100 dark:border-gray-800 hover:-translate-y-2">
-            <div className="absolute top-0 left-0 w-full h-1 bg-blue-600"></div>
+          <div className="relative overflow-hidden bg-white dark:bg-background rounded-2xl p-12 md:p-14 shadow-md hover:shadow-2xl transition-all duration-500 border border-border dark:border-gray-800 hover:-translate-y-2">
+            <div className="absolute top-0 left-0 w-full h-1 bg-primary"></div>
 
-            <h6 className="text-3xl font-semibold mb-6 text-gray-900 dark:text-white leading-snug">
+            <h6 className="text-3xl font-semibold mb-6 text-heading leading-snug">
               Ready to work with an ai SEO Company
             </h6>
 
-            <div className="space-y-6 text-lg leading-relaxed text-gray-700 dark:text-gray-300 text-justify">
+            <div className="space-y-6 text-lg leading-relaxed text-body text-justify">
               <p>
                 If you want your site to show up in search and in AI answers,
                 start with a plan that fits your market. Talk to SEO India Tech

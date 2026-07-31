@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 
 const CRMHeroBanner = () => (
-  <section className="bg-white dark:bg-gray-900 pt-[100px] pb-8">
+  <section className="bg-white dark:bg-background pt-[100px] pb-8">
   <section className="max-w-7xl mx-auto px-4 md:px-6 py-2  md:py-12">
     <div className="relative w-full overflow-hidden rounded-2xl shadow-2xl">
       {/* Background Image with Next.js Image for better performance */}
@@ -32,7 +32,7 @@ const CRMHeroBanner = () => (
         </div>
         
         <h2 className="text-white font-bold text-3xl md:text-4xl lg:text-5xl text-center max-w-4xl leading-tight drop-shadow-md">
-          Master Your Business: <span className="text-blue-300">Harnessing CRM</span> and Tools for Seamless Management
+          Master Your Business: <span className="text-accent">Harnessing CRM</span> and Tools for Seamless Management
         </h2>
         
         <p className="text-gray-200 text-center mt-4 max-w-2xl text-lg">
@@ -41,12 +41,12 @@ const CRMHeroBanner = () => (
         
         {/* CTA buttons */}
         <div className="mt-10 flex flex-col sm:flex-row gap-4">
-          <button className="hidden flex items-center justify-center px-6 py-3 rounded-lg bg-white text-blue-900 hover:bg-blue-50 transition-all font-semibold text-base shadow-lg hover:shadow-xl">
+          <button className="hidden flex items-center justify-center px-6 py-3 rounded-lg bg-white text-blue-900 hover:bg-background transition-all font-semibold text-base shadow-lg hover:shadow-xl">
             Read More
             <ChevronRight className="ml-1 w-5 h-5" />
           </button>
           
-          <button className="hidden flex items-center justify-center px-6 py-3 rounded-lg bg-blue-600/90 backdrop-blur-sm hover:bg-blue-700 text-white transition-all font-semibold text-base border border-blue-500/50 shadow-lg hover:shadow-xl">
+          <button className="hidden flex items-center justify-center px-6 py-3 rounded-lg bg-primary/90 backdrop-blur-sm hover:bg-primary-hover text-white transition-all font-semibold text-base border border-primary/50 shadow-lg hover:shadow-xl">
             Explore CRM Tools
             <ArrowRight className="ml-1 w-5 h-5" />
           </button>
@@ -68,8 +68,8 @@ const CRMHeroBanner = () => (
           { number: "24/7", label: "Customer Support" }
         ].map((stat, index) => (
           <div key={index} className="px-3">
-            <div className="text-2xl md:text-3xl font-bold text-blue-600 dark:text-blue-400">{stat.number}</div>
-            <div className="text-sm text-gray-600 dark:text-gray-400">{stat.label}</div>
+            <div className="text-2xl md:text-3xl font-bold text-primary dark:text-accent">{stat.number}</div>
+            <div className="text-sm text-muted">{stat.label}</div>
           </div>
         ))}
       </div>

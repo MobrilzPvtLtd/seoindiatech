@@ -9,21 +9,21 @@ export default function LocalBusiness() {
           {/* TOP TWO CARDS */}
           <div className="grid md:grid-cols-2 gap-14">
             {/* LEFT CARD */}
-            <div className="relative overflow-hidden bg-white dark:bg-gray-900 rounded-2xl p-12 shadow-md hover:shadow-2xl transition-all duration-500 border border-gray-100 dark:border-gray-800 hover:-translate-y-2">
-              <div className="absolute top-0 left-0 w-full h-1 bg-blue-600"></div>
+            <div className="relative overflow-hidden bg-white dark:bg-background rounded-2xl p-12 shadow-md hover:shadow-2xl transition-all duration-500 border border-border dark:border-gray-800 hover:-translate-y-2">
+              <div className="absolute top-0 left-0 w-full h-1 bg-primary"></div>
 
-              <h3 className="text-3xl font-semibold mb-8 text-gray-900 dark:text-white leading-snug">
+              <h3 className="text-3xl font-semibold mb-8 text-heading leading-snug">
                 Local Business SEO Service That Connects You to Customers
               </h3>
 
-              <div className="space-y-7 text-lg leading-relaxed text-gray-700 dark:text-gray-300 text-justify">
+              <div className="space-y-7 text-lg leading-relaxed text-body text-justify">
                 <p>
                   If you want true local presence online, basic SEO is not
                   enough. You need targeted local SEO services that speak
                   directly to your audience. Our local business{' '}
                   <Link
                     href="/services/seo"
-                    className="text-blue-600 dark:text-blue-400 hover:underline"
+                    className="text-primary dark:text-accent hover:underline"
                   >
                     SEO service
                   </Link>{' '}
@@ -48,14 +48,14 @@ export default function LocalBusiness() {
             </div>
 
             {/* RIGHT CARD */}
-            <div className="relative overflow-hidden bg-white dark:bg-gray-900 rounded-2xl p-12 shadow-md hover:shadow-2xl transition-all duration-500 border border-gray-100 dark:border-gray-800 hover:-translate-y-2">
-              <div className="absolute top-0 left-0 w-full h-1 bg-indigo-600"></div>
+            <div className="relative overflow-hidden bg-white dark:bg-background rounded-2xl p-12 shadow-md hover:shadow-2xl transition-all duration-500 border border-border dark:border-gray-800 hover:-translate-y-2">
+              <div className="absolute top-0 left-0 w-full h-1 bg-primary"></div>
 
-              <h4 className="text-3xl font-semibold mb-8 text-gray-900 dark:text-white leading-snug">
+              <h4 className="text-3xl font-semibold mb-8 text-heading leading-snug">
                 White Label Local SEO Services for Agencies
               </h4>
 
-              <div className="space-y-7 text-lg leading-relaxed text-gray-700 dark:text-gray-300 text-justify">
+              <div className="space-y-7 text-lg leading-relaxed text-body text-justify">
                 <p>
                   If you run a digital marketing agency but want to offer local
                   SEO services without extra workload, we can help. Our white
@@ -81,14 +81,14 @@ export default function LocalBusiness() {
           </div>
 
           {/* THIRD FULL WIDTH CARD */}
-          <div className="relative overflow-hidden bg-white dark:bg-gray-900 rounded-2xl p-14 shadow-md hover:shadow-2xl transition-all duration-500 border border-gray-100 dark:border-gray-800 hover:-translate-y-2">
-            <div className="absolute top-0 left-0 w-full h-1 bg-blue-600"></div>
+          <div className="relative overflow-hidden bg-white dark:bg-background rounded-2xl p-14 shadow-md hover:shadow-2xl transition-all duration-500 border border-border dark:border-gray-800 hover:-translate-y-2">
+            <div className="absolute top-0 left-0 w-full h-1 bg-primary"></div>
 
-            <h5 className="text-3xl font-semibold mb-8 text-gray-900 dark:text-white leading-snug">
+            <h5 className="text-3xl font-semibold mb-8 text-heading leading-snug">
               Small Business SEO Services That Matter
             </h5>
 
-            <div className="space-y-7 text-lg leading-relaxed text-gray-700 dark:text-gray-300 text-justify">
+            <div className="space-y-7 text-lg leading-relaxed text-body text-justify">
               <p>
                 Small businesses must compete with bigger brands. Local SEO
                 services help level the field. When you focus on local search
@@ -100,7 +100,7 @@ export default function LocalBusiness() {
                 Our{' '}
                 <Link
                   href="/services/small-business-seo"
-                  className="text-blue-600 dark:text-blue-400 hover:underline"
+                  className="text-primary dark:text-accent hover:underline"
                 >
                   small business SEO
                 </Link>{' '}
@@ -119,14 +119,14 @@ export default function LocalBusiness() {
           </div>
         </div>
       </section>
-      <section className="w-full bg-gray-50 dark:bg-gray-950 py-24 px-6">
+      <section className="w-full bg-background py-24 px-6">
         <div className="max-w-5xl mx-auto">
-          <div className="bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 shadow-sm p-12">
-            <h6 className="text-3xl md:text-4xl font-semibold text-gray-900 dark:text-white mb-8 text-center">
+          <div className="bg-white dark:bg-background rounded-xl border border-gray-200 dark:border-gray-800 shadow-sm p-12">
+            <h6 className="text-3xl md:text-4xl font-semibold text-heading mb-8 text-center">
               Local SEO Marketing Services That Improve Visibility
             </h6>
 
-            <div className="space-y-6 text-lg leading-relaxed text-gray-700 dark:text-gray-300 text-justify">
+            <div className="space-y-6 text-lg leading-relaxed text-body text-justify">
               <p>
                 Local search optimization matters more than ever. People use
                 phones, voice search, maps, and local listings more than before.
@@ -139,7 +139,7 @@ export default function LocalBusiness() {
                 This includes:
               </p>
 
-              <ul className="list-disc marker:text-blue-600 dark:marker:text-blue-400 pl-6 space-y-3">
+              <ul className="list-disc marker:text-primary dark:marker:text-accent pl-6 space-y-3">
                 <li>Local keyword placement</li>
                 <li>Map listing accuracy</li>
                 <li>Online review signals</li>

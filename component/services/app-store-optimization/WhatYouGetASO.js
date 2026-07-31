@@ -57,14 +57,14 @@ export default function WhyAppStore() {
   ]
 
   return (
-    <section className="py-20 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+    <section className="py-20 bg-background transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
-          <h3 className="text-3xl md:text-4xl font-semibold text-gray-900 dark:text-white mb-5">
+          <h3 className="text-3xl md:text-4xl font-semibold text-heading mb-5">
             What you get with our app store optimization agency
           </h3>
-          <p className="text-gray-600 dark:text-gray-300 leading-relaxed max-w-3xl mx-auto">
+          <p className="text-muted leading-relaxed max-w-3xl mx-auto">
             As an app store optimization agency, we follow a clear process. It
             is not guesswork. Each update is backed by research and testing.
           </p>
@@ -75,22 +75,22 @@ export default function WhyAppStore() {
           {data.map((item, index) => (
             <div
               key={index}
-              className={`group rounded-2xl p-6 md:p-7 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1 ${
+              className={`group rounded-2xl p-6 md:p-7 bg-card dark:bg-card border border-border shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1 ${
                 item.full ? 'md:col-span-2 lg:col-span-3' : ''
               }`}
             >
               {/* Icon + Title - single row */}
               <div className="flex items-center gap-4 mb-5">
-                <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 md:w-14 md:h-14 rounded-xl bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 text-2xl transition-transform duration-300 group-hover:scale-110">
+                <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 md:w-14 md:h-14 rounded-xl bg-primary/10 dark:bg-primary/20 text-primary dark:text-accent text-2xl transition-transform duration-300 group-hover:scale-110">
                   {item.icon}
                 </div>
-                <h4 className="text-lg md:text-xl font-semibold text-gray-900 dark:text-white leading-tight">
+                <h4 className="text-lg md:text-xl font-semibold text-heading leading-tight">
                   {item.title}
                 </h4>
               </div>
 
               {/* Description */}
-              <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-justify">
+              <p className="text-muted leading-relaxed text-justify">
                 {item.content}
               </p>
             </div>

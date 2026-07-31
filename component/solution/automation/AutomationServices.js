@@ -10,12 +10,12 @@ export default function AutomationServices() {
       description:
         'We create and execute BPA strategies that streamline internal workflows, from HR to finance and more.',
       color:
-        'bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-blue-900/30 dark:to-indigo-900/30',
+        'bg-gradient-to-br from-cream to-indigo-100 dark:from-primary/20/30 dark:to-indigo-900/30',
       hoverColor:
         'hover:from-blue-100 hover:to-indigo-200 dark:hover:from-blue-800/40 dark:hover:to-indigo-800/40',
-      borderColor: 'border-blue-200 dark:border-blue-700',
-      hoverBorderColor: 'hover:border-blue-400 dark:hover:border-blue-600',
-      accentColor: 'bg-blue-500 dark:bg-blue-400',
+      borderColor: 'border-primary/30 dark:border-primary/30',
+      hoverBorderColor: 'hover:border-blue-400 dark:hover:border-primary',
+      accentColor: 'bg-secondary dark:bg-accent',
     },
     {
       id: 2,
@@ -23,12 +23,12 @@ export default function AutomationServices() {
       description:
         'Boost customer service with AI chatbots that deliver instant responses, automate queries, and increase engagement.',
       color:
-        'bg-gradient-to-br from-purple-50 to-pink-100 dark:from-purple-900/30 dark:to-pink-900/30',
+        'bg-gradient-to-br from-cream to-pink-100 dark:from-purple-900/30 dark:to-pink-900/30',
       hoverColor:
         'hover:from-purple-100 hover:to-pink-200 dark:hover:from-purple-800/40 dark:hover:to-pink-800/40',
-      borderColor: 'border-purple-200 dark:border-purple-700',
+      borderColor: 'border-primary/20 dark:border-primary/30',
       hoverBorderColor: 'hover:border-purple-400 dark:hover:border-purple-600',
-      accentColor: 'bg-purple-500 dark:bg-purple-400',
+      accentColor: 'bg-cream0 dark:bg-purple-400',
     },
     {
       id: 3,
@@ -72,16 +72,16 @@ export default function AutomationServices() {
   ]
 
   return (
-    <div className="min-h-screen bg-gray-50  dark:bg-gray-900 py-16 px-6">
+    <div className="min-h-screen bg-gray-50  dark:bg-background py-16 px-6">
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-heading mb-6 leading-tight">
             Our Digital Automation Services
           </h2>
-          <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-muted max-w-4xl mx-auto leading-relaxed">
             Our complete{' '}
-            <span className="text-blue-600 dark:text-blue-400 font-semibold">
+            <span className="text-primary dark:text-accent font-semibold">
               automation solutions
             </span>{' '}
             are designed to optimize every facet of your business:
@@ -111,10 +111,10 @@ export default function AutomationServices() {
               onMouseLeave={() => setHoveredCard(null)}
             >
               <div className="space-y-4">
-                <h3 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white leading-tight">
+                <h3 className="text-xl md:text-2xl font-bold text-heading leading-tight">
                   {service.title}
                 </h3>
-                <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed text-base md:text-lg">
+                <p className="text-justify text-body leading-relaxed text-base md:text-lg">
                   {service.description}
                 </p>
               </div>
@@ -155,10 +155,10 @@ export default function AutomationServices() {
               onMouseLeave={() => setHoveredCard(null)}
             >
               <div className="space-y-4">
-                <h3 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white leading-tight">
+                <h3 className="text-xl md:text-2xl font-bold text-heading leading-tight">
                   {service.title}
                 </h3>
-                <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-base md:text-lg">
+                <p className="text-body leading-relaxed text-base md:text-lg">
                   {service.description}
                 </p>
               </div>
@@ -179,13 +179,13 @@ export default function AutomationServices() {
 
         {/* Bottom CTA Section */}
         <div className="text-center mt-16">
-          <div className="inline-flex items-center space-x-4 bg-white dark:bg-gray-800 rounded-full px-8 py-4 shadow-lg border border-gray-200 dark:border-gray-700 hover:shadow-xl transition-shadow duration-300">
+          <div className="inline-flex items-center space-x-4 bg-card dark:bg-card rounded-full px-8 py-4 shadow-lg border border-border hover:shadow-xl transition-shadow duration-300">
             <div className="flex space-x-2">
-              <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
-              <div className="w-2 h-2 bg-purple-500 rounded-full animate-pulse delay-100"></div>
+              <div className="w-2 h-2 bg-secondary rounded-full animate-pulse"></div>
+              <div className="w-2 h-2 bg-cream0 rounded-full animate-pulse delay-100"></div>
               <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse delay-200"></div>
             </div>
-            <span className="text-gray-700 dark:text-gray-300 font-medium">
+            <span className="text-body font-medium">
               Ready to automate your business processes?
             </span>
           </div>

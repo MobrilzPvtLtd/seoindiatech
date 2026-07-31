@@ -4,24 +4,24 @@ import React from 'react'
 export default function ServiceCovers() {
   return (
     <section className="mt-20 px-4 md:px-8">
-      <div className="max-w-5xl mx-auto bg-gray-50 dark:bg-gray-800 rounded-2xl shadow-lg p-8 md:p-12">
+      <div className="max-w-5xl mx-auto bg-gray-50 dark:bg-card rounded-2xl shadow-lg p-8 md:p-12">
         <div className="mb-6">
-          <span className="inline-block bg-blue-600 text-white text-xs font-semibold px-4 py-1 rounded-full mb-4">
+          <span className="inline-block bg-primary text-white text-xs font-semibold px-4 py-1 rounded-full mb-4">
             Our Expertise
           </span>
 
-          <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white">
+          <h3 className="text-2xl md:text-3xl font-bold text-heading">
             What this service covers
           </h3>
         </div>
 
-        <p className="leading-8 text-justify text-gray-700 dark:text-gray-300 text-lg">
+        <p className="leading-8 text-justify text-body text-lg">
           Online reputation management is the daily work of tracking, improving,
           and protecting your brand's public image across search, review sites,
           social platforms, and local listings. Online reputation management in{' '}
           <Link
             href="/services/digital-marketing"
-            className="text-blue-600 dark:text-blue-400 hover:underline"
+            className="text-primary dark:text-accent hover:underline"
           >
             digital marketing
           </Link>{' '}

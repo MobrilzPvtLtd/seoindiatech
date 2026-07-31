@@ -8,13 +8,13 @@ export default function GBPHero() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content Section */}
           <div className="space-y-6">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-gray-900 dark:text-white">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-heading">
               Google Business Profile Optimization Service in India
             </h1>
 
-            <div className="w-16 h-1 bg-blue-600 rounded-full"></div>
+            <div className="w-16 h-1 bg-primary rounded-full"></div>
 
-            <p className="text-gray-600 dark:text-gray-300 text-justify leading-relaxed text-base md:text-lg">
+            <p className="text-muted text-justify leading-relaxed text-base md:text-lg">
               Your Google Business Profile is often the first thing people see
               when they search for a local service. It shows your phone number,
               directions, hours, photos, reviews, and updates. If any of this is
@@ -30,7 +30,7 @@ export default function GBPHero() {
           <div className="flex justify-center lg:justify-end">
             <div className="relative w-[85%] md:w-[75%] lg:w-[80%] group">
               {/* Background Glow Effect */}
-              <div className="absolute -inset-3 bg-blue-500/10 dark:bg-blue-400/10 rounded-3xl blur-xl"></div>
+              <div className="absolute -inset-3 bg-primary/10 dark:bg-accent/10 rounded-3xl blur-xl"></div>
 
               <Image
                 src="/images/services/GOOGLE-MAPS-SEO.jpg"

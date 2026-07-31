@@ -4,31 +4,31 @@ export default function WhyChoose() {
   return (
     <section
       className="w-full py-24 px-6 
-                        bg-white dark:bg-gray-900 
+                        bg-white dark:bg-background 
                         transition-colors duration-300"
     >
       <div className="max-w-6xl mx-auto">
         {/* HEADING */}
         <h2
           className="text-3xl md:text-4xl font-bold text-center mb-12
-                       text-gray-900 dark:text-white"
+                       text-heading"
         >
           Why Choose Our{' '}
-          <span className="text-blue-600 dark:text-blue-400">
+          <span className="text-primary dark:text-accent">
             Local SEO Services
           </span>
         </h2>
 
         {/* CONTENT CARD */}
         <div
-          className="bg-gray-50 dark:bg-gray-950 
+          className="bg-background 
                         rounded-3xl p-10 md:p-14 
                         shadow-xl border 
                         border-gray-200 dark:border-gray-800"
         >
           <div
             className="space-y-6 text-lg leading-relaxed 
-                          text-gray-700 dark:text-gray-300 
+                          text-body 
                           text-justify"
           >
             <p>
@@ -45,7 +45,7 @@ export default function WhyChoose() {
             </p>
 
             {/* BULLET LIST */}
-            <ul className="space-y-3 pl-6 list-disc marker:text-blue-600 dark:marker:text-blue-400">
+            <ul className="space-y-3 pl-6 list-disc marker:text-primary dark:marker:text-accent">
               <li>Local keyword research and optimization</li>
               <li>Google Business Profile setup and management</li>
               <li>Local citation building across directories</li>

@@ -14,28 +14,28 @@ const TrustWorkFlow = () => {
 
   const benefits = [
     {
-      icon: <CheckCircle className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
+      icon: <CheckCircle className="w-5 h-5 text-primary dark:text-accent" />,
       title: "Track Progress",
       description: "Monitor task completion and team efficiency as it happens."
     },
     {
-      icon: <Zap className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
+      icon: <Zap className="w-5 h-5 text-primary dark:text-accent" />,
       title: "Automate Tasks",
       description: "Streamline operations by eliminating routine tasks with automation."
     },
     {
-      icon: <BarChart2 className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
+      icon: <BarChart2 className="w-5 h-5 text-primary dark:text-accent" />,
       title: "Identify Bottlenecks",
       description: "Identify and fix workflow issues swiftly to maintain productivity."
     }
   ];
 
   return (
-    <section className="py-16 md:py-24 px-6 bg-white dark:bg-gray-900 relative overflow-hidden">
+    <section className="py-16 md:py-24 px-6 bg-white dark:bg-background relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/4 right-0 w-72 h-72 bg-white/50 dark:bg-blue-900/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 left-1/4 w-80 h-80 bg-blue-300/30 dark:bg-blue-800/10 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/4 right-0 w-72 h-72 bg-white/50 dark:bg-primary/20/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 left-1/4 w-80 h-80 bg-accent/20 dark:bg-primary/10 rounded-full blur-3xl"></div>
       </div>
       
       {/* Grid overlay */}
@@ -49,18 +49,18 @@ const TrustWorkFlow = () => {
               isVisible ? "translate-x-0 opacity-100" : "-translate-x-10 opacity-0"
             }`}
           >
-            <div className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 p-8 md:p-10 shadow-xl">
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 rounded-full text-sm font-medium mb-6">
+            <div className="bg-card dark:bg-card rounded-2xl border border-border p-8 md:p-10 shadow-xl">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 dark:bg-primary/20/40 text-primary dark:text-accent rounded-full text-sm font-medium mb-6">
                 <span>Workflow Management</span>
               </div>
               
-              <h3 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
+              <h3 className="text-3xl md:text-4xl font-bold text-heading mb-6 leading-tight">
                 No Need To Worry Anymore
               </h3>
               
-              <div className="w-20 h-1 bg-blue-600 dark:bg-blue-500 rounded-full mb-6"></div>
+              <div className="w-20 h-1 bg-primary dark:bg-primary rounded-full mb-6"></div>
 
-              <p className="text-justify text-gray-700 dark:text-gray-300 text-lg leading-relaxed mb-8">
+              <p className="text-justify text-body text-lg leading-relaxed mb-8">
                 Managing tasks is effortless with workflow management software. Track team progress, assign responsibilities, and spot bottlenecks instantly. Automation and integration ensure workflows are streamlined, errors are minimized, and your operations run smoothly.
               </p>
               
@@ -68,7 +68,7 @@ const TrustWorkFlow = () => {
                 {benefits.map((benefit, index) => (
                   <div 
                     key={index}
-                    className="flex items-start gap-4 p-4 bg-gray-50 dark:bg-gray-800/80 rounded-lg border border-gray-100 dark:border-gray-700"
+                    className="flex items-start gap-4 p-4 bg-gray-50 dark:bg-card/80 rounded-lg border border-border dark:border-border"
                     style={{ 
                       transitionDelay: `${300 + (index * 100)}ms`,
                       opacity: isVisible ? 1 : 0,
@@ -76,14 +76,14 @@ const TrustWorkFlow = () => {
                       transition: 'all 0.5s ease-out'
                     }}
                   >
-                    <div className="p-2 bg-blue-100 dark:bg-blue-900/50 rounded-lg flex-shrink-0">
+                    <div className="p-2 bg-primary/10 dark:bg-primary/20 rounded-lg flex-shrink-0">
                       {benefit.icon}
                     </div>
                     <div>
-                      <h4 className="font-semibold text-gray-900 dark:text-white mb-1">
+                      <h4 className="font-semibold text-heading mb-1">
                         {benefit.title}
                       </h4>
-                      <p className="text-gray-600 dark:text-gray-400 text-sm">
+                      <p className="text-muted text-sm">
                         {benefit.description}
                       </p>
                     </div>
@@ -103,33 +103,33 @@ const TrustWorkFlow = () => {
             <div className="relative">
               {/* Main image with glow effect */}
               <div className="relative">
-                <div className="absolute -inset-2 bg-gradient-to-r from-blue-600 to-blue-400 opacity-30 dark:opacity-40 blur-xl rounded-full"></div>
+                <div className="absolute -inset-2 bg-gradient-to-r from-primary to-accent opacity-30 dark:opacity-40 blur-xl rounded-full"></div>
                 <div className="relative rounded-2xl overflow-hidden border-4 border-white dark:border-gray-800 shadow-2xl">
                   <Image
                     src="/images/automation.png"
                     alt="Workflow Automation Illustration"
                     width={500}
                     height={500}
-                    className="object-contain bg-white dark:bg-gray-800"
+                    className="object-contain bg-card dark:bg-card"
                   />
                 </div>
               </div>
               
               {/* Stats card overlay */}
-              <div className="absolute -bottom-6 right-0 left-0 mx-auto w-3/4 bg-white dark:bg-gray-800 p-4 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 flex justify-around">
+              <div className="absolute -bottom-6 right-0 left-0 mx-auto w-3/4 bg-card dark:bg-card p-4 rounded-xl shadow-lg border border-border flex justify-around">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">85%</div>
-                  <div className="text-xs text-gray-600 dark:text-gray-400">Time Saved</div>
+                  <div className="text-2xl font-bold text-primary dark:text-accent">85%</div>
+                  <div className="text-xs text-muted">Time Saved</div>
                 </div>
-                <div className="h-10 w-px bg-gray-200 dark:bg-gray-700"></div>
+                <div className="h-10 w-px bg-gray-200 dark:bg-surface"></div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">24/7</div>
-                  <div className="text-xs text-gray-600 dark:text-gray-400">Monitoring</div>
+                  <div className="text-2xl font-bold text-primary dark:text-accent">24/7</div>
+                  <div className="text-xs text-muted">Monitoring</div>
                 </div>
               </div>
               
               {/* Floating annotation */}
-              <div className="absolute -top-4 -right-4 bg-white dark:bg-gray-800 px-4 py-2 rounded-full shadow-lg border border-gray-200 dark:border-gray-700 text-sm font-medium text-blue-600 dark:text-blue-400 animate-bounce">
+              <div className="absolute -top-4 -right-4 bg-card dark:bg-card px-4 py-2 rounded-full shadow-lg border border-border text-sm font-medium text-primary dark:text-accent animate-bounce">
                 Automated!
               </div>
             </div>

@@ -7,12 +7,12 @@ export default function WhySEOIndiaTech() {
       <div className="max-w-6xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-6">
           {/* LEFT CARD */}
-          <div className="bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl p-6 shadow-sm hover:shadow-md transition duration-300">
-            <h4 className="text-lg sm:text-xl font-semibold text-gray-900 dark:text-white mb-4">
+          <div className="bg-background border border-gray-200 dark:border-gray-800 rounded-xl p-6 shadow-sm hover:shadow-md transition duration-300">
+            <h4 className="text-lg sm:text-xl font-semibold text-heading mb-4">
               Why SEO India Tech is a fit
             </h4>
 
-            <div className="space-y-3 text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
+            <div className="space-y-3 text-body text-sm leading-relaxed">
               <p>
                 You need clear work, clear reporting, and content that sounds
                 human. You also need a team that understands India based
@@ -27,14 +27,14 @@ export default function WhySEOIndiaTech() {
                 support{' '}
                 <Link
                   href="/services/local-seo-service"
-                  className="text-blue-600 dark:text-blue-400 hover:underline font-semibold"
+                  className="text-primary dark:text-accent hover:underline font-semibold"
                 >
                   local SEO services India
                 </Link>{' '}
                 for businesses that want more calls and walk ins.
               </p>
 
-              <p className="font-medium text-gray-900 dark:text-white pt-3">
+              <p className="font-medium text-heading pt-3">
                 AEO works best when it connects to the full funnel
               </p>
 
@@ -47,7 +47,7 @@ export default function WhySEOIndiaTech() {
                 ].map((item, index) => (
                   <div
                     key={index}
-                    className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-md px-2 py-2 text-center"
+                    className="bg-card dark:bg-card border border-border rounded-md px-2 py-2 text-center"
                   >
                     {item}
                   </div>
@@ -59,16 +59,16 @@ export default function WhySEOIndiaTech() {
           </div>
 
           {/* RIGHT CARD */}
-          <div className="bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl p-6 shadow-sm hover:shadow-md transition duration-300">
-            <h5 className="text-lg sm:text-xl font-semibold text-gray-900 dark:text-white mb-4">
+          <div className="bg-background border border-gray-200 dark:border-gray-800 rounded-xl p-6 shadow-sm hover:shadow-md transition duration-300">
+            <h5 className="text-lg sm:text-xl font-semibold text-heading mb-4">
               Who should invest in AEO answer engine optimization services
             </h5>
 
-            <p className="text-gray-700 dark:text-gray-300 text-sm mb-4">
+            <p className="text-body text-sm mb-4">
               AEO is a strong fit if:
             </p>
 
-            <div className="space-y-2 text-sm text-gray-700 dark:text-gray-300">
+            <div className="space-y-2 text-sm text-body">
               {[
                 'You sell services and people ask many questions before contacting you',
                 'You compete in crowded search results',
@@ -78,14 +78,14 @@ export default function WhySEOIndiaTech() {
               ].map((item, index) => (
                 <div
                   key={index}
-                  className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-md px-3 py-2"
+                  className="bg-card dark:bg-card border border-border rounded-md px-3 py-2"
                 >
                   {item}
                 </div>
               ))}
             </div>
 
-            <div className="mt-4 text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
+            <div className="mt-4 text-body text-sm leading-relaxed">
               <p>
                 If you want to stay visible as search keeps changing, answer
                 engine optimization is now part of the baseline. You can treat

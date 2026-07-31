@@ -11,7 +11,7 @@ const processCards = [
       'Competitor benchmarking',
       'Persona creation & journey mapping'
     ],
-    icon: <Lightbulb className="w-6 h-6 text-blue-600 dark:text-blue-400" />
+    icon: <Lightbulb className="w-6 h-6 text-primary dark:text-accent" />
   },
   {
     title: 'Wireframing & Prototyping',
@@ -21,7 +21,7 @@ const processCards = [
       'Low & high-fidelity wireframes',
       'Clickable prototypes for real-world testing'
     ],
-    icon: <Workflow className="w-6 h-6 text-blue-600 dark:text-blue-400" />
+    icon: <Workflow className="w-6 h-6 text-primary dark:text-accent" />
   },
   {
     title: 'Visual Interface Design',
@@ -31,7 +31,7 @@ const processCards = [
       'Mobile-first & responsive designs',
       'Consistency across platforms for seamless interactions'
     ],
-    icon: <Palette className="w-6 h-6 text-blue-600 dark:text-blue-400" />
+    icon: <Palette className="w-6 h-6 text-primary dark:text-accent" />
   },
   {
     title: 'Interaction Design',
@@ -41,7 +41,7 @@ const processCards = [
       'User behavior analysis & heatmaps',
       'Ongoing UX optimization for continuous improvement'
     ],
-    icon: <BarChart3 className="w-6 h-6 text-blue-600 dark:text-blue-400" />
+    icon: <BarChart3 className="w-6 h-6 text-primary dark:text-accent" />
   }, {
     title: 'Responsive & Adaptive Design',
     description: 'Your audience uses multiple devices; your design must adapt smoothly. We ensure mobile-friendly, tablet-friendly, and desktop-friendly layouts to enhance usability and reach.',
@@ -50,7 +50,7 @@ const processCards = [
       'Mobile-first & responsive designs',
       'Consistency across platforms for seamless interactions'
     ],
-    icon: <Palette className="w-6 h-6 text-blue-600 dark:text-blue-400" />
+    icon: <Palette className="w-6 h-6 text-primary dark:text-accent" />
   },
    {
     title: 'Usability Testing &amp; Improvements',
@@ -60,36 +60,36 @@ const processCards = [
       'Mobile-first & responsive designs',
       'Consistency across platforms for seamless interactions'
     ],
-    icon: <Palette className="w-6 h-6 text-blue-600 dark:text-blue-400" />
+    icon: <Palette className="w-6 h-6 text-primary dark:text-accent" />
   },
 ];
 
 const Process = () => {
   return (
-    <section className='bg-gray-200 dark:bg-gray-900 py-16 md:py-20 relative overflow-hidden'>
+    <section className='bg-gray-200 dark:bg-background py-16 md:py-20 relative overflow-hidden'>
       {/* Background decorative elements */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute -top-20 -right-20 w-64 h-64 bg-blue-300/20 dark:bg-blue-700/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-40 left-10 w-72 h-72 bg-blue-300/20 dark:bg-blue-700/10 rounded-full blur-3xl"></div>
+        <div className="absolute -top-20 -right-20 w-64 h-64 bg-accent/15 dark:bg-primary-hover/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-40 left-10 w-72 h-72 bg-accent/15 dark:bg-primary-hover/10 rounded-full blur-3xl"></div>
       </div>
       
       <div className="max-w-7xl mx-auto px-6 md:px-8 relative z-10">
         {/* Section Header */}
         <div className="mb-8">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-blue-100 dark:bg-blue-900/60 text-blue-800 dark:text-blue-300 rounded-full text-sm font-medium mb-4">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-primary/10 dark:bg-primary/25 text-primary dark:text-accent rounded-full text-sm font-medium mb-4">
             <span>Our Methodology</span>
           </div>
           
-          <h2 className='text-gray-900 dark:text-white text-4xl md:text-5xl lg:text-6xl font-bold leading-tight'>
+          <h2 className='text-heading text-4xl md:text-5xl lg:text-6xl font-bold leading-tight'>
             What We Offer Through Our UI/UX Design Services 
           </h2>
           
-          <p className='text-gray-800 dark:text-gray-200 text-lg mt-6 max-w-4xl'>
-            At <span className='text-blue-700 dark:text-blue-400 font-bold'>SEO India Tech,</span> we partner with you to innovate, not just design. Our process ensures every user touchpoint is a strategic opportunity to enhance engagement and drive business growth.
+          <p className='text-heading dark:text-gray-200 text-lg mt-6 max-w-4xl'>
+            At <span className='text-primary dark:text-accent font-bold'>SEO India Tech,</span> we partner with you to innovate, not just design. Our process ensures every user touchpoint is a strategic opportunity to enhance engagement and drive business growth.
           </p>
           
           <div className="mt-6 mb-12">
-            <div className="h-1 w-24 bg-blue-600 dark:bg-blue-500 rounded-full"></div>
+            <div className="h-1 w-24 bg-primary dark:bg-primary rounded-full"></div>
           </div>
         </div>
 
@@ -98,23 +98,23 @@ const Process = () => {
           {processCards?.map((card, index) => (
             <div 
               key={index}
-              className='bg-white dark:bg-gray-800 shadow-lg rounded-xl p-8 border border-gray-100 dark:border-gray-700 hover:shadow-xl transform hover:scale-102 transition duration-300 hover:border-blue-200 dark:hover:border-blue-700'
+              className='bg-card dark:bg-card shadow-lg rounded-xl p-8 border border-border dark:border-border hover:shadow-xl transform hover:scale-102 transition duration-300 hover:border-primary/30 dark:hover:border-primary/40'
             >
               <div className="flex items-center gap-3 mb-4">
-                <div className="p-2 bg-blue-100 dark:bg-blue-900/60 rounded-lg">
+                <div className="p-2 bg-primary/10 dark:bg-primary/25 rounded-lg">
                   {card.icon}
                 </div>
-                <h2 className='text-gray-900 dark:text-white text-2xl font-bold'>{card.title}</h2>
+                <h2 className='text-heading text-2xl font-bold'>{card.title}</h2>
               </div>
               
-              <p className='text-gray-700 dark:text-gray-300 mb-6'>
+              <p className='text-body mb-6'>
                 {card.description}
               </p>
               
               <ul className='space-y-2'>
                 {card.points.map((point, i) => (
-                  <li key={i} className='flex items-start gap-2 text-gray-700 dark:text-gray-300'>
-                    <span className="text-blue-600 dark:text-blue-400 font-bold text-lg leading-tight">-</span>
+                  <li key={i} className='flex items-start gap-2 text-body'>
+                    <span className="text-primary dark:text-accent font-bold text-lg leading-tight">-</span>
                     <span>{point}</span>
                   </li>
                 ))}
@@ -129,23 +129,23 @@ const Process = () => {
           {processCards?.map((card, index) => (
             <div 
               key={index}
-              className='bg-white dark:bg-gray-800 shadow-lg rounded-xl p-8 border border-gray-100 dark:border-gray-700 hover:shadow-xl transform hover:scale-102 transition duration-300 hover:border-blue-200 dark:hover:border-blue-700'
+              className='bg-card dark:bg-card shadow-lg rounded-xl p-8 border border-border dark:border-border hover:shadow-xl transform hover:scale-102 transition duration-300 hover:border-primary/30 dark:hover:border-primary/40'
             >
               <div className="flex items-center gap-3 mb-4">
-                <div className="p-2 bg-blue-100 dark:bg-blue-900/60 rounded-lg">
+                <div className="p-2 bg-primary/10 dark:bg-primary/25 rounded-lg">
                   {card.icon}
                 </div>
-                <h2 className='text-gray-900 dark:text-white text-xl font-bold'>{card.title}</h2>
+                <h2 className='text-heading text-xl font-bold'>{card.title}</h2>
               </div>
               
-              <p className='text-gray-700 dark:text-gray-300 mb-6'>
+              <p className='text-body mb-6'>
                 {card.description}
               </p>
               
               {/* <ul className='space-y-2'>
                 {card.points.map((point, i) => (
-                  <li key={i} className='flex items-start gap-2 text-gray-700 dark:text-gray-300'>
-                    <span className="text-blue-600 dark:text-blue-400 font-bold text-lg leading-tight">-</span>
+                  <li key={i} className='flex items-start gap-2 text-body'>
+                    <span className="text-primary dark:text-accent font-bold text-lg leading-tight">-</span>
                     <span>{point}</span>
                   </li>
                 ))}
@@ -154,7 +154,7 @@ const Process = () => {
           ))}
           
           {/* Image Card */}
-          {/* <div className='bg-white dark:bg-gray-800 shadow-lg rounded-xl overflow-hidden border border-gray-100 dark:border-gray-700 hover:scale-102 transition duration-300'>
+          {/* <div className='bg-card dark:bg-card shadow-lg rounded-xl overflow-hidden border border-border dark:border-border hover:scale-102 transition duration-300'>
             <div className="relative h-full w-full min-h-[300px]">
               <Image
                 src='/images/services/our-design.png'
@@ -180,8 +180,8 @@ const Process = () => {
             { value: '65%', label: 'Reduced Bounce Rate' }
           ].map((stat, index) => (
             <div key={index} className="text-center p-4">
-              <div className="text-3xl md:text-4xl font-bold text-blue-700 dark:text-blue-400">{stat.value}</div>
-              <div className="text-gray-700 dark:text-gray-300 mt-2">{stat.label}</div>
+              <div className="text-3xl md:text-4xl font-bold text-primary dark:text-accent">{stat.value}</div>
+              <div className="text-body mt-2">{stat.label}</div>
             </div>
           ))}
         </div>

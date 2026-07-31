@@ -20,28 +20,28 @@ export default function TrustWebsiteCreation() {
   const integrationFeatures = [
     {
       id: 1,
-      icon: <Share2 className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
+      icon: <Share2 className="w-5 h-5 text-primary dark:text-accent" />,
       title: 'Social Media Integration',
       description:
         'Integrate your website with all social platforms for a consistent and unified brand presence.',
     },
     {
       id: 2,
-      icon: <Users className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
+      icon: <Users className="w-5 h-5 text-primary dark:text-accent" />,
       title: 'CRM Connection',
       description:
         'Integrate your website with CRM to capture and cultivate leads effectively.',
     },
     {
       id: 3,
-      icon: <Database className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
+      icon: <Database className="w-5 h-5 text-primary dark:text-accent" />,
       title: 'Lead Management',
       description:
         'Track and manage leads efficiently to enhance your overall sales performance.',
     },
     {
       id: 4,
-      icon: <Smartphone className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
+      icon: <Smartphone className="w-5 h-5 text-primary dark:text-accent" />,
       title: 'Mobile Optimization',
       description:
         'Responsive design ensures seamless performance and appearance across all devices and screen sizes.',
@@ -56,15 +56,15 @@ export default function TrustWebsiteCreation() {
   }, [])
 
   return (
-    <section className="py-16 md:py-24 px-6 bg-gray-50 dark:bg-gray-900 relative overflow-hidden">
+    <section className="py-16 md:py-24 px-6 bg-background relative overflow-hidden">
       {/* Robust Development &amp; Content Integration */}
       <div className="mb-16">
-        <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-100 dark:border-blue-800 rounded-2xl p-6 md:p-10 shadow-lg">
-          <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white text-center mb-6">
+        <div className="bg-background dark:bg-primary/15 border border-primary/20 dark:border-primary/40 rounded-2xl p-6 md:p-10 shadow-lg">
+          <h3 className="text-2xl md:text-3xl font-bold text-heading text-center mb-6">
             Robust Development &amp; Content Integration
           </h3>
 
-          <p className="text-gray-700 dark:text-gray-300 text-center max-w-4xl mx-auto mb-10 leading-relaxed">
+          <p className="text-body text-center max-w-4xl mx-auto mb-10 leading-relaxed">
             Behind every great website is solid development. Our technical team
             builds your site using the optimal technology stack - from CMS
             platforms like WordPress to custom frameworks - ensuring your site
@@ -82,7 +82,7 @@ export default function TrustWebsiteCreation() {
 
           {/* Timeline / Flow (Optional, can add key points if needed) */}
           <div className="max-w-4xl mx-auto">
-            <div className="relative border-l-2 border-blue-300 dark:border-blue-700 pl-6 space-y-10">
+            <div className="relative border-l-2 border-primary/30 dark:border-primary/30 pl-6 space-y-10">
               {/* Example: You can add steps or leave empty if no sub-points */}
             </div>
           </div>
@@ -91,8 +91,8 @@ export default function TrustWebsiteCreation() {
 
       {/* Background decorative elements */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/4 right-0 w-72 h-72 bg-white/50 dark:bg-blue-900/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 left-1/4 w-80 h-80 bg-blue-300/30 dark:bg-blue-800/10 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/4 right-0 w-72 h-72 bg-white/50 dark:bg-primary/20/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 left-1/4 w-80 h-80 bg-accent/20 dark:bg-primary/10 rounded-full blur-3xl"></div>
       </div>
 
       {/* Grid overlay */}
@@ -108,22 +108,22 @@ export default function TrustWebsiteCreation() {
                 : '-translate-x-10 opacity-0'
             }`}
           >
-            <div className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 p-8 md:p-10 shadow-xl">
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 rounded-full text-sm font-medium mb-6">
+            <div className="bg-card dark:bg-card rounded-2xl border border-border p-8 md:p-10 shadow-xl">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 dark:bg-primary/20/40 text-primary dark:text-accent rounded-full text-sm font-medium mb-6">
                 <Globe className="w-4 h-4" />
                 <span>Integrated Web Solutions</span>
               </div>
 
-              <h3 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
+              <h3 className="text-3xl md:text-4xl font-bold text-heading mb-6 leading-tight">
                 It's All in{' '}
-                <span className="text-blue-600 dark:text-blue-400">
+                <span className="text-primary dark:text-accent">
                   One Place
                 </span>
               </h3>
 
-              <div className="w-20 h-1 bg-blue-600 dark:bg-blue-500 rounded-full mb-6"></div>
+              <div className="w-20 h-1 bg-primary dark:bg-primary rounded-full mb-6"></div>
 
-              <p className="text-justify text-gray-700 dark:text-gray-300 text-base md:text-lg leading-relaxed mb-8">
+              <p className="text-justify text-body text-base md:text-lg leading-relaxed mb-8">
                 Your website is a crucial tool in today's digital landscape. Our
                 services help you seamlessly integrate it with all your social
                 media platforms, ensuring consistent engagement across channels.
@@ -140,23 +140,23 @@ export default function TrustWebsiteCreation() {
                 {integrationFeatures.map((feature) => (
                   <div
                     key={feature.id}
-                    className={`p-4 rounded-lg border border-gray-100 dark:border-gray-700 bg-gray-50 dark:bg-gray-800/80 transition-all duration-300 hover:shadow-md ${
+                    className={`p-4 rounded-lg border border-border dark:border-border bg-gray-50 dark:bg-card/80 transition-all duration-300 hover:shadow-md ${
                       hoveredCard === feature.id
-                        ? 'border-blue-200 dark:border-blue-800 shadow-md'
+                        ? 'border-primary/30 dark:border-primary/40 shadow-md'
                         : ''
                     }`}
                     onMouseEnter={() => setHoveredCard(feature.id)}
                     onMouseLeave={() => setHoveredCard(null)}
                   >
                     <div className="flex items-start gap-3">
-                      <div className="flex-shrink-0 p-2 bg-blue-100 dark:bg-blue-900/50 rounded-full">
+                      <div className="flex-shrink-0 p-2 bg-primary/10 dark:bg-primary/20 rounded-full">
                         {feature.icon}
                       </div>
                       <div>
-                        <h4 className="font-medium text-gray-900 dark:text-white mb-1">
+                        <h4 className="font-medium text-heading mb-1">
                           {feature.title}
                         </h4>
-                        <p className="text-gray-600 dark:text-gray-400 text-sm">
+                        <p className="text-muted text-sm">
                           {feature.description}
                         </p>
                       </div>
@@ -178,58 +178,58 @@ export default function TrustWebsiteCreation() {
             <div className="relative">
               {/* Main image with glow effect */}
               <div className="relative">
-                <div className="absolute -inset-2 bg-gradient-to-r from-blue-600 to-blue-400 opacity-30 dark:opacity-40 blur-xl rounded-full"></div>
+                <div className="absolute -inset-2 bg-gradient-to-r from-primary to-accent opacity-30 dark:opacity-40 blur-xl rounded-full"></div>
                 <div className="relative rounded-2xl overflow-hidden border-4 border-white dark:border-gray-800 shadow-2xl">
                   <Image
                     src="/images/website_creation1.png"
                     alt="Website creation and integration showing connected platforms and CRM systems"
                     width={600}
                     height={600}
-                    className="object-contain bg-white dark:bg-gray-800"
+                    className="object-contain bg-card dark:bg-card"
                   />
                 </div>
               </div>
 
               {/* Floating technology elements */}
               <div
-                className="absolute -top-4 -right-4 bg-white dark:bg-gray-800 p-3 rounded-full shadow-lg border border-gray-200 dark:border-gray-700"
+                className="absolute -top-4 -right-4 bg-card dark:bg-card p-3 rounded-full shadow-lg border border-border"
                 style={{
                   opacity: isVisible ? 1 : 0,
                   transform: isVisible ? 'translateY(0)' : 'translateY(-20px)',
                   transition: 'all 0.7s ease-out 0.4s',
                 }}
               >
-                <Code className="w-6 h-6 text-blue-600 dark:text-blue-400" />
+                <Code className="w-6 h-6 text-primary dark:text-accent" />
               </div>
 
               <div
-                className="absolute bottom-10 -left-4 bg-white dark:bg-gray-800 p-3 rounded-full shadow-lg border border-gray-200 dark:border-gray-700"
+                className="absolute bottom-10 -left-4 bg-card dark:bg-card p-3 rounded-full shadow-lg border border-border"
                 style={{
                   opacity: isVisible ? 1 : 0,
                   transform: isVisible ? 'translateY(0)' : 'translateY(20px)',
                   transition: 'all 0.7s ease-out 0.6s',
                 }}
               >
-                <Zap className="w-6 h-6 text-blue-600 dark:text-blue-400" />
+                <Zap className="w-6 h-6 text-primary dark:text-accent" />
               </div>
 
               {/* Stats card overlay */}
-              <div className="absolute -bottom-6 right-0 left-0 mx-auto w-4/5 bg-white dark:bg-gray-800 p-4 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700">
+              <div className="absolute -bottom-6 right-0 left-0 mx-auto w-4/5 bg-card dark:bg-card p-4 rounded-xl shadow-lg border border-border">
                 <div className="flex justify-between items-center">
                   <div>
-                    <div className="text-sm text-gray-600 dark:text-gray-400">
+                    <div className="text-sm text-muted">
                       Integration success
                     </div>
-                    <div className="text-xl font-bold text-blue-600 dark:text-blue-400">
+                    <div className="text-xl font-bold text-primary dark:text-accent">
                       98.5%
                     </div>
                   </div>
-                  <div className="h-10 w-px bg-gray-200 dark:bg-gray-700"></div>
+                  <div className="h-10 w-px bg-gray-200 dark:bg-surface"></div>
                   <div>
-                    <div className="text-sm text-gray-600 dark:text-gray-400">
+                    <div className="text-sm text-muted">
                       Lead conversion
                     </div>
-                    <div className="text-xl font-bold text-blue-600 dark:text-blue-400">
+                    <div className="text-xl font-bold text-primary dark:text-accent">
                       +45%
                     </div>
                   </div>
@@ -243,7 +243,7 @@ export default function TrustWebsiteCreation() {
                 (platform, index) => (
                   <div
                     key={index}
-                    className="flex items-center gap-2 px-4 py-2 bg-white dark:bg-gray-800 rounded-full shadow border border-gray-200 dark:border-gray-700 text-sm font-medium text-gray-700 dark:text-gray-300"
+                    className="flex items-center gap-2 px-4 py-2 bg-card dark:bg-card rounded-full shadow border border-border text-sm font-medium text-body"
                     style={{
                       transitionDelay: `${400 + index * 100}ms`,
                       opacity: isVisible ? 1 : 0,
@@ -263,40 +263,40 @@ export default function TrustWebsiteCreation() {
 
         {/* Benefits section */}
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md text-center border border-gray-200 dark:border-gray-700">
-            <div className="inline-flex items-center justify-center p-3 bg-blue-100 dark:bg-blue-900/50 rounded-full text-blue-600 dark:text-blue-400 mb-4">
+          <div className="bg-card dark:bg-card p-6 rounded-xl shadow-md text-center border border-border">
+            <div className="inline-flex items-center justify-center p-3 bg-primary/10 dark:bg-primary/20 rounded-full text-primary dark:text-accent mb-4">
               <Zap className="w-6 h-6" />
             </div>
-            <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+            <h4 className="text-lg font-semibold text-heading mb-2">
               Fast Development
             </h4>
-            <p className="text-gray-600 dark:text-gray-400">
+            <p className="text-muted">
               Our efficient workflow ensures your website is up and running in
               minimal time.
             </p>
           </div>
 
-          <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md text-center border border-gray-200 dark:border-gray-700">
-            <div className="inline-flex items-center justify-center p-3 bg-blue-100 dark:bg-blue-900/50 rounded-full text-blue-600 dark:text-blue-400 mb-4">
+          <div className="bg-card dark:bg-card p-6 rounded-xl shadow-md text-center border border-border">
+            <div className="inline-flex items-center justify-center p-3 bg-primary/10 dark:bg-primary/20 rounded-full text-primary dark:text-accent mb-4">
               <Users className="w-6 h-6" />
             </div>
-            <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+            <h4 className="text-lg font-semibold text-heading mb-2">
               Seamless Integration
             </h4>
-            <p className="text-gray-600 dark:text-gray-400">
+            <p className="text-muted">
               Centralize your business tools to streamline operations and
               improve collaboration.
             </p>
           </div>
 
-          <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md text-center border border-gray-200 dark:border-gray-700">
-            <div className="inline-flex items-center justify-center p-3 bg-blue-100 dark:bg-blue-900/50 rounded-full text-blue-600 dark:text-blue-400 mb-4">
+          <div className="bg-card dark:bg-card p-6 rounded-xl shadow-md text-center border border-border">
+            <div className="inline-flex items-center justify-center p-3 bg-primary/10 dark:bg-primary/20 rounded-full text-primary dark:text-accent mb-4">
               <Globe className="w-6 h-6" />
             </div>
-            <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+            <h4 className="text-lg font-semibold text-heading mb-2">
               Global Reach
             </h4>
-            <p className="text-gray-600 dark:text-gray-400">
+            <p className="text-muted">
               Grow your business with a website that reaches and connects with
               customers globally.
             </p>
@@ -307,17 +307,17 @@ export default function TrustWebsiteCreation() {
       <div className="mt-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 max-w-6xl mx-auto px-6">
           {/* Left Column */}
-          <div className="bg-gradient-to-r from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 border border-blue-200 dark:border-blue-800 rounded-3xl p-8 md:p-10 shadow-xl hover:shadow-2xl transition-all duration-300">
-            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white text-center mb-6">
+          <div className="bg-gradient-to-r from-cream to-blue-100 dark:from-primary/15 dark:to-secondary/20 border border-primary/30 dark:border-primary/40 rounded-3xl p-8 md:p-10 shadow-xl hover:shadow-2xl transition-all duration-300">
+            <h3 className="text-2xl md:text-3xl font-bold text-heading text-center mb-6">
               SEO, Local SEO &amp; Digital Branding Services Support
             </h3>
 
-            <p className="text-gray-800 dark:text-gray-300 text-center leading-relaxed">
+            <p className="text-heading dark:text-gray-300 text-center leading-relaxed">
               A beautiful website is just the start. To truly succeed online,
               you need visibility. That's where our <b>local SEO services,</b>{' '}
               <a
                 href="https://www.seoindiatech.com/services/digital-branding"
-                className="text-blue-600 underline"
+                className="text-primary underline"
               >
                 digital branding services,
               </a>{' '}
@@ -334,12 +334,12 @@ export default function TrustWebsiteCreation() {
           </div>
 
           {/* Right Column */}
-          <div className="bg-gradient-to-r from-purple-50 to-purple-100 dark:from-purple-900/20 dark:to-purple-800/20 border border-purple-200 dark:border-purple-800 rounded-3xl p-8 md:p-10 shadow-xl hover:shadow-2xl transition-all duration-300">
-            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white text-center mb-6">
+          <div className="bg-gradient-to-r from-cream to-purple-100 dark:from-purple-900/20 dark:to-purple-800/20 border border-primary/20 dark:border-purple-800 rounded-3xl p-8 md:p-10 shadow-xl hover:shadow-2xl transition-all duration-300">
+            <h3 className="text-2xl md:text-3xl font-bold text-heading text-center mb-6">
               Quality Assurance, Launch &amp; Maintenance
             </h3>
 
-            <p className="text-gray-800 dark:text-gray-300 text-center leading-relaxed">
+            <p className="text-heading dark:text-gray-300 text-center leading-relaxed">
               Before your site goes live, we perform extensive testing across
               devices, browsers, and screen sizes. We check functionality,
               performance, security, and accessibility - ensuring a seamless

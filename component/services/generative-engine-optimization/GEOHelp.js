@@ -20,22 +20,22 @@ export default function HowWeHelpSection() {
         {/* Header */}
         <div className="text-center space-y-6">
           <div className="flex justify-center">
-            {/* <div className="p-5 rounded-full bg-gradient-to-br from-blue-100 to-indigo-100 dark:from-blue-900/50 dark:to-indigo-900/40 text-blue-600 dark:text-blue-400 shadow-lg">
+            {/* <div className="p-5 rounded-full bg-gradient-to-br from-blue-100 to-indigo-100 dark:from-primary/20/50 dark:to-indigo-900/40 text-primary dark:text-accent shadow-lg">
               <FaHandsHelping size={40} />
             </div> */}
           </div>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white tracking-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-heading tracking-tight">
             How Our AI SEO Company Helps
           </h2>
         </div>
 
         {/* Main Content */}
         <div className="space-y-10 md:space-y-14">
-          <p className="text-lg sm:text-xl text-gray-700 dark:text-gray-300 leading-relaxed text-center max-w-4xl mx-auto font-medium">
+          <p className="text-lg sm:text-xl text-body leading-relaxed text-center max-w-4xl mx-auto font-medium">
             As a digital marketing company in India, we work with startups, ecommerce brands, and service providers. Our team builds AI ready content that supports long term growth.
           </p>
 
-          <p className="text-lg sm:text-xl text-gray-700 dark:text-gray-300 leading-relaxed text-center max-w-4xl mx-auto font-medium">
+          <p className="text-lg sm:text-xl text-body leading-relaxed text-center max-w-4xl mx-auto font-medium">
             You get:
           </p>
 
@@ -43,20 +43,20 @@ export default function HowWeHelpSection() {
             {benefits.map((item, index) => (
               <div
                 key={index}
-                className="group flex items-start gap-5 p-7 rounded-2xl bg-white/80 dark:bg-gray-900/70 backdrop-blur-md border border-gray-200/60 dark:border-gray-800/60 shadow-md hover:shadow-xl hover:border-blue-400/50 dark:hover:border-blue-600/50 transition-all duration-300 hover:-translate-y-1"
+                className="group flex items-start gap-5 p-7 rounded-2xl bg-white/80 dark:bg-background/70 backdrop-blur-md border border-gray-200/60 dark:border-gray-800/60 shadow-md hover:shadow-xl hover:border-blue-400/50 dark:hover:border-primary/50 transition-all duration-300 hover:-translate-y-1"
               >
                 <FaRobot
-                  className="text-blue-600 dark:text-blue-500 flex-shrink-0 mt-1.5"
+                  className="text-primary dark:text-primary flex-shrink-0 mt-1.5"
                   size={28}
                 />
-                <p className="text-gray-800 dark:text-gray-100 font-medium text-base leading-relaxed">
+                <p className="text-heading dark:text-gray-100 font-medium text-base leading-relaxed">
                   {item}
                 </p>
               </div>
             ))}
           </div>
 
-          <p className="text-lg sm:text-xl text-gray-700 dark:text-gray-300 leading-relaxed text-center max-w-4xl mx-auto font-medium mt-8">
+          <p className="text-lg sm:text-xl text-body leading-relaxed text-center max-w-4xl mx-auto font-medium mt-8">
             Our generative engine optimization strategies improve your visibility across AI search tools that generate answers for users.
           </p>
         </div>

@@ -14,7 +14,7 @@ const Services = () => {
           {' '}
           We optimize your website to improve rankings and increase organic
           traffic. From keyword research to link building, our{' '}
-          <Link href="/services/seo" className="text-blue-600 underline">
+          <Link href="/services/seo" className="text-primary underline">
             SEO solutions
           </Link>{' '}
           strengthen your online visibility and help your business reach the
@@ -31,7 +31,7 @@ const Services = () => {
           We create impactful{' '}
           <Link
             href="services/social-media-marketing"
-            className="text-blue-600 underline"
+            className="text-primary underline"
           >
             social media strategies
           </Link>{' '}
@@ -50,7 +50,7 @@ const Services = () => {
           Our data-backed{' '}
           <Link
             href="services/ppc-advertising"
-            className="text-blue-600 underline"
+            className="text-primary underline"
           >
             PPC campaigns
           </Link>{' '}
@@ -85,7 +85,7 @@ const Services = () => {
   ]
 
   return (
-    <div className="bg-white dark:bg-gray-900 pt-4 pb-8">
+    <div className="bg-white dark:bg-background pt-4 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
           {/* Left two columns for cards */}
@@ -96,21 +96,21 @@ const Services = () => {
               <div
                 key={index}
                 onClick={() => router.push(service.href)}
-                className="cursor-pointer bg-gradient-to-br from-blue-50 to-blue-100 
+                className="cursor-pointer bg-gradient-to-br from-cream to-blue-100 
                  dark:from-gray-800 dark:to-gray-700 p-6 rounded-2xl 
                  shadow-md hover:shadow-lg transition-all duration-300 
-                 hover:translate-y-[-5px] border border-blue-100 
+                 hover:translate-y-[-5px] border border-primary/20 
                  dark:border-gray-600"
               >
                 <div className="flex items-start mb-4">
-                  <Icon className="w-8 h-8 mr-3 text-blue-600 dark:text-blue-400 shrink-0" aria-hidden="true" />
-                  <h3 className="text-lg font-bold text-gray-800 dark:text-white">
+                  <Icon className="w-8 h-8 mr-3 text-primary dark:text-accent shrink-0" aria-hidden="true" />
+                  <h3 className="text-lg font-bold text-heading">
                     {service.title}
                   </h3>
                 </div>
 
                 <p
-                  className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed text-justify"
+                  className="text-sm text-muted leading-relaxed text-justify"
                   onClick={(e) => e.stopPropagation()}
                 >
                   {service.desc}
@@ -120,12 +120,12 @@ const Services = () => {
           </div>
 
           {/* Right side description card */}
-          <div className="bg-gradient-to-br from-gray-900 to-blue-900 dark:from-gray-700 dark:to-gray-800 text-white p-8 rounded-2xl shadow-lg flex flex-col justify-between">
+          <div className="bg-gradient-to-br from-gray-900 to-blue-900 dark:from-gray-700 dark:to-surface text-white p-8 rounded-2xl shadow-lg flex flex-col justify-between">
             <div>
               <h2 className="text-3xl sm:text-4xl font-bold leading-tight mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-white dark:from-gray-300 dark:to-white">
                 Your Reliable Digital Marketing Service Agency
               </h2>
-              <p className="mb-8 text-sm sm:text-base leading-relaxed text-blue-100 dark:text-gray-400 text-justify">
+              <p className="mb-8 text-sm sm:text-base leading-relaxed text-white/90 dark:text-gray-400 text-justify">
                 As a dedicated digital marketing service agency, we use advanced
                 tools, proven methodologies, and industry expertise to ensure
                 your brand stands out. Our integrated services help you connect
@@ -138,7 +138,7 @@ const Services = () => {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/contact-us">
-                <button className="cursor-pointer bg-gradient-to-r from-blue-600 to-blue-800 dark:from-gray-800 dark:to-gray-900 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105 transform active:scale-95 shadow-md border border-blue-700/20 dark:border-gray-500/30 text-center">
+                <button className="cursor-pointer bg-gradient-to-r from-primary to-secondary dark:from-surface dark:to-background text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105 transform active:scale-95 shadow-md border border-primary/20 dark:border-gray-500/30 text-center">
                   Get Started
                 </button>
               </Link>

@@ -68,57 +68,57 @@ const Why = () => {
   const reasons = [
     {
       id: 1,
-      icon: <Target className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
+      icon: <Target className="w-6 h-6 text-primary dark:text-accent" />,
       title: "Efficient content distribution",
       description: "We turn every piece of content into a growth engine-driving clicks, leads, and real business results."
     },
     {
       id: 2,
-      icon: <Fingerprint className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
+      icon: <Fingerprint className="w-6 h-6 text-primary dark:text-accent" />,
       title: "Enhanced user engagement",
       description: "We go beyond templates, tailoring strategies to your business, your market, and your audience."
     },
     {
       id: 3,
-      icon: <Users className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
+      icon: <Users className="w-6 h-6 text-primary dark:text-accent" />,
       title: "Personalized customer journeys",
       description: "As your dedicated partner, we celebrate your wins and tackle every challenge together."
     },
     {
       id: 4,
       
-      icon: <TrendingUp className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
+      icon: <TrendingUp className="w-6 h-6 text-primary dark:text-accent" />,
       title: "Increased productivity",
       description: "As your dedicated partner, we celebrate your wins and tackle every challenge together."
     },
     {
       id: 5,
      
-      icon: <FolderDot className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
+      icon: <FolderDot className="w-6 h-6 text-primary dark:text-accent" />,
       title: "Consistent brand communication",
       description: "As your dedicated partner, we celebrate your wins and tackle every challenge together."
     }
   ];
 
   return (
-    <section ref={sectionRef} className="bg-white dark:bg-gray-900 py-16 px-4 md:px-8">
+    <section ref={sectionRef} className="bg-white dark:bg-background py-16 px-4 md:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Left column */}
           <div>
             <div className="mb-8">
-              <div className="inline-flex items-center gap-2 px-3 py-1 bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 rounded-full text-sm font-medium mb-4">
+              <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary/10 dark:bg-primary/20/40 text-primary dark:text-accent rounded-full text-sm font-medium mb-4">
                 <span>Why Choose Us</span>
               </div>
               
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-heading mb-6">
                 Strengthening Your Brand with Digital Automation Services
               </h2>
               
-              <div className="w-20 h-1.5 bg-blue-600 dark:bg-blue-500 rounded-full mb-6"></div>
+              <div className="w-20 h-1.5 bg-primary dark:bg-primary rounded-full mb-6"></div>
               
-              <p className="text-gray-700 dark:text-gray-300 text-lg text-justify">
-               Automation has become essential for scaling marketing activities. Our <Link href="/solution/automation" className='text-blue-400 underline'>digital automation
+              <p className="text-body text-lg text-justify">
+               Automation has become essential for scaling marketing activities. Our <Link href="/solution/automation" className='text-accent underline'>digital automation
                 services </Link>  support your content distribution through automated email sequences, scheduled
                 social posting, CRM integration, and workflow optimization. When combined with our content
                 marketing services, automation helps deliver consistent messaging, faster responses, and
@@ -131,12 +131,12 @@ const Why = () => {
               {stats.map((stat, index) => (
                 <div 
                   key={index} 
-                  className="bg-white dark:bg-gray-800 p-6 rounded-xl border border-gray-200 dark:border-gray-700 shadow-md text-center"
+                  className="bg-card dark:bg-card p-6 rounded-xl border border-border shadow-md text-center"
                 >
-                  <div className="text-4xl md:text-5xl font-bold text-blue-700 dark:text-blue-400 mb-2">
+                  <div className="text-4xl md:text-5xl font-bold text-primary dark:text-accent mb-2">
                     {counts[index]}
                   </div>
-                  <div className="text-gray-600 dark:text-gray-400 text-sm md:text-base">
+                  <div className="text-muted text-sm md:text-base">
                     {stat.label}
                   </div>
                 </div>
@@ -149,18 +149,18 @@ const Why = () => {
             {reasons.map((reason) => (
               <div 
                 key={reason.id} 
-                className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-6 shadow-md"
+                className="bg-card dark:bg-card rounded-xl border border-border p-6 shadow-md"
               >
                 <div className="flex items-start gap-4">
-                  <div className="p-2 bg-blue-100 dark:bg-blue-900/40 rounded-lg">
+                  <div className="p-2 bg-primary/10 dark:bg-primary/20/40 rounded-lg">
                     {reason.icon}
                   </div>
                   
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                    <h3 className="text-xl font-semibold text-heading mb-2">
                       {reason.id}. {reason.title}
                     </h3>
-                    {/* <p className="text-gray-700 dark:text-gray-300">
+                    {/* <p className="text-body">
                       {reason.description}
                     </p> */}
                   </div>

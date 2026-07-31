@@ -339,3 +339,65 @@ html.lenis, html.lenis body { height: auto; }
 .shadow-glow-brand { box-shadow: var(--shadow-glow-brand); }
 .shadow-glow-sky { box-shadow: var(--shadow-glow-sky); }
 .shadow-premium { box-shadow: var(--shadow-premium); }
+
+/* Design system utilities */
+.page-container {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media (min-width: 640px) {
+  .page-container { padding-left: 1.5rem; padding-right: 1.5rem; }
+}
+@media (min-width: 1024px) {
+  .page-container { padding-left: 2rem; padding-right: 2rem; }
+}
+
+.heading-gradient {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.btn-brand {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 9999px;
+  padding: 0.75rem 1.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: var(--color-primary);
+  transition: all 0.3s ease;
+}
+.btn-brand:hover {
+  background-color: var(--color-primary-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-glow-brand);
+}
+
+.surface-card {
+  border: 1px solid var(--color-border);
+  border-radius: 1rem;
+  background: var(--color-card);
+}
+
+.badge-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 9999px;
+  padding: 0.375rem 1rem;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  background: rgba(107, 46, 136, 0.08);
+  border: 1px solid rgba(107, 46, 136, 0.15);
+}

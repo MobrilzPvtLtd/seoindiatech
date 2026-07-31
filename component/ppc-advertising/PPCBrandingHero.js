@@ -12,15 +12,15 @@ import Link from 'next/link'
 
 export default function PPCBrandingHero() {
   return (
-    <section className="bg-gray-100 dark:bg-gray-900 pt-24 md:pt-28 pb-16 px-6 lg:pb-24 lg:px-8">
+    <section className="bg-cream dark:bg-background pt-24 md:pt-28 pb-16 px-6 lg:pb-24 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Main Headline */}
         <div className="text-center mb-16">
-          <h3 className="text-4xl lg:text-6xl font-bold text-gray-800 dark:text-white leading-tight">
+          <h3 className="text-4xl lg:text-6xl font-bold text-heading leading-tight">
             PPC + Local SEO + Branding ={' '}
-            <span className="text-blue-600">Powerful Digital Growth</span>
+            <span className="text-primary">Powerful Digital Growth</span>
           </h3>
-          <p className="mt-6 text-xl text-gray-600 dark:text-gray-100 max-w-4xl mx-auto">
+          <p className="mt-6 text-xl text-muted dark:text-gray-100 max-w-4xl mx-auto">
             PPC cannot function in isolation. To build a complete online
             presence, your paid ads must work together with SEO, branding, and
             content strategy. That's why we combine PPC with local seo services
@@ -31,15 +31,15 @@ export default function PPCBrandingHero() {
 
         {/* Core Value Cards */}
         <div className="grid lg:grid-cols-3 gap-10 mb-20">
-          <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm border border-gray-400">
-            <Zap className="w-12 h-12 text-blue-600 mb-4" />
-            <h3 className="text-2xl font-semibold text-gray-800 dark:text-white mb-3">
+          <div className="bg-card dark:bg-card rounded-2xl p-8 shadow-sm border border-gray-400">
+            <Zap className="w-12 h-12 text-primary mb-4" />
+            <h3 className="text-2xl font-semibold text-heading mb-3">
               Instant Paid Traffic
             </h3>
-            <p className="text-gray-600 dark:text-gray-300">
+            <p className="text-muted">
               Additionally, our{' '}
               <Link
-                className="text-blue-600 underline"
+                className="text-primary underline"
                 href={'/services/digital-branding'}
               >
                 digital branding solution{' '}
@@ -50,22 +50,22 @@ export default function PPCBrandingHero() {
               approach.
             </p>
           </div>
-          <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm border border-gray-400">
-            <Target className="w-12 h-12 text-blue-600 mb-4" />
-            <h3 className="text-2xl font-semibold text-gray-800 dark:text-white mb-3">
+          <div className="bg-card dark:bg-card rounded-2xl p-8 shadow-sm border border-gray-400">
+            <Target className="w-12 h-12 text-primary mb-4" />
+            <h3 className="text-2xl font-semibold text-heading mb-3">
               Dominate Local Search
             </h3>
-            <p className="text-gray-600 dark:text-gray-300">
+            <p className="text-muted">
               Combine PPC with powerful local SEO services to own the map pack
               and organic results in your area.
             </p>
           </div>
-          <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm border border-gray-400">
-            <Shield className="w-12 h-12 text-blue-600 mb-4" />
-            <h3 className="text-2xl font-semibold text-gray-800 dark:text-white mb-3">
+          <div className="bg-card dark:bg-card rounded-2xl p-8 shadow-sm border border-gray-400">
+            <Shield className="w-12 h-12 text-primary mb-4" />
+            <h3 className="text-2xl font-semibold text-heading mb-3">
               Build Trust & Authority
             </h3>
-            <p className="text-gray-600 dark:text-gray-300">
+            <p className="text-muted">
               Our digital branding solutions create consistent messaging and
               visuals that convert visitors into loyal customers.
             </p>
@@ -73,12 +73,12 @@ export default function PPCBrandingHero() {
         </div>
 
         {/* Why Choose Us */}
-        <div className="bg-white dark:bg-gray-800 rounded-3xl shadow-lg p-10 lg:p-16 mb-20">
-          <h2 className="text-3xl lg:text-5xl font-bold text-gray-800 dark:text-gray-100 text-center mb-4">
-            Why Choose <span className="text-blue-600">SEO India Tech</span> for
+        <div className="bg-card dark:bg-card rounded-3xl shadow-lg p-10 lg:p-16 mb-20">
+          <h2 className="text-3xl lg:text-5xl font-bold text-heading dark:text-gray-100 text-center mb-4">
+            Why Choose <span className="text-primary">SEO India Tech</span> for
             PPC Advertising Services?
           </h2>
-          <p className="text-center text-gray-600 dark:text-gray-300 text-lg max-w-4xl mx-auto mb-12">
+          <p className="text-center text-muted text-lg max-w-4xl mx-auto mb-12">
             Recognized as a reliable digital marketing service company offering
             the best tailored strategies for your business goals.
           </p>
@@ -124,13 +124,13 @@ export default function PPCBrandingHero() {
             ].map((item, i) => (
               <div key={i} className="flex gap-5">
                 <div className="flex-shrink-0">
-                  <item.icon className="w-10 h-10 text-blue-600" />
+                  <item.icon className="w-10 h-10 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-800 dark:text-white text-lg">
+                  <h4 className="font-semibold text-heading text-lg">
                     {item.title}
                   </h4>
-                  <p className="text-gray-600 dark:text-gray-300 mt-1">
+                  <p className="text-muted mt-1">
                     {item.desc}
                   </p>
                 </div>
@@ -141,10 +141,10 @@ export default function PPCBrandingHero() {
 
         {/* Final CTA */}
         <div className="text-center">
-          <h2 className="text-3xl lg:text-5xl font-bold text-gray-800 dark:text-gray-100 mb-6">
+          <h2 className="text-3xl lg:text-5xl font-bold text-heading dark:text-gray-100 mb-6">
             Start Your PPC Advertising Journey Today
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-10">
+          <p className="text-xl text-muted max-w-3xl mx-auto mb-10">
             Ready for targeted ads, qualified leads, and instant visibility?
             Partner with SEO India Tech and experience professional
             pay-per-click advertising crafted for real success.
@@ -154,7 +154,7 @@ export default function PPCBrandingHero() {
             {/* Primary Button */}
             <Link
               href="/contact-us"
-              className="inline-flex items-center justify-center px-10 py-4 bg-blue-600 hover:bg-blue-700 text-white font-medium text-lg rounded-lg transition duration-200 shadow-md hover:shadow-lg"
+              className="inline-flex items-center justify-center px-10 py-4 bg-primary hover:bg-primary-hover text-white font-medium text-lg rounded-lg transition duration-200 shadow-md hover:shadow-lg"
             >
               Get Started Now
               <ArrowRight className="ml-2 w-5 h-5" />
@@ -163,7 +163,7 @@ export default function PPCBrandingHero() {
             {/* Secondary Button */}
             {/* <a
               href="#case-studies"
-              className="inline-flex items-center justify-center px-10 py-4 bg-transparent hover:bg-gray-200 text-gray-800 font-medium text-lg rounded-lg border-2 border-gray-400 transition duration-200"
+              className="inline-flex items-center justify-center px-10 py-4 bg-transparent hover:bg-gray-200 text-heading font-medium text-lg rounded-lg border-2 border-gray-400 transition duration-200"
             >
               View Case Studies
             </a> */}

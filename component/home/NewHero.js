@@ -211,7 +211,7 @@
 //                                 </button>
 //                             </Link>
 //                             <Link href="#faq" className="w-full sm:w-auto">
-//                                 <button className="w-full bg-white hover:bg-gray-50 border border-black/[0.1] text-[#14161F] px-8 py-3.5 rounded-full font-semibold text-sm transition-all active:scale-95 flex items-center justify-center gap-2.5">
+//                                 <button className="w-full bg-white hover:bg-cream border border-black/[0.1] text-[#14161F] px-8 py-3.5 rounded-full font-semibold text-sm transition-all active:scale-95 flex items-center justify-center gap-2.5">
 //                                     <HiOutlineChatBubbleLeftRight className="w-4 h-4" />
 //                                     Talk to Expert
 //                                 </button>
@@ -620,7 +620,7 @@ const Hero = () => {
                             </button>
                         </Link>
                         <Link href="#faq" className="w-full sm:w-auto">
-                            <button className="w-full bg-white hover:bg-gray-50 border border-black/[0.1] text-[#14161F] px-8 py-3.5 rounded-full font-semibold text-sm transition-all active:scale-95 flex items-center justify-center gap-2.5">
+                            <button className="w-full bg-white hover:bg-cream border border-black/[0.1] text-[#14161F] px-8 py-3.5 rounded-full font-semibold text-sm transition-all active:scale-95 flex items-center justify-center gap-2.5">
                                 <HiOutlineChatBubbleLeftRight className="w-4 h-4" />
                                 Talk to Expert
                             </button>

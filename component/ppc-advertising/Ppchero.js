@@ -19,11 +19,11 @@ const Ppchero = () => {
   ];
 
   return (
-    <section className="bg-gradient-to-b from-white to-blue-50 dark:from-gray-900 dark:to-blue-950/30 px-4 pt-24 md:pt-28 pb-8 md:pb-20 lg:pb-16 relative overflow-hidden">
+    <section className="bg-gradient-to-b from-white to-background dark:from-background dark:to-secondary/40/30 px-4 pt-24 md:pt-28 pb-8 md:pb-20 lg:pb-16 relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/4 right-0 w-72 h-72 bg-blue-100/50 dark:bg-blue-900/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 left-1/4 w-80 h-80 bg-indigo-100/30 dark:bg-indigo-900/10 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/4 right-0 w-72 h-72 bg-primary/10 dark:bg-primary/20/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 left-1/4 w-80 h-80 bg-primary/10 dark:bg-primary/10 rounded-full blur-3xl"></div>
       </div>
 
       {/* Decorative elements */}
@@ -34,7 +34,7 @@ const Ppchero = () => {
           viewBox="0 0 60 60"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="text-blue-200 dark:text-blue-900 opacity-30"
+          className="text-accent/80 dark:text-primary/40 opacity-30"
         >
           <circle cx="30" cy="30" r="30" fill="currentColor" />
         </svg>
@@ -56,26 +56,26 @@ const Ppchero = () => {
       <div className="max-w-6xl mx-auto relative z-10">
         {/* Header badge */}
         <div className="flex justify-center mb-6">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 rounded-full text-sm font-medium">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 dark:bg-primary/20/40 text-primary dark:text-accent rounded-full text-sm font-medium">
             <span>PPC Advertising</span>
           </div>
         </div>
 
         {/* Heading */}
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-gray-900 dark:text-white mb-8 text-center">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-heading mb-8 text-center">
           Result-Driven PPC Advertising Services to Maximize Your ROI
         </h1>
 
         {/* Decorative underline */}
-        <div className="w-24 h-1.5 bg-blue-600 dark:bg-blue-500 rounded-full mx-auto mb-8"></div>
+        <div className="w-24 h-1.5 bg-primary dark:bg-primary rounded-full mx-auto mb-8"></div>
 
         {/* Subheading Paragraph */}
-        <p className="text-gray-700 text-justify dark:text-gray-300 text-lg md:text-xl mb-10 max-w-4xl mx-auto">
+        <p className="text-body text-justify dark:text-gray-300 text-lg md:text-xl mb-10 max-w-4xl mx-auto">
           
           In today's fast-paced digital world, businesses cannot rely solely on
           organic methods to grow. Paid campaigns have become essential to reach
           the right audience instantly. At{" "}
-          <Link href={"/"} className="text-blue-600">
+          <Link href={"/"} className="text-primary">
             SEO IndiaTech {" "}
           </Link>
           we provide powerful and performance-oriented PPC advertising services
@@ -90,12 +90,12 @@ const Ppchero = () => {
           {keyBenefits.map((benefit, index) => (
             <div
               key={index}
-              className="flex items-center bg-white dark:bg-gray-800 px-4 py-2 rounded-full shadow-md border border-gray-200 dark:border-gray-700"
+              className="flex items-center bg-card dark:bg-card px-4 py-2 rounded-full shadow-md border border-border"
             >
-              <div className="p-1.5 bg-blue-100 dark:bg-blue-900/50 rounded-full mr-2 text-blue-600 dark:text-blue-400">
+              <div className="p-1.5 bg-primary/10 dark:bg-primary/20 rounded-full mr-2 text-primary dark:text-accent">
                 {benefit.icon}
               </div>
-              <span className="text-gray-800 dark:text-gray-200 font-medium">
+              <span className="text-heading dark:text-gray-200 font-medium">
                 {benefit.text}
               </span>
             </div>
@@ -111,12 +111,12 @@ const Ppchero = () => {
           ].map((stat, index) => (
             <div
               key={index}
-              className="bg-white dark:bg-gray-800 p-4 rounded-xl shadow-md border border-gray-100 dark:border-gray-700 text-center"
+              className="bg-card dark:bg-card p-4 rounded-xl shadow-md border border-border dark:border-border text-center"
             >
-              <div className="text-2xl md:text-3xl font-bold text-blue-600 dark:text-blue-400 mb-1">
+              <div className="text-2xl md:text-3xl font-bold text-primary dark:text-accent mb-1">
                 {stat.value}
               </div>
-              <div className="text-gray-600 dark:text-gray-400 text-sm">
+              <div className="text-muted text-sm">
                 {stat.label}
               </div>
             </div>
@@ -131,13 +131,13 @@ const Ppchero = () => {
                 .getElementById("PPCform")
                 ?.scrollIntoView({ behavior: "smooth" });
             }}
-            className="cursor-pointer bg-gradient-to-r from-blue-600 to-blue-800 hover:bg-blue-700 dark:from-gray-800 dark:to-gray-900 dark:hover:bg-blue-600 text-white font-bold text-lg px-6 py-3 rounded-full shadow-md transition-all duration-300 flex items-center group"
+            className="cursor-pointer bg-gradient-to-r from-primary to-secondary hover:bg-primary-hover dark:from-surface dark:to-background dark:hover:bg-primary-hover text-white font-bold text-lg px-6 py-3 rounded-full shadow-md transition-all duration-300 flex items-center group"
           >
             Get Your Custom PPC Strategy
             <ArrowRight className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
           </button>
 
-          <button className="hidden bg-transparent text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium text-lg border border-gray-300 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-500 px-6 py-3 rounded-full transition-colors duration-300">
+          <button className="hidden bg-transparent text-body hover:text-primary dark:hover:text-accent font-medium text-lg border border-border dark:border-border hover:border-primary dark:hover:border-primary px-6 py-3 rounded-full transition-colors duration-300">
             Learn About Our Process
           </button>
         </div>

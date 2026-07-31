@@ -68,8 +68,8 @@ export default function WebDevVisual() {
           >
             <div className="space-y-2 mb-3">
               <div className="h-2 w-full rounded bg-gray-200" />
-              <div className="h-2 w-4/5 rounded bg-gray-100" />
-              <div className="h-2 w-3/5 rounded bg-gray-100" />
+              <div className="h-2 w-4/5 rounded bg-cream" />
+              <div className="h-2 w-3/5 rounded bg-cream" />
             </div>
             <div className="flex items-end gap-2 h-16">
               <div className="w-12 h-12 rounded-full border-4 border-accent border-r-primary" />

@@ -43,15 +43,15 @@ const OurServices = () => {
   }
 
   return (
-    <section className="bg-white dark:bg-gray-900 pt-4 pb-8">
+    <section className="bg-white dark:bg-background pt-4 pb-8">
       <section className="max-w-7xl mx-auto px-4 py-16 md:py-24 flex flex-col md:flex-row items-center justify-between gap-10">
         {/* Left Section */}
         <div className="w-full md:w-1/2 space-y-6">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
-           What Our <span className='text-blue-700'>Social Media Marketing </span> Services Include
+          <h2 className="text-4xl md:text-5xl font-bold text-heading">
+           What Our <span className='text-primary'>Social Media Marketing </span> Services Include
             
           </h2>
-          <p className="text-gray-700 dark:text-gray-300 text-base md:text-lg">
+          <p className="text-body text-base md:text-lg">
             By analyzing how value is delivered at each stage of the customer
             journey, we can develop and implement a tailored response strategy.
           </p>
@@ -61,21 +61,21 @@ const OurServices = () => {
             {servicesData.map((item, index) => (
               <div
                 key={index}
-                className={`bg-white dark:bg-gray-800 rounded-xl shadow-md transition-all duration-300 ${
+                className={`bg-card dark:bg-card rounded-xl shadow-md transition-all duration-300 ${
                   activeIndex === index
-                    ? 'border-l-4 border-blue-600 dark:border-blue-500'
+                    ? 'border-l-4 border-primary dark:border-primary'
                     : ''
                 }`}
               >
                 <button
                   onClick={() => toggleAccordion(index)}
-                  className="flex justify-between items-center w-full px-6 py-4 text-left font-semibold text-gray-900 dark:text-white focus:outline-none"
+                  className="flex justify-between items-center w-full px-6 py-4 text-left font-semibold text-heading focus:outline-none"
                 >
                   <span>{item.title}</span>
                   {activeIndex === index ? (
-                    <ChevronUp className="w-5 h-5 text-gray-500 dark:text-gray-400" />
+                    <ChevronUp className="w-5 h-5 text-muted" />
                   ) : (
-                    <ChevronDown className="w-5 h-5 text-gray-500 dark:text-gray-400" />
+                    <ChevronDown className="w-5 h-5 text-muted" />
                   )}
                 </button>
 
@@ -85,7 +85,7 @@ const OurServices = () => {
                     activeIndex === index ? 'max-h-40 py-2 pb-4' : 'max-h-0'
                   }`}
                 >
-                  <p className="text-gray-600 dark:text-gray-300">
+                  <p className="text-muted">
                     {item.content}
                   </p>
                 </div>
@@ -96,7 +96,7 @@ const OurServices = () => {
 
         {/* Right Section */}
         <div className="w-full md:w-1/2 relative">
-          <div className="overflow-hidden rounded-2xl shadow-lg border-1 border-blue-500 dark:border-gray-600">
+          <div className="overflow-hidden rounded-2xl shadow-lg border-1 border-primary dark:border-gray-600">
             <Image
               src="/images/services/reporti.png"
               alt="Analytics Visual"
@@ -107,7 +107,7 @@ const OurServices = () => {
           </div>
 
           {/* Optional decorative element */}
-          <div className="absolute -z-10 -bottom-6 -right-6 w-32 h-32 bg-blue-100 dark:bg-blue-900/30 rounded-full blur-2xl"></div>
+          <div className="absolute -z-10 -bottom-6 -right-6 w-32 h-32 bg-primary/10 dark:bg-primary/15 rounded-full blur-2xl"></div>
         </div>
       </section>
     </section>

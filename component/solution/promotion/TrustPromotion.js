@@ -16,28 +16,28 @@ export default function TrustPromotion() {
   const benefits = [
     {
       category: 'promotion',
-      icon: <TrendingUp className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
+      icon: <TrendingUp className="w-5 h-5 text-primary dark:text-accent" />,
       title: 'Increased Brand Visibility',
       description:
         'Reaches broader audiences through diverse channels and multiple customer touchpoints.',
     },
     {
       category: 'promotion',
-      icon: <Award className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
+      icon: <Award className="w-5 h-5 text-primary dark:text-accent" />,
       title: 'Enhanced Brand Perception',
       description:
         'Builds positive brand associations and reinforces strong market positioning.',
     },
     {
       category: 'advertising',
-      icon: <TrendingUp className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
+      icon: <TrendingUp className="w-5 h-5 text-primary dark:text-accent" />,
       title: 'Targeted Messaging',
       description:
         'Communicates targeted messages directly to well-defined audience segments.',
     },
     {
       category: 'advertising',
-      icon: <Award className="w-5 h-5 text-blue-600 dark:text-blue-400" />,
+      icon: <Award className="w-5 h-5 text-primary dark:text-accent" />,
       title: 'Measurable Results',
       description:
         'Offers measurable results and a clear return on marketing investments.',
@@ -45,11 +45,11 @@ export default function TrustPromotion() {
   ]
 
   return (
-    <section className="py-16 md:py-24 px-6 bg-white dark:bg-gray-900 relative overflow-hidden">
+    <section className="py-16 md:py-24 px-6 bg-white dark:bg-background relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/4 right-0 w-72 h-72 bg-white/50 dark:bg-blue-900/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 left-1/4 w-80 h-80 bg-blue-300/30 dark:bg-blue-800/10 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/4 right-0 w-72 h-72 bg-white/50 dark:bg-primary/20/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 left-1/4 w-80 h-80 bg-accent/20 dark:bg-primary/10 rounded-full blur-3xl"></div>
       </div>
 
       {/* Grid overlay */}
@@ -65,28 +65,28 @@ export default function TrustPromotion() {
                 : '-translate-x-10 opacity-0'
             }`}
           >
-            <div className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 p-8 md:p-10 shadow-xl">
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 rounded-full text-sm font-medium mb-6">
+            <div className="bg-card dark:bg-card rounded-2xl border border-border p-8 md:p-10 shadow-xl">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 dark:bg-primary/20/40 text-primary dark:text-accent rounded-full text-sm font-medium mb-6">
                 <Megaphone className="w-4 h-4" />
                 <span>Marketing Essentials</span>
               </div>
 
-              <h3 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
-                <span className="text-blue-600 dark:text-blue-400">
+              <h3 className="text-3xl md:text-4xl font-bold text-heading mb-6 leading-tight">
+                <span className="text-primary dark:text-accent">
                   Promotion & Advertising
                 </span>{' '}
                 -Keys to Brand Growth
               </h3>
 
-              <div className="w-20 h-1 bg-blue-600 dark:bg-blue-500 rounded-full mb-6"></div>
+              <div className="w-20 h-1 bg-primary dark:bg-primary rounded-full mb-6"></div>
 
               {/* Tab Navigation */}
-              <div className="flex border-b border-gray-200 dark:border-gray-700 mb-6">
+              <div className="flex border-b border-border mb-6">
                 <button
                   className={`pb-2 px-4 text-base md:text-lg font-medium transition-colors duration-300 ${
                     activeTab === 'promotion'
-                      ? 'text-blue-600 dark:text-blue-400 border-b-2 border-blue-600 dark:border-blue-400'
-                      : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300'
+                      ? 'text-primary dark:text-accent border-b-2 border-primary dark:border-blue-400'
+                      : 'text-muted hover:text-body dark:hover:text-gray-300'
                   }`}
                   onClick={() => setActiveTab('promotion')}
                 >
@@ -95,8 +95,8 @@ export default function TrustPromotion() {
                 <button
                   className={`pb-2 px-4 text-base md:text-lg font-medium transition-colors duration-300 ${
                     activeTab === 'advertising'
-                      ? 'text-blue-600 dark:text-blue-400 border-b-2 border-blue-600 dark:border-blue-400'
-                      : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300'
+                      ? 'text-primary dark:text-accent border-b-2 border-primary dark:border-blue-400'
+                      : 'text-muted hover:text-body dark:hover:text-gray-300'
                   }`}
                   onClick={() => setActiveTab('advertising')}
                 >
@@ -112,7 +112,7 @@ export default function TrustPromotion() {
                       isVisible ? 'opacity-100' : 'opacity-0'
                     }`}
                   >
-                    <p className="text-justify text-gray-700 dark:text-gray-300 text-base md:text-lg leading-relaxed">
+                    <p className="text-justify text-body text-base md:text-lg leading-relaxed">
                       Promotion encompasses various strategies and activities
                       aimed at showcasing a product or service's value to the
                       target audience. It includes advertising, sales
@@ -127,16 +127,16 @@ export default function TrustPromotion() {
                         .map((benefit, index) => (
                           <div
                             key={index}
-                            className="flex items-start gap-3 p-3 bg-gray-50 dark:bg-gray-800/80 rounded-lg border border-gray-100 dark:border-gray-700"
+                            className="flex items-start gap-3 p-3 bg-gray-50 dark:bg-card/80 rounded-lg border border-border dark:border-border"
                           >
-                            <div className="flex-shrink-0 p-1.5 bg-blue-100 dark:bg-blue-900/50 rounded-full">
+                            <div className="flex-shrink-0 p-1.5 bg-primary/10 dark:bg-primary/20 rounded-full">
                               {benefit.icon}
                             </div>
                             <div>
-                              <h4 className="font-medium text-gray-900 dark:text-white">
+                              <h4 className="font-medium text-heading">
                                 {benefit.title}
                               </h4>
-                              <p className="text-gray-600 dark:text-gray-400 text-sm">
+                              <p className="text-muted text-sm">
                                 {benefit.description}
                               </p>
                             </div>
@@ -152,7 +152,7 @@ export default function TrustPromotion() {
                       isVisible ? 'opacity-100' : 'opacity-0'
                     }`}
                   >
-                    <p className="text-gray-700 dark:text-gray-300 text-base md:text-lg leading-relaxed">
+                    <p className="text-body text-base md:text-lg leading-relaxed">
                       Advertising is a paid, non-personal form of promotion used
                       to communicate messages about a product, service, or brand
                       through various channels such as print, television, radio,
@@ -167,16 +167,16 @@ export default function TrustPromotion() {
                         .map((benefit, index) => (
                           <div
                             key={index}
-                            className="flex items-start gap-3 p-3 bg-gray-50 dark:bg-gray-800/80 rounded-lg border border-gray-100 dark:border-gray-700"
+                            className="flex items-start gap-3 p-3 bg-gray-50 dark:bg-card/80 rounded-lg border border-border dark:border-border"
                           >
-                            <div className="flex-shrink-0 p-1.5 bg-blue-100 dark:bg-blue-900/50 rounded-full">
+                            <div className="flex-shrink-0 p-1.5 bg-primary/10 dark:bg-primary/20 rounded-full">
                               {benefit.icon}
                             </div>
                             <div>
-                              <h4 className="font-medium text-gray-900 dark:text-white">
+                              <h4 className="font-medium text-heading">
                                 {benefit.title}
                               </h4>
-                              <p className="text-gray-600 dark:text-gray-400 text-sm">
+                              <p className="text-muted text-sm">
                                 {benefit.description}
                               </p>
                             </div>
@@ -200,50 +200,50 @@ export default function TrustPromotion() {
             <div className="relative">
               {/* Main image with glow effect */}
               <div className="relative">
-                <div className="absolute -inset-2 bg-gradient-to-r from-blue-600 to-blue-400 opacity-30 dark:opacity-40 blur-xl rounded-full"></div>
+                <div className="absolute -inset-2 bg-gradient-to-r from-primary to-accent opacity-30 dark:opacity-40 blur-xl rounded-full"></div>
                 <div className="relative rounded-2xl overflow-hidden border-4 border-white dark:border-gray-800 shadow-2xl">
                   <Image
                     src="/images/promotion.png"
                     alt="Promotion and advertising visual showing marketing campaigns and strategies"
                     width={600}
                     height={600}
-                    className="object-cover bg-white dark:bg-gray-800"
+                    className="object-cover bg-card dark:bg-card"
                   />
                 </div>
               </div>
 
               {/* Stats card overlay */}
-              <div className="absolute -bottom-6 right-0 left-0 mx-auto w-4/5 bg-white dark:bg-gray-800 p-4 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 flex justify-between">
+              <div className="absolute -bottom-6 right-0 left-0 mx-auto w-4/5 bg-card dark:bg-card p-4 rounded-xl shadow-lg border border-border flex justify-between">
                 <div className="text-center px-3">
-                  <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">
+                  <div className="text-2xl font-bold text-primary dark:text-accent">
                     +156%
                   </div>
-                  <div className="text-xs text-gray-600 dark:text-gray-400">
+                  <div className="text-xs text-muted">
                     Brand Awareness
                   </div>
                 </div>
-                <div className="h-10 w-px bg-gray-200 dark:bg-gray-700"></div>
+                <div className="h-10 w-px bg-gray-200 dark:bg-surface"></div>
                 <div className="text-center px-3">
-                  <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">
+                  <div className="text-2xl font-bold text-primary dark:text-accent">
                     +92%
                   </div>
-                  <div className="text-xs text-gray-600 dark:text-gray-400">
+                  <div className="text-xs text-muted">
                     Conversion Rate
                   </div>
                 </div>
-                <div className="h-10 w-px bg-gray-200 dark:bg-gray-700"></div>
+                <div className="h-10 w-px bg-gray-200 dark:bg-surface"></div>
                 <div className="text-center px-3">
-                  <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">
+                  <div className="text-2xl font-bold text-primary dark:text-accent">
                     4.8x
                   </div>
-                  <div className="text-xs text-gray-600 dark:text-gray-400">
+                  <div className="text-xs text-muted">
                     ROI
                   </div>
                 </div>
               </div>
 
               {/* Decorative elements */}
-              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-white dark:bg-gray-800 px-4 py-2 rounded-full shadow-lg border border-gray-200 dark:border-gray-700 text-sm font-medium text-blue-600 dark:text-blue-400">
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-card dark:bg-card px-4 py-2 rounded-full shadow-lg border border-border text-sm font-medium text-primary dark:text-accent">
                 <div className="flex items-center gap-2">
                   <Megaphone className="w-4 h-4" />
                   <span>Strategic Marketing</span>
@@ -257,7 +257,7 @@ export default function TrustPromotion() {
                 (channel, index) => (
                   <div
                     key={index}
-                    className="px-4 py-2 bg-white dark:bg-gray-800 rounded-full shadow border border-gray-200 dark:border-gray-700 text-sm font-medium text-gray-700 dark:text-gray-300"
+                    className="px-4 py-2 bg-card dark:bg-card rounded-full shadow border border-border text-sm font-medium text-body"
                     style={{
                       transitionDelay: `${400 + index * 100}ms`,
                       opacity: isVisible ? 1 : 0,

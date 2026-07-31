@@ -43,7 +43,7 @@ export default function WhyDigitalAutomation() {
   ]
 
   return (
-    <section className="py-24 px-6 bg-white dark:bg-gray-900 overflow-hidden">
+    <section className="py-24 px-6 bg-white dark:bg-background overflow-hidden">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
@@ -52,17 +52,17 @@ export default function WhyDigitalAutomation() {
             The Future of Business Efficiency Is Here
           </div>
 
-          <h2 className="text-5xl  font-extrabold text-gray-900 dark:text-white mb-8 leading-tight">
+          <h2 className="text-5xl  font-extrabold text-heading mb-8 leading-tight">
             Why{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-blue-700">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-primary-hover">
               Digital Automation
             </span>{' '}
             Matters
             <br />
-            for <span className="text-indigo-600">Modern Businesses</span>
+            for <span className="text-primary">Modern Businesses</span>
           </h2>
 
-          <p className="text-xl  text-gray-600 dark:text-gray-300 max-w-5xl mx-auto leading-relaxed">
+          <p className="text-xl  text-muted max-w-5xl mx-auto leading-relaxed">
             Every business depends on smooth workflows, accurate data, and
             real-time communication. Whether you run an e-commerce store,
             service-based company, or local enterprise, our digital automation
@@ -73,7 +73,7 @@ export default function WhyDigitalAutomation() {
             delivery, reduced operational delays, and improved customer
             satisfaction.
           </p>
-          <p className="text-xl  text-gray-600 dark:text-gray-300 max-w-5xl mx-auto  leading-relaxed pt-2">
+          <p className="text-xl  text-muted max-w-5xl mx-auto  leading-relaxed pt-2">
             As a leading provider of digital automation as a service, we help
             companies adopt automation technologies without the complexity of
             maintaining infrastructure. From automated reporting to integrated

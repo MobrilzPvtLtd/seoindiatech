@@ -4,17 +4,17 @@ export default function SMOServices() {
   return (
     <section className="relative py-24 md:py-32 bg-gradient-to-b from-white via-gray-50 to-white dark:from-gray-950 dark:via-gray-900 dark:to-gray-950 transition-colors duration-300 overflow-hidden">
       {/* Decorative Glow */}
-      <div className="absolute top-20 left-10 w-72 h-72 bg-blue-500/10 dark:bg-blue-500/20 blur-3xl rounded-full"></div>
-      <div className="absolute bottom-10 right-10 w-72 h-72 bg-purple-500/10 dark:bg-purple-500/20 blur-3xl rounded-full"></div>
+      <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 dark:bg-primary/20 blur-3xl rounded-full"></div>
+      <div className="absolute bottom-10 right-10 w-72 h-72 bg-cream0/10 dark:bg-cream0/20 blur-3xl rounded-full"></div>
 
       <div className="relative max-w-7xl mx-auto px-6 lg:px-12">
         {/* Section Header */}
         <div className="text-center mb-20">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-gray-900 dark:text-white mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-heading mb-6">
             What social media optimization services cover
           </h2>
 
-          <p className="text-gray-600 dark:text-gray-300 text-base md:text-lg leading-relaxed max-w-3xl mx-auto text-justify">
+          <p className="text-muted text-base md:text-lg leading-relaxed max-w-3xl mx-auto text-justify">
             Social media optimization services focus on improving your accounts
             and content so you get better reach, engagement, and leads. The work
             usually includes:
@@ -57,18 +57,18 @@ export default function SMOServices() {
           ].map((item, index) => (
             <div
               key={index}
-              className="group relative bg-white/70 dark:bg-gray-900/60 backdrop-blur-xl border border-gray-200 dark:border-gray-800 rounded-3xl p-8 shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2"
+              className="group relative bg-white/70 dark:bg-background/60 backdrop-blur-xl border border-gray-200 dark:border-gray-800 rounded-3xl p-8 shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2"
             >
               {/* Floating Number Badge */}
-              {/* <div className="absolute -top-5 left-6 w-12 h-12 flex items-center justify-center text-sm font-bold text-white bg-gradient-to-br from-blue-600 to-purple-600 rounded-xl shadow-lg">
+              {/* <div className="absolute -top-5 left-6 w-12 h-12 flex items-center justify-center text-sm font-bold text-white bg-gradient-to-br from-primary to-secondary rounded-xl shadow-lg">
                 {index + 1}
               </div> */}
 
-              <h3 className="mt-6 text-xl font-semibold text-gray-900 dark:text-white mb-4">
+              <h3 className="mt-6 text-xl font-semibold text-heading mb-4">
                 {item.title}
               </h3>
 
-              <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-justify text-sm md:text-base">
+              <p className="text-muted leading-relaxed text-justify text-sm md:text-base">
                 {item.desc}
               </p>
             </div>

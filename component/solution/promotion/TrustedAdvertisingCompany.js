@@ -27,29 +27,29 @@ export default function TrustedAdvertisingCompany() {
   ]
 
   return (
-    <section className="py-24 px-6 bg-gradient-to-b from-blue-50 via-white to-indigo-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+    <section className="py-24 px-6 bg-gradient-to-b from-cream via-white to-indigo-50 dark:from-background dark:via-gray-800 dark:to-gray-900">
       <div className="max-w-7xl mx-auto">
         {/* Main Hero Section */}
         <div className="text-center mb-20">
-          <div className="inline-flex items-center gap-3 bg-blue-100 text-blue-700 px-6 py-3 rounded-full text-sm font-semibold mb-6">
+          <div className="inline-flex items-center gap-3 bg-primary/10 text-primary px-6 py-3 rounded-full text-sm font-semibold mb-6">
             <ShieldCheck className="w-5 h-5" />
             Trusted by Growing Businesses Across India
           </div>
 
-          <h2 className="text-5xl md:text-6xl font-extrabold text-gray-900 dark:text-white mb-8 leading-tight">
+          <h2 className="text-5xl md:text-6xl font-extrabold text-heading mb-8 leading-tight">
             Your Trusted{' '}
-            <span className="text-transparent bg-clip-text bg-blue-600">
+            <span className="text-transparent bg-clip-text bg-primary">
               Advertising & Promotion Company
             </span>
           </h2>
 
-          <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-100 max-w-5xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-muted dark:text-gray-100 max-w-5xl mx-auto leading-relaxed">
             As an established advertising & promotion company, we combine{' '}
             <strong>creativity, technology, and strategy</strong> to deliver
             high-performance promotional solutions. Our experienced team
             analyzes your competitors, understands market trends, and studies
             your audience behavior to build campaigns that deliver{' '}
-            <span className="text-blue-600 font-bold">powerful outcomes</span>.
+            <span className="text-primary font-bold">powerful outcomes</span>.
           </p>
         </div>
 
@@ -58,15 +58,15 @@ export default function TrustedAdvertisingCompany() {
           {benefits.map((item, index) => (
             <div
               key={index}
-              className="group relative bg-white dark:bg-gray-700 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-400 border border-gray-400 hover:border-blue-200 hover:-translate-y-2"
+              className="group relative bg-white dark:bg-surface rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-400 border border-gray-400 hover:border-primary/30 hover:-translate-y-2"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-indigo-600/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-400" />
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-400" />
 
               <div className="relative z-10 flex items-start gap-5">
-                <div className="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-blue-600 transition-colors duration-300">
-                  <item.icon className="w-8 h-8 text-blue-600 group-hover:text-white transition-colors duration-300" />
+                <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-primary-hover transition-colors duration-300">
+                  <item.icon className="w-8 h-8 text-primary group-hover:text-white transition-colors duration-300" />
                 </div>
-                <p className="text-lg font-semibold text-gray-800 dark:text-gray-100 pt-2">
+                <p className="text-lg font-semibold text-heading dark:text-gray-100 pt-2">
                   {item.text}
                 </p>
               </div>
@@ -75,7 +75,7 @@ export default function TrustedAdvertisingCompany() {
         </div>
 
         <div className="text-center mb-12">
-          <p className="text-xl text-gray-700 dark:text-gray-200 max-w-4xl mx-auto">
+          <p className="text-xl text-body max-w-4xl mx-auto">
             From creative ad design to platform selection and performance
             monitoring - our team manages the{' '}
             <strong>entire process seamlessly</strong>.
@@ -83,7 +83,7 @@ export default function TrustedAdvertisingCompany() {
         </div>
 
         {/* Brand Promotion Section */}
-        <div className="bg-gradient-to-r from-indigo-600 to-blue-700 rounded-3xl p-12 md:p-20 text-white overflow-hidden relative">
+        <div className="bg-gradient-to-r from-indigo-600 to-primary-hover rounded-3xl p-12 md:p-20 text-white overflow-hidden relative">
           <div className="absolute inset-0 bg-black/10" />
           <div className="relative z-10 max-w-6xl mx-auto text-center">
             <h3 className="text-4xl md:text-5xl font-extrabold mb-8">
@@ -124,10 +124,10 @@ export default function TrustedAdvertisingCompany() {
 
         {/* Final CTA */}
         <div className="text-center mt-20">
-          <h4 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6">
+          <h4 className="text-3xl md:text-4xl font-bold text-heading mb-6">
             Ready to Transform Your Brand's Presence?
           </h4>
-          <p className="text-xl text-gray-600 dark:text-gray-300 mb-10">
+          <p className="text-xl text-muted mb-10">
             Let's build advertising & promotion campaigns that don't just get
             seen - they get <strong>results</strong>.
           </p>
@@ -135,12 +135,12 @@ export default function TrustedAdvertisingCompany() {
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Link
               href={'/contact-us'}
-              className="group inline-flex items-center gap-4 bg-gradient-to-r from-blue-600 to-indigo-700 text-white font-bold text-lg px-10 py-5 rounded-full shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300"
+              className="group inline-flex items-center gap-4 bg-gradient-to-r from-primary to-secondary text-white font-bold text-lg px-10 py-5 rounded-full shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300"
             >
               Launch Your Campaign Today
               <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform" />
             </Link>
-            {/* <button className="inline-flex items-center gap-3 border-2 border-blue-600 text-blue-600 hover:bg-blue-50 font-bold text-lg px-10 py-5 rounded-full transition-all duration-300">
+            {/* <button className="inline-flex items-center gap-3 border-2 border-primary text-primary hover:bg-background font-bold text-lg px-10 py-5 rounded-full transition-all duration-300">
               Get a Free Brand Audit
             </button> */}
           </div>

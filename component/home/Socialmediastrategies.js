@@ -13,13 +13,13 @@ import {
 const Socialmediastrategies = () => {
   const strategies = [
     {
-      icon: <Image className="w-10 h-10 text-blue-600 dark:text-blue-400" />,
+      icon: <Image className="w-10 h-10 text-primary dark:text-accent" />,
       title: 'Content Creation',
       description:
         'We believe that content is at the heart of every successful social media campaign. Our expert team crafts engaging, brand-aligned content.',
-      color: 'bg-blue-50 dark:bg-blue-900/20',
-      borderColor: 'border-blue-100 dark:border-blue-800',
-      iconBg: 'bg-blue-100/50 dark:bg-blue-800/30',
+      color: 'bg-background dark:bg-primary/15',
+      borderColor: 'border-primary/20 dark:border-primary/40',
+      iconBg: 'bg-primary/10 dark:bg-primary/20',
     },
     {
       icon: <Users className="w-10 h-10 text-green-600 dark:text-green-400" />,
@@ -32,14 +32,14 @@ const Socialmediastrategies = () => {
     },
     {
       icon: (
-        <BarChart2 className="w-10 h-10 text-purple-600 dark:text-purple-400" />
+        <BarChart2 className="w-10 h-10 text-primary dark:text-accent" />
       ),
       title: 'Data-Driven Campaigns',
       description:
         'Our data-driven approach ensures that every campaign we launch is backed by insights and optimized for performance.',
-      color: 'bg-purple-50 dark:bg-purple-900/20',
+      color: 'bg-cream dark:bg-purple-900/20',
       borderColor: 'border-purple-100 dark:border-purple-800',
-      iconBg: 'bg-purple-100/50 dark:bg-purple-800/30',
+      iconBg: 'bg-primary/10 dark:bg-purple-800/30',
     },
     {
       icon: <Youtube className="w-10 h-10 text-red-600 dark:text-red-400" />,
@@ -66,18 +66,18 @@ const Socialmediastrategies = () => {
         'Reach the right audience with precision through our targeted social media advertising strategies and optimization.',
       color: 'bg-cyan-50 dark:bg-cyan-900/20',
       borderColor: 'border-cyan-100 dark:border-cyan-800',
-      iconBg: 'bg-cyan-100/50 dark:bg-cyan-800/30',
+      iconBg: 'bg-accent/20 dark:bg-cyan-800/30',
     },
     {
       icon: (
-        <Award className="w-10 h-10 text-indigo-600 dark:text-indigo-400" />
+        <Award className="w-10 h-10 text-primary dark:text-accent" />
       ),
       title: 'Brand Reputation Management',
       description:
         "Protect and enhance your brand's online reputation with our comprehensive monitoring and management services.",
-      color: 'bg-indigo-50 dark:bg-indigo-900/20',
-      borderColor: 'border-indigo-100 dark:border-indigo-800',
-      iconBg: 'bg-indigo-100/50 dark:bg-indigo-800/30',
+      color: 'bg-primary/10 dark:bg-primary/15',
+      borderColor: 'border-primary/20 dark:border-primary/30',
+      iconBg: 'bg-primary/10 dark:bg-primary/20',
     },
     {
       icon: (
@@ -93,20 +93,20 @@ const Socialmediastrategies = () => {
   ]
 
   return (
-    <div className="bg-white dark:bg-gray-900">
+    <div className="bg-white dark:bg-background">
       {/* Header Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-12 text-center">
-        <div className="inline-block px-3 py-1 bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-sm font-medium mb-6">
+        <div className="inline-block px-3 py-1 bg-background dark:bg-primary/15 text-primary dark:text-accent rounded-full text-sm font-medium mb-6">
           Social Media Excellence
         </div>
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight text-gray-800 dark:text-white">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight text-heading">
           Grow Your Brand's Influence with Proven{' '}
           <br className="hidden lg:block" />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400 dark:from-blue-400 dark:to-blue-300">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent dark:from-accent dark:to-accent">
             Social Media Tactics
           </span>
         </h2>
-        <p className="mt-6 max-w-3xl mx-auto text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
+        <p className="mt-6 max-w-3xl mx-auto text-muted text-lg leading-relaxed">
           SEO India Tech delivers meticulously designed campaigns to engage and
           connect, amplifying your message across platforms for impactful
           audience interaction.
@@ -114,13 +114,13 @@ const Socialmediastrategies = () => {
         <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
           <a
             href="#strategies"
-            className="px-8 py-3 bg-gradient-to-r from-blue-600 to-blue-700 dark:from-gray-800 dark:to-gray-900 text-white font-medium rounded-full shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+            className="px-8 py-3 bg-gradient-to-r from-primary to-primary-hover dark:from-surface dark:to-background text-white font-medium rounded-full shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50"
           >
             Explore Strategies
           </a>
           <a
             href="/contact-us"
-            className="hidden px-8 py-3 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-200 font-medium rounded-full hover:bg-gray-50 dark:hover:bg-gray-800 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-700"
+            className="hidden px-8 py-3 border border-border text-body font-medium rounded-full hover:bg-cream dark:hover:bg-gray-800 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-700"
           >
             Contact Us
           </a>
@@ -144,14 +144,14 @@ const Socialmediastrategies = () => {
                 >
                   {strategy.icon}
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-gray-800 dark:text-white">
+                <h3 className="text-xl font-semibold mb-3 text-heading">
                   {strategy.title}
                 </h3>
-                <p className="text-gray-600 dark:text-gray-300">
+                <p className="text-muted">
                   {strategy.description}
                 </p>
               </div>
-              <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-blue-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
           ))}
         </div>
@@ -159,23 +159,23 @@ const Socialmediastrategies = () => {
 
       {/* Call to Action Section */}
       {/* <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-gray-700 dark:to-gray-800 rounded-2xl p-8 sm:p-12 shadow-xl">
+        <div className="bg-gradient-to-r from-primary to-secondary dark:from-gray-700 dark:to-surface rounded-2xl p-8 sm:p-12 shadow-xl">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="mb-8 md:mb-0 md:mr-8 text-center md:text-left">
               <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4 dark:text-gray-200">
                Why Choose SEO India Tech?
               </h2>
               <ul>
-                <li className="text-blue-100 dark:text-gray-400 max-w-xl mb-2">
+                <li className="text-white/90 dark:text-gray-400 max-w-xl mb-2">
                 <strong>Tailored Strategies:</strong>  Every business is unique, so our plans are customized to match your objectives.
                 </li>
-                <li className="text-blue-100 dark:text-gray-400 max-w-xl mb-2">
+                <li className="text-white/90 dark:text-gray-400 max-w-xl mb-2">
                  <strong> Expert Team:</strong> Our specialists bring years of experience in delivering top-quality digital marketing services.
                 </li>
-                <li className="text-blue-100 dark:text-gray-400 max-w-xl mb-2">
+                <li className="text-white/90 dark:text-gray-400 max-w-xl mb-2">
                   <strong> Affordable &amp; Transparent:</strong> Clear pricing, regular updates, and honest communication.
                 </li>
-                <li className="text-blue-100 dark:text-gray-400 max-w-xl mb-2">
+                <li className="text-white/90 dark:text-gray-400 max-w-xl mb-2">
                   <strong>Proven Results:</strong> We stay focused on performance, growth, and real outcomes-not just metrics.
                 </li>
               </ul>
@@ -184,7 +184,7 @@ const Socialmediastrategies = () => {
             <div className="flex-shrink-0">
               <a
                 href="/contact-us"
-                className="inline-block px-8 py-4 bg-white bg-gradient-to-r dark:from-gray-800 dark:to-gray-900 text-blue-600 dark:text-gray-200 font-medium rounded-full shadow-md hover:bg-gray-50 dark:hover:bg-gray-700 transform hover:scale-105 transition-all duration-300"
+                className="inline-block px-8 py-4 bg-white bg-gradient-to-r dark:from-surface dark:to-background text-primary dark:text-gray-200 font-medium rounded-full shadow-md hover:bg-cream dark:hover:bg-surface transform hover:scale-105 transition-all duration-300"
               >
                 Schedule a Consultation
               </a>

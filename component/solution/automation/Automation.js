@@ -18,16 +18,16 @@ function Automation() {
         title="Trust Us"
         subtitle="We Know Our Stuff!"
         buttonText="Let Us Help"
-        bgGradient="bg-gradient-to-r from-blue-50 to-blue-200 dark:from-gray-900 dark:to-gray-800"
-        buttonGradient="bg-gradient-to-r from-blue-700 to-blue-900 dark:from-gray-800 dark:to-gray-900"
+        bgGradient="bg-gradient-to-r from-cream to-background dark:from-background dark:to-surface"
+        buttonGradient="bg-gradient-to-r from-primary to-secondary dark:from-surface dark:to-background"
       />
       <TrustAutomation />
       <WhyDigitalAutomation/>
       <TrustUs
         title="Ready to get started?"
         buttonText="Contact Us Now!"
-        bgGradient="bg-gradient-to-r from-blue-50 to-blue-200 dark:from-gray-900 dark:to-gray-800"
-        buttonGradient="bg-gradient-to-r from-blue-700 to-blue-900 dark:from-gray-800 dark:to-gray-900"
+        bgGradient="bg-gradient-to-r from-cream to-background dark:from-background dark:to-surface"
+        buttonGradient="bg-gradient-to-r from-primary to-secondary dark:from-surface dark:to-background"
       />
       <AutomationBenefits />
       <DigitalAutomationServices />

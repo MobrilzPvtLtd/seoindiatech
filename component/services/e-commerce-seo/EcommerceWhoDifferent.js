@@ -10,19 +10,19 @@ export default function EcommerceWhoDifferent() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
 
         {/* WHO WE HELP */}
-        <div className="group relative overflow-hidden rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 p-8 shadow-md transition-all duration-500 hover:shadow-xl hover:-translate-y-1">
+        <div className="group relative overflow-hidden rounded-2xl border border-border bg-white dark:bg-background p-8 shadow-md transition-all duration-500 hover:shadow-xl hover:-translate-y-1">
 
           {/* Top Accent Line */}
-          <div className="absolute top-0 left-0 h-1 w-0 bg-blue-600 transition-all duration-500 group-hover:w-full"></div>
+          <div className="absolute top-0 left-0 h-1 w-0 bg-primary transition-all duration-500 group-hover:w-full"></div>
 
           <div className="flex items-center gap-3 mb-5">
-            <Users className="w-6 h-6 text-blue-600 dark:text-blue-400" />
-            <h4 className="text-xl font-bold text-gray-900 dark:text-white">
+            <Users className="w-6 h-6 text-primary dark:text-accent" />
+            <h4 className="text-xl font-bold text-heading">
               Who We Help
             </h4>
           </div>
 
-          <div className="text-gray-600 dark:text-gray-300 text-justify space-y-4 leading-relaxed">
+          <div className="text-muted text-justify space-y-4 leading-relaxed">
             <p>We work with:</p>
             <ul className="space-y-2 list-disc list-inside">
               <li>Small stores that want local buyers</li>
@@ -37,19 +37,19 @@ export default function EcommerceWhoDifferent() {
         </div>
 
         {/* WHAT MAKES US DIFFERENT */}
-        <div className="group relative overflow-hidden rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 p-8 shadow-md transition-all duration-500 hover:shadow-xl hover:-translate-y-1">
+        <div className="group relative overflow-hidden rounded-2xl border border-border bg-white dark:bg-background p-8 shadow-md transition-all duration-500 hover:shadow-xl hover:-translate-y-1">
 
           {/* Top Accent Line */}
-          <div className="absolute top-0 left-0 h-1 w-0 bg-blue-600 transition-all duration-500 group-hover:w-full"></div>
+          <div className="absolute top-0 left-0 h-1 w-0 bg-primary transition-all duration-500 group-hover:w-full"></div>
 
           <div className="flex items-center gap-3 mb-5">
-            <Sparkles className="w-6 h-6 text-blue-600 dark:text-blue-400" />
-            <h4 className="text-xl font-bold text-gray-900 dark:text-white">
+            <Sparkles className="w-6 h-6 text-primary dark:text-accent" />
+            <h4 className="text-xl font-bold text-heading">
               What Makes Us Different
             </h4>
           </div>
 
-          <div className="text-gray-600 dark:text-gray-300 text-justify space-y-4 leading-relaxed">
+          <div className="text-muted text-justify space-y-4 leading-relaxed">
             <p>
               Many SEO companies use the same techniques on every website. That does not work. We take time to understand your store, your customers, and your goals. Then we plan work that brings traffic and meaningful results.
             </p>
@@ -71,19 +71,19 @@ export default function EcommerceWhoDifferent() {
       <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
 
         {/* LEFT SIDE - 60% */}
-        <div className="lg:col-span-3 group relative rounded-3xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 p-10 shadow-sm transition-all duration-500 hover:shadow-xl">
+        <div className="lg:col-span-3 group relative rounded-3xl border border-border bg-white dark:bg-background p-10 shadow-sm transition-all duration-500 hover:shadow-xl">
 
           <div className="flex items-center gap-4 mb-6">
-            <div className="p-3 rounded-xl bg-gray-100 dark:bg-gray-800 text-blue-600 dark:text-blue-400">
+            <div className="p-3 rounded-xl bg-cream dark:bg-card text-primary dark:text-accent">
               <TrendingUp className="w-6 h-6" />
             </div>
 
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white">
+            <h2 className="text-2xl md:text-3xl font-bold text-heading">
               Benefits of Our E Commerce SEO Services
             </h2>
           </div>
 
-          <div className="text-gray-600 dark:text-gray-300 text-justify leading-relaxed text-lg">
+          <div className="text-muted text-justify leading-relaxed text-lg">
             <p>
               As a top expert Ecommerce SEO service provider we give you the comprehensive range of digital solutions needed to revamp e-commerce sites. Advanced techniques are combined with tried and tested strategies for sustainable growth by ecommerce SEO services. We focus on measurable results to boost bottom lines: we offer you the best value for your money.
             </p>
@@ -93,17 +93,17 @@ export default function EcommerceWhoDifferent() {
 
 
         {/* RIGHT SIDE - 40% */}
-        <div className="lg:col-span-2 group relative rounded-3xl border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 p-10 shadow-sm transition-all duration-500 hover:shadow-xl hover:-translate-y-1 flex flex-col justify-center">
+        <div className="lg:col-span-2 group relative rounded-3xl border border-border bg-gray-50 dark:bg-card p-10 shadow-sm transition-all duration-500 hover:shadow-xl hover:-translate-y-1 flex flex-col justify-center">
 
           <div className="relative inline-block mb-6">
-            <h6 className="text-xl font-semibold text-gray-900 dark:text-white">
+            <h6 className="text-xl font-semibold text-heading">
               Start Today
             </h6>
 
-            <span className="absolute left-0 -bottom-2 h-1 w-0 bg-blue-600 transition-all duration-500 group-hover:w-full"></span>
+            <span className="absolute left-0 -bottom-2 h-1 w-0 bg-primary transition-all duration-500 group-hover:w-full"></span>
           </div>
 
-          <div className="text-gray-600 dark:text-gray-300 text-justify leading-relaxed text-lg mb-8">
+          <div className="text-muted text-justify leading-relaxed text-lg mb-8">
             <p>
               If you want ecommerce <Link href="https://www.seoindiatech.com/services/seo" className="font-medium text-sky-600 dark:text-sky-400 hover:underline">SEO services</Link> that deliver real attention from search engines and real buyers, contact us. We will review your site and share clear steps you can take next.
             </p>
@@ -112,7 +112,7 @@ export default function EcommerceWhoDifferent() {
           {/* CTA Button */}
           <Link
             href="/contact-us"
-            className="inline-block w-fit px-6 py-3 rounded-xl bg-blue-600 text-white font-medium transition-all duration-300 hover:bg-blue-700 hover:shadow-lg"
+            className="inline-block w-fit px-6 py-3 rounded-xl bg-primary text-white font-medium transition-all duration-300 hover:bg-primary-hover hover:shadow-lg"
           >
             Contact Us Today
           </Link>

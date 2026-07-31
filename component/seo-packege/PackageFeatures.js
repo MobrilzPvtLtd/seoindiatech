@@ -214,23 +214,23 @@ const sections = [
 
 function TableSection({ title, rows }) {
   return (
-    <div className="bg-white dark:bg-gray-900 shadow-sm overflow-hidden">
-      <h3 className="bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-500 dark:to-blue-600 text-white px-6 py-3 font-semibold text-center text-xl">
+    <div className="bg-white dark:bg-background shadow-sm overflow-hidden">
+      <h3 className="bg-gradient-to-r from-primary to-primary-hover dark:from-primary dark:to-primary-hover text-white px-6 py-3 font-semibold text-center text-xl">
         {title}
       </h3>
 
       <div className="overflow-x-auto">
         <table className="min-w-[900px] w-full text-sm text-center border-collapse text-gray-900 dark:text-gray-100">
-          <thead className="bg-gray-100 dark:bg-gray-800 sticky top-0 z-10">
+          <thead className="bg-cream dark:bg-card sticky top-0 z-10">
             <tr className="h-12 md:h-14">
-              <th className="text-left px-4 py-3 bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100">
+              <th className="text-left px-4 py-3 bg-cream dark:bg-card text-gray-900 dark:text-gray-100">
                 Feature
               </th>
               {plans.map((plan, index) => (
                 <th
                   key={plan}
                   className={`py-3 font-semibold text-gray-900 dark:text-gray-100 ${index >= 2
-                      ? 'bg-blue-50 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300'
+                      ? 'bg-background dark:bg-primary/20/40 text-primary dark:text-accent'
                       : ''
                     }`}
                 >
@@ -247,22 +247,22 @@ function TableSection({ title, rows }) {
                 className="
                   min-h-[3.5rem] md:min-h-[4rem]
                   odd:bg-white even:bg-gray-50 dark:odd:bg-gray-900 dark:even:bg-gray-800
-                  hover:bg-blue-50/60 dark:hover:bg-blue-900/30 transition-colors
+                  hover:bg-background/60 dark:hover:bg-blue-900/30 transition-colors
                   align-middle
                 "
               >
-                <td className="px-4 py-3 text-left font-medium border-t border-gray-200 dark:border-gray-700 text-gray-900 dark:text-gray-100">
+                <td className="px-4 py-3 text-left font-medium border-t border-border text-gray-900 dark:text-gray-100">
                   {row[0]}
                 </td>
                 {row.slice(1).map((cell, idx) => (
                   <td
                     key={idx}
                     className={`
-                      py-3 border-l border-t border-gray-200 dark:border-gray-700
+                      py-3 border-l border-t border-border
                       align-middle
                       text-gray-900 dark:text-gray-100
                       ${idx >= 2
-                        ? 'border-blue-300/60 dark:border-blue-700/60 bg-blue-50/40 dark:bg-blue-900/20'
+                        ? 'border-primary/30/60 dark:border-primary/30/60 bg-background/40 dark:bg-primary/15'
                         : ''
                       }
                     `}
@@ -281,9 +281,9 @@ function TableSection({ title, rows }) {
 
 export default function PackageFeatures() {
   return (
-    <section className="py-20 bg-gray-50 dark:bg-gray-950">
+    <section className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="divide-y divide-gray-200 dark:divide-gray-800 rounded-xl overflow-hidden shadow-sm">
+        <div className="divide-y divide-border dark:divide-gray-800 rounded-xl overflow-hidden shadow-sm">
           {sections.map((section) => (
             <TableSection key={section.title} {...section} />
           ))}
@@ -293,10 +293,10 @@ export default function PackageFeatures() {
         <div className="mt-10 flex justify-center">
           <Link href="/contact-us">
             <button
-              className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 
+              className="bg-gradient-to-r from-primary to-primary-hover hover:from-blue-700 hover:to-secondary 
                        text-white font-medium px-8 py-3 cursor-pointer rounded-lg shadow-md 
                        transition-all duration-200 transform hover:scale-[1.03] 
-                       focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                       focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
             >
               Ready to start a plan
             </button>

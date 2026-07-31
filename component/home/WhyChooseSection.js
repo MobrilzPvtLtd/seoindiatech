@@ -96,16 +96,16 @@ const StatCard = ({ stat }) => {
       initial="hidden"
       viewport={{ once: true, amount: 0.15 }}
       onViewportEnter={start}
-      className="flex items-center gap-4 bg-gray-50/80 dark:bg-gray-900/60 backdrop-blur-sm rounded-2xl border border-gray-100/80 dark:border-gray-800/60 shadow-md px-5 py-4 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/5 hover:border-blue-200/50 dark:hover:border-blue-800/30 hover:-translate-y-0.5"
+      className="flex items-center gap-4 bg-gray-50/80 dark:bg-background/60 backdrop-blur-sm rounded-2xl border border-border/80 dark:border-gray-800/60 shadow-md px-5 py-4 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5 hover:border-primary/30/50 dark:hover:border-blue-800/30 hover:-translate-y-0.5"
     >
-      <div className="flex-shrink-0 w-11 h-11 rounded-xl bg-gradient-to-br from-blue-500 to-blue-600 text-white flex items-center justify-center shadow-md shadow-blue-500/20">
+      <div className="flex-shrink-0 w-11 h-11 rounded-xl bg-gradient-to-br from-primary to-primary-hover text-white flex items-center justify-center shadow-md shadow-primary/20">
         <Icon className="w-5 h-5" />
       </div>
       <div>
-        <div className="text-xl font-bold text-gray-900 dark:text-white leading-none">
+        <div className="text-xl font-bold text-heading leading-none">
           {count}{stat.suffix}
         </div>
-        <div className="text-[11px] font-medium text-gray-500 dark:text-gray-400 mt-0.5">
+        <div className="text-[11px] font-medium text-muted mt-0.5">
           {stat.label}
         </div>
       </div>
@@ -115,9 +115,9 @@ const StatCard = ({ stat }) => {
 
 const WhyChooseSection = () => {
   return (
-    <section className="bg-white dark:bg-gray-900 relative overflow-hidden">
-      <div className="absolute top-0 left-1/2 w-[50rem] h-[50rem] bg-blue-50/30 rounded-full blur-3xl dark:bg-blue-900/5 -translate-x-1/2 -translate-y-1/2" />
-      <div className="absolute bottom-0 right-0 w-80 h-80 bg-indigo-50/20 rounded-full blur-3xl dark:bg-indigo-900/5 translate-x-1/3 translate-y-1/3" />
+    <section className="bg-white dark:bg-background relative overflow-hidden">
+      <div className="absolute top-0 left-1/2 w-[50rem] h-[50rem] bg-background/30 rounded-full blur-3xl dark:bg-primary/20/5 -translate-x-1/2 -translate-y-1/2" />
+      <div className="absolute bottom-0 right-0 w-80 h-80 bg-primary/10/20 rounded-full blur-3xl dark:bg-indigo-900/5 translate-x-1/3 translate-y-1/3" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 md:py-20 relative z-10">
         {/* Header */}
@@ -128,16 +128,16 @@ const WhyChooseSection = () => {
           viewport={{ once: true, amount: 0.15 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white leading-tight">
+          <h2 className="text-3xl sm:text-4xl font-bold text-heading leading-tight">
             Why Choose{' '}
             <span className="relative inline-block">
-              <span className="relative z-10 text-blue-600 dark:text-blue-400">
+              <span className="relative z-10 text-primary dark:text-accent">
                 SEO India Tech?
               </span>
-              <span className="absolute bottom-1 left-0 w-full h-2.5 bg-blue-200/40 dark:bg-blue-500/20 -z-0 rounded-full blur-sm" />
+              <span className="absolute bottom-1 left-0 w-full h-2.5 bg-primary/15/40 dark:bg-primary/20 -z-0 rounded-full blur-sm" />
             </span>
           </h2>
-          <p className="mt-3 text-gray-600 dark:text-gray-300 text-base max-w-lg mx-auto">
+          <p className="mt-3 text-muted text-base max-w-lg mx-auto">
             We combine expertise, transparency, and results-driven strategies to help your business succeed online.
           </p>
         </motion.div>
@@ -169,22 +169,22 @@ const WhyChooseSection = () => {
               <motion.div
                 key={index}
                 variants={itemVariants}
-                className="group relative bg-white dark:bg-gray-800 backdrop-blur-sm rounded-2xl border border-gray-100 dark:border-gray-700 shadow-md p-6 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/5 hover:border-blue-200/50 dark:hover:border-blue-800/30 hover:-translate-y-1"
+                className="group relative bg-card dark:bg-card backdrop-blur-sm rounded-2xl border border-border dark:border-border shadow-md p-6 transition-all duration-300 hover:shadow-xl hover:shadow-primary/5 hover:border-primary/30/50 dark:hover:border-blue-800/30 hover:-translate-y-1"
               >
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/30 dark:to-indigo-900/30 text-blue-600 dark:text-blue-300 flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:shadow-md group-hover:shadow-blue-500/10">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br from-cream to-indigo-50 dark:from-primary/20/30 dark:to-indigo-900/30 text-primary dark:text-accent flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:shadow-md group-hover:shadow-blue-500/10">
                     <Icon className="w-5 h-5" />
                   </div>
                   <div className="min-w-0">
-                    <h3 className="text-base font-bold text-gray-800 dark:text-gray-100 mb-1">
+                    <h3 className="text-base font-bold text-heading dark:text-gray-100 mb-1">
                       {item.title}
                     </h3>
-                    <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
+                    <p className="text-sm leading-relaxed text-muted">
                       {item.desc}
                     </p>
                   </div>
                 </div>
-                <div className="absolute bottom-0 left-6 right-6 h-0.5 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
+                <div className="absolute bottom-0 left-6 right-6 h-0.5 bg-gradient-to-r from-primary to-indigo-500 rounded-full scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
               </motion.div>
             )
           })}
@@ -196,18 +196,18 @@ const WhyChooseSection = () => {
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, ease: 'easeOut' }}
           viewport={{ once: true, amount: 0.1 }}
-          className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 mt-12 text-sm text-gray-500 dark:text-gray-400"
+          className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 mt-12 text-sm text-muted"
         >
           <span className="flex items-center gap-1.5">
-            <FaCheckCircle className="w-3.5 h-3.5 text-blue-500" />
+            <FaCheckCircle className="w-3.5 h-3.5 text-primary" />
             No Lock-In Contracts
           </span>
           <span className="flex items-center gap-1.5">
-            <FaCheckCircle className="w-3.5 h-3.5 text-blue-500" />
+            <FaCheckCircle className="w-3.5 h-3.5 text-primary" />
             100% White Hat SEO
           </span>
           <span className="flex items-center gap-1.5">
-            <FaCheckCircle className="w-3.5 h-3.5 text-blue-500" />
+            <FaCheckCircle className="w-3.5 h-3.5 text-primary" />
             Free Strategy Consultation
           </span>
         </motion.div>

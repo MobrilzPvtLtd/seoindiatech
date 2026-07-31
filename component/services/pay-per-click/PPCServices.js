@@ -49,9 +49,9 @@ export default function PPCServices() {
   ]
 
   return (
-    <section className="px-6 md:px-12 py-20 bg-gray-50 dark:bg-gray-900">
+    <section className="px-6 md:px-12 py-20 bg-background">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white text-center mb-16">
+        <h2 className="text-3xl md:text-4xl font-bold text-heading text-center mb-16">
           What you get with our PPC service
         </h2>
 
@@ -61,18 +61,18 @@ export default function PPCServices() {
             return (
               <div
                 key={index}
-                className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-md hover:shadow-xl transition transform hover:scale-105 border border-gray-100 dark:border-gray-700 cursor-pointer"
+                className="bg-card dark:bg-card rounded-2xl p-8 shadow-md hover:shadow-xl transition transform hover:scale-105 border border-border dark:border-border cursor-pointer"
               >
                 <div className="flex items-center mb-4 gap-4">
                   {/* Icon inside circular background */}
-                  <div className="w-12 h-12 flex items-center justify-center rounded-full bg-blue-100 dark:bg-blue-700">
-                    <Icon className="text-blue-600 dark:text-blue-400 w-6 h-6" />
+                  <div className="w-12 h-12 flex items-center justify-center rounded-full bg-primary/10 dark:bg-primary-hover">
+                    <Icon className="text-primary dark:text-accent w-6 h-6" />
                   </div>
-                  <h3 className="text-lg md:text-xl font-semibold text-gray-900 dark:text-white">
+                  <h3 className="text-lg md:text-xl font-semibold text-heading">
                     {service.title}
                   </h3>
                 </div>
-                <p className="text-gray-600 dark:text-gray-300 text-sm md:text-base leading-7 text-justify">
+                <p className="text-muted text-sm md:text-base leading-7 text-justify">
                   {service.description}
                 </p>
               </div>

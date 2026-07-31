@@ -20,7 +20,7 @@ const categoryMeta = {
     heroTitle: (
       <>
         Grow Your Business with the Best{' '}
-        <span className="text-blue-600">SEO Services in India</span>
+        <span className="text-primary">SEO Services in India</span>
       </>
     ),
     heroSubtitle: (
@@ -46,16 +46,16 @@ const categoryMeta = {
       { title: 'Startups', desc: 'Build organic visibility from day one with cost-effective SEO.' },
     ],
     contentSection: (
-      <section className="bg-gray-50 dark:bg-gray-800/30 py-16 md:py-20 transition-colors duration-300">
+      <section className="bg-background py-16 md:py-20 transition-colors duration-300">
         <div className="max-w-6xl mx-auto px-6 md:px-8">
-          <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 md:p-12 border border-gray-200 dark:border-gray-700 shadow-sm">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-6">
+          <div className="bg-card dark:bg-card rounded-2xl p-8 md:p-12 border border-border shadow-sm">
+            <h2 className="text-2xl md:text-3xl font-bold text-heading mb-6">
               Professional SEO Services for Every Business
             </h2>
-            <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
+            <p className="text-muted leading-relaxed mb-6">
               SEO India Tech delivers comprehensive SEO services that help businesses build lasting organic visibility. From local shops to national e-commerce brands, we build strategies designed for long-term ranking performance, not short-term spikes. Every engagement follows a structured process to ensure faster indexing, stronger technical foundations, and measurable growth in traffic and leads.
             </p>
-            <p className="text-gray-700 dark:text-gray-300 font-medium mb-3">Our services include:</p>
+            <p className="text-body font-medium mb-3">Our services include:</p>
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-8">
               {[
                 { text: 'Local SEO' },
@@ -67,10 +67,10 @@ const categoryMeta = {
                 { text: 'GEO Optimization' },
                 { text: 'AEO' },
               ].map((item) => (
-                <li key={item.text} className="flex items-center gap-2 text-gray-700 dark:text-gray-300">
-                  <span className="w-1.5 h-1.5 rounded-full bg-blue-600 flex-shrink-0" />
+                <li key={item.text} className="flex items-center gap-2 text-body">
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
                   {item.link ? (
-                    <Link href={item.link} className="font-semibold text-blue-600 dark:text-blue-400 hover:underline transition-colors duration-200">
+                    <Link href={item.link} className="font-semibold text-primary dark:text-accent hover:underline transition-colors duration-200">
                       {item.text}
                     </Link>
                   ) : (
@@ -80,27 +80,27 @@ const categoryMeta = {
               ))}
             </ul>
 
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-6">
+            <h2 className="text-2xl md:text-3xl font-bold text-heading mb-6">
               Why Choose SEO India Tech?
             </h2>
-            <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
+            <p className="text-muted leading-relaxed mb-6">
               Choosing the right SEO partner plays a major role in your online growth. As a trusted SEO agency in India, SEO India Tech offers a full range of services built around your specific business goals - not a fixed package applied to every client. Our team of SEO strategists, content writers, and technical specialists work together to deliver results you can actually track.
             </p>
-            <p className="text-gray-700 dark:text-gray-300 font-medium mb-3">Our advantages include:</p>
+            <p className="text-body font-medium mb-3">Our advantages include:</p>
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-8">
               {['Experienced SEO Strategists', 'Custom SEO Roadmaps', 'White-Hat, Google-Compliant Methods', 'Technical & On-Page Expertise', 'Transparent Monthly Reporting', 'Ongoing Optimization Support'].map((item) => (
-                <li key={item} className="flex items-center gap-2 text-gray-700 dark:text-gray-300">
-                  <span className="w-1.5 h-1.5 rounded-full bg-blue-600 flex-shrink-0" />
+                <li key={item} className="flex items-center gap-2 text-body">
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
                   {item}
                 </li>
               ))}
             </ul>
 
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-6">
+            <h2 className="text-2xl md:text-3xl font-bold text-heading mb-6">
               Grow Your Online Presence with SEO India Tech
             </h2>
-            <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-              Whether you run a local business, an online store, or an established enterprise, SEO India Tech has the expertise to deliver real, sustainable results. As a leading <strong><Link href="/" className="text-blue-600 dark:text-blue-400 hover:underline">SEO company in India</Link></strong>, we help businesses turn search visibility into real revenue - not just better numbers on a dashboard.
+            <p className="text-muted leading-relaxed">
+              Whether you run a local business, an online store, or an established enterprise, SEO India Tech has the expertise to deliver real, sustainable results. As a leading <strong><Link href="/" className="text-primary dark:text-accent hover:underline">SEO company in India</Link></strong>, we help businesses turn search visibility into real revenue - not just better numbers on a dashboard.
             </p>
           </div>
         </div>
@@ -114,7 +114,7 @@ const categoryMeta = {
     heroTitle: (
       <>
         Accelerate Your Growth with{' '}
-        <span className="text-blue-600">Digital Marketing</span>
+        <span className="text-primary">Digital Marketing</span>
       </>
     ),
     heroSubtitle:
@@ -163,7 +163,7 @@ const categoryMeta = {
     heroTitle: (
       <>
         Maximize ROI with{' '}
-        <span className="text-blue-600">PPC Advertising</span>
+        <span className="text-primary">PPC Advertising</span>
       </>
     ),
     heroSubtitle:
@@ -211,7 +211,7 @@ const categoryMeta = {
     heroTitle: (
       <>
         Maximize ROI with{' '}
-        <span className="text-blue-600">Paid Advertising</span>
+        <span className="text-primary">Paid Advertising</span>
       </>
     ),
     heroSubtitle:
@@ -254,7 +254,7 @@ const categoryMeta = {
     heroTitle: (
       <>
         Build Stunning Digital Experiences with{' '}
-        <span className="text-blue-600">Design & Development</span>
+        <span className="text-primary">Design & Development</span>
       </>
     ),
     heroSubtitle:
@@ -305,17 +305,17 @@ export default function ServiceCategoryPage() {
 
   if (!data || !meta) {
     return (
-      <section className="bg-white dark:bg-gray-900 min-h-screen flex items-center justify-center transition-colors duration-300">
+      <section className="bg-white dark:bg-background min-h-screen flex items-center justify-center transition-colors duration-300">
         <div className="text-center px-6">
-          <h1 className="text-6xl font-bold text-gray-900 dark:text-white mb-4">
+          <h1 className="text-6xl font-bold text-heading mb-4">
             404
           </h1>
-          <p className="text-gray-600 dark:text-gray-400 text-lg mb-8">
+          <p className="text-muted text-lg mb-8">
             Service category not found.
           </p>
           <Link
             href="/"
-            className="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-full transition-colors duration-300"
+            className="inline-flex items-center px-6 py-3 bg-primary hover:bg-primary-hover text-white font-semibold rounded-full transition-colors duration-300"
           >
             Go Back Home
           </Link>
@@ -342,16 +342,16 @@ export default function ServiceCategoryPage() {
       />
 
       {/* Category Cards Section */}
-      <section className="bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 transition-colors duration-300">
+      <section className="bg-white dark:bg-background border-b border-gray-200 dark:border-gray-800 transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-6 md:px-8 py-16 md:py-20">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white leading-tight mb-4 transition-colors duration-300">
-              Explore Our <span className="text-blue-600">{data.title}</span>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-heading leading-tight mb-4 transition-colors duration-300">
+              Explore Our <span className="text-primary">{data.title}</span>
             </h2>
-            <p className="text-gray-600 dark:text-gray-400 text-lg max-w-2xl mx-auto transition-colors duration-300">
+            <p className="text-muted text-lg max-w-2xl mx-auto transition-colors duration-300">
               Our SEO company in India offers a focused service for every kind of business - local, e-commerce, small business, or enterprise. Explore each one below to find the right fit for where you're trying to grow.
             </p>
-            <div className="h-1 w-16 bg-blue-600 dark:bg-blue-500 rounded-full mt-6 mx-auto" />
+            <div className="h-1 w-16 bg-primary dark:bg-primary rounded-full mt-6 mx-auto" />
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -361,30 +361,30 @@ export default function ServiceCategoryPage() {
                 <Link
                   key={service.slug}
                   href={service.slug}
-                  className="group relative bg-gray-50 dark:bg-gray-800/50 rounded-2xl p-7 border border-gray-200 dark:border-gray-700 hover:border-blue-200 dark:hover:border-blue-800/50 hover:shadow-xl hover:shadow-blue-500/5 dark:hover:shadow-blue-900/10 transition-all duration-300 hover:-translate-y-1"
+                  className="group relative bg-gray-50 dark:bg-card/50 rounded-2xl p-7 border border-border hover:border-primary/30 dark:hover:border-primary/40 hover:shadow-xl hover:shadow-primary/5 dark:hover:shadow-primary/10 transition-all duration-300 hover:-translate-y-1"
                 >
                   <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 rounded-xl bg-blue-50 dark:bg-blue-900/40 flex items-center justify-center flex-shrink-0 group-hover:bg-blue-600 group-hover:scale-110 transition-all duration-300">
-                      <Icon className="w-5 h-5 text-blue-600 dark:text-blue-400 group-hover:text-white transition-colors duration-300" />
+                    <div className="w-10 h-10 rounded-xl bg-background dark:bg-primary/20/40 flex items-center justify-center flex-shrink-0 group-hover:bg-primary-hover group-hover:scale-110 transition-all duration-300">
+                      <Icon className="w-5 h-5 text-primary dark:text-accent group-hover:text-white transition-colors duration-300" />
                     </div>
-                    <h3 className="text-lg font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300">
+                    <h3 className="text-lg font-bold text-heading group-hover:text-primary dark:group-hover:text-accent transition-colors duration-300">
                       {service.title}
                     </h3>
                   </div>
-                  <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed mb-3 transition-colors duration-300">
+                  <p className="text-sm text-body leading-relaxed mb-3 transition-colors duration-300">
                     {service.description}
                   </p>
                   {service.features && (
                     <ul className="space-y-1 mb-5">
                       {service.features.map((feature, i) => (
-                        <li key={i} className="flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
-                          <span className="w-1.5 h-1.5 rounded-full bg-blue-600 flex-shrink-0" />
+                        <li key={i} className="flex items-center gap-2 text-sm text-body">
+                          <span className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
                           {feature}
                         </li>
                       ))}
                     </ul>
                   )}
-                  <div className="flex items-center gap-2 text-sm font-medium text-blue-600 dark:text-blue-400">
+                  <div className="flex items-center gap-2 text-sm font-medium text-primary dark:text-accent">
                     Learn More
                     <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
                   </div>

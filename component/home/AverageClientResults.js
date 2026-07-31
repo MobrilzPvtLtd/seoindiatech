@@ -15,7 +15,7 @@ const MiniBarChart = ({ color = '#5B4FE9' }) => {
             className="w-full rounded-sm"
             style={{ height: `${h}%`, backgroundColor: color, opacity: 0.85 }}
           />
-          <span className="text-[9px] text-gray-400 dark:text-gray-500">{days[i]}</span>
+          <span className="text-[9px] text-muted">{days[i]}</span>
         </div>
       ))}
     </div>
@@ -69,11 +69,11 @@ const MiniDonut = ({ percent = 75, color = '#5B4FE9' }) => {
 const metrics = [
   {
     value: '+78%',
-    valueColor: 'text-blue-600',
+    valueColor: 'text-primary',
     title: 'Organic Traffic',
     desc: 'Increase in qualified organic sessions month over month.',
     icon: FaArrowUp,
-    iconColor: 'text-blue-600',
+    iconColor: 'text-primary',
     chart: <MiniBarChart color="#5B4FE9" />,
   },
   {
@@ -116,7 +116,7 @@ const itemVariants = {
 
 const AverageClientResults = () => {
   return (
-    <section className="bg-white dark:bg-gray-900 py-14 md:py-20 transition-colors duration-300">
+    <section className="bg-white dark:bg-background py-14 md:py-20 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
@@ -126,16 +126,16 @@ const AverageClientResults = () => {
           viewport={{ once: true, amount: 0.2 }}
           className="max-w-2xl mb-16"
         >
-          <div className="inline-flex items-center gap-2 bg-blue-50 dark:bg-blue-950/60 border border-blue-100/60 dark:border-blue-800/30 px-4 py-1.5 rounded-full mb-4">
-            <span className="w-1.5 h-1.5 rounded-full bg-blue-500" />
-            <span className="text-[11px] font-semibold text-blue-600 dark:text-blue-300 tracking-wider uppercase">
+          <div className="inline-flex items-center gap-2 bg-background dark:bg-secondary/40/60 border border-primary/20/60 dark:border-primary/40/30 px-4 py-1.5 rounded-full mb-4">
+            <span className="w-1.5 h-1.5 rounded-full bg-secondary" />
+            <span className="text-[11px] font-semibold text-primary dark:text-accent tracking-wider uppercase">
               Client Results
             </span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white leading-tight transition-colors duration-300">
+          <h2 className="text-3xl sm:text-4xl font-bold text-heading leading-tight transition-colors duration-300">
             Real outcomes, not vanity metrics
           </h2>
-          <p className="mt-4 text-base text-gray-600 dark:text-gray-400 transition-colors duration-300">
+          <p className="mt-4 text-base text-muted transition-colors duration-300">
             What data-driven SEO, content, and performance marketing
             typically deliver for our clients.
           </p>
@@ -163,10 +163,10 @@ const AverageClientResults = () => {
                   </span>
                 </div>
 
-                <p className="mt-3 text-base font-semibold text-gray-900 dark:text-white transition-colors duration-300">
+                <p className="mt-3 text-base font-semibold text-heading transition-colors duration-300">
                   {metric.title}
                 </p>
-                <p className="mt-1 text-xs leading-relaxed text-gray-500 dark:text-gray-400 min-h-[32px] transition-colors duration-300">
+                <p className="mt-1 text-xs leading-relaxed text-muted min-h-[32px] transition-colors duration-300">
                   {metric.desc}
                 </p>
 

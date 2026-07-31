@@ -6,7 +6,7 @@ export default function LocalSeoHero() {
     <section className="relative w-full py-24 px-6 bg-white dark:bg-gray-950 overflow-hidden">
 
       {/* gradient blobs */}
-      <div className="absolute -top-32 right-0 w-[500px] h-[500px] bg-blue-400/20 rounded-full blur-3xl"></div>
+      <div className="absolute -top-32 right-0 w-[500px] h-[500px] bg-accent/20 rounded-full blur-3xl"></div>
       <div className="absolute -bottom-32 left-0 w-[500px] h-[500px] bg-indigo-400/20 rounded-full blur-3xl"></div>
 
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center">
@@ -14,14 +14,14 @@ export default function LocalSeoHero() {
         {/* CONTENT */}
         <div className="space-y-7 z-10">
 
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight text-gray-900 dark:text-white">
+          <h1 className="text-4xl md:text-5xl font-bold leading-tight text-heading">
             Local SEO Service Company -{" "}
-            <span className="text-blue-600 dark:text-blue-400">
+            <span className="text-primary dark:text-accent">
               Local SEO Services That Drive Results
             </span>
           </h1>
 
-          <div className="space-y-6 text-lg leading-relaxed text-gray-700 dark:text-gray-300 text-justify">
+          <div className="space-y-6 text-lg leading-relaxed text-body text-justify">
 
             <p>
               If you run a business that serves local customers, you need strong
@@ -60,10 +60,10 @@ export default function LocalSeoHero() {
         <div className="relative flex justify-center items-center">
 
           {/* gradient shape behind image */}
-          <div className="absolute w-[420px] h-[420px] bg-gradient-to-tr from-blue-500/30 to-indigo-500/30 rounded-full blur-2xl"></div>
+          <div className="absolute w-[420px] h-[420px] bg-gradient-to-tr from-primary/30 to-indigo-500/30 rounded-full blur-2xl"></div>
 
           {/* floating badge */}
-          <div className="absolute top-8 left-8 bg-white dark:bg-gray-900 text-sm font-semibold px-4 py-2 rounded-full shadow-md">
+          <div className="absolute top-8 left-8 bg-white dark:bg-background text-sm font-semibold px-4 py-2 rounded-full shadow-md">
             #1 Local SEO
           </div>
 

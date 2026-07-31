@@ -31,14 +31,14 @@ export default function GEOStrategiesSection() {
         <div className="space-y-12 md:space-y-16">
           <div className="text-center space-y-4">
             <div className="flex justify-center">
-              <div className="p-4 rounded-full bg-blue-100/70 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400">
+              <div className="p-4 rounded-full bg-primary/10/70 dark:bg-primary/20/40 text-primary dark:text-accent">
                 <FaRocket size={36} />
               </div>
             </div>
-            <h3 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white">
+            <h3 className="text-3xl sm:text-4xl font-bold text-heading">
               Our Core GEO Services
             </h3>
-            <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed max-w-3xl mx-auto">
+            <p className="text-muted text-lg leading-relaxed max-w-3xl mx-auto">
               Technical foundations that make your content more understandable,
               retrievable, and preferable to generative AI systems.
             </p>
@@ -48,17 +48,17 @@ export default function GEOStrategiesSection() {
             {generalServices.map((item, index) => (
               <div
                 key={index}
-                className="group relative bg-white/80 dark:bg-gray-900/70 backdrop-blur-md border border-gray-200/60 dark:border-gray-800/60 rounded-2xl p-7 shadow-md hover:shadow-2xl hover:border-blue-400/50 dark:hover:border-blue-600/50 transition-all duration-400 hover:-translate-y-2"
+                className="group relative bg-white/80 dark:bg-background/70 backdrop-blur-md border border-gray-200/60 dark:border-gray-800/60 rounded-2xl p-7 shadow-md hover:shadow-2xl hover:border-blue-400/50 dark:hover:border-primary/50 transition-all duration-400 hover:-translate-y-2"
               >
                 <div className="absolute -top-3 -right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  <div className="w-6 h-6 rounded-full bg-blue-500/20 dark:bg-blue-400/30 animate-ping" />
+                  <div className="w-6 h-6 rounded-full bg-primary/20 dark:bg-accent/30 animate-ping" />
                 </div>
                 <div className="flex items-start gap-5">
                   <FaCheckCircle
-                    className="text-blue-600 dark:text-blue-500 flex-shrink-0 mt-1.5"
+                    className="text-primary dark:text-primary flex-shrink-0 mt-1.5"
                     size={32}
                   />
-                  <p className="text-gray-800 dark:text-gray-100 font-semibold text-lg leading-relaxed">
+                  <p className="text-heading dark:text-gray-100 font-semibold text-lg leading-relaxed">
                     {item}
                   </p>
                 </div>
@@ -71,14 +71,14 @@ export default function GEOStrategiesSection() {
         <div className="space-y-12 md:space-y-16">
           <div className="text-center space-y-4">
             <div className="flex justify-center">
-              <div className="p-4 rounded-full bg-indigo-100/70 dark:bg-indigo-900/40 text-indigo-600 dark:text-indigo-400">
+              <div className="p-4 rounded-full bg-primary/10/70 dark:bg-indigo-900/40 text-primary dark:text-accent">
                 <FaLightbulb size={36} />
               </div>
             </div>
-            <h3 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white">
+            <h3 className="text-3xl sm:text-4xl font-bold text-heading">
               GEO Strategies for Modern Brands
             </h3>
-            <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed max-w-3xl mx-auto">
+            <p className="text-muted text-lg leading-relaxed max-w-3xl mx-auto">
               Shift from keyword chasing to becoming the authoritative,
               intent-aligned source AI engines naturally cite and trust.
             </p>
@@ -88,17 +88,17 @@ export default function GEOStrategiesSection() {
             {brandStrategies.map((item, index) => (
               <div
                 key={index}
-                className="group relative bg-white/80 dark:bg-gray-900/70 backdrop-blur-md border border-gray-200/60 dark:border-gray-800/60 rounded-2xl p-7 shadow-md hover:shadow-2xl hover:border-indigo-400/50 dark:hover:border-indigo-600/50 transition-all duration-400 hover:-translate-y-2"
+                className="group relative bg-white/80 dark:bg-background/70 backdrop-blur-md border border-gray-200/60 dark:border-gray-800/60 rounded-2xl p-7 shadow-md hover:shadow-2xl hover:border-indigo-400/50 dark:hover:border-indigo-600/50 transition-all duration-400 hover:-translate-y-2"
               >
                 <div className="absolute -top-3 -right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  <div className="w-6 h-6 rounded-full bg-indigo-500/20 dark:bg-indigo-400/30 animate-ping" />
+                  <div className="w-6 h-6 rounded-full bg-primary/100/20 dark:bg-indigo-400/30 animate-ping" />
                 </div>
                 <div className="flex items-start gap-5">
                   <FaCheckCircle
-                    className="text-indigo-600 dark:text-indigo-500 flex-shrink-0 mt-1.5"
+                    className="text-primary dark:text-white/900 flex-shrink-0 mt-1.5"
                     size={32}
                   />
-                  <p className="text-gray-800 dark:text-gray-100 font-semibold text-lg leading-relaxed">
+                  <p className="text-heading dark:text-gray-100 font-semibold text-lg leading-relaxed">
                     {item}
                   </p>
                 </div>
@@ -107,7 +107,7 @@ export default function GEOStrategiesSection() {
           </div>
 
           <div className="text-center mt-10">
-            <p className="text-xl font-medium text-gray-800 dark:text-gray-200 max-w-4xl mx-auto leading-relaxed italic">
+            <p className="text-xl font-medium text-heading dark:text-gray-200 max-w-4xl mx-auto leading-relaxed italic">
               "This approach helps your content become useful for AI driven
               platforms that work as an answer engine."
             </p>

@@ -26,7 +26,7 @@ export default function ORMServices() {
           We also include{' '}
           <Link
             href="/services/gbp-optimization"
-            className="text-blue-600 dark:text-blue-400 hover:underline"
+            className="text-primary dark:text-accent hover:underline"
           >
             Google Business Profile (GBP) optimization
           </Link>{' '}
@@ -56,10 +56,10 @@ export default function ORMServices() {
   ]
 
   return (
-    <section className="mt-24 px-6 md:px-12 py-16 bg-gray-50 dark:bg-gray-900">
+    <section className="mt-24 px-6 md:px-12 py-16 bg-background">
       <div className="max-w-6xl mx-auto">
         {/* Section Heading */}
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-14 text-gray-900 dark:text-white">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-14 text-heading">
           Our Online Reputation Management Services Focus on Five Areas
         </h2>
 
@@ -68,21 +68,21 @@ export default function ORMServices() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-md hover:shadow-lg transition duration-300 border border-gray-100 dark:border-gray-700 cursor-pointer"
+              className="bg-card dark:bg-card rounded-xl p-8 shadow-md hover:shadow-lg transition duration-300 border border-border dark:border-border cursor-pointer"
             >
               {/* Icon + Title Row */}
               <div className="flex items-center gap-4 mb-4">
-                <div className="w-10 h-10 flex items-center justify-center rounded-md bg-blue-600 text-white">
+                <div className="w-10 h-10 flex items-center justify-center rounded-md bg-primary text-white">
                   {service.icon}
                 </div>
 
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                <h3 className="text-lg font-semibold text-heading">
                   {service.title}
                 </h3>
               </div>
 
               {/* Description */}
-              <p className="text-gray-600 dark:text-gray-300 text-sm leading-7 text-justify">
+              <p className="text-muted text-sm leading-7 text-justify">
                 {service.description}
               </p>
             </div>

@@ -32,7 +32,7 @@ const steps = [
         {' '}
         Modern businesses cannot rely entirely on manual operations. We
         integrate powerful{' '}
-        <Link href={'/solution/automation'} className="text-blue-500">
+        <Link href={'/solution/automation'} className="text-primary">
           digital automation services{' '}
         </Link>{' '}
         - from automated notifications and approval systems to integrated data
@@ -60,26 +60,26 @@ const steps = [
 ]
 
 const colorMap = {
-  blue: 'from-blue-500 to-blue-600',
+  blue: 'from-primary to-primary-hover',
   emerald: 'from-emerald-500 to-emerald-600',
-  purple: 'from-purple-500 to-purple-600',
+  purple: 'from-cream0 to-purple-600',
   orange: 'from-orange-500 to-orange-600',
 }
 
 export default function WorkflowAutomationSection() {
   return (
-    <section className="bg-gray-50 dark:bg-gray-900 py-20 px-6 lg:py-28">
+    <section className="bg-background py-20 px-6 lg:py-28">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white leading-tight">
+          <h2 className="text-4xl lg:text-5xl font-bold text-heading leading-tight">
             Streamline Your Business with
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
               {' '}
               Intelligent Workflow Automation
             </span>
           </h2>
-          <p className="mt-6 text-xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto">
+          <p className="mt-6 text-xl text-muted max-w-4xl mx-auto">
             Transform chaotic manual processes into smooth, automated systems
             that save time, reduce errors, and scale with your growth.
           </p>
@@ -94,7 +94,7 @@ export default function WorkflowAutomationSection() {
             return (
               <div
                 key={index}
-                className="group relative bg-white dark:bg-gray-800 rounded-3xl p-8 lg:p-10 shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-400 overflow-hidden"
+                className="group relative bg-card dark:bg-card rounded-3xl p-8 lg:p-10 shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-400 overflow-hidden"
               >
                 {/* Background Gradient Blob */}
                 <div
@@ -113,10 +113,10 @@ export default function WorkflowAutomationSection() {
 
                   {/* Content */}
                   <div className="flex-1">
-                    <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white mb-4">
+                    <h3 className="text-2xl lg:text-3xl font-bold text-heading mb-4">
                       {step.title}
                     </h3>
-                    <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+                    <p className="text-lg text-muted leading-relaxed">
                       {step.desc}
                     </p>
 
@@ -124,11 +124,11 @@ export default function WorkflowAutomationSection() {
                     <div className="mt-6 flex flex-wrap gap-3">
                       {index === 0 && (
                         <>
-                          <span className="flex items-center gap-2 text-sm font-medium text-blue-700">
+                          <span className="flex items-center gap-2 text-sm font-medium text-primary">
                             <CheckCircle2 className="w-4 h-4" /> Bottleneck
                             Removal
                           </span>
-                          <span className="flex items-center gap-2 text-sm font-medium text-blue-700">
+                          <span className="flex items-center gap-2 text-sm font-medium text-primary">
                             <Clock className="w-4 h-4" /> Clear Timelines
                           </span>
                         </>
@@ -174,7 +174,7 @@ export default function WorkflowAutomationSection() {
 
         {/* Final CTA */}
         <div className="mt-20 text-center">
-          <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl p-12 lg:p-16 text-white">
+          <div className="bg-gradient-to-r from-primary to-secondary rounded-3xl p-12 lg:p-16 text-white">
             <h3 className="text-3xl lg:text-5xl font-bold mb-6">
               Ready to Automate & Scale Your Operations?
             </h3>
@@ -186,7 +186,7 @@ export default function WorkflowAutomationSection() {
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Link
                 href="/contact-us"
-                className="inline-flex items-center px-10 py-5 bg-white text-blue-700 font-bold text-lg rounded-full hover:bg-gray-100 transition shadow-xl"
+                className="inline-flex items-center px-10 py-5 bg-white text-primary font-bold text-lg rounded-full hover:bg-cream transition shadow-xl"
               >
                 Start Your Free Workflow Audit
                 <ArrowRight className="ml-3 w-6 h-6" />

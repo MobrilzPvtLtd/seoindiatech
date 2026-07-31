@@ -2,9 +2,9 @@ import React from 'react'
 
 export default function WhyChoose() {
   return (
-    <section className="py-20 bg-white dark:bg-gray-900 transition-colors duration-300">
+    <section className="py-20 bg-white dark:bg-background transition-colors duration-300">
       <div className="max-w-5xl mx-auto px-6">
-        <h3 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white text-center mb-12">
+        <h3 className="text-3xl md:text-4xl font-bold text-heading text-center mb-12">
           Why Clients Choose Us
         </h3>
 
@@ -79,17 +79,17 @@ export default function WhyChoose() {
             return (
               <div
                 key={index}
-                className="flex gap-6 bg-gray-50 dark:bg-gray-800/40 border border-gray-200 dark:border-gray-700 
+                className="flex gap-6 bg-gray-50 dark:bg-card/40 border border-border 
             rounded-2xl p-6 shadow hover:shadow-md transition-all duration-300"
               >
                 <div
                   className="w-14 h-14 flex items-center justify-center rounded-xl 
-              bg-blue-100 dark:bg-blue-900/40 border border-blue-300/50 dark:border-blue-700"
+              bg-primary/10 dark:bg-primary/20/40 border border-primary/30/50 dark:border-primary/30"
                 >
-                  <Icon className="w-7 h-7 text-blue-600 dark:text-blue-400" />
+                  <Icon className="w-7 h-7 text-primary dark:text-accent" />
                 </div>
 
-                <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-sm">
+                <p className="text-body leading-relaxed text-sm">
                   {item.text}
                 </p>
               </div>
