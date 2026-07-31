@@ -7,7 +7,6 @@ import { ArrowRight, Search, BarChart, Globe, Shield, Zap, Target, TrendingUp, H
 import WhyPartnerSection from '@/component/common/WhyPartnerSection'
 import ContactFormSection from '@/component/common/ContactFormSection'
 import ServiceHero from '@/component/common/ServiceHero'
-import FaqSection from '@/component/common/FaqSection'
 import HubContentSection from '@/component/common/HubContentSection'
 import VisibleFaq from '@/component/common/VisibleFaq'
 import { PAGE_FAQS } from '@/utils/pageFaqs'
@@ -410,8 +409,8 @@ export default function ServiceCategoryPage() {
       />
 
       {/* FAQ Section */}
-      {slug === 'seo' && <FaqSection />}
-      {meta.hubFaqs && <VisibleFaq faqs={meta.hubFaqs} />}
+      {slug === 'seo' && <VisibleFaq faqs={PAGE_FAQS.seoHub} minCount={8} showSchema />}
+      {meta.hubFaqs && <VisibleFaq faqs={meta.hubFaqs} minCount={8} showSchema />}
     </>
   )
 }

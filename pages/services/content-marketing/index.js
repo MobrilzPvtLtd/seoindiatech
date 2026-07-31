@@ -94,7 +94,7 @@ export default function index() {
         schema={schemaData}
       />
       <Contentmarketing />
-      <VisibleFaq faqs={PAGE_FAQS.contentMarketing} />
+      <VisibleFaq faqs={PAGE_FAQS.contentMarketing} minCount={8} showSchema />
     </>
   )
 }

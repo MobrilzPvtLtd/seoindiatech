@@ -103,7 +103,7 @@ export default function index() {
         schema={schemaData}
       />
       <PPC />
-      <VisibleFaq faqs={PAGE_FAQS.ppcAdvertising} />
+      <VisibleFaq faqs={PAGE_FAQS.ppcAdvertising} minCount={8} showSchema />
     </>
   )
 }

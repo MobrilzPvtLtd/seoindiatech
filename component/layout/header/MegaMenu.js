@@ -12,7 +12,7 @@ export function MegaMenuPanel({ children, id, className = '', onMouseEnter, onMo
       onClick={onClick}
       className={`
         absolute left-1/2 top-full mt-3 -translate-x-1/2
-        w-full max-w-[90vw] md:w-[500px] lg:w-[700px] xl:w-[900px]
+        w-full max-w-[90vw] md:w-[520px] lg:w-[740px] xl:w-[980px]
         max-h-[75vh] overflow-hidden flex flex-col
         bg-white dark:bg-slate-800 rounded-2xl z-[100]
         border border-slate-200/70 dark:border-slate-700/60
@@ -115,12 +115,15 @@ function MegaMenuItem({ item, closeMenu }) {
       >
         <Icon size={14} />
       </div>
-      <div className="min-w-0">
-        <p className="text-sm font-medium text-slate-800 dark:text-white group-hover:text-primary dark:group-hover:text-accent transition-colors leading-snug">
+      <div className="min-w-0 flex-1">
+        <p
+          className="text-[13px] font-medium text-slate-800 dark:text-white group-hover:text-primary dark:group-hover:text-accent transition-colors leading-snug whitespace-nowrap truncate"
+          title={title}
+        >
           {title}
         </p>
         {desc && (
-          <p className="text-xs text-slate-400 dark:text-slate-500 mt-0.5 leading-snug line-clamp-2">
+          <p className="text-[11px] text-slate-400 dark:text-slate-500 mt-0.5 leading-snug line-clamp-1 hidden lg:block">
             {desc}
           </p>
         )}

@@ -1,5 +1,7 @@
 import WorkFlow from '@/component/solution/workflow/WorkFlow'
 import SeoHead from '@/component/common/SeoHead'
+import VisibleFaq from '@/component/common/VisibleFaq'
+import { PAGE_FAQS } from '@/utils/pageFaqs'
 import React from 'react'
 
 export default function index() {
@@ -85,6 +87,7 @@ export default function index() {
         schema={schemaData}
       />
       <WorkFlow />
+      <VisibleFaq faqs={PAGE_FAQS.workflow} minCount={8} showSchema />
     </>
   )
 }

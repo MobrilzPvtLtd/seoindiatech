@@ -12,7 +12,7 @@ function WhoWeArePage() {
     <>
       <SeoHead title={seo.title} description={seo.description} path="/who-we-are" />
       <WhoWeAre />
-      <VisibleFaq faqs={PAGE_FAQS.whoWeAre} />
+      <VisibleFaq faqs={PAGE_FAQS.whoWeAre} minCount={8} showSchema />
     </>
   )
 }

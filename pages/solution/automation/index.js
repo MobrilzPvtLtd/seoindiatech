@@ -1,5 +1,7 @@
 import Automation from '@/component/solution/automation/Automation'
 import SeoHead from '@/component/common/SeoHead'
+import VisibleFaq from '@/component/common/VisibleFaq'
+import { PAGE_FAQS } from '@/utils/pageFaqs'
 import React from 'react'
 
 export default function index() {
@@ -90,6 +92,7 @@ export default function index() {
         schema={schemaData}
       />
       <Automation />
+      <VisibleFaq faqs={PAGE_FAQS.automation} minCount={8} showSchema />
     </>
   )
 }

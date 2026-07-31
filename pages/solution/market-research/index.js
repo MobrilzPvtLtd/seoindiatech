@@ -12,7 +12,7 @@ export default function MarketResearchPage() {
         path="/solution/market-research"
       />
       <MarektResearch />
-      <VisibleFaq faqs={PAGE_FAQS.marketResearch} />
+      <VisibleFaq faqs={PAGE_FAQS.marketResearch} minCount={8} showSchema />
     </>
   )
 }

@@ -33,8 +33,18 @@ const faqs = [
       answer:
         'Yes. We offer answer engine optimization consulting for audits, content templates, schema plans, and step by step guidance for in house teams.',
     },
+    {
+      question: 'Q7. Which pages should I optimize first for AEO?',
+      answer:
+        'Start with high-intent service pages, pricing FAQs, and comparison content—pages where users ask direct questions and AI systems look for concise, authoritative answers.',
+    },
+    {
+      question: 'Q8. Does AEO work with voice search?',
+      answer:
+        'Yes. Answer-formatted content with natural-language questions and short, definitive answers improves eligibility for voice assistants and spoken query results.',
+    },
   ]
 
 export default function AEOFaq() {
-  return <ServiceFaq title="FAQs" faqs={faqs} badge="FAQ" />
+  return <ServiceFaq faqs={faqs} />
 }

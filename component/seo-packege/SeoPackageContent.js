@@ -37,7 +37,7 @@ export default function SeoPackageContent() {
           </div>
         </div>
       </section>
-      <VisibleFaq faqs={PAGE_FAQS.seoPackages} />
+      <VisibleFaq faqs={PAGE_FAQS.seoPackages} minCount={8} showSchema />
     </>
   )
 }

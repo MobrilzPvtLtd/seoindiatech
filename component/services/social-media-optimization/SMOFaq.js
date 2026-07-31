@@ -38,8 +38,18 @@ const faqs = [
       answer:
         'Yes. If you need one partner, a digital marketing company in India can manage SMO, digital branding services, and other channels with one plan and shared reporting.',
     },
+    {
+      question: 'Q7. What metrics matter most for social media optimization?',
+      answer:
+        'Profile visits, engagement rate, saves, shares, link clicks, and follower quality matter more than vanity metrics—we optimize for actions that support leads and brand trust.',
+    },
+    {
+      question: 'Q8. Do you create a content calendar for SMO?',
+      answer:
+        'Yes. We deliver monthly content calendars with post themes, captions, hashtags, and best posting times—aligned with campaigns, seasons, and your brand voice.',
+    },
   ]
 
 export default function SMOFaq() {
-  return <ServiceFaq title="FAQs" faqs={faqs} badge="FAQ" />
+  return <ServiceFaq faqs={faqs} />
 }

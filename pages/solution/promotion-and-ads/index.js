@@ -1,5 +1,7 @@
 import Promotion from '@/component/solution/promotion/Promotion'
 import SeoHead from '@/component/common/SeoHead'
+import VisibleFaq from '@/component/common/VisibleFaq'
+import { PAGE_FAQS } from '@/utils/pageFaqs'
 import React from 'react'
 
 export default function index() {
@@ -88,6 +90,7 @@ export default function index() {
         schema={schemaData}
       />
       <Promotion />
+      <VisibleFaq faqs={PAGE_FAQS.promotionAndAds} minCount={8} showSchema />
     </>
   )
 }

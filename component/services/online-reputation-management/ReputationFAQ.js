@@ -38,8 +38,18 @@ const faqs = [
       answer:
         'It includes listing accuracy, categories, services, photos, review workflows, and updates that improve calls, direction requests, and customer confidence.',
     },
+    {
+      question: 'Q7. Can you remove negative reviews or search results?',
+      answer:
+        'We cannot guarantee removal of legitimate reviews, but we help respond professionally, encourage satisfied customers to share feedback, and suppress harmful content with positive assets and SEO.',
+    },
+    {
+      question: 'Q8. How do you monitor online reputation?',
+      answer:
+        'We track reviews, brand mentions, and search results across Google, social platforms, and review sites—with alerts and monthly sentiment summaries so issues are addressed quickly.',
+    },
   ]
 
 export default function ReputationFAQ() {
-  return <ServiceFaq title="FAQs" faqs={faqs} badge="FAQ" />
+  return <ServiceFaq faqs={faqs} />
 }

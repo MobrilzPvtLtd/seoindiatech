@@ -35,8 +35,18 @@ const faqs = [
       answer:
         'Yes. When your app pages and FAQs are aligned with user questions, it can improve visibility in AI answers and other search features.',
     },
+    {
+      question: 'Q7. How do you improve app store conversion rates?',
+      answer:
+        'We test screenshots, icons, preview videos, and listing copy—optimizing for the keywords that drive installs while improving click-to-install rates from search and browse.',
+    },
+    {
+      question: 'Q8. Do you track ASO performance over time?',
+      answer:
+        'Yes. Monthly reports cover keyword rankings, impression share, install trends, and competitor movement on both Google Play and the Apple App Store.',
+    },
   ]
 
 export default function ASOFaq() {
-  return <ServiceFaq title="FAQs" faqs={faqs} badge="FAQ" />
+  return <ServiceFaq faqs={faqs} />
 }

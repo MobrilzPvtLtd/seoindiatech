@@ -33,8 +33,18 @@ const faqs = [
       answer:
         'Yes. A digital marketing company can align AI SEO strategy with your lead funnel, landing pages, and conversion tracking so traffic turns into leads.',
     },
+    {
+      question: 'Q7. How does AI SEO help with Google AI Overviews?',
+      answer:
+        'AI SEO structures content with clear answers, FAQs, and entity signals so your pages are more likely to be cited in AI Overviews and featured snippets when users ask related questions.',
+    },
+    {
+      question: 'Q8. What should I expect in the first month of AI SEO services?',
+      answer:
+        'The first month typically includes a technical and content audit, keyword and intent mapping, quick-win fixes, and a prioritized roadmap—so you see progress before longer-term ranking gains build.',
+    },
   ]
 
 export default function AiSeoFAQ() {
-  return <ServiceFaq title="FAQs" faqs={faqs} badge="FAQ" />
+  return <ServiceFaq faqs={faqs} />
 }

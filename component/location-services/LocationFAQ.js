@@ -1,9 +1,11 @@
 'use client'
 
 import VisibleFaq from '@/component/common/VisibleFaq'
+import { MIN_FAQ_COUNT, getLocationSupplementalFaqs } from '@/utils/faqHelpers'
 
 export default function LocationFAQ({ faqs, city, subject }) {
   const topic = subject || city || 'your business'
+  const place = city || 'your area'
 
   const defaultFAQs = [
     {
@@ -40,6 +42,9 @@ export default function LocationFAQ({ faqs, city, subject }) {
       title={`Frequently Asked Questions about ${topic}`}
       faqs={faqList}
       badge="FAQ"
+      minCount={MIN_FAQ_COUNT}
+      supplementalFaqs={getLocationSupplementalFaqs(place)}
+      showSchema
     />
   )
 }

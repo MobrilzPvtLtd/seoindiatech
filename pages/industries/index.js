@@ -96,7 +96,7 @@ export default function IndustriesIndexPage() {
           </div>
         </div>
       </main>
-      <VisibleFaq faqs={PAGE_FAQS.industriesHub} />
+      <VisibleFaq faqs={PAGE_FAQS.industriesHub} minCount={8} showSchema />
     </>
   )
 }

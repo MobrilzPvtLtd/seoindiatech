@@ -84,7 +84,7 @@ export default function ContactSeoContent() {
           </div>
         </div>
       </section>
-      <VisibleFaq faqs={PAGE_FAQS.contact} />
+      <VisibleFaq faqs={PAGE_FAQS.contact} minCount={8} showSchema />
     </>
   )
 }

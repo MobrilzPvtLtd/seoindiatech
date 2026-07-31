@@ -38,8 +38,18 @@ const faqs = [
       answer:
         'Yes. As a digital marketing services company, we can align PPC with SEO, content, and local SEO services agency work for stronger long-term growth.',
     },
+    {
+      question: 'Q7. How do you reduce wasted ad spend in PPC campaigns?',
+      answer:
+        'We use negative keywords, search term reviews, audience exclusions, and bid adjustments based on conversion data—pausing underperformers and scaling what drives leads at target CPA.',
+    },
+    {
+      question: 'Q8. Do you manage Google Ads and Microsoft Ads together?',
+      answer:
+        'Yes. We run search campaigns on Google and Bing where appropriate—importing structure while adapting bids and copy for each platform\'s audience and cost dynamics.',
+    },
   ]
 
 export default function PPCFaq() {
-  return <ServiceFaq title="FAQs" faqs={faqs} badge="FAQ" />
+  return <ServiceFaq faqs={faqs} />
 }

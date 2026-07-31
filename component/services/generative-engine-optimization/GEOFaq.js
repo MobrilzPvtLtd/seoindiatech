@@ -33,8 +33,18 @@ const faqs = [
       answer:
         'Ecommerce, healthcare, education, finance, and local service providers can benefit from trends in generative engine optimization.',
     },
+    {
+      question: 'Q7. What content formats work best for generative engine optimization?',
+      answer:
+        'Clear headings, concise answer paragraphs, FAQ sections, comparison tables, and authoritative citations help AI systems extract and reference your content accurately.',
+    },
+    {
+      question: 'Q8. How do you measure GEO success?',
+      answer:
+        'We track brand mentions in AI tools, featured snippet visibility, branded search growth, and referral traffic from AI-driven search experiences—alongside traditional SEO metrics.',
+    },
   ]
 
 export default function GEOFaq() {
-  return <ServiceFaq title="FAQs" faqs={faqs} badge="FAQ" />
+  return <ServiceFaq faqs={faqs} />
 }

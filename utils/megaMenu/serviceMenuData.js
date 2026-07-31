@@ -26,7 +26,7 @@ export const serviceMegaMenuCategories = [
     items: [
       { icon: MapPin, title: 'Local SEO', desc: 'Rank in your city and nearby areas', link: '/services/local-seo-service' },
       { icon: Bot, title: 'AI SEO', desc: 'Get found by AI search and chat tools', link: '/services/ai-seo' },
-      { icon: Store, title: 'Small Business SEO', desc: 'Affordable growth for local shops', link: '/services/small-business-seo' },
+      { icon: Store, title: 'Small Business', desc: 'Affordable growth for local shops', link: '/services/small-business-seo' },
       { icon: ShoppingCart, title: 'E-Commerce SEO', desc: 'More organic traffic to product pages', link: '/services/e-commerce-seo' },
       { icon: Smartphone, title: 'App Store Optimization', desc: 'Higher rankings in app stores', link: '/services/app-store-optimization' },
       { icon: Building2, title: 'GBP Optimization', desc: 'Stand out on Google Business Profile', link: '/services/gbp-optimization' },
@@ -41,7 +41,7 @@ export const serviceMegaMenuCategories = [
     items: [
       { icon: Palette, title: 'Digital Branding', desc: 'Build a brand people remember', link: '/services/digital-branding' },
       { icon: FileText, title: 'Content Marketing', desc: 'Content that ranks and converts', link: '/services/content-marketing' },
-      { icon: ShieldCheck, title: 'Reputation Management', desc: 'Protect and improve how you look online', link: '/services/online-reputation-management' },
+      { icon: ShieldCheck, title: 'ORM', desc: 'Protect and improve how you look online', link: '/services/online-reputation-management' },
       { icon: Share2, title: 'Social Media Optimization', desc: 'Grow an engaged social following', link: '/services/social-media-optimization' },
     ],
   },

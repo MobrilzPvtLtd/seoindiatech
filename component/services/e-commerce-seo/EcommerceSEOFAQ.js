@@ -33,8 +33,18 @@ const faqs = [
       answer:
         'We offer flexible plans. You can choose the plan that fits your goals.',
     },
+    {
+      question: 'Q7. How do you optimize product and category pages for ecommerce SEO?',
+      answer:
+        'We improve titles, descriptions, filters, internal linking, and structured data—plus fix duplicate content and thin pages that hold ecommerce stores back in search.',
+    },
+    {
+      question: 'Q8. Which ecommerce platforms do you support?',
+      answer:
+        'We work with Shopify, WooCommerce, Magento, and custom storefronts—adapting technical SEO and content strategy to each platform\'s strengths and limitations.',
+    },
   ]
 
 export default function EcommerceSEOFAQ() {
-  return <ServiceFaq title="FAQs" faqs={faqs} badge="FAQ" />
+  return <ServiceFaq faqs={faqs} />
 }

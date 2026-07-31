@@ -120,7 +120,7 @@ export default function index() {
         schema={schemaData}
       />
       <Digitalbranding />
-      <VisibleFaq faqs={PAGE_FAQS.digitalBranding} />
+      <VisibleFaq faqs={PAGE_FAQS.digitalBranding} minCount={8} showSchema />
     </>
   )
 }

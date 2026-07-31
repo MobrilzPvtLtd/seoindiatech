@@ -39,8 +39,18 @@ const faqs = [
       answer:
         'If you want stronger results, yes. A local SEO service company can improve citations, location pages, and local signals that support your profile.',
     },
+    {
+      question: 'Q7. How often should I post on my Google Business Profile?',
+      answer:
+        'We recommend weekly posts with offers, updates, and photos—consistent activity signals relevance and keeps your listing engaging for searchers comparing local options.',
+    },
+    {
+      question: 'Q8. Can GBP optimization help with voice search and AI answers?',
+      answer:
+        'Yes. Accurate categories, services, Q&A, and review-rich profiles help voice assistants and AI tools surface your business when users ask for nearby recommendations.',
+    },
   ]
 
 export default function GBPFaq() {
-  return <ServiceFaq title="FAQs" faqs={faqs} badge="FAQ" />
+  return <ServiceFaq faqs={faqs} />
 }

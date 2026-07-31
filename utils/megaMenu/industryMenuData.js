@@ -146,6 +146,22 @@ function industryLabel(title) {
   return title.replace(/\s+SEO$/i, '').trim()
 }
 
+/** Shorter labels for mega menu to prevent wrapping */
+const MENU_LABEL_OVERRIDES = {
+  'home-builder-and-remodeler-seo': 'Home Builder',
+  'movers-and-moving-company-seo': 'Moving Company',
+  'well-drilling-company-seo': 'Well Drilling',
+  'wildlife-removal-company-seo': 'Wildlife Removal',
+  'cabinet-manufacturer-seo': 'Cabinet Maker',
+  'pest-control-service-seo': 'Pest Control',
+  'janitorial-service-seo': 'Janitorial',
+  'fence-installer-seo': 'Fence Installer',
+  'garage-door-seo': 'Garage Door',
+  'locksmith-service-seo': 'Locksmith',
+  'interior-designer-seo': 'Interior Design',
+  'flooring-company-seo': 'Flooring',
+}
+
 function itemDescription(slug, label) {
   return INDUSTRY_DESCRIPTIONS[slug] || `SEO strategies tailored for ${label.toLowerCase()} businesses`
 }
@@ -159,7 +175,7 @@ export const industryMegaMenuCategories = INDUSTRY_CATEGORIES.map((cat) => {
     icon: CategoryIcon,
     items: cat.items.map((item) => {
       const slug = toSlug(item)
-      const label = industryLabel(item)
+      const label = MENU_LABEL_OVERRIDES[slug] || industryLabel(item)
       const ItemIcon = INDUSTRY_ICONS[slug] || CategoryIcon
       return {
         icon: ItemIcon,

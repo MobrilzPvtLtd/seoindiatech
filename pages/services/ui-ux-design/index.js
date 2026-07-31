@@ -98,7 +98,7 @@ function page() {
       />
 
       <Uiux />
-      <VisibleFaq faqs={PAGE_FAQS.uiUxDesign} />
+      <VisibleFaq faqs={PAGE_FAQS.uiUxDesign} minCount={8} showSchema />
     </>
   )
 }

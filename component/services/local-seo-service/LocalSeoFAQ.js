@@ -34,8 +34,18 @@ const faqs = [
       answer:
         'We focus on real local visibility improvements. We use proven steps that match the way customers search online.',
     },
+    {
+      question: 'Q7. How does local SEO improve Google Maps rankings?',
+      answer:
+        'Local SEO strengthens your Google Business Profile, citations, reviews, and location pages—signals Google uses to rank businesses in the map pack and local organic results.',
+    },
+    {
+      question: 'Q8. Can local SEO work for multi-location businesses?',
+      answer:
+        'Yes. We create location-specific pages, manage multiple listings, and keep NAP data consistent so each branch competes in its service area.',
+    },
   ]
 
 export default function LocalSeoFAQ() {
-  return <ServiceFaq title="FAQs" faqs={faqs} badge="FAQ" />
+  return <ServiceFaq faqs={faqs} />
 }

@@ -12,7 +12,7 @@ export default function WebsiteCreationPage() {
         path="/solution/website-creation"
       />
       <WebsiteCreation />
-      <VisibleFaq faqs={PAGE_FAQS.websiteCreation} />
+      <VisibleFaq faqs={PAGE_FAQS.websiteCreation} minCount={8} showSchema />
     </>
   )
 }
