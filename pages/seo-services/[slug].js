@@ -4,7 +4,9 @@ import { absoluteUrl } from '@/utils/siteConfig'
 import LocationHero from '@/component/location-services/LocationHero'
 import LocationContent from '@/component/location-services/LocationContent'
 import LocationFAQ from '@/component/location-services/LocationFAQ'
+import LocationInternalLinks from '@/component/location-services/LocationInternalLinks'
 import SeoSchema from '@/component/location-services/SeoSchema'
+import { getLocationInternalLinks } from '@/utils/internalLinks'
 import { locations } from '../../utils/locations'
 
 export default function LocationPage({ location }) {
@@ -23,6 +25,7 @@ export default function LocationPage({ location }) {
 
   const pagePath = `/seo-services/${location.slug}`
   const pageUrl = absoluteUrl(pagePath)
+  const internalLinks = getLocationInternalLinks(location.slug)
 
   return (
     <>
@@ -43,6 +46,8 @@ export default function LocationPage({ location }) {
         <LocationContent pageContent={location.pageContent} />
 
         <LocationFAQ faqs={location.faqs} city={location.city} />
+
+        <LocationInternalLinks data={internalLinks} city={location.city} />
       </main>
     </>
   )

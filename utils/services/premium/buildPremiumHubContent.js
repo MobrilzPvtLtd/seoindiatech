@@ -3,7 +3,7 @@
  */
 import { PAGE_FAQS } from '../../pageFaqs'
 import { serviceCategories } from '../../serviceCategories'
-import { INTERNAL_LINK_CATALOG } from '../../industries/premium/contentEnhancer'
+import { getHubInternalLinks } from '../../internalLinks'
 import { getServiceEntry, SERVICE_CATALOG } from './serviceCatalog'
 
 const HUB_HERO_IMAGES = {
@@ -82,7 +82,7 @@ export function getPremiumHubContent(hubSlug) {
       slug: hubSlug,
       canonical: path,
       keywords: childServices.map((s) => `${s.title.toLowerCase()} services`),
-      internalLinks: INTERNAL_LINK_CATALOG.map((l) => l.href),
+      internalLinks: getHubInternalLinks(hubSlug).map((l) => l.href),
     },
 
     hero: {
@@ -404,12 +404,13 @@ export function getPremiumHubContent(hubSlug) {
       title: 'Continue Your Research',
       subtitle: 'Related services, packages, and industries.',
       links: [
-        ...childServices.slice(0, 4).map((s) => ({ href: s.href, title: s.title, description: s.description })),
-        { href: '/seo-packages', title: 'SEO Packages', description: 'Transparent monthly packages.' },
-        { href: '/industries', title: 'Industry SEO', description: '41 vertical-specific programs.' },
-        { href: '/contact-us', title: 'Free Audit', description: 'Custom roadmap with KPIs.' },
-        ...INTERNAL_LINK_CATALOG.slice(0, 3),
-      ],
+        ...childServices.slice(0, 4).map((s) => ({
+          href: s.href,
+          title: s.title,
+          description: s.description,
+        })),
+        ...getHubInternalLinks(hubSlug),
+      ].filter((link, index, arr) => arr.findIndex((l) => l.href === link.href) === index).slice(0, 10),
     },
 
     testimonials: {

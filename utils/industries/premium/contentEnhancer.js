@@ -209,40 +209,6 @@ function capitalize(s) {
   return s.charAt(0).toUpperCase() + s.slice(1)
 }
 
-export const INTERNAL_LINK_CATALOG = [
-  {
-    href: '/services/local-seo-service',
-    title: 'Local SEO Services',
-    description: 'Map pack dominance, city pages, and citation management for service businesses.',
-  },
-  {
-    href: '/services/ai-seo',
-    title: 'AI SEO & GEO',
-    description: 'Generative Engine Optimization for AI Overviews, ChatGPT, and voice search.',
-  },
-  {
-    href: '/services/gbp-optimization',
-    title: 'Google Business Profile Optimization',
-    description: 'Categories, reviews, posts, and conversion tracking for GBP.',
-  },
-  {
-    href: '/services/generative-engine-optimization',
-    title: 'Generative Engine Optimization',
-    description: 'Entity signals and answer blocks for generative AI discovery.',
-  },
-  {
-    href: '/services/ppc-advertising',
-    title: 'PPC Advertising',
-    description: 'High-intent paid campaigns aligned with organic landing pages.',
-  },
-  {
-    href: '/seo-packages',
-    title: 'SEO Packages',
-    description: 'Transparent pricing and deliverables for growing businesses.',
-  },
-  {
-    href: '/contact-us',
-    title: 'Free SEO Audit',
-    description: 'Get a customized roadmap with timelines and KPIs.',
-  },
-]
+import { INTERNAL_LINK_CATALOG } from '../../internalLinks.js'
+
+export { INTERNAL_LINK_CATALOG }

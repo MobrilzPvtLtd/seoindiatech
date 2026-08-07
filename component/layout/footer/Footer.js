@@ -6,17 +6,20 @@ import Link from 'next/link'
 import BrandLogo from '@/component/ui/BrandLogo'
 import FooterQuickContact from './FooterQuickContact'
 import { WHATSAPP_URL } from '@/component/ui/WhatsAppButton'
+import { LOCATION_CITIES } from '@/utils/internalLinks'
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
 
   const services = [
+    { title: 'SEO Services', slug: 'seo' },
+    { title: 'Local SEO', slug: 'local-seo-service' },
     { title: 'AI SEO', slug: 'ai-seo' },
-    { title: 'Search Engine Optimization', slug: 'seo' },
-    { title: 'Digital Marketing', slug: 'digital-marketing' },
+    { title: 'GBP Optimization', slug: 'gbp-optimization' },
     { title: 'Content Marketing', slug: 'content-marketing' },
     { title: 'PPC Advertising', slug: 'ppc-advertising' },
-    { title: 'UI/UX Design', slug: 'ui-ux-design' },
+    { title: 'Digital Marketing', slug: 'digital-marketing' },
+    { title: 'Small Business SEO', slug: 'small-business-seo' },
   ]
 
   const solutions = [
@@ -39,7 +42,7 @@ const Footer = () => {
   ]
 
   const globalMarkets = ['USA', 'UK', 'Australia', 'Europe', 'UAE', 'Canada']
-  const indiaCities = ['Noida', 'Delhi', 'Mumbai', 'Hyderabad', 'Pune', 'Jaipur']
+  const indiaCities = LOCATION_CITIES
 
   const socials = [
     { icon: FaWhatsapp, href: WHATSAPP_URL, label: 'WhatsApp', external: true },
@@ -190,11 +193,11 @@ const Footer = () => {
             <div className="flex flex-wrap gap-2">
               {indiaCities.map((city) => (
                 <Link
-                  key={city}
-                  href={`/seo-services/seo-services-in-${city.toLowerCase()}`}
+                  key={city.slug}
+                  href={`/seo-services/${city.slug}`}
                   className="rounded-full border border-white/10 px-3 py-1 text-xs text-white/55 hover:text-white hover:border-primary/40 hover:bg-primary/10 transition-colors"
                 >
-                  {city}
+                  {city.name}
                 </Link>
               ))}
             </div>

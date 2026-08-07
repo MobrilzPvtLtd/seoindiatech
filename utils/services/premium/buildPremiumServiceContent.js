@@ -1,7 +1,7 @@
 /**
  * Premium service page content builder - mirrors industry premium architecture.
  */
-import { INTERNAL_LINK_CATALOG } from '../../industries/premium/contentEnhancer'
+import { getServiceInternalLinks } from '../../internalLinks'
 import { getRelatedServices } from './serviceCatalog'
 import { getServiceFaqs } from './serviceFaqMap'
 
@@ -213,18 +213,6 @@ export function buildPremiumServiceContent(entry) {
         },
       ]
 
-  const relatedLinks = related.map((r) => ({
-    href: r.path,
-    title: r.name,
-    description: r.shortDescription,
-  }))
-
-  const industryLinks = [
-    { href: '/industries', title: 'Industry SEO Programs', description: '41 vertical-specific SEO playbooks for healthcare, home services, and more.' },
-    { href: '/seo-packages', title: 'SEO Packages', description: 'Transparent monthly packages with clear deliverables and pricing.' },
-    { href: '/contact-us', title: 'Free SEO Audit', description: 'Get a customized roadmap with timelines and KPIs.' },
-  ]
-
   return {
     slug,
     name,
@@ -244,7 +232,7 @@ export function buildPremiumServiceContent(entry) {
         `${label} experts`,
         `${label} pricing`,
       ],
-      internalLinks: INTERNAL_LINK_CATALOG.map((l) => l.href),
+      internalLinks: getServiceInternalLinks(slug).map((l) => l.href),
     },
 
     hero: {
@@ -560,7 +548,7 @@ export function buildPremiumServiceContent(entry) {
       badge: 'Explore More',
       title: 'Continue Your Research',
       subtitle: `Related services, packages, and programs that complement ${label}.`,
-      links: [...relatedLinks, ...industryLinks, ...INTERNAL_LINK_CATALOG.slice(0, 4)],
+      links: getServiceInternalLinks(slug),
     },
 
     testimonials: {

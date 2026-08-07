@@ -1,7 +1,9 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowRight, Calendar, Clock, User } from 'lucide-react'
-
+import BlogRelatedResources from './BlogRelatedResources'
+import posts from '@/utils/BlogPost'
+import { getBlogRelatedResources } from '@/utils/internalLinks'
 function renderParagraph(block, index) {
   if (block.link) {
     return (
@@ -68,8 +70,9 @@ function renderBlock(block, index) {
 }
 
 export default function PremiumBlogArticle({ post }) {
-  return (
-    <article className="max-w-4xl mx-auto">
+  const relatedResources = getBlogRelatedResources(post, posts)
+
+  return (    <article className="max-w-4xl mx-auto">
       <div className="mb-6">
         <Image
           src={post.image}
@@ -131,8 +134,9 @@ export default function PremiumBlogArticle({ post }) {
         </section>
       )}
 
-      <div className="mt-12 flex flex-wrap gap-3">
-        <Link
+      <BlogRelatedResources data={relatedResources} />
+
+      <div className="mt-12 flex flex-wrap gap-3">        <Link
           href="/contact-us"
           className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-white font-bold hover:bg-primary-hover"
         >

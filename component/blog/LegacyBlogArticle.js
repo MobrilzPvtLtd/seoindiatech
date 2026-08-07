@@ -1,9 +1,13 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import BlogRelatedResources from './BlogRelatedResources'
+import posts from '@/utils/BlogPost'
+import { getBlogRelatedResources } from '@/utils/internalLinks'
 
 export default function LegacyBlogArticle({ post }) {
-  return (
-    <div className="max-w-4xl mx-auto">
+  const relatedResources = getBlogRelatedResources(post, posts)
+
+  return (    <div className="max-w-4xl mx-auto">
       <div className="mb-6">
         <Image
           src={post.image}
@@ -70,6 +74,8 @@ export default function LegacyBlogArticle({ post }) {
           return null
         })}
       </div>
+
+      <BlogRelatedResources data={relatedResources} />
     </div>
   )
 }

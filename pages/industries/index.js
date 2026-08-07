@@ -7,6 +7,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { INDUSTRY_CATEGORIES, toSlug } from '@/utils/industries'
 import { CATEGORY_HERO_IMAGES, INDUSTRY_BENEFIT_PILLARS } from '@/utils/industries/industryMedia'
+import { INTERNAL_LINK_CATALOG } from '@/utils/internalLinks'
 
 const seo = getPageSeo('/industries')
 
@@ -100,6 +101,29 @@ export default function IndustriesIndexPage() {
               </section>
             ))}
           </div>
+
+          <section className="mt-16 rounded-3xl border border-border bg-cream/40 dark:bg-secondary/20 p-8 md:p-10">
+            <div className="text-center max-w-2xl mx-auto mb-8">
+              <h2 className="font-heading text-2xl md:text-3xl font-bold text-heading">
+                Explore SEO Services &amp; Resources
+              </h2>
+              <p className="mt-3 text-muted">
+                Pair your industry program with core services, local SEO, packages, and practical guides from our blog.
+              </p>
+            </div>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {INTERNAL_LINK_CATALOG.slice(0, 9).map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="rounded-2xl border border-border bg-white dark:bg-card p-5 hover:border-primary/30 hover:shadow-sm transition-all"
+                >
+                  <h3 className="font-semibold text-heading hover:text-primary">{link.title}</h3>
+                  <p className="mt-2 text-sm text-muted leading-relaxed">{link.description}</p>
+                </Link>
+              ))}
+            </div>
+          </section>
         </div>
       </main>
       <VisibleFaq faqs={PAGE_FAQS.industriesHub} minCount={8} />

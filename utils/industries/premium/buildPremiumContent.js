@@ -4,7 +4,6 @@
  */
 import { buildCatalogEntries } from '../catalog'
 import {
-  INTERNAL_LINK_CATALOG,
   buildCaseStudyFromProfile,
   buildEditorialBlocks,
   buildKeyTakeaways,
@@ -13,6 +12,7 @@ import {
   buildWhySeoTrends,
   extractBenefits,
 } from './contentEnhancer'
+import { getIndustryInternalLinks } from '../../internalLinks'
 import { getTestimonialsForIndustry } from './industryTestimonials'
 
 const HEALTHCARE_SLUGS = new Set([
@@ -383,7 +383,7 @@ export function buildPremiumContent(entry, profile) {
       badge: 'Explore Services',
       title: 'Related SEO India Tech Services',
       subtitle: `Strengthen your ${labelLower} growth with our specialized digital marketing programs.`,
-      links: INTERNAL_LINK_CATALOG,
+      links: getIndustryInternalLinks(entry),
     },
 
     whyChoose: {

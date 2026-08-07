@@ -190,7 +190,7 @@ const posts = [
           'For example, a place that says they are "next to the old library in the West End" gives Google a much better "anchor". If you find your competitors are consistently outranking you, it might be time to look into local SEO services to help pin your business to the map more effectively.',
         link: {
           text: 'local SEO services',
-          url: '/services/local-seo',
+          url: '/services/local-seo-service',
         },
         textAfter: ' to help pin your business to the map more effectively.',
       },

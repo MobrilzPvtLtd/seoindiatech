@@ -1,18 +1,7 @@
 import Link from 'next/link'
+import { LOCATION_CITIES } from '@/utils/internalLinks'
 
-const cities = [
-  { name: 'Delhi', slug: 'seo-services-in-delhi' },
-  { name: 'Mumbai', slug: 'seo-services-in-mumbai' },
-  { name: 'Bangalore', slug: 'seo-services-in-bangalore' },
-  { name: 'Chennai', slug: 'seo-services-in-chennai' },
-  { name: 'Hyderabad', slug: 'seo-services-in-hyderabad' },
-  { name: 'Pune', slug: 'seo-services-in-pune' },
-  { name: 'Noida', slug: 'seo-services-in-noida' },
-  { name: 'Gurgaon', slug: 'seo-services-in-gurgaon' },
-  { name: 'Chandigarh', slug: 'seo-services-in-chandigarh' },
-  { name: 'Jaipur', slug: 'seo-services-in-jaipur' },
-  { name: 'Kolkata', slug: 'seo-services-in-kolkata' },
-]
+const cities = LOCATION_CITIES
 
 export default function CityLinksBand() {
   return (
