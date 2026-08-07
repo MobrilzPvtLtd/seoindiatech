@@ -229,6 +229,14 @@ html.lenis, html.lenis body { height: auto; }
   line-height: 1.7;
 }
 
+.premium-section + .premium-section {
+  border-top: 1px solid transparent;
+}
+
+.premium-industry-page .premium-section:nth-child(even of .premium-section) {
+  background-image: linear-gradient(180deg, transparent, rgba(107, 46, 136, 0.02));
+}
+
 .premium-industry-page .premium-prose {
   color: var(--color-body);
   font-size: 1.0625rem;

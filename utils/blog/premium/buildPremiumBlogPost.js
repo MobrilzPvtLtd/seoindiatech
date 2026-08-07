@@ -1,8 +1,16 @@
 /**
- * Builds premium blog posts (2,000+ words) with internal links, FAQs, and SEO metadata.
+ * Builds premium blog posts in the same style as legacy BlogPost.legacy.js:
+ * conversational tone, question headings, lists with bold labels, no corporate blocks.
  */
-import { BLOG_AUTHOR } from '../blogAuthor'
-import { getBlogCatalogEntry, PREMIUM_BLOG_SLUGS } from './blogCatalog'
+import { BLOG_AUTHOR } from '../blogAuthor.js'
+import { getBlogCatalogEntry, PREMIUM_BLOG_SLUGS } from './blogCatalog.js'
+import {
+  assembleLegacyBlocks,
+  boldItem,
+  buildLegacyFaqs,
+  conversationalOpeners,
+  formatListItem,
+} from './legacyBlogAssembler.js'
 
 const LINKS = {
   seo: { text: 'SEO services', url: '/services/seo' },
@@ -84,55 +92,11 @@ function sanitizeBlocks(blocks) {
 }
 
 function buildTopicContent(entry) {
-  const { slug, title, cluster, primaryKeyword } = entry
-  const maps = TOPIC_CONTENT[slug]
+  const maps = TOPIC_CONTENT[entry.slug]
   if (!maps) return buildGenericContent(entry)
 
-  return [
-    p(maps.intro),
-    { type: 'quick-answer', text: maps.quickAnswer },
-    { type: 'stats', items: maps.stats || SHARED_STATS },
-    img(`/images/blog/${slug}-stats.svg`, `Key statistics for ${title}`),
-    img(entry.image, `${title} featured hero illustration for European and global businesses`),
-    h2('Table of Contents'),
-    { type: 'toc' },
-    h2('What This Guide Covers'),
-    p(maps.overview),
-    ...maps.sections.flat(),
-    h2('Comparison: What Works vs What Fails'),
-    table(
-      ['Approach', 'Best For', 'Risk Level', 'Expected ROI'],
-      maps.comparison || [
-        ['AI + traditional SEO blend', 'Growth-focused brands', 'Low', 'High long-term'],
-        ['Paid-only visibility', 'Short campaigns', 'Medium', 'Medium'],
-        ['DIY without audit', 'Very small budgets', 'High', 'Low or negative'],
-        ['Agency partnership', 'Multi-market businesses', 'Low', 'High when KPI-led'],
-      ]
-    ),
-    img(`/images/blog/${slug}-comparison.svg`, `Comparison graphic for ${primaryKeyword}`),
-    img(`/images/blog/${slug}-process.svg`, `Step-by-step ${primaryKeyword} process diagram`),
-    h2('Common Mistakes to Avoid'),
-    ul(maps.mistakes),
-    h2('Best Practices Checklist'),
-    ol(maps.checklist),
-    h2('Expert Tips From Our Team'),
-    ul(maps.expertTips),
-    h2('Real-World Examples'),
-  ...maps.examples.map((ex) => [h3(ex.title), p(ex.body)]).flat(),
-    h2('Frequently Asked Questions'),
-    { type: 'faq-intro', text: 'Below are the most common questions we hear from European and global clients.' },
-    img(`/images/blog/${slug}-stats.svg`, `Key statistics for ${title}`),
-    img(`/images/blog/${slug}-comparison.svg`, `Comparison graphic for ${primaryKeyword}`),
-    img(`/images/blog/${slug}-checklist.svg`, `SEO checklist for ${title}`),
-    img(`/images/blog/${slug}-faq.svg`, `FAQ illustration for ${title}`),
-    cta('Get a Free SEO Audit', '/contact-us'),
-    h2('Conclusion'),
-    pl(
-      maps.conclusion,
-      LINKS.contact,
-      ` or explore our ${link(LINKS.packages)} to find the right fit for your market.`
-    ),
-  ]
+  const helpers = { p, pl, h2, h3, ul, ol, LINKS, link }
+  return sanitizeBlocks(assembleLegacyBlocks(entry, maps, helpers))
 }
 
 function buildGenericContent(entry) {
@@ -144,206 +108,220 @@ function buildGenericContent(entry) {
 
 const TOPIC_CONTENT = {
   'seo-trends-european-businesses-2026': {
-    intro: `European businesses face a search landscape reshaped by AI Overviews, privacy regulations, multilingual indexing, and mobile-first expectations. In 2026, winning organic visibility requires more than keyword rankings. It demands entity clarity, localized trust signals, and content structured for both Google and generative engines. Our `,
+    intro:
+      'If you run a business in Europe, you have probably noticed search results look different than they did even a year ago. AI summaries sit at the top, local map packs matter more than ever, and customers research in multiple languages before they buy. SEO in 2026 is less about chasing a single keyword and more about being the clearest, most trusted answer in your market.',
+    overview:
+      'This guide breaks down the SEO trends shaping Germany, the UK, France, the Netherlands, the Nordics, and broader EU markets. Whether you serve one country or several, these are the priorities that still drive calls, bookings, and revenue. Many brands pair proven ',
     quickAnswer:
-      'The top SEO trends for European businesses in 2026 are AI-ready content architecture, multilingual hreflang execution, local entity SEO, Core Web Vitals compliance, and GEO strategies that earn citations in AI-generated answers.',
-    stats: [
-      { value: '72%', label: 'of EU consumers research online before buying' },
-      { value: '41%', label: 'growth in AI Overview impressions YoY' },
-      { value: '2.8x', label: 'more leads from localized SEO pages' },
-      { value: '58%', label: 'of enterprises now budget for GEO' },
-    ],
-    overview: `This guide breaks down the SEO trends shaping Germany, UK, France, Netherlands, Nordics, and broader EU markets. Whether you run a single-country brand or a multi-market group, these priorities help you allocate budget where compounding returns exist.`,
+      'The top SEO trends for European businesses in 2026 are AI-ready content, multilingual hreflang setup, local entity SEO, faster mobile pages, and content structured so Google and AI tools can cite you as a source.',
     sections: [
       [
-        h2('1. AI Search and GEO Are Now Core, Not Optional'),
-        pl(
-          'Generative answers appear above traditional results for informational and commercial queries. European brands that invest in ',
-          LINKS.geo,
-          ' alongside proven ',
+        pl('', LINKS.seo, ' with newer '),
+        pl('', LINKS.aiSeo, ' where it makes sense.'),
+        h2('What Do AI Search and GEO Mean for European Businesses?'),
+        p(
+          'Generative answers now appear above traditional blue links for many queries. That does not mean SEO is over. It means your content needs to be easy to summarise and trustworthy enough to cite. Structure pages with short answer paragraphs, real FAQs, and clear author information.'
         ),
-        pl('', LINKS.aiSeo, ' capture visibility in both ranked results and AI citations.'),
-        p('Structure pages with concise answer blocks, FAQ schema, author bios, and entity markup. European YMYL sectors (health, finance, legal) need stronger EEAT signals than ever.'),
         ul([
-          `Add 40-60 word answer summaries below H2 headings`,
-          `Publish FAQ sections with schema on service and blog pages`,
-          `Monitor branded search and AI referral traffic monthly`,
-          `Align ${link(LINKS.content)} with topic clusters per market`,
+          boldItem('Answer-first writing', 'State the main point in the first two sentences under each heading'),
+          boldItem('FAQ sections', 'Use real customer questions, not filler'),
+          boldItem('Local trust', 'Reviews, credentials, and location detail matter in regulated sectors'),
+          boldItem('Topic clusters', `Support service pages with helpful blogs and ${link(LINKS.content)}`),
         ]),
-        h2('2. Multilingual and International SEO Maturity'),
-        p('EU businesses often serve multiple languages and ccTLDs. Hreflang errors, duplicate content across .de/.fr/.co.uk domains, and weak geo-targeting in Search Console remain top blockers.'),
+        h2('Why Does Multilingual SEO Still Trip Up EU Brands?'),
+        p(
+          'Serving multiple languages is an advantage until hreflang tags, duplicate pages, and weak geo-targeting create confusion. Google needs to know which URL serves which country and language.'
+        ),
         ol([
           'Audit hreflang reciprocity and x-default tags',
-          'Localize metadata, not just body copy',
-          'Build market-specific backlink profiles',
-          'Use separate XML sitemaps per language version',
+          'Localize titles and meta descriptions, not just body copy',
+          'Build links from market-relevant publications',
+          'Use separate sitemaps per language version where practical',
         ]),
-        pl('For deeper execution, see our ', LINKS.seo, ' program and international playbooks.'),
-        h2('3. Local Entity SEO Across Cities and Countries'),
-        pl('Multi-location European brands must unify NAP data, GBP categories, and review strategy per branch. ', LINKS.localSeo, ' and '),
-        pl('', LINKS.gbp, ' work together: citations in local directories, suburb landing pages, and map pack optimization.'),
-        p(`Industries like ${link(LINKS.realtor)}, ${link(LINKS.dentist)}, and ${link(LINKS.hvac)} show how hyperlocal pages outperform generic national content.`),
-        h2('4. Privacy, Consent, and Performance'),
-        p('GDPR-compliant analytics, consent mode, and Core Web Vitals affect both UX and crawl efficiency. Slow LCP on mobile disproportionately hurts Southern and Eastern European markets where 4G remains common.'),
-        h2('5. Content Depth and Topical Authority'),
-        pl('Thin service pages no longer rank in competitive EU verticals. Build topic clusters: pillar pages, supporting blogs, case studies, and internal links to ', LINKS.content, ' and industry pages.'),
+        h2('How Important Is Local SEO Across European Cities?'),
+        pl('For multi-location brands, consistent name, address, and phone data is non-negotiable. ', LINKS.localSeo, ' and '),
+        pl('', LINKS.gbp, ' work together: verified profiles, location pages, citations, and reviews.'),
+        p(
+          `We see strong results in verticals like ${link(LINKS.realtor)}, ${link(LINKS.dentist)}, and ${link(LINKS.hvac)} when each branch has its own helpful page instead of one generic national template.`
+        ),
+        h2('Do Privacy and Page Speed Still Affect Rankings?'),
+        p(
+          'Yes. GDPR-compliant analytics, consent mode, and Core Web Vitals influence both user experience and crawl efficiency. Slow mobile pages hurt more in markets where users still rely on 4G connections.'
+        ),
+        h2('What Role Does Content Depth Play in 2026?'),
+        pl(
+          'Thin service pages rarely win competitive European searches. Build helpful pillar pages, supporting articles, and internal links that show you understand your customer\'s full journey. ',
+          LINKS.content,
+          ' and industry-specific pages strengthen that picture.'
+        ),
       ],
     ],
     mistakes: [
-      'Translating English pages without local keyword research',
-      'Ignoring AI Overview formatting (no answer blocks or FAQs)',
-      'Using one GBP template for all EU branches',
-      'Skipping hreflang on multilingual sites',
-      'Measuring rankings only, not leads and revenue',
+      boldItem('Translating English pages only', 'Local keyword research and cultural nuance still matter'),
+      boldItem('Ignoring AI formatting', 'Long intros with no clear answer are easy for AI to skip'),
+      boldItem('One GBP template everywhere', 'Each branch needs accurate hours, categories, and photos'),
+      boldItem('Hreflang left broken', 'Wrong language versions can outrank the right ones'),
+      boldItem('Tracking rankings only', 'Calls, forms, and revenue tell the real story'),
     ],
     checklist: [
-      'Run technical + content audit per market',
-      'Map primary keywords to search intent',
-      'Implement FAQ and Article schema',
-      'Build 3-5 internal links per new page',
-      'Set KPIs: leads, calls, pipeline, not vanity metrics',
+      'Run a technical and content audit for your primary market',
+      'Map keywords to search intent before you write',
+      'Add FAQ content where customers actually ask questions',
+      'Link related service and blog pages naturally',
       'Review Search Console quarterly per country property',
+      'Set KPIs around leads and sales, not vanity metrics',
     ],
     expertTips: [
-      'Lead with market-specific statistics in intros for EU trust',
-      'Use Person schema for authors in regulated industries',
-      'Pair SEO with reputation monitoring via ORM for brand SERPs',
-      'Test AI visibility by querying ChatGPT and Gemini monthly',
+      boldItem('Lead with local proof', 'Use market-specific examples and statistics where you can'),
+      boldItem('Show real expertise', 'Author bios and credentials help in health, finance, and legal topics'),
+      boldItem('Test AI visibility', 'Search your brand in ChatGPT and Gemini monthly'),
+      boldItem('Protect your reputation', `Pair SEO with ${link(LINKS.orm)} when brand searches matter`),
     ],
     examples: [
       {
         title: 'Pan-EU SaaS company',
-        body: 'A B2B SaaS brand expanded from UK-only to DE/FR/NL. After hreflang fixes and localized pillar pages, organic demos rose 94% in 8 months without increasing ad spend.',
+        body: 'A B2B brand expanded from the UK into Germany, France, and the Netherlands. After hreflang fixes and localized pillar pages, organic demos rose 94% in eight months without increasing ad spend.',
       },
       {
         title: 'Multi-city home services group',
-        body: `A home services network with 12 EU cities rebuilt GBP profiles and suburb pages. Map pack visibility improved on 34 priority terms, mirroring results we see in ${link(LINKS.hvac)} campaigns.`,
+        body: `A network with 12 European cities rebuilt GBP profiles and suburb pages. Map visibility improved on 34 priority terms, similar to patterns we see in ${link(LINKS.hvac)} campaigns.`,
       },
     ],
     conclusion:
-      'European SEO in 2026 rewards brands that combine technical excellence, localized trust, and AI-ready content. Start with an audit, prioritize your highest-revenue markets, and build a roadmap that includes traditional SEO, GEO, and local entity work. ',
+      'European SEO in 2026 rewards brands that combine technical basics, local trust, and content that real people (and AI systems) can understand quickly. Start with an audit, focus on your highest-value markets, and build a roadmap that includes traditional SEO, local visibility, and AI-ready formatting. ',
+    conclusionAfter: ' for a free review of your current setup.',
   },
 
   'ai-seo-vs-traditional-seo-2026': {
-    intro: `Business leaders across Europe ask the same question: should we pivot entirely to AI SEO or double down on traditional SEO? The answer in 2026 is strategic integration. Traditional SEO still drives crawlability, rankings, and conversions. `,
+    intro:
+      'Every business owner we speak with asks the same question: should we focus on AI SEO or stick with traditional SEO? It is a fair question. Search looks different, AI tools answer questions directly, and marketing budgets are under pressure. The honest answer in 2026 is not either-or. You need a solid SEO foundation first, then layer AI-friendly formatting on top.',
+    overview:
+      'Traditional SEO still handles crawlability, rankings, and conversions on your money pages. AI SEO helps you appear in Google AI Overviews, ChatGPT, Perplexity, and similar tools. This guide compares both in plain language so you can decide how to balance ',
     quickAnswer:
-      'AI SEO extends traditional SEO; it does not replace it. Traditional SEO wins on technical foundations and commercial rankings. AI SEO wins on citations in generative answers. The best 2026 strategy combines both.',
-    overview: `We compare scope, timelines, KPIs, and budget allocation so you can decide how to balance `,
+      'AI SEO extends traditional SEO; it does not replace it. Traditional SEO wins on technical health and commercial rankings. AI SEO wins on citations in generative answers. The strongest 2026 strategy combines both.',
     sections: [
       [
-        pl('', LINKS.aiSeo, ' with established '),
+        pl('', LINKS.aiSeo, ' with proven '),
         pl('', LINKS.seo, ' practices.'),
-        h2('What Traditional SEO Still Does Best'),
-        p('Technical health, indexation, backlink authority, and keyword-targeted landing pages remain the foundation. Without them, AI systems have weak sources to cite.'),
-        ul([
-          'Crawl budget and site architecture',
-          'On-page optimization for commercial intent',
-          'Link earning and digital PR',
-          'Local pack and organic SERP positions',
-        ]),
-        h2('What AI SEO Adds'),
-        pl('AI SEO optimizes for Google AI Overviews, ChatGPT, Perplexity, and Gemini. Tactics include answer blocks, entity graphs, ', LINKS.aeo, ', and '),
-        pl('', LINKS.geo, ' content formatting.'),
-        h2('Side-by-Side Comparison'),
-        table(
-          ['Factor', 'Traditional SEO', 'AI SEO'],
-          [
-            ['Primary goal', 'Rank in SERPs', 'Get cited in AI answers'],
-            ['Timeline', '3-6 months typical', '2-4 months for visibility signals'],
-            ['Content format', 'Long-form + landing pages', 'Answer-first + FAQs + schema'],
-            ['KPIs', 'Rankings, traffic, conversions', 'Citations, branded search, AI referrals'],
-            ['Best paired with', 'Content, links, technical', 'Traditional SEO base'],
-          ]
+        h2('What Does Traditional SEO Still Do Best?'),
+        p(
+          'Technical health, indexation, backlinks, and keyword-focused landing pages remain the foundation. Without them, AI systems have weaker sources to cite and fewer reasons to trust your brand.'
         ),
-        h2('Which Strategy Wins in 2026?'),
-        p(`Neither alone wins. Regulated industries like ${link(LINKS.plastic)} and ${link(LINKS.doctor)} need EEAT-heavy traditional SEO plus AI-ready summaries. Comparison queries ("best agency in Berlin") need both map pack and AI citation presence.`),
-        pl('Our recommendation: audit traditional health first, then layer ', LINKS.aiSeo, ' on high-intent pages.'),
+        ul([
+          boldItem('Site architecture', 'Clean URLs, internal links, and fast mobile pages'),
+          boldItem('Commercial pages', 'Service and product pages that match buying intent'),
+          boldItem('Authority', 'Editorial links and mentions from trusted sites'),
+          boldItem('Local visibility', 'Map pack rankings for location-based searches'),
+        ]),
+        h2('What Does AI SEO Add on Top?'),
+        pl('AI SEO optimizes for summaries in Google AI Overviews and chat-based search tools. That includes answer-first writing, FAQs, entity clarity, ', LINKS.aeo, ', and '),
+        pl('', LINKS.geo, ' formatting.'),
+        h2('How Do Traditional SEO and AI SEO Compare?'),
+        ul([
+          boldItem('Primary goal', 'Traditional SEO targets ranked links; AI SEO targets citations in generated answers'),
+          boldItem('Timeline', 'Traditional SEO often shows traction in 3-6 months; AI signals can appear sooner on well-structured pages'),
+          boldItem('Content style', 'Long-form guides plus landing pages vs. concise answers, lists, and FAQs'),
+          boldItem('What to measure', 'Rankings and conversions plus branded search and referral patterns from AI tools'),
+        ]),
+        h2('Which Approach Should You Prioritize in 2026?'),
+        p(
+          `Neither approach wins alone. Regulated industries like ${link(LINKS.plastic)} and ${link(LINKS.doctor)} need strong expertise signals plus clear summaries. Comparison searches ("best agency in Berlin") benefit from both map visibility and citable content.`
+        ),
+        pl('Our practical recommendation: fix traditional SEO blockers first, then strengthen high-intent pages with AI-ready answers. Explore ', LINKS.aiSeo, ' when your core site health is in good shape.'),
       ],
     ],
     mistakes: [
-      'Abandoning link building for "AI-only" tactics',
-      'Publishing AI-generated fluff without expert review',
-      'No schema or author attribution',
-      'Ignoring conversion paths from AI referrals',
+      boldItem('Abandoning link building', 'Authority still matters for competitive terms'),
+      boldItem('Publishing unchecked AI content', 'Thin or inaccurate pages hurt trust'),
+      boldItem('No author attribution', 'Readers and algorithms need to know who stands behind the advice'),
+      boldItem('Ignoring conversions', 'Visibility without leads is not a win'),
     ],
     checklist: [
-      'Fix technical SEO blockers',
-      'Add FAQ schema to top 20 pages',
-      'Rewrite intros as 2-sentence answers',
-      'Track AI referral sources in analytics',
-      'Refresh content quarterly',
+      'Fix critical technical SEO issues first',
+      'Rewrite page intros as short, direct answers',
+      'Add FAQ sections to your most important pages',
+      'Track calls, forms, and revenue from organic traffic',
+      'Refresh top content at least once per quarter',
     ],
     expertTips: [
-      'Use the same URL as the canonical source for AI and Google',
-      'Test queries in ChatGPT with your brand name monthly',
-      'Keep human case studies; AI cannot replicate them',
+      boldItem('One canonical URL', 'Use the same page as the source for Google and AI tools'),
+      boldItem('Monthly AI checks', 'Search your brand in ChatGPT and note what sources appear'),
+      boldItem('Keep human stories', 'Case studies and experience still differentiate you'),
     ],
     examples: [
       {
         title: 'Healthcare clinic group',
-        body: `After blending traditional service page SEO with AI answer blocks, a clinic group saw FAQ rich results and ChatGPT mentions within 90 days, similar to our ${link(LINKS.plastic)} playbook.`,
+        body: `After blending traditional service page SEO with clear answer blocks, a clinic group saw stronger FAQ visibility and AI mentions within 90 days, following a similar playbook to our ${link(LINKS.plastic)} work.`,
       },
     ],
     conclusion:
-      'AI SEO vs traditional SEO is not a winner-take-all battle. Integrate both for durable growth. ',
+      'AI SEO vs traditional SEO is not a winner-take-all battle. Build the foundation, then make your best pages easy to understand and cite. That is how you stay visible in both blue links and AI answers. ',
+    conclusionAfter: ' if you want a roadmap tailored to your site.',
   },
 
   'local-seo-checklist-multi-location-europe': {
-    intro: `Multi-location businesses across Europe compete in the map pack, local organic results, and AI local recommendations. A repeatable local SEO checklist prevents NAP chaos, weak GBP profiles, and duplicate location pages. Start with our `,
+    intro:
+      'If you operate in more than one European city, local SEO can feel like juggling a dozen spinning plates. Each location needs accurate Google Business Profile data, consistent contact details online, and its own helpful web page. Miss one branch and the whole network can look unreliable in search.',
+    overview:
+      'This checklist is for franchises, clinics, retail chains, and service businesses with two or more locations across Europe. It follows the same practical approach we use in our ',
     quickAnswer:
-      'A multi-location local SEO checklist for Europe includes: verified GBP per location, consistent NAP citations, unique location pages, review velocity, local schema, and geo-specific content in each target language.',
-    overview: `This checklist is built for franchises, retail chains, clinics, and service businesses operating in 2+ European cities or countries.`,
+      'A strong multi-location local SEO checklist includes verified Google Business Profiles per branch, consistent NAP citations, unique location pages, steady review growth, local schema, and content in each target language.',
     sections: [
       [
-        pl('', LINKS.localSeo, ' framework.'),
-        h2('Phase 1: Foundation Audit'),
+        pl('', LINKS.localSeo, ' programs.'),
+        h2('What Should You Audit First?'),
         ol([
-          'Inventory every physical location and service area',
-          'Claim and verify all Google Business Profiles',
-          'Export NAP from website, GBP, and top 50 citations',
-          'Identify duplicate or merged listings',
+          'List every physical location and service area you truly serve',
+          'Claim and verify each Google Business Profile',
+          'Export name, address, and phone data from your site, GBP, and top directories',
+          'Find duplicate or merged listings that confuse Google',
         ]),
-        h2('Phase 2: On-Site Local Architecture'),
-        p('Each location needs a unique URL, localized title tag, H1, intro, services, testimonials, and embedded map. Avoid copy-paste city swaps.'),
-        pl('Pair pages with ', LINKS.gbp, ' optimization: categories, services, photos, posts, and Q&A.'),
-        h2('Phase 3: Citations and Reviews'),
+        h2('How Should Location Pages Be Structured?'),
+        p(
+          'Each branch deserves a unique URL, localized title tag, clear H1, intro, services, testimonials, and embedded map. Avoid copy-paste city swaps that customers and search engines can spot instantly.'
+        ),
+        pl('Pair those pages with ', LINKS.gbp, ' work: correct categories, services, photos, posts, and Q&A.'),
+        h2('What About Citations and Reviews?'),
         ul([
-          'Submit to EU-relevant directories (Yelp EU, local chambers, industry portals)',
-          'Implement review request workflows per branch',
-          'Respond to reviews within 48 hours',
-          `Monitor ${link(LINKS.orm)} for multi-location brands`,
+          boldItem('Directories', 'Submit to relevant EU and industry directories'),
+          boldItem('Review requests', 'Ask happy customers at each branch on a steady schedule'),
+          boldItem('Responses', 'Reply to reviews within 48 hours in the local language'),
+          boldItem('Reputation', `Monitor brand mentions with ${link(LINKS.orm)} when you operate at scale`),
         ]),
-        h2('Phase 4: Reporting'),
-        p(`Track calls, direction requests, and form fills per location. Compare performance across markets like our ${link(LINKS.realtor)} and ${link(LINKS.dentist)} clients.`),
+        h2('How Do You Know It Is Working?'),
+        p(
+          `Track calls, direction requests, and form fills per location. Compare branches the way we do for ${link(LINKS.realtor)} and ${link(LINKS.dentist)} clients, not just national traffic totals.`
+        ),
       ],
     ],
     mistakes: [
-      'One landing page for all cities',
-      'Virtual offices on GBP against guidelines',
-      'Inconsistent phone numbers across citations',
-      'No review strategy per branch',
+      boldItem('One page for every city', 'Each location needs its own helpful URL'),
+      boldItem('Virtual offices on GBP', 'Against guidelines and risky for long-term visibility'),
+      boldItem('Inconsistent phone numbers', 'Confuses customers and search engines'),
+      boldItem('No review plan', 'Competitors with steady reviews will outrank you'),
     ],
     checklist: [
-      'GBP verified per location',
-      'Unique location page live',
-      'LocalBusiness schema implemented',
-      '20+ quality citations per branch',
-      'Monthly GBP posts scheduled',
-      'Review velocity target set',
+      'Verify Google Business Profile for every branch',
+      'Publish a unique location page per city',
+      'Add LocalBusiness schema where appropriate',
+      'Build quality citations for each location',
+      'Schedule monthly GBP posts',
+      'Set a realistic review velocity target per branch',
     ],
     expertTips: [
-      'Use UTM parameters on GBP website links',
-      'Create suburb pages only where search volume justifies',
-      'Localize review responses in market language',
+      boldItem('UTM tracking', 'Use campaign parameters on GBP website links'),
+      boldItem('Suburb pages', 'Only create them when search demand justifies the effort'),
+      boldItem('Local language', 'Respond to reviews in the customer\'s language'),
     ],
     examples: [
       {
-        title: '4-location dental group (Germany)',
-        body: `Unique pages per city plus GBP rebuild drove +180% map calls in 5 months, following patterns from ${link(LINKS.dentist)} SEO.`,
+        title: 'Four-location dental group in Germany',
+        body: `Unique pages per city plus GBP cleanup drove a 180% increase in map calls in five months, following the same patterns we use in ${link(LINKS.dentist)} SEO.`,
       },
     ],
     conclusion:
-      'Multi-location local SEO in Europe scales when process beats ad hoc fixes. Use this checklist quarterly. ',
+      'Multi-location local SEO in Europe works when process beats one-off fixes. Run through this checklist each quarter and treat every branch like its own storefront online. ',
+    conclusionAfter: ' for a free multi-location audit.',
   },
 }
 
@@ -369,54 +347,104 @@ const REMAINING_SLUGS = [
 ]
 
 function buildExtendedTopic(slug, config) {
+  const entry = getBlogCatalogEntry(slug)
+  const openers = conversationalOpeners(entry, config)
   TOPIC_CONTENT[slug] = {
-    intro: config.intro,
+    intro: openers.intro,
+    overview: openers.overview,
     quickAnswer: config.quickAnswer,
-    stats: config.stats || SHARED_STATS,
-    overview: config.overview,
     sections: [config.body],
     mistakes: config.mistakes,
+    mistakesHeading: config.mistakesHeading,
+    mistakesIntro: config.mistakesIntro,
     checklist: config.checklist,
+    stepsHeading: config.stepsHeading,
+    stepsIntro: config.stepsIntro,
     expertTips: config.expertTips,
     examples: config.examples,
-    comparison: config.comparison,
     conclusion: config.conclusion,
+    conclusionExtra: config.conclusionExtra,
+    conclusionAfter: config.conclusionAfter,
   }
 }
 
 buildExtendedTopic('google-ai-overviews-changing-business-seo', {
-  intro: `Google AI Overviews summarize answers at the top of search results, changing click patterns and content strategy for businesses worldwide. Understanding this shift is essential for any brand investing in `,
+  legacyIntro:
+    'If you have used Google lately, you have probably seen a colourful summary box at the top of the results. That is the Google AI Overview. Instead of only showing links, Google now reads multiple websites and summarises an answer for the user. For many business owners, that feels worrying. If Google answers the question directly, will anyone still visit your site?',
+  legacyOverview:
+    'While search behaviour is changing, SEO is not dead. It is shifting toward two types of visibility: traditional rankings below the AI box and citations inside the AI answer itself. This guide explains what that means for your traffic and what you can do about it, including how ',
   quickAnswer:
-    'Google AI Overviews change business SEO by prioritizing cited sources, answer-first content, and structured data. Brands must optimize for both traditional rankings and AI citation slots.',
-  overview: `This guide explains how AI Overviews affect traffic, which content formats get cited, and how to adapt your `,
+    'Google AI Overviews change business SEO by rewarding clear answers, trusted sources, and structured content. Brands should optimise for both traditional rankings and AI citation slots.',
   body: [
     pl('', LINKS.geo, ' and '),
-    pl('', LINKS.aiSeo, ' programs.'),
-    h2('How AI Overviews Appear in Search'),
-    p('AI Overviews pull from multiple sources, display concise summaries, and link to cited websites. Position zero is now often an AI box, not a featured snippet alone.'),
-    h2('Impact on Organic Traffic'),
+    pl('', LINKS.aiSeo, ' fit into a modern strategy.'),
+    h2('What Do Google AI Overviews Mean for SEO?'),
+    p(
+      'In the past, SEO often meant reaching the top ten blue links. AI Overviews sit above many of those results, which pushes traditional listings further down the screen. Think of the overview as an assistant that gathers information from across the web. It does not invent facts from nothing. It pulls from real pages, and yours can be one of them.'
+    ),
+    p('Ranking now has two parts worth tracking:'),
     ul([
-      'Informational queries see more zero-click behavior',
-      'Commercial queries still drive clicks to trusted brands',
-      'Citation links can outperform position 4-7 organic listings',
-      'Branded search often increases when cited in AI answers',
+      boldItem('Traditional ranking', 'Your page appears in the list of links below the AI box'),
+      boldItem('AI citations', 'Your site is named as a source inside the overview, often with a link users can click for more detail'),
     ]),
-    h2('Content Formats That Get Cited'),
+    h2('How Do AI Overviews Affect Your Traffic?'),
+    p('It helps to be realistic. We are seeing more zero-click searches, especially for simple questions.'),
+    ul([
+      boldItem('Simple questions', 'If someone only needs a short fact, they may read the overview and leave'),
+      boldItem('Clear answers win', 'Pages that answer the question in the first few sentences are easier for Google to feature'),
+      boldItem('More competition for space', 'The overview takes room on the screen, so visibility is harder but citations can still send qualified visitors'),
+      boldItem('Smaller sites can appear', 'The overview often cites several sources, not just the biggest brand'),
+    ]),
+    h2('What Content Formats Get Cited?'),
     ol([
-      'Direct 2-3 sentence answers below question headings',
-      'Bulleted steps and comparison tables',
-      'FAQ sections with schema markup',
-      'Original data, case studies, and expert quotes',
+      'Short, direct answers right under question-style headings',
+      'Bullet points and simple tables for steps or comparisons',
+      'FAQ sections that match real customer questions',
+      'Original examples, data, and expert perspective',
     ]),
-    pl(`Regulated sectors like ${link(LINKS.legal)} and ${link(LINKS.plastic)} must balance compliance with clear, citable answers.`),
-    h2('Action Plan for 2026'),
-    p('Audit top 50 pages, add answer blocks, implement FAQ schema, strengthen author EEAT, and monitor Search Console for AI Overview impressions where available.'),
+    p(
+      `Regulated sectors such as ${link(LINKS.legal)} and ${link(LINKS.plastic)} still need compliant, careful writing, but clarity helps both users and algorithms.`
+    ),
+    h2('What Should You Do to Stay Visible?'),
+    p('You do not need complex software to improve your chances. Make your site easier to scan and more genuinely helpful.'),
+    ol([
+      'Answer the main question in the first one or two sentences of each important page',
+      'Turn subheadings into questions customers actually ask',
+      'Use bullet points and tables where they make information faster to understand',
+      'Include real experience, not generic filler',
+    ]),
   ],
-  mistakes: ['Burying answers below long intros', 'No FAQ schema', 'Thin affiliate-style content', 'Ignoring mobile readability'],
-  checklist: ['Answer-first intros', 'FAQ schema on key pages', 'Author bios with credentials', 'Monthly AI query testing', 'Internal links to service hubs'],
-  expertTips: ['Cite original research', 'Use tables for comparisons', 'Keep pages focused on one primary intent'],
-  examples: [{ title: 'B2B software brand', body: 'Restructured 30 blog posts with answer blocks; AI Overview citations rose within 60 days alongside stable organic traffic.' }],
-  conclusion: 'AI Overviews are a distribution channel, not the end of SEO. Adapt content structure and measure citations alongside rankings. ',
+  mistakesHeading: 'Common SEO Mistakes That Hurt AI Overview Visibility',
+  mistakesIntro:
+    'Many sites still use old habits that make it harder for Google to feature them. Watch out for these common issues:',
+  mistakes: [
+    boldItem('Burying the answer', 'Long introductions before the main point make summarisation harder'),
+    boldItem('Keyword stuffing', 'Repeating the same phrase feels unnatural to readers and AI alike'),
+    boldItem('Vague headings', 'Labels like "Introduction" do not tell Google what the section covers'),
+    boldItem('Too many topics on one page', 'Mixed intent confuses both users and algorithms'),
+    boldItem('Walls of text', 'Short paragraphs and lists are easier to scan'),
+  ],
+  checklist: [
+    'Rewrite important page intros as direct answers',
+    'Add FAQ sections to service and blog pages',
+    'Use question-style H2 headings',
+    'Show author credentials where trust matters',
+    'Review top pages monthly for clarity and accuracy',
+  ],
+  expertTips: [
+    boldItem('Original research', 'Unique data gives AI a reason to cite you'),
+    boldItem('Tables for comparisons', 'Structured information is easy to extract'),
+    boldItem('One clear topic per page', 'Focused pages perform better'),
+  ],
+  examples: [
+    {
+      title: 'B2B software brand',
+      body: 'After restructuring 30 blog posts with answer-first intros and clearer headings, the company saw more AI Overview citations within 60 days while organic traffic remained stable.',
+    },
+  ],
+  conclusion:
+    'SEO is not disappearing. It is maturing. AI Overviews may reduce clicks on very simple queries, but they also create a new way to be seen as an expert. Focus on helpful, clear, honest content, and Google is more likely to treat your site as a source worth sharing. ',
+  conclusionAfter: ' if you want an AI-readiness review of your site.',
 })
 
 buildExtendedTopic('100-seo-mistakes-costing-business-leads', {
@@ -846,86 +874,8 @@ buildExtendedTopic('seo-checklist-small-businesses-europe', {
 })
 
 function buildFaqs(entry) {
-  const topic = entry.title.replace(/\?$/, '')
-  const base = [
-    {
-      question: `What is the main takeaway from this ${topic} guide?`,
-      answer: TOPIC_CONTENT[entry.slug]?.quickAnswer || `This guide explains ${entry.primaryKeyword} for European and global businesses with actionable steps and internal resources from SEO India Tech.`,
-    },
-    {
-      question: `How long does ${entry.primaryKeyword} take to show results?`,
-      answer: 'Most businesses see meaningful movement in 3-6 months for SEO fundamentals, with compounding returns over 12+ months. Local SEO and GBP work often shows faster map pack gains in 6-12 weeks.',
-    },
-    {
-      question: 'Does this apply to businesses outside Europe?',
-      answer: 'Yes. While examples reference EU markets, the frameworks apply globally. We serve clients in USA, UK, Australia, UAE, Canada, and worldwide.',
-    },
-    {
-      question: 'Should I hire an SEO agency or do this in-house?',
-      answer: 'In-house works for basics if you have dedicated capacity. Agencies accelerate audits, technical fixes, and content at scale. Many brands use hybrid models.',
-    },
-    {
-      question: 'How does AI search affect this topic?',
-      answer: 'AI Overviews and ChatGPT change how users discover answers. Combine traditional SEO with GEO and AI SEO so your content ranks and gets cited.',
-    },
-    {
-      question: 'What tools do you recommend?',
-      answer: 'Google Search Console, GA4, Screaming Frog or Sitebulb, Ahrefs or Semrush, and PageSpeed Insights cover most audit and tracking needs.',
-    },
-    {
-      question: 'How do I measure ROI?',
-      answer: 'Track organic sessions to money pages, form fills, calls, and CRM-attributed revenue. Compare cost per lead to paid channels.',
-    },
-    {
-      question: 'What are the biggest mistakes to avoid?',
-      answer: (TOPIC_CONTENT[entry.slug]?.mistakes || []).slice(0, 3).join('; ') || 'Thin content, ignoring technical SEO, and no local GBP optimization.',
-    },
-    {
-      question: 'Do you offer services related to this guide?',
-      answer: `Yes. SEO India Tech offers ${entry.serviceLinks.map((l) => l.replace('/services/', '').replace(/-/g, ' ')).join(', ')} and more. Request a free audit via our contact page.`,
-    },
-    {
-      question: 'How often should I update my SEO strategy?',
-      answer: 'Review quarterly, refresh top content annually, and react to major algorithm or AI search changes within 30 days.',
-    },
-  ]
-
-  const extras = [
-    {
-      question: `What is ${entry.primaryKeyword}?`,
-      answer: `${entry.primaryKeyword} refers to the practices covered in this guide-structured for ${entry.intent.toLowerCase()} search intent and aligned with 2026 best practices.`,
-    },
-    {
-      question: 'Can small businesses compete with large brands?',
-      answer: 'Yes. Local SEO, niche content, and EEAT often let SMBs outrank national brands in specific cities and service lines.',
-    },
-    {
-      question: 'Is content translation enough for EU markets?',
-      answer: 'No. Localization requires native keyword research, cultural nuance, and market-specific trust signals-not direct translation.',
-    },
-    {
-      question: 'What schema should I use?',
-      answer: 'Use Article/BlogPosting on blogs, FAQPage for FAQ sections, LocalBusiness where applicable, and Organization/Person for EEAT.',
-    },
-    {
-      question: 'How many internal links should a blog post have?',
-      answer: 'Aim for 8-12 natural internal links: service pages, related blogs, industry examples, contact, and packages in intro, body, and conclusion.',
-    },
-    {
-      question: 'What is GEO vs SEO?',
-      answer: 'SEO optimizes for ranked search results. GEO (generative engine optimization) optimizes for citations in AI-generated answers. Use both.',
-    },
-    {
-      question: 'Do backlinks still matter in 2026?',
-      answer: 'Yes. Editorial backlinks remain a strong authority signal, especially in competitive European verticals.',
-    },
-    {
-      question: 'How do I get started today?',
-      answer: 'Run a technical and content audit, fix critical errors, optimize GBP if local, and publish one intent-mapped article per month minimum.',
-    },
-  ]
-
-  return [...base, ...extras].slice(0, 18)
+  const topic = TOPIC_CONTENT[entry.slug] || {}
+  return buildLegacyFaqs(entry, topic)
 }
 
 function buildKeywords(entry) {
@@ -986,7 +936,7 @@ function buildImages(entry) {
 function estimateReadTime(content) {
   const text = JSON.stringify(content)
   const words = text.split(/\s+/).length
-  const minutes = Math.max(10, Math.ceil(words / 200))
+  const minutes = Math.max(6, Math.ceil(words / 220))
   return `${minutes} min read`
 }
 
@@ -998,7 +948,10 @@ export function buildPremiumBlogPost(slug) {
   const content = buildTopicContent(entry)
   const faqs = buildFaqs(entry)
 
-  const metaDesc = `${entry.title}. Expert guide for European and global businesses: ${keywords.primary}, best practices, checklists, and FAQs. Free SEO audit available.`.slice(0, 160)
+  const metaDesc = (
+    entry.metaDesc ||
+    `${entry.title}. Practical ${entry.primaryKeyword} advice for business owners - clear steps, common mistakes, and what to do next.`
+  ).slice(0, 160)
 
   return {
     premium: true,
@@ -1036,4 +989,27 @@ export function getAllPremiumBlogPosts() {
 
 export function getPremiumBlogPost(slug) {
   return buildPremiumBlogPost(slug)
+}
+
+/** Image generation data sourced from article topic content. */
+export function getBlogImageData(slug) {
+  const entry = getBlogCatalogEntry(slug)
+  const topic = TOPIC_CONTENT[slug]
+  if (!entry || !topic) return null
+
+  const stats = (topic.stats || SHARED_STATS).slice(0, 2)
+  const checklist = (topic.checklist || topic.mistakes || []).slice(0, 4)
+  const processSteps = (topic.checklist || ['Research', 'Audit', 'Execute', 'Measure']).slice(0, 4)
+  const comparison = {
+    good: (topic.expertTips || ['Structured, intent-led SEO'])[0],
+    bad: (topic.mistakes || ['Generic templates and thin content'])[0],
+    label: entry.primaryKeyword,
+  }
+  const faqQuestions = [
+    `What is ${entry.primaryKeyword}?`,
+    topic.quickAnswer ? topic.quickAnswer.slice(0, 52) + '…' : `How does ${entry.primaryKeyword} work?`,
+    (topic.mistakes || ['What mistakes should I avoid?'])[0],
+  ]
+
+  return { entry, stats, checklist, processSteps, comparison, faqQuestions, quickAnswer: topic.quickAnswer }
 }

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="AI SEO vs Traditional SEO: Which Strategy Wins in 2026?">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="">
   <defs>
     <linearGradient id="bg-hero-ai-seo-vs-traditional-seo-2026" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#2A255D"/>
@@ -19,9 +19,10 @@
     <rect x="175" y="40" width="90" height="50" rx="10" fill="rgba(164,221,251,0.25)" stroke="#A4DDFB"/>
     <text x="188" y="72" fill="#ffffff" font-size="14" font-family="Arial">AI</text>
   </g>
-    <text x="72" y="100" fill="#A4DDFB" font-family="Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="2">BLOG GUIDE</text>
+    <text x="72" y="100" fill="#A4DDFB" font-family="Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="2">AI SEO</text>
     <rect x="72" y="120" width="120" height="4" rx="2" fill="#A4DDFB"/>
-  <text x="72" y="500" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="38" font-weight="700">AI SEO vs Traditional SEO: Which Strategy Wins in 20</text>
-  <text x="72" y="548" fill="#A4DDFB" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="600">AI SEO</text>
+    <text x="72" y="460" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="34" font-weight="700">AI SEO vs Traditional SEO: Which Strategy</text><text x="72" y="504" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="34" font-weight="700">Wins in 2026?</text>
+  
+  <text x="72" y="520" fill="#A4DDFB" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="600">AI SEO vs traditional SEO</text>
   <text x="72" y="590" fill="rgba(255,255,255,0.65)" font-family="Arial,Helvetica,sans-serif" font-size="16">SEO India Tech</text>
 </svg>

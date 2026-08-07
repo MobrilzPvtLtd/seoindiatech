@@ -256,7 +256,26 @@ export function getPremiumHubContent(hubSlug) {
       ],
     },
 
-    pillars: null,
+    pillars: {
+      badge: 'Core Programs',
+      title: `${hubName} Pillars`,
+      subtitle: `Six integrated capabilities that power our ${hubTitle.toLowerCase()}.`,
+      items: childServices.slice(0, 6).map((s, i) => ({
+        id: s.slug,
+        label: ['Strategy', 'Execution', 'Visibility', 'Content', 'Authority', 'Reporting'][i] || 'Program',
+        title: s.title,
+        description: s.description,
+        process: 'Discovery, planning, execution, and weekly optimization with transparent reporting.',
+        outcome: 'Measurable growth in visibility, qualified leads, and revenue.',
+        benefits: (s.features || []).slice(0, 4).length
+          ? s.features.slice(0, 4)
+          : ['Expert delivery', 'Dedicated strategist', 'Weekly KPI reports', 'Proven methodology'],
+        image: {
+          src: `/images/services/heroes/${s.slug}.svg`,
+          alt: `${s.title} program illustration`,
+        },
+      })),
+    },
     audiences: {
       badge: 'Who We Help',
       title: `${hubName} for Every Business Stage`,

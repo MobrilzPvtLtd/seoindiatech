@@ -96,7 +96,7 @@ export function SemanticTopicsSection({ data }) {
 
 export function KeyTakeawaysSection({ data }) {
   return (
-    <PremiumSection id="takeaways" variant="dark" tight>
+    <PremiumSection id="key-takeaways" variant="dark" tight>
       <div className="mx-auto max-w-4xl text-center">
         <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-accent">{data.badge}</p>
         <h2 className="mt-3 font-heading text-2xl font-bold text-white md:text-3xl">{data.title}</h2>

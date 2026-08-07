@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="ChatGPT SEO: How AI Search Is Changing Organic Traffic">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="">
   <defs>
     <linearGradient id="bg-hero-chatgpt-seo-ai-search-organic-traffic" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#2A255D"/>
@@ -17,9 +17,10 @@
     <circle cx="55" cy="75" r="8" fill="#A4DDFB"/><circle cx="85" cy="75" r="8" fill="#A4DDFB"/><circle cx="115" cy="75" r="8" fill="#A4DDFB"/>
     <text x="70" y="192" fill="#ffffff" font-size="14" font-family="Arial">ChatGPT SEO</text>
   </g>
-    <text x="72" y="100" fill="#A4DDFB" font-family="Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="2">BLOG GUIDE</text>
+    <text x="72" y="100" fill="#A4DDFB" font-family="Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="2">ANSWER ENGINE OPTIMIZATION</text>
     <rect x="72" y="120" width="120" height="4" rx="2" fill="#A4DDFB"/>
-  <text x="72" y="500" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="38" font-weight="700">ChatGPT SEO: How AI Search Is Changing Organic Traff</text>
-  <text x="72" y="548" fill="#A4DDFB" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="600">Answer Engine Optimization</text>
+    <text x="72" y="460" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="34" font-weight="700">ChatGPT SEO: How AI Search Is Changing</text><text x="72" y="504" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="34" font-weight="700">Organic Traffic</text>
+  
+  <text x="72" y="520" fill="#A4DDFB" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="600">ChatGPT SEO organic traffic</text>
   <text x="72" y="590" fill="rgba(255,255,255,0.65)" font-family="Arial,Helvetica,sans-serif" font-size="16">SEO India Tech</text>
 </svg>

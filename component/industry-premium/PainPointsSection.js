@@ -4,7 +4,7 @@ import PremiumSection, { PremiumSectionHeader } from './PremiumSection'
 
 export default function PainPointsSection({ data }) {
   return (
-    <PremiumSection id="challenges" variant="muted">
+    <PremiumSection id="pain-points" variant="muted">
       <div className="grid items-start gap-12 lg:grid-cols-12 lg:gap-14">
         <div className="lg:col-span-5">
           <PremiumSectionHeader

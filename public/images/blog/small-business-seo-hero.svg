@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="SEO Checklist for Small Businesses in Europe">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="">
   <defs>
     <linearGradient id="bg-hero-seo-checklist-small-businesses-europe" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#2A255D"/>
@@ -17,9 +17,10 @@
     <rect x="80" y="120" width="40" height="50" fill="#2A255D"/>
     <rect x="60" y="100" width="20" height="20" fill="#A4DDFB"/>
   </g>
-    <text x="72" y="100" fill="#A4DDFB" font-family="Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="2">BLOG GUIDE</text>
+    <text x="72" y="100" fill="#A4DDFB" font-family="Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="2">LOCAL SEO</text>
     <rect x="72" y="120" width="120" height="4" rx="2" fill="#A4DDFB"/>
-  <text x="72" y="500" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="38" font-weight="700">SEO Checklist for Small Businesses in Europe</text>
-  <text x="72" y="548" fill="#A4DDFB" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="600">Local SEO</text>
+    <text x="72" y="460" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="34" font-weight="700">SEO Checklist for Small Businesses in</text><text x="72" y="504" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="34" font-weight="700">Europe</text>
+  
+  <text x="72" y="520" fill="#A4DDFB" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="600">SEO checklist small business Europe</text>
   <text x="72" y="590" fill="rgba(255,255,255,0.65)" font-family="Arial,Helvetica,sans-serif" font-size="16">SEO India Tech</text>
 </svg>

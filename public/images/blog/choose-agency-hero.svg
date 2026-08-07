@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="How to Choose the Best SEO Agency in Europe">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="">
   <defs>
     <linearGradient id="bg-hero-choose-best-seo-agency-europe" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#2A255D"/>
@@ -16,9 +16,10 @@
     <rect x="30" y="180" width="140" height="50" rx="10" fill="rgba(255,255,255,0.12)"/>
     <text x="52" y="212" fill="#ffffff" font-size="16" font-family="Arial">4.9 Rating</text>
   </g>
-    <text x="72" y="100" fill="#A4DDFB" font-family="Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="2">BLOG GUIDE</text>
+    <text x="72" y="100" fill="#A4DDFB" font-family="Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="2">INTERNATIONAL SEO</text>
     <rect x="72" y="120" width="120" height="4" rx="2" fill="#A4DDFB"/>
-  <text x="72" y="500" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="38" font-weight="700">How to Choose the Best SEO Agency in Europe</text>
-  <text x="72" y="548" fill="#A4DDFB" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="600">International SEO</text>
+    <text x="72" y="460" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="34" font-weight="700">How to Choose the Best SEO Agency in</text><text x="72" y="504" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="34" font-weight="700">Europe</text>
+  
+  <text x="72" y="520" fill="#A4DDFB" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="600">best SEO agency Europe</text>
   <text x="72" y="590" fill="rgba(255,255,255,0.65)" font-family="Arial,Helvetica,sans-serif" font-size="16">SEO India Tech</text>
 </svg>

@@ -11,14 +11,10 @@
   <rect width="1200" height="630" fill="url(#bg-faq-seo-law-firms-complete-guide)"/>
   <circle cx="1040" cy="90" r="70" fill="#A4DDFB" opacity="0.18"/>
   <circle cx="120" cy="520" r="100" fill="#A4DDFB" opacity="0.12"/>
-  <g transform="translate(720,140)">
-    <rect x="0" y="0" width="260" height="55" rx="10" fill="rgba(255,255,255,0.12)"/>
-    <text x="18" y="34" fill="#ffffff" font-size="15">What is law firm SEO?</text>
-    <rect x="0" y="70" width="260" height="55" rx="10" fill="rgba(164,221,251,0.15)" stroke="#A4DDFB"/>
-    <text x="18" y="104" fill="#A4DDFB" font-size="15">How long does it take?</text>
-    <rect x="0" y="140" width="260" height="55" rx="10" fill="rgba(255,255,255,0.12)"/>
-    <text x="18" y="174" fill="#ffffff" font-size="15">Best practices for 2026?</text>
-  </g>
+  <g transform="translate(720,140)"><rect x="0" y="0" width="280" height="55" rx="10" fill="rgba(255,255,255,0.12)"/>
+    <text x="18" y="34" fill="#ffffff" font-size="14">What is law firm SEO?</text><rect x="0" y="70" width="280" height="55" rx="10" fill="rgba(164,221,251,0.15)" stroke="#A4DDFB"/>
+    <text x="18" y="104" fill="#A4DDFB" font-size="14">Law firm SEO success depends on prac…</text><rect x="0" y="140" width="280" height="55" rx="10" fill="rgba(255,255,255,0.12)"/>
+    <text x="18" y="174" fill="#ffffff" font-size="14">Keyword stuffing city names</text></g>
   <text x="72" y="500" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="38" font-weight="700">FAQ</text>
   <text x="72" y="548" fill="#A4DDFB" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="600">Common questions answered</text>
   <text x="72" y="590" fill="rgba(255,255,255,0.65)" font-family="Arial,Helvetica,sans-serif" font-size="16">SEO India Tech</text>

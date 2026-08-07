@@ -5,6 +5,7 @@ import WhySeoMatters from './WhySeoMatters'
 import PainPointsSection from './PainPointsSection'
 import WhyChooseGrid from './WhyChooseGrid'
 import ServicesIncluded from './ServicesIncluded'
+import PageSectionNav from './PageSectionNav'
 import StickyMobileCta from './StickyMobileCta'
 
 const EditorialAuthoritySection = dynamic(() =>
@@ -32,25 +33,53 @@ const PremiumFaq = dynamic(() => import('./PremiumFaq'))
 const PremiumContactBand = dynamic(() => import('./PremiumContactBand'))
 const PremiumFinalCta = dynamic(() => import('./PremiumFinalCta'))
 
+function buildNavSections(content) {
+  const sections = []
+  const add = (id, label, show = true) => {
+    if (show && id) sections.push({ id, label })
+  }
+  add('why-seo', 'Overview', Boolean(content.whySeoMatters))
+  add('why-us', 'Benefits', Boolean(content.whyChoose))
+  add('services', 'Services', Boolean(content.services))
+  add('pain-points', 'Challenges', Boolean(content.painPoints))
+  add('key-takeaways', 'Takeaways', Boolean(content.keyTakeaways))
+  add('seo-pillars', 'Pillars', Boolean(content.pillars))
+  add('who-needs', 'Who It\'s For', Boolean(content.audiences))
+  add('process', 'Process', Boolean(content.process))
+  add('results', 'Results', Boolean(content.results))
+  add('compare', 'Compare', Boolean(content.comparison))
+  add('case-study', 'Case Study', Boolean(content.caseStudy))
+  add('expert-guide', 'Expert Guide', Boolean(content.editorial))
+  add('tools-trust', 'Tools', Boolean(content.toolsTrust))
+  add('related', 'Related', Boolean(content.relatedIndustries))
+  add('testimonials', 'Reviews', Boolean(content.testimonials))
+  add('faq', 'FAQ', Boolean(content.faq))
+  return sections
+}
+
 export default function PremiumIndustryPage({ content }) {
+  const navSections = buildNavSections(content)
+
   return (
     <div className="premium-industry-page">
       <PremiumHero data={content.hero} />
       <TrustStatsBar data={content.trust} />
+      {navSections.length > 3 && <PageSectionNav sections={navSections} />}
+
       {content.whySeoMatters && <WhySeoMatters data={content.whySeoMatters} />}
-      {content.painPoints && <PainPointsSection data={content.painPoints} />}
       <WhyChooseGrid data={content.whyChoose} />
       <ServicesIncluded data={content.services} />
-      {content.editorial && <EditorialAuthoritySection data={content.editorial} />}
+      {content.painPoints && <PainPointsSection data={content.painPoints} />}
       {content.keyTakeaways && <KeyTakeawaysSection data={content.keyTakeaways} />}
       {content.pillars && <PillarServicesSection data={content.pillars} />}
       <AudienceCards data={content.audiences} />
       <ProcessTimeline data={content.process} />
-      <ComparisonTable data={content.comparison} />
       <ResultsMetrics data={content.results} />
+      <ComparisonTable data={content.comparison} />
       <CaseStudySection data={content.caseStudy} />
-      <RelatedIndustries data={content.relatedIndustries} />
+      {content.editorial && <EditorialAuthoritySection data={content.editorial} />}
       {content.toolsTrust && <ToolsTrustSection data={content.toolsTrust} />}
+      <RelatedIndustries data={content.relatedIndustries} />
       {content.semanticTopics && <SemanticTopicsSection data={content.semanticTopics} />}
       {content.internalLinks && <InternalLinksSection data={content.internalLinks} />}
       <IndustryTestimonials data={content.testimonials} />

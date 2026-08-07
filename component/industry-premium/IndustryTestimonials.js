@@ -76,7 +76,7 @@ export default function IndustryTestimonials({ data }) {
         <PremiumSectionHeader
           badge={data.badge}
           title={data.title}
-          subtitle={data.subtitle || `${items.length} verified healthcare client stories`}
+          subtitle={data.subtitle}
           align="left"
           className="mb-0 !max-w-2xl"
         />
@@ -137,7 +137,7 @@ export default function IndustryTestimonials({ data }) {
       </div>
 
       <p className="mt-6 text-center text-xs text-muted">
-        Showing {items.length} client reviews across plastic surgery, dental, fertility, and specialty healthcare
+        {data.footerText || `Showing ${items.length} verified client reviews from businesses we have helped grow.`}
       </p>
     </PremiumSection>
   )

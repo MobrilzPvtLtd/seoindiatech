@@ -12,13 +12,13 @@
   <circle cx="1040" cy="90" r="70" fill="#A4DDFB" opacity="0.18"/>
   <circle cx="120" cy="520" r="100" fill="#A4DDFB" opacity="0.12"/>
   <g><rect x="72" y="170" width="130" height="70" rx="12" fill="rgba(255,255,255,0.12)" stroke="#A4DDFB"/>
-      <text x="92" y="205" fill="#ffffff" font-size="14" font-weight="700">1. Audit</text>
+      <text x="88" y="205" fill="#ffffff" font-size="13" font-weight="700">1. GBP live</text>
       <line x1="202" y1="205" x2="227" y2="205" stroke="#A4DDFB" stroke-width="3"/></g><g><rect x="227" y="170" width="130" height="70" rx="12" fill="rgba(255,255,255,0.12)" stroke="#A4DDFB"/>
-      <text x="247" y="205" fill="#ffffff" font-size="14" font-weight="700">2. Plan</text>
+      <text x="243" y="205" fill="#ffffff" font-size="13" font-weight="700">2. 5+ core pages</text>
       <line x1="357" y1="205" x2="382" y2="205" stroke="#A4DDFB" stroke-width="3"/></g><g><rect x="382" y="170" width="130" height="70" rx="12" fill="rgba(255,255,255,0.12)" stroke="#A4DDFB"/>
-      <text x="402" y="205" fill="#ffffff" font-size="14" font-weight="700">3. Execute</text>
+      <text x="398" y="205" fill="#ffffff" font-size="13" font-weight="700">3. 3 blog posts</text>
       <line x1="512" y1="205" x2="537" y2="205" stroke="#A4DDFB" stroke-width="3"/></g><g><rect x="537" y="170" width="130" height="70" rx="12" fill="rgba(255,255,255,0.12)" stroke="#A4DDFB"/>
-      <text x="557" y="205" fill="#ffffff" font-size="14" font-weight="700">4. Measure</text>
+      <text x="553" y="205" fill="#ffffff" font-size="13" font-weight="700">4. 10 reviews</text>
       </g><text x="72" y="140" fill="#A4DDFB" font-size="16">GBP first</text>
   <text x="72" y="500" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="38" font-weight="700">Process</text>
   <text x="72" y="548" fill="#A4DDFB" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="600">GBP first</text>

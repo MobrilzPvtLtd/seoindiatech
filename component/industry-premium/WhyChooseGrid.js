@@ -5,7 +5,7 @@ export default function WhyChooseGrid({ data }) {
   const [featured, ...rest] = data.cards
 
   return (
-    <PremiumSection id="why-us" variant="muted" className="pt-20 md:pt-24">
+    <PremiumSection id="why-us" variant="cream" className="pt-20 md:pt-24">
       <PremiumSectionHeader
         badge={data.badge}
         title={data.title}

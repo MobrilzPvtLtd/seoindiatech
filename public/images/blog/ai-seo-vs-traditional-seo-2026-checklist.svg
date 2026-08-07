@@ -13,17 +13,19 @@
   <circle cx="120" cy="520" r="100" fill="#A4DDFB" opacity="0.12"/>
   <g transform="translate(72,150)"><rect width="22" height="22" rx="4" fill="#A4DDFB"/>
     <path d="M5 11 L9 16 L17 6" fill="none" stroke="#2A255D" stroke-width="3"/>
-    <text x="34" y="17" fill="#ffffff" font-size="16">Technical audit</text></g><g transform="translate(72,192)"><rect width="22" height="22" rx="4" fill="#A4DDFB"/>
+    <text x="34" y="17" fill="#ffffff" font-size="15">Fix technical SEO blockers</text></g><g transform="translate(72,192)"><rect width="22" height="22" rx="4" fill="#A4DDFB"/>
     <path d="M5 11 L9 16 L17 6" fill="none" stroke="#2A255D" stroke-width="3"/>
-    <text x="34" y="17" fill="#ffffff" font-size="16">Content depth</text></g><g transform="translate(72,234)"><rect width="22" height="22" rx="4" fill="#A4DDFB"/>
+    <text x="34" y="17" fill="#ffffff" font-size="15">Add FAQ schema to top 20 pages</text></g><g transform="translate(72,234)"><rect width="22" height="22" rx="4" fill="#A4DDFB"/>
     <path d="M5 11 L9 16 L17 6" fill="none" stroke="#2A255D" stroke-width="3"/>
-    <text x="34" y="17" fill="#ffffff" font-size="16">Internal links</text></g><g transform="translate(72,276)"><rect width="22" height="22" rx="4" fill="#A4DDFB"/>
+    <text x="34" y="17" fill="#ffffff" font-size="15">Rewrite intros as 2-sentence a…</text></g><g transform="translate(72,276)"><rect width="22" height="22" rx="4" fill="#A4DDFB"/>
     <path d="M5 11 L9 16 L17 6" fill="none" stroke="#2A255D" stroke-width="3"/>
-    <text x="34" y="17" fill="#ffffff" font-size="16">Schema markup</text></g><g transform="translate(770,140)">
-    <circle cx="85" cy="85" r="60" fill="none" stroke="#ffffff" stroke-width="10"/>
-    <line x1="128" y1="128" x2="175" y2="175" stroke="#A4DDFB" stroke-width="12" stroke-linecap="round"/>
-    <rect x="20" y="200" width="220" height="14" rx="7" fill="rgba(255,255,255,0.25)"/>
-    <rect x="20" y="230" width="180" height="14" rx="7" fill="rgba(255,255,255,0.18)"/>
+    <text x="34" y="17" fill="#ffffff" font-size="15">Track AI referral sources in a…</text></g><g transform="translate(740,110)">
+    <circle cx="110" cy="110" r="95" fill="rgba(255,255,255,0.12)" stroke="#A4DDFB" stroke-width="3"/>
+    <path d="M70 110 Q110 60 150 110 Q110 160 70 110" fill="none" stroke="#A4DDFB" stroke-width="4"/>
+    <circle cx="90" cy="95" r="8" fill="#A4DDFB"/><circle cx="130" cy="95" r="8" fill="#A4DDFB"/>
+    <path d="M85 130 Q110 145 135 130" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+    <rect x="175" y="40" width="90" height="50" rx="10" fill="rgba(164,221,251,0.25)" stroke="#A4DDFB"/>
+    <text x="188" y="72" fill="#ffffff" font-size="14" font-family="Arial">AI</text>
   </g>
   <text x="72" y="500" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="38" font-weight="700">Checklist</text>
   <text x="72" y="548" fill="#A4DDFB" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="600">AI SEO vs traditional SEO</text>

@@ -27,11 +27,12 @@ export default function PremiumHero({ data }) {
     router.push(`${data.primaryCta.href}${q}`)
   }
 
-  const breadcrumbs = data.breadcrumbs || [
-    { label: 'Home', href: '/' },
-    { label: 'Industries', href: '/industries' },
-    { label: 'Plastic Surgery SEO' },
-  ]
+  const breadcrumbs = data.breadcrumbs?.length
+    ? data.breadcrumbs
+    : [{ label: 'Home', href: '/' }, { label: 'Services', href: '/services/seo' }]
+
+  const statsPanelLabel = data.statsPanelLabel || 'Proven Results'
+  const websitePlaceholder = data.websitePlaceholder || 'www.yourbusiness.com'
 
   const bgDesktop = data.backgroundImage
   const bgMobile = data.backgroundImageMobile
@@ -128,7 +129,7 @@ export default function PremiumHero({ data }) {
                   id="hero-website-url"
                   type="text"
                   inputMode="url"
-                  placeholder="www.yourpractice.com"
+                  placeholder={websitePlaceholder}
                   value={website}
                   onChange={(e) => setWebsite(e.target.value)}
                   className="min-h-12 flex-1 rounded-xl border border-border bg-white px-4 text-base text-heading placeholder:text-heading/45 focus:outline-none focus:ring-2 focus:ring-primary/40"
@@ -196,7 +197,7 @@ export default function PremiumHero({ data }) {
             <div className="relative rounded-3xl border border-white/15 bg-white/5 p-6 backdrop-blur-md">
               <div className="relative mb-6 aspect-[16/10] overflow-hidden rounded-2xl border border-white/10 bg-[#0e0c18]/40">
                 <Image
-                  src={data.image?.src || '/images/industries/heroes/plastic-surgery-seo.svg'}
+                  src={data.image?.src || '/images/services/heroes/ai-seo.svg'}
                   alt={data.image?.alt || data.h1 || 'Industry SEO services illustration'}
                   fill
                   className="object-contain p-4"
@@ -206,7 +207,7 @@ export default function PremiumHero({ data }) {
               </div>
 
               <p className="mb-4 text-center text-[11px] font-bold uppercase tracking-[0.2em] text-accent">
-                Proven Healthcare Results
+                {statsPanelLabel}
               </p>
 
               <div className="grid grid-cols-2 gap-3">

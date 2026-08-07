@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Core Web Vitals Optimization Guide">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="">
   <defs>
     <linearGradient id="bg-hero-core-web-vitals-optimization-guide" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#2A255D"/>
@@ -17,9 +17,10 @@
     <path d="M100 110 L150 130" stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
     <text x="72" y="210" fill="#A4DDFB" font-size="18" font-weight="700">LCP 1.8s</text>
   </g>
-    <text x="72" y="100" fill="#A4DDFB" font-family="Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="2">BLOG GUIDE</text>
+    <text x="72" y="100" fill="#A4DDFB" font-family="Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="2">TECHNICAL SEO</text>
     <rect x="72" y="120" width="120" height="4" rx="2" fill="#A4DDFB"/>
-  <text x="72" y="500" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="38" font-weight="700">Core Web Vitals Optimization Guide</text>
-  <text x="72" y="548" fill="#A4DDFB" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="600">Technical SEO</text>
+    <text x="72" y="460" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="34" font-weight="700">Core Web Vitals Optimization Guide</text>
+  
+  <text x="72" y="520" fill="#A4DDFB" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="600">Core Web Vitals optimization</text>
   <text x="72" y="590" fill="rgba(255,255,255,0.65)" font-family="Arial,Helvetica,sans-serif" font-size="16">SEO India Tech</text>
 </svg>

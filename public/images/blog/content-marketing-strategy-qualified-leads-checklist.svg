@@ -13,17 +13,16 @@
   <circle cx="120" cy="520" r="100" fill="#A4DDFB" opacity="0.12"/>
   <g transform="translate(72,150)"><rect width="22" height="22" rx="4" fill="#A4DDFB"/>
     <path d="M5 11 L9 16 L17 6" fill="none" stroke="#2A255D" stroke-width="3"/>
-    <text x="34" y="17" fill="#ffffff" font-size="16">Technical audit</text></g><g transform="translate(72,192)"><rect width="22" height="22" rx="4" fill="#A4DDFB"/>
+    <text x="34" y="17" fill="#ffffff" font-size="15">Editorial calendar</text></g><g transform="translate(72,192)"><rect width="22" height="22" rx="4" fill="#A4DDFB"/>
     <path d="M5 11 L9 16 L17 6" fill="none" stroke="#2A255D" stroke-width="3"/>
-    <text x="34" y="17" fill="#ffffff" font-size="16">Content depth</text></g><g transform="translate(72,234)"><rect width="22" height="22" rx="4" fill="#A4DDFB"/>
+    <text x="34" y="17" fill="#ffffff" font-size="15">SEO keyword map</text></g><g transform="translate(72,234)"><rect width="22" height="22" rx="4" fill="#A4DDFB"/>
     <path d="M5 11 L9 16 L17 6" fill="none" stroke="#2A255D" stroke-width="3"/>
-    <text x="34" y="17" fill="#ffffff" font-size="16">Internal links</text></g><g transform="translate(72,276)"><rect width="22" height="22" rx="4" fill="#A4DDFB"/>
+    <text x="34" y="17" fill="#ffffff" font-size="15">CTA on every post</text></g><g transform="translate(72,276)"><rect width="22" height="22" rx="4" fill="#A4DDFB"/>
     <path d="M5 11 L9 16 L17 6" fill="none" stroke="#2A255D" stroke-width="3"/>
-    <text x="34" y="17" fill="#ffffff" font-size="16">Schema markup</text></g><g transform="translate(770,140)">
-    <circle cx="85" cy="85" r="60" fill="none" stroke="#ffffff" stroke-width="10"/>
-    <line x1="128" y1="128" x2="175" y2="175" stroke="#A4DDFB" stroke-width="12" stroke-linecap="round"/>
-    <rect x="20" y="200" width="220" height="14" rx="7" fill="rgba(255,255,255,0.25)"/>
-    <rect x="20" y="230" width="180" height="14" rx="7" fill="rgba(255,255,255,0.18)"/>
+    <text x="34" y="17" fill="#ffffff" font-size="15">CRM integration</text></g><g transform="translate(760,120)">
+    <polygon points="40,40 180,40 150,95 70,95" fill="#A4DDFB" opacity="0.8"/>
+    <polygon points="70,105 150,105 130,160 90,160" fill="#ffffff" opacity="0.7"/>
+    <polygon points="90,170 130,170 115,210 105,210" fill="#A4DDFB"/>
   </g>
   <text x="72" y="500" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="38" font-weight="700">Checklist</text>
   <text x="72" y="548" fill="#A4DDFB" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="600">content marketing qualified leads</text>

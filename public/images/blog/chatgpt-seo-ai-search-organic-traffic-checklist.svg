@@ -13,17 +13,17 @@
   <circle cx="120" cy="520" r="100" fill="#A4DDFB" opacity="0.12"/>
   <g transform="translate(72,150)"><rect width="22" height="22" rx="4" fill="#A4DDFB"/>
     <path d="M5 11 L9 16 L17 6" fill="none" stroke="#2A255D" stroke-width="3"/>
-    <text x="34" y="17" fill="#ffffff" font-size="16">Technical audit</text></g><g transform="translate(72,192)"><rect width="22" height="22" rx="4" fill="#A4DDFB"/>
+    <text x="34" y="17" fill="#ffffff" font-size="15">Allow relevant bots</text></g><g transform="translate(72,192)"><rect width="22" height="22" rx="4" fill="#A4DDFB"/>
     <path d="M5 11 L9 16 L17 6" fill="none" stroke="#2A255D" stroke-width="3"/>
-    <text x="34" y="17" fill="#ffffff" font-size="16">Content depth</text></g><g transform="translate(72,234)"><rect width="22" height="22" rx="4" fill="#A4DDFB"/>
+    <text x="34" y="17" fill="#ffffff" font-size="15">Monitor brand mentions in AI</text></g><g transform="translate(72,234)"><rect width="22" height="22" rx="4" fill="#A4DDFB"/>
     <path d="M5 11 L9 16 L17 6" fill="none" stroke="#2A255D" stroke-width="3"/>
-    <text x="34" y="17" fill="#ffffff" font-size="16">Internal links</text></g><g transform="translate(72,276)"><rect width="22" height="22" rx="4" fill="#A4DDFB"/>
+    <text x="34" y="17" fill="#ffffff" font-size="15">Strengthen pillar pages</text></g><g transform="translate(72,276)"><rect width="22" height="22" rx="4" fill="#A4DDFB"/>
     <path d="M5 11 L9 16 L17 6" fill="none" stroke="#2A255D" stroke-width="3"/>
-    <text x="34" y="17" fill="#ffffff" font-size="16">Schema markup</text></g><g transform="translate(770,140)">
-    <circle cx="85" cy="85" r="60" fill="none" stroke="#ffffff" stroke-width="10"/>
-    <line x1="128" y1="128" x2="175" y2="175" stroke="#A4DDFB" stroke-width="12" stroke-linecap="round"/>
-    <rect x="20" y="200" width="220" height="14" rx="7" fill="rgba(255,255,255,0.25)"/>
-    <rect x="20" y="230" width="180" height="14" rx="7" fill="rgba(255,255,255,0.18)"/>
+    <text x="34" y="17" fill="#ffffff" font-size="15">Track referral sources</text></g><g transform="translate(740,120)">
+    <rect x="20" y="40" width="180" height="90" rx="14" fill="rgba(255,255,255,0.14)"/>
+    <rect x="50" y="150" width="160" height="70" rx="14" fill="rgba(164,221,251,0.2)" stroke="#A4DDFB"/>
+    <circle cx="55" cy="75" r="8" fill="#A4DDFB"/><circle cx="85" cy="75" r="8" fill="#A4DDFB"/><circle cx="115" cy="75" r="8" fill="#A4DDFB"/>
+    <text x="70" y="192" fill="#ffffff" font-size="14" font-family="Arial">ChatGPT SEO</text>
   </g>
   <text x="72" y="500" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="38" font-weight="700">Checklist</text>
   <text x="72" y="548" fill="#A4DDFB" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="600">ChatGPT SEO organic traffic</text>

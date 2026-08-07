@@ -6,6 +6,7 @@ import { writeFileSync, mkdirSync } from 'fs'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
 import { BLOG_CATALOG } from '../utils/blog/premium/blogCatalog.js'
+import { getBlogImageData } from '../utils/blog/premium/buildPremiumBlogPost.js'
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..')
 const blogDir = join(root, 'public', 'images', 'blog')
@@ -44,8 +45,8 @@ function wrap(id, title, subtitle, body, accent = BRAND.primary) {
   <circle cx="1040" cy="90" r="70" fill="${BRAND.accent}" opacity="0.18"/>
   <circle cx="120" cy="520" r="100" fill="${BRAND.accent}" opacity="0.12"/>
   ${body}
-  <text x="72" y="500" fill="${BRAND.white}" font-family="Arial,Helvetica,sans-serif" font-size="38" font-weight="700">${esc(title.slice(0, 52))}</text>
-  <text x="72" y="548" fill="${BRAND.accent}" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="600">${esc(subtitle)}</text>
+  ${title ? `<text x="72" y="500" fill="${BRAND.white}" font-family="Arial,Helvetica,sans-serif" font-size="38" font-weight="700">${esc(title.slice(0, 52))}</text>` : ''}
+  <text x="72" y="${title ? 548 : 520}" fill="${BRAND.accent}" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="600">${esc(subtitle)}</text>
   <text x="72" y="590" fill="${BRAND.muted}" font-family="Arial,Helvetica,sans-serif" font-size="16">SEO India Tech</text>
 </svg>`
 }
@@ -199,30 +200,60 @@ const BLOG_THEMES = {
   'seo-checklist-small-businesses-europe': { icon: 'store', accent: '#6B2E88', stat: ['90', 'Day checklist'], process: 'GBP first', compare: 'SMB vs enterprise' },
 }
 
+function wrapTitle(title, maxLen = 48) {
+  if (title.length <= maxLen) return [title]
+  const words = title.split(' ')
+  const lines = []
+  let line = ''
+  for (const word of words) {
+    const next = line ? `${line} ${word}` : word
+    if (next.length > maxLen && line) {
+      lines.push(line)
+      line = word
+    } else {
+      line = next
+    }
+  }
+  if (line) lines.push(line)
+  return lines.slice(0, 2)
+}
+
 function heroSvg(slug, entry) {
   const theme = BLOG_THEMES[slug] || { icon: 'search', accent: BRAND.primary }
+  const titleLines = wrapTitle(entry.title, 42)
+  const titleSvg = titleLines
+    .map(
+      (line, i) =>
+        `<text x="72" y="${460 + i * 44}" fill="${BRAND.white}" font-family="Arial,Helvetica,sans-serif" font-size="34" font-weight="700">${esc(line)}</text>`
+    )
+    .join('')
   const body = `${ICONS[theme.icon] || ICONS.search}
-    <text x="72" y="100" fill="${BRAND.accent}" font-family="Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="2">BLOG GUIDE</text>
-    <rect x="72" y="120" width="120" height="4" rx="2" fill="${BRAND.accent}"/>`
-  return wrap(`hero-${slug}`, entry.title, entry.cluster, body, theme.accent)
+    <text x="72" y="100" fill="${BRAND.accent}" font-family="Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="2">${esc(entry.cluster?.toUpperCase() || 'BLOG GUIDE')}</text>
+    <rect x="72" y="120" width="120" height="4" rx="2" fill="${BRAND.accent}"/>
+    ${titleSvg}`
+  return wrap(`hero-${slug}`, '', entry.primaryKeyword, body, theme.accent)
 }
 
 function statsSvg(slug, entry) {
-  const theme = BLOG_THEMES[slug] || { stat: ['68%', 'Organic traffic'], accent: BRAND.primary }
+  const data = getBlogImageData(slug)
+  const theme = BLOG_THEMES[slug] || { accent: BRAND.primary }
+  const stats = data?.stats || [{ value: '68%', label: 'Organic traffic' }, { value: '53%', label: 'Search share' }]
   const body = `${ICONS.chart}
-    ${card(72, 150, 200, 90, theme.stat[1] || 'Key metric', theme.stat[0] || '68%', BRAND.accent)}
-    ${card(290, 180, 180, 80, 'Organic share', '53%', BRAND.white)}`
+    ${card(72, 150, 220, 90, stats[0].label, stats[0].value, BRAND.accent)}
+    ${card(310, 170, 220, 80, stats[1]?.label || 'Key metric', stats[1]?.value || '2x', BRAND.white)}`
   return wrap(`stats-${slug}`, 'Key Statistics', entry.primaryKeyword, body, theme.accent || BRAND.primary)
 }
 
 function processSvg(slug, entry) {
+  const data = getBlogImageData(slug)
   const theme = BLOG_THEMES[slug] || { process: 'Step-by-step', accent: BRAND.primary }
-  const steps = ['Audit', 'Plan', 'Execute', 'Measure']
+  const steps = (data?.processSteps || ['Audit', 'Plan', 'Execute', 'Measure']).slice(0, 4)
   const stepRects = steps
     .map((s, i) => {
       const x = 72 + i * 155
+      const label = s.length > 18 ? `${s.slice(0, 16)}…` : s
       return `<g><rect x="${x}" y="170" width="130" height="70" rx="12" fill="rgba(255,255,255,0.12)" stroke="${BRAND.accent}"/>
-      <text x="${x + 20}" y="205" fill="${BRAND.white}" font-size="14" font-weight="700">${i + 1}. ${s}</text>
+      <text x="${x + 16}" y="205" fill="${BRAND.white}" font-size="13" font-weight="700">${i + 1}. ${esc(label)}</text>
       ${i < 3 ? `<line x1="${x + 130}" y1="205" x2="${x + 155}" y2="205" stroke="${BRAND.accent}" stroke-width="3"/>` : ''}</g>`
     })
     .join('')
@@ -231,39 +262,55 @@ function processSvg(slug, entry) {
 }
 
 function comparisonSvg(slug, entry) {
+  const data = getBlogImageData(slug)
   const theme = BLOG_THEMES[slug] || { compare: 'What works', accent: BRAND.primary }
+  const good = (data?.comparison?.good || 'Structured SEO strategy').slice(0, 42)
+  const bad = (data?.comparison?.bad || 'Generic templates').slice(0, 42)
   const body = `${ICONS.compare || ICONS.chart}
-    <rect x="72" y="150" width="280" height="120" rx="12" fill="rgba(76,175,80,0.2)" stroke="#4CAF50"/>
-    <text x="92" y="190" fill="#4CAF50" font-size="16" font-weight="700">Works</text>
-    <rect x="380" y="150" width="280" height="120" rx="12" fill="rgba(244,67,54,0.15)" stroke="#F44336"/>
-    <text x="400" y="190" fill="#F44336" font-size="16" font-weight="700">Fails</text>
-    <text x="72" y="300" fill="${BRAND.muted}" font-size="15">${esc(theme.compare)}</text>`
+    <rect x="72" y="150" width="300" height="130" rx="12" fill="rgba(76,175,80,0.2)" stroke="#4CAF50"/>
+    <text x="92" y="185" fill="#4CAF50" font-size="15" font-weight="700">What Works</text>
+    <text x="92" y="220" fill="${BRAND.white}" font-size="14">${esc(good)}</text>
+    <rect x="400" y="150" width="300" height="130" rx="12" fill="rgba(244,67,54,0.15)" stroke="#F44336"/>
+    <text x="420" y="185" fill="#F44336" font-size="15" font-weight="700">What Fails</text>
+    <text x="420" y="220" fill="${BRAND.white}" font-size="14">${esc(bad)}</text>
+    <text x="72" y="310" fill="${BRAND.muted}" font-size="15">${esc(theme.compare)}</text>`
   return wrap(`compare-${slug}`, 'Comparison', theme.compare, body, theme.accent || BRAND.primary)
 }
 
 function checklistSvg(slug, entry) {
-  const items = ['Technical audit', 'Content depth', 'Internal links', 'Schema markup']
+  const data = getBlogImageData(slug)
+  const items = (data?.checklist || ['Technical audit', 'Content depth', 'Internal links', 'Schema markup']).slice(0, 4)
   const checks = items
-    .map(
-      (item, i) =>
-        `<g transform="translate(72,${150 + i * 42})"><rect width="22" height="22" rx="4" fill="${BRAND.accent}"/>
+    .map((item, i) => {
+      const label = item.length > 32 ? `${item.slice(0, 30)}…` : item
+      return `<g transform="translate(72,${150 + i * 42})"><rect width="22" height="22" rx="4" fill="${BRAND.accent}"/>
     <path d="M5 11 L9 16 L17 6" fill="none" stroke="${BRAND.secondary}" stroke-width="3"/>
-    <text x="34" y="17" fill="${BRAND.white}" font-size="16">${esc(item)}</text></g>`
-    )
+    <text x="34" y="17" fill="${BRAND.white}" font-size="15">${esc(label)}</text></g>`
+    })
     .join('')
-  const body = `${checks}${ICONS.search}`
+  const body = `${checks}${ICONS[BLOG_THEMES[slug]?.icon] || ICONS.search}`
   return wrap(`checklist-${slug}`, 'Checklist', entry.primaryKeyword, body, BLOG_THEMES[slug]?.accent || BRAND.primary)
 }
 
 function faqSvg(slug, entry) {
-  const body = `<g transform="translate(720,140)">
-    <rect x="0" y="0" width="260" height="55" rx="10" fill="rgba(255,255,255,0.12)"/>
-    <text x="18" y="34" fill="${BRAND.white}" font-size="15">What is ${esc(entry.primaryKeyword.slice(0, 28))}?</text>
-    <rect x="0" y="70" width="260" height="55" rx="10" fill="rgba(164,221,251,0.15)" stroke="${BRAND.accent}"/>
-    <text x="18" y="104" fill="${BRAND.accent}" font-size="15">How long does it take?</text>
-    <rect x="0" y="140" width="260" height="55" rx="10" fill="rgba(255,255,255,0.12)"/>
-    <text x="18" y="174" fill="${BRAND.white}" font-size="15">Best practices for 2026?</text>
-  </g>`
+  const data = getBlogImageData(slug)
+  const questions = (data?.faqQuestions || [
+    `What is ${entry.primaryKeyword}?`,
+    'How long does it take?',
+    'Best practices for 2026?',
+  ]).slice(0, 3)
+  const rows = questions
+    .map(
+      (q, i) => {
+        const label = q.length > 38 ? `${q.slice(0, 36)}…` : q
+        const y = i * 70
+        const fill = i === 1 ? `fill="rgba(164,221,251,0.15)" stroke="${BRAND.accent}"` : 'fill="rgba(255,255,255,0.12)"'
+        return `<rect x="0" y="${y}" width="280" height="55" rx="10" ${fill}/>
+    <text x="18" y="${y + 34}" fill="${i === 1 ? BRAND.accent : BRAND.white}" font-size="14">${esc(label)}</text>`
+      }
+    )
+    .join('')
+  const body = `<g transform="translate(720,140)">${rows}</g>`
   return wrap(`faq-${slug}`, 'FAQ', 'Common questions answered', body, BLOG_THEMES[slug]?.accent || BRAND.primary)
 }
 

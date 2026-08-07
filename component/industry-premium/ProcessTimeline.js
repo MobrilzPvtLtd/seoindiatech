@@ -9,7 +9,7 @@ const PHASES = [
 
 export default function ProcessTimeline({ data }) {
   return (
-    <PremiumSection id="process" variant="white">
+    <PremiumSection id="process" variant="accent">
       <PremiumSectionHeader
         badge={data.badge}
         title={data.title}

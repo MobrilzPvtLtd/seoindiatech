@@ -19,14 +19,14 @@
     <polyline points="10,40 60,70 115,45 175,15 220,5" fill="none" stroke="#A4DDFB" stroke-width="4" stroke-linecap="round"/>
   </g>
     <g filter="url(#shadow-card)">
-    <rect x="72" y="150" width="200" height="90" rx="16" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.2)"/>
-    <text x="92" y="186" fill="#A4DDFB" font-family="Arial,sans-serif" font-size="28" font-weight="700">85%</text>
-    <text x="92" y="212" fill="rgba(255,255,255,0.65)" font-family="Arial,sans-serif" font-size="14">Call growth</text>
+    <rect x="72" y="150" width="220" height="90" rx="16" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.2)"/>
+    <text x="92" y="186" fill="#A4DDFB" font-family="Arial,sans-serif" font-size="28" font-weight="700">68%</text>
+    <text x="92" y="212" fill="rgba(255,255,255,0.65)" font-family="Arial,sans-serif" font-size="14">of online experiences begin with search</text>
   </g>
     <g filter="url(#shadow-card)">
-    <rect x="290" y="180" width="180" height="80" rx="16" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.2)"/>
-    <text x="310" y="216" fill="#ffffff" font-family="Arial,sans-serif" font-size="28" font-weight="700">53%</text>
-    <text x="310" y="242" fill="rgba(255,255,255,0.65)" font-family="Arial,sans-serif" font-size="14">Organic share</text>
+    <rect x="310" y="170" width="220" height="80" rx="16" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.2)"/>
+    <text x="330" y="206" fill="#ffffff" font-family="Arial,sans-serif" font-size="28" font-weight="700">53%</text>
+    <text x="330" y="232" fill="rgba(255,255,255,0.65)" font-family="Arial,sans-serif" font-size="14">of website traffic comes from organic search</text>
   </g>
   <text x="72" y="500" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="38" font-weight="700">Key Statistics</text>
   <text x="72" y="548" fill="#A4DDFB" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="600">law firm SEO</text>

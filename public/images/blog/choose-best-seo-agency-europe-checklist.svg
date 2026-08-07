@@ -13,17 +13,16 @@
   <circle cx="120" cy="520" r="100" fill="#A4DDFB" opacity="0.12"/>
   <g transform="translate(72,150)"><rect width="22" height="22" rx="4" fill="#A4DDFB"/>
     <path d="M5 11 L9 16 L17 6" fill="none" stroke="#2A255D" stroke-width="3"/>
-    <text x="34" y="17" fill="#ffffff" font-size="16">Technical audit</text></g><g transform="translate(72,192)"><rect width="22" height="22" rx="4" fill="#A4DDFB"/>
+    <text x="34" y="17" fill="#ffffff" font-size="15">Request sample audit</text></g><g transform="translate(72,192)"><rect width="22" height="22" rx="4" fill="#A4DDFB"/>
     <path d="M5 11 L9 16 L17 6" fill="none" stroke="#2A255D" stroke-width="3"/>
-    <text x="34" y="17" fill="#ffffff" font-size="16">Content depth</text></g><g transform="translate(72,234)"><rect width="22" height="22" rx="4" fill="#A4DDFB"/>
+    <text x="34" y="17" fill="#ffffff" font-size="15">Check Clutch/reviews</text></g><g transform="translate(72,234)"><rect width="22" height="22" rx="4" fill="#A4DDFB"/>
     <path d="M5 11 L9 16 L17 6" fill="none" stroke="#2A255D" stroke-width="3"/>
-    <text x="34" y="17" fill="#ffffff" font-size="16">Internal links</text></g><g transform="translate(72,276)"><rect width="22" height="22" rx="4" fill="#A4DDFB"/>
+    <text x="34" y="17" fill="#ffffff" font-size="15">Define 90-day milestones</text></g><g transform="translate(72,276)"><rect width="22" height="22" rx="4" fill="#A4DDFB"/>
     <path d="M5 11 L9 16 L17 6" fill="none" stroke="#2A255D" stroke-width="3"/>
-    <text x="34" y="17" fill="#ffffff" font-size="16">Schema markup</text></g><g transform="translate(770,140)">
-    <circle cx="85" cy="85" r="60" fill="none" stroke="#ffffff" stroke-width="10"/>
-    <line x1="128" y1="128" x2="175" y2="175" stroke="#A4DDFB" stroke-width="12" stroke-linecap="round"/>
-    <rect x="20" y="200" width="220" height="14" rx="7" fill="rgba(255,255,255,0.25)"/>
-    <rect x="20" y="230" width="180" height="14" rx="7" fill="rgba(255,255,255,0.18)"/>
+    <text x="34" y="17" fill="#ffffff" font-size="15">Align on communication cadence</text></g><g transform="translate(760,130)">
+    <polygon points="100,30 115,75 165,75 125,105 140,150 100,120 60,150 75,105 35,75 85,75" fill="#A4DDFB"/>
+    <rect x="30" y="180" width="140" height="50" rx="10" fill="rgba(255,255,255,0.12)"/>
+    <text x="52" y="212" fill="#ffffff" font-size="16" font-family="Arial">4.9 Rating</text>
   </g>
   <text x="72" y="500" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="38" font-weight="700">Checklist</text>
   <text x="72" y="548" fill="#A4DDFB" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="600">best SEO agency Europe</text>

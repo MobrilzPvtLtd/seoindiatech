@@ -30,23 +30,19 @@ function renderParagraph(block, index) {
   )
 }
 
-function renderBlock(block, index, tocItems) {
+function renderBlock(block, index) {
   switch (block.type) {
     case 'paragraph':
       return renderParagraph(block, index)
     case 'heading':
       return (
-        <h2
-          key={index}
-          id={block.text.toLowerCase().replace(/[^a-z0-9]+/g, '-')}
-          className="text-2xl md:text-3xl font-bold mt-12 mb-4 text-heading scroll-mt-28"
-        >
+        <h2 key={index} className="text-2xl font-semibold mt-10 text-heading">
           {block.text}
         </h2>
       )
     case 'subheading':
       return (
-        <h3 key={index} className="text-xl font-semibold mt-8 mb-3 text-heading">
+        <h3 key={index} className="text-xl font-semibold mt-8 text-heading">
           {block.text}
         </h3>
       )
@@ -66,138 +62,30 @@ function renderBlock(block, index, tocItems) {
           ))}
         </ol>
       )
-    case 'table':
-      return (
-        <div key={index} className="overflow-x-auto my-8 rounded-xl border border-border">
-          <table className="w-full text-left text-sm md:text-base">
-            <thead className="bg-primary/5">
-              <tr>
-                {block.headers.map((h) => (
-                  <th key={h} className="px-4 py-3 font-bold text-heading">
-                    {h}
-                  </th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {block.rows.map((row, ri) => (
-                <tr key={ri} className="border-t border-border">
-                  {row.map((cell, ci) => (
-                    <td key={ci} className="px-4 py-3 text-body">
-                      {cell}
-                    </td>
-                  ))}
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      )
-    case 'quick-answer':
-      return (
-        <div
-          key={index}
-          className="rounded-2xl border-l-4 border-primary bg-primary/5 p-6 my-8"
-        >
-          <p className="text-sm font-bold uppercase tracking-wide text-primary mb-2">
-            Quick Answer
-          </p>
-          <p className="text-lg font-medium text-heading leading-relaxed">{block.text}</p>
-        </div>
-      )
-    case 'stats':
-      return (
-        <div key={index} className="grid grid-cols-2 md:grid-cols-4 gap-4 my-8">
-          {block.items.map((stat) => (
-            <div
-              key={stat.label}
-              className="rounded-xl border border-border bg-card p-4 text-center"
-            >
-              <p className="text-2xl md:text-3xl font-bold text-primary">{stat.value}</p>
-              <p className="text-xs md:text-sm text-muted mt-1">{stat.label}</p>
-            </div>
-          ))}
-        </div>
-      )
-    case 'image':
-      return (
-        <figure key={index} className="my-8">
-          <div className="relative w-full h-56 md:h-72 rounded-xl overflow-hidden">
-            <Image src={block.src} alt={block.alt} fill className="object-cover" />
-          </div>
-          {block.alt && (
-            <figcaption className="text-sm text-muted mt-2 text-center">{block.alt}</figcaption>
-          )}
-        </figure>
-      )
-    case 'toc':
-      return (
-        <nav key={index} className="rounded-xl border border-border bg-card p-6 my-6">
-          <p className="font-bold text-heading mb-3">On this page</p>
-          <ol className="list-decimal pl-5 space-y-2 text-primary">
-            {tocItems.map((item) => (
-              <li key={item.id}>
-                <a href={`#${item.id}`} className="hover:underline">
-                  {item.text}
-                </a>
-              </li>
-            ))}
-          </ol>
-        </nav>
-      )
-    case 'faq-intro':
-      return (
-        <p key={index} className="text-body text-lg mb-4">
-          {block.text}
-        </p>
-      )
-    case 'cta':
-      return (
-        <div
-          key={index}
-          className="my-10 rounded-2xl bg-gradient-to-r from-primary to-secondary p-8 text-center text-white"
-        >
-          <p className="text-xl font-bold mb-4">Ready to grow organic leads?</p>
-          <Link
-            href={block.href}
-            className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-3 font-bold text-primary hover:bg-accent transition-colors"
-          >
-            {block.label}
-            <ArrowRight className="h-4 w-4" />
-          </Link>
-        </div>
-      )
     default:
       return null
   }
 }
 
 export default function PremiumBlogArticle({ post }) {
-  const tocItems = (post.content || [])
-    .filter((b) => b.type === 'heading' && b.text !== 'Table of Contents')
-    .map((b) => ({
-      text: b.text,
-      id: b.text.toLowerCase().replace(/[^a-z0-9]+/g, '-'),
-    }))
-
   return (
     <article className="max-w-4xl mx-auto">
-      <div className="relative w-full h-64 md:h-96 rounded-2xl overflow-hidden mb-8">
+      <div className="mb-6">
         <Image
           src={post.image}
           alt={post.images?.[0]?.alt || post.title}
-          fill
-          className="object-cover"
+          width={900}
+          height={400}
+          className="rounded-xl object-cover w-full h-72"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-        <div className="absolute bottom-6 left-6 right-6">
-          <span className="inline-block bg-primary text-white px-3 py-1 rounded-full text-xs font-semibold mb-3">
-            {post.category}
-          </span>
-          <h1 className="text-3xl md:text-4xl font-bold text-white leading-tight">{post.title}</h1>
-        </div>
       </div>
+
+      <div className="mb-4 text-sm text-muted">
+        <span className="bg-primary text-white px-3 py-1 rounded-full text-xs">{post.category}</span>
+      </div>
+
+      <h1 className="text-3xl md:text-4xl font-bold mb-6 text-heading">{post.title}</h1>
 
       <div className="flex flex-wrap items-center gap-4 text-sm text-muted mb-8 pb-8 border-b border-border">
         <span className="flex items-center gap-1.5">
@@ -219,13 +107,13 @@ export default function PremiumBlogArticle({ post }) {
         )}
       </div>
 
-      <div className="space-y-5 blog-article-body">
-        {post.content?.map((block, index) => renderBlock(block, index, tocItems))}
+      <div className="space-y-6 blog-article-body">
+        {post.content?.map((block, index) => renderBlock(block, index))}
       </div>
 
       {post.faqs?.length > 0 && (
         <section className="mt-16">
-          <h2 className="text-2xl font-bold text-heading mb-6">FAQ</h2>
+          <h2 className="text-2xl font-semibold text-heading mb-6">Frequently Asked Questions</h2>
           <div className="space-y-4">
             {post.faqs.map((faq) => (
               <details
@@ -236,7 +124,7 @@ export default function PremiumBlogArticle({ post }) {
                   {faq.question}
                   <span className="text-primary group-open:rotate-45 transition-transform">+</span>
                 </summary>
-                <p className="mt-3 text-body leading-relaxed">{faq.answer}</p>
+                <p className="mt-3 text-body leading-relaxed text-lg">{faq.answer}</p>
               </details>
             ))}
           </div>
