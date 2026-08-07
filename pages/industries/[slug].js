@@ -29,6 +29,7 @@ export default function IndustryPage({ industry, premiumContent }) {
           title={premiumContent.seo.title}
           description={premiumContent.seo.description}
           path={pagePath}
+          lcpImage={premiumContent.hero?.backgroundImage}
         />
         <PremiumIndustrySchema content={premiumContent} url={pageUrl} />
         <main className="min-h-screen bg-white dark:bg-background text-heading dark:text-foreground">

@@ -1,6 +1,12 @@
 import { PremiumIcon } from './icons'
 import PremiumSection, { PremiumSectionHeader } from './PremiumSection'
 
+const PHASES = [
+  { label: 'Foundation', steps: [0, 1, 2] },
+  { label: 'Build', steps: [3, 4, 5] },
+  { label: 'Scale', steps: [6, 7, 8] },
+]
+
 export default function ProcessTimeline({ data }) {
   return (
     <PremiumSection id="process" variant="white">
@@ -9,50 +15,46 @@ export default function ProcessTimeline({ data }) {
         title={data.title}
         subtitle={data.subtitle}
         align="center"
-        className="mb-14"
+        className="mb-12"
       />
 
-      {/* Desktop: horizontal stepped timeline */}
-      <div className="hidden lg:block">
-        <div className="relative">
-          <div className="absolute left-0 right-0 top-7 h-0.5 bg-gradient-to-r from-primary/20 via-primary to-primary/20" aria-hidden="true" />
-          <ol className="grid grid-cols-9 gap-2">
-            {data.steps.map((step, i) => (
-              <li key={step.title} className="relative flex flex-col items-center text-center">
-                <div className="relative z-10 mb-4 flex h-14 w-14 items-center justify-center rounded-full border-2 border-primary bg-white text-primary shadow-md dark:bg-card">
-                  <PremiumIcon name={step.icon} className="h-5 w-5" />
-                  <span className="absolute -right-1 -top-1 flex h-6 w-6 items-center justify-center rounded-full bg-secondary text-[10px] font-bold text-white">
-                    {i + 1}
-                  </span>
-                </div>
-                <h3 className="text-xs font-bold uppercase tracking-wide text-heading">{step.title}</h3>
-                <p className="mt-2 text-[11px] leading-relaxed text-muted">{step.description}</p>
-              </li>
-            ))}
-          </ol>
-        </div>
-      </div>
-
-      {/* Mobile / tablet: vertical timeline — easier to scan */}
-      <ol className="lg:hidden space-y-0">
-        {data.steps.map((step, i) => (
-          <li key={step.title} className="relative flex gap-4 pb-8 last:pb-0">
-            {i < data.steps.length - 1 && (
-              <div className="absolute left-[27px] top-14 bottom-0 w-0.5 bg-border" aria-hidden="true" />
-            )}
-            <div className="relative z-10 flex h-14 w-14 shrink-0 items-center justify-center rounded-full border-2 border-primary bg-white text-primary shadow-sm dark:bg-card">
-              <PremiumIcon name={step.icon} className="h-5 w-5" />
-            </div>
-            <div className="min-w-0 pt-1">
-              <span className="text-[10px] font-bold uppercase tracking-widest text-primary">
-                Step {i + 1}
+      <div className="space-y-12">
+        {PHASES.map((phase) => (
+          <div key={phase.label}>
+            <div className="mb-6 flex items-center gap-4">
+              <span className="rounded-full bg-primary/10 px-4 py-1.5 text-[11px] font-bold uppercase tracking-[0.16em] text-primary">
+                Phase: {phase.label}
               </span>
-              <h3 className="mt-0.5 text-base font-bold text-heading">{step.title}</h3>
-              <p className="mt-1.5 text-sm leading-relaxed text-muted">{step.description}</p>
+              <div className="h-px flex-1 bg-border" aria-hidden="true" />
             </div>
-          </li>
+
+            <ol className="grid gap-5 md:grid-cols-3">
+              {phase.steps.map((stepIndex) => {
+                const step = data.steps[stepIndex]
+                return (
+                  <li
+                    key={step.title}
+                    className="relative rounded-2xl border border-border bg-cream/40 p-6 transition-all hover:border-primary/25 hover:bg-white hover:shadow-md dark:bg-background/40 dark:hover:bg-card"
+                  >
+                    <div className="mb-4 flex items-center gap-4">
+                      <div className="relative flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-primary text-white shadow-glow-brand">
+                        <PremiumIcon name={step.icon} className="h-6 w-6" />
+                        <span className="absolute -right-2 -top-2 flex h-7 w-7 items-center justify-center rounded-full border-2 border-white bg-secondary text-xs font-bold text-white">
+                          {stepIndex + 1}
+                        </span>
+                      </div>
+                      <h3 className="text-sm font-bold uppercase tracking-wide text-heading">
+                        {step.title}
+                      </h3>
+                    </div>
+                    <p className="text-sm leading-relaxed text-body">{step.description}</p>
+                  </li>
+                )
+              })}
+            </ol>
+          </div>
         ))}
-      </ol>
+      </div>
     </PremiumSection>
   )
 }

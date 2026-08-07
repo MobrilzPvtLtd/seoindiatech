@@ -31,7 +31,7 @@ export default function PremiumIndustryPage({ content }) {
       <IndustryTestimonials data={content.testimonials} />
       <PremiumFaq data={content.faq} />
       <PremiumFinalCta data={content.finalCta} />
-      <StickyMobileCta label={content.finalCta.primaryCta.label} href={content.finalCta.primaryCta.href} />
+      <StickyMobileCta label="Get a Free Quote" href={content.finalCta.primaryCta.href} />
       <div className="h-16 lg:hidden" aria-hidden="true" />
     </div>
   )

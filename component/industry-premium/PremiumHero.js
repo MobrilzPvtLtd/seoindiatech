@@ -1,106 +1,227 @@
+'use client'
+
+import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { ArrowRight, Check, Star } from 'lucide-react'
+import { useRouter } from 'next/router'
+import {
+  ArrowRight,
+  Check,
+  ChevronRight,
+  Star,
+  TrendingUp,
+  Users,
+  Globe,
+  Award,
+} from 'lucide-react'
+
+const STAT_ICONS = [TrendingUp, Users, Globe, Award]
 
 export default function PremiumHero({ data }) {
-  const [lead, ...supporting] = data.paragraphs
+  const router = useRouter()
+  const [website, setWebsite] = useState('')
+
+  const handleAuditSubmit = (e) => {
+    e.preventDefault()
+    const q = website.trim() ? `?website=${encodeURIComponent(website.trim())}` : ''
+    router.push(`${data.primaryCta.href}${q}`)
+  }
+
+  const breadcrumbs = data.breadcrumbs || [
+    { label: 'Home', href: '/' },
+    { label: 'Industries', href: '/industries' },
+    { label: 'Plastic Surgery SEO' },
+  ]
+
+  const bgDesktop = data.backgroundImage || '/images/industries/premium/plastic-surgery-hero.webp'
+  const bgMobile = data.backgroundImageMobile || '/images/industries/premium/plastic-surgery-hero-mobile.webp'
+  const heroStats = data.heroStats || [
+    { value: '186%', label: 'Avg. traffic growth' },
+    { value: '94%', label: 'More consults' },
+    { value: '14+', label: 'Years experience' },
+    { value: '500+', label: 'Clients served' },
+  ]
 
   return (
-    <section className="relative overflow-hidden bg-secondary text-white">
-      <div className="pointer-events-none absolute inset-0 hero-grid-bg" aria-hidden="true" />
-      <div className="pointer-events-none absolute inset-0 hero-glow-primary opacity-70" aria-hidden="true" />
-      <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" aria-hidden="true" />
+    <section className="relative min-h-[min(100svh,880px)] overflow-hidden bg-secondary">
+      {/* Background */}
+      <div className="absolute inset-0" aria-hidden="true">
+        <Image
+          src={bgMobile}
+          alt=""
+          fill
+          className="object-cover object-center md:hidden"
+          priority
+          sizes="100vw"
+        />
+        <Image
+          src={bgDesktop}
+          alt=""
+          fill
+          className="hidden object-cover object-[center_30%] md:block"
+          priority
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#1a1535]/97 via-secondary/92 to-secondary/70" />
+        <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/20 to-transparent" />
+        <div className="pointer-events-none absolute inset-0 hero-grid-bg opacity-[0.12]" />
+      </div>
 
-      <div className="relative z-10 mx-auto max-w-7xl px-4 pb-20 pt-28 sm:px-6 md:pb-28 md:pt-32 lg:px-8">
-        <div className="grid items-center gap-12 lg:grid-cols-12 lg:gap-10">
-          {/* Copy — primary focus */}
-          <div className="lg:col-span-7 text-center lg:text-left">
-            <span className="mb-5 inline-flex items-center rounded-full border border-accent/30 bg-accent/10 px-4 py-1.5 text-[11px] font-bold uppercase tracking-[0.2em] text-accent">
-              {data.badge}
-            </span>
+      <div className="relative z-10 mx-auto max-w-7xl px-4 pb-20 pt-28 sm:px-6 md:pb-24 md:pt-32 lg:px-8">
+        <nav aria-label="Breadcrumb" className="mb-6 lg:mb-8">
+          <ol className="flex flex-wrap items-center gap-1.5 text-xs text-white/50 sm:text-sm">
+            {breadcrumbs.map((crumb, i) => (
+              <li key={crumb.label} className="flex items-center gap-1.5">
+                {i > 0 && <ChevronRight className="h-3.5 w-3.5 shrink-0 opacity-40" aria-hidden="true" />}
+                {crumb.href ? (
+                  <Link href={crumb.href} className="transition-colors hover:text-accent">
+                    {crumb.label}
+                  </Link>
+                ) : (
+                  <span className="font-medium text-white/90">{crumb.label}</span>
+                )}
+              </li>
+            ))}
+          </ol>
+        </nav>
 
-            <h1 className="font-heading text-[1.85rem] font-extrabold leading-[1.1] tracking-tight sm:text-4xl md:text-5xl lg:text-[3.15rem]">
+        <div className="grid items-center gap-12 lg:grid-cols-12 lg:gap-10 xl:gap-14">
+          {/* Left: copy + CTA */}
+          <div className="lg:col-span-7">
+            {data.badge && (
+              <span className="mb-5 inline-flex items-center gap-2 rounded-full border border-accent/35 bg-accent/10 px-4 py-1.5 text-[11px] font-bold uppercase tracking-[0.18em] text-accent">
+                <span className="h-1.5 w-1.5 rounded-full bg-accent animate-pulse" />
+                {data.badge}
+              </span>
+            )}
+
+            <h1 className="font-heading text-[1.85rem] font-extrabold leading-[1.1] tracking-tight text-white sm:text-4xl md:text-[2.75rem] lg:text-5xl">
               {data.h1}
             </h1>
 
-            {lead && (
-              <p className="mx-auto mt-6 max-w-2xl text-lg font-medium leading-relaxed text-white sm:text-xl lg:mx-0">
-                {lead}
-              </p>
-            )}
-
-            {supporting.map((p) => (
-              <p
-                key={p.slice(0, 48)}
-                className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-white/70 sm:text-base lg:mx-0"
-              >
-                {p}
-              </p>
-            ))}
-
-            {/* CTAs — high priority, above the fold */}
-            <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row lg:justify-start">
-              <Link
-                href={data.primaryCta.href}
-                className="inline-flex w-full sm:w-auto items-center justify-center gap-2 rounded-full bg-primary px-8 py-4 text-sm font-bold text-white shadow-glow-brand transition-all hover:bg-primary-hover hover:-translate-y-0.5"
-              >
-                {data.primaryCta.label}
-                <ArrowRight className="h-4 w-4" />
-              </Link>
-              <Link
-                href={data.secondaryCta.href}
-                className="inline-flex w-full sm:w-auto items-center justify-center gap-2 rounded-full border-2 border-white/25 bg-white/5 px-8 py-4 text-sm font-bold text-white transition-colors hover:bg-white/10"
-              >
-                {data.secondaryCta.label}
-              </Link>
+            <div className="mt-5 space-y-3 border-l-2 border-accent/50 pl-5">
+              {data.paragraphs.map((p, i) => (
+                <p
+                  key={p.slice(0, 48)}
+                  className={`leading-relaxed ${
+                    i === 0
+                      ? 'text-base font-medium text-white sm:text-lg'
+                      : 'text-sm text-white/75 sm:text-base'
+                  }`}
+                >
+                  {p}
+                </p>
+              ))}
             </div>
 
-            {/* Social proof row */}
-            <div className="mt-6 flex flex-col items-center gap-3 sm:flex-row sm:gap-6 lg:justify-start">
-              <div className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm text-accent">
-                <Star className="h-4 w-4 fill-accent" aria-hidden="true" />
-                <span className="font-semibold">{data.rating}</span>
+            {/* CTA card */}
+            <div className="mt-8 rounded-2xl border border-white/15 bg-white/95 p-4 shadow-[0_20px_50px_-12px_rgba(0,0,0,0.4)] backdrop-blur-sm sm:p-5">
+              <form onSubmit={handleAuditSubmit} className="flex flex-col gap-3 sm:flex-row">
+                <label className="sr-only" htmlFor="hero-website-url">
+                  Enter your website
+                </label>
+                <input
+                  id="hero-website-url"
+                  type="text"
+                  inputMode="url"
+                  placeholder="www.yourpractice.com"
+                  value={website}
+                  onChange={(e) => setWebsite(e.target.value)}
+                  className="min-h-12 flex-1 rounded-xl border border-border bg-white px-4 text-sm text-heading placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-primary/40"
+                />
+                <button
+                  type="submit"
+                  className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-primary px-7 py-3 text-sm font-bold text-white shadow-glow-brand transition-all hover:bg-primary-hover hover:-translate-y-0.5"
+                >
+                  {data.primaryCta.label}
+                  <ArrowRight className="h-4 w-4" />
+                </button>
+              </form>
+              <div className="mt-3 flex flex-wrap items-center justify-between gap-2 text-xs text-muted">
+                <span>Free audit. No obligation.</span>
+                {data.rating && (
+                  <span className="inline-flex items-center gap-1 font-semibold text-primary">
+                    <Star className="h-3.5 w-3.5 fill-primary" aria-hidden="true" />
+                    {data.rating}
+                  </span>
+                )}
               </div>
-              <div className="flex flex-wrap justify-center gap-2 lg:justify-start">
-                {data.trustBadges.map((badge) => (
+            </div>
+
+            {/* Trust badges */}
+            {data.trustAwards?.length > 0 && (
+              <div className="mt-6 flex flex-wrap gap-2">
+                {data.trustAwards.map((award) => (
                   <span
-                    key={badge}
-                    className="rounded-full border border-white/15 bg-white/5 px-3 py-1 text-[11px] font-medium text-white/75"
+                    key={award}
+                    className="rounded-md border border-white/12 bg-white/8 px-2.5 py-1.5 text-[10px] font-bold uppercase tracking-wider text-white/80"
                   >
-                    {badge}
+                    {award}
                   </span>
                 ))}
               </div>
-            </div>
-          </div>
+            )}
 
-          {/* Visual + quick benefits */}
-          <div className="lg:col-span-5 space-y-5">
-            <div className="relative mx-auto aspect-[4/3] w-full max-w-md overflow-hidden rounded-2xl border border-white/15 bg-[#0e0c18]/50 shadow-[0_32px_64px_-16px_rgba(0,0,0,0.5)] lg:max-w-none">
-              <Image
-                src={data.image.src}
-                alt={data.image.alt}
-                fill
-                className="object-contain p-5"
-                priority
-                sizes="(max-width: 1024px) 90vw, 40vw"
-              />
-            </div>
-
-            <div className="rounded-2xl border border-white/15 bg-white/5 p-5 backdrop-blur-sm">
-              <p className="mb-3 text-[11px] font-bold uppercase tracking-[0.18em] text-accent">
-                What you get
-              </p>
-              <ul className="grid grid-cols-1 gap-2.5 sm:grid-cols-2 lg:grid-cols-1">
-                {data.benefits.map((b) => (
-                  <li key={b} className="flex items-start gap-2.5 text-sm text-white/90">
-                    <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary/80">
-                      <Check className="h-3 w-3 text-white" aria-hidden="true" />
+            {/* Benefits */}
+            {data.benefits?.length > 0 && (
+              <ul className="mt-8 grid gap-3 sm:grid-cols-2">
+                {data.benefits.map((benefit) => (
+                  <li key={benefit} className="flex items-start gap-2.5">
+                    <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-accent text-secondary">
+                      <Check className="h-3.5 w-3.5 stroke-[3]" aria-hidden="true" />
                     </span>
-                    {b}
+                    <span className="text-sm leading-snug text-white/88">{benefit}</span>
                   </li>
                 ))}
               </ul>
+            )}
+
+            {data.secondaryCta && (
+              <Link
+                href={data.secondaryCta.href}
+                className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-accent hover:text-white transition-colors"
+              >
+                {data.secondaryCta.label}
+                <ArrowRight className="h-4 w-4" />
+              </Link>
+            )}
+          </div>
+
+          {/* Right: stats + visual (desktop) */}
+          <div className="hidden lg:col-span-5 lg:block">
+            <div className="relative rounded-3xl border border-white/15 bg-white/5 p-6 backdrop-blur-md">
+              <div className="relative mb-6 aspect-[16/10] overflow-hidden rounded-2xl border border-white/10 bg-[#0e0c18]/40">
+                <Image
+                  src={data.image?.src || '/images/industries/heroes/plastic-surgery-seo.svg'}
+                  alt={data.image?.alt || 'Plastic surgery SEO'}
+                  fill
+                  className="object-contain p-4"
+                  sizes="400px"
+                  priority
+                />
+              </div>
+
+              <p className="mb-4 text-center text-[11px] font-bold uppercase tracking-[0.2em] text-accent">
+                Proven Healthcare Results
+              </p>
+
+              <div className="grid grid-cols-2 gap-3">
+                {heroStats.map((stat, i) => {
+                  const Icon = STAT_ICONS[i % STAT_ICONS.length]
+                  return (
+                    <div
+                      key={stat.label}
+                      className="rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-center"
+                    >
+                      <Icon className="mx-auto mb-1.5 h-4 w-4 text-accent" aria-hidden="true" />
+                      <p className="font-mono text-xl font-bold text-white">{stat.value}</p>
+                      <p className="mt-0.5 text-[10px] font-medium uppercase tracking-wide text-white/55">
+                        {stat.label}
+                      </p>
+                    </div>
+                  )
+                })}
+              </div>
             </div>
           </div>
         </div>

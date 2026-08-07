@@ -1,4 +1,6 @@
 /** Premium content for Plastic Surgery SEO industry page */
+import { healthcareTestimonials } from './healthcareTestimonials'
+
 export const plasticSurgeryPremium = {
   slug: 'plastic-surgery-seo',
   name: 'Plastic Surgery',
@@ -28,21 +30,42 @@ export const plasticSurgeryPremium = {
 
   hero: {
     badge: 'Healthcare SEO Specialists',
-    h1: 'Plastic Surgery SEO That Turns Search Into Consultations',
+    breadcrumbs: [
+      { label: 'Home', href: '/' },
+      { label: 'Industries', href: '/industries' },
+      { label: 'Plastic Surgery SEO' },
+    ],
+    h1: 'Plastic Surgery SEO Services Built for Patient Consultations',
     paragraphs: [
-      'Patients research procedures for weeks before they book. They compare surgeons, read reviews, study before-and-after galleries, and ask AI tools for recommendations. If your practice is not visible in that journey, competitors capture the consult.',
-      'SEO India Tech builds YMYL-aware plastic surgery SEO campaigns: procedure-specific pages, surgeon authority signals, ethical gallery optimization, and local map dominance, without risky claims that trigger Google penalties.',
+      'Plastic surgery SEO should do more than bring search traffic. It should help the right patients find your practice when they research a procedure, compare surgeons, and request a consultation.',
+      'SEO India Tech builds plastic surgery SEO around local visibility, procedure-specific pages, medically reviewed content, reputation, and tracked consultations. The goal is stronger rankings on the searches that matter and reporting your team can act on.',
     ],
     benefits: [
-      'Procedure-level keyword strategy',
-      'YMYL & healthcare policy compliance',
-      'GBP & review velocity programs',
-      'AI Overview & GEO optimization',
+      '14+ years of experience in healthcare and medical SEO',
+      'Trained specialists in plastic surgery website optimization',
+      'Tailored campaigns based on your clinic\'s unique goals',
+      'Affordable ROI-based service with transparent weekly reporting',
     ],
-    primaryCta: { label: 'Book Free SEO Audit', href: '/contact-us' },
+    primaryCta: { label: 'Get a Free Quote', href: '/contact-us' },
     secondaryCta: { label: 'View SEO Packages', href: '/seo-packages' },
+    trustAwards: [
+      '14+ Years',
+      '500+ Clients',
+      '4.9 Rating',
+      '12+ Countries',
+      'YMYL Compliant',
+      'GBP Experts',
+    ],
     trustBadges: ['14+ Years Experience', '500+ Global Clients', '12+ Countries'],
     rating: '4.9/5 from 120+ client reviews',
+    backgroundImage: '/images/industries/premium/plastic-surgery-hero.webp',
+    backgroundImageMobile: '/images/industries/premium/plastic-surgery-hero-mobile.webp',
+    heroStats: [
+      { value: '186%', label: 'Traffic growth' },
+      { value: '94%', label: 'More consults' },
+      { value: '14+', label: 'Years experience' },
+      { value: '500+', label: 'Global clients' },
+    ],
     image: {
       src: '/images/industries/heroes/plastic-surgery-seo.svg',
       alt: 'Plastic surgery SEO services, digital growth illustration for cosmetic surgery practices',
@@ -290,26 +313,8 @@ export const plasticSurgeryPremium = {
   testimonials: {
     badge: 'Client Voices',
     title: 'What Healthcare Clients Say',
-    items: [
-      {
-        name: 'Dr. Rajesh K.',
-        role: 'Cosmetic Surgeon',
-        company: 'Delhi Metro Practice',
-        text: 'SEO India Tech understood YMYL requirements from day one. Our rhinoplasty page now ranks on page one, and consultation requests from organic search doubled in five months.',
-      },
-      {
-        name: 'Sarah M.',
-        role: 'Practice Manager',
-        company: 'UK Aesthetic Clinic',
-        text: 'The team rebuilt our before-and-after gallery without slowing the site. GBP calls increased 3x, and we finally have reporting that ties rankings to actual bookings.',
-      },
-      {
-        name: 'Anita P.',
-        role: 'Marketing Director',
-        company: 'Multi-Location Surgical Group',
-        text: 'We needed one partner for SEO, AI visibility, and paid ads alignment. SEO India Tech delivered a unified strategy across three cities with transparent weekly dashboards.',
-      },
-    ],
+    subtitle: '28 verified healthcare client stories from surgeons, clinics, and medical groups worldwide.',
+    items: healthcareTestimonials,
   },
 
   faq: {
