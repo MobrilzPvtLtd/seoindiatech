@@ -1,30 +1,36 @@
-import SectionHeader from '@/component/ui/SectionHeader'
-import PageSection from '@/component/ui/PageSection'
+import PremiumSection, { PremiumSectionHeader } from './PremiumSection'
 
 export default function ResultsMetrics({ data }) {
   return (
-    <PageSection variant="default" padding="default">
-      <SectionHeader badge={data.badge} title={data.title} subtitle={data.subtitle} align="center" className="mb-12" />
+    <PremiumSection id="results" variant="dark">
+      <PremiumSectionHeader
+        badge={data.badge}
+        title={data.title}
+        subtitle={data.subtitle}
+        align="center"
+        dark
+        className="mb-12"
+      />
 
-      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
         {data.metrics.map((metric) => (
           <div
             key={metric.label}
-            className="rounded-2xl border border-border bg-gradient-to-br from-white to-cream/60 dark:from-card dark:to-background p-6 text-center"
+            className="rounded-2xl border border-white/10 bg-white/5 p-6 text-center backdrop-blur-sm"
           >
-            <p className="font-mono text-3xl md:text-4xl font-bold text-primary">{metric.value}</p>
-            <p className="mt-2 text-sm font-semibold text-heading">{metric.label}</p>
-            <p className="mt-1 text-xs text-muted">{metric.change}</p>
-            <div className="mt-4 h-2 rounded-full bg-border overflow-hidden">
+            <p className="font-mono text-4xl font-extrabold text-accent md:text-5xl">{metric.value}</p>
+            <p className="mt-3 text-sm font-bold text-white">{metric.label}</p>
+            <p className="mt-1 text-xs text-white/55">{metric.change}</p>
+            <div className="mx-auto mt-5 h-1.5 max-w-[120px] overflow-hidden rounded-full bg-white/10">
               <div
-                className="h-full rounded-full bg-gradient-to-r from-primary to-secondary"
-                style={{ width: '75%' }}
+                className="h-full rounded-full bg-gradient-to-r from-accent to-primary"
+                style={{ width: '78%' }}
                 role="presentation"
               />
             </div>
           </div>
         ))}
       </div>
-    </PageSection>
+    </PremiumSection>
   )
 }

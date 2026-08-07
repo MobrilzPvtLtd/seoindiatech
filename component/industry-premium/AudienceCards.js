@@ -1,27 +1,36 @@
 import { PremiumIcon } from './icons'
-import SectionHeader from '@/component/ui/SectionHeader'
-import PageSection from '@/component/ui/PageSection'
+import PremiumSection, { PremiumSectionHeader } from './PremiumSection'
 
 export default function AudienceCards({ data }) {
   return (
-    <PageSection variant="cream" padding="default">
-      <SectionHeader badge={data.badge} title={data.title} subtitle={data.subtitle} align="center" className="mb-12" />
+    <PremiumSection id="who-needs" variant="cream">
+      <PremiumSectionHeader
+        badge={data.badge}
+        title={data.title}
+        subtitle={data.subtitle}
+        align="center"
+        className="mb-12"
+      />
 
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {data.items.map((item) => (
+      <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        {data.items.map((item, index) => (
           <article
             key={item.title}
-            className="rounded-2xl border border-border bg-white dark:bg-card p-6 hover:shadow-premium hover:-translate-y-0.5 transition-all duration-300"
+            className={`relative overflow-hidden rounded-2xl border border-border bg-white p-6 dark:bg-card ${
+              index === 0 ? 'sm:col-span-2 lg:col-span-1 ring-2 ring-primary/20' : ''
+            }`}
           >
-            <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-accent/30 text-secondary">
-              <PremiumIcon name={item.icon} className="h-5 w-5" />
+            <div className="mb-4 flex items-center gap-3">
+              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-accent/40 text-secondary">
+                <PremiumIcon name={item.icon} className="h-5 w-5" />
+              </div>
+              <h3 className="text-base font-bold text-heading">{item.title}</h3>
             </div>
-            <h3 className="text-base font-bold text-heading mb-2">{item.title}</h3>
-            <p className="text-sm text-body leading-relaxed mb-3">{item.description}</p>
-            <ul className="space-y-1.5">
+            <p className="text-sm leading-relaxed text-body">{item.description}</p>
+            <ul className="mt-4 space-y-2 border-t border-border/50 pt-4">
               {item.points.map((p) => (
-                <li key={p} className="text-xs text-muted flex items-start gap-2">
-                  <span className="mt-1 h-1 w-1 shrink-0 rounded-full bg-primary" />
+                <li key={p} className="flex items-start gap-2 text-xs text-muted">
+                  <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-primary" />
                   {p}
                 </li>
               ))}
@@ -29,6 +38,6 @@ export default function AudienceCards({ data }) {
           </article>
         ))}
       </div>
-    </PageSection>
+    </PremiumSection>
   )
 }

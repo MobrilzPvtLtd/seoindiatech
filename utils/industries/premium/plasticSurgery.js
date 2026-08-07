@@ -31,7 +31,7 @@ export const plasticSurgeryPremium = {
     h1: 'Plastic Surgery SEO That Turns Search Into Consultations',
     paragraphs: [
       'Patients research procedures for weeks before they book. They compare surgeons, read reviews, study before-and-after galleries, and ask AI tools for recommendations. If your practice is not visible in that journey, competitors capture the consult.',
-      'SEO India Tech builds YMYL-aware plastic surgery SEO campaigns: procedure-specific pages, surgeon authority signals, ethical gallery optimization, and local map dominance — without risky claims that trigger Google penalties.',
+      'SEO India Tech builds YMYL-aware plastic surgery SEO campaigns: procedure-specific pages, surgeon authority signals, ethical gallery optimization, and local map dominance, without risky claims that trigger Google penalties.',
     ],
     benefits: [
       'Procedure-level keyword strategy',
@@ -45,7 +45,7 @@ export const plasticSurgeryPremium = {
     rating: '4.9/5 from 120+ client reviews',
     image: {
       src: '/images/industries/heroes/plastic-surgery-seo.svg',
-      alt: 'Plastic surgery SEO services — digital growth illustration for cosmetic surgery practices',
+      alt: 'Plastic surgery SEO services, digital growth illustration for cosmetic surgery practices',
     },
   },
 
@@ -101,14 +101,14 @@ export const plasticSurgeryPremium = {
         icon: 'chart',
         title: 'Revenue-Focused Reporting',
         description:
-          'We track consultation forms, click-to-call, direction requests, and procedure-page conversions — not vanity traffic from irrelevant keywords.',
+          'We track consultation forms, click-to-call, direction requests, and procedure-page conversions, not vanity traffic from irrelevant keywords.',
         points: ['Weekly KPI dashboards', 'CRM integration support', 'Cost-per-lead benchmarking'],
       },
       {
         icon: 'users',
         title: 'Dedicated Healthcare Team',
         description:
-          'Your account gets strategists who understand surgical buyer psychology, seasonal demand cycles, and competitive metro markets — not generalist marketers.',
+          'Your account gets strategists who understand surgical buyer psychology, seasonal demand cycles, and competitive metro markets, not generalist marketers.',
         points: ['Healthcare vertical experience', 'Surgeon bio optimization', 'Review response frameworks'],
       },
     ],
@@ -118,7 +118,7 @@ export const plasticSurgeryPremium = {
     badge: 'What You Get',
     title: 'Full-Stack Plastic Surgery SEO Services',
     subtitle:
-      'Every deliverable connects to consult growth — calls, bookings, and qualified form fills across organic, local, paid, and AI search.',
+      'Every deliverable connects to consult growth: calls, bookings, and qualified form fills across organic, local, paid, and AI search.',
     items: [
       {
         icon: 'file',
@@ -329,7 +329,7 @@ export const plasticSurgeryPremium = {
       {
         question: 'Which cosmetic procedures should have separate pages?',
         answer:
-          'High-intent procedures with distinct search demand — rhinoplasty, breast augmentation, liposuction, tummy tuck, facelift, and injectables — each deserve dedicated pages with unique FAQs and consultation CTAs.',
+          'High-intent procedures with distinct search demand (rhinoplasty, breast augmentation, liposuction, tummy tuck, facelift, and injectables) each deserve dedicated pages with unique FAQs and consultation CTAs.',
       },
       {
         question: 'Can plastic surgery SEO attract international patients?',
@@ -344,12 +344,12 @@ export const plasticSurgeryPremium = {
       {
         question: 'Do you handle negative reviews for plastic surgeons?',
         answer:
-          'We provide response frameworks, highlight verified positive feedback ethically, and address ORM when unfair reviews suppress conversions — without fake review tactics.',
+          'We provide response frameworks, highlight verified positive feedback ethically, and address ORM when unfair reviews suppress conversions, without fake review tactics.',
       },
       {
         question: 'What KPIs matter for plastic surgery SEO?',
         answer:
-          'Consultation form submissions, click-to-call from mobile, GBP direction requests, procedure-page rankings, and cost-per-lead trends versus paid social — not raw traffic alone.',
+          'Consultation form submissions, click-to-call from mobile, GBP direction requests, procedure-page rankings, and cost-per-lead trends versus paid social, not raw traffic alone.',
       },
       {
         question: 'Will SEO conflict with our existing paid ads?',
@@ -359,12 +359,12 @@ export const plasticSurgeryPremium = {
       {
         question: 'How do you research keywords for cosmetic surgery?',
         answer:
-          'We analyze procedure volumes, seasonal trends, competitor gaps, and question-based queries from People Also Ask and AI tools — mapped to your actual surgical offerings.',
+          'We analyze procedure volumes, seasonal trends, competitor gaps, and question-based queries from People Also Ask and AI tools, mapped to your actual surgical offerings.',
       },
       {
         question: 'How do we start plastic surgery SEO with SEO India Tech?',
         answer:
-          'Book a free audit. We review your site, competitor procedure pages, GBP health, and review profile — then deliver a prioritized roadmap with timelines and KPIs.',
+          'Book a free audit. We review your site, competitor procedure pages, GBP health, and review profile, then deliver a prioritized roadmap with timelines and KPIs.',
       },
       {
         question: 'What is YMYL and why does it matter for plastic surgeons?',

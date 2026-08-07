@@ -37,7 +37,7 @@ function AnimatedCounter({ value, suffix = '' }) {
   }, [target])
 
   return (
-    <span ref={ref} className="font-mono text-3xl md:text-4xl font-bold text-heading">
+    <span ref={ref} className="font-mono text-4xl font-extrabold text-primary md:text-5xl">
       {count}
       {suffix}
     </span>
@@ -46,35 +46,34 @@ function AnimatedCounter({ value, suffix = '' }) {
 
 export default function TrustStatsBar({ data }) {
   return (
-    <section className="py-12 md:py-16 bg-white dark:bg-card border-b border-border/60">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-2xl mx-auto mb-10">
-          <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-2">{data.badge}</p>
-          <h2 className="font-heading text-2xl md:text-3xl font-extrabold text-heading">{data.title}</h2>
-          <p className="mt-3 text-sm text-muted leading-relaxed">{data.subtitle}</p>
-        </div>
-
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-          {data.stats.map((stat) => (
-            <div
-              key={stat.label}
-              className="rounded-2xl border border-border bg-cream/50 dark:bg-background p-6 text-center hover:shadow-premium hover:-translate-y-0.5 transition-all duration-300"
-            >
-              <AnimatedCounter value={stat.value} suffix={stat.suffix} />
-              <p className="mt-2 text-xs font-medium text-muted uppercase tracking-wide">{stat.label}</p>
-            </div>
-          ))}
-        </div>
-
-        {data.platforms?.length > 0 && (
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-4 text-xs font-semibold uppercase tracking-wider text-muted">
-            {data.platforms.map((p) => (
-              <span key={p} className="rounded-full border border-border px-4 py-2 bg-surface">
-                {p}
-              </span>
+    <section className="relative z-20 -mt-12 px-4 sm:px-6 md:-mt-16 lg:px-8" aria-label="Trust statistics">
+      <div className="mx-auto max-w-5xl">
+        <div className="overflow-hidden rounded-2xl border border-border/80 bg-white shadow-[0_20px_50px_-12px_rgba(42,37,93,0.18)] dark:bg-card dark:shadow-none">
+          <div className="grid grid-cols-2 divide-x divide-y divide-border/60 md:grid-cols-4 md:divide-y-0">
+            {data.stats.map((stat) => (
+              <div key={stat.label} className="px-4 py-8 text-center md:px-6 md:py-10">
+                <AnimatedCounter value={stat.value} suffix={stat.suffix} />
+                <p className="mt-2 text-[11px] font-bold uppercase tracking-[0.14em] text-muted">
+                  {stat.label}
+                </p>
+              </div>
             ))}
           </div>
-        )}
+
+          {data.platforms?.length > 0 && (
+            <div className="flex flex-wrap items-center justify-center gap-3 border-t border-border/60 bg-cream/40 px-4 py-3 dark:bg-background/50">
+              <span className="text-[10px] font-bold uppercase tracking-widest text-muted">Rated on</span>
+              {data.platforms.map((p) => (
+                <span
+                  key={p}
+                  className="rounded-full border border-border bg-white px-3 py-1 text-[11px] font-semibold text-heading dark:bg-card"
+                >
+                  {p}
+                </span>
+              ))}
+            </div>
+          )}
+        </div>
       </div>
     </section>
   )

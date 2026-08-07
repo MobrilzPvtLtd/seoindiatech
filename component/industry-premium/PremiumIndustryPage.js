@@ -17,7 +17,7 @@ const PremiumFinalCta = dynamic(() => import('./PremiumFinalCta'))
 
 export default function PremiumIndustryPage({ content }) {
   return (
-    <>
+    <div className="premium-industry-page">
       <PremiumHero data={content.hero} />
       <TrustStatsBar data={content.trust} />
       <WhyChooseGrid data={content.whyChoose} />
@@ -33,6 +33,6 @@ export default function PremiumIndustryPage({ content }) {
       <PremiumFinalCta data={content.finalCta} />
       <StickyMobileCta label={content.finalCta.primaryCta.label} href={content.finalCta.primaryCta.href} />
       <div className="h-16 lg:hidden" aria-hidden="true" />
-    </>
+    </div>
   )
 }

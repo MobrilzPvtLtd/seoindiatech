@@ -3,10 +3,12 @@ export default function SectionHeader({
   title,
   highlight,
   description,
+  subtitle,
   align = 'center',
   dark = false,
   className = '',
 }) {
+  const desc = description || subtitle
   const alignClass =
     align === 'center' ? 'text-center mx-auto' : 'text-left max-w-none'
   const titleColor = dark ? '!text-white' : 'text-heading'
@@ -37,9 +39,9 @@ export default function SectionHeader({
           </>
         )}
       </h2>
-      {description && (
+      {desc && (
         <p className={`mt-4 text-base leading-relaxed md:text-lg ${descColor}`}>
-          {description}
+          {desc}
         </p>
       )}
     </div>

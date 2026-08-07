@@ -81,7 +81,7 @@ export default function PremiumIndustrySchema({ content, url }) {
       {
         '@type': 'MedicalBusiness',
         '@id': `${url}#medicalbusiness`,
-        name: `SEO India Tech — ${content.name} SEO Services`,
+        name: `SEO India Tech | ${content.name} SEO Services`,
         description: content.seo.description,
         url,
         medicalSpecialty: 'PlasticSurgery',
