@@ -42,7 +42,7 @@ const faqs = [
     {
       question: 'Q7. How often should I post on my Google Business Profile?',
       answer:
-        'We recommend weekly posts with offers, updates, and photos—consistent activity signals relevance and keeps your listing engaging for searchers comparing local options.',
+        'We recommend weekly posts with offers, updates, and photos-consistent activity signals relevance and keeps your listing engaging for searchers comparing local options.',
     },
     {
       question: 'Q8. Can GBP optimization help with voice search and AI answers?',

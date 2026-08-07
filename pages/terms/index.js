@@ -5,13 +5,29 @@ import Link from 'next/link';
 import { Check } from 'lucide-react';
 import SeoHead from '@/component/common/SeoHead';
 import { getPageSeo } from '@/utils/pageSeoRegistry';
+import { buildPageGraph, buildWebPageSchema } from '@/utils/schemaBuilders';
+import { SITE_URL } from '@/utils/siteConfig';
 
 const seo = getPageSeo('/terms');
+const pageUrl = `${SITE_URL}/terms`;
+const schema = buildPageGraph({
+  breadcrumbs: [
+    { name: 'Home', url: `${SITE_URL}/` },
+    { name: 'Terms of Service', url: pageUrl },
+  ],
+  extra: [
+    buildWebPageSchema({
+      url: pageUrl,
+      name: seo.title,
+      description: seo.description,
+    }),
+  ],
+});
 
 export default function TermsOfService() {
   return (
     <>
-     <SeoHead title={seo.title} description={seo.description} path="/terms" />
+     <SeoHead title={seo.title} description={seo.description} path="/terms" schema={schema} />
       <main className="bg-background min-h-screen py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-8">
@@ -26,7 +42,7 @@ export default function TermsOfService() {
                 Please read these terms carefully before using our services
               </p>
               <span className="inline-block bg-primary/10 text-primary text-sm px-3 py-1 rounded-full">
-                Last Updated: May 2023
+                Last Updated: August 2026
               </span>
             </div>
 

@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react'
 
 /**
- * Lenis smooth scroll — deferred until idle so first paint / hydration stay fast.
+ * Lenis smooth scroll - deferred until idle so first paint / hydration stay fast.
  * Skipped on mobile and when user prefers reduced motion.
  */
 export default function SmoothScroll({ children }) {

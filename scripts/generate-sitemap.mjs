@@ -50,9 +50,11 @@ function readSource(relPath) {
 }
 
 function extractBlogPaths() {
-  const text = readSource('utils/BlogPost.js')
-  const slugs = [...text.matchAll(/^\s*slug:\s*'([^']+)'/gm)].map((m) => m[1])
-  return slugs.map((slug) => `/blog/${slug}`)
+  const legacyText = readSource('utils/BlogPost.legacy.js')
+  const catalogText = readSource('utils/blog/premium/blogCatalog.js')
+  const legacySlugs = [...legacyText.matchAll(/^\s*slug:\s*['"]([^'"]+)['"]/gm)].map((m) => m[1])
+  const premiumSlugs = [...catalogText.matchAll(/slug:\s*['"]([^'"]+)['"]/g)].map((m) => m[1])
+  return [...new Set([...premiumSlugs, ...legacySlugs])].map((slug) => `/blog/${slug}`)
 }
 
 function extractIndustryPaths() {

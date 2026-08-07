@@ -8,13 +8,14 @@
   --color-secondary: #2a255d;
   --color-accent: #a4ddfb;
   --color-accent-purple: #706295;
-  --color-neutral: #b0a8cc;
+  --color-neutral: #7a7299;
   --color-cta: #6b2e88;
   --color-cta-hover: #5a2674;
   --color-surface: #f3f6fe;
   --color-heading: #262425;
   --color-body: #262425;
-  --color-muted: #706295;
+  --color-muted: #5a4f72;
+  --color-subtle: #7a7299;
   --color-border: #d8d0e8;
   --color-hero-bg: #2a255d;
   --color-card: #ffffff;
@@ -37,13 +38,14 @@
   --color-secondary: #2a255d;
   --color-accent: #a4ddfb;
   --color-accent-purple: #706295;
-  --color-neutral: #b0a8cc;
+  --color-neutral: #7a7299;
   --color-cta: #6b2e88;
   --color-cta-hover: #5a2674;
   --color-surface: #f3f6fe;
   --color-heading: #262425;
   --color-body: #262425;
-  --color-muted: #706295;
+  --color-muted: #5a4f72;
+  --color-subtle: #7a7299;
   --color-border: #d8d0e8;
   --color-hero-bg: #2a255d;
   --color-card: #ffffff;
@@ -117,6 +119,8 @@ body {
   background-color: var(--background);
   color: var(--color-body);
   font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.65;
   transition: background-color 0.3s, color 0.3s;
   overscroll-behavior-y: none;
   text-rendering: optimizeLegibility;
@@ -217,6 +221,52 @@ html.lenis, html.lenis body { height: auto; }
   border: 1px solid rgba(216, 208, 232, 0.8);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
+}
+
+/* Premium industry pages - readable body copy */
+.premium-industry-page {
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.premium-industry-page .premium-prose {
+  color: var(--color-body);
+  font-size: 1.0625rem;
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+.premium-industry-page .premium-list-item {
+  color: var(--color-body);
+  font-size: 1rem;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+.dark .premium-industry-page .premium-prose {
+  color: var(--color-body);
+}
+
+.dark .premium-industry-page .premium-list-item {
+  color: var(--color-body);
+}
+
+/* Blog article readability */
+.blog-article-body p,
+.blog-article-body li {
+  color: var(--color-body);
+  line-height: 1.8;
+}
+
+.blog-article-body .text-muted {
+  color: var(--color-muted);
+}
+
+/* Accessible nav link baseline */
+.nav-link {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
 }
 
 .card-premium {

@@ -90,7 +90,7 @@ export default function index() {
         schema={schemaData}
       />
       <Promotion />
-      <VisibleFaq faqs={PAGE_FAQS.promotionAndAds} minCount={8} showSchema />
+      <VisibleFaq faqs={PAGE_FAQS.promotionAndAds} minCount={8} />
     </>
   )
 }

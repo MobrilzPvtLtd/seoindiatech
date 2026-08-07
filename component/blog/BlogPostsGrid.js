@@ -13,9 +13,10 @@ const BlogPostsGrid = () => (
           <span className="w-2 h-2 bg-primary dark:bg-accent rounded-full" />
           Blog
         </div>
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-heading leading-tight mb-4">
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-heading leading-tight mb-4">
           Latest Insights
-        </h2>
+        </h1>
+        <h2 className="sr-only">SEO and digital marketing articles</h2>
         <div className="w-20 h-1.5 bg-primary dark:bg-primary rounded-full mx-auto mb-6"></div>
         <p className="text-muted text-lg max-w-2xl mx-auto">
           Keep your business future-ready with fresh strategies and smart tools.

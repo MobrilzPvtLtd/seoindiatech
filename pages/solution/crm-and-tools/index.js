@@ -97,7 +97,7 @@ export default function index() {
         schema={schemaData}
       />
       <CRMTools />
-      <VisibleFaq faqs={PAGE_FAQS.crmAndTools} minCount={8} showSchema />
+      <VisibleFaq faqs={PAGE_FAQS.crmAndTools} minCount={8} />
     </>
   )
 }

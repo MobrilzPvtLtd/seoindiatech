@@ -12,7 +12,7 @@ export default function SectionHeader({
   const alignClass =
     align === 'center' ? 'text-center mx-auto' : 'text-left max-w-none'
   const titleColor = dark ? '!text-white' : 'text-heading'
-  const descColor = dark ? 'text-white/70' : 'text-muted'
+  const descColor = dark ? 'text-white/90' : 'text-muted'
 
   return (
     <div className={`max-w-3xl mb-12 md:mb-16 ${alignClass} ${className}`}>
@@ -40,7 +40,7 @@ export default function SectionHeader({
         )}
       </h2>
       {desc && (
-        <p className={`mt-4 text-base leading-relaxed md:text-lg ${descColor}`}>
+        <p className={`mt-4 text-base leading-relaxed md:text-lg font-normal ${descColor}`}>
           {desc}
         </p>
       )}

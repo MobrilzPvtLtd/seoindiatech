@@ -1,189 +1,66 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { useRouter } from 'next/router'
+import SeoHead from '@/component/common/SeoHead'
+import BlogPostSchema from '@/component/blog/BlogPostSchema'
+import PremiumBlogArticle from '@/component/blog/PremiumBlogArticle'
+import LegacyBlogArticle from '@/component/blog/LegacyBlogArticle'
 import posts from '@/utils/BlogPost'
+import { absoluteUrl } from '@/utils/siteConfig'
 import Link from 'next/link'
 
-export default function BlogDetail() {
-  const router = useRouter()
-  const { slug: postSlug } = router.query // renamed dynamic route variable
-
-  const post = posts.find((p) => p.slug === postSlug)
-  const recent = posts.filter((p) => p.slug !== postSlug).slice(0, 4)
-
-  if (!post) return null
-
-  const handleRecentClick = (slug) => {
-    router.push(`/blog/${slug}`)
+export default function BlogDetailPage({ post }) {
+  if (!post) {
+    return (
+      <>
+        <SeoHead title="Page Not Found" description="The requested blog post could not be found." path="/blog" noindex />
+        <section className="min-h-screen flex items-center justify-center bg-white dark:bg-background pt-32">
+        <div className="text-center px-6">
+          <h1 className="text-6xl font-bold text-heading mb-4">404</h1>
+          <p className="text-muted text-lg mb-8">Blog post not found.</p>
+          <Link
+            href="/blog"
+            className="inline-flex items-center px-6 py-3 bg-primary text-white font-semibold rounded-full"
+          >
+            Back to Blog
+          </Link>
+        </div>
+      </section>
+      </>
+    )
   }
+
+  const pagePath = `/blog/${post.slug}`
+  const pageUrl = absoluteUrl(pagePath)
+  const isPremium = Boolean(post.premium)
 
   return (
     <>
-      {/* Meta Title & Description */}
-      <Head>
-        <title>{post.metaTitle} | SEO India Tech</title>
-        <meta name="description" content={post.metaDesc} />
-        <link rel="canonical" href={`https://www.seoindiatech.com/blog/${post.slug}`} />
-        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
-        <meta property="og:title" content={post.metaTitle} />
-        <meta property="og:description" content={post.metaDesc} />
-        <meta property="og:image" content={`https://www.seoindiatech.com${post.image}`} />
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content={`https://www.seoindiatech.com/blog/${post.slug}`} />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={post.metaTitle} />
-        <meta name="twitter:description" content={post.metaDesc} />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'Article',
-              headline: post.title,
-              description: post.metaDesc,
-              image: `https://www.seoindiatech.com${post.image}`,
-              url: `https://www.seoindiatech.com/blog/${post.slug}`,
-              author: { '@type': 'Organization', name: 'SEO India Tech' },
-              publisher: {
-                '@type': 'Organization',
-                name: 'SEO India Tech',
-                logo: { '@type': 'ImageObject', url: 'https://www.seoindiatech.com/sit-transparent.png' },
-              },
-            }),
-          }}
-        />
-      </Head>
-
-      <section className="bg-white dark:bg-background pt-32 pb-12 px-4 md:px-8">
-        <div className="max-w-4xl mx-auto">
-          {/* Main Blog Content */}
-          <div className="mb-10">
-            <div className="mb-6">
-              <Image
-                src={post.image}
-                alt={post.title}
-                width={900}
-                height={400}
-                className="rounded-xl object-cover w-full h-72"
-              />
-            </div>
-
-            <div className="mb-4 text-sm text-muted">
-              <span className="bg-primary text-white px-3 py-1 rounded-full text-xs">
-                {post.category}
-              </span>
-            </div>
-
-            <h1 className="text-3xl md:text-4xl font-bold mb-6 text-heading">
-              {post.title}
-            </h1>
-
-            {/* FULL CONTENT */}
-            <div className="space-y-6 text-lg">
-              {post.content?.map((block, index) => {
-                if (block.type === 'paragraph') {
-                  return (
-                    <p
-                      key={index}
-                      className="leading-relaxed text-justify text-body"
-                    >
-                      {block.text}
-
-                      {block.link && (
-                        <Link href={block.link.url}>
-                          <span className="text-primary dark:text-accent font-semibold hover:underline">
-                            {block.link.text}
-                          </span>
-                        </Link>
-                      )}
-
-                      {block.textAfter}
-                    </p>
-                  )
-                }
-
-                if (block.type === 'heading') {
-                  return (
-                    <h2
-                      key={index}
-                      className="text-2xl font-semibold mt-10 text-heading"
-                    >
-                      {block.text}
-                    </h2>
-                  )
-                }
-
-                if (block.type === 'list') {
-                  return (
-                    <ul
-                      key={index}
-                      className="list-disc pl-6 space-y-2 text-justify text-body"
-                    >
-                      {block.items.map((item, i) => (
-                        <li
-                          key={i}
-                          dangerouslySetInnerHTML={{ __html: item }}
-                        />
-                      ))}
-                    </ul>
-                  )
-                }
-
-                if (block.type === 'ordered-list') {
-                  return (
-                    <ol
-                      key={index}
-                      className="list-decimal pl-6 space-y-2 text-justify text-body"
-                    >
-                      {block.items.map((item, i) => (
-                        <li
-                          key={i}
-                          dangerouslySetInnerHTML={{ __html: item }}
-                        />
-                      ))}
-                    </ol>
-                  )
-                }
-
-                return null
-              })}
-            </div>
-          </div>
-
-          {/* Recent Posts Below Blog (commented out as in original) */}
-          {/* <div className="mt-16">
-            <h3 className="text-2xl font-bold mb-6 text-heading">
-              Recent Posts
-            </h3>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              {recent.map((item) => (
-                <div
-                  key={item.slug}
-                  onClick={() => handleRecentClick(item.slug)}
-                  className="cursor-pointer bg-card dark:bg-card rounded-xl shadow-md hover:shadow-lg transition p-4"
-                >
-                  <Image
-                    src={item.image}
-                    alt={item.title}
-                    width={400}
-                    height={200}
-                    className="rounded-lg object-cover w-full h-40 mb-4"
-                  />
-
-                  <span className="text-xs bg-primary text-white px-2 py-1 rounded">
-                    {item.category}
-                  </span>
-
-                  <h4 className="mt-3 font-semibold text-heading">
-                    {item.title}
-                  </h4>
-                </div>
-              ))}
-            </div>
-          </div> */}
-        </div>
+      <SeoHead
+        title={post.metaTitle}
+        description={post.metaDesc}
+        path={pagePath}
+        image={post.image}
+        type="article"
+        publishedTime={post.datePublished}
+        modifiedTime={post.dateModified || post.datePublished}
+        author={post.author?.name}
+        lcpImage={post.image}
+      />
+      <BlogPostSchema post={post} url={pageUrl} />
+      <section className="bg-white dark:bg-background pt-32 pb-16 px-4 md:px-8">
+        {isPremium ? <PremiumBlogArticle post={post} /> : <LegacyBlogArticle post={post} />}
       </section>
     </>
   )
+}
+
+export async function getStaticPaths() {
+  return {
+    paths: posts.map((post) => ({ params: { slug: post.slug } })),
+    fallback: false,
+  }
+}
+
+export async function getStaticProps({ params }) {
+  const post = posts.find((p) => p.slug === params.slug)
+  if (!post) return { notFound: true }
+  return { props: { post } }
 }

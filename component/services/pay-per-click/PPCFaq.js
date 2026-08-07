@@ -41,12 +41,12 @@ const faqs = [
     {
       question: 'Q7. How do you reduce wasted ad spend in PPC campaigns?',
       answer:
-        'We use negative keywords, search term reviews, audience exclusions, and bid adjustments based on conversion data—pausing underperformers and scaling what drives leads at target CPA.',
+        'We use negative keywords, search term reviews, audience exclusions, and bid adjustments based on conversion data-pausing underperformers and scaling what drives leads at target CPA.',
     },
     {
       question: 'Q8. Do you manage Google Ads and Microsoft Ads together?',
       answer:
-        'Yes. We run search campaigns on Google and Bing where appropriate—importing structure while adapting bids and copy for each platform\'s audience and cost dynamics.',
+        'Yes. We run search campaigns on Google and Bing where appropriate-importing structure while adapting bids and copy for each platform\'s audience and cost dynamics.',
     },
   ]
 

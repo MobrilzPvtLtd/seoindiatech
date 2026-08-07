@@ -33,8 +33,8 @@ export default function PremiumHero({ data }) {
     { label: 'Plastic Surgery SEO' },
   ]
 
-  const bgDesktop = data.backgroundImage || '/images/industries/premium/plastic-surgery-hero.webp'
-  const bgMobile = data.backgroundImageMobile || '/images/industries/premium/plastic-surgery-hero-mobile.webp'
+  const bgDesktop = data.backgroundImage
+  const bgMobile = data.backgroundImageMobile
   const heroStats = data.heroStats || [
     { value: '186%', label: 'Avg. traffic growth' },
     { value: '94%', label: 'More consults' },
@@ -46,30 +46,34 @@ export default function PremiumHero({ data }) {
     <section className="relative min-h-[min(100svh,880px)] overflow-hidden bg-secondary">
       {/* Background */}
       <div className="absolute inset-0" aria-hidden="true">
-        <Image
-          src={bgMobile}
-          alt=""
-          fill
-          className="object-cover object-center md:hidden"
-          priority
-          sizes="100vw"
-        />
-        <Image
-          src={bgDesktop}
-          alt=""
-          fill
-          className="hidden object-cover object-[center_30%] md:block"
-          priority
-          sizes="100vw"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#1a1535]/97 via-secondary/92 to-secondary/70" />
-        <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/20 to-transparent" />
+        {bgDesktop && (
+          <Image
+            src={bgDesktop}
+            alt=""
+            fill
+            className="hidden object-cover object-[center_30%] md:block"
+            priority
+            sizes="100vw"
+          />
+        )}
+        {bgMobile && (
+          <Image
+            src={bgMobile}
+            alt=""
+            fill
+            className="object-cover object-center md:hidden"
+            priority
+            sizes="100vw"
+          />
+        )}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#120f28]/98 via-[#1a1535]/96 to-[#1a1535]/88" />
+        <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/40 to-transparent" />
         <div className="pointer-events-none absolute inset-0 hero-grid-bg opacity-[0.12]" />
       </div>
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 pb-20 pt-28 sm:px-6 md:pb-24 md:pt-32 lg:px-8">
         <nav aria-label="Breadcrumb" className="mb-6 lg:mb-8">
-          <ol className="flex flex-wrap items-center gap-1.5 text-xs text-white/50 sm:text-sm">
+          <ol className="flex flex-wrap items-center gap-1.5 text-xs text-white/70 sm:text-sm">
             {breadcrumbs.map((crumb, i) => (
               <li key={crumb.label} className="flex items-center gap-1.5">
                 {i > 0 && <ChevronRight className="h-3.5 w-3.5 shrink-0 opacity-40" aria-hidden="true" />}
@@ -95,18 +99,18 @@ export default function PremiumHero({ data }) {
               </span>
             )}
 
-            <h1 className="font-heading text-[1.85rem] font-extrabold leading-[1.1] tracking-tight text-white sm:text-4xl md:text-[2.75rem] lg:text-5xl">
+            <h1 className="font-heading text-[1.85rem] font-extrabold leading-[1.12] tracking-tight text-white drop-shadow-[0_2px_12px_rgba(0,0,0,0.45)] sm:text-4xl md:text-[2.75rem] lg:text-5xl">
               {data.h1}
             </h1>
 
-            <div className="mt-5 space-y-3 border-l-2 border-accent/50 pl-5">
+            <div className="mt-5 space-y-4 border-l-2 border-accent/60 pl-5">
               {data.paragraphs.map((p, i) => (
                 <p
                   key={p.slice(0, 48)}
-                  className={`leading-relaxed ${
+                  className={`leading-[1.75] ${
                     i === 0
                       ? 'text-base font-medium text-white sm:text-lg'
-                      : 'text-sm text-white/75 sm:text-base'
+                      : 'text-[15px] text-white/92 sm:text-base'
                   }`}
                 >
                   {p}
@@ -115,7 +119,7 @@ export default function PremiumHero({ data }) {
             </div>
 
             {/* CTA card */}
-            <div className="mt-8 rounded-2xl border border-white/15 bg-white/95 p-4 shadow-[0_20px_50px_-12px_rgba(0,0,0,0.4)] backdrop-blur-sm sm:p-5">
+            <div className="mt-8 rounded-2xl border border-white/20 bg-white p-4 shadow-[0_20px_50px_-12px_rgba(0,0,0,0.45)] sm:p-5">
               <form onSubmit={handleAuditSubmit} className="flex flex-col gap-3 sm:flex-row">
                 <label className="sr-only" htmlFor="hero-website-url">
                   Enter your website
@@ -127,7 +131,7 @@ export default function PremiumHero({ data }) {
                   placeholder="www.yourpractice.com"
                   value={website}
                   onChange={(e) => setWebsite(e.target.value)}
-                  className="min-h-12 flex-1 rounded-xl border border-border bg-white px-4 text-sm text-heading placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-primary/40"
+                  className="min-h-12 flex-1 rounded-xl border border-border bg-white px-4 text-base text-heading placeholder:text-heading/45 focus:outline-none focus:ring-2 focus:ring-primary/40"
                 />
                 <button
                   type="submit"
@@ -137,7 +141,7 @@ export default function PremiumHero({ data }) {
                   <ArrowRight className="h-4 w-4" />
                 </button>
               </form>
-              <div className="mt-3 flex flex-wrap items-center justify-between gap-2 text-xs text-muted">
+              <div className="mt-3 flex flex-wrap items-center justify-between gap-2 text-sm text-white/80">
                 <span>Free audit. No obligation.</span>
                 {data.rating && (
                   <span className="inline-flex items-center gap-1 font-semibold text-primary">
@@ -154,7 +158,7 @@ export default function PremiumHero({ data }) {
                 {data.trustAwards.map((award) => (
                   <span
                     key={award}
-                    className="rounded-md border border-white/12 bg-white/8 px-2.5 py-1.5 text-[10px] font-bold uppercase tracking-wider text-white/80"
+                    className="rounded-md border border-white/20 bg-white/12 px-3 py-1.5 text-[11px] font-bold uppercase tracking-wide text-white"
                   >
                     {award}
                   </span>
@@ -170,7 +174,7 @@ export default function PremiumHero({ data }) {
                     <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-accent text-secondary">
                       <Check className="h-3.5 w-3.5 stroke-[3]" aria-hidden="true" />
                     </span>
-                    <span className="text-sm leading-snug text-white/88">{benefit}</span>
+                    <span className="text-[15px] leading-relaxed text-white">{benefit}</span>
                   </li>
                 ))}
               </ul>
@@ -193,7 +197,7 @@ export default function PremiumHero({ data }) {
               <div className="relative mb-6 aspect-[16/10] overflow-hidden rounded-2xl border border-white/10 bg-[#0e0c18]/40">
                 <Image
                   src={data.image?.src || '/images/industries/heroes/plastic-surgery-seo.svg'}
-                  alt={data.image?.alt || 'Plastic surgery SEO'}
+                  alt={data.image?.alt || data.h1 || 'Industry SEO services illustration'}
                   fill
                   className="object-contain p-4"
                   sizes="400px"
@@ -215,7 +219,7 @@ export default function PremiumHero({ data }) {
                     >
                       <Icon className="mx-auto mb-1.5 h-4 w-4 text-accent" aria-hidden="true" />
                       <p className="font-mono text-xl font-bold text-white">{stat.value}</p>
-                      <p className="mt-0.5 text-[10px] font-medium uppercase tracking-wide text-white/55">
+                      <p className="mt-0.5 text-[11px] font-semibold uppercase tracking-wide text-white/80">
                         {stat.label}
                       </p>
                     </div>

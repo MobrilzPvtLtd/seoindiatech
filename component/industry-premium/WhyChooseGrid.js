@@ -14,7 +14,7 @@ export default function WhyChooseGrid({ data }) {
         className="mb-14"
       />
 
-      {/* Featured card — draws eye first */}
+      {/* Featured card - draws eye first */}
       {featured && (
         <article className="mb-6 overflow-hidden rounded-3xl border border-primary/20 bg-gradient-to-br from-white via-white to-primary/5 p-8 shadow-premium dark:from-card dark:to-primary/10 md:p-10">
           <div className="grid gap-8 md:grid-cols-[auto_1fr] md:items-start">
@@ -23,11 +23,11 @@ export default function WhyChooseGrid({ data }) {
             </div>
             <div>
               <h3 className="font-heading text-2xl font-bold text-heading md:text-3xl">{featured.title}</h3>
-              <p className="mt-3 text-base leading-relaxed text-body">{featured.description}</p>
+              <p className="premium-prose mt-3">{featured.description}</p>
               {featured.points?.length > 0 && (
-                <ul className="mt-5 grid gap-2 sm:grid-cols-3">
+                <ul className="mt-5 grid gap-2.5 sm:grid-cols-3">
                   {featured.points.map((point) => (
-                    <li key={point} className="flex items-start gap-2 text-sm text-muted">
+                    <li key={point} className="premium-list-item flex items-start gap-2.5">
                       <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
                       {point}
                     </li>
@@ -43,18 +43,18 @@ export default function WhyChooseGrid({ data }) {
         {rest.map((card) => (
           <article
             key={card.title}
-            className="group rounded-2xl border border-border bg-white p-6 transition-all duration-300 hover:border-primary/25 hover:shadow-premium dark:bg-card"
+            className="group rounded-2xl border border-border bg-white p-6 transition-all duration-300 hover:border-primary/25 hover:shadow-premium dark:bg-card md:p-7"
           >
             <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-white">
               <PremiumIcon name={card.icon} />
             </div>
-            <h3 className="text-lg font-bold text-heading">{card.title}</h3>
-            <p className="mt-2 text-sm leading-relaxed text-body">{card.description}</p>
+            <h3 className="text-lg font-bold leading-snug text-heading md:text-xl">{card.title}</h3>
+            <p className="premium-prose mt-3">{card.description}</p>
             {card.points?.length > 0 && (
-              <ul className="mt-4 space-y-2 border-t border-border/60 pt-4">
+              <ul className="mt-5 space-y-2.5 border-t border-border/70 pt-5">
                 {card.points.map((point) => (
-                  <li key={point} className="flex items-start gap-2 text-xs text-muted">
-                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
+                  <li key={point} className="premium-list-item flex items-start gap-2.5">
+                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
                     {point}
                   </li>
                 ))}

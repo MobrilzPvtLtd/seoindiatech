@@ -40,12 +40,12 @@ const faqs = [
     {
       question: 'Q7. How does AI improve digital marketing performance?',
       answer:
-        'AI accelerates keyword research, ad testing, content drafts, and anomaly detection—while strategists validate outputs so campaigns stay accurate, on-brand, and compliant.',
+        'AI accelerates keyword research, ad testing, content drafts, and anomaly detection-while strategists validate outputs so campaigns stay accurate, on-brand, and compliant.',
     },
     {
       question: 'Q8. What industries do you serve with digital marketing?',
       answer:
-        'We serve e-commerce, SaaS, healthcare, real estate, education, home services, and 41 industry verticals—with strategies adapted to each sector\'s buyer journey.',
+        'We serve e-commerce, SaaS, healthcare, real estate, education, home services, and 41 industry verticals-with strategies adapted to each sector\'s buyer journey.',
     },
   ]
 

@@ -87,7 +87,7 @@ export default function index() {
         schema={schemaData}
       />
       <WorkFlow />
-      <VisibleFaq faqs={PAGE_FAQS.workflow} minCount={8} showSchema />
+      <VisibleFaq faqs={PAGE_FAQS.workflow} minCount={8} />
     </>
   )
 }

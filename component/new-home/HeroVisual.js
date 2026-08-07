@@ -35,13 +35,13 @@ export default function HeroVisual() {
               SEO Process
             </p>
             <p className="mt-0.5 text-sm font-bold text-white sm:text-base">
-              Audit → Optimize → Rank in Google &amp; AI Search
+              Audit · Optimize · Rank in Google &amp; AI Search
             </p>
           </div>
         </div>
       </div>
 
-      {/* Process cards — desktop only to reduce mobile bandwidth */}
+      {/* Process cards - desktop only to reduce mobile bandwidth */}
       <div className="mt-3 hidden sm:grid grid-cols-3 gap-2 sm:gap-3">
         {HERO_PROCESS_STEPS.map((step) => (
           <div

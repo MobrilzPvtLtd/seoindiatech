@@ -7,12 +7,15 @@
     "build": "next build",
     "postbuild": "node scripts/generate-sitemap.mjs",
     "generate-sitemap": "node scripts/generate-sitemap.mjs",
+    "generate-images": "node scripts/generate-blog-images.mjs",
     "start": "next start",
     "lint": "next lint",
     "export": "next export",
     "normalize-text": "node scripts/normalize-unicode.js",
     "check-unicode": "node scripts/check-unicode.js",
-    "check-seo": "node scripts/check-seo.js"
+    "check-seo": "node scripts/check-seo.js",
+    "check-headings": "node scripts/heading-check.js",
+    "push-indexing": "node scripts/push-indexing.mjs"
   },
   "dependencies": {
     "@netlify/next": "^1.4.9",

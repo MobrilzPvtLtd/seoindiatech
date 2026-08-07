@@ -15,6 +15,9 @@ export default function SeoHead({
   noindex = false,
   schema,
   lcpImage,
+  publishedTime,
+  modifiedTime,
+  author,
 }) {
   return (
     <>
@@ -27,6 +30,9 @@ export default function SeoHead({
         type={type}
         noindex={noindex}
         lcpImage={lcpImage}
+        publishedTime={publishedTime}
+        modifiedTime={modifiedTime}
+        author={author}
       />
       <JsonLd data={schema} />
     </>

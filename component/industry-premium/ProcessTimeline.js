@@ -43,11 +43,11 @@ export default function ProcessTimeline({ data }) {
                           {stepIndex + 1}
                         </span>
                       </div>
-                      <h3 className="text-sm font-bold uppercase tracking-wide text-heading">
+                      <h3 className="text-base font-bold leading-snug text-heading md:text-lg">
                         {step.title}
                       </h3>
                     </div>
-                    <p className="text-sm leading-relaxed text-body">{step.description}</p>
+                    <p className="premium-prose">{step.description}</p>
                   </li>
                 )
               })}

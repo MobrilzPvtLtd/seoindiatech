@@ -45,7 +45,7 @@ const WorkFlowService = () => {
         <div className="bg-card dark:bg-card shadow-xl rounded-2xl overflow-hidden">
           {/* Header with blue gradient */}
           <div className="bg-gradient-to-r from-gray-600 to-gray-800 dark:from-gray-700 dark:to-surface px-6 md:px-10 py-10 text-white">
-            <h1 className="text-3xl md:text-4xl font-bold text-center">Workflow</h1>
+            <h2 className="text-3xl md:text-4xl font-bold text-center">Workflow</h2>
             <div className="w-20 h-1 bg-white/50 mx-auto my-4 rounded-full"></div>
             <h2 className="text-xl md:text-2xl font-medium text-center text-white/90">Why an Effective Workflow Process Matters</h2>
           </div>

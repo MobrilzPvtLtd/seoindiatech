@@ -7,7 +7,7 @@ export default function ServicesIncluded({ data }) {
   return (
     <PremiumSection id="services" variant="white">
       <div className="lg:grid lg:grid-cols-12 lg:gap-14 lg:items-start">
-        {/* Sticky sidebar — anchors the section */}
+        {/* Sticky sidebar - anchors the section */}
         <div className="mb-10 lg:col-span-4 lg:mb-0 lg:sticky lg:top-28">
           <PremiumSectionHeader
             badge={data.badge}
@@ -27,7 +27,7 @@ export default function ServicesIncluded({ data }) {
           )}
         </div>
 
-        {/* Service cards — scannable list */}
+        {/* Service cards - scannable list */}
         <div className="lg:col-span-8 space-y-4">
           {data.items.map((item, index) => (
             <article
@@ -35,7 +35,7 @@ export default function ServicesIncluded({ data }) {
               className="group flex gap-5 rounded-2xl border border-border bg-cream/30 p-5 transition-all hover:border-primary/30 hover:bg-white hover:shadow-md dark:bg-background/50 dark:hover:bg-card md:p-6"
             >
               <div className="flex shrink-0 flex-col items-center gap-2">
-                <span className="font-mono text-xs font-bold text-primary/60">
+                <span className="font-mono text-xs font-bold text-primary">
                   {String(index + 1).padStart(2, '0')}
                 </span>
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-secondary text-white">
@@ -43,20 +43,37 @@ export default function ServicesIncluded({ data }) {
                 </div>
               </div>
               <div className="min-w-0 flex-1">
-                <h3 className="text-lg font-bold text-heading group-hover:text-primary transition-colors">
-                  {item.title}
-                </h3>
-                <p className="mt-1.5 text-sm leading-relaxed text-body">{item.description}</p>
-                <ul className="mt-3 flex flex-wrap gap-2">
+                {item.href ? (
+                  <Link href={item.href} className="block">
+                    <h3 className="text-lg font-bold text-heading group-hover:text-primary transition-colors">
+                      {item.title}
+                    </h3>
+                  </Link>
+                ) : (
+                  <h3 className="text-lg font-bold text-heading group-hover:text-primary transition-colors">
+                    {item.title}
+                  </h3>
+                )}
+                <p className="premium-prose mt-2">{item.description}</p>
+                <ul className="mt-4 flex flex-wrap gap-2">
                   {item.benefits.map((b) => (
                     <li
                       key={b}
-                      className="rounded-full border border-primary/15 bg-primary/5 px-3 py-1 text-[11px] font-medium text-heading"
+                      className="rounded-full border border-primary/15 bg-primary/5 px-3 py-1.5 text-xs font-medium text-heading/90"
                     >
                       {b}
                     </li>
                   ))}
                 </ul>
+                {item.href && (
+                  <Link
+                    href={item.href}
+                    className="mt-4 inline-flex items-center gap-1 text-sm font-bold text-primary"
+                  >
+                    Learn more
+                    <ArrowRight className="h-4 w-4" />
+                  </Link>
+                )}
               </div>
             </article>
           ))}

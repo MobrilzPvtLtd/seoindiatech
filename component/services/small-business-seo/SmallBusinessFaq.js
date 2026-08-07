@@ -40,7 +40,7 @@ const faqs = [
     {
       question: 'Q7. What is the cost of small business SEO services?',
       answer:
-        'Pricing depends on competition, number of service pages, and locations targeted. We offer flexible monthly plans after a free audit—no long-term lock-in required.',
+        'Pricing depends on competition, number of service pages, and locations targeted. We offer flexible monthly plans after a free audit-no long-term lock-in required.',
     },
     {
       question: 'Q8. Can small business SEO help with Google AI Overviews?',

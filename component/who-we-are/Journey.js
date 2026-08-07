@@ -15,7 +15,7 @@ const Journey = () => {
           <div className="relative rounded-2xl overflow-hidden shadow-xl border border-border">
             <Image
               src="/images/whoweare/me.png"
-              alt="Our Journey at Digitalyzeit"
+              alt="Our journey at SEO India Tech"
               width={800}
               height={600}
               className="w-full h-auto object-cover rounded-2xl transition-transform duration-700 hover:scale-105"

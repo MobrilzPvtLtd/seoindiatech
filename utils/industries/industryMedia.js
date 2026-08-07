@@ -5,7 +5,7 @@ export const CATEGORY_HERO_IMAGES = {
   'service-sector': '/images/industries/service-sector-hero.svg',
 }
 
-/** Per-industry hero illustrations — generated via scripts/generate-industry-hero-svgs.mjs */
+/** Per-industry hero illustrations - generated via scripts/generate-industry-hero-svgs.mjs */
 export const INDUSTRY_HERO_SLUGS = [
   'plastic-surgery-seo',
   'property-management-seo',

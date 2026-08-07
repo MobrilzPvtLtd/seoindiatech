@@ -1,15 +1,30 @@
 {
   "name": "SEO India Tech",
-  "description": "AI-powered SEO and digital marketing agency. Contact for consultations, service inquiries, and SEO audits.",
+  "description": "AI-powered SEO, GEO, AEO, and digital marketing agency. Contact for consultations, SEO audits, and growth strategy.",
   "url": "https://www.seoindiatech.com/",
+  "llms_txt": "https://www.seoindiatech.com/llms.txt",
+  "sitemap": "https://www.seoindiatech.com/sitemap.xml",
   "contact": {
     "phone": "+91-8076676731",
-    "email": "sales@seoindiatech.com"
+    "email": "sales@seoindiatech.com",
+    "address": "E-160, Sector 63, Noida, UP 201301, India"
   },
+  "knowsAbout": [
+    "Search Engine Optimization",
+    "AI Search Optimization",
+    "Generative Engine Optimization",
+    "Answer Engine Optimization",
+    "Google AI Overviews",
+    "Local SEO",
+    "Technical SEO",
+    "Content Marketing",
+    "Pay-Per-Click Advertising"
+  ],
   "actions": [
     {
       "name": "contact",
       "description": "Submit a contact or consultation request",
+      "url": "https://www.seoindiatech.com/contact-us",
       "parameters": {
         "type": "object",
         "properties": {
@@ -24,12 +39,28 @@
     {
       "name": "browse_services",
       "description": "List available SEO and digital marketing services",
+      "url": "https://www.seoindiatech.com/llms.txt",
       "parameters": {
         "type": "object",
         "properties": {
           "category": {
             "type": "string",
-            "description": "Service category such as seo, ppc, or content-marketing"
+            "description": "Service category such as seo, ai-seo, geo, ppc, or content-marketing"
+          }
+        },
+        "required": []
+      }
+    },
+    {
+      "name": "browse_industries",
+      "description": "Find industry-specific SEO programs among 41 verticals",
+      "url": "https://www.seoindiatech.com/industries",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "industry": {
+            "type": "string",
+            "description": "Industry slug e.g. dentist-seo, law-firm-seo, plastic-surgery-seo"
           }
         },
         "required": []

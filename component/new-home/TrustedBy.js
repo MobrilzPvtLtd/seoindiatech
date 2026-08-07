@@ -10,7 +10,7 @@ const clientLogos = [
   { src: '/images/home/intgra.png', alt: 'Advyra' },
 ]
 
-/* Duplicate once for seamless CSS marquee — not 3x */
+/* Duplicate once for seamless CSS marquee - not 3x */
 const marqueeLogos = [...clientLogos, ...clientLogos]
 
 const TrustedBy = () => {

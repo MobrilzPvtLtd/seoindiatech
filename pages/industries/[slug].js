@@ -13,9 +13,12 @@ import { industries } from '@/utils/industries'
 export default function IndustryPage({ industry, premiumContent }) {
   if (!industry) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-background">
-        <h1 className="text-4xl font-bold text-primary">404 - Page Not Found</h1>
-      </div>
+      <>
+        <SeoHead title="Page Not Found" description="The requested industry page could not be found." path="/industries" noindex />
+        <div className="min-h-screen flex items-center justify-center bg-background">
+          <h1 className="text-4xl font-bold text-primary">404 - Page Not Found</h1>
+        </div>
+      </>
     )
   }
 

@@ -2,6 +2,7 @@ import SeoHead from '@/component/common/SeoHead'
 import VisibleFaq from '@/component/common/VisibleFaq'
 import { getPageSeo } from '@/utils/pageSeoRegistry'
 import { PAGE_FAQS } from '@/utils/pageFaqs'
+import { buildIndustriesHubSchema } from '@/utils/schemaBuilders'
 import Image from 'next/image'
 import Link from 'next/link'
 import { INDUSTRY_CATEGORIES, toSlug } from '@/utils/industries'
@@ -12,7 +13,12 @@ const seo = getPageSeo('/industries')
 export default function IndustriesIndexPage() {
   return (
     <>
-      <SeoHead title={seo.title} description={seo.description} path="/industries" />
+      <SeoHead
+        title={seo.title}
+        description={seo.description}
+        path="/industries"
+        schema={buildIndustriesHubSchema({ faqs: PAGE_FAQS.industriesHub })}
+      />
 
       <main className="min-h-screen bg-background pt-28 pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -96,7 +102,7 @@ export default function IndustriesIndexPage() {
           </div>
         </div>
       </main>
-      <VisibleFaq faqs={PAGE_FAQS.industriesHub} minCount={8} showSchema />
+      <VisibleFaq faqs={PAGE_FAQS.industriesHub} minCount={8} />
     </>
   )
 }

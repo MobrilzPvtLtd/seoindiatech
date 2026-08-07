@@ -4,4 +4,33 @@ Disallow: /api/
 Disallow: /new
 Disallow: /old
 
+# AI search crawlers — allowed for discoverability in AI Overviews and answer engines
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
 Sitemap: https://www.seoindiatech.com/sitemap.xml
+LLMs-Txt: https://www.seoindiatech.com/llms.txt

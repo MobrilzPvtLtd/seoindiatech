@@ -66,7 +66,7 @@ const Footer = () => {
           {/* Brand + stats */}
           <div className="sm:col-span-2 lg:col-span-4 space-y-5">
             <BrandLogo variant="onDark" size="lg" />
-            <p className="text-sm leading-relaxed text-white/65 max-w-sm">
+            <p className="text-sm leading-relaxed text-white/80 max-w-sm">
               Global 360-degree digital growth partner - AI-powered SEO, performance marketing,
               and technology for measurable business outcomes.
             </p>
@@ -100,7 +100,7 @@ const Footer = () => {
                   </div>
                   <div className="min-w-0">
                     <p className="font-mono text-sm font-bold leading-none text-white">{value}</p>
-                    <p className="mt-1 text-[11px] leading-snug text-white/50">{label}</p>
+                    <p className="mt-1 text-xs leading-snug text-white/70">{label}</p>
                   </div>
                 </div>
               ))}
@@ -109,13 +109,13 @@ const Footer = () => {
 
           {/* Services */}
           <div className="lg:col-span-2 space-y-4">
-            <h3 className="text-[11px] font-bold text-white uppercase tracking-[0.18em]">Services</h3>
+            <h3 className="text-xs font-bold text-white uppercase tracking-[0.14em]">Services</h3>
             <ul className="space-y-2.5">
               {services.map((item) => (
                 <li key={item.slug}>
                   <Link
                     href={`/services/${item.slug}`}
-                    className="group flex items-center justify-between gap-2 text-sm text-white/55 hover:text-white transition-colors"
+                    className="group flex items-center justify-between gap-2 text-sm text-white/75 hover:text-white transition-colors"
                   >
                     <span>{item.title}</span>
                     <HiArrowUpRight className="w-3.5 h-3.5 shrink-0 opacity-0 group-hover:opacity-100 text-accent transition-all" />
@@ -127,13 +127,13 @@ const Footer = () => {
 
           {/* Solutions */}
           <div className="lg:col-span-2 space-y-4">
-            <h3 className="text-[11px] font-bold text-white uppercase tracking-[0.18em]">Solutions</h3>
+            <h3 className="text-xs font-bold text-white uppercase tracking-[0.14em]">Solutions</h3>
             <ul className="space-y-2.5">
               {solutions.map((item) => (
                 <li key={item.slug}>
                   <Link
                     href={`/solution/${item.slug}`}
-                    className="group flex items-center justify-between gap-2 text-sm text-white/55 hover:text-white transition-colors"
+                    className="group flex items-center justify-between gap-2 text-sm text-white/75 hover:text-white transition-colors"
                   >
                     <span>{item.title}</span>
                     <HiArrowUpRight className="w-3.5 h-3.5 shrink-0 opacity-0 group-hover:opacity-100 text-accent transition-all" />
@@ -145,13 +145,13 @@ const Footer = () => {
 
           {/* Company links */}
           <div className="lg:col-span-4 space-y-4">
-            <h3 className="text-[11px] font-bold text-white uppercase tracking-[0.18em]">Company</h3>
+            <h3 className="text-xs font-bold text-white uppercase tracking-[0.14em]">Company</h3>
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2.5">
               {company.map((item) => (
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="text-sm text-white/55 hover:text-white transition-colors"
+                    className="text-sm text-white/75 hover:text-white transition-colors"
                   >
                     {item.title}
                   </Link>
@@ -205,10 +205,10 @@ const Footer = () => {
       {/* Copyright */}
       <div className="relative border-t border-white/10 bg-black/25">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row justify-between items-center gap-2">
-          <p className="text-xs text-white/45">
+          <p className="text-xs text-white/65">
             &copy; <span suppressHydrationWarning>{currentYear}</span> SEO INDIA TECH. All rights reserved.
           </p>
-          <p className="text-xs text-white/35">
+          <p className="text-xs text-white/60">
             Engineering measurable growth worldwide
           </p>
         </div>

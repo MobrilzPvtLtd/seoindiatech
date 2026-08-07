@@ -66,7 +66,7 @@ const Hero = () => {
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-28 pb-24 md:pt-32 lg:pt-36 lg:pb-28">
         <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-8 xl:gap-12">
-          {/* Left — visible immediately for LCP (no JS animation gate) */}
+          {/* Left - visible immediately for LCP (no JS animation gate) */}
           <div className="text-center lg:text-left text-white hero-copy animate-fade-in-up">
             <h1 className="font-heading text-[1.85rem] font-extrabold leading-[1.08] tracking-tight sm:text-5xl lg:text-[3.25rem] xl:text-[3.5rem]">
               Search &amp; Performance
@@ -102,7 +102,7 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right — hero visual (desktop only; mobile LCP stays on headline text) */}
+          {/* Right - hero visual (desktop only; mobile LCP stays on headline text) */}
           <div className="relative mx-auto w-full max-w-lg lg:max-w-none">
             <div className="relative hidden md:block">
               <HeroVisual />

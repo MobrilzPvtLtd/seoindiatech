@@ -37,7 +37,7 @@ const faqs = [
     {
       question: 'Q7. How does local SEO improve Google Maps rankings?',
       answer:
-        'Local SEO strengthens your Google Business Profile, citations, reviews, and location pages—signals Google uses to rank businesses in the map pack and local organic results.',
+        'Local SEO strengthens your Google Business Profile, citations, reviews, and location pages-signals Google uses to rank businesses in the map pack and local organic results.',
     },
     {
       question: 'Q8. Can local SEO work for multi-location businesses?',

@@ -9,7 +9,7 @@ const VARIANTS = {
 }
 
 /**
- * Premium industry section shell — consistent rhythm, spacing, and backgrounds.
+ * Premium industry section shell - consistent rhythm, spacing, and backgrounds.
  */
 export default function PremiumSection({
   children,

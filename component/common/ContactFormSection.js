@@ -103,7 +103,7 @@ export default function ContactFormSection({ title, description, industries }) {
                   </span>
                   <p className="text-sm leading-relaxed text-body">
                     <span className="font-semibold text-heading">{item.title}</span>
-                    <span className="text-muted"> — {item.desc}</span>
+                    <span className="text-muted"> - {item.desc}</span>
                   </p>
                 </div>
               ))}
@@ -188,7 +188,7 @@ export default function ContactFormSection({ title, description, industries }) {
               {isSubmitting ? 'Submitting...' : 'Submit Request'}
               <Send className="h-4 w-4" />
             </button>
-            <p className="mt-3 text-center text-xs text-muted">We&apos;ll get back to you within 24–48 hours</p>
+            <p className="mt-3 text-center text-xs text-muted">We&apos;ll get back to you within 24-48 hours</p>
           </div>
         </form>
       </div>

@@ -21,15 +21,15 @@ function TestimonialCard({ item }) {
         <Quote className="h-7 w-7 shrink-0 text-primary/20" aria-hidden="true" />
         <Stars />
       </div>
-      <p className="flex-1 text-sm leading-relaxed text-body">&ldquo;{item.text}&rdquo;</p>
+      <p className="flex-1 text-[15px] leading-[1.7] text-heading/85">&ldquo;{item.text}&rdquo;</p>
       <div className="mt-4 flex items-center gap-3 border-t border-border/60 pt-4">
         <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary/10 text-sm font-bold text-primary">
           {item.name.charAt(0)}
         </div>
         <div className="min-w-0">
           <p className="truncate text-sm font-bold text-heading">{item.name}</p>
-          <p className="truncate text-xs text-muted">{item.role}</p>
-          <p className="truncate text-xs text-primary/80">{item.company}</p>
+          <p className="truncate text-sm text-muted">{item.role}</p>
+          <p className="truncate text-sm text-primary">{item.company}</p>
         </div>
       </div>
     </article>

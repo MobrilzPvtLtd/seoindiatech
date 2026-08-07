@@ -15,14 +15,14 @@ export default function CaseStudySection({ data }) {
                 <Target className="h-5 w-5" aria-hidden="true" />
                 <h3 className="text-sm font-bold uppercase tracking-wider">The Problem</h3>
               </div>
-              <p className="text-base leading-relaxed text-body">{data.problem}</p>
+              <p className="premium-prose">{data.problem}</p>
             </div>
             <div className="bg-primary/5 p-8">
               <div className="mb-3 flex items-center gap-2 text-primary">
                 <TrendingUp className="h-5 w-5" aria-hidden="true" />
                 <h3 className="text-sm font-bold uppercase tracking-wider">Our Solution</h3>
               </div>
-              <p className="text-base leading-relaxed text-body">{data.solution}</p>
+              <p className="premium-prose">{data.solution}</p>
             </div>
           </div>
 
@@ -31,15 +31,15 @@ export default function CaseStudySection({ data }) {
               <Clock className="h-4 w-4" aria-hidden="true" />
               <span className="text-xs font-bold uppercase tracking-wider">Timeline: {data.timeline}</span>
             </div>
-            <p className="text-sm leading-relaxed text-body">{data.execution}</p>
+            <p className="premium-prose text-[15px]">{data.execution}</p>
           </div>
 
           <div className="grid grid-cols-2 gap-px bg-border lg:grid-cols-4">
             {data.results.map((r) => (
               <div key={r.label} className="bg-secondary p-6 text-center">
                 <p className="font-mono text-2xl font-bold text-accent md:text-3xl">{r.value}</p>
-                <p className="mt-2 text-xs font-semibold text-white">{r.label}</p>
-                <p className="mt-0.5 text-[10px] text-white/50">{r.change}</p>
+                <p className="mt-2 text-sm font-semibold text-white">{r.label}</p>
+                <p className="mt-0.5 text-xs text-white/75">{r.change}</p>
               </div>
             ))}
           </div>

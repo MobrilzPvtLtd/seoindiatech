@@ -76,12 +76,12 @@ const Solutionswho = () => {
               Solutions For Your Business
             </span>
 
-            <h1 className="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">
+            <h2 className="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">
               <span className="text-primary dark:text-accent">Use Our </span>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-400 dark:from-red-500 dark:to-red-300 italic font-semibold">
                 Solutions
               </span>
-            </h1>
+            </h2>
 
             <p className="text-body max-w-2xl mx-auto text-lg">
               We offer a variety of{' '}

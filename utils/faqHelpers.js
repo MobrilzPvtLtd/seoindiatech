@@ -10,12 +10,12 @@ export const SERVICE_FAQ_SUPPLEMENTS = [
   {
     question: 'Do you provide monthly performance reports?',
     answer:
-      'Yes. Every engagement includes transparent reporting on rankings, traffic, leads, and completed work—with a dedicated account manager to explain results and next steps.',
+      'Yes. Every engagement includes transparent reporting on rankings, traffic, leads, and completed work-with a dedicated account manager to explain results and next steps.',
   },
   {
     question: 'Does SEO India Tech follow Google guidelines?',
     answer:
-      'Yes. We use white-hat SEO and advertising practices focused on sustainable growth—not shortcuts that risk penalties or lost visibility.',
+      'Yes. We use white-hat SEO and advertising practices focused on sustainable growth-not shortcuts that risk penalties or lost visibility.',
   },
 ]
 
@@ -62,11 +62,11 @@ export function getLocationSupplementalFaqs(city = 'your area') {
   return [
     {
       question: `Is SEO worth investing in for businesses in ${city}?`,
-      answer: `Yes. Most customers in ${city} research online before they call, visit, or buy. SEO services help you appear when that intent is highest—on Google Search and Maps—so you capture leads competitors would otherwise win.`,
+      answer: `Yes. Most customers in ${city} research online before they call, visit, or buy. SEO services help you appear when that intent is highest-on Google Search and Maps-so you capture leads competitors would otherwise win.`,
     },
     {
       question: `Do you provide monthly SEO reports for ${city} clients?`,
-      answer: `Yes. Every ${city} SEO project includes transparent reporting on rankings, organic traffic, leads, Google Business Profile actions, and completed tasks—so you always know what changed and what is planned next.`,
+      answer: `Yes. Every ${city} SEO project includes transparent reporting on rankings, organic traffic, leads, Google Business Profile actions, and completed tasks-so you always know what changed and what is planned next.`,
     },
     {
       question: `Can SEO India Tech handle multi-location SEO beyond ${city}?`,

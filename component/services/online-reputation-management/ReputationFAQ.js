@@ -46,7 +46,7 @@ const faqs = [
     {
       question: 'Q8. How do you monitor online reputation?',
       answer:
-        'We track reviews, brand mentions, and search results across Google, social platforms, and review sites—with alerts and monthly sentiment summaries so issues are addressed quickly.',
+        'We track reviews, brand mentions, and search results across Google, social platforms, and review sites-with alerts and monthly sentiment summaries so issues are addressed quickly.',
     },
   ]
 

@@ -241,9 +241,9 @@ const ContactUsSection = () => {
 
           {/* Contact Info Card */}
           <div className="bg-card dark:bg-card rounded-xl shadow-md border border-border dark:border-border px-10 py-5 w-full max-w-md">
-            <h3 className="text-xl font-bold text-heading mb-6">
+            <h2 className="text-xl font-bold text-heading mb-6">
               Contact Information
-            </h3>
+            </h2>
 
             <div className="space-y-6">
               {/* Phone */}

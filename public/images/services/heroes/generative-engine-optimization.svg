@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="GEO">
+  <defs>
+    <linearGradient id="bg-service-generative-engine-optimization" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2A255D"/>
+      <stop offset="100%" stop-color="#5B2D8E"/>
+    </linearGradient>
+    <filter id="shadow-service-generative-engine-optimization" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg-service-generative-engine-optimization)"/>
+  <circle cx="1040" cy="90" r="70" fill="#A4DDFB" opacity="0.18"/>
+  <circle cx="120" cy="520" r="100" fill="#A4DDFB" opacity="0.12"/>
+  <g transform="translate(740,120)">
+    <rect x="20" y="40" width="180" height="90" rx="14" fill="rgba(255,255,255,0.14)"/>
+    <rect x="50" y="150" width="160" height="70" rx="14" fill="rgba(164,221,251,0.2)" stroke="#A4DDFB"/>
+    <circle cx="55" cy="75" r="8" fill="#A4DDFB"/><circle cx="85" cy="75" r="8" fill="#A4DDFB"/><circle cx="115" cy="75" r="8" fill="#A4DDFB"/>
+    <text x="70" y="192" fill="#ffffff" font-size="14" font-family="Arial">ChatGPT SEO</text>
+  </g>
+    <text x="72" y="100" fill="#A4DDFB" font-family="Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="2">SERVICE</text>
+  <text x="72" y="500" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="38" font-weight="700">GEO</text>
+  <text x="72" y="548" fill="#A4DDFB" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="600">SEO India Tech</text>
+  <text x="72" y="590" fill="rgba(255,255,255,0.65)" font-family="Arial,Helvetica,sans-serif" font-size="16">SEO India Tech</text>
+</svg>

@@ -41,7 +41,7 @@ const faqs = [
     {
       question: 'Q8. How do you measure GEO success?',
       answer:
-        'We track brand mentions in AI tools, featured snippet visibility, branded search growth, and referral traffic from AI-driven search experiences—alongside traditional SEO metrics.',
+        'We track brand mentions in AI tools, featured snippet visibility, branded search growth, and referral traffic from AI-driven search experiences-alongside traditional SEO metrics.',
     },
   ]
 

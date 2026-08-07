@@ -67,12 +67,12 @@ const Audience = () => {
               <span>Audience Targeting</span>
             </div>
 
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-heading leading-tight">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-heading leading-tight">
               Find your{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary dark:from-accent dark:to-purple-400">
                 audience
               </span>
-            </h1>
+            </h2>
 
             <p className="text-body text-lg leading-relaxed">
               Drive targeted traffic from social media to your website and

@@ -41,7 +41,7 @@ const faqs = [
     {
       question: 'Q8. What should I expect in the first month of AI SEO services?',
       answer:
-        'The first month typically includes a technical and content audit, keyword and intent mapping, quick-win fixes, and a prioritized roadmap—so you see progress before longer-term ranking gains build.',
+        'The first month typically includes a technical and content audit, keyword and intent mapping, quick-win fixes, and a prioritized roadmap-so you see progress before longer-term ranking gains build.',
     },
   ]
 

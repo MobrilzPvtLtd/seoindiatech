@@ -1,0 +1,3689 @@
+﻿{
+  "totalFiles": 349,
+  "filesWithSkips": [
+    {
+      "file": "component/contactus/Contactus.js",
+      "headings": [
+        1,
+        3
+      ],
+      "firstHeading": 1,
+      "skips": [
+        {
+          "atIndex": 1,
+          "prev": 1,
+          "cur": 3
+        }
+      ]
+    },
+    {
+      "file": "component/digital-branding/Digitalhero.js",
+      "headings": [
+        1,
+        3
+      ],
+      "firstHeading": 1,
+      "skips": [
+        {
+          "atIndex": 1,
+          "prev": 1,
+          "cur": 3
+        }
+      ]
+    },
+    {
+      "file": "component/home/Hero.js",
+      "headings": [
+        1,
+        3,
+        4,
+        4,
+        4,
+        4
+      ],
+      "firstHeading": 1,
+      "skips": [
+        {
+          "atIndex": 1,
+          "prev": 1,
+          "cur": 3
+        }
+      ]
+    },
+    {
+      "file": "component/services/digital-marketing/DigitalHero.js",
+      "headings": [
+        1,
+        3
+      ],
+      "firstHeading": 1,
+      "skips": [
+        {
+          "atIndex": 1,
+          "prev": 1,
+          "cur": 3
+        }
+      ]
+    },
+    {
+      "file": "component/services/e-commerce-seo/EcommerceWhoDifferent.js",
+      "headings": [
+        4,
+        4,
+        2,
+        6
+      ],
+      "firstHeading": 4,
+      "skips": [
+        {
+          "atIndex": 3,
+          "prev": 2,
+          "cur": 6
+        }
+      ]
+    },
+    {
+      "file": "component/solution/automation/DigitalAutomationServices.js",
+      "headings": [
+        2,
+        4,
+        3,
+        4
+      ],
+      "firstHeading": 2,
+      "skips": [
+        {
+          "atIndex": 1,
+          "prev": 2,
+          "cur": 4
+        }
+      ]
+    },
+    {
+      "file": "component/solution/CRM&Tool/CRMToolService.js",
+      "headings": [
+        1,
+        2,
+        3,
+        3,
+        2,
+        2,
+        4
+      ],
+      "firstHeading": 1,
+      "skips": [
+        {
+          "atIndex": 6,
+          "prev": 2,
+          "cur": 4
+        }
+      ]
+    },
+    {
+      "file": "component/solution/market_research/MarketResearchService.js",
+      "headings": [
+        1,
+        2,
+        3,
+        2,
+        2,
+        4
+      ],
+      "firstHeading": 1,
+      "skips": [
+        {
+          "atIndex": 5,
+          "prev": 2,
+          "cur": 4
+        }
+      ]
+    },
+    {
+      "file": "component/solution/website_creation/SolutionImpact.js",
+      "headings": [
+        3,
+        5
+      ],
+      "firstHeading": 3,
+      "skips": [
+        {
+          "atIndex": 1,
+          "prev": 3,
+          "cur": 5
+        }
+      ]
+    },
+    {
+      "file": "component/solution/workflow/WorkflowMarketResearch.js",
+      "headings": [
+        2,
+        4
+      ],
+      "firstHeading": 2,
+      "skips": [
+        {
+          "atIndex": 1,
+          "prev": 2,
+          "cur": 4
+        }
+      ]
+    },
+    {
+      "file": "component/who-we-are/Features.js",
+      "headings": [
+        1,
+        3
+      ],
+      "firstHeading": 1,
+      "skips": [
+        {
+          "atIndex": 1,
+          "prev": 1,
+          "cur": 3
+        }
+      ]
+    },
+    {
+      "file": "component/who-we-are/Journey.js",
+      "headings": [
+        4,
+        2,
+        4,
+        4
+      ],
+      "firstHeading": 4,
+      "skips": [
+        {
+          "atIndex": 2,
+          "prev": 2,
+          "cur": 4
+        }
+      ]
+    },
+    {
+      "file": "component/who-we-are/Navigate.js",
+      "headings": [
+        2,
+        4,
+        4
+      ],
+      "firstHeading": 2,
+      "skips": [
+        {
+          "atIndex": 1,
+          "prev": 2,
+          "cur": 4
+        }
+      ]
+    },
+    {
+      "file": "component/who-we-are/Solutionswho.js",
+      "headings": [
+        1,
+        3,
+        3,
+        4
+      ],
+      "firstHeading": 1,
+      "skips": [
+        {
+          "atIndex": 1,
+          "prev": 1,
+          "cur": 3
+        }
+      ]
+    }
+  ],
+  "componentsWithHighFirst": [
+    {
+      "file": "component/common/ContactFormSection.js",
+      "headings": [
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/home/HeroContactForm.js",
+      "headings": [
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/home/NewCardSection.js",
+      "headings": [
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/home/SEO_Solution.js",
+      "headings": [
+        3,
+        3,
+        3,
+        2
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/home/Solutions.js",
+      "headings": [
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/home/Testimonial.js",
+      "headings": [
+        3,
+        2
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/industry-premium/AudienceCards.js",
+      "headings": [
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/industry-premium/CaseStudySection.js",
+      "headings": [
+        3,
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/industry-premium/EditorialSections.js",
+      "headings": [
+        3,
+        3,
+        3,
+        2
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/industry-premium/GeoQuickAnswer.js",
+      "headings": [
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/industry-premium/PainPointsSection.js",
+      "headings": [
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/industry-premium/PillarServicesSection.js",
+      "headings": [
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/industry-premium/ProcessTimeline.js",
+      "headings": [
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/industry-premium/RelatedIndustries.js",
+      "headings": [
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/industry-premium/ServicesIncluded.js",
+      "headings": [
+        3,
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/industry-premium/ToolsTrustSection.js",
+      "headings": [
+        3,
+        3,
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/industry-premium/WhyChooseGrid.js",
+      "headings": [
+        3,
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/industry-premium/WhySeoMatters.js",
+      "headings": [
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/layout/footer/Footer.js",
+      "headings": [
+        3,
+        3,
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/layout/footer/FooterQuickContact.js",
+      "headings": [
+        4
+      ],
+      "firstHeading": 4,
+      "skips": []
+    },
+    {
+      "file": "component/new-home/BenefitsSection.js",
+      "headings": [
+        3,
+        3,
+        2
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/new-home/Blog.js",
+      "headings": [
+        3,
+        2
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/new-home/FAQAndContact.js",
+      "headings": [
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/new-home/NewFooter.js",
+      "headings": [
+        3,
+        3,
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/new-home/OfferingsSection.js",
+      "headings": [
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/new-home/ProblemsSection.js",
+      "headings": [
+        3,
+        2,
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/new-home/ProcessSection.js",
+      "headings": [
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/new-home/SolutionsShowcase.js",
+      "headings": [
+        3,
+        2
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/new-home/WhyUsSection.js",
+      "headings": [
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/ppc-advertising/PPCBrandingHero.js",
+      "headings": [
+        3,
+        3,
+        2,
+        2
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/SEO/SEOServicesSection.js",
+      "headings": [
+        3,
+        3,
+        3,
+        2
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/services/ai-seo/AiSeoServices.js",
+      "headings": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/services/ai-seo/AiSeoWhyChoose.js",
+      "headings": [
+        4,
+        5,
+        6
+      ],
+      "firstHeading": 4,
+      "skips": []
+    },
+    {
+      "file": "component/services/answer-engine-optimization/AEOConsulting.js",
+      "headings": [
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/services/answer-engine-optimization/AEOTrust.js",
+      "headings": [
+        6
+      ],
+      "firstHeading": 6,
+      "skips": []
+    },
+    {
+      "file": "component/services/answer-engine-optimization/WhySEOIndiaTech.js",
+      "headings": [
+        4,
+        5
+      ],
+      "firstHeading": 4,
+      "skips": []
+    },
+    {
+      "file": "component/services/app-store-optimization/WhatYouGetASO.js",
+      "headings": [
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/services/digital-marketing/OurProcess.js",
+      "headings": [
+        4,
+        5,
+        5,
+        5,
+        5,
+        6
+      ],
+      "firstHeading": 4,
+      "skips": []
+    },
+    {
+      "file": "component/services/e-commerce-seo/ECommerceAbout.js",
+      "headings": [
+        3,
+        2
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/services/e-commerce-seo/EcommerceWhoDifferent.js",
+      "headings": [
+        4,
+        4,
+        2,
+        6
+      ],
+      "firstHeading": 4,
+      "skips": [
+        {
+          "atIndex": 3,
+          "prev": 2,
+          "cur": 6
+        }
+      ]
+    },
+    {
+      "file": "component/services/gbp-optimization/GBPProcess.js",
+      "headings": [
+        4,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        6
+      ],
+      "firstHeading": 4,
+      "skips": []
+    },
+    {
+      "file": "component/services/gbp-optimization/GBPWhySection.js",
+      "headings": [
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/services/generative-engine-optimization/GEOService.js",
+      "headings": [
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/services/generative-engine-optimization/TrustedOptimization.js",
+      "headings": [
+        6
+      ],
+      "firstHeading": 6,
+      "skips": []
+    },
+    {
+      "file": "component/services/local-seo-service/LocalBusiness.js",
+      "headings": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/services/online-reputation-management/ORMInfoSection.js",
+      "headings": [
+        4,
+        5
+      ],
+      "firstHeading": 4,
+      "skips": []
+    },
+    {
+      "file": "component/services/online-reputation-management/ORMServiceFit.js",
+      "headings": [
+        5,
+        6
+      ],
+      "firstHeading": 5,
+      "skips": []
+    },
+    {
+      "file": "component/services/online-reputation-management/OurProcess.js",
+      "headings": [
+        4,
+        5
+      ],
+      "firstHeading": 4,
+      "skips": []
+    },
+    {
+      "file": "component/services/online-reputation-management/ServiceCovers.js",
+      "headings": [
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/services/pay-per-click/HowWeStartSection.js",
+      "headings": [
+        6,
+        3
+      ],
+      "firstHeading": 6,
+      "skips": []
+    },
+    {
+      "file": "component/services/pay-per-click/PPCServices.js",
+      "headings": [
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/services/pay-per-click/WhyChooseSection.js",
+      "headings": [
+        5
+      ],
+      "firstHeading": 5,
+      "skips": []
+    },
+    {
+      "file": "component/services/social-media-optimization/SMOWhyHire.js",
+      "headings": [
+        4,
+        4,
+        5
+      ],
+      "firstHeading": 4,
+      "skips": []
+    },
+    {
+      "file": "component/solution/CRM&Tool/CRMPlatform.js",
+      "headings": [
+        4
+      ],
+      "firstHeading": 4,
+      "skips": []
+    },
+    {
+      "file": "component/solution/CRM&Tool/TrustCRMTool.js",
+      "headings": [
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/solution/CRM&Tool/WhyCRM.js",
+      "headings": [
+        4,
+        5,
+        5
+      ],
+      "firstHeading": 4,
+      "skips": []
+    },
+    {
+      "file": "component/solution/market_research/BoostBrandStrategy.js",
+      "headings": [
+        4
+      ],
+      "firstHeading": 4,
+      "skips": []
+    },
+    {
+      "file": "component/solution/market_research/MarketStrategy.js",
+      "headings": [
+        5
+      ],
+      "firstHeading": 5,
+      "skips": []
+    },
+    {
+      "file": "component/solution/market_research/TrustMarketResearch.js",
+      "headings": [
+        3,
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/solution/market_research/WhyMarketResearch.js",
+      "headings": [
+        4
+      ],
+      "firstHeading": 4,
+      "skips": []
+    },
+    {
+      "file": "component/solution/promotion/IntegratedPromotionSection.js",
+      "headings": [
+        3,
+        4,
+        5,
+        4,
+        5,
+        5
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/solution/website_creation/AboutWork.js",
+      "headings": [
+        4
+      ],
+      "firstHeading": 4,
+      "skips": []
+    },
+    {
+      "file": "component/solution/website_creation/SolutionImpact.js",
+      "headings": [
+        3,
+        5
+      ],
+      "firstHeading": 3,
+      "skips": [
+        {
+          "atIndex": 1,
+          "prev": 3,
+          "cur": 5
+        }
+      ]
+    },
+    {
+      "file": "component/solution/website_creation/TrustWebsiteCreation.js",
+      "headings": [
+        3,
+        4,
+        4,
+        4,
+        3,
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/who-we-are/Audience.js",
+      "headings": [
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/who-we-are/Hero.js",
+      "headings": [
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/who-we-are/Journey.js",
+      "headings": [
+        4,
+        2,
+        4,
+        4
+      ],
+      "firstHeading": 4,
+      "skips": [
+        {
+          "atIndex": 2,
+          "prev": 2,
+          "cur": 4
+        }
+      ]
+    },
+    {
+      "file": "component/who-we-are/Tools.js",
+      "headings": [
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/who-we-are/WhyChoose.js",
+      "headings": [
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    }
+  ],
+  "full": [
+    {
+      "file": "pages/api/hello.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "pages/api/submit-form.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "pages/blog/index.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "pages/blog/[slug]/index.js",
+      "headings": [
+        1
+      ],
+      "firstHeading": 1,
+      "skips": []
+    },
+    {
+      "file": "pages/contact-us.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "pages/index.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "pages/industries/index.js",
+      "headings": [
+        1,
+        2
+      ],
+      "firstHeading": 1,
+      "skips": []
+    },
+    {
+      "file": "pages/industries/[slug].js",
+      "headings": [
+        1
+      ],
+      "firstHeading": 1,
+      "skips": []
+    },
+    {
+      "file": "pages/new/index.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "pages/old/index.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "pages/privacy-policy/index.js",
+      "headings": [
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3
+      ],
+      "firstHeading": 1,
+      "skips": []
+    },
+    {
+      "file": "pages/seo-packages/index.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "pages/seo-services/[slug].js",
+      "headings": [
+        1
+      ],
+      "firstHeading": 1,
+      "skips": []
+    },
+    {
+      "file": "pages/services/ai-seo/index.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "pages/services/answer-engine-optimization/index.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "pages/services/app-store-optimization/index.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "pages/services/content-marketing/index.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "pages/services/digital-branding/index.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "pages/services/e-commerce-seo/index.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "pages/services/gbp-optimization/index.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "pages/services/generative-engine-optimization/index.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "pages/services/local-seo-service/index.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "pages/services/online-reputation-management/index.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "pages/services/pay-per-click/index.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "pages/services/ppc-advertising/index.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "pages/services/small-business-seo/index.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "pages/services/social-media-marketing/index.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "pages/services/social-media-optimization/index.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "pages/services/ui-ux-design/index.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "pages/services/[slug].js",
+      "headings": [
+        1
+      ],
+      "firstHeading": 1,
+      "skips": []
+    },
+    {
+      "file": "pages/solution/automation/index.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "pages/solution/crm-and-tools/index.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "pages/solution/market-research/index.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "pages/solution/promotion-and-ads/index.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "pages/solution/website-creation/index.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "pages/solution/workflow/index.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "pages/terms/index.js",
+      "headings": [
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3
+      ],
+      "firstHeading": 1,
+      "skips": []
+    },
+    {
+      "file": "pages/who-we-are/index.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "pages/_app.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "pages/_document.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/blog/Blog.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/blog/BlogPostSchema.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/blog/BlogPostsGrid.js",
+      "headings": [
+        2
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/blog/CRMHeroBanner.js",
+      "headings": [
+        2
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/blog/LegacyBlogArticle.js",
+      "headings": [
+        1,
+        2,
+        3
+      ],
+      "firstHeading": 1,
+      "skips": []
+    },
+    {
+      "file": "component/blog/PremiumBlogArticle.js",
+      "headings": [
+        2,
+        3,
+        1,
+        2
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/common/ContactFormSection.js",
+      "headings": [
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/common/FAQComponent.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/common/FaqSection.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/common/HubContentSection.js",
+      "headings": [
+        2
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/common/JsonLd.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/common/SEO.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/common/SeoHead.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/common/ServiceFaq.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/common/ServiceHero.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/common/TrustUs.js",
+      "headings": [
+        2,
+        3
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/common/VisibleFaq.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/common/WhyPartnerSection.js",
+      "headings": [
+        2,
+        3
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/contactus/ContactSeoContent.js",
+      "headings": [
+        2,
+        3,
+        3
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/contactus/Contactus.js",
+      "headings": [
+        1,
+        3
+      ],
+      "firstHeading": 1,
+      "skips": [
+        {
+          "atIndex": 1,
+          "prev": 1,
+          "cur": 3
+        }
+      ]
+    },
+    {
+      "file": "component/content-marketing/Contentbranding.js",
+      "headings": [
+        2
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/content-marketing/Contenthero.js",
+      "headings": [
+        1
+      ],
+      "firstHeading": 1,
+      "skips": []
+    },
+    {
+      "file": "component/content-marketing/Contentmarketing.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/content-marketing/Contentservices.js",
+      "headings": [
+        2,
+        2,
+        3,
+        2
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/content-marketing/Strategies.js",
+      "headings": [
+        2,
+        2,
+        3,
+        2,
+        3,
+        3
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/content-marketing/Why.js",
+      "headings": [
+        2
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/design-development/CTA.js",
+      "headings": [
+        2,
+        2
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/design-development/DesignDevelopment.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/design-development/Hero.js",
+      "headings": [
+        1
+      ],
+      "firstHeading": 1,
+      "skips": []
+    },
+    {
+      "file": "component/design-development/Process.js",
+      "headings": [
+        2,
+        3
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/design-development/Services.js",
+      "headings": [
+        2,
+        3
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/design-development/StatsBar.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/design-development/WhyChooseUs.js",
+      "headings": [
+        2,
+        3
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/digital-branding/Approach.js",
+      "headings": [
+        2
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/digital-branding/Begin.js",
+      "headings": [
+        2
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/digital-branding/Casestudies.js",
+      "headings": [
+        2,
+        3
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/digital-branding/Digitalbranding.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/digital-branding/Digitalhero.js",
+      "headings": [
+        1,
+        3
+      ],
+      "firstHeading": 1,
+      "skips": [
+        {
+          "atIndex": 1,
+          "prev": 1,
+          "cur": 3
+        }
+      ]
+    },
+    {
+      "file": "component/digital-branding/Form.js",
+      "headings": [
+        2,
+        3,
+        3
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/digital-branding/Why.js",
+      "headings": [
+        2
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/digital-branding/WhyChoose.js",
+      "headings": [
+        2
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/home/AverageClientResults.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/home/BlogSection.js",
+      "headings": [
+        2,
+        3
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/home/CTABanner.js",
+      "headings": [
+        2
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/home/FAQSection.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/home/Hero.js",
+      "headings": [
+        1,
+        3,
+        4,
+        4,
+        4,
+        4
+      ],
+      "firstHeading": 1,
+      "skips": [
+        {
+          "atIndex": 1,
+          "prev": 1,
+          "cur": 3
+        }
+      ]
+    },
+    {
+      "file": "component/home/HeroContactForm.js",
+      "headings": [
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/home/HeroSection.js",
+      "headings": [
+        1
+      ],
+      "firstHeading": 1,
+      "skips": []
+    },
+    {
+      "file": "component/home/HomePage.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/home/IndustriesSection.js",
+      "headings": [
+        2
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/home/NewCardSection.js",
+      "headings": [
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/home/NewHero.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/home/OurSEOProcess.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/home/OurServicesSection.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/home/SEO_Solution.js",
+      "headings": [
+        3,
+        3,
+        3,
+        2
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/home/SEO_Today.js",
+      "headings": [
+        2
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/home/Services.js",
+      "headings": [
+        2
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/home/Socialmediastrategies.js",
+      "headings": [
+        2
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/home/Solutions.js",
+      "headings": [
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/home/Teams.js",
+      "headings": [
+        2
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/home/Testimonial.js",
+      "headings": [
+        3,
+        2
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/home/WhyChooseSection.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/industry-premium/AudienceCards.js",
+      "headings": [
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/industry-premium/CaseStudySection.js",
+      "headings": [
+        3,
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/industry-premium/ComparisonTable.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/industry-premium/EditorialSections.js",
+      "headings": [
+        3,
+        3,
+        3,
+        2
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/industry-premium/GeoQuickAnswer.js",
+      "headings": [
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/industry-premium/icons.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/industry-premium/IndustryTestimonials.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/industry-premium/PainPointsSection.js",
+      "headings": [
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/industry-premium/PillarServicesSection.js",
+      "headings": [
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/industry-premium/PremiumContactBand.js",
+      "headings": [
+        2,
+        3
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/industry-premium/PremiumFaq.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/industry-premium/PremiumFinalCta.js",
+      "headings": [
+        2
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/industry-premium/PremiumHero.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/industry-premium/PremiumIndustryPage.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/industry-premium/PremiumIndustrySchema.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/industry-premium/PremiumSection.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/industry-premium/ProcessTimeline.js",
+      "headings": [
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/industry-premium/RelatedIndustries.js",
+      "headings": [
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/industry-premium/ResultsMetrics.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/industry-premium/ServicesIncluded.js",
+      "headings": [
+        3,
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/industry-premium/StickyMobileCta.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/industry-premium/ToolsTrustSection.js",
+      "headings": [
+        3,
+        3,
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/industry-premium/TrustStatsBar.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/industry-premium/WhyChooseGrid.js",
+      "headings": [
+        3,
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/industry-premium/WhySeoMatters.js",
+      "headings": [
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/industry-services/IndustryBenefits.js",
+      "headings": [
+        2,
+        3,
+        3
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/industry-services/IndustrySchema.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/layout/footer/Footer.js",
+      "headings": [
+        3,
+        3,
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/layout/footer/FooterQuickContact.js",
+      "headings": [
+        4
+      ],
+      "firstHeading": 4,
+      "skips": []
+    },
+    {
+      "file": "component/layout/header/Header.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/layout/header/IndustryDropdown.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/layout/header/MegaMenu.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/layout/header/ServiceDropdown.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/layout/header/SolutionDropdown.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/layout/header/ThemeToggleButton.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/layout/Layout.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/location-services/LocationContent.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/location-services/LocationFAQ.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/location-services/LocationHero.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/location-services/SeoSchema.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/motion/Reveal.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/motion/SmoothScroll.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/new-home/AboutBand.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/new-home/AuthorityBand.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/new-home/BenefitsSection.js",
+      "headings": [
+        3,
+        3,
+        2
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/new-home/Blog.js",
+      "headings": [
+        3,
+        2
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/new-home/CityLinksBand.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/new-home/FAQAndContact.js",
+      "headings": [
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/new-home/Hero.js",
+      "headings": [
+        1
+      ],
+      "firstHeading": 1,
+      "skips": []
+    },
+    {
+      "file": "component/new-home/HeroVisual.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/new-home/Industries.js",
+      "headings": [
+        2
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/new-home/NewFooter.js",
+      "headings": [
+        3,
+        3,
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/new-home/OfferingsSection.js",
+      "headings": [
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/new-home/OurServiceSection.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/new-home/PreFooterBand.js",
+      "headings": [
+        2
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/new-home/ProblemsSection.js",
+      "headings": [
+        3,
+        2,
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/new-home/ProcessSection.js",
+      "headings": [
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/new-home/ResultsSection.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/new-home/SolutionsShowcase.js",
+      "headings": [
+        3,
+        2
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/new-home/Testimonials.js",
+      "headings": [
+        2
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/new-home/TrustedBy.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/new-home/WebDevVisual.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/new-home/WhyUsSection.js",
+      "headings": [
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/ppc-advertising/Advertisement.js",
+      "headings": [
+        2
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/ppc-advertising/Dashboard.js",
+      "headings": [
+        2,
+        3
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/ppc-advertising/Form.js",
+      "headings": [
+        2
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/ppc-advertising/Ppc.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/ppc-advertising/PPCBrandingHero.js",
+      "headings": [
+        3,
+        3,
+        2,
+        2
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/ppc-advertising/Ppchero.js",
+      "headings": [
+        1
+      ],
+      "firstHeading": 1,
+      "skips": []
+    },
+    {
+      "file": "component/ppc-advertising/Success.js",
+      "headings": [
+        2
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/SEO/Branding.js",
+      "headings": [
+        2
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/SEO/Expertise.js",
+      "headings": [
+        2
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/SEO/Form.js",
+      "headings": [
+        2
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/SEO/LocalAndEcommerceSEO.js",
+      "headings": [
+        2,
+        3,
+        3
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/SEO/Matters.js",
+      "headings": [
+        2
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/SEO/Potential.js",
+      "headings": [
+        2,
+        3,
+        3
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/SEO/SEO.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/SEO/Seohero.js",
+      "headings": [
+        1
+      ],
+      "firstHeading": 1,
+      "skips": []
+    },
+    {
+      "file": "component/SEO/SEOServicesSection.js",
+      "headings": [
+        3,
+        3,
+        3,
+        2
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/seo-packege/PackageFeatures.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/seo-packege/PackageHero.js",
+      "headings": [
+        1
+      ],
+      "firstHeading": 1,
+      "skips": []
+    },
+    {
+      "file": "component/seo-packege/PackageSolution.js",
+      "headings": [
+        2,
+        3
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/seo-packege/SeoPackage.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/seo-packege/SeoPackageContent.js",
+      "headings": [
+        2
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/service-premium/PremiumServiceSchema.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/services/ai-seo/AiSeoFAQ.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/services/ai-seo/AiSeoMeaning.js",
+      "headings": [
+        2
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/services/ai-seo/AiSeoServices.js",
+      "headings": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/services/ai-seo/AiSeoWhyChoose.js",
+      "headings": [
+        4,
+        5,
+        6
+      ],
+      "firstHeading": 4,
+      "skips": []
+    },
+    {
+      "file": "component/services/ai-seo/GenerativeEngine.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/services/ai-seo/GenerativeHero.js",
+      "headings": [
+        1
+      ],
+      "firstHeading": 1,
+      "skips": []
+    },
+    {
+      "file": "component/services/answer-engine-optimization/AEO.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/services/answer-engine-optimization/AEOConsulting.js",
+      "headings": [
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/services/answer-engine-optimization/AEOFaq.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/services/answer-engine-optimization/AEOHero.js",
+      "headings": [
+        1
+      ],
+      "firstHeading": 1,
+      "skips": []
+    },
+    {
+      "file": "component/services/answer-engine-optimization/AEOMeans.js",
+      "headings": [
+        2
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/services/answer-engine-optimization/AEOService.js",
+      "headings": [
+        2,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/services/answer-engine-optimization/AEOTrust.js",
+      "headings": [
+        6
+      ],
+      "firstHeading": 6,
+      "skips": []
+    },
+    {
+      "file": "component/services/answer-engine-optimization/WhySEOIndiaTech.js",
+      "headings": [
+        4,
+        5
+      ],
+      "firstHeading": 4,
+      "skips": []
+    },
+    {
+      "file": "component/services/app-store-optimization/AppStoreHero.js",
+      "headings": [
+        1
+      ],
+      "firstHeading": 1,
+      "skips": []
+    },
+    {
+      "file": "component/services/app-store-optimization/AppStoreOptimization.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/services/app-store-optimization/ASOFaq.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/services/app-store-optimization/OurApproach.js",
+      "headings": [
+        2,
+        3
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/services/app-store-optimization/WhatYouGetASO.js",
+      "headings": [
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/services/app-store-optimization/WhyAppStore.js",
+      "headings": [
+        2
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/services/app-store-optimization/WhySeoIndiaTech.js",
+      "headings": [
+        2
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/services/digital-marketing/DigitalHero.js",
+      "headings": [
+        1,
+        3
+      ],
+      "firstHeading": 1,
+      "skips": [
+        {
+          "atIndex": 1,
+          "prev": 1,
+          "cur": 3
+        }
+      ]
+    },
+    {
+      "file": "component/services/digital-marketing/DigitalMarketing.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/services/digital-marketing/DigitalMarketingFAQ.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/services/digital-marketing/OurProcess.js",
+      "headings": [
+        4,
+        5,
+        5,
+        5,
+        5,
+        6
+      ],
+      "firstHeading": 4,
+      "skips": []
+    },
+    {
+      "file": "component/services/digital-marketing/ServiceGrowth.js",
+      "headings": [
+        2,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/services/e-commerce-seo/ECommerceAbout.js",
+      "headings": [
+        3,
+        2
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/services/e-commerce-seo/ECommerceHero.js",
+      "headings": [
+        1
+      ],
+      "firstHeading": 1,
+      "skips": []
+    },
+    {
+      "file": "component/services/e-commerce-seo/ECommerceSEO.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/services/e-commerce-seo/EcommerceSEOFAQ.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/services/e-commerce-seo/EcommerceWhoDifferent.js",
+      "headings": [
+        4,
+        4,
+        2,
+        6
+      ],
+      "firstHeading": 4,
+      "skips": [
+        {
+          "atIndex": 3,
+          "prev": 2,
+          "cur": 6
+        }
+      ]
+    },
+    {
+      "file": "component/services/gbp-optimization/GBPFaq.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/services/gbp-optimization/GBPHero.js",
+      "headings": [
+        1
+      ],
+      "firstHeading": 1,
+      "skips": []
+    },
+    {
+      "file": "component/services/gbp-optimization/GBPOptimization.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/services/gbp-optimization/GBPProcess.js",
+      "headings": [
+        4,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        6
+      ],
+      "firstHeading": 4,
+      "skips": []
+    },
+    {
+      "file": "component/services/gbp-optimization/GBPWhatWeImprove.js",
+      "headings": [
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/services/gbp-optimization/GBPWhySection.js",
+      "headings": [
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/services/generative-engine-optimization/GEO.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/services/generative-engine-optimization/GEOFaq.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/services/generative-engine-optimization/GEOHelp.js",
+      "headings": [
+        2
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/services/generative-engine-optimization/GEOHero.js",
+      "headings": [
+        1
+      ],
+      "firstHeading": 1,
+      "skips": []
+    },
+    {
+      "file": "component/services/generative-engine-optimization/GEOService.js",
+      "headings": [
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/services/generative-engine-optimization/GEOTrend.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/services/generative-engine-optimization/GEOWhy.js",
+      "headings": [
+        2,
+        2
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/services/generative-engine-optimization/TrustedOptimization.js",
+      "headings": [
+        6
+      ],
+      "firstHeading": 6,
+      "skips": []
+    },
+    {
+      "file": "component/services/local-seo-service/LocalBusiness.js",
+      "headings": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/services/local-seo-service/LocalSeo.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/services/local-seo-service/LocalSeoFAQ.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/services/local-seo-service/LocalSeoHero.js",
+      "headings": [
+        1
+      ],
+      "firstHeading": 1,
+      "skips": []
+    },
+    {
+      "file": "component/services/local-seo-service/WhyChoose.js",
+      "headings": [
+        2
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/services/online-reputation-management/OnlineReputation.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/services/online-reputation-management/ORMInfoSection.js",
+      "headings": [
+        4,
+        5
+      ],
+      "firstHeading": 4,
+      "skips": []
+    },
+    {
+      "file": "component/services/online-reputation-management/ORMServiceFit.js",
+      "headings": [
+        5,
+        6
+      ],
+      "firstHeading": 5,
+      "skips": []
+    },
+    {
+      "file": "component/services/online-reputation-management/ORMServices.js",
+      "headings": [
+        2
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/services/online-reputation-management/OurProcess.js",
+      "headings": [
+        4,
+        5
+      ],
+      "firstHeading": 4,
+      "skips": []
+    },
+    {
+      "file": "component/services/online-reputation-management/ReputationFAQ.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/services/online-reputation-management/ReputationHero.js",
+      "headings": [
+        1
+      ],
+      "firstHeading": 1,
+      "skips": []
+    },
+    {
+      "file": "component/services/online-reputation-management/ServiceCovers.js",
+      "headings": [
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/services/pay-per-click/HowWeStartSection.js",
+      "headings": [
+        6,
+        3
+      ],
+      "firstHeading": 6,
+      "skips": []
+    },
+    {
+      "file": "component/services/pay-per-click/PPC.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/services/pay-per-click/PPCFaq.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/services/pay-per-click/PPCHero.js",
+      "headings": [
+        1
+      ],
+      "firstHeading": 1,
+      "skips": []
+    },
+    {
+      "file": "component/services/pay-per-click/PPCServices.js",
+      "headings": [
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/services/pay-per-click/PPCTypes.js",
+      "headings": [
+        2,
+        3,
+        3
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/services/pay-per-click/WhyChooseSection.js",
+      "headings": [
+        5
+      ],
+      "firstHeading": 5,
+      "skips": []
+    },
+    {
+      "file": "component/services/small-business-seo/SmallBusiness.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/services/small-business-seo/SmallBusinessFaq.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/services/small-business-seo/SmallBusinessHero.js",
+      "headings": [
+        1
+      ],
+      "firstHeading": 1,
+      "skips": []
+    },
+    {
+      "file": "component/services/small-business-seo/SmallBusinessWhatYouGet.js",
+      "headings": [
+        2,
+        3,
+        3,
+        4,
+        5,
+        6
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/services/social-media-optimization/SMOFaq.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/services/social-media-optimization/SMOHero.js",
+      "headings": [
+        1
+      ],
+      "firstHeading": 1,
+      "skips": []
+    },
+    {
+      "file": "component/services/social-media-optimization/SMOServices.js",
+      "headings": [
+        2,
+        3
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/services/social-media-optimization/SMOWhyHire.js",
+      "headings": [
+        4,
+        4,
+        5
+      ],
+      "firstHeading": 4,
+      "skips": []
+    },
+    {
+      "file": "component/services/social-media-optimization/SocialMediaOptimization.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/services/social-media-optimization/Why.js",
+      "headings": [
+        2
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/social-media-marketing/Communicate.js",
+      "headings": [
+        2
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/social-media-marketing/IndustriesServe.js",
+      "headings": [
+        2,
+        3
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/social-media-marketing/Manage.js",
+      "headings": [
+        1
+      ],
+      "firstHeading": 1,
+      "skips": []
+    },
+    {
+      "file": "component/social-media-marketing/Network.js",
+      "headings": [
+        2,
+        2
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/social-media-marketing/Ourservices.js",
+      "headings": [
+        2
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/social-media-marketing/Servicehero.js",
+      "headings": [
+        1
+      ],
+      "firstHeading": 1,
+      "skips": []
+    },
+    {
+      "file": "component/social-media-marketing/SocialMediaBenefits.js",
+      "headings": [
+        2
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/social-media-marketing/SocialMediaCTA.js",
+      "headings": [
+        2
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/social-media-marketing/Socialmediamarketing.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/social-media-marketing/WhyChooseSocialMedia.js",
+      "headings": [
+        2,
+        3
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/solution/automation/Automation.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/solution/automation/AutomationBenefits.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/solution/automation/AutomationServices.js",
+      "headings": [
+        2
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/solution/automation/DigitalAutomation.js",
+      "headings": [
+        2,
+        2
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/solution/automation/DigitalAutomationServices.js",
+      "headings": [
+        2,
+        4,
+        3,
+        4
+      ],
+      "firstHeading": 2,
+      "skips": [
+        {
+          "atIndex": 1,
+          "prev": 2,
+          "cur": 4
+        }
+      ]
+    },
+    {
+      "file": "component/solution/automation/HeroSection.js",
+      "headings": [
+        1
+      ],
+      "firstHeading": 1,
+      "skips": []
+    },
+    {
+      "file": "component/solution/automation/TrustAutomation.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/solution/automation/WhyDigitalAutomation.js",
+      "headings": [
+        2
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/solution/CRM&Tool/CRMPlatform.js",
+      "headings": [
+        4
+      ],
+      "firstHeading": 4,
+      "skips": []
+    },
+    {
+      "file": "component/solution/CRM&Tool/CRMTool.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/solution/CRM&Tool/CRMToolService.js",
+      "headings": [
+        1,
+        2,
+        3,
+        3,
+        2,
+        2,
+        4
+      ],
+      "firstHeading": 1,
+      "skips": [
+        {
+          "atIndex": 6,
+          "prev": 2,
+          "cur": 4
+        }
+      ]
+    },
+    {
+      "file": "component/solution/CRM&Tool/HeroSection.js",
+      "headings": [
+        1
+      ],
+      "firstHeading": 1,
+      "skips": []
+    },
+    {
+      "file": "component/solution/CRM&Tool/TrustCRMTool.js",
+      "headings": [
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/solution/CRM&Tool/WhyCRM.js",
+      "headings": [
+        4,
+        5,
+        5
+      ],
+      "firstHeading": 4,
+      "skips": []
+    },
+    {
+      "file": "component/solution/market_research/BoostBrandStrategy.js",
+      "headings": [
+        4
+      ],
+      "firstHeading": 4,
+      "skips": []
+    },
+    {
+      "file": "component/solution/market_research/HeroSection.js",
+      "headings": [
+        1
+      ],
+      "firstHeading": 1,
+      "skips": []
+    },
+    {
+      "file": "component/solution/market_research/MarektResearch.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/solution/market_research/MarketResearchService.js",
+      "headings": [
+        1,
+        2,
+        3,
+        2,
+        2,
+        4
+      ],
+      "firstHeading": 1,
+      "skips": [
+        {
+          "atIndex": 5,
+          "prev": 2,
+          "cur": 4
+        }
+      ]
+    },
+    {
+      "file": "component/solution/market_research/MarketStrategy.js",
+      "headings": [
+        5
+      ],
+      "firstHeading": 5,
+      "skips": []
+    },
+    {
+      "file": "component/solution/market_research/TrustMarketResearch.js",
+      "headings": [
+        3,
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/solution/market_research/WhyMarketResearch.js",
+      "headings": [
+        4
+      ],
+      "firstHeading": 4,
+      "skips": []
+    },
+    {
+      "file": "component/solution/promotion/HeroSection.js",
+      "headings": [
+        1
+      ],
+      "firstHeading": 1,
+      "skips": []
+    },
+    {
+      "file": "component/solution/promotion/IntegratedPromotionSection.js",
+      "headings": [
+        3,
+        4,
+        5,
+        4,
+        5,
+        5
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/solution/promotion/Promotion.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/solution/promotion/PromotionalStrategies.js",
+      "headings": [
+        2,
+        3
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/solution/promotion/PromotionService.js",
+      "headings": [
+        1,
+        2,
+        3,
+        3
+      ],
+      "firstHeading": 1,
+      "skips": []
+    },
+    {
+      "file": "component/solution/promotion/TrustedAdvertisingCompany.js",
+      "headings": [
+        2,
+        3,
+        4
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/solution/promotion/TrustPromotion.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/solution/website_creation/AboutWork.js",
+      "headings": [
+        4
+      ],
+      "firstHeading": 4,
+      "skips": []
+    },
+    {
+      "file": "component/solution/website_creation/HeroSection.js",
+      "headings": [
+        1
+      ],
+      "firstHeading": 1,
+      "skips": []
+    },
+    {
+      "file": "component/solution/website_creation/SolutionImpact.js",
+      "headings": [
+        3,
+        5
+      ],
+      "firstHeading": 3,
+      "skips": [
+        {
+          "atIndex": 1,
+          "prev": 3,
+          "cur": 5
+        }
+      ]
+    },
+    {
+      "file": "component/solution/website_creation/TrustWebsiteCreation.js",
+      "headings": [
+        3,
+        4,
+        4,
+        4,
+        3,
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/solution/website_creation/WebsiteCreation.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/solution/website_creation/WebsiteCreationservice.js",
+      "headings": [
+        1,
+        2,
+        3,
+        3,
+        2
+      ],
+      "firstHeading": 1,
+      "skips": []
+    },
+    {
+      "file": "component/solution/workflow/HeroSection.js",
+      "headings": [
+        1
+      ],
+      "firstHeading": 1,
+      "skips": []
+    },
+    {
+      "file": "component/solution/workflow/MarketingWorkflowSection.js",
+      "headings": [
+        2,
+        3,
+        3,
+        3,
+        2
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/solution/workflow/TrustWorkflow.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/solution/workflow/WorkFlow.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/solution/workflow/WorkflowAutomationSection.js",
+      "headings": [
+        2,
+        3,
+        3
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/solution/workflow/WorkflowMarketResearch.js",
+      "headings": [
+        2,
+        4
+      ],
+      "firstHeading": 2,
+      "skips": [
+        {
+          "atIndex": 1,
+          "prev": 2,
+          "cur": 4
+        }
+      ]
+    },
+    {
+      "file": "component/solution/workflow/WorkflowService.js",
+      "headings": [
+        1,
+        2,
+        3
+      ],
+      "firstHeading": 1,
+      "skips": []
+    },
+    {
+      "file": "component/tracking/DeferredGtm.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/ui/BrandLogo.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/ui/Button.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/ui/FloatingStatPill.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/ui/IconRing.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/ui/LogoMark.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/ui/PageHero.js",
+      "headings": [
+        1
+      ],
+      "firstHeading": 1,
+      "skips": []
+    },
+    {
+      "file": "component/ui/PageSection.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/ui/ScribbleText.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/ui/ScrollToTop.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/ui/SectionBadge.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/ui/SectionHeader.js",
+      "headings": [
+        2
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/ui/SideConnectTab.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/ui/SitLogoMark.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/ui/SkipToContent.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/ui/TopContactBar.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/ui/WhatsAppButton.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/UIUX/Branding.js",
+      "headings": [
+        2
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/UIUX/Form.js",
+      "headings": [
+        2,
+        2
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/UIUX/Ideas.js",
+      "headings": [
+        1,
+        2,
+        3
+      ],
+      "firstHeading": 1,
+      "skips": []
+    },
+    {
+      "file": "component/UIUX/Process.js",
+      "headings": [
+        2
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/UIUX/Uiux.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/UIUX/Why.js",
+      "headings": [
+        2
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/UIUX/WhyChooseUIUX.js",
+      "headings": [
+        2,
+        3
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/who-we-are/Audience.js",
+      "headings": [
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/who-we-are/Features.js",
+      "headings": [
+        1,
+        3
+      ],
+      "firstHeading": 1,
+      "skips": [
+        {
+          "atIndex": 1,
+          "prev": 1,
+          "cur": 3
+        }
+      ]
+    },
+    {
+      "file": "component/who-we-are/Hero.js",
+      "headings": [
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/who-we-are/Insightimpact.js",
+      "headings": [
+        2
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/who-we-are/Journey.js",
+      "headings": [
+        4,
+        2,
+        4,
+        4
+      ],
+      "firstHeading": 4,
+      "skips": [
+        {
+          "atIndex": 2,
+          "prev": 2,
+          "cur": 4
+        }
+      ]
+    },
+    {
+      "file": "component/who-we-are/Navigate.js",
+      "headings": [
+        2,
+        4,
+        4
+      ],
+      "firstHeading": 2,
+      "skips": [
+        {
+          "atIndex": 1,
+          "prev": 2,
+          "cur": 4
+        }
+      ]
+    },
+    {
+      "file": "component/who-we-are/Services.js",
+      "headings": [
+        2,
+        3,
+        3,
+        3
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/who-we-are/Solutionswho.js",
+      "headings": [
+        1,
+        3,
+        3,
+        4
+      ],
+      "firstHeading": 1,
+      "skips": [
+        {
+          "atIndex": 1,
+          "prev": 1,
+          "cur": 3
+        }
+      ]
+    },
+    {
+      "file": "component/who-we-are/Tools.js",
+      "headings": [
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    },
+    {
+      "file": "component/who-we-are/Vission.js",
+      "headings": [
+        2
+      ],
+      "firstHeading": 2,
+      "skips": []
+    },
+    {
+      "file": "component/who-we-are/WhoWeAre.js",
+      "headings": [],
+      "firstHeading": null,
+      "skips": []
+    },
+    {
+      "file": "component/who-we-are/WhyChoose.js",
+      "headings": [
+        3
+      ],
+      "firstHeading": 3,
+      "skips": []
+    }
+  ]
+}

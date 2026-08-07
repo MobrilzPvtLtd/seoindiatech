@@ -9,11 +9,22 @@ const PAGES_DIR = path.join(__dirname, '..', 'pages')
 const SKIP = new Set(['_app.js', '_document.js', 'sitemap.xml.js', 'api'])
 
 const REQUIRED_PATTERNS = [
-  { name: 'title', regex: /<title>|title=\{|title="/i },
-  { name: 'description', regex: /name="description"|description=\{|description="/i },
-  { name: 'canonical', regex: /rel="canonical"|SeoHead|path="/i },
-  { name: 'og:title', regex: /property="og:title"|SeoHead/i },
+  { name: 'title', regex: /<title>|title=\{|title="|createPremiumServicePage/i },
+  { name: 'description', regex: /name="description"|description=\{|description="|createPremiumServicePage/i },
+  { name: 'canonical', regex: /rel="canonical"|SeoHead|createPremiumServicePage|path="/i },
+  { name: 'og:title', regex: /property="og:title"|SeoHead|createPremiumServicePage/i },
+  { name: 'SeoHead or factory', regex: /SeoHead|createPremiumServicePage/i },
 ]
+
+const SCHEMA_REQUIRED = new Set([
+  'who-we-are/index.js',
+  'industries/index.js',
+  'seo-packages/index.js',
+  'contact-us.js',
+  'blog/index.js',
+  'privacy-policy/index.js',
+  'terms/index.js',
+])
 
 function walk(dir, files = []) {
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -44,10 +55,16 @@ for (const file of files) {
     console.error(`FAIL ${rel}`)
     missing.forEach((m) => console.error(`  - missing ${m.name}`))
   }
+
+  if (SCHEMA_REQUIRED.has(rel) && !/schema=\{|schemaData|build\w+Schema|Premium\w+Schema/i.test(content)) {
+    failures++
+    console.error(`FAIL ${rel}`)
+    console.error('  - missing JSON-LD schema')
+  }
 }
 
 if (failures) {
-  console.error(`\n${failures} page(s) failed SEO check.`)
+  console.error(`\n${failures} page check(s) failed SEO validation.`)
   process.exit(1)
 }
 

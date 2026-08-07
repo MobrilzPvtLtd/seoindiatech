@@ -86,7 +86,7 @@ export function toSlug(title) {
     .replace(/^-|-$/g, '')
 }
 
-/** Per-industry hero visuals — unique illustration per landing page */
+/** Per-industry hero visuals - unique illustration per landing page */
 
 const CATEGORY_CONTEXT = {
   'popular-markets': {

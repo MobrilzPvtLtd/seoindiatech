@@ -10,11 +10,14 @@ import { locations } from '../../utils/locations'
 export default function LocationPage({ location }) {
   if (!location) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-white dark:bg-gray-950">
-        <h1 className="text-4xl md:text-5xl font-bold text-red-600 dark:text-red-400">
-          404 - Page Not Found
-        </h1>
-      </div>
+      <>
+        <SeoHead title="Page Not Found" description="The requested location page could not be found." path="/seo-services" noindex />
+        <div className="min-h-screen flex items-center justify-center bg-white dark:bg-gray-950">
+          <h1 className="text-4xl md:text-5xl font-bold text-red-600 dark:text-red-400">
+            404 - Page Not Found
+          </h1>
+        </div>
+      </>
     )
   }
 

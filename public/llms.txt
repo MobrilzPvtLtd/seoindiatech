@@ -1,8 +1,10 @@
 # SEO India Tech
 
-> SEO India Tech is a global digital growth partner delivering AI-powered SEO, performance marketing, and technology solutions with transparent ROI reporting. 14+ years experience, 500+ clients, serving USA, UK, Australia, Europe, UAE, Canada, and worldwide.
+> SEO India Tech is a global digital growth partner delivering AI-powered SEO, Generative Engine Optimization (GEO), Answer Engine Optimization (AEO), performance marketing, and technology solutions with transparent ROI reporting. 14+ years experience, 500+ clients, serving USA, UK, Australia, Europe, UAE, Canada, and worldwide.
 
 Contact: +91-8076676731 | sales@seoindiatech.com | E-160, Sector 63, Noida, UP 201301, India
+
+Entity expertise: Search Engine Optimization, AI Search, Google AI Overviews, Local SEO, Technical SEO, E-E-A-T, Content Marketing, PPC, Google Business Profile, Core Web Vitals, International SEO
 
 ## Main pages
 
@@ -10,19 +12,45 @@ Contact: +91-8076676731 | sales@seoindiatech.com | E-160, Sector 63, Noida, UP 2
 - [About Us](https://www.seoindiatech.com/who-we-are): Company background, team, and expertise since 2010
 - [Contact](https://www.seoindiatech.com/contact-us): Free consultation booking and inquiry form
 - [Industries](https://www.seoindiatech.com/industries): 41 specialized industry SEO programs
-- [Blog](https://www.seoindiatech.com/blog): SEO, AI search, and digital marketing articles
-- [SEO Packages](https://www.seoindiatech.com/seo-packages): SEO pricing and service packages
+- [Blog](https://www.seoindiatech.com/blog): SEO, AI search, GEO, and digital marketing articles
+- [SEO Packages](https://www.seoindiatech.com/seo-packages): SEO pricing — Starter, Growth, Platinum, Dedicated
 
-## Core services
+## AI search and GEO services
 
-- [AI SEO](https://www.seoindiatech.com/services/ai-seo): AI-powered search optimization and GEO services
-- [Search Engine Optimization](https://www.seoindiatech.com/services/seo): Enterprise and local SEO
-- [Digital Marketing](https://www.seoindiatech.com/services/digital-marketing): Full-funnel digital growth services
-- [PPC Advertising](https://www.seoindiatech.com/services/ppc-advertising): Paid search and performance advertising
-- [Content Marketing](https://www.seoindiatech.com/services/content-marketing): SEO content strategy and creation
+- [AI SEO](https://www.seoindiatech.com/services/ai-seo): AI-powered search optimization for Google AI Overviews and AI answer engines
+- [Generative Engine Optimization](https://www.seoindiatech.com/services/generative-engine-optimization): GEO for ChatGPT, Perplexity, Gemini, and Claude visibility
+- [Answer Engine Optimization](https://www.seoindiatech.com/services/answer-engine-optimization): AEO for featured answers and AI-generated summaries
+
+## Core SEO services
+
+- [Search Engine Optimization](https://www.seoindiatech.com/services/seo): Enterprise and local SEO hub
 - [Local SEO](https://www.seoindiatech.com/services/local-seo-service): Google Maps and local search optimization
+- [Small Business SEO](https://www.seoindiatech.com/services/small-business-seo): Affordable SEO for growing businesses
+- [E-Commerce SEO](https://www.seoindiatech.com/services/e-commerce-seo): Product and category page optimization
 - [GBP Optimization](https://www.seoindiatech.com/services/gbp-optimization): Google Business Profile optimization
+- [Content Marketing](https://www.seoindiatech.com/services/content-marketing): SEO content strategy and creation
+- [Technical SEO](https://www.seoindiatech.com/services/seo): Technical audits, Core Web Vitals, and site architecture
+
+## Digital marketing services
+
+- [Digital Marketing](https://www.seoindiatech.com/services/digital-marketing): Full-funnel digital growth services hub
+- [PPC Advertising](https://www.seoindiatech.com/services/ppc-advertising): Paid search and performance advertising
+- [Social Media Marketing](https://www.seoindiatech.com/services/social-media-marketing): Paid and organic social campaigns
+- [Social Media Optimization](https://www.seoindiatech.com/services/social-media-optimization): Organic social growth and engagement
+- [Online Reputation Management](https://www.seoindiatech.com/services/online-reputation-management): Review and brand reputation management
+- [Digital Branding](https://www.seoindiatech.com/services/digital-branding): Brand identity and positioning online
+
+## Design and development
+
 - [UI/UX Design](https://www.seoindiatech.com/services/ui-ux-design): Conversion-focused web design
+- [App Store Optimization](https://www.seoindiatech.com/services/app-store-optimization): ASO for iOS and Android apps
+
+## Service hubs
+
+- [SEO Services Hub](https://www.seoindiatech.com/services/seo)
+- [Digital Marketing Hub](https://www.seoindiatech.com/services/digital-marketing)
+- [Paid Advertising Hub](https://www.seoindiatech.com/services/paid-advertising)
+- [Design and Development Hub](https://www.seoindiatech.com/services/design-and-development)
 
 ## Solutions
 
@@ -30,12 +58,60 @@ Contact: +91-8076676731 | sales@seoindiatech.com | E-160, Sector 63, Noida, UP 2
 - [Website Creation](https://www.seoindiatech.com/solution/website-creation): SEO-ready website development
 - [CRM and Tools](https://www.seoindiatech.com/solution/crm-and-tools): CRM and marketing tool integration
 - [Market Research](https://www.seoindiatech.com/solution/market-research): Competitive and market analysis
+- [Promotion and Ads](https://www.seoindiatech.com/solution/promotion-and-ads): Campaign promotion services
+- [Workflow](https://www.seoindiatech.com/solution/workflow): Business workflow optimization
+
+## Industry SEO (41 verticals)
+
+Browse all industries: [Industries Hub](https://www.seoindiatech.com/industries)
+
+Examples:
+- [Plastic Surgery SEO](https://www.seoindiatech.com/industries/plastic-surgery-seo)
+- [Dentist SEO](https://www.seoindiatech.com/industries/dentist-seo)
+- [Law Firm SEO](https://www.seoindiatech.com/industries/law-firm-seo)
+- [Real Estate SEO](https://www.seoindiatech.com/industries/real-estate-seo)
+- [Restaurant SEO](https://www.seoindiatech.com/industries/restaurant-seo)
+- [SaaS SEO](https://www.seoindiatech.com/industries/saas-seo)
+
+## Blog — AI search and SEO guides (2026)
+
+- [SEO Trends for European Businesses 2026](https://www.seoindiatech.com/blog/seo-trends-european-businesses-2026)
+- [AI SEO vs Traditional SEO 2026](https://www.seoindiatech.com/blog/ai-seo-vs-traditional-seo-2026)
+- [Local SEO Checklist Multi-Location Europe](https://www.seoindiatech.com/blog/local-seo-checklist-multi-location-europe)
+- [Google AI Overviews Changing Business SEO](https://www.seoindiatech.com/blog/google-ai-overviews-changing-business-seo)
+- [100 SEO Mistakes Costing Business Leads](https://www.seoindiatech.com/blog/100-seo-mistakes-costing-business-leads)
+- [International SEO Guide European Companies](https://www.seoindiatech.com/blog/international-seo-guide-european-companies)
+- [SEO for Healthcare Businesses Europe](https://www.seoindiatech.com/blog/seo-healthcare-businesses-europe)
+- [SEO for Law Firms Complete Guide](https://www.seoindiatech.com/blog/seo-law-firms-complete-guide)
+- [Choose Best SEO Agency Europe](https://www.seoindiatech.com/blog/choose-best-seo-agency-europe)
+- [Local vs National vs International SEO](https://www.seoindiatech.com/blog/local-vs-national-vs-international-seo)
+- [Google Business Profile Optimization Guide](https://www.seoindiatech.com/blog/google-business-profile-optimization-guide)
+- [Complete E-E-A-T Guide Business Websites](https://www.seoindiatech.com/blog/complete-eeat-guide-business-websites)
+- [GEO Generative Engine Optimization Guide](https://www.seoindiatech.com/blog/geo-generative-engine-optimization-guide)
+- [ChatGPT SEO and AI Search Organic Traffic](https://www.seoindiatech.com/blog/chatgpt-seo-ai-search-organic-traffic)
+- [SEO ROI Calculator Measure Success](https://www.seoindiatech.com/blog/seo-roi-calculator-measure-success)
+- [Technical SEO Checklist Enterprise Websites](https://www.seoindiatech.com/blog/technical-seo-checklist-enterprise-websites)
+- [Core Web Vitals Optimization Guide](https://www.seoindiatech.com/blog/core-web-vitals-optimization-guide)
+- [Content Marketing Strategy Qualified Leads](https://www.seoindiatech.com/blog/content-marketing-strategy-qualified-leads)
+- [Link Building Guide 2026](https://www.seoindiatech.com/blog/link-building-guide-2026)
+- [SEO Checklist Small Businesses Europe](https://www.seoindiatech.com/blog/seo-checklist-small-businesses-europe)
+
+## Blog — additional articles
+
+- [How Google AI Overviews Are Changing SEO](https://www.seoindiatech.com/blog/how-google-ai-overviews-are-changing-seo)
+- [What Is AI SEO and Why Business Needs It](https://www.seoindiatech.com/blog/what-is-ai-seo-why-business-needs-it)
+- [PPC vs SEO Which Is Better](https://www.seoindiatech.com/blog/ppc-vs-seo-which-is-better)
+- [Local SEO Guide Indian Businesses 2026](https://www.seoindiatech.com/blog/local-seo-guide-indian-businesses-2026)
+- [E-Commerce SEO Checklist India](https://www.seoindiatech.com/blog/ecommerce-seo-checklist-india)
+- [How to Choose Best SEO Agency India](https://www.seoindiatech.com/blog/how-to-choose-best-seo-agency-india)
 
 ## Policies
 
 - [Privacy Policy](https://www.seoindiatech.com/privacy-policy): Data protection and privacy practices
 - [Terms of Service](https://www.seoindiatech.com/terms): Terms and service conditions
 
-## Optional
+## Machine-readable resources
 
-- [Sitemap](https://www.seoindiatech.com/sitemap.xml): Complete site URL index for crawlers
+- [Sitemap](https://www.seoindiatech.com/sitemap.xml): Complete site URL index
+- [Agent instructions](https://www.seoindiatech.com/agent-instructions.md): Guidance for AI agents
+- [Agents API manifest](https://www.seoindiatech.com/agents.json): Structured agent interaction schema

@@ -29,7 +29,7 @@ const textReplacements = [
   ['\u201D', '"'], // right double quote
   ['\u2026', '...'], // ellipsis
   ['\u00B0', '-degree'], // degree
-  ['\u2192', '->'], // right arrow
+  ['\u2192', '→'], // right arrow (keep unicode, safe in JSX strings)
   ['\u00B7', ' | '], // middle dot
   ['\u2022', '-'], // bullet
   ['\u203A', '>'], // single right-pointing angle quotation mark

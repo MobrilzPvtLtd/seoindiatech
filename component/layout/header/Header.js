@@ -185,7 +185,7 @@ const Header = () => {
     return (
       <Link
         href={href}
-        className={`relative inline-flex items-center min-h-11 px-1 text-[10px] lg:text-[11px] font-medium uppercase tracking-wide whitespace-nowrap shrink-0 transition-colors duration-200
+        className={`relative inline-flex items-center min-h-11 px-1 text-xs lg:text-sm font-semibold uppercase tracking-wide whitespace-nowrap shrink-0 transition-colors duration-200
           after:content-[''] after:absolute after:left-0 after:-bottom-0.5 after:h-[2px] after:bg-primary
           after:transition-all after:duration-300 hover:after:w-full
           ${
@@ -200,19 +200,19 @@ const Header = () => {
   }
 
   const navLinkTextColor = darkHeroNav
-    ? 'text-white/80 hover:text-white'
+    ? 'text-white/90 hover:text-white'
     : isDarkTheme
-      ? 'text-white/75 hover:text-white'
-      : 'text-heading/80 hover:text-heading'
+      ? 'text-white/85 hover:text-white'
+      : 'text-heading hover:text-primary'
 
   const servicesBtnColor = darkHeroNav
-    ? 'text-white/80 hover:text-white'
+    ? 'text-white/90 hover:text-white'
     : isDarkTheme
-      ? 'text-white/75 hover:text-white'
-      : 'text-heading/80 hover:text-heading'
+      ? 'text-white/85 hover:text-white'
+      : 'text-heading hover:text-primary'
 
   const contactButtonClass =
-    'inline-flex items-center justify-center shrink-0 rounded-full bg-primary hover:bg-primary-hover text-white px-4 lg:px-5 py-2 lg:py-2.5 font-bold text-[11px] tracking-wide uppercase transition-all duration-300 hover:shadow-glow-brand active:scale-95 whitespace-nowrap'
+    'inline-flex items-center justify-center shrink-0 rounded-full bg-primary hover:bg-primary-hover text-white px-4 lg:px-5 py-2 lg:py-2.5 font-bold text-xs lg:text-sm tracking-wide uppercase transition-all duration-300 hover:shadow-glow-brand active:scale-95 whitespace-nowrap'
 
   const mobileContactButtonClass =
     'block rounded-full bg-primary hover:bg-primary-hover text-white px-8 py-3.5 font-bold text-center transition-all duration-300 active:scale-95 w-full shadow-glow-brand'
@@ -266,7 +266,7 @@ const Header = () => {
                   <button
                     type="button"
                     onClick={handleServicesClick}
-                    className={`flex items-center gap-1 min-h-11 px-2 text-[10px] lg:text-[11px] uppercase tracking-wide whitespace-nowrap shrink-0 ${servicesBtnColor} font-medium transition-colors duration-200`}
+                    className={`flex items-center gap-1 min-h-11 px-2 text-xs lg:text-sm uppercase tracking-wide whitespace-nowrap shrink-0 ${servicesBtnColor} font-semibold transition-colors duration-200`}
                     aria-expanded={isServicesOpen}
                     aria-controls="services-dropdown"
                   >
@@ -296,7 +296,7 @@ const Header = () => {
                   <button
                     type="button"
                     onClick={handleIndustryClick}
-                    className={`flex items-center gap-1 min-h-11 px-2 text-[10px] lg:text-[11px] uppercase tracking-wide whitespace-nowrap shrink-0 ${servicesBtnColor} font-medium transition-colors duration-200`}
+                    className={`flex items-center gap-1 min-h-11 px-2 text-xs lg:text-sm uppercase tracking-wide whitespace-nowrap shrink-0 ${servicesBtnColor} font-semibold transition-colors duration-200`}
                     aria-expanded={isIndustryOpen}
                     aria-controls="industry-dropdown"
                   >
@@ -384,7 +384,7 @@ const Header = () => {
                 className={`block px-4 py-3 rounded-xl font-medium transition-colors ${
                   router.pathname === '/'
                     ? 'bg-white/10 text-accent'
-                    : 'text-white/75 hover:bg-white/10 hover:text-white'
+                    : 'text-white/85 hover:bg-white/10 hover:text-white'
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -397,7 +397,7 @@ const Header = () => {
                 className={`block px-4 py-3 rounded-xl font-medium transition-colors ${
                   router.pathname === '/who-we-are'
                     ? 'bg-white/10 text-accent'
-                    : 'text-white/75 hover:bg-white/10 hover:text-white'
+                    : 'text-white/85 hover:bg-white/10 hover:text-white'
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -424,7 +424,7 @@ const Header = () => {
                       <div className="flex items-center">
                         <Link
                           href={`/services/${category.slug}`}
-                          className="flex-1 text-white/70 hover:bg-white/10 hover:text-white px-4 py-2 rounded-lg text-sm font-medium tracking-wide"
+                          className="flex-1 text-white/80 hover:bg-white/10 hover:text-white px-4 py-2 rounded-lg text-sm font-medium tracking-wide"
                           onClick={() => setIsMenuOpen(false)}
                         >
                           {category.title}
@@ -434,7 +434,7 @@ const Header = () => {
                           onClick={() =>
                             setOpenCategory(openCategory === category.slug ? null : category.slug)
                           }
-                          className="flex items-center justify-center min-h-11 min-w-11 text-white/50 hover:text-white rounded-lg shrink-0"
+                          className="flex items-center justify-center min-h-11 min-w-11 text-white/70 hover:text-white rounded-lg shrink-0"
                           aria-label={`Expand ${category.title} services`}
                         >
                           <ChevronDown
@@ -450,7 +450,7 @@ const Header = () => {
                             <li key={service.slug}>
                               <Link
                                 href={`/services/${service.slug}`}
-                                className="block text-white/60 hover:text-accent px-4 py-2 text-sm transition-colors"
+                                className="block text-white/75 hover:text-accent px-4 py-2 text-sm transition-colors"
                                 onClick={() => setIsMenuOpen(false)}
                               >
                                 {service.title}
@@ -490,7 +490,7 @@ const Header = () => {
                   </li>
                   {INDUSTRY_CATEGORIES.map((cat) => (
                     <li key={cat.id}>
-                      <p className="px-4 py-1 text-[10px] font-bold uppercase tracking-widest text-accent/80">
+                      <p className="px-4 py-1 text-xs font-bold uppercase tracking-widest text-accent">
                         {cat.title}
                       </p>
                       <ul className="space-y-0.5">
@@ -518,7 +518,7 @@ const Header = () => {
                 className={`block px-4 py-3 rounded-xl font-medium transition-colors ${
                   router.pathname === '/seo-packages'
                     ? 'bg-white/10 text-accent'
-                    : 'text-white/75 hover:bg-white/10 hover:text-white'
+                    : 'text-white/85 hover:bg-white/10 hover:text-white'
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -532,7 +532,7 @@ const Header = () => {
                 className={`block px-4 py-3 rounded-xl font-medium transition-colors ${
                   router.pathname === '/blog'
                     ? 'bg-white/10 text-accent'
-                    : 'text-white/75 hover:bg-white/10 hover:text-white'
+                    : 'text-white/85 hover:bg-white/10 hover:text-white'
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -546,7 +546,7 @@ const Header = () => {
                 className={`block px-4 py-3 rounded-xl font-medium transition-colors ${
                   router.pathname === '/contact-us'
                     ? 'bg-white/10 text-accent'
-                    : 'text-white/75 hover:bg-white/10 hover:text-white'
+                    : 'text-white/85 hover:bg-white/10 hover:text-white'
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >

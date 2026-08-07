@@ -3,57 +3,57 @@ export const PAGE_FAQS = {
     {
       question: 'What is AI-powered digital marketing? How is it different from traditional marketing?',
       answer:
-        'Traditional marketing relies heavily on manual work across research, content, and reporting. We use AI strategically to accelerate analysis, automate repetitive tasks, and optimize campaigns in real time—while specialists guide every decision for better outcomes at lower cost.',
+        'Traditional marketing relies heavily on manual work across research, content, and reporting. We use AI strategically to accelerate analysis, automate repetitive tasks, and optimize campaigns in real time-while specialists guide every decision for better outcomes at lower cost.',
     },
     {
       question: 'What services does SEO India Tech offer?',
       answer:
-        'We offer AI SEO, enterprise SEO, technical SEO, local and international SEO, Google Ads, Meta Ads, content marketing, web development, UI/UX design, CRO, ORM, and marketing automation—all under one global growth partner.',
+        'We offer AI SEO, enterprise SEO, technical SEO, local and international SEO, Google Ads, Meta Ads, content marketing, web development, UI/UX design, CRO, ORM, and marketing automation-all under one global growth partner.',
     },
     {
       question: 'Why should a business work with an AI-powered digital marketing agency?',
       answer:
-        'AI is no longer optional for competitive online growth. An AI-enabled agency helps you move faster on research, content, and optimization—so you scale visibility, leads, and revenue without multiplying headcount or vendor chaos.',
+        'AI is no longer optional for competitive online growth. An AI-enabled agency helps you move faster on research, content, and optimization-so you scale visibility, leads, and revenue without multiplying headcount or vendor chaos.',
     },
     {
       question: 'How long does it take to see SEO results?',
       answer:
-        'Most clients see measurable improvements within 3–6 months. Competitive industries may take longer, but we provide transparent weekly reporting so you always know where rankings, traffic, and leads stand.',
+        'Most clients see measurable improvements within 3-6 months. Competitive industries may take longer, but we provide transparent weekly reporting so you always know where rankings, traffic, and leads stand.',
     },
     {
       question: 'Do you work with international clients?',
       answer:
-        'Yes. We serve clients across USA, UK, Australia, Europe, UAE, Canada, and worldwide—with timezone-aligned communication and localized strategies for each market.',
+        'Yes. We serve clients across USA, UK, Australia, Europe, UAE, Canada, and worldwide-with timezone-aligned communication and localized strategies for each market.',
     },
     {
       question: 'What kind of results can I expect from SEO India Tech?',
       answer:
-        'Outcomes depend on your industry and starting point, but clients typically see improved rankings, higher organic traffic, better lead quality, and clearer ROI from paid campaigns—tracked weekly against agreed KPIs.',
+        'Outcomes depend on your industry and starting point, but clients typically see improved rankings, higher organic traffic, better lead quality, and clearer ROI from paid campaigns-tracked weekly against agreed KPIs.',
     },
     {
       question: 'How do you report performance and ROI?',
       answer:
-        'Weekly dashboards cover keyword rankings, organic traffic, leads, conversions, and campaign spend. A dedicated account manager walks you through every report with clear actions—not vanity metrics.',
+        'Weekly dashboards cover keyword rankings, organic traffic, leads, conversions, and campaign spend. A dedicated account manager walks you through every report with clear actions-not vanity metrics.',
     },
     {
       question: 'What makes SEO India Tech different from other agencies?',
       answer:
-        'We combine AI-powered SEO, full-stack digital marketing, and custom technology in one accountable team—14+ years of delivery, transparent reporting, and enterprise-grade execution with startup agility.',
+        'We combine AI-powered SEO, full-stack digital marketing, and custom technology in one accountable team-14+ years of delivery, transparent reporting, and enterprise-grade execution with startup agility.',
     },
     {
       question: 'Do you offer white-label or reseller SEO programs?',
       answer:
-        'Yes. We partner with agencies and resellers worldwide with white-label SEO, reporting, and delivery models—so you can scale client work without building an in-house SEO department.',
+        'Yes. We partner with agencies and resellers worldwide with white-label SEO, reporting, and delivery models-so you can scale client work without building an in-house SEO department.',
     },
     {
       question: 'Which industries do you specialize in?',
       answer:
-        'We serve e-commerce, SaaS, healthcare, real estate, education, finance, home services, startups, and 41 industry verticals—with playbooks adapted to each sector\'s buyer journey and compliance needs.',
+        'We serve e-commerce, SaaS, healthcare, real estate, education, finance, home services, startups, and 41 industry verticals-with playbooks adapted to each sector\'s buyer journey and compliance needs.',
     },
     {
       question: 'Can you help if I already have a website but low conversions?',
       answer:
-        'Yes. We audit technical SEO, page speed, UX, offer clarity, and funnel flow—then fix what blocks conversions while scaling traffic from search and paid channels.',
+        'Yes. We audit technical SEO, page speed, UX, offer clarity, and funnel flow-then fix what blocks conversions while scaling traffic from search and paid channels.',
     },
     {
       question: 'How do I get started with SEO India Tech?',
@@ -65,37 +65,37 @@ export const PAGE_FAQS = {
     {
       question: 'Can you guarantee first-page Google rankings?',
       answer:
-        'No ethical SEO agency can guarantee specific rankings—anyone who does either doesn\'t understand how search engines work or isn\'t being honest with you. What we can guarantee is a sound process: thorough audits, ethical tactics, and strategies built around what actually moves rankings for your industry and competition.',
+        'No ethical SEO agency can guarantee specific rankings-anyone who does either doesn\'t understand how search engines work or isn\'t being honest with you. What we can guarantee is a sound process: thorough audits, ethical tactics, and strategies built around what actually moves rankings for your industry and competition.',
     },
     {
       question: 'How much do your SEO services cost?',
       answer:
-        'Cost depends on your website\'s size, industry competitiveness, and goals—a local business targeting a few service areas is a different scope than an e-commerce brand competing nationally. We\'ll give you a clear, itemized proposal after understanding your specific situation, rather than a generic flat rate that doesn\'t reflect the actual work involved.',
+        'Cost depends on your website\'s size, industry competitiveness, and goals-a local business targeting a few service areas is a different scope than an e-commerce brand competing nationally. We\'ll give you a clear, itemized proposal after understanding your specific situation, rather than a generic flat rate that doesn\'t reflect the actual work involved.',
     },
     {
       question: 'Do I need to sign a long-term contract?',
       answer:
-        'We work on a monthly retainer model because SEO is an ongoing process, not a one-time fix—but we don\'t lock clients into rigid long-term contracts. If our work isn\'t delivering value, you should be free to walk away.',
+        'We work on a monthly retainer model because SEO is an ongoing process, not a one-time fix-but we don\'t lock clients into rigid long-term contracts. If our work isn\'t delivering value, you should be free to walk away.',
     },
     {
       question: 'What happens to my rankings if I stop SEO?',
       answer:
-        'Unlike paid ads, organic rankings don\'t disappear the moment you stop paying—but they also don\'t stay static forever. Competitors keep optimizing, algorithms keep changing, and content ages. Rankings built through solid SEO tend to hold longer than quick-win tactics, but ongoing maintenance is what keeps them from slowly eroding.',
+        'Unlike paid ads, organic rankings don\'t disappear the moment you stop paying-but they also don\'t stay static forever. Competitors keep optimizing, algorithms keep changing, and content ages. Rankings built through solid SEO tend to hold longer than quick-win tactics, but ongoing maintenance is what keeps them from slowly eroding.',
     },
     {
       question: 'Should I invest in SEO or PPC?',
       answer:
-        'They solve different problems. PPC gets you visibility immediately but stops the moment you stop paying. SEO takes longer to build but keeps generating traffic without ongoing ad spend. Most businesses benefit from a mix—PPC for immediate results while SEO compounds in the background.',
+        'They solve different problems. PPC gets you visibility immediately but stops the moment you stop paying. SEO takes longer to build but keeps generating traffic without ongoing ad spend. Most businesses benefit from a mix-PPC for immediate results while SEO compounds in the background.',
     },
     {
       question: 'Do you work with specific industries, or is your approach one-size-fits-all?',
       answer:
-        'We\'ve worked across industries—from local service businesses to e-commerce and enterprise brands—but we don\'t run the same playbook for all of them. Search behavior, competition, and buying cycles differ by industry, so every strategy starts with understanding your specific market, not a template.',
+        'We\'ve worked across industries-from local service businesses to e-commerce and enterprise brands-but we don\'t run the same playbook for all of them. Search behavior, competition, and buying cycles differ by industry, so every strategy starts with understanding your specific market, not a template.',
     },
     {
       question: 'What is included in a typical SEO engagement with SEO India Tech?',
       answer:
-        'Engagements typically include technical audits, keyword and intent research, on-page optimization, content strategy, link building, local SEO where relevant, AI Overview optimization, and monthly reporting tied to traffic, leads, and revenue—not just keyword positions.',
+        'Engagements typically include technical audits, keyword and intent research, on-page optimization, content strategy, link building, local SEO where relevant, AI Overview optimization, and monthly reporting tied to traffic, leads, and revenue-not just keyword positions.',
     },
     {
       question: 'How do you measure SEO success?',
@@ -159,12 +159,12 @@ export const PAGE_FAQS = {
     {
       question: 'How long before I see results from an SEO package?',
       answer:
-        'Most clients see measurable improvements within 3–6 months. Competitive industries may take longer, but we provide weekly progress reports throughout.',
+        'Most clients see measurable improvements within 3-6 months. Competitive industries may take longer, but we provide weekly progress reports throughout.',
     },
     {
       question: 'Can I upgrade or downgrade my SEO package?',
       answer:
-        'Yes. You can adjust your package as your business grows. We recommend at least 3–6 months on any plan for meaningful SEO results.',
+        'Yes. You can adjust your package as your business grows. We recommend at least 3-6 months on any plan for meaningful SEO results.',
     },
     {
       question: 'Do SEO packages include local SEO and Google Business Profile?',
@@ -184,7 +184,7 @@ export const PAGE_FAQS = {
     {
       question: 'Is there a setup fee for SEO packages?',
       answer:
-        'Most packages include onboarding in the first month—site audit, tracking setup, and strategy document. Any one-time project work outside the retainer is quoted separately before work begins.',
+        'Most packages include onboarding in the first month-site audit, tracking setup, and strategy document. Any one-time project work outside the retainer is quoted separately before work begins.',
     },
   ],
   industriesHub: [
@@ -206,22 +206,22 @@ export const PAGE_FAQS = {
     {
       question: 'How is industry-specific SEO different from generic SEO?',
       answer:
-        'Industry SEO targets the keywords, compliance rules, and buyer journeys unique to your vertical—so content, schema, and local signals match how your customers actually search and decide.',
+        'Industry SEO targets the keywords, compliance rules, and buyer journeys unique to your vertical-so content, schema, and local signals match how your customers actually search and decide.',
     },
     {
       question: 'Do industry SEO programs include content written for my sector?',
       answer:
-        'Yes. We create service pages, FAQs, and blog content using terminology and topics your audience searches for—optimized for Google and AI answer engines.',
+        'Yes. We create service pages, FAQs, and blog content using terminology and topics your audience searches for-optimized for Google and AI answer engines.',
     },
     {
       question: 'Can industry SEO work alongside my existing marketing agency?',
       answer:
-        'Yes. We can lead SEO delivery or collaborate with your in-house or agency team—with clear task ownership and shared reporting.',
+        'Yes. We can lead SEO delivery or collaborate with your in-house or agency team-with clear task ownership and shared reporting.',
     },
     {
       question: 'How long do industry SEO programs take to show results?',
       answer:
-        'Many verticals see early movement in 4–8 weeks for local terms; competitive national keywords often take 3–6 months. We set realistic timelines based on your industry audit.',
+        'Many verticals see early movement in 4-8 weeks for local terms; competitive national keywords often take 3-6 months. We set realistic timelines based on your industry audit.',
     },
     {
       question: 'How do I choose the right industry SEO program?',
@@ -243,7 +243,7 @@ export const PAGE_FAQS = {
     {
       question: 'Does SEO India Tech follow white-hat SEO practices?',
       answer:
-        'Yes. We strictly follow Google guidelines. Our focus is sustainable, long-term growth—not shortcuts that risk penalties.',
+        'Yes. We strictly follow Google guidelines. Our focus is sustainable, long-term growth-not shortcuts that risk penalties.',
     },
     {
       question: 'What industries and markets do you serve?',
@@ -258,7 +258,7 @@ export const PAGE_FAQS = {
     {
       question: 'What is SEO India Tech\'s team structure?',
       answer:
-        'Each client gets a dedicated account manager backed by SEO strategists, content specialists, developers, and paid media experts—so strategy and execution stay aligned.',
+        'Each client gets a dedicated account manager backed by SEO strategists, content specialists, developers, and paid media experts-so strategy and execution stay aligned.',
     },
     {
       question: 'Does SEO India Tech offer training or workshops?',
@@ -268,7 +268,7 @@ export const PAGE_FAQS = {
     {
       question: 'How can I verify SEO India Tech\'s track record?',
       answer:
-        'Ask for case studies in your industry during a consultation. We share relevant results, methodology, and references where appropriate—without exposing confidential client data.',
+        'Ask for case studies in your industry during a consultation. We share relevant results, methodology, and references where appropriate-without exposing confidential client data.',
     },
   ],
   contentMarketing: [
@@ -290,7 +290,7 @@ export const PAGE_FAQS = {
     {
       question: 'What types of content do you create?',
       answer:
-        'We produce blog posts, service pages, landing pages, email sequences, case studies, whitepapers, video scripts, and social content—all mapped to search intent and funnel stage.',
+        'We produce blog posts, service pages, landing pages, email sequences, case studies, whitepapers, video scripts, and social content-all mapped to search intent and funnel stage.',
     },
     {
       question: 'How does content marketing support AI search and Google AI Overviews?',
@@ -300,12 +300,12 @@ export const PAGE_FAQS = {
     {
       question: 'How often should my business publish new content?',
       answer:
-        'Frequency depends on competition and resources. Most clients benefit from 2–8 pieces per month plus updates to high-value existing pages. We recommend a sustainable calendar tied to keyword opportunity.',
+        'Frequency depends on competition and resources. Most clients benefit from 2-8 pieces per month plus updates to high-value existing pages. We recommend a sustainable calendar tied to keyword opportunity.',
     },
     {
       question: 'Do you handle content strategy and keyword research?',
       answer:
-        'Yes. Every content program starts with audience research, competitor analysis, and keyword mapping—so each piece targets real search demand and business goals.',
+        'Yes. Every content program starts with audience research, competitor analysis, and keyword mapping-so each piece targets real search demand and business goals.',
     },
     {
       question: 'Can content marketing work for B2B and local businesses?',
@@ -327,7 +327,7 @@ export const PAGE_FAQS = {
     {
       question: 'Which platforms do you run PPC ads on?',
       answer:
-        'We manage campaigns on Google Ads, Microsoft Ads, Meta (Facebook and Instagram), LinkedIn, YouTube, and display networks—with full conversion tracking on each.',
+        'We manage campaigns on Google Ads, Microsoft Ads, Meta (Facebook and Instagram), LinkedIn, YouTube, and display networks-with full conversion tracking on each.',
     },
     {
       question: 'How quickly can PPC campaigns generate leads?',
@@ -337,12 +337,12 @@ export const PAGE_FAQS = {
     {
       question: 'What is a good PPC budget for small businesses?',
       answer:
-        'Budgets vary by industry and location. We recommend starting with enough daily spend to gather data (often ₹500–₹2,000+ per day in competitive Indian markets) and scaling based on cost-per-lead targets.',
+        'Budgets vary by industry and location. We recommend starting with enough daily spend to gather data (often ₹500-₹2,000+ per day in competitive Indian markets) and scaling based on cost-per-lead targets.',
     },
     {
       question: 'How do you measure PPC ROI?',
       answer:
-        'We track calls, form fills, purchases, and other conversions—then report cost per acquisition, return on ad spend, and which keywords and ads drive revenue.',
+        'We track calls, form fills, purchases, and other conversions-then report cost per acquisition, return on ad spend, and which keywords and ads drive revenue.',
     },
     {
       question: 'Should I run PPC alongside SEO?',
@@ -352,7 +352,7 @@ export const PAGE_FAQS = {
     {
       question: 'Do you optimize landing pages for PPC campaigns?',
       answer:
-        'Yes. We audit and improve landing page speed, messaging, trust signals, and forms—because ad spend is wasted when clicks don\'t convert.',
+        'Yes. We audit and improve landing page speed, messaging, trust signals, and forms-because ad spend is wasted when clicks don\'t convert.',
     },
   ],
   socialMediaMarketing: [
@@ -364,7 +364,7 @@ export const PAGE_FAQS = {
     {
       question: 'How can social media marketing grow my business?',
       answer:
-        'Consistent posting, targeted ads, community engagement, and influencer partnerships increase visibility, trust, and direct conversions—especially when aligned with your SEO and content strategy.',
+        'Consistent posting, targeted ads, community engagement, and influencer partnerships increase visibility, trust, and direct conversions-especially when aligned with your SEO and content strategy.',
     },
     {
       question: 'Which social platforms should my business use?',
@@ -379,7 +379,7 @@ export const PAGE_FAQS = {
     {
       question: 'How often should we post on social media?',
       answer:
-        'Most brands benefit from 3–5 posts per week per platform, adjusted for resources and engagement data. Quality and consistency matter more than volume alone.',
+        'Most brands benefit from 3-5 posts per week per platform, adjusted for resources and engagement data. Quality and consistency matter more than volume alone.',
     },
     {
       question: 'Can social media marketing improve SEO?',
@@ -389,19 +389,19 @@ export const PAGE_FAQS = {
     {
       question: 'Do you provide social media content creation?',
       answer:
-        'Yes. We create graphics, captions, short-form video scripts, and campaign calendars—aligned with your brand voice and marketing goals.',
+        'Yes. We create graphics, captions, short-form video scripts, and campaign calendars-aligned with your brand voice and marketing goals.',
     },
     {
       question: 'How do you report social media performance?',
       answer:
-        'Monthly reports cover reach, engagement, follower growth, ad spend, leads, and top-performing content—with recommendations for the next period.',
+        'Monthly reports cover reach, engagement, follower growth, ad spend, leads, and top-performing content-with recommendations for the next period.',
     },
   ],
   digitalBranding: [
     {
       question: 'What is digital branding?',
       answer:
-        'Digital branding is the process of creating a consistent, memorable brand presence across websites, social media, search results, and digital touchpoints—so customers recognize and trust your business online.',
+        'Digital branding is the process of creating a consistent, memorable brand presence across websites, social media, search results, and digital touchpoints-so customers recognize and trust your business online.',
     },
     {
       question: 'Why is digital branding important for my business?',
@@ -426,12 +426,12 @@ export const PAGE_FAQS = {
     {
       question: 'Can you rebrand an existing business?',
       answer:
-        'Yes. We manage rebrands with minimal disruption—updating digital assets, redirects, and listings so search visibility and customer recognition transfer smoothly.',
+        'Yes. We manage rebrands with minimal disruption-updating digital assets, redirects, and listings so search visibility and customer recognition transfer smoothly.',
     },
     {
       question: 'How long does a digital branding project take?',
       answer:
-        'A focused brand refresh may take 4–6 weeks; full rebrands with multiple touchpoints often take 8–12 weeks depending on scope and approvals.',
+        'A focused brand refresh may take 4-6 weeks; full rebrands with multiple touchpoints often take 8-12 weeks depending on scope and approvals.',
     },
     {
       question: 'Do you work with startups and established enterprises?',
@@ -458,12 +458,12 @@ export const PAGE_FAQS = {
     {
       question: 'How does UI/UX design impact SEO and conversions?',
       answer:
-        'Fast, mobile-friendly layouts with clear navigation reduce bounce rates and improve Core Web Vitals—factors that support SEO. Better UX also increases form completions and sales.',
+        'Fast, mobile-friendly layouts with clear navigation reduce bounce rates and improve Core Web Vitals-factors that support SEO. Better UX also increases form completions and sales.',
     },
     {
       question: 'What is your UI/UX design process?',
       answer:
-        'We follow discover → define → design → test → deliver. Stakeholder interviews, user flows, wireframes, and prototypes come before high-fidelity UI so we solve the right problems.',
+        'We follow discover -> define -> design -> test -> deliver. Stakeholder interviews, user flows, wireframes, and prototypes come before high-fidelity UI so we solve the right problems.',
     },
     {
       question: 'Can you redesign my website without hurting SEO?',
@@ -478,14 +478,14 @@ export const PAGE_FAQS = {
     {
       question: 'How long does a UI/UX project take?',
       answer:
-        'A landing page redesign may take 2–3 weeks; full website or app UX projects typically run 6–12 weeks depending on page count and research depth.',
+        'A landing page redesign may take 2-3 weeks; full website or app UX projects typically run 6-12 weeks depending on page count and research depth.',
     },
   ],
   digitalMarketingHub: [
     {
       question: 'What digital marketing services does SEO India Tech offer?',
       answer:
-        'We offer content marketing, digital branding, social media optimization, social media marketing, and online reputation management—all integrated with SEO for full-funnel growth.',
+        'We offer content marketing, digital branding, social media optimization, social media marketing, and online reputation management-all integrated with SEO for full-funnel growth.',
     },
     {
       question: 'How is digital marketing different from SEO?',
@@ -495,32 +495,32 @@ export const PAGE_FAQS = {
     {
       question: 'Do you create custom digital marketing strategies?',
       answer:
-        'Yes. Every strategy starts with your business goals, audience research, and competitive analysis—not a one-size-fits-all template.',
+        'Yes. Every strategy starts with your business goals, audience research, and competitive analysis-not a one-size-fits-all template.',
     },
     {
       question: 'Can digital marketing work for small businesses?',
       answer:
-        'Yes. We prioritize high-impact, budget-conscious tactics—local SEO, targeted content, and focused social presence—before scaling spend.',
+        'Yes. We prioritize high-impact, budget-conscious tactics-local SEO, targeted content, and focused social presence-before scaling spend.',
     },
     {
       question: 'How do you measure digital marketing ROI?',
       answer:
-        'We track leads, conversions, cost per acquisition, organic traffic, engagement, and revenue where tracking allows—reported monthly with clear next steps.',
+        'We track leads, conversions, cost per acquisition, organic traffic, engagement, and revenue where tracking allows-reported monthly with clear next steps.',
     },
     {
       question: 'Do you offer AI-powered digital marketing?',
       answer:
-        'Yes. We use AI for research, content drafts, ad optimization, and reporting—always reviewed by specialists so quality and brand voice stay on point.',
+        'Yes. We use AI for research, content drafts, ad optimization, and reporting-always reviewed by specialists so quality and brand voice stay on point.',
     },
     {
       question: 'How long before digital marketing shows results?',
       answer:
-        'Paid campaigns can generate leads within days. Organic content and SEO typically show meaningful movement in 3–6 months. We set expectations per channel upfront.',
+        'Paid campaigns can generate leads within days. Organic content and SEO typically show meaningful movement in 3-6 months. We set expectations per channel upfront.',
     },
     {
       question: 'Can you manage all digital marketing channels in one place?',
       answer:
-        'Yes. One account team coordinates SEO, content, social, ORM, and paid media—with unified reporting so you see the full picture.',
+        'Yes. One account team coordinates SEO, content, social, ORM, and paid media-with unified reporting so you see the full picture.',
     },
   ],
   paidAdvertisingHub: [
@@ -547,7 +547,7 @@ export const PAGE_FAQS = {
     {
       question: 'How do you structure Google Ads accounts?',
       answer:
-        'We use tight campaign structure—separate brand, competitor, and generic campaigns—with ad groups mapped to intent, negative keywords, and conversion-based bidding where data allows.',
+        'We use tight campaign structure-separate brand, competitor, and generic campaigns-with ad groups mapped to intent, negative keywords, and conversion-based bidding where data allows.',
     },
     {
       question: 'Do you manage remarketing campaigns?',
@@ -557,7 +557,7 @@ export const PAGE_FAQS = {
     {
       question: 'What budget do I need to start paid advertising?',
       answer:
-        'Minimum viable budgets depend on industry CPCs. We recommend enough spend to exit the learning phase—often 2–4 weeks of consistent daily budget—before judging performance.',
+        'Minimum viable budgets depend on industry CPCs. We recommend enough spend to exit the learning phase-often 2-4 weeks of consistent daily budget-before judging performance.',
     },
     {
       question: 'How often do you optimize paid ad campaigns?',
@@ -584,7 +584,7 @@ export const PAGE_FAQS = {
     {
       question: 'Which technologies do you use for web development?',
       answer:
-        'We build with modern stacks including Next.js, React, WordPress, and headless CMS setups—chosen based on performance, scalability, and your team\'s needs.',
+        'We build with modern stacks including Next.js, React, WordPress, and headless CMS setups-chosen based on performance, scalability, and your team\'s needs.',
     },
     {
       question: 'Do you build e-commerce websites?',
@@ -594,7 +594,7 @@ export const PAGE_FAQS = {
     {
       question: 'How do you ensure website speed and Core Web Vitals?',
       answer:
-        'We optimize images, code splitting, caching, CDN delivery, and server response times—then test with Lighthouse and real-user monitoring before launch.',
+        'We optimize images, code splitting, caching, CDN delivery, and server response times-then test with Lighthouse and real-user monitoring before launch.',
     },
     {
       question: 'Do you provide ongoing website maintenance?',
@@ -604,7 +604,7 @@ export const PAGE_FAQS = {
     {
       question: 'How long does a typical website project take?',
       answer:
-        'Marketing sites often launch in 4–8 weeks. Complex e-commerce or custom applications may take 10–16 weeks depending on features and content readiness.',
+        'Marketing sites often launch in 4-8 weeks. Complex e-commerce or custom applications may take 10-16 weeks depending on features and content readiness.',
     },
   ],
   marketResearch: [
@@ -616,22 +616,22 @@ export const PAGE_FAQS = {
     {
       question: 'How does market research help SEO?',
       answer:
-        'Keyword and competitor research ensures your SEO strategy targets real search demand and opportunities your competitors are missing—not guesswork.',
+        'Keyword and competitor research ensures your SEO strategy targets real search demand and opportunities your competitors are missing-not guesswork.',
     },
     {
       question: 'What data sources do you use for market research?',
       answer:
-        'We combine SEO tools, search trend data, competitor site analysis, social listening, and industry reports—tailored to your market and geography.',
+        'We combine SEO tools, search trend data, competitor site analysis, social listening, and industry reports-tailored to your market and geography.',
     },
     {
       question: 'How long does a market research project take?',
       answer:
-        'A focused competitor and keyword study typically takes 2–3 weeks. Full market entry research for new products or regions may take 4–6 weeks.',
+        'A focused competitor and keyword study typically takes 2-3 weeks. Full market entry research for new products or regions may take 4-6 weeks.',
     },
     {
       question: 'Can market research support product launches?',
       answer:
-        'Yes. We identify demand, positioning angles, messaging themes, and channel mix before launch—so marketing spend targets validated opportunities.',
+        'Yes. We identify demand, positioning angles, messaging themes, and channel mix before launch-so marketing spend targets validated opportunities.',
     },
     {
       question: 'Do you research international markets?',
@@ -653,17 +653,17 @@ export const PAGE_FAQS = {
     {
       question: 'What types of websites do you build?',
       answer:
-        'We build business websites, e-commerce stores, landing pages, and custom web applications—all mobile-responsive and SEO-ready.',
+        'We build business websites, e-commerce stores, landing pages, and custom web applications-all mobile-responsive and SEO-ready.',
     },
     {
       question: 'How long does website creation take?',
       answer:
-        'A standard business website typically takes 3–8 weeks depending on scope, design complexity, and content requirements.',
+        'A standard business website typically takes 3-8 weeks depending on scope, design complexity, and content requirements.',
     },
     {
       question: 'Is SEO included when you build a website?',
       answer:
-        'Yes. On-page SEO fundamentals—title tags, meta descriptions, heading structure, schema basics, sitemap, and fast load times—are built into every project.',
+        'Yes. On-page SEO fundamentals-title tags, meta descriptions, heading structure, schema basics, sitemap, and fast load times-are built into every project.',
     },
     {
       question: 'Can you migrate my existing website to a new platform?',
@@ -673,12 +673,12 @@ export const PAGE_FAQS = {
     {
       question: 'Do you provide website hosting and domain setup?',
       answer:
-        'We can recommend and configure hosting, SSL, CDN, and domain DNS—or work with your existing infrastructure team.',
+        'We can recommend and configure hosting, SSL, CDN, and domain DNS-or work with your existing infrastructure team.',
     },
     {
       question: 'Will my website work on mobile devices?',
       answer:
-        'Every site we build is mobile-first and responsive—tested across common screen sizes and browsers before launch.',
+        'Every site we build is mobile-first and responsive-tested across common screen sizes and browsers before launch.',
     },
     {
       question: 'Can you integrate CRM, chat, and analytics?',
@@ -695,7 +695,7 @@ export const PAGE_FAQS = {
     {
       question: 'What are digital automation solutions?',
       answer:
-        'Digital automation solutions use software to handle repetitive business processes—reducing manual work, improving accuracy, and freeing teams to focus on high-value tasks.',
+        'Digital automation solutions use software to handle repetitive business processes-reducing manual work, improving accuracy, and freeing teams to focus on high-value tasks.',
     },
     {
       question: 'How can automation help my business?',
@@ -705,7 +705,7 @@ export const PAGE_FAQS = {
     {
       question: 'Do you offer customized automation solutions?',
       answer:
-        'Yes. We design automations around your existing tools—CRMs, spreadsheets, email, and APIs—so integrations fit your workflow instead of forcing a generic template.',
+        'Yes. We design automations around your existing tools-CRMs, spreadsheets, email, and APIs-so integrations fit your workflow instead of forcing a generic template.',
     },
     {
       question: 'What business processes can be automated?',
@@ -715,34 +715,34 @@ export const PAGE_FAQS = {
     {
       question: 'Which tools do you use for marketing automation?',
       answer:
-        'We work with Zapier, Make, HubSpot, Zoho, Google Workspace, Slack, and custom scripts—selecting the stack that matches your budget and technical comfort.',
+        'We work with Zapier, Make, HubSpot, Zoho, Google Workspace, Slack, and custom scripts-selecting the stack that matches your budget and technical comfort.',
     },
     {
       question: 'How long does an automation project take?',
       answer:
-        'Simple workflows may go live in 1–2 weeks. Multi-system integrations with testing and documentation typically take 4–8 weeks.',
+        'Simple workflows may go live in 1-2 weeks. Multi-system integrations with testing and documentation typically take 4-8 weeks.',
     },
     {
       question: 'Will automation replace my team?',
       answer:
-        'Automation handles repetitive tasks so your team can focus on strategy, sales, and customer relationships—it augments people rather than replacing them.',
+        'Automation handles repetitive tasks so your team can focus on strategy, sales, and customer relationships-it augments people rather than replacing them.',
     },
     {
       question: 'How do you measure automation ROI?',
       answer:
-        'We track hours saved, error reduction, faster response times, and revenue impact from improved follow-up—reported against project goals set at kickoff.',
+        'We track hours saved, error reduction, faster response times, and revenue impact from improved follow-up-reported against project goals set at kickoff.',
     },
   ],
   workflow: [
     {
       question: 'What are workflow automation solutions?',
       answer:
-        'Workflow automation connects people, data, and tools in defined steps—so tasks move automatically from one stage to the next with approvals, notifications, and audit trails.',
+        'Workflow automation connects people, data, and tools in defined steps-so tasks move automatically from one stage to the next with approvals, notifications, and audit trails.',
     },
     {
       question: 'How can workflow automation help my business?',
       answer:
-        'It improves productivity, reduces bottlenecks, standardizes quality, and gives leadership visibility into where work stalls—across marketing, sales, and operations.',
+        'It improves productivity, reduces bottlenecks, standardizes quality, and gives leadership visibility into where work stalls-across marketing, sales, and operations.',
     },
     {
       question: 'Does SEO India Tech provide customized workflow automation?',
@@ -767,7 +767,7 @@ export const PAGE_FAQS = {
     {
       question: 'How secure is workflow automation?',
       answer:
-        'We follow least-privilege API access, encrypted connections, and role-based permissions—especially when handling customer or financial data.',
+        'We follow least-privilege API access, encrypted connections, and role-based permissions-especially when handling customer or financial data.',
     },
     {
       question: 'How do I get started with workflow automation?',
@@ -779,12 +779,12 @@ export const PAGE_FAQS = {
     {
       question: 'What CRM and tools integration services do you offer?',
       answer:
-        'We implement, customize, and integrate CRMs like HubSpot and Zoho with your website, ads, email, and automation stack—so customer data flows in one place.',
+        'We implement, customize, and integrate CRMs like HubSpot and Zoho with your website, ads, email, and automation stack-so customer data flows in one place.',
     },
     {
       question: 'Why does my business need a CRM?',
       answer:
-        'A CRM centralizes leads, deals, and communication history—so sales and marketing follow up faster, personalize outreach, and don\'t lose revenue to dropped leads.',
+        'A CRM centralizes leads, deals, and communication history-so sales and marketing follow up faster, personalize outreach, and don\'t lose revenue to dropped leads.',
     },
     {
       question: 'Can you migrate data from my old CRM?',
@@ -804,24 +804,24 @@ export const PAGE_FAQS = {
     {
       question: 'Can you build custom dashboards in my CRM?',
       answer:
-        'Yes. We configure pipelines, custom properties, reports, and dashboards aligned to your KPIs—leads, pipeline value, win rates, and campaign performance.',
+        'Yes. We configure pipelines, custom properties, reports, and dashboards aligned to your KPIs-leads, pipeline value, win rates, and campaign performance.',
     },
     {
       question: 'Do you provide CRM training for my team?',
       answer:
-        'Yes. We run hands-on sessions for sales, marketing, and admin users—plus quick-reference guides for daily workflows.',
+        'Yes. We run hands-on sessions for sales, marketing, and admin users-plus quick-reference guides for daily workflows.',
     },
     {
       question: 'How long does CRM setup and integration take?',
       answer:
-        'Basic CRM setup may take 2–3 weeks. Full integrations with website, ads, email, and automation often take 4–8 weeks including testing and training.',
+        'Basic CRM setup may take 2-3 weeks. Full integrations with website, ads, email, and automation often take 4-8 weeks including testing and training.',
     },
   ],
   promotionAndAds: [
     {
       question: 'What are promotion and ads services?',
       answer:
-        'Promotion and ads services cover paid campaigns across search, social, display, and video—designed to increase visibility, traffic, and conversions for your offers.',
+        'Promotion and ads services cover paid campaigns across search, social, display, and video-designed to increase visibility, traffic, and conversions for your offers.',
     },
     {
       question: 'How do promotion campaigns differ from ongoing PPC management?',
@@ -836,12 +836,12 @@ export const PAGE_FAQS = {
     {
       question: 'How do you create ad creatives for promotions?',
       answer:
-        'We develop copy, visuals, and landing pages aligned with your offer—testing multiple variants to find the best click-through and conversion rates.',
+        'We develop copy, visuals, and landing pages aligned with your offer-testing multiple variants to find the best click-through and conversion rates.',
     },
     {
       question: 'Can you run ads for a product launch?',
       answer:
-        'Yes. We plan pre-launch awareness, launch-week conversion campaigns, and post-launch retargeting—with tracking tied to signups, sales, or demo requests.',
+        'Yes. We plan pre-launch awareness, launch-week conversion campaigns, and post-launch retargeting-with tracking tied to signups, sales, or demo requests.',
     },
     {
       question: 'What budget do I need for a promotional campaign?',
@@ -851,7 +851,7 @@ export const PAGE_FAQS = {
     {
       question: 'How do you measure promotional campaign success?',
       answer:
-        'We track impressions, clicks, conversions, cost per acquisition, and revenue where e-commerce tracking is available—compared against campaign targets.',
+        'We track impressions, clicks, conversions, cost per acquisition, and revenue where e-commerce tracking is available-compared against campaign targets.',
     },
     {
       question: 'Do promotional ads work with SEO and content?',

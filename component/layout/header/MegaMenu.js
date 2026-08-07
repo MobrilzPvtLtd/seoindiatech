@@ -66,7 +66,7 @@ function MegaMenuCategory({ category, closeMenu }) {
                 <CategoryIcon size={14} aria-hidden="true" />
               </span>
             )}
-            <span className="text-[11px] font-semibold tracking-wider uppercase text-slate-400 dark:text-slate-500 group-hover:text-primary dark:group-hover:text-accent transition-colors truncate">
+            <span className="text-xs font-semibold tracking-wider uppercase text-slate-600 dark:text-slate-300 group-hover:text-primary dark:group-hover:text-accent transition-colors truncate">
               {title}
             </span>
           </span>
@@ -83,7 +83,7 @@ function MegaMenuCategory({ category, closeMenu }) {
               <CategoryIcon size={14} aria-hidden="true" />
             </span>
           )}
-          <span className="text-[11px] font-semibold tracking-wider uppercase text-slate-400 dark:text-slate-500">
+          <span className="text-xs font-semibold tracking-wider uppercase text-slate-600 dark:text-slate-300">
             {title}
           </span>
         </div>
@@ -117,13 +117,13 @@ function MegaMenuItem({ item, closeMenu }) {
       </div>
       <div className="min-w-0 flex-1">
         <p
-          className="text-[13px] font-medium text-slate-800 dark:text-white group-hover:text-primary dark:group-hover:text-accent transition-colors leading-snug whitespace-nowrap truncate"
+          className="text-[13px] font-semibold text-slate-800 dark:text-white group-hover:text-primary dark:group-hover:text-accent transition-colors leading-snug whitespace-nowrap truncate"
           title={title}
         >
           {title}
         </p>
         {desc && (
-          <p className="text-[11px] text-slate-400 dark:text-slate-500 mt-0.5 leading-snug line-clamp-1 hidden lg:block">
+          <p className="text-xs text-slate-600 dark:text-slate-300 mt-0.5 leading-snug line-clamp-1 hidden lg:block">
             {desc}
           </p>
         )}
@@ -137,7 +137,7 @@ function MegaMenuFooter({ footer, closeMenu }) {
 
   return (
     <div className="flex-shrink-0 mt-4 mx-6 md:mx-8 pt-5 pb-6 md:pb-8 border-t border-slate-100 dark:border-slate-700/60 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
-      <p className="text-sm text-slate-500 dark:text-slate-400">
+      <p className="text-sm text-slate-600 dark:text-slate-300">
         {message}{' '}
         {highlight && (
           <span className="text-slate-700 dark:text-slate-200 font-medium">{highlight}</span>

@@ -29,7 +29,7 @@ export default function HubContentSection({ title, paragraphs, bullets, links = 
                   href={link.href}
                   className="text-sm font-semibold text-primary dark:text-accent hover:underline"
                 >
-                  {link.label} →
+                  {link.label} {'→'}
                 </Link>
               ))}
             </div>

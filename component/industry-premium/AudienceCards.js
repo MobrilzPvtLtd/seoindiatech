@@ -26,11 +26,11 @@ export default function AudienceCards({ data }) {
               </div>
               <h3 className="text-base font-bold text-heading">{item.title}</h3>
             </div>
-            <p className="text-sm leading-relaxed text-body">{item.description}</p>
-            <ul className="mt-4 space-y-2 border-t border-border/50 pt-4">
+            <p className="premium-prose">{item.description}</p>
+            <ul className="mt-4 space-y-2.5 border-t border-border/60 pt-4">
               {item.points.map((p) => (
-                <li key={p} className="flex items-start gap-2 text-xs text-muted">
-                  <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-primary" />
+                <li key={p} className="premium-list-item flex items-start gap-2.5">
+                  <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
                   {p}
                 </li>
               ))}

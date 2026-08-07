@@ -92,7 +92,7 @@ export default function index() {
         schema={schemaData}
       />
       <Automation />
-      <VisibleFaq faqs={PAGE_FAQS.automation} minCount={8} showSchema />
+      <VisibleFaq faqs={PAGE_FAQS.automation} minCount={8} />
     </>
   )
 }

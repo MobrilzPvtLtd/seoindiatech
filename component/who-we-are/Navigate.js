@@ -102,7 +102,7 @@ const Navigate = () => {
               {/* Replace with Next.js Image for better optimization */}
               <Image
                 src="/images/whoweare/grow.png"
-                alt="Navigate with Digitalyzeit"
+                alt="Navigate with SEO India Tech"
                 // width={1024}
                 // height={640}
                 fill

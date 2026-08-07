@@ -1,6 +1,4 @@
 import Link from 'next/link'
-import VisibleFaq from '@/component/common/VisibleFaq'
-import { PAGE_FAQS } from '@/utils/pageFaqs'
 
 export default function SeoPackageContent() {
   return (
@@ -37,7 +35,6 @@ export default function SeoPackageContent() {
           </div>
         </div>
       </section>
-      <VisibleFaq faqs={PAGE_FAQS.seoPackages} minCount={8} showSchema />
     </>
   )
 }

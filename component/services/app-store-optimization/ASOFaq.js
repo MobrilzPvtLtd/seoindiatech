@@ -38,7 +38,7 @@ const faqs = [
     {
       question: 'Q7. How do you improve app store conversion rates?',
       answer:
-        'We test screenshots, icons, preview videos, and listing copy—optimizing for the keywords that drive installs while improving click-to-install rates from search and browse.',
+        'We test screenshots, icons, preview videos, and listing copy-optimizing for the keywords that drive installs while improving click-to-install rates from search and browse.',
     },
     {
       question: 'Q8. Do you track ASO performance over time?',

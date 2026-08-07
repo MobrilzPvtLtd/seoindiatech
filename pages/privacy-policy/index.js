@@ -1,17 +1,31 @@
 "use client";
 
 import React from 'react';
-import Link from 'next/link';
-import { Check } from 'lucide-react';
 import SeoHead from '@/component/common/SeoHead';
 import { getPageSeo } from '@/utils/pageSeoRegistry';
+import { buildPageGraph, buildWebPageSchema } from '@/utils/schemaBuilders';
+import { SITE_URL } from '@/utils/siteConfig';
 
 const seo = getPageSeo('/privacy-policy');
+const pageUrl = `${SITE_URL}/privacy-policy`;
+const schema = buildPageGraph({
+  breadcrumbs: [
+    { name: 'Home', url: `${SITE_URL}/` },
+    { name: 'Privacy Policy', url: pageUrl },
+  ],
+  extra: [
+    buildWebPageSchema({
+      url: pageUrl,
+      name: seo.title,
+      description: seo.description,
+    }),
+  ],
+});
 
 export default function PrivacyPolicy() {
   return (
     <>
-         <SeoHead title={seo.title} description={seo.description} path="/privacy-policy" />
+         <SeoHead title={seo.title} description={seo.description} path="/privacy-policy" schema={schema} />
       <main className="bg-background min-h-screen py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-8">
@@ -27,7 +41,7 @@ export default function PrivacyPolicy() {
                 How we collect, use, and protect your information
               </p>
               <span className="inline-block bg-primary/10 text-primary text-sm px-3 py-1 rounded-full">
-                Last Updated: May 2023
+                Last Updated: August 2026
               </span>
             </div>
 
@@ -44,113 +58,87 @@ export default function PrivacyPolicy() {
             {/* Main Content */}
             <div className="bg-card dark:bg-card p-6 md:p-8 rounded-lg shadow-md dark:shadow-lg border border-border">
               <div className="space-y-8">
-                {/* Terms and Conditions */}
                 <section>
                   <h2 className="text-2xl text-primary dark:text-accent mb-4 pb-2 border-b-2 border-primary/20 dark:border-primary/30">
-                    Terms and Conditions
+                    Information We Collect
                   </h2>
+                  <p className="text-body leading-relaxed mb-4">
+                    SEO India Tech may collect personal information you provide when you contact us, request a quote, subscribe to updates, or use our website. This may include your name, email address, phone number, company name, website URL, and project details.
+                  </p>
                   <p className="text-body leading-relaxed">
-                    The visitors to this <strong className="text-primary dark:text-accent">SEO India Tech</strong> website are bound by the terms and conditions that are mentioned herein. 
-                    Thus we strongly recommend that if you want to use this site for any purpose then you must go through the entire terms of use section. 
-                    In case you do not agree with any of the terms mentioned then you are advised not to use this website.
+                    We also collect technical data automatically, such as IP address, browser type, device information, pages visited, and referral source through cookies and analytics tools. This helps us improve site performance and user experience.
                   </p>
                 </section>
 
                 <hr className="border-border" />
 
-                {/* Website Modifications */}
                 <section>
                   <h2 className="text-2xl text-primary dark:text-accent mb-4 pb-2 border-b-2 border-primary/20 dark:border-primary/30">
-                    Website Modifications
+                    How We Use Your Information
                   </h2>
-                  <ul className="space-y-4">
-                    <li className="flex items-start">
-                      <span className="text-primary mr-2 mt-1">i</span>
-                      <p className="text-body leading-relaxed">
-                        <strong className="text-primary dark:text-accent">SEO India Tech</strong> at its own discretion and without issuing any prior notice under any condition can edit this agreement 
-                        and all the modifications would become applicable as soon as they appear on the website.
-                      </p>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-primary mr-2 mt-1">i</span>
-                      <p className="text-body leading-relaxed">
-                        You must acknowledge to read this agreement every time you access this website to stay updated with any changes.
-                      </p>
-                    </li>
+                  <ul className="space-y-3 text-body leading-relaxed list-disc pl-6">
+                    <li>To respond to inquiries and provide SEO, marketing, and development services</li>
+                    <li>To send proposals, reports, and service-related communications</li>
+                    <li>To improve our website, content, and customer experience</li>
+                    <li>To comply with legal obligations and prevent fraud or abuse</li>
                   </ul>
                 </section>
 
                 <hr className="border-border" />
 
-                {/* Information Accuracy */}
                 <section>
                   <h2 className="text-2xl text-primary dark:text-accent mb-4 pb-2 border-b-2 border-primary/20 dark:border-primary/30">
-                    Information Accuracy and Liability
-                  </h2>
-                  <ul className="space-y-4">
-                    <li className="flex items-start">
-                      <Check className="text-green-500 mr-2 mt-1 w-4 h-4 shrink-0" aria-hidden="true" />
-                      <p className="text-body leading-relaxed">
-                        <strong className="text-primary dark:text-accent">SEO India Tech</strong> makes every effort to ensure that the information provided on the website is accurate and true 
-                        but does not guarantee the same. <strong className="text-primary dark:text-accent">SEO India Tech</strong> holds all the rights to upload any information on the website 
-                        and edit it as it deems proper.
-                      </p>
-                    </li>
-                    <li className="flex items-start">
-                      <Check className="text-green-500 mr-2 mt-1 w-4 h-4 shrink-0" aria-hidden="true" />
-                      <p className="text-body leading-relaxed">
-                        At no point of time does <strong className="text-primary dark:text-accent">SEO India Tech</strong> should be held responsible for any inaccuracies or incoherence that 
-                        might appear on the website. <strong className="text-primary dark:text-accent">SEO India Tech</strong> would make any changes to the website at its own discretion and 
-                        not under any obligation.
-                      </p>
-                    </li>
-                    <li className="flex items-start">
-                      <Check className="text-green-500 mr-2 mt-1 w-4 h-4 shrink-0" aria-hidden="true" />
-                      <p className="text-body leading-relaxed">
-                        At no point of time does the information on the website is intended to coerce or spur the visitor to avail the products 
-                        and services offered by SEO India Tech.
-                      </p>
-                    </li>
-                  </ul>
-                </section>
-
-                <hr className="border-border" />
-
-                {/* Copyright and Intellectual Property */}
-                <section>
-                  <h2 className="text-2xl text-primary dark:text-accent mb-4 pb-2 border-b-2 border-primary/20 dark:border-primary/30">
-                    Copyright and Intellectual Property
+                    Cookies and Analytics
                   </h2>
                   <p className="text-body leading-relaxed">
-                    All the information present on the website solely belongs to <strong className="text-primary dark:text-accent">SEO India Tech</strong> and any attempt to reproduce it 
-                    or copy it would stringently fall under the legal purview of copyright infringement.
+                    We use cookies and similar technologies to analyze traffic, remember preferences, and measure campaign performance. You can control cookies through your browser settings. Disabling cookies may affect some site features.
                   </p>
                 </section>
 
                 <hr className="border-border" />
 
-                {/* System Damage Disclaimer */}
                 <section>
                   <h2 className="text-2xl text-primary dark:text-accent mb-4 pb-2 border-b-2 border-primary/20 dark:border-primary/30">
-                    System Damage Disclaimer
+                    Data Sharing and Security
                   </h2>
+                  <p className="text-body leading-relaxed mb-4">
+                    We do not sell your personal information. We may share data with trusted service providers (such as email, hosting, analytics, and CRM tools) only as needed to deliver our services. These partners are required to protect your information.
+                  </p>
                   <p className="text-body leading-relaxed">
-                    <strong className="text-primary dark:text-accent">SEO India Tech</strong> would like to bring it to the notice of the visitors to the website that under no circumstances 
-                    should <strong className="text-primary dark:text-accent">SEO India Tech</strong> be held responsible in case there is some damage to the visitor's system, data or any other 
-                    information while accessing the website.
+                    We implement reasonable technical and organizational measures to safeguard data. However, no method of transmission over the internet is 100% secure.
                   </p>
                 </section>
 
                 <hr className="border-border" />
 
-                {/* Legislation */}
                 <section>
                   <h2 className="text-2xl text-primary dark:text-accent mb-4 pb-2 border-b-2 border-primary/20 dark:border-primary/30">
-                    Legislation
+                    Your Rights
                   </h2>
                   <p className="text-body leading-relaxed">
-                    This agreement is completely under the authority of the Indian judiciary. In case there is any dispute arising out of 
-                    the use of this website then the same shall be resolved in the Jurisdiction of New Delhi, India.
+                    Depending on your location, you may have rights to access, correct, delete, or restrict use of your personal data. To exercise these rights, contact us at sales@seoindiatech.com. EU and UK visitors may have additional rights under GDPR.
+                  </p>
+                </section>
+
+                <hr className="border-border" />
+
+                <section>
+                  <h2 className="text-2xl text-primary dark:text-accent mb-4 pb-2 border-b-2 border-primary/20 dark:border-primary/30">
+                    Third-Party Links
+                  </h2>
+                  <p className="text-body leading-relaxed">
+                    Our website may link to third-party sites. We are not responsible for the privacy practices of those websites. Please review their policies before sharing personal information.
+                  </p>
+                </section>
+
+                <hr className="border-border" />
+
+                <section>
+                  <h2 className="text-2xl text-primary dark:text-accent mb-4 pb-2 border-b-2 border-primary/20 dark:border-primary/30">
+                    Changes to This Policy
+                  </h2>
+                  <p className="text-body leading-relaxed">
+                    We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated date. Continued use of our website after changes constitutes acceptance of the revised policy.
                   </p>
                 </section>
 

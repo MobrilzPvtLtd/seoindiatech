@@ -67,7 +67,7 @@ export default function VisibleFaq({
                 id={panelId}
                 role="region"
                 aria-labelledby={buttonId}
-                className="border-t border-border px-5 pb-5 pt-4 text-sm leading-relaxed text-muted"
+                className="border-t border-border px-5 pb-5 pt-4 text-sm md:text-base leading-relaxed text-body"
               >
                 {faq.answer}
               </div>

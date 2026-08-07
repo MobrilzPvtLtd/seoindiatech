@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { absoluteUrl, DEFAULT_OG_IMAGE, SITE_NAME } from '@/utils/siteConfig'
+import { absoluteUrl, DEFAULT_OG_IMAGE, SITE_NAME, SITE_URL } from '@/utils/siteConfig'
 
 /**
  * Reusable SEO head tags: title, description, canonical, robots, Open Graph, Twitter.
@@ -15,6 +15,9 @@ export default function SEO({
   robots = 'index, follow, max-image-preview:large, max-snippet:-1',
   noindex = false,
   lcpImage,
+  publishedTime,
+  modifiedTime,
+  author,
 }) {
   const canonicalUrl = canonical || absoluteUrl(path)
   const ogImage = image?.startsWith('http') ? image : absoluteUrl(image)
@@ -26,6 +29,8 @@ export default function SEO({
       <meta name="description" content={description} />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="robots" content={robotsContent} />
+      <meta name="author" content={SITE_NAME} />
+      <link rel="alternate" type="text/plain" title="LLM site index" href={`${SITE_URL}/llms.txt`} />
       <link rel="canonical" href={canonicalUrl} />
       {lcpImage && (
         <link
@@ -44,6 +49,13 @@ export default function SEO({
       <meta property="og:image" content={ogImage} />
       <meta property="og:site_name" content={SITE_NAME} />
       <meta property="og:locale" content="en_IN" />
+      {type === 'article' && publishedTime && (
+        <meta property="article:published_time" content={publishedTime} />
+      )}
+      {type === 'article' && modifiedTime && (
+        <meta property="article:modified_time" content={modifiedTime} />
+      )}
+      {type === 'article' && author && <meta property="article:author" content={author} />}
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />

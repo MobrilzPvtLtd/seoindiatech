@@ -1,5 +1,5 @@
 /**
- * Standard page section wrapper — consistent spacing, container, and backgrounds.
+ * Standard page section wrapper - consistent spacing, container, and backgrounds.
  */
 export default function PageSection({
   children,

@@ -4,6 +4,7 @@ import { healthcareTestimonials } from './healthcareTestimonials'
 export const plasticSurgeryPremium = {
   slug: 'plastic-surgery-seo',
   name: 'Plastic Surgery',
+  isHealthcare: true,
 
   seo: {
     title: 'Plastic Surgery SEO Services | Grow Consult Bookings | SEO India Tech',
@@ -133,6 +134,13 @@ export const plasticSurgeryPremium = {
         description:
           'Your account gets strategists who understand surgical buyer psychology, seasonal demand cycles, and competitive metro markets, not generalist marketers.',
         points: ['Healthcare vertical experience', 'Surgeon bio optimization', 'Review response frameworks'],
+      },
+      {
+        icon: 'star',
+        title: 'Reputation & Review Management',
+        description:
+          'Star ratings and review sentiment influence both patient trust and map pack rankings. We implement ethical post-consult review workflows and response frameworks aligned with healthcare advertising norms.',
+        points: ['Ethical review generation', 'Negative review response', 'Sentiment monitoring'],
       },
     ],
   },
@@ -317,6 +325,18 @@ export const plasticSurgeryPremium = {
     items: healthcareTestimonials,
   },
 
+  keyTakeaways: {
+    badge: 'Key Takeaways',
+    title: 'What Plastic Surgeons Should Know About SEO',
+    items: [
+      'Procedure-level pages outperform generic "cosmetic surgery" pages for high-intent patient searches.',
+      'YMYL compliance and surgeon credentials are ranking factors, not optional extras.',
+      'Before-and-after galleries must be fast, unique, and ethically presented to support SEO.',
+      'Medical tourism and local SEO require different landing page strategies under one practice site.',
+      'GEO and FAQ schema help AI tools recommend your practice for procedure-specific questions.',
+    ],
+  },
+
   faq: {
     badge: 'FAQ',
     title: 'Frequently Asked Questions About Plastic Surgery SEO',
@@ -422,6 +442,19 @@ export const plasticSurgeryPremium = {
           'We track consultation forms, phone calls, chat leads, and GBP actions attributed to organic channels. Monthly reports compare cost-per-lead trends against paid channels.',
       },
     ],
+  },
+
+  contact: {
+    title: 'Ready to Grow Your Plastic Surgery Consultations?',
+    subtitle:
+      'Book a free SEO audit for your cosmetic surgery practice. We review procedure pages, GBP health, competitors, and deliver a custom roadmap with timelines and KPIs.',
+    phone: { label: '+91-8076676731', href: 'tel:+91-8076676731' },
+    email: 'sales@seoindiatech.com',
+    address: 'E-160, Sector 63, Noida, Uttar Pradesh 201301, India',
+    formTitle: 'Book Your Free Plastic Surgery SEO Audit',
+    formSubtitle: 'No obligation. Get a clear action plan for your next 90 days.',
+    benefits: ['Free comprehensive audit', 'No long-term contract required', 'Dedicated healthcare strategist'],
+    cta: { label: 'Book Free Consultation', href: '/contact-us' },
   },
 
   finalCta: {

@@ -53,7 +53,7 @@ const CATEGORY_ICONS = {
   cog: FaCogs,
 }
 
-/** Industry-specific icons — one unique, recognizable icon per slug */
+/** Industry-specific icons - one unique, recognizable icon per slug */
 const INDUSTRY_ICONS = {
   'plastic-surgery-seo': FaUserMd,
   'property-management-seo': FaBuilding,

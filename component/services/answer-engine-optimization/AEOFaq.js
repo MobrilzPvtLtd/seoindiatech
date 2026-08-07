@@ -36,7 +36,7 @@ const faqs = [
     {
       question: 'Q7. Which pages should I optimize first for AEO?',
       answer:
-        'Start with high-intent service pages, pricing FAQs, and comparison content—pages where users ask direct questions and AI systems look for concise, authoritative answers.',
+        'Start with high-intent service pages, pricing FAQs, and comparison content-pages where users ask direct questions and AI systems look for concise, authoritative answers.',
     },
     {
       question: 'Q8. Does AEO work with voice search?',
