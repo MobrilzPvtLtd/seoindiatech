@@ -1,5 +1,8 @@
 import SeoHead from '@/component/common/SeoHead'
 import { absoluteUrl } from '@/utils/siteConfig'
+import { getPremiumIndustryContent } from '@/utils/industries/premium'
+import PremiumIndustryPage from '@/component/industry-premium/PremiumIndustryPage'
+import PremiumIndustrySchema from '@/component/industry-premium/PremiumIndustrySchema'
 import LocationHero from '@/component/location-services/LocationHero'
 import IndustryBenefits from '@/component/industry-services/IndustryBenefits'
 import LocationContent from '@/component/location-services/LocationContent'
@@ -7,7 +10,7 @@ import LocationFAQ from '@/component/location-services/LocationFAQ'
 import IndustrySchema from '@/component/industry-services/IndustrySchema'
 import { industries } from '@/utils/industries'
 
-export default function IndustryPage({ industry }) {
+export default function IndustryPage({ industry, premiumContent }) {
   if (!industry) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-background">
@@ -18,6 +21,22 @@ export default function IndustryPage({ industry }) {
 
   const pagePath = `/industries/${industry.slug}`
   const pageUrl = absoluteUrl(pagePath)
+
+  if (premiumContent) {
+    return (
+      <>
+        <SeoHead
+          title={premiumContent.seo.title}
+          description={premiumContent.seo.description}
+          path={pagePath}
+        />
+        <PremiumIndustrySchema content={premiumContent} url={pageUrl} />
+        <main className="min-h-screen bg-white dark:bg-background text-heading dark:text-foreground">
+          <PremiumIndustryPage content={premiumContent} />
+        </main>
+      </>
+    )
+  }
 
   return (
     <>
@@ -52,5 +71,12 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const industry = industries.find((item) => item.slug === params.slug)
-  return { props: { industry: industry || null } }
+  const premiumContent = getPremiumIndustryContent(params.slug)
+
+  return {
+    props: {
+      industry: industry || null,
+      premiumContent: premiumContent || null,
+    },
+  }
 }
