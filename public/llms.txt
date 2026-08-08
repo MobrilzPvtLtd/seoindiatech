@@ -68,10 +68,10 @@ Browse all industries: [Industries Hub](https://www.seoindiatech.com/industries)
 Examples:
 - [Plastic Surgery SEO](https://www.seoindiatech.com/industries/plastic-surgery-seo)
 - [Dentist SEO](https://www.seoindiatech.com/industries/dentist-seo)
-- [Law Firm SEO](https://www.seoindiatech.com/industries/law-firm-seo)
-- [Real Estate SEO](https://www.seoindiatech.com/industries/real-estate-seo)
-- [Restaurant SEO](https://www.seoindiatech.com/industries/restaurant-seo)
-- [SaaS SEO](https://www.seoindiatech.com/industries/saas-seo)
+- [Law Firm SEO](https://www.seoindiatech.com/industries/personal-injury-seo)
+- [Real Estate SEO](https://www.seoindiatech.com/industries/realtor-seo)
+- [Restaurant SEO](https://www.seoindiatech.com/industries/catering-seo)
+- [Healthcare SEO](https://www.seoindiatech.com/industries/dentist-seo)
 
 ## Blog — AI search and SEO guides (2026)
 

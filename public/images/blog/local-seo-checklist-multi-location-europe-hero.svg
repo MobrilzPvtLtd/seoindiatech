@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Local SEO Checklist for Multi-Location Businesses in Europe">
+  <defs>
+    <linearGradient id="bg-hero-local-seo-checklist-multi-location-europe" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2A255D"/>
+      <stop offset="55%" stop-color="#4285F4"/>
+      <stop offset="100%" stop-color="#6B2E88"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg-hero-local-seo-checklist-multi-location-europe)"/>
+  <circle cx="1050" cy="580" r="120" fill="#A4DDFB" opacity="0.08"/>
+  
+  <rect x="0" y="0" width="600" height="630" fill="rgba(0,0,0,0.12)"/>
+  <rect x="64" y="52" width="117" height="34" rx="17" fill="rgba(255,255,255,0.16)" stroke="rgba(255,255,255,0.25)"/>
+  <text x="82" y="75" fill="#A4DDFB" font-family="Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="1.5">LOCAL SEO</text>
+  <text x="64" y="108" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="32" font-weight="700">Local SEO Checklist for</text><text x="64" y="150" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="32" font-weight="700">Multi-Location Businesses in</text><text x="64" y="192" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="32" font-weight="700">Europe</text>
+  <rect x="64" y="258" width="282" height="38" rx="19" fill="rgba(164,221,251,0.2)" stroke="#A4DDFB" stroke-width="2"/>
+  <text x="84" y="283" fill="#A4DDFB" font-family="Arial,sans-serif" font-size="15" font-weight="600">local SEO checklist Europe</text>
+  <rect x="600" y="40" width="560" height="550" rx="28" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.22)" stroke-width="2"/>
+  <g transform="translate(600,40)">
+  <path d="M260 90 C190 90 150 140 150 195 C150 280 260 390 260 390 C260 390 370 280 370 195 C370 140 330 90 260 90Z" fill="#A4DDFB" opacity="0.9"/>
+  <circle cx="260" cy="195" r="55" fill="#2A255D"/>
+  <circle cx="260" cy="195" r="28" fill="#ffffff"/>
+  <circle cx="180" cy="130" r="22" fill="#FBBF24" stroke="#2A255D" stroke-width="3"/>
+  <circle cx="340" cy="130" r="22" fill="#FBBF24" stroke="#2A255D" stroke-width="3"/>
+  <circle cx="200" cy="300" r="22" fill="#FBBF24" stroke="#2A255D" stroke-width="3"/>
+  <line x1="195" y1="145" x2="235" y2="175" stroke="#ffffff" stroke-width="3" stroke-dasharray="6 4"/>
+  <line x1="325" y1="145" x2="285" y2="175" stroke="#ffffff" stroke-width="3" stroke-dasharray="6 4"/>
+  <rect x="80" y="420" width="360" height="70" rx="14" fill="rgba(255,255,255,0.12)"/>
+  <text x="110" y="455" fill="#4ADE80" font-size="22">✓</text><text x="140" y="458" fill="#ffffff" font-size="15">GBP</text>
+  <text x="210" y="455" fill="#4ADE80" font-size="22">✓</text><text x="240" y="458" fill="#ffffff" font-size="15">Citations</text>
+  <text x="330" y="455" fill="#4ADE80" font-size="22">✓</text><text x="360" y="458" fill="#ffffff" font-size="15">NAP</text></g>
+  <text x="64" y="598" fill="rgba(255,255,255,0.65)" font-family="Arial,sans-serif" font-size="15">SEO India Tech · Blog</text>
+</svg>

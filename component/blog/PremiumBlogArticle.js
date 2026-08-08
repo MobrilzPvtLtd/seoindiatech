@@ -73,14 +73,15 @@ export default function PremiumBlogArticle({ post }) {
   const relatedResources = getBlogRelatedResources(post, posts)
 
   return (    <article className="max-w-4xl mx-auto">
-      <div className="mb-6">
+      <div className="mb-6 rounded-xl overflow-hidden bg-secondary/10 border border-border/40">
         <Image
           src={post.image}
           alt={post.images?.[0]?.alt || post.title}
-          width={900}
-          height={400}
-          className="rounded-xl object-cover w-full h-72"
+          width={1200}
+          height={630}
+          className="object-cover object-center w-full h-auto min-h-[220px] max-h-[420px]"
           priority
+          sizes="(max-width: 896px) 100vw, 896px"
         />
       </div>
 

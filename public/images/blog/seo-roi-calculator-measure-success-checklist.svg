@@ -4,28 +4,39 @@
       <stop offset="0%" stop-color="#2A255D"/>
       <stop offset="100%" stop-color="#6B2E88"/>
     </linearGradient>
-    <filter id="shadow-checklist-seo-roi-calculator-measure-success" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.25"/>
+    <filter id="shadow-checklist-seo-roi-calculator-measure-success">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000" flood-opacity="0.22"/>
     </filter>
   </defs>
   <rect width="1200" height="630" fill="url(#bg-checklist-seo-roi-calculator-measure-success)"/>
-  <circle cx="1040" cy="90" r="70" fill="#A4DDFB" opacity="0.18"/>
-  <circle cx="120" cy="520" r="100" fill="#A4DDFB" opacity="0.12"/>
-  <g transform="translate(72,150)"><rect width="22" height="22" rx="4" fill="#A4DDFB"/>
-    <path d="M5 11 L9 16 L17 6" fill="none" stroke="#2A255D" stroke-width="3"/>
-    <text x="34" y="17" fill="#ffffff" font-size="15">GA4 goals configured</text></g><g transform="translate(72,192)"><rect width="22" height="22" rx="4" fill="#A4DDFB"/>
-    <path d="M5 11 L9 16 L17 6" fill="none" stroke="#2A255D" stroke-width="3"/>
-    <text x="34" y="17" fill="#ffffff" font-size="15">Call tracking live</text></g><g transform="translate(72,234)"><rect width="22" height="22" rx="4" fill="#A4DDFB"/>
-    <path d="M5 11 L9 16 L17 6" fill="none" stroke="#2A255D" stroke-width="3"/>
-    <text x="34" y="17" fill="#ffffff" font-size="15">CRM source field</text></g><g transform="translate(72,276)"><rect width="22" height="22" rx="4" fill="#A4DDFB"/>
-    <path d="M5 11 L9 16 L17 6" fill="none" stroke="#2A255D" stroke-width="3"/>
-    <text x="34" y="17" fill="#ffffff" font-size="15">Monthly ROI review</text></g><g transform="translate(740,120)">
-    <rect x="40" y="50" width="170" height="120" rx="12" fill="rgba(255,255,255,0.12)"/>
-    <text x="75" y="110" fill="#A4DDFB" font-size="42" font-weight="700">420%</text>
-    <text x="72" y="140" fill="rgba(255,255,255,0.65)" font-size="14">SEO ROI</text>
-    <polyline points="240,180 280,140 310,155 350,90" fill="none" stroke="#A4DDFB" stroke-width="5" stroke-linecap="round"/>
-  </g>
-  <text x="72" y="500" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="38" font-weight="700">Checklist</text>
-  <text x="72" y="548" fill="#A4DDFB" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="600">SEO ROI calculator</text>
-  <text x="72" y="590" fill="rgba(255,255,255,0.65)" font-family="Arial,Helvetica,sans-serif" font-size="16">SEO India Tech</text>
+  <circle cx="1080" cy="80" r="90" fill="#A4DDFB" opacity="0.1"/>
+  <circle cx="90" cy="560" r="110" fill="#A4DDFB" opacity="0.08"/>
+  <g transform="translate(72,130)">
+        <rect width="26" height="26" rx="6" fill="#A4DDFB"/>
+        <path d="M6 13 L11 18 L20 8" fill="none" stroke="#2A255D" stroke-width="3" stroke-linecap="round"/>
+        <text x="38" y="19" fill="#ffffff" font-size="16">GA4 goals configured</text>
+      </g><g transform="translate(72,178)">
+        <rect width="26" height="26" rx="6" fill="#A4DDFB"/>
+        <path d="M6 13 L11 18 L20 8" fill="none" stroke="#2A255D" stroke-width="3" stroke-linecap="round"/>
+        <text x="38" y="19" fill="#ffffff" font-size="16">Call tracking live</text>
+      </g><g transform="translate(72,226)">
+        <rect width="26" height="26" rx="6" fill="#A4DDFB"/>
+        <path d="M6 13 L11 18 L20 8" fill="none" stroke="#2A255D" stroke-width="3" stroke-linecap="round"/>
+        <text x="38" y="19" fill="#ffffff" font-size="16">CRM source field</text>
+      </g><g transform="translate(72,274)">
+        <rect width="26" height="26" rx="6" fill="#A4DDFB"/>
+        <path d="M6 13 L11 18 L20 8" fill="none" stroke="#2A255D" stroke-width="3" stroke-linecap="round"/>
+        <text x="38" y="19" fill="#ffffff" font-size="16">Monthly ROI review</text>
+      </g><g transform="translate(680,100) scale(0.55)">
+  <rect x="100" y="100" width="320" height="220" rx="20" fill="rgba(255,255,255,0.14)" stroke="#A4DDFB"/>
+  <text x="260" y="190" text-anchor="middle" fill="#A4DDFB" font-size="64" font-weight="800">420%</text>
+  <text x="260" y="230" text-anchor="middle" fill="rgba(255,255,255,0.65)" font-size="18">SEO ROI</text>
+  <rect x="120" y="260" width="60" height="36" rx="8" fill="#2A255D"/><text x="150" y="284" text-anchor="middle" fill="#ffffff" font-size="16">7</text>
+  <rect x="190" y="260" width="60" height="36" rx="8" fill="#2A255D"/><text x="220" y="284" text-anchor="middle" fill="#ffffff" font-size="16">4</text>
+  <rect x="260" y="260" width="60" height="36" rx="8" fill="#2A255D"/><text x="290" y="284" text-anchor="middle" fill="#ffffff" font-size="16">2</text>
+  <rect x="330" y="260" width="60" height="36" rx="8" fill="#A4DDFB"/><text x="360" y="284" text-anchor="middle" fill="#2A255D" font-size="16">=</text>
+  <polyline points="80,400 160,360 240,380 320,300 400,280" fill="none" stroke="#4ADE80" stroke-width="5" stroke-linecap="round"/></g>
+  <text x="64" y="590" fill="rgba(255,255,255,0.65)" font-family="Arial,Helvetica,sans-serif" font-size="15">SEO India Tech</text>
+  <text x="64" y="72" fill="#A4DDFB" font-family="Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="2">CHECKLIST</text>
+  <text x="64" y="560" fill="#ffffff" font-family="Arial,sans-serif" font-size="18" font-weight="600" opacity="0.85">SEO ROI calculator</text>
 </svg>

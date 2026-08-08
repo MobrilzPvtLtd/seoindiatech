@@ -2,22 +2,17 @@
  * Submit sitemap and URLs to search engines for indexing.
  * Run after deploy: npm run push-indexing
  */
-import { readFileSync, existsSync } from 'fs'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
+import { buildSitemapUrls } from '../utils/sitemapBuilder.js'
+import { getSitemapPathsForScripts } from './sitemap-paths.mjs'
 
-const root = join(dirname(fileURLToPath(import.meta.url)), '..')
 const SITE_URL = 'https://www.seoindiatech.com'
 const INDEXNOW_KEY = 'sitindex2026'
 const SITEMAP_URL = `${SITE_URL}/sitemap.xml`
 
 function readSitemapUrls() {
-  const sitemapPath = join(root, 'public', 'sitemap.xml')
-  if (!existsSync(sitemapPath)) {
-    throw new Error('sitemap.xml not found. Run npm run generate-sitemap first.')
-  }
-  const xml = readFileSync(sitemapPath, 'utf8')
-  return [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1])
+  return buildSitemapUrls(getSitemapPathsForScripts())
 }
 
 function chunk(array, size) {

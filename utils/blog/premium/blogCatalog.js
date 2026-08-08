@@ -13,7 +13,7 @@ export const BLOG_CATALOG = [
     primaryKeyword: 'SEO trends Europe 2026',
     serviceLinks: ['/services/seo', '/services/ai-seo', '/services/generative-engine-optimization'],
     industryLinks: ['/industries/realtor-seo', '/industries/dentist-seo', '/industries/hvac-seo'],
-    image: '/images/blog/seo-trends-europe-hero.svg',
+    image: '/images/blog/seo-trends-european-businesses-2026-hero.svg',
     datePublished: '2026-07-15',
   },
   {
@@ -26,7 +26,7 @@ export const BLOG_CATALOG = [
     primaryKeyword: 'AI SEO vs traditional SEO',
     serviceLinks: ['/services/ai-seo', '/services/seo'],
     industryLinks: ['/industries/plastic-surgery-seo', '/industries/doctor-physician-seo'],
-    image: '/images/blog/ai-vs-traditional-seo-hero.svg',
+    image: '/images/blog/ai-seo-vs-traditional-seo-2026-hero.svg',
     datePublished: '2026-07-18',
   },
   {
@@ -39,7 +39,7 @@ export const BLOG_CATALOG = [
     primaryKeyword: 'local SEO checklist Europe',
     serviceLinks: ['/services/local-seo-service', '/services/gbp-optimization'],
     industryLinks: ['/industries/realtor-seo', '/industries/dentist-seo', '/industries/hvac-seo'],
-    image: '/images/blog/local-seo-europe-hero.svg',
+    image: '/images/blog/local-seo-checklist-multi-location-europe-hero.svg',
     datePublished: '2026-07-20',
   },
   {
@@ -52,7 +52,7 @@ export const BLOG_CATALOG = [
     primaryKeyword: 'Google AI Overviews SEO',
     serviceLinks: ['/services/generative-engine-optimization', '/services/ai-seo'],
     industryLinks: ['/industries/plastic-surgery-seo', '/industries/personal-injury-seo'],
-    image: '/images/blog/google-ai-overviews-hero.svg',
+    image: '/images/blog/google-ai-overviews-changing-business-seo-hero.svg',
     datePublished: '2026-07-22',
   },
   {
@@ -65,7 +65,7 @@ export const BLOG_CATALOG = [
     primaryKeyword: 'SEO mistakes costing leads',
     serviceLinks: ['/services/seo', '/services/seo'],
     industryLinks: ['/industries/dentist-seo', '/industries/realtor-seo', '/industries/hvac-seo'],
-    image: '/images/blog/seo-mistakes-hero.svg',
+    image: '/images/blog/100-seo-mistakes-costing-business-leads-hero.svg',
     datePublished: '2026-07-25',
   },
   {
@@ -78,7 +78,7 @@ export const BLOG_CATALOG = [
     primaryKeyword: 'international SEO Europe',
     serviceLinks: ['/services/seo', '/services/content-marketing'],
     industryLinks: ['/industries/realtor-seo', '/industries/architect-seo'],
-    image: '/images/blog/international-seo-hero.svg',
+    image: '/images/blog/international-seo-guide-european-companies-hero.svg',
     datePublished: '2026-07-28',
   },
   {
@@ -91,7 +91,7 @@ export const BLOG_CATALOG = [
     primaryKeyword: 'healthcare SEO Europe',
     serviceLinks: ['/services/seo', '/services/content-marketing', '/services/online-reputation-management'],
     industryLinks: ['/industries/dentist-seo', '/industries/doctor-physician-seo', '/industries/plastic-surgery-seo'],
-    image: '/images/blog/healthcare-seo-hero.svg',
+    image: '/images/blog/seo-healthcare-businesses-europe-hero.svg',
     datePublished: '2026-07-30',
   },
   {
@@ -104,7 +104,7 @@ export const BLOG_CATALOG = [
     primaryKeyword: 'law firm SEO',
     serviceLinks: ['/services/seo', '/services/content-marketing'],
     industryLinks: ['/industries/personal-injury-seo', '/industries/cpa-firm-seo'],
-    image: '/images/blog/legal-seo-hero.svg',
+    image: '/images/blog/seo-law-firms-complete-guide-hero.svg',
     datePublished: '2026-08-01',
   },
   {
@@ -117,7 +117,7 @@ export const BLOG_CATALOG = [
     primaryKeyword: 'best SEO agency Europe',
     serviceLinks: ['/services/seo', '/services/ai-seo'],
     industryLinks: ['/industries/realtor-seo', '/industries/dentist-seo'],
-    image: '/images/blog/choose-agency-hero.svg',
+    image: '/images/blog/choose-best-seo-agency-europe-hero.svg',
     datePublished: '2026-08-03',
   },
   {
@@ -130,7 +130,7 @@ export const BLOG_CATALOG = [
     primaryKeyword: 'local vs national vs international SEO',
     serviceLinks: ['/services/local-seo-service', '/services/seo'],
     industryLinks: ['/industries/hvac-seo', '/industries/realtor-seo'],
-    image: '/images/blog/seo-comparison-hero.svg',
+    image: '/images/blog/local-vs-national-vs-international-seo-hero.svg',
     datePublished: '2026-08-05',
   },
   {
@@ -143,7 +143,7 @@ export const BLOG_CATALOG = [
     primaryKeyword: 'Google Business Profile optimization',
     serviceLinks: ['/services/gbp-optimization', '/services/local-seo-service'],
     industryLinks: ['/industries/dentist-seo', '/industries/plumber-seo', '/industries/hvac-seo'],
-    image: '/images/blog/gbp-guide-hero.svg',
+    image: '/images/blog/google-business-profile-optimization-guide-hero.svg',
     datePublished: '2026-08-07',
   },
   {
@@ -156,7 +156,7 @@ export const BLOG_CATALOG = [
     primaryKeyword: 'EEAT guide business websites',
     serviceLinks: ['/services/content-marketing', '/services/seo'],
     industryLinks: ['/industries/doctor-physician-seo', '/industries/plastic-surgery-seo'],
-    image: '/images/blog/eeat-guide-hero.svg',
+    image: '/images/blog/complete-eeat-guide-business-websites-hero.svg',
     datePublished: '2026-08-09',
   },
   {
@@ -169,7 +169,7 @@ export const BLOG_CATALOG = [
     primaryKeyword: 'generative engine optimization GEO',
     serviceLinks: ['/services/generative-engine-optimization', '/services/ai-seo'],
     industryLinks: ['/industries/plastic-surgery-seo', '/industries/realtor-seo'],
-    image: '/images/blog/geo-guide-hero.svg',
+    image: '/images/blog/geo-generative-engine-optimization-guide-hero.svg',
     datePublished: '2026-08-11',
   },
   {
@@ -182,7 +182,7 @@ export const BLOG_CATALOG = [
     primaryKeyword: 'ChatGPT SEO organic traffic',
     serviceLinks: ['/services/ai-seo', '/services/answer-engine-optimization'],
     industryLinks: ['/industries/dentist-seo', '/industries/personal-injury-seo'],
-    image: '/images/blog/chatgpt-seo-hero.svg',
+    image: '/images/blog/chatgpt-seo-ai-search-organic-traffic-hero.svg',
     datePublished: '2026-08-13',
   },
   {
@@ -195,7 +195,7 @@ export const BLOG_CATALOG = [
     primaryKeyword: 'SEO ROI calculator',
     serviceLinks: ['/seo-packages', '/services/seo'],
     industryLinks: ['/industries/realtor-seo', '/industries/hvac-seo'],
-    image: '/images/blog/seo-roi-hero.svg',
+    image: '/images/blog/seo-roi-calculator-measure-success-hero.svg',
     datePublished: '2026-08-15',
   },
   {
@@ -208,7 +208,7 @@ export const BLOG_CATALOG = [
     primaryKeyword: 'technical SEO checklist enterprise',
     serviceLinks: ['/services/seo', '/services/ai-seo'],
     industryLinks: ['/industries/architect-seo', '/industries/cpa-firm-seo'],
-    image: '/images/blog/technical-seo-hero.svg',
+    image: '/images/blog/technical-seo-checklist-enterprise-websites-hero.svg',
     datePublished: '2026-08-17',
   },
   {
@@ -221,7 +221,7 @@ export const BLOG_CATALOG = [
     primaryKeyword: 'Core Web Vitals optimization',
     serviceLinks: ['/services/ui-ux-design', '/services/seo'],
     industryLinks: ['/industries/interior-designer-seo', '/industries/home-builder-and-remodeler-seo'],
-    image: '/images/blog/core-web-vitals-hero.svg',
+    image: '/images/blog/core-web-vitals-optimization-guide-hero.svg',
     datePublished: '2026-08-19',
   },
   {
@@ -234,7 +234,7 @@ export const BLOG_CATALOG = [
     primaryKeyword: 'content marketing qualified leads',
     serviceLinks: ['/services/content-marketing', '/services/seo'],
     industryLinks: ['/industries/realtor-seo', '/industries/dentist-seo'],
-    image: '/images/blog/content-marketing-hero.svg',
+    image: '/images/blog/content-marketing-strategy-qualified-leads-hero.svg',
     datePublished: '2026-08-21',
   },
   {
@@ -247,7 +247,7 @@ export const BLOG_CATALOG = [
     primaryKeyword: 'link building guide 2026',
     serviceLinks: ['/services/seo', '/services/content-marketing'],
     industryLinks: ['/industries/personal-injury-seo', '/industries/plastic-surgery-seo'],
-    image: '/images/blog/link-building-hero.svg',
+    image: '/images/blog/link-building-guide-2026-hero.svg',
     datePublished: '2026-08-23',
   },
   {
@@ -260,7 +260,7 @@ export const BLOG_CATALOG = [
     primaryKeyword: 'SEO checklist small business Europe',
     serviceLinks: ['/services/small-business-seo', '/services/local-seo-service'],
     industryLinks: ['/industries/plumber-seo', '/industries/dentist-seo', '/industries/hvac-seo'],
-    image: '/images/blog/small-business-seo-hero.svg',
+    image: '/images/blog/seo-checklist-small-businesses-europe-hero.svg',
     datePublished: '2026-08-25',
   },
 ]

@@ -30,12 +30,13 @@ const BlogPostsGrid = () => (
             <article className="relative bg-card dark:bg-card rounded-2xl overflow-hidden border border-border hover:border-primary/30 dark:hover:border-primary/40 shadow-sm hover:shadow-2xl hover:shadow-blue-500/10 dark:hover:shadow-blue-900/20 transition-all duration-500 hover:-translate-y-2 flex flex-col h-full">
               {/* Image */}
               {post.image && (
-                <div className="relative h-56 overflow-hidden">
+                <div className="relative h-56 overflow-hidden bg-secondary/10">
                   <Image
                     src={post.image}
                     alt={post.title}
                     fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-110"
+                    className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
+                    sizes="(max-width: 768px) 100vw, 33vw"
                   />
                   
                   {/* Gradient Overlay */}

@@ -4,28 +4,41 @@
       <stop offset="0%" stop-color="#2A255D"/>
       <stop offset="100%" stop-color="#6B2E88"/>
     </linearGradient>
-    <filter id="shadow-checklist-seo-trends-european-businesses-2026" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.25"/>
+    <filter id="shadow-checklist-seo-trends-european-businesses-2026">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000" flood-opacity="0.22"/>
     </filter>
   </defs>
   <rect width="1200" height="630" fill="url(#bg-checklist-seo-trends-european-businesses-2026)"/>
-  <circle cx="1040" cy="90" r="70" fill="#A4DDFB" opacity="0.18"/>
-  <circle cx="120" cy="520" r="100" fill="#A4DDFB" opacity="0.12"/>
-  <g transform="translate(72,150)"><rect width="22" height="22" rx="4" fill="#A4DDFB"/>
-    <path d="M5 11 L9 16 L17 6" fill="none" stroke="#2A255D" stroke-width="3"/>
-    <text x="34" y="17" fill="#ffffff" font-size="15">Run technical + content audit …</text></g><g transform="translate(72,192)"><rect width="22" height="22" rx="4" fill="#A4DDFB"/>
-    <path d="M5 11 L9 16 L17 6" fill="none" stroke="#2A255D" stroke-width="3"/>
-    <text x="34" y="17" fill="#ffffff" font-size="15">Map primary keywords to search…</text></g><g transform="translate(72,234)"><rect width="22" height="22" rx="4" fill="#A4DDFB"/>
-    <path d="M5 11 L9 16 L17 6" fill="none" stroke="#2A255D" stroke-width="3"/>
-    <text x="34" y="17" fill="#ffffff" font-size="15">Implement FAQ and Article schema</text></g><g transform="translate(72,276)"><rect width="22" height="22" rx="4" fill="#A4DDFB"/>
-    <path d="M5 11 L9 16 L17 6" fill="none" stroke="#2A255D" stroke-width="3"/>
-    <text x="34" y="17" fill="#ffffff" font-size="15">Build 3-5 internal links per n…</text></g><g transform="translate(750,120)">
-    <circle cx="100" cy="100" r="85" fill="none" stroke="#A4DDFB" stroke-width="4"/>
-    <ellipse cx="100" cy="100" rx="35" ry="85" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.7"/>
-    <line x1="15" y1="100" x2="185" y2="100" stroke="#ffffff" stroke-width="2" opacity="0.7"/>
-    <line x1="100" y1="15" x2="100" y2="185" stroke="#ffffff" stroke-width="2" opacity="0.5"/>
-  </g>
-  <text x="72" y="500" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="38" font-weight="700">Checklist</text>
-  <text x="72" y="548" fill="#A4DDFB" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="600">SEO trends Europe 2026</text>
-  <text x="72" y="590" fill="rgba(255,255,255,0.65)" font-family="Arial,Helvetica,sans-serif" font-size="16">SEO India Tech</text>
+  <circle cx="1080" cy="80" r="90" fill="#A4DDFB" opacity="0.1"/>
+  <circle cx="90" cy="560" r="110" fill="#A4DDFB" opacity="0.08"/>
+  <g transform="translate(72,130)">
+        <rect width="26" height="26" rx="6" fill="#A4DDFB"/>
+        <path d="M6 13 L11 18 L20 8" fill="none" stroke="#2A255D" stroke-width="3" stroke-linecap="round"/>
+        <text x="38" y="19" fill="#ffffff" font-size="16">Run a technical and content audi…</text>
+      </g><g transform="translate(72,178)">
+        <rect width="26" height="26" rx="6" fill="#A4DDFB"/>
+        <path d="M6 13 L11 18 L20 8" fill="none" stroke="#2A255D" stroke-width="3" stroke-linecap="round"/>
+        <text x="38" y="19" fill="#ffffff" font-size="16">Map keywords to search intent be…</text>
+      </g><g transform="translate(72,226)">
+        <rect width="26" height="26" rx="6" fill="#A4DDFB"/>
+        <path d="M6 13 L11 18 L20 8" fill="none" stroke="#2A255D" stroke-width="3" stroke-linecap="round"/>
+        <text x="38" y="19" fill="#ffffff" font-size="16">Add FAQ content where customers …</text>
+      </g><g transform="translate(72,274)">
+        <rect width="26" height="26" rx="6" fill="#A4DDFB"/>
+        <path d="M6 13 L11 18 L20 8" fill="none" stroke="#2A255D" stroke-width="3" stroke-linecap="round"/>
+        <text x="38" y="19" fill="#ffffff" font-size="16">Link related service and blog pa…</text>
+      </g><g transform="translate(680,100) scale(0.55)">
+    <text x="260" y="70" text-anchor="middle" fill="#A4DDFB" font-size="56" font-weight="800">2026</text>
+    <circle cx="260" cy="230" r="95" fill="none" stroke="#A4DDFB" stroke-width="5"/>
+    <ellipse cx="260" cy="230" rx="38" ry="95" fill="none" stroke="#ffffff" stroke-width="2.5" opacity="0.75"/>
+    <line x1="165" y1="230" x2="355" y2="230" stroke="#ffffff" stroke-width="2.5" opacity="0.75"/>
+  <rect x="90" y="360" width="55" height="120" rx="8" fill="#A4DDFB" opacity="0.85"/>
+  <rect x="160" y="320" width="55" height="160" rx="8" fill="#ffffff" opacity="0.9"/>
+  <rect x="230" y="280" width="55" height="200" rx="8" fill="#A4DDFB"/>
+  <rect x="300" y="250" width="55" height="230" rx="8" fill="#FBBF24" opacity="0.95"/>
+  <polyline points="95,340 175,300 255,260 335,210" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>
+  <text x="260" y="510" text-anchor="middle" fill="rgba(255,255,255,0.65)" font-size="15">EU SEO Trends</text></g>
+  <text x="64" y="590" fill="rgba(255,255,255,0.65)" font-family="Arial,Helvetica,sans-serif" font-size="15">SEO India Tech</text>
+  <text x="64" y="72" fill="#A4DDFB" font-family="Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="2">CHECKLIST</text>
+  <text x="64" y="560" fill="#ffffff" font-family="Arial,sans-serif" font-size="18" font-weight="600" opacity="0.85">SEO trends Europe 2026</text>
 </svg>

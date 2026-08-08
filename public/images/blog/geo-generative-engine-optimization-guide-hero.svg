@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="GEO (Generative Engine Optimization): Complete Guide">
+  <defs>
+    <linearGradient id="bg-hero-geo-generative-engine-optimization-guide" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2A255D"/>
+      <stop offset="55%" stop-color="#5B2D8E"/>
+      <stop offset="100%" stop-color="#6B2E88"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg-hero-geo-generative-engine-optimization-guide)"/>
+  <circle cx="1050" cy="580" r="120" fill="#A4DDFB" opacity="0.08"/>
+  
+  <rect x="0" y="0" width="600" height="630" fill="rgba(0,0,0,0.12)"/>
+  <rect x="64" y="52" width="117" height="34" rx="17" fill="rgba(255,255,255,0.16)" stroke="rgba(255,255,255,0.25)"/>
+  <text x="82" y="75" fill="#A4DDFB" font-family="Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="1.5">GEO GUIDE</text>
+  <text x="64" y="108" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="32" font-weight="700">GEO (Generative Engine</text><text x="64" y="150" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="32" font-weight="700">Optimization): Complete</text><text x="64" y="192" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="32" font-weight="700">Guide</text>
+  <rect x="64" y="258" width="354" height="38" rx="19" fill="rgba(164,221,251,0.2)" stroke="#A4DDFB" stroke-width="2"/>
+  <text x="84" y="283" fill="#A4DDFB" font-family="Arial,sans-serif" font-size="15" font-weight="600">generative engine optimization GEO</text>
+  <rect x="600" y="40" width="560" height="550" rx="28" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.22)" stroke-width="2"/>
+  <g transform="translate(600,40)">
+  <rect x="70" y="100" width="380" height="90" rx="16" fill="rgba(255,255,255,0.14)"/>
+  <circle cx="110" cy="145" r="10" fill="#A4DDFB"/><circle cx="140" cy="145" r="10" fill="#A4DDFB"/><circle cx="170" cy="145" r="10" fill="#A4DDFB"/>
+  <text x="210" y="152" fill="#ffffff" font-size="16">Generative AI Search</text>
+  <rect x="120" y="220" width="280" height="100" rx="16" fill="rgba(164,221,251,0.2)" stroke="#A4DDFB"/>
+  <text x="150" y="265" fill="#A4DDFB" font-size="22" font-weight="800">GEO</text>
+  <text x="150" y="295" fill="#ffffff" font-size="14">Cited in AI answers</text>
+  <rect x="70" y="360" width="380" height="90" rx="16" fill="rgba(255,255,255,0.1)"/>
+  <text x="100" y="415" fill="rgba(255,255,255,0.65)" font-size="15">Entity signals + structured FAQs</text></g>
+  <text x="64" y="598" fill="rgba(255,255,255,0.65)" font-family="Arial,sans-serif" font-size="15">SEO India Tech · Blog</text>
+</svg>
