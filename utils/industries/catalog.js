@@ -1,7 +1,7 @@
 /**
  * Canonical industry catalog - 4 mega-menu columns, 41 SEO landing pages.
  */
-import { getIndustryHeroImage } from './industryMedia'
+import { getIndustryHeroImage } from './industryMedia.js'
 export const INDUSTRY_CATEGORIES = [
   {
     id: 'popular-markets',

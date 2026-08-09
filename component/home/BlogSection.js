@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowRight, Clock, Calendar, User, Sparkles, Filter, Grid3X3, LayoutList } from 'lucide-react'
 import posts from '@/utils/BlogPost'
+import { isPremiumBlogHero } from '@/utils/blog/blogImageUtils'
 import { motion } from 'framer-motion'
 
 const latestPosts = posts.slice(0, 6)
@@ -132,25 +133,46 @@ const BlogSection = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.1 }}
         >
-          {latestPosts.slice(0, 3).map((post, idx) => (
+          {latestPosts.slice(0, 3).map((post, idx) => {
+            const premiumHero = isPremiumBlogHero(post.image)
+
+            return (
             <motion.div key={idx} variants={cardVariants}>
               <Link href={`/blog/${post.slug}`} className="group block h-full">
-                <article className="relative h-[420px] rounded-2xl overflow-hidden transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl">
+                <article
+                  className={`relative h-[420px] rounded-2xl overflow-hidden transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl ${
+                    premiumHero ? 'border border-border bg-[#EEF1FA]' : ''
+                  }`}
+                >
                   {/* Background Image */}
-                  <div className="absolute inset-0">
+                  <div className={`absolute inset-0 ${premiumHero ? 'p-4' : ''}`}>
                     <Image
                       src={post.image}
                       alt={post.title}
                       fill
-                      className="object-cover transition-transform duration-700 group-hover:scale-110"
+                      className={
+                        premiumHero
+                          ? 'object-contain object-center p-3'
+                          : 'object-cover transition-transform duration-700 group-hover:scale-110'
+                      }
                       priority={idx === 0}
                     />
+                    {!premiumHero && (
+                    <>
                     {/* Dark Overlay */}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/20 group-hover:from-black/80 group-hover:via-black/40 transition-all duration-500" />
+                    </>
+                    )}
                   </div>
 
                   {/* Content - Positioned at bottom */}
-                  <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
+                  <div
+                    className={`absolute bottom-0 left-0 right-0 p-6 md:p-8 ${
+                      premiumHero
+                        ? 'bg-gradient-to-t from-white via-white/95 to-transparent'
+                        : ''
+                    }`}
+                  >
                     {/* Category Badge */}
                     <div className="mb-3">
                       <span className={`${categoryColors[post.category] || 'bg-primary'} text-white text-[10px] font-bold px-3 py-1.5 rounded-full tracking-wider uppercase shadow-lg`}>
@@ -159,24 +181,44 @@ const BlogSection = () => {
                     </div>
 
                     {/* Title */}
-                    <h3 className="text-xl md:text-2xl font-bold text-white leading-snug line-clamp-2 group-hover:text-accent transition-colors">
+                    <h3
+                      className={`text-xl md:text-2xl font-bold leading-snug line-clamp-2 transition-colors ${
+                        premiumHero
+                          ? 'text-heading group-hover:text-primary'
+                          : 'text-white group-hover:text-accent'
+                      }`}
+                    >
                       {post.title}
                     </h3>
 
                     {/* Description */}
-                    <p className="mt-2 text-white/70 text-sm line-clamp-2">
+                    <p
+                      className={`mt-2 text-sm line-clamp-2 ${
+                        premiumHero ? 'text-muted' : 'text-white/70'
+                      }`}
+                    >
                       {post.desc}
                     </p>
 
                     {/* Footer with Author & Meta */}
-                    <div className="mt-4 pt-4 border-t border-white/20 flex items-center justify-between">
+                    <div
+                      className={`mt-4 pt-4 flex items-center justify-between ${
+                        premiumHero ? 'border-t border-border/60' : 'border-t border-white/20'
+                      }`}
+                    >
                       <div className="flex items-center gap-3">
                         <div className="w-8 h-8 rounded-full bg-gradient-to-r from-primary to-violet-500 flex items-center justify-center text-white font-bold text-xs">
                           JD
                         </div>
                         <div>
-                          <p className="text-white text-sm font-medium">John Doe</p>
-                          <div className="flex items-center gap-2 text-white/50 text-xs">
+                          <p className={`text-sm font-medium ${premiumHero ? 'text-heading' : 'text-white'}`}>
+                            John Doe
+                          </p>
+                          <div
+                            className={`flex items-center gap-2 text-xs ${
+                              premiumHero ? 'text-muted' : 'text-white/50'
+                            }`}
+                          >
                             <span className="flex items-center gap-1">
                               <Clock className="w-3 h-3" /> 4 min read
                             </span>
@@ -185,18 +227,23 @@ const BlogSection = () => {
                           </div>
                         </div>
                       </div>
-                      <span className="text-white font-semibold text-sm group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">
+                      <span
+                        className={`font-semibold text-sm group-hover:translate-x-1 transition-transform inline-flex items-center gap-1 ${
+                          premiumHero ? 'text-primary' : 'text-white'
+                        }`}
+                      >
                         Read <ArrowRight className="w-3.5 h-3.5" />
                       </span>
                     </div>
                   </div>
 
-                  {/* Gradient overlay on hover */}
+                  {!premiumHero && (
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  )}
                 </article>
               </Link>
             </motion.div>
-          ))}
+          )})}
         </motion.div>
       </div>
     </section>

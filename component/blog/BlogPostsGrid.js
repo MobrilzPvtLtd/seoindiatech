@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowRight, Clock, Calendar } from 'lucide-react'
 import posts from '@/utils/BlogPost'
+import { getBlogCardImageClasses } from '@/utils/blog/blogImageUtils'
 
 const BlogPostsGrid = () => (
   <section className="pt-[140px] pb-16 md:pb-20 px-4 md:px-8 bg-white dark:bg-background transition-colors duration-300">
@@ -25,22 +26,27 @@ const BlogPostsGrid = () => (
 
       {/* Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-        {posts.map((post, idx) => (
+        {posts.map((post, idx) => {
+          const imageClasses = getBlogCardImageClasses(post.image)
+
+          return (
           <Link key={idx} href={`/blog/${post.slug}`} className="group block">
             <article className="relative bg-card dark:bg-card rounded-2xl overflow-hidden border border-border hover:border-primary/30 dark:hover:border-primary/40 shadow-sm hover:shadow-2xl hover:shadow-blue-500/10 dark:hover:shadow-blue-900/20 transition-all duration-500 hover:-translate-y-2 flex flex-col h-full">
               {/* Image */}
               {post.image && (
-                <div className="relative h-56 overflow-hidden bg-secondary/10">
+                <div className={imageClasses.container}>
                   <Image
                     src={post.image}
                     alt={post.title}
                     fill
-                    className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
+                    className={imageClasses.image}
                     sizes="(max-width: 768px) 100vw, 33vw"
                   />
                   
                   {/* Gradient Overlay */}
+                  {imageClasses.useOverlay && (
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 via-gray-900/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500"></div>
+                  )}
 
                   {/* Category Badge */}
                   <div className="absolute left-4 top-4 z-10">
@@ -92,7 +98,8 @@ const BlogPostsGrid = () => (
               <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-accent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
             </article>
           </Link>
-        ))}
+          )
+        })}
       </div>
     </div>
   </section>

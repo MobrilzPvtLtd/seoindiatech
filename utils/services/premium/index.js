@@ -33,6 +33,7 @@ function mergeContent(built, override) {
     faq: override.faq || built.faq,
     contact: override.contact || built.contact,
     finalCta: override.finalCta || built.finalCta,
+    answerFirst: override.answerFirst || built.answerFirst,
   }
 }
 

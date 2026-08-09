@@ -6,6 +6,7 @@ import { toast, ToastContainer } from 'react-toastify'
 import VisibleFaq from '@/component/common/VisibleFaq'
 import SectionHeader from '@/component/ui/SectionHeader'
 import { PAGE_FAQS } from '@/utils/pageFaqs'
+import { useFormTracking } from '@/hooks/useFormTracking'
 
 const ReCAPTCHA = dynamic(() => import('react-google-recaptcha'), { ssr: false })
 
@@ -18,6 +19,10 @@ const FAQAndContact = () => {
   const [privacyAgreed, setPrivacyAgreed] = useState(false)
   const [showCaptcha, setShowCaptcha] = useState(false)
   const captchaRef = useRef(null)
+  const { onFormInteraction, trackSubmitSuccess, trackSubmitError } = useFormTracking({
+    formName: 'faq_contact_form',
+    formType: 'contact',
+  })
 
   const handleChange = (e) => setForm((f) => ({ ...f, [e.target.name]: e.target.value }))
 
@@ -56,6 +61,7 @@ const FAQAndContact = () => {
       })
       if (!response.ok) throw new Error('Form submission failed')
       await response.json()
+      trackSubmitSuccess()
       toast.success('Message Sent Successfully!')
       setForm({ fullName: '', email: '', phone: '', message: '' })
       setPrivacyAgreed(false)
@@ -63,6 +69,7 @@ const FAQAndContact = () => {
       setSubmitted(true)
       setTimeout(() => setSubmitted(false), 2500)
     } catch {
+      trackSubmitError()
       toast.error('Something went wrong. Please try again.')
     } finally {
       setIsSubmitting(false)
@@ -122,7 +129,7 @@ const FAQAndContact = () => {
                 <p className="text-white/60 text-sm mt-1">We&apos;ll reply within one business day.</p>
               </header>
 
-              <form className="space-y-3" onSubmit={handleSubmit}>
+              <form className="space-y-3" onSubmit={handleSubmit} onFocus={onFormInteraction}>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {fields.filter((f) => f.half).map((f) => (
                     <div key={f.name} className="space-y-1">

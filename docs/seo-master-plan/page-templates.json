@@ -1,0 +1,44 @@
+[
+  {
+    "Page Type": "Homepage",
+    "Recommended Content Architecture": "Hero promise → core services → proof/results → AI/modern SEO capability → industries → resources → FAQ → CTA",
+    "Keyword Focus": "SEO services; AI SEO; digital marketing; local SEO",
+    "Internal Link Requirements": "Link to all core hubs; 4–6 priority services; 3–5 resources; industries"
+  },
+  {
+    "Page Type": "Service",
+    "Recommended Content Architecture": "Definition → who it's for → problems → strategy → deliverables → process → tools/technology → proof → FAQs → related services → CTA",
+    "Keyword Focus": "Service primary + semantic variants",
+    "Internal Link Requirements": "3–6 related services; 3 relevant blogs; packages/contact"
+  },
+  {
+    "Page Type": "Blog",
+    "Recommended Content Architecture": "Direct answer → key takeaways → detailed sections → examples/data → implementation → FAQ → related services → related articles → CTA",
+    "Keyword Focus": "Primary topic + question variants",
+    "Internal Link Requirements": "2–4 service links + 3 related blog links + 1 conversion link"
+  },
+  {
+    "Page Type": "Industry",
+    "Recommended Content Architecture": "Industry challenges → SEO opportunities → strategy → local/technical/content → examples → FAQs → related industries → CTA",
+    "Keyword Focus": "Industry + SEO + lead/search variants",
+    "Internal Link Requirements": "SEO + local SEO + GBP + 2 related industry pages + 1–2 blogs"
+  },
+  {
+    "Page Type": "City SEO",
+    "Recommended Content Architecture": "Local market context → services → local search strategy → GBP → proof/local signals → FAQs → related cities → CTA",
+    "Keyword Focus": "SEO services + city + local SEO",
+    "Internal Link Requirements": "SEO + local SEO + GBP + 2 city links + packages/contact"
+  },
+  {
+    "Page Type": "Solution",
+    "Recommended Content Architecture": "Problem → solution → workflow → capabilities → integrations → outcomes → related services → CTA",
+    "Keyword Focus": "Solution + outcome terms",
+    "Internal Link Requirements": "SEO + digital marketing + relevant service + contact"
+  },
+  {
+    "Page Type": "Core",
+    "Recommended Content Architecture": "Clear purpose → navigation to key hubs → trust → CTA",
+    "Keyword Focus": "Brand/navigation terms",
+    "Internal Link Requirements": "Link to main service, blog, industries and contact where relevant"
+  }
+]

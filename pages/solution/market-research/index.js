@@ -1,8 +1,10 @@
 import MarektResearch from '@/component/solution/market_research/MarektResearch'
 import SeoHead from '@/component/common/SeoHead'
 import VisibleFaq from '@/component/common/VisibleFaq'
+import SolutionInternalLinks from '@/component/solution/SolutionInternalLinks'
 import { PAGE_FAQS } from '@/utils/pageFaqs'
 import { buildSolutionServiceSchema } from '@/utils/schemaBuilders'
+import { getSolutionInternalLinks } from '@/utils/internalLinks'
 
 const schema = buildSolutionServiceSchema({
   path: '/solution/market-research',
@@ -13,6 +15,8 @@ const schema = buildSolutionServiceSchema({
 })
 
 export default function MarketResearchPage() {
+  const solutionLinks = getSolutionInternalLinks('market-research')
+
   return (
     <>
       <SeoHead
@@ -21,6 +25,7 @@ export default function MarketResearchPage() {
         path="/solution/market-research"
         schema={schema}
       />      <MarektResearch />
+      <SolutionInternalLinks links={solutionLinks} title="Related SEO & Marketing Resources" />
       <VisibleFaq faqs={PAGE_FAQS.marketResearch} minCount={8} showSchema />
     </>
   )

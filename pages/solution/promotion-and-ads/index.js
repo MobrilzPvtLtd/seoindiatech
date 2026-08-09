@@ -1,10 +1,13 @@
 import Promotion from '@/component/solution/promotion/Promotion'
 import SeoHead from '@/component/common/SeoHead'
 import VisibleFaq from '@/component/common/VisibleFaq'
+import SolutionInternalLinks from '@/component/solution/SolutionInternalLinks'
 import { PAGE_FAQS } from '@/utils/pageFaqs'
+import { getSolutionInternalLinks } from '@/utils/internalLinks'
 import React from 'react'
 
 export default function index() {
+  const solutionLinks = getSolutionInternalLinks('promotion-and-ads')
   const schemaData = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -90,6 +93,7 @@ export default function index() {
         schema={schemaData}
       />
       <Promotion />
+      <SolutionInternalLinks links={solutionLinks} title="Related SEO & Advertising Resources" />
       <VisibleFaq faqs={PAGE_FAQS.promotionAndAds} minCount={8} />
     </>
   )

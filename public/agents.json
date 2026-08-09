@@ -9,6 +9,12 @@
     "email": "sales@seoindiatech.com",
     "address": "E-160, Sector 63, Noida, UP 201301, India"
   },
+  "sameAs": [
+    "https://www.linkedin.com/company/seo-india-tech/",
+    "https://www.instagram.com/seoindiatech/",
+    "https://x.com/seoindiatech411",
+    "https://www.facebook.com/profile.php?id=61582651577922"
+  ],
   "knowsAbout": [
     "Search Engine Optimization",
     "AI Search Optimization",
@@ -18,7 +24,8 @@
     "Local SEO",
     "Technical SEO",
     "Content Marketing",
-    "Pay-Per-Click Advertising"
+    "Pay-Per-Click Advertising",
+    "Google Business Profile"
   ],
   "actions": [
     {
@@ -60,11 +67,12 @@
         "properties": {
           "industry": {
             "type": "string",
-            "description": "Industry slug e.g. dentist-seo, law-firm-seo, plastic-surgery-seo"
+            "description": "Industry slug e.g. dentist-seo, personal-injury-seo, plastic-surgery-seo"
           }
         },
         "required": []
       }
     }
-  ]
+  ],
+  "disclaimer": "Crawl permission and structured metadata support discoverability. They do not guarantee AI citations, rankings, or answer placement."
 }

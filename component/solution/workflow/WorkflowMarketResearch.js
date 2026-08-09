@@ -131,9 +131,9 @@ export default function WorkflowMarketResearch() {
               <div className="w-14 h-14 bg-primary rounded-xl flex items-center justify-center mb-5">
                 <benefit.icon className="w-8 h-8 text-white" />
               </div>
-              <h4 className="text-xl font-bold text-heading mb-3">
+              <h3 className="text-xl font-bold text-heading mb-3">
                 {benefit.title}
-              </h4>
+              </h3>
               <p className="text-muted">{benefit.desc}</p>
             </div>
           ))}

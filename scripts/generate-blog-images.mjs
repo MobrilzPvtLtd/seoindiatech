@@ -8,6 +8,7 @@ import { fileURLToPath } from 'url'
 import { BLOG_CATALOG } from '../utils/blog/premium/blogCatalog.js'
 import { getBlogImageData } from '../utils/blog/premium/buildPremiumBlogPost.js'
 import { premiumFeaturedHero } from './premium-blog-hero.mjs'
+import legacyPosts from '../utils/BlogPost.legacy.js'
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..')
 const blogDir = join(root, 'public', 'images', 'blog')
@@ -497,6 +498,19 @@ BLOG_CATALOG.forEach((entry) => {
     writeFileSync(join(blogDir, name), fn())
     count++
   })
+})
+
+legacyPosts.forEach((post) => {
+  const slug = post.slug
+  const heroName = `${slug}-hero.svg`
+  writeFileSync(
+    join(blogDir, heroName),
+    premiumFeaturedHero(slug, {
+      title: post.title,
+      primaryKeyword: post.category || 'SEO',
+    })
+  )
+  count++
 })
 
 Object.entries(SERVICE_THEMES).forEach(([slug, theme]) => {

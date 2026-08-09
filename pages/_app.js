@@ -1,4 +1,5 @@
 import Layout from '@/component/layout/Layout'
+import AnalyticsProvider from '@/component/tracking/AnalyticsProvider'
 import DeferredGtm from '@/component/tracking/DeferredGtm'
 import { ThemeProvider } from '@/context/ThemeContext'
 import '@/styles/globals.css'
@@ -52,9 +53,11 @@ export default function App({ Component, pageProps }) {
 
       <ThemeProvider>
         <MotionConfig initial={false}>
-          <Layout>
-            <Component {...pageProps} />
-          </Layout>
+          <AnalyticsProvider>
+            <Layout>
+              <Component {...pageProps} />
+            </Layout>
+          </AnalyticsProvider>
         </MotionConfig>
       </ThemeProvider>
     </div>

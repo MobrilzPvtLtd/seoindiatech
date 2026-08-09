@@ -46,7 +46,7 @@ export default function DigitalAutomationServices() {
                 <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors duration-300">
                   <item.icon className="w-9 h-9 text-primary group-hover:text-white transition-colors duration-300" />
                 </div>
-                <h4 className="text-xl font-bold text-heading mb-3">{item.title}</h4>
+                <h3 className="text-xl font-bold text-heading mb-3">{item.title}</h3>
                 <p className="text-muted leading-relaxed">{item.desc}</p>
               </div>
             </div>

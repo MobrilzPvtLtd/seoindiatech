@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import { toast, ToastContainer } from "react-toastify";
 import ReCAPTCHA from "react-google-recaptcha";
+import { useFormTracking } from '@/hooks/useFormTracking'
 
 const Form = () => {
   const [form, setForm] = useState({
@@ -22,6 +23,10 @@ const Form = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [recaptcha, setRecaptcha] = useState(null);
+  const { onFormInteraction, trackSubmitSuccess, trackSubmitError } = useFormTracking({
+    formName: 'digital_branding_form',
+    formType: 'service_inquiry',
+  });
 
   // Handle input changes
   const handleChange = (e) => {
@@ -59,6 +64,7 @@ const Form = () => {
         body: JSON.stringify({ data: form }),
       });
       if (!response.ok) throw new Error("Submission failed");
+      trackSubmitSuccess();
       toast.success("Request submitted successfully!");
       setForm({
         email: "",
@@ -69,6 +75,7 @@ const Form = () => {
       });
       setRecaptcha(null);
     } catch (err) {
+      trackSubmitError();
       toast.error("Something went wrong. Please try again.");
     } finally {
       setIsSubmitting(false);
@@ -198,6 +205,7 @@ const Form = () => {
             className="bg-background rounded-2xl p-6 sm:p-8 space-y-5 border border-border flex flex-col justify-between shadow-inner"
             action="/api/submit-form"
             onSubmit={handleSubmit}
+            onFocus={onFormInteraction}
           >
             <div className="space-y-5">
               {formFields.map((field) => (

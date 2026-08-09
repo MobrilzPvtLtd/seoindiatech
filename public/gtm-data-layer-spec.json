@@ -1,0 +1,52 @@
+{
+  "version": "1.0",
+  "gtm_container_id": "GTM-5TS8QJRM",
+  "ga4_measurement_id": "GA4_MEASUREMENT_ID_REQUIRED",
+  "setup": "Import this spec when configuring GTM tags. Set NEXT_PUBLIC_GA4_MEASUREMENT_ID in Netlify env.",
+  "events": [
+    {
+      "dataLayerEvent": "analytics_config",
+      "description": "Fired on GTM load — contains ga4_measurement_id and event list",
+      "gtmTrigger": "Custom Event = analytics_config"
+    },
+    {
+      "dataLayerEvent": "page_view",
+      "ga4EventName": "page_view",
+      "isConversion": false,
+      "gtmTrigger": "Custom Event = page_view"
+    },
+    {
+      "dataLayerEvent": "form_submit",
+      "ga4EventName": "generate_lead",
+      "isConversion": true,
+      "gtmTrigger": "Custom Event = form_submit"
+    },
+    {
+      "dataLayerEvent": "phone_click",
+      "ga4EventName": "phone_click",
+      "isConversion": true,
+      "gtmTrigger": "Custom Event = phone_click"
+    },
+    {
+      "dataLayerEvent": "whatsapp_click",
+      "ga4EventName": "whatsapp_click",
+      "isConversion": true,
+      "gtmTrigger": "Custom Event = whatsapp_click"
+    },
+    {
+      "dataLayerEvent": "cta_click",
+      "ga4EventName": "cta_click",
+      "isConversion": false,
+      "gtmTrigger": "Custom Event = cta_click"
+    }
+  ],
+  "customDimensions": [
+    "page_type",
+    "page_topic",
+    "form_name",
+    "cta_location",
+    "utm_source",
+    "utm_medium",
+    "first_touch_source"
+  ]
+}

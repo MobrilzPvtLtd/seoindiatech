@@ -3,6 +3,7 @@ import { Phone, Mail, Send, MapPin, Clock } from 'lucide-react'
 import { toast, ToastContainer } from 'react-toastify'
 import ReCAPTCHA from 'react-google-recaptcha'
 import Image from 'next/image'
+import { useFormTracking } from '@/hooks/useFormTracking'
 
 const ContactUsSection = () => {
   const [formState, setFormState] = useState({
@@ -14,6 +15,10 @@ const ContactUsSection = () => {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [recaptcha, setRecaptcha] = useState(null)
   const [privacyAgreed, setPrivacyAgreed] = useState(false)
+  const { onFormInteraction, trackSubmitSuccess, trackSubmitError } = useFormTracking({
+    formName: 'contact_form_page',
+    formType: 'contact',
+  })
 
   // Handle input changes
   const handleInputChange = (e) => {
@@ -55,6 +60,7 @@ const ContactUsSection = () => {
       }
 
       await response.json()
+      trackSubmitSuccess()
       toast.success('Message Sent Successfully!')
       setFormState({
         fullName: '',
@@ -65,6 +71,7 @@ const ContactUsSection = () => {
       setPrivacyAgreed(false)
       setRecaptcha(null)
     } catch (error) {
+      trackSubmitError()
       toast.error('Something went wrong. Please try again.')
     } finally {
       setIsSubmitting(false)
@@ -99,7 +106,7 @@ const ContactUsSection = () => {
           </div>
 
           <div className="bg-card dark:bg-card rounded-2xl border border-border shadow-xl p-8 transition-all hover:shadow-2xl relative z-1">
-            <form className="mt-6 space-y-6" action="/api/submit-form" onSubmit={handleSubmit}>
+            <form className="mt-6 space-y-6" action="/api/submit-form" onSubmit={handleSubmit} onFocus={onFormInteraction}>
               {/* Name */}
               <div>
                 <label

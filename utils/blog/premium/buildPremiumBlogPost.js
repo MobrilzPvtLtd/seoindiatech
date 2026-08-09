@@ -5,6 +5,7 @@
 import { BLOG_AUTHOR } from '../blogAuthor.js'
 import { getBlogCatalogEntry, PREMIUM_BLOG_SLUGS } from './blogCatalog.js'
 import { enrichTopicWithLinks } from './blogLinkEnricher.js'
+import { getBlogAnswerFirst } from '../../seo/answerFirstContent.js'
 import {
   assembleLegacyBlocks,
   boldItem,
@@ -982,6 +983,7 @@ export function buildPremiumBlogPost(slug) {
     industryLinks: entry.industryLinks,
     relatedSlugs: PREMIUM_BLOG_SLUGS.filter((s) => s !== slug).slice(0, 4),
     content: sanitizeBlocks(content),
+    answerFirst: getBlogAnswerFirst(slug, entry),
   }
 }
 

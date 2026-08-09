@@ -36,9 +36,8 @@ export default function SEO({
         <link
           rel="preload"
           as="image"
-          href={lcpImage}
+          href={lcpImage.startsWith('http') ? lcpImage : absoluteUrl(lcpImage)}
           fetchPriority="high"
-          media="(min-width: 768px)"
         />
       )}
 

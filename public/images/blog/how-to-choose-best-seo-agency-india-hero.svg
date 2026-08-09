@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="How to Choose the Best SEO Agency in India (2026 Guide)">
+  <defs>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="rgba(42,37,93,0.12)"/>
+    </filter>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F7F8FC"/>
+      <stop offset="100%" stop-color="#EEF1FA"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+  <rect x="0" y="520" width="520" height="110" fill="#A4DDFB" opacity="0.12"/>
+  <path d="M0 520 Q120 500 240 520 T480 520 L480 630 L0 630 Z" fill="#A4DDFB" opacity="0.18"/>
+
+  <g transform="translate(48,42)">
+    <text x="0" y="28" font-family="Arial,Helvetica,sans-serif" font-size="28" font-weight="800" fill="#2A255D">SEO</text>
+    <text x="72" y="28" font-family="Arial,Helvetica,sans-serif" font-size="28" font-weight="800" fill="#6B2E88">India</text>
+    <text x="168" y="28" font-family="Arial,Helvetica,sans-serif" font-size="28" font-weight="800" fill="#2A255D">tech</text>
+    <circle cx="118" cy="20" r="5" fill="#E8820C"/>
+    <path d="M122 14 L128 8 L134 14" fill="none" stroke="#E8820C" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <text x="48" y="130" font-family="Arial,Helvetica,sans-serif" font-size="34" font-weight="800" fill="#E8820C">How to Choose the Best SEO Agency in Ind</text>
+  <text x="48" y="198" font-family="Arial,sans-serif" font-size="16" font-weight="600" fill="#5C6478">SEO</text>
+  <g transform="translate(48,560)">
+    <text x="0" y="0" font-family="Arial" font-size="12" font-weight="700" fill="#E8820C">&#128269; Search</text>
+    <text x="110" y="0" font-family="Arial" font-size="12" font-weight="700" fill="#6B2E88">&#128200; Optimize</text>
+    <text x="230" y="0" font-family="Arial" font-size="12" font-weight="700" fill="#E8820C">&#8593; Grow</text>
+    <rect x="95" y="-14" width="1" height="18" fill="#A4DDFB"/>
+    <rect x="215" y="-14" width="1" height="18" fill="#A4DDFB"/>
+  </g>
+
+  <rect x="540" y="0" width="660" height="630" fill="#FFFFFF" opacity="0.35"/>
+  <g>
+    <rect x="720" y="180" width="380" height="280" rx="20" fill="#C5D9F0" opacity="0.55"/>
+    <rect x="760" y="220" width="300" height="200" rx="16" fill="#FFFFFF" stroke="#6B2E88" stroke-width="2"/>
+    <text x="910" y="330" text-anchor="middle" font-family="Arial" font-size="22" font-weight="800" fill="#6B2E88">SEO Guide</text>
+    <polyline points="790,380 870,300 950,340 1020,260" fill="none" stroke="#E8820C" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="1020" cy="260" r="28" fill="#6B2E88"/>
+    <path d="M1008 260 L1018 270 L1034 248" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <g>
+    <rect x="600" y="55" width="120" height="34" rx="17" fill="#FFFFFF" stroke="#A4DDFB" stroke-width="1.5" filter="url(#softShadow)"/>
+    <circle cx="616" cy="72" r="6" fill="#6B2E88" opacity="0.85"/>
+    <text x="628" y="77" font-family="Arial,sans-serif" font-size="11" font-weight="600" fill="#2A255D">SEO Strategy</text>
+  </g><g>
+    <rect x="780" y="45" width="85" height="34" rx="17" fill="#FFFFFF" stroke="#A4DDFB" stroke-width="1.5" filter="url(#softShadow)"/>
+    <circle cx="796" cy="62" r="6" fill="#6B2E88" opacity="0.85"/>
+    <text x="808" y="67" font-family="Arial,sans-serif" font-size="11" font-weight="600" fill="#2A255D">Content</text>
+  </g><g>
+    <rect x="960" y="75" width="127" height="34" rx="17" fill="#FFFFFF" stroke="#A4DDFB" stroke-width="1.5" filter="url(#softShadow)"/>
+    <circle cx="976" cy="92" r="6" fill="#6B2E88" opacity="0.85"/>
+    <text x="988" y="97" font-family="Arial,sans-serif" font-size="11" font-weight="600" fill="#2A255D">Technical SEO</text>
+  </g><g>
+    <rect x="1000" y="175" width="99" height="34" rx="17" fill="#FFFFFF" stroke="#A4DDFB" stroke-width="1.5" filter="url(#softShadow)"/>
+    <circle cx="1016" cy="192" r="6" fill="#6B2E88" opacity="0.85"/>
+    <text x="1028" y="197" font-family="Arial,sans-serif" font-size="11" font-weight="600" fill="#2A255D">Local SEO</text>
+  </g><g>
+    <rect x="950" y="285" width="99" height="34" rx="17" fill="#FFFFFF" stroke="#A4DDFB" stroke-width="1.5" filter="url(#softShadow)"/>
+    <circle cx="966" cy="302" r="6" fill="#6B2E88" opacity="0.85"/>
+    <text x="978" y="307" font-family="Arial,sans-serif" font-size="11" font-weight="600" fill="#2A255D">Analytics</text>
+  </g>
+
+  <circle cx="1120" cy="560" r="42" fill="#2A255D"/><text x="1120" y="568" text-anchor="middle" font-family="Arial" font-size="18" font-weight="800" fill="#FFFFFF">2026</text>
+</svg>

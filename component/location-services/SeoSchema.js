@@ -1,34 +1,54 @@
 export default function SeoSchema({ location, url }) {
+  const siteUrl = 'https://www.seoindiatech.com'
   const schema = {
     '@context': 'https://schema.org',
     '@graph': [
       {
         '@type': 'WebSite',
-        '@id': 'https://www.seoindiatech.com/#website',
-        url: 'https://www.seoindiatech.com/',
+        '@id': `${siteUrl}/#website`,
+        url: `${siteUrl}/`,
         name: 'SEO India Tech',
         inLanguage: 'en-IN',
       },
 
       {
         '@type': 'Organization',
-        '@id': 'https://www.seoindiatech.com/#organization',
+        '@id': `${siteUrl}/#organization`,
         name: 'SEO India Tech',
-        url: 'https://www.seoindiatech.com/',
+        url: `${siteUrl}/`,
         logo: {
           '@type': 'ImageObject',
-          url: 'https://www.seoindiatech.com/sit-transparent.png',
+          url: `${siteUrl}/sit-transparent.png`,
         },
         email: 'sales@seoindiatech.com',
         telephone: '+91-8076676731',
         address: {
           '@type': 'PostalAddress',
-          streetAddress: 'E 160, E Block, Sector 63, Noida',
+          streetAddress: 'E 160, E Block, Sector 63',
           addressLocality: 'Noida',
           addressRegion: 'Uttar Pradesh',
           postalCode: '201301',
           addressCountry: 'IN',
         },
+      },
+
+      {
+        '@type': 'BreadcrumbList',
+        '@id': `${url}#breadcrumbs`,
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: 'Home',
+            item: `${siteUrl}/`,
+          },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            name: `SEO Services in ${location.city}`,
+            item: url,
+          },
+        ],
       },
 
       {
@@ -38,10 +58,10 @@ export default function SeoSchema({ location, url }) {
         name: location.title,
         description: location.description,
         isPartOf: {
-          '@id': 'https://www.seoindiatech.com/#website',
+          '@id': `${siteUrl}/#website`,
         },
         about: {
-          '@id': 'https://www.seoindiatech.com/#organization',
+          '@id': `${siteUrl}/#organization`,
         },
         inLanguage: 'en-IN',
       },
@@ -53,22 +73,16 @@ export default function SeoSchema({ location, url }) {
         description: location.description,
         serviceType: 'SEO services',
         provider: {
-          '@id': 'https://www.seoindiatech.com/#organization',
+          '@id': `${siteUrl}/#organization`,
         },
-        areaServed: [
-          {
-            '@type': 'City',
-            name: location.city,
+        areaServed: {
+          '@type': 'City',
+          name: location.city,
+          containedInPlace: {
+            '@type': 'Country',
+            name: 'India',
           },
-          {
-            '@type': 'City',
-            name: 'Noida',
-          },
-          {
-            '@type': 'City',
-            name: 'Pune',
-          },
-        ],
+        },
       },
 
       ...(location.faqs?.length

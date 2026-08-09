@@ -106,7 +106,7 @@ const Digitalhero = () => {
               </span>
             </div>
 
-            <h3 className="text-xl font-semibold text-heading mb-2">
+            <h2 className="text-xl font-semibold text-heading mb-2">
               {item.title}
             </h3>
 

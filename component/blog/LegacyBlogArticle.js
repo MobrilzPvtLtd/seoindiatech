@@ -1,20 +1,24 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import BlogRelatedResources from './BlogRelatedResources'
+import GeoQuickAnswer from '@/component/industry-premium/GeoQuickAnswer'
 import posts from '@/utils/BlogPost'
 import { getBlogRelatedResources } from '@/utils/internalLinks'
+import { getBlogArticleImageClasses } from '@/utils/blog/blogImageUtils'
 
 export default function LegacyBlogArticle({ post }) {
   const relatedResources = getBlogRelatedResources(post, posts)
+  const imageClasses = getBlogArticleImageClasses(post.image)
 
-  return (    <div className="max-w-4xl mx-auto">
-      <div className="mb-6">
+  return (
+    <div className="max-w-4xl mx-auto">
+      <div className={imageClasses.wrapper}>
         <Image
           src={post.image}
           alt={post.title}
-          width={900}
-          height={400}
-          className="rounded-xl object-cover w-full h-72"
+          width={1200}
+          height={630}
+          className={imageClasses.image}
         />
       </div>
 
@@ -23,6 +27,8 @@ export default function LegacyBlogArticle({ post }) {
       </div>
 
       <h1 className="text-3xl md:text-4xl font-bold mb-6 text-heading">{post.title}</h1>
+
+      {post.answerFirst?.question && <GeoQuickAnswer data={post.answerFirst} />}
 
       <div className="space-y-6 text-lg">
         {post.content?.map((block, index) => {
@@ -74,6 +80,20 @@ export default function LegacyBlogArticle({ post }) {
           return null
         })}
       </div>
+
+      {post.faqs?.length > 0 && (
+        <div className="mt-12 border-t border-border pt-10">
+          <h2 className="text-2xl font-semibold mb-6 text-heading">Frequently Asked Questions</h2>
+          <div className="space-y-6">
+            {post.faqs.map((faq) => (
+              <div key={faq.question}>
+                <h3 className="text-lg font-semibold text-heading mb-2">{faq.question}</h3>
+                <p className="text-body leading-relaxed">{faq.answer}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
 
       <BlogRelatedResources data={relatedResources} />
     </div>

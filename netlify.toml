@@ -5,6 +5,25 @@
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
+# Canonical host: apex → www (HTTPS)
+[[redirects]]
+  from = "https://seoindiatech.com/*"
+  to = "https://www.seoindiatech.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://seoindiatech.com/*"
+  to = "https://www.seoindiatech.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.seoindiatech.com/*"
+  to = "https://www.seoindiatech.com/:splat"
+  status = 301
+  force = true
+
 [[headers]]
   for = "/*"
   [headers.values]

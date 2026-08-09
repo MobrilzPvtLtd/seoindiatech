@@ -6,6 +6,7 @@ import ReCAPTCHA from 'react-google-recaptcha'
 import Link from 'next/link'
 import PageSection from '@/component/ui/PageSection'
 import SectionHeader from '@/component/ui/SectionHeader'
+import { useFormTracking } from '@/hooks/useFormTracking'
 
 const inputClass =
   'w-full rounded-xl border border-border bg-white p-3 text-body focus:outline-none focus:ring-2 focus:ring-primary/40 dark:bg-card dark:text-heading'
@@ -20,6 +21,10 @@ export default function ContactFormSection({ title, description, industries }) {
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [recaptcha, setRecaptcha] = useState(null)
+  const { onFormInteraction, trackSubmitSuccess, trackSubmitError } = useFormTracking({
+    formName: 'contact_form_section',
+    formType: 'contact',
+  })
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target
@@ -50,10 +55,12 @@ export default function ContactFormSection({ title, description, industries }) {
         body: JSON.stringify({ data: form }),
       })
       if (!response.ok) throw new Error('Submission failed')
+      trackSubmitSuccess()
       toast.success('Request submitted successfully!')
       setForm({ email: '', fullName: '', phone: '', message: '', privacy: false })
       setRecaptcha(null)
     } catch {
+      trackSubmitError()
       toast.error('Something went wrong. Please try again.')
     } finally {
       setIsSubmitting(false)
@@ -111,7 +118,7 @@ export default function ContactFormSection({ title, description, industries }) {
           </div>
         </div>
 
-        <form className="flex flex-col justify-between space-y-5 rounded-2xl border border-border bg-background p-6 sm:p-8" onSubmit={handleSubmit}>
+        <form className="flex flex-col justify-between space-y-5 rounded-2xl border border-border bg-background p-6 sm:p-8" onSubmit={handleSubmit} onFocus={onFormInteraction}>
           <div className="space-y-5">
             {[
               { id: 'contact-email', label: 'Email', name: 'email', type: 'email', placeholder: 'your@email.com', required: true },

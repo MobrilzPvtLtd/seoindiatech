@@ -3,6 +3,7 @@ import { MdTimer, MdVerified, MdLock } from 'react-icons/md'
 import { Send } from 'lucide-react'
 import { toast, ToastContainer } from 'react-toastify'
 import ReCAPTCHA from 'react-google-recaptcha'
+import { useFormTracking } from '@/hooks/useFormTracking'
 
 const HeroContactForm = () => {
   const [formState, setFormState] = useState({
@@ -14,6 +15,10 @@ const HeroContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [recaptcha, setRecaptcha] = useState(null)
   const [privacyAgreed, setPrivacyAgreed] = useState(false)
+  const { onFormInteraction, trackSubmitSuccess, trackSubmitError } = useFormTracking({
+    formName: 'hero_contact_form',
+    formType: 'contact',
+  })
 
   const handleInputChange = (e) => {
     const { id, value } = e.target
@@ -52,6 +57,7 @@ const HeroContactForm = () => {
       }
 
       await response.json()
+      trackSubmitSuccess()
       toast.success('Message Sent Successfully!')
       setFormState({
         fullName: '',
@@ -62,6 +68,7 @@ const HeroContactForm = () => {
       setPrivacyAgreed(false)
       setRecaptcha(null)
     } catch (error) {
+      trackSubmitError()
       toast.error('Something went wrong. Please try again.')
     } finally {
       setIsSubmitting(false)
@@ -79,7 +86,7 @@ const HeroContactForm = () => {
           <p className="text-[11px] text-muted mt-0.5">Fill in the details below</p>
         </div>
 
-        <form className="space-y-3 flex-1 flex flex-col" onSubmit={handleSubmit}>
+        <form className="space-y-3 flex-1 flex flex-col" onSubmit={handleSubmit} onFocus={onFormInteraction}>
           <input
             id="fullName"
             type="text"

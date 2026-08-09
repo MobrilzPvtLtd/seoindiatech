@@ -1,0 +1,74 @@
+[
+  {
+    "Page Area": "All indexable pages",
+    "Element": "Title",
+    "Keyword/Topic Placement": "Primary topic + brand",
+    "Rule": "One clear intent; avoid duplicate titles"
+  },
+  {
+    "Page Area": "All indexable pages",
+    "Element": "H1",
+    "Keyword/Topic Placement": "Primary topic",
+    "Rule": "One descriptive H1; don't make it a keyword list"
+  },
+  {
+    "Page Area": "All content pages",
+    "Element": "Opening 100 words",
+    "Keyword/Topic Placement": "Primary + 1 supporting phrase",
+    "Rule": "Answer intent quickly and establish context"
+  },
+  {
+    "Page Area": "All content pages",
+    "Element": "H2/H3",
+    "Keyword/Topic Placement": "Subtopics, entities, questions",
+    "Rule": "Use natural semantic coverage"
+  },
+  {
+    "Page Area": "All content pages",
+    "Element": "Body",
+    "Keyword/Topic Placement": "Synonyms, entities, examples",
+    "Rule": "Write for the user; don't chase a density percentage"
+  },
+  {
+    "Page Area": "Internal links",
+    "Element": "Anchor text",
+    "Keyword/Topic Placement": "Descriptive partial-match phrases",
+    "Rule": "Anchor should predict destination content"
+  },
+  {
+    "Page Area": "Images",
+    "Element": "ALT text",
+    "Keyword/Topic Placement": "Accurate description",
+    "Rule": "Keyword only when it accurately describes the image"
+  },
+  {
+    "Page Area": "Blogs",
+    "Element": "FAQ / Q&A",
+    "Keyword/Topic Placement": "Real user questions",
+    "Rule": "Answer directly; don't add FAQ solely for markup"
+  },
+  {
+    "Page Area": "Services",
+    "Element": "Service comparison / benefits",
+    "Keyword/Topic Placement": "Commercial variants",
+    "Rule": "Use proof, deliverables, process and CTA"
+  },
+  {
+    "Page Area": "Industry pages",
+    "Element": "Industry + service",
+    "Keyword/Topic Placement": "Industry-specific variants",
+    "Rule": "Avoid near-duplicate city/industry templates"
+  },
+  {
+    "Page Area": "City pages",
+    "Element": "City + service",
+    "Keyword/Topic Placement": "Local intent variants",
+    "Rule": "Add genuinely local information; avoid doorway-like duplication"
+  },
+  {
+    "Page Area": "All pages",
+    "Element": "CTA",
+    "Keyword/Topic Placement": "Commercial action language",
+    "Rule": "Keep CTA relevant to intent"
+  }
+]

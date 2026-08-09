@@ -1,14 +1,16 @@
 'use client'
 
 import { useEffect } from 'react'
+import { getGtmContainerId, pushAnalyticsConfig } from '@/utils/analytics/gtmGa4Map'
 
-const GTM_ID = 'GTM-5TS8QJRM'
+const GTM_ID = getGtmContainerId()
 
 function injectGtm() {
   if (typeof window === 'undefined' || window.__gtmLoaded) return
   window.__gtmLoaded = true
 
   window.dataLayer = window.dataLayer || []
+  pushAnalyticsConfig()
   window.dataLayer.push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' })
 
   const script = document.createElement('script')

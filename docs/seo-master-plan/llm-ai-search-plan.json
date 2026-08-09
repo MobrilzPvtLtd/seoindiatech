@@ -1,0 +1,92 @@
+[
+  {
+    "LLM / AI Area": "AI crawler access",
+    "Implementation": "Allow OAI-SearchBot where ChatGPT Search visibility is desired; verify robots.txt/CDN/WAF access; keep important content crawlable.",
+    "Category": "Technical",
+    "Evidence / Limitation": "OpenAI says allowing OAI-SearchBot helps content be discovered/surfaced/cited; there is no guaranteed placement."
+  },
+  {
+    "LLM / AI Area": "Bing/Copilot",
+    "Implementation": "Verify Bing Webmaster Tools and monitor AI Performance for cited pages and grounding queries.",
+    "Category": "Measurement",
+    "Evidence / Limitation": "Bing provides an AI Performance report showing pages cited in AI answers and grounding queries."
+  },
+  {
+    "LLM / AI Area": "Google AI Overviews / AI Mode",
+    "Implementation": "Use normal SEO foundations: crawlable pages, indexable content, helpful content, internal links, descriptive titles/headings, structured data where appropriate.",
+    "Category": "Content + technical",
+    "Evidence / Limitation": "Google says no special AI markup/file is required; foundational SEO remains important."
+  },
+  {
+    "LLM / AI Area": "Answer-first writing",
+    "Implementation": "Put a 40–80 word direct answer near the top when the query is question-based, then expand with evidence/examples.",
+    "Category": "Content",
+    "Evidence / Limitation": "Improves clarity for users and creates self-contained passages; not a guaranteed citation tactic."
+  },
+  {
+    "LLM / AI Area": "Question coverage",
+    "Implementation": "Use H2/H3 questions around who/what/how/why/cost/alternatives/risks/process.",
+    "Category": "Content",
+    "Evidence / Limitation": "Maps natural-language queries to clear page sections."
+  },
+  {
+    "LLM / AI Area": "Entity clarity",
+    "Implementation": "Define the company, services, industries, locations, people/roles and relationships consistently.",
+    "Category": "Information architecture",
+    "Evidence / Limitation": "Helps machines understand what the page/site is about."
+  },
+  {
+    "LLM / AI Area": "Evidence",
+    "Implementation": "Support claims with original data, case studies, examples, methodology, screenshots, author expertise and trustworthy external sources where appropriate.",
+    "Category": "Trust",
+    "Evidence / Limitation": "Google emphasizes original analysis, expertise, sourcing and factual accuracy."
+  },
+  {
+    "LLM / AI Area": "Freshness",
+    "Implementation": "Update pages when facts, services, regulations, products or processes materially change; don't change dates without substantive updates.",
+    "Category": "Content governance",
+    "Evidence / Limitation": "Avoid artificial freshness signals."
+  },
+  {
+    "LLM / AI Area": "Internal links",
+    "Implementation": "Every important page should be reachable through relevant contextual links; use descriptive anchors.",
+    "Category": "Information architecture",
+    "Evidence / Limitation": "Links help users and search systems discover related resources."
+  },
+  {
+    "LLM / AI Area": "Content structure",
+    "Implementation": "Use short sections, descriptive headings, bullets, tables and clear definitions where useful.",
+    "Category": "Content",
+    "Evidence / Limitation": "Bing specifically recommends clarity/structure for AI answer visibility."
+  },
+  {
+    "LLM / AI Area": "Multimodal",
+    "Implementation": "Use original images, diagrams, screenshots and video when they genuinely explain the topic; provide accurate context/alt text.",
+    "Category": "Content",
+    "Evidence / Limitation": "Supports user comprehension and multiple search surfaces."
+  },
+  {
+    "LLM / AI Area": "Author / reviewer",
+    "Implementation": "Show author/byline where expected, author bio, reviewer expertise where relevant, About page and contact details.",
+    "Category": "E-E-A-T",
+    "Evidence / Limitation": "Google recommends clear authorship and expertise signals."
+  },
+  {
+    "LLM / AI Area": "Commercial transparency",
+    "Implementation": "Explain service scope, process, deliverables, limitations, pricing approach and who the service fits.",
+    "Category": "Conversion + trust",
+    "Evidence / Limitation": "Reduces ambiguity for users and AI systems summarizing the business."
+  },
+  {
+    "LLM / AI Area": "AI-generated content governance",
+    "Implementation": "Use AI for assistance where appropriate, but require human review, factual verification, originality and editorial ownership.",
+    "Category": "Governance",
+    "Evidence / Limitation": "Avoid publishing mass-produced or search-engine-first content."
+  },
+  {
+    "LLM / AI Area": "Measurement",
+    "Implementation": "Track GSC queries/clicks/indexing, Bing AI Performance, analytics referral traffic and assisted conversions from AI/search channels.",
+    "Category": "Measurement",
+    "Evidence / Limitation": "AI visibility should be measured by citations/referrals/conversions, not only rankings."
+  }
+]

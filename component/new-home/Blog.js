@@ -1,18 +1,29 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { BLOG_PREVIEWS } from '@/utils/blogPreview'
+import { isPremiumBlogHero } from '@/utils/blog/blogImageUtils'
 import ScribbleText from '@/component/ui/ScribbleText'
 
 function BlogCard({ post }) {
+  const premiumHero = isPremiumBlogHero(post.image)
+
   return (
     <article>
       <Link href={`/blog/${post.slug}`} className="group block">
-        <div className="relative aspect-[16/10] rounded-3xl overflow-hidden shadow-premium mb-5">
+        <div
+          className={`relative aspect-[16/10] rounded-3xl overflow-hidden shadow-premium mb-5 ${
+            premiumHero ? 'bg-[#EEF1FA] border border-border/40' : ''
+          }`}
+        >
           <Image
             src={post.image || '/images/home/logo1.png'}
             alt={post.title}
             fill
-            className="object-cover transition-transform duration-500 group-hover:scale-105"
+            className={
+              premiumHero
+                ? 'object-contain object-center p-4 transition-transform duration-500 group-hover:scale-[1.02]'
+                : 'object-cover transition-transform duration-500 group-hover:scale-105'
+            }
             sizes="(max-width: 768px) 100vw, 50vw"
             loading="lazy"
             quality={75}

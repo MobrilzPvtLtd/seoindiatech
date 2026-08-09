@@ -7,7 +7,7 @@ const posts = [
     title:
       'How Google AI Overviews Are Changing SEO and What Website Owners Should Do?',
     category: 'SEO & AI',
-    image: '/images/Google-Ai-Overviews.png',
+    image: '/images/blog/how-google-ai-overviews-are-changing-seo-hero.svg',
     desc:
       'Google AI Overviews are changing how websites rank in search results. Learn what this means for SEO and what website owners should do to stay visible.',
 
@@ -38,7 +38,7 @@ const posts = [
           "Think of the AI Overview as a helpful assistant that gathers information from across the web. It doesn't write these answers from scratch based on thin air; it pulls facts and advice from real websites-potentially yours. This shift is exactly why many companies are now seeking specialized ",
         link: {
           text: 'AI SEO services',
-          url: '/services/seo',
+          url: '/services/ai-seo',
         },
         textAfter: ' to ensure their content remains visible.',
       },
@@ -129,6 +129,16 @@ const posts = [
         text:
           'The fundamentals of good SEO-writing helpful, clear, and honest content-are more important now than ever. Focus on being the most helpful resource for your audience, and Google\'s AI will likely see you as a source worth sharing.',
       },
+      {
+        type: 'paragraph',
+        text:
+          'For a business-focused breakdown of AI Overviews, citations, and 2026 strategy, read our guide on ',
+        link: {
+          text: 'how Google AI Overviews are changing business SEO',
+          url: '/blog/google-ai-overviews-changing-business-seo',
+        },
+        textAfter: '.',
+      },
     ],
   },
   {
@@ -138,7 +148,7 @@ const posts = [
     slug: 'seo-for-restaurants-local-diners',
     title: 'SEO for Restaurants: How to Get More Local Diners Through Google',
     category: 'Local SEO',
-    image: '/images/Local-seo-Restaurants.jpg',
+    image: '/images/blog/seo-for-restaurants-local-diners-hero.svg',
     desc:
       'Learn how restaurants can use SEO to attract more local diners through Google search and map results.',
 
@@ -264,7 +274,7 @@ const posts = [
     slug: 'youtube-business-marketing-2026',
     title: 'How to Use YouTube for Business Marketing in 2026?',
     category: 'Social Media Marketing',
-    image: '/images/Importance-of-Youtube-Marketing-in-Business-Growth.jpg',
+    image: '/images/blog/youtube-business-marketing-2026-hero.svg',
     desc:
       'Learn how businesses can use YouTube marketing in 2026 to build trust, attract customers, and create long-term brand visibility.',
 
@@ -539,7 +549,7 @@ const posts = [
     slug: 'local-seo-guide-indian-businesses-2026',
     title: 'Local SEO Guide for Indian Businesses: Rank on Google Maps in 2026',
     category: 'Local SEO',
-    image: '/images/seo-company-1.png',
+    image: '/images/blog/local-seo-guide-indian-businesses-2026-hero.svg',
     desc:
       'A practical local SEO guide for Indian businesses covering Google Business Profile, citations, reviews, and city landing pages.',
     content: [
@@ -589,7 +599,7 @@ const posts = [
     slug: 'what-is-ai-seo-why-business-needs-it',
     title: 'What Is AI SEO and Why Your Business Needs It in 2026',
     category: 'AI SEO',
-    image: '/images/Google-Ai-Overviews.png',
+    image: '/images/blog/what-is-ai-seo-why-business-needs-it-hero.svg',
     desc:
       'AI SEO optimizes your content for AI search engines and Google AI Overviews. Here is what it means and how to get started.',
     content: [
@@ -614,7 +624,41 @@ const posts = [
       {
         type: 'paragraph',
         text:
-          'Use clear headings and direct answers. Add FAQ sections with real questions customers ask. Build authority with original data, case studies, and expert bylines. Ensure schema markup matches visible content. SEO India Tech offers dedicated AI SEO and answer engine optimization services for businesses ready to adapt.',
+          'Use clear headings and direct answers. Add FAQ sections with real questions customers ask. Build authority with original examples, transparent business information, and expert bylines where appropriate. Ensure schema markup matches visible content.',
+      },
+      {
+        type: 'heading',
+        text: 'Where AI SEO fits in your marketing stack',
+      },
+      {
+        type: 'paragraph',
+        text:
+          'AI SEO does not replace ',
+        link: {
+          text: 'traditional SEO services',
+          url: '/services/seo',
+        },
+        textAfter:
+          '. It extends them. Technical health, internal linking, and helpful content still drive rankings. AI SEO adds answer-ready formatting so your pages can be cited in Google AI Overviews and tools like ChatGPT.',
+      },
+      {
+        type: 'list',
+        items: [
+          '<strong>Answer Engine Optimization (AEO):</strong> Formats content for conversational queries and voice-style answers.',
+          '<strong>Generative Engine Optimization (GEO):</strong> Improves how generative AI systems reference your brand.',
+          '<strong>Entity clarity:</strong> Clear definitions of who you are, what you do, and who you serve.',
+        ],
+      },
+      {
+        type: 'paragraph',
+        text:
+          'SEO India Tech offers dedicated ',
+        link: {
+          text: 'AI SEO',
+          url: '/services/ai-seo',
+        },
+        textAfter:
+          ' and answer engine optimization programs for businesses ready to adapt. Compare approaches in our guide to AI SEO vs traditional SEO.',
       },
     ],
   },
@@ -625,7 +669,7 @@ const posts = [
     slug: 'ppc-vs-seo-which-is-better',
     title: 'PPC vs SEO: Which Marketing Channel Is Better for Your Business?',
     category: 'Digital Marketing',
-    image: '/images/services/ppc.png',
+    image: '/images/blog/ppc-vs-seo-which-is-better-hero.svg',
     desc:
       'PPC delivers fast leads. SEO builds long-term traffic. Here is how to decide which channel fits your business goals and budget.',
     content: [
@@ -653,9 +697,26 @@ const posts = [
           'Choose SEO when you want sustainable traffic without paying for every click. SEO builds brand authority, supports content marketing, and reduces dependency on ad spend over time.',
       },
       {
+        type: 'heading',
+        text: 'How to use PPC and SEO together',
+      },
+      {
+        type: 'list',
+        items: [
+          '<strong>Test with PPC, scale with SEO:</strong> Use paid ads to validate keywords and landing pages, then invest in organic content for terms that convert.',
+          '<strong>Share insights:</strong> Search term reports from ads inform SEO topic priorities.',
+          '<strong>Align landing pages:</strong> One strong page can serve both paid and organic traffic when messaging matches intent.',
+        ],
+      },
+      {
         type: 'paragraph',
         text:
-          'SEO India Tech manages both PPC advertising and SEO services under one roof so your paid and organic strategies align. Explore our SEO packages or PPC services to get started.',
+          'SEO India Tech manages both PPC advertising and SEO services under one roof so your paid and organic strategies align. Explore our ',
+        link: {
+          text: 'SEO packages',
+          url: '/seo-packages',
+        },
+        textAfter: ' or contact us to discuss which channel fits your current goals.',
       },
     ],
   },
@@ -666,7 +727,7 @@ const posts = [
     slug: 'ecommerce-seo-checklist-india',
     title: 'E-Commerce SEO Checklist: Rank Your Online Store in India',
     category: 'E-Commerce SEO',
-    image: '/images/seo-company-1.png',
+    image: '/images/blog/ecommerce-seo-checklist-india-hero.svg',
     desc:
       'A practical e-commerce SEO checklist covering product pages, categories, technical fixes, and content for Indian online stores.',
     content: [
@@ -707,7 +768,7 @@ const posts = [
     slug: 'how-to-choose-best-seo-agency-india',
     title: 'How to Choose the Best SEO Agency in India (2026 Guide)',
     category: 'SEO',
-    image: '/images/seo-company-1.png',
+    image: '/images/blog/how-to-choose-best-seo-agency-india-hero.svg',
     desc:
       'A practical guide to choosing an SEO agency in India - what to ask, red flags to avoid, and what transparent SEO looks like.',
     content: [

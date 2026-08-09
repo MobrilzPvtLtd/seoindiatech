@@ -1,8 +1,10 @@
 import WebsiteCreation from '@/component/solution/website_creation/WebsiteCreation'
 import SeoHead from '@/component/common/SeoHead'
 import VisibleFaq from '@/component/common/VisibleFaq'
+import SolutionInternalLinks from '@/component/solution/SolutionInternalLinks'
 import { PAGE_FAQS } from '@/utils/pageFaqs'
 import { buildSolutionServiceSchema } from '@/utils/schemaBuilders'
+import { getSolutionInternalLinks } from '@/utils/internalLinks'
 
 const schema = buildSolutionServiceSchema({
   path: '/solution/website-creation',
@@ -13,6 +15,8 @@ const schema = buildSolutionServiceSchema({
 })
 
 export default function WebsiteCreationPage() {
+  const solutionLinks = getSolutionInternalLinks('website-creation')
+
   return (
     <>
       <SeoHead
@@ -22,6 +26,7 @@ export default function WebsiteCreationPage() {
         schema={schema}
       />
       <WebsiteCreation />
+      <SolutionInternalLinks links={solutionLinks} title="Related SEO & Web Resources" />
       <VisibleFaq faqs={PAGE_FAQS.websiteCreation} minCount={8} showSchema />
     </>
   )

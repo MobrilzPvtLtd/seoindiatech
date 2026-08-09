@@ -1,0 +1,72 @@
+[
+  {
+    "Timeline": "Week 1–2",
+    "Workstream": "Technical foundation",
+    "Actions": "Verify sitemap, robots, canonicals, indexability, status codes, internal link crawlability, mobile rendering, CWV, structured data validity, OAI-SearchBot access, Bing verification.",
+    "Scope": "All pages",
+    "Priority": "Critical"
+  },
+  {
+    "Timeline": "Week 1–3",
+    "Workstream": "Keyword-to-URL mapping",
+    "Actions": "Assign one primary intent to each URL; identify cannibalization; map secondary/semantic entities; preserve strongest URL as canonical target.",
+    "Scope": "114 URLs",
+    "Priority": "Critical"
+  },
+  {
+    "Timeline": "Week 2–4",
+    "Workstream": "Information architecture",
+    "Actions": "Implement hub-and-spoke links: services, blogs, industries, city pages, solutions; add breadcrumbs and related resources.",
+    "Scope": "All commercial/content pages",
+    "Priority": "High"
+  },
+  {
+    "Timeline": "Week 3–6",
+    "Workstream": "Content rewrite",
+    "Actions": "Rewrite thin/duplicate pages for people-first quality; add original insights, examples, proof, author context and clear answers.",
+    "Scope": "Priority pages",
+    "Priority": "High"
+  },
+  {
+    "Timeline": "Week 4–8",
+    "Workstream": "AI/LLM readiness",
+    "Actions": "Answer-first sections, entity definitions, question coverage, evidence, crawlable HTML, clear headings, internal links, OAI/Bing monitoring.",
+    "Scope": "Blogs + services + industries",
+    "Priority": "High"
+  },
+  {
+    "Timeline": "Week 5–9",
+    "Workstream": "Local cluster",
+    "Actions": "Improve city/industry pages with unique local/industry information; strengthen GBP/local SEO relationships; avoid doorway-style duplication.",
+    "Scope": "Industry + city pages",
+    "Priority": "High"
+  },
+  {
+    "Timeline": "Week 6–10",
+    "Workstream": "Authority",
+    "Actions": "Create high-value topical assets, case studies, original data, expert contributions and relevant digital PR/link opportunities.",
+    "Scope": "Priority clusters",
+    "Priority": "Medium"
+  },
+  {
+    "Timeline": "Week 8–12",
+    "Workstream": "Conversion",
+    "Actions": "Align CTAs with intent; improve service/package/contact pathways; measure assisted conversions and lead quality.",
+    "Scope": "Commercial pages",
+    "Priority": "Medium"
+  },
+  {
+    "Timeline": "Weekly",
+    "Workstream": "Measurement",
+    "Actions": "GSC performance/indexing, Bing Search + AI Performance, analytics referrals, conversions, top cited pages, declining queries, crawl errors.",
+    "Scope": "Ongoing",
+    "Priority": "Ongoing"
+  },
+  {
+    "Timeline": "Monthly",
+    "Workstream": "Content governance",
+    "Actions": "Refresh only when materially useful; consolidate cannibalizing pages; update factual claims, sources, examples and internal links.",
+    "Scope": "Ongoing",
+    "Priority": "Ongoing"
+  }
+]

@@ -21,9 +21,10 @@ export const ORGANIZATION = {
     addressCountry: 'IN',
   },
   sameAs: [
-    'https://www.facebook.com/people/SEOIndiatech/',
+    'https://www.facebook.com/profile.php?id=61582651577922',
     'https://www.instagram.com/seoindiatech/',
     'https://x.com/seoindiatech411',
+    'https://www.linkedin.com/company/seo-india-tech/',
   ],
 }
 

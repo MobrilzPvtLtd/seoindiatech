@@ -5,6 +5,13 @@
 import { BLOG_CATALOG } from './blog/premium/blogCatalog.js'
 import { buildCatalogEntries } from './industries/catalog.js'
 import { SERVICE_CATALOG } from './services/premium/serviceCatalog.js'
+import {
+  getExcelMatrixLinks,
+  getPageLinkLimit,
+  getSolutionSeedPaths,
+  HOMEPAGE_HUB_PATHS,
+  inferPageType,
+} from './seo/excelLinkMatrix.js'
 
 export const LOCATION_CITIES = [
   { name: 'Delhi', slug: 'seo-services-in-delhi' },
@@ -55,6 +62,21 @@ export const INTERNAL_LINK_CATALOG = [
     href: '/services/ppc-advertising',
     title: 'PPC Advertising',
     description: 'High-intent paid campaigns aligned with organic landing pages.',
+  },
+  {
+    href: '/services/online-reputation-management',
+    title: 'Online Reputation Management',
+    description: 'Review monitoring, brand sentiment, and reputation repair for local and national brands.',
+  },
+  {
+    href: '/services/app-store-optimization',
+    title: 'App Store Optimization',
+    description: 'ASO for iOS and Android — metadata, ratings, and conversion optimization.',
+  },
+  {
+    href: '/services/answer-engine-optimization',
+    title: 'Answer Engine Optimization',
+    description: 'Structured answers for AI search, featured snippets, and voice assistants.',
   },
   {
     href: '/industries',
@@ -132,6 +154,8 @@ const SERVICE_BLOG_SLUGS = {
   seo: ['seo-trends-european-businesses-2026', '100-seo-mistakes-costing-business-leads', 'link-building-guide-2026'],
   'content-marketing': ['content-marketing-strategy-qualified-leads', 'complete-eeat-guide-business-websites'],
   'ppc-advertising': ['seo-roi-calculator-measure-success', 'local-vs-national-vs-international-seo'],
+  'app-store-optimization': ['ecommerce-seo-checklist-india', 'seo-trends-european-businesses-2026'],
+  'online-reputation-management': ['google-business-profile-optimization-guide', 'complete-eeat-guide-business-websites'],
 }
 
 const catalogByHref = new Map(INTERNAL_LINK_CATALOG.map((item) => [item.href, item]))
@@ -196,11 +220,40 @@ function dedupeLinks(links) {
   })
 }
 
+function titleFromAnchor(anchorText, fallback) {
+  if (!anchorText) return fallback
+  const cleaned = anchorText.trim()
+  if (!cleaned) return fallback
+  return cleaned.charAt(0).toUpperCase() + cleaned.slice(1)
+}
+
+function mergeWithExcel(existing, sourcePath, limit) {
+  const existingHrefs = new Set(existing.map((item) => item.href))
+  const excelLinks = getExcelMatrixLinks(sourcePath, { limit: limit * 2 })
+    .filter((item) => !existingHrefs.has(item.href))
+    .map((item) => {
+      const base = linkFromHref(item.href)
+      if (!base) return null
+      return {
+        ...base,
+        title: titleFromAnchor(item.anchorText, base.title),
+        matrixAnchor: item.anchorText,
+        placement: item.placement,
+        source: item.source,
+      }
+    })
+    .filter(Boolean)
+
+  return dedupeLinks([...existing, ...excelLinks]).slice(0, limit)
+}
+
 function resolveHrefs(hrefs) {
   return dedupeLinks(hrefs.map((href) => linkFromHref(href)).filter(Boolean))
 }
 
 export function getIndustryInternalLinks(entry) {
+  const sourcePath = `/industries/${entry.slug}`
+  const limit = getPageLinkLimit(sourcePath)
   const categoryHrefs = CATEGORY_SERVICE_LINKS[entry.categoryId] || [
     '/services/local-seo-service',
     '/services/seo',
@@ -214,7 +267,7 @@ export function getIndustryInternalLinks(entry) {
 
   const locationHref = '/seo-services/seo-services-in-noida'
 
-  return dedupeLinks([
+  const base = dedupeLinks([
     ...resolveHrefs(categoryHrefs.slice(0, 5)),
     ...resolveHrefs(peerSlugs),
     linkFromHref('/industries'),
@@ -222,10 +275,14 @@ export function getIndustryInternalLinks(entry) {
     linkFromHref(locationHref),
     linkFromHref('/seo-packages'),
     linkFromHref('/contact-us'),
-  ]).slice(0, 10)
+  ])
+
+  return mergeWithExcel(base, sourcePath, limit)
 }
 
 export function getServiceInternalLinks(serviceSlug) {
+  const sourcePath = `/services/${serviceSlug}`
+  const limit = getPageLinkLimit(sourcePath)
   const industrySlugs = SERVICE_INDUSTRY_LINKS[serviceSlug] || ['realtor-seo', 'dentist-seo', 'hvac-seo']
   const industryHrefs = industrySlugs.slice(0, 4).map((s) => `/industries/${s}`)
 
@@ -236,7 +293,7 @@ export function getServiceInternalLinks(serviceSlug) {
     .slice(0, 2)
     .map((s) => s.path || `/services/${s.slug}`)
 
-  return dedupeLinks([
+  const base = dedupeLinks([
     ...resolveHrefs(relatedServices),
     ...resolveHrefs(industryHrefs),
     ...resolveHrefs(blogHrefs),
@@ -245,52 +302,109 @@ export function getServiceInternalLinks(serviceSlug) {
     linkFromHref('/seo-packages'),
     linkFromHref('/blog'),
     linkFromHref('/contact-us'),
-  ]).slice(0, 10)
+  ])
+
+  return mergeWithExcel(base, sourcePath, limit)
 }
 
 export function getHubInternalLinks(hubSlug) {
-  return dedupeLinks([
+  const sourcePath = `/services/${hubSlug}`
+  const limit = getPageLinkLimit(sourcePath)
+  const base = dedupeLinks([
     ...resolveHrefs(['/services/seo', '/services/digital-marketing', '/services/local-seo-service', '/services/ai-seo']),
     linkFromHref('/industries'),
     linkFromHref('/blog'),
     linkFromHref(`/services/${hubSlug}`),
     linkFromHref('/seo-packages'),
     linkFromHref('/contact-us'),
-  ]).slice(0, 10)
+  ])
+
+  return mergeWithExcel(base, sourcePath, limit)
+}
+
+export function getHomepageHubLinks() {
+  return HOMEPAGE_HUB_PATHS.map((item) => {
+    const base = linkFromHref(item.href)
+    return {
+      ...base,
+      title: item.title,
+      description: base?.description || `Explore ${item.title.toLowerCase()} from SEO India Tech.`,
+      matrixAnchor: item.anchorText,
+    }
+  }).filter(Boolean)
+}
+
+export function getSolutionInternalLinks(solutionSlug) {
+  const sourcePath = `/solution/${solutionSlug}`
+  const limit = getPageLinkLimit(sourcePath)
+  const seedPaths = getSolutionSeedPaths(solutionSlug)
+
+  const base = dedupeLinks([
+    ...resolveHrefs(seedPaths),
+    linkFromHref('/seo-packages'),
+    linkFromHref('/industries'),
+  ])
+
+  return mergeWithExcel(base, sourcePath, limit)
 }
 
 export function getLocationInternalLinks(currentSlug) {
+  const sourcePath = `/seo-services/${currentSlug}`
+  const limit = getPageLinkLimit(sourcePath)
   const otherCities = LOCATION_CITIES.filter((c) => c.slug !== currentSlug)
-    .slice(0, 6)
+    .slice(0, 5)
     .map((c) => `/seo-services/${c.slug}`)
 
-  return {
-    services: resolveHrefs([
+  const services = mergeWithExcel(
+    resolveHrefs([
       '/services/local-seo-service',
       '/services/seo',
       '/services/gbp-optimization',
       '/services/small-business-seo',
-      '/services/ppc-advertising',
-      '/services/content-marketing',
     ]),
-    industries: resolveHrefs([
+    sourcePath,
+    Math.min(6, limit)
+  )
+
+  const industries = mergeWithExcel(
+    resolveHrefs([
       '/industries/dentist-seo',
       '/industries/realtor-seo',
       '/industries/hvac-seo',
       '/industries/plumber-seo',
     ]),
-    cities: resolveHrefs(otherCities),
-    resources: resolveHrefs(['/seo-packages', '/blog', '/industries', '/contact-us']),
+    sourcePath,
+    4
+  )
+
+  const resources = mergeWithExcel(
+    resolveHrefs([
+      '/seo-packages',
+      '/blog/google-business-profile-optimization-guide',
+      '/blog/local-seo-guide-indian-businesses-2026',
+      '/contact-us',
+    ]),
+    sourcePath,
+    4
+  )
+
+  return {
+    services: services.slice(0, 6),
+    industries: industries.slice(0, 4),
+    cities: resolveHrefs(otherCities).slice(0, 5),
+    resources: resources.slice(0, 4),
   }
 }
 
 export function getBlogRelatedResources(post, allPosts = []) {
+  const sourcePath = `/blog/${post.slug}`
+  const limit = getPageLinkLimit(sourcePath)
   const postBySlug = new Map(allPosts.map((p) => [p.slug, p]))
 
   const services = resolveHrefs(post.serviceLinks || [])
   const industries = resolveHrefs((post.industryLinks || []).map((href) => href))
 
-  const related = (post.relatedSlugs || [])
+  const related = (post.relatedSlugs || post.relatedBlogSlugs || [])
     .map((slug) => postBySlug.get(slug))
     .filter(Boolean)
     .slice(0, 4)
@@ -311,10 +425,93 @@ export function getBlogRelatedResources(post, allPosts = []) {
     related.push(...fillers)
   }
 
+  const explore = mergeWithExcel(
+    resolveHrefs(['/services/seo', '/industries', '/seo-packages', '/contact-us']),
+    sourcePath,
+    4
+  )
+
+  const excelServiceRows = getExcelMatrixLinks(sourcePath, { limit: 6 }).filter((item) =>
+    item.href.startsWith('/services/')
+  )
+
+  const excelServices = excelServiceRows
+    .map((item) => {
+      const base = linkFromHref(item.href)
+      if (!base) return null
+      return {
+        ...base,
+        title: titleFromAnchor(item.anchorText, base.title),
+        matrixAnchor: item.anchorText,
+      }
+    })
+    .filter(Boolean)
+
+  const mergedServices = dedupeLinks([...services, ...excelServices]).slice(0, 4)
+
   return {
-    services,
-    industries,
+    services: mergedServices,
+    industries: industries.slice(0, 3),
     related: dedupeLinks(related).slice(0, 4),
-    explore: resolveHrefs(['/services/seo', '/industries', '/seo-packages', '/contact-us']),
+    explore: explore.slice(0, 4),
+    matrixLimit: limit,
   }
+}
+
+/** Programmatic link output for audit tooling */
+export function getProgrammaticLinksForPath(path) {
+  const normalized = path.replace(/\/+$/, '') || '/'
+
+  if (normalized === '/') {
+    return getHomepageHubLinks()
+  }
+
+  if (normalized.startsWith('/services/')) {
+    const slug = normalized.replace('/services/', '')
+    const hubSlugs = ['seo', 'digital-marketing', 'paid-advertising', 'design-and-development']
+    if (hubSlugs.includes(slug)) return getHubInternalLinks(slug)
+    return getServiceInternalLinks(slug)
+  }
+
+  if (normalized.startsWith('/solution/')) {
+    return getSolutionInternalLinks(normalized.replace('/solution/', ''))
+  }
+
+  if (normalized.startsWith('/industries/') && normalized !== '/industries') {
+    const slug = normalized.replace('/industries/', '')
+    const entry = industryBySlug.get(slug)
+    if (entry) return getIndustryInternalLinks(entry)
+  }
+
+  if (normalized.startsWith('/seo-services/')) {
+    const slug = normalized.replace('/seo-services/', '')
+    const data = getLocationInternalLinks(slug)
+    return dedupeLinks([
+      ...(data.services || []),
+      ...(data.industries || []),
+      ...(data.cities || []),
+      ...(data.resources || []),
+    ])
+  }
+
+  if (normalized.startsWith('/blog/')) {
+    const slug = normalized.replace('/blog/', '')
+    const catalogEntry = blogBySlug.get(slug)
+    if (catalogEntry) {
+      const mockPost = {
+        slug,
+        serviceLinks: catalogEntry.serviceLinks,
+        industryLinks: catalogEntry.industryLinks,
+        relatedBlogSlugs: catalogEntry.relatedBlogSlugs,
+      }
+      const data = getBlogRelatedResources(mockPost, [])
+      return dedupeLinks([...data.services, ...data.industries, ...data.related, ...data.explore])
+    }
+  }
+
+  if (inferPageType(normalized) === 'core') {
+    return mergeWithExcel(resolveHrefs(['/services/seo', '/blog', '/industries', '/seo-packages', '/contact-us']), normalized, getPageLinkLimit(normalized))
+  }
+
+  return []
 }

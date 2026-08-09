@@ -62,9 +62,9 @@ const Navigate = () => {
                   <TrendingUp className="w-6 h-6 text-primary dark:text-accent" />
                 </div>
                 <div>
-                  <h4 className="text-2xl font-bold text-heading">
+                  <h3 className="text-2xl font-bold text-heading">
                     10+ Years
-                  </h4>
+                  </h3>
                   <p className="text-sm text-muted">
                     Industry Experience
                   </p>
@@ -75,9 +75,9 @@ const Navigate = () => {
                   <Users className="w-6 h-6 text-primary dark:text-accent" />
                 </div>
                 <div>
-                  <h4 className="text-2xl font-bold text-heading">
+                  <h3 className="text-2xl font-bold text-heading">
                     1000+
-                  </h4>
+                  </h3>
                   <p className="text-sm text-muted">
                     Satisfied Clients
                   </p>

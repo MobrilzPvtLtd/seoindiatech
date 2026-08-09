@@ -4,6 +4,7 @@
 import { getServiceInternalLinks } from '../../internalLinks'
 import { getRelatedServices } from './serviceCatalog'
 import { getServiceFaqs } from './serviceFaqMap'
+import { getServiceAnswerFirst } from '../../seo/answerFirstContent.js'
 
 const SERVICE_HERO_BG = {
   'local-seo-service': '/images/services/heroes/local-seo-service.svg',
@@ -620,5 +621,7 @@ export function buildPremiumServiceContent(entry) {
       primaryCta: { label: 'Book Free Consultation', href: '/contact-us' },
       secondaryCta: { label: 'Call +91-8076676731', href: 'tel:+91-8076676731' },
     },
+
+    answerFirst: getServiceAnswerFirst(slug, name),
   }
 }

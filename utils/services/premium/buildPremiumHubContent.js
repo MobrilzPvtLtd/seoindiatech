@@ -5,6 +5,7 @@ import { PAGE_FAQS } from '../../pageFaqs'
 import { serviceCategories } from '../../serviceCategories'
 import { getHubInternalLinks } from '../../internalLinks'
 import { getServiceEntry, SERVICE_CATALOG } from './serviceCatalog'
+import { getHubAnswerFirst } from '../../seo/answerFirstContent.js'
 
 const HUB_HERO_IMAGES = {
   seo: '/images/services/heroes/hub-seo.svg',
@@ -452,5 +453,11 @@ export function getPremiumHubContent(hubSlug) {
       primaryCta: { label: 'Book Free Consultation', href: '/contact-us' },
       secondaryCta: { label: 'Call +91-8076676731', href: 'tel:+91-8076676731' },
     },
+
+    answerFirst: getHubAnswerFirst(
+      hubSlug,
+      hubTitle,
+      childServices.map((service) => service.title)
+    ),
   }
 }

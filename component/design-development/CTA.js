@@ -4,6 +4,7 @@ import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import ReCAPTCHA from 'react-google-recaptcha'
 import Link from 'next/link'
+import { useFormTracking } from '@/hooks/useFormTracking'
 
 const CTA = () => {
   const [form, setForm] = useState({
@@ -15,6 +16,10 @@ const CTA = () => {
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [recaptcha, setRecaptcha] = useState(null)
+  const { onFormInteraction, trackSubmitSuccess, trackSubmitError } = useFormTracking({
+    formName: 'design_development_form',
+    formType: 'service_inquiry',
+  })
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target
@@ -48,6 +53,7 @@ const CTA = () => {
         body: JSON.stringify({ data: form }),
       })
       if (!response.ok) throw new Error('Submission failed')
+      trackSubmitSuccess()
       toast.success('Request submitted successfully!')
       setForm({
         email: '',
@@ -58,6 +64,7 @@ const CTA = () => {
       })
       setRecaptcha(null)
     } catch (err) {
+      trackSubmitError()
       toast.error('Something went wrong. Please try again.')
     } finally {
       setIsSubmitting(false)
@@ -140,6 +147,7 @@ const CTA = () => {
             className="bg-background rounded-2xl p-6 sm:p-8 space-y-5 border border-border flex flex-col justify-between shadow-inner"
             action="/api/submit-form"
             onSubmit={handleSubmit}
+            onFocus={onFormInteraction}
           >
             <div className="space-y-5">
               <div>

@@ -27,9 +27,9 @@ const Journey = () => {
           <div className="hidden absolute -bottom-6 -left-6 md:left-4 bg-white dark:bg-background p-4 rounded-xl shadow-lg border border-border dark:border-border max-w-[180px]">
             <div className="flex items-center space-x-2 mb-1">
               <Clock className="w-5 h-5 text-primary dark:text-accent" />
-              <h4 className="font-semibold text-heading">
+              <p className="font-semibold text-heading">
                 Since 2013
-              </h4>
+              </p>
             </div>
             <p className="text-sm text-muted">
               Helping businesses transform digitally
@@ -77,9 +77,9 @@ const Journey = () => {
             <div className="flex items-start bg-white dark:bg-background p-5 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 border border-border dark:border-border">
               <CheckCircle className="text-primary dark:text-accent w-6 h-6 mr-4 mt-1 flex-shrink-0" />
               <div>
-                <h4 className="font-medium text-heading mb-1">
+                <h3 className="font-medium text-heading mb-1">
                   Streamlined Operations
-                </h4>
+                </h3>
                 <p className="text-body">
                   We help you streamline operations, eliminate repetitive work,
                   and free your team to focus on strategic, high-impact
@@ -91,9 +91,9 @@ const Journey = () => {
             <div className="flex items-start bg-white dark:bg-background p-5 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 border border-border dark:border-border">
               <CheckCircle className="text-primary dark:text-accent w-6 h-6 mr-4 mt-1 flex-shrink-0" />
               <div>
-                <h4 className="font-medium text-heading mb-1">
+                <h3 className="font-medium text-heading mb-1">
                   Workflow Optimization
-                </h4>
+                </h3>
                 <p className="text-body">
                   Let us help you optimize your operations, remove bottlenecks,
                   and improve collaboration with our powerful workflow

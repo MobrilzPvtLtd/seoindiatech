@@ -234,9 +234,9 @@ const CRMToolService = () => {
                     <Icon className="w-6 h-6 text-primary dark:text-accent" />
                   </div>
                   <div>
-                    <h4 className="text-lg font-semibold text-heading mb-1">
+                    <h3 className="text-lg font-semibold text-heading mb-1">
                       {item.title}
-                    </h4>
+                    </h3>
                   </div>
                 </div>
               )
@@ -320,9 +320,9 @@ const CRMToolService = () => {
                     <Icon className="w-6 h-6 text-primary dark:text-accent" />
                   </div>
                   <div>
-                    <h4 className="text-lg font-semibold text-heading mb-1">
+                    <h3 className="text-lg font-semibold text-heading mb-1">
                       {item.title}
-                    </h4>
+                    </h3>
                   </div>
                 </div>
               )

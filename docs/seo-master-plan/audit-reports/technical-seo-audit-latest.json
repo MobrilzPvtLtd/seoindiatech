@@ -1,0 +1,777 @@
+{
+  "generatedAt": "2026-08-09T09:23:06.892Z",
+  "urlCount": 113,
+  "openIssues": [
+    {
+      "url": "robots.txt",
+      "issue": "_next not explicitly disallowed",
+      "severity": "LOW",
+      "recommendation": "Optional — Google generally handles static assets",
+      "status": "OPEN"
+    }
+  ],
+  "fixedIssues": [
+    {
+      "url": "sitemap.xml",
+      "issue": "Non-blog URLs omit lastmod (correct — no fake build timestamps)",
+      "severity": "LOW",
+      "recommendation": "Add lastmod only when content materially changes",
+      "status": "FIXED"
+    },
+    {
+      "url": "/404",
+      "issue": "Custom 404 with noindex and recovery links",
+      "severity": "LOW",
+      "recommendation": "Correct",
+      "status": "FIXED"
+    },
+    {
+      "url": "schema",
+      "issue": "Invalid SearchAction removed from WebSite schema",
+      "severity": "LOW",
+      "recommendation": "No blog search endpoint exists",
+      "status": "FIXED"
+    },
+    {
+      "url": "LCP",
+      "issue": "lcpImage preload applies to all viewports",
+      "severity": "LOW",
+      "recommendation": "Correct for mobile LCP",
+      "status": "FIXED"
+    },
+    {
+      "url": "canonical",
+      "issue": "Apex → www 301 redirects in netlify.toml",
+      "severity": "HIGH",
+      "recommendation": "Deploy and verify single-hop",
+      "status": "FIXED"
+    }
+  ],
+  "orphanPages": [
+    {
+      "url": "/blog/100-seo-mistakes-costing-business-leads",
+      "pageType": "Blog",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": false
+    },
+    {
+      "url": "/blog/ai-seo-vs-traditional-seo-2026",
+      "pageType": "Blog",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": false
+    },
+    {
+      "url": "/blog/chatgpt-seo-ai-search-organic-traffic",
+      "pageType": "Blog",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": true
+    },
+    {
+      "url": "/blog/choose-best-seo-agency-europe",
+      "pageType": "Blog",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": false
+    },
+    {
+      "url": "/blog/complete-eeat-guide-business-websites",
+      "pageType": "Blog",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": false
+    },
+    {
+      "url": "/blog/content-marketing-strategy-qualified-leads",
+      "pageType": "Blog",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": true
+    },
+    {
+      "url": "/blog/core-web-vitals-optimization-guide",
+      "pageType": "Blog",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": false
+    },
+    {
+      "url": "/blog/ecommerce-seo-checklist-india",
+      "pageType": "Blog",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": false
+    },
+    {
+      "url": "/blog/geo-generative-engine-optimization-guide",
+      "pageType": "Blog",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": false
+    },
+    {
+      "url": "/blog/google-ai-overviews-changing-business-seo",
+      "pageType": "Blog",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": false
+    },
+    {
+      "url": "/blog/google-business-profile-optimization-guide",
+      "pageType": "Blog",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": false
+    },
+    {
+      "url": "/blog/how-google-ai-overviews-are-changing-seo",
+      "pageType": "Blog",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": false
+    },
+    {
+      "url": "/blog/how-to-choose-best-seo-agency-india",
+      "pageType": "Blog",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": false
+    },
+    {
+      "url": "/blog/international-seo-guide-european-companies",
+      "pageType": "Blog",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": false
+    },
+    {
+      "url": "/blog/link-building-guide-2026",
+      "pageType": "Blog",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": true
+    },
+    {
+      "url": "/blog/local-seo-checklist-multi-location-europe",
+      "pageType": "Blog",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": false
+    },
+    {
+      "url": "/blog/local-seo-guide-indian-businesses-2026",
+      "pageType": "Blog",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": false
+    },
+    {
+      "url": "/blog/local-vs-national-vs-international-seo",
+      "pageType": "Blog",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": false
+    },
+    {
+      "url": "/blog/ppc-vs-seo-which-is-better",
+      "pageType": "Blog",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": false
+    },
+    {
+      "url": "/blog/seo-checklist-small-businesses-europe",
+      "pageType": "Blog",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": false
+    },
+    {
+      "url": "/blog/seo-for-restaurants-local-diners",
+      "pageType": "Blog",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": false
+    },
+    {
+      "url": "/blog/seo-healthcare-businesses-europe",
+      "pageType": "Blog",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": false
+    },
+    {
+      "url": "/blog/seo-law-firms-complete-guide",
+      "pageType": "Blog",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": false
+    },
+    {
+      "url": "/blog/seo-roi-calculator-measure-success",
+      "pageType": "Blog",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": true
+    },
+    {
+      "url": "/blog/seo-trends-european-businesses-2026",
+      "pageType": "Blog",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": false
+    },
+    {
+      "url": "/blog/technical-seo-checklist-enterprise-websites",
+      "pageType": "Blog",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": false
+    },
+    {
+      "url": "/blog/what-is-ai-seo-why-business-needs-it",
+      "pageType": "Blog",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": false
+    },
+    {
+      "url": "/blog/youtube-business-marketing-2026",
+      "pageType": "Blog",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": false
+    },
+    {
+      "url": "/industries/accountants-seo",
+      "pageType": "Industry",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": true
+    },
+    {
+      "url": "/industries/architect-seo",
+      "pageType": "Industry",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": true
+    },
+    {
+      "url": "/industries/automotive-seo",
+      "pageType": "Industry",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": true
+    },
+    {
+      "url": "/industries/breweries-seo",
+      "pageType": "Industry",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": true
+    },
+    {
+      "url": "/industries/cabinet-manufacturer-seo",
+      "pageType": "Industry",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": true
+    },
+    {
+      "url": "/industries/catering-seo",
+      "pageType": "Industry",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": true
+    },
+    {
+      "url": "/industries/chiropractor-seo",
+      "pageType": "Industry",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": true
+    },
+    {
+      "url": "/industries/cpa-firm-seo",
+      "pageType": "Industry",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": true
+    },
+    {
+      "url": "/industries/deck-builder-seo",
+      "pageType": "Industry",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": true
+    },
+    {
+      "url": "/industries/dentist-seo",
+      "pageType": "Industry",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": true
+    },
+    {
+      "url": "/industries/doctor-physician-seo",
+      "pageType": "Industry",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": true
+    },
+    {
+      "url": "/industries/dry-cleaner-seo",
+      "pageType": "Industry",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": true
+    },
+    {
+      "url": "/industries/fence-installer-seo",
+      "pageType": "Industry",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": true
+    },
+    {
+      "url": "/industries/fertility-clinic-seo",
+      "pageType": "Industry",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": true
+    },
+    {
+      "url": "/industries/flooring-company-seo",
+      "pageType": "Industry",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": true
+    },
+    {
+      "url": "/industries/garage-door-seo",
+      "pageType": "Industry",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": true
+    },
+    {
+      "url": "/industries/herbal-product-seo",
+      "pageType": "Industry",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": true
+    },
+    {
+      "url": "/industries/home-builder-and-remodeler-seo",
+      "pageType": "Industry",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": true
+    },
+    {
+      "url": "/industries/hvac-seo",
+      "pageType": "Industry",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": true
+    },
+    {
+      "url": "/industries/interior-designer-seo",
+      "pageType": "Industry",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": true
+    },
+    {
+      "url": "/industries/janitorial-service-seo",
+      "pageType": "Industry",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": true
+    },
+    {
+      "url": "/industries/locksmith-service-seo",
+      "pageType": "Industry",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": true
+    },
+    {
+      "url": "/industries/movers-and-moving-company-seo",
+      "pageType": "Industry",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": true
+    },
+    {
+      "url": "/industries/optometrist-seo",
+      "pageType": "Industry",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": true
+    },
+    {
+      "url": "/industries/orthodontist-seo",
+      "pageType": "Industry",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": true
+    },
+    {
+      "url": "/industries/painter-seo",
+      "pageType": "Industry",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": true
+    },
+    {
+      "url": "/industries/personal-injury-seo",
+      "pageType": "Industry",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": true
+    },
+    {
+      "url": "/industries/pest-control-service-seo",
+      "pageType": "Industry",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": true
+    },
+    {
+      "url": "/industries/pet-service-seo",
+      "pageType": "Industry",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": true
+    },
+    {
+      "url": "/industries/physiotherapy-seo",
+      "pageType": "Industry",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": true
+    },
+    {
+      "url": "/industries/plastic-surgery-seo",
+      "pageType": "Industry",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": false
+    },
+    {
+      "url": "/industries/plumber-seo",
+      "pageType": "Industry",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": true
+    },
+    {
+      "url": "/industries/property-management-seo",
+      "pageType": "Industry",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": false
+    },
+    {
+      "url": "/industries/realtor-seo",
+      "pageType": "Industry",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": true
+    },
+    {
+      "url": "/industries/roofers-seo",
+      "pageType": "Industry",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": true
+    },
+    {
+      "url": "/industries/sign-company-seo",
+      "pageType": "Industry",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": true
+    },
+    {
+      "url": "/industries/tree-care-seo",
+      "pageType": "Industry",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": true
+    },
+    {
+      "url": "/industries/waste-management-seo",
+      "pageType": "Industry",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": true
+    },
+    {
+      "url": "/industries/well-drilling-company-seo",
+      "pageType": "Industry",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": true
+    },
+    {
+      "url": "/industries/wildlife-removal-company-seo",
+      "pageType": "Industry",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": true
+    },
+    {
+      "url": "/industries/wineries-seo",
+      "pageType": "Industry",
+      "inboundLinks": 1,
+      "crawlDepth": 2,
+      "matrixOrphan": true
+    },
+    {
+      "url": "/privacy-policy",
+      "pageType": "Core",
+      "inboundLinks": 1,
+      "crawlDepth": 1,
+      "matrixOrphan": true
+    },
+    {
+      "url": "/seo-services/seo-services-in-bangalore",
+      "pageType": "City SEO",
+      "inboundLinks": 1,
+      "crawlDepth": 1,
+      "matrixOrphan": true
+    },
+    {
+      "url": "/seo-services/seo-services-in-chandigarh",
+      "pageType": "City SEO",
+      "inboundLinks": 1,
+      "crawlDepth": 1,
+      "matrixOrphan": false
+    },
+    {
+      "url": "/seo-services/seo-services-in-chennai",
+      "pageType": "City SEO",
+      "inboundLinks": 1,
+      "crawlDepth": 1,
+      "matrixOrphan": true
+    },
+    {
+      "url": "/seo-services/seo-services-in-delhi",
+      "pageType": "City SEO",
+      "inboundLinks": 1,
+      "crawlDepth": 1,
+      "matrixOrphan": true
+    },
+    {
+      "url": "/seo-services/seo-services-in-gurgaon",
+      "pageType": "City SEO",
+      "inboundLinks": 1,
+      "crawlDepth": 1,
+      "matrixOrphan": true
+    },
+    {
+      "url": "/seo-services/seo-services-in-hyderabad",
+      "pageType": "City SEO",
+      "inboundLinks": 1,
+      "crawlDepth": 1,
+      "matrixOrphan": false
+    },
+    {
+      "url": "/seo-services/seo-services-in-jaipur",
+      "pageType": "City SEO",
+      "inboundLinks": 1,
+      "crawlDepth": 1,
+      "matrixOrphan": true
+    },
+    {
+      "url": "/seo-services/seo-services-in-kolkata",
+      "pageType": "City SEO",
+      "inboundLinks": 1,
+      "crawlDepth": 1,
+      "matrixOrphan": true
+    },
+    {
+      "url": "/seo-services/seo-services-in-mumbai",
+      "pageType": "City SEO",
+      "inboundLinks": 1,
+      "crawlDepth": 1,
+      "matrixOrphan": true
+    },
+    {
+      "url": "/seo-services/seo-services-in-noida",
+      "pageType": "City SEO",
+      "inboundLinks": 1,
+      "crawlDepth": 1,
+      "matrixOrphan": true
+    },
+    {
+      "url": "/seo-services/seo-services-in-pune",
+      "pageType": "City SEO",
+      "inboundLinks": 1,
+      "crawlDepth": 1,
+      "matrixOrphan": true
+    },
+    {
+      "url": "/services/design-and-development",
+      "pageType": "Service",
+      "inboundLinks": 1,
+      "crawlDepth": 1,
+      "matrixOrphan": false
+    },
+    {
+      "url": "/services/paid-advertising",
+      "pageType": "Service",
+      "inboundLinks": 1,
+      "crawlDepth": 1,
+      "matrixOrphan": false
+    },
+    {
+      "url": "/solution/website-creation",
+      "pageType": "Solution",
+      "inboundLinks": 1,
+      "crawlDepth": 1,
+      "matrixOrphan": true
+    },
+    {
+      "url": "/solution/workflow",
+      "pageType": "Solution",
+      "inboundLinks": 1,
+      "crawlDepth": 1,
+      "matrixOrphan": true
+    },
+    {
+      "url": "/terms",
+      "pageType": "Core",
+      "inboundLinks": 1,
+      "crawlDepth": 1,
+      "matrixOrphan": true
+    },
+    {
+      "url": "/who-we-are",
+      "pageType": "Core",
+      "inboundLinks": 1,
+      "crawlDepth": 1,
+      "matrixOrphan": true
+    }
+  ],
+  "crawlDepth": {
+    "/": 0,
+    "/blog": 1,
+    "/blog/100-seo-mistakes-costing-business-leads": 2,
+    "/blog/ai-seo-vs-traditional-seo-2026": 2,
+    "/blog/chatgpt-seo-ai-search-organic-traffic": 2,
+    "/blog/choose-best-seo-agency-europe": 2,
+    "/blog/complete-eeat-guide-business-websites": 2,
+    "/blog/content-marketing-strategy-qualified-leads": 2,
+    "/blog/core-web-vitals-optimization-guide": 2,
+    "/blog/ecommerce-seo-checklist-india": 2,
+    "/blog/geo-generative-engine-optimization-guide": 2,
+    "/blog/google-ai-overviews-changing-business-seo": 2,
+    "/blog/google-business-profile-optimization-guide": 2,
+    "/blog/how-google-ai-overviews-are-changing-seo": 2,
+    "/blog/how-to-choose-best-seo-agency-india": 2,
+    "/blog/international-seo-guide-european-companies": 2,
+    "/blog/link-building-guide-2026": 2,
+    "/blog/local-seo-checklist-multi-location-europe": 2,
+    "/blog/local-seo-guide-indian-businesses-2026": 2,
+    "/blog/local-vs-national-vs-international-seo": 2,
+    "/blog/ppc-vs-seo-which-is-better": 2,
+    "/blog/seo-checklist-small-businesses-europe": 2,
+    "/blog/seo-for-restaurants-local-diners": 2,
+    "/blog/seo-healthcare-businesses-europe": 2,
+    "/blog/seo-law-firms-complete-guide": 2,
+    "/blog/seo-roi-calculator-measure-success": 2,
+    "/blog/seo-trends-european-businesses-2026": 2,
+    "/blog/technical-seo-checklist-enterprise-websites": 2,
+    "/blog/what-is-ai-seo-why-business-needs-it": 2,
+    "/blog/youtube-business-marketing-2026": 2,
+    "/contact-us": 1,
+    "/industries": 1,
+    "/industries/accountants-seo": 2,
+    "/industries/architect-seo": 2,
+    "/industries/automotive-seo": 2,
+    "/industries/breweries-seo": 2,
+    "/industries/cabinet-manufacturer-seo": 2,
+    "/industries/catering-seo": 2,
+    "/industries/chiropractor-seo": 2,
+    "/industries/cpa-firm-seo": 2,
+    "/industries/deck-builder-seo": 2,
+    "/industries/dentist-seo": 2,
+    "/industries/doctor-physician-seo": 2,
+    "/industries/dry-cleaner-seo": 2,
+    "/industries/fence-installer-seo": 2,
+    "/industries/fertility-clinic-seo": 2,
+    "/industries/flooring-company-seo": 2,
+    "/industries/garage-door-seo": 2,
+    "/industries/herbal-product-seo": 2,
+    "/industries/home-builder-and-remodeler-seo": 2,
+    "/industries/hvac-seo": 2,
+    "/industries/interior-designer-seo": 2,
+    "/industries/janitorial-service-seo": 2,
+    "/industries/locksmith-service-seo": 2,
+    "/industries/movers-and-moving-company-seo": 2,
+    "/industries/optometrist-seo": 2,
+    "/industries/orthodontist-seo": 2,
+    "/industries/painter-seo": 2,
+    "/industries/personal-injury-seo": 2,
+    "/industries/pest-control-service-seo": 2,
+    "/industries/pet-service-seo": 2,
+    "/industries/physiotherapy-seo": 2,
+    "/industries/plastic-surgery-seo": 2,
+    "/industries/plumber-seo": 2,
+    "/industries/property-management-seo": 2,
+    "/industries/realtor-seo": 2,
+    "/industries/roofers-seo": 2,
+    "/industries/sign-company-seo": 2,
+    "/industries/tree-care-seo": 2,
+    "/industries/waste-management-seo": 2,
+    "/industries/well-drilling-company-seo": 2,
+    "/industries/wildlife-removal-company-seo": 2,
+    "/industries/wineries-seo": 2,
+    "/privacy-policy": 1,
+    "/seo-packages": 1,
+    "/seo-services/seo-services-in-bangalore": 1,
+    "/seo-services/seo-services-in-chandigarh": 1,
+    "/seo-services/seo-services-in-chennai": 1,
+    "/seo-services/seo-services-in-delhi": 1,
+    "/seo-services/seo-services-in-gurgaon": 1,
+    "/seo-services/seo-services-in-hyderabad": 1,
+    "/seo-services/seo-services-in-jaipur": 1,
+    "/seo-services/seo-services-in-kolkata": 1,
+    "/seo-services/seo-services-in-mumbai": 1,
+    "/seo-services/seo-services-in-noida": 1,
+    "/seo-services/seo-services-in-pune": 1,
+    "/services/ai-seo": 1,
+    "/services/answer-engine-optimization": 1,
+    "/services/app-store-optimization": 1,
+    "/services/content-marketing": 1,
+    "/services/design-and-development": 1,
+    "/services/digital-branding": 1,
+    "/services/digital-marketing": 1,
+    "/services/e-commerce-seo": 1,
+    "/services/gbp-optimization": 1,
+    "/services/generative-engine-optimization": 1,
+    "/services/local-seo-service": 1,
+    "/services/online-reputation-management": 1,
+    "/services/paid-advertising": 1,
+    "/services/ppc-advertising": 1,
+    "/services/seo": 1,
+    "/services/small-business-seo": 1,
+    "/services/social-media-marketing": 1,
+    "/services/social-media-optimization": 2,
+    "/services/ui-ux-design": 1,
+    "/solution/automation": 1,
+    "/solution/crm-and-tools": 1,
+    "/solution/market-research": 1,
+    "/solution/promotion-and-ads": 1,
+    "/solution/website-creation": 1,
+    "/solution/workflow": 1,
+    "/terms": 1,
+    "/who-we-are": 1
+  },
+  "sitemapErrors": []
+}

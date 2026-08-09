@@ -19,6 +19,7 @@ const BenefitsSection = dynamic(() => import('@/component/new-home/BenefitsSecti
 const ProcessSection = dynamic(() => import('@/component/new-home/ProcessSection'))
 const Testimonials = dynamic(() => import('@/component/new-home/Testimonials'))
 const AuthorityBand = dynamic(() => import('@/component/new-home/AuthorityBand'))
+const SeoHubBand = dynamic(() => import('@/component/new-home/SeoHubBand'))
 const Blog = dynamic(() => import('@/component/new-home/Blog'))
 const CityLinksBand = dynamic(() => import('@/component/new-home/CityLinksBand'))
 const FAQAndContact = dynamic(() => import('@/component/new-home/FAQAndContact'), { ssr: false })
@@ -145,6 +146,7 @@ export default function Home() {
       <ProcessSection />
       <Testimonials />
       <AuthorityBand />
+      <SeoHubBand />
       <Blog />
       <CityLinksBand />
       <FAQAndContact />

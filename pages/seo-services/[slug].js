@@ -1,5 +1,6 @@
 import SeoHead from '@/component/common/SeoHead'
 import { absoluteUrl } from '@/utils/siteConfig'
+import Link from 'next/link'
 
 import LocationHero from '@/component/location-services/LocationHero'
 import LocationContent from '@/component/location-services/LocationContent'
@@ -37,6 +38,20 @@ export default function LocationPage({ location }) {
       <SeoSchema location={location} url={pageUrl} />
 
       <main className="min-h-screen bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100">
+        <div className="max-w-6xl mx-auto px-6 pt-28 pb-2">
+          <nav aria-label="Breadcrumb" className="text-sm text-muted">
+            <Link href="/" className="hover:text-primary">
+              Home
+            </Link>
+            <span className="mx-2">/</span>
+            <Link href="/services/local-seo-service" className="hover:text-primary">
+              Local SEO
+            </Link>
+            <span className="mx-2">/</span>
+            <span className="text-heading font-medium">SEO Services in {location.city}</span>
+          </nav>
+        </div>
+
         <LocationHero
           heading={location.heading}
           content={location.content}

@@ -37,12 +37,6 @@ export function enrichOrganizationNode(org) {
     ...org,
     foundingDate: '2010',
     knowsAbout: AI_ENTITY_TOPICS,
-    aggregateRating: org.aggregateRating || {
-      '@type': 'AggregateRating',
-      ratingValue: '4.9',
-      reviewCount: '120',
-      bestRating: '5',
-    },
   }
 }
 

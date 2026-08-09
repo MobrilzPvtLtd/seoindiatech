@@ -1,6 +1,8 @@
 import dynamic from 'next/dynamic'
 import PremiumHero from './PremiumHero'
 import TrustStatsBar from './TrustStatsBar'
+import GeoQuickAnswer from './GeoQuickAnswer'
+import PremiumSection from './PremiumSection'
 import WhySeoMatters from './WhySeoMatters'
 import PainPointsSection from './PainPointsSection'
 import WhyChooseGrid from './WhyChooseGrid'
@@ -64,6 +66,13 @@ export default function PremiumIndustryPage({ content }) {
     <div className="premium-industry-page">
       <PremiumHero data={content.hero} />
       <TrustStatsBar data={content.trust} />
+      {content.answerFirst && (
+        <PremiumSection variant="white" tight>
+          <div className="mx-auto max-w-3xl">
+            <GeoQuickAnswer data={content.answerFirst} />
+          </div>
+        </PremiumSection>
+      )}
       {navSections.length > 3 && <PageSectionNav sections={navSections} />}
 
       {content.whySeoMatters && <WhySeoMatters data={content.whySeoMatters} />}

@@ -78,7 +78,7 @@ export default function DigitalHero() {
       <section className="py-16 px-6 md:px-12 lg:px-24 bg-cream dark:bg-background transition-colors duration-300">
         <div className="max-w-4xl mx-auto text-center">
           {/* Small Heading */}
-          <h3 className="text-lg tracking-widest uppercase font-semibold text-primary dark:text-accent mb-4">
+          <h2 className="text-lg tracking-widest uppercase font-semibold text-primary dark:text-accent mb-4">
             What You Get From an AI Focused Approach
           </h3>
 

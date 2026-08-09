@@ -52,12 +52,12 @@ const Hero = () => {
             dark:border dark:border-border"
           >
             {/* Heading */}
-            <h3 className="text-2xl md:text-3xl font-bold text-heading mb-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-heading mb-8">
               Why Choose{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent dark:from-accent dark:to-accent">
                 SEO India Tech?
               </span>
-            </h3>
+            </h2>
 
             {/* Cards Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-10">
@@ -70,9 +70,9 @@ const Hero = () => {
                 shadow-sm hover:shadow-md dark:hover:shadow-lg
                 transition"
               >
-                <h4 className="font-semibold text-heading mb-2">
+                <h3 className="font-semibold text-heading mb-2">
                   Tailored Strategies
-                </h4>
+                </h3>
                 <p className="text-sm text-muted leading-relaxed">
                   Every business is unique, so our plans are customized to match
                   your objectives.
@@ -88,9 +88,9 @@ const Hero = () => {
                 shadow-sm hover:shadow-md dark:hover:shadow-lg
                 transition"
               >
-                <h4 className="font-semibold text-heading mb-2">
+                <h3 className="font-semibold text-heading mb-2">
                   Expert Team
-                </h4>
+                </h3>
                 <p className="text-sm text-muted leading-relaxed">
                   Our specialists bring years of experience delivering
                   top-quality digital marketing services.
@@ -106,9 +106,9 @@ const Hero = () => {
                 shadow-sm hover:shadow-md dark:hover:shadow-lg
                 transition"
               >
-                <h4 className="font-semibold text-heading mb-2">
+                <h3 className="font-semibold text-heading mb-2">
                   Affordable & Transparent
-                </h4>
+                </h3>
                 <p className="text-sm text-muted leading-relaxed">
                   Clear pricing, regular updates, and honest communication at
                   every stage.
@@ -124,9 +124,9 @@ const Hero = () => {
                 shadow-sm hover:shadow-md dark:hover:shadow-lg
                 transition"
               >
-                <h4 className="font-semibold text-heading mb-2">
+                <h3 className="font-semibold text-heading mb-2">
                   Proven Results
-                </h4>
+                </h3>
                 <p className="text-sm text-muted leading-relaxed">
                   We stay focused on performance, growth, and real outcomes-not
                   just metrics.

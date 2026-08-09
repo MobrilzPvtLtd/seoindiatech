@@ -2,8 +2,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowRight, Calendar, Clock, User } from 'lucide-react'
 import BlogRelatedResources from './BlogRelatedResources'
+import GeoQuickAnswer from '@/component/industry-premium/GeoQuickAnswer'
 import posts from '@/utils/BlogPost'
 import { getBlogRelatedResources } from '@/utils/internalLinks'
+import { getBlogArticleImageClasses } from '@/utils/blog/blogImageUtils'
 function renderParagraph(block, index) {
   if (block.link) {
     return (
@@ -64,6 +66,33 @@ function renderBlock(block, index) {
           ))}
         </ol>
       )
+    case 'table':
+      return (
+        <div key={index} className="overflow-x-auto my-6">
+          <table className="min-w-full border border-border text-left text-sm">
+            <thead className="bg-cream/80">
+              <tr>
+                {block.headers.map((header) => (
+                  <th key={header} className="border border-border px-4 py-3 font-semibold text-heading">
+                    {header}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {block.rows.map((row, rowIndex) => (
+                <tr key={rowIndex}>
+                  {row.map((cell, cellIndex) => (
+                    <td key={cellIndex} className="border border-border px-4 py-3 text-body">
+                      {cell}
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      )
     default:
       return null
   }
@@ -71,15 +100,16 @@ function renderBlock(block, index) {
 
 export default function PremiumBlogArticle({ post }) {
   const relatedResources = getBlogRelatedResources(post, posts)
+  const imageClasses = getBlogArticleImageClasses(post.image)
 
   return (    <article className="max-w-4xl mx-auto">
-      <div className="mb-6 rounded-xl overflow-hidden bg-secondary/10 border border-border/40">
+      <div className={imageClasses.wrapper}>
         <Image
           src={post.image}
           alt={post.images?.[0]?.alt || post.title}
           width={1200}
           height={630}
-          className="object-cover object-center w-full h-auto min-h-[220px] max-h-[420px]"
+          className={imageClasses.image}
           priority
           sizes="(max-width: 896px) 100vw, 896px"
         />
@@ -110,6 +140,12 @@ export default function PremiumBlogArticle({ post }) {
           </span>
         )}
       </div>
+
+      {post.answerFirst && (
+        <div className="mb-8">
+          <GeoQuickAnswer data={post.answerFirst} />
+        </div>
+      )}
 
       <div className="space-y-6 blog-article-body">
         {post.content?.map((block, index) => renderBlock(block, index))}

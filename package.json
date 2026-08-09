@@ -16,6 +16,13 @@
     "check-unicode": "node scripts/check-unicode.js",
     "check-seo": "node scripts/check-seo.js",
     "check-headings": "node scripts/heading-check.js",
+    "seo:audit-links": "node scripts/audit-internal-links.mjs",
+    "seo:validate-llm": "node scripts/validate-llm-layer.mjs",
+    "seo:audit-technical": "node scripts/seo-technical-audit.mjs",
+    "seo:audit-local": "node scripts/generate-local-seo-audit.mjs",
+    "seo:analytics-health": "node scripts/analytics-health-check.mjs",
+    "seo:performance-audit": "node scripts/seo-performance-audit.mjs",
+    "seo:build-matrix": "node scripts/build-excel-matrix-data.mjs",
     "push-indexing": "node scripts/push-indexing.mjs"
   },
   "dependencies": {

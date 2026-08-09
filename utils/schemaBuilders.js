@@ -41,11 +41,6 @@ export function buildWebSiteNode() {
     name: SITE_NAME,
     publisher: { '@id': `${SITE_URL}/#organization` },
     inLanguage: 'en-IN',
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: `${SITE_URL}/blog?q={search_term_string}`,
-      'query-input': 'required name=search_term_string',
-    },
   }
 }
 

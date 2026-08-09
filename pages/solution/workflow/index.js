@@ -1,10 +1,13 @@
 import WorkFlow from '@/component/solution/workflow/WorkFlow'
 import SeoHead from '@/component/common/SeoHead'
 import VisibleFaq from '@/component/common/VisibleFaq'
+import SolutionInternalLinks from '@/component/solution/SolutionInternalLinks'
 import { PAGE_FAQS } from '@/utils/pageFaqs'
+import { getSolutionInternalLinks } from '@/utils/internalLinks'
 import React from 'react'
 
 export default function index() {
+  const solutionLinks = getSolutionInternalLinks('workflow')
   const schemaData = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -87,6 +90,7 @@ export default function index() {
         schema={schemaData}
       />
       <WorkFlow />
+      <SolutionInternalLinks links={solutionLinks} title="Related SEO & Marketing Resources" />
       <VisibleFaq faqs={PAGE_FAQS.workflow} minCount={8} />
     </>
   )

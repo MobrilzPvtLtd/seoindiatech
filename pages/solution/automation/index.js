@@ -1,10 +1,13 @@
 import Automation from '@/component/solution/automation/Automation'
 import SeoHead from '@/component/common/SeoHead'
 import VisibleFaq from '@/component/common/VisibleFaq'
+import SolutionInternalLinks from '@/component/solution/SolutionInternalLinks'
 import { PAGE_FAQS } from '@/utils/pageFaqs'
+import { getSolutionInternalLinks } from '@/utils/internalLinks'
 import React from 'react'
 
 export default function index() {
+  const solutionLinks = getSolutionInternalLinks('automation')
   const schemaData = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -92,6 +95,7 @@ export default function index() {
         schema={schemaData}
       />
       <Automation />
+      <SolutionInternalLinks links={solutionLinks} title="Related SEO & Marketing Resources" />
       <VisibleFaq faqs={PAGE_FAQS.automation} minCount={8} />
     </>
   )

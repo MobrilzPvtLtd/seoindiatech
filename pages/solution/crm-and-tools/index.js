@@ -1,10 +1,13 @@
 import CRMTools from '@/component/solution/CRM&Tool/CRMTool'
 import SeoHead from '@/component/common/SeoHead'
 import VisibleFaq from '@/component/common/VisibleFaq'
+import SolutionInternalLinks from '@/component/solution/SolutionInternalLinks'
 import { PAGE_FAQS } from '@/utils/pageFaqs'
+import { getSolutionInternalLinks } from '@/utils/internalLinks'
 import React from 'react'
 
 export default function index() {
+  const solutionLinks = getSolutionInternalLinks('crm-and-tools')
   const schemaData = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -97,6 +100,7 @@ export default function index() {
         schema={schemaData}
       />
       <CRMTools />
+      <SolutionInternalLinks links={solutionLinks} title="Related SEO & Marketing Resources" />
       <VisibleFaq faqs={PAGE_FAQS.crmAndTools} minCount={8} />
     </>
   )

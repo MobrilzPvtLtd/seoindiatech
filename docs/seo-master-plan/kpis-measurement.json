@@ -1,0 +1,50 @@
+[
+  {
+    "KPI Area": "Organic visibility",
+    "Metrics": "Impressions, clicks, CTR, average position by URL/query",
+    "Source": "Google Search Console",
+    "Cadence": "Weekly"
+  },
+  {
+    "KPI Area": "Index health",
+    "Metrics": "Indexed URLs, excluded URLs, canonical issues, crawl errors",
+    "Source": "Google Search Console / crawler",
+    "Cadence": "Weekly"
+  },
+  {
+    "KPI Area": "AI visibility",
+    "Metrics": "Cited URLs, grounding queries, AI answer appearances where reported",
+    "Source": "Bing AI Performance; ChatGPT referral analytics where available",
+    "Cadence": "Weekly/Monthly"
+  },
+  {
+    "KPI Area": "LLM referral traffic",
+    "Metrics": "Sessions/referrals from AI platforms",
+    "Source": "Analytics",
+    "Cadence": "Monthly"
+  },
+  {
+    "KPI Area": "Commercial SEO",
+    "Metrics": "Leads, qualified leads, conversion rate, revenue/lead value by landing page",
+    "Source": "Analytics/CRM",
+    "Cadence": "Monthly"
+  },
+  {
+    "KPI Area": "Internal linking",
+    "Metrics": "Orphan pages, inbound links/page, important pages reachable depth",
+    "Source": "Crawler + site audit",
+    "Cadence": "Monthly"
+  },
+  {
+    "KPI Area": "Content quality",
+    "Metrics": "Pages with original evidence, author info, updated claims, useful FAQs, strong internal links",
+    "Source": "Editorial audit",
+    "Cadence": "Monthly"
+  },
+  {
+    "KPI Area": "Local SEO",
+    "Metrics": "Local landing page traffic/leads, GBP actions, local query performance",
+    "Source": "Analytics/GBP/GSC",
+    "Cadence": "Monthly"
+  }
+]

@@ -44,9 +44,9 @@ export default function SolutionImpact() {
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
-          <h5 className="text-3xl md:text-4xl font-bold text-heading mb-8">
+          <h4 className="text-3xl md:text-4xl font-bold text-heading mb-8">
             Place Your Trust in the Right Partner
-          </h5>
+          </h4>
 
           <p className="text-heading dark:text-gray-300 leading-relaxed mb-6">
             Choosing SEO India Tech means entrusting your website to experts who

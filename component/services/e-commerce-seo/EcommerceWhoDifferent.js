@@ -96,7 +96,7 @@ export default function EcommerceWhoDifferent() {
         <div className="lg:col-span-2 group relative rounded-3xl border border-border bg-gray-50 dark:bg-card p-10 shadow-sm transition-all duration-500 hover:shadow-xl hover:-translate-y-1 flex flex-col justify-center">
 
           <div className="relative inline-block mb-6">
-            <h6 className="text-xl font-semibold text-heading">
+            <h3 className="text-xl font-semibold text-heading">
               Start Today
             </h6>
 

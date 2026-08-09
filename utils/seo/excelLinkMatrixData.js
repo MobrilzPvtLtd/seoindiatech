@@ -1,0 +1,7676 @@
+/** Auto-generated from docs/seo-master-plan — do not edit manually */
+export const matrixRows = [
+  {
+    "Source URL": "https://www.seoindiatech.com/services/seo",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/seo",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/digital-marketing",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/digital-marketing",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/digital-marketing",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/paid-advertising",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/paid-advertising",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/paid-advertising",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/design-and-development",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/design-and-development",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/design-and-development",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/ai-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/ai-seo",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/ai-seo",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/answer-engine-optimization",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/answer-engine-optimization",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/answer-engine-optimization",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/app-store-optimization",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/app-store-optimization",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/app-store-optimization",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/content-marketing",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/content-marketing",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/content-marketing",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/digital-branding",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/digital-branding",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/digital-branding",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/e-commerce-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/e-commerce-seo",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/e-commerce-seo",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/generative-engine-optimization",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/generative-engine-optimization",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/generative-engine-optimization",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/online-reputation-management",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/online-reputation-management",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/online-reputation-management",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/ppc-advertising",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/ppc-advertising",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/ppc-advertising",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/small-business-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/small-business-seo",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/small-business-seo",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/social-media-marketing",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/social-media-marketing",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/social-media-marketing",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/social-media-optimization",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/social-media-optimization",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/social-media-optimization",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/ui-ux-design",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/ui-ux-design",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/ui-ux-design",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/solution/automation",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/solution/automation",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/solution/automation",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/solution/crm-and-tools",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/solution/crm-and-tools",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/solution/crm-and-tools",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/solution/market-research",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/solution/market-research",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/solution/market-research",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/solution/promotion-and-ads",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/solution/promotion-and-ads",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/solution/promotion-and-ads",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/solution/website-creation",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/solution/website-creation",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/solution/website-creation",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/solution/workflow",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/solution/workflow",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/solution/workflow",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/seo-trends-european-businesses-2026",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/seo-trends-european-businesses-2026",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "speak with our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/seo-trends-european-businesses-2026",
+    "Destination URL": "https://www.seoindiatech.com/seo-packages",
+    "Anchor Text": "SEO packages",
+    "Why This Link": "Commercial investigation",
+    "Recommended Placement": "Contextual/CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/ai-seo-vs-traditional-seo-2026",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/ai-seo-vs-traditional-seo-2026",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "speak with our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/ai-seo-vs-traditional-seo-2026",
+    "Destination URL": "https://www.seoindiatech.com/seo-packages",
+    "Anchor Text": "SEO packages",
+    "Why This Link": "Commercial investigation",
+    "Recommended Placement": "Contextual/CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/local-seo-checklist-multi-location-europe",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/local-seo-checklist-multi-location-europe",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "speak with our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/local-seo-checklist-multi-location-europe",
+    "Destination URL": "https://www.seoindiatech.com/seo-packages",
+    "Anchor Text": "SEO packages",
+    "Why This Link": "Commercial investigation",
+    "Recommended Placement": "Contextual/CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/google-ai-overviews-changing-business-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/google-ai-overviews-changing-business-seo",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "speak with our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/google-ai-overviews-changing-business-seo",
+    "Destination URL": "https://www.seoindiatech.com/seo-packages",
+    "Anchor Text": "SEO packages",
+    "Why This Link": "Commercial investigation",
+    "Recommended Placement": "Contextual/CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/100-seo-mistakes-costing-business-leads",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/100-seo-mistakes-costing-business-leads",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "speak with our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/100-seo-mistakes-costing-business-leads",
+    "Destination URL": "https://www.seoindiatech.com/seo-packages",
+    "Anchor Text": "SEO packages",
+    "Why This Link": "Commercial investigation",
+    "Recommended Placement": "Contextual/CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/international-seo-guide-european-companies",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/international-seo-guide-european-companies",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "speak with our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/international-seo-guide-european-companies",
+    "Destination URL": "https://www.seoindiatech.com/seo-packages",
+    "Anchor Text": "SEO packages",
+    "Why This Link": "Commercial investigation",
+    "Recommended Placement": "Contextual/CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/seo-healthcare-businesses-europe",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/seo-healthcare-businesses-europe",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "speak with our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/seo-healthcare-businesses-europe",
+    "Destination URL": "https://www.seoindiatech.com/seo-packages",
+    "Anchor Text": "SEO packages",
+    "Why This Link": "Commercial investigation",
+    "Recommended Placement": "Contextual/CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/seo-law-firms-complete-guide",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/seo-law-firms-complete-guide",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "speak with our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/seo-law-firms-complete-guide",
+    "Destination URL": "https://www.seoindiatech.com/seo-packages",
+    "Anchor Text": "SEO packages",
+    "Why This Link": "Commercial investigation",
+    "Recommended Placement": "Contextual/CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/choose-best-seo-agency-europe",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/choose-best-seo-agency-europe",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "speak with our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/choose-best-seo-agency-europe",
+    "Destination URL": "https://www.seoindiatech.com/seo-packages",
+    "Anchor Text": "SEO packages",
+    "Why This Link": "Commercial investigation",
+    "Recommended Placement": "Contextual/CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/local-vs-national-vs-international-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/local-vs-national-vs-international-seo",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "speak with our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/local-vs-national-vs-international-seo",
+    "Destination URL": "https://www.seoindiatech.com/seo-packages",
+    "Anchor Text": "SEO packages",
+    "Why This Link": "Commercial investigation",
+    "Recommended Placement": "Contextual/CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/google-business-profile-optimization-guide",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/google-business-profile-optimization-guide",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "speak with our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/google-business-profile-optimization-guide",
+    "Destination URL": "https://www.seoindiatech.com/seo-packages",
+    "Anchor Text": "SEO packages",
+    "Why This Link": "Commercial investigation",
+    "Recommended Placement": "Contextual/CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/complete-eeat-guide-business-websites",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/complete-eeat-guide-business-websites",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "speak with our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/complete-eeat-guide-business-websites",
+    "Destination URL": "https://www.seoindiatech.com/seo-packages",
+    "Anchor Text": "SEO packages",
+    "Why This Link": "Commercial investigation",
+    "Recommended Placement": "Contextual/CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/geo-generative-engine-optimization-guide",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/geo-generative-engine-optimization-guide",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "speak with our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/geo-generative-engine-optimization-guide",
+    "Destination URL": "https://www.seoindiatech.com/seo-packages",
+    "Anchor Text": "SEO packages",
+    "Why This Link": "Commercial investigation",
+    "Recommended Placement": "Contextual/CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/chatgpt-seo-ai-search-organic-traffic",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/chatgpt-seo-ai-search-organic-traffic",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "speak with our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/chatgpt-seo-ai-search-organic-traffic",
+    "Destination URL": "https://www.seoindiatech.com/seo-packages",
+    "Anchor Text": "SEO packages",
+    "Why This Link": "Commercial investigation",
+    "Recommended Placement": "Contextual/CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/seo-roi-calculator-measure-success",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/seo-roi-calculator-measure-success",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "speak with our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/seo-roi-calculator-measure-success",
+    "Destination URL": "https://www.seoindiatech.com/seo-packages",
+    "Anchor Text": "SEO packages",
+    "Why This Link": "Commercial investigation",
+    "Recommended Placement": "Contextual/CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/technical-seo-checklist-enterprise-websites",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/technical-seo-checklist-enterprise-websites",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "speak with our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/technical-seo-checklist-enterprise-websites",
+    "Destination URL": "https://www.seoindiatech.com/seo-packages",
+    "Anchor Text": "SEO packages",
+    "Why This Link": "Commercial investigation",
+    "Recommended Placement": "Contextual/CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/core-web-vitals-optimization-guide",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/core-web-vitals-optimization-guide",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "speak with our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/core-web-vitals-optimization-guide",
+    "Destination URL": "https://www.seoindiatech.com/seo-packages",
+    "Anchor Text": "SEO packages",
+    "Why This Link": "Commercial investigation",
+    "Recommended Placement": "Contextual/CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/content-marketing-strategy-qualified-leads",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/content-marketing-strategy-qualified-leads",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "speak with our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/content-marketing-strategy-qualified-leads",
+    "Destination URL": "https://www.seoindiatech.com/seo-packages",
+    "Anchor Text": "SEO packages",
+    "Why This Link": "Commercial investigation",
+    "Recommended Placement": "Contextual/CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/link-building-guide-2026",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/link-building-guide-2026",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "speak with our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/link-building-guide-2026",
+    "Destination URL": "https://www.seoindiatech.com/seo-packages",
+    "Anchor Text": "SEO packages",
+    "Why This Link": "Commercial investigation",
+    "Recommended Placement": "Contextual/CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/seo-checklist-small-businesses-europe",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/seo-checklist-small-businesses-europe",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "speak with our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/seo-checklist-small-businesses-europe",
+    "Destination URL": "https://www.seoindiatech.com/seo-packages",
+    "Anchor Text": "SEO packages",
+    "Why This Link": "Commercial investigation",
+    "Recommended Placement": "Contextual/CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/how-google-ai-overviews-are-changing-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/how-google-ai-overviews-are-changing-seo",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "speak with our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/how-google-ai-overviews-are-changing-seo",
+    "Destination URL": "https://www.seoindiatech.com/seo-packages",
+    "Anchor Text": "SEO packages",
+    "Why This Link": "Commercial investigation",
+    "Recommended Placement": "Contextual/CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/seo-for-restaurants-local-diners",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/seo-for-restaurants-local-diners",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "speak with our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/seo-for-restaurants-local-diners",
+    "Destination URL": "https://www.seoindiatech.com/seo-packages",
+    "Anchor Text": "SEO packages",
+    "Why This Link": "Commercial investigation",
+    "Recommended Placement": "Contextual/CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/youtube-business-marketing-2026",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/youtube-business-marketing-2026",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "speak with our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/youtube-business-marketing-2026",
+    "Destination URL": "https://www.seoindiatech.com/seo-packages",
+    "Anchor Text": "SEO packages",
+    "Why This Link": "Commercial investigation",
+    "Recommended Placement": "Contextual/CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "speak with our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
+    "Destination URL": "https://www.seoindiatech.com/seo-packages",
+    "Anchor Text": "SEO packages",
+    "Why This Link": "Commercial investigation",
+    "Recommended Placement": "Contextual/CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/local-seo-guide-indian-businesses-2026",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/local-seo-guide-indian-businesses-2026",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "speak with our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/local-seo-guide-indian-businesses-2026",
+    "Destination URL": "https://www.seoindiatech.com/seo-packages",
+    "Anchor Text": "SEO packages",
+    "Why This Link": "Commercial investigation",
+    "Recommended Placement": "Contextual/CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/what-is-ai-seo-why-business-needs-it",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/what-is-ai-seo-why-business-needs-it",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "speak with our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/what-is-ai-seo-why-business-needs-it",
+    "Destination URL": "https://www.seoindiatech.com/seo-packages",
+    "Anchor Text": "SEO packages",
+    "Why This Link": "Commercial investigation",
+    "Recommended Placement": "Contextual/CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/ppc-vs-seo-which-is-better",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/ppc-vs-seo-which-is-better",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "speak with our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/ppc-vs-seo-which-is-better",
+    "Destination URL": "https://www.seoindiatech.com/seo-packages",
+    "Anchor Text": "SEO packages",
+    "Why This Link": "Commercial investigation",
+    "Recommended Placement": "Contextual/CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/ecommerce-seo-checklist-india",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/ecommerce-seo-checklist-india",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "speak with our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/ecommerce-seo-checklist-india",
+    "Destination URL": "https://www.seoindiatech.com/seo-packages",
+    "Anchor Text": "SEO packages",
+    "Why This Link": "Commercial investigation",
+    "Recommended Placement": "Contextual/CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/how-to-choose-best-seo-agency-india",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/how-to-choose-best-seo-agency-india",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "speak with our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/how-to-choose-best-seo-agency-india",
+    "Destination URL": "https://www.seoindiatech.com/seo-packages",
+    "Anchor Text": "SEO packages",
+    "Why This Link": "Commercial investigation",
+    "Recommended Placement": "Contextual/CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/plastic-surgery-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/plastic-surgery-seo",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/plastic-surgery-seo",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/property-management-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/property-management-seo",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/property-management-seo",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/realtor-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/realtor-seo",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/realtor-seo",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/fertility-clinic-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/fertility-clinic-seo",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/fertility-clinic-seo",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/optometrist-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/optometrist-seo",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/optometrist-seo",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/orthodontist-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/orthodontist-seo",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/orthodontist-seo",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/doctor-physician-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/doctor-physician-seo",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/doctor-physician-seo",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/physiotherapy-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/physiotherapy-seo",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/physiotherapy-seo",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/personal-injury-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/personal-injury-seo",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/personal-injury-seo",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/dentist-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/dentist-seo",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/dentist-seo",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/hvac-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/hvac-seo",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/hvac-seo",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/plumber-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/plumber-seo",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/plumber-seo",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/garage-door-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/garage-door-seo",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/garage-door-seo",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/well-drilling-company-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/well-drilling-company-seo",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/well-drilling-company-seo",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/fence-installer-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/fence-installer-seo",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/fence-installer-seo",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/deck-builder-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/deck-builder-seo",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/deck-builder-seo",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/cabinet-manufacturer-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/cabinet-manufacturer-seo",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/cabinet-manufacturer-seo",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/architect-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/architect-seo",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/architect-seo",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/painter-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/painter-seo",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/painter-seo",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/automotive-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/automotive-seo",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/automotive-seo",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/locksmith-service-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/locksmith-service-seo",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/locksmith-service-seo",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/interior-designer-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/interior-designer-seo",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/interior-designer-seo",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/flooring-company-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/flooring-company-seo",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/flooring-company-seo",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/home-builder-and-remodeler-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/home-builder-and-remodeler-seo",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/home-builder-and-remodeler-seo",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/catering-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/catering-seo",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/catering-seo",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/breweries-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/breweries-seo",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/breweries-seo",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/wineries-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/wineries-seo",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/wineries-seo",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/herbal-product-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/herbal-product-seo",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/herbal-product-seo",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/chiropractor-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/chiropractor-seo",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/chiropractor-seo",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/movers-and-moving-company-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/movers-and-moving-company-seo",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/movers-and-moving-company-seo",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/pest-control-service-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/pest-control-service-seo",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/pest-control-service-seo",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/cpa-firm-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/cpa-firm-seo",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/cpa-firm-seo",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/wildlife-removal-company-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/wildlife-removal-company-seo",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/wildlife-removal-company-seo",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/sign-company-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/sign-company-seo",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/sign-company-seo",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/waste-management-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/waste-management-seo",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/waste-management-seo",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/dry-cleaner-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/dry-cleaner-seo",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/dry-cleaner-seo",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/tree-care-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/tree-care-seo",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/tree-care-seo",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/roofers-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/roofers-seo",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/roofers-seo",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/accountants-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/accountants-seo",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/accountants-seo",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/pet-service-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/pet-service-seo",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/pet-service-seo",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/janitorial-service-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/janitorial-service-seo",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/janitorial-service-seo",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-chandigarh",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-chandigarh",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-chandigarh",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-hyderabad",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-hyderabad",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-hyderabad",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-jaipur",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-jaipur",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-jaipur",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-mumbai",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-mumbai",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-mumbai",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-pune",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-pune",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-pune",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-noida",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-noida",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-noida",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-delhi",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-delhi",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-delhi",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-bangalore",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-bangalore",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-bangalore",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-chennai",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-chennai",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-chennai",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-kolkata",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-kolkata",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-kolkata",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-gurgaon",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-gurgaon",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights and guides",
+    "Why This Link": "Supporting informational hub",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-gurgaon",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/seo",
+    "Destination URL": "https://www.seoindiatech.com/services/ai-seo",
+    "Anchor Text": "ai seo",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/seo",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local seo service",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/seo",
+    "Destination URL": "https://www.seoindiatech.com/services/content-marketing",
+    "Anchor Text": "content marketing",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/digital-marketing",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "seo",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/digital-marketing",
+    "Destination URL": "https://www.seoindiatech.com/services/content-marketing",
+    "Anchor Text": "content marketing",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/digital-marketing",
+    "Destination URL": "https://www.seoindiatech.com/services/paid-advertising",
+    "Anchor Text": "paid advertising",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/paid-advertising",
+    "Destination URL": "https://www.seoindiatech.com/services/ppc-advertising",
+    "Anchor Text": "ppc advertising",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/paid-advertising",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "seo",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/paid-advertising",
+    "Destination URL": "https://www.seoindiatech.com/services/digital-marketing",
+    "Anchor Text": "digital marketing",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/design-and-development",
+    "Destination URL": "https://www.seoindiatech.com/services/ui-ux-design",
+    "Anchor Text": "ui ux design",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/design-and-development",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "seo",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/ai-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/answer-engine-optimization",
+    "Anchor Text": "answer engine optimization",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/ai-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/generative-engine-optimization",
+    "Anchor Text": "generative engine optimization",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/ai-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/content-marketing",
+    "Anchor Text": "content marketing",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/ai-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "seo",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/answer-engine-optimization",
+    "Destination URL": "https://www.seoindiatech.com/services/ai-seo",
+    "Anchor Text": "ai seo",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/answer-engine-optimization",
+    "Destination URL": "https://www.seoindiatech.com/services/generative-engine-optimization",
+    "Anchor Text": "generative engine optimization",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/answer-engine-optimization",
+    "Destination URL": "https://www.seoindiatech.com/services/content-marketing",
+    "Anchor Text": "content marketing",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/answer-engine-optimization",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "seo",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/app-store-optimization",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "seo",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/app-store-optimization",
+    "Destination URL": "https://www.seoindiatech.com/services/content-marketing",
+    "Anchor Text": "content marketing",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/app-store-optimization",
+    "Destination URL": "https://www.seoindiatech.com/services/digital-marketing",
+    "Anchor Text": "digital marketing",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/content-marketing",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "seo",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/content-marketing",
+    "Destination URL": "https://www.seoindiatech.com/services/ai-seo",
+    "Anchor Text": "ai seo",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/content-marketing",
+    "Destination URL": "https://www.seoindiatech.com/services/digital-marketing",
+    "Anchor Text": "digital marketing",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/digital-branding",
+    "Destination URL": "https://www.seoindiatech.com/services/digital-marketing",
+    "Anchor Text": "digital marketing",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/digital-branding",
+    "Destination URL": "https://www.seoindiatech.com/services/content-marketing",
+    "Anchor Text": "content marketing",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/digital-branding",
+    "Destination URL": "https://www.seoindiatech.com/services/social-media-marketing",
+    "Anchor Text": "social media marketing",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/e-commerce-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "seo",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/e-commerce-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/content-marketing",
+    "Anchor Text": "content marketing",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/e-commerce-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/paid-advertising",
+    "Anchor Text": "paid advertising",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local seo service",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "seo",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/generative-engine-optimization",
+    "Destination URL": "https://www.seoindiatech.com/services/ai-seo",
+    "Anchor Text": "ai seo",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/generative-engine-optimization",
+    "Destination URL": "https://www.seoindiatech.com/services/answer-engine-optimization",
+    "Anchor Text": "answer engine optimization",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/generative-engine-optimization",
+    "Destination URL": "https://www.seoindiatech.com/services/content-marketing",
+    "Anchor Text": "content marketing",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/generative-engine-optimization",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "seo",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "gbp optimization",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "seo",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Destination URL": "https://www.seoindiatech.com/services/small-business-seo",
+    "Anchor Text": "small business seo",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/online-reputation-management",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "seo",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/online-reputation-management",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local seo service",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/online-reputation-management",
+    "Destination URL": "https://www.seoindiatech.com/services/social-media-marketing",
+    "Anchor Text": "social media marketing",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/ppc-advertising",
+    "Destination URL": "https://www.seoindiatech.com/services/paid-advertising",
+    "Anchor Text": "paid advertising",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/ppc-advertising",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "seo",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/ppc-advertising",
+    "Destination URL": "https://www.seoindiatech.com/services/digital-marketing",
+    "Anchor Text": "digital marketing",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/small-business-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local seo service",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/small-business-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "gbp optimization",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/small-business-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "seo",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/social-media-marketing",
+    "Destination URL": "https://www.seoindiatech.com/services/social-media-optimization",
+    "Anchor Text": "social media optimization",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/social-media-marketing",
+    "Destination URL": "https://www.seoindiatech.com/services/digital-marketing",
+    "Anchor Text": "digital marketing",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/social-media-marketing",
+    "Destination URL": "https://www.seoindiatech.com/services/content-marketing",
+    "Anchor Text": "content marketing",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/social-media-optimization",
+    "Destination URL": "https://www.seoindiatech.com/services/social-media-marketing",
+    "Anchor Text": "social media marketing",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/social-media-optimization",
+    "Destination URL": "https://www.seoindiatech.com/services/digital-marketing",
+    "Anchor Text": "digital marketing",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/ui-ux-design",
+    "Destination URL": "https://www.seoindiatech.com/services/design-and-development",
+    "Anchor Text": "design and development",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/ui-ux-design",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "seo",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/seo-trends-european-businesses-2026",
+    "Destination URL": "https://www.seoindiatech.com/blog/seo-healthcare-businesses-europe",
+    "Anchor Text": "seo healthcare businesses europe",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/seo-trends-european-businesses-2026",
+    "Destination URL": "https://www.seoindiatech.com/blog/seo-checklist-small-businesses-europe",
+    "Anchor Text": "seo checklist small businesses europe",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/seo-trends-european-businesses-2026",
+    "Destination URL": "https://www.seoindiatech.com/blog/local-seo-guide-indian-businesses-2026",
+    "Anchor Text": "local seo guide indian businesses 2026",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/ai-seo-vs-traditional-seo-2026",
+    "Destination URL": "https://www.seoindiatech.com/services/ai-seo",
+    "Anchor Text": "AI SEO services",
+    "Why This Link": "AI-search topic cluster",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/ai-seo-vs-traditional-seo-2026",
+    "Destination URL": "https://www.seoindiatech.com/services/answer-engine-optimization",
+    "Anchor Text": "answer engine optimization",
+    "Why This Link": "AI-search topic cluster",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/ai-seo-vs-traditional-seo-2026",
+    "Destination URL": "https://www.seoindiatech.com/services/generative-engine-optimization",
+    "Anchor Text": "generative engine optimization",
+    "Why This Link": "AI-search topic cluster",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/ai-seo-vs-traditional-seo-2026",
+    "Destination URL": "https://www.seoindiatech.com/blog/what-is-ai-seo-why-business-needs-it",
+    "Anchor Text": "what is ai seo why business needs it",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/ai-seo-vs-traditional-seo-2026",
+    "Destination URL": "https://www.seoindiatech.com/blog/ppc-vs-seo-which-is-better",
+    "Anchor Text": "ppc vs seo which is better",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/ai-seo-vs-traditional-seo-2026",
+    "Destination URL": "https://www.seoindiatech.com/blog/local-vs-national-vs-international-seo",
+    "Anchor Text": "local vs national vs international seo",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/local-seo-checklist-multi-location-europe",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local-search cluster",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/local-seo-checklist-multi-location-europe",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local-search cluster",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/local-seo-checklist-multi-location-europe",
+    "Destination URL": "https://www.seoindiatech.com/blog/seo-checklist-small-businesses-europe",
+    "Anchor Text": "seo checklist small businesses europe",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/local-seo-checklist-multi-location-europe",
+    "Destination URL": "https://www.seoindiatech.com/blog/technical-seo-checklist-enterprise-websites",
+    "Anchor Text": "technical seo checklist enterprise websites",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/local-seo-checklist-multi-location-europe",
+    "Destination URL": "https://www.seoindiatech.com/blog/seo-healthcare-businesses-europe",
+    "Anchor Text": "seo healthcare businesses europe",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/google-ai-overviews-changing-business-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/ai-seo",
+    "Anchor Text": "AI SEO services",
+    "Why This Link": "AI-search topic cluster",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/google-ai-overviews-changing-business-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/answer-engine-optimization",
+    "Anchor Text": "answer engine optimization",
+    "Why This Link": "AI-search topic cluster",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/google-ai-overviews-changing-business-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/generative-engine-optimization",
+    "Anchor Text": "generative engine optimization",
+    "Why This Link": "AI-search topic cluster",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/google-ai-overviews-changing-business-seo",
+    "Destination URL": "https://www.seoindiatech.com/blog/how-google-ai-overviews-are-changing-seo",
+    "Anchor Text": "how google ai overviews are changing seo",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/google-ai-overviews-changing-business-seo",
+    "Destination URL": "https://www.seoindiatech.com/blog/what-is-ai-seo-why-business-needs-it",
+    "Anchor Text": "what is ai seo why business needs it",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/google-ai-overviews-changing-business-seo",
+    "Destination URL": "https://www.seoindiatech.com/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
+    "Anchor Text": "google core update may 2026 seo content strategy agentic ai",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/100-seo-mistakes-costing-business-leads",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Technical SEO commercial path",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/100-seo-mistakes-costing-business-leads",
+    "Destination URL": "https://www.seoindiatech.com/services/design-and-development",
+    "Anchor Text": "web design and development",
+    "Why This Link": "Technical/UX path",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/100-seo-mistakes-costing-business-leads",
+    "Destination URL": "https://www.seoindiatech.com/blog/what-is-ai-seo-why-business-needs-it",
+    "Anchor Text": "what is ai seo why business needs it",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/100-seo-mistakes-costing-business-leads",
+    "Destination URL": "https://www.seoindiatech.com/blog/google-ai-overviews-changing-business-seo",
+    "Anchor Text": "google ai overviews changing business seo",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/100-seo-mistakes-costing-business-leads",
+    "Destination URL": "https://www.seoindiatech.com/blog/youtube-business-marketing-2026",
+    "Anchor Text": "youtube business marketing 2026",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/international-seo-guide-european-companies",
+    "Destination URL": "https://www.seoindiatech.com/blog/seo-trends-european-businesses-2026",
+    "Anchor Text": "seo trends european businesses 2026",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/international-seo-guide-european-companies",
+    "Destination URL": "https://www.seoindiatech.com/blog/seo-law-firms-complete-guide",
+    "Anchor Text": "seo law firms complete guide",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/international-seo-guide-european-companies",
+    "Destination URL": "https://www.seoindiatech.com/blog/local-vs-national-vs-international-seo",
+    "Anchor Text": "local vs national vs international seo",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/seo-healthcare-businesses-europe",
+    "Destination URL": "https://www.seoindiatech.com/blog/seo-checklist-small-businesses-europe",
+    "Anchor Text": "seo checklist small businesses europe",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/seo-healthcare-businesses-europe",
+    "Destination URL": "https://www.seoindiatech.com/blog/seo-trends-european-businesses-2026",
+    "Anchor Text": "seo trends european businesses 2026",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/seo-healthcare-businesses-europe",
+    "Destination URL": "https://www.seoindiatech.com/blog/local-seo-guide-indian-businesses-2026",
+    "Anchor Text": "local seo guide indian businesses 2026",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/seo-law-firms-complete-guide",
+    "Destination URL": "https://www.seoindiatech.com/blog/local-seo-guide-indian-businesses-2026",
+    "Anchor Text": "local seo guide indian businesses 2026",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/seo-law-firms-complete-guide",
+    "Destination URL": "https://www.seoindiatech.com/blog/international-seo-guide-european-companies",
+    "Anchor Text": "international seo guide european companies",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/seo-law-firms-complete-guide",
+    "Destination URL": "https://www.seoindiatech.com/blog/complete-eeat-guide-business-websites",
+    "Anchor Text": "complete eeat guide business websites",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/choose-best-seo-agency-europe",
+    "Destination URL": "https://www.seoindiatech.com/blog/how-to-choose-best-seo-agency-india",
+    "Anchor Text": "how to choose best seo agency india",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/choose-best-seo-agency-europe",
+    "Destination URL": "https://www.seoindiatech.com/blog/seo-healthcare-businesses-europe",
+    "Anchor Text": "seo healthcare businesses europe",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/choose-best-seo-agency-europe",
+    "Destination URL": "https://www.seoindiatech.com/blog/seo-checklist-small-businesses-europe",
+    "Anchor Text": "seo checklist small businesses europe",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/local-vs-national-vs-international-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local-search cluster",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/local-vs-national-vs-international-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local-search cluster",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/local-vs-national-vs-international-seo",
+    "Destination URL": "https://www.seoindiatech.com/blog/seo-for-restaurants-local-diners",
+    "Anchor Text": "seo for restaurants local diners",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/local-vs-national-vs-international-seo",
+    "Destination URL": "https://www.seoindiatech.com/blog/ppc-vs-seo-which-is-better",
+    "Anchor Text": "ppc vs seo which is better",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/local-vs-national-vs-international-seo",
+    "Destination URL": "https://www.seoindiatech.com/blog/local-seo-guide-indian-businesses-2026",
+    "Anchor Text": "local seo guide indian businesses 2026",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/google-business-profile-optimization-guide",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local-search cluster",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/google-business-profile-optimization-guide",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local-search cluster",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/google-business-profile-optimization-guide",
+    "Destination URL": "https://www.seoindiatech.com/blog/google-ai-overviews-changing-business-seo",
+    "Anchor Text": "google ai overviews changing business seo",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/google-business-profile-optimization-guide",
+    "Destination URL": "https://www.seoindiatech.com/blog/geo-generative-engine-optimization-guide",
+    "Anchor Text": "geo generative engine optimization guide",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/google-business-profile-optimization-guide",
+    "Destination URL": "https://www.seoindiatech.com/blog/core-web-vitals-optimization-guide",
+    "Anchor Text": "core web vitals optimization guide",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/complete-eeat-guide-business-websites",
+    "Destination URL": "https://www.seoindiatech.com/services/content-marketing",
+    "Anchor Text": "content marketing services",
+    "Why This Link": "Content cluster",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/complete-eeat-guide-business-websites",
+    "Destination URL": "https://www.seoindiatech.com/blog/seo-law-firms-complete-guide",
+    "Anchor Text": "seo law firms complete guide",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/complete-eeat-guide-business-websites",
+    "Destination URL": "https://www.seoindiatech.com/blog/google-business-profile-optimization-guide",
+    "Anchor Text": "google business profile optimization guide",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/complete-eeat-guide-business-websites",
+    "Destination URL": "https://www.seoindiatech.com/blog/youtube-business-marketing-2026",
+    "Anchor Text": "youtube business marketing 2026",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/geo-generative-engine-optimization-guide",
+    "Destination URL": "https://www.seoindiatech.com/services/ai-seo",
+    "Anchor Text": "AI SEO services",
+    "Why This Link": "AI-search topic cluster",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/geo-generative-engine-optimization-guide",
+    "Destination URL": "https://www.seoindiatech.com/services/answer-engine-optimization",
+    "Anchor Text": "answer engine optimization",
+    "Why This Link": "AI-search topic cluster",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/geo-generative-engine-optimization-guide",
+    "Destination URL": "https://www.seoindiatech.com/services/generative-engine-optimization",
+    "Anchor Text": "generative engine optimization",
+    "Why This Link": "AI-search topic cluster",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/geo-generative-engine-optimization-guide",
+    "Destination URL": "https://www.seoindiatech.com/blog/google-business-profile-optimization-guide",
+    "Anchor Text": "google business profile optimization guide",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/geo-generative-engine-optimization-guide",
+    "Destination URL": "https://www.seoindiatech.com/blog/core-web-vitals-optimization-guide",
+    "Anchor Text": "core web vitals optimization guide",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/geo-generative-engine-optimization-guide",
+    "Destination URL": "https://www.seoindiatech.com/blog/seo-law-firms-complete-guide",
+    "Anchor Text": "seo law firms complete guide",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/chatgpt-seo-ai-search-organic-traffic",
+    "Destination URL": "https://www.seoindiatech.com/services/ai-seo",
+    "Anchor Text": "AI SEO services",
+    "Why This Link": "AI-search topic cluster",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/chatgpt-seo-ai-search-organic-traffic",
+    "Destination URL": "https://www.seoindiatech.com/services/answer-engine-optimization",
+    "Anchor Text": "answer engine optimization",
+    "Why This Link": "AI-search topic cluster",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/chatgpt-seo-ai-search-organic-traffic",
+    "Destination URL": "https://www.seoindiatech.com/services/generative-engine-optimization",
+    "Anchor Text": "generative engine optimization",
+    "Why This Link": "AI-search topic cluster",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/chatgpt-seo-ai-search-organic-traffic",
+    "Destination URL": "https://www.seoindiatech.com/blog/what-is-ai-seo-why-business-needs-it",
+    "Anchor Text": "what is ai seo why business needs it",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/chatgpt-seo-ai-search-organic-traffic",
+    "Destination URL": "https://www.seoindiatech.com/blog/how-google-ai-overviews-are-changing-seo",
+    "Anchor Text": "how google ai overviews are changing seo",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/chatgpt-seo-ai-search-organic-traffic",
+    "Destination URL": "https://www.seoindiatech.com/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
+    "Anchor Text": "google core update may 2026 seo content strategy agentic ai",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/seo-roi-calculator-measure-success",
+    "Destination URL": "https://www.seoindiatech.com/blog/what-is-ai-seo-why-business-needs-it",
+    "Anchor Text": "what is ai seo why business needs it",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/seo-roi-calculator-measure-success",
+    "Destination URL": "https://www.seoindiatech.com/blog/technical-seo-checklist-enterprise-websites",
+    "Anchor Text": "technical seo checklist enterprise websites",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/seo-roi-calculator-measure-success",
+    "Destination URL": "https://www.seoindiatech.com/blog/seo-trends-european-businesses-2026",
+    "Anchor Text": "seo trends european businesses 2026",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/technical-seo-checklist-enterprise-websites",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Technical SEO commercial path",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/technical-seo-checklist-enterprise-websites",
+    "Destination URL": "https://www.seoindiatech.com/services/design-and-development",
+    "Anchor Text": "web design and development",
+    "Why This Link": "Technical/UX path",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/technical-seo-checklist-enterprise-websites",
+    "Destination URL": "https://www.seoindiatech.com/blog/seo-checklist-small-businesses-europe",
+    "Anchor Text": "seo checklist small businesses europe",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/technical-seo-checklist-enterprise-websites",
+    "Destination URL": "https://www.seoindiatech.com/blog/local-seo-checklist-multi-location-europe",
+    "Anchor Text": "local seo checklist multi location europe",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/technical-seo-checklist-enterprise-websites",
+    "Destination URL": "https://www.seoindiatech.com/blog/ecommerce-seo-checklist-india",
+    "Anchor Text": "ecommerce seo checklist india",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/core-web-vitals-optimization-guide",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Technical SEO commercial path",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/core-web-vitals-optimization-guide",
+    "Destination URL": "https://www.seoindiatech.com/services/design-and-development",
+    "Anchor Text": "web design and development",
+    "Why This Link": "Technical/UX path",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/core-web-vitals-optimization-guide",
+    "Destination URL": "https://www.seoindiatech.com/blog/google-business-profile-optimization-guide",
+    "Anchor Text": "google business profile optimization guide",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/core-web-vitals-optimization-guide",
+    "Destination URL": "https://www.seoindiatech.com/blog/geo-generative-engine-optimization-guide",
+    "Anchor Text": "geo generative engine optimization guide",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/core-web-vitals-optimization-guide",
+    "Destination URL": "https://www.seoindiatech.com/blog/seo-law-firms-complete-guide",
+    "Anchor Text": "seo law firms complete guide",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/content-marketing-strategy-qualified-leads",
+    "Destination URL": "https://www.seoindiatech.com/services/content-marketing",
+    "Anchor Text": "content marketing services",
+    "Why This Link": "Content cluster",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/content-marketing-strategy-qualified-leads",
+    "Destination URL": "https://www.seoindiatech.com/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
+    "Anchor Text": "google core update may 2026 seo content strategy agentic ai",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/content-marketing-strategy-qualified-leads",
+    "Destination URL": "https://www.seoindiatech.com/blog/youtube-business-marketing-2026",
+    "Anchor Text": "youtube business marketing 2026",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/content-marketing-strategy-qualified-leads",
+    "Destination URL": "https://www.seoindiatech.com/blog/100-seo-mistakes-costing-business-leads",
+    "Anchor Text": "100 seo mistakes costing business leads",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/link-building-guide-2026",
+    "Destination URL": "https://www.seoindiatech.com/services/content-marketing",
+    "Anchor Text": "content marketing services",
+    "Why This Link": "Content cluster",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/link-building-guide-2026",
+    "Destination URL": "https://www.seoindiatech.com/blog/seo-law-firms-complete-guide",
+    "Anchor Text": "seo law firms complete guide",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/link-building-guide-2026",
+    "Destination URL": "https://www.seoindiatech.com/blog/local-seo-guide-indian-businesses-2026",
+    "Anchor Text": "local seo guide indian businesses 2026",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/link-building-guide-2026",
+    "Destination URL": "https://www.seoindiatech.com/blog/international-seo-guide-european-companies",
+    "Anchor Text": "international seo guide european companies",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/seo-checklist-small-businesses-europe",
+    "Destination URL": "https://www.seoindiatech.com/blog/seo-healthcare-businesses-europe",
+    "Anchor Text": "seo healthcare businesses europe",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/seo-checklist-small-businesses-europe",
+    "Destination URL": "https://www.seoindiatech.com/blog/local-seo-checklist-multi-location-europe",
+    "Anchor Text": "local seo checklist multi location europe",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/seo-checklist-small-businesses-europe",
+    "Destination URL": "https://www.seoindiatech.com/blog/technical-seo-checklist-enterprise-websites",
+    "Anchor Text": "technical seo checklist enterprise websites",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/how-google-ai-overviews-are-changing-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/ai-seo",
+    "Anchor Text": "AI SEO services",
+    "Why This Link": "AI-search topic cluster",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/how-google-ai-overviews-are-changing-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/answer-engine-optimization",
+    "Anchor Text": "answer engine optimization",
+    "Why This Link": "AI-search topic cluster",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/how-google-ai-overviews-are-changing-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/generative-engine-optimization",
+    "Anchor Text": "generative engine optimization",
+    "Why This Link": "AI-search topic cluster",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/how-google-ai-overviews-are-changing-seo",
+    "Destination URL": "https://www.seoindiatech.com/blog/google-ai-overviews-changing-business-seo",
+    "Anchor Text": "google ai overviews changing business seo",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/how-google-ai-overviews-are-changing-seo",
+    "Destination URL": "https://www.seoindiatech.com/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
+    "Anchor Text": "google core update may 2026 seo content strategy agentic ai",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/how-google-ai-overviews-are-changing-seo",
+    "Destination URL": "https://www.seoindiatech.com/blog/what-is-ai-seo-why-business-needs-it",
+    "Anchor Text": "what is ai seo why business needs it",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/seo-for-restaurants-local-diners",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local-search cluster",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/seo-for-restaurants-local-diners",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local-search cluster",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/seo-for-restaurants-local-diners",
+    "Destination URL": "https://www.seoindiatech.com/blog/local-vs-national-vs-international-seo",
+    "Anchor Text": "local vs national vs international seo",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/seo-for-restaurants-local-diners",
+    "Destination URL": "https://www.seoindiatech.com/blog/local-seo-guide-indian-businesses-2026",
+    "Anchor Text": "local seo guide indian businesses 2026",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/seo-for-restaurants-local-diners",
+    "Destination URL": "https://www.seoindiatech.com/blog/local-seo-checklist-multi-location-europe",
+    "Anchor Text": "local seo checklist multi location europe",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/youtube-business-marketing-2026",
+    "Destination URL": "https://www.seoindiatech.com/blog/what-is-ai-seo-why-business-needs-it",
+    "Anchor Text": "what is ai seo why business needs it",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/youtube-business-marketing-2026",
+    "Destination URL": "https://www.seoindiatech.com/blog/google-business-profile-optimization-guide",
+    "Anchor Text": "google business profile optimization guide",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/youtube-business-marketing-2026",
+    "Destination URL": "https://www.seoindiatech.com/blog/google-ai-overviews-changing-business-seo",
+    "Anchor Text": "google ai overviews changing business seo",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
+    "Destination URL": "https://www.seoindiatech.com/services/ai-seo",
+    "Anchor Text": "AI SEO services",
+    "Why This Link": "AI-search topic cluster",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
+    "Destination URL": "https://www.seoindiatech.com/services/answer-engine-optimization",
+    "Anchor Text": "answer engine optimization",
+    "Why This Link": "AI-search topic cluster",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
+    "Destination URL": "https://www.seoindiatech.com/services/generative-engine-optimization",
+    "Anchor Text": "generative engine optimization",
+    "Why This Link": "AI-search topic cluster",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
+    "Destination URL": "https://www.seoindiatech.com/services/content-marketing",
+    "Anchor Text": "content marketing services",
+    "Why This Link": "Content cluster",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
+    "Destination URL": "https://www.seoindiatech.com/blog/how-google-ai-overviews-are-changing-seo",
+    "Anchor Text": "how google ai overviews are changing seo",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
+    "Destination URL": "https://www.seoindiatech.com/blog/google-ai-overviews-changing-business-seo",
+    "Anchor Text": "google ai overviews changing business seo",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
+    "Destination URL": "https://www.seoindiatech.com/blog/what-is-ai-seo-why-business-needs-it",
+    "Anchor Text": "what is ai seo why business needs it",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/local-seo-guide-indian-businesses-2026",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local-search cluster",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/local-seo-guide-indian-businesses-2026",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local-search cluster",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/local-seo-guide-indian-businesses-2026",
+    "Destination URL": "https://www.seoindiatech.com/blog/seo-trends-european-businesses-2026",
+    "Anchor Text": "seo trends european businesses 2026",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/local-seo-guide-indian-businesses-2026",
+    "Destination URL": "https://www.seoindiatech.com/blog/seo-law-firms-complete-guide",
+    "Anchor Text": "seo law firms complete guide",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/local-seo-guide-indian-businesses-2026",
+    "Destination URL": "https://www.seoindiatech.com/blog/seo-healthcare-businesses-europe",
+    "Anchor Text": "seo healthcare businesses europe",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/what-is-ai-seo-why-business-needs-it",
+    "Destination URL": "https://www.seoindiatech.com/services/ai-seo",
+    "Anchor Text": "AI SEO services",
+    "Why This Link": "AI-search topic cluster",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/what-is-ai-seo-why-business-needs-it",
+    "Destination URL": "https://www.seoindiatech.com/services/answer-engine-optimization",
+    "Anchor Text": "answer engine optimization",
+    "Why This Link": "AI-search topic cluster",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/what-is-ai-seo-why-business-needs-it",
+    "Destination URL": "https://www.seoindiatech.com/services/generative-engine-optimization",
+    "Anchor Text": "generative engine optimization",
+    "Why This Link": "AI-search topic cluster",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/what-is-ai-seo-why-business-needs-it",
+    "Destination URL": "https://www.seoindiatech.com/blog/google-ai-overviews-changing-business-seo",
+    "Anchor Text": "google ai overviews changing business seo",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/what-is-ai-seo-why-business-needs-it",
+    "Destination URL": "https://www.seoindiatech.com/blog/ppc-vs-seo-which-is-better",
+    "Anchor Text": "ppc vs seo which is better",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/what-is-ai-seo-why-business-needs-it",
+    "Destination URL": "https://www.seoindiatech.com/blog/how-google-ai-overviews-are-changing-seo",
+    "Anchor Text": "how google ai overviews are changing seo",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/ppc-vs-seo-which-is-better",
+    "Destination URL": "https://www.seoindiatech.com/blog/what-is-ai-seo-why-business-needs-it",
+    "Anchor Text": "what is ai seo why business needs it",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/ppc-vs-seo-which-is-better",
+    "Destination URL": "https://www.seoindiatech.com/blog/local-vs-national-vs-international-seo",
+    "Anchor Text": "local vs national vs international seo",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/ppc-vs-seo-which-is-better",
+    "Destination URL": "https://www.seoindiatech.com/blog/ai-seo-vs-traditional-seo-2026",
+    "Anchor Text": "ai seo vs traditional seo 2026",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/ecommerce-seo-checklist-india",
+    "Destination URL": "https://www.seoindiatech.com/services/e-commerce-seo",
+    "Anchor Text": "ecommerce SEO services",
+    "Why This Link": "Ecommerce cluster",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/ecommerce-seo-checklist-india",
+    "Destination URL": "https://www.seoindiatech.com/blog/technical-seo-checklist-enterprise-websites",
+    "Anchor Text": "technical seo checklist enterprise websites",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/ecommerce-seo-checklist-india",
+    "Destination URL": "https://www.seoindiatech.com/blog/seo-checklist-small-businesses-europe",
+    "Anchor Text": "seo checklist small businesses europe",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/ecommerce-seo-checklist-india",
+    "Destination URL": "https://www.seoindiatech.com/blog/local-seo-checklist-multi-location-europe",
+    "Anchor Text": "local seo checklist multi location europe",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/how-to-choose-best-seo-agency-india",
+    "Destination URL": "https://www.seoindiatech.com/blog/choose-best-seo-agency-europe",
+    "Anchor Text": "choose best seo agency europe",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/how-to-choose-best-seo-agency-india",
+    "Destination URL": "https://www.seoindiatech.com/blog/how-google-ai-overviews-are-changing-seo",
+    "Anchor Text": "how google ai overviews are changing seo",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/how-to-choose-best-seo-agency-india",
+    "Destination URL": "https://www.seoindiatech.com/blog/ecommerce-seo-checklist-india",
+    "Anchor Text": "ecommerce seo checklist india",
+    "Why This Link": "Related article / topic cluster",
+    "Recommended Placement": "In-content related reading",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/plastic-surgery-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries",
+    "Anchor Text": "SEO services by industry",
+    "Why This Link": "Industry hub",
+    "Recommended Placement": "Breadcrumb/body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/plastic-surgery-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local intent",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/plastic-surgery-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local visibility",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/plastic-surgery-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries/property-management-seo",
+    "Anchor Text": "property management seo",
+    "Why This Link": "Related industry",
+    "Recommended Placement": "Related industries",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/property-management-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries",
+    "Anchor Text": "SEO services by industry",
+    "Why This Link": "Industry hub",
+    "Recommended Placement": "Breadcrumb/body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/property-management-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local intent",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/property-management-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local visibility",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/property-management-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries/plastic-surgery-seo",
+    "Anchor Text": "plastic surgery seo",
+    "Why This Link": "Related industry",
+    "Recommended Placement": "Related industries",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/realtor-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries",
+    "Anchor Text": "SEO services by industry",
+    "Why This Link": "Industry hub",
+    "Recommended Placement": "Breadcrumb/body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/realtor-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local intent",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/realtor-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local visibility",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/realtor-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries/plastic-surgery-seo",
+    "Anchor Text": "plastic surgery seo",
+    "Why This Link": "Related industry",
+    "Recommended Placement": "Related industries",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/fertility-clinic-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries",
+    "Anchor Text": "SEO services by industry",
+    "Why This Link": "Industry hub",
+    "Recommended Placement": "Breadcrumb/body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/fertility-clinic-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local intent",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/fertility-clinic-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local visibility",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/fertility-clinic-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries/plastic-surgery-seo",
+    "Anchor Text": "plastic surgery seo",
+    "Why This Link": "Related industry",
+    "Recommended Placement": "Related industries",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/optometrist-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries",
+    "Anchor Text": "SEO services by industry",
+    "Why This Link": "Industry hub",
+    "Recommended Placement": "Breadcrumb/body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/optometrist-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local intent",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/optometrist-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local visibility",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/optometrist-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries/plastic-surgery-seo",
+    "Anchor Text": "plastic surgery seo",
+    "Why This Link": "Related industry",
+    "Recommended Placement": "Related industries",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/orthodontist-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries",
+    "Anchor Text": "SEO services by industry",
+    "Why This Link": "Industry hub",
+    "Recommended Placement": "Breadcrumb/body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/orthodontist-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local intent",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/orthodontist-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local visibility",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/orthodontist-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries/plastic-surgery-seo",
+    "Anchor Text": "plastic surgery seo",
+    "Why This Link": "Related industry",
+    "Recommended Placement": "Related industries",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/doctor-physician-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries",
+    "Anchor Text": "SEO services by industry",
+    "Why This Link": "Industry hub",
+    "Recommended Placement": "Breadcrumb/body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/doctor-physician-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local intent",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/doctor-physician-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local visibility",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/doctor-physician-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries/plastic-surgery-seo",
+    "Anchor Text": "plastic surgery seo",
+    "Why This Link": "Related industry",
+    "Recommended Placement": "Related industries",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/physiotherapy-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries",
+    "Anchor Text": "SEO services by industry",
+    "Why This Link": "Industry hub",
+    "Recommended Placement": "Breadcrumb/body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/physiotherapy-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local intent",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/physiotherapy-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local visibility",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/physiotherapy-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries/plastic-surgery-seo",
+    "Anchor Text": "plastic surgery seo",
+    "Why This Link": "Related industry",
+    "Recommended Placement": "Related industries",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/personal-injury-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries",
+    "Anchor Text": "SEO services by industry",
+    "Why This Link": "Industry hub",
+    "Recommended Placement": "Breadcrumb/body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/personal-injury-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local intent",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/personal-injury-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local visibility",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/personal-injury-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries/plastic-surgery-seo",
+    "Anchor Text": "plastic surgery seo",
+    "Why This Link": "Related industry",
+    "Recommended Placement": "Related industries",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/dentist-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries",
+    "Anchor Text": "SEO services by industry",
+    "Why This Link": "Industry hub",
+    "Recommended Placement": "Breadcrumb/body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/dentist-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local intent",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/dentist-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local visibility",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/dentist-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries/plastic-surgery-seo",
+    "Anchor Text": "plastic surgery seo",
+    "Why This Link": "Related industry",
+    "Recommended Placement": "Related industries",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/hvac-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries",
+    "Anchor Text": "SEO services by industry",
+    "Why This Link": "Industry hub",
+    "Recommended Placement": "Breadcrumb/body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/hvac-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local intent",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/hvac-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local visibility",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/hvac-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries/plastic-surgery-seo",
+    "Anchor Text": "plastic surgery seo",
+    "Why This Link": "Related industry",
+    "Recommended Placement": "Related industries",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/plumber-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries",
+    "Anchor Text": "SEO services by industry",
+    "Why This Link": "Industry hub",
+    "Recommended Placement": "Breadcrumb/body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/plumber-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local intent",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/plumber-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local visibility",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/plumber-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries/plastic-surgery-seo",
+    "Anchor Text": "plastic surgery seo",
+    "Why This Link": "Related industry",
+    "Recommended Placement": "Related industries",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/garage-door-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries",
+    "Anchor Text": "SEO services by industry",
+    "Why This Link": "Industry hub",
+    "Recommended Placement": "Breadcrumb/body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/garage-door-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local intent",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/garage-door-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local visibility",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/garage-door-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries/plastic-surgery-seo",
+    "Anchor Text": "plastic surgery seo",
+    "Why This Link": "Related industry",
+    "Recommended Placement": "Related industries",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/well-drilling-company-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries",
+    "Anchor Text": "SEO services by industry",
+    "Why This Link": "Industry hub",
+    "Recommended Placement": "Breadcrumb/body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/well-drilling-company-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local intent",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/well-drilling-company-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local visibility",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/well-drilling-company-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries/plastic-surgery-seo",
+    "Anchor Text": "plastic surgery seo",
+    "Why This Link": "Related industry",
+    "Recommended Placement": "Related industries",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/fence-installer-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries",
+    "Anchor Text": "SEO services by industry",
+    "Why This Link": "Industry hub",
+    "Recommended Placement": "Breadcrumb/body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/fence-installer-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local intent",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/fence-installer-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local visibility",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/fence-installer-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries/plastic-surgery-seo",
+    "Anchor Text": "plastic surgery seo",
+    "Why This Link": "Related industry",
+    "Recommended Placement": "Related industries",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/deck-builder-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries",
+    "Anchor Text": "SEO services by industry",
+    "Why This Link": "Industry hub",
+    "Recommended Placement": "Breadcrumb/body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/deck-builder-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local intent",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/deck-builder-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local visibility",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/deck-builder-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries/plastic-surgery-seo",
+    "Anchor Text": "plastic surgery seo",
+    "Why This Link": "Related industry",
+    "Recommended Placement": "Related industries",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/cabinet-manufacturer-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries",
+    "Anchor Text": "SEO services by industry",
+    "Why This Link": "Industry hub",
+    "Recommended Placement": "Breadcrumb/body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/cabinet-manufacturer-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local intent",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/cabinet-manufacturer-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local visibility",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/cabinet-manufacturer-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries/plastic-surgery-seo",
+    "Anchor Text": "plastic surgery seo",
+    "Why This Link": "Related industry",
+    "Recommended Placement": "Related industries",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/architect-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries",
+    "Anchor Text": "SEO services by industry",
+    "Why This Link": "Industry hub",
+    "Recommended Placement": "Breadcrumb/body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/architect-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local intent",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/architect-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local visibility",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/architect-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries/plastic-surgery-seo",
+    "Anchor Text": "plastic surgery seo",
+    "Why This Link": "Related industry",
+    "Recommended Placement": "Related industries",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/painter-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries",
+    "Anchor Text": "SEO services by industry",
+    "Why This Link": "Industry hub",
+    "Recommended Placement": "Breadcrumb/body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/painter-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local intent",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/painter-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local visibility",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/painter-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries/plastic-surgery-seo",
+    "Anchor Text": "plastic surgery seo",
+    "Why This Link": "Related industry",
+    "Recommended Placement": "Related industries",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/automotive-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries",
+    "Anchor Text": "SEO services by industry",
+    "Why This Link": "Industry hub",
+    "Recommended Placement": "Breadcrumb/body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/automotive-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local intent",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/automotive-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local visibility",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/automotive-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries/plastic-surgery-seo",
+    "Anchor Text": "plastic surgery seo",
+    "Why This Link": "Related industry",
+    "Recommended Placement": "Related industries",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/locksmith-service-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries",
+    "Anchor Text": "SEO services by industry",
+    "Why This Link": "Industry hub",
+    "Recommended Placement": "Breadcrumb/body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/locksmith-service-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local intent",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/locksmith-service-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local visibility",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/locksmith-service-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries/plastic-surgery-seo",
+    "Anchor Text": "plastic surgery seo",
+    "Why This Link": "Related industry",
+    "Recommended Placement": "Related industries",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/interior-designer-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries",
+    "Anchor Text": "SEO services by industry",
+    "Why This Link": "Industry hub",
+    "Recommended Placement": "Breadcrumb/body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/interior-designer-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local intent",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/interior-designer-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local visibility",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/interior-designer-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries/plastic-surgery-seo",
+    "Anchor Text": "plastic surgery seo",
+    "Why This Link": "Related industry",
+    "Recommended Placement": "Related industries",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/flooring-company-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries",
+    "Anchor Text": "SEO services by industry",
+    "Why This Link": "Industry hub",
+    "Recommended Placement": "Breadcrumb/body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/flooring-company-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local intent",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/flooring-company-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local visibility",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/flooring-company-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries/plastic-surgery-seo",
+    "Anchor Text": "plastic surgery seo",
+    "Why This Link": "Related industry",
+    "Recommended Placement": "Related industries",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/home-builder-and-remodeler-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries",
+    "Anchor Text": "SEO services by industry",
+    "Why This Link": "Industry hub",
+    "Recommended Placement": "Breadcrumb/body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/home-builder-and-remodeler-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local intent",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/home-builder-and-remodeler-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local visibility",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/home-builder-and-remodeler-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries/plastic-surgery-seo",
+    "Anchor Text": "plastic surgery seo",
+    "Why This Link": "Related industry",
+    "Recommended Placement": "Related industries",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/catering-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries",
+    "Anchor Text": "SEO services by industry",
+    "Why This Link": "Industry hub",
+    "Recommended Placement": "Breadcrumb/body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/catering-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local intent",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/catering-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local visibility",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/catering-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries/plastic-surgery-seo",
+    "Anchor Text": "plastic surgery seo",
+    "Why This Link": "Related industry",
+    "Recommended Placement": "Related industries",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/breweries-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries",
+    "Anchor Text": "SEO services by industry",
+    "Why This Link": "Industry hub",
+    "Recommended Placement": "Breadcrumb/body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/breweries-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local intent",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/breweries-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local visibility",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/breweries-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries/plastic-surgery-seo",
+    "Anchor Text": "plastic surgery seo",
+    "Why This Link": "Related industry",
+    "Recommended Placement": "Related industries",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/wineries-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries",
+    "Anchor Text": "SEO services by industry",
+    "Why This Link": "Industry hub",
+    "Recommended Placement": "Breadcrumb/body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/wineries-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local intent",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/wineries-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local visibility",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/wineries-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries/plastic-surgery-seo",
+    "Anchor Text": "plastic surgery seo",
+    "Why This Link": "Related industry",
+    "Recommended Placement": "Related industries",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/herbal-product-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries",
+    "Anchor Text": "SEO services by industry",
+    "Why This Link": "Industry hub",
+    "Recommended Placement": "Breadcrumb/body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/herbal-product-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local intent",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/herbal-product-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local visibility",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/herbal-product-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries/plastic-surgery-seo",
+    "Anchor Text": "plastic surgery seo",
+    "Why This Link": "Related industry",
+    "Recommended Placement": "Related industries",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/chiropractor-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries",
+    "Anchor Text": "SEO services by industry",
+    "Why This Link": "Industry hub",
+    "Recommended Placement": "Breadcrumb/body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/chiropractor-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local intent",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/chiropractor-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local visibility",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/chiropractor-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries/plastic-surgery-seo",
+    "Anchor Text": "plastic surgery seo",
+    "Why This Link": "Related industry",
+    "Recommended Placement": "Related industries",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/movers-and-moving-company-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries",
+    "Anchor Text": "SEO services by industry",
+    "Why This Link": "Industry hub",
+    "Recommended Placement": "Breadcrumb/body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/movers-and-moving-company-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local intent",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/movers-and-moving-company-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local visibility",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/movers-and-moving-company-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries/plastic-surgery-seo",
+    "Anchor Text": "plastic surgery seo",
+    "Why This Link": "Related industry",
+    "Recommended Placement": "Related industries",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/pest-control-service-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries",
+    "Anchor Text": "SEO services by industry",
+    "Why This Link": "Industry hub",
+    "Recommended Placement": "Breadcrumb/body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/pest-control-service-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local intent",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/pest-control-service-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local visibility",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/pest-control-service-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries/plastic-surgery-seo",
+    "Anchor Text": "plastic surgery seo",
+    "Why This Link": "Related industry",
+    "Recommended Placement": "Related industries",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/cpa-firm-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries",
+    "Anchor Text": "SEO services by industry",
+    "Why This Link": "Industry hub",
+    "Recommended Placement": "Breadcrumb/body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/cpa-firm-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local intent",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/cpa-firm-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local visibility",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/cpa-firm-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries/plastic-surgery-seo",
+    "Anchor Text": "plastic surgery seo",
+    "Why This Link": "Related industry",
+    "Recommended Placement": "Related industries",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/wildlife-removal-company-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries",
+    "Anchor Text": "SEO services by industry",
+    "Why This Link": "Industry hub",
+    "Recommended Placement": "Breadcrumb/body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/wildlife-removal-company-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local intent",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/wildlife-removal-company-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local visibility",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/wildlife-removal-company-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries/plastic-surgery-seo",
+    "Anchor Text": "plastic surgery seo",
+    "Why This Link": "Related industry",
+    "Recommended Placement": "Related industries",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/sign-company-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries",
+    "Anchor Text": "SEO services by industry",
+    "Why This Link": "Industry hub",
+    "Recommended Placement": "Breadcrumb/body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/sign-company-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local intent",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/sign-company-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local visibility",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/sign-company-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries/plastic-surgery-seo",
+    "Anchor Text": "plastic surgery seo",
+    "Why This Link": "Related industry",
+    "Recommended Placement": "Related industries",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/waste-management-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries",
+    "Anchor Text": "SEO services by industry",
+    "Why This Link": "Industry hub",
+    "Recommended Placement": "Breadcrumb/body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/waste-management-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local intent",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/waste-management-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local visibility",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/waste-management-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries/plastic-surgery-seo",
+    "Anchor Text": "plastic surgery seo",
+    "Why This Link": "Related industry",
+    "Recommended Placement": "Related industries",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/dry-cleaner-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries",
+    "Anchor Text": "SEO services by industry",
+    "Why This Link": "Industry hub",
+    "Recommended Placement": "Breadcrumb/body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/dry-cleaner-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local intent",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/dry-cleaner-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local visibility",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/dry-cleaner-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries/plastic-surgery-seo",
+    "Anchor Text": "plastic surgery seo",
+    "Why This Link": "Related industry",
+    "Recommended Placement": "Related industries",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/tree-care-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries",
+    "Anchor Text": "SEO services by industry",
+    "Why This Link": "Industry hub",
+    "Recommended Placement": "Breadcrumb/body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/tree-care-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local intent",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/tree-care-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local visibility",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/tree-care-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries/plastic-surgery-seo",
+    "Anchor Text": "plastic surgery seo",
+    "Why This Link": "Related industry",
+    "Recommended Placement": "Related industries",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/roofers-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries",
+    "Anchor Text": "SEO services by industry",
+    "Why This Link": "Industry hub",
+    "Recommended Placement": "Breadcrumb/body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/roofers-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local intent",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/roofers-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local visibility",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/roofers-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries/plastic-surgery-seo",
+    "Anchor Text": "plastic surgery seo",
+    "Why This Link": "Related industry",
+    "Recommended Placement": "Related industries",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/accountants-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries",
+    "Anchor Text": "SEO services by industry",
+    "Why This Link": "Industry hub",
+    "Recommended Placement": "Breadcrumb/body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/accountants-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local intent",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/accountants-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local visibility",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/accountants-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries/plastic-surgery-seo",
+    "Anchor Text": "plastic surgery seo",
+    "Why This Link": "Related industry",
+    "Recommended Placement": "Related industries",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/pet-service-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries",
+    "Anchor Text": "SEO services by industry",
+    "Why This Link": "Industry hub",
+    "Recommended Placement": "Breadcrumb/body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/pet-service-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local intent",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/pet-service-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local visibility",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/pet-service-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries/plastic-surgery-seo",
+    "Anchor Text": "plastic surgery seo",
+    "Why This Link": "Related industry",
+    "Recommended Placement": "Related industries",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/janitorial-service-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries",
+    "Anchor Text": "SEO services by industry",
+    "Why This Link": "Industry hub",
+    "Recommended Placement": "Breadcrumb/body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/janitorial-service-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local intent",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/janitorial-service-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local visibility",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries/janitorial-service-seo",
+    "Destination URL": "https://www.seoindiatech.com/industries/plastic-surgery-seo",
+    "Anchor Text": "plastic surgery seo",
+    "Why This Link": "Related industry",
+    "Recommended Placement": "Related industries",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-chandigarh",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Main service hub",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-chandigarh",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local SEO hub",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-chandigarh",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local visibility",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-chandigarh",
+    "Destination URL": "https://www.seoindiatech.com/seo-services/seo-services-in-hyderabad",
+    "Anchor Text": "SEO services in hyderabad",
+    "Why This Link": "City cluster",
+    "Recommended Placement": "Related locations",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-hyderabad",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Main service hub",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-hyderabad",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local SEO hub",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-hyderabad",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local visibility",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-hyderabad",
+    "Destination URL": "https://www.seoindiatech.com/seo-services/seo-services-in-chandigarh",
+    "Anchor Text": "SEO services in chandigarh",
+    "Why This Link": "City cluster",
+    "Recommended Placement": "Related locations",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-jaipur",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Main service hub",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-jaipur",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local SEO hub",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-jaipur",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local visibility",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-jaipur",
+    "Destination URL": "https://www.seoindiatech.com/seo-services/seo-services-in-chandigarh",
+    "Anchor Text": "SEO services in chandigarh",
+    "Why This Link": "City cluster",
+    "Recommended Placement": "Related locations",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-mumbai",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Main service hub",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-mumbai",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local SEO hub",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-mumbai",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local visibility",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-mumbai",
+    "Destination URL": "https://www.seoindiatech.com/seo-services/seo-services-in-chandigarh",
+    "Anchor Text": "SEO services in chandigarh",
+    "Why This Link": "City cluster",
+    "Recommended Placement": "Related locations",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-pune",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Main service hub",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-pune",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local SEO hub",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-pune",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local visibility",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-pune",
+    "Destination URL": "https://www.seoindiatech.com/seo-services/seo-services-in-chandigarh",
+    "Anchor Text": "SEO services in chandigarh",
+    "Why This Link": "City cluster",
+    "Recommended Placement": "Related locations",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-noida",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Main service hub",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-noida",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local SEO hub",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-noida",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local visibility",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-noida",
+    "Destination URL": "https://www.seoindiatech.com/seo-services/seo-services-in-chandigarh",
+    "Anchor Text": "SEO services in chandigarh",
+    "Why This Link": "City cluster",
+    "Recommended Placement": "Related locations",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-delhi",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Main service hub",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-delhi",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local SEO hub",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-delhi",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local visibility",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-delhi",
+    "Destination URL": "https://www.seoindiatech.com/seo-services/seo-services-in-chandigarh",
+    "Anchor Text": "SEO services in chandigarh",
+    "Why This Link": "City cluster",
+    "Recommended Placement": "Related locations",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-bangalore",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Main service hub",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-bangalore",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local SEO hub",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-bangalore",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local visibility",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-bangalore",
+    "Destination URL": "https://www.seoindiatech.com/seo-services/seo-services-in-chandigarh",
+    "Anchor Text": "SEO services in chandigarh",
+    "Why This Link": "City cluster",
+    "Recommended Placement": "Related locations",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-chennai",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Main service hub",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-chennai",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local SEO hub",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-chennai",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local visibility",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-chennai",
+    "Destination URL": "https://www.seoindiatech.com/seo-services/seo-services-in-chandigarh",
+    "Anchor Text": "SEO services in chandigarh",
+    "Why This Link": "City cluster",
+    "Recommended Placement": "Related locations",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-kolkata",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Main service hub",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-kolkata",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local SEO hub",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-kolkata",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local visibility",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-kolkata",
+    "Destination URL": "https://www.seoindiatech.com/seo-services/seo-services-in-chandigarh",
+    "Anchor Text": "SEO services in chandigarh",
+    "Why This Link": "City cluster",
+    "Recommended Placement": "Related locations",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-gurgaon",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Main service hub",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-gurgaon",
+    "Destination URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Anchor Text": "local SEO services",
+    "Why This Link": "Local SEO hub",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-gurgaon",
+    "Destination URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Anchor Text": "Google Business Profile optimization",
+    "Why This Link": "Local visibility",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-services/seo-services-in-gurgaon",
+    "Destination URL": "https://www.seoindiatech.com/seo-services/seo-services-in-chandigarh",
+    "Anchor Text": "SEO services in chandigarh",
+    "Why This Link": "City cluster",
+    "Recommended Placement": "Related locations",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/solution/automation",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Core service relationship",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/solution/automation",
+    "Destination URL": "https://www.seoindiatech.com/services/digital-marketing",
+    "Anchor Text": "digital marketing services",
+    "Why This Link": "Marketing relationship",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/solution/automation",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/solution/crm-and-tools",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Core service relationship",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/solution/crm-and-tools",
+    "Destination URL": "https://www.seoindiatech.com/services/digital-marketing",
+    "Anchor Text": "digital marketing services",
+    "Why This Link": "Marketing relationship",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/solution/crm-and-tools",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/solution/market-research",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Core service relationship",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/solution/market-research",
+    "Destination URL": "https://www.seoindiatech.com/services/digital-marketing",
+    "Anchor Text": "digital marketing services",
+    "Why This Link": "Marketing relationship",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/solution/market-research",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/solution/promotion-and-ads",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Core service relationship",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/solution/promotion-and-ads",
+    "Destination URL": "https://www.seoindiatech.com/services/digital-marketing",
+    "Anchor Text": "digital marketing services",
+    "Why This Link": "Marketing relationship",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/solution/promotion-and-ads",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/solution/website-creation",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Core service relationship",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/solution/website-creation",
+    "Destination URL": "https://www.seoindiatech.com/services/digital-marketing",
+    "Anchor Text": "digital marketing services",
+    "Why This Link": "Marketing relationship",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/solution/website-creation",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/solution/workflow",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Core service relationship",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/solution/workflow",
+    "Destination URL": "https://www.seoindiatech.com/services/digital-marketing",
+    "Anchor Text": "digital marketing services",
+    "Why This Link": "Marketing relationship",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/solution/workflow",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/who-we-are",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Commercial hub",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/who-we-are",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO blog",
+    "Why This Link": "Content hub",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/who-we-are",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/contact-us",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Commercial hub",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/contact-us",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO blog",
+    "Why This Link": "Content hub",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-packages",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Commercial hub",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-packages",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO blog",
+    "Why This Link": "Content hub",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/seo-packages",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Commercial hub",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Commercial hub",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO blog",
+    "Why This Link": "Content hub",
+    "Recommended Placement": "Body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/industries",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services",
+    "Why This Link": "Primary service hub",
+    "Recommended Placement": "Homepage services section",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com",
+    "Destination URL": "https://www.seoindiatech.com/blog",
+    "Anchor Text": "SEO insights",
+    "Why This Link": "Content hub",
+    "Recommended Placement": "Homepage resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com",
+    "Destination URL": "https://www.seoindiatech.com/industries",
+    "Anchor Text": "SEO by industry",
+    "Why This Link": "Industry hub",
+    "Recommended Placement": "Homepage industry section",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com",
+    "Destination URL": "https://www.seoindiatech.com/seo-packages",
+    "Anchor Text": "SEO packages",
+    "Why This Link": "Commercial investigation",
+    "Recommended Placement": "Homepage CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  }
+]
+
+export const pageMasterRows = [
+  {
+    "URL": "https://www.seoindiatech.com",
+    "Page Type": "Homepage",
+    "Primary Keyword / Topic": "SEO services",
+    "Secondary Keywords": "digital marketing, AI SEO, local SEO, technical SEO, international SEO, SEO agency",
+    "Entities & Semantic Terms": "SEO India Tech, SEO agency, search engine optimization, organic traffic, qualified leads",
+    "Search Intent": "Commercial / broad service",
+    "Suggested Title": "SEO Services & Digital Marketing Agency | SEO India Tech",
+    "Suggested H1": "SEO Services That Grow Organic Traffic and Qualified Leads",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is SEO services? | How does SEO services work? | Who needs SEO services? | What are the benefits of SEO services? | How much does SEO services cost? | How do I choose a provider for SEO services?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/who-we-are",
+    "Page Type": "Core",
+    "Primary Keyword / Topic": "SEO India Tech",
+    "Secondary Keywords": "SEO agency, SEO experts, digital marketing team, SEO experience",
+    "Entities & Semantic Terms": "SEO India Tech, SEO services, digital marketing",
+    "Search Intent": "Brand / navigation / legal",
+    "Suggested Title": "Seo India Tech | SEO India Tech",
+    "Suggested H1": "Seo India Tech",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is SEO India Tech? | How does SEO India Tech work? | Who needs SEO India Tech? | What are the benefits of SEO India Tech? | How much does SEO India Tech cost? | How do I choose a provider for SEO India Tech?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/contact-us",
+    "Page Type": "Core",
+    "Primary Keyword / Topic": "contact SEO agency",
+    "Secondary Keywords": "SEO consultation, SEO services, digital marketing consultation",
+    "Entities & Semantic Terms": "SEO India Tech, SEO services, digital marketing",
+    "Search Intent": "Brand / navigation / legal",
+    "Suggested Title": "Contact Seo Agency | SEO India Tech",
+    "Suggested H1": "Contact Seo Agency",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is contact SEO agency? | How does contact SEO agency work? | Who needs contact SEO agency? | What are the benefits of contact SEO agency? | How much does contact SEO agency cost? | How do I choose a provider for contact SEO agency?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/seo-packages",
+    "Page Type": "Core",
+    "Primary Keyword / Topic": "SEO packages",
+    "Secondary Keywords": "SEO plans, SEO pricing, monthly SEO services, SEO agency packages",
+    "Entities & Semantic Terms": "SEO India Tech, SEO services, digital marketing",
+    "Search Intent": "Brand / navigation / legal",
+    "Suggested Title": "Seo Packages | SEO India Tech",
+    "Suggested H1": "Seo Packages",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is SEO packages? | How does SEO packages work? | Who needs SEO packages? | What are the benefits of SEO packages? | How much does SEO packages cost? | How do I choose a provider for SEO packages?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/blog",
+    "Page Type": "Core",
+    "Primary Keyword / Topic": "SEO blog",
+    "Secondary Keywords": "SEO guides, SEO trends, AI SEO, local SEO, technical SEO",
+    "Entities & Semantic Terms": "SEO India Tech, SEO services, digital marketing",
+    "Search Intent": "Brand / navigation / legal",
+    "Suggested Title": "Seo Blog | SEO India Tech",
+    "Suggested H1": "Seo Blog",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is SEO blog? | How does SEO blog work? | Who needs SEO blog? | What are the benefits of SEO blog? | How much does SEO blog cost? | How do I choose a provider for SEO blog?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/industries",
+    "Page Type": "Core",
+    "Primary Keyword / Topic": "SEO services by industry",
+    "Secondary Keywords": "industry SEO, vertical SEO, industry-specific SEO strategy",
+    "Entities & Semantic Terms": "SEO India Tech, SEO services, digital marketing",
+    "Search Intent": "Brand / navigation / legal",
+    "Suggested Title": "Seo Services By Industry | SEO India Tech",
+    "Suggested H1": "Seo Services By Industry",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is SEO services by industry? | How does SEO services by industry work? | Who needs SEO services by industry? | What are the benefits of SEO services by industry? | How much does SEO services by industry cost? | How do I choose a provider for SEO services by industry?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/privacy-policy",
+    "Page Type": "Core",
+    "Primary Keyword / Topic": "privacy policy",
+    "Secondary Keywords": "website privacy, data privacy",
+    "Entities & Semantic Terms": "SEO India Tech, SEO services, digital marketing",
+    "Search Intent": "Brand / navigation / legal",
+    "Suggested Title": "Privacy Policy | SEO India Tech",
+    "Suggested H1": "Privacy Policy",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is privacy policy? | How does privacy policy work? | Who needs privacy policy? | What are the benefits of privacy policy? | How much does privacy policy cost? | How do I choose a provider for privacy policy?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/terms",
+    "Page Type": "Core",
+    "Primary Keyword / Topic": "terms and conditions",
+    "Secondary Keywords": "website terms, terms of service",
+    "Entities & Semantic Terms": "SEO India Tech, SEO services, digital marketing",
+    "Search Intent": "Brand / navigation / legal",
+    "Suggested Title": "Terms And Conditions | SEO India Tech",
+    "Suggested H1": "Terms And Conditions",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is terms and conditions? | How does terms and conditions work? | Who needs terms and conditions? | What are the benefits of terms and conditions? | How much does terms and conditions cost? | How do I choose a provider for terms and conditions?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/services/seo",
+    "Page Type": "Service",
+    "Primary Keyword / Topic": "SEO services",
+    "Secondary Keywords": "search engine optimization, technical SEO, on-page SEO, off-page SEO, SEO strategy",
+    "Entities & Semantic Terms": "SEO services, SEO India Tech, search optimization, digital marketing",
+    "Search Intent": "Commercial service",
+    "Suggested Title": "Seo Services | SEO India Tech",
+    "Suggested H1": "Seo Services for Sustainable Organic Growth",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is SEO services? | How does SEO services work? | Who needs SEO services? | What are the benefits of SEO services? | How much does SEO services cost? | How do I choose a provider for SEO services?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/services/digital-marketing",
+    "Page Type": "Service",
+    "Primary Keyword / Topic": "digital marketing services",
+    "Secondary Keywords": "digital marketing agency, online marketing, performance marketing, lead generation",
+    "Entities & Semantic Terms": "digital marketing services, SEO India Tech, search optimization, digital marketing",
+    "Search Intent": "Commercial service",
+    "Suggested Title": "Digital Marketing Services | SEO India Tech",
+    "Suggested H1": "Digital Marketing Services for Sustainable Organic Growth",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is digital marketing services? | How does digital marketing services work? | Who needs digital marketing services? | What are the benefits of digital marketing services? | How much does digital marketing services cost? | How do I choose a provider for digital marketing services?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/services/paid-advertising",
+    "Page Type": "Service",
+    "Primary Keyword / Topic": "paid advertising services",
+    "Secondary Keywords": "PPC management, paid search, Google Ads, paid media",
+    "Entities & Semantic Terms": "paid advertising services, SEO India Tech, search optimization, digital marketing",
+    "Search Intent": "Commercial service",
+    "Suggested Title": "Paid Advertising Services | SEO India Tech",
+    "Suggested H1": "Paid Advertising Services for Sustainable Organic Growth",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is paid advertising services? | How does paid advertising services work? | Who needs paid advertising services? | What are the benefits of paid advertising services? | How much does paid advertising services cost? | How do I choose a provider for paid advertising services?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/services/design-and-development",
+    "Page Type": "Service",
+    "Primary Keyword / Topic": "web design and development",
+    "Secondary Keywords": "website development, SEO-friendly web design, responsive websites, technical performance",
+    "Entities & Semantic Terms": "web design and development, SEO India Tech, search optimization, digital marketing",
+    "Search Intent": "Commercial service",
+    "Suggested Title": "Web Design And Development | SEO India Tech",
+    "Suggested H1": "Web Design And Development for Sustainable Organic Growth",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is web design and development? | How does web design and development work? | Who needs web design and development? | What are the benefits of web design and development? | How much does web design and development cost? | How do I choose a provider for web design and development?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/services/ai-seo",
+    "Page Type": "Service",
+    "Primary Keyword / Topic": "AI SEO services",
+    "Secondary Keywords": "AI search optimization, AI Overviews, AI Mode, generative search, AI visibility",
+    "Entities & Semantic Terms": "AI SEO services, SEO India Tech, search optimization, digital marketing",
+    "Search Intent": "Commercial service",
+    "Suggested Title": "Ai Seo Services | SEO India Tech",
+    "Suggested H1": "Ai Seo Services for Sustainable Organic Growth",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is AI SEO services? | How does AI SEO services work? | Who needs AI SEO services? | What are the benefits of AI SEO services? | How much does AI SEO services cost? | How do I choose a provider for AI SEO services?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/services/answer-engine-optimization",
+    "Page Type": "Service",
+    "Primary Keyword / Topic": "answer engine optimization",
+    "Secondary Keywords": "AEO, answer optimization, conversational search, AI answer visibility",
+    "Entities & Semantic Terms": "answer engine optimization, SEO India Tech, search optimization, digital marketing",
+    "Search Intent": "Commercial service",
+    "Suggested Title": "Answer Engine Optimization | SEO India Tech",
+    "Suggested H1": "Answer Engine Optimization for Sustainable Organic Growth",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is answer engine optimization? | How does answer engine optimization work? | Who needs answer engine optimization? | What are the benefits of answer engine optimization? | How much does answer engine optimization cost? | How do I choose a provider for answer engine optimization?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/services/app-store-optimization",
+    "Page Type": "Service",
+    "Primary Keyword / Topic": "app store optimization",
+    "Secondary Keywords": "ASO services, app visibility, app downloads, App Store optimization",
+    "Entities & Semantic Terms": "app store optimization, SEO India Tech, search optimization, digital marketing",
+    "Search Intent": "Commercial service",
+    "Suggested Title": "App Store Optimization | SEO India Tech",
+    "Suggested H1": "App Store Optimization for Sustainable Organic Growth",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is app store optimization? | How does app store optimization work? | Who needs app store optimization? | What are the benefits of app store optimization? | How much does app store optimization cost? | How do I choose a provider for app store optimization?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/services/content-marketing",
+    "Page Type": "Service",
+    "Primary Keyword / Topic": "content marketing services",
+    "Secondary Keywords": "SEO content, content strategy, topical authority, qualified leads",
+    "Entities & Semantic Terms": "content marketing services, SEO India Tech, search optimization, digital marketing",
+    "Search Intent": "Commercial service",
+    "Suggested Title": "Content Marketing Services | SEO India Tech",
+    "Suggested H1": "Content Marketing Services for Sustainable Organic Growth",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is content marketing services? | How does content marketing services work? | Who needs content marketing services? | What are the benefits of content marketing services? | How much does content marketing services cost? | How do I choose a provider for content marketing services?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/services/digital-branding",
+    "Page Type": "Service",
+    "Primary Keyword / Topic": "digital branding services",
+    "Secondary Keywords": "brand strategy, online brand visibility, digital identity, reputation",
+    "Entities & Semantic Terms": "digital branding services, SEO India Tech, search optimization, digital marketing",
+    "Search Intent": "Commercial service",
+    "Suggested Title": "Digital Branding Services | SEO India Tech",
+    "Suggested H1": "Digital Branding Services for Sustainable Organic Growth",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is digital branding services? | How does digital branding services work? | Who needs digital branding services? | What are the benefits of digital branding services? | How much does digital branding services cost? | How do I choose a provider for digital branding services?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/services/e-commerce-seo",
+    "Page Type": "Service",
+    "Primary Keyword / Topic": "ecommerce SEO services",
+    "Secondary Keywords": "ecommerce SEO, product SEO, category SEO, organic ecommerce traffic",
+    "Entities & Semantic Terms": "ecommerce SEO services, SEO India Tech, search optimization, digital marketing",
+    "Search Intent": "Commercial service",
+    "Suggested Title": "Ecommerce Seo Services | SEO India Tech",
+    "Suggested H1": "Ecommerce Seo Services for Sustainable Organic Growth",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is ecommerce SEO services? | How does ecommerce SEO services work? | Who needs ecommerce SEO services? | What are the benefits of ecommerce SEO services? | How much does ecommerce SEO services cost? | How do I choose a provider for ecommerce SEO services?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/services/gbp-optimization",
+    "Page Type": "Service",
+    "Primary Keyword / Topic": "Google Business Profile optimization",
+    "Secondary Keywords": "GBP optimization, local search visibility, Google Maps SEO",
+    "Entities & Semantic Terms": "Google Business Profile optimization, SEO India Tech, search optimization, digital marketing",
+    "Search Intent": "Commercial service",
+    "Suggested Title": "Google Business Profile Optimization | SEO India Tech",
+    "Suggested H1": "Google Business Profile Optimization for Sustainable Organic Growth",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is Google Business Profile optimization? | How does Google Business Profile optimization work? | Who needs Google Business Profile optimization? | What are the benefits of Google Business Profile optimization? | How much does Google Business Profile optimization cost? | How do I choose a provider for Google Business Profile optimization?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/services/generative-engine-optimization",
+    "Page Type": "Service",
+    "Primary Keyword / Topic": "generative engine optimization",
+    "Secondary Keywords": "GEO, generative search optimization, AI citations, entity visibility",
+    "Entities & Semantic Terms": "generative engine optimization, SEO India Tech, search optimization, digital marketing",
+    "Search Intent": "Commercial service",
+    "Suggested Title": "Generative Engine Optimization | SEO India Tech",
+    "Suggested H1": "Generative Engine Optimization for Sustainable Organic Growth",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is generative engine optimization? | How does generative engine optimization work? | Who needs generative engine optimization? | What are the benefits of generative engine optimization? | How much does generative engine optimization cost? | How do I choose a provider for generative engine optimization?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/services/local-seo-service",
+    "Page Type": "Service",
+    "Primary Keyword / Topic": "local SEO services",
+    "Secondary Keywords": "local search optimization, Google Maps visibility, local rankings, local leads",
+    "Entities & Semantic Terms": "local SEO services, SEO India Tech, search optimization, digital marketing",
+    "Search Intent": "Commercial service",
+    "Suggested Title": "Local Seo Services | SEO India Tech",
+    "Suggested H1": "Local Seo Services for Sustainable Organic Growth",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is local SEO services? | How does local SEO services work? | Who needs local SEO services? | What are the benefits of local SEO services? | How much does local SEO services cost? | How do I choose a provider for local SEO services?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/services/online-reputation-management",
+    "Page Type": "Service",
+    "Primary Keyword / Topic": "online reputation management",
+    "Secondary Keywords": "ORM, reputation monitoring, review management, brand reputation",
+    "Entities & Semantic Terms": "online reputation management, SEO India Tech, search optimization, digital marketing",
+    "Search Intent": "Commercial service",
+    "Suggested Title": "Online Reputation Management | SEO India Tech",
+    "Suggested H1": "Online Reputation Management for Sustainable Organic Growth",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is online reputation management? | How does online reputation management work? | Who needs online reputation management? | What are the benefits of online reputation management? | How much does online reputation management cost? | How do I choose a provider for online reputation management?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/services/ppc-advertising",
+    "Page Type": "Service",
+    "Primary Keyword / Topic": "PPC advertising services",
+    "Secondary Keywords": "PPC management, Google Ads, paid search, conversion-focused advertising",
+    "Entities & Semantic Terms": "PPC advertising services, SEO India Tech, search optimization, digital marketing",
+    "Search Intent": "Commercial service",
+    "Suggested Title": "Ppc Advertising Services | SEO India Tech",
+    "Suggested H1": "Ppc Advertising Services for Sustainable Organic Growth",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is PPC advertising services? | How does PPC advertising services work? | Who needs PPC advertising services? | What are the benefits of PPC advertising services? | How much does PPC advertising services cost? | How do I choose a provider for PPC advertising services?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/services/small-business-seo",
+    "Page Type": "Service",
+    "Primary Keyword / Topic": "small business SEO",
+    "Secondary Keywords": "local SEO, small business search visibility, lead generation, SEO strategy",
+    "Entities & Semantic Terms": "small business SEO, SEO India Tech, search optimization, digital marketing",
+    "Search Intent": "Commercial service",
+    "Suggested Title": "Small Business Seo | SEO India Tech",
+    "Suggested H1": "Small Business Seo for Sustainable Organic Growth",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is small business SEO? | How does small business SEO work? | Who needs small business SEO? | What are the benefits of small business SEO? | How much does small business SEO cost? | How do I choose a provider for small business SEO?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/services/social-media-marketing",
+    "Page Type": "Service",
+    "Primary Keyword / Topic": "social media marketing",
+    "Secondary Keywords": "social media strategy, social content, audience growth, social lead generation",
+    "Entities & Semantic Terms": "social media marketing, SEO India Tech, search optimization, digital marketing",
+    "Search Intent": "Commercial service",
+    "Suggested Title": "Social Media Marketing | SEO India Tech",
+    "Suggested H1": "Social Media Marketing for Sustainable Organic Growth",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is social media marketing? | How does social media marketing work? | Who needs social media marketing? | What are the benefits of social media marketing? | How much does social media marketing cost? | How do I choose a provider for social media marketing?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/services/social-media-optimization",
+    "Page Type": "Service",
+    "Primary Keyword / Topic": "social media optimization",
+    "Secondary Keywords": "SMO, social profile optimization, social visibility, engagement",
+    "Entities & Semantic Terms": "social media optimization, SEO India Tech, search optimization, digital marketing",
+    "Search Intent": "Commercial service",
+    "Suggested Title": "Social Media Optimization | SEO India Tech",
+    "Suggested H1": "Social Media Optimization for Sustainable Organic Growth",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is social media optimization? | How does social media optimization work? | Who needs social media optimization? | What are the benefits of social media optimization? | How much does social media optimization cost? | How do I choose a provider for social media optimization?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/services/ui-ux-design",
+    "Page Type": "Service",
+    "Primary Keyword / Topic": "UI/UX design services",
+    "Secondary Keywords": "user experience design, interface design, conversion-focused UX, usability",
+    "Entities & Semantic Terms": "UI/UX design services, SEO India Tech, search optimization, digital marketing",
+    "Search Intent": "Commercial service",
+    "Suggested Title": "Ui/Ux Design Services | SEO India Tech",
+    "Suggested H1": "Ui/Ux Design Services for Sustainable Organic Growth",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is UI/UX design services? | How does UI/UX design services work? | Who needs UI/UX design services? | What are the benefits of UI/UX design services? | How much does UI/UX design services cost? | How do I choose a provider for UI/UX design services?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/solution/automation",
+    "Page Type": "Solution",
+    "Primary Keyword / Topic": "automation",
+    "Secondary Keywords": "automation solutions, business automation, digital transformation, SEO and marketing",
+    "Entities & Semantic Terms": "automation, business solutions, SEO India Tech",
+    "Search Intent": "Commercial solution",
+    "Suggested Title": "Automation Solutions | SEO India Tech",
+    "Suggested H1": "Automation Solutions for Growing Businesses",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is automation? | How does automation work? | Who needs automation? | What are the benefits of automation? | How much does automation cost? | How do I choose a provider for automation?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/solution/crm-and-tools",
+    "Page Type": "Solution",
+    "Primary Keyword / Topic": "crm and tools",
+    "Secondary Keywords": "crm and tools solutions, business automation, digital transformation, SEO and marketing",
+    "Entities & Semantic Terms": "crm and tools, business solutions, SEO India Tech",
+    "Search Intent": "Commercial solution",
+    "Suggested Title": "Crm And Tools Solutions | SEO India Tech",
+    "Suggested H1": "Crm And Tools Solutions for Growing Businesses",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is crm and tools? | How does crm and tools work? | Who needs crm and tools? | What are the benefits of crm and tools? | How much does crm and tools cost? | How do I choose a provider for crm and tools?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/solution/market-research",
+    "Page Type": "Solution",
+    "Primary Keyword / Topic": "market research",
+    "Secondary Keywords": "market research solutions, business automation, digital transformation, SEO and marketing",
+    "Entities & Semantic Terms": "market research, business solutions, SEO India Tech",
+    "Search Intent": "Commercial solution",
+    "Suggested Title": "Market Research Solutions | SEO India Tech",
+    "Suggested H1": "Market Research Solutions for Growing Businesses",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is market research? | How does market research work? | Who needs market research? | What are the benefits of market research? | How much does market research cost? | How do I choose a provider for market research?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/solution/promotion-and-ads",
+    "Page Type": "Solution",
+    "Primary Keyword / Topic": "promotion and ads",
+    "Secondary Keywords": "promotion and ads solutions, business automation, digital transformation, SEO and marketing",
+    "Entities & Semantic Terms": "promotion and ads, business solutions, SEO India Tech",
+    "Search Intent": "Commercial solution",
+    "Suggested Title": "Promotion And Ads Solutions | SEO India Tech",
+    "Suggested H1": "Promotion And Ads Solutions for Growing Businesses",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is promotion and ads? | How does promotion and ads work? | Who needs promotion and ads? | What are the benefits of promotion and ads? | How much does promotion and ads cost? | How do I choose a provider for promotion and ads?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/solution/website-creation",
+    "Page Type": "Solution",
+    "Primary Keyword / Topic": "website creation",
+    "Secondary Keywords": "website creation solutions, business automation, digital transformation, SEO and marketing",
+    "Entities & Semantic Terms": "website creation, business solutions, SEO India Tech",
+    "Search Intent": "Commercial solution",
+    "Suggested Title": "Website Creation Solutions | SEO India Tech",
+    "Suggested H1": "Website Creation Solutions for Growing Businesses",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is website creation? | How does website creation work? | Who needs website creation? | What are the benefits of website creation? | How much does website creation cost? | How do I choose a provider for website creation?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/solution/workflow",
+    "Page Type": "Solution",
+    "Primary Keyword / Topic": "workflow",
+    "Secondary Keywords": "workflow solutions, business automation, digital transformation, SEO and marketing",
+    "Entities & Semantic Terms": "workflow, business solutions, SEO India Tech",
+    "Search Intent": "Commercial solution",
+    "Suggested Title": "Workflow Solutions | SEO India Tech",
+    "Suggested H1": "Workflow Solutions for Growing Businesses",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is workflow? | How does workflow work? | Who needs workflow? | What are the benefits of workflow? | How much does workflow cost? | How do I choose a provider for workflow?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/blog/seo-trends-european-businesses-2026",
+    "Page Type": "Blog",
+    "Primary Keyword / Topic": "seo trends european businesses 2026",
+    "Secondary Keywords": "SEO strategy, Google Search, AI search, organic traffic, search visibility, European SEO, international SEO, multilingual search",
+    "Entities & Semantic Terms": "SEO India Tech, Google Search, SEO, AI search, organic traffic",
+    "Search Intent": "Informational / commercial investigation",
+    "Suggested Title": "Seo Trends European Businesses 2026 | SEO India Tech",
+    "Suggested H1": "Seo Trends European Businesses 2026",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is seo trends european businesses 2026? | How does seo trends european businesses 2026 work? | Who needs seo trends european businesses 2026? | What are the benefits of seo trends european businesses 2026? | How much does seo trends european businesses 2026 cost? | How do I choose a provider for seo trends european businesses 2026?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/blog/ai-seo-vs-traditional-seo-2026",
+    "Page Type": "Blog",
+    "Primary Keyword / Topic": "ai seo vs traditional seo 2026",
+    "Secondary Keywords": "AI SEO, AI Overviews, AI Mode, generative search, answer engine optimization, AI citations",
+    "Entities & Semantic Terms": "SEO India Tech, Google Search, SEO, AI search, organic traffic",
+    "Search Intent": "Informational / commercial investigation",
+    "Suggested Title": "Ai Seo Vs Traditional Seo 2026 | SEO India Tech",
+    "Suggested H1": "Ai Seo Vs Traditional Seo 2026",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is ai seo vs traditional seo 2026? | How does ai seo vs traditional seo 2026 work? | Who needs ai seo vs traditional seo 2026? | What are the benefits of ai seo vs traditional seo 2026? | How much does ai seo vs traditional seo 2026 cost? | How do I choose a provider for ai seo vs traditional seo 2026?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/blog/local-seo-checklist-multi-location-europe",
+    "Page Type": "Blog",
+    "Primary Keyword / Topic": "local seo checklist multi location europe",
+    "Secondary Keywords": "local SEO, Google Business Profile, Google Maps, local search, local leads, European SEO, international SEO, multilingual search",
+    "Entities & Semantic Terms": "SEO India Tech, Google Search, SEO, AI search, organic traffic",
+    "Search Intent": "Informational / commercial investigation",
+    "Suggested Title": "Local Seo Checklist Multi Location Europe | SEO India Tech",
+    "Suggested H1": "Local Seo Checklist Multi Location Europe",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is local seo checklist multi location europe? | How does local seo checklist multi location europe work? | Who needs local seo checklist multi location europe? | What are the benefits of local seo checklist multi location europe? | How much does local seo checklist multi location europe cost? | How do I choose a provider for local seo checklist multi location europe?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/blog/google-ai-overviews-changing-business-seo",
+    "Page Type": "Blog",
+    "Primary Keyword / Topic": "google ai overviews changing business seo",
+    "Secondary Keywords": "AI SEO, AI Overviews, AI Mode, generative search, answer engine optimization, AI citations",
+    "Entities & Semantic Terms": "SEO India Tech, Google Search, SEO, AI search, organic traffic",
+    "Search Intent": "Informational / commercial investigation",
+    "Suggested Title": "Google Ai Overviews Changing Business Seo | SEO India Tech",
+    "Suggested H1": "Google Ai Overviews Changing Business Seo",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is google ai overviews changing business seo? | How does google ai overviews changing business seo work? | Who needs google ai overviews changing business seo? | What are the benefits of google ai overviews changing business seo? | How much does google ai overviews changing business seo cost? | How do I choose a provider for google ai overviews changing business seo?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/blog/100-seo-mistakes-costing-business-leads",
+    "Page Type": "Blog",
+    "Primary Keyword / Topic": "100 seo mistakes costing business leads",
+    "Secondary Keywords": "SEO strategy, Google Search, AI search, organic traffic, search visibility",
+    "Entities & Semantic Terms": "SEO India Tech, Google Search, SEO, AI search, organic traffic",
+    "Search Intent": "Informational / commercial investigation",
+    "Suggested Title": "100 Seo Mistakes Costing Business Leads | SEO India Tech",
+    "Suggested H1": "100 Seo Mistakes Costing Business Leads",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is 100 seo mistakes costing business leads? | How does 100 seo mistakes costing business leads work? | Who needs 100 seo mistakes costing business leads? | What are the benefits of 100 seo mistakes costing business leads? | How much does 100 seo mistakes costing business leads cost? | How do I choose a provider for 100 seo mistakes costing business leads?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/blog/international-seo-guide-european-companies",
+    "Page Type": "Blog",
+    "Primary Keyword / Topic": "international seo guide european companies",
+    "Secondary Keywords": "SEO strategy, Google Search, AI search, organic traffic, search visibility, European SEO, international SEO, multilingual search",
+    "Entities & Semantic Terms": "SEO India Tech, Google Search, SEO, AI search, organic traffic",
+    "Search Intent": "Informational / commercial investigation",
+    "Suggested Title": "International Seo Guide European Companies | SEO India Tech",
+    "Suggested H1": "International Seo Guide European Companies",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is international seo guide european companies? | How does international seo guide european companies work? | Who needs international seo guide european companies? | What are the benefits of international seo guide european companies? | How much does international seo guide european companies cost? | How do I choose a provider for international seo guide european companies?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/blog/seo-healthcare-businesses-europe",
+    "Page Type": "Blog",
+    "Primary Keyword / Topic": "seo healthcare businesses europe",
+    "Secondary Keywords": "SEO strategy, Google Search, AI search, organic traffic, search visibility, European SEO, international SEO, multilingual search",
+    "Entities & Semantic Terms": "SEO India Tech, Google Search, SEO, AI search, organic traffic",
+    "Search Intent": "Informational / commercial investigation",
+    "Suggested Title": "Seo Healthcare Businesses Europe | SEO India Tech",
+    "Suggested H1": "Seo Healthcare Businesses Europe",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is seo healthcare businesses europe? | How does seo healthcare businesses europe work? | Who needs seo healthcare businesses europe? | What are the benefits of seo healthcare businesses europe? | How much does seo healthcare businesses europe cost? | How do I choose a provider for seo healthcare businesses europe?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/blog/seo-law-firms-complete-guide",
+    "Page Type": "Blog",
+    "Primary Keyword / Topic": "seo law firms complete guide",
+    "Secondary Keywords": "SEO strategy, Google Search, AI search, organic traffic, search visibility",
+    "Entities & Semantic Terms": "SEO India Tech, Google Search, SEO, AI search, organic traffic",
+    "Search Intent": "Informational / commercial investigation",
+    "Suggested Title": "Seo Law Firms Complete Guide | SEO India Tech",
+    "Suggested H1": "Seo Law Firms Complete Guide",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is seo law firms complete guide? | How does seo law firms complete guide work? | Who needs seo law firms complete guide? | What are the benefits of seo law firms complete guide? | How much does seo law firms complete guide cost? | How do I choose a provider for seo law firms complete guide?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/blog/choose-best-seo-agency-europe",
+    "Page Type": "Blog",
+    "Primary Keyword / Topic": "choose best seo agency europe",
+    "Secondary Keywords": "SEO strategy, Google Search, AI search, organic traffic, search visibility, European SEO, international SEO, multilingual search",
+    "Entities & Semantic Terms": "SEO India Tech, Google Search, SEO, AI search, organic traffic",
+    "Search Intent": "Informational / commercial investigation",
+    "Suggested Title": "Choose Best Seo Agency Europe | SEO India Tech",
+    "Suggested H1": "Choose Best Seo Agency Europe",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is choose best seo agency europe? | How does choose best seo agency europe work? | Who needs choose best seo agency europe? | What are the benefits of choose best seo agency europe? | How much does choose best seo agency europe cost? | How do I choose a provider for choose best seo agency europe?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/blog/local-vs-national-vs-international-seo",
+    "Page Type": "Blog",
+    "Primary Keyword / Topic": "local vs national vs international seo",
+    "Secondary Keywords": "local SEO, Google Business Profile, Google Maps, local search, local leads",
+    "Entities & Semantic Terms": "SEO India Tech, Google Search, SEO, AI search, organic traffic",
+    "Search Intent": "Informational / commercial investigation",
+    "Suggested Title": "Local Vs National Vs International Seo | SEO India Tech",
+    "Suggested H1": "Local Vs National Vs International Seo",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is local vs national vs international seo? | How does local vs national vs international seo work? | Who needs local vs national vs international seo? | What are the benefits of local vs national vs international seo? | How much does local vs national vs international seo cost? | How do I choose a provider for local vs national vs international seo?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/blog/google-business-profile-optimization-guide",
+    "Page Type": "Blog",
+    "Primary Keyword / Topic": "google business profile optimization guide",
+    "Secondary Keywords": "local SEO, Google Business Profile, Google Maps, local search, local leads",
+    "Entities & Semantic Terms": "SEO India Tech, Google Search, SEO, AI search, organic traffic",
+    "Search Intent": "Informational / commercial investigation",
+    "Suggested Title": "Google Business Profile Optimization Guide | SEO India Tech",
+    "Suggested H1": "Google Business Profile Optimization Guide",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is google business profile optimization guide? | How does google business profile optimization guide work? | Who needs google business profile optimization guide? | What are the benefits of google business profile optimization guide? | How much does google business profile optimization guide cost? | How do I choose a provider for google business profile optimization guide?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/blog/complete-eeat-guide-business-websites",
+    "Page Type": "Blog",
+    "Primary Keyword / Topic": "complete eeat guide business websites",
+    "Secondary Keywords": "people-first content, E-E-A-T, topical authority, content strategy, link building",
+    "Entities & Semantic Terms": "SEO India Tech, Google Search, SEO, AI search, organic traffic",
+    "Search Intent": "Informational / commercial investigation",
+    "Suggested Title": "Complete Eeat Guide Business Websites | SEO India Tech",
+    "Suggested H1": "Complete Eeat Guide Business Websites",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is complete eeat guide business websites? | How does complete eeat guide business websites work? | Who needs complete eeat guide business websites? | What are the benefits of complete eeat guide business websites? | How much does complete eeat guide business websites cost? | How do I choose a provider for complete eeat guide business websites?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/blog/geo-generative-engine-optimization-guide",
+    "Page Type": "Blog",
+    "Primary Keyword / Topic": "geo generative engine optimization guide",
+    "Secondary Keywords": "AI SEO, AI Overviews, AI Mode, generative search, answer engine optimization, AI citations",
+    "Entities & Semantic Terms": "SEO India Tech, Google Search, SEO, AI search, organic traffic",
+    "Search Intent": "Informational / commercial investigation",
+    "Suggested Title": "Geo Generative Engine Optimization Guide | SEO India Tech",
+    "Suggested H1": "Geo Generative Engine Optimization Guide",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is geo generative engine optimization guide? | How does geo generative engine optimization guide work? | Who needs geo generative engine optimization guide? | What are the benefits of geo generative engine optimization guide? | How much does geo generative engine optimization guide cost? | How do I choose a provider for geo generative engine optimization guide?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/blog/chatgpt-seo-ai-search-organic-traffic",
+    "Page Type": "Blog",
+    "Primary Keyword / Topic": "chatgpt seo ai search organic traffic",
+    "Secondary Keywords": "AI SEO, AI Overviews, AI Mode, generative search, answer engine optimization, AI citations",
+    "Entities & Semantic Terms": "SEO India Tech, Google Search, SEO, AI search, organic traffic",
+    "Search Intent": "Informational / commercial investigation",
+    "Suggested Title": "Chatgpt Seo Ai Search Organic Traffic | SEO India Tech",
+    "Suggested H1": "Chatgpt Seo Ai Search Organic Traffic",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is chatgpt seo ai search organic traffic? | How does chatgpt seo ai search organic traffic work? | Who needs chatgpt seo ai search organic traffic? | What are the benefits of chatgpt seo ai search organic traffic? | How much does chatgpt seo ai search organic traffic cost? | How do I choose a provider for chatgpt seo ai search organic traffic?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/blog/seo-roi-calculator-measure-success",
+    "Page Type": "Blog",
+    "Primary Keyword / Topic": "seo roi calculator measure success",
+    "Secondary Keywords": "SEO strategy, Google Search, AI search, organic traffic, search visibility",
+    "Entities & Semantic Terms": "SEO India Tech, Google Search, SEO, AI search, organic traffic",
+    "Search Intent": "Informational / commercial investigation",
+    "Suggested Title": "Seo Roi Calculator Measure Success | SEO India Tech",
+    "Suggested H1": "Seo Roi Calculator Measure Success",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is seo roi calculator measure success? | How does seo roi calculator measure success work? | Who needs seo roi calculator measure success? | What are the benefits of seo roi calculator measure success? | How much does seo roi calculator measure success cost? | How do I choose a provider for seo roi calculator measure success?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/blog/technical-seo-checklist-enterprise-websites",
+    "Page Type": "Blog",
+    "Primary Keyword / Topic": "technical seo checklist enterprise websites",
+    "Secondary Keywords": "technical SEO, crawlability, indexability, Core Web Vitals, internal links",
+    "Entities & Semantic Terms": "SEO India Tech, Google Search, SEO, AI search, organic traffic",
+    "Search Intent": "Informational / commercial investigation",
+    "Suggested Title": "Technical Seo Checklist Enterprise Websites | SEO India Tech",
+    "Suggested H1": "Technical Seo Checklist Enterprise Websites",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is technical seo checklist enterprise websites? | How does technical seo checklist enterprise websites work? | Who needs technical seo checklist enterprise websites? | What are the benefits of technical seo checklist enterprise websites? | How much does technical seo checklist enterprise websites cost? | How do I choose a provider for technical seo checklist enterprise websites?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/blog/core-web-vitals-optimization-guide",
+    "Page Type": "Blog",
+    "Primary Keyword / Topic": "core web vitals optimization guide",
+    "Secondary Keywords": "technical SEO, crawlability, indexability, Core Web Vitals, internal links",
+    "Entities & Semantic Terms": "SEO India Tech, Google Search, SEO, AI search, organic traffic",
+    "Search Intent": "Informational / commercial investigation",
+    "Suggested Title": "Core Web Vitals Optimization Guide | SEO India Tech",
+    "Suggested H1": "Core Web Vitals Optimization Guide",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is core web vitals optimization guide? | How does core web vitals optimization guide work? | Who needs core web vitals optimization guide? | What are the benefits of core web vitals optimization guide? | How much does core web vitals optimization guide cost? | How do I choose a provider for core web vitals optimization guide?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/blog/content-marketing-strategy-qualified-leads",
+    "Page Type": "Blog",
+    "Primary Keyword / Topic": "content marketing strategy qualified leads",
+    "Secondary Keywords": "people-first content, E-E-A-T, topical authority, content strategy, link building",
+    "Entities & Semantic Terms": "SEO India Tech, Google Search, SEO, AI search, organic traffic",
+    "Search Intent": "Informational / commercial investigation",
+    "Suggested Title": "Content Marketing Strategy Qualified Leads | SEO India Tech",
+    "Suggested H1": "Content Marketing Strategy Qualified Leads",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is content marketing strategy qualified leads? | How does content marketing strategy qualified leads work? | Who needs content marketing strategy qualified leads? | What are the benefits of content marketing strategy qualified leads? | How much does content marketing strategy qualified leads cost? | How do I choose a provider for content marketing strategy qualified leads?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/blog/link-building-guide-2026",
+    "Page Type": "Blog",
+    "Primary Keyword / Topic": "link building guide 2026",
+    "Secondary Keywords": "people-first content, E-E-A-T, topical authority, content strategy, link building",
+    "Entities & Semantic Terms": "SEO India Tech, Google Search, SEO, AI search, organic traffic",
+    "Search Intent": "Informational / commercial investigation",
+    "Suggested Title": "Link Building Guide 2026 | SEO India Tech",
+    "Suggested H1": "Link Building Guide 2026",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is link building guide 2026? | How does link building guide 2026 work? | Who needs link building guide 2026? | What are the benefits of link building guide 2026? | How much does link building guide 2026 cost? | How do I choose a provider for link building guide 2026?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/blog/seo-checklist-small-businesses-europe",
+    "Page Type": "Blog",
+    "Primary Keyword / Topic": "seo checklist small businesses europe",
+    "Secondary Keywords": "SEO strategy, Google Search, AI search, organic traffic, search visibility, European SEO, international SEO, multilingual search",
+    "Entities & Semantic Terms": "SEO India Tech, Google Search, SEO, AI search, organic traffic",
+    "Search Intent": "Informational / commercial investigation",
+    "Suggested Title": "Seo Checklist Small Businesses Europe | SEO India Tech",
+    "Suggested H1": "Seo Checklist Small Businesses Europe",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is seo checklist small businesses europe? | How does seo checklist small businesses europe work? | Who needs seo checklist small businesses europe? | What are the benefits of seo checklist small businesses europe? | How much does seo checklist small businesses europe cost? | How do I choose a provider for seo checklist small businesses europe?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/blog/how-google-ai-overviews-are-changing-seo",
+    "Page Type": "Blog",
+    "Primary Keyword / Topic": "how google ai overviews are changing seo",
+    "Secondary Keywords": "AI SEO, AI Overviews, AI Mode, generative search, answer engine optimization, AI citations",
+    "Entities & Semantic Terms": "SEO India Tech, Google Search, SEO, AI search, organic traffic",
+    "Search Intent": "Informational / commercial investigation",
+    "Suggested Title": "How Google Ai Overviews Are Changing Seo | SEO India Tech",
+    "Suggested H1": "How Google Ai Overviews Are Changing Seo",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is how google ai overviews are changing seo? | How does how google ai overviews are changing seo work? | Who needs how google ai overviews are changing seo? | What are the benefits of how google ai overviews are changing seo? | How much does how google ai overviews are changing seo cost? | How do I choose a provider for how google ai overviews are changing seo?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/blog/seo-for-restaurants-local-diners",
+    "Page Type": "Blog",
+    "Primary Keyword / Topic": "seo for restaurants local diners",
+    "Secondary Keywords": "local SEO, Google Business Profile, Google Maps, local search, local leads",
+    "Entities & Semantic Terms": "SEO India Tech, Google Search, SEO, AI search, organic traffic",
+    "Search Intent": "Informational / commercial investigation",
+    "Suggested Title": "Seo For Restaurants Local Diners | SEO India Tech",
+    "Suggested H1": "Seo For Restaurants Local Diners",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is seo for restaurants local diners? | How does seo for restaurants local diners work? | Who needs seo for restaurants local diners? | What are the benefits of seo for restaurants local diners? | How much does seo for restaurants local diners cost? | How do I choose a provider for seo for restaurants local diners?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/blog/youtube-business-marketing-2026",
+    "Page Type": "Blog",
+    "Primary Keyword / Topic": "youtube business marketing 2026",
+    "Secondary Keywords": "SEO strategy, Google Search, AI search, organic traffic, search visibility",
+    "Entities & Semantic Terms": "SEO India Tech, Google Search, SEO, AI search, organic traffic",
+    "Search Intent": "Informational / commercial investigation",
+    "Suggested Title": "Youtube Business Marketing 2026 | SEO India Tech",
+    "Suggested H1": "Youtube Business Marketing 2026",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is youtube business marketing 2026? | How does youtube business marketing 2026 work? | Who needs youtube business marketing 2026? | What are the benefits of youtube business marketing 2026? | How much does youtube business marketing 2026 cost? | How do I choose a provider for youtube business marketing 2026?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
+    "Page Type": "Blog",
+    "Primary Keyword / Topic": "google core update may 2026 seo content strategy agentic ai",
+    "Secondary Keywords": "people-first content, E-E-A-T, topical authority, content strategy, link building",
+    "Entities & Semantic Terms": "SEO India Tech, Google Search, SEO, AI search, organic traffic",
+    "Search Intent": "Informational / commercial investigation",
+    "Suggested Title": "Google Core Update May 2026 Seo Content Strategy Agentic Ai | SEO India Tech",
+    "Suggested H1": "Google Core Update May 2026 Seo Content Strategy Agentic Ai",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is google core update may 2026 seo content strategy agentic ai? | How does google core update may 2026 seo content strategy agentic ai work? | Who needs google core update may 2026 seo content strategy agentic ai? | What are the benefits of google core update may 2026 seo content strategy agentic ai? | How much does google core update may 2026 seo content strategy agentic ai cost? | How do I choose a provider for google core update may 2026 seo content strategy agentic ai?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/blog/local-seo-guide-indian-businesses-2026",
+    "Page Type": "Blog",
+    "Primary Keyword / Topic": "local seo guide indian businesses 2026",
+    "Secondary Keywords": "local SEO, Google Business Profile, Google Maps, local search, local leads",
+    "Entities & Semantic Terms": "SEO India Tech, Google Search, SEO, AI search, organic traffic",
+    "Search Intent": "Informational / commercial investigation",
+    "Suggested Title": "Local Seo Guide Indian Businesses 2026 | SEO India Tech",
+    "Suggested H1": "Local Seo Guide Indian Businesses 2026",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is local seo guide indian businesses 2026? | How does local seo guide indian businesses 2026 work? | Who needs local seo guide indian businesses 2026? | What are the benefits of local seo guide indian businesses 2026? | How much does local seo guide indian businesses 2026 cost? | How do I choose a provider for local seo guide indian businesses 2026?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/blog/what-is-ai-seo-why-business-needs-it",
+    "Page Type": "Blog",
+    "Primary Keyword / Topic": "what is ai seo why business needs it",
+    "Secondary Keywords": "AI SEO, AI Overviews, AI Mode, generative search, answer engine optimization, AI citations",
+    "Entities & Semantic Terms": "SEO India Tech, Google Search, SEO, AI search, organic traffic",
+    "Search Intent": "Informational / commercial investigation",
+    "Suggested Title": "What Is Ai Seo Why Business Needs It | SEO India Tech",
+    "Suggested H1": "What Is Ai Seo Why Business Needs It",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is what is ai seo why business needs it? | How does what is ai seo why business needs it work? | Who needs what is ai seo why business needs it? | What are the benefits of what is ai seo why business needs it? | How much does what is ai seo why business needs it cost? | How do I choose a provider for what is ai seo why business needs it?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/blog/ppc-vs-seo-which-is-better",
+    "Page Type": "Blog",
+    "Primary Keyword / Topic": "ppc vs seo which is better",
+    "Secondary Keywords": "PPC, Google Ads, paid search, SEO vs PPC, conversion strategy",
+    "Entities & Semantic Terms": "SEO India Tech, Google Search, SEO, AI search, organic traffic",
+    "Search Intent": "Informational / commercial investigation",
+    "Suggested Title": "Ppc Vs Seo Which Is Better | SEO India Tech",
+    "Suggested H1": "Ppc Vs Seo Which Is Better",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is ppc vs seo which is better? | How does ppc vs seo which is better work? | Who needs ppc vs seo which is better? | What are the benefits of ppc vs seo which is better? | How much does ppc vs seo which is better cost? | How do I choose a provider for ppc vs seo which is better?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/blog/ecommerce-seo-checklist-india",
+    "Page Type": "Blog",
+    "Primary Keyword / Topic": "ecommerce seo checklist india",
+    "Secondary Keywords": "ecommerce SEO, product SEO, category pages, organic ecommerce traffic",
+    "Entities & Semantic Terms": "SEO India Tech, Google Search, SEO, AI search, organic traffic",
+    "Search Intent": "Informational / commercial investigation",
+    "Suggested Title": "Ecommerce Seo Checklist India | SEO India Tech",
+    "Suggested H1": "Ecommerce Seo Checklist India",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is ecommerce seo checklist india? | How does ecommerce seo checklist india work? | Who needs ecommerce seo checklist india? | What are the benefits of ecommerce seo checklist india? | How much does ecommerce seo checklist india cost? | How do I choose a provider for ecommerce seo checklist india?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/blog/how-to-choose-best-seo-agency-india",
+    "Page Type": "Blog",
+    "Primary Keyword / Topic": "how to choose best seo agency india",
+    "Secondary Keywords": "SEO strategy, Google Search, AI search, organic traffic, search visibility",
+    "Entities & Semantic Terms": "SEO India Tech, Google Search, SEO, AI search, organic traffic",
+    "Search Intent": "Informational / commercial investigation",
+    "Suggested Title": "How To Choose Best Seo Agency India | SEO India Tech",
+    "Suggested H1": "How To Choose Best Seo Agency India",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is how to choose best seo agency india? | How does how to choose best seo agency india work? | Who needs how to choose best seo agency india? | What are the benefits of how to choose best seo agency india? | How much does how to choose best seo agency india cost? | How do I choose a provider for how to choose best seo agency india?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/industries/plastic-surgery-seo",
+    "Page Type": "Industry",
+    "Primary Keyword / Topic": "plastic surgery SEO",
+    "Secondary Keywords": "SEO for plastic surgery, plastic surgery local SEO, plastic surgery marketing, lead generation",
+    "Entities & Semantic Terms": "plastic surgery, local search, Google Business Profile, SEO services",
+    "Search Intent": "Industry commercial",
+    "Suggested Title": "Plastic Surgery Seo Services | SEO India Tech",
+    "Suggested H1": "Plastic Surgery Seo Services That Generate Qualified Leads",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is plastic surgery SEO? | How does plastic surgery SEO work? | Who needs plastic surgery SEO? | What are the benefits of plastic surgery SEO? | How much does plastic surgery SEO cost? | How do I choose a provider for plastic surgery SEO?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/industries/property-management-seo",
+    "Page Type": "Industry",
+    "Primary Keyword / Topic": "property management SEO",
+    "Secondary Keywords": "SEO for property management, property management local SEO, property management marketing, lead generation",
+    "Entities & Semantic Terms": "property management, local search, Google Business Profile, SEO services",
+    "Search Intent": "Industry commercial",
+    "Suggested Title": "Property Management Seo Services | SEO India Tech",
+    "Suggested H1": "Property Management Seo Services That Generate Qualified Leads",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is property management SEO? | How does property management SEO work? | Who needs property management SEO? | What are the benefits of property management SEO? | How much does property management SEO cost? | How do I choose a provider for property management SEO?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/industries/realtor-seo",
+    "Page Type": "Industry",
+    "Primary Keyword / Topic": "realtor SEO",
+    "Secondary Keywords": "SEO for realtor, realtor local SEO, realtor marketing, lead generation",
+    "Entities & Semantic Terms": "realtor, local search, Google Business Profile, SEO services",
+    "Search Intent": "Industry commercial",
+    "Suggested Title": "Realtor Seo Services | SEO India Tech",
+    "Suggested H1": "Realtor Seo Services That Generate Qualified Leads",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is realtor SEO? | How does realtor SEO work? | Who needs realtor SEO? | What are the benefits of realtor SEO? | How much does realtor SEO cost? | How do I choose a provider for realtor SEO?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/industries/fertility-clinic-seo",
+    "Page Type": "Industry",
+    "Primary Keyword / Topic": "fertility clinic SEO",
+    "Secondary Keywords": "SEO for fertility clinic, fertility clinic local SEO, fertility clinic marketing, lead generation",
+    "Entities & Semantic Terms": "fertility clinic, local search, Google Business Profile, SEO services",
+    "Search Intent": "Industry commercial",
+    "Suggested Title": "Fertility Clinic Seo Services | SEO India Tech",
+    "Suggested H1": "Fertility Clinic Seo Services That Generate Qualified Leads",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is fertility clinic SEO? | How does fertility clinic SEO work? | Who needs fertility clinic SEO? | What are the benefits of fertility clinic SEO? | How much does fertility clinic SEO cost? | How do I choose a provider for fertility clinic SEO?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/industries/optometrist-seo",
+    "Page Type": "Industry",
+    "Primary Keyword / Topic": "optometrist SEO",
+    "Secondary Keywords": "SEO for optometrist, optometrist local SEO, optometrist marketing, lead generation",
+    "Entities & Semantic Terms": "optometrist, local search, Google Business Profile, SEO services",
+    "Search Intent": "Industry commercial",
+    "Suggested Title": "Optometrist Seo Services | SEO India Tech",
+    "Suggested H1": "Optometrist Seo Services That Generate Qualified Leads",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is optometrist SEO? | How does optometrist SEO work? | Who needs optometrist SEO? | What are the benefits of optometrist SEO? | How much does optometrist SEO cost? | How do I choose a provider for optometrist SEO?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/industries/orthodontist-seo",
+    "Page Type": "Industry",
+    "Primary Keyword / Topic": "orthodontist SEO",
+    "Secondary Keywords": "SEO for orthodontist, orthodontist local SEO, orthodontist marketing, lead generation",
+    "Entities & Semantic Terms": "orthodontist, local search, Google Business Profile, SEO services",
+    "Search Intent": "Industry commercial",
+    "Suggested Title": "Orthodontist Seo Services | SEO India Tech",
+    "Suggested H1": "Orthodontist Seo Services That Generate Qualified Leads",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is orthodontist SEO? | How does orthodontist SEO work? | Who needs orthodontist SEO? | What are the benefits of orthodontist SEO? | How much does orthodontist SEO cost? | How do I choose a provider for orthodontist SEO?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/industries/doctor-physician-seo",
+    "Page Type": "Industry",
+    "Primary Keyword / Topic": "doctor physician SEO",
+    "Secondary Keywords": "SEO for doctor physician, doctor physician local SEO, doctor physician marketing, lead generation",
+    "Entities & Semantic Terms": "doctor physician, local search, Google Business Profile, SEO services",
+    "Search Intent": "Industry commercial",
+    "Suggested Title": "Doctor Physician Seo Services | SEO India Tech",
+    "Suggested H1": "Doctor Physician Seo Services That Generate Qualified Leads",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is doctor physician SEO? | How does doctor physician SEO work? | Who needs doctor physician SEO? | What are the benefits of doctor physician SEO? | How much does doctor physician SEO cost? | How do I choose a provider for doctor physician SEO?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/industries/physiotherapy-seo",
+    "Page Type": "Industry",
+    "Primary Keyword / Topic": "physiotherapy SEO",
+    "Secondary Keywords": "SEO for physiotherapy, physiotherapy local SEO, physiotherapy marketing, lead generation",
+    "Entities & Semantic Terms": "physiotherapy, local search, Google Business Profile, SEO services",
+    "Search Intent": "Industry commercial",
+    "Suggested Title": "Physiotherapy Seo Services | SEO India Tech",
+    "Suggested H1": "Physiotherapy Seo Services That Generate Qualified Leads",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is physiotherapy SEO? | How does physiotherapy SEO work? | Who needs physiotherapy SEO? | What are the benefits of physiotherapy SEO? | How much does physiotherapy SEO cost? | How do I choose a provider for physiotherapy SEO?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/industries/personal-injury-seo",
+    "Page Type": "Industry",
+    "Primary Keyword / Topic": "personal injury SEO",
+    "Secondary Keywords": "SEO for personal injury, personal injury local SEO, personal injury marketing, lead generation",
+    "Entities & Semantic Terms": "personal injury, local search, Google Business Profile, SEO services",
+    "Search Intent": "Industry commercial",
+    "Suggested Title": "Personal Injury Seo Services | SEO India Tech",
+    "Suggested H1": "Personal Injury Seo Services That Generate Qualified Leads",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is personal injury SEO? | How does personal injury SEO work? | Who needs personal injury SEO? | What are the benefits of personal injury SEO? | How much does personal injury SEO cost? | How do I choose a provider for personal injury SEO?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/industries/dentist-seo",
+    "Page Type": "Industry",
+    "Primary Keyword / Topic": "dentist SEO",
+    "Secondary Keywords": "SEO for dentist, dentist local SEO, dentist marketing, lead generation",
+    "Entities & Semantic Terms": "dentist, local search, Google Business Profile, SEO services",
+    "Search Intent": "Industry commercial",
+    "Suggested Title": "Dentist Seo Services | SEO India Tech",
+    "Suggested H1": "Dentist Seo Services That Generate Qualified Leads",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is dentist SEO? | How does dentist SEO work? | Who needs dentist SEO? | What are the benefits of dentist SEO? | How much does dentist SEO cost? | How do I choose a provider for dentist SEO?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/industries/hvac-seo",
+    "Page Type": "Industry",
+    "Primary Keyword / Topic": "hvac SEO",
+    "Secondary Keywords": "SEO for hvac, hvac local SEO, hvac marketing, lead generation",
+    "Entities & Semantic Terms": "hvac, local search, Google Business Profile, SEO services",
+    "Search Intent": "Industry commercial",
+    "Suggested Title": "Hvac Seo Services | SEO India Tech",
+    "Suggested H1": "Hvac Seo Services That Generate Qualified Leads",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is hvac SEO? | How does hvac SEO work? | Who needs hvac SEO? | What are the benefits of hvac SEO? | How much does hvac SEO cost? | How do I choose a provider for hvac SEO?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/industries/plumber-seo",
+    "Page Type": "Industry",
+    "Primary Keyword / Topic": "plumber SEO",
+    "Secondary Keywords": "SEO for plumber, plumber local SEO, plumber marketing, lead generation",
+    "Entities & Semantic Terms": "plumber, local search, Google Business Profile, SEO services",
+    "Search Intent": "Industry commercial",
+    "Suggested Title": "Plumber Seo Services | SEO India Tech",
+    "Suggested H1": "Plumber Seo Services That Generate Qualified Leads",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is plumber SEO? | How does plumber SEO work? | Who needs plumber SEO? | What are the benefits of plumber SEO? | How much does plumber SEO cost? | How do I choose a provider for plumber SEO?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/industries/garage-door-seo",
+    "Page Type": "Industry",
+    "Primary Keyword / Topic": "garage door SEO",
+    "Secondary Keywords": "SEO for garage door, garage door local SEO, garage door marketing, lead generation",
+    "Entities & Semantic Terms": "garage door, local search, Google Business Profile, SEO services",
+    "Search Intent": "Industry commercial",
+    "Suggested Title": "Garage Door Seo Services | SEO India Tech",
+    "Suggested H1": "Garage Door Seo Services That Generate Qualified Leads",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is garage door SEO? | How does garage door SEO work? | Who needs garage door SEO? | What are the benefits of garage door SEO? | How much does garage door SEO cost? | How do I choose a provider for garage door SEO?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/industries/well-drilling-company-seo",
+    "Page Type": "Industry",
+    "Primary Keyword / Topic": "well drilling company SEO",
+    "Secondary Keywords": "SEO for well drilling company, well drilling company local SEO, well drilling company marketing, lead generation",
+    "Entities & Semantic Terms": "well drilling company, local search, Google Business Profile, SEO services",
+    "Search Intent": "Industry commercial",
+    "Suggested Title": "Well Drilling Company Seo Services | SEO India Tech",
+    "Suggested H1": "Well Drilling Company Seo Services That Generate Qualified Leads",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is well drilling company SEO? | How does well drilling company SEO work? | Who needs well drilling company SEO? | What are the benefits of well drilling company SEO? | How much does well drilling company SEO cost? | How do I choose a provider for well drilling company SEO?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/industries/fence-installer-seo",
+    "Page Type": "Industry",
+    "Primary Keyword / Topic": "fence installer SEO",
+    "Secondary Keywords": "SEO for fence installer, fence installer local SEO, fence installer marketing, lead generation",
+    "Entities & Semantic Terms": "fence installer, local search, Google Business Profile, SEO services",
+    "Search Intent": "Industry commercial",
+    "Suggested Title": "Fence Installer Seo Services | SEO India Tech",
+    "Suggested H1": "Fence Installer Seo Services That Generate Qualified Leads",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is fence installer SEO? | How does fence installer SEO work? | Who needs fence installer SEO? | What are the benefits of fence installer SEO? | How much does fence installer SEO cost? | How do I choose a provider for fence installer SEO?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/industries/deck-builder-seo",
+    "Page Type": "Industry",
+    "Primary Keyword / Topic": "deck builder SEO",
+    "Secondary Keywords": "SEO for deck builder, deck builder local SEO, deck builder marketing, lead generation",
+    "Entities & Semantic Terms": "deck builder, local search, Google Business Profile, SEO services",
+    "Search Intent": "Industry commercial",
+    "Suggested Title": "Deck Builder Seo Services | SEO India Tech",
+    "Suggested H1": "Deck Builder Seo Services That Generate Qualified Leads",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is deck builder SEO? | How does deck builder SEO work? | Who needs deck builder SEO? | What are the benefits of deck builder SEO? | How much does deck builder SEO cost? | How do I choose a provider for deck builder SEO?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/industries/cabinet-manufacturer-seo",
+    "Page Type": "Industry",
+    "Primary Keyword / Topic": "cabinet manufacturer SEO",
+    "Secondary Keywords": "SEO for cabinet manufacturer, cabinet manufacturer local SEO, cabinet manufacturer marketing, lead generation",
+    "Entities & Semantic Terms": "cabinet manufacturer, local search, Google Business Profile, SEO services",
+    "Search Intent": "Industry commercial",
+    "Suggested Title": "Cabinet Manufacturer Seo Services | SEO India Tech",
+    "Suggested H1": "Cabinet Manufacturer Seo Services That Generate Qualified Leads",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is cabinet manufacturer SEO? | How does cabinet manufacturer SEO work? | Who needs cabinet manufacturer SEO? | What are the benefits of cabinet manufacturer SEO? | How much does cabinet manufacturer SEO cost? | How do I choose a provider for cabinet manufacturer SEO?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/industries/architect-seo",
+    "Page Type": "Industry",
+    "Primary Keyword / Topic": "architect SEO",
+    "Secondary Keywords": "SEO for architect, architect local SEO, architect marketing, lead generation",
+    "Entities & Semantic Terms": "architect, local search, Google Business Profile, SEO services",
+    "Search Intent": "Industry commercial",
+    "Suggested Title": "Architect Seo Services | SEO India Tech",
+    "Suggested H1": "Architect Seo Services That Generate Qualified Leads",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is architect SEO? | How does architect SEO work? | Who needs architect SEO? | What are the benefits of architect SEO? | How much does architect SEO cost? | How do I choose a provider for architect SEO?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/industries/painter-seo",
+    "Page Type": "Industry",
+    "Primary Keyword / Topic": "painter SEO",
+    "Secondary Keywords": "SEO for painter, painter local SEO, painter marketing, lead generation",
+    "Entities & Semantic Terms": "painter, local search, Google Business Profile, SEO services",
+    "Search Intent": "Industry commercial",
+    "Suggested Title": "Painter Seo Services | SEO India Tech",
+    "Suggested H1": "Painter Seo Services That Generate Qualified Leads",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is painter SEO? | How does painter SEO work? | Who needs painter SEO? | What are the benefits of painter SEO? | How much does painter SEO cost? | How do I choose a provider for painter SEO?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/industries/automotive-seo",
+    "Page Type": "Industry",
+    "Primary Keyword / Topic": "automotive SEO",
+    "Secondary Keywords": "SEO for automotive, automotive local SEO, automotive marketing, lead generation",
+    "Entities & Semantic Terms": "automotive, local search, Google Business Profile, SEO services",
+    "Search Intent": "Industry commercial",
+    "Suggested Title": "Automotive Seo Services | SEO India Tech",
+    "Suggested H1": "Automotive Seo Services That Generate Qualified Leads",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is automotive SEO? | How does automotive SEO work? | Who needs automotive SEO? | What are the benefits of automotive SEO? | How much does automotive SEO cost? | How do I choose a provider for automotive SEO?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/industries/locksmith-service-seo",
+    "Page Type": "Industry",
+    "Primary Keyword / Topic": "locksmith service SEO",
+    "Secondary Keywords": "SEO for locksmith service, locksmith service local SEO, locksmith service marketing, lead generation",
+    "Entities & Semantic Terms": "locksmith service, local search, Google Business Profile, SEO services",
+    "Search Intent": "Industry commercial",
+    "Suggested Title": "Locksmith Service Seo Services | SEO India Tech",
+    "Suggested H1": "Locksmith Service Seo Services That Generate Qualified Leads",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is locksmith service SEO? | How does locksmith service SEO work? | Who needs locksmith service SEO? | What are the benefits of locksmith service SEO? | How much does locksmith service SEO cost? | How do I choose a provider for locksmith service SEO?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/industries/interior-designer-seo",
+    "Page Type": "Industry",
+    "Primary Keyword / Topic": "interior designer SEO",
+    "Secondary Keywords": "SEO for interior designer, interior designer local SEO, interior designer marketing, lead generation",
+    "Entities & Semantic Terms": "interior designer, local search, Google Business Profile, SEO services",
+    "Search Intent": "Industry commercial",
+    "Suggested Title": "Interior Designer Seo Services | SEO India Tech",
+    "Suggested H1": "Interior Designer Seo Services That Generate Qualified Leads",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is interior designer SEO? | How does interior designer SEO work? | Who needs interior designer SEO? | What are the benefits of interior designer SEO? | How much does interior designer SEO cost? | How do I choose a provider for interior designer SEO?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/industries/flooring-company-seo",
+    "Page Type": "Industry",
+    "Primary Keyword / Topic": "flooring company SEO",
+    "Secondary Keywords": "SEO for flooring company, flooring company local SEO, flooring company marketing, lead generation",
+    "Entities & Semantic Terms": "flooring company, local search, Google Business Profile, SEO services",
+    "Search Intent": "Industry commercial",
+    "Suggested Title": "Flooring Company Seo Services | SEO India Tech",
+    "Suggested H1": "Flooring Company Seo Services That Generate Qualified Leads",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is flooring company SEO? | How does flooring company SEO work? | Who needs flooring company SEO? | What are the benefits of flooring company SEO? | How much does flooring company SEO cost? | How do I choose a provider for flooring company SEO?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/industries/home-builder-and-remodeler-seo",
+    "Page Type": "Industry",
+    "Primary Keyword / Topic": "home builder and remodeler SEO",
+    "Secondary Keywords": "SEO for home builder and remodeler, home builder and remodeler local SEO, home builder and remodeler marketing, lead generation",
+    "Entities & Semantic Terms": "home builder and remodeler, local search, Google Business Profile, SEO services",
+    "Search Intent": "Industry commercial",
+    "Suggested Title": "Home Builder And Remodeler Seo Services | SEO India Tech",
+    "Suggested H1": "Home Builder And Remodeler Seo Services That Generate Qualified Leads",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is home builder and remodeler SEO? | How does home builder and remodeler SEO work? | Who needs home builder and remodeler SEO? | What are the benefits of home builder and remodeler SEO? | How much does home builder and remodeler SEO cost? | How do I choose a provider for home builder and remodeler SEO?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/industries/catering-seo",
+    "Page Type": "Industry",
+    "Primary Keyword / Topic": "catering SEO",
+    "Secondary Keywords": "SEO for catering, catering local SEO, catering marketing, lead generation",
+    "Entities & Semantic Terms": "catering, local search, Google Business Profile, SEO services",
+    "Search Intent": "Industry commercial",
+    "Suggested Title": "Catering Seo Services | SEO India Tech",
+    "Suggested H1": "Catering Seo Services That Generate Qualified Leads",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is catering SEO? | How does catering SEO work? | Who needs catering SEO? | What are the benefits of catering SEO? | How much does catering SEO cost? | How do I choose a provider for catering SEO?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/industries/breweries-seo",
+    "Page Type": "Industry",
+    "Primary Keyword / Topic": "breweries SEO",
+    "Secondary Keywords": "SEO for breweries, breweries local SEO, breweries marketing, lead generation",
+    "Entities & Semantic Terms": "breweries, local search, Google Business Profile, SEO services",
+    "Search Intent": "Industry commercial",
+    "Suggested Title": "Breweries Seo Services | SEO India Tech",
+    "Suggested H1": "Breweries Seo Services That Generate Qualified Leads",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is breweries SEO? | How does breweries SEO work? | Who needs breweries SEO? | What are the benefits of breweries SEO? | How much does breweries SEO cost? | How do I choose a provider for breweries SEO?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/industries/wineries-seo",
+    "Page Type": "Industry",
+    "Primary Keyword / Topic": "wineries SEO",
+    "Secondary Keywords": "SEO for wineries, wineries local SEO, wineries marketing, lead generation",
+    "Entities & Semantic Terms": "wineries, local search, Google Business Profile, SEO services",
+    "Search Intent": "Industry commercial",
+    "Suggested Title": "Wineries Seo Services | SEO India Tech",
+    "Suggested H1": "Wineries Seo Services That Generate Qualified Leads",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is wineries SEO? | How does wineries SEO work? | Who needs wineries SEO? | What are the benefits of wineries SEO? | How much does wineries SEO cost? | How do I choose a provider for wineries SEO?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/industries/herbal-product-seo",
+    "Page Type": "Industry",
+    "Primary Keyword / Topic": "herbal product SEO",
+    "Secondary Keywords": "SEO for herbal product, herbal product local SEO, herbal product marketing, lead generation",
+    "Entities & Semantic Terms": "herbal product, local search, Google Business Profile, SEO services",
+    "Search Intent": "Industry commercial",
+    "Suggested Title": "Herbal Product Seo Services | SEO India Tech",
+    "Suggested H1": "Herbal Product Seo Services That Generate Qualified Leads",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is herbal product SEO? | How does herbal product SEO work? | Who needs herbal product SEO? | What are the benefits of herbal product SEO? | How much does herbal product SEO cost? | How do I choose a provider for herbal product SEO?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/industries/chiropractor-seo",
+    "Page Type": "Industry",
+    "Primary Keyword / Topic": "chiropractor SEO",
+    "Secondary Keywords": "SEO for chiropractor, chiropractor local SEO, chiropractor marketing, lead generation",
+    "Entities & Semantic Terms": "chiropractor, local search, Google Business Profile, SEO services",
+    "Search Intent": "Industry commercial",
+    "Suggested Title": "Chiropractor Seo Services | SEO India Tech",
+    "Suggested H1": "Chiropractor Seo Services That Generate Qualified Leads",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is chiropractor SEO? | How does chiropractor SEO work? | Who needs chiropractor SEO? | What are the benefits of chiropractor SEO? | How much does chiropractor SEO cost? | How do I choose a provider for chiropractor SEO?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/industries/movers-and-moving-company-seo",
+    "Page Type": "Industry",
+    "Primary Keyword / Topic": "movers and moving company SEO",
+    "Secondary Keywords": "SEO for movers and moving company, movers and moving company local SEO, movers and moving company marketing, lead generation",
+    "Entities & Semantic Terms": "movers and moving company, local search, Google Business Profile, SEO services",
+    "Search Intent": "Industry commercial",
+    "Suggested Title": "Movers And Moving Company Seo Services | SEO India Tech",
+    "Suggested H1": "Movers And Moving Company Seo Services That Generate Qualified Leads",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is movers and moving company SEO? | How does movers and moving company SEO work? | Who needs movers and moving company SEO? | What are the benefits of movers and moving company SEO? | How much does movers and moving company SEO cost? | How do I choose a provider for movers and moving company SEO?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/industries/pest-control-service-seo",
+    "Page Type": "Industry",
+    "Primary Keyword / Topic": "pest control service SEO",
+    "Secondary Keywords": "SEO for pest control service, pest control service local SEO, pest control service marketing, lead generation",
+    "Entities & Semantic Terms": "pest control service, local search, Google Business Profile, SEO services",
+    "Search Intent": "Industry commercial",
+    "Suggested Title": "Pest Control Service Seo Services | SEO India Tech",
+    "Suggested H1": "Pest Control Service Seo Services That Generate Qualified Leads",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is pest control service SEO? | How does pest control service SEO work? | Who needs pest control service SEO? | What are the benefits of pest control service SEO? | How much does pest control service SEO cost? | How do I choose a provider for pest control service SEO?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/industries/cpa-firm-seo",
+    "Page Type": "Industry",
+    "Primary Keyword / Topic": "cpa firm SEO",
+    "Secondary Keywords": "SEO for cpa firm, cpa firm local SEO, cpa firm marketing, lead generation",
+    "Entities & Semantic Terms": "cpa firm, local search, Google Business Profile, SEO services",
+    "Search Intent": "Industry commercial",
+    "Suggested Title": "Cpa Firm Seo Services | SEO India Tech",
+    "Suggested H1": "Cpa Firm Seo Services That Generate Qualified Leads",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is cpa firm SEO? | How does cpa firm SEO work? | Who needs cpa firm SEO? | What are the benefits of cpa firm SEO? | How much does cpa firm SEO cost? | How do I choose a provider for cpa firm SEO?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/industries/wildlife-removal-company-seo",
+    "Page Type": "Industry",
+    "Primary Keyword / Topic": "wildlife removal company SEO",
+    "Secondary Keywords": "SEO for wildlife removal company, wildlife removal company local SEO, wildlife removal company marketing, lead generation",
+    "Entities & Semantic Terms": "wildlife removal company, local search, Google Business Profile, SEO services",
+    "Search Intent": "Industry commercial",
+    "Suggested Title": "Wildlife Removal Company Seo Services | SEO India Tech",
+    "Suggested H1": "Wildlife Removal Company Seo Services That Generate Qualified Leads",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is wildlife removal company SEO? | How does wildlife removal company SEO work? | Who needs wildlife removal company SEO? | What are the benefits of wildlife removal company SEO? | How much does wildlife removal company SEO cost? | How do I choose a provider for wildlife removal company SEO?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/industries/sign-company-seo",
+    "Page Type": "Industry",
+    "Primary Keyword / Topic": "sign company SEO",
+    "Secondary Keywords": "SEO for sign company, sign company local SEO, sign company marketing, lead generation",
+    "Entities & Semantic Terms": "sign company, local search, Google Business Profile, SEO services",
+    "Search Intent": "Industry commercial",
+    "Suggested Title": "Sign Company Seo Services | SEO India Tech",
+    "Suggested H1": "Sign Company Seo Services That Generate Qualified Leads",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is sign company SEO? | How does sign company SEO work? | Who needs sign company SEO? | What are the benefits of sign company SEO? | How much does sign company SEO cost? | How do I choose a provider for sign company SEO?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/industries/waste-management-seo",
+    "Page Type": "Industry",
+    "Primary Keyword / Topic": "waste management SEO",
+    "Secondary Keywords": "SEO for waste management, waste management local SEO, waste management marketing, lead generation",
+    "Entities & Semantic Terms": "waste management, local search, Google Business Profile, SEO services",
+    "Search Intent": "Industry commercial",
+    "Suggested Title": "Waste Management Seo Services | SEO India Tech",
+    "Suggested H1": "Waste Management Seo Services That Generate Qualified Leads",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is waste management SEO? | How does waste management SEO work? | Who needs waste management SEO? | What are the benefits of waste management SEO? | How much does waste management SEO cost? | How do I choose a provider for waste management SEO?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/industries/dry-cleaner-seo",
+    "Page Type": "Industry",
+    "Primary Keyword / Topic": "dry cleaner SEO",
+    "Secondary Keywords": "SEO for dry cleaner, dry cleaner local SEO, dry cleaner marketing, lead generation",
+    "Entities & Semantic Terms": "dry cleaner, local search, Google Business Profile, SEO services",
+    "Search Intent": "Industry commercial",
+    "Suggested Title": "Dry Cleaner Seo Services | SEO India Tech",
+    "Suggested H1": "Dry Cleaner Seo Services That Generate Qualified Leads",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is dry cleaner SEO? | How does dry cleaner SEO work? | Who needs dry cleaner SEO? | What are the benefits of dry cleaner SEO? | How much does dry cleaner SEO cost? | How do I choose a provider for dry cleaner SEO?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/industries/tree-care-seo",
+    "Page Type": "Industry",
+    "Primary Keyword / Topic": "tree care SEO",
+    "Secondary Keywords": "SEO for tree care, tree care local SEO, tree care marketing, lead generation",
+    "Entities & Semantic Terms": "tree care, local search, Google Business Profile, SEO services",
+    "Search Intent": "Industry commercial",
+    "Suggested Title": "Tree Care Seo Services | SEO India Tech",
+    "Suggested H1": "Tree Care Seo Services That Generate Qualified Leads",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is tree care SEO? | How does tree care SEO work? | Who needs tree care SEO? | What are the benefits of tree care SEO? | How much does tree care SEO cost? | How do I choose a provider for tree care SEO?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/industries/roofers-seo",
+    "Page Type": "Industry",
+    "Primary Keyword / Topic": "roofers SEO",
+    "Secondary Keywords": "SEO for roofers, roofers local SEO, roofers marketing, lead generation",
+    "Entities & Semantic Terms": "roofers, local search, Google Business Profile, SEO services",
+    "Search Intent": "Industry commercial",
+    "Suggested Title": "Roofers Seo Services | SEO India Tech",
+    "Suggested H1": "Roofers Seo Services That Generate Qualified Leads",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is roofers SEO? | How does roofers SEO work? | Who needs roofers SEO? | What are the benefits of roofers SEO? | How much does roofers SEO cost? | How do I choose a provider for roofers SEO?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/industries/accountants-seo",
+    "Page Type": "Industry",
+    "Primary Keyword / Topic": "accountants SEO",
+    "Secondary Keywords": "SEO for accountants, accountants local SEO, accountants marketing, lead generation",
+    "Entities & Semantic Terms": "accountants, local search, Google Business Profile, SEO services",
+    "Search Intent": "Industry commercial",
+    "Suggested Title": "Accountants Seo Services | SEO India Tech",
+    "Suggested H1": "Accountants Seo Services That Generate Qualified Leads",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is accountants SEO? | How does accountants SEO work? | Who needs accountants SEO? | What are the benefits of accountants SEO? | How much does accountants SEO cost? | How do I choose a provider for accountants SEO?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/industries/pet-service-seo",
+    "Page Type": "Industry",
+    "Primary Keyword / Topic": "pet service SEO",
+    "Secondary Keywords": "SEO for pet service, pet service local SEO, pet service marketing, lead generation",
+    "Entities & Semantic Terms": "pet service, local search, Google Business Profile, SEO services",
+    "Search Intent": "Industry commercial",
+    "Suggested Title": "Pet Service Seo Services | SEO India Tech",
+    "Suggested H1": "Pet Service Seo Services That Generate Qualified Leads",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is pet service SEO? | How does pet service SEO work? | Who needs pet service SEO? | What are the benefits of pet service SEO? | How much does pet service SEO cost? | How do I choose a provider for pet service SEO?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/industries/janitorial-service-seo",
+    "Page Type": "Industry",
+    "Primary Keyword / Topic": "janitorial service SEO",
+    "Secondary Keywords": "SEO for janitorial service, janitorial service local SEO, janitorial service marketing, lead generation",
+    "Entities & Semantic Terms": "janitorial service, local search, Google Business Profile, SEO services",
+    "Search Intent": "Industry commercial",
+    "Suggested Title": "Janitorial Service Seo Services | SEO India Tech",
+    "Suggested H1": "Janitorial Service Seo Services That Generate Qualified Leads",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is janitorial service SEO? | How does janitorial service SEO work? | Who needs janitorial service SEO? | What are the benefits of janitorial service SEO? | How much does janitorial service SEO cost? | How do I choose a provider for janitorial service SEO?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/seo-services/seo-services-in-chandigarh",
+    "Page Type": "City SEO",
+    "Primary Keyword / Topic": "SEO services in chandigarh",
+    "Secondary Keywords": "SEO agency chandigarh, local SEO chandigarh, search engine optimization chandigarh, digital marketing chandigarh",
+    "Entities & Semantic Terms": "chandigarh, SEO agency, local search, Google Business Profile, SEO services",
+    "Search Intent": "Local commercial",
+    "Suggested Title": "SEO Services in Chandigarh | SEO India Tech",
+    "Suggested H1": "SEO Services in Chandigarh for Sustainable Organic Growth",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is SEO services in chandigarh? | How does SEO services in chandigarh work? | Who needs SEO services in chandigarh? | What are the benefits of SEO services in chandigarh? | How much does SEO services in chandigarh cost? | How do I choose a provider for SEO services in chandigarh?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/seo-services/seo-services-in-hyderabad",
+    "Page Type": "City SEO",
+    "Primary Keyword / Topic": "SEO services in hyderabad",
+    "Secondary Keywords": "SEO agency hyderabad, local SEO hyderabad, search engine optimization hyderabad, digital marketing hyderabad",
+    "Entities & Semantic Terms": "hyderabad, SEO agency, local search, Google Business Profile, SEO services",
+    "Search Intent": "Local commercial",
+    "Suggested Title": "SEO Services in Hyderabad | SEO India Tech",
+    "Suggested H1": "SEO Services in Hyderabad for Sustainable Organic Growth",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is SEO services in hyderabad? | How does SEO services in hyderabad work? | Who needs SEO services in hyderabad? | What are the benefits of SEO services in hyderabad? | How much does SEO services in hyderabad cost? | How do I choose a provider for SEO services in hyderabad?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/seo-services/seo-services-in-jaipur",
+    "Page Type": "City SEO",
+    "Primary Keyword / Topic": "SEO services in jaipur",
+    "Secondary Keywords": "SEO agency jaipur, local SEO jaipur, search engine optimization jaipur, digital marketing jaipur",
+    "Entities & Semantic Terms": "jaipur, SEO agency, local search, Google Business Profile, SEO services",
+    "Search Intent": "Local commercial",
+    "Suggested Title": "SEO Services in Jaipur | SEO India Tech",
+    "Suggested H1": "SEO Services in Jaipur for Sustainable Organic Growth",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is SEO services in jaipur? | How does SEO services in jaipur work? | Who needs SEO services in jaipur? | What are the benefits of SEO services in jaipur? | How much does SEO services in jaipur cost? | How do I choose a provider for SEO services in jaipur?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/seo-services/seo-services-in-mumbai",
+    "Page Type": "City SEO",
+    "Primary Keyword / Topic": "SEO services in mumbai",
+    "Secondary Keywords": "SEO agency mumbai, local SEO mumbai, search engine optimization mumbai, digital marketing mumbai",
+    "Entities & Semantic Terms": "mumbai, SEO agency, local search, Google Business Profile, SEO services",
+    "Search Intent": "Local commercial",
+    "Suggested Title": "SEO Services in Mumbai | SEO India Tech",
+    "Suggested H1": "SEO Services in Mumbai for Sustainable Organic Growth",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is SEO services in mumbai? | How does SEO services in mumbai work? | Who needs SEO services in mumbai? | What are the benefits of SEO services in mumbai? | How much does SEO services in mumbai cost? | How do I choose a provider for SEO services in mumbai?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/seo-services/seo-services-in-pune",
+    "Page Type": "City SEO",
+    "Primary Keyword / Topic": "SEO services in pune",
+    "Secondary Keywords": "SEO agency pune, local SEO pune, search engine optimization pune, digital marketing pune",
+    "Entities & Semantic Terms": "pune, SEO agency, local search, Google Business Profile, SEO services",
+    "Search Intent": "Local commercial",
+    "Suggested Title": "SEO Services in Pune | SEO India Tech",
+    "Suggested H1": "SEO Services in Pune for Sustainable Organic Growth",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is SEO services in pune? | How does SEO services in pune work? | Who needs SEO services in pune? | What are the benefits of SEO services in pune? | How much does SEO services in pune cost? | How do I choose a provider for SEO services in pune?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/seo-services/seo-services-in-noida",
+    "Page Type": "City SEO",
+    "Primary Keyword / Topic": "SEO services in noida",
+    "Secondary Keywords": "SEO agency noida, local SEO noida, search engine optimization noida, digital marketing noida",
+    "Entities & Semantic Terms": "noida, SEO agency, local search, Google Business Profile, SEO services",
+    "Search Intent": "Local commercial",
+    "Suggested Title": "SEO Services in Noida | SEO India Tech",
+    "Suggested H1": "SEO Services in Noida for Sustainable Organic Growth",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is SEO services in noida? | How does SEO services in noida work? | Who needs SEO services in noida? | What are the benefits of SEO services in noida? | How much does SEO services in noida cost? | How do I choose a provider for SEO services in noida?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/seo-services/seo-services-in-delhi",
+    "Page Type": "City SEO",
+    "Primary Keyword / Topic": "SEO services in delhi",
+    "Secondary Keywords": "SEO agency delhi, local SEO delhi, search engine optimization delhi, digital marketing delhi",
+    "Entities & Semantic Terms": "delhi, SEO agency, local search, Google Business Profile, SEO services",
+    "Search Intent": "Local commercial",
+    "Suggested Title": "SEO Services in Delhi | SEO India Tech",
+    "Suggested H1": "SEO Services in Delhi for Sustainable Organic Growth",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is SEO services in delhi? | How does SEO services in delhi work? | Who needs SEO services in delhi? | What are the benefits of SEO services in delhi? | How much does SEO services in delhi cost? | How do I choose a provider for SEO services in delhi?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/seo-services/seo-services-in-bangalore",
+    "Page Type": "City SEO",
+    "Primary Keyword / Topic": "SEO services in bangalore",
+    "Secondary Keywords": "SEO agency bangalore, local SEO bangalore, search engine optimization bangalore, digital marketing bangalore",
+    "Entities & Semantic Terms": "bangalore, SEO agency, local search, Google Business Profile, SEO services",
+    "Search Intent": "Local commercial",
+    "Suggested Title": "SEO Services in Bangalore | SEO India Tech",
+    "Suggested H1": "SEO Services in Bangalore for Sustainable Organic Growth",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is SEO services in bangalore? | How does SEO services in bangalore work? | Who needs SEO services in bangalore? | What are the benefits of SEO services in bangalore? | How much does SEO services in bangalore cost? | How do I choose a provider for SEO services in bangalore?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/seo-services/seo-services-in-chennai",
+    "Page Type": "City SEO",
+    "Primary Keyword / Topic": "SEO services in chennai",
+    "Secondary Keywords": "SEO agency chennai, local SEO chennai, search engine optimization chennai, digital marketing chennai",
+    "Entities & Semantic Terms": "chennai, SEO agency, local search, Google Business Profile, SEO services",
+    "Search Intent": "Local commercial",
+    "Suggested Title": "SEO Services in Chennai | SEO India Tech",
+    "Suggested H1": "SEO Services in Chennai for Sustainable Organic Growth",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is SEO services in chennai? | How does SEO services in chennai work? | Who needs SEO services in chennai? | What are the benefits of SEO services in chennai? | How much does SEO services in chennai cost? | How do I choose a provider for SEO services in chennai?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/seo-services/seo-services-in-kolkata",
+    "Page Type": "City SEO",
+    "Primary Keyword / Topic": "SEO services in kolkata",
+    "Secondary Keywords": "SEO agency kolkata, local SEO kolkata, search engine optimization kolkata, digital marketing kolkata",
+    "Entities & Semantic Terms": "kolkata, SEO agency, local search, Google Business Profile, SEO services",
+    "Search Intent": "Local commercial",
+    "Suggested Title": "SEO Services in Kolkata | SEO India Tech",
+    "Suggested H1": "SEO Services in Kolkata for Sustainable Organic Growth",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is SEO services in kolkata? | How does SEO services in kolkata work? | Who needs SEO services in kolkata? | What are the benefits of SEO services in kolkata? | How much does SEO services in kolkata cost? | How do I choose a provider for SEO services in kolkata?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/seo-services/seo-services-in-gurgaon",
+    "Page Type": "City SEO",
+    "Primary Keyword / Topic": "SEO services in gurgaon",
+    "Secondary Keywords": "SEO agency gurgaon, local SEO gurgaon, search engine optimization gurgaon, digital marketing gurgaon",
+    "Entities & Semantic Terms": "gurgaon, SEO agency, local search, Google Business Profile, SEO services",
+    "Search Intent": "Local commercial",
+    "Suggested Title": "SEO Services in Gurgaon | SEO India Tech",
+    "Suggested H1": "SEO Services in Gurgaon for Sustainable Organic Growth",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is SEO services in gurgaon? | How does SEO services in gurgaon work? | Who needs SEO services in gurgaon? | What are the benefits of SEO services in gurgaon? | How much does SEO services in gurgaon cost? | How do I choose a provider for SEO services in gurgaon?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  }
+]
