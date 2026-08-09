@@ -4,6 +4,7 @@
  */
 import { BLOG_AUTHOR } from '../blogAuthor.js'
 import { getBlogCatalogEntry, PREMIUM_BLOG_SLUGS } from './blogCatalog.js'
+import { enrichTopicWithLinks } from './blogLinkEnricher.js'
 import {
   assembleLegacyBlocks,
   boldItem,
@@ -95,8 +96,9 @@ function buildTopicContent(entry) {
   const maps = TOPIC_CONTENT[entry.slug]
   if (!maps) return buildGenericContent(entry)
 
+  const enriched = enrichTopicWithLinks(entry, maps)
   const helpers = { p, pl, h2, h3, ul, ol, LINKS, link }
-  return sanitizeBlocks(assembleLegacyBlocks(entry, maps, helpers))
+  return sanitizeBlocks(assembleLegacyBlocks(entry, enriched, helpers))
 }
 
 function buildGenericContent(entry) {

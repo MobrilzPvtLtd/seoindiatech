@@ -13,6 +13,12 @@ export const BLOG_CATALOG = [
     primaryKeyword: 'SEO trends Europe 2026',
     serviceLinks: ['/services/seo', '/services/ai-seo', '/services/generative-engine-optimization'],
     industryLinks: ['/industries/realtor-seo', '/industries/dentist-seo', '/industries/hvac-seo'],
+    relatedBlogSlugs: [
+      'international-seo-guide-european-companies',
+      'ai-seo-vs-traditional-seo-2026',
+      'local-seo-checklist-multi-location-europe',
+      'google-ai-overviews-changing-business-seo',
+    ],
     image: '/images/blog/seo-trends-european-businesses-2026-hero.svg',
     datePublished: '2026-07-15',
   },

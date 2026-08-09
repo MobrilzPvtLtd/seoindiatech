@@ -13,26 +13,43 @@ const clientLogos = [
 /* Duplicate once for seamless CSS marquee - not 3x */
 const marqueeLogos = [...clientLogos, ...clientLogos]
 
+const stats = [
+  { v: '14+', l: 'Years' },
+  { v: '500+', l: 'Clients' },
+  { v: '4.9*', l: 'Rating' },
+  { v: '6', l: 'Continents' },
+]
+
 const TrustedBy = () => {
   return (
     <section className="relative pt-2 pb-12 md:pb-16 overflow-hidden bg-cream">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-8">
-        <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-between">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-muted">
-            Trusted by <span className="text-heading">500+ companies</span> worldwide
-          </p>
-          <div className="flex flex-wrap items-center justify-center gap-6 text-center sm:gap-8">
-            {[
-              { v: '14+', l: 'Years' },
-              { v: '500+', l: 'Clients' },
-              { v: '4.9*', l: 'Rating' },
-              { v: '6', l: 'Continents' },
-            ].map((s) => (
-              <div key={s.l}>
-                <p className="font-mono text-lg font-bold text-heading">{s.v}</p>
-                <p className="text-[10px] uppercase tracking-wider text-muted">{s.l}</p>
-              </div>
-            ))}
+        <div className="rounded-2xl border border-primary/15 bg-white/80 dark:bg-card/90 shadow-sm px-5 py-5 sm:px-8 sm:py-6">
+          <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+            <div className="flex items-center gap-3">
+              <span className="hidden sm:block h-10 w-1 shrink-0 rounded-full bg-primary" aria-hidden />
+              <p className="text-sm sm:text-base font-bold uppercase tracking-[0.14em] sm:tracking-[0.18em] text-heading leading-snug">
+                Trusted by{' '}
+                <span className="text-primary">500+ companies</span>{' '}
+                <span className="text-heading/80">worldwide</span>
+              </p>
+            </div>
+
+            <div className="grid grid-cols-4 gap-2 sm:gap-4 lg:gap-6">
+              {stats.map((s) => (
+                <div
+                  key={s.l}
+                  className="rounded-xl border border-border/80 bg-cream/60 dark:bg-secondary/20 px-2 py-3 sm:px-4 sm:py-3.5 text-center"
+                >
+                  <p className="font-mono text-xl sm:text-2xl font-extrabold text-primary tabular-nums leading-none">
+                    {s.v}
+                  </p>
+                  <p className="mt-1.5 text-[10px] sm:text-xs font-semibold uppercase tracking-wider text-heading/70">
+                    {s.l}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

@@ -51,6 +51,13 @@ export function assembleLegacyBlocks(entry, topic, helpers) {
   const { p, pl, h2, h3, ul, ol, pl: plink, LINKS, link } = helpers
   const blocks = [p(topic.intro), p(topic.overview)]
 
+  if (topic.internalLinkIntro) {
+    blocks.push({
+      type: 'paragraph',
+      html: topic.internalLinkIntro,
+    })
+  }
+
   blocks.push(...(topic.sections || []).flat())
 
   if (topic.mistakes?.length) {
@@ -89,6 +96,14 @@ export function assembleLegacyBlocks(entry, topic, helpers) {
       blocks.push(h3(ex.title))
       blocks.push(p(ex.body))
     })
+  }
+
+  if (topic.relatedListItems?.length) {
+    blocks.push(h2('Related Guides You May Find Helpful'))
+    blocks.push(
+      p('Continue your research with these connected articles from our blog:')
+    )
+    blocks.push(ul(topic.relatedListItems))
   }
 
   blocks.push(h2('Conclusion'))

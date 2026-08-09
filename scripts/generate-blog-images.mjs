@@ -7,6 +7,7 @@ import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
 import { BLOG_CATALOG } from '../utils/blog/premium/blogCatalog.js'
 import { getBlogImageData } from '../utils/blog/premium/buildPremiumBlogPost.js'
+import { premiumFeaturedHero } from './premium-blog-hero.mjs'
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..')
 const blogDir = join(root, 'public', 'images', 'blog')
@@ -485,7 +486,7 @@ BLOG_CATALOG.forEach((entry) => {
   const slug = entry.slug
   const heroName = `${slug}-hero.svg`
   const files = [
-    [heroName, () => heroSvg(slug, entry)],
+    [heroName, () => premiumFeaturedHero(slug, entry)],
     [`${slug}-stats.svg`, () => statsSvg(slug, entry)],
     [`${slug}-process.svg`, () => processSvg(slug, entry)],
     [`${slug}-comparison.svg`, () => comparisonSvg(slug, entry)],

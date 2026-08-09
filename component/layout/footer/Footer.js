@@ -54,7 +54,7 @@ const Footer = () => {
   ]
 
   const companyHighlights = [
-    { icon: Award, value: '14+ Years', label: 'Digital excellence' },
+    { icon: Award, value: '14+', label: 'Years of excellence' },
     { icon: Users, value: '500+', label: 'Global clients' },
     { icon: Globe, value: '12+', label: 'Countries served' },
   ]
@@ -74,37 +74,43 @@ const Footer = () => {
               and technology for measurable business outcomes.
             </p>
 
-            <div className="flex flex-wrap gap-2.5">
-              {socials.map(({ icon: Icon, href, label, external }) => (
-                <Link
-                  key={label}
-                  href={href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={label}
-                  className={`flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-white/60 transition-all duration-300 hover:border-accent/40 hover:text-accent hover:bg-white/10 hover:-translate-y-0.5 ${
-                    label === 'WhatsApp' ? 'hover:text-[#25D366] hover:border-[#25D366]/40' : ''
-                  }`}
-                  {...(external ? {} : {})}
-                >
-                  <Icon size={16} />
-                </Link>
-              ))}
+            <div className="space-y-3 max-w-sm">
+              <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-white/50">
+                Follow us
+              </p>
+              <div className="grid grid-cols-6 gap-2">
+                {socials.map(({ icon: Icon, href, label }) => (
+                  <Link
+                    key={label}
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={label}
+                    className={`flex aspect-square items-center justify-center rounded-xl border border-white/10 bg-white/[0.06] text-white/65 transition-all duration-300 hover:border-accent/45 hover:bg-white/10 hover:text-accent hover:-translate-y-0.5 ${
+                      label === 'WhatsApp' ? 'hover:text-[#25D366] hover:border-[#25D366]/45' : ''
+                    }`}
+                  >
+                    <Icon size={17} />
+                  </Link>
+                ))}
+              </div>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1">
+            <div className="grid grid-cols-3 gap-2.5 sm:gap-3 max-w-sm">
               {companyHighlights.map(({ icon: Icon, value, label }) => (
                 <div
                   key={label}
-                  className="flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.04] px-3 py-3"
+                  className="flex flex-col items-center rounded-xl border border-white/10 bg-white/[0.05] px-2 py-3.5 sm:px-3 sm:py-4 text-center"
                 >
-                  <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-primary/20 ring-1 ring-primary/25">
+                  <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-primary/25 ring-1 ring-primary/30">
                     <Icon className="h-4 w-4 text-accent" />
                   </div>
-                  <div className="min-w-0">
-                    <p className="font-mono text-sm font-bold leading-none text-white">{value}</p>
-                    <p className="mt-1 text-xs leading-snug text-white/70">{label}</p>
-                  </div>
+                  <p className="mt-2.5 font-mono text-base sm:text-lg font-bold leading-none text-white tabular-nums">
+                    {value}
+                  </p>
+                  <p className="mt-1.5 text-[10px] sm:text-[11px] leading-snug text-white/65 px-0.5">
+                    {label}
+                  </p>
                 </div>
               ))}
             </div>
