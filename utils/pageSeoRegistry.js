@@ -31,9 +31,9 @@ export const PAGE_SEO = {
       'Learn how SEO India Tech collects, uses, and protects your personal data when you use our website and digital marketing services.',
   },
   '/contact-us': {
-    title: 'Contact SEO India Tech | Free SEO Consultation',
+    title: 'Contact SEO India Tech | Free Consultation & Project Enquiry',
     description:
-      'Get in touch with SEO India Tech for AI-powered SEO, PPC, and digital marketing services. Book a free consultation with our experts today.',
+      'Contact SEO India Tech to book a free consultation, request a quote, or ask about our services. Reach our Noida team by phone, email, or the contact form.',
   },
   '/seo-packages': {
     title: 'SEO Packages & Pricing | SEO India Tech',

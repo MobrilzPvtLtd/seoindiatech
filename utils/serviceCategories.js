@@ -13,6 +13,7 @@ import {
   FaMousePointer,
   FaPencilRuler,
   FaGlobe,
+  FaCogs,
 } from 'react-icons/fa'
 
 export const serviceCategories = {
@@ -29,6 +30,18 @@ export const serviceCategories = {
           'Location-Based Keyword Targeting',
           'Google Maps Ranking Optimization',
           'Local Landing Page Optimization',
+        ],
+      },
+      {
+        title: 'Technical SEO',
+        slug: '/services/technical-seo',
+        icon: FaCogs,
+        description: 'Fix crawlability, indexation, site speed, and structured data so search engines can discover and rank your most important pages.',
+        features: [
+          'Technical SEO Audits',
+          'Core Web Vitals Optimization',
+          'Crawl & Indexation Fixes',
+          'Schema & Structured Data',
         ],
       },
       {
@@ -65,6 +78,18 @@ export const serviceCategories = {
           'Category & Collection SEO',
           'Product Schema Markup',
           'Site Speed & Technical Fixes',
+        ],
+      },
+      {
+        title: 'International SEO',
+        slug: '/services/international-seo',
+        icon: FaGlobe,
+        description: 'Expand organic visibility in USA, UK, Europe, Australia, and other export markets with hreflang-ready architecture, market-specific keyword strategy, and technical foundations for global search.',
+        features: [
+          'Multi-Country Keyword Research',
+          'Hreflang & International Site Structure',
+          'Market-Specific Landing Pages',
+          'Global Technical SEO Audits',
         ],
       },
       {

@@ -62,6 +62,9 @@ export function InternalLinksSection({ data }) {
 }
 
 export function SemanticTopicsSection({ data }) {
+  const topicPills = data.topics || []
+  const topicItems = data.items || []
+
   return (
     <PremiumSection id="topics" variant="cream" tight>
       <PremiumSectionHeader
@@ -72,16 +75,30 @@ export function SemanticTopicsSection({ data }) {
         className="mb-8"
       />
       <div className="mx-auto max-w-4xl">
-        <div className="flex flex-wrap justify-center gap-2">
-          {data.topics.map((topic) => (
-            <span
-              key={topic}
-              className="rounded-full border border-primary/15 bg-white px-4 py-2 text-sm font-medium text-heading/85 dark:bg-card"
-            >
-              {topic}
-            </span>
-          ))}
-        </div>
+        {topicItems.length > 0 ? (
+          <div className="grid gap-4 md:grid-cols-3">
+            {topicItems.map((item) => (
+              <article
+                key={item.title}
+                className="rounded-2xl border border-primary/15 bg-white p-5 dark:bg-card"
+              >
+                <h3 className="font-heading text-lg font-bold text-heading">{item.title}</h3>
+                <p className="premium-prose mt-3 text-sm">{item.description}</p>
+              </article>
+            ))}
+          </div>
+        ) : (
+          <div className="flex flex-wrap justify-center gap-2">
+            {topicPills.map((topic) => (
+              <span
+                key={topic}
+                className="rounded-full border border-primary/15 bg-white px-4 py-2 text-sm font-medium text-heading/85 dark:bg-card"
+              >
+                {topic}
+              </span>
+            ))}
+          </div>
+        )}
         {data.definition && (
           <aside className="mt-8 rounded-2xl border border-primary/20 bg-white p-6 dark:bg-card">
             <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-primary">Definition</p>

@@ -6,6 +6,28 @@ import { serviceCategories } from '../../serviceCategories'
 import { getHubInternalLinks } from '../../internalLinks'
 import { getServiceEntry, SERVICE_CATALOG } from './serviceCatalog'
 import { getHubAnswerFirst } from '../../seo/answerFirstContent.js'
+import { HUB_OVERRIDES } from './hubOverrides.js'
+
+function mergeHubContent(built, override) {
+  if (!override) return built
+  return {
+    ...built,
+    ...override,
+    seo: { ...built.seo, ...override.seo },
+    hero: { ...built.hero, ...override.hero },
+    editorial: override.editorial || built.editorial,
+    semanticTopics: override.semanticTopics || built.semanticTopics,
+    pillars: override.pillars || built.pillars,
+    faq: override.faq || built.faq,
+    internalLinks: override.internalLinks
+      ? {
+          ...built.internalLinks,
+          ...override.internalLinks,
+          links: override.internalLinks.links || built.internalLinks.links,
+        }
+      : built.internalLinks,
+  }
+}
 
 const HUB_HERO_IMAGES = {
   seo: '/images/services/heroes/hub-seo.svg',
@@ -71,7 +93,7 @@ export function getPremiumHubContent(hubSlug) {
 
   const faqBase = HUB_FAQ_MAP[hubSlug] || PAGE_FAQS.seoHub
 
-  return {
+  const built = {
     slug: hubSlug,
     name: hubName,
     path,
@@ -460,4 +482,6 @@ export function getPremiumHubContent(hubSlug) {
       childServices.map((service) => service.title)
     ),
   }
+
+  return mergeHubContent(built, HUB_OVERRIDES[hubSlug])
 }

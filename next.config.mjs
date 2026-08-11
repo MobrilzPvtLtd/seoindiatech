@@ -172,6 +172,14 @@ const nextConfig = {
 
       },
 
+      { source: '/locations/noida', destination: '/seo-services/seo-services-in-noida', permanent: true },
+
+      { source: '/locations/delhi', destination: '/seo-services/seo-services-in-delhi', permanent: true },
+
+      { source: '/services/woocommerce-seo', destination: '/services/e-commerce-seo', permanent: true },
+
+      { source: '/services/seo-web-design', destination: '/services/ui-ux-design', permanent: true },
+
     ]
 
   },

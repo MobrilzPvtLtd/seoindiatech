@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-08-11T08:07:28.557Z",
+  "generatedAt": "2026-08-11T07:58:38.264Z",
   "matrixStats": {
-    "totalRows": 747,
-    "uniqueSources": 113,
+    "totalRows": 735,
+    "uniqueSources": 111,
     "duplicatePairs": 42
   },
   "urlAlignment": {
     "liveCount": 115,
-    "excelCount": 115,
+    "excelCount": 113,
     "liveAndInExcel": [
       "/",
       "/blog",
@@ -105,7 +105,6 @@
       "/services/e-commerce-seo",
       "/services/gbp-optimization",
       "/services/generative-engine-optimization",
-      "/services/international-seo",
       "/services/local-seo-service",
       "/services/online-reputation-management",
       "/services/paid-advertising",
@@ -114,7 +113,6 @@
       "/services/small-business-seo",
       "/services/social-media-marketing",
       "/services/social-media-optimization",
-      "/services/technical-seo",
       "/services/ui-ux-design",
       "/solution/automation",
       "/solution/crm-and-tools",
@@ -125,13 +123,16 @@
       "/terms",
       "/who-we-are"
     ],
-    "liveNotInExcel": [],
+    "liveNotInExcel": [
+      "/services/international-seo",
+      "/services/technical-seo"
+    ],
     "inExcelNotLive": [],
     "alignmentPercent": 100
   },
   "summary": {
-    "total": 747,
-    "present": 745,
+    "total": 735,
+    "present": 733,
     "missing": 2,
     "invalid": 0,
     "coveragePercent": 100,
@@ -207,7 +208,9 @@
     "/seo-services/seo-services-in-pune",
     "/services/app-store-optimization",
     "/services/digital-branding",
+    "/services/international-seo",
     "/services/online-reputation-management",
+    "/services/technical-seo",
     "/solution/automation",
     "/solution/crm-and-tools",
     "/solution/market-research",
@@ -218,7 +221,7 @@
     "/who-we-are"
   ],
   "missingLinksCount": 2,
-  "presentLinksCount": 745,
+  "presentLinksCount": 733,
   "invalidLinksCount": 0,
   "missingLinks": [
     {
@@ -2488,20 +2491,6 @@
     },
     {
       "sourcePath": "/blog/international-seo-guide-european-companies",
-      "destinationPath": "/services/international-seo",
-      "recommendedAnchor": "international SEO services",
-      "sourceExists": true,
-      "destinationExists": true,
-      "linkExists": true,
-      "existingAnchor": "international SEO services",
-      "existingVia": "programmatic",
-      "matchedFiles": [],
-      "placement": "Contextual body",
-      "why": "Commercial service for guide readers",
-      "status": "present"
-    },
-    {
-      "sourcePath": "/blog/international-seo-guide-european-companies",
       "destinationPath": "/contact-us",
       "recommendedAnchor": "speak with our SEO team",
       "sourceExists": true,
@@ -2936,20 +2925,6 @@
     },
     {
       "sourcePath": "/blog/local-vs-national-vs-international-seo",
-      "destinationPath": "/services/international-seo",
-      "recommendedAnchor": "international SEO agency",
-      "sourceExists": true,
-      "destinationExists": true,
-      "linkExists": true,
-      "existingAnchor": "international SEO agency",
-      "existingVia": "programmatic",
-      "matchedFiles": [],
-      "placement": "Contextual body",
-      "why": "Commercial service for comparison readers",
-      "status": "present"
-    },
-    {
-      "sourcePath": "/blog/local-vs-national-vs-international-seo",
       "destinationPath": "/contact-us",
       "recommendedAnchor": "speak with our SEO team",
       "sourceExists": true,
@@ -3011,11 +2986,9 @@
       "sourceExists": true,
       "destinationExists": true,
       "linkExists": true,
-      "existingAnchor": "",
-      "existingVia": "source-scan",
-      "matchedFiles": [
-        "utils\\BlogPost.legacy.js"
-      ],
+      "existingAnchor": "local seo guide indian businesses 2026",
+      "existingVia": "programmatic",
+      "matchedFiles": [],
       "placement": "In-content related reading",
       "why": "Related article / topic cluster",
       "status": "present"
@@ -3676,20 +3649,6 @@
       "matchedFiles": [],
       "placement": "Contextual body",
       "why": "Technical/UX path",
-      "status": "present"
-    },
-    {
-      "sourcePath": "/blog/technical-seo-checklist-enterprise-websites",
-      "destinationPath": "/services/technical-seo",
-      "recommendedAnchor": "technical SEO services",
-      "sourceExists": true,
-      "destinationExists": true,
-      "linkExists": true,
-      "existingAnchor": "technical SEO services",
-      "existingVia": "programmatic",
-      "matchedFiles": [],
-      "placement": "Contextual body",
-      "why": "Commercial service for checklist readers",
       "status": "present"
     },
     {
@@ -10037,62 +9996,6 @@
       "status": "present"
     },
     {
-      "sourcePath": "/services/international-seo",
-      "destinationPath": "/services/seo",
-      "recommendedAnchor": "SEO services in India",
-      "sourceExists": true,
-      "destinationExists": true,
-      "linkExists": true,
-      "existingAnchor": "SEO services in India",
-      "existingVia": "programmatic",
-      "matchedFiles": [],
-      "placement": "Contextual body",
-      "why": "Primary commercial hub",
-      "status": "present"
-    },
-    {
-      "sourcePath": "/services/international-seo",
-      "destinationPath": "/blog/international-seo-guide-european-companies",
-      "recommendedAnchor": "international SEO guide",
-      "sourceExists": true,
-      "destinationExists": true,
-      "linkExists": true,
-      "existingAnchor": "international SEO guide",
-      "existingVia": "programmatic",
-      "matchedFiles": [],
-      "placement": "Related resources",
-      "why": "Supporting informational content",
-      "status": "present"
-    },
-    {
-      "sourcePath": "/services/international-seo",
-      "destinationPath": "/blog/local-vs-national-vs-international-seo",
-      "recommendedAnchor": "local vs international SEO",
-      "sourceExists": true,
-      "destinationExists": true,
-      "linkExists": true,
-      "existingAnchor": "local vs international SEO",
-      "existingVia": "programmatic",
-      "matchedFiles": [],
-      "placement": "Related resources",
-      "why": "Supporting informational content",
-      "status": "present"
-    },
-    {
-      "sourcePath": "/services/international-seo",
-      "destinationPath": "/contact-us",
-      "recommendedAnchor": "contact our SEO team",
-      "sourceExists": true,
-      "destinationExists": true,
-      "linkExists": true,
-      "existingAnchor": "contact our SEO team",
-      "existingVia": "programmatic",
-      "matchedFiles": [],
-      "placement": "CTA",
-      "why": "Conversion",
-      "status": "present"
-    },
-    {
       "sourcePath": "/services/local-seo-service",
       "destinationPath": "/services/seo",
       "recommendedAnchor": "SEO services",
@@ -10499,34 +10402,6 @@
       "status": "present"
     },
     {
-      "sourcePath": "/services/seo",
-      "destinationPath": "/services/technical-seo",
-      "recommendedAnchor": "technical SEO services",
-      "sourceExists": true,
-      "destinationExists": true,
-      "linkExists": true,
-      "existingAnchor": "technical SEO services",
-      "existingVia": "programmatic",
-      "matchedFiles": [],
-      "placement": "Related services / body",
-      "why": "Service-cluster topical relevance",
-      "status": "present"
-    },
-    {
-      "sourcePath": "/services/seo",
-      "destinationPath": "/services/international-seo",
-      "recommendedAnchor": "international SEO",
-      "sourceExists": true,
-      "destinationExists": true,
-      "linkExists": true,
-      "existingAnchor": "international SEO",
-      "existingVia": "programmatic",
-      "matchedFiles": [],
-      "placement": "Related services / body",
-      "why": "Service-cluster topical relevance",
-      "status": "present"
-    },
-    {
       "sourcePath": "/services/small-business-seo",
       "destinationPath": "/services/seo",
       "recommendedAnchor": "SEO services",
@@ -10762,48 +10637,6 @@
       "matchedFiles": [],
       "placement": "Related services / body",
       "why": "Service-cluster topical relevance",
-      "status": "present"
-    },
-    {
-      "sourcePath": "/services/technical-seo",
-      "destinationPath": "/services/seo",
-      "recommendedAnchor": "SEO services in India",
-      "sourceExists": true,
-      "destinationExists": true,
-      "linkExists": true,
-      "existingAnchor": "SEO services in India",
-      "existingVia": "programmatic",
-      "matchedFiles": [],
-      "placement": "Contextual body",
-      "why": "Primary commercial hub",
-      "status": "present"
-    },
-    {
-      "sourcePath": "/services/technical-seo",
-      "destinationPath": "/blog/technical-seo-checklist-enterprise-websites",
-      "recommendedAnchor": "technical SEO checklist",
-      "sourceExists": true,
-      "destinationExists": true,
-      "linkExists": true,
-      "existingAnchor": "technical SEO checklist",
-      "existingVia": "programmatic",
-      "matchedFiles": [],
-      "placement": "Related resources",
-      "why": "Supporting informational content",
-      "status": "present"
-    },
-    {
-      "sourcePath": "/services/technical-seo",
-      "destinationPath": "/contact-us",
-      "recommendedAnchor": "contact our SEO team",
-      "sourceExists": true,
-      "destinationExists": true,
-      "linkExists": true,
-      "existingAnchor": "contact our SEO team",
-      "existingVia": "programmatic",
-      "matchedFiles": [],
-      "placement": "CTA",
-      "why": "Conversion",
       "status": "present"
     },
     {

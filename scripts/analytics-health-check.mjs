@@ -60,11 +60,14 @@ if (
   fail('GTM container ID', 'Mismatch between gtmGa4Map.js, DeferredGtm.js and _document.js')
 }
 
-// No duplicate direct GA4 gtag
+// GA4 gtag.js — intentional direct load (deferred) alongside GTM
+const deferredGtm = read('component/tracking/DeferredGtm.js')
 const allSource = walk(join(root, 'component')).concat(walk(join(root, 'pages'))).map((f) => readFileSync(f, 'utf8')).join('\n')
 const gtagHits = (allSource.match(/gtag\s*\(/g) || []).length
 const ga4Direct = /G-[A-Z0-9]{6,}/.test(allSource) && !allSource.includes('// G-')
-if (gtagHits > 0 || ga4Direct) {
+if (deferredGtm.includes('injectGa4') && gtmMapSrc.includes('G-VMZHW0JYVN')) {
+  pass('GA4 gtag.js', 'Deferred gtag.js loads G-VMZHW0JYVN — disable duplicate GA4 Config tag in GTM UI if pageviews double-count')
+} else if (gtagHits > 0 || ga4Direct) {
   warn('Direct GA4', 'Direct gtag/GA4 ID found — verify no duplicate with GTM')
 } else {
   pass('No duplicate GA4', 'GA4 managed via GTM only (no direct gtag in components/pages)')
@@ -139,8 +142,10 @@ if (envExample.includes('NEXT_PUBLIC_GA4_MEASUREMENT_ID') && gtmMapSrc.includes(
   const hasIdInEnv = typeof process.env.NEXT_PUBLIC_GA4_MEASUREMENT_ID === 'string' && /^G-/.test(process.env.NEXT_PUBLIC_GA4_MEASUREMENT_ID)
   if (hasIdInEnv) {
     pass('GA4 Measurement ID', `Set via env: ${process.env.NEXT_PUBLIC_GA4_MEASUREMENT_ID}`)
+  } else if (gtmMapSrc.includes('G-VMZHW0JYVN')) {
+    pass('GA4 Measurement ID', 'Default in code: G-VMZHW0JYVN (override with NEXT_PUBLIC_GA4_MEASUREMENT_ID)')
   } else {
-    pass('GA4 Measurement ID', 'Env hook ready — set NEXT_PUBLIC_GA4_MEASUREMENT_ID in Netlify; map tags in GTM per public/gtm-data-layer-spec.json')
+    pass('GA4 Measurement ID', 'Env hook ready — set NEXT_PUBLIC_GA4_MEASUREMENT_ID in Netlify')
   }
 } else {
   warn('GA4 Measurement ID', 'GA4_MEASUREMENT_ID_REQUIRED')

@@ -17,7 +17,7 @@ export default function index() {
         name: 'CRM and Automation Tools',
         url: 'https://www.seoindiatech.com/solution/crm-and-tools',
         description:
-          'SEOIndiatech offers CRM & tools services in India, helping businesses streamline operations, enhance customer management, and boost overall productivity.',
+          'India CRM and SEO CRM system setup: manage leads, pipelines, and marketing workflows integrated with your SEO and digital marketing programs.',
         brand: {
           '@type': 'Organization',
           name: 'SEO India Tech',
@@ -94,8 +94,8 @@ export default function index() {
   return (
     <>
       <SeoHead
-        title="CRM & Tools Services India | SEO India Tech"
-        description="Streamline customer management and operations with CRM and automation tools. Boost productivity and sales pipeline visibility with SEO India Tech."
+        title="India CRM & SEO CRM System | CRM & Tools | SEO India Tech"
+        description="India CRM setup and SEO CRM systems to manage leads, pipelines, and marketing workflows. Integrate CRM with your SEO and digital marketing from SEO India Tech."
         path="/solution/crm-and-tools"
         schema={schemaData}
       />

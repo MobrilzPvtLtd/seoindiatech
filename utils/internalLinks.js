@@ -59,6 +59,21 @@ export const INTERNAL_LINK_CATALOG = [
     description: 'SEO content strategy, blogs, and topic clusters that attract qualified leads.',
   },
   {
+    href: '/services/e-commerce-seo',
+    title: 'E-Commerce SEO',
+    description: 'Product and category page optimization for WooCommerce and online stores.',
+  },
+  {
+    href: '/services/technical-seo',
+    title: 'Technical SEO Services',
+    description: 'Crawlability, Core Web Vitals, indexation, and structured data for reliable rankings.',
+  },
+  {
+    href: '/services/international-seo',
+    title: 'International SEO',
+    description: 'Global SEO for Indian businesses targeting USA, UK, Europe, and export markets.',
+  },
+  {
     href: '/services/ppc-advertising',
     title: 'PPC Advertising',
     description: 'High-intent paid campaigns aligned with organic landing pages.',
@@ -310,7 +325,24 @@ export function getServiceInternalLinks(serviceSlug) {
 export function getHubInternalLinks(hubSlug) {
   const sourcePath = `/services/${hubSlug}`
   const limit = getPageLinkLimit(sourcePath)
+  const seoHubExtras =
+    hubSlug === 'seo'
+      ? resolveHrefs([
+          '/services/technical-seo',
+          '/services/local-seo-service',
+          '/services/international-seo',
+          '/services/e-commerce-seo',
+          '/services/content-marketing',
+          '/services/ai-seo',
+          '/seo-services/seo-services-in-delhi',
+          '/seo-services/seo-services-in-noida',
+          '/industries',
+          '/industries/wineries-seo',
+          '/industries/optometrist-seo',
+        ])
+      : []
   const base = dedupeLinks([
+    ...seoHubExtras,
     ...resolveHrefs(['/services/seo', '/services/digital-marketing', '/services/local-seo-service', '/services/ai-seo']),
     linkFromHref('/industries'),
     linkFromHref('/blog'),

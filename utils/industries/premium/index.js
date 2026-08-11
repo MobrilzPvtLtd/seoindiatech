@@ -2,9 +2,11 @@ import { buildCatalogEntries } from '../catalog'
 import { getIndustryProfile } from '../profiles'
 import { buildPremiumContent } from './buildPremiumContent'
 import { plasticSurgeryPremium } from './plasticSurgery'
+import { KEYWORD_INDUSTRY_OVERRIDES } from './keywordIndustryOverrides'
 
 const OVERRIDES = {
   'plastic-surgery-seo': plasticSurgeryPremium,
+  ...KEYWORD_INDUSTRY_OVERRIDES,
 }
 
 const catalog = buildCatalogEntries()
@@ -25,15 +27,8 @@ function mergePremiumContent(built, override) {
     editorial: override.editorial || built.editorial,
     keyTakeaways: override.keyTakeaways || built.keyTakeaways,
     internalLinks: override.internalLinks || built.internalLinks,
-    whyChoose: override.whyChoose || built.whyChoose,
-    services: override.services || built.services,
-    pillars: override.pillars || built.pillars,
-    audiences: override.audiences || built.audiences,
-    process: override.process || built.process,
-    comparison: override.comparison || built.comparison,
-    results: override.results || built.results,
-    caseStudy: override.caseStudy || built.caseStudy,
     relatedIndustries: override.relatedIndustries || built.relatedIndustries,
+    semanticTopics: override.semanticTopics || built.semanticTopics,
     toolsTrust: override.toolsTrust || built.toolsTrust,
     testimonials: override.testimonials || built.testimonials,
     faq: override.faq || built.faq,

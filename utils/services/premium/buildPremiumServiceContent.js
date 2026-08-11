@@ -11,6 +11,8 @@ const SERVICE_HERO_BG = {
   'ai-seo': '/images/services/heroes/ai-seo.svg',
   'small-business-seo': '/images/services/heroes/small-business-seo.svg',
   'e-commerce-seo': '/images/services/heroes/e-commerce-seo.svg',
+  'international-seo': '/images/services/heroes/e-commerce-seo.svg',
+  'technical-seo': '/images/blog/technical-seo-checklist-enterprise-websites-hero.svg',
   'app-store-optimization': '/images/services/heroes/app-store-optimization.svg',
   'gbp-optimization': '/images/services/heroes/gbp-optimization.svg',
   'generative-engine-optimization': '/images/services/heroes/generative-engine-optimization.svg',

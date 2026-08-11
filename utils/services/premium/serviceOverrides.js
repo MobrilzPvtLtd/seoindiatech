@@ -4,9 +4,9 @@
 
 export const localSeoPremium = {
   seo: {
-    title: 'Local SEO Services India | Map Pack & GBP Experts | SEO India Tech',
+    title: 'Local SEO India | Local SEO Services in India | SEO India Tech',
     description:
-      'Dominate local search and Google Maps with expert local SEO services. Citations, GBP optimization, review strategy, and geo pages. Free audit. 14+ years experience.',
+      'Local SEO services in India for map pack visibility, Google Business Profile optimization, citations, and geo pages. Work with a local SEO agency in India. Free audit.',
   },
   hero: {
     h1: 'Local SEO Services That Put You in the Map Pack',
@@ -119,7 +119,7 @@ export const contentMarketingPremium = {
   seo: {
     title: 'Content Marketing Services India | SEO Content Agency | SEO India Tech',
     description:
-      'Strategic content marketing: blogs, service pages, case studies, and AI-ready content. SEO-optimized, conversion-focused. Free content audit.',
+      'Content marketing services in India: blogs, service pages, case studies, and AI-ready content. SEO-optimized, conversion-focused strategy from SEO India Tech. Free content audit.',
   },
   hero: {
     h1: 'Content Marketing Services That Rank, Educate, and Convert',
@@ -164,6 +164,11 @@ export const smallBusinessSeoPremium = {
 }
 
 export const ecommerceSeoPremium = {
+  seo: {
+    title: 'WooCommerce SEO Agency in India | E-Commerce SEO | SEO India Tech',
+    description:
+      'WooCommerce and e-commerce SEO in India: product pages, category optimization, technical fixes, and schema. Grow organic revenue for online stores. Free audit.',
+  },
   ...overrideHero(
     'E-Commerce SEO for Product Visibility and Revenue Growth',
     [
@@ -262,6 +267,11 @@ export const payPerClickPremium = {
 }
 
 export const uiUxPremium = {
+  seo: {
+    title: 'SEO Website Design Company in India | Web Design SEO | SEO India Tech',
+    description:
+      'SEO-friendly website design in India: fast, mobile-first UI/UX that supports Core Web Vitals, conversions, and organic visibility. Web design SEO company for growth-focused brands.',
+  },
   ...overrideHero(
     'UI/UX Design That Converts Visitors Into Leads',
     [
@@ -273,6 +283,11 @@ export const uiUxPremium = {
 }
 
 export const socialMediaMarketingPremium = {
+  seo: {
+    title: 'Social Media Marketing in India | SMM Services | SEO India Tech',
+    description:
+      'Social media marketing services in India across Instagram, Facebook, LinkedIn, and YouTube. Content, paid social, and reporting tied to leads and revenue. Free consultation.',
+  },
   ...overrideHero(
     'Social Media Marketing for Brand Growth and Conversions',
     [
@@ -281,6 +296,62 @@ export const socialMediaMarketingPremium = {
     ],
     '/images/services/heroes/social-media-marketing.svg'
   ),
+}
+
+export const technicalSeoPremium = {
+  seo: {
+    title: 'Technical SEO Services in India | Technical SEO Company | SEO India Tech',
+    description:
+      'Technical SEO services in India: audits, crawlability, Core Web Vitals, indexation, and structured data from a technical SEO agency focused on measurable fixes. Free audit.',
+  },
+  hero: {
+    h1: 'Technical SEO Services That Fix What Blocks Rankings',
+    paragraphs: [
+      'Technical SEO is the foundation every other SEO program depends on. If crawlers cannot access your pages, if Core Web Vitals fail, or if duplicate URLs dilute authority, content and links will not deliver reliable growth.',
+      'SEO India Tech provides technical SEO services in India for marketing sites, e-commerce stores, and multi-location brands—prioritising fixes that unblock indexation, speed, and structured data before scaling content or link building.',
+    ],
+    backgroundImage: '/images/blog/technical-seo-checklist-enterprise-websites-hero.svg',
+    backgroundImageMobile: '/images/hero-mobile.webp',
+  },
+  keyTakeaways: {
+    badge: 'Key Takeaways',
+    title: 'What Businesses Should Know About Technical SEO',
+    items: [
+      'Crawl and indexation issues often hide behind good-looking designs—audits surface what Google actually sees.',
+      'Core Web Vitals affect both rankings and conversions; technical SEO and UX work together.',
+      'Canonical tags, redirects, and URL parameters must be managed to avoid duplicate content.',
+      'Schema and structured data help search engines understand services, products, and FAQs.',
+      'Technical fixes should be tracked in Search Console and analytics, not assumed from checklists alone.',
+    ],
+  },
+}
+
+export const internationalSeoPremium = {
+  seo: {
+    title: 'International SEO Agency India | Global SEO Services | SEO India Tech',
+    description:
+      'International SEO agency in India for businesses targeting USA, UK, Europe, and export markets. Hreflang, market strategy, and technical SEO for global growth.',
+  },
+  hero: {
+    h1: 'International SEO for Indian Businesses Going Global',
+    paragraphs: [
+      'International SEO helps Indian brands rank in overseas markets where buyers search for products and services. We build hreflang-ready site structures, country-specific keyword plans, and technical foundations so each market can be discovered independently.',
+      'SEO India Tech acts as an SEO firm in India for global businesses—aligning content, technical SEO, and reporting across regions without duplicating doorway pages or thin geo clones.',
+    ],
+    backgroundImage: '/images/services/heroes/e-commerce-seo.svg',
+    backgroundImageMobile: '/images/hero-mobile.webp',
+  },
+  keyTakeaways: {
+    badge: 'Key Takeaways',
+    title: 'What Businesses Should Know About International SEO',
+    items: [
+      'Each target country needs distinct keyword research—not translated copies of Indian pages.',
+      'Hreflang and URL structure prevent cross-market cannibalization in Google.',
+      'Technical health (speed, crawl, indexation) must be solid before scaling internationally.',
+      'Local backlinks and trust signals vary by market; strategy should adapt per region.',
+      'Reporting should separate traffic and conversions by country or language.',
+    ],
+  },
 }
 
 export const SERVICE_OVERRIDES = {
@@ -300,4 +371,6 @@ export const SERVICE_OVERRIDES = {
   'pay-per-click': payPerClickPremium,
   'ui-ux-design': uiUxPremium,
   'social-media-marketing': socialMediaMarketingPremium,
+  'international-seo': internationalSeoPremium,
+  'technical-seo': technicalSeoPremium,
 }

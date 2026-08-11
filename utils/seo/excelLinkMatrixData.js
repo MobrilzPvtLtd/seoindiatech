@@ -1145,30 +1145,6 @@ export const matrixRows = [
     "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
   },
   {
-    "Source URL": "https://www.seoindiatech.com/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
-    "Destination URL": "https://www.seoindiatech.com/services/seo",
-    "Anchor Text": "SEO services",
-    "Why This Link": "Primary commercial hub",
-    "Recommended Placement": "Contextual body",
-    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
-  },
-  {
-    "Source URL": "https://www.seoindiatech.com/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
-    "Destination URL": "https://www.seoindiatech.com/contact-us",
-    "Anchor Text": "speak with our SEO team",
-    "Why This Link": "Conversion",
-    "Recommended Placement": "CTA",
-    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
-  },
-  {
-    "Source URL": "https://www.seoindiatech.com/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
-    "Destination URL": "https://www.seoindiatech.com/seo-packages",
-    "Anchor Text": "SEO packages",
-    "Why This Link": "Commercial investigation",
-    "Recommended Placement": "Contextual/CTA",
-    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
-  },
-  {
     "Source URL": "https://www.seoindiatech.com/blog/local-seo-guide-indian-businesses-2026",
     "Destination URL": "https://www.seoindiatech.com/services/seo",
     "Anchor Text": "SEO services",
@@ -3138,8 +3114,8 @@ export const matrixRows = [
   },
   {
     "Source URL": "https://www.seoindiatech.com/blog/google-ai-overviews-changing-business-seo",
-    "Destination URL": "https://www.seoindiatech.com/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
-    "Anchor Text": "google core update may 2026 seo content strategy agentic ai",
+    "Destination URL": "https://www.seoindiatech.com/blog/google-ai-overviews-changing-business-seo",
+    "Anchor Text": "how Google AI Overviews affect SEO",
     "Why This Link": "Related article / topic cluster",
     "Recommended Placement": "In-content related reading",
     "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
@@ -3482,8 +3458,8 @@ export const matrixRows = [
   },
   {
     "Source URL": "https://www.seoindiatech.com/blog/chatgpt-seo-ai-search-organic-traffic",
-    "Destination URL": "https://www.seoindiatech.com/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
-    "Anchor Text": "google core update may 2026 seo content strategy agentic ai",
+    "Destination URL": "https://www.seoindiatech.com/blog/google-ai-overviews-changing-business-seo",
+    "Anchor Text": "how Google AI Overviews affect SEO",
     "Why This Link": "Related article / topic cluster",
     "Recommended Placement": "In-content related reading",
     "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
@@ -3602,8 +3578,8 @@ export const matrixRows = [
   },
   {
     "Source URL": "https://www.seoindiatech.com/blog/content-marketing-strategy-qualified-leads",
-    "Destination URL": "https://www.seoindiatech.com/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
-    "Anchor Text": "google core update may 2026 seo content strategy agentic ai",
+    "Destination URL": "https://www.seoindiatech.com/blog/google-ai-overviews-changing-business-seo",
+    "Anchor Text": "how Google AI Overviews affect SEO",
     "Why This Link": "Related article / topic cluster",
     "Recommended Placement": "In-content related reading",
     "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
@@ -3714,8 +3690,8 @@ export const matrixRows = [
   },
   {
     "Source URL": "https://www.seoindiatech.com/blog/how-google-ai-overviews-are-changing-seo",
-    "Destination URL": "https://www.seoindiatech.com/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
-    "Anchor Text": "google core update may 2026 seo content strategy agentic ai",
+    "Destination URL": "https://www.seoindiatech.com/blog/google-ai-overviews-changing-business-seo",
+    "Anchor Text": "how Google AI Overviews affect SEO",
     "Why This Link": "Related article / topic cluster",
     "Recommended Placement": "In-content related reading",
     "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
@@ -3788,62 +3764,6 @@ export const matrixRows = [
     "Source URL": "https://www.seoindiatech.com/blog/youtube-business-marketing-2026",
     "Destination URL": "https://www.seoindiatech.com/blog/google-ai-overviews-changing-business-seo",
     "Anchor Text": "google ai overviews changing business seo",
-    "Why This Link": "Related article / topic cluster",
-    "Recommended Placement": "In-content related reading",
-    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
-  },
-  {
-    "Source URL": "https://www.seoindiatech.com/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
-    "Destination URL": "https://www.seoindiatech.com/services/ai-seo",
-    "Anchor Text": "AI SEO services",
-    "Why This Link": "AI-search topic cluster",
-    "Recommended Placement": "Contextual body",
-    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
-  },
-  {
-    "Source URL": "https://www.seoindiatech.com/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
-    "Destination URL": "https://www.seoindiatech.com/services/answer-engine-optimization",
-    "Anchor Text": "answer engine optimization",
-    "Why This Link": "AI-search topic cluster",
-    "Recommended Placement": "Contextual body",
-    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
-  },
-  {
-    "Source URL": "https://www.seoindiatech.com/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
-    "Destination URL": "https://www.seoindiatech.com/services/generative-engine-optimization",
-    "Anchor Text": "generative engine optimization",
-    "Why This Link": "AI-search topic cluster",
-    "Recommended Placement": "Contextual body",
-    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
-  },
-  {
-    "Source URL": "https://www.seoindiatech.com/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
-    "Destination URL": "https://www.seoindiatech.com/services/content-marketing",
-    "Anchor Text": "content marketing services",
-    "Why This Link": "Content cluster",
-    "Recommended Placement": "Contextual body",
-    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
-  },
-  {
-    "Source URL": "https://www.seoindiatech.com/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
-    "Destination URL": "https://www.seoindiatech.com/blog/how-google-ai-overviews-are-changing-seo",
-    "Anchor Text": "how google ai overviews are changing seo",
-    "Why This Link": "Related article / topic cluster",
-    "Recommended Placement": "In-content related reading",
-    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
-  },
-  {
-    "Source URL": "https://www.seoindiatech.com/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
-    "Destination URL": "https://www.seoindiatech.com/blog/google-ai-overviews-changing-business-seo",
-    "Anchor Text": "google ai overviews changing business seo",
-    "Why This Link": "Related article / topic cluster",
-    "Recommended Placement": "In-content related reading",
-    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
-  },
-  {
-    "Source URL": "https://www.seoindiatech.com/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
-    "Destination URL": "https://www.seoindiatech.com/blog/what-is-ai-seo-why-business-needs-it",
-    "Anchor Text": "what is ai seo why business needs it",
     "Why This Link": "Related article / topic cluster",
     "Recommended Placement": "In-content related reading",
     "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
@@ -5959,6 +5879,102 @@ export const matrixRows = [
     "Why This Link": "Commercial investigation",
     "Recommended Placement": "Homepage CTA",
     "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/seo",
+    "Destination URL": "https://www.seoindiatech.com/services/technical-seo",
+    "Anchor Text": "technical SEO services",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/seo",
+    "Destination URL": "https://www.seoindiatech.com/services/international-seo",
+    "Anchor Text": "international SEO",
+    "Why This Link": "Service-cluster topical relevance",
+    "Recommended Placement": "Related services / body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/technical-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services in India",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/technical-seo",
+    "Destination URL": "https://www.seoindiatech.com/blog/technical-seo-checklist-enterprise-websites",
+    "Anchor Text": "technical SEO checklist",
+    "Why This Link": "Supporting informational content",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/technical-seo",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/international-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/seo",
+    "Anchor Text": "SEO services in India",
+    "Why This Link": "Primary commercial hub",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/international-seo",
+    "Destination URL": "https://www.seoindiatech.com/blog/international-seo-guide-european-companies",
+    "Anchor Text": "international SEO guide",
+    "Why This Link": "Supporting informational content",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/international-seo",
+    "Destination URL": "https://www.seoindiatech.com/blog/local-vs-national-vs-international-seo",
+    "Anchor Text": "local vs international SEO",
+    "Why This Link": "Supporting informational content",
+    "Recommended Placement": "Related resources",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/services/international-seo",
+    "Destination URL": "https://www.seoindiatech.com/contact-us",
+    "Anchor Text": "contact our SEO team",
+    "Why This Link": "Conversion",
+    "Recommended Placement": "CTA",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/technical-seo-checklist-enterprise-websites",
+    "Destination URL": "https://www.seoindiatech.com/services/technical-seo",
+    "Anchor Text": "technical SEO services",
+    "Why This Link": "Commercial service for checklist readers",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/international-seo-guide-european-companies",
+    "Destination URL": "https://www.seoindiatech.com/services/international-seo",
+    "Anchor Text": "international SEO services",
+    "Why This Link": "Commercial service for guide readers",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
+  },
+  {
+    "Source URL": "https://www.seoindiatech.com/blog/local-vs-national-vs-international-seo",
+    "Destination URL": "https://www.seoindiatech.com/services/international-seo",
+    "Anchor Text": "international SEO agency",
+    "Why This Link": "Commercial service for comparison readers",
+    "Recommended Placement": "Contextual body",
+    "Anchor Rule": "Use natural partial-match/brand/context anchors; rotate variants; never force exact-match keywords where they read unnaturally."
   }
 ]
 
@@ -6800,21 +6816,6 @@ export const pageMasterRows = [
     "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
     "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
     "Answer-Style Query Set": "What is youtube business marketing 2026? | How does youtube business marketing 2026 work? | Who needs youtube business marketing 2026? | What are the benefits of youtube business marketing 2026? | How much does youtube business marketing 2026 cost? | How do I choose a provider for youtube business marketing 2026?",
-    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
-    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
-  },
-  {
-    "URL": "https://www.seoindiatech.com/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
-    "Page Type": "Blog",
-    "Primary Keyword / Topic": "google core update may 2026 seo content strategy agentic ai",
-    "Secondary Keywords": "people-first content, E-E-A-T, topical authority, content strategy, link building",
-    "Entities & Semantic Terms": "SEO India Tech, Google Search, SEO, AI search, organic traffic",
-    "Search Intent": "Informational / commercial investigation",
-    "Suggested Title": "Google Core Update May 2026 Seo Content Strategy Agentic Ai | SEO India Tech",
-    "Suggested H1": "Google Core Update May 2026 Seo Content Strategy Agentic Ai",
-    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
-    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
-    "Answer-Style Query Set": "What is google core update may 2026 seo content strategy agentic ai? | How does google core update may 2026 seo content strategy agentic ai work? | Who needs google core update may 2026 seo content strategy agentic ai? | What are the benefits of google core update may 2026 seo content strategy agentic ai? | How much does google core update may 2026 seo content strategy agentic ai cost? | How do I choose a provider for google core update may 2026 seo content strategy agentic ai?",
     "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
     "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
   },
@@ -7670,6 +7671,36 @@ export const pageMasterRows = [
     "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
     "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
     "Answer-Style Query Set": "What is SEO services in gurgaon? | How does SEO services in gurgaon work? | Who needs SEO services in gurgaon? | What are the benefits of SEO services in gurgaon? | How much does SEO services in gurgaon cost? | How do I choose a provider for SEO services in gurgaon?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/services/technical-seo",
+    "Page Type": "Service",
+    "Primary Keyword / Topic": "technical SEO services india",
+    "Secondary Keywords": "technical SEO company, crawl audits, Core Web Vitals, indexation, structured data",
+    "Entities & Semantic Terms": "technical SEO services india, SEO India Tech, search optimization, digital marketing",
+    "Search Intent": "Commercial service",
+    "Suggested Title": "Technical SEO Services in India | SEO India Tech",
+    "Suggested H1": "Technical SEO Services That Fix What Blocks Rankings",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is technical SEO services india? | How does technical SEO services india work? | Who needs technical SEO services india? | What are the benefits of technical SEO services india? | How do I choose a provider for technical SEO services india?",
+    "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
+    "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
+  },
+  {
+    "URL": "https://www.seoindiatech.com/services/international-seo",
+    "Page Type": "Service",
+    "Primary Keyword / Topic": "international SEO services india",
+    "Secondary Keywords": "global SEO, hreflang, export markets, multi-country SEO",
+    "Entities & Semantic Terms": "international SEO services india, SEO India Tech, search optimization, digital marketing",
+    "Search Intent": "Commercial service",
+    "Suggested Title": "International SEO Agency India | SEO India Tech",
+    "Suggested H1": "International SEO for Export and Global Growth",
+    "Keyword Placement Plan": "Title: primary intent; H1: same topic naturally; first 100 words: primary + one variant; H2/H3: subtopics/entities; body: semantic terms; internal links: descriptive partial-match anchors; image ALT: only when accurate; FAQ: genuine user questions; CTA: commercial intent.",
+    "LLM / AI Search Optimization": "Answer-first opening; clear H2/H3 hierarchy; concise definitions; lists/tables where useful; specific examples; evidence/source links for factual claims; author/expertise context; strong internal links to supporting pages; keep key facts in crawlable HTML.",
+    "Answer-Style Query Set": "What is international SEO services india? | How does international SEO services india work? | Who needs international SEO services india? | What are the benefits of international SEO services india? | How do I choose a provider for international SEO services india?",
     "E-E-A-T / Trust Plan": "Show who created/reviewed the page, relevant experience, evidence, transparent claims, About/Contact links, and accurate sources.",
     "Conversion Plan": "Primary CTA to contact/consultation; secondary CTA to relevant service/package/resource; avoid aggressive repeated CTAs."
   }

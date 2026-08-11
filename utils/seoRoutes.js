@@ -21,6 +21,8 @@ const STATIC_ROUTES = [
   '/services/content-marketing',
   '/services/digital-branding',
   '/services/e-commerce-seo',
+  '/services/international-seo',
+  '/services/technical-seo',
   '/services/gbp-optimization',
   '/services/generative-engine-optimization',
   '/services/local-seo-service',

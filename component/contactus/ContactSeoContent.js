@@ -4,6 +4,8 @@ import VisibleFaq from '@/component/common/VisibleFaq'
 import { PAGE_FAQS } from '@/utils/pageFaqs'
 
 const services = [
+  { label: 'SEO Services India', href: '/services/seo' },
+  { label: 'Technical SEO', href: '/services/technical-seo' },
   { label: 'AI SEO Services', href: '/services/ai-seo' },
   { label: 'Local SEO', href: '/services/local-seo-service' },
   { label: 'PPC Advertising', href: '/services/ppc-advertising' },
@@ -29,13 +31,24 @@ export default function ContactSeoContent() {
           <div className="grid md:grid-cols-2 gap-12 items-start">
             <div>
               <h2 className="text-2xl md:text-3xl font-bold text-heading mb-5">
-                Talk to India&apos;s AI-Powered SEO &amp; Digital Marketing Experts
+                Contact SEO India Tech for a Free Consultation
               </h2>
               <p className="text-muted leading-relaxed mb-4">
-                SEO India Tech is a full-service digital growth agency based in Noida, serving businesses across India and worldwide. Whether you need SEO, PPC, content marketing, or a complete digital strategy, our team delivers measurable results with transparent weekly reporting.
+                SEO India Tech is a full-service digital growth agency based in Noida, serving businesses across India and worldwide. Use this page to book a consultation, request a quote, or ask about a specific project.
+              </p>
+              <p className="text-muted leading-relaxed mb-4">
+                For our primary{' '}
+                <Link href="/services/seo" className="text-primary hover:underline font-medium">
+                  SEO services in India
+                </Link>
+                , including technical SEO, content, and local programs, visit the SEO services hub—not this contact page.
               </p>
               <p className="text-muted leading-relaxed mb-6">
-                With 14+ years of experience and 500+ clients served, we help local businesses, e-commerce brands, SaaS companies, and enterprises turn search visibility into real revenue. Book a free consultation and get a clear roadmap with timelines, KPIs, and the right mix of services for your goals.
+                Book a free consultation for timelines, deliverables, and the right mix of services for your goals. For service details and pricing context, see our{' '}
+                <Link href="/seo-packages" className="text-primary hover:underline font-medium">
+                  SEO packages
+                </Link>
+                {' '}page or the SEO services hub linked above.
               </p>
               <ul className="space-y-3">
                 {[

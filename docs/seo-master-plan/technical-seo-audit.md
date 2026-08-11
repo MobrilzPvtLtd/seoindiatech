@@ -1,9 +1,9 @@
 # Technical SEO Audit — Phase 7
 
-Generated: 2026-08-09
+Generated: 2026-08-11
 
-**Live URLs audited:** 113  
-**Sitemap URLs:** 113  
+**Live URLs audited:** 115  
+**Sitemap URLs:** 115  
 **Open issues:** 1  
 **Fixed in Phase 7:** 5
 
@@ -20,7 +20,7 @@ Generated: 2026-08-09
 
 | Check | Status |
 |-------|--------|
-| Important pages in sitemap | 113 URLs |
+| Important pages in sitemap | 115 URLs |
 | /new, /old not in sitemap | PASS |
 | /api/ blocked in robots | PASS |
 | Missing blog (Excel only) not in sitemap | PASS |
@@ -73,8 +73,8 @@ Generated: 2026-08-09
 | Depth | Page count |
 |-------|------------|
 | 0 | 1 |
-| 1 | 42 |
-| 2 | 70 |
+| 1 | 46 |
+| 2 | 68 |
 | 3 | 0 |
 | 4+ | 0 |
 | Unreachable | 0 |
@@ -95,9 +95,7 @@ Pages with ≤1 detected inbound link (code scan heuristic):
 | /blog/ecommerce-seo-checklist-india | Blog | 1 | 2 | no |
 | /blog/geo-generative-engine-optimization-guide | Blog | 1 | 2 | no |
 | /blog/google-ai-overviews-changing-business-seo | Blog | 1 | 2 | no |
-| /blog/google-business-profile-optimization-guide | Blog | 1 | 2 | no |
 | /blog/how-google-ai-overviews-are-changing-seo | Blog | 1 | 2 | no |
-| /blog/how-to-choose-best-seo-agency-india | Blog | 1 | 2 | no |
 | /blog/international-seo-guide-european-companies | Blog | 1 | 2 | no |
 | /blog/link-building-guide-2026 | Blog | 1 | 2 | yes |
 | /blog/local-seo-checklist-multi-location-europe | Blog | 1 | 2 | no |
@@ -125,8 +123,10 @@ Pages with ≤1 detected inbound link (code scan heuristic):
 | /industries/dentist-seo | Industry | 1 | 2 | yes |
 | /industries/doctor-physician-seo | Industry | 1 | 2 | yes |
 | /industries/dry-cleaner-seo | Industry | 1 | 2 | yes |
+| /industries/fence-installer-seo | Industry | 1 | 2 | yes |
+| /industries/fertility-clinic-seo | Industry | 1 | 2 | yes |
 
-*…and 47 more — see JSON report*
+*…and 43 more — see JSON report*
 
 
 ## Core Web Vitals (Code Review)

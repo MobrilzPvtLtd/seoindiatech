@@ -1,8 +1,8 @@
 {
   "version": "1.0",
   "gtm_container_id": "GTM-5TS8QJRM",
-  "ga4_measurement_id": "GA4_MEASUREMENT_ID_REQUIRED",
-  "setup": "Import this spec when configuring GTM tags. Set NEXT_PUBLIC_GA4_MEASUREMENT_ID in Netlify env.",
+  "ga4_measurement_id": "G-VMZHW0JYVN",
+  "setup": "GA4 loads via deferred gtag.js in DeferredGtm.js. Disable duplicate GA4 Configuration tags in GTM if pageviews double-count.",
   "events": [
     {
       "dataLayerEvent": "analytics_config",

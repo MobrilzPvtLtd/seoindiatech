@@ -23,6 +23,8 @@
     "seo:analytics-health": "node scripts/analytics-health-check.mjs",
     "seo:performance-audit": "node scripts/seo-performance-audit.mjs",
     "seo:build-matrix": "node scripts/build-excel-matrix-data.mjs",
+    "seo:keyword-architecture": "node scripts/keyword-architecture-audit.mjs",
+    "seo:post-deploy": "node scripts/post-deploy-live-validation.mjs",
     "push-indexing": "node scripts/push-indexing.mjs"
   },
   "dependencies": {

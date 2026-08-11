@@ -6,6 +6,9 @@
 
 export const GTM_CONTAINER_ID = 'GTM-5TS8QJRM'
 
+/** Default GA4 property — override with NEXT_PUBLIC_GA4_MEASUREMENT_ID in production env. */
+export const GA4_MEASUREMENT_ID = 'G-VMZHW0JYVN'
+
 /** @type {{ dataLayerEvent: string, ga4EventName: string, isConversion: boolean, parameters: string[] }[]} */
 export const GTM_GA4_EVENT_MAP = [
   {
@@ -76,7 +79,7 @@ export function getGa4MeasurementId() {
     const id = process.env.NEXT_PUBLIC_GA4_MEASUREMENT_ID.trim()
     if (id && id.startsWith('G-')) return id
   }
-  return null
+  return GA4_MEASUREMENT_ID
 }
 
 export function getGtmContainerId() {
@@ -95,7 +98,7 @@ export function pushAnalyticsConfig() {
   window.dataLayer.push({
     event: 'analytics_config',
     gtm_container_id: GTM_CONTAINER_ID,
-    ga4_measurement_id: ga4Id || 'GA4_MEASUREMENT_ID_REQUIRED',
+    ga4_measurement_id: ga4Id,
     ga4_events: GTM_GA4_EVENT_MAP.map((e) => e.dataLayerEvent),
     ga4_conversions: GTM_GA4_EVENT_MAP.filter((e) => e.isConversion).map((e) => e.ga4EventName),
   })

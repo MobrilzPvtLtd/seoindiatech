@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-08-11T08:07:28.557Z",
+  "generatedAt": "2026-08-11T07:22:21.033Z",
   "matrixStats": {
-    "totalRows": 747,
-    "uniqueSources": 113,
-    "duplicatePairs": 42
+    "totalRows": 745,
+    "uniqueSources": 112,
+    "duplicatePairs": 41
   },
   "urlAlignment": {
-    "liveCount": 115,
-    "excelCount": 115,
+    "liveCount": 114,
+    "excelCount": 114,
     "liveAndInExcel": [
       "/",
       "/blog",
@@ -105,7 +105,6 @@
       "/services/e-commerce-seo",
       "/services/gbp-optimization",
       "/services/generative-engine-optimization",
-      "/services/international-seo",
       "/services/local-seo-service",
       "/services/online-reputation-management",
       "/services/paid-advertising",
@@ -114,7 +113,6 @@
       "/services/small-business-seo",
       "/services/social-media-marketing",
       "/services/social-media-optimization",
-      "/services/technical-seo",
       "/services/ui-ux-design",
       "/solution/automation",
       "/solution/crm-and-tools",
@@ -125,18 +123,24 @@
       "/terms",
       "/who-we-are"
     ],
-    "liveNotInExcel": [],
-    "inExcelNotLive": [],
-    "alignmentPercent": 100
+    "liveNotInExcel": [
+      "/services/international-seo"
+    ],
+    "inExcelNotLive": [
+      "/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai"
+    ],
+    "alignmentPercent": 99
   },
   "summary": {
-    "total": 747,
-    "present": 745,
+    "total": 745,
+    "present": 729,
     "missing": 2,
-    "invalid": 0,
-    "coveragePercent": 100,
-    "invalidDestinations": [],
-    "duplicateMatrixPairs": 42,
+    "invalid": 14,
+    "coveragePercent": 98,
+    "invalidDestinations": [
+      "/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai"
+    ],
+    "duplicateMatrixPairs": 41,
     "duplicateMatrixPairExamples": [
       "/services/digital-marketing->/services/seo",
       "/services/paid-advertising->/services/seo",
@@ -150,7 +154,9 @@
       "/services/generative-engine-optimization->/services/seo"
     ]
   },
-  "invalidDestinations": [],
+  "invalidDestinations": [
+    "/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai"
+  ],
   "orphanPaths": [
     "/blog/chatgpt-seo-ai-search-organic-traffic",
     "/blog/content-marketing-strategy-qualified-leads",
@@ -207,6 +213,7 @@
     "/seo-services/seo-services-in-pune",
     "/services/app-store-optimization",
     "/services/digital-branding",
+    "/services/international-seo",
     "/services/online-reputation-management",
     "/solution/automation",
     "/solution/crm-and-tools",
@@ -218,8 +225,8 @@
     "/who-we-are"
   ],
   "missingLinksCount": 2,
-  "presentLinksCount": 745,
-  "invalidLinksCount": 0,
+  "presentLinksCount": 729,
+  "invalidLinksCount": 14,
   "missingLinks": [
     {
       "sourcePath": "/blog/ai-seo-vs-traditional-seo-2026",
@@ -672,22 +679,6 @@
       "status": "present"
     },
     {
-      "sourcePath": "/blog/chatgpt-seo-ai-search-organic-traffic",
-      "destinationPath": "/blog/google-ai-overviews-changing-business-seo",
-      "recommendedAnchor": "how Google AI Overviews affect SEO",
-      "sourceExists": true,
-      "destinationExists": true,
-      "linkExists": true,
-      "existingAnchor": "",
-      "existingVia": "source-scan",
-      "matchedFiles": [
-        "utils\\BlogPost.legacy.js"
-      ],
-      "placement": "In-content related reading",
-      "why": "Related article / topic cluster",
-      "status": "present"
-    },
-    {
       "sourcePath": "/blog/choose-best-seo-agency-europe",
       "destinationPath": "/services/seo",
       "recommendedAnchor": "SEO services",
@@ -927,20 +918,6 @@
     },
     {
       "sourcePath": "/blog/content-marketing-strategy-qualified-leads",
-      "destinationPath": "/blog/google-ai-overviews-changing-business-seo",
-      "recommendedAnchor": "how Google AI Overviews affect SEO",
-      "sourceExists": true,
-      "destinationExists": true,
-      "linkExists": true,
-      "existingAnchor": "how Google AI Overviews affect SEO",
-      "existingVia": "programmatic",
-      "matchedFiles": [],
-      "placement": "In-content related reading",
-      "why": "Related article / topic cluster",
-      "status": "present"
-    },
-    {
-      "sourcePath": "/blog/content-marketing-strategy-qualified-leads",
       "destinationPath": "/blog/youtube-business-marketing-2026",
       "recommendedAnchor": "youtube business marketing 2026",
       "sourceExists": true,
@@ -952,9 +929,238 @@
       "placement": "In-content related reading",
       "why": "Related article / topic cluster",
       "status": "present"
+    },
+    {
+      "sourcePath": "/blog/content-marketing-strategy-qualified-leads",
+      "destinationPath": "/blog/100-seo-mistakes-costing-business-leads",
+      "recommendedAnchor": "100 seo mistakes costing business leads",
+      "sourceExists": true,
+      "destinationExists": true,
+      "linkExists": true,
+      "existingAnchor": "100 seo mistakes costing business leads",
+      "existingVia": "programmatic",
+      "matchedFiles": [],
+      "placement": "In-content related reading",
+      "why": "Related article / topic cluster",
+      "status": "present"
+    },
+    {
+      "sourcePath": "/blog/core-web-vitals-optimization-guide",
+      "destinationPath": "/services/seo",
+      "recommendedAnchor": "SEO services",
+      "sourceExists": true,
+      "destinationExists": true,
+      "linkExists": true,
+      "existingAnchor": "SEO services",
+      "existingVia": "programmatic",
+      "matchedFiles": [],
+      "placement": "Contextual body",
+      "why": "Primary commercial hub",
+      "status": "present"
     }
   ],
-  "invalidLinksSample": [],
+  "invalidLinksSample": [
+    {
+      "sourcePath": "/blog/chatgpt-seo-ai-search-organic-traffic",
+      "destinationPath": "/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
+      "recommendedAnchor": "google core update may 2026 seo content strategy agentic ai",
+      "sourceExists": true,
+      "destinationExists": false,
+      "linkExists": false,
+      "existingAnchor": "",
+      "existingVia": null,
+      "matchedFiles": [],
+      "placement": "In-content related reading",
+      "why": "Related article / topic cluster",
+      "status": "invalid"
+    },
+    {
+      "sourcePath": "/blog/content-marketing-strategy-qualified-leads",
+      "destinationPath": "/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
+      "recommendedAnchor": "google core update may 2026 seo content strategy agentic ai",
+      "sourceExists": true,
+      "destinationExists": false,
+      "linkExists": false,
+      "existingAnchor": "",
+      "existingVia": null,
+      "matchedFiles": [],
+      "placement": "In-content related reading",
+      "why": "Related article / topic cluster",
+      "status": "invalid"
+    },
+    {
+      "sourcePath": "/blog/google-ai-overviews-changing-business-seo",
+      "destinationPath": "/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
+      "recommendedAnchor": "google core update may 2026 seo content strategy agentic ai",
+      "sourceExists": true,
+      "destinationExists": false,
+      "linkExists": false,
+      "existingAnchor": "",
+      "existingVia": null,
+      "matchedFiles": [],
+      "placement": "In-content related reading",
+      "why": "Related article / topic cluster",
+      "status": "invalid"
+    },
+    {
+      "sourcePath": "/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
+      "destinationPath": "/services/seo",
+      "recommendedAnchor": "SEO services",
+      "sourceExists": false,
+      "destinationExists": true,
+      "linkExists": true,
+      "existingAnchor": "SEO services",
+      "existingVia": "programmatic",
+      "matchedFiles": [],
+      "placement": "Contextual body",
+      "why": "Primary commercial hub",
+      "status": "invalid"
+    },
+    {
+      "sourcePath": "/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
+      "destinationPath": "/services/ai-seo",
+      "recommendedAnchor": "AI SEO services",
+      "sourceExists": false,
+      "destinationExists": true,
+      "linkExists": true,
+      "existingAnchor": "AI SEO services",
+      "existingVia": "programmatic",
+      "matchedFiles": [],
+      "placement": "Contextual body",
+      "why": "AI-search topic cluster",
+      "status": "invalid"
+    },
+    {
+      "sourcePath": "/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
+      "destinationPath": "/services/answer-engine-optimization",
+      "recommendedAnchor": "answer engine optimization",
+      "sourceExists": false,
+      "destinationExists": true,
+      "linkExists": true,
+      "existingAnchor": "answer engine optimization",
+      "existingVia": "programmatic",
+      "matchedFiles": [],
+      "placement": "Contextual body",
+      "why": "AI-search topic cluster",
+      "status": "invalid"
+    },
+    {
+      "sourcePath": "/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
+      "destinationPath": "/services/generative-engine-optimization",
+      "recommendedAnchor": "generative engine optimization",
+      "sourceExists": false,
+      "destinationExists": true,
+      "linkExists": true,
+      "existingAnchor": "generative engine optimization",
+      "existingVia": "programmatic",
+      "matchedFiles": [],
+      "placement": "Contextual body",
+      "why": "AI-search topic cluster",
+      "status": "invalid"
+    },
+    {
+      "sourcePath": "/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
+      "destinationPath": "/services/content-marketing",
+      "recommendedAnchor": "content marketing services",
+      "sourceExists": false,
+      "destinationExists": true,
+      "linkExists": true,
+      "existingAnchor": "content marketing services",
+      "existingVia": "programmatic",
+      "matchedFiles": [],
+      "placement": "Contextual body",
+      "why": "Content cluster",
+      "status": "invalid"
+    },
+    {
+      "sourcePath": "/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
+      "destinationPath": "/contact-us",
+      "recommendedAnchor": "speak with our SEO team",
+      "sourceExists": false,
+      "destinationExists": true,
+      "linkExists": true,
+      "existingAnchor": "speak with our SEO team",
+      "existingVia": "programmatic",
+      "matchedFiles": [],
+      "placement": "CTA",
+      "why": "Conversion",
+      "status": "invalid"
+    },
+    {
+      "sourcePath": "/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
+      "destinationPath": "/seo-packages",
+      "recommendedAnchor": "SEO packages",
+      "sourceExists": false,
+      "destinationExists": true,
+      "linkExists": true,
+      "existingAnchor": "SEO packages",
+      "existingVia": "programmatic",
+      "matchedFiles": [],
+      "placement": "Contextual/CTA",
+      "why": "Commercial investigation",
+      "status": "invalid"
+    },
+    {
+      "sourcePath": "/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
+      "destinationPath": "/blog/how-google-ai-overviews-are-changing-seo",
+      "recommendedAnchor": "how google ai overviews are changing seo",
+      "sourceExists": false,
+      "destinationExists": true,
+      "linkExists": true,
+      "existingAnchor": "how google ai overviews are changing seo",
+      "existingVia": "programmatic",
+      "matchedFiles": [],
+      "placement": "In-content related reading",
+      "why": "Related article / topic cluster",
+      "status": "invalid"
+    },
+    {
+      "sourcePath": "/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
+      "destinationPath": "/blog/google-ai-overviews-changing-business-seo",
+      "recommendedAnchor": "google ai overviews changing business seo",
+      "sourceExists": false,
+      "destinationExists": true,
+      "linkExists": true,
+      "existingAnchor": "",
+      "existingVia": "source-scan",
+      "matchedFiles": [
+        "utils\\BlogPost.legacy.js"
+      ],
+      "placement": "In-content related reading",
+      "why": "Related article / topic cluster",
+      "status": "invalid"
+    },
+    {
+      "sourcePath": "/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
+      "destinationPath": "/blog/what-is-ai-seo-why-business-needs-it",
+      "recommendedAnchor": "what is ai seo why business needs it",
+      "sourceExists": false,
+      "destinationExists": true,
+      "linkExists": true,
+      "existingAnchor": "",
+      "existingVia": "source-scan",
+      "matchedFiles": [
+        "utils\\BlogPost.legacy.js"
+      ],
+      "placement": "In-content related reading",
+      "why": "Related article / topic cluster",
+      "status": "invalid"
+    },
+    {
+      "sourcePath": "/blog/how-google-ai-overviews-are-changing-seo",
+      "destinationPath": "/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
+      "recommendedAnchor": "google core update may 2026 seo content strategy agentic ai",
+      "sourceExists": true,
+      "destinationExists": false,
+      "linkExists": false,
+      "existingAnchor": "",
+      "existingVia": null,
+      "matchedFiles": [],
+      "placement": "In-content related reading",
+      "why": "Related article / topic cluster",
+      "status": "invalid"
+    }
+  ],
   "rows": [
     {
       "sourcePath": "/",
@@ -1392,19 +1598,17 @@
     },
     {
       "sourcePath": "/blog/chatgpt-seo-ai-search-organic-traffic",
-      "destinationPath": "/blog/google-ai-overviews-changing-business-seo",
-      "recommendedAnchor": "how Google AI Overviews affect SEO",
+      "destinationPath": "/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
+      "recommendedAnchor": "google core update may 2026 seo content strategy agentic ai",
       "sourceExists": true,
-      "destinationExists": true,
-      "linkExists": true,
+      "destinationExists": false,
+      "linkExists": false,
       "existingAnchor": "",
-      "existingVia": "source-scan",
-      "matchedFiles": [
-        "utils\\BlogPost.legacy.js"
-      ],
+      "existingVia": null,
+      "matchedFiles": [],
       "placement": "In-content related reading",
       "why": "Related article / topic cluster",
-      "status": "present"
+      "status": "invalid"
     },
     {
       "sourcePath": "/blog/choose-best-seo-agency-europe",
@@ -1646,17 +1850,17 @@
     },
     {
       "sourcePath": "/blog/content-marketing-strategy-qualified-leads",
-      "destinationPath": "/blog/google-ai-overviews-changing-business-seo",
-      "recommendedAnchor": "how Google AI Overviews affect SEO",
+      "destinationPath": "/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
+      "recommendedAnchor": "google core update may 2026 seo content strategy agentic ai",
       "sourceExists": true,
-      "destinationExists": true,
-      "linkExists": true,
-      "existingAnchor": "how Google AI Overviews affect SEO",
-      "existingVia": "programmatic",
+      "destinationExists": false,
+      "linkExists": false,
+      "existingAnchor": "",
+      "existingVia": null,
       "matchedFiles": [],
       "placement": "In-content related reading",
       "why": "Related article / topic cluster",
-      "status": "present"
+      "status": "invalid"
     },
     {
       "sourcePath": "/blog/content-marketing-strategy-qualified-leads",
@@ -2136,19 +2340,17 @@
     },
     {
       "sourcePath": "/blog/google-ai-overviews-changing-business-seo",
-      "destinationPath": "/blog/google-ai-overviews-changing-business-seo",
-      "recommendedAnchor": "how Google AI Overviews affect SEO",
+      "destinationPath": "/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
+      "recommendedAnchor": "google core update may 2026 seo content strategy agentic ai",
       "sourceExists": true,
-      "destinationExists": true,
-      "linkExists": true,
+      "destinationExists": false,
+      "linkExists": false,
       "existingAnchor": "",
-      "existingVia": "source-scan",
-      "matchedFiles": [
-        "utils\\BlogPost.legacy.js"
-      ],
+      "existingVia": null,
+      "matchedFiles": [],
       "placement": "In-content related reading",
       "why": "Related article / topic cluster",
-      "status": "present"
+      "status": "invalid"
     },
     {
       "sourcePath": "/blog/google-business-profile-optimization-guide",
@@ -2263,6 +2465,150 @@
       "status": "present"
     },
     {
+      "sourcePath": "/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
+      "destinationPath": "/services/seo",
+      "recommendedAnchor": "SEO services",
+      "sourceExists": false,
+      "destinationExists": true,
+      "linkExists": true,
+      "existingAnchor": "SEO services",
+      "existingVia": "programmatic",
+      "matchedFiles": [],
+      "placement": "Contextual body",
+      "why": "Primary commercial hub",
+      "status": "invalid"
+    },
+    {
+      "sourcePath": "/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
+      "destinationPath": "/services/ai-seo",
+      "recommendedAnchor": "AI SEO services",
+      "sourceExists": false,
+      "destinationExists": true,
+      "linkExists": true,
+      "existingAnchor": "AI SEO services",
+      "existingVia": "programmatic",
+      "matchedFiles": [],
+      "placement": "Contextual body",
+      "why": "AI-search topic cluster",
+      "status": "invalid"
+    },
+    {
+      "sourcePath": "/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
+      "destinationPath": "/services/answer-engine-optimization",
+      "recommendedAnchor": "answer engine optimization",
+      "sourceExists": false,
+      "destinationExists": true,
+      "linkExists": true,
+      "existingAnchor": "answer engine optimization",
+      "existingVia": "programmatic",
+      "matchedFiles": [],
+      "placement": "Contextual body",
+      "why": "AI-search topic cluster",
+      "status": "invalid"
+    },
+    {
+      "sourcePath": "/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
+      "destinationPath": "/services/generative-engine-optimization",
+      "recommendedAnchor": "generative engine optimization",
+      "sourceExists": false,
+      "destinationExists": true,
+      "linkExists": true,
+      "existingAnchor": "generative engine optimization",
+      "existingVia": "programmatic",
+      "matchedFiles": [],
+      "placement": "Contextual body",
+      "why": "AI-search topic cluster",
+      "status": "invalid"
+    },
+    {
+      "sourcePath": "/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
+      "destinationPath": "/services/content-marketing",
+      "recommendedAnchor": "content marketing services",
+      "sourceExists": false,
+      "destinationExists": true,
+      "linkExists": true,
+      "existingAnchor": "content marketing services",
+      "existingVia": "programmatic",
+      "matchedFiles": [],
+      "placement": "Contextual body",
+      "why": "Content cluster",
+      "status": "invalid"
+    },
+    {
+      "sourcePath": "/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
+      "destinationPath": "/contact-us",
+      "recommendedAnchor": "speak with our SEO team",
+      "sourceExists": false,
+      "destinationExists": true,
+      "linkExists": true,
+      "existingAnchor": "speak with our SEO team",
+      "existingVia": "programmatic",
+      "matchedFiles": [],
+      "placement": "CTA",
+      "why": "Conversion",
+      "status": "invalid"
+    },
+    {
+      "sourcePath": "/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
+      "destinationPath": "/seo-packages",
+      "recommendedAnchor": "SEO packages",
+      "sourceExists": false,
+      "destinationExists": true,
+      "linkExists": true,
+      "existingAnchor": "SEO packages",
+      "existingVia": "programmatic",
+      "matchedFiles": [],
+      "placement": "Contextual/CTA",
+      "why": "Commercial investigation",
+      "status": "invalid"
+    },
+    {
+      "sourcePath": "/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
+      "destinationPath": "/blog/how-google-ai-overviews-are-changing-seo",
+      "recommendedAnchor": "how google ai overviews are changing seo",
+      "sourceExists": false,
+      "destinationExists": true,
+      "linkExists": true,
+      "existingAnchor": "how google ai overviews are changing seo",
+      "existingVia": "programmatic",
+      "matchedFiles": [],
+      "placement": "In-content related reading",
+      "why": "Related article / topic cluster",
+      "status": "invalid"
+    },
+    {
+      "sourcePath": "/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
+      "destinationPath": "/blog/google-ai-overviews-changing-business-seo",
+      "recommendedAnchor": "google ai overviews changing business seo",
+      "sourceExists": false,
+      "destinationExists": true,
+      "linkExists": true,
+      "existingAnchor": "",
+      "existingVia": "source-scan",
+      "matchedFiles": [
+        "utils\\BlogPost.legacy.js"
+      ],
+      "placement": "In-content related reading",
+      "why": "Related article / topic cluster",
+      "status": "invalid"
+    },
+    {
+      "sourcePath": "/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
+      "destinationPath": "/blog/what-is-ai-seo-why-business-needs-it",
+      "recommendedAnchor": "what is ai seo why business needs it",
+      "sourceExists": false,
+      "destinationExists": true,
+      "linkExists": true,
+      "existingAnchor": "",
+      "existingVia": "source-scan",
+      "matchedFiles": [
+        "utils\\BlogPost.legacy.js"
+      ],
+      "placement": "In-content related reading",
+      "why": "Related article / topic cluster",
+      "status": "invalid"
+    },
+    {
       "sourcePath": "/blog/how-google-ai-overviews-are-changing-seo",
       "destinationPath": "/services/seo",
       "recommendedAnchor": "SEO services",
@@ -2362,17 +2708,17 @@
     },
     {
       "sourcePath": "/blog/how-google-ai-overviews-are-changing-seo",
-      "destinationPath": "/blog/google-ai-overviews-changing-business-seo",
-      "recommendedAnchor": "how Google AI Overviews affect SEO",
+      "destinationPath": "/blog/google-core-update-may-2026-seo-content-strategy-agentic-ai",
+      "recommendedAnchor": "google core update may 2026 seo content strategy agentic ai",
       "sourceExists": true,
-      "destinationExists": true,
-      "linkExists": true,
-      "existingAnchor": "google ai overviews changing business seo",
-      "existingVia": "programmatic",
+      "destinationExists": false,
+      "linkExists": false,
+      "existingAnchor": "",
+      "existingVia": null,
       "matchedFiles": [],
       "placement": "In-content related reading",
       "why": "Related article / topic cluster",
-      "status": "present"
+      "status": "invalid"
     },
     {
       "sourcePath": "/blog/how-google-ai-overviews-are-changing-seo",
@@ -2484,20 +2830,6 @@
       "matchedFiles": [],
       "placement": "Contextual body",
       "why": "Primary commercial hub",
-      "status": "present"
-    },
-    {
-      "sourcePath": "/blog/international-seo-guide-european-companies",
-      "destinationPath": "/services/international-seo",
-      "recommendedAnchor": "international SEO services",
-      "sourceExists": true,
-      "destinationExists": true,
-      "linkExists": true,
-      "existingAnchor": "international SEO services",
-      "existingVia": "programmatic",
-      "matchedFiles": [],
-      "placement": "Contextual body",
-      "why": "Commercial service for guide readers",
       "status": "present"
     },
     {
@@ -2936,20 +3268,6 @@
     },
     {
       "sourcePath": "/blog/local-vs-national-vs-international-seo",
-      "destinationPath": "/services/international-seo",
-      "recommendedAnchor": "international SEO agency",
-      "sourceExists": true,
-      "destinationExists": true,
-      "linkExists": true,
-      "existingAnchor": "international SEO agency",
-      "existingVia": "programmatic",
-      "matchedFiles": [],
-      "placement": "Contextual body",
-      "why": "Commercial service for comparison readers",
-      "status": "present"
-    },
-    {
-      "sourcePath": "/blog/local-vs-national-vs-international-seo",
       "destinationPath": "/contact-us",
       "recommendedAnchor": "speak with our SEO team",
       "sourceExists": true,
@@ -3011,11 +3329,9 @@
       "sourceExists": true,
       "destinationExists": true,
       "linkExists": true,
-      "existingAnchor": "",
-      "existingVia": "source-scan",
-      "matchedFiles": [
-        "utils\\BlogPost.legacy.js"
-      ],
+      "existingAnchor": "local seo guide indian businesses 2026",
+      "existingVia": "programmatic",
+      "matchedFiles": [],
       "placement": "In-content related reading",
       "why": "Related article / topic cluster",
       "status": "present"
@@ -3676,20 +3992,6 @@
       "matchedFiles": [],
       "placement": "Contextual body",
       "why": "Technical/UX path",
-      "status": "present"
-    },
-    {
-      "sourcePath": "/blog/technical-seo-checklist-enterprise-websites",
-      "destinationPath": "/services/technical-seo",
-      "recommendedAnchor": "technical SEO services",
-      "sourceExists": true,
-      "destinationExists": true,
-      "linkExists": true,
-      "existingAnchor": "technical SEO services",
-      "existingVia": "programmatic",
-      "matchedFiles": [],
-      "placement": "Contextual body",
-      "why": "Commercial service for checklist readers",
       "status": "present"
     },
     {
@@ -10037,62 +10339,6 @@
       "status": "present"
     },
     {
-      "sourcePath": "/services/international-seo",
-      "destinationPath": "/services/seo",
-      "recommendedAnchor": "SEO services in India",
-      "sourceExists": true,
-      "destinationExists": true,
-      "linkExists": true,
-      "existingAnchor": "SEO services in India",
-      "existingVia": "programmatic",
-      "matchedFiles": [],
-      "placement": "Contextual body",
-      "why": "Primary commercial hub",
-      "status": "present"
-    },
-    {
-      "sourcePath": "/services/international-seo",
-      "destinationPath": "/blog/international-seo-guide-european-companies",
-      "recommendedAnchor": "international SEO guide",
-      "sourceExists": true,
-      "destinationExists": true,
-      "linkExists": true,
-      "existingAnchor": "international SEO guide",
-      "existingVia": "programmatic",
-      "matchedFiles": [],
-      "placement": "Related resources",
-      "why": "Supporting informational content",
-      "status": "present"
-    },
-    {
-      "sourcePath": "/services/international-seo",
-      "destinationPath": "/blog/local-vs-national-vs-international-seo",
-      "recommendedAnchor": "local vs international SEO",
-      "sourceExists": true,
-      "destinationExists": true,
-      "linkExists": true,
-      "existingAnchor": "local vs international SEO",
-      "existingVia": "programmatic",
-      "matchedFiles": [],
-      "placement": "Related resources",
-      "why": "Supporting informational content",
-      "status": "present"
-    },
-    {
-      "sourcePath": "/services/international-seo",
-      "destinationPath": "/contact-us",
-      "recommendedAnchor": "contact our SEO team",
-      "sourceExists": true,
-      "destinationExists": true,
-      "linkExists": true,
-      "existingAnchor": "contact our SEO team",
-      "existingVia": "programmatic",
-      "matchedFiles": [],
-      "placement": "CTA",
-      "why": "Conversion",
-      "status": "present"
-    },
-    {
       "sourcePath": "/services/local-seo-service",
       "destinationPath": "/services/seo",
       "recommendedAnchor": "SEO services",
@@ -10499,34 +10745,6 @@
       "status": "present"
     },
     {
-      "sourcePath": "/services/seo",
-      "destinationPath": "/services/technical-seo",
-      "recommendedAnchor": "technical SEO services",
-      "sourceExists": true,
-      "destinationExists": true,
-      "linkExists": true,
-      "existingAnchor": "technical SEO services",
-      "existingVia": "programmatic",
-      "matchedFiles": [],
-      "placement": "Related services / body",
-      "why": "Service-cluster topical relevance",
-      "status": "present"
-    },
-    {
-      "sourcePath": "/services/seo",
-      "destinationPath": "/services/international-seo",
-      "recommendedAnchor": "international SEO",
-      "sourceExists": true,
-      "destinationExists": true,
-      "linkExists": true,
-      "existingAnchor": "international SEO",
-      "existingVia": "programmatic",
-      "matchedFiles": [],
-      "placement": "Related services / body",
-      "why": "Service-cluster topical relevance",
-      "status": "present"
-    },
-    {
       "sourcePath": "/services/small-business-seo",
       "destinationPath": "/services/seo",
       "recommendedAnchor": "SEO services",
@@ -10762,48 +10980,6 @@
       "matchedFiles": [],
       "placement": "Related services / body",
       "why": "Service-cluster topical relevance",
-      "status": "present"
-    },
-    {
-      "sourcePath": "/services/technical-seo",
-      "destinationPath": "/services/seo",
-      "recommendedAnchor": "SEO services in India",
-      "sourceExists": true,
-      "destinationExists": true,
-      "linkExists": true,
-      "existingAnchor": "SEO services in India",
-      "existingVia": "programmatic",
-      "matchedFiles": [],
-      "placement": "Contextual body",
-      "why": "Primary commercial hub",
-      "status": "present"
-    },
-    {
-      "sourcePath": "/services/technical-seo",
-      "destinationPath": "/blog/technical-seo-checklist-enterprise-websites",
-      "recommendedAnchor": "technical SEO checklist",
-      "sourceExists": true,
-      "destinationExists": true,
-      "linkExists": true,
-      "existingAnchor": "technical SEO checklist",
-      "existingVia": "programmatic",
-      "matchedFiles": [],
-      "placement": "Related resources",
-      "why": "Supporting informational content",
-      "status": "present"
-    },
-    {
-      "sourcePath": "/services/technical-seo",
-      "destinationPath": "/contact-us",
-      "recommendedAnchor": "contact our SEO team",
-      "sourceExists": true,
-      "destinationExists": true,
-      "linkExists": true,
-      "existingAnchor": "contact our SEO team",
-      "existingVia": "programmatic",
-      "matchedFiles": [],
-      "placement": "CTA",
-      "why": "Conversion",
       "status": "present"
     },
     {
