@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "postbuild": "node scripts/validate-sitemap.mjs",
+    "postbuild": "node scripts/generate-sitemap.mjs && node scripts/validate-sitemap.mjs",
     "generate-sitemap": "node scripts/generate-sitemap.mjs",
     "check-sitemap": "node scripts/validate-sitemap.mjs",
     "generate-images": "node scripts/generate-blog-images.mjs",

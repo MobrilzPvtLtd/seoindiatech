@@ -4,6 +4,19 @@ Disallow: /api/
 Disallow: /new
 Disallow: /old
 
+# Google Search — explicit allow (discovery + indexing)
+User-agent: Googlebot
+Allow: /
+Disallow: /api/
+Disallow: /new
+Disallow: /old
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-News
+Allow: /
+
 # AI search crawlers — allowed for discoverability in AI Overviews and answer engines
 User-agent: GPTBot
 Allow: /
