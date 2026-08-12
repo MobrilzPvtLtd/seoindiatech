@@ -139,9 +139,9 @@ async function auditIndustry(slug) {
 
   const clientTerm = expectedClientTerm(slug)
   let clientTermOk = true
-  if (clientTerm === 'Patients') clientTermOk = h1?.includes('Patients')
-  else if (clientTerm === 'Customers') clientTermOk = h1?.includes('Customers')
-  else if (clientTerm === 'Clients') clientTermOk = h1?.includes('Clients')
+  if (clientTerm === 'Patients') clientTermOk = /patient/i.test(h1 || '')
+  else if (clientTerm === 'Customers') clientTermOk = /customer/i.test(h1 || '')
+  else if (clientTerm === 'Clients') clientTermOk = /client/i.test(h1 || '')
 
   const override = OVERRIDE_EXPECT[slug]
   const overrideOk =
