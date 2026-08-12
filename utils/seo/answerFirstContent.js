@@ -94,6 +94,16 @@ const SERVICE_ANSWERS = {
       'Scales as revenue and competition increase',
     ],
   },
+  'international-seo': {
+    question: 'What Is International SEO and Who Needs It?',
+    answer:
+      'International SEO helps businesses rank in target countries and languages—not just in their home market. SEO India Tech builds hreflang-ready site structures, country-specific keyword plans, and technical foundations so each market can be discovered independently without thin doorway pages or duplicated geo clones.',
+    takeaways: [
+      'Indian exporters and brands targeting USA, UK, Europe, and other export markets',
+      'Businesses needing distinct keyword research per country—not translated copies of domestic pages',
+      'Sites scaling globally with hreflang, URL structure, and reporting separated by country or language',
+    ],
+  },
 }
 
 const BLOG_ANSWERS = {

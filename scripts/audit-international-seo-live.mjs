@@ -6,7 +6,8 @@ import { writeFileSync } from 'fs'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
 
-const url = 'https://www.seoindiatech.com/services/international-seo'
+const BASE = process.env.AUDIT_BASE || 'https://www.seoindiatech.com'
+const url = `${BASE}/services/international-seo`
 const res = await fetch(url, { redirect: 'manual', headers: { 'User-Agent': 'SIT-International-SEO-Audit/1.0' } })
 const html = await res.text()
 
@@ -96,10 +97,12 @@ const out = {
   h3: headings('h3'),
   h4: headings('h4'),
   quickAnswerH2s,
-  quickAnswerDuplicate: quickAnswerH2s.length > 1,
+  quickAnswerDuplicate:
+    headings('h2').some((h) => /^what is international seo\?$/i.test(h)) &&
+    headings('h2').some((h) => /what is international seo and who needs it\?/i.test(h)),
   consolidatedQuickAnswer:
-    headings('h2').includes('What Is International SEO and Who Needs It?') &&
-    !headings('h2').some((h) => /^What is international seo\?$/i.test(h)),
+    headings('h2').some((h) => /^what is international seo and who needs it\?$/i.test(h)) &&
+    !headings('h2').some((h) => /^what is international seo\?$/i.test(h)),
   faqSchemaCount,
   faqSchemaBlocks: faqNodes.length,
   visibleFaqButtons: (html.match(/id="faq-button-/g) || []).length,
@@ -121,6 +124,14 @@ const out = {
     '/services/local-seo-service': uniqueInternal.includes('/services/local-seo-service'),
   },
   blogIntlPaths,
+  blogRequired: {
+    '/blog/international-seo-guide-european-companies': uniqueInternal.includes(
+      '/blog/international-seo-guide-european-companies'
+    ),
+    '/blog/local-vs-national-vs-international-seo': uniqueInternal.includes(
+      '/blog/local-vs-national-vs-international-seo'
+    ),
+  },
   internalLinkCount: uniqueInternal.length,
   wordCountEstimate: wordCount,
   companyIndiaMentions: {
@@ -133,5 +144,7 @@ const out = {
 }
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..')
-writeFileSync(join(root, 'seo-audit', 'phase-10a-international-seo-live-snapshot.json'), JSON.stringify(out, null, 2))
+const snapshotName =
+  BASE.includes('seoindiatech.com') ? 'phase-11-international-seo-live-snapshot.json' : 'phase-10a-international-seo-live-snapshot.json'
+writeFileSync(join(root, 'seo-audit', snapshotName), JSON.stringify(out, null, 2))
 console.log(JSON.stringify(out, null, 2))

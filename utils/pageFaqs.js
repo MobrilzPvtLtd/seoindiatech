@@ -234,6 +234,48 @@ export const PAGE_FAQS = {
         'Common fixes include crawl and indexation control for large catalogs, Core Web Vitals on product templates, redirect chains, thin pagination paths, and structured data errors—paired with reporting tied to organic revenue, not vanity traffic.',
     },
   ],
+  internationalSeo: [
+    {
+      question: 'What is international SEO?',
+      answer:
+        'International SEO is the practice of optimizing your website, content, and technical setup so your business ranks in search engines across target countries and languages. It combines market-specific keyword research, hreflang and URL structure, localized content, technical health, and reporting separated by country or language.',
+    },
+    {
+      question: 'How does hreflang work in international SEO?',
+      answer:
+        'Hreflang tags tell search engines which URL serves which language or country variant of a page. Correct hreflang implementation helps Google show the right market URL to the right audience and reduces cross-market cannibalization when you operate multiple country or language versions.',
+    },
+    {
+      question: 'What is the difference between multilingual and multiregional SEO?',
+      answer:
+        'Multilingual SEO targets multiple languages—often for the same country or across regions. Multiregional SEO targets multiple countries, which may share a language or use different ones. International SEO programs define whether you need language variants, country variants, or both before building URL and hreflang architecture.',
+    },
+    {
+      question: 'How do you approach country-specific keyword research?',
+      answer:
+        'We research how buyers search in each target market—not translated copies of domestic keywords. Country-specific research covers local terminology, commercial intent, competitor landscapes, and seasonal demand so each market gets its own keyword map and landing-page priorities.',
+    },
+    {
+      question: 'When should a business use subfolders versus ccTLDs for international sites?',
+      answer:
+        'Subfolders (e.g. /uk/, /us/) or subdomains can consolidate authority on one domain when markets share brand trust. ccTLDs (country-code domains) can signal strong local presence but require separate authority building. We recommend structures based on your markets, resources, and how independently each country must rank.',
+    },
+    {
+      question: 'How do you prevent cross-country cannibalization in Google?',
+      answer:
+        'We align hreflang annotations, canonical tags, and URL patterns so each market page targets distinct intent. Clear internal linking, geo-targeting in Search Console where applicable, and avoiding thin duplicate geo clones help prevent one country version from suppressing another.',
+    },
+    {
+      question: 'How do you report international SEO performance by country or language?',
+      answer:
+        'We separate traffic, rankings, and conversions by country or language in analytics and Search Console views. Monthly reporting highlights which markets gain visibility, which landing pages convert, and where technical or content gaps still block growth in each region.',
+    },
+    {
+      question: 'How do we start international SEO with SEO India Tech?',
+      answer:
+        'Book a free international SEO audit. We review your current site structure, target markets, hreflang health, competitor presence overseas, and technical foundations—then deliver a prioritized roadmap with timelines and KPIs per country or language.',
+    },
+  ],
   contact: [
     {
       question: 'How quickly will SEO India Tech respond to my enquiry?',

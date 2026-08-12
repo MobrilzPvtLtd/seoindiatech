@@ -189,7 +189,9 @@ export function buildPremiumServiceContent(entry) {
         ? [...PAGE_FAQS.localSeo]
         : slug === 'e-commerce-seo'
           ? [...PAGE_FAQS.ecommerceSeo]
-          : getServiceFaqs(entry)
+          : slug === 'international-seo'
+            ? [...PAGE_FAQS.internationalSeo]
+            : getServiceFaqs(entry)
   const related = getRelatedServices(slug, 6)
 
   const serviceItems = features.length

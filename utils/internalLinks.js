@@ -177,6 +177,10 @@ const SERVICE_BLOG_SLUGS = {
   'online-reputation-management': ['google-business-profile-optimization-guide', 'complete-eeat-guide-business-websites'],
   'technical-seo': ['technical-seo-checklist-enterprise-websites', 'seo-trends-european-businesses-2026'],
   'e-commerce-seo': ['ecommerce-seo-checklist-india', 'seo-trends-european-businesses-2026'],
+  'international-seo': [
+    'international-seo-guide-european-companies',
+    'local-vs-national-vs-international-seo',
+  ],
 }
 
 const catalogByHref = new Map(INTERNAL_LINK_CATALOG.map((item) => [item.href, item]))
