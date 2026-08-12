@@ -111,8 +111,6 @@ Sitemap validation — 115 URLs passed
 
 ## Production QA
 
-Run: `node scripts/audit-ecommerce-seo-live.mjs`
-
 ### Local QA — pre-deploy
 
 | Check | Result |
@@ -122,6 +120,25 @@ Run: `node scripts/audit-ecommerce-seo-live.mjs`
 | 8 visible / 8 schema FAQs | ✅ |
 | Checklist link | ✅ |
 | Parent/sibling links | ✅ |
+
+### Production (`scripts/audit-ecommerce-seo-live.mjs` — validated 2026-08-12)
+
+| Check | Result |
+|-------|--------|
+| HTTP 200 | ✅ |
+| Title unchanged | ✅ |
+| Meta unchanged | ✅ |
+| H1 unchanged | ✅ |
+| Canonical unchanged | ✅ |
+| Robots | ✅ `index, follow` |
+| Single quick-answer H2 | ✅ `What Is E-Commerce SEO and Who Needs It?` |
+| FAQ 8 visible / 8 schema | ✅ |
+| Single FAQPage block | ✅ |
+| Checklist link | ✅ `/blog/ecommerce-seo-checklist-india` |
+| Service links (seo, technical, local, international) | ✅ |
+| Schema stack complete | ✅ |
+| No Product schema | ✅ |
+| Commit deployed | ✅ `250fa91` on `master` |
 
 ---
 
