@@ -192,6 +192,48 @@ export const PAGE_FAQS = {
         'Yes. We structure FAQ content, concise answer blocks, and entity signals so voice assistants and AI tools can recommend your business for local and "near me" queries.',
     },
   ],
+  ecommerceSeo: [
+    {
+      question: 'What is e-commerce SEO?',
+      answer:
+        'E-commerce SEO optimizes product pages, categories, filters, and site architecture so online stores rank for commercial searches and convert visitors. It combines technical crawlability, unique product content, structured data, and internal linking at catalog scale.',
+    },
+    {
+      question: 'How do you optimize product pages for e-commerce SEO?',
+      answer:
+        'We improve titles, meta descriptions, on-page copy, internal links, and product schema on PDPs—fixing thin or duplicate product content and aligning URLs with how buyers search for specific items.',
+    },
+    {
+      question: 'How do you optimize category and collection pages?',
+      answer:
+        'Category and collection pages carry most catalog ranking potential. We optimize headings, faceted URL handling, unique intro copy, breadcrumb structure, and internal links so parent categories compete for broader commercial terms without cannibalizing products.',
+    },
+    {
+      question: 'How do faceted navigation and filters affect e-commerce SEO?',
+      answer:
+        'Facets and filters can create duplicate or thin URLs that waste crawl budget. We manage parameter handling, canonicals, and indexation rules so useful filter combinations can rank while low-value combinations stay out of the index.',
+    },
+    {
+      question: 'How do you handle duplicate URLs and indexation in online stores?',
+      answer:
+        'We audit duplicate product URLs, parameter variants, and indexation bloat from faceted paths. Fixes include canonical tags, redirect rules, noindex where appropriate, and XML sitemap hygiene so Google indexes revenue-driving pages first.',
+    },
+    {
+      question: 'Do you implement product structured data for e-commerce SEO?',
+      answer:
+        'Yes. We implement and validate product schema—offers, availability, reviews where applicable, and breadcrumb markup—so search engines understand your catalog and eligible pages can earn rich results.',
+    },
+    {
+      question: 'Do you offer WooCommerce SEO?',
+      answer:
+        'Yes. We deliver WooCommerce SEO for product and category templates, plugin-related crawl issues, schema on product pages, and site speed improvements aligned with how WooCommerce sites are structured.',
+    },
+    {
+      question: 'What e-commerce technical SEO issues do you fix?',
+      answer:
+        'Common fixes include crawl and indexation control for large catalogs, Core Web Vitals on product templates, redirect chains, thin pagination paths, and structured data errors—paired with reporting tied to organic revenue, not vanity traffic.',
+    },
+  ],
   contact: [
     {
       question: 'How quickly will SEO India Tech respond to my enquiry?',

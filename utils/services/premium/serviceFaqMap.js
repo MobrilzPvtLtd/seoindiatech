@@ -166,6 +166,7 @@ const GENERIC_SERVICE_FAQ_TEMPLATES = (name, label) => [
 
 export const SERVICE_FAQ_MAP = {
   'local-seo-service': PAGE_FAQS.localSeo,
+  'e-commerce-seo': PAGE_FAQS.ecommerceSeo,
   'technical-seo': PAGE_FAQS.technicalSeo,
   'ai-seo': AI_SEO_FAQS,
   'gbp-optimization': GBP_FAQS,

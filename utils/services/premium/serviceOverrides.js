@@ -249,6 +249,29 @@ export const ecommerceSeoPremium = {
     ],
     '/images/services/heroes/e-commerce-seo.svg'
   ),
+  answerFirst: {
+    question: 'What Is E-Commerce SEO and Who Needs It?',
+    answer:
+      'E-commerce SEO optimizes product pages, categories, filters, and site architecture so online stores rank for commercial searches and convert visitors. Online retailers, WooCommerce stores, and catalog-heavy brands need e-commerce SEO when product pages underperform, faceted URLs create indexation bloat, or organic revenue lags paid acquisition.',
+    takeaways: [
+      'Stores with large product catalogs and category templates',
+      'WooCommerce and online retailers competing for product and category terms',
+      'Brands fixing duplicate URLs, thin PDPs, and schema gaps at scale',
+    ],
+  },
+  whySeoMatters: {
+    suppressGeoAnswer: true,
+  },
+  internalLinks: {
+    links: [
+      {
+        href: '/blog/ecommerce-seo-checklist-india',
+        title: 'E-commerce SEO checklist',
+        description:
+          'Practical checklist for product pages, categories, faceted navigation, structured data, and indexation on online stores.',
+      },
+    ],
+  },
 }
 
 export const asoPremium = {
