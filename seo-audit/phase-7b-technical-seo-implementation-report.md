@@ -137,7 +137,9 @@ Sitemap validation — 115 URLs passed
 
 ---
 
-## 11. QA Result (local — `scripts/audit-technical-seo-local.mjs`)
+## 11. QA Result
+
+### Local (`scripts/audit-technical-seo-local.mjs`)
 
 | Check | Result |
 |-------|--------|
@@ -155,14 +157,32 @@ Sitemap validation — 115 URLs passed
 | Single FAQPage schema | ✅ |
 | Service schema valid | ✅ |
 
+### Production (`scripts/audit-technical-seo-live.mjs` — validated 2026-08-12)
+
+| Check | Result |
+|-------|--------|
+| HTTP 200 | ✅ |
+| Title unchanged | ✅ |
+| Meta unchanged | ✅ |
+| H1 unchanged | ✅ |
+| Canonical unchanged | ✅ |
+| Robots | ✅ `index, follow` |
+| Exactly one H1 | ✅ |
+| Single quick-answer H2 | ✅ `What Is Technical SEO and Who Needs It?` |
+| Checklist link | ✅ `/blog/technical-seo-checklist-enterprise-websites` |
+| Parent/sibling service links | ✅ seo, local, e-commerce, international |
+| FAQ visible = schema | ✅ 8 / 8 |
+| Single FAQPage block | ✅ |
+| Schema types | ✅ WebSite, Organization, BreadcrumbList, WebPage, Service, FAQPage, HowTo |
+| Commit deployed | ✅ `bc68829` on `master` |
+
 ---
 
 ## 12. Remaining Issues
 
-1. **Production deploy** — run `node scripts/audit-technical-seo-live.mjs` after deploy.
-2. **Generic template sections** still present (editorial local/AI blocks) — Phase 7A P1; intentionally not rewritten in 7b.
-3. **Title includes “Technical SEO Company”** — preserved per scope; optional future tighten.
-4. **Homepage FAQ** — 12 schema vs 13 source (separate track).
+1. **Generic template sections** still present (editorial local/AI blocks) — Phase 7A P1; intentionally not rewritten in 7b.
+2. **Title includes “Technical SEO Company”** — preserved per scope; optional future tighten.
+3. **Homepage FAQ** — 12 schema vs 13 source (separate track).
 
 ---
 

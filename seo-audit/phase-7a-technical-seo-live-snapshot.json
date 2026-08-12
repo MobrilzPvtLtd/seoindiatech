@@ -12,9 +12,8 @@
   ],
   "h1Count": 1,
   "h2": [
-    "What is Technical SEO?",
+    "What Is Technical SEO and Who Needs It?",
     "Why Technical SEO Is Essential for Growth",
-    "What is Technical SEO and who needs it?",
     "Why SEO India Tech for Technical SEO",
     "Technical SEO Deliverables",
     "Problems Technical SEO Solves",
@@ -96,6 +95,7 @@
     "International SEO",
     "App Store Optimization",
     "What does Technical SEO include?",
+    "Technical SEO checklist",
     "Local SEO Services",
     "AI SEO Services",
     "Realtor SEO",
@@ -103,7 +103,6 @@
     "HVAC SEO",
     "SEO Trends for European Businesses in 2026",
     "Industry SEO Programs",
-    "SEO Services in Delhi",
     "Book Your Free Technical SEO Audit",
     "Services",
     "Solutions",
@@ -117,13 +116,13 @@
   "visibleFaqButtons": 8,
   "faqSchemaQuestions": [
     "What is Technical SEO?",
-    "How long does technical seo take to show results?",
-    "How much does technical seo cost?",
-    "Do you offer technical seo for international clients?",
-    "How is SEO India Tech different for technical seo?",
-    "Can technical seo work with our existing marketing team?",
-    "What KPIs should we track for technical seo?",
-    "How do we start technical seo with SEO India Tech?"
+    "How long does technical SEO take to show results?",
+    "How much does technical SEO cost?",
+    "Do you offer technical SEO for international clients?",
+    "How is SEO India Tech different for technical SEO?",
+    "Can technical SEO work with our existing marketing team?",
+    "What KPIs should we track for technical SEO?",
+    "How do we start technical SEO with SEO India Tech?"
   ],
   "ldGraphTypes": [
     "WebSite",
@@ -150,9 +149,10 @@
   },
   "blogTechnicalPaths": [
     "/images/blog/technical-seo-checklist-enterprise-websites-hero.svg",
+    "/blog/technical-seo-checklist-enterprise-websites",
     "/blog/seo-trends-european-businesses-2026"
   ],
-  "internalLinkCount": 95,
+  "internalLinkCount": 96,
   "imageAltCount": 11,
   "imagesMissingAlt": 0,
   "sampleAlts": [

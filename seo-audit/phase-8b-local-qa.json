@@ -1,0 +1,39 @@
+{
+  "url": "http://localhost:3457/services/local-seo-service",
+  "status": 200,
+  "title": "Local SEO India | Local SEO Services in India | SEO India Tech",
+  "description": "Local SEO services in India for map pack visibility, Google Business Profile optimization, citations, and geo pages. Work with a local SEO agency in India. Free audit.",
+  "canonical": "https://www.seoindiatech.com/services/local-seo-service",
+  "h1": [
+    "Local SEO Services That Put You in the Map Pack"
+  ],
+  "h1Count": 1,
+  "quickAnswerH2s": [
+    "What Is Local SEO and Who Needs It?",
+    "What Businesses Should Know About Local SEO"
+  ],
+  "consolidatedQuickAnswer": true,
+  "gbpRelatedCard": true,
+  "gbpContextualLink": true,
+  "faqSchemaCount": 8,
+  "faqSchemaBlocks": 1,
+  "visibleFaqButtons": 8,
+  "faqSchemaQuestions": [
+    "What is local SEO?",
+    "How long before local SEO results appear?",
+    "Can local SEO help my business appear in Google Maps?",
+    "How does local SEO work with Google Business Profile optimization?",
+    "How do local citations and NAP consistency affect local SEO?",
+    "Can local SEO work for multi-location businesses?",
+    "Do you offer local SEO for small businesses?",
+    "Do you optimize for voice and AI local search?"
+  ],
+  "faqEightSynced": true,
+  "requiredLinksPresent": {
+    "/services/seo": true,
+    "/services/technical-seo": true,
+    "/services/e-commerce-seo": true,
+    "/services/international-seo": true,
+    "/services/gbp-optimization": true
+  }
+}
