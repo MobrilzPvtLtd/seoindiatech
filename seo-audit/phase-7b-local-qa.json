@@ -1,0 +1,37 @@
+{
+  "url": "http://localhost:3457/services/technical-seo",
+  "status": 200,
+  "title": "Technical SEO Services in India | Technical SEO Company | SEO India Tech",
+  "description": "Technical SEO services in India: audits, crawlability, Core Web Vitals, indexation, and structured data from a technical SEO agency focused on measurable fixes. Free audit.",
+  "canonical": "https://www.seoindiatech.com/services/technical-seo",
+  "h1": [
+    "Technical SEO Services That Fix What Blocks Rankings"
+  ],
+  "h1Count": 1,
+  "quickAnswerH2s": [
+    "What Is Technical SEO and Who Needs It?",
+    "What Businesses Should Know About Technical SEO"
+  ],
+  "quickAnswerDuplicateRemoved": false,
+  "technicalSeoChecklistLink": true,
+  "faqSchemaCount": 8,
+  "faqSchemaBlocks": 1,
+  "visibleFaqButtons": 8,
+  "faqSchemaQuestions": [
+    "What is Technical SEO?",
+    "How long does technical SEO take to show results?",
+    "How much does technical SEO cost?",
+    "Do you offer technical SEO for international clients?",
+    "How is SEO India Tech different for technical SEO?",
+    "Can technical SEO work with our existing marketing team?",
+    "What KPIs should we track for technical SEO?",
+    "How do we start technical SEO with SEO India Tech?"
+  ],
+  "requiredLinksPresent": {
+    "/services/seo": true,
+    "/services/local-seo-service": true,
+    "/services/e-commerce-seo": true,
+    "/services/international-seo": true,
+    "/blog/technical-seo-checklist-enterprise-websites": true
+  }
+}

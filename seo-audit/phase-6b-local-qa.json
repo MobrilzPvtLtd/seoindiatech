@@ -1,0 +1,50 @@
+{
+  "url": "http://localhost:3457/services/seo",
+  "status": 200,
+  "title": "SEO Services in India | SEO India Tech",
+  "description": "SEO services in India for businesses that want sustainable organic growth. Technical SEO, local SEO, content, and AI-ready strategy from an Indian SEO agency. Free audit.",
+  "canonical": "https://www.seoindiatech.com/services/seo",
+  "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+  "h1": [
+    "SEO Services in India"
+  ],
+  "h1Count": 1,
+  "quickAnswerH2s": [
+    "What SEO services does SEO India Tech provide?"
+  ],
+  "quickAnswerDuplicateRemoved": true,
+  "faqSchemaCount": 8,
+  "faqSchemaBlocks": 1,
+  "visibleFaqButtons": 8,
+  "faqSchemaQuestions": [
+    "Can you guarantee first-page Google rankings?",
+    "How much do your SEO services cost?",
+    "Do I need to sign a long-term contract?",
+    "What happens to my rankings if I stop SEO?",
+    "Should I invest in SEO or PPC?",
+    "Do you work with specific industries, or is your approach one-size-fits-all?",
+    "What is included in a typical SEO engagement with SEO India Tech?",
+    "How do you measure SEO success?"
+  ],
+  "ldGraphTypes": [
+    "WebSite",
+    "Organization",
+    "BreadcrumbList",
+    "WebPage",
+    "Service",
+    "FAQPage",
+    "HowTo"
+  ],
+  "requiredLinksPresent": {
+    "/services/technical-seo": true,
+    "/services/local-seo-service": true,
+    "/services/e-commerce-seo": true,
+    "/services/international-seo": true
+  },
+  "pillarExploreLinks": {
+    "technical": false,
+    "local": false,
+    "ecommerce": false,
+    "international": false
+  }
+}
