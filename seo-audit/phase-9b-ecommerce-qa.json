@@ -1,0 +1,33 @@
+{
+  "url": "http://localhost:3457/services/e-commerce-seo",
+  "status": 200,
+  "title": "Ecommerce SEO Agency in India | WooCommerce &amp; Store SEO | SEO India Tech",
+  "description": "Ecommerce SEO agency in India for WooCommerce and online stores: product pages, category optimization, technical fixes, and schema. Grow organic revenue. Free audit.",
+  "canonical": "https://www.seoindiatech.com/services/e-commerce-seo",
+  "h1": [
+    "Ecommerce SEO Agency for Product Visibility and Revenue Growth"
+  ],
+  "consolidatedQuickAnswer": true,
+  "checklistLink": true,
+  "faqSchemaCount": 8,
+  "faqSchemaBlocks": 1,
+  "visibleFaqButtons": 8,
+  "faqSchemaQuestions": [
+    "What is e-commerce SEO?",
+    "How do you optimize product pages for e-commerce SEO?",
+    "How do you optimize category and collection pages?",
+    "How do faceted navigation and filters affect e-commerce SEO?",
+    "How do you handle duplicate URLs and indexation in online stores?",
+    "Do you implement product structured data for e-commerce SEO?",
+    "Do you offer WooCommerce SEO?",
+    "What e-commerce technical SEO issues do you fix?"
+  ],
+  "faqEightSynced": true,
+  "requiredLinksPresent": {
+    "/services/seo": true,
+    "/services/technical-seo": true,
+    "/services/local-seo-service": true,
+    "/services/international-seo": true,
+    "/blog/ecommerce-seo-checklist-india": true
+  }
+}

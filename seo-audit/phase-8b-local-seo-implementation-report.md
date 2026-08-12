@@ -122,9 +122,7 @@ Sitemap validation — 115 URLs passed
 
 ## Production QA
 
-Run after deploy: `node scripts/audit-local-seo-live.mjs`
-
-### Local QA (`scripts/audit-local-seo-local.mjs`) — pre-deploy
+### Local (`scripts/audit-local-seo-local.mjs`) — pre-deploy
 
 | Check | Result |
 |-------|--------|
@@ -138,6 +136,26 @@ Run after deploy: `node scripts/audit-local-seo-live.mjs`
 | Single FAQPage | ✅ |
 | GBP card + contextual link | ✅ |
 | Parent/sibling links | ✅ |
+
+### Production (`scripts/audit-local-seo-live.mjs` — validated 2026-08-12)
+
+| Check | Result |
+|-------|--------|
+| HTTP 200 | ✅ |
+| Title unchanged | ✅ `Local SEO India \| Local SEO Services in India \| SEO India Tech` |
+| Meta unchanged | ✅ |
+| H1 unchanged | ✅ `Local SEO Services That Put You in the Map Pack` |
+| Canonical unchanged | ✅ |
+| Robots | ✅ `index, follow` |
+| Single quick-answer H2 | ✅ `What Is Local SEO and Who Needs It?` (duplicate pair removed) |
+| FAQ visible = schema | ✅ 8 / 8 |
+| Single FAQPage block | ✅ |
+| GBP Related Services card | ✅ `Explore Google Business Profile Optimization` |
+| GBP contextual link | ✅ `/services/gbp-optimization` |
+| Parent/sibling service links | ✅ seo, technical, e-commerce, international, gbp |
+| Schema types | ✅ WebSite, Organization, BreadcrumbList, WebPage, Service, FAQPage, HowTo |
+| LocalBusiness schema | ✅ Not present |
+| Commit deployed | ✅ `af0ff43` on `master` |
 
 ---
 

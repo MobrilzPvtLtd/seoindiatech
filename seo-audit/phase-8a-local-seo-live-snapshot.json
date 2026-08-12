@@ -12,9 +12,8 @@
   ],
   "h1Count": 1,
   "h2": [
-    "What is local SEO?",
+    "What Is Local SEO and Who Needs It?",
     "Why Local SEO Is Essential for Growth",
-    "What is Local SEO and who needs it?",
     "Why SEO India Tech for Local SEO",
     "Local SEO Deliverables",
     "Problems Local SEO Solves",
@@ -89,13 +88,14 @@
     "Tools We Use",
     "Certifications",
     "Awards &amp; Recognition",
+    "Google Business Profile Optimization",
     "Technical SEO",
     "AI SEO",
     "Small Business SEO",
     "E-Commerce SEO",
     "International SEO",
-    "App Store Optimization",
     "What does Local SEO include?",
+    "Google Business Profile optimization",
     "Technical SEO Services",
     "AI SEO Services",
     "Plumber SEO",
@@ -113,31 +113,24 @@
     "Quick Contact"
   ],
   "quickAnswerH2s": [
-    "What is local SEO?",
-    "What is Local SEO and who needs it?",
+    "What Is Local SEO and Who Needs It?",
     "What Businesses Should Know About Local SEO"
   ],
   "quickAnswerDuplicate": true,
-  "faqSchemaCount": 16,
+  "consolidatedQuickAnswer": false,
+  "gbpRelatedCard": true,
+  "faqSchemaCount": 8,
   "faqSchemaBlocks": 1,
-  "visibleFaqButtons": 16,
+  "visibleFaqButtons": 8,
   "faqSchemaQuestions": [
-    "What is local SEO service?",
+    "What is local SEO?",
     "How long before local SEO results appear?",
-    "Do you offer local SEO for small businesses?",
-    "What is included in white label local SEO services?",
     "Can local SEO help my business appear in Google Maps?",
-    "How does local SEO work with GBP optimization?",
+    "How does local SEO work with Google Business Profile optimization?",
+    "How do local citations and NAP consistency affect local SEO?",
     "Can local SEO work for multi-location businesses?",
-    "Do you optimize for voice and AI local search?",
-    "What is Local SEO?",
-    "How long does local seo take to show results?",
-    "How much does local seo cost?",
-    "Do you offer local seo for international clients?",
-    "How is SEO India Tech different for local seo?",
-    "Can local seo work with our existing marketing team?",
-    "What KPIs should we track for local seo?",
-    "How do we start local seo with SEO India Tech?"
+    "Do you offer local SEO for small businesses?",
+    "Do you optimize for voice and AI local search?"
   ],
   "faqVisibleSchemaParity": true,
   "ldGraphTypes": [
@@ -220,9 +213,9 @@
     "bodySeoServicesIndia": true
   },
   "gbpMentionsInBody": {
-    "googleBusinessProfile": 14,
+    "googleBusinessProfile": 21,
     "gbp": 18,
     "googleMaps": 12,
-    "mapPack": 13
+    "mapPack": 18
   }
 }
