@@ -108,6 +108,48 @@ export const PAGE_FAQS = {
         'We track organic traffic, keyword visibility, conversions (calls, forms, purchases), Google Business Profile actions for local clients, and revenue impact where tracking is available. Success is defined with you upfront so reporting maps to business outcomes.',
     },
   ],
+  technicalSeo: [
+    {
+      question: 'What is Technical SEO?',
+      answer:
+        'Technical SEO is the work that ensures search engines can crawl, index, and understand your site efficiently. It covers site architecture, crawlability, indexation, canonicals, redirects, Core Web Vitals, mobile usability, structured data, and monitoring in Search Console.',
+    },
+    {
+      question: 'How long does technical SEO take to show results?',
+      answer:
+        'Critical crawl and indexation fixes can show movement in a few weeks once deployed. Core Web Vitals and template-level improvements often take two to four months. Competitive sites with years of technical debt may need longer—but fixes compound as indexation and speed improve.',
+    },
+    {
+      question: 'How much does technical SEO cost?',
+      answer:
+        'Cost depends on site size, platform complexity, and how many templates, locales, or storefronts need auditing. We provide itemized proposals after a technical audit rather than flat packages that ignore crawl depth and development scope.',
+    },
+    {
+      question: 'Do you offer technical SEO for international clients?',
+      answer:
+        'Yes. We deliver technical SEO for businesses in India and worldwide, including hreflang review, multi-region crawl management, and Search Console monitoring across country or language sections.',
+    },
+    {
+      question: 'How is SEO India Tech different for technical SEO?',
+      answer:
+        'We prioritise measurable fixes—crawl errors, indexation, CWV, schema—not generic checklists. Technical recommendations are paired with development-ready tickets, validation in Search Console, and reporting tied to index coverage and business KPIs.',
+    },
+    {
+      question: 'Can technical SEO work with our existing marketing team?',
+      answer:
+        'Yes. We collaborate with in-house developers, agencies, and marketing teams. We provide audit documentation, implementation guidance, and QA so your team can ship fixes without losing tracking or conversions.',
+    },
+    {
+      question: 'What KPIs should we track for technical SEO?',
+      answer:
+        'Key metrics include indexed versus submitted pages, crawl errors, Core Web Vitals pass rates, organic landing-page speed, structured-data validity, and downstream organic traffic and conversions on fixed templates.',
+    },
+    {
+      question: 'How do we start technical SEO with SEO India Tech?',
+      answer:
+        'Book a free technical SEO audit. We review crawl data, Search Console coverage, speed, and template health—then deliver a prioritised fix list with timelines and KPIs before broader content or link programs scale.',
+    },
+  ],
   contact: [
     {
       question: 'How quickly will SEO India Tech respond to my enquiry?',

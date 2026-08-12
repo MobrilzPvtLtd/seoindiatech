@@ -171,6 +171,7 @@ const SERVICE_BLOG_SLUGS = {
   'ppc-advertising': ['seo-roi-calculator-measure-success', 'local-vs-national-vs-international-seo'],
   'app-store-optimization': ['ecommerce-seo-checklist-india', 'seo-trends-european-businesses-2026'],
   'online-reputation-management': ['google-business-profile-optimization-guide', 'complete-eeat-guide-business-websites'],
+  'technical-seo': ['technical-seo-checklist-enterprise-websites', 'seo-trends-european-businesses-2026'],
 }
 
 const catalogByHref = new Map(INTERNAL_LINK_CATALOG.map((item) => [item.href, item]))

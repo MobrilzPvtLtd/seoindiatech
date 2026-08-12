@@ -7,18 +7,40 @@ export { getPremiumHubContent } from './buildPremiumHubContent'
 
 function mergeContent(built, override) {
   if (!override) return built
+
+  const mergedInternalLinks = override.internalLinks
+    ? {
+        ...built.internalLinks,
+        ...override.internalLinks,
+        links: override.internalLinks.links
+          ? (() => {
+              const seen = new Set()
+              return [...override.internalLinks.links, ...(built.internalLinks?.links || [])].filter(
+                (link) => {
+                  if (!link?.href || seen.has(link.href)) return false
+                  seen.add(link.href)
+                  return true
+                }
+              )
+            })()
+          : built.internalLinks?.links,
+      }
+    : built.internalLinks
+
   return {
     ...built,
     ...override,
     seo: { ...built.seo, ...override.seo },
     hero: { ...built.hero, ...override.hero },
     trust: override.trust ? { ...built.trust, ...override.trust } : built.trust,
-    whySeoMatters: override.whySeoMatters || built.whySeoMatters,
+    whySeoMatters: override.whySeoMatters
+      ? { ...built.whySeoMatters, ...override.whySeoMatters }
+      : built.whySeoMatters,
     painPoints: override.painPoints || built.painPoints,
     editorial: override.editorial || built.editorial,
     semanticTopics: override.semanticTopics || built.semanticTopics,
     keyTakeaways: override.keyTakeaways || built.keyTakeaways,
-    internalLinks: override.internalLinks || built.internalLinks,
+    internalLinks: mergedInternalLinks,
     whyChoose: override.whyChoose || built.whyChoose,
     services: override.services || built.services,
     pillars: override.pillars !== undefined ? override.pillars : built.pillars,
@@ -33,7 +55,7 @@ function mergeContent(built, override) {
     faq: override.faq || built.faq,
     contact: override.contact || built.contact,
     finalCta: override.finalCta || built.finalCta,
-    answerFirst: override.answerFirst || built.answerFirst,
+    answerFirst: override.answerFirst ? { ...built.answerFirst, ...override.answerFirst } : built.answerFirst,
   }
 }
 

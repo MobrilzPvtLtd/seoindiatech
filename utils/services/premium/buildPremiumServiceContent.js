@@ -2,6 +2,7 @@
  * Premium service page content builder - mirrors industry premium architecture.
  */
 import { getServiceInternalLinks } from '../../internalLinks'
+import { PAGE_FAQS } from '../../pageFaqs'
 import { getRelatedServices } from './serviceCatalog'
 import { getServiceFaqs } from './serviceFaqMap'
 import { getServiceAnswerFirst } from '../../seo/answerFirstContent.js'
@@ -181,7 +182,8 @@ function buildPillars(entry) {
 export function buildPremiumServiceContent(entry) {
   const { slug, path, name, hubTitle, hubPath, shortDescription, features, heroImage } = entry
   const label = name.toLowerCase()
-  const faqs = getServiceFaqs(entry)
+  const faqs =
+    slug === 'technical-seo' ? [...PAGE_FAQS.technicalSeo] : getServiceFaqs(entry)
   const related = getRelatedServices(slug, 6)
 
   const serviceItems = features.length
