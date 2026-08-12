@@ -114,18 +114,38 @@ Sitemap — 115 URLs (validated)
 
 ## Production QA
 
-_See `seo-audit/phase-11-international-seo-live-snapshot.json` after deploy._
+**Deploy commit:** `e891078`  
+**Live snapshot:** `seo-audit/phase-11-international-seo-live-snapshot.json`  
+**Audited:** 2026-08-12
 
-Run:
+| Check | Result |
+|-------|--------|
+| HTTP 200 | ✅ |
+| Title unchanged | ✅ International SEO Agency India \| Global SEO Services |
+| Meta unchanged | ✅ |
+| H1 unchanged | ✅ International SEO for Indian Businesses Going Global |
+| Canonical | ✅ `https://www.seoindiatech.com/services/international-seo` |
+| Indexability | ✅ `index, follow` |
+| Single quick-answer H2 | ✅ What Is International SEO and Who Needs It? |
+| Duplicate quick-answer pair | ✅ None |
+| `SERVICE_ANSWERS['international-seo']` | ✅ International-specific (hreflang, export markets) |
+| FAQ visible / schema | ✅ 8 / 8 |
+| FAQPage blocks | ✅ 1 |
+| `/services/seo` | ✅ |
+| `/services/technical-seo` | ✅ |
+| `/services/local-seo-service` | ✅ |
+| `/services/e-commerce-seo` | ✅ |
+| Blog: international-seo-guide-european-companies | ✅ |
+| Blog: local-vs-national-vs-international-seo | ✅ |
+| Schema stack | ✅ WebSite, Organization, BreadcrumbList, WebPage, Service, FAQPage, HowTo |
+| Industry pages regression (12B re-check) | ✅ PASS |
 
-```bash
-node scripts/audit-international-seo-live.mjs
-```
+**Verdict: Phase 11 production QA PASS — phase closed.**
 
 ---
 
 ## Remaining Issues
 
-None blocking Phase 11 closure pending production QA pass.
+None.
 
-**STOP** — No GSC analysis, industry batches, or new content in this phase.
+**STOP** — Next gate is **GSC export** before Phase 13 Top 5 industry selection.
