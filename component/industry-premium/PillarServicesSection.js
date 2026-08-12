@@ -1,5 +1,6 @@
 import Image from 'next/image'
-import { Check } from 'lucide-react'
+import Link from 'next/link'
+import { ArrowRight, Check } from 'lucide-react'
 import PremiumSection, { PremiumSectionHeader } from './PremiumSection'
 
 export default function PillarServicesSection({ data }) {
@@ -27,7 +28,15 @@ export default function PillarServicesSection({ data }) {
                 <span className="inline-flex rounded-full bg-primary/10 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-primary">
                   {pillar.label}
                 </span>
-                <h3 className="mt-4 font-heading text-2xl font-bold text-heading md:text-3xl">{pillar.title}</h3>
+                {pillar.href ? (
+                  <Link href={pillar.href} className="group mt-4 block">
+                    <h3 className="font-heading text-2xl font-bold text-heading md:text-3xl group-hover:text-primary transition-colors">
+                      {pillar.title}
+                    </h3>
+                  </Link>
+                ) : (
+                  <h3 className="mt-4 font-heading text-2xl font-bold text-heading md:text-3xl">{pillar.title}</h3>
+                )}
                 <p className="premium-prose mt-4">{pillar.description}</p>
 
                 <div className="mt-6 grid gap-4 sm:grid-cols-2">
@@ -49,6 +58,15 @@ export default function PillarServicesSection({ data }) {
                     </li>
                   ))}
                 </ul>
+                {pillar.href && (
+                  <Link
+                    href={pillar.href}
+                    className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-primary hover:gap-3 transition-all"
+                  >
+                    Explore {pillar.title}
+                    <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                  </Link>
+                )}
               </div>
 
               <div className="relative aspect-[16/11] overflow-hidden rounded-3xl border border-border bg-gradient-to-br from-white to-primary/5 shadow-premium dark:from-card dark:to-primary/10">

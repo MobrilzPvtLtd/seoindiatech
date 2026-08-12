@@ -18,7 +18,16 @@ function mergeHubContent(built, override) {
     editorial: override.editorial || built.editorial,
     semanticTopics: override.semanticTopics || built.semanticTopics,
     pillars: override.pillars || built.pillars,
-    faq: override.faq || built.faq,
+    whySeoMatters: override.whySeoMatters
+      ? { ...built.whySeoMatters, ...override.whySeoMatters }
+      : built.whySeoMatters,
+    faq: override.faq
+      ? {
+          ...built.faq,
+          ...override.faq,
+          items: override.faq.items ?? built.faq.items,
+        }
+      : built.faq,
     internalLinks: override.internalLinks
       ? {
           ...built.internalLinks,
@@ -452,8 +461,12 @@ export function getPremiumHubContent(hubSlug) {
 
     faq: {
       badge: 'FAQ',
-      title: `Frequently Asked Questions About ${hubTitle}`,
-      items: expandFaqs(faqBase, hubName, 20),
+      title:
+        hubSlug === 'seo'
+          ? 'Frequently Asked Questions About SEO Services in India'
+          : `Frequently Asked Questions About ${hubTitle}`,
+      items:
+        hubSlug === 'seo' ? [...PAGE_FAQS.seoHub] : expandFaqs(faqBase, hubName, 20),
     },
 
     contact: {

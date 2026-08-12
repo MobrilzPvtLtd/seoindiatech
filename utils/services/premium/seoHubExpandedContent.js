@@ -15,6 +15,19 @@ export const seoHubExpandedContent = {
       'Whether you need a full SEO roadmap or specialist support, explore technical SEO, local SEO, international SEO, and e-commerce SEO below—or book a free audit for a clear plan with priorities and KPIs.',
     ],
   },
+  answerFirst: {
+    question: 'What SEO services does SEO India Tech provide?',
+    answer:
+      'SEO India Tech delivers integrated SEO programs for businesses in India and worldwide—including technical SEO, local SEO, e-commerce SEO, international SEO, content SEO, and AI search optimization. Each program combines audits, implementation, and weekly reporting tied to qualified traffic, leads, and revenue.',
+    takeaways: [
+      'Technical, local, e-commerce, and international SEO programs',
+      'On-page SEO, content strategy, and ethical link building',
+      'Weekly KPI reporting aligned to business outcomes',
+    ],
+  },
+  whySeoMatters: {
+    suppressGeoAnswer: true,
+  },
   editorial: {
     badge: 'SEO Services Guide',
     title: 'SEO Services We Offer',
@@ -102,6 +115,7 @@ export const seoHubExpandedContent = {
         id: 'technical-seo',
         label: 'Foundation',
         title: 'Technical SEO',
+        href: '/services/technical-seo',
         description: 'Audits, Core Web Vitals, crawl fixes, and schema.',
         process: 'Audit → prioritise → implement → validate in Search Console.',
         outcome: 'Indexable, fast templates that support rankings.',
@@ -115,6 +129,7 @@ export const seoHubExpandedContent = {
         id: 'local-seo-service',
         label: 'Local',
         title: 'Local SEO',
+        href: '/services/local-seo-service',
         description: 'Map pack, GBP, and geo pages for service areas.',
         process: 'GBP → citations → location content → review workflows.',
         outcome: 'More calls and direction requests from local search.',
@@ -127,7 +142,8 @@ export const seoHubExpandedContent = {
       {
         id: 'e-commerce-seo',
         label: 'Ecommerce',
-        title: 'Ecommerce SEO',
+        title: 'E-commerce SEO',
+        href: '/services/e-commerce-seo',
         description: 'Product and category optimisation for online stores.',
         process: 'Technical → category architecture → product templates → reporting.',
         outcome: 'Organic revenue growth from commercial queries.',
@@ -141,6 +157,7 @@ export const seoHubExpandedContent = {
         id: 'international-seo',
         label: 'Global',
         title: 'International SEO',
+        href: '/services/international-seo',
         description: 'Multi-country visibility for export markets.',
         process: 'Market research → hreflang → localised pages → monitoring.',
         outcome: 'Discoverability in target countries without cannibalisation.',
@@ -175,42 +192,6 @@ export const seoHubExpandedContent = {
           src: '/images/services/heroes/ai-seo.svg',
           alt: 'AI SEO illustration',
         },
-      },
-    ],
-  },
-  faq: {
-    badge: 'FAQ',
-    title: 'Frequently Asked Questions About SEO Services in India',
-    items: [
-      {
-        question: 'What is included in SEO services in India?',
-        answer:
-          'Programs typically include technical audits, on-page optimisation, content support, local SEO where relevant, reporting, and a prioritised roadmap. Scope depends on your site size, competition, and goals—we confirm deliverables in a proposal after an audit.',
-      },
-      {
-        question: 'How do I choose an SEO agency in India?',
-        answer:
-          'Look for transparent methodology, clear reporting tied to leads or revenue, and realistic timelines. Avoid agencies that guarantee rankings or use vague deliverables. Ask how they handle technical SEO, content, and local search for your industry.',
-      },
-      {
-        question: 'How long does SEO take to show results?',
-        answer:
-          'Most sites see meaningful movement in three to six months, depending on competition, site health, and how quickly fixes are implemented. Technical blockers and thin content can extend timelines—we surface those in the first audit.',
-      },
-      {
-        question: 'Do you work with businesses outside India?',
-        answer:
-          'Yes. We serve clients in India and worldwide with timezone-aligned communication. International SEO programs target export markets with separate keyword and URL strategies per region.',
-      },
-      {
-        question: 'Is SEO different from SEO marketing?',
-        answer:
-          'SEO marketing usually means using organic search as a core growth channel within your wider marketing mix. Our SEO services cover the technical and content work; we can coordinate with your paid and social teams for consistent messaging.',
-      },
-      {
-        question: 'Can the contact page replace an SEO services page?',
-        answer:
-          'No. Contact pages should help people reach you. Commercial SEO topics belong on dedicated service pages like this one. Use our contact page for consultations after you understand our programs.',
       },
     ],
   },

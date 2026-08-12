@@ -24,7 +24,7 @@ export default function WhySeoMatters({ data }) {
             ))}
           </div>
 
-          {data.geoAnswer && (
+          {data.geoAnswer && !data.suppressGeoAnswer && (
             <div className="mt-8">
               <GeoQuickAnswer data={data.geoAnswer} />
             </div>
