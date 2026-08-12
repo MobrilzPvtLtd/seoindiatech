@@ -3,8 +3,6 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { Award } from 'lucide-react'
 import SectionBadge from '@/component/ui/SectionBadge'
-import ScribbleText from '@/component/ui/ScribbleText'
-
 import { HOME_IMAGES } from '@/utils/homeImages'
 
 const images = [
@@ -38,11 +36,7 @@ const AboutBand = () => {
           >
             <SectionBadge>About Us</SectionBadge>
             <h2 className="mt-6 font-heading text-3xl font-extrabold tracking-tight text-heading sm:text-4xl md:text-[2.5rem] md:leading-[1.15]">
-              About SEO INDIA TECH - New-Age{' '}
-              <ScribbleText className="text-primary" scribbleColor="#6B2E88">
-                AI Powered Digital
-              </ScribbleText>{' '}
-              Marketing Company
+              About SEO India Tech
             </h2>
             <p className="mt-5 text-base leading-relaxed text-muted">
               For 14+ years we&apos;ve helped businesses worldwide grow through search, performance
@@ -71,10 +65,10 @@ const AboutBand = () => {
                 Signup for a Free Call
               </Link>
               <Link
-                href="/services/ai-seo"
+                href="/services/seo"
                 className="inline-flex items-center justify-center rounded-full bg-secondary hover:bg-secondary/90 px-8 py-3.5 text-sm font-bold text-white transition-all hover:-translate-y-0.5"
               >
-                Browse AI Enabled Offerings
+                Explore SEO Services
               </Link>
             </div>
           </motion.div>

@@ -152,17 +152,17 @@ const ProblemsSection = () => {
         >
           <SectionBadge>Problems We Solve</SectionBadge>
           <h2 className="mt-6 font-heading text-3xl font-extrabold tracking-tight text-heading sm:text-4xl md:text-[2.75rem] md:leading-[1.12]">
-            Become A Part Of The AI Revolution!!
+            SEO Challenges We Help You Solve
           </h2>
           <p className="mt-5 text-base md:text-lg leading-relaxed text-muted">
-            Whether you are a new business starting from scratch or already have an online presence
-            but want to revamp your digital identity - we offer best-in-class AI-powered marketing services.
+            Whether you are launching online or scaling an existing presence, we diagnose what blocks
+            visibility and leads — then build SEO-first programs that deliver measurable growth.
           </p>
           <Link
             href="/contact-us"
             className="mt-6 inline-flex items-center justify-center rounded-full bg-primary hover:bg-primary-hover px-8 py-3.5 text-sm font-bold text-white shadow-glow-brand transition-all hover:-translate-y-0.5"
           >
-            Grow with AI-Enabled Solutions
+            Get a Free SEO Consultation
           </Link>
         </motion.div>
 

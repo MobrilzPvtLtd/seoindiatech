@@ -2,7 +2,6 @@ import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { PenLine, Rocket, Monitor } from 'lucide-react'
 import SectionBadge from '@/component/ui/SectionBadge'
-import ScribbleText from '@/component/ui/ScribbleText'
 
 const offerings = [
   {
@@ -35,16 +34,44 @@ const OfferingsSection = () => {
         >
           <SectionBadge>Features</SectionBadge>
           <h2 className="mt-6 font-heading text-3xl font-extrabold tracking-tight text-heading sm:text-4xl md:text-[2.75rem] md:leading-[1.12]">
-            Our Offerings for AI{' '}
-            <ScribbleText className="text-primary" scribbleColor="#6B2E88">
-              Driven Marketing
-            </ScribbleText>{' '}
-            Wins!
+            SEO &amp; Digital Growth Services
           </h2>
           <p className="mt-5 text-base md:text-lg leading-relaxed text-muted max-w-2xl mx-auto">
-            AI is reshaping how buyers discover brands. We build search, content, and media systems
-            that improve visibility, generate quality leads, and drive measurable revenue growth.
+            Search, content, and media systems that improve visibility, generate quality leads, and
+            drive measurable revenue growth — with SEO as the foundation.
           </p>
+          <div className="mt-6 flex flex-wrap justify-center gap-3">
+            <Link
+              href="/services/seo"
+              className="inline-flex items-center rounded-full border border-primary/20 bg-white px-5 py-2.5 text-sm font-semibold text-primary hover:bg-primary/5 transition-colors"
+            >
+              SEO Services
+            </Link>
+            <Link
+              href="/services/technical-seo"
+              className="inline-flex items-center rounded-full border border-border px-5 py-2.5 text-sm font-semibold text-heading hover:border-primary/30 transition-colors"
+            >
+              Technical SEO
+            </Link>
+            <Link
+              href="/services/local-seo-service"
+              className="inline-flex items-center rounded-full border border-border px-5 py-2.5 text-sm font-semibold text-heading hover:border-primary/30 transition-colors"
+            >
+              Local SEO
+            </Link>
+            <Link
+              href="/services/e-commerce-seo"
+              className="inline-flex items-center rounded-full border border-border px-5 py-2.5 text-sm font-semibold text-heading hover:border-primary/30 transition-colors"
+            >
+              E-commerce SEO
+            </Link>
+            <Link
+              href="/services/international-seo"
+              className="inline-flex items-center rounded-full border border-border px-5 py-2.5 text-sm font-semibold text-heading hover:border-primary/30 transition-colors"
+            >
+              International SEO
+            </Link>
+          </div>
           <Link
             href="/contact-us"
             className="mt-8 inline-flex items-center justify-center rounded-full bg-primary hover:bg-primary-hover px-10 py-4 text-sm font-bold text-white shadow-glow-brand transition-all hover:-translate-y-0.5"

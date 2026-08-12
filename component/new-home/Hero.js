@@ -69,35 +69,29 @@ const Hero = () => {
           {/* Left - visible immediately for LCP (no JS animation gate) */}
           <div className="text-center lg:text-left text-white hero-copy animate-fade-in-up">
             <h1 className="font-heading text-[1.85rem] font-extrabold leading-[1.08] tracking-tight sm:text-5xl lg:text-[3.25rem] xl:text-[3.5rem]">
-              Search &amp; Performance
+              SEO Company in India
               <br />
-              <ScribbleText className="text-accent" scribbleColor="#A4DDFB">Marketing</ScribbleText> Agency
+              <span className="text-white/95">That Drives </span>
+              <ScribbleText className="text-accent" scribbleColor="#A4DDFB">Sustainable Growth</ScribbleText>
             </h1>
 
-            <p className="mt-5 text-base font-semibold text-accent sm:text-lg lg:text-xl leading-snug">
-              Result-Oriented, AI-Powered Digital Marketing Agency
-            </p>
-            <p className="mt-2 text-sm font-medium text-white/80 sm:text-base">
-              Your trusted partner for measurable online growth with AI-enabled solutions
-            </p>
-
-            <p className="mt-5 max-w-xl text-sm leading-relaxed text-white/75 sm:text-base mx-auto lg:mx-0">
-              Search, ads, and technology under one roof - SEO INDIA TECH helps global brands
-              rank higher, convert better, and scale revenue across USA, UK, Australia, and beyond.
+            <p className="mt-5 max-w-xl text-sm leading-relaxed text-white/80 sm:text-base mx-auto lg:mx-0">
+              Data-driven SEO strategies that improve search visibility, qualified traffic and sustainable
+              business growth — powered by 14+ years of experience and modern AI search expertise.
             </p>
 
             <div className="mt-8 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4">
               <Link
-                href="/services/ai-seo"
+                href="/services/seo"
                 className="inline-flex w-full sm:w-auto items-center justify-center gap-2 rounded-full bg-primary hover:bg-primary-hover px-8 py-4 text-sm font-bold text-white shadow-glow-brand transition-all hover:-translate-y-0.5"
               >
-                Explore AI-Powered Services
+                Explore SEO Services
               </Link>
               <Link
                 href="/contact-us"
                 className="inline-flex w-full sm:w-auto items-center justify-center gap-2 rounded-full bg-white hover:bg-white/90 px-8 py-4 text-sm font-bold text-secondary transition-all hover:-translate-y-0.5"
               >
-                Book Free Consultation Call
+                Book Free Consultation
               </Link>
             </div>
           </div>

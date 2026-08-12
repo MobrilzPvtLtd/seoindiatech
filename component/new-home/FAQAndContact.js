@@ -92,7 +92,7 @@ const FAQAndContact = () => {
           <SectionHeader
             badge="FAQ"
             title="Frequently Asked Questions"
-            description="Clear answers to help you understand our digital marketing solutions better."
+            description="Clear answers about our SEO services, AI search programs, and how we help businesses grow online."
             align="center"
             className="mb-10 md:mb-14"
           />

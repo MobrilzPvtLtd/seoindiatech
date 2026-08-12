@@ -16,8 +16,7 @@ const ProcessSection = () => {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeader
           badge="How We Work"
-          title="A proven process for"
-          highlight="measurable growth"
+          title="Our SEO Process"
           description="From first audit to scaled results - a clear, accountable framework every client can follow."
         />
 

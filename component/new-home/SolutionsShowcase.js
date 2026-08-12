@@ -9,6 +9,25 @@ import { HOME_IMAGES } from '@/utils/homeImages'
 const solutions = [
   {
     num: '01',
+    sectionH2: 'Search Engine Optimization Services',
+    title: 'SEO Services',
+    desc: 'Technical fixes, content strategy, and authority building that drive sustainable organic traffic and qualified leads worldwide.',
+    serviceLinks: [
+      { label: 'SEO Services', href: '/services/seo' },
+      { label: 'Technical SEO', href: '/services/technical-seo' },
+      { label: 'Local SEO', href: '/services/local-seo-service' },
+      { label: 'E-Commerce SEO', href: '/services/e-commerce-seo' },
+      { label: 'International SEO', href: '/services/international-seo' },
+    ],
+    tools: ['Screaming Frog', 'Semrush', 'Ahrefs', 'GTM'],
+    cta: 'Start SEO Growth',
+    href: '/services/seo',
+    image: HOME_IMAGES.seo,
+    imageFirst: true,
+  },
+  {
+    num: '02',
+    sectionH2: 'AI SEO & Search Visibility',
     title: 'AI SEO & LLM Optimization',
     desc: 'Rank in Google, AI Overviews, ChatGPT, and voice search - we optimize for how discovery works today, not just classic blue links.',
     services: ['AI SEO', 'GEO Optimization', 'AEO Optimization', 'LLM Visibility', 'Voice Search'],
@@ -16,17 +35,6 @@ const solutions = [
     cta: 'Explore AI SEO',
     href: '/services/ai-seo',
     image: HOME_IMAGES.aiSeo,
-    imageFirst: true,
-  },
-  {
-    num: '02',
-    title: 'Search Engine Optimization (SEO)',
-    desc: 'Technical fixes, content strategy, and authority building that drive sustainable organic traffic and qualified leads worldwide.',
-    services: ['Technical SEO', 'Local SEO', 'E-Commerce SEO', 'International SEO', 'Link Building'],
-    tools: ['Screaming Frog', 'Semrush', 'Ahrefs', 'GTM'],
-    cta: 'Start SEO Growth',
-    href: '/services/seo',
-    image: HOME_IMAGES.seo,
     imageFirst: false,
   },
   {
@@ -56,6 +64,11 @@ const solutions = [
 function SolutionContent({ sol }) {
   return (
     <div>
+      {sol.sectionH2 && (
+        <h2 className="font-heading text-2xl font-extrabold tracking-tight text-heading sm:text-3xl md:text-4xl mb-6">
+          {sol.sectionH2}
+        </h2>
+      )}
       <div className="flex items-start gap-3 sm:gap-4 flex-wrap">
         <span className="outline-num-light shrink-0 leading-none">{sol.num}</span>
         <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold italic text-heading leading-tight max-w-lg">
@@ -66,9 +79,19 @@ function SolutionContent({ sol }) {
       <div className="mt-7">
         <p className="text-sm font-bold text-heading mb-3">Core Services</p>
         <div className="flex flex-wrap gap-2">
-          {sol.services.map((s) => (
-            <span key={s} className="service-pill-light">{s}</span>
-          ))}
+          {sol.serviceLinks
+            ? sol.serviceLinks.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="service-pill-light hover:border-primary/40 hover:text-primary transition-colors"
+                >
+                  {item.label}
+                </Link>
+              ))
+            : sol.services.map((s) => (
+                <span key={s} className="service-pill-light">{s}</span>
+              ))}
         </div>
       </div>
       <div className="mt-5">
@@ -147,19 +170,14 @@ const SolutionsShowcase = () => {
         <div className="relative mx-auto max-w-4xl px-4 text-center section-dark-copy">
           <SectionBadge dark>What We Provide</SectionBadge>
           <h2 className="mt-6 font-heading text-3xl font-extrabold text-white sm:text-4xl md:text-[2.75rem] leading-tight">
-            Lead the Way with{' '}
+            SEO Services Built for{' '}
             <ScribbleText className="text-accent" scribbleColor="#6B2E88">
-              AI Powered
+              Sustainable Growth
             </ScribbleText>
-            <br />
-            Digital{' '}
-            <ScribbleText className="text-accent" scribbleColor="#6B2E88">
-              Marketing
-            </ScribbleText>{' '}
-            Solutions!
           </h2>
           <p className="mt-5 text-sm md:text-base text-white/60 max-w-2xl mx-auto">
-            Four core practice areas - search, AI, performance media, and brand - delivered by one accountable growth team.
+            SEO-first programs across search, technical foundations, local visibility, e-commerce, and
+            AI search — delivered by one accountable growth team.
           </p>
         </div>
       </div>

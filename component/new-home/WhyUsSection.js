@@ -2,7 +2,6 @@ import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { BarChart3, Network, Star } from 'lucide-react'
 import SectionBadge from '@/component/ui/SectionBadge'
-import ScribbleText from '@/component/ui/ScribbleText'
 import IconRing from '@/component/ui/IconRing'
 
 const reasons = [
@@ -38,11 +37,7 @@ const WhyUsSection = () => {
         >
           <SectionBadge>Why Choose Us</SectionBadge>
           <h2 className="mt-6 font-heading text-3xl font-extrabold tracking-tight text-heading sm:text-4xl md:text-[2.75rem]">
-            3 Reasons{' '}
-            <ScribbleText className="text-heading" scribbleColor="#A4DDFB">
-              Why
-            </ScribbleText>{' '}
-            SEO INDIA TECH Is Your Best Bet!
+            Why Choose SEO India Tech
           </h2>
           <p className="mt-5 text-base md:text-lg text-muted leading-relaxed">
             Your business needs a digital partner that understands search, media, and technology -
@@ -52,7 +47,7 @@ const WhyUsSection = () => {
             href="/contact-us"
             className="mt-8 inline-flex items-center justify-center rounded-full bg-primary hover:bg-primary-hover px-10 py-4 text-sm font-bold text-white shadow-glow-brand transition-all hover:-translate-y-0.5"
           >
-            Get Started with AI-Powered Marketing
+            Get Started with SEO India Tech
           </Link>
         </motion.div>
 

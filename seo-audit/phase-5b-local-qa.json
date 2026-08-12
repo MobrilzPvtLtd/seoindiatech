@@ -1,0 +1,51 @@
+{
+  "url": "http://localhost:3456/",
+  "status": 200,
+  "title": "SEO Company in India | SEO Agency &amp; Services | SEO India Tech",
+  "description": "SEO company in India with 14+ years of experience helping businesses grow through SEO, technical SEO, local SEO, e-commerce SEO and AI search. Get a free SEO audit.",
+  "canonical": "https://www.seoindiatech.com",
+  "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+  "h1": [
+    "SEO Company in IndiaThat Drives Sustainable Growth"
+  ],
+  "h1Count": 1,
+  "h2": [
+    "SEO &amp; Digital Growth Services",
+    "About SEO India Tech",
+    "Why Choose SEO India Tech",
+    "SEO Services Built for Sustainable Growth",
+    "Search Engine Optimization Services",
+    "AI SEO &amp; Search Visibility",
+    "SEO Results &amp; Case Studies",
+    "SEO Challenges We Help You Solve",
+    "SEO Solutions for 41 Industries",
+    "How We Create A Difference!",
+    "Our SEO Process",
+    "What Our Clients Say",
+    "Enterprise-grade delivery. Startup agility.",
+    "SEO Resources &amp; Services",
+    "Our Latest Blogs"
+  ],
+  "faqSchemaCount": 13,
+  "faqSchemaBlocks": 1,
+  "visibleFaqQuestions": 0,
+  "ldGraphTypes": [
+    "WebSite",
+    "Organization",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "requiredLinksPresent": {
+    "/services/seo": true,
+    "/services/technical-seo": true,
+    "/services/local-seo-service": true,
+    "/services/e-commerce-seo": true,
+    "/services/international-seo": true,
+    "/industries/wineries-seo": true,
+    "/industries/optometrist-seo": true,
+    "/industries/accountants-seo": true,
+    "/industries/doctor-physician-seo": true
+  },
+  "heroCtaSeo": true,
+  "bookConsultation": true
+}

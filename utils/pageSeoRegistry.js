@@ -1,9 +1,9 @@
 /** Default SEO metadata for static routes. */
 export const PAGE_SEO = {
   '/': {
-    title: 'AI-Powered SEO & Digital Marketing Agency | SEO India Tech',
+    title: 'SEO Company in India | SEO Agency & Services | SEO India Tech',
     description:
-      'Global digital growth partner for AI-powered SEO, performance marketing, and technology. 14+ years serving businesses in USA, UK, Australia, and worldwide.',
+      'SEO company in India with 14+ years of experience helping businesses grow through SEO, technical SEO, local SEO, e-commerce SEO and AI search. Get a free SEO audit.',
   },
   '/who-we-are': {
     title: 'About SEO India Tech | AI SEO & Digital Marketing Experts',

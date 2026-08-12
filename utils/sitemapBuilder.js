@@ -3,30 +3,36 @@ import { BLOG_CATALOG } from './blog/premium/blogCatalog.js'
 export const SITE_URL = 'https://www.seoindiatech.com'
 export const ALLOWED_HOSTS = new Set(['www.seoindiatech.com', 'seoindiatech.com'])
 
-/** Blog slug → ISO date (datePublished) for accurate sitemap lastmod only. */
-const BLOG_LASTMOD = Object.fromEntries(
-  BLOG_CATALOG.map((entry) => [entry.slug, entry.datePublished])
-)
+const ISO_DATE = /^\d{4}-\d{2}-\d{2}$/
 
-/** Legacy blog slugs without catalog dates — stable lastmod, not build date. */
-const LEGACY_BLOG_LASTMOD = {
-  'how-google-ai-overviews-are-changing-seo': '2025-06-01',
-  'seo-for-restaurants-local-diners': '2025-06-15',
-  'youtube-business-marketing-2026': '2026-01-10',
-  'local-seo-guide-indian-businesses-2026': '2026-02-01',
-  'what-is-ai-seo-why-business-needs-it': '2026-03-01',
-  'ppc-vs-seo-which-is-better': '2026-03-15',
-  'ecommerce-seo-checklist-india': '2026-04-01',
-  'how-to-choose-best-seo-agency-india': '2026-04-15',
+/** Upper bound for lastmod — never emit future dates (local calendar day). */
+function todayIsoDate() {
+  const d = new Date()
+  const yyyy = d.getFullYear()
+  const mm = String(d.getMonth() + 1).padStart(2, '0')
+  const dd = String(d.getDate()).padStart(2, '0')
+  return `${yyyy}-${mm}-${dd}`
 }
+
+/**
+ * Sitemap lastmod from catalog dateModified only — never datePublished.
+ * Returns null when missing, invalid, or future (omit <lastmod> in XML).
+ */
+function resolveBlogLastmod(entry) {
+  const raw = entry?.dateModified
+  if (!raw || !ISO_DATE.test(raw)) return null
+  if (raw > todayIsoDate()) return null
+  return raw
+}
+
+const BLOG_LASTMOD_BY_SLUG = Object.fromEntries(
+  BLOG_CATALOG.map((entry) => [entry.slug, resolveBlogLastmod(entry)]).filter(([, date]) => date)
+)
 
 export function getLastmodForPath(path) {
   const blogMatch = path.match(/^\/blog\/(.+)$/)
-  if (blogMatch) {
-    const slug = blogMatch[1]
-    return BLOG_LASTMOD[slug] || LEGACY_BLOG_LASTMOD[slug] || null
-  }
-  return null
+  if (!blogMatch) return null
+  return BLOG_LASTMOD_BY_SLUG[blogMatch[1]] || null
 }
 
 export function buildSitemapUrls(paths) {

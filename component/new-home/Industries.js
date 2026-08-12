@@ -5,19 +5,30 @@ import ScribbleText from '@/component/ui/ScribbleText'
 import { INDUSTRY_CATEGORIES, toSlug } from '@/utils/industries'
 
 const featuredSlugs = [
+  'wineries-seo',
+  'optometrist-seo',
+  'accountants-seo',
+  'doctor-physician-seo',
   'dentist-seo',
   'hvac-seo',
   'realtor-seo',
   'plumber-seo',
-  'chiropractor-seo',
-  'roofers-seo',
-  'automotive-seo',
-  'personal-injury-seo',
 ]
+
+const featuredLabels = {
+  'wineries-seo': 'SEO for Wineries',
+  'optometrist-seo': 'Optometrist SEO',
+  'accountants-seo': 'Accountants SEO',
+  'doctor-physician-seo': 'Doctor & Physician SEO',
+}
 
 const featuredIndustries = INDUSTRY_CATEGORIES.flatMap((c) => c.items)
   .filter((item) => featuredSlugs.includes(toSlug(item)))
-  .map((name) => ({ name, slug: toSlug(name) }))
+  .map((name) => ({
+    name,
+    slug: toSlug(name),
+    label: featuredLabels[toSlug(name)] || name.replace(/\s+SEO$/i, ''),
+  }))
 
 const Industries = () => {
   return (
@@ -34,16 +45,31 @@ const Industries = () => {
           </div>
 
           <h2 className="mt-6 font-heading text-3xl font-extrabold tracking-tight text-heading sm:text-4xl md:text-[2.75rem] md:leading-[1.12]">
-            Industries We Have{' '}
+            SEO Solutions for{' '}
             <ScribbleText className="text-primary" scribbleColor="#6B2E88">
-              Served
-            </ScribbleText>{' '}
-            With AI-Powered Services!
+              41 Industries
+            </ScribbleText>
           </h2>
 
           <p className="mt-5 text-base md:text-lg leading-relaxed text-muted max-w-2xl mx-auto">
-            Specialized SEO for healthcare, home services, food &amp; health, and professional sectors -
-            41 industry programs with local SEO, AI visibility, and lead-focused content.
+            Specialized SEO programs tailored to healthcare, home services, food &amp; health, and
+            professional sectors — including{' '}
+            <Link href="/industries/wineries-seo" className="font-semibold text-primary hover:underline">
+              SEO for Wineries
+            </Link>
+            ,{' '}
+            <Link href="/industries/optometrist-seo" className="font-semibold text-primary hover:underline">
+              Optometrist SEO
+            </Link>
+            ,{' '}
+            <Link href="/industries/accountants-seo" className="font-semibold text-primary hover:underline">
+              Accountants SEO
+            </Link>
+            , and{' '}
+            <Link href="/industries/doctor-physician-seo" className="font-semibold text-primary hover:underline">
+              Doctor &amp; Physician SEO
+            </Link>
+            .
           </p>
         </motion.div>
 
@@ -66,7 +92,7 @@ const Industries = () => {
                 href={`/industries/${item.slug}`}
                 className="inline-flex items-center rounded-full border border-border bg-cream dark:bg-secondary/50 px-5 py-2.5 text-sm font-semibold text-heading hover:border-primary/30 hover:bg-primary/5 transition-colors duration-300"
               >
-                {item.name.replace(/\s+SEO$/i, '')}
+                {item.label}
               </Link>
             </motion.div>
           ))}

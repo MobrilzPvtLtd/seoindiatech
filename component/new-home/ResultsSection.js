@@ -40,8 +40,7 @@ const ResultsSection = () => {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeader
           badge="Client Outcomes"
-          title="Projects that moved"
-          highlight="real numbers"
+          title="SEO Results & Case Studies"
           description="A snapshot of outcomes across SEO, paid media, and full-funnel optimization - each engagement tied to measurable KPIs."
         />
 

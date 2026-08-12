@@ -6,7 +6,6 @@ import { motion } from 'framer-motion'
 import { ChevronLeft, ChevronRight, Quote } from 'lucide-react'
 import { useCallback, useEffect, useRef, useState } from 'react'
 import SectionBadge from '@/component/ui/SectionBadge'
-import ScribbleText from '@/component/ui/ScribbleText'
 import { homeTestimonials } from '@/utils/homeTestimonials'
 
 const LOCAL_AVATARS = ['/images/sarah.png', '/images/michael.png', '/images/lauren.png', '/images/profile.png']
@@ -141,11 +140,7 @@ const Testimonials = () => {
           >
             <SectionBadge dark>Testimonials</SectionBadge>
             <h2 className="mt-6 font-heading text-3xl font-extrabold text-white sm:text-4xl md:text-[2.75rem] md:leading-[1.12]">
-              Our Client{' '}
-              <ScribbleText className="text-accent" scribbleColor="#6B2E88">
-                Success
-              </ScribbleText>{' '}
-              Stories!
+              What Our Clients Say
             </h2>
             <p className="mt-5 text-base md:text-lg leading-relaxed text-white/60 max-w-xl">
               Real outcomes from {homeTestimonials.length} clients across SEO, paid media, and AI
@@ -167,10 +162,10 @@ const Testimonials = () => {
               Work With Us
             </Link>
             <Link
-              href="/services/ai-seo"
+              href="/services/seo"
               className="inline-flex items-center justify-center rounded-full border-2 border-white/80 text-white hover:bg-white/10 px-8 py-3.5 text-sm font-bold transition-all hover:-translate-y-0.5"
             >
-              Check AI-Powered Services
+              Explore SEO Services
             </Link>
           </motion.div>
         </div>
