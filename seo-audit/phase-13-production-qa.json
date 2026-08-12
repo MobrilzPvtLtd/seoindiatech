@@ -1,0 +1,233 @@
+{
+  "phase": "13",
+  "status": "PASS",
+  "timestamp": "2026-08-12T20:45:00+05:30",
+  "commit": {
+    "hash": "5532ed0",
+    "message": "seo: optimize top 5 industry ranking opportunities",
+    "branch": "master",
+    "remote": "origin/master"
+  },
+  "deployment": {
+    "platform": "Netlify",
+    "status": "live",
+    "verifiedBy": "Production poll — HVAC title with 'HVAC Contractor Marketing' detected after push (~90s)",
+    "productionBase": "https://www.seoindiatech.com"
+  },
+  "gscBaseline": {
+    "impressions": 28300,
+    "clicks": 67,
+    "ctr": 0.2,
+    "averagePosition": 43.7,
+    "window": "last 3 months (pre-Phase 13 benchmark)"
+  },
+  "sitemap": {
+    "url": "https://www.seoindiatech.com/sitemap.xml",
+    "status": 200,
+    "urlCount": 115,
+    "pass": true
+  },
+  "top5IndustryPages": [
+    {
+      "slug": "wineries-seo",
+      "url": "https://www.seoindiatech.com/industries/wineries-seo",
+      "status": 200,
+      "indexable": true,
+      "canonical": "https://www.seoindiatech.com/industries/wineries-seo",
+      "canonicalPass": true,
+      "title": {
+        "live": "SEO for Wineries | Winery SEO Services | SEO India Tech",
+        "expected": "SEO for Wineries | Winery SEO Services | SEO India Tech",
+        "pass": true,
+        "note": "Protected — unchanged"
+      },
+      "metaDescription": {
+        "live": "SEO for wineries and wine brands: tasting room visits, direct-to-consumer sales, and wine tourism. Winery SEO strategies for vineyards across India, USA, and Europe.",
+        "pass": true,
+        "note": "Protected — unchanged"
+      },
+      "faqVisible": 20,
+      "faqSchema": 20,
+      "faqParityPass": true,
+      "serviceLinks": { "seo": true, "local": true, "technical": true },
+      "blogLinks": ["/blog/google-business-profile-optimization-guide"],
+      "internalLinksPass": true,
+      "overallPass": true
+    },
+    {
+      "slug": "hvac-seo",
+      "url": "https://www.seoindiatech.com/industries/hvac-seo",
+      "status": 200,
+      "indexable": true,
+      "canonical": "https://www.seoindiatech.com/industries/hvac-seo",
+      "canonicalPass": true,
+      "title": {
+        "live": "HVAC SEO Services | HVAC Contractor Marketing & Map Pack SEO",
+        "expected": "HVAC SEO Services | HVAC Contractor Marketing & Map Pack SEO",
+        "pass": true
+      },
+      "metaDescription": {
+        "live": "HVAC SEO for contractors: emergency AC repair visibility, install funnels, seasonal campaigns, and Google Maps dominance. Free HVAC marketing audit.",
+        "pass": true
+      },
+      "faqVisible": 20,
+      "faqSchema": 20,
+      "faqParityPass": true,
+      "serviceLinks": { "seo": true, "local": true, "technical": true },
+      "blogLinks": ["/blog/google-business-profile-optimization-guide"],
+      "internalLinksPass": true,
+      "overallPass": true
+    },
+    {
+      "slug": "optometrist-seo",
+      "url": "https://www.seoindiatech.com/industries/optometrist-seo",
+      "status": 200,
+      "indexable": true,
+      "canonical": "https://www.seoindiatech.com/industries/optometrist-seo",
+      "canonicalPass": true,
+      "title": {
+        "live": "SEO for Optometrists & Eye Care Practices | SEO India Tech",
+        "expected": "SEO for Optometrists & Eye Care Practices | SEO India Tech",
+        "pass": true,
+        "note": "Protected — unchanged"
+      },
+      "metaDescription": {
+        "live": "Eye care SEO for optometry practices: local visibility, service pages, and patient-focused content. Help patients find your clinic through search.",
+        "pass": true,
+        "note": "Protected — unchanged"
+      },
+      "faqVisible": 20,
+      "faqSchema": 20,
+      "faqParityPass": true,
+      "serviceLinks": { "seo": true, "local": true, "technical": true },
+      "blogLinks": ["/blog/google-business-profile-optimization-guide"],
+      "internalLinksPass": true,
+      "overallPass": true
+    },
+    {
+      "slug": "plumber-seo",
+      "url": "https://www.seoindiatech.com/industries/plumber-seo",
+      "status": 200,
+      "indexable": true,
+      "canonical": "https://www.seoindiatech.com/industries/plumber-seo",
+      "canonicalPass": true,
+      "title": {
+        "live": "Plumber SEO Services | Plumbing Contractor Marketing",
+        "expected": "Plumber SEO Services | Plumbing Contractor Marketing",
+        "pass": true
+      },
+      "metaDescription": {
+        "live": "Plumber SEO for contractors: emergency plumbing pages, suburb service areas, GBP optimization, and ethical review growth. Free audit.",
+        "pass": true
+      },
+      "faqVisible": 20,
+      "faqSchema": 20,
+      "faqParityPass": true,
+      "serviceLinks": { "seo": true, "local": true, "technical": true },
+      "blogLinks": ["/blog/google-business-profile-optimization-guide"],
+      "internalLinksPass": true,
+      "overallPass": true
+    },
+    {
+      "slug": "automotive-seo",
+      "url": "https://www.seoindiatech.com/industries/automotive-seo",
+      "status": 200,
+      "indexable": true,
+      "canonical": "https://www.seoindiatech.com/industries/automotive-seo",
+      "canonicalPass": true,
+      "title": {
+        "live": "Automotive SEO Services | Auto Repair Shop Marketing",
+        "expected": "Automotive SEO Services | Auto Repair Shop Marketing",
+        "pass": true
+      },
+      "metaDescription": {
+        "live": "Automotive SEO for repair shops and dealerships: service-menu pages, local map visibility, fleet SEO, and trust-building content. Free audit.",
+        "pass": true
+      },
+      "faqVisible": 20,
+      "faqSchema": 20,
+      "faqParityPass": true,
+      "serviceLinks": { "seo": true, "local": true, "technical": true },
+      "blogLinks": ["/blog/google-business-profile-optimization-guide"],
+      "internalLinksPass": true,
+      "overallPass": true
+    }
+  ],
+  "lockedServiceRegression": {
+    "pass": true,
+    "pages": [
+      {
+        "path": "/",
+        "status": 200,
+        "indexable": true,
+        "title": "SEO Company in India | SEO Agency & Services | SEO India Tech",
+        "canonical": "https://www.seoindiatech.com",
+        "pass": true
+      },
+      {
+        "path": "/services/seo",
+        "status": 200,
+        "indexable": true,
+        "title": "SEO Services in India | SEO India Tech",
+        "canonical": "https://www.seoindiatech.com/services/seo",
+        "pass": true
+      },
+      {
+        "path": "/services/technical-seo",
+        "status": 200,
+        "indexable": true,
+        "title": "Technical SEO Services in India | Technical SEO Company | SEO India Tech",
+        "canonical": "https://www.seoindiatech.com/services/technical-seo",
+        "pass": true
+      },
+      {
+        "path": "/services/local-seo-service",
+        "status": 200,
+        "indexable": true,
+        "title": "Local SEO India | Local SEO Services in India | SEO India Tech",
+        "canonical": "https://www.seoindiatech.com/services/local-seo-service",
+        "pass": true
+      },
+      {
+        "path": "/services/gbp-optimization",
+        "status": 200,
+        "indexable": true,
+        "title": "Google Business Profile Optimization | GBP SEO Experts | SEO India Tech",
+        "canonical": "https://www.seoindiatech.com/services/gbp-optimization",
+        "pass": true
+      },
+      {
+        "path": "/services/e-commerce-seo",
+        "status": 200,
+        "indexable": true,
+        "title": "Ecommerce SEO Agency in India | WooCommerce & Store SEO | SEO India Tech",
+        "canonical": "https://www.seoindiatech.com/services/e-commerce-seo",
+        "pass": true
+      },
+      {
+        "path": "/services/international-seo",
+        "status": 200,
+        "indexable": true,
+        "title": "International SEO Agency India | Global SEO Services | SEO India Tech",
+        "canonical": "https://www.seoindiatech.com/services/international-seo",
+        "pass": true
+      }
+    ]
+  },
+  "regressionChecks": {
+    "unexpectedUrlChanges": false,
+    "servicePageRegressions": false,
+    "noindexIntroduced": false,
+    "canonicalDrift": false
+  },
+  "overallVerdict": "PASS",
+  "nextSteps": [
+    "Do not make further SEO changes until GSC data matures (30-day minimum)",
+    "Upload Queries + Page GSC export before wineries title/meta experiments",
+    "Phase 14 requires fresh GSC data per phase-13-monitoring-plan.md"
+  ],
+  "auditScripts": [
+    "scripts/audit-phase-13a-top5-industries.mjs",
+    "scripts/qa-phase-13-locked-pages.mjs"
+  ]
+}
