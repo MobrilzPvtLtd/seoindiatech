@@ -183,7 +183,11 @@ export function buildPremiumServiceContent(entry) {
   const { slug, path, name, hubTitle, hubPath, shortDescription, features, heroImage } = entry
   const label = name.toLowerCase()
   const faqs =
-    slug === 'technical-seo' ? [...PAGE_FAQS.technicalSeo] : getServiceFaqs(entry)
+    slug === 'technical-seo'
+      ? [...PAGE_FAQS.technicalSeo]
+      : slug === 'local-seo-service'
+        ? [...PAGE_FAQS.localSeo]
+        : getServiceFaqs(entry)
   const related = getRelatedServices(slug, 6)
 
   const serviceItems = features.length

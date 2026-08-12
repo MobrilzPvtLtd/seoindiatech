@@ -19,7 +19,7 @@ export default function RelatedIndustries({ data }) {
             </h3>
             <p className="mt-2 flex-1 premium-prose text-[15px]">{item.description}</p>
             <span className="mt-4 inline-flex items-center gap-1 text-xs font-bold text-primary">
-              Explore
+              {item.ctaLabel || 'Explore'}
               <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
             </span>
           </Link>

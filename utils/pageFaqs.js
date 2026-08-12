@@ -150,6 +150,48 @@ export const PAGE_FAQS = {
         'Book a free technical SEO audit. We review crawl data, Search Console coverage, speed, and template health—then deliver a prioritised fix list with timelines and KPIs before broader content or link programs scale.',
     },
   ],
+  localSeo: [
+    {
+      question: 'What is local SEO?',
+      answer:
+        'Local SEO is the practice of improving visibility in Google Maps, the local map pack, and location-based organic results when nearby customers search for services. It combines Google Business Profile optimization, citations, reviews, local landing pages, and on-site signals so businesses earn calls, visits, and bookings from local search.',
+    },
+    {
+      question: 'How long before local SEO results appear?',
+      answer:
+        'Map pack improvements often appear in 4–12 weeks with consistent GBP, citation, and content work. Competitive city terms and multi-location programs may take 3–6 months depending on review velocity, NAP consistency, and local competition.',
+    },
+    {
+      question: 'Can local SEO help my business appear in Google Maps?',
+      answer:
+        'Yes. Local SEO strengthens your Google Business Profile, citation consistency, reviews, and location pages—the primary signals Google uses for map pack rankings and Maps visibility.',
+    },
+    {
+      question: 'How does local SEO work with Google Business Profile optimization?',
+      answer:
+        'Google Business Profile is the foundation of local SEO. We align profile categories, services, photos, posts, and reviews with on-site location pages and citations. Dedicated GBP optimization focuses on profile-specific work as part of the broader local program.',
+    },
+    {
+      question: 'How do local citations and NAP consistency affect local SEO?',
+      answer:
+        'Citations and consistent name, address, and phone (NAP) data across directories help Google trust your business locations. Inconsistent listings can suppress map rankings—we audit, correct, and monitor citations as part of local SEO delivery.',
+    },
+    {
+      question: 'Can local SEO work for multi-location businesses?',
+      answer:
+        'Yes. We build location-specific landing pages, manage multiple GBP listings, and maintain NAP consistency so each branch competes in its service area without cross-location cannibalization.',
+    },
+    {
+      question: 'Do you offer local SEO for small businesses?',
+      answer:
+        'Yes. We tailor local SEO for small business budgets with prioritized deliverables: GBP optimization, core service pages, citation cleanup, and ethical review workflows tied to calls and bookings.',
+    },
+    {
+      question: 'Do you optimize for voice and AI local search?',
+      answer:
+        'Yes. We structure FAQ content, concise answer blocks, and entity signals so voice assistants and AI tools can recommend your business for local and "near me" queries.',
+    },
+  ],
   contact: [
     {
       question: 'How quickly will SEO India Tech respond to my enquiry?',

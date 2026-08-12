@@ -17,6 +17,19 @@ export const localSeoPremium = {
     backgroundImage: '/images/services/heroes/local-seo-service.svg',
     backgroundImageMobile: '/images/hero-mobile.webp',
   },
+  answerFirst: {
+    question: 'What Is Local SEO and Who Needs It?',
+    answer:
+      'Local SEO helps businesses appear in Google Maps, the local map pack, and location-based organic results when nearby customers search for services. Service-area businesses, retailers with physical locations, and multi-location brands need local SEO when map visibility is weak, citations are inconsistent, or GBP listings underperform versus competitors.',
+    takeaways: [
+      'Service-area and multi-location brands competing for map pack visibility',
+      'Businesses relying on GBP, NAP consistency, and reviews as core ranking signals',
+      'Brands pairing localized landing pages with conversion tracking for calls and visits',
+    ],
+  },
+  whySeoMatters: {
+    suppressGeoAnswer: true,
+  },
   keyTakeaways: {
     badge: 'Key Takeaways',
     title: 'What Businesses Should Know About Local SEO',
@@ -44,6 +57,65 @@ export const localSeoPremium = {
       { label: 'Avg. review rating', value: '4.7', change: 'from 3.2 stars' },
     ],
     cta: { label: 'Get Similar Results', href: '/contact-us' },
+  },
+  relatedIndustries: {
+    badge: 'Related Services',
+    title: 'Explore Related Services',
+    items: [
+      {
+        title: 'Google Business Profile Optimization',
+        slug: 'gbp-optimization',
+        href: '/services/gbp-optimization',
+        description:
+          'Google Business Profile optimization is a focused component of Local SEO—we manage categories, reviews, posts, and Q&A to improve map pack visibility and profile conversions.',
+        ctaLabel: 'Explore Google Business Profile Optimization',
+      },
+      {
+        title: 'Technical SEO',
+        slug: 'technical-seo',
+        href: '/services/technical-seo',
+        description:
+          'Fix crawlability, indexation, site speed, and structured data so search engines can discover and rank your most important pages.',
+      },
+      {
+        title: 'AI SEO',
+        slug: 'ai-seo',
+        href: '/services/ai-seo',
+        description:
+          'Search is shifting from ten blue links to AI-generated answers—our AI SEO optimization work keeps your content visible through that change.',
+      },
+      {
+        title: 'Small Business SEO',
+        slug: 'small-business-seo',
+        href: '/services/small-business-seo',
+        description:
+          'SEO optimization for small businesses focuses on the highest-impact work first so local and organic results show up faster.',
+      },
+      {
+        title: 'E-Commerce SEO',
+        slug: 'e-commerce-seo',
+        href: '/services/e-commerce-seo',
+        description:
+          'Product and category page optimization for WooCommerce and online stores—from organic e-commerce SEO basics to advanced tactics.',
+      },
+      {
+        title: 'International SEO',
+        slug: 'international-seo',
+        href: '/services/international-seo',
+        description:
+          'Global SEO for Indian businesses targeting USA, UK, Europe, and export markets with hreflang-ready structures.',
+      },
+    ],
+  },
+  internalLinks: {
+    links: [
+      {
+        href: '/services/gbp-optimization',
+        title: 'Google Business Profile optimization',
+        description:
+          'Focused profile work—categories, reviews, posts, and Q&A—as part of your broader Local SEO and map pack strategy.',
+      },
+    ],
   },
 }
 
