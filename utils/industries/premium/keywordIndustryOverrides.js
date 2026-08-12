@@ -161,6 +161,11 @@ export const wineriesSeoPremium = {
       { href: '/services/local-seo-service', title: 'Local SEO Services', description: 'Regional and map visibility for tasting rooms.' },
       { href: '/services/e-commerce-seo', title: 'Ecommerce SEO Agency', description: 'Online wine shop optimisation.' },
       { href: '/services/technical-seo', title: 'Technical SEO', description: 'Site health for winery websites.' },
+      {
+        href: '/blog/google-business-profile-optimization-guide',
+        title: 'Google Business Profile optimization guide',
+        description: 'Improve tasting room and regional discovery with stronger GBP signals.',
+      },
     ],
   },
 }

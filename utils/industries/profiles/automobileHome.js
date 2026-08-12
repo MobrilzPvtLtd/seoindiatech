@@ -267,6 +267,9 @@ export const automobileHomeProfiles = {
   },
 
   'automotive-seo': {
+    seoTitle: 'Automotive SEO Services | Auto Repair Shop Marketing',
+    metaDescription:
+      'Automotive SEO for repair shops and dealerships: service-menu pages, local map visibility, fleet SEO, and trust-building content. Free audit.',
     hero: [
       'Auto repair shops, dealerships, and specialty automotive businesses fight for "mechanic near me" and service-specific searches in crowded local markets. Automotive SEO connects your shop to oil change, brake repair, transmission, and diagnostic intent with trust-building technical content.',
       'We deliver localized SEO for independent garages, tire shops, collision centers, and dealership service departments-with schema, review strategies, and service menu pages that convert searchers into bay bookings.',

@@ -286,7 +286,7 @@ export function buildPremiumContent(entry, profile) {
     isHealthcare: HEALTHCARE_SLUGS.has(slug),
 
     seo: {
-      title: `${title} Services | Local, AI & GEO SEO Experts | SEO India Tech`,
+      title: profile.seoTitle || `${title} Services | Local, AI & GEO SEO Experts | SEO India Tech`,
       description:
         profile.metaDescription || buildDefaultMetaDescription(entry, labelLower, title),
       slug,

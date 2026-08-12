@@ -12,7 +12,7 @@ export const BLOG_CATALOG = [
     intent: 'Informational',
     primaryKeyword: 'SEO trends Europe 2026',
     serviceLinks: ['/services/seo', '/services/ai-seo', '/services/generative-engine-optimization'],
-    industryLinks: ['/industries/realtor-seo', '/industries/dentist-seo', '/industries/hvac-seo'],
+    industryLinks: ['/industries/realtor-seo', '/industries/dentist-seo', '/industries/hvac-seo', '/industries/automotive-seo', '/industries/wineries-seo'],
     relatedBlogSlugs: [
       'international-seo-guide-european-companies',
       'ai-seo-vs-traditional-seo-2026',
@@ -49,7 +49,7 @@ export const BLOG_CATALOG = [
     intent: 'Commercial',
     primaryKeyword: 'local SEO checklist Europe',
     serviceLinks: ['/services/local-seo-service', '/services/gbp-optimization'],
-    industryLinks: ['/industries/realtor-seo', '/industries/dentist-seo', '/industries/hvac-seo'],
+    industryLinks: ['/industries/realtor-seo', '/industries/dentist-seo', '/industries/hvac-seo', '/industries/automotive-seo', '/industries/wineries-seo'],
     relatedBlogSlugs: [
       'google-business-profile-optimization-guide',
       'local-vs-national-vs-international-seo',
@@ -169,7 +169,7 @@ export const BLOG_CATALOG = [
     intent: 'Commercial',
     primaryKeyword: 'Google Business Profile optimization',
     serviceLinks: ['/services/gbp-optimization', '/services/local-seo-service'],
-    industryLinks: ['/industries/dentist-seo', '/industries/plumber-seo', '/industries/hvac-seo'],
+    industryLinks: ['/industries/dentist-seo', '/industries/plumber-seo', '/industries/hvac-seo', '/industries/automotive-seo', '/industries/wineries-seo'],
     image: '/images/blog/google-business-profile-optimization-guide-hero.svg',
     datePublished: '2026-08-07',
   },

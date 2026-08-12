@@ -165,6 +165,14 @@ const SERVICE_INDUSTRY_LINKS = {
   'online-reputation-management': ['dentist-seo', 'plastic-surgery-seo', 'doctor-physician-seo'],
 }
 
+const INDUSTRY_BLOG_SLUGS = {
+  'hvac-seo': ['google-business-profile-optimization-guide'],
+  'plumber-seo': ['google-business-profile-optimization-guide'],
+  'automotive-seo': ['google-business-profile-optimization-guide'],
+  'wineries-seo': ['google-business-profile-optimization-guide'],
+  'optometrist-seo': ['google-business-profile-optimization-guide'],
+}
+
 const SERVICE_BLOG_SLUGS = {
   'local-seo-service': ['local-seo-checklist-multi-location-europe', 'google-business-profile-optimization-guide', 'seo-checklist-small-businesses-europe'],
   'ai-seo': ['ai-seo-vs-traditional-seo-2026', 'google-ai-overviews-changing-business-seo', 'geo-generative-engine-optimization-guide'],
@@ -290,10 +298,14 @@ export function getIndustryInternalLinks(entry) {
     .slice(0, 3)
     .map((e) => `/industries/${e.slug}`)
 
+  const industryBlogSlugs = INDUSTRY_BLOG_SLUGS[entry.slug] || []
+  const industryBlogHrefs = industryBlogSlugs.slice(0, 1).map((s) => `/blog/${s}`)
+
   const locationHref = '/seo-services/seo-services-in-noida'
 
   const base = dedupeLinks([
     ...resolveHrefs(categoryHrefs.slice(0, 5)),
+    ...resolveHrefs(industryBlogHrefs),
     ...resolveHrefs(peerSlugs),
     linkFromHref('/industries'),
     linkFromHref('/blog'),

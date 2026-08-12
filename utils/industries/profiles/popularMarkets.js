@@ -191,6 +191,9 @@ export const popularMarketsProfiles = {
   },
 
   'hvac-seo': {
+    seoTitle: 'HVAC SEO Services | HVAC Contractor Marketing & Map Pack SEO',
+    metaDescription:
+      'HVAC SEO for contractors: emergency AC repair visibility, install funnels, seasonal campaigns, and Google Maps dominance. Free HVAC marketing audit.',
     hero: [
       'HVAC customers search when comfort breaks-AC not cooling, furnace failures, and seasonal tune-ups drive urgent mobile queries. HVAC SEO puts your phone number and booking form in front of homeowners during heat waves and cold snaps when demand spikes.',
       'We build seasonal campaign calendars, emergency service pages, and local map dominance for heating and cooling contractors serving residential and light commercial markets.',
@@ -229,6 +232,9 @@ export const popularMarketsProfiles = {
   },
 
   'plumber-seo': {
+    seoTitle: 'Plumber SEO Services | Plumbing Contractor Marketing',
+    metaDescription:
+      'Plumber SEO for contractors: emergency plumbing pages, suburb service areas, GBP optimization, and ethical review growth. Free audit.',
     hero: [
       'Plumbing problems do not wait-burst pipes, sewer backups, and water heater failures drive immediate mobile searches. Plumber SEO ensures your business appears with tap-to-call visibility when homeowners need help now, not after they scroll past aggregators.',
       'We optimize emergency plumbing pages, water heater install funnels, drain cleaning local SEO, and commercial plumbing authority for contractors competing in crowded metro service areas.',

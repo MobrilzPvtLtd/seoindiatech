@@ -1,0 +1,184 @@
+[
+  {
+    "slug": "wineries-seo",
+    "url": "https://www.seoindiatech.com/industries/wineries-seo",
+    "status": 200,
+    "gsc": {
+      "impressions": 287,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 80.42
+    },
+    "title": "SEO for Wineries | Winery SEO Services | SEO India Tech",
+    "metaDescription": "SEO for wineries and wine brands: tasting room visits, direct-to-consumer sales, and wine tourism. Winery SEO strategies for vineyards across India, USA, and Europe.",
+    "canonical": "https://www.seoindiatech.com/industries/wineries-seo",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+    "wordCountEstimate": 3913,
+    "faqVisible": 20,
+    "faqSchema": 20,
+    "hasOverride": true,
+    "serviceLinks": {
+      "seo": true,
+      "local": true,
+      "technical": true
+    },
+    "blogLinks": [],
+    "topicHits": {
+      "tastingRoom": true,
+      "emergencyHvac": true,
+      "eyeExam": true,
+      "emergencyPlumber": true,
+      "autoRepair": false,
+      "hreflang": false,
+      "nearMe": true,
+      "localSeo": true
+    },
+    "h2Sample": []
+  },
+  {
+    "slug": "hvac-seo",
+    "url": "https://www.seoindiatech.com/industries/hvac-seo",
+    "status": 200,
+    "gsc": {
+      "impressions": 135,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 67.91
+    },
+    "title": "HVAC SEO Services | Local, AI & GEO SEO Experts | SEO India Tech",
+    "metaDescription": "Rank higher for hvac searches with expert hvac seo. Service pages, local SEO, GBP optimization, AI Overview visibility & weekly reporting. Free audit.",
+    "canonical": "https://www.seoindiatech.com/industries/hvac-seo",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+    "wordCountEstimate": 4532,
+    "faqVisible": 20,
+    "faqSchema": 20,
+    "hasOverride": false,
+    "serviceLinks": {
+      "seo": true,
+      "local": true,
+      "technical": true
+    },
+    "blogLinks": [],
+    "topicHits": {
+      "tastingRoom": true,
+      "emergencyHvac": true,
+      "eyeExam": true,
+      "emergencyPlumber": true,
+      "autoRepair": true,
+      "hreflang": false,
+      "nearMe": true,
+      "localSeo": true
+    },
+    "h2Sample": []
+  },
+  {
+    "slug": "optometrist-seo",
+    "url": "https://www.seoindiatech.com/industries/optometrist-seo",
+    "status": 200,
+    "gsc": {
+      "impressions": 85,
+      "clicks": 1,
+      "ctr": 1.18,
+      "position": 75.16
+    },
+    "title": "SEO for Optometrists & Eye Care Practices | SEO India Tech",
+    "metaDescription": "Eye care SEO for optometry practices: local visibility, service pages, and patient-focused content. Help patients find your clinic through search.",
+    "canonical": "https://www.seoindiatech.com/industries/optometrist-seo",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+    "wordCountEstimate": 5017,
+    "faqVisible": 20,
+    "faqSchema": 20,
+    "hasOverride": true,
+    "serviceLinks": {
+      "seo": true,
+      "local": true,
+      "technical": true
+    },
+    "blogLinks": [
+      "/blog/google-business-profile-optimization-guide"
+    ],
+    "topicHits": {
+      "tastingRoom": true,
+      "emergencyHvac": true,
+      "eyeExam": true,
+      "emergencyPlumber": true,
+      "autoRepair": false,
+      "hreflang": false,
+      "nearMe": true,
+      "localSeo": true
+    },
+    "h2Sample": []
+  },
+  {
+    "slug": "plumber-seo",
+    "url": "https://www.seoindiatech.com/industries/plumber-seo",
+    "status": 200,
+    "gsc": {
+      "impressions": 53,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 79.4
+    },
+    "title": "Plumber SEO Services | Local, AI & GEO SEO Experts | SEO India Tech",
+    "metaDescription": "Rank higher for plumber searches with expert plumber seo. Service pages, local SEO, GBP optimization, AI Overview visibility & weekly reporting. Free audit.",
+    "canonical": "https://www.seoindiatech.com/industries/plumber-seo",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+    "wordCountEstimate": 4498,
+    "faqVisible": 20,
+    "faqSchema": 20,
+    "hasOverride": false,
+    "serviceLinks": {
+      "seo": true,
+      "local": true,
+      "technical": true
+    },
+    "blogLinks": [],
+    "topicHits": {
+      "tastingRoom": true,
+      "emergencyHvac": true,
+      "eyeExam": true,
+      "emergencyPlumber": true,
+      "autoRepair": true,
+      "hreflang": false,
+      "nearMe": true,
+      "localSeo": true
+    },
+    "h2Sample": []
+  },
+  {
+    "slug": "automotive-seo",
+    "url": "https://www.seoindiatech.com/industries/automotive-seo",
+    "status": 200,
+    "gsc": {
+      "impressions": 40,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 69.75
+    },
+    "title": "Automotive SEO Services | Local, AI & GEO SEO Experts | SEO India Tech",
+    "metaDescription": "Rank higher for automotive searches with expert automotive seo. Service pages, local SEO, GBP optimization, AI Overview visibility & weekly reporting. Free audit.",
+    "canonical": "https://www.seoindiatech.com/industries/automotive-seo",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+    "wordCountEstimate": 4494,
+    "faqVisible": 20,
+    "faqSchema": 20,
+    "hasOverride": false,
+    "serviceLinks": {
+      "seo": true,
+      "local": true,
+      "technical": true
+    },
+    "blogLinks": [],
+    "topicHits": {
+      "tastingRoom": true,
+      "emergencyHvac": true,
+      "eyeExam": true,
+      "emergencyPlumber": true,
+      "autoRepair": true,
+      "hreflang": false,
+      "nearMe": true,
+      "localSeo": true
+    },
+    "h2Sample": []
+  }
+]
