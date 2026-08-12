@@ -26,11 +26,38 @@ const HEALTHCARE_SLUGS = new Set([
   'chiropractor-seo',
 ])
 
-const CLIENT_TERMS = {
-  'popular-markets': 'patients',
-  'automobile-home': 'customers',
-  'food-health': 'customers',
-  'service-sector': 'clients',
+/** Slugs where "patients" is the correct audience term (not category-wide popular-markets). */
+const PATIENT_CLIENT_SLUGS = new Set([
+  'plastic-surgery-seo',
+  'fertility-clinic-seo',
+  'optometrist-seo',
+  'orthodontist-seo',
+  'doctor-physician-seo',
+  'physiotherapy-seo',
+  'dentist-seo',
+  'chiropractor-seo',
+])
+
+const HOME_TRADE_SLUGS = new Set(['hvac-seo', 'plumber-seo'])
+
+export function getClientTerm(entry) {
+  if (PATIENT_CLIENT_SLUGS.has(entry.slug)) return 'patients'
+  if (entry.categoryId === 'automobile-home' || HOME_TRADE_SLUGS.has(entry.slug)) return 'customers'
+  return 'clients'
+}
+
+function normalizeFaqQuestion(question) {
+  return (question || '').trim().toLowerCase().replace(/\s+/g, ' ')
+}
+
+function buildDefaultMetaDescription(entry, labelLower, title) {
+  const usesProcedurePages =
+    PATIENT_CLIENT_SLUGS.has(entry.slug) && entry.slug !== 'chiropractor-seo'
+  const contentFocus = usesProcedurePages
+    ? 'Procedure pages, local SEO'
+    : 'Service pages, local SEO'
+
+  return `Rank higher for ${labelLower} searches with expert ${title.toLowerCase()}. ${contentFocus}, GBP optimization, AI Overview visibility & weekly reporting. Free audit.`
 }
 
 const PILLAR_IMAGES = {
@@ -48,7 +75,19 @@ function capitalize(s) {
 
 function expandFaqs(profileFaqs, label, title) {
   const labelLower = label.toLowerCase()
-  const base = profileFaqs.slice(0, 10)
+  const seen = new Set()
+  const merged = []
+
+  const pushUnique = (faq) => {
+    if (!faq?.question) return
+    const key = normalizeFaqQuestion(faq.question)
+    if (seen.has(key)) return
+    seen.add(key)
+    merged.push(faq)
+  }
+
+  for (const faq of profileFaqs.slice(0, 10)) pushUnique(faq)
+
   const extra = [
     {
       question: `How much does ${title} cost?`,
@@ -90,12 +129,15 @@ function expandFaqs(profileFaqs, label, title) {
       question: `How do we start ${title} with SEO India Tech?`,
       answer: `Book a free audit. We review your site, competitors, GBP health, and keyword opportunities, then deliver a prioritized roadmap with timelines and KPIs.`,
     },
+    {
+      question: `What should ${labelLower} businesses prioritize first in SEO?`,
+      answer: `Start with GBP accuracy, core service pages, technical crawl health, and tracking. We sequence ${labelLower} SEO so early wins build authority for competitive terms.`,
+    },
   ]
 
-  const merged = [...base]
   for (const faq of extra) {
     if (merged.length >= 20) break
-    if (!merged.some((f) => f.question === faq.question)) merged.push(faq)
+    pushUnique(faq)
   }
   return merged.slice(0, 20)
 }
@@ -158,7 +200,7 @@ function buildPillars(entry, label, profile) {
   return {
     badge: 'Core SEO Pillars',
     title: `Complete ${entry.title} Strategy`,
-    subtitle: `Six integrated pillars that turn search visibility into qualified ${CLIENT_TERMS[entry.categoryId] || 'clients'} for your ${labelLower} business.`,
+    subtitle: `Six integrated pillars that turn search visibility into qualified ${getClientTerm(entry)} for your ${labelLower} business.`,
     items: [
       {
         id: 'local',
@@ -227,9 +269,9 @@ function buildPillars(entry, label, profile) {
 export function buildPremiumContent(entry, profile) {
   const { slug, title, label, categoryId, categoryTitle, heroImage, audience, serviceExamples } = entry
   const labelLower = label.toLowerCase()
-  const clients = CLIENT_TERMS[categoryId] || 'clients'
+  const clients = getClientTerm(entry)
   const allEntries = buildCatalogEntries()
-  const testimonials = getTestimonialsForIndustry(categoryId)
+  const testimonials = getTestimonialsForIndustry(categoryId, slug)
 
   const heroParagraphs = profile.hero?.length >= 2
     ? profile.hero
@@ -246,8 +288,7 @@ export function buildPremiumContent(entry, profile) {
     seo: {
       title: `${title} Services | Local, AI & GEO SEO Experts | SEO India Tech`,
       description:
-        profile.metaDescription ||
-        `Rank higher for ${labelLower} searches with expert ${title.toLowerCase()}. Procedure pages, local SEO, GBP optimization, AI Overview visibility & weekly reporting. Free audit.`,
+        profile.metaDescription || buildDefaultMetaDescription(entry, labelLower, title),
       slug,
       keywords: [
         title.toLowerCase(),
@@ -259,6 +300,8 @@ export function buildPremiumContent(entry, profile) {
       ],
       internalLinks: [
         '/services/local-seo-service',
+        '/services/technical-seo',
+        '/services/seo',
         '/services/ai-seo',
         '/services/gbp-optimization',
         '/services/ppc-advertising',

@@ -1,6 +1,19 @@
 /** Category-based client testimonials for premium industry pages */
 import { healthcareTestimonials } from './healthcareTestimonials'
 
+const PATIENT_CLIENT_SLUGS = new Set([
+  'plastic-surgery-seo',
+  'fertility-clinic-seo',
+  'optometrist-seo',
+  'orthodontist-seo',
+  'doctor-physician-seo',
+  'physiotherapy-seo',
+  'dentist-seo',
+  'chiropractor-seo',
+])
+
+const HOME_TRADE_SLUGS = new Set(['hvac-seo', 'plumber-seo'])
+
 const HOME_SERVICE_TESTIMONIALS = [
   {
     name: 'Mark Thompson',
@@ -119,12 +132,16 @@ const FOOD_HEALTH_TESTIMONIALS = [
 ]
 
 const CATEGORY_TESTIMONIALS = {
-  'popular-markets': healthcareTestimonials,
   'automobile-home': HOME_SERVICE_TESTIMONIALS,
   'food-health': FOOD_HEALTH_TESTIMONIALS,
   'service-sector': SERVICE_SECTOR_TESTIMONIALS,
 }
 
-export function getTestimonialsForIndustry(categoryId) {
+export function getTestimonialsForIndustry(categoryId, slug) {
+  if (categoryId === 'popular-markets') {
+    if (PATIENT_CLIENT_SLUGS.has(slug)) return healthcareTestimonials
+    if (HOME_TRADE_SLUGS.has(slug)) return HOME_SERVICE_TESTIMONIALS
+    return SERVICE_SECTOR_TESTIMONIALS
+  }
   return CATEGORY_TESTIMONIALS[categoryId] || SERVICE_SECTOR_TESTIMONIALS
 }

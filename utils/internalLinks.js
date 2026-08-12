@@ -118,6 +118,7 @@ export const INTERNAL_LINK_CATALOG = [
 const CATEGORY_SERVICE_LINKS = {
   'popular-markets': [
     '/services/local-seo-service',
+    '/services/technical-seo',
     '/services/gbp-optimization',
     '/services/content-marketing',
     '/services/online-reputation-management',
@@ -125,6 +126,7 @@ const CATEGORY_SERVICE_LINKS = {
   ],
   'automobile-home': [
     '/services/local-seo-service',
+    '/services/technical-seo',
     '/services/gbp-optimization',
     '/services/ppc-advertising',
     '/services/small-business-seo',
@@ -132,6 +134,7 @@ const CATEGORY_SERVICE_LINKS = {
   ],
   'food-health': [
     '/services/local-seo-service',
+    '/services/technical-seo',
     '/services/content-marketing',
     '/services/social-media-marketing',
     '/services/online-reputation-management',
@@ -139,6 +142,7 @@ const CATEGORY_SERVICE_LINKS = {
   ],
   'service-sector': [
     '/services/local-seo-service',
+    '/services/technical-seo',
     '/services/seo',
     '/services/ppc-advertising',
     '/services/content-marketing',

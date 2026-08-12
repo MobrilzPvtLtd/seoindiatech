@@ -118,12 +118,31 @@ const CATEGORY_CONTEXT = {
 export function buildCatalogEntries() {
   const entries = []
 
+  const patientSlugs = new Set([
+    'plastic-surgery-seo',
+    'fertility-clinic-seo',
+    'optometrist-seo',
+    'orthodontist-seo',
+    'doctor-physician-seo',
+    'physiotherapy-seo',
+    'dentist-seo',
+    'chiropractor-seo',
+  ])
+  const homeTradeSlugs = new Set(['hvac-seo', 'plumber-seo'])
+
   INDUSTRY_CATEGORIES.forEach((cat) => {
     cat.items.forEach((title) => {
       const slug = toSlug(title)
       const imagePath = getIndustryHeroImage(slug, cat.id)
       const ctx = CATEGORY_CONTEXT[cat.id]
       const label = title.replace(/\s+SEO$/i, '').trim()
+      const clientele = patientSlugs.has(slug)
+        ? 'patients'
+        : cat.id === 'automobile-home' || homeTradeSlugs.has(slug)
+          ? 'customers'
+          : ctx.clientele === 'patients' && cat.id === 'popular-markets'
+            ? 'clients'
+            : ctx.clientele
 
       entries.push({
         slug,
@@ -133,7 +152,7 @@ export function buildCatalogEntries() {
         categoryTitle: cat.title,
         heroImage: imagePath,
         audience: ctx.audience,
-        clientele: ctx.clientele,
+        clientele,
         localFocus: ctx.localFocus,
         serviceExamples: ctx.serviceExamples,
         searchExamples: [
