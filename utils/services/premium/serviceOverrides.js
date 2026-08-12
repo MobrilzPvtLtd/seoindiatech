@@ -165,12 +165,12 @@ export const smallBusinessSeoPremium = {
 
 export const ecommerceSeoPremium = {
   seo: {
-    title: 'WooCommerce SEO Agency in India | E-Commerce SEO | SEO India Tech',
+    title: 'Ecommerce SEO Agency in India | WooCommerce & Store SEO | SEO India Tech',
     description:
-      'WooCommerce and e-commerce SEO in India: product pages, category optimization, technical fixes, and schema. Grow organic revenue for online stores. Free audit.',
+      'Ecommerce SEO agency in India for WooCommerce and online stores: product pages, category optimization, technical fixes, and schema. Grow organic revenue. Free audit.',
   },
   ...overrideHero(
-    'E-Commerce SEO for Product Visibility and Revenue Growth',
+    'Ecommerce SEO Agency for Product Visibility and Revenue Growth',
     [
       'E-commerce SEO targets category pages, product detail pages, faceted navigation, and technical health at scale. We fix indexation bloat, optimize titles and schema, and build content that captures commercial and comparison intent.',
       'Our e-commerce SEO integrates with your catalog, seasonal campaigns, and paid media for unified product discovery.',

@@ -219,9 +219,13 @@ export function getPageLinkLimit(path) {
 
 /** Homepage hub destinations from Excel matrix */
 export const HOMEPAGE_HUB_PATHS = [
-  { href: '/services/seo', title: 'SEO Services', anchorText: 'SEO services' },
-  { href: '/blog', title: 'SEO Insights & Guides', anchorText: 'SEO insights' },
+  { href: '/services/seo', title: 'SEO Services in India', anchorText: 'SEO services in India' },
+  { href: '/services/technical-seo', title: 'Technical SEO Services', anchorText: 'technical SEO services' },
+  { href: '/services/local-seo-service', title: 'Local SEO Services', anchorText: 'local SEO services' },
+  { href: '/services/e-commerce-seo', title: 'Ecommerce SEO', anchorText: 'ecommerce SEO agency' },
+  { href: '/industries/wineries-seo', title: 'SEO for Wineries', anchorText: 'SEO for wineries' },
   { href: '/industries', title: 'SEO Services by Industry', anchorText: 'SEO by industry' },
+  { href: '/blog', title: 'SEO Insights & Guides', anchorText: 'SEO insights' },
   { href: '/seo-packages', title: 'SEO Packages', anchorText: 'SEO packages' },
 ]
 

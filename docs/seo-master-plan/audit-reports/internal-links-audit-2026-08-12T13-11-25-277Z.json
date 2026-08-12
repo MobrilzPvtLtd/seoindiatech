@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-12T13:12:02.872Z",
+  "generatedAt": "2026-08-12T13:11:25.277Z",
   "matrixStats": {
     "totalRows": 747,
     "uniqueSources": 113,
@@ -131,8 +131,8 @@
   },
   "summary": {
     "total": 747,
-    "present": 747,
-    "missing": 0,
+    "present": 745,
+    "missing": 2,
     "invalid": 0,
     "coveragePercent": 100,
     "invalidDestinations": [],
@@ -217,10 +217,39 @@
     "/terms",
     "/who-we-are"
   ],
-  "missingLinksCount": 0,
-  "presentLinksCount": 747,
+  "missingLinksCount": 2,
+  "presentLinksCount": 745,
   "invalidLinksCount": 0,
-  "missingLinks": [],
+  "missingLinks": [
+    {
+      "sourcePath": "/blog/ai-seo-vs-traditional-seo-2026",
+      "destinationPath": "/blog/local-vs-national-vs-international-seo",
+      "recommendedAnchor": "local vs national vs international seo",
+      "sourceExists": true,
+      "destinationExists": true,
+      "linkExists": false,
+      "existingAnchor": "",
+      "existingVia": null,
+      "matchedFiles": [],
+      "placement": "In-content related reading",
+      "why": "Related article / topic cluster",
+      "status": "missing"
+    },
+    {
+      "sourcePath": "/blog/geo-generative-engine-optimization-guide",
+      "destinationPath": "/blog/seo-law-firms-complete-guide",
+      "recommendedAnchor": "seo law firms complete guide",
+      "sourceExists": true,
+      "destinationExists": true,
+      "linkExists": false,
+      "existingAnchor": "",
+      "existingVia": null,
+      "matchedFiles": [],
+      "placement": "In-content related reading",
+      "why": "Related article / topic cluster",
+      "status": "missing"
+    }
+  ],
   "presentLinksSample": [
     {
       "sourcePath": "/",
@@ -531,23 +560,6 @@
       "status": "present"
     },
     {
-      "sourcePath": "/blog/ai-seo-vs-traditional-seo-2026",
-      "destinationPath": "/blog/local-vs-national-vs-international-seo",
-      "recommendedAnchor": "local vs national vs international seo",
-      "sourceExists": true,
-      "destinationExists": true,
-      "linkExists": true,
-      "existingAnchor": "",
-      "existingVia": "source-scan",
-      "matchedFiles": [
-        "utils\\blog\\premium\\blogCatalog.js",
-        "utils\\blog\\premium\\buildPremiumBlogPost.js"
-      ],
-      "placement": "In-content related reading",
-      "why": "Related article / topic cluster",
-      "status": "present"
-    },
-    {
       "sourcePath": "/blog/chatgpt-seo-ai-search-organic-traffic",
       "destinationPath": "/services/seo",
       "recommendedAnchor": "SEO services",
@@ -669,7 +681,6 @@
       "existingAnchor": "",
       "existingVia": "source-scan",
       "matchedFiles": [
-        "utils\\blog\\premium\\blogCatalog.js",
         "utils\\BlogPost.legacy.js"
       ],
       "placement": "In-content related reading",
@@ -922,6 +933,20 @@
       "destinationExists": true,
       "linkExists": true,
       "existingAnchor": "how Google AI Overviews affect SEO",
+      "existingVia": "programmatic",
+      "matchedFiles": [],
+      "placement": "In-content related reading",
+      "why": "Related article / topic cluster",
+      "status": "present"
+    },
+    {
+      "sourcePath": "/blog/content-marketing-strategy-qualified-leads",
+      "destinationPath": "/blog/youtube-business-marketing-2026",
+      "recommendedAnchor": "youtube business marketing 2026",
+      "sourceExists": true,
+      "destinationExists": true,
+      "linkExists": true,
+      "existingAnchor": "youtube business marketing 2026",
       "existingVia": "programmatic",
       "matchedFiles": [],
       "placement": "In-content related reading",
@@ -1245,16 +1270,13 @@
       "recommendedAnchor": "local vs national vs international seo",
       "sourceExists": true,
       "destinationExists": true,
-      "linkExists": true,
+      "linkExists": false,
       "existingAnchor": "",
-      "existingVia": "source-scan",
-      "matchedFiles": [
-        "utils\\blog\\premium\\blogCatalog.js",
-        "utils\\blog\\premium\\buildPremiumBlogPost.js"
-      ],
+      "existingVia": null,
+      "matchedFiles": [],
       "placement": "In-content related reading",
       "why": "Related article / topic cluster",
-      "status": "present"
+      "status": "missing"
     },
     {
       "sourcePath": "/blog/chatgpt-seo-ai-search-organic-traffic",
@@ -1378,7 +1400,6 @@
       "existingAnchor": "",
       "existingVia": "source-scan",
       "matchedFiles": [
-        "utils\\blog\\premium\\blogCatalog.js",
         "utils\\BlogPost.legacy.js"
       ],
       "placement": "In-content related reading",
@@ -1993,16 +2014,13 @@
       "recommendedAnchor": "seo law firms complete guide",
       "sourceExists": true,
       "destinationExists": true,
-      "linkExists": true,
+      "linkExists": false,
       "existingAnchor": "",
-      "existingVia": "source-scan",
-      "matchedFiles": [
-        "utils\\blog\\premium\\blogCatalog.js",
-        "utils\\blog\\premium\\buildPremiumBlogPost.js"
-      ],
+      "existingVia": null,
+      "matchedFiles": [],
       "placement": "In-content related reading",
       "why": "Related article / topic cluster",
-      "status": "present"
+      "status": "missing"
     },
     {
       "sourcePath": "/blog/google-ai-overviews-changing-business-seo",
@@ -2126,7 +2144,6 @@
       "existingAnchor": "",
       "existingVia": "source-scan",
       "matchedFiles": [
-        "utils\\blog\\premium\\blogCatalog.js",
         "utils\\BlogPost.legacy.js"
       ],
       "placement": "In-content related reading",

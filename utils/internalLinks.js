@@ -339,6 +339,8 @@ export function getHubInternalLinks(hubSlug) {
           '/industries',
           '/industries/wineries-seo',
           '/industries/optometrist-seo',
+          '/industries/accountants-seo',
+          '/industries/doctor-physician-seo',
         ])
       : []
   const base = dedupeLinks([

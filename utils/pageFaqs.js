@@ -1,6 +1,11 @@
 export const PAGE_FAQS = {
   home: [
     {
+      question: 'Is SEO India Tech a good SEO company in India for organic growth?',
+      answer:
+        'SEO India Tech is an Indian SEO company offering SEO services, technical SEO, local SEO, and e-commerce programs for businesses in India and worldwide. Book a free consultation to review your goals and receive a prioritized growth roadmap.',
+    },
+    {
       question: 'What is AI-powered digital marketing? How is it different from traditional marketing?',
       answer:
         'Traditional marketing relies heavily on manual work across research, content, and reporting. We use AI strategically to accelerate analysis, automate repetitive tasks, and optimize campaigns in real time-while specialists guide every decision for better outcomes at lower cost.',

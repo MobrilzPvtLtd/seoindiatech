@@ -34,6 +34,11 @@ const LINKS = {
   legal: { text: 'personal injury SEO', url: '/industries/personal-injury-seo' },
   doctor: { text: 'physician SEO', url: '/industries/doctor-physician-seo' },
   plumber: { text: 'plumber SEO', url: '/industries/plumber-seo' },
+  localScope: {
+    text: 'local vs national vs international SEO',
+    url: '/blog/local-vs-national-vs-international-seo',
+  },
+  lawFirmGuide: { text: 'SEO for law firms complete guide', url: '/blog/seo-law-firms-complete-guide' },
 }
 
 function link(l) {
@@ -230,6 +235,7 @@ const TOPIC_CONTENT = {
         p(
           `Neither approach wins alone. Regulated industries like ${link(LINKS.plastic)} and ${link(LINKS.doctor)} need strong expertise signals plus clear summaries. Comparison searches ("best agency in Berlin") benefit from both map visibility and citable content.`
         ),
+        pl('When planning scope and budget, compare ', LINKS.localScope, ' before you split resources across regions.'),
         pl('Our practical recommendation: fix traditional SEO blockers first, then strengthen high-intent pages with AI-ready answers. Explore ', LINKS.aiSeo, ' when your core site health is in good shape.'),
       ],
     ],
@@ -691,6 +697,7 @@ buildExtendedTopic('geo-generative-engine-optimization-guide', {
     h2('Measuring GEO Success'),
     p('Track branded search growth, referral traffic from AI tools, FAQ rich results, and manual citation checks.'),
     p(`High-trust verticals like ${link(LINKS.plastic)} and ${link(LINKS.realtor)} benefit from entity-rich service pages.`),
+    p(`For regulated industries, see our ${link(LINKS.lawFirmGuide)} for YMYL-specific patterns.`),
   ],
   mistakes: ['AI-generated content without review', 'No canonical URLs', 'Thin FAQ pages', 'Ignoring traditional SEO'],
   checklist: ['Top 20 pages GEO-audited', 'FAQ schema deployed', 'Entity markup added', 'Monthly AI query tests'],

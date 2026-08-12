@@ -1,6 +1,6 @@
 # Technical SEO Audit — Phase 7
 
-Generated: 2026-08-11
+Generated: 2026-08-12
 
 **Live URLs audited:** 115  
 **Sitemap URLs:** 115  
@@ -73,8 +73,8 @@ Generated: 2026-08-11
 | Depth | Page count |
 |-------|------------|
 | 0 | 1 |
-| 1 | 46 |
-| 2 | 68 |
+| 1 | 49 |
+| 2 | 65 |
 | 3 | 0 |
 | 4+ | 0 |
 | Unreachable | 0 |
@@ -89,7 +89,6 @@ Pages with ≤1 detected inbound link (code scan heuristic):
 | /blog/ai-seo-vs-traditional-seo-2026 | Blog | 1 | 2 | no |
 | /blog/chatgpt-seo-ai-search-organic-traffic | Blog | 1 | 2 | yes |
 | /blog/choose-best-seo-agency-europe | Blog | 1 | 2 | no |
-| /blog/complete-eeat-guide-business-websites | Blog | 1 | 2 | no |
 | /blog/content-marketing-strategy-qualified-leads | Blog | 1 | 2 | yes |
 | /blog/core-web-vitals-optimization-guide | Blog | 1 | 2 | no |
 | /blog/ecommerce-seo-checklist-india | Blog | 1 | 2 | no |
@@ -104,7 +103,6 @@ Pages with ≤1 detected inbound link (code scan heuristic):
 | /blog/ppc-vs-seo-which-is-better | Blog | 1 | 2 | no |
 | /blog/seo-checklist-small-businesses-europe | Blog | 1 | 2 | no |
 | /blog/seo-for-restaurants-local-diners | Blog | 1 | 2 | no |
-| /blog/seo-healthcare-businesses-europe | Blog | 1 | 2 | no |
 | /blog/seo-law-firms-complete-guide | Blog | 1 | 2 | no |
 | /blog/seo-roi-calculator-measure-success | Blog | 1 | 2 | yes |
 | /blog/seo-trends-european-businesses-2026 | Blog | 1 | 2 | no |
@@ -125,8 +123,10 @@ Pages with ≤1 detected inbound link (code scan heuristic):
 | /industries/dry-cleaner-seo | Industry | 1 | 2 | yes |
 | /industries/fence-installer-seo | Industry | 1 | 2 | yes |
 | /industries/fertility-clinic-seo | Industry | 1 | 2 | yes |
+| /industries/flooring-company-seo | Industry | 1 | 2 | yes |
+| /industries/garage-door-seo | Industry | 1 | 2 | yes |
 
-*…and 43 more — see JSON report*
+*…and 40 more — see JSON report*
 
 
 ## Core Web Vitals (Code Review)

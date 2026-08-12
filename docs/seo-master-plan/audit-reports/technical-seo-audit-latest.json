@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-11T08:07:28.157Z",
+  "generatedAt": "2026-08-12T13:10:18.632Z",
   "urlCount": 115,
   "openIssues": [
     {
@@ -71,13 +71,6 @@
     },
     {
       "url": "/blog/choose-best-seo-agency-europe",
-      "pageType": "Blog",
-      "inboundLinks": 1,
-      "crawlDepth": 2,
-      "matrixOrphan": false
-    },
-    {
-      "url": "/blog/complete-eeat-guide-business-websites",
       "pageType": "Blog",
       "inboundLinks": 1,
       "crawlDepth": 2,
@@ -176,13 +169,6 @@
     },
     {
       "url": "/blog/seo-for-restaurants-local-diners",
-      "pageType": "Blog",
-      "inboundLinks": 1,
-      "crawlDepth": 2,
-      "matrixOrphan": false
-    },
-    {
-      "url": "/blog/seo-healthcare-businesses-europe",
       "pageType": "Blog",
       "inboundLinks": 1,
       "crawlDepth": 2,
@@ -511,13 +497,6 @@
       "matrixOrphan": true
     },
     {
-      "url": "/industries/wineries-seo",
-      "pageType": "Industry",
-      "inboundLinks": 1,
-      "crawlDepth": 2,
-      "matrixOrphan": true
-    },
-    {
       "url": "/privacy-policy",
       "pageType": "Core",
       "inboundLinks": 1,
@@ -637,7 +616,7 @@
     "/blog/ai-seo-vs-traditional-seo-2026": 2,
     "/blog/chatgpt-seo-ai-search-organic-traffic": 2,
     "/blog/choose-best-seo-agency-europe": 2,
-    "/blog/complete-eeat-guide-business-websites": 2,
+    "/blog/complete-eeat-guide-business-websites": 1,
     "/blog/content-marketing-strategy-qualified-leads": 2,
     "/blog/core-web-vitals-optimization-guide": 2,
     "/blog/ecommerce-seo-checklist-india": 2,
@@ -654,7 +633,7 @@
     "/blog/ppc-vs-seo-which-is-better": 2,
     "/blog/seo-checklist-small-businesses-europe": 2,
     "/blog/seo-for-restaurants-local-diners": 2,
-    "/blog/seo-healthcare-businesses-europe": 2,
+    "/blog/seo-healthcare-businesses-europe": 1,
     "/blog/seo-law-firms-complete-guide": 2,
     "/blog/seo-roi-calculator-measure-success": 2,
     "/blog/seo-trends-european-businesses-2026": 2,
@@ -703,7 +682,7 @@
     "/industries/waste-management-seo": 2,
     "/industries/well-drilling-company-seo": 2,
     "/industries/wildlife-removal-company-seo": 2,
-    "/industries/wineries-seo": 2,
+    "/industries/wineries-seo": 1,
     "/privacy-policy": 1,
     "/seo-packages": 1,
     "/seo-services/seo-services-in-bangalore": 1,

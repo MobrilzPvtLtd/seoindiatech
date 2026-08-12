@@ -30,6 +30,21 @@ function escapeRegExp(value) {
   return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
 }
 
+function resolveHintFiles(hints) {
+  const files = []
+  for (const hint of hints) {
+    const full = join(root, hint)
+    try {
+      const stat = statSync(full)
+      if (stat.isDirectory()) walkFiles(full, files)
+      else files.push(full)
+    } catch {
+      // ignore unreadable paths
+    }
+  }
+  return files
+}
+
 /**
  * Scan project source for href references to destination from pages related to source.
  * @param {string} sourcePath
@@ -41,7 +56,9 @@ export function scanSourceForLink(sourcePath, destinationPath) {
   const loosePattern = new RegExp(escapeRegExp(dest), 'i')
 
   const hints = getSourceFileHints(sourcePath)
-  const files = hints.length ? hints.map((h) => join(root, h)) : walkFiles(join(root, 'pages')).concat(walkFiles(join(root, 'component')))
+  const files = hints.length
+    ? resolveHintFiles(hints)
+    : walkFiles(join(root, 'pages')).concat(walkFiles(join(root, 'component')))
 
   const matches = []
   for (const file of files) {
