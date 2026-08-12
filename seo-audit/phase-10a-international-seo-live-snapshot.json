@@ -1,5 +1,5 @@
 {
-  "url": "https://www.seoindiatech.com/services/international-seo",
+  "url": "http://localhost:3459/services/international-seo",
   "status": 200,
   "title": "International SEO Agency India | Global SEO Services | SEO India Tech",
   "description": "International SEO agency in India for businesses targeting USA, UK, Europe, and export markets. Hreflang, market strategy, and technical SEO for global growth.",
@@ -12,9 +12,8 @@
   ],
   "h1Count": 1,
   "h2": [
-    "What is International SEO?",
+    "What Is International SEO and Who Needs It?",
     "Why International SEO Is Essential for Growth",
-    "What is International SEO and who needs it?",
     "Why SEO India Tech for International SEO",
     "International SEO Deliverables",
     "Problems International SEO Solves",
@@ -96,14 +95,14 @@
     "E-Commerce SEO",
     "App Store Optimization",
     "What does International SEO include?",
+    "International SEO guide for European companies",
+    "Local vs national vs international SEO",
     "Local SEO Services",
     "Technical SEO Services",
     "Realtor SEO",
     "Dentist SEO",
     "HVAC SEO",
-    "SEO Trends for European Businesses in 2026",
     "Industry SEO Programs",
-    "SEO Services in Delhi",
     "Book Your Free International SEO Audit",
     "Services",
     "Solutions",
@@ -113,24 +112,23 @@
     "Quick Contact"
   ],
   "quickAnswerH2s": [
-    "What is International SEO?",
-    "What is International SEO and who needs it?",
+    "What Is International SEO and Who Needs It?",
     "What Businesses Should Know About International SEO"
   ],
-  "quickAnswerDuplicate": true,
-  "consolidatedQuickAnswer": false,
+  "quickAnswerDuplicate": false,
+  "consolidatedQuickAnswer": true,
   "faqSchemaCount": 8,
   "faqSchemaBlocks": 1,
   "visibleFaqButtons": 8,
   "faqSchemaQuestions": [
-    "What is International SEO?",
-    "How long does international seo take to show results?",
-    "How much does international seo cost?",
-    "Do you offer international seo for international clients?",
-    "How is SEO India Tech different for international seo?",
-    "Can international seo work with our existing marketing team?",
-    "What KPIs should we track for international seo?",
-    "How do we start international seo with SEO India Tech?"
+    "What is international SEO?",
+    "How does hreflang work in international SEO?",
+    "What is the difference between multilingual and multiregional SEO?",
+    "How do you approach country-specific keyword research?",
+    "When should a business use subfolders versus ccTLDs for international sites?",
+    "How do you prevent cross-country cannibalization in Google?",
+    "How do you report international SEO performance by country or language?",
+    "How do we start international SEO with SEO India Tech?"
   ],
   "faqVisibleSchemaParity": true,
   "ldGraphTypes": [
@@ -157,10 +155,15 @@
     "/services/local-seo-service": true
   },
   "blogIntlPaths": [
-    "/blog/seo-trends-european-businesses-2026"
+    "/blog/international-seo-guide-european-companies",
+    "/blog/local-vs-national-vs-international-seo"
   ],
-  "internalLinkCount": 95,
-  "wordCountEstimate": 3650,
+  "blogRequired": {
+    "/blog/international-seo-guide-european-companies": true,
+    "/blog/local-vs-national-vs-international-seo": true
+  },
+  "internalLinkCount": 96,
+  "wordCountEstimate": 3643,
   "companyIndiaMentions": {
     "titleSeoCompany": false,
     "titleSeoServicesIndia": true,
@@ -169,7 +172,7 @@
   },
   "topicMentions": {
     "hreflang": true,
-    "multilingual": false,
+    "multilingual": true,
     "multiregional": true,
     "countryTargeting": true,
     "canonicalization": true,
