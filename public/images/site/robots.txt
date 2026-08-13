@@ -1,0 +1,54 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /new
+Disallow: /old
+
+# Google Search — explicit allow (discovery + indexing)
+User-agent: Googlebot
+Allow: /
+Disallow: /api/
+Disallow: /new
+Disallow: /old
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-News
+Allow: /
+
+# AI search crawlers — allowed for discoverability in AI Overviews and answer engines
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+Sitemap: https://www.seoindiatech.com/sitemap.xml
