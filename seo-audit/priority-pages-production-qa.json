@@ -1,0 +1,321 @@
+{
+  "commit": "d4bf850",
+  "timestamp": "2026-08-13T08:53:16.183Z",
+  "deployment": "live",
+  "checks": {
+    "robots": {
+      "status": 200,
+      "hasLlmsTxtDirective": false,
+      "hasSitemap": true,
+      "pass": true
+    },
+    "llmsTxt": {
+      "status": 200,
+      "pass": true
+    },
+    "sitemap": {
+      "status": 200,
+      "urlCount": 115,
+      "pass": true
+    }
+  },
+  "priorityPages": [
+    {
+      "slug": "optometrist-seo",
+      "status": 200,
+      "indexable": true,
+      "canonical": "https://www.seoindiatech.com/industries/optometrist-seo",
+      "title": "SEO for Optometrists & Eye Care Practices | SEO India Tech",
+      "titleOk": true,
+      "pass": true
+    },
+    {
+      "slug": "accountants-seo",
+      "status": 200,
+      "indexable": true,
+      "canonical": "https://www.seoindiatech.com/industries/accountants-seo",
+      "title": "SEO for Accountants & Accounting Firms | Accountants SEO | SEO India Tech",
+      "titleOk": true,
+      "pass": true
+    },
+    {
+      "slug": "doctor-physician-seo",
+      "status": 200,
+      "indexable": true,
+      "canonical": "https://www.seoindiatech.com/industries/doctor-physician-seo",
+      "title": "SEO for Doctors & Physicians | Physician SEO Services | SEO India Tech",
+      "titleOk": true,
+      "pass": true
+    },
+    {
+      "slug": "deck-builder-seo",
+      "status": 200,
+      "indexable": true,
+      "canonical": "https://www.seoindiatech.com/industries/deck-builder-seo",
+      "title": "Deck Builder SEO Services | Local, AI & GEO SEO Experts | SEO India Tech",
+      "titleOk": true,
+      "pass": true
+    },
+    {
+      "slug": "chiropractor-seo",
+      "status": 200,
+      "indexable": true,
+      "canonical": "https://www.seoindiatech.com/industries/chiropractor-seo",
+      "title": "Chiropractor SEO Services | Local, AI & GEO SEO Experts | SEO India Tech",
+      "titleOk": true,
+      "pass": true
+    },
+    {
+      "slug": "wineries-seo",
+      "status": 200,
+      "indexable": true,
+      "canonical": "https://www.seoindiatech.com/industries/wineries-seo",
+      "title": "SEO for Wineries | Winery SEO Services | SEO India Tech",
+      "titleOk": true,
+      "pass": true
+    },
+    {
+      "slug": "hvac-seo",
+      "status": 200,
+      "indexable": true,
+      "canonical": "https://www.seoindiatech.com/industries/hvac-seo",
+      "title": "HVAC SEO Services | HVAC Contractor Marketing & Map Pack SEO",
+      "titleOk": true,
+      "pass": true
+    },
+    {
+      "slug": "plumber-seo",
+      "status": 200,
+      "indexable": true,
+      "canonical": "https://www.seoindiatech.com/industries/plumber-seo",
+      "title": "Plumber SEO Services | Plumbing Contractor Marketing",
+      "titleOk": true,
+      "pass": true
+    },
+    {
+      "slug": "automotive-seo",
+      "status": 200,
+      "indexable": true,
+      "canonical": "https://www.seoindiatech.com/industries/automotive-seo",
+      "title": "Automotive SEO Services | Auto Repair Shop Marketing",
+      "titleOk": true,
+      "pass": true
+    },
+    {
+      "slug": "movers-and-moving-company-seo",
+      "status": 200,
+      "indexable": true,
+      "canonical": "https://www.seoindiatech.com/industries/movers-and-moving-company-seo",
+      "title": "Moving Company SEO Services | Local & Long-Distance Mover Marketing",
+      "titleOk": true,
+      "pass": true
+    },
+    {
+      "slug": "plastic-surgery-seo",
+      "status": 200,
+      "indexable": true,
+      "canonical": "https://www.seoindiatech.com/industries/plastic-surgery-seo",
+      "title": "Plastic Surgery SEO Services | Grow Consult Bookings | SEO India Tech",
+      "titleOk": true,
+      "pass": true
+    },
+    {
+      "slug": "flooring-company-seo",
+      "status": 200,
+      "indexable": true,
+      "canonical": "https://www.seoindiatech.com/industries/flooring-company-seo",
+      "title": "Flooring Company SEO Services | Hardwood, Tile & LVP Marketing",
+      "titleOk": true,
+      "pass": true
+    },
+    {
+      "slug": "fence-installer-seo",
+      "status": 200,
+      "indexable": true,
+      "canonical": "https://www.seoindiatech.com/industries/fence-installer-seo",
+      "title": "Fence Installer SEO Services | Local, AI & GEO SEO Experts | SEO India Tech",
+      "titleOk": true,
+      "pass": true
+    },
+    {
+      "slug": "garage-door-seo",
+      "status": 200,
+      "indexable": true,
+      "canonical": "https://www.seoindiatech.com/industries/garage-door-seo",
+      "title": "Garage Door SEO Services | Repair & Installation Marketing",
+      "titleOk": true,
+      "pass": true
+    },
+    {
+      "slug": "janitorial-service-seo",
+      "status": 200,
+      "indexable": true,
+      "canonical": "https://www.seoindiatech.com/industries/janitorial-service-seo",
+      "title": "Janitorial Service SEO Services | Local, AI & GEO SEO Experts | SEO India Tech",
+      "titleOk": true,
+      "pass": true
+    },
+    {
+      "slug": "roofers-seo",
+      "status": 200,
+      "indexable": true,
+      "canonical": "https://www.seoindiatech.com/industries/roofers-seo",
+      "title": "Roofers SEO Services | Local, AI & GEO SEO Experts | SEO India Tech",
+      "titleOk": true,
+      "pass": true
+    },
+    {
+      "slug": "physiotherapy-seo",
+      "status": 200,
+      "indexable": true,
+      "canonical": "https://www.seoindiatech.com/industries/physiotherapy-seo",
+      "title": "Physiotherapy SEO Services | Local, AI & GEO SEO Experts | SEO India Tech",
+      "titleOk": true,
+      "pass": true
+    },
+    {
+      "slug": "pest-control-service-seo",
+      "status": 200,
+      "indexable": true,
+      "canonical": "https://www.seoindiatech.com/industries/pest-control-service-seo",
+      "title": "Pest Control Service SEO Services | Local, AI & GEO SEO Experts | SEO India Tech",
+      "titleOk": true,
+      "pass": true
+    },
+    {
+      "slug": "orthodontist-seo",
+      "status": 200,
+      "indexable": true,
+      "canonical": "https://www.seoindiatech.com/industries/orthodontist-seo",
+      "title": "Orthodontist SEO Services | Local, AI & GEO SEO Experts | SEO India Tech",
+      "titleOk": true,
+      "pass": true
+    },
+    {
+      "slug": "dentist-seo",
+      "status": 200,
+      "indexable": true,
+      "canonical": "https://www.seoindiatech.com/industries/dentist-seo",
+      "title": "Dentist SEO Services | Local, AI & GEO SEO Experts | SEO India Tech",
+      "titleOk": true,
+      "pass": true
+    },
+    {
+      "slug": "locksmith-service-seo",
+      "status": 200,
+      "indexable": true,
+      "canonical": "https://www.seoindiatech.com/industries/locksmith-service-seo",
+      "title": "Locksmith Service SEO Services | Local, AI & GEO SEO Experts | SEO India Tech",
+      "titleOk": true,
+      "pass": true
+    },
+    {
+      "slug": "cpa-firm-seo",
+      "status": 200,
+      "indexable": true,
+      "canonical": "https://www.seoindiatech.com/industries/cpa-firm-seo",
+      "title": "CPA Firm SEO Services | Local, AI & GEO SEO Experts | SEO India Tech",
+      "titleOk": true,
+      "pass": true
+    },
+    {
+      "slug": "dry-cleaner-seo",
+      "status": 200,
+      "indexable": true,
+      "canonical": "https://www.seoindiatech.com/industries/dry-cleaner-seo",
+      "title": "Dry Cleaner SEO Services | Local, AI & GEO SEO Experts | SEO India Tech",
+      "titleOk": true,
+      "pass": true
+    },
+    {
+      "slug": "waste-management-seo",
+      "status": 200,
+      "indexable": true,
+      "canonical": "https://www.seoindiatech.com/industries/waste-management-seo",
+      "title": "Waste Management SEO Services | Local, AI & GEO SEO Experts | SEO India Tech",
+      "titleOk": true,
+      "pass": true
+    }
+  ],
+  "lockedPages": [
+    {
+      "path": "/",
+      "status": 200,
+      "title": "SEO Company in India | SEO Agency & Services | SEO India Tech",
+      "pass": true
+    },
+    {
+      "path": "/services/seo",
+      "status": 200,
+      "title": "SEO Services in India | SEO India Tech",
+      "pass": true
+    },
+    {
+      "path": "/services/technical-seo",
+      "status": 200,
+      "title": "Technical SEO Services in India | Technical SEO Company | SEO India Tech",
+      "pass": true
+    },
+    {
+      "path": "/services/local-seo-service",
+      "status": 200,
+      "title": "Local SEO India | Local SEO Services in India | SEO India Tech",
+      "pass": true
+    },
+    {
+      "path": "/services/gbp-optimization",
+      "status": 200,
+      "title": "Google Business Profile Optimization | GBP SEO Experts | SEO India Tech",
+      "pass": true
+    },
+    {
+      "path": "/services/e-commerce-seo",
+      "status": 200,
+      "title": "Ecommerce SEO Agency in India | WooCommerce & Store SEO | SEO India Tech",
+      "pass": true
+    },
+    {
+      "path": "/services/international-seo",
+      "status": 200,
+      "title": "International SEO Agency India | Global SEO Services | SEO India Tech",
+      "pass": true
+    }
+  ],
+  "redirects": [
+    {
+      "from": "/contactus",
+      "to": "/contact-us",
+      "finalPath": "/contact-us",
+      "is301": true,
+      "chain": [
+        301,
+        200
+      ],
+      "pass": true
+    },
+    {
+      "from": "/services/woocommerce-seo",
+      "to": "/services/e-commerce-seo",
+      "finalPath": "/services/e-commerce-seo",
+      "is301": true,
+      "chain": [
+        301,
+        200
+      ],
+      "pass": true
+    },
+    {
+      "from": "/locations/noida",
+      "to": "/seo-services/seo-services-in-noida",
+      "finalPath": "/seo-services/seo-services-in-noida",
+      "is301": true,
+      "chain": [
+        301,
+        200
+      ],
+      "pass": true
+    }
+  ],
+  "overallVerdict": "PASS",
+  "failures": []
+}
