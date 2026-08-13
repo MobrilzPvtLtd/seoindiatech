@@ -71,10 +71,12 @@ const Header = () => {
   const industryRef = useRef(null)
   const mobileMenuRef = useRef(null)
 
+  const DESKTOP_NAV_BP = 1280
+
   useEffect(() => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth)
-      if (window.innerWidth >= 768) setIsMenuOpen(false)
+      if (window.innerWidth >= DESKTOP_NAV_BP) setIsMenuOpen(false)
     }
 
     const handleClickOutside = (e) => {
@@ -141,7 +143,7 @@ const Header = () => {
   }
 
   const handleIndustryMouseEnter = () => {
-    if (windowWidth >= 768) {
+    if (windowWidth >= DESKTOP_NAV_BP) {
       if (industryTimeoutRef.current) {
         clearTimeout(industryTimeoutRef.current)
         industryTimeoutRef.current = null
@@ -152,13 +154,13 @@ const Header = () => {
   }
 
   const handleIndustryMouseLeave = () => {
-    if (windowWidth >= 768) {
+    if (windowWidth >= DESKTOP_NAV_BP) {
       industryTimeoutRef.current = setTimeout(() => setIsIndustryOpen(false), 150)
     }
   }
 
   const handleServicesClick = () => {
-    if (windowWidth < 768) {
+    if (windowWidth < DESKTOP_NAV_BP) {
       setIsServicesOpen((open) => !open)
       setIsIndustryOpen(false)
       return
@@ -168,7 +170,7 @@ const Header = () => {
   }
 
   const handleIndustryClick = () => {
-    if (windowWidth < 768) {
+    if (windowWidth < DESKTOP_NAV_BP) {
       setIsIndustryOpen((open) => !open)
       setIsServicesOpen(false)
       return
@@ -178,7 +180,7 @@ const Header = () => {
   }
 
   const handleServicesMouseEnter = () => {
-    if (windowWidth >= 768) {
+    if (windowWidth >= DESKTOP_NAV_BP) {
       if (servicesTimeoutRef.current) {
         clearTimeout(servicesTimeoutRef.current)
         servicesTimeoutRef.current = null
@@ -189,7 +191,7 @@ const Header = () => {
   }
 
   const handleServicesMouseLeave = () => {
-    if (windowWidth >= 768) {
+    if (windowWidth >= DESKTOP_NAV_BP) {
       servicesTimeoutRef.current = setTimeout(() => setIsServicesOpen(false), 150)
     }
   }
@@ -260,7 +262,7 @@ const Header = () => {
         </div>
       )}
       <header
-        className={`fixed left-0 w-full z-50 isolate overflow-visible transition-[top,transform] duration-300 ease-in-out ${headerTopClass} ${isMenuOpen ? 'z-[80]' : ''}`}
+        className={`fixed left-0 right-0 w-full max-w-[100vw] z-50 isolate overflow-hidden transition-[top,transform] duration-300 ease-in-out ${headerTopClass} ${isMenuOpen ? 'z-[80]' : ''}`}
       >
         <div className={`w-full border-b transition-all duration-300 ${headerBarClass}`}>
           <div className={headerInnerClass}>
@@ -270,8 +272,8 @@ const Header = () => {
               priority
             />
 
-            <nav className="hidden md:flex flex-1 justify-center min-w-0 px-1 lg:px-4 overflow-visible">
-              <ul className="flex items-center flex-nowrap gap-x-2 lg:gap-x-3 xl:gap-x-4">
+            <nav className="hidden xl:flex flex-1 justify-center min-w-0 px-1 overflow-hidden">
+              <ul className="flex items-center flex-nowrap gap-x-1.5 lg:gap-x-2 xl:gap-x-3 max-w-full">
                 <li>
                   <Link
                     href="/"
@@ -350,14 +352,14 @@ const Header = () => {
             </nav>
 
             <div className="flex items-center justify-end shrink-0 gap-2">
-              <div className="hidden md:flex items-center gap-2 lg:gap-3">
+              <div className="hidden xl:flex items-center gap-2 lg:gap-3">
                 <ThemeToggleButton onDark={logoOnDark} compact />
                 <Link href="/contact-us" className={contactButtonClass}>
                   Book a Call
                 </Link>
               </div>
 
-              <div className="md:hidden flex items-center gap-2">
+              <div className="xl:hidden flex items-center gap-2">
                 <ThemeToggleButton onDark={logoOnDark} compact />
                 <button
                   className={`menu-toggle min-h-11 min-w-11 flex items-center justify-center ${darkHeroNav ? 'text-white hover:bg-white/10' : 'text-heading hover:bg-surface'} focus:outline-none focus:ring-2 focus:ring-primary rounded-full transition-colors`}
@@ -376,7 +378,7 @@ const Header = () => {
       {/* Mobile overlay */}
       {isMenuOpen && (
         <div
-          className="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-[85] md:hidden transition-opacity duration-300"
+          className="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-[85] xl:hidden transition-opacity duration-300"
           onClick={toggleMobileMenu}
           aria-hidden="true"
         />
@@ -389,7 +391,7 @@ const Header = () => {
           fixed top-0 right-0 h-full w-[min(100%,20rem)] bg-secondary dark:bg-slate-900
           shadow-2xl z-[90] transform transition-transform duration-300 ease-in-out
           ${isMenuOpen ? 'translate-x-0' : 'translate-x-full pointer-events-none'}
-          flex flex-col md:hidden
+          flex flex-col xl:hidden
         `}
         aria-hidden={!isMenuOpen}
       >

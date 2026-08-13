@@ -2,7 +2,7 @@ export const SITE_URL = 'https://www.seoindiatech.com'
 
 export const SITE_NAME = 'SEO India Tech'
 
-export const DEFAULT_OG_IMAGE = `${SITE_URL}/sit-transparent.png`
+export const DEFAULT_OG_IMAGE = `${SITE_URL}/images/brand/sit-transparent.png`
 
 export const SITE_DESCRIPTION =
   'SEO India Tech is a global AI-powered digital marketing agency offering SEO, PPC, content marketing, web development, and technology solutions with transparent ROI reporting.'
@@ -10,7 +10,7 @@ export const SITE_DESCRIPTION =
 export const ORGANIZATION = {
   name: SITE_NAME,
   url: `${SITE_URL}/`,
-  logo: `${SITE_URL}/sit-transparent.png`,
+  logo: `${SITE_URL}/images/brand/sit-transparent.png`,
   email: 'sales@seoindiatech.com',
   phone: '+91-8076676731',
   address: {

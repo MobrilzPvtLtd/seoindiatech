@@ -9,7 +9,7 @@ const Layout = ({ children }) => (
   <>
     <SkipToContent />
     <Header />
-    <main id="main-content" tabIndex={-1} className="min-w-0 overflow-x-clip">
+    <main id="main-content" tabIndex={-1} className="min-w-0 w-full overflow-x-hidden">
       {children}
     </main>
     <Footer />

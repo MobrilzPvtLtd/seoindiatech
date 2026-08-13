@@ -1,4 +1,4 @@
-import { SITE_URL } from '@/utils/siteConfig'
+import { SITE_URL, ORGANIZATION } from '@/utils/siteConfig'
 import { BLOG_AUTHOR } from '@/utils/blog/blogAuthor'
 
 export default function BlogPostSchema({ post, url }) {
@@ -21,7 +21,7 @@ export default function BlogPostSchema({ post, url }) {
       '@id': `${SITE_URL}/#organization`,
       name: 'SEO India Tech',
       url: `${SITE_URL}/`,
-      logo: { '@type': 'ImageObject', url: `${SITE_URL}/sit-transparent.png` },
+      logo: { '@type': 'ImageObject', url: ORGANIZATION.logo },
     },
     {
       '@type': 'BreadcrumbList',

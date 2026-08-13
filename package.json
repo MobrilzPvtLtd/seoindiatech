@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "postbuild": "node scripts/generate-sitemap.mjs && node scripts/validate-sitemap.mjs && node scripts/generate-llms-txt.mjs && node scripts/validate-llms-txt.mjs && node scripts/qa-sitemap-waves.mjs",
+    "postbuild": "node scripts/generate-sitemap.mjs && node scripts/validate-sitemap.mjs && node scripts/generate-llms-txt.mjs && node scripts/validate-llms-txt.mjs && node scripts/qa-sitemap-waves.mjs && node scripts/stage-netlify-public.mjs",
     "generate-sitemap": "node scripts/generate-sitemap.mjs",
     "generate-llms-txt": "node scripts/generate-llms-txt.mjs",
     "validate-llms-txt": "node scripts/validate-llms-txt.mjs",

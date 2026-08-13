@@ -1,22 +1,24 @@
+import { SITE_URL, ORGANIZATION } from '@/utils/siteConfig'
+
 export default function IndustrySchema({ industry, url }) {
   const schema = {
     '@context': 'https://schema.org',
     '@graph': [
       {
         '@type': 'WebSite',
-        '@id': 'https://www.seoindiatech.com/#website',
-        url: 'https://www.seoindiatech.com/',
+        '@id': `${SITE_URL}/#website`,
+        url: `${SITE_URL}/`,
         name: 'SEO India Tech',
         inLanguage: 'en-IN',
       },
       {
         '@type': 'Organization',
-        '@id': 'https://www.seoindiatech.com/#organization',
+        '@id': `${SITE_URL}/#organization`,
         name: 'SEO India Tech',
-        url: 'https://www.seoindiatech.com/',
+        url: `${SITE_URL}/`,
         logo: {
           '@type': 'ImageObject',
-          url: 'https://www.seoindiatech.com/sit-transparent.png',
+          url: ORGANIZATION.logo,
         },
         email: 'sales@seoindiatech.com',
         telephone: '+91-8076676731',
@@ -27,7 +29,7 @@ export default function IndustrySchema({ industry, url }) {
         url,
         name: industry.title,
         description: industry.description,
-        isPartOf: { '@id': 'https://www.seoindiatech.com/#website' },
+        isPartOf: { '@id': `${SITE_URL}/#website` },
         about: { '@id': 'https://www.seoindiatech.com/#organization' },
         inLanguage: 'en-IN',
       },

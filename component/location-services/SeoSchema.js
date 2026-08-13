@@ -1,5 +1,7 @@
+import { SITE_URL, ORGANIZATION } from '@/utils/siteConfig'
+
 export default function SeoSchema({ location, url }) {
-  const siteUrl = 'https://www.seoindiatech.com'
+  const siteUrl = SITE_URL
   const schema = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -18,7 +20,7 @@ export default function SeoSchema({ location, url }) {
         url: `${siteUrl}/`,
         logo: {
           '@type': 'ImageObject',
-          url: `${siteUrl}/sit-transparent.png`,
+          url: ORGANIZATION.logo,
         },
         email: 'sales@seoindiatech.com',
         telephone: '+91-8076676731',

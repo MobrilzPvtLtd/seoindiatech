@@ -113,11 +113,11 @@ html.dark {
 html {
   background-color: var(--background);
   scroll-behavior: smooth;
-  overflow-x: clip;
+  overflow-x: hidden;
 }
 
 body {
-  overflow-x: clip;
+  overflow-x: hidden;
   max-width: 100%;
 }
 

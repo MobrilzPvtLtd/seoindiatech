@@ -2,6 +2,9 @@
   command = "npm run build"
   publish = ".next"
 
+[build.processing.html]
+  pretty_urls = false
+
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
@@ -53,6 +56,49 @@
   from = "/locations/delhi"
   to = "/seo-services/seo-services-in-delhi"
   status = 301
+  force = true
+
+# Root public files → /images/* (Netlify CDN serves nested public assets reliably)
+[[redirects]]
+  from = "/robots.txt"
+  to = "/images/site/robots.txt"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/sitemap.xml"
+  to = "/images/site/sitemap.xml"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/llms.txt"
+  to = "/images/site/llms.txt"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/agents.json"
+  to = "/images/site/agents.json"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/agent-instructions.md"
+  to = "/images/site/agent-instructions.md"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/sit-transparent.png"
+  to = "/images/brand/sit-transparent.png"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/favicon.ico"
+  to = "/images/brand/favicon.png"
+  status = 200
   force = true
 
 # Trailing slash canonicalization handled in next.config.mjs (avoids redirect loops with Next plugin)
