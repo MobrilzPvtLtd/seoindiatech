@@ -42,6 +42,10 @@ function CellValue({ value, highlight }) {
 }
 
 export default function ComparisonTable({ data }) {
+  const usLabel = data.columns[3]
+  const agencyLabel = data.columns[2]
+  const freelancerLabel = data.columns[1]
+
   return (
     <PremiumSection id="compare" variant="muted">
       <PremiumSectionHeader
@@ -52,7 +56,40 @@ export default function ComparisonTable({ data }) {
         className="mb-10"
       />
 
-      <div className="overflow-hidden rounded-3xl border border-border bg-white shadow-premium dark:bg-card">
+      {/* Mobile: stacked cards — no horizontal table scroll */}
+      <div className="space-y-4 md:hidden">
+        {data.rows.map((row) => (
+          <article
+            key={row.feature}
+            className="rounded-2xl border border-border bg-white p-5 shadow-sm dark:bg-card"
+          >
+            <h3 className="text-sm font-bold text-heading">{row.feature}</h3>
+            <dl className="mt-4 space-y-3">
+              <div className="flex items-start justify-between gap-3 rounded-xl bg-cream/60 px-3 py-2.5 dark:bg-primary/10">
+                <dt className="text-xs font-semibold uppercase tracking-wide text-muted">{usLabel}</dt>
+                <dd className="text-right">
+                  <CellValue value={row.us} highlight />
+                </dd>
+              </div>
+              <div className="flex items-start justify-between gap-3 px-3 py-1">
+                <dt className="text-xs font-medium text-muted">{agencyLabel}</dt>
+                <dd className="text-right">
+                  <CellValue value={row.agency} />
+                </dd>
+              </div>
+              <div className="flex items-start justify-between gap-3 px-3 py-1">
+                <dt className="text-xs font-medium text-muted">{freelancerLabel}</dt>
+                <dd className="text-right">
+                  <CellValue value={row.freelancer} />
+                </dd>
+              </div>
+            </dl>
+          </article>
+        ))}
+      </div>
+
+      {/* Desktop: full comparison table */}
+      <div className="hidden md:block overflow-hidden rounded-3xl border border-border bg-white shadow-premium dark:bg-card">
         <div className="overflow-x-auto">
           <table className="w-full min-w-[680px] text-left">
             <thead>

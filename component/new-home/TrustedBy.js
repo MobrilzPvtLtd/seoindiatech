@@ -35,7 +35,7 @@ const TrustedBy = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-4 gap-2 sm:gap-4 lg:gap-6">
+            <div className="grid grid-cols-2 gap-2 sm:grid-cols-4 sm:gap-4 lg:gap-6">
               {stats.map((s) => (
                 <div
                   key={s.l}
@@ -63,8 +63,7 @@ const TrustedBy = () => {
             {marqueeLogos.map((logo, index) => (
               <div
                 key={`logo-${index}`}
-                className="flex-shrink-0 flex items-center justify-center rounded-xl border border-border bg-surface/80 px-8 py-5 transition-all duration-300 hover:-translate-y-1 hover:border-secondary/25 hover:shadow-md"
-                style={{ width: '200px', height: '96px' }}
+                className="flex-shrink-0 flex items-center justify-center rounded-xl border border-border bg-surface/80 px-6 py-4 w-[150px] h-[72px] sm:w-[200px] sm:h-[96px] transition-all duration-300 hover:-translate-y-1 hover:border-secondary/25 hover:shadow-md"
               >
                 <div className="relative h-12 w-36">
                   <Image

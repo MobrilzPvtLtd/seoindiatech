@@ -96,7 +96,7 @@ export default function PremiumIndustryPage({ content }) {
       {content.contact && <PremiumContactBand data={content.contact} />}
       <PremiumFinalCta data={content.finalCta} />
       <StickyMobileCta label="Get a Free Quote" href={content.finalCta.primaryCta.href} />
-      <div className="h-16 lg:hidden" aria-hidden="true" />
+      <div className="h-20 safe-bottom lg:hidden" aria-hidden="true" />
     </div>
   )
 }

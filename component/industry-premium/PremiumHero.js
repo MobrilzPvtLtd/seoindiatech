@@ -72,7 +72,7 @@ export default function PremiumHero({ data }) {
         <div className="pointer-events-none absolute inset-0 hero-grid-bg opacity-[0.12]" />
       </div>
 
-      <div className="relative z-10 mx-auto max-w-7xl px-4 pb-20 pt-28 sm:px-6 md:pb-24 md:pt-32 lg:px-8">
+      <div className="relative z-10 mx-auto max-w-7xl px-4 pb-24 pt-28 sm:px-6 md:pb-24 md:pt-32 lg:px-8">
         <nav aria-label="Breadcrumb" className="mb-6 lg:mb-8">
           <ol className="flex flex-wrap items-center gap-1.5 text-xs text-white/70 sm:text-sm">
             {breadcrumbs.map((crumb, i) => (

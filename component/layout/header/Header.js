@@ -359,7 +359,7 @@ const Header = () => {
       <div
         ref={mobileMenuRef}
         className={`
-          fixed top-0 right-0 h-full w-3/4 max-w-xs bg-secondary dark:bg-slate-900
+          fixed top-0 right-0 h-full w-full max-w-[min(100%,20rem)] bg-secondary dark:bg-slate-900
           shadow-2xl z-[70] transform transition-transform duration-300 ease-in-out
           ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}
           flex flex-col md:hidden

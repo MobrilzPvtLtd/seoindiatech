@@ -64,7 +64,7 @@ const Hero = () => {
       <div className="pointer-events-none absolute inset-0 hero-glow-secondary max-md:hidden" />
       <div className="pointer-events-none absolute inset-0 hero-glow-cta max-md:hidden" />
 
-      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-28 pb-24 md:pt-32 lg:pt-36 lg:pb-28">
+      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-28 pb-28 sm:pb-24 md:pt-32 lg:pt-36 lg:pb-28">
         <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-8 xl:gap-12">
           {/* Left - visible immediately for LCP (no JS animation gate) */}
           <div className="text-center lg:text-left text-white hero-copy animate-fade-in-up">
@@ -143,7 +143,7 @@ const Hero = () => {
 
       <SideConnectTab />
 
-      <div className="fixed bottom-0 left-0 right-0 z-40 border-t border-white/10 bg-[#0e0c18]/95 backdrop-blur-md p-3 lg:hidden">
+    <div className="fixed bottom-0 left-0 right-0 z-40 border-t border-white/10 bg-[#0e0c18]/95 backdrop-blur-md safe-bottom px-3 pt-3 lg:hidden">
         <Link
           href="/contact-us"
           className="flex w-full items-center justify-center gap-2 rounded-full bg-primary py-3.5 text-sm font-bold text-white shadow-glow-brand"

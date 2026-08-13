@@ -27,7 +27,7 @@ export default function PageSectionNav({ sections }) {
   return (
     <nav
       aria-label="Page sections"
-      className="sticky top-[72px] z-30 border-b border-border/70 bg-white/95 backdrop-blur-md dark:bg-card/95"
+      className="sticky top-16 z-30 border-b border-border/70 bg-white/95 backdrop-blur-md dark:bg-card/95 md:top-[72px]"
     >
       <div className="mx-auto flex max-w-7xl gap-1 overflow-x-auto px-4 py-2.5 sm:px-6 lg:px-8 scrollbar-hide">
         {sections.map((section) => (

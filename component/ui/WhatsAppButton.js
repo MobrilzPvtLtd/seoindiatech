@@ -14,7 +14,7 @@ export default function WhatsAppButton() {
       href={WHATSAPP_URL}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-20 left-4 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-[0_8px_24px_rgba(37,211,102,0.45)] transition-all duration-300 hover:scale-105 hover:shadow-[0_12px_28px_rgba(37,211,102,0.5)] lg:bottom-8 lg:left-8"
+      className="fixed bottom-20 left-4 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-[0_8px_24px_rgba(37,211,102,0.45)] transition-all duration-300 hover:scale-105 hover:shadow-[0_12px_28px_rgba(37,211,102,0.5)] max-lg:bottom-[5.5rem] lg:bottom-8 lg:left-8"
       aria-label="Chat on WhatsApp"
     >
       <FaWhatsapp className="h-7 w-7" />

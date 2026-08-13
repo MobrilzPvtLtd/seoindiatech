@@ -214,25 +214,26 @@ const sections = [
 
 function TableSection({ title, rows }) {
   return (
-    <div className="bg-white dark:bg-background shadow-sm overflow-hidden">
-      <h3 className="bg-gradient-to-r from-primary to-primary-hover dark:from-primary dark:to-primary-hover text-white px-6 py-3 font-semibold text-center text-xl">
+    <div className="bg-white dark:bg-card shadow-sm overflow-hidden rounded-2xl border border-border">
+      <h3 className="bg-gradient-to-r from-primary to-primary-hover text-white px-4 sm:px-6 py-3 font-semibold text-center text-lg sm:text-xl">
         {title}
       </h3>
 
-      <div className="overflow-x-auto">
-        <table className="min-w-[900px] w-full text-sm text-center border-collapse text-gray-900 dark:text-gray-100">
+      <p className="px-4 py-2 text-xs text-muted text-center md:hidden border-b border-border/60">
+        Swipe horizontally to compare plans
+      </p>
+
+      <div className="overflow-x-auto mobile-scroll-hint -webkit-overflow-scrolling-touch">
+        <table className="min-w-[640px] sm:min-w-[760px] lg:min-w-[900px] w-full text-sm text-center border-collapse text-heading">
           <thead className="bg-cream dark:bg-card sticky top-0 z-10">
             <tr className="h-12 md:h-14">
-              <th className="text-left px-4 py-3 bg-cream dark:bg-card text-gray-900 dark:text-gray-100">
+              <th className="text-left px-4 py-3 bg-cream dark:bg-card text-heading min-w-[180px]">
                 Feature
               </th>
               {plans.map((plan, index) => (
                 <th
                   key={plan}
-                  className={`py-3 font-semibold text-gray-900 dark:text-gray-100 ${index >= 2
-                      ? 'bg-background dark:bg-primary/20/40 text-primary dark:text-accent'
-                      : ''
-                    }`}
+                  className={`py-3 font-semibold text-heading min-w-[88px] ${index >= 2 ? 'bg-primary/10 dark:bg-primary/20 text-primary dark:text-accent' : ''}`}
                 >
                   {plan}
                 </th>
@@ -244,28 +245,15 @@ function TableSection({ title, rows }) {
             {rows.map((row, i) => (
               <tr
                 key={i}
-                className="
-                  min-h-[3.5rem] md:min-h-[4rem]
-                  odd:bg-white even:bg-gray-50 dark:odd:bg-gray-900 dark:even:bg-gray-800
-                  hover:bg-background/60 dark:hover:bg-blue-900/30 transition-colors
-                  align-middle
-                "
+                className="min-h-[3.5rem] md:min-h-[4rem] odd:bg-white even:bg-cream/40 dark:odd:bg-card dark:even:bg-background/60 hover:bg-primary/5 transition-colors align-middle"
               >
-                <td className="px-4 py-3 text-left font-medium border-t border-border text-gray-900 dark:text-gray-100">
+                <td className="px-4 py-3 text-left font-medium border-t border-border text-heading">
                   {row[0]}
                 </td>
                 {row.slice(1).map((cell, idx) => (
                   <td
                     key={idx}
-                    className={`
-                      py-3 border-l border-t border-border
-                      align-middle
-                      text-gray-900 dark:text-gray-100
-                      ${idx >= 2
-                        ? 'border-primary/30/60 dark:border-primary/30/60 bg-background/40 dark:bg-primary/15'
-                        : ''
-                      }
-                    `}
+                    className={`py-3 border-l border-t border-border align-middle text-heading ${idx >= 2 ? 'border-primary/20 bg-primary/5 dark:bg-primary/10' : ''}`}
                   >
                     <Cell value={cell} />
                   </td>
@@ -281,25 +269,20 @@ function TableSection({ title, rows }) {
 
 export default function PackageFeatures() {
   return (
-    <section className="py-20 bg-background">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="divide-y divide-border dark:divide-gray-800 rounded-xl overflow-hidden shadow-sm">
+    <section className="section-padding bg-background">
+      <div className="page-container">
+        <div className="divide-y divide-border rounded-2xl overflow-hidden shadow-premium border border-border">
           {sections.map((section) => (
             <TableSection key={section.title} {...section} />
           ))}
         </div>
 
-        {/* Single button after the last table */}
         <div className="mt-10 flex justify-center">
-          <Link href="/contact-us">
-            <button
-              className="bg-gradient-to-r from-primary to-primary-hover hover:from-blue-700 hover:to-secondary 
-                       text-white font-medium px-8 py-3 cursor-pointer rounded-lg shadow-md 
-                       transition-all duration-200 transform hover:scale-[1.03] 
-                       focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
-            >
-              Ready to start a plan
-            </button>
+          <Link
+            href="/contact-us"
+            className="inline-flex items-center justify-center rounded-full bg-primary hover:bg-primary-hover px-8 py-3.5 text-sm font-bold text-white shadow-glow-brand transition-all hover:-translate-y-0.5"
+          >
+            Ready to start a plan
           </Link>
         </div>
       </div>
