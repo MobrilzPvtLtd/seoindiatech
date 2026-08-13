@@ -35,6 +35,11 @@ export default function SitLogoMark({ variant = 'onLight', compact = false, clas
 
   const font = 'var(--font-heading), Plus Jakarta Sans, Arial, sans-serif'
 
+  const svgA11y = {
+    role: 'img',
+    'aria-label': 'SEO India Tech',
+  }
+
   if (compact) {
     return (
       <svg
@@ -42,7 +47,7 @@ export default function SitLogoMark({ variant = 'onLight', compact = false, clas
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         className={className}
-        aria-hidden="true"
+        {...svgA11y}
       >
         <text x="0" y="27" fill={text} fontFamily={font} fontSize="24" fontWeight="800">
           SE
@@ -65,7 +70,7 @@ export default function SitLogoMark({ variant = 'onLight', compact = false, clas
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
-      aria-hidden="true"
+      {...svgA11y}
     >
       <text x="0" y="32" fill={text} fontFamily={font} fontSize="28" fontWeight="800">
         SE
