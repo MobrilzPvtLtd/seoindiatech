@@ -14,14 +14,15 @@ SEO India Tech is a digital marketing agency offering AI-powered SEO, Generative
 
 ## Canonical URLs
 
-- Homepage: https://www.seoindiatech.com/
+- Homepage: https://www.seoindiatech.com
 - About: https://www.seoindiatech.com/who-we-are
 - Contact form: https://www.seoindiatech.com/contact-us
 - Industries hub (41 verticals): https://www.seoindiatech.com/industries
 - Blog: https://www.seoindiatech.com/blog
 - SEO packages: https://www.seoindiatech.com/seo-packages
 - Services: browse `/services/{slug}` paths in [llms.txt](https://www.seoindiatech.com/llms.txt)
-- Industry pages: `/industries/{slug}` (e.g. plastic-surgery-seo, dentist-seo, law-firm-seo)
+- Industry pages: `/industries/{slug}` (e.g. plastic-surgery-seo, dentist-seo, hvac-seo)
+- Law firm SEO resource: `/blog/seo-law-firms-complete-guide` (no `/industries/law-firm-seo` page)
 - Location SEO pages: `/seo-services/{city-slug}`
 
 ## AI search optimization services

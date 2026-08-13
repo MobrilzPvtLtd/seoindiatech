@@ -1,6 +1,7 @@
 import SeoHead from '@/component/common/SeoHead'
 import { absoluteUrl } from '@/utils/siteConfig'
 import { getPremiumIndustryContent } from '@/utils/industries/premium'
+import { shouldNoindexPath } from '@/utils/sitemapWaveConfig'
 import PremiumIndustryPage from '@/component/industry-premium/PremiumIndustryPage'
 import PremiumIndustrySchema from '@/component/industry-premium/PremiumIndustrySchema'
 import LocationHero from '@/component/location-services/LocationHero'
@@ -10,7 +11,7 @@ import LocationFAQ from '@/component/location-services/LocationFAQ'
 import IndustrySchema from '@/component/industry-services/IndustrySchema'
 import { industries } from '@/utils/industries'
 
-export default function IndustryPage({ industry, premiumContent }) {
+export default function IndustryPage({ industry, premiumContent, pageNoindex = false }) {
   if (!industry) {
     return (
       <>
@@ -33,6 +34,7 @@ export default function IndustryPage({ industry, premiumContent }) {
           description={premiumContent.seo.description}
           path={pagePath}
           lcpImage={premiumContent.hero?.backgroundImage}
+          noindex={pageNoindex}
         />
         <PremiumIndustrySchema content={premiumContent} url={pageUrl} />
         <main className="min-h-screen bg-white dark:bg-background text-heading dark:text-foreground">
@@ -48,6 +50,7 @@ export default function IndustryPage({ industry, premiumContent }) {
         title={industry.title}
         description={industry.description}
         path={pagePath}
+        noindex={pageNoindex}
       />
       <IndustrySchema industry={industry} url={pageUrl} />
 
@@ -77,10 +80,13 @@ export async function getStaticProps({ params }) {
   const industry = industries.find((item) => item.slug === params.slug)
   const premiumContent = getPremiumIndustryContent(params.slug)
 
+  const pagePath = `/industries/${params.slug}`
+
   return {
     props: {
       industry: industry || null,
       premiumContent: premiumContent || null,
+      pageNoindex: shouldNoindexPath(pagePath),
     },
   }
 }

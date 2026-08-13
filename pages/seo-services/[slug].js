@@ -8,9 +8,10 @@ import LocationFAQ from '@/component/location-services/LocationFAQ'
 import LocationInternalLinks from '@/component/location-services/LocationInternalLinks'
 import SeoSchema from '@/component/location-services/SeoSchema'
 import { getLocationInternalLinks } from '@/utils/internalLinks'
+import { shouldNoindexPath } from '@/utils/sitemapWaveConfig'
 import { locations } from '../../utils/locations'
 
-export default function LocationPage({ location }) {
+export default function LocationPage({ location, pageNoindex = false }) {
   if (!location) {
     return (
       <>
@@ -34,6 +35,7 @@ export default function LocationPage({ location }) {
         title={location.title}
         description={location.description}
         path={pagePath}
+        noindex={pageNoindex}
       />
       <SeoSchema location={location} url={pageUrl} />
 
@@ -81,10 +83,12 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const location = locations.find((item) => item.slug === params.slug)
+  const pagePath = `/seo-services/${params.slug}`
 
   return {
     props: {
       location: location || null,
+      pageNoindex: shouldNoindexPath(pagePath),
     },
   }
 }

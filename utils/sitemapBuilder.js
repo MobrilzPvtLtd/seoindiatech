@@ -1,4 +1,5 @@
 import { BLOG_CATALOG } from './blog/premium/blogCatalog.js'
+import { getLastmodForRegistryPath } from './sitemapLastmodRegistry.js'
 
 export const SITE_URL = 'https://www.seoindiatech.com'
 export const ALLOWED_HOSTS = new Set(['www.seoindiatech.com', 'seoindiatech.com'])
@@ -30,6 +31,9 @@ const BLOG_LASTMOD_BY_SLUG = Object.fromEntries(
 )
 
 export function getLastmodForPath(path) {
+  const registryDate = getLastmodForRegistryPath(path)
+  if (registryDate) return registryDate
+
   const blogMatch = path.match(/^\/blog\/(.+)$/)
   if (!blogMatch) return null
   return BLOG_LASTMOD_BY_SLUG[blogMatch[1]] || null
@@ -80,15 +84,11 @@ export function generateSitemapXml(paths) {
   const body = urls
     .map((loc) => {
       const path = loc === SITE_URL ? '/' : loc.replace(SITE_URL, '')
-      const priority = path === '/' ? '1.0' : path.startsWith('/blog') ? '0.7' : '0.8'
-      const changefreq = path === '/' ? 'weekly' : path.startsWith('/blog') ? 'monthly' : 'weekly'
       const lastmod = getLastmodForPath(path)
       const lastmodTag = lastmod ? `\n    <lastmod>${lastmod}</lastmod>` : ''
 
       return `  <url>
     <loc>${loc}</loc>${lastmodTag}
-    <changefreq>${changefreq}</changefreq>
-    <priority>${priority}</priority>
   </url>`
     })
     .join('\n')

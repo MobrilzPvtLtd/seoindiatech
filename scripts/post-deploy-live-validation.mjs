@@ -131,8 +131,14 @@ async function validatePage(path) {
   if (status !== 200) issues.push(`HTTP ${status}`)
   if (hasNoindex(html)) issues.push('noindex present')
   if (canonical && !canonical.startsWith(BASE)) issues.push(`non-www canonical: ${canonical}`)
-  if (canonical && canonical !== `${BASE}${path}` && canonical !== `${BASE}${path}/`) {
-    issues.push(`canonical mismatch: ${canonical}`)
+  const expectedCanonical =
+    path === '/' || path === ''
+      ? BASE
+      : `${BASE}${path}`.replace(/\/+$/, '')
+  const canonicalNormalized = canonical?.replace(/\/+$/, '') || ''
+  const expectedNormalized = expectedCanonical.replace(/\/+$/, '') || BASE
+  if (canonical && canonicalNormalized !== expectedNormalized) {
+    issues.push(`canonical mismatch: ${canonical} (expected ${expectedCanonical})`)
   }
   if (!title) issues.push('missing title')
   if (!description) issues.push('missing meta description')

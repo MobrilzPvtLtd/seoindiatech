@@ -5,6 +5,7 @@
 import { readFileSync } from 'fs'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
+import { filterPathsForSitemap, getSitemapPublishMode } from '../utils/sitemapWaveConfig.js'
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..')
 
@@ -76,11 +77,13 @@ function extractLocationPaths() {
   return [...new Set([...directSlugs, ...extraSuffixes])].map((slug) => `/seo-services/${slug}`)
 }
 
-export function getSitemapPathsForScripts() {
-  return [
+export function getSitemapPathsForScripts({ wave } = {}) {
+  const mode = wave === 'all' || wave === 'indexed_waves' ? wave : getSitemapPublishMode()
+  const all = [
     ...STATIC_ROUTES,
     ...extractBlogPaths(),
     ...extractIndustryPaths(),
     ...extractLocationPaths(),
   ]
+  return filterPathsForSitemap(all, mode)
 }

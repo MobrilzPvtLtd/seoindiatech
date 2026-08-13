@@ -5,7 +5,7 @@ Generated: 2026-08-13
 **Live URLs audited:** 115  
 **Sitemap URLs:** 115  
 **Open issues:** 29  
-**Fixed in Phase 7:** 5
+**Fixed in Phase 7:** 4
 
 ## Severity Summary (Open Issues)
 
@@ -195,7 +195,6 @@ Pages with ≤1 detected inbound link (code scan heuristic):
 | /blog/technical-seo-checklist-enterprise-websites | Blog in sitemap without known lastmod date | MEDIUM | Add datePublished to catalog or legacy map | OPEN |
 | /blog/what-is-ai-seo-why-business-needs-it | Blog in sitemap without known lastmod date | MEDIUM | Add datePublished to catalog or legacy map | OPEN |
 | /blog/youtube-business-marketing-2026 | Blog in sitemap without known lastmod date | MEDIUM | Add datePublished to catalog or legacy map | OPEN |
-| sitemap.xml | Non-blog URLs omit lastmod (correct — no fake build timestamps) | LOW | Add lastmod only when content materially changes | FIXED |
 | robots.txt | _next not explicitly disallowed | LOW | Optional — Google generally handles static assets | OPEN |
 | /404 | Custom 404 with noindex and recovery links | LOW | Correct | FIXED |
 | schema | Invalid SearchAction removed from WebSite schema | LOW | No blog search endpoint exists | FIXED |

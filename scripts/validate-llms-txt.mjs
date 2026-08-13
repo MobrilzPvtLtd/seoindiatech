@@ -8,6 +8,7 @@ import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
 import { buildSitemapUrls } from '../utils/sitemapBuilder.js'
 import { extractUrlsFromLlmsTxt } from '../utils/llmsTxtBuilder.js'
+import { getSitemapPublishMode } from '../utils/sitemapWaveConfig.js'
 import { getSitemapPathsForScripts } from './sitemap-paths.mjs'
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..')
@@ -15,6 +16,7 @@ const llmsPath = join(root, 'public', 'llms.txt')
 const llmsContent = readFileSync(llmsPath, 'utf8')
 const llmsUrls = extractUrlsFromLlmsTxt(llmsContent)
 
+const publishMode = getSitemapPublishMode()
 const sitemapPaths = getSitemapPathsForScripts()
 const sitemapUrls = buildSitemapUrls(sitemapPaths)
 const sitemapSet = new Set(sitemapUrls)
@@ -49,6 +51,7 @@ const missingFromLlms = sitemapUrls.filter((u) => !llmsUrls.includes(u))
 const extraNotInSitemap = pageUrls.filter((u) => !sitemapSet.has(u))
 
 const report = {
+  publishMode,
   LLMS_TXT_URL_COUNT: llmsUrls.length,
   SITEMAP_URL_COUNT: sitemapUrls.length,
   PAGE_URL_COUNT_IN_LLMS: pageUrls.length,

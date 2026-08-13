@@ -1,0 +1,13 @@
+{
+  "allUrlCount": 115,
+  "indexedWavesUrlCount": 58,
+  "holdPathCount": 37,
+  "expectedHoldCount": 37,
+  "holdExcludedFromIndexed": true,
+  "wave2IndustryCount": 10,
+  "wave2CityCount": 5,
+  "expectedWave2Industries": 10,
+  "expectedWave2Cities": 5,
+  "noPhantomIndexedPaths": true,
+  "status": "PASS"
+}

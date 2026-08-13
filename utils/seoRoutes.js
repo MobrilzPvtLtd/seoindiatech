@@ -1,6 +1,7 @@
 import posts from './BlogPost.js'
 import { locations } from './locations.js'
 import { getAllIndustrySlugs } from './industries/index.js'
+import { filterPathsForSitemap } from './sitemapWaveConfig.js'
 
 const STATIC_ROUTES = [
   '/',
@@ -46,10 +47,10 @@ export function getAllSitemapPaths() {
   const industryPaths = getAllIndustrySlugs().map((slug) => `/industries/${slug}`)
   const locationPaths = locations.map((loc) => `/seo-services/${loc.slug}`)
 
-  return [
+  return filterPathsForSitemap([
     ...STATIC_ROUTES,
     ...blogPaths,
     ...industryPaths,
     ...locationPaths,
-  ]
+  ])
 }

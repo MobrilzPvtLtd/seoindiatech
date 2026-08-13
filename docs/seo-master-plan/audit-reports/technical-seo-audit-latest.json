@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-13T07:40:06.455Z",
+  "generatedAt": "2026-08-13T15:56:19.750Z",
   "urlCount": 115,
   "openIssues": [
     {
@@ -207,13 +207,6 @@
     }
   ],
   "fixedIssues": [
-    {
-      "url": "sitemap.xml",
-      "issue": "Non-blog URLs omit lastmod (correct — no fake build timestamps)",
-      "severity": "LOW",
-      "recommendation": "Add lastmod only when content materially changes",
-      "status": "FIXED"
-    },
     {
       "url": "/404",
       "issue": "Custom 404 with noindex and recovery links",

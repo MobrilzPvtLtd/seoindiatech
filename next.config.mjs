@@ -180,6 +180,8 @@ const nextConfig = {
 
       { source: '/services/seo-web-design', destination: '/services/ui-ux-design', permanent: true },
 
+      { source: '/:path+/', destination: '/:path+', permanent: true },
+
     ]
 
   },

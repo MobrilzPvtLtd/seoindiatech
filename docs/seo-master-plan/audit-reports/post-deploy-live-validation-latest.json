@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-13T07:38:53.856Z",
+  "generatedAt": "2026-08-13T15:57:50.109Z",
   "baseUrl": "https://www.seoindiatech.com",
   "summary": {
-    "priorityPagesOk": 13,
+    "priorityPagesOk": 14,
     "priorityPagesTotal": 14,
-    "redirectsOk": 0,
+    "redirectsOk": 5,
     "redirectsTotal": 5,
     "sitemapCount": 115,
     "sitemapOk": true,
@@ -37,9 +37,7 @@
         "Question",
         "Answer"
       ],
-      "issues": [
-        "canonical mismatch: https://www.seoindiatech.com"
-      ]
+      "issues": []
     },
     {
       "path": "/services/seo",
@@ -439,7 +437,7 @@
       "chain": [
         {
           "url": "https://www.seoindiatech.com/contactus",
-          "status": 308
+          "status": 301
         },
         {
           "url": "https://www.seoindiatech.com/contact-us",
@@ -447,8 +445,8 @@
         }
       ],
       "singleHop": true,
-      "permanent": false,
-      "ok": false
+      "permanent": true,
+      "ok": true
     },
     {
       "from": "/services/woocommerce-seo",
@@ -459,7 +457,7 @@
       "chain": [
         {
           "url": "https://www.seoindiatech.com/services/woocommerce-seo",
-          "status": 308
+          "status": 301
         },
         {
           "url": "https://www.seoindiatech.com/services/e-commerce-seo",
@@ -467,8 +465,8 @@
         }
       ],
       "singleHop": true,
-      "permanent": false,
-      "ok": false
+      "permanent": true,
+      "ok": true
     },
     {
       "from": "/services/seo-web-design",
@@ -479,7 +477,7 @@
       "chain": [
         {
           "url": "https://www.seoindiatech.com/services/seo-web-design",
-          "status": 308
+          "status": 301
         },
         {
           "url": "https://www.seoindiatech.com/services/ui-ux-design",
@@ -487,8 +485,8 @@
         }
       ],
       "singleHop": true,
-      "permanent": false,
-      "ok": false
+      "permanent": true,
+      "ok": true
     },
     {
       "from": "/locations/noida",
@@ -499,7 +497,7 @@
       "chain": [
         {
           "url": "https://www.seoindiatech.com/locations/noida",
-          "status": 308
+          "status": 301
         },
         {
           "url": "https://www.seoindiatech.com/seo-services/seo-services-in-noida",
@@ -507,8 +505,8 @@
         }
       ],
       "singleHop": true,
-      "permanent": false,
-      "ok": false
+      "permanent": true,
+      "ok": true
     },
     {
       "from": "/locations/delhi",
@@ -519,7 +517,7 @@
       "chain": [
         {
           "url": "https://www.seoindiatech.com/locations/delhi",
-          "status": 308
+          "status": 301
         },
         {
           "url": "https://www.seoindiatech.com/seo-services/seo-services-in-delhi",
@@ -527,8 +525,8 @@
         }
       ],
       "singleHop": true,
-      "permanent": false,
-      "ok": false
+      "permanent": true,
+      "ok": true
     }
   ],
   "sitemap": {
