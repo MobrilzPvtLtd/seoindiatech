@@ -5,8 +5,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "postbuild": "node scripts/generate-sitemap.mjs && node scripts/validate-sitemap.mjs",
+    "postbuild": "node scripts/generate-sitemap.mjs && node scripts/validate-sitemap.mjs && node scripts/generate-llms-txt.mjs && node scripts/validate-llms-txt.mjs",
     "generate-sitemap": "node scripts/generate-sitemap.mjs",
+    "generate-llms-txt": "node scripts/generate-llms-txt.mjs",
+    "validate-llms-txt": "node scripts/validate-llms-txt.mjs",
     "check-sitemap": "node scripts/validate-sitemap.mjs",
     "generate-images": "node scripts/generate-blog-images.mjs",
     "start": "next start",

@@ -41,7 +41,15 @@ else {
 if (!existsSync(llmsPath)) fail('llms.txt missing')
 else {
   const llms = readFileSync(llmsPath, 'utf8')
-  for (const section of ['## About', '## Core Services', '## Resources', '## Contact']) {
+  for (const section of [
+    '## About',
+    '## Core SEO Services',
+    '## Industries',
+    '## India City SEO Pages',
+    '## Resources',
+    '## Contact',
+    '## Machine-Readable Resources',
+  ]) {
     if (!llms.includes(section)) fail(`llms.txt missing section: ${section}`)
   }
   if (!llms.includes('https://www.seoindiatech.com/contact-us')) fail('llms.txt missing contact URL')

@@ -1,0 +1,19 @@
+{
+  "LLMS_TXT_URL_COUNT": 118,
+  "SITEMAP_URL_COUNT": 115,
+  "PAGE_URL_COUNT_IN_LLMS": 115,
+  "MISSING_FROM_LLMS": [],
+  "EXTRA_NOT_IN_SITEMAP": [],
+  "DUPLICATES": [],
+  "INVALID_URLS": [],
+  "NON_200_URLS": [],
+  "categories": {
+    "core": 8,
+    "services": 21,
+    "solutions": 6,
+    "industries": 41,
+    "cities": 11,
+    "blogs": 28
+  },
+  "FINAL_STATUS": "PASS"
+}
