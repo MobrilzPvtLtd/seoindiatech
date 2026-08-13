@@ -113,12 +113,17 @@ html.dark {
 html {
   background-color: var(--background);
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  overflow-x: clip;
+  overflow-y: scroll;
+  width: 100%;
 }
 
 body {
-  overflow-x: hidden;
+  overflow-x: clip;
+  overflow-y: auto;
+  width: 100%;
   max-width: 100%;
+  min-height: 100%;
 }
 
 body {
@@ -128,10 +133,16 @@ body {
   font-size: 1rem;
   line-height: 1.65;
   transition: background-color 0.3s, color 0.3s;
-  overscroll-behavior-y: none;
+  overscroll-behavior-y: auto;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+#__next {
+  overflow-x: clip;
+  max-width: 100%;
+  min-height: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {

@@ -8,7 +8,7 @@ export default function Document() {
   return (
     <Html lang="en" suppressHydrationWarning>
       <Head>
-        <meta name="sit-build" content="png-logo-original-2026-08-13" />
+        <meta name="sit-build" content="png-logo-transparent-scroll-fix-2026-08-13" />
         <link rel="icon" href="/images/brand/favicon.png" type="image/png" />
         <meta name="author" content="SEO INDIA TECH" />
         <meta

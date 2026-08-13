@@ -25,7 +25,7 @@ const inter = Inter({
 
 export default function App({ Component, pageProps }) {
   return (
-    <div className={`${plusJakarta.variable} ${inter.variable} antialiased min-h-screen w-full overflow-x-hidden`}>
+    <div className={`${plusJakarta.variable} ${inter.variable} antialiased min-h-screen w-full max-w-full`}>
       <Head>
         <meta
           name="google-site-verification"
