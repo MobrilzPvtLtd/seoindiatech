@@ -1,187 +1,91 @@
 import { buildOrganizationNode } from '@/utils/schemaBuilders'
 import { buildSpeakableSpecification } from '@/utils/aiSeo'
 
-const MEDICAL_SPECIALTY_MAP = {
+const SITE_URL = 'https://www.seoindiatech.com'
 
-  'plastic-surgery-seo': 'PlasticSurgery',
-
-  'dentist-seo': 'Dentistry',
-
-  'orthodontist-seo': 'Orthodontics',
-
-  'optometrist-seo': 'Optometry',
-
-  'fertility-clinic-seo': 'ReproductiveMedicine',
-
-  'doctor-physician-seo': 'Physician',
-
-  'physiotherapy-seo': 'Physiotherapy',
-
-  'chiropractor-seo': 'Chiropractic',
-
-}
-
-
-
+/**
+ * Industry landing pages are agency Service offers — not LocalBusiness/MedicalBusiness locations.
+ * MedicalBusiness caused GSC/audit errors (missing address, invalid provider, medicalSpecialty).
+ */
 export default function PremiumIndustrySchema({ content, url }) {
-
   const faqEntities = content.faq.items.map((faq) => ({
-
     '@type': 'Question',
-
     name: faq.question,
-
     acceptedAnswer: { '@type': 'Answer', text: faq.answer },
-
   }))
 
-
-
-  const graph = [
-
-    {
-
-      '@type': 'WebSite',
-
-      '@id': 'https://www.seoindiatech.com/#website',
-
-      url: 'https://www.seoindiatech.com/',
-
-      name: 'SEO India Tech',
-
-      inLanguage: 'en-IN',
-
-    },
-
-    buildOrganizationNode(),
-
-    {
-
-      '@type': 'BreadcrumbList',
-
-      '@id': `${url}#breadcrumbs`,
-
-      itemListElement: [
-
-        {
-
-          '@type': 'ListItem',
-
-          position: 1,
-
-          name: 'Home',
-
-          item: 'https://www.seoindiatech.com/',
-
-        },
-
-        {
-
-          '@type': 'ListItem',
-
-          position: 2,
-
-          name: 'Industries',
-
-          item: 'https://www.seoindiatech.com/industries',
-
-        },
-
-        {
-
-          '@type': 'ListItem',
-
-          position: 3,
-
-          name: content.name,
-
-          item: url,
-
-        },
-
-      ],
-
-    },
-
-    {
-
-      '@type': 'WebPage',
-
-      '@id': `${url}#webpage`,
-
-      url,
-
-      name: content.seo.title,
-
-      description: content.seo.description,
-
-      isPartOf: { '@id': 'https://www.seoindiatech.com/#website' },
-
-      about: { '@id': 'https://www.seoindiatech.com/#organization' },
-
-      inLanguage: 'en-IN',
-
-      speakable: buildSpeakableSpecification(),
-
-    },
-
-    {
-
-      '@type': 'Service',
-
-      '@id': `${url}#service`,
-
-      name: content.hero.h1,
-
-      description: content.seo.description,
-
-      serviceType: `${content.name} SEO`,
-
-      provider: { '@id': 'https://www.seoindiatech.com/#organization' },
-
-      areaServed: ['India', 'United States', 'United Kingdom', 'Australia', 'UAE', 'Canada'],
-
-    },
-
-    {
-
-      '@type': 'FAQPage',
-
-      '@id': `${url}#faq`,
-
-      isPartOf: { '@id': `${url}#webpage` },
-
-      mainEntity: faqEntities,
-
-    },
-
-  ]
-
-
-
-  if (content.isHealthcare && MEDICAL_SPECIALTY_MAP[content.slug]) {
-
-    graph.push({
-
-      '@type': 'MedicalBusiness',
-
-      '@id': `${url}#medicalbusiness`,
-
-      name: `SEO India Tech | ${content.name} SEO Services`,
-
-      description: content.seo.description,
-
-      url,
-
-      medicalSpecialty: MEDICAL_SPECIALTY_MAP[content.slug],
-
-      provider: { '@id': 'https://www.seoindiatech.com/#organization' },
-
-    })
-
+  const serviceNode = {
+    '@type': 'Service',
+    '@id': `${url}#service`,
+    name: content.hero.h1,
+    description: content.seo.description,
+    url,
+    serviceType: `${content.name} SEO`,
+    provider: { '@id': `${SITE_URL}/#organization` },
+    areaServed: ['India', 'United States', 'United Kingdom', 'Australia', 'UAE', 'Canada'],
+    mainEntityOfPage: { '@id': `${url}#webpage` },
   }
 
+  if (content.isHealthcare) {
+    serviceNode.audience = {
+      '@type': 'BusinessAudience',
+      audienceType: `${content.name} practices and healthcare providers`,
+    }
+    serviceNode.category = 'Healthcare SEO Services'
+  }
 
+  const graph = [
+    {
+      '@type': 'WebSite',
+      '@id': `${SITE_URL}/#website`,
+      url: `${SITE_URL}/`,
+      name: 'SEO India Tech',
+      inLanguage: 'en-IN',
+    },
+    buildOrganizationNode(),
+    {
+      '@type': 'BreadcrumbList',
+      '@id': `${url}#breadcrumbs`,
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'Home',
+          item: `${SITE_URL}/`,
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: 'Industries',
+          item: `${SITE_URL}/industries`,
+        },
+        {
+          '@type': 'ListItem',
+          position: 3,
+          name: content.name,
+          item: url,
+        },
+      ],
+    },
+    {
+      '@type': 'WebPage',
+      '@id': `${url}#webpage`,
+      url,
+      name: content.seo.title,
+      description: content.seo.description,
+      isPartOf: { '@id': `${SITE_URL}/#website` },
+      about: { '@id': `${SITE_URL}/#organization` },
+      inLanguage: 'en-IN',
+      speakable: buildSpeakableSpecification(),
+    },
+    serviceNode,
+    {
+      '@type': 'FAQPage',
+      '@id': `${url}#faq`,
+      isPartOf: { '@id': `${url}#webpage` },
+      mainEntity: faqEntities,
+    },
+  ]
 
   if (content.process?.steps?.length) {
     graph.push({
@@ -198,30 +102,15 @@ export default function PremiumIndustrySchema({ content, url }) {
     })
   }
 
-
-
   const schema = {
-
     '@context': 'https://schema.org',
-
     '@graph': graph,
-
   }
 
-
-
   return (
-
     <script
-
       type="application/ld+json"
-
       dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-
     />
-
   )
-
 }
-
-
