@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-11T08:23:30.647Z",
+  "generatedAt": "2026-08-13T07:38:53.856Z",
   "baseUrl": "https://www.seoindiatech.com",
   "summary": {
     "priorityPagesOk": 13,
@@ -21,15 +21,16 @@
       "finalUrl": "https://www.seoindiatech.com/",
       "redirectHops": 0,
       "canonical": "https://www.seoindiatech.com",
-      "title": "AI-Powered SEO &amp; Digital Marketing Agency | SEO India Tech",
-      "description": "Global digital growth partner for AI-powered SEO, performance marketing, and technology. 14+ years serving businesses in USA, UK, Australia, and worldwide.",
-      "h1": "Search &amp; PerformanceMarketing Agency",
+      "title": "SEO Company in India | SEO Agency &amp; Services | SEO India Tech",
+      "description": "SEO company in India with 14+ years of experience helping businesses grow through SEO, technical SEO, local SEO, e-commerce SEO and AI search. Get a free SEO audit.",
+      "h1": "SEO Company in IndiaThat Drives Sustainable Growth",
       "h1Count": 1,
       "noindex": false,
       "schemaTypes": [
         "WebSite",
         "Organization",
-        "ContactPoint",
+        "ImageObject",
+        "PostalAddress",
         "BreadcrumbList",
         "ListItem",
         "FAQPage",
@@ -227,9 +228,9 @@
       "finalUrl": "https://www.seoindiatech.com/services/e-commerce-seo",
       "redirectHops": 0,
       "canonical": "https://www.seoindiatech.com/services/e-commerce-seo",
-      "title": "WooCommerce SEO Agency in India | E-Commerce SEO | SEO India Tech",
-      "description": "WooCommerce and e-commerce SEO in India: product pages, category optimization, technical fixes, and schema. Grow organic revenue for online stores. Free audit.",
-      "h1": "E-Commerce SEO for Product Visibility and Revenue Growth",
+      "title": "Ecommerce SEO Agency in India | WooCommerce &amp; Store SEO | SEO India Tech",
+      "description": "Ecommerce SEO agency in India for WooCommerce and online stores: product pages, category optimization, technical fixes, and schema. Grow organic revenue. Free audit.",
+      "h1": "Ecommerce SEO Agency for Product Visibility and Revenue Growth",
       "h1Count": 1,
       "noindex": false,
       "schemaTypes": [
@@ -287,9 +288,9 @@
       "finalUrl": "https://www.seoindiatech.com/industries/wineries-seo",
       "redirectHops": 0,
       "canonical": "https://www.seoindiatech.com/industries/wineries-seo",
-      "title": "SEO for Wineries | Wine Industry Search Optimization | SEO India Tech",
-      "description": "Search engine optimization for wineries: tasting room visits, direct-to-consumer wine sales, and wine tourism. SEO strategies tailored to wine brands and vineyards.",
-      "h1": "Search Engine Optimization for Wineries and Wine Brands",
+      "title": "SEO for Wineries | Winery SEO Services | SEO India Tech",
+      "description": "SEO for wineries and wine brands: tasting room visits, direct-to-consumer sales, and wine tourism. Winery SEO strategies for vineyards across India, USA, and Europe.",
+      "h1": "SEO for Wineries",
       "h1Count": 1,
       "noindex": false,
       "schemaTypes": [
@@ -950,7 +951,7 @@
   "sitemapFailures": [],
   "robots": {
     "status": 200,
-    "text": "User-agent: *\nAllow: /\nDisallow: /api/\nDisallow: /new\nDisallow: /old\n\n# AI search crawlers — allowed for discoverability in AI Overviews and answer engines\nUser-agent: GPTBot\nAllow: /\n\nUser-agent: ChatGPT-User\nAllow: /\n\nUser-agent: Claude-Web\nAllow: /\n\nUser-agent: anthropic-ai\nAllow: /\n\nUser-agent: PerplexityBot\nAllow: /\n\nUser-agent: Google-Extended\nAllow: /\n\nUser-agent: cohere-ai\nAllow: /\n\nUser-agent: Applebot-Extended\nAllow: /\n\nUser-agent: Bytespider\nAllow: /\n\nUser-agent: Bingbot\nAllow: /\n\nUse",
+    "text": "User-agent: *\nAllow: /\nDisallow: /api/\nDisallow: /new\nDisallow: /old\n\n# Google Search — explicit allow (discovery + indexing)\nUser-agent: Googlebot\nAllow: /\nDisallow: /api/\nDisallow: /new\nDisallow: /old\n\nUser-agent: Googlebot-Image\nAllow: /\n\nUser-agent: Googlebot-News\nAllow: /\n\n# AI search crawlers — allowed for discoverability in AI Overviews and answer engines\nUser-agent: GPTBot\nAllow: /\n\nUser-agent: ChatGPT-User\nAllow: /\n\nUser-agent: Claude-Web\nAllow: /\n\nUser-agent: anthropic-ai\nAllow: /\n\nUse",
     "issues": []
   },
   "pageChecks": {

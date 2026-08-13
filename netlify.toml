@@ -24,6 +24,37 @@
   status = 301
   force = true
 
+# URL aliases — explicit 301 (Next.js plugin may emit 308 otherwise)
+[[redirects]]
+  from = "/contactus"
+  to = "/contact-us"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/services/woocommerce-seo"
+  to = "/services/e-commerce-seo"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/services/seo-web-design"
+  to = "/services/ui-ux-design"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/locations/noida"
+  to = "/seo-services/seo-services-in-noida"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/locations/delhi"
+  to = "/seo-services/seo-services-in-delhi"
+  status = 301
+  force = true
+
 [[headers]]
   for = "/*"
   [headers.values]

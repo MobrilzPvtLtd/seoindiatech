@@ -1,6 +1,9 @@
 /** Unique 1200+ word content blocks + FAQs - Automobile & Home (12 industries) */
 export const automobileHomeProfiles = {
   'garage-door-seo': {
+    seoTitle: 'Garage Door SEO Services | Repair & Installation Marketing',
+    metaDescription:
+      'Garage door SEO for repair and installation: emergency spring repair, opener installs, commercial roll-up doors, and map pack visibility. Free audit.',
     hero: [
       'When a garage door breaks at 7 a.m. or won\'t close before a storm, homeowners search "garage door repair near me" on mobile-not browse Yellow Pages. Garage Door SEO captures emergency and installation intent with service-specific pages, fast mobile UX, and map pack dominance.',
       'SEO India Tech helps garage door companies rank for spring replacement, opener installs, commercial roll-up doors, and 24/7 repair-with localized landing pages and review strategies that convert panicked searches into booked service calls.',
@@ -384,6 +387,9 @@ export const automobileHomeProfiles = {
   },
 
   'flooring-company-seo': {
+    seoTitle: 'Flooring Company SEO Services | Hardwood, Tile & LVP Marketing',
+    metaDescription:
+      'Flooring company SEO for contractors: hardwood, tile, LVP, epoxy, and commercial flooring pages with gallery-rich local visibility. Free audit.',
     hero: [
       'Flooring buyers research hardwood vs LVP, tile installation costs, and subfloor prep for weeks-comparing samples, reading reviews, and requesting in-home estimates. Flooring Company SEO captures that research journey with material-specific pages and local trust signals.',
       'We help flooring contractors rank for hardwood refinishing, tile, carpet, epoxy, and commercial flooring with gallery-rich content and map optimization that drives estimate appointments.',

@@ -1,0 +1,666 @@
+[
+  {
+    "slug": "optometrist-seo",
+    "url": "https://www.seoindiatech.com/industries/optometrist-seo",
+    "status": 200,
+    "gscPage": {
+      "clicks": 1,
+      "impressions": 85,
+      "ctr": 1.18,
+      "position": 75.16
+    },
+    "gscQueries": "GSC_QUERY_DATA_UNAVAILABLE",
+    "title": "SEO for Optometrists & Eye Care Practices | SEO India Tech",
+    "isTemplateTitle": false,
+    "metaDescription": "Eye care SEO for optometry practices: local visibility, service pages, and patient-focused content. Help patients find your clinic through search.",
+    "h1": "SEO for Optometrists That Brings Patients to Your Practice",
+    "canonical": "https://www.seoindiatech.com/industries/optometrist-seo",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+    "faqVisible": 20,
+    "faqSchema": 20,
+    "hasOverride": true,
+    "phase13Protected": true,
+    "blogLinks": [
+      "/blog/google-business-profile-optimization-guide"
+    ],
+    "serviceLinks": {
+      "seo": true,
+      "local": true,
+      "technical": true,
+      "gbp": true,
+      "ecommerce": true
+    }
+  },
+  {
+    "slug": "accountants-seo",
+    "url": "https://www.seoindiatech.com/industries/accountants-seo",
+    "status": 200,
+    "gscPage": {
+      "clicks": 1,
+      "impressions": 34,
+      "ctr": 2.94,
+      "position": 67.26
+    },
+    "gscQueries": "GSC_QUERY_DATA_UNAVAILABLE",
+    "title": "SEO for Accountants & Accounting Firms | Accountants SEO | SEO India Tech",
+    "isTemplateTitle": false,
+    "metaDescription": "Accountants SEO for firms and practices: local visibility, service pages, and compliant content that brings qualified client enquiries. SEO for accountants in India and worldwide.",
+    "h1": "SEO for Accountants That Brings Qualified Client Enquiries",
+    "canonical": "https://www.seoindiatech.com/industries/accountants-seo",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+    "faqVisible": 20,
+    "faqSchema": 20,
+    "hasOverride": true,
+    "phase13Protected": false,
+    "blogLinks": [
+      "/blog/complete-eeat-guide-business-websites"
+    ],
+    "serviceLinks": {
+      "seo": true,
+      "local": true,
+      "technical": true,
+      "gbp": true,
+      "ecommerce": true
+    }
+  },
+  {
+    "slug": "doctor-physician-seo",
+    "url": "https://www.seoindiatech.com/industries/doctor-physician-seo",
+    "status": 200,
+    "gscPage": null,
+    "gscQueries": "GSC_QUERY_DATA_UNAVAILABLE",
+    "title": "SEO for Doctors & Physicians | Physician SEO Services | SEO India Tech",
+    "isTemplateTitle": false,
+    "metaDescription": "Doctor SEO and physician SEO for practices and specialists: patient discovery, local visibility, and compliant healthcare content. SEO for doctors in India, USA, and UK.",
+    "h1": "SEO for Doctors and Physicians Who Need Patient Discovery",
+    "canonical": "https://www.seoindiatech.com/industries/doctor-physician-seo",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+    "faqVisible": 20,
+    "faqSchema": 20,
+    "hasOverride": true,
+    "phase13Protected": false,
+    "blogLinks": [
+      "/blog/seo-healthcare-businesses-europe"
+    ],
+    "serviceLinks": {
+      "seo": true,
+      "local": true,
+      "technical": true,
+      "gbp": true,
+      "ecommerce": true
+    }
+  },
+  {
+    "slug": "deck-builder-seo",
+    "url": "https://www.seoindiatech.com/industries/deck-builder-seo",
+    "status": 200,
+    "gscPage": null,
+    "gscQueries": "GSC_QUERY_DATA_UNAVAILABLE",
+    "title": "Deck Builder SEO Services | Local, AI & GEO SEO Experts | SEO India Tech",
+    "isTemplateTitle": true,
+    "metaDescription": "Rank higher for deck builder searches with expert deck builder seo. Service pages, local SEO, GBP optimization, AI Overview visibility & weekly reporting. Free audit.",
+    "h1": "Deck Builder SEO Services Built for Qualified Customers",
+    "canonical": "https://www.seoindiatech.com/industries/deck-builder-seo",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+    "faqVisible": 20,
+    "faqSchema": 20,
+    "hasOverride": false,
+    "phase13Protected": false,
+    "blogLinks": [],
+    "serviceLinks": {
+      "seo": true,
+      "local": true,
+      "technical": true,
+      "gbp": true,
+      "ecommerce": true
+    }
+  },
+  {
+    "slug": "chiropractor-seo",
+    "url": "https://www.seoindiatech.com/industries/chiropractor-seo",
+    "status": 200,
+    "gscPage": null,
+    "gscQueries": "GSC_QUERY_DATA_UNAVAILABLE",
+    "title": "Chiropractor SEO Services | Local, AI & GEO SEO Experts | SEO India Tech",
+    "isTemplateTitle": true,
+    "metaDescription": "Rank higher for chiropractor searches with expert chiropractor seo. Service pages, local SEO, GBP optimization, AI Overview visibility & weekly reporting. Free audit.",
+    "h1": "Chiropractor SEO Services Built for Qualified Patients",
+    "canonical": "https://www.seoindiatech.com/industries/chiropractor-seo",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+    "faqVisible": 20,
+    "faqSchema": 20,
+    "hasOverride": false,
+    "phase13Protected": false,
+    "blogLinks": [],
+    "serviceLinks": {
+      "seo": true,
+      "local": true,
+      "technical": true,
+      "gbp": true,
+      "ecommerce": true
+    }
+  },
+  {
+    "slug": "wineries-seo",
+    "url": "https://www.seoindiatech.com/industries/wineries-seo",
+    "status": 200,
+    "gscPage": {
+      "clicks": 0,
+      "impressions": 287,
+      "ctr": 0,
+      "position": 80.42
+    },
+    "gscQueries": "GSC_QUERY_DATA_UNAVAILABLE",
+    "title": "SEO for Wineries | Winery SEO Services | SEO India Tech",
+    "isTemplateTitle": false,
+    "metaDescription": "SEO for wineries and wine brands: tasting room visits, direct-to-consumer sales, and wine tourism. Winery SEO strategies for vineyards across India, USA, and Europe.",
+    "h1": "SEO for Wineries",
+    "canonical": "https://www.seoindiatech.com/industries/wineries-seo",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+    "faqVisible": 20,
+    "faqSchema": 20,
+    "hasOverride": true,
+    "phase13Protected": true,
+    "blogLinks": [
+      "/blog/google-business-profile-optimization-guide"
+    ],
+    "serviceLinks": {
+      "seo": true,
+      "local": true,
+      "technical": true,
+      "gbp": true,
+      "ecommerce": true
+    }
+  },
+  {
+    "slug": "hvac-seo",
+    "url": "https://www.seoindiatech.com/industries/hvac-seo",
+    "status": 200,
+    "gscPage": {
+      "clicks": 0,
+      "impressions": 135,
+      "ctr": 0,
+      "position": 67.91
+    },
+    "gscQueries": "GSC_QUERY_DATA_UNAVAILABLE",
+    "title": "HVAC SEO Services | HVAC Contractor Marketing & Map Pack SEO",
+    "isTemplateTitle": false,
+    "metaDescription": "HVAC SEO for contractors: emergency AC repair visibility, install funnels, seasonal campaigns, and Google Maps dominance. Free HVAC marketing audit.",
+    "h1": "HVAC SEO Services Built for Qualified Customers",
+    "canonical": "https://www.seoindiatech.com/industries/hvac-seo",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+    "faqVisible": 20,
+    "faqSchema": 20,
+    "hasOverride": false,
+    "phase13Protected": true,
+    "blogLinks": [
+      "/blog/google-business-profile-optimization-guide"
+    ],
+    "serviceLinks": {
+      "seo": true,
+      "local": true,
+      "technical": true,
+      "gbp": true,
+      "ecommerce": true
+    }
+  },
+  {
+    "slug": "plumber-seo",
+    "url": "https://www.seoindiatech.com/industries/plumber-seo",
+    "status": 200,
+    "gscPage": {
+      "clicks": 0,
+      "impressions": 53,
+      "ctr": 0,
+      "position": 79.4
+    },
+    "gscQueries": "GSC_QUERY_DATA_UNAVAILABLE",
+    "title": "Plumber SEO Services | Plumbing Contractor Marketing",
+    "isTemplateTitle": false,
+    "metaDescription": "Plumber SEO for contractors: emergency plumbing pages, suburb service areas, GBP optimization, and ethical review growth. Free audit.",
+    "h1": "Plumber SEO Services Built for Qualified Customers",
+    "canonical": "https://www.seoindiatech.com/industries/plumber-seo",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+    "faqVisible": 20,
+    "faqSchema": 20,
+    "hasOverride": false,
+    "phase13Protected": true,
+    "blogLinks": [
+      "/blog/google-business-profile-optimization-guide"
+    ],
+    "serviceLinks": {
+      "seo": true,
+      "local": true,
+      "technical": true,
+      "gbp": true,
+      "ecommerce": true
+    }
+  },
+  {
+    "slug": "automotive-seo",
+    "url": "https://www.seoindiatech.com/industries/automotive-seo",
+    "status": 200,
+    "gscPage": {
+      "clicks": 0,
+      "impressions": 40,
+      "ctr": 0,
+      "position": 69.75
+    },
+    "gscQueries": "GSC_QUERY_DATA_UNAVAILABLE",
+    "title": "Automotive SEO Services | Auto Repair Shop Marketing",
+    "isTemplateTitle": false,
+    "metaDescription": "Automotive SEO for repair shops and dealerships: service-menu pages, local map visibility, fleet SEO, and trust-building content. Free audit.",
+    "h1": "Automotive SEO Services Built for Qualified Customers",
+    "canonical": "https://www.seoindiatech.com/industries/automotive-seo",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+    "faqVisible": 20,
+    "faqSchema": 20,
+    "hasOverride": false,
+    "phase13Protected": true,
+    "blogLinks": [
+      "/blog/google-business-profile-optimization-guide"
+    ],
+    "serviceLinks": {
+      "seo": true,
+      "local": true,
+      "technical": true,
+      "gbp": true,
+      "ecommerce": true
+    }
+  },
+  {
+    "slug": "movers-and-moving-company-seo",
+    "url": "https://www.seoindiatech.com/industries/movers-and-moving-company-seo",
+    "status": 200,
+    "gscPage": {
+      "clicks": 0,
+      "impressions": 34,
+      "ctr": 0,
+      "position": 54.09
+    },
+    "gscQueries": "GSC_QUERY_DATA_UNAVAILABLE",
+    "title": "Movers & Moving Company SEO Services | Local, AI & GEO SEO Experts | SEO India Tech",
+    "isTemplateTitle": true,
+    "metaDescription": "Rank higher for movers & moving company searches with expert movers & moving company seo. Service pages, local SEO, GBP optimization, AI Overview visibility & weekly reporting. Free audit.",
+    "h1": "Movers &amp; Moving Company SEO Services Built for Qualified Clients",
+    "canonical": "https://www.seoindiatech.com/industries/movers-and-moving-company-seo",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+    "faqVisible": 20,
+    "faqSchema": 20,
+    "hasOverride": false,
+    "phase13Protected": false,
+    "blogLinks": [],
+    "serviceLinks": {
+      "seo": true,
+      "local": true,
+      "technical": true,
+      "gbp": true,
+      "ecommerce": true
+    }
+  },
+  {
+    "slug": "plastic-surgery-seo",
+    "url": "https://www.seoindiatech.com/industries/plastic-surgery-seo",
+    "status": 200,
+    "gscPage": {
+      "clicks": 0,
+      "impressions": 33,
+      "ctr": 0,
+      "position": 67.97
+    },
+    "gscQueries": "GSC_QUERY_DATA_UNAVAILABLE",
+    "title": "Plastic Surgery SEO Services | Grow Consult Bookings | SEO India Tech",
+    "isTemplateTitle": false,
+    "metaDescription": "Expert plastic surgery SEO for cosmetic surgeons worldwide. Procedure pages, YMYL-safe content, GBP optimization & AI Overview visibility. Free audit.",
+    "h1": "Plastic Surgery SEO Services Built for Patient Consultations",
+    "canonical": "https://www.seoindiatech.com/industries/plastic-surgery-seo",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+    "faqVisible": 20,
+    "faqSchema": 20,
+    "hasOverride": true,
+    "phase13Protected": false,
+    "blogLinks": [],
+    "serviceLinks": {
+      "seo": true,
+      "local": true,
+      "technical": true,
+      "gbp": true,
+      "ecommerce": true
+    }
+  },
+  {
+    "slug": "flooring-company-seo",
+    "url": "https://www.seoindiatech.com/industries/flooring-company-seo",
+    "status": 200,
+    "gscPage": {
+      "clicks": 0,
+      "impressions": 32,
+      "ctr": 0,
+      "position": 63.5
+    },
+    "gscQueries": "GSC_QUERY_DATA_UNAVAILABLE",
+    "title": "Flooring Company SEO Services | Local, AI & GEO SEO Experts | SEO India Tech",
+    "isTemplateTitle": true,
+    "metaDescription": "Rank higher for flooring company searches with expert flooring company seo. Service pages, local SEO, GBP optimization, AI Overview visibility & weekly reporting. Free audit.",
+    "h1": "Flooring Company SEO Services Built for Qualified Customers",
+    "canonical": "https://www.seoindiatech.com/industries/flooring-company-seo",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+    "faqVisible": 20,
+    "faqSchema": 20,
+    "hasOverride": false,
+    "phase13Protected": false,
+    "blogLinks": [],
+    "serviceLinks": {
+      "seo": true,
+      "local": true,
+      "technical": true,
+      "gbp": true,
+      "ecommerce": true
+    }
+  },
+  {
+    "slug": "fence-installer-seo",
+    "url": "https://www.seoindiatech.com/industries/fence-installer-seo",
+    "status": 200,
+    "gscPage": null,
+    "gscQueries": "GSC_QUERY_DATA_UNAVAILABLE",
+    "title": "Fence Installer SEO Services | Local, AI & GEO SEO Experts | SEO India Tech",
+    "isTemplateTitle": true,
+    "metaDescription": "Rank higher for fence installer searches with expert fence installer seo. Service pages, local SEO, GBP optimization, AI Overview visibility & weekly reporting. Free audit.",
+    "h1": "Fence Installer SEO Services Built for Qualified Customers",
+    "canonical": "https://www.seoindiatech.com/industries/fence-installer-seo",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+    "faqVisible": 20,
+    "faqSchema": 20,
+    "hasOverride": false,
+    "phase13Protected": false,
+    "blogLinks": [],
+    "serviceLinks": {
+      "seo": true,
+      "local": true,
+      "technical": true,
+      "gbp": true,
+      "ecommerce": true
+    }
+  },
+  {
+    "slug": "garage-door-seo",
+    "url": "https://www.seoindiatech.com/industries/garage-door-seo",
+    "status": 200,
+    "gscPage": {
+      "clicks": 0,
+      "impressions": 30,
+      "ctr": 0,
+      "position": 80.5
+    },
+    "gscQueries": "GSC_QUERY_DATA_UNAVAILABLE",
+    "title": "Garage Door SEO Services | Local, AI & GEO SEO Experts | SEO India Tech",
+    "isTemplateTitle": true,
+    "metaDescription": "Rank higher for garage door searches with expert garage door seo. Service pages, local SEO, GBP optimization, AI Overview visibility & weekly reporting. Free audit.",
+    "h1": "Garage Door SEO Services Built for Qualified Customers",
+    "canonical": "https://www.seoindiatech.com/industries/garage-door-seo",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+    "faqVisible": 20,
+    "faqSchema": 20,
+    "hasOverride": false,
+    "phase13Protected": false,
+    "blogLinks": [],
+    "serviceLinks": {
+      "seo": true,
+      "local": true,
+      "technical": true,
+      "gbp": true,
+      "ecommerce": true
+    }
+  },
+  {
+    "slug": "janitorial-service-seo",
+    "url": "https://www.seoindiatech.com/industries/janitorial-service-seo",
+    "status": 200,
+    "gscPage": null,
+    "gscQueries": "GSC_QUERY_DATA_UNAVAILABLE",
+    "title": "Janitorial Service SEO Services | Local, AI & GEO SEO Experts | SEO India Tech",
+    "isTemplateTitle": true,
+    "metaDescription": "Rank higher for janitorial service searches with expert janitorial service seo. Service pages, local SEO, GBP optimization, AI Overview visibility & weekly reporting. Free audit.",
+    "h1": "Janitorial Service SEO Services Built for Qualified Clients",
+    "canonical": "https://www.seoindiatech.com/industries/janitorial-service-seo",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+    "faqVisible": 20,
+    "faqSchema": 20,
+    "hasOverride": false,
+    "phase13Protected": false,
+    "blogLinks": [],
+    "serviceLinks": {
+      "seo": true,
+      "local": true,
+      "technical": true,
+      "gbp": true,
+      "ecommerce": true
+    }
+  },
+  {
+    "slug": "roofers-seo",
+    "url": "https://www.seoindiatech.com/industries/roofers-seo",
+    "status": 200,
+    "gscPage": null,
+    "gscQueries": "GSC_QUERY_DATA_UNAVAILABLE",
+    "title": "Roofers SEO Services | Local, AI & GEO SEO Experts | SEO India Tech",
+    "isTemplateTitle": true,
+    "metaDescription": "Rank higher for roofers searches with expert roofers seo. Service pages, local SEO, GBP optimization, AI Overview visibility & weekly reporting. Free audit.",
+    "h1": "Roofers SEO Services Built for Qualified Clients",
+    "canonical": "https://www.seoindiatech.com/industries/roofers-seo",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+    "faqVisible": 20,
+    "faqSchema": 20,
+    "hasOverride": false,
+    "phase13Protected": false,
+    "blogLinks": [],
+    "serviceLinks": {
+      "seo": true,
+      "local": true,
+      "technical": true,
+      "gbp": true,
+      "ecommerce": true
+    }
+  },
+  {
+    "slug": "physiotherapy-seo",
+    "url": "https://www.seoindiatech.com/industries/physiotherapy-seo",
+    "status": 200,
+    "gscPage": null,
+    "gscQueries": "GSC_QUERY_DATA_UNAVAILABLE",
+    "title": "Physiotherapy SEO Services | Local, AI & GEO SEO Experts | SEO India Tech",
+    "isTemplateTitle": true,
+    "metaDescription": "Rank higher for physiotherapy searches with expert physiotherapy seo. Procedure pages, local SEO, GBP optimization, AI Overview visibility & weekly reporting. Free audit.",
+    "h1": "Physiotherapy SEO Services Built for Qualified Patients",
+    "canonical": "https://www.seoindiatech.com/industries/physiotherapy-seo",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+    "faqVisible": 20,
+    "faqSchema": 20,
+    "hasOverride": false,
+    "phase13Protected": false,
+    "blogLinks": [],
+    "serviceLinks": {
+      "seo": true,
+      "local": true,
+      "technical": true,
+      "gbp": true,
+      "ecommerce": true
+    }
+  },
+  {
+    "slug": "pest-control-service-seo",
+    "url": "https://www.seoindiatech.com/industries/pest-control-service-seo",
+    "status": 200,
+    "gscPage": null,
+    "gscQueries": "GSC_QUERY_DATA_UNAVAILABLE",
+    "title": "Pest Control Service SEO Services | Local, AI & GEO SEO Experts | SEO India Tech",
+    "isTemplateTitle": true,
+    "metaDescription": "Rank higher for pest control service searches with expert pest control service seo. Service pages, local SEO, GBP optimization, AI Overview visibility & weekly reporting. Free audit.",
+    "h1": "Pest Control Service SEO Services Built for Qualified Clients",
+    "canonical": "https://www.seoindiatech.com/industries/pest-control-service-seo",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+    "faqVisible": 20,
+    "faqSchema": 20,
+    "hasOverride": false,
+    "phase13Protected": false,
+    "blogLinks": [],
+    "serviceLinks": {
+      "seo": true,
+      "local": true,
+      "technical": true,
+      "gbp": true,
+      "ecommerce": true
+    }
+  },
+  {
+    "slug": "orthodontist-seo",
+    "url": "https://www.seoindiatech.com/industries/orthodontist-seo",
+    "status": 200,
+    "gscPage": null,
+    "gscQueries": "GSC_QUERY_DATA_UNAVAILABLE",
+    "title": "Orthodontist SEO Services | Local, AI & GEO SEO Experts | SEO India Tech",
+    "isTemplateTitle": true,
+    "metaDescription": "Rank higher for orthodontist searches with expert orthodontist seo. Procedure pages, local SEO, GBP optimization, AI Overview visibility & weekly reporting. Free audit.",
+    "h1": "Orthodontist SEO Services Built for Qualified Patients",
+    "canonical": "https://www.seoindiatech.com/industries/orthodontist-seo",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+    "faqVisible": 20,
+    "faqSchema": 20,
+    "hasOverride": false,
+    "phase13Protected": false,
+    "blogLinks": [],
+    "serviceLinks": {
+      "seo": true,
+      "local": true,
+      "technical": true,
+      "gbp": true,
+      "ecommerce": true
+    }
+  },
+  {
+    "slug": "dentist-seo",
+    "url": "https://www.seoindiatech.com/industries/dentist-seo",
+    "status": 200,
+    "gscPage": null,
+    "gscQueries": "GSC_QUERY_DATA_UNAVAILABLE",
+    "title": "Dentist SEO Services | Local, AI & GEO SEO Experts | SEO India Tech",
+    "isTemplateTitle": true,
+    "metaDescription": "Rank higher for dentist searches with expert dentist seo. Procedure pages, local SEO, GBP optimization, AI Overview visibility & weekly reporting. Free audit.",
+    "h1": "Dentist SEO Services Built for Qualified Patients",
+    "canonical": "https://www.seoindiatech.com/industries/dentist-seo",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+    "faqVisible": 20,
+    "faqSchema": 20,
+    "hasOverride": false,
+    "phase13Protected": false,
+    "blogLinks": [],
+    "serviceLinks": {
+      "seo": true,
+      "local": true,
+      "technical": true,
+      "gbp": true,
+      "ecommerce": true
+    }
+  },
+  {
+    "slug": "locksmith-service-seo",
+    "url": "https://www.seoindiatech.com/industries/locksmith-service-seo",
+    "status": 200,
+    "gscPage": null,
+    "gscQueries": "GSC_QUERY_DATA_UNAVAILABLE",
+    "title": "Locksmith Service SEO Services | Local, AI & GEO SEO Experts | SEO India Tech",
+    "isTemplateTitle": true,
+    "metaDescription": "Rank higher for locksmith service searches with expert locksmith service seo. Service pages, local SEO, GBP optimization, AI Overview visibility & weekly reporting. Free audit.",
+    "h1": "Locksmith Service SEO Services Built for Qualified Customers",
+    "canonical": "https://www.seoindiatech.com/industries/locksmith-service-seo",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+    "faqVisible": 20,
+    "faqSchema": 20,
+    "hasOverride": false,
+    "phase13Protected": false,
+    "blogLinks": [],
+    "serviceLinks": {
+      "seo": true,
+      "local": true,
+      "technical": true,
+      "gbp": true,
+      "ecommerce": true
+    }
+  },
+  {
+    "slug": "cpa-firm-seo",
+    "url": "https://www.seoindiatech.com/industries/cpa-firm-seo",
+    "status": 200,
+    "gscPage": null,
+    "gscQueries": "GSC_QUERY_DATA_UNAVAILABLE",
+    "title": "CPA Firm SEO Services | Local, AI & GEO SEO Experts | SEO India Tech",
+    "isTemplateTitle": true,
+    "metaDescription": "Rank higher for cpa firm searches with expert cpa firm seo. Service pages, local SEO, GBP optimization, AI Overview visibility & weekly reporting. Free audit.",
+    "h1": "CPA Firm SEO Services Built for Qualified Clients",
+    "canonical": "https://www.seoindiatech.com/industries/cpa-firm-seo",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+    "faqVisible": 20,
+    "faqSchema": 20,
+    "hasOverride": false,
+    "phase13Protected": false,
+    "blogLinks": [],
+    "serviceLinks": {
+      "seo": true,
+      "local": true,
+      "technical": true,
+      "gbp": true,
+      "ecommerce": true
+    }
+  },
+  {
+    "slug": "dry-cleaner-seo",
+    "url": "https://www.seoindiatech.com/industries/dry-cleaner-seo",
+    "status": 200,
+    "gscPage": null,
+    "gscQueries": "GSC_QUERY_DATA_UNAVAILABLE",
+    "title": "Dry Cleaner SEO Services | Local, AI & GEO SEO Experts | SEO India Tech",
+    "isTemplateTitle": true,
+    "metaDescription": "Rank higher for dry cleaner searches with expert dry cleaner seo. Service pages, local SEO, GBP optimization, AI Overview visibility & weekly reporting. Free audit.",
+    "h1": "Dry Cleaner SEO Services Built for Qualified Clients",
+    "canonical": "https://www.seoindiatech.com/industries/dry-cleaner-seo",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+    "faqVisible": 20,
+    "faqSchema": 20,
+    "hasOverride": false,
+    "phase13Protected": false,
+    "blogLinks": [],
+    "serviceLinks": {
+      "seo": true,
+      "local": true,
+      "technical": true,
+      "gbp": true,
+      "ecommerce": true
+    }
+  },
+  {
+    "slug": "waste-management-seo",
+    "url": "https://www.seoindiatech.com/industries/waste-management-seo",
+    "status": 200,
+    "gscPage": null,
+    "gscQueries": "GSC_QUERY_DATA_UNAVAILABLE",
+    "title": "Waste Management SEO Services | Local, AI & GEO SEO Experts | SEO India Tech",
+    "isTemplateTitle": true,
+    "metaDescription": "Rank higher for waste management searches with expert waste management seo. Service pages, local SEO, GBP optimization, AI Overview visibility & weekly reporting. Free audit.",
+    "h1": "Waste Management SEO Services Built for Qualified Clients",
+    "canonical": "https://www.seoindiatech.com/industries/waste-management-seo",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+    "faqVisible": 20,
+    "faqSchema": 20,
+    "hasOverride": false,
+    "phase13Protected": false,
+    "blogLinks": [],
+    "serviceLinks": {
+      "seo": true,
+      "local": true,
+      "technical": true,
+      "gbp": true,
+      "ecommerce": true
+    }
+  }
+]

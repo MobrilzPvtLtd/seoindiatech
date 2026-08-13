@@ -1,7 +1,203 @@
 {
-  "generatedAt": "2026-08-12T13:10:18.632Z",
+  "generatedAt": "2026-08-13T07:40:06.455Z",
   "urlCount": 115,
   "openIssues": [
+    {
+      "url": "/blog/100-seo-mistakes-costing-business-leads",
+      "issue": "Blog in sitemap without known lastmod date",
+      "severity": "MEDIUM",
+      "recommendation": "Add datePublished to catalog or legacy map",
+      "status": "OPEN"
+    },
+    {
+      "url": "/blog/ai-seo-vs-traditional-seo-2026",
+      "issue": "Blog in sitemap without known lastmod date",
+      "severity": "MEDIUM",
+      "recommendation": "Add datePublished to catalog or legacy map",
+      "status": "OPEN"
+    },
+    {
+      "url": "/blog/chatgpt-seo-ai-search-organic-traffic",
+      "issue": "Blog in sitemap without known lastmod date",
+      "severity": "MEDIUM",
+      "recommendation": "Add datePublished to catalog or legacy map",
+      "status": "OPEN"
+    },
+    {
+      "url": "/blog/choose-best-seo-agency-europe",
+      "issue": "Blog in sitemap without known lastmod date",
+      "severity": "MEDIUM",
+      "recommendation": "Add datePublished to catalog or legacy map",
+      "status": "OPEN"
+    },
+    {
+      "url": "/blog/complete-eeat-guide-business-websites",
+      "issue": "Blog in sitemap without known lastmod date",
+      "severity": "MEDIUM",
+      "recommendation": "Add datePublished to catalog or legacy map",
+      "status": "OPEN"
+    },
+    {
+      "url": "/blog/content-marketing-strategy-qualified-leads",
+      "issue": "Blog in sitemap without known lastmod date",
+      "severity": "MEDIUM",
+      "recommendation": "Add datePublished to catalog or legacy map",
+      "status": "OPEN"
+    },
+    {
+      "url": "/blog/core-web-vitals-optimization-guide",
+      "issue": "Blog in sitemap without known lastmod date",
+      "severity": "MEDIUM",
+      "recommendation": "Add datePublished to catalog or legacy map",
+      "status": "OPEN"
+    },
+    {
+      "url": "/blog/ecommerce-seo-checklist-india",
+      "issue": "Blog in sitemap without known lastmod date",
+      "severity": "MEDIUM",
+      "recommendation": "Add datePublished to catalog or legacy map",
+      "status": "OPEN"
+    },
+    {
+      "url": "/blog/geo-generative-engine-optimization-guide",
+      "issue": "Blog in sitemap without known lastmod date",
+      "severity": "MEDIUM",
+      "recommendation": "Add datePublished to catalog or legacy map",
+      "status": "OPEN"
+    },
+    {
+      "url": "/blog/google-ai-overviews-changing-business-seo",
+      "issue": "Blog in sitemap without known lastmod date",
+      "severity": "MEDIUM",
+      "recommendation": "Add datePublished to catalog or legacy map",
+      "status": "OPEN"
+    },
+    {
+      "url": "/blog/google-business-profile-optimization-guide",
+      "issue": "Blog in sitemap without known lastmod date",
+      "severity": "MEDIUM",
+      "recommendation": "Add datePublished to catalog or legacy map",
+      "status": "OPEN"
+    },
+    {
+      "url": "/blog/how-google-ai-overviews-are-changing-seo",
+      "issue": "Blog in sitemap without known lastmod date",
+      "severity": "MEDIUM",
+      "recommendation": "Add datePublished to catalog or legacy map",
+      "status": "OPEN"
+    },
+    {
+      "url": "/blog/how-to-choose-best-seo-agency-india",
+      "issue": "Blog in sitemap without known lastmod date",
+      "severity": "MEDIUM",
+      "recommendation": "Add datePublished to catalog or legacy map",
+      "status": "OPEN"
+    },
+    {
+      "url": "/blog/international-seo-guide-european-companies",
+      "issue": "Blog in sitemap without known lastmod date",
+      "severity": "MEDIUM",
+      "recommendation": "Add datePublished to catalog or legacy map",
+      "status": "OPEN"
+    },
+    {
+      "url": "/blog/link-building-guide-2026",
+      "issue": "Blog in sitemap without known lastmod date",
+      "severity": "MEDIUM",
+      "recommendation": "Add datePublished to catalog or legacy map",
+      "status": "OPEN"
+    },
+    {
+      "url": "/blog/local-seo-checklist-multi-location-europe",
+      "issue": "Blog in sitemap without known lastmod date",
+      "severity": "MEDIUM",
+      "recommendation": "Add datePublished to catalog or legacy map",
+      "status": "OPEN"
+    },
+    {
+      "url": "/blog/local-seo-guide-indian-businesses-2026",
+      "issue": "Blog in sitemap without known lastmod date",
+      "severity": "MEDIUM",
+      "recommendation": "Add datePublished to catalog or legacy map",
+      "status": "OPEN"
+    },
+    {
+      "url": "/blog/local-vs-national-vs-international-seo",
+      "issue": "Blog in sitemap without known lastmod date",
+      "severity": "MEDIUM",
+      "recommendation": "Add datePublished to catalog or legacy map",
+      "status": "OPEN"
+    },
+    {
+      "url": "/blog/ppc-vs-seo-which-is-better",
+      "issue": "Blog in sitemap without known lastmod date",
+      "severity": "MEDIUM",
+      "recommendation": "Add datePublished to catalog or legacy map",
+      "status": "OPEN"
+    },
+    {
+      "url": "/blog/seo-checklist-small-businesses-europe",
+      "issue": "Blog in sitemap without known lastmod date",
+      "severity": "MEDIUM",
+      "recommendation": "Add datePublished to catalog or legacy map",
+      "status": "OPEN"
+    },
+    {
+      "url": "/blog/seo-for-restaurants-local-diners",
+      "issue": "Blog in sitemap without known lastmod date",
+      "severity": "MEDIUM",
+      "recommendation": "Add datePublished to catalog or legacy map",
+      "status": "OPEN"
+    },
+    {
+      "url": "/blog/seo-healthcare-businesses-europe",
+      "issue": "Blog in sitemap without known lastmod date",
+      "severity": "MEDIUM",
+      "recommendation": "Add datePublished to catalog or legacy map",
+      "status": "OPEN"
+    },
+    {
+      "url": "/blog/seo-law-firms-complete-guide",
+      "issue": "Blog in sitemap without known lastmod date",
+      "severity": "MEDIUM",
+      "recommendation": "Add datePublished to catalog or legacy map",
+      "status": "OPEN"
+    },
+    {
+      "url": "/blog/seo-roi-calculator-measure-success",
+      "issue": "Blog in sitemap without known lastmod date",
+      "severity": "MEDIUM",
+      "recommendation": "Add datePublished to catalog or legacy map",
+      "status": "OPEN"
+    },
+    {
+      "url": "/blog/seo-trends-european-businesses-2026",
+      "issue": "Blog in sitemap without known lastmod date",
+      "severity": "MEDIUM",
+      "recommendation": "Add datePublished to catalog or legacy map",
+      "status": "OPEN"
+    },
+    {
+      "url": "/blog/technical-seo-checklist-enterprise-websites",
+      "issue": "Blog in sitemap without known lastmod date",
+      "severity": "MEDIUM",
+      "recommendation": "Add datePublished to catalog or legacy map",
+      "status": "OPEN"
+    },
+    {
+      "url": "/blog/what-is-ai-seo-why-business-needs-it",
+      "issue": "Blog in sitemap without known lastmod date",
+      "severity": "MEDIUM",
+      "recommendation": "Add datePublished to catalog or legacy map",
+      "status": "OPEN"
+    },
+    {
+      "url": "/blog/youtube-business-marketing-2026",
+      "issue": "Blog in sitemap without known lastmod date",
+      "severity": "MEDIUM",
+      "recommendation": "Add datePublished to catalog or legacy map",
+      "status": "OPEN"
+    },
     {
       "url": "robots.txt",
       "issue": "_next not explicitly disallowed",
@@ -91,13 +287,6 @@
       "matrixOrphan": false
     },
     {
-      "url": "/blog/ecommerce-seo-checklist-india",
-      "pageType": "Blog",
-      "inboundLinks": 1,
-      "crawlDepth": 2,
-      "matrixOrphan": false
-    },
-    {
       "url": "/blog/geo-generative-engine-optimization-guide",
       "pageType": "Blog",
       "inboundLinks": 1,
@@ -119,13 +308,6 @@
       "matrixOrphan": false
     },
     {
-      "url": "/blog/international-seo-guide-european-companies",
-      "pageType": "Blog",
-      "inboundLinks": 1,
-      "crawlDepth": 2,
-      "matrixOrphan": false
-    },
-    {
       "url": "/blog/link-building-guide-2026",
       "pageType": "Blog",
       "inboundLinks": 1,
@@ -141,13 +323,6 @@
     },
     {
       "url": "/blog/local-seo-guide-indian-businesses-2026",
-      "pageType": "Blog",
-      "inboundLinks": 1,
-      "crawlDepth": 2,
-      "matrixOrphan": false
-    },
-    {
-      "url": "/blog/local-vs-national-vs-international-seo",
       "pageType": "Blog",
       "inboundLinks": 1,
       "crawlDepth": 2,
@@ -196,13 +371,6 @@
       "matrixOrphan": false
     },
     {
-      "url": "/blog/technical-seo-checklist-enterprise-websites",
-      "pageType": "Blog",
-      "inboundLinks": 1,
-      "crawlDepth": 2,
-      "matrixOrphan": false
-    },
-    {
       "url": "/blog/what-is-ai-seo-why-business-needs-it",
       "pageType": "Blog",
       "inboundLinks": 1,
@@ -215,13 +383,6 @@
       "inboundLinks": 1,
       "crawlDepth": 2,
       "matrixOrphan": false
-    },
-    {
-      "url": "/industries/accountants-seo",
-      "pageType": "Industry",
-      "inboundLinks": 1,
-      "crawlDepth": 2,
-      "matrixOrphan": true
     },
     {
       "url": "/industries/architect-seo",
@@ -281,13 +442,6 @@
     },
     {
       "url": "/industries/dentist-seo",
-      "pageType": "Industry",
-      "inboundLinks": 1,
-      "crawlDepth": 2,
-      "matrixOrphan": true
-    },
-    {
-      "url": "/industries/doctor-physician-seo",
       "pageType": "Industry",
       "inboundLinks": 1,
       "crawlDepth": 2,
@@ -372,13 +526,6 @@
     },
     {
       "url": "/industries/movers-and-moving-company-seo",
-      "pageType": "Industry",
-      "inboundLinks": 1,
-      "crawlDepth": 2,
-      "matrixOrphan": true
-    },
-    {
-      "url": "/industries/optometrist-seo",
       "pageType": "Industry",
       "inboundLinks": 1,
       "crawlDepth": 2,
@@ -619,17 +766,17 @@
     "/blog/complete-eeat-guide-business-websites": 1,
     "/blog/content-marketing-strategy-qualified-leads": 2,
     "/blog/core-web-vitals-optimization-guide": 2,
-    "/blog/ecommerce-seo-checklist-india": 2,
+    "/blog/ecommerce-seo-checklist-india": 1,
     "/blog/geo-generative-engine-optimization-guide": 2,
     "/blog/google-ai-overviews-changing-business-seo": 2,
     "/blog/google-business-profile-optimization-guide": 1,
     "/blog/how-google-ai-overviews-are-changing-seo": 2,
     "/blog/how-to-choose-best-seo-agency-india": 1,
-    "/blog/international-seo-guide-european-companies": 2,
+    "/blog/international-seo-guide-european-companies": 1,
     "/blog/link-building-guide-2026": 2,
     "/blog/local-seo-checklist-multi-location-europe": 2,
     "/blog/local-seo-guide-indian-businesses-2026": 2,
-    "/blog/local-vs-national-vs-international-seo": 2,
+    "/blog/local-vs-national-vs-international-seo": 1,
     "/blog/ppc-vs-seo-which-is-better": 2,
     "/blog/seo-checklist-small-businesses-europe": 2,
     "/blog/seo-for-restaurants-local-diners": 2,
@@ -637,12 +784,12 @@
     "/blog/seo-law-firms-complete-guide": 2,
     "/blog/seo-roi-calculator-measure-success": 2,
     "/blog/seo-trends-european-businesses-2026": 2,
-    "/blog/technical-seo-checklist-enterprise-websites": 2,
+    "/blog/technical-seo-checklist-enterprise-websites": 1,
     "/blog/what-is-ai-seo-why-business-needs-it": 2,
     "/blog/youtube-business-marketing-2026": 2,
     "/contact-us": 1,
     "/industries": 1,
-    "/industries/accountants-seo": 2,
+    "/industries/accountants-seo": 1,
     "/industries/architect-seo": 2,
     "/industries/automotive-seo": 2,
     "/industries/breweries-seo": 2,
@@ -652,7 +799,7 @@
     "/industries/cpa-firm-seo": 2,
     "/industries/deck-builder-seo": 2,
     "/industries/dentist-seo": 2,
-    "/industries/doctor-physician-seo": 2,
+    "/industries/doctor-physician-seo": 1,
     "/industries/dry-cleaner-seo": 2,
     "/industries/fence-installer-seo": 2,
     "/industries/fertility-clinic-seo": 2,
@@ -665,7 +812,7 @@
     "/industries/janitorial-service-seo": 2,
     "/industries/locksmith-service-seo": 2,
     "/industries/movers-and-moving-company-seo": 2,
-    "/industries/optometrist-seo": 2,
+    "/industries/optometrist-seo": 1,
     "/industries/orthodontist-seo": 2,
     "/industries/painter-seo": 2,
     "/industries/personal-injury-seo": 2,

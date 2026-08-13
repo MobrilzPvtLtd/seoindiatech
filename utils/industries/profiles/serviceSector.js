@@ -1,6 +1,9 @@
 /** Unique 1200+ word content blocks + FAQs - Service Sector (12 industries) */
 export const serviceSectorProfiles = {
   'movers-and-moving-company-seo': {
+    seoTitle: 'Moving Company SEO Services | Local & Long-Distance Mover Marketing',
+    metaDescription:
+      'Moving company SEO for local and long-distance movers: quote funnels, map pack visibility, packing services, and office relocation pages. Free audit.',
     hero: [
       'Moving is stressful-people search "movers near me" when leases end, jobs relocate, or families upsize, often needing quotes within days. Movers & Moving Company SEO captures local and long-distance intent with trust-building content that converts panic into booked moves.',
       'We help moving companies rank for local moves, interstate relocation, office moves, and packing services with quote funnel optimization, review strategies, and map dominance for high-intent mobile searches.',

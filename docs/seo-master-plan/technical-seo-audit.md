@@ -1,10 +1,10 @@
 # Technical SEO Audit — Phase 7
 
-Generated: 2026-08-12
+Generated: 2026-08-13
 
 **Live URLs audited:** 115  
 **Sitemap URLs:** 115  
-**Open issues:** 1  
+**Open issues:** 29  
 **Fixed in Phase 7:** 5
 
 ## Severity Summary (Open Issues)
@@ -13,7 +13,7 @@ Generated: 2026-08-12
 |----------|-------|
 | CRITICAL | 0 |
 | HIGH | 0 |
-| MEDIUM | 0 |
+| MEDIUM | 28 |
 | LOW | 1 |
 
 ## Indexation Control
@@ -73,8 +73,8 @@ Generated: 2026-08-12
 | Depth | Page count |
 |-------|------------|
 | 0 | 1 |
-| 1 | 49 |
-| 2 | 65 |
+| 1 | 56 |
+| 2 | 58 |
 | 3 | 0 |
 | 4+ | 0 |
 | Unreachable | 0 |
@@ -91,25 +91,20 @@ Pages with ≤1 detected inbound link (code scan heuristic):
 | /blog/choose-best-seo-agency-europe | Blog | 1 | 2 | no |
 | /blog/content-marketing-strategy-qualified-leads | Blog | 1 | 2 | yes |
 | /blog/core-web-vitals-optimization-guide | Blog | 1 | 2 | no |
-| /blog/ecommerce-seo-checklist-india | Blog | 1 | 2 | no |
 | /blog/geo-generative-engine-optimization-guide | Blog | 1 | 2 | no |
 | /blog/google-ai-overviews-changing-business-seo | Blog | 1 | 2 | no |
 | /blog/how-google-ai-overviews-are-changing-seo | Blog | 1 | 2 | no |
-| /blog/international-seo-guide-european-companies | Blog | 1 | 2 | no |
 | /blog/link-building-guide-2026 | Blog | 1 | 2 | yes |
 | /blog/local-seo-checklist-multi-location-europe | Blog | 1 | 2 | no |
 | /blog/local-seo-guide-indian-businesses-2026 | Blog | 1 | 2 | no |
-| /blog/local-vs-national-vs-international-seo | Blog | 1 | 2 | no |
 | /blog/ppc-vs-seo-which-is-better | Blog | 1 | 2 | no |
 | /blog/seo-checklist-small-businesses-europe | Blog | 1 | 2 | no |
 | /blog/seo-for-restaurants-local-diners | Blog | 1 | 2 | no |
 | /blog/seo-law-firms-complete-guide | Blog | 1 | 2 | no |
 | /blog/seo-roi-calculator-measure-success | Blog | 1 | 2 | yes |
 | /blog/seo-trends-european-businesses-2026 | Blog | 1 | 2 | no |
-| /blog/technical-seo-checklist-enterprise-websites | Blog | 1 | 2 | no |
 | /blog/what-is-ai-seo-why-business-needs-it | Blog | 1 | 2 | no |
 | /blog/youtube-business-marketing-2026 | Blog | 1 | 2 | no |
-| /industries/accountants-seo | Industry | 1 | 2 | yes |
 | /industries/architect-seo | Industry | 1 | 2 | yes |
 | /industries/automotive-seo | Industry | 1 | 2 | yes |
 | /industries/breweries-seo | Industry | 1 | 2 | yes |
@@ -119,14 +114,19 @@ Pages with ≤1 detected inbound link (code scan heuristic):
 | /industries/cpa-firm-seo | Industry | 1 | 2 | yes |
 | /industries/deck-builder-seo | Industry | 1 | 2 | yes |
 | /industries/dentist-seo | Industry | 1 | 2 | yes |
-| /industries/doctor-physician-seo | Industry | 1 | 2 | yes |
 | /industries/dry-cleaner-seo | Industry | 1 | 2 | yes |
 | /industries/fence-installer-seo | Industry | 1 | 2 | yes |
 | /industries/fertility-clinic-seo | Industry | 1 | 2 | yes |
 | /industries/flooring-company-seo | Industry | 1 | 2 | yes |
 | /industries/garage-door-seo | Industry | 1 | 2 | yes |
+| /industries/herbal-product-seo | Industry | 1 | 2 | yes |
+| /industries/home-builder-and-remodeler-seo | Industry | 1 | 2 | yes |
+| /industries/hvac-seo | Industry | 1 | 2 | yes |
+| /industries/interior-designer-seo | Industry | 1 | 2 | yes |
+| /industries/janitorial-service-seo | Industry | 1 | 2 | yes |
+| /industries/locksmith-service-seo | Industry | 1 | 2 | yes |
 
-*…and 40 more — see JSON report*
+*…and 33 more — see JSON report*
 
 
 ## Core Web Vitals (Code Review)
@@ -167,6 +167,34 @@ Pages with ≤1 detected inbound link (code scan heuristic):
 
 | URL | Issue | Severity | Recommendation | Status |
 |-----|-------|----------|----------------|--------|
+| /blog/100-seo-mistakes-costing-business-leads | Blog in sitemap without known lastmod date | MEDIUM | Add datePublished to catalog or legacy map | OPEN |
+| /blog/ai-seo-vs-traditional-seo-2026 | Blog in sitemap without known lastmod date | MEDIUM | Add datePublished to catalog or legacy map | OPEN |
+| /blog/chatgpt-seo-ai-search-organic-traffic | Blog in sitemap without known lastmod date | MEDIUM | Add datePublished to catalog or legacy map | OPEN |
+| /blog/choose-best-seo-agency-europe | Blog in sitemap without known lastmod date | MEDIUM | Add datePublished to catalog or legacy map | OPEN |
+| /blog/complete-eeat-guide-business-websites | Blog in sitemap without known lastmod date | MEDIUM | Add datePublished to catalog or legacy map | OPEN |
+| /blog/content-marketing-strategy-qualified-leads | Blog in sitemap without known lastmod date | MEDIUM | Add datePublished to catalog or legacy map | OPEN |
+| /blog/core-web-vitals-optimization-guide | Blog in sitemap without known lastmod date | MEDIUM | Add datePublished to catalog or legacy map | OPEN |
+| /blog/ecommerce-seo-checklist-india | Blog in sitemap without known lastmod date | MEDIUM | Add datePublished to catalog or legacy map | OPEN |
+| /blog/geo-generative-engine-optimization-guide | Blog in sitemap without known lastmod date | MEDIUM | Add datePublished to catalog or legacy map | OPEN |
+| /blog/google-ai-overviews-changing-business-seo | Blog in sitemap without known lastmod date | MEDIUM | Add datePublished to catalog or legacy map | OPEN |
+| /blog/google-business-profile-optimization-guide | Blog in sitemap without known lastmod date | MEDIUM | Add datePublished to catalog or legacy map | OPEN |
+| /blog/how-google-ai-overviews-are-changing-seo | Blog in sitemap without known lastmod date | MEDIUM | Add datePublished to catalog or legacy map | OPEN |
+| /blog/how-to-choose-best-seo-agency-india | Blog in sitemap without known lastmod date | MEDIUM | Add datePublished to catalog or legacy map | OPEN |
+| /blog/international-seo-guide-european-companies | Blog in sitemap without known lastmod date | MEDIUM | Add datePublished to catalog or legacy map | OPEN |
+| /blog/link-building-guide-2026 | Blog in sitemap without known lastmod date | MEDIUM | Add datePublished to catalog or legacy map | OPEN |
+| /blog/local-seo-checklist-multi-location-europe | Blog in sitemap without known lastmod date | MEDIUM | Add datePublished to catalog or legacy map | OPEN |
+| /blog/local-seo-guide-indian-businesses-2026 | Blog in sitemap without known lastmod date | MEDIUM | Add datePublished to catalog or legacy map | OPEN |
+| /blog/local-vs-national-vs-international-seo | Blog in sitemap without known lastmod date | MEDIUM | Add datePublished to catalog or legacy map | OPEN |
+| /blog/ppc-vs-seo-which-is-better | Blog in sitemap without known lastmod date | MEDIUM | Add datePublished to catalog or legacy map | OPEN |
+| /blog/seo-checklist-small-businesses-europe | Blog in sitemap without known lastmod date | MEDIUM | Add datePublished to catalog or legacy map | OPEN |
+| /blog/seo-for-restaurants-local-diners | Blog in sitemap without known lastmod date | MEDIUM | Add datePublished to catalog or legacy map | OPEN |
+| /blog/seo-healthcare-businesses-europe | Blog in sitemap without known lastmod date | MEDIUM | Add datePublished to catalog or legacy map | OPEN |
+| /blog/seo-law-firms-complete-guide | Blog in sitemap without known lastmod date | MEDIUM | Add datePublished to catalog or legacy map | OPEN |
+| /blog/seo-roi-calculator-measure-success | Blog in sitemap without known lastmod date | MEDIUM | Add datePublished to catalog or legacy map | OPEN |
+| /blog/seo-trends-european-businesses-2026 | Blog in sitemap without known lastmod date | MEDIUM | Add datePublished to catalog or legacy map | OPEN |
+| /blog/technical-seo-checklist-enterprise-websites | Blog in sitemap without known lastmod date | MEDIUM | Add datePublished to catalog or legacy map | OPEN |
+| /blog/what-is-ai-seo-why-business-needs-it | Blog in sitemap without known lastmod date | MEDIUM | Add datePublished to catalog or legacy map | OPEN |
+| /blog/youtube-business-marketing-2026 | Blog in sitemap without known lastmod date | MEDIUM | Add datePublished to catalog or legacy map | OPEN |
 | sitemap.xml | Non-blog URLs omit lastmod (correct — no fake build timestamps) | LOW | Add lastmod only when content materially changes | FIXED |
 | robots.txt | _next not explicitly disallowed | LOW | Optional — Google generally handles static assets | OPEN |
 | /404 | Custom 404 with noindex and recovery links | LOW | Correct | FIXED |

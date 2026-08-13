@@ -52,4 +52,3 @@ User-agent: OAI-SearchBot
 Allow: /
 
 Sitemap: https://www.seoindiatech.com/sitemap.xml
-LLMs-Txt: https://www.seoindiatech.com/llms.txt

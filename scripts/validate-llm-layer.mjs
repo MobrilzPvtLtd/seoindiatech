@@ -34,6 +34,7 @@ else {
     fail('robots.txt missing canonical sitemap reference')
   }
   if (!/Disallow:\s*\/api\//i.test(robots)) fail('robots.txt missing /api/ disallow')
+  if (/LLMs-Txt:/i.test(robots)) fail('robots.txt contains unsupported LLMs-Txt directive')
   else pass('robots.txt structure and AI crawler rules')
 }
 
