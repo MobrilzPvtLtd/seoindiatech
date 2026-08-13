@@ -14,7 +14,7 @@ export function MegaMenuPanel({ children, id, className = '', onMouseEnter, onMo
         absolute left-1/2 top-full mt-3 -translate-x-1/2
         w-full max-w-[90vw] md:w-[520px] lg:w-[740px] xl:w-[980px]
         max-h-[75vh] overflow-hidden flex flex-col
-        bg-white dark:bg-slate-800 rounded-2xl z-[100]
+        bg-white dark:bg-slate-800 rounded-2xl z-[110]
         border border-slate-200/70 dark:border-slate-700/60
         shadow-[0_20px_50px_-12px_rgba(15,23,42,0.25)]
         transition-all duration-200 origin-top

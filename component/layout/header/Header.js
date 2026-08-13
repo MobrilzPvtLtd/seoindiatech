@@ -9,6 +9,7 @@ import { MegaMenuPanel, megaMenuOpenClass } from './MegaMenu'
 import ThemeToggleButton from './ThemeToggleButton'
 import Link from 'next/link'
 import BrandLogo from '@/component/ui/BrandLogo'
+import TopContactBar from '@/component/ui/TopContactBar'
 import { INDUSTRY_CATEGORIES, toSlug } from '@/utils/industries'
 import { useTheme } from '@/context/ThemeContext'
 
@@ -108,6 +109,18 @@ const Header = () => {
   }, [isMenuOpen])
 
   useEffect(() => {
+    const onKeyDown = (e) => {
+      if (e.key === 'Escape') {
+        setIsMenuOpen(false)
+        setIsServicesOpen(false)
+        setIsIndustryOpen(false)
+      }
+    }
+    document.addEventListener('keydown', onKeyDown)
+    return () => document.removeEventListener('keydown', onKeyDown)
+  }, [])
+
+  useEffect(() => {
     if (isMenuOpen) {
       document.body.style.overflow = 'hidden'
       document.body.style.touchAction = 'none'
@@ -145,12 +158,22 @@ const Header = () => {
   }
 
   const handleServicesClick = () => {
-    setIsServicesOpen((open) => !open)
+    if (windowWidth < 768) {
+      setIsServicesOpen((open) => !open)
+      setIsIndustryOpen(false)
+      return
+    }
+    setIsServicesOpen(true)
     setIsIndustryOpen(false)
   }
 
   const handleIndustryClick = () => {
-    setIsIndustryOpen((open) => !open)
+    if (windowWidth < 768) {
+      setIsIndustryOpen((open) => !open)
+      setIsServicesOpen(false)
+      return
+    }
+    setIsIndustryOpen(true)
     setIsServicesOpen(false)
   }
 
@@ -180,6 +203,18 @@ const Header = () => {
   const showTopContactBar = isHome && !scrolled && (windowWidth === 0 || windowWidth >= 768)
   const headerTopClass = showTopContactBar ? 'top-8' : 'top-0'
 
+  const navLinkTextColor = darkHeroNav
+    ? 'text-white/90 hover:text-white'
+    : isDarkTheme
+      ? 'text-white/85 hover:text-white'
+      : 'text-heading hover:text-primary'
+
+  const servicesBtnColor = darkHeroNav
+    ? 'text-white/90 hover:text-white'
+    : isDarkTheme
+      ? 'text-white/85 hover:text-white'
+      : 'text-heading hover:text-primary'
+
   const NavLink = ({ href, children }) => {
     const isActive = router.pathname === href
     return (
@@ -199,18 +234,6 @@ const Header = () => {
     )
   }
 
-  const navLinkTextColor = darkHeroNav
-    ? 'text-white/90 hover:text-white'
-    : isDarkTheme
-      ? 'text-white/85 hover:text-white'
-      : 'text-heading hover:text-primary'
-
-  const servicesBtnColor = darkHeroNav
-    ? 'text-white/90 hover:text-white'
-    : isDarkTheme
-      ? 'text-white/85 hover:text-white'
-      : 'text-heading hover:text-primary'
-
   const contactButtonClass =
     'inline-flex items-center justify-center shrink-0 rounded-full bg-primary hover:bg-primary-hover text-white px-4 lg:px-5 py-2 lg:py-2.5 font-bold text-xs lg:text-sm tracking-wide uppercase transition-all duration-300 hover:shadow-glow-brand active:scale-95 whitespace-nowrap'
 
@@ -227,24 +250,27 @@ const Header = () => {
         : 'bg-white/95 backdrop-blur-md border-border/60 shadow-sm'
 
   const headerInnerClass =
-    'mx-auto grid w-full max-w-7xl grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-3 sm:gap-4 lg:gap-5 h-16 md:h-[72px] px-4 sm:px-6 lg:px-8'
+    'mx-auto flex w-full max-w-7xl items-center justify-between gap-2 sm:gap-4 h-16 md:h-[72px] px-4 sm:px-6 lg:px-8'
 
   return (
     <>
+      {isHome && (
+        <div className="hidden md:block">
+          <TopContactBar />
+        </div>
+      )}
       <header
-        className={`fixed left-0 w-full z-50 isolate overflow-visible transition-[top,transform] duration-300 ease-in-out ${headerTopClass}`}
+        className={`fixed left-0 w-full z-50 isolate overflow-visible transition-[top,transform] duration-300 ease-in-out ${headerTopClass} ${isMenuOpen ? 'z-[80]' : ''}`}
       >
         <div className={`w-full border-b transition-all duration-300 ${headerBarClass}`}>
           <div className={headerInnerClass}>
-            <div className="flex items-center shrink-0 min-w-0">
-              <BrandLogo
-                variant={logoOnDark ? 'onDark' : 'onLight'}
-                size="md"
-                priority
-              />
-            </div>
+            <BrandLogo
+              variant={logoOnDark ? 'onDark' : 'onLight'}
+              size="md"
+              priority
+            />
 
-            <nav className="hidden md:flex justify-center min-w-0 overflow-visible">
+            <nav className="hidden md:flex flex-1 justify-center min-w-0 px-1 lg:px-4 overflow-visible">
               <ul className="flex items-center flex-nowrap gap-x-2 lg:gap-x-3 xl:gap-x-4">
                 <li>
                   <Link
@@ -323,24 +349,25 @@ const Header = () => {
               </ul>
             </nav>
 
-            {/* Mobile toggle */}
-            <div className="md:hidden flex items-center gap-2">
-              <ThemeToggleButton onDark={logoOnDark} compact />
-              <button
-                className={`menu-toggle min-h-11 min-w-11 flex items-center justify-center ${darkHeroNav ? 'text-white hover:bg-white/10' : 'text-heading hover:bg-surface'} focus:outline-none focus:ring-2 focus:ring-primary rounded-full z-50 transition-colors`}
-                onClick={toggleMobileMenu}
-                aria-label="Toggle menu"
-                aria-expanded={isMenuOpen}
-              >
-                <Menu className="w-5 h-5" />
-              </button>
-            </div>
+            <div className="flex items-center justify-end shrink-0 gap-2">
+              <div className="hidden md:flex items-center gap-2 lg:gap-3">
+                <ThemeToggleButton onDark={logoOnDark} compact />
+                <Link href="/contact-us" className={contactButtonClass}>
+                  Book a Call
+                </Link>
+              </div>
 
-            <div className="hidden md:flex items-center justify-end shrink-0 gap-2 lg:gap-3">
-              <ThemeToggleButton onDark={logoOnDark} compact />
-              <Link href="/contact-us" className={contactButtonClass}>
-                Book a Call
-              </Link>
+              <div className="md:hidden flex items-center gap-2">
+                <ThemeToggleButton onDark={logoOnDark} compact />
+                <button
+                  className={`menu-toggle min-h-11 min-w-11 flex items-center justify-center ${darkHeroNav ? 'text-white hover:bg-white/10' : 'text-heading hover:bg-surface'} focus:outline-none focus:ring-2 focus:ring-primary rounded-full transition-colors`}
+                  onClick={toggleMobileMenu}
+                  aria-label="Toggle menu"
+                  aria-expanded={isMenuOpen}
+                >
+                  <Menu className="w-5 h-5" />
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -349,7 +376,7 @@ const Header = () => {
       {/* Mobile overlay */}
       {isMenuOpen && (
         <div
-          className="fixed inset-0 bg-slate-900/50 backdrop-blur-sm z-[60] md:hidden transition-opacity duration-300"
+          className="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-[85] md:hidden transition-opacity duration-300"
           onClick={toggleMobileMenu}
           aria-hidden="true"
         />
@@ -359,24 +386,25 @@ const Header = () => {
       <div
         ref={mobileMenuRef}
         className={`
-          fixed top-0 right-0 h-full w-full max-w-[min(100%,20rem)] bg-secondary dark:bg-slate-900
-          shadow-2xl z-[70] transform transition-transform duration-300 ease-in-out
-          ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}
+          fixed top-0 right-0 h-full w-[min(100%,20rem)] bg-secondary dark:bg-slate-900
+          shadow-2xl z-[90] transform transition-transform duration-300 ease-in-out
+          ${isMenuOpen ? 'translate-x-0' : 'translate-x-full pointer-events-none'}
           flex flex-col md:hidden
         `}
+        aria-hidden={!isMenuOpen}
       >
-        <div className="flex justify-between items-center p-5 border-b border-white/10">
-          <span className="text-lg font-bold text-white">Menu</span>
+        <div className="flex justify-between items-center gap-3 p-4 border-b border-white/10">
+          <BrandLogo variant="onDark" size="sm" compact className="min-w-0" />
           <button
             onClick={toggleMobileMenu}
             aria-label="Close menu"
-            className="flex items-center justify-center min-h-11 min-w-11 text-white/70 hover:bg-white/10 rounded-full transition-colors"
+            className="flex items-center justify-center min-h-11 min-w-11 text-white/70 hover:bg-white/10 rounded-full transition-colors shrink-0"
           >
             <X className="w-5 h-5" />
           </button>
         </div>
 
-        <div className="flex-1 overflow-y-auto">
+        <div className="flex-1 overflow-y-auto overscroll-contain" data-lenis-prevent>
           <ul className="space-y-1 p-4">
             <li>
               <Link

@@ -55,12 +55,7 @@
   status = 301
   force = true
 
-# Trailing slash removal (paths only; homepage stays /)
-[[redirects]]
-  from = "/:path/"
-  to = "/:path"
-  status = 301
-  force = true
+# Trailing slash canonicalization handled in next.config.mjs (avoids redirect loops with Next plugin)
 
 [[headers]]
   for = "/*"

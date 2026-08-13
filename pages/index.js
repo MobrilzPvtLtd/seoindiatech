@@ -8,7 +8,6 @@ import { SITE_URL } from '@/utils/siteConfig'
 
 import Hero from '@/component/new-home/Hero'
 
-const TopContactBar = dynamic(() => import('@/component/ui/TopContactBar'), { ssr: false })
 const TrustedBy = dynamic(() => import('@/component/new-home/TrustedBy'))
 const OfferingsSection = dynamic(() => import('@/component/new-home/OfferingsSection'))
 const AboutBand = dynamic(() => import('@/component/new-home/AboutBand'))
@@ -68,9 +67,6 @@ export default function Home() {
         lcpImage={HOME_IMAGES.hero}
       />
 
-      <div className="hidden md:block">
-        <TopContactBar />
-      </div>
       <Hero />
       <TrustedBy />
       <OfferingsSection />
