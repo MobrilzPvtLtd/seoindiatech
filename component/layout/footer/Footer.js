@@ -68,7 +68,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-x-8 lg:gap-y-10">
           {/* Brand + stats */}
           <div className="sm:col-span-2 lg:col-span-4 space-y-5">
-            <BrandLogo variant="onDark" size="lg" compact className="max-w-[175px]" />
+            <BrandLogo variant="onDark" size="lg" compact className="max-w-[190px]" />
             <p className="text-sm leading-relaxed text-white/80 max-w-sm">
               Global 360-degree digital growth partner - AI-powered SEO, performance marketing,
               and technology for measurable business outcomes.

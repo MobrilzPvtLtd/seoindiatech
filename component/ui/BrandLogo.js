@@ -1,36 +1,56 @@
 'use client'
 
 import Link from 'next/link'
-import SitLogoMark from '@/component/ui/SitLogoMark'
+import logoImage from '../../public/images/brand/sit-transparent.png'
+
+const LOGO_FALLBACK_SRC = '/images/brand/sit-transparent.png'
 
 /**
- * Inline SVG wordmark — no static files or image optimizer required.
+ * Official brand logo (transparent PNG) — bundled via webpack for reliable Netlify delivery.
  */
 export default function BrandLogo({
   variant = 'onLight',
   size = 'md',
   compact = false,
   className = '',
+  priority = false,
 }) {
-  const useCompact = compact || size === 'sm'
+  const isDark = variant === 'onDark'
 
-  const svgClass = {
-    sm: 'h-7 w-auto max-w-[128px]',
-    md: 'h-8 w-auto max-w-[140px] sm:h-9 sm:max-w-[150px]',
-    lg: 'h-9 w-auto max-w-[150px] sm:h-10 sm:max-w-[165px]',
-  }[size] || 'h-8 w-auto max-w-[140px]'
+  const imageClass = {
+    sm: compact ? 'h-8 w-auto max-w-[130px]' : 'h-9 w-auto max-w-[145px]',
+    md: compact ? 'h-9 w-auto max-w-[150px]' : 'h-10 w-auto max-w-[165px] sm:h-11 sm:max-w-[170px]',
+    lg: compact ? 'h-10 w-auto max-w-[160px]' : 'h-12 w-auto max-w-[190px] sm:h-14 sm:max-w-[200px]',
+  }[size] || 'h-10 w-auto max-w-[150px]'
+
+  const shellClass = isDark
+    ? 'rounded-xl bg-white/95 px-2.5 py-1.5 shadow-[0_4px_20px_rgba(0,0,0,0.25)] ring-1 ring-white/20'
+    : ''
+
+  const logoSrc = logoImage?.src || LOGO_FALLBACK_SRC
 
   return (
     <Link
       href="/"
-      className={`group inline-flex items-center shrink-0 max-w-[180px] transition-opacity duration-200 hover:opacity-90 ${className}`}
+      className={`group inline-flex items-center shrink-0 min-w-0 max-w-[200px] transition-opacity duration-200 hover:opacity-90 ${className}`}
       aria-label="SEO India Tech - Home"
     >
-      <SitLogoMark
-        variant={variant}
-        compact={useCompact}
-        className={`${svgClass} block`}
-      />
+      <span className={`inline-flex items-center ${shellClass}`}>
+        <img
+          src={logoSrc}
+          alt="SEO India Tech"
+          width={logoImage?.width || 170}
+          height={logoImage?.height || 94}
+          className={`${imageClass} block object-contain object-left`}
+          loading={priority ? 'eager' : 'lazy'}
+          decoding="async"
+          onError={(e) => {
+            if (e.currentTarget.src !== LOGO_FALLBACK_SRC) {
+              e.currentTarget.src = LOGO_FALLBACK_SRC
+            }
+          }}
+        />
+      </span>
     </Link>
   )
 }

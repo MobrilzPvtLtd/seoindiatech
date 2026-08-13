@@ -269,6 +269,7 @@ const Header = () => {
             <BrandLogo
               variant={logoOnDark ? 'onDark' : 'onLight'}
               size="md"
+              priority
             />
 
             <nav className="hidden xl:flex flex-1 justify-center min-w-0 px-1 overflow-hidden">

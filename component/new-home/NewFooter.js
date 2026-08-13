@@ -46,7 +46,7 @@ const NewFooter = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Company Info */}
           <div className="space-y-6">
-            <BrandLogo variant="onDark" size="lg" compact={false} className="[&_svg]:max-w-[160px]" />
+            <BrandLogo variant="onDark" size="lg" compact={false} className="max-w-[190px]" />
             <p className="text-base font-medium text-gray-200">
               Start Your Business &{' '}
               <span className="font-bold text-accent">GROW WITH US</span>
