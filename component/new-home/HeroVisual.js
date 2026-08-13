@@ -5,7 +5,7 @@ import { HOME_IMAGES, HERO_PROCESS_STEPS } from '@/utils/homeImages'
 
 export default function HeroVisual() {
   return (
-    <div className="relative mx-auto w-full max-w-[560px]">
+    <div className="relative mx-auto w-full max-w-[480px] xl:max-w-[500px]">
       <div className="pointer-events-none absolute -inset-4 rounded-3xl bg-primary/30 blur-[80px] opacity-60 max-md:hidden" />
       <div className="pointer-events-none absolute top-1/4 right-0 h-40 w-40 rounded-full bg-accent/20 blur-[60px] max-md:hidden" />
 

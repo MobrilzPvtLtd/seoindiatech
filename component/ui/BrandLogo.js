@@ -1,55 +1,37 @@
 'use client'
 
 import Link from 'next/link'
-import logoImage from '../../public/images/brand/sit-transparent.png'
-
-const LOGO_FALLBACK_SRC = '/images/brand/sit-transparent.png'
+import SitLogoSvg from '@/component/ui/SitLogoSvg'
 
 /**
- * Logo via webpack static import (_next/static/media) — avoids Netlify root /public 301 loops.
+ * Inline SVG logo — always renders (no static file / image optimizer dependency).
  */
 export default function BrandLogo({
   variant = 'onLight',
   size = 'md',
   compact = false,
   className = '',
-  priority = false,
 }) {
   const isDark = variant === 'onDark'
 
-  const imageClass = {
-    sm: compact ? 'h-8 w-auto max-w-[130px]' : 'h-9 w-auto max-w-[145px]',
-    md: compact ? 'h-9 w-auto max-w-[150px]' : 'h-10 w-auto max-w-[165px] sm:h-11 sm:max-w-[170px]',
-    lg: compact ? 'h-10 w-auto max-w-[160px]' : 'h-12 w-auto max-w-[190px] sm:h-14 sm:max-w-[200px]',
-  }[size] || 'h-10 w-auto max-w-[150px]'
+  const svgClass = {
+    sm: compact ? 'h-7 w-auto max-w-[120px]' : 'h-8 w-auto max-w-[130px]',
+    md: compact ? 'h-8 w-auto max-w-[135px]' : 'h-9 w-auto max-w-[145px] sm:h-10 sm:max-w-[155px]',
+    lg: compact ? 'h-9 w-auto max-w-[145px]' : 'h-10 w-auto max-w-[160px] sm:h-11 sm:max-w-[175px]',
+  }[size] || 'h-9 w-auto max-w-[145px]'
 
   const shellClass = isDark
-    ? 'rounded-xl bg-white px-2.5 py-1.5 shadow-[0_4px_20px_rgba(0,0,0,0.2)] ring-1 ring-white/30'
+    ? 'rounded-lg bg-white px-2 py-1 shadow-[0_2px_12px_rgba(0,0,0,0.18)] ring-1 ring-white/25'
     : ''
-
-  const logoSrc = logoImage?.src || LOGO_FALLBACK_SRC
 
   return (
     <Link
       href="/"
-      className={`group inline-flex items-center shrink-0 transition-opacity duration-200 hover:opacity-90 ${className}`}
+      className={`group inline-flex items-center shrink-0 max-w-[180px] transition-opacity duration-200 hover:opacity-90 ${className}`}
       aria-label="SEO India Tech - Home"
     >
-      <span className={`inline-flex items-center max-w-[200px] ${shellClass}`}>
-        <img
-          src={logoSrc}
-          alt="SEO India Tech"
-          width={logoImage?.width || 170}
-          height={logoImage?.height || 94}
-          className={`${imageClass} block object-contain object-left`}
-          loading={priority ? 'eager' : 'lazy'}
-          decoding="async"
-          onError={(e) => {
-            if (e.currentTarget.src !== LOGO_FALLBACK_SRC) {
-              e.currentTarget.src = LOGO_FALLBACK_SRC
-            }
-          }}
-        />
+      <span className={`inline-flex items-center ${shellClass}`}>
+        <SitLogoSvg className={`${svgClass} block`} />
       </span>
     </Link>
   )

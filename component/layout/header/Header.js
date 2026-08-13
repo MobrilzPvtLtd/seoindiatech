@@ -252,7 +252,7 @@ const Header = () => {
         : 'bg-white/95 backdrop-blur-md border-border/60 shadow-sm'
 
   const headerInnerClass =
-    'mx-auto flex w-full max-w-7xl items-center justify-between gap-2 sm:gap-4 h-16 md:h-[72px] px-4 sm:px-6 lg:px-8'
+    'mx-auto flex w-full max-w-7xl items-center justify-between gap-2 sm:gap-3 h-14 sm:h-16 px-4 sm:px-6 lg:px-8'
 
   return (
     <>
@@ -269,7 +269,6 @@ const Header = () => {
             <BrandLogo
               variant={logoOnDark ? 'onDark' : 'onLight'}
               size="md"
-              priority
             />
 
             <nav className="hidden xl:flex flex-1 justify-center min-w-0 px-1 overflow-hidden">
@@ -396,7 +395,7 @@ const Header = () => {
         aria-hidden={!isMenuOpen}
       >
         <div className="flex justify-between items-center gap-3 p-4 border-b border-white/10">
-          <BrandLogo variant="onDark" size="sm" compact className="min-w-0" />
+            <BrandLogo variant="onDark" size="sm" compact className="min-w-0 max-w-[140px]" />
           <button
             onClick={toggleMobileMenu}
             aria-label="Close menu"
