@@ -7,6 +7,7 @@ import { getHubInternalLinks } from '../../internalLinks'
 import { getServiceEntry, SERVICE_CATALOG } from './serviceCatalog'
 import { getHubAnswerFirst } from '../../seo/answerFirstContent.js'
 import { HUB_OVERRIDES } from './hubOverrides.js'
+import { clampPageSeo } from '../../seo/clampMeta.js'
 
 function mergeHubContent(built, override) {
   if (!override) return built
@@ -109,8 +110,8 @@ export function getPremiumHubContent(hubSlug) {
     isHub: true,
 
     seo: {
-      title: `${hubTitle} India | Full-Service Digital Agency | SEO India Tech`,
-      description: `Explore ${hubTitle.toLowerCase()} from SEO India Tech: ${childServices.map((s) => s.title).slice(0, 4).join(', ')} and more. 14+ years. Free audit.`,
+      title: `${hubTitle} | SEO India Tech`,
+      description: `Explore ${hubTitle.toLowerCase()} from SEO India Tech. Dedicated specialists, weekly reporting, and a free audit.`,
       slug: hubSlug,
       canonical: path,
       keywords: childServices.map((s) => `${s.title.toLowerCase()} services`),
@@ -496,5 +497,6 @@ export function getPremiumHubContent(hubSlug) {
     ),
   }
 
-  return mergeHubContent(built, HUB_OVERRIDES[hubSlug])
+  const merged = mergeHubContent(built, HUB_OVERRIDES[hubSlug])
+  return { ...merged, seo: clampPageSeo(merged.seo) }
 }

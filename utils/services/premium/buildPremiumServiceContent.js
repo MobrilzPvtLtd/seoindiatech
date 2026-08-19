@@ -233,8 +233,8 @@ export function buildPremiumServiceContent(entry) {
     isService: true,
 
     seo: {
-      title: `${name} Services India | Expert ${name} Agency | SEO India Tech`,
-      description: `${shortDescription} 14+ years experience. Free audit. Weekly reporting. Serving India, USA, UK, Australia & UAE.`,
+      title: `${name} | SEO India Tech`,
+      description: shortDescription,
       slug,
       canonical: slug === 'pay-per-click' ? '/services/ppc-advertising' : path,
       keywords: [

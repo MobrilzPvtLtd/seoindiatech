@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { absoluteUrl, DEFAULT_OG_IMAGE, SITE_NAME, SITE_URL } from '@/utils/siteConfig'
+import { clampSeo, SEO_DESC_MAX, SEO_TITLE_MAX } from '@/utils/seo/clampMeta'
 
 /**
  * Reusable SEO head tags: title, description, canonical, robots, Open Graph, Twitter.
@@ -22,11 +23,13 @@ export default function SEO({
   const canonicalUrl = canonical || absoluteUrl(path)
   const ogImage = image?.startsWith('http') ? image : absoluteUrl(image)
   const robotsContent = noindex ? 'noindex, follow' : robots
+  const titleTag = clampSeo(title, SEO_TITLE_MAX)
+  const descriptionTag = clampSeo(description, SEO_DESC_MAX)
 
   return (
     <Head>
-      <title>{title}</title>
-      <meta name="description" content={description} />
+      <title>{titleTag}</title>
+      <meta name="description" content={descriptionTag} />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="robots" content={robotsContent} />
       <meta name="author" content={SITE_NAME} />
@@ -41,8 +44,8 @@ export default function SEO({
         />
       )}
 
-      <meta property="og:title" content={title} />
-      <meta property="og:description" content={description} />
+      <meta property="og:title" content={titleTag} />
+      <meta property="og:description" content={descriptionTag} />
       <meta property="og:type" content={type} />
       <meta property="og:url" content={canonicalUrl} />
       <meta property="og:image" content={ogImage} />
@@ -57,8 +60,8 @@ export default function SEO({
       {type === 'article' && author && <meta property="article:author" content={author} />}
 
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={title} />
-      <meta name="twitter:description" content={description} />
+      <meta name="twitter:title" content={titleTag} />
+      <meta name="twitter:description" content={descriptionTag} />
       <meta name="twitter:image" content={ogImage} />
     </Head>
   )

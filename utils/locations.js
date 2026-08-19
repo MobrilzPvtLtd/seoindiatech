@@ -817,10 +817,10 @@ export const locations = [
    slug: "seo-services-in-noida",
    city: "Noida",
  
-   title: "SEO Company in Noida Sector 63 | SEO Services Noida | SEO India Tech",
+   title: "SEO Company in Noida | SEO India Tech",
 
    description:
-     "SEO company in Noida Sector 63 and across Noida—local SEO, technical fixes, and content from SEO India Tech. Serving businesses from our Sector 63 base with clear reporting.",
+     "SEO company in Noida Sector 63: local SEO, technical fixes, and content with clear reporting. Free audit.",
 
    heading: "SEO Company in Noida Sector 63",
  
@@ -963,10 +963,10 @@ export const locations = [
    slug: "seo-services-in-delhi",
    city: "Delhi",
  
-   title: "Indian SEO Company in Delhi | Search Engine Optimization Services Delhi | SEO India Tech",
+   title: "SEO Company in Delhi | SEO India Tech",
 
    description:
-     "Search engine optimization services in Delhi from an Indian SEO company. Local SEO, technical SEO, and content for Delhi NCR businesses. Free audit from SEO India Tech.",
+     "SEO services in Delhi for NCR businesses: local SEO, technical SEO, and content. Free audit from SEO India Tech.",
 
    heading: "Indian SEO Company in Delhi",
  

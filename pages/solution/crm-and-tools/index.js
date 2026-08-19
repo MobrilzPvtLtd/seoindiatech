@@ -20,8 +20,8 @@ export default function CrmAndToolsPage() {
   return (
     <>
       <SeoHead
-        title="India CRM & SEO CRM System | CRM & Tools | SEO India Tech"
-        description="India CRM setup and SEO CRM systems to manage leads, pipelines, and marketing workflows. Integrate CRM with your SEO and digital marketing from SEO India Tech."
+        title="CRM & SEO Tools | SEO India Tech"
+        description="Set up CRM for SEO and marketing: leads, pipelines, and workflows integrated with your digital campaigns."
         path="/solution/crm-and-tools"
         schema={schema}
       />

@@ -50,14 +50,14 @@ function normalizeFaqQuestion(question) {
   return (question || '').trim().toLowerCase().replace(/\s+/g, ' ')
 }
 
-function buildDefaultMetaDescription(entry, labelLower, title) {
+function buildDefaultMetaDescription(entry, labelLower) {
   const usesProcedurePages =
     PATIENT_CLIENT_SLUGS.has(entry.slug) && entry.slug !== 'chiropractor-seo'
   const contentFocus = usesProcedurePages
-    ? 'Procedure pages, local SEO'
-    : 'Service pages, local SEO'
+    ? 'procedure pages, local SEO, and GBP'
+    : 'service pages, local SEO, and GBP'
 
-  return `Rank higher for ${labelLower} searches with expert ${title.toLowerCase()}. ${contentFocus}, GBP optimization, AI Overview visibility & weekly reporting. Free audit.`
+  return `Grow ${labelLower} leads with ${contentFocus}. AI Overview visibility and weekly reporting. Free audit.`
 }
 
 const PILLAR_IMAGES = {
@@ -286,9 +286,9 @@ export function buildPremiumContent(entry, profile) {
     isHealthcare: HEALTHCARE_SLUGS.has(slug),
 
     seo: {
-      title: profile.seoTitle || `${title} Services | Local, AI & GEO SEO Experts | SEO India Tech`,
+      title: profile.seoTitle || `${title} | SEO India Tech`,
       description:
-        profile.metaDescription || buildDefaultMetaDescription(entry, labelLower, title),
+        profile.metaDescription || buildDefaultMetaDescription(entry, labelLower),
       slug,
       keywords: [
         title.toLowerCase(),

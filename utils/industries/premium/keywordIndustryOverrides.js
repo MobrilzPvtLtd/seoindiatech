@@ -4,9 +4,9 @@
 
 export const optometristSeoPremium = {
   seo: {
-    title: 'SEO for Optometrists & Eye Care Practices | SEO India Tech',
+    title: 'SEO for Optometrists | SEO India Tech',
     description:
-      'Eye care SEO for optometry practices: local visibility, service pages, and patient-focused content. Help patients find your clinic through search.',
+      'Optometrist SEO: local visibility, service pages, and patient-focused content so clinics get found in search.',
   },
   hero: {
     h1: 'SEO for Optometrists That Brings Patients to Your Practice',
@@ -62,9 +62,9 @@ export const optometristSeoPremium = {
 
 export const wineriesSeoPremium = {
   seo: {
-    title: 'SEO for Wineries | Winery SEO Services | SEO India Tech',
+    title: 'SEO for Wineries | SEO India Tech',
     description:
-      'SEO for wineries and wine brands: tasting room visits, direct-to-consumer sales, and wine tourism. Winery SEO strategies for vineyards across India, USA, and Europe.',
+      'Winery SEO for tasting rooms, wine clubs, and DTC sales. Local visibility for vineyards in India, USA, and Europe.',
   },
   hero: {
     h1: 'SEO for Wineries',
@@ -172,9 +172,9 @@ export const wineriesSeoPremium = {
 
 export const accountantsSeoPremium = {
   seo: {
-    title: 'SEO for Accountants & Accounting Firms | Accountants SEO | SEO India Tech',
+    title: 'SEO for Accountants | SEO India Tech',
     description:
-      'Accountants SEO for firms and practices: local visibility, service pages, and compliant content that brings qualified client enquiries. SEO for accountants in India and worldwide.',
+      'Accountants SEO: local visibility, service pages, and compliant content that brings qualified client enquiries.',
   },
   hero: {
     h1: 'SEO for Accountants That Brings Qualified Client Enquiries',
@@ -230,9 +230,9 @@ export const accountantsSeoPremium = {
 
 export const doctorPhysicianSeoPremium = {
   seo: {
-    title: 'SEO for Doctors & Physicians | Physician SEO Services | SEO India Tech',
+    title: 'SEO for Doctors | SEO India Tech',
     description:
-      'Doctor SEO and physician SEO for practices and specialists: patient discovery, local visibility, and compliant healthcare content. SEO for doctors in India, USA, and UK.',
+      'Physician SEO for practices and specialists: patient discovery, local visibility, and compliant healthcare content.',
   },
   hero: {
     h1: 'SEO for Doctors and Physicians Who Need Patient Discovery',

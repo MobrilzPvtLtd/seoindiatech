@@ -7,9 +7,9 @@ export const plasticSurgeryPremium = {
   isHealthcare: true,
 
   seo: {
-    title: 'Plastic Surgery SEO Services | Grow Consult Bookings | SEO India Tech',
+    title: 'Plastic Surgery SEO | SEO India Tech',
     description:
-      'Expert plastic surgery SEO for cosmetic surgeons worldwide. Procedure pages, YMYL-safe content, GBP optimization & AI Overview visibility. Free audit.',
+      'Plastic surgery SEO for cosmetic practices: procedure pages, YMYL-safe content, GBP, and AI Overview visibility. Free audit.',
     slug: 'plastic-surgery-seo',
     keywords: [
       'plastic surgery SEO',

@@ -3,6 +3,7 @@ import { getIndustryProfile } from '../profiles'
 import { buildPremiumContent } from './buildPremiumContent'
 import { plasticSurgeryPremium } from './plasticSurgery'
 import { KEYWORD_INDUSTRY_OVERRIDES } from './keywordIndustryOverrides'
+import { clampPageSeo } from '../../seo/clampMeta.js'
 
 const OVERRIDES = {
   'plastic-surgery-seo': plasticSurgeryPremium,
@@ -49,5 +50,6 @@ export function getPremiumIndustryContent(slug) {
 
   const built = buildPremiumContent(entry, profile)
   const override = OVERRIDES[slug]
-  return mergePremiumContent(built, override)
+  const merged = mergePremiumContent(built, override)
+  return { ...merged, seo: clampPageSeo(merged.seo) }
 }

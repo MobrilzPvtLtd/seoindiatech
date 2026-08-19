@@ -4,9 +4,9 @@
 
 export const localSeoPremium = {
   seo: {
-    title: 'Local SEO India | Local SEO Services in India | SEO India Tech',
+    title: 'Local SEO Services in India | SEO India Tech',
     description:
-      'Local SEO services in India for map pack visibility, Google Business Profile optimization, citations, and geo pages. Work with a local SEO agency in India. Free audit.',
+      'Local SEO in India for map pack, Google Business Profile, citations, and geo pages. Free audit.',
   },
   hero: {
     h1: 'Local SEO Services That Put You in the Map Pack',
@@ -121,9 +121,9 @@ export const localSeoPremium = {
 
 export const aiSeoPremium = {
   seo: {
-    title: 'AI SEO Services India | GEO & Answer Engine Experts | SEO India Tech',
+    title: 'AI SEO Services India | SEO India Tech',
     description:
-      'AI SEO, GEO, and answer engine optimization for Google AI Overviews, ChatGPT, and Gemini. Structure content AI tools cite. Free audit from India\'s AI SEO agency.',
+      'AI SEO and GEO for Google AI Overviews, ChatGPT, and Gemini. Structure content AI tools cite. Free audit.',
   },
   hero: {
     h1: 'AI SEO Services for Google AI Overviews and Generative Search',
@@ -149,9 +149,9 @@ export const aiSeoPremium = {
 
 export const gbpPremium = {
   seo: {
-    title: 'Google Business Profile Optimization | GBP SEO Experts | SEO India Tech',
+    title: 'Google Business Profile Optimization | SEO India Tech',
     description:
-      'Expert GBP optimization: categories, reviews, photos, posts, and Q&A. Increase map pack rankings, calls, and direction requests. Free GBP audit.',
+      'GBP optimization: categories, reviews, photos, and posts to grow map pack calls. Free GBP audit.',
   },
   hero: {
     h1: 'Google Business Profile Optimization That Drives Calls and Visits',
@@ -172,9 +172,9 @@ export const gbpPremium = {
 
 export const ppcPremium = {
   seo: {
-    title: 'PPC Advertising Services India | Google & Meta Ads Agency | SEO India Tech',
+    title: 'PPC Advertising Services India | SEO India Tech',
     description:
-      'Data-driven PPC advertising on Google, Meta, and LinkedIn. Landing pages, conversion tracking, and ROAS reporting. Free PPC audit from SEO India Tech.',
+      'Google, Meta, and LinkedIn ads with landing pages, tracking, and ROAS reporting. Free PPC audit.',
   },
   hero: {
     h1: 'PPC Advertising Services Built for Leads and Revenue',
@@ -189,9 +189,9 @@ export const ppcPremium = {
 
 export const contentMarketingPremium = {
   seo: {
-    title: 'Content Marketing Services India | SEO Content Agency | SEO India Tech',
+    title: 'Content Marketing Services India | SEO India Tech',
     description:
-      'Content marketing services in India: blogs, service pages, case studies, and AI-ready content. SEO-optimized, conversion-focused strategy from SEO India Tech. Free content audit.',
+      'SEO content in India: blogs, service pages, and case studies built to rank and convert. Free content audit.',
   },
   hero: {
     h1: 'Content Marketing Services That Rank, Educate, and Convert',
@@ -214,6 +214,11 @@ const overrideHero = (h1, paragraphs, bg) => ({
 })
 
 export const smallBusinessSeoPremium = {
+  seo: {
+    title: 'Small Business SEO Services | SEO India Tech',
+    description:
+      'Small business SEO focused on local search, service pages, and fast wins. Weekly reporting. Free audit.',
+  },
   ...overrideHero(
     'Small Business SEO That Competes With Enterprise Brands',
     [
@@ -237,9 +242,9 @@ export const smallBusinessSeoPremium = {
 
 export const ecommerceSeoPremium = {
   seo: {
-    title: 'Ecommerce SEO Agency in India | WooCommerce & Store SEO | SEO India Tech',
+    title: 'Ecommerce SEO Agency in India | SEO India Tech',
     description:
-      'Ecommerce SEO agency in India for WooCommerce and online stores: product pages, category optimization, technical fixes, and schema. Grow organic revenue. Free audit.',
+      'Ecommerce SEO for WooCommerce and online stores: product pages, categories, technical fixes, and schema. Free audit.',
   },
   ...overrideHero(
     'Ecommerce SEO Agency for Product Visibility and Revenue Growth',
@@ -275,6 +280,11 @@ export const ecommerceSeoPremium = {
 }
 
 export const asoPremium = {
+  seo: {
+    title: 'App Store Optimization | SEO India Tech',
+    description:
+      'ASO for App Store and Google Play: titles, screenshots, and listings that improve visibility and downloads.',
+  },
   ...overrideHero(
     'App Store Optimization for Downloads and Rankings',
     [
@@ -286,6 +296,11 @@ export const asoPremium = {
 }
 
 export const geoPremium = {
+  seo: {
+    title: 'GEO Optimization Services | SEO India Tech',
+    description:
+      'Generative engine optimization so AI Overviews and chatbots cite your brand, not only rank below them.',
+  },
   ...overrideHero(
     'Generative Engine Optimization (GEO) Services',
     [
@@ -307,6 +322,11 @@ export const geoPremium = {
 }
 
 export const aeoPremium = {
+  seo: {
+    title: 'Answer Engine Optimization | SEO India Tech',
+    description:
+      'AEO so your brand is cited in AI answers and search features, even when users never click through.',
+  },
   ...overrideHero(
     'Answer Engine Optimization for AI Search Discovery',
     [
@@ -318,6 +338,11 @@ export const aeoPremium = {
 }
 
 export const digitalBrandingPremium = {
+  seo: {
+    title: 'Digital Branding Services | SEO India Tech',
+    description:
+      'Digital branding that aligns identity, messaging, and search so prospects recognize and trust your brand.',
+  },
   ...overrideHero(
     'Digital Branding That Builds Recognition and Trust Online',
     [
@@ -329,6 +354,11 @@ export const digitalBrandingPremium = {
 }
 
 export const ormPremium = {
+  seo: {
+    title: 'Online Reputation Management | SEO India Tech',
+    description:
+      'ORM for search, reviews, and brand SERPs. Monitor mentions and promote trusted assets that convert.',
+  },
   ...overrideHero(
     'Online Reputation Management for Brand SERPs',
     [
@@ -340,6 +370,11 @@ export const ormPremium = {
 }
 
 export const smoPremium = {
+  seo: {
+    title: 'Social Media Optimization | SEO India Tech',
+    description:
+      'SMO for Instagram, Facebook, LinkedIn, and YouTube. Profiles and posts aligned with SEO and content.',
+  },
   ...overrideHero(
     'Social Media Optimization for Discoverability and Engagement',
     [
@@ -363,9 +398,9 @@ export const payPerClickPremium = {
 
 export const uiUxPremium = {
   seo: {
-    title: 'SEO Website Design Company in India | Web Design SEO | SEO India Tech',
+    title: 'SEO Website Design Company | SEO India Tech',
     description:
-      'SEO-friendly website design in India: fast, mobile-first UI/UX that supports Core Web Vitals, conversions, and organic visibility. Web design SEO company for growth-focused brands.',
+      'SEO-friendly website design in India: mobile-first UI/UX, Core Web Vitals, and conversion-focused pages.',
   },
   ...overrideHero(
     'UI/UX Design That Converts Visitors Into Leads',
@@ -379,9 +414,9 @@ export const uiUxPremium = {
 
 export const socialMediaMarketingPremium = {
   seo: {
-    title: 'Social Media Marketing in India | SMM Services | SEO India Tech',
+    title: 'Social Media Marketing in India | SEO India Tech',
     description:
-      'Social media marketing services in India across Instagram, Facebook, LinkedIn, and YouTube. Content, paid social, and reporting tied to leads and revenue. Free consultation.',
+      'SMM in India on Instagram, Facebook, LinkedIn, and YouTube. Content, paid social, and lead reporting.',
   },
   ...overrideHero(
     'Social Media Marketing for Brand Growth and Conversions',
@@ -395,9 +430,9 @@ export const socialMediaMarketingPremium = {
 
 export const technicalSeoPremium = {
   seo: {
-    title: 'Technical SEO Services in India | Technical SEO Company | SEO India Tech',
+    title: 'Technical SEO Services in India | SEO India Tech',
     description:
-      'Technical SEO services in India: audits, crawlability, Core Web Vitals, indexation, and structured data from a technical SEO agency focused on measurable fixes. Free audit.',
+      'Technical SEO in India: audits, crawlability, Core Web Vitals, indexation, and structured data. Free audit.',
   },
   hero: {
     h1: 'Technical SEO Services That Fix What Blocks Rankings',
@@ -446,9 +481,9 @@ export const technicalSeoPremium = {
 
 export const internationalSeoPremium = {
   seo: {
-    title: 'International SEO Agency India | Global SEO Services | SEO India Tech',
+    title: 'International SEO Agency India | SEO India Tech',
     description:
-      'International SEO agency in India for businesses targeting USA, UK, Europe, and export markets. Hreflang, market strategy, and technical SEO for global growth.',
+      'International SEO from India for USA, UK, and Europe: hreflang, market strategy, and technical SEO.',
   },
   hero: {
     h1: 'International SEO for Indian Businesses Going Global',

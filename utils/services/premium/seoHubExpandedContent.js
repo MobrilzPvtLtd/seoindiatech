@@ -6,7 +6,7 @@ export const seoHubExpandedContent = {
   seo: {
     title: 'SEO Services in India | SEO India Tech',
     description:
-      'SEO services in India for businesses that want sustainable organic growth. Technical SEO, local SEO, content, and AI-ready strategy from an Indian SEO agency. Free audit.',
+      'SEO services in India for organic growth: technical SEO, local SEO, content, and AI-ready strategy. Free audit.',
   },
   hero: {
     h1: 'SEO Services in India',

@@ -387,7 +387,7 @@ export const automobileHomeProfiles = {
   },
 
   'flooring-company-seo': {
-    seoTitle: 'Flooring Company SEO Services | Hardwood, Tile & LVP Marketing',
+    seoTitle: 'Flooring Company SEO | SEO India Tech',
     metaDescription:
       'Flooring company SEO for contractors: hardwood, tile, LVP, epoxy, and commercial flooring pages with gallery-rich local visibility. Free audit.',
     hero: [

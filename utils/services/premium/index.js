@@ -1,6 +1,7 @@
 import { buildPremiumServiceContent } from './buildPremiumServiceContent'
 import { getServiceEntry, PREMIUM_SERVICE_SLUGS } from './serviceCatalog'
 import { SERVICE_OVERRIDES } from './serviceOverrides'
+import { clampPageSeo } from '../../seo/clampMeta.js'
 
 export { PREMIUM_SERVICE_SLUGS, getServiceEntry, SERVICE_CATALOG } from './serviceCatalog'
 export { getPremiumHubContent } from './buildPremiumHubContent'
@@ -68,5 +69,6 @@ export function getPremiumServiceContent(slug) {
   if (!entry) return null
   const built = buildPremiumServiceContent(entry)
   const override = SERVICE_OVERRIDES[slug]
-  return mergeContent(built, override)
+  const merged = mergeContent(built, override)
+  return { ...merged, seo: clampPageSeo(merged.seo) }
 }

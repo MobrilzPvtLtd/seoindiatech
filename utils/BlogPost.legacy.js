@@ -144,7 +144,7 @@ const posts = [
   {
     metaTitle: 'SEO for Restaurants & Local Diners Guide',
     metaDesc:
-      'Learn simple SEO tips for restaurants and local diners. Improve local rankings, attract nearby customers, and turn more online searches into table bookings.',
+      'Simple SEO tips for restaurants and local diners. Improve local rankings and turn nearby searches into table bookings.',
     slug: 'seo-for-restaurants-local-diners',
     title: 'SEO for Restaurants: How to Get More Local Diners Through Google',
     category: 'Local SEO',
@@ -270,7 +270,7 @@ const posts = [
   {
     metaTitle: 'YouTube Business Marketing Trends 2026',
     metaDesc:
-      'Explore YouTube business marketing trends for 2026. Learn content ideas, ad formats, and growth tips to reach more viewers and turn traffic into leads and sales.',
+      'YouTube marketing trends for 2026: content ideas, ads, and growth tips to turn viewers into leads and sales.',
     slug: 'youtube-business-marketing-2026',
     title: 'How to Use YouTube for Business Marketing in 2026?',
     category: 'Social Media Marketing',

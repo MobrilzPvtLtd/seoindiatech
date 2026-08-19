@@ -1,9 +1,9 @@
 /** Default SEO metadata for static routes. */
 export const PAGE_SEO = {
   '/': {
-    title: 'SEO Company in India | SEO Agency & Services | SEO India Tech',
+    title: 'SEO Company in India | SEO Agency | SEO India Tech',
     description:
-      'SEO company in India with 14+ years of experience helping businesses grow through SEO, technical SEO, local SEO, e-commerce SEO and AI search. Get a free SEO audit.',
+      'SEO company in India with 14+ years helping businesses grow through SEO, technical SEO, local SEO, ecommerce SEO, and AI search. Free audit.',
   },
   '/who-we-are': {
     title: 'About SEO India Tech | AI SEO & Digital Marketing Experts',
@@ -38,7 +38,7 @@ export const PAGE_SEO = {
   '/seo-packages': {
     title: 'SEO Packages & Pricing | SEO India Tech',
     description:
-      'Explore flexible SEO packages tailored for startups, small businesses, and enterprises. Transparent pricing, measurable results, and dedicated account management.',
+      'Flexible SEO packages for startups, SMBs, and enterprises. Transparent pricing, measurable results, and dedicated account management.',
   },
 }
 

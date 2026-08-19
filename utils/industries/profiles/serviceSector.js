@@ -1,7 +1,7 @@
 /** Unique 1200+ word content blocks + FAQs - Service Sector (12 industries) */
 export const serviceSectorProfiles = {
   'movers-and-moving-company-seo': {
-    seoTitle: 'Moving Company SEO Services | Local & Long-Distance Mover Marketing',
+    seoTitle: 'Moving Company SEO | SEO India Tech',
     metaDescription:
       'Moving company SEO for local and long-distance movers: quote funnels, map pack visibility, packing services, and office relocation pages. Free audit.',
     hero: [

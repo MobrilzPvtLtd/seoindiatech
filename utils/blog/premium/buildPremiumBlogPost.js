@@ -6,6 +6,7 @@ import { BLOG_AUTHOR } from '../blogAuthor.js'
 import { getBlogCatalogEntry, PREMIUM_BLOG_SLUGS } from './blogCatalog.js'
 import { enrichTopicWithLinks } from './blogLinkEnricher.js'
 import { getBlogAnswerFirst } from '../../seo/answerFirstContent.js'
+import { clampSeo, SEO_DESC_MAX, SEO_TITLE_MAX } from '@/utils/seo/clampMeta'
 import {
   assembleLegacyBlocks,
   boldItem,
@@ -958,14 +959,16 @@ export function buildPremiumBlogPost(slug) {
   const content = buildTopicContent(entry)
   const faqs = buildFaqs(entry)
 
-  const metaDesc = (
+  const metaDesc = clampSeo(
     entry.metaDesc ||
-    `${entry.title}. Practical ${entry.primaryKeyword} advice for business owners - clear steps, common mistakes, and what to do next.`
-  ).slice(0, 160)
+      `${entry.title}. Practical ${entry.primaryKeyword} advice: steps, mistakes, and what to do next.`,
+    SEO_DESC_MAX
+  )
+  const metaTitle = clampSeo(entry.metaTitle, SEO_TITLE_MAX)
 
   return {
     premium: true,
-    metaTitle: entry.metaTitle.slice(0, 60),
+    metaTitle,
     metaDesc,
     slug: entry.slug,
     title: entry.title,
@@ -981,7 +984,7 @@ export function buildPremiumBlogPost(slug) {
     author: BLOG_AUTHOR,
     keywords,
     og: {
-      title: entry.metaTitle,
+      title: metaTitle,
       description: metaDesc,
     },
     images: buildImages(entry),

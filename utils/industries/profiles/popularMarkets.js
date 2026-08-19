@@ -191,7 +191,7 @@ export const popularMarketsProfiles = {
   },
 
   'hvac-seo': {
-    seoTitle: 'HVAC SEO Services | HVAC Contractor Marketing & Map Pack SEO',
+    seoTitle: 'HVAC SEO | Contractor Marketing | SEO India Tech',
     metaDescription:
       'HVAC SEO for contractors: emergency AC repair visibility, install funnels, seasonal campaigns, and Google Maps dominance. Free HVAC marketing audit.',
     hero: [
