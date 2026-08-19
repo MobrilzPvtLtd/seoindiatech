@@ -75,6 +75,7 @@ export default function PremiumIndustrySchema({ content, url }) {
       description: content.seo.description,
       isPartOf: { '@id': `${SITE_URL}/#website` },
       about: { '@id': `${SITE_URL}/#organization` },
+      mainEntity: { '@id': `${url}#service` },
       inLanguage: 'en-IN',
       speakable: buildSpeakableSpecification(),
     },

@@ -52,7 +52,7 @@ export function buildEditorialBlocks(entry, profile, label) {
   blocks.push({
     heading: `Technical SEO and site performance for ${label} websites`,
     paragraphs: [
-      `Slow templates, broken redirects, duplicate URLs, and poor mobile usability silently drain ${labelLower} rankings. We audit crawl budget, fix Core Web Vitals issues, implement schema (Service, LocalBusiness, FAQ where appropriate), and ensure analytics capture calls, chats, and form conversions accurately.`,
+      `Slow templates, broken redirects, duplicate URLs, and poor mobile usability silently drain ${labelLower} rankings. We audit crawl budget, fix Core Web Vitals issues, implement Service and FAQ schema where it matches the page, and ensure analytics capture calls, chats, and form conversions accurately.`,
       `Technical health protects ${title.toLowerCase()} gains during algorithm updates and seasonal traffic spikes. For ${labelLower} brands with booking tools, chat widgets, or multi-step forms, we validate that tracking fires correctly on every conversion path.`,
     ],
   })

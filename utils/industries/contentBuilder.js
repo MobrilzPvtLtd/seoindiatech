@@ -71,7 +71,7 @@ ${profile.services
 
   const technicalHtml = `
 <h2>Technical SEO &amp; site performance</h2>
-<p>Slow templates, broken redirects, duplicate URLs, and poor mobile usability silently drain ${labelLower} rankings. We audit crawl budget, fix Core Web Vitals issues, implement schema (Service, LocalBusiness, FAQ where appropriate), and ensure analytics capture calls, chats, and form conversions accurately. Technical health protects ${kw} gains during algorithm updates and seasonal traffic spikes.</p>
+<p>Slow templates, broken redirects, duplicate URLs, and poor mobile usability silently drain ${labelLower} rankings. We audit crawl budget, fix Core Web Vitals issues, implement Service and FAQ schema where it matches the page, and ensure analytics capture calls, chats, and form conversions accurately. Technical health protects ${kw} gains during algorithm updates and seasonal traffic spikes.</p>
 `
 
   const aiHtml = `
