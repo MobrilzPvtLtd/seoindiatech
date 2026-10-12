@@ -5,6 +5,7 @@ import GeoQuickAnswer from '@/component/industry-premium/GeoQuickAnswer'
 import posts from '@/utils/BlogPost'
 import { getBlogRelatedResources } from '@/utils/internalLinks'
 import { getBlogArticleImageClasses } from '@/utils/blog/blogImageUtils'
+import { hasRichFaqAnswer } from '@/utils/faqHelpers'
 
 export default function LegacyBlogArticle({ post }) {
   const relatedResources = getBlogRelatedResources(post, posts)
@@ -33,6 +34,16 @@ export default function LegacyBlogArticle({ post }) {
       <div className="space-y-6 text-lg">
         {post.content?.map((block, index) => {
           if (block.type === 'paragraph') {
+            const text = block.text || ''
+            if (/<[a-z][\s\S]*>/i.test(text)) {
+              return (
+                <p
+                  key={index}
+                  className="leading-relaxed text-body"
+                  dangerouslySetInnerHTML={{ __html: text }}
+                />
+              )
+            }
             return (
               <p key={index} className="leading-relaxed text-body">
                 {block.text}
@@ -88,7 +99,14 @@ export default function LegacyBlogArticle({ post }) {
             {post.faqs.map((faq) => (
               <div key={faq.question}>
                 <h3 className="text-lg font-semibold text-heading mb-2">{faq.question}</h3>
-                <p className="text-body leading-relaxed">{faq.answer}</p>
+                {hasRichFaqAnswer(faq.answer) ? (
+                  <p
+                    className="text-body leading-relaxed"
+                    dangerouslySetInnerHTML={{ __html: faq.answer }}
+                  />
+                ) : (
+                  <p className="text-body leading-relaxed">{faq.answer}</p>
+                )}
               </div>
             ))}
           </div>

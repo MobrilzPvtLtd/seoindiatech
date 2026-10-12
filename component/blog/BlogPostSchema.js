@@ -1,11 +1,12 @@
 import { SITE_URL, ORGANIZATION } from '@/utils/siteConfig'
 import { BLOG_AUTHOR } from '@/utils/blog/blogAuthor'
+import { faqAnswerText } from '@/utils/faqHelpers'
 
 export default function BlogPostSchema({ post, url }) {
   const faqEntities = (post.faqs || []).map((faq) => ({
     '@type': 'Question',
     name: faq.question,
-    acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+    acceptedAnswer: { '@type': 'Answer', text: faqAnswerText(faq.answer) },
   }))
 
   const graph = [

@@ -4,6 +4,7 @@ import Footer from './footer/Footer'
 import SkipToContent from '@/component/ui/SkipToContent'
 
 const WhatsAppButton = dynamic(() => import('@/component/ui/WhatsAppButton'), { ssr: false })
+const ScrollToTop = dynamic(() => import('@/component/ui/ScrollToTop'), { ssr: false })
 
 const Layout = ({ children }) => (
   <>
@@ -14,6 +15,7 @@ const Layout = ({ children }) => (
     </main>
     <Footer />
     <WhatsAppButton />
+    <ScrollToTop />
   </>
 )
 

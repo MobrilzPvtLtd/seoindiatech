@@ -6,7 +6,7 @@ import { BLOG_AUTHOR } from '../blogAuthor.js'
 import { getBlogCatalogEntry, PREMIUM_BLOG_SLUGS } from './blogCatalog.js'
 import { enrichTopicWithLinks } from './blogLinkEnricher.js'
 import { getBlogAnswerFirst } from '../../seo/answerFirstContent.js'
-import { clampSeo, SEO_DESC_MAX, SEO_TITLE_MAX } from '@/utils/seo/clampMeta'
+import { clampSeo, SEO_DESC_MAX, SEO_TITLE_MAX } from '../../seo/clampMeta.js'
 import {
   assembleLegacyBlocks,
   boldItem,

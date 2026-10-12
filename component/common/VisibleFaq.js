@@ -5,7 +5,7 @@ import Head from 'next/head'
 import { ChevronDown } from 'lucide-react'
 import SectionHeader from '@/component/ui/SectionHeader'
 import PageSection from '@/component/ui/PageSection'
-import { buildFaqPageSchema, ensureMinFaqs } from '@/utils/faqHelpers'
+import { buildFaqPageSchema, ensureMinFaqs, hasRichFaqAnswer } from '@/utils/faqHelpers'
 
 export default function VisibleFaq({
   title = 'Frequently Asked Questions',
@@ -69,7 +69,11 @@ export default function VisibleFaq({
                 aria-labelledby={buttonId}
                 className="border-t border-border px-5 pb-5 pt-4 text-sm md:text-base leading-relaxed text-body"
               >
-                {faq.answer}
+                {hasRichFaqAnswer(faq.answer) ? (
+                  <span dangerouslySetInnerHTML={{ __html: faq.answer }} />
+                ) : (
+                  faq.answer
+                )}
               </div>
             )}
           </div>

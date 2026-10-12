@@ -1,5 +1,18 @@
 export const MIN_FAQ_COUNT = 8
 
+/** True when a FAQ answer contains inline HTML (e.g. <strong> labels from boldItem). */
+export function hasRichFaqAnswer(value = '') {
+  return /<[a-z][\s\S]*>/i.test(String(value))
+}
+
+/** Strip inline HTML so FAQ answers stay clean in structured data. */
+export function faqAnswerText(value = '') {
+  return String(value)
+    .replace(/<[^>]*>/g, '')
+    .replace(/\s+/g, ' ')
+    .trim()
+}
+
 /** Generic supplemental FAQs for service pages if a list is short */
 export const SERVICE_FAQ_SUPPLEMENTS = [
   {
@@ -44,7 +57,7 @@ export function buildFaqPageSchema(faqs = []) {
       name: f.question.trim(),
       acceptedAnswer: {
         '@type': 'Answer',
-        text: f.answer.trim(),
+        text: faqAnswerText(f.answer),
       },
     }))
 

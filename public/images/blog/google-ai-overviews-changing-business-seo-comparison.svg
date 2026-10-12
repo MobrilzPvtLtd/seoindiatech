@@ -14,10 +14,10 @@
   
     <rect x="72" y="140" width="320" height="150" rx="14" fill="rgba(74,222,128,0.18)" stroke="#4ADE80" stroke-width="2"/>
     <text x="92" y="175" fill="#4ADE80" font-size="16" font-weight="700">✓ What Works</text>
-    <text x="92" y="215" fill="#ffffff" font-size="15">&lt;strong&gt;Original research:&lt;/strong&gt; Uniq</text>
+    <text x="92" y="215" fill="#ffffff" font-size="15">Original research: Unique data gives AI </text>
     <rect x="420" y="140" width="320" height="150" rx="14" fill="rgba(248,113,113,0.15)" stroke="#F87171" stroke-width="2"/>
     <text x="440" y="175" fill="#F87171" font-size="16" font-weight="700">✗ What Fails</text>
-    <text x="440" y="215" fill="#ffffff" font-size="15">&lt;strong&gt;Burying the answer:&lt;/strong&gt; Lon</text>
+    <text x="440" y="215" fill="#ffffff" font-size="15">Burying the answer: Long introductions b</text>
     <text x="72" y="330" fill="rgba(255,255,255,0.65)" font-size="16">Google AI Overviews SEO</text>
   <text x="64" y="590" fill="rgba(255,255,255,0.65)" font-family="Arial,Helvetica,sans-serif" font-size="15">SEO India Tech</text>
   <text x="64" y="72" fill="#A4DDFB" font-family="Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="2">COMPARISON</text>

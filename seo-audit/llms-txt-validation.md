@@ -1,6 +1,6 @@
 # llms.txt Validation Report
 
-**Generated:** 2026-08-13T16:55:44.348Z
+**Generated:** 2026-10-12T11:55:13.359Z
 **Final status:** PASS
 
 ## Counts

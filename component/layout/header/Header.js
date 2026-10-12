@@ -262,9 +262,9 @@ const Header = () => {
         </div>
       )}
       <header
-        className={`fixed left-0 right-0 w-full max-w-[100vw] z-50 isolate overflow-hidden transition-[top,transform] duration-300 ease-in-out ${headerTopClass} ${isMenuOpen ? 'z-[80]' : ''}`}
+        className={`fixed left-0 right-0 w-full max-w-[100vw] z-50 isolate transition-[top,transform] duration-300 ease-in-out ${headerTopClass} ${isMenuOpen ? 'z-[80]' : ''}`}
       >
-        <div className={`w-full border-b transition-all duration-300 ${headerBarClass}`}>
+        <div className={`relative w-full border-b transition-all duration-300 ${headerBarClass}`}>
           <div className={headerInnerClass}>
             <BrandLogo
               variant={logoOnDark ? 'onDark' : 'onLight'}
@@ -272,7 +272,7 @@ const Header = () => {
               priority
             />
 
-            <nav className="hidden xl:flex flex-1 justify-center min-w-0 px-1 overflow-hidden">
+            <nav className="hidden xl:flex flex-1 justify-center min-w-0 px-1">
               <ul className="flex items-center flex-nowrap gap-x-1.5 lg:gap-x-2 xl:gap-x-3 max-w-full">
                 <li>
                   <Link
@@ -304,15 +304,6 @@ const Header = () => {
                       className={`transition-transform duration-300 ${isServicesOpen ? 'rotate-180' : ''}`}
                     />
                   </button>
-                  <MegaMenuPanel
-                    id="services-dropdown"
-                    className={megaMenuOpenClass(isServicesOpen)}
-                    onMouseEnter={handleServicesMouseEnter}
-                    onMouseLeave={handleServicesMouseLeave}
-                    onClick={handleCardClick}
-                  >
-                    <ServiceDropdown closeMenu={handleCardClick} />
-                  </MegaMenuPanel>
                 </li>
 
                 <li
@@ -334,15 +325,6 @@ const Header = () => {
                       className={`transition-transform duration-300 ${isIndustryOpen ? 'rotate-180' : ''}`}
                     />
                   </button>
-                  <MegaMenuPanel
-                    id="industry-dropdown"
-                    className={megaMenuOpenClass(isIndustryOpen)}
-                    onMouseEnter={handleIndustryMouseEnter}
-                    onMouseLeave={handleIndustryMouseLeave}
-                    onClick={handleCardClick}
-                  >
-                    <IndustryDropdown closeMenu={handleCardClick} />
-                  </MegaMenuPanel>
                 </li>
 
                 <li><NavLink href="/seo-packages">SEO Packages</NavLink></li>
@@ -372,6 +354,26 @@ const Header = () => {
               </div>
             </div>
           </div>
+
+          <MegaMenuPanel
+            id="services-dropdown"
+            className={`hidden xl:block ${megaMenuOpenClass(isServicesOpen)}`}
+            onMouseEnter={handleServicesMouseEnter}
+            onMouseLeave={handleServicesMouseLeave}
+            onClick={handleCardClick}
+          >
+            <ServiceDropdown closeMenu={handleCardClick} />
+          </MegaMenuPanel>
+
+          <MegaMenuPanel
+            id="industry-dropdown"
+            className={`hidden xl:block ${megaMenuOpenClass(isIndustryOpen)}`}
+            onMouseEnter={handleIndustryMouseEnter}
+            onMouseLeave={handleIndustryMouseLeave}
+            onClick={handleCardClick}
+          >
+            <IndustryDropdown closeMenu={handleCardClick} />
+          </MegaMenuPanel>
         </div>
       </header>
 

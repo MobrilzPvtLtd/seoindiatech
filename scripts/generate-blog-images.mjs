@@ -35,6 +35,13 @@ function esc(text) {
     .replace(/"/g, '&quot;')
 }
 
+function stripTags(text) {
+  return String(text)
+    .replace(/<[^>]*>/g, '')
+    .replace(/\s+/g, ' ')
+    .trim()
+}
+
 function wrapTitle(title, maxLen = 30) {
   const words = title.split(' ')
   const lines = []
@@ -388,7 +395,8 @@ function processSvg(slug, entry) {
   const stepRects = steps
     .map((s, i) => {
       const x = 72 + i * 155
-      const label = s.length > 16 ? `${s.slice(0, 14)}…` : s
+      const text = stripTags(s)
+      const label = text.length > 16 ? `${text.slice(0, 14)}…` : text
       return `<g><rect x="${x}" y="180" width="130" height="72" rx="12" fill="rgba(255,255,255,0.14)" stroke="${BRAND.accent}"/>
       <circle cx="${x + 20}" cy="205" r="14" fill="${BRAND.accent}"/><text x="${x + 16}" y="210" fill="${BRAND.secondary}" font-size="13" font-weight="700">${i + 1}</text>
       <text x="${x + 42}" y="232" fill="${BRAND.white}" font-size="13" font-weight="600">${esc(label)}</text>
@@ -402,8 +410,8 @@ function processSvg(slug, entry) {
 function comparisonSvg(slug, entry) {
   const data = getBlogImageData(slug)
   const theme = BLOG_THEMES[slug] || { accent: BRAND.primary }
-  const good = (data?.comparison?.good || 'Structured SEO strategy').slice(0, 40)
-  const bad = (data?.comparison?.bad || 'Generic templates').slice(0, 40)
+  const good = stripTags(data?.comparison?.good || 'Structured SEO strategy').slice(0, 40)
+  const bad = stripTags(data?.comparison?.bad || 'Generic templates').slice(0, 40)
   const body = `
     <rect x="72" y="140" width="320" height="150" rx="14" fill="rgba(74,222,128,0.18)" stroke="${BRAND.green}" stroke-width="2"/>
     <text x="92" y="175" fill="${BRAND.green}" font-size="16" font-weight="700">✓ What Works</text>
@@ -420,7 +428,8 @@ function checklistSvg(slug, entry) {
   const items = (data?.checklist || ['Technical audit', 'Content depth', 'Internal links', 'Schema markup']).slice(0, 5)
   const checks = items
     .map((item, i) => {
-      const label = item.length > 34 ? `${item.slice(0, 32)}…` : item
+      const text = stripTags(item)
+      const label = text.length > 34 ? `${text.slice(0, 32)}…` : text
       return `<g transform="translate(72,${130 + i * 48})">
         <rect width="26" height="26" rx="6" fill="${BRAND.accent}"/>
         <path d="M6 13 L11 18 L20 8" fill="none" stroke="${BRAND.secondary}" stroke-width="3" stroke-linecap="round"/>
@@ -442,7 +451,8 @@ function faqSvg(slug, entry) {
   ]).slice(0, 3)
   const rows = questions
     .map((q, i) => {
-      const label = q.length > 42 ? `${q.slice(0, 40)}…` : q
+      const text = stripTags(q)
+      const label = text.length > 42 ? `${text.slice(0, 40)}…` : text
       const y = i * 72
       const active = i === 1
       return `<rect x="0" y="${y}" width="400" height="58" rx="12" fill="${active ? 'rgba(164,221,251,0.18)' : 'rgba(255,255,255,0.12)'}" stroke="${active ? BRAND.accent : 'rgba(255,255,255,0.2)'}"/>

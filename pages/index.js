@@ -24,7 +24,6 @@ const SeoHubBand = dynamic(() => import('@/component/new-home/SeoHubBand'))
 const Blog = dynamic(() => import('@/component/new-home/Blog'))
 const CityLinksBand = dynamic(() => import('@/component/new-home/CityLinksBand'))
 const FAQAndContact = dynamic(() => import('@/component/new-home/FAQAndContact'), { ssr: false })
-const ScrollToTop = dynamic(() => import('@/component/ui/ScrollToTop'), { ssr: false })
 
 const HOME_ORG_DESCRIPTION =
   'SEO company in India with 14+ years of experience helping businesses grow through SEO, technical SEO, local SEO, e-commerce SEO and AI search.'
@@ -84,7 +83,6 @@ export default function Home() {
       <Blog />
       <CityLinksBand />
       <FAQAndContact />
-      <ScrollToTop />
     </>
   )
 }

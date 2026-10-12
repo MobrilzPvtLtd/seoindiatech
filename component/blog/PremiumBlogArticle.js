@@ -6,6 +6,7 @@ import GeoQuickAnswer from '@/component/industry-premium/GeoQuickAnswer'
 import posts from '@/utils/BlogPost'
 import { getBlogRelatedResources } from '@/utils/internalLinks'
 import { getBlogArticleImageClasses } from '@/utils/blog/blogImageUtils'
+import { hasRichFaqAnswer } from '@/utils/faqHelpers'
 function renderParagraph(block, index) {
   if (block.link) {
     return (
@@ -24,6 +25,15 @@ function renderParagraph(block, index) {
         key={index}
         className="leading-relaxed text-body text-lg"
         dangerouslySetInnerHTML={{ __html: block.html }}
+      />
+    )
+  }
+  if (/<[a-z][\s\S]*>/i.test(block.text || '')) {
+    return (
+      <p
+        key={index}
+        className="leading-relaxed text-body text-lg"
+        dangerouslySetInnerHTML={{ __html: block.text }}
       />
     )
   }
@@ -164,7 +174,14 @@ export default function PremiumBlogArticle({ post }) {
                   {faq.question}
                   <span className="text-primary group-open:rotate-45 transition-transform">+</span>
                 </summary>
-                <p className="mt-3 text-body leading-relaxed text-lg">{faq.answer}</p>
+                {hasRichFaqAnswer(faq.answer) ? (
+                  <p
+                    className="mt-3 text-body leading-relaxed text-lg"
+                    dangerouslySetInnerHTML={{ __html: faq.answer }}
+                  />
+                ) : (
+                  <p className="mt-3 text-body leading-relaxed text-lg">{faq.answer}</p>
+                )}
               </details>
             ))}
           </div>
